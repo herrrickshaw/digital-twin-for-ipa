@@ -1,0 +1,241 @@
+{
+ "directory": "portal_and_source_directory",
+ "built": "2026-07-20",
+ "purpose": "Machine-readable directory of every portal the twin depends on -- consumed by scripts/refresh_twin.py routes for health checks. Curated from sweep-verified access routes.",
+ "central": {
+  "PIB register": {
+   "url": "https://www.pib.gov.in",
+   "note": "POST to www subdomain ONLY (bare-domain 301 turns POSTs into GETs)",
+   "script": "pib_index.py in policy repo"
+  },
+  "NSWS": {
+   "url": "https://www.nsws.gov.in",
+   "note": "only official company-facing aggregator"
+  },
+  "UNNATI portal": {
+   "url": "https://unnati.dpiit.gov.in",
+   "note": "registration STOPPED (oversubscribed) as of 2026-07-20; watch notice for resumption"
+  },
+  "DPIIT": {
+   "url": "https://www.dpiit.gov.in",
+   "note": "FDI quarterly fact sheets under publications"
+  },
+  "RBI WSS archive": {
+   "url": "https://rbi.org.in/scripts/WSSView.aspx?Id=N",
+   "note": "enumerable to 1998, no key"
+  },
+  "MeitY (headless WP)": {
+   "url": "https://www.meity.gov.in/cms/wp-json",
+   "note": "22-scheme API list"
+  },
+  "Ministry of Power CMS": {
+   "url": "https://cms-powermin.digifootprint.gov.in/wp-json/wp/v2/",
+   "note": "digifootprint headless-WP pattern"
+  },
+  "MoHUA CMS": {
+   "url": "https://cms-mohua.digifootprint.gov.in/wp-json/wp/v2/"
+  },
+  "DSIR CMS": {
+   "url": "https://cms-dsir.digifootprint.gov.in/wp-json/wp/v2/"
+  },
+  "Tourism CMS": {
+   "url": "https://www.tourism.gov.in/cms/wp-json/wp/v2/schemes_and_services"
+  },
+  "MSDE CMS": {
+   "url": "https://www.msde.gov.in/cms/wp-json/wp/v2/schemes_and_services"
+  },
+  "BIRAC": {
+   "url": "https://birac.nic.in/cfp.php",
+   "note": "resolves only via pinned IP 164.100.228.150 when DNS fails"
+  },
+  "TDB": {
+   "url": "https://tdb.gov.in",
+   "note": "RDI Fund / active CFPs"
+  },
+  "iDEX": {
+   "url": "https://idex.gov.in"
+  },
+  "SRIJAN": {
+   "url": "https://srijandefence.gov.in"
+  },
+  "DDP MoD": {
+   "url": "https://www.ddpmod.gov.in"
+  },
+  "AIF agri portal": {
+   "url": "https://agriinfra.dac.gov.in",
+   "note": "live sanction stats on homepage"
+  },
+  "DFPD": {
+   "url": "https://dfpd.gov.in",
+   "note": "fully client-side; needs browser"
+  },
+  "NCDC": {
+   "url": "https://www.ncdc.in/index.jsp?page=scheme"
+  },
+  "CPCB EPR portals": {
+   "url": "https://cpcb.gov.in/all-epr-portals-of-cpcb/",
+   "note": "six-portal SSO listing page"
+  },
+  "Green Credit portal": {
+   "url": "https://moefcc-gcp.in"
+  },
+  "MIB film incentives": {
+   "url": "https://mib.gov.in",
+   "note": "guidelines = 6MB scanned PDF; local pypdf"
+  },
+  "RailSAHAY GCT": {
+   "url": "https://www.fois.indianrail.gov.in/RailSAHAY/index.jsp"
+  },
+  "Bharat Gaurav": {
+   "url": "https://bharatgauravtrains.indianrailways.gov.in"
+  },
+  "MoRTH backend API": {
+   "url": "https://morth.gov.in/backend/api/gazettes-notifications",
+   "note": "search params ignored; download+grep"
+  },
+  "Vehicle scrapping single window": {
+   "url": "https://vscrap.parivahan.gov.in"
+  },
+  "PRS DFG": {
+   "url": "https://prsindia.org/budgets/parliament",
+   "note": "curl+Chrome-UA clean"
+  }
+ },
+ "state": {
+  "Gujarat IFP": {
+   "url": "https://ifp.gujarat.gov.in/DIGIGOV/",
+   "note": "incentives-granted dashboard"
+  },
+  "Gujarat IC": {
+   "url": "https://ic.gujarat.gov.in"
+  },
+  "Maharashtra MAITRI": {
+   "url": "https://maitri.maharashtra.gov.in/resources/policies/"
+  },
+  "Rajasthan RajNivesh": {
+   "url": "https://rajnivesh.rajasthan.gov.in",
+   "note": "rips.rajasthan.gov.in refuses connections"
+  },
+  "Goa DITC": {
+   "url": "https://ditc.goa.gov.in",
+   "note": "invalid TLS cert; curl -k"
+  },
+  "TN Guidance": {
+   "url": "https://www.investingintamilnadu.com/business-in-tamil-nadu/policy-notifications"
+  },
+  "TN single window": {
+   "url": "https://tnswp.com/DIGIGOV/swp-tnswp.jsp"
+  },
+  "Karnataka Udyog Mitra": {
+   "url": "https://investkarnataka.co.in",
+   "note": "invest.karnataka.gov.in does NOT exist"
+  },
+  "Karnataka EITBT": {
+   "url": "https://eitbt.karnataka.gov.in"
+  },
+  "Telangana invest": {
+   "url": "https://invest.telangana.gov.in/policies/"
+  },
+  "TG-iPASS": {
+   "url": "https://ipass.telangana.gov.in"
+  },
+  "Telangana Life Sciences": {
+   "url": "https://lifesciences.telangana.gov.in"
+  },
+  "AP Industries": {
+   "url": "https://www.apindustries.gov.in/APIndus/Default.aspx"
+  },
+  "Kerala KSIDC": {
+   "url": "https://ksidc.org/invest-kerala/incentive-schemes/"
+  },
+  "Kerala K-SWIFT": {
+   "url": "https://kswift.kerala.gov.in"
+  },
+  "Kerala invest": {
+   "url": "https://invest.kerala.gov.in"
+  },
+  "UP Invest": {
+   "url": "https://invest.up.gov.in/policies/"
+  },
+  "UP Nivesh Mitra": {
+   "url": "https://niveshmitra.up.nic.in"
+  },
+  "Haryana single window": {
+   "url": "https://investharyana.in",
+   "note": "policy texts login-gated; names in public JS bundle"
+  },
+  "Punjab Invest": {
+   "url": "https://investpunjab.gov.in",
+   "note": "Angular shell; IBDP 2026 gazette PDF path known"
+  },
+  "Uttarakhand invest": {
+   "url": "https://investuttarakhand.uk.gov.in/site/Policies"
+  },
+  "Himachal SWCS": {
+   "url": "https://app.emerginghimachal.hp.gov.in/frontend/web/index.php/site/schemes-policies"
+  },
+  "Delhi industries": {
+   "url": "https://industries.delhi.gov.in"
+  },
+  "MP invest (WP paths)": {
+   "url": "https://invest.mp.gov.in/policy-acts-rules/",
+   "note": "root redirects to React shell; use direct WP paths"
+  },
+  "Chhattisgarh invest": {
+   "url": "https://invest.cg.gov.in/investment_promotion",
+   "note": "subsidy calculator at /calculator"
+  },
+  "Odisha invest": {
+   "url": "https://investodisha.gov.in/policy-framework/industrial-policy-resolution-2022"
+  },
+  "WB Silpasathi": {
+   "url": "https://silpasathi.wb.gov.in/msme_Incentives",
+   "note": "wbidc.com is HIJACKED -- never cite"
+  },
+  "Jharkhand Advantage": {
+   "url": "https://advantage.jharkhand.gov.in/SingleWindow/registrations/policies/"
+  },
+  "Bihar Udyami": {
+   "url": "https://udyami.bihar.gov.in"
+  },
+  "Bihar BIADA": {
+   "url": "https://biada1.bihar.gov.in/ActRule.aspx"
+  },
+  "Assam EODB": {
+   "url": "https://eodb.assam.gov.in/site/government_incentives",
+   "note": "investinassam.com is SQUATTED -- never cite"
+  },
+  "Meghalaya industry": {
+   "url": "https://megindustry.gov.in"
+  },
+  "Tripura industries": {
+   "url": "https://industries.tripura.gov.in/incentives"
+  },
+  "Mizoram industries": {
+   "url": "https://industries.mizoram.gov.in"
+  },
+  "Nagaland industry": {
+   "url": "https://industry.nagaland.gov.in/unnati/"
+  },
+  "Sikkim industries": {
+   "url": "https://industries.sikkim.gov.in/visitors/schemes"
+  },
+  "J&K single window": {
+   "url": "https://singlewindow.jk.gov.in"
+  }
+ },
+ "known_bad": {
+  "wbidc.com": "HIJACKED (suspended cPanel iframing ad domain)",
+  "investinassam.com": "SQUATTED (gambling-link blog)",
+  "biharbusinessconnect.com": "lapsed/parked redirect",
+  "invest.karnataka.gov.in": "NXDOMAIN",
+  "kum.karnataka.gov.in": "NXDOMAIN",
+  "morth.nic.in": "DNS dead",
+  "udyog.bihar.gov.in": "NXDOMAIN",
+  "invest.rajasthan.gov.in": "retired",
+  "goa-idc.com": "NXDOMAIN",
+  "dic.nagaland.gov.in": "NXDOMAIN",
+  "fert.nic.in": "dead",
+  "texmin.nic.in": "dead"
+ }
+}

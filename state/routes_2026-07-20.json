@@ -1,0 +1,331 @@
+{
+ "checked": "2026-07-20",
+ "results": {
+  "PIB register": {
+   "url": "https://www.pib.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "NSWS": {
+   "url": "https://www.nsws.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "UNNATI portal": {
+   "url": "https://unnati.dpiit.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "DPIIT": {
+   "url": "https://www.dpiit.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "RBI WSS archive": {
+   "url": "https://rbi.org.in/scripts/WSSView.aspx?Id=N",
+   "http": "200",
+   "ok": true
+  },
+  "MeitY (headless WP)": {
+   "url": "https://www.meity.gov.in/cms/wp-json",
+   "http": "200",
+   "ok": true
+  },
+  "Ministry of Power CMS": {
+   "url": "https://cms-powermin.digifootprint.gov.in/wp-json/wp/v2/",
+   "http": "200",
+   "ok": true
+  },
+  "MoHUA CMS": {
+   "url": "https://cms-mohua.digifootprint.gov.in/wp-json/wp/v2/",
+   "http": "200",
+   "ok": true
+  },
+  "DSIR CMS": {
+   "url": "https://cms-dsir.digifootprint.gov.in/wp-json/wp/v2/",
+   "http": "000",
+   "ok": false
+  },
+  "Tourism CMS": {
+   "url": "https://www.tourism.gov.in/cms/wp-json/wp/v2/schemes_and_services",
+   "http": "200",
+   "ok": true
+  },
+  "MSDE CMS": {
+   "url": "https://www.msde.gov.in/cms/wp-json/wp/v2/schemes_and_services",
+   "http": "200",
+   "ok": true
+  },
+  "BIRAC": {
+   "url": "https://birac.nic.in/cfp.php",
+   "http": "000",
+   "ok": false
+  },
+  "TDB": {
+   "url": "https://tdb.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "iDEX": {
+   "url": "https://idex.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "SRIJAN": {
+   "url": "https://srijandefence.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "DDP MoD": {
+   "url": "https://www.ddpmod.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "AIF agri portal": {
+   "url": "https://agriinfra.dac.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "DFPD": {
+   "url": "https://dfpd.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "NCDC": {
+   "url": "https://www.ncdc.in/index.jsp?page=scheme",
+   "http": "200",
+   "ok": true
+  },
+  "CPCB EPR portals": {
+   "url": "https://cpcb.gov.in/all-epr-portals-of-cpcb/",
+   "http": "200",
+   "ok": true
+  },
+  "Green Credit portal": {
+   "url": "https://moefcc-gcp.in",
+   "http": "200",
+   "ok": true
+  },
+  "MIB film incentives": {
+   "url": "https://mib.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "RailSAHAY GCT": {
+   "url": "https://www.fois.indianrail.gov.in/RailSAHAY/index.jsp",
+   "http": "200",
+   "ok": true
+  },
+  "Bharat Gaurav": {
+   "url": "https://bharatgauravtrains.indianrailways.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "MoRTH backend API": {
+   "url": "https://morth.gov.in/backend/api/gazettes-notifications",
+   "http": "200",
+   "ok": true
+  },
+  "Vehicle scrapping single window": {
+   "url": "https://vscrap.parivahan.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "PRS DFG": {
+   "url": "https://prsindia.org/budgets/parliament",
+   "http": "200",
+   "ok": true
+  },
+  "Gujarat IFP": {
+   "url": "https://ifp.gujarat.gov.in/DIGIGOV/",
+   "http": "200",
+   "ok": true
+  },
+  "Gujarat IC": {
+   "url": "https://ic.gujarat.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Maharashtra MAITRI": {
+   "url": "https://maitri.maharashtra.gov.in/resources/policies/",
+   "http": "200",
+   "ok": true
+  },
+  "Rajasthan RajNivesh": {
+   "url": "https://rajnivesh.rajasthan.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Goa DITC": {
+   "url": "https://ditc.goa.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "TN Guidance": {
+   "url": "https://www.investingintamilnadu.com/business-in-tamil-nadu/policy-notifications",
+   "http": "200",
+   "ok": true
+  },
+  "TN single window": {
+   "url": "https://tnswp.com/DIGIGOV/swp-tnswp.jsp",
+   "http": "200",
+   "ok": true
+  },
+  "Karnataka Udyog Mitra": {
+   "url": "https://investkarnataka.co.in",
+   "http": "200",
+   "ok": true
+  },
+  "Karnataka EITBT": {
+   "url": "https://eitbt.karnataka.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Telangana invest": {
+   "url": "https://invest.telangana.gov.in/policies/",
+   "http": "200",
+   "ok": true
+  },
+  "TG-iPASS": {
+   "url": "https://ipass.telangana.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Telangana Life Sciences": {
+   "url": "https://lifesciences.telangana.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "AP Industries": {
+   "url": "https://www.apindustries.gov.in/APIndus/Default.aspx",
+   "http": "200",
+   "ok": true
+  },
+  "Kerala KSIDC": {
+   "url": "https://ksidc.org/invest-kerala/incentive-schemes/",
+   "http": "200",
+   "ok": true
+  },
+  "Kerala K-SWIFT": {
+   "url": "https://kswift.kerala.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Kerala invest": {
+   "url": "https://invest.kerala.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "UP Invest": {
+   "url": "https://invest.up.gov.in/policies/",
+   "http": "200",
+   "ok": true
+  },
+  "UP Nivesh Mitra": {
+   "url": "https://niveshmitra.up.nic.in",
+   "http": "000",
+   "ok": false
+  },
+  "Haryana single window": {
+   "url": "https://investharyana.in",
+   "http": "200",
+   "ok": true
+  },
+  "Punjab Invest": {
+   "url": "https://investpunjab.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Uttarakhand invest": {
+   "url": "https://investuttarakhand.uk.gov.in/site/Policies",
+   "http": "200",
+   "ok": true
+  },
+  "Himachal SWCS": {
+   "url": "https://app.emerginghimachal.hp.gov.in/frontend/web/index.php/site/schemes-policies",
+   "http": "200",
+   "ok": true
+  },
+  "Delhi industries": {
+   "url": "https://industries.delhi.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "MP invest (WP paths)": {
+   "url": "https://invest.mp.gov.in/policy-acts-rules/",
+   "http": "200",
+   "ok": true
+  },
+  "Chhattisgarh invest": {
+   "url": "https://invest.cg.gov.in/investment_promotion",
+   "http": "200",
+   "ok": true
+  },
+  "Odisha invest": {
+   "url": "https://investodisha.gov.in/policy-framework/industrial-policy-resolution-2022",
+   "http": "200",
+   "ok": true
+  },
+  "WB Silpasathi": {
+   "url": "https://silpasathi.wb.gov.in/msme_Incentives",
+   "http": "000",
+   "ok": false
+  },
+  "Jharkhand Advantage": {
+   "url": "https://advantage.jharkhand.gov.in/SingleWindow/registrations/policies/",
+   "http": "200",
+   "ok": true
+  },
+  "Bihar Udyami": {
+   "url": "https://udyami.bihar.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Bihar BIADA": {
+   "url": "https://biada1.bihar.gov.in/ActRule.aspx",
+   "http": "200",
+   "ok": true
+  },
+  "Assam EODB": {
+   "url": "https://eodb.assam.gov.in/site/government_incentives",
+   "http": "200",
+   "ok": true
+  },
+  "Meghalaya industry": {
+   "url": "https://megindustry.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Tripura industries": {
+   "url": "https://industries.tripura.gov.in/incentives",
+   "http": "200",
+   "ok": true
+  },
+  "Mizoram industries": {
+   "url": "https://industries.mizoram.gov.in",
+   "http": "200",
+   "ok": true
+  },
+  "Nagaland industry": {
+   "url": "https://industry.nagaland.gov.in/unnati/",
+   "http": "200",
+   "ok": true
+  },
+  "Sikkim industries": {
+   "url": "https://industries.sikkim.gov.in/visitors/schemes",
+   "http": "200",
+   "ok": true
+  },
+  "J&K single window": {
+   "url": "https://singlewindow.jk.gov.in",
+   "http": "200",
+   "ok": true
+  }
+ },
+ "down": [
+  "DSIR CMS",
+  "BIRAC",
+  "UP Nivesh Mitra",
+  "WB Silpasathi"
+ ]
+}

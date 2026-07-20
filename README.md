@@ -23,6 +23,25 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 00 | `layers/00_data_model.json` | **Canonical data model** — nine entity types every sweep maps into (Instrument, ApplicationWindow, InterlinkageEdge, SourceRoute…) |
 | 13 | `layers/13_flat_instrument_index.json` | **Flat instrument index** — all 312 instruments (195 central + 117 state) normalized to one schema |
 | 14 | `layers/14_update_engine.json` | **Auto-update engine** — per-source refresh design (PIB daily, NSWS/RBI/UNNATI weekly, quarterly sweeps; Orbis-upgrade path for company data). Flow diagram: [docs/DATA_MODEL.md](docs/DATA_MODEL.md) |
+| 15 | `layers/15_directory.json` | **Portal directory** — 64 verified portals (27 central + 37 state) + 12 known-bad domains; human version: [docs/DIRECTORY.md](docs/DIRECTORY.md) |
+
+## Auto-update scripts
+
+`scripts/refresh_twin.py` implements the update engine — snapshots land in `state/` (append-only, diffs printed as `CHANGE` lines):
+
+```bash
+python3 scripts/refresh_twin.py weekly     # routes health (64 portals) + UNNATI notice diff + NSWS + RBI WSS
+python3 scripts/refresh_twin.py pib        # delegates to the policy repo's pib_index.py --update
+python3 scripts/refresh_twin.py catalogue  # rebuild flat index view -> docs/SCHEME_CATALOGUE.md
+```
+
+Suggested crontab (not auto-installed):
+```cron
+17 7 * * *   cd ~/digital-twin-for-ipa && python3 scripts/refresh_twin.py pib
+23 8 * * 1   cd ~/digital-twin-for-ipa && python3 scripts/refresh_twin.py weekly
+```
+
+Reference docs: [SCHEME_CATALOGUE.md](docs/SCHEME_CATALOGUE.md) (generated, 312 instruments) · [DIRECTORY.md](docs/DIRECTORY.md) · [ABBREVIATIONS.md](docs/ABBREVIATIONS.md) · [DATA_MODEL.md](docs/DATA_MODEL.md)
 
 ## State catalog clusters (layer 12)
 

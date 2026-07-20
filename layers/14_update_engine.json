@@ -1,0 +1,128 @@
+{
+ "layer": "auto_update_engine",
+ "built": "2026-07-20",
+ "purpose": "Source-driven refresh design: which source updates which entity type, at what cadence, by what method. Extends layer 08 (quarterly blueprint) with per-source automation.",
+ "sources": [
+  {
+   "source": "PIB press-release register",
+   "updates": [
+    "Instrument (new launches)",
+    "ApplicationWindow",
+    "OfferingEntity"
+   ],
+   "cadence": "daily",
+   "method": "scripts/pib_index.py --update (EXISTS, policy repo; POST to www.pib.gov.in only)",
+   "auto": "ready"
+  },
+  {
+   "source": "NSWS (nsws.gov.in)",
+   "updates": [
+    "Instrument.status",
+    "ApplicationWindow"
+   ],
+   "cadence": "weekly",
+   "method": "scheme-page scrape; the only official company-facing aggregator",
+   "auto": "scriptable"
+  },
+  {
+   "source": "UNNATI portal (unnati.dpiit.gov.in)",
+   "updates": [
+    "ApplicationWindow (resumption watch)"
+   ],
+   "cadence": "weekly",
+   "method": "homepage notice diff -- registration currently STOPPED (oversubscribed); resumes only if rejections free funds",
+   "auto": "scriptable"
+  },
+  {
+   "source": "DPIIT FDI statistics (quarterly fact sheets)",
+   "updates": [
+    "BudgetObservation-analog: FDI equity inflow by sector/state"
+   ],
+   "cadence": "quarterly",
+   "method": "dpiit.gov.in publications PDF -> table extract; joins to fdi_vs_pli bulletin",
+   "auto": "scriptable"
+  },
+  {
+   "source": "RBI (WSS archive rbi.org.in/scripts/WSSView.aspx?Id=N + bulletin)",
+   "updates": [
+    "forex context, FDI flows BoP basis"
+   ],
+   "cadence": "weekly/monthly",
+   "method": "enumerable public archive to 1998, no key",
+   "auto": "ready-pattern"
+  },
+  {
+   "source": "PRS Legislative Research",
+   "updates": [
+    "BudgetObservation",
+    "bill_track"
+   ],
+   "cadence": "budget-session + quarterly",
+   "method": "DFG pages, curl+Chrome-UA clean",
+   "auto": "scriptable"
+  },
+  {
+   "source": "Ministry sites via SourceRoute registry",
+   "updates": [
+    "Instrument (guideline changes)",
+    "SourceRoute.health"
+   ],
+   "cadence": "quarterly (full sweep) + monthly (top-20 instruments)",
+   "method": "per-route: headless-WP wp-json | backend APIs | browser for JS shells; OCR for scanned gazettes",
+   "auto": "agent-swarm (this session's pattern)"
+  },
+  {
+   "source": "Company data -- CURRENT: Damodaran annual + yfinance + screener.in",
+   "updates": [
+    "Company",
+    "Pairing candidates"
+   ],
+   "cadence": "Damodaran yearly (Jan); yfinance on demand",
+   "method": "existing focus-sector-investor-map scripts",
+   "auto": "ready"
+  },
+  {
+   "source": "Company data -- TARGET: Orbis (Bureau van Dijk)",
+   "updates": [
+    "Company (ownership trees, GUO, financials for unlisted), Pairing (subsidiary->parent mapping)"
+   ],
+   "cadence": "monthly",
+   "method": "SUBSCRIPTION REQUIRED -- no free API; when licensed, match by BvD-ID<->(ticker,ISIN); until then unlisted-company coverage is the twin's known gap",
+   "auto": "blocked-on-license",
+   "free_proxies": [
+    "MCA master data (company registrations, paid docs)",
+    "GLEIF LEI (free, ownership 'who-owns-whom' partial)",
+    "OpenCorporates (rate-limited)"
+   ]
+  },
+  {
+   "source": "State portals incentive dashboards (Gujarat IFP 'Incentives Granted', Assam KYI, J&K KYI, Jharkhand)",
+   "updates": [
+    "Instrument disbursal evidence"
+   ],
+   "cadence": "quarterly",
+   "method": "dashboard scrape per SourceRoute",
+   "auto": "scriptable"
+  }
+ ],
+ "pipeline": [
+  "1. Fetch per source on cadence -> raw snapshot (dated file)",
+  "2. Extract -> Observation rows against canonical model (00_data_model)",
+  "3. Diff vs current Instrument/Window state -> proposed changes",
+  "4. Corrections DISPLAYED: prior value retained with superseded_on date",
+  "5. Rebuild flat_instrument_index + bulletins; quarterly: Trade Watch + series append"
+ ],
+ "triggers": {
+  "event_driven": [
+   "PIB new Cabinet approval matching instrument keywords",
+   "UNNATI notice text change",
+   "gazette upload on tracked policy pages"
+  ],
+  "scheduled": [
+   "daily PIB",
+   "weekly NSWS/RBI/UNNATI",
+   "monthly top-20 verify",
+   "quarterly full sweep + PRS + DPIIT-FDI"
+  ]
+ }
+}

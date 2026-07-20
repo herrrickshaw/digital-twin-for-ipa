@@ -20,6 +20,9 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 10 | `layers/10_interlinkages.json` | **Scheme interlinkage graph**: 23 edges (stacks / excludes / boundary / feeds / converges) + 11 clarity checks against explainer sources. Anchor: MeitY PLI FAQ Clause 3.6 (the legal basis for PLI + state stacking) |
 | 11 | `layers/11_prs_budget_layer.json` | **PRS Legislative Research overlay**: Demand-for-Grants utilization findings (12 ministries), 22-bill legislative track, and PRS's own coverage gaps |
 | 12 | `layers/12_state_catalog/` | **State catalog** — state-government incentive schemes verified on state single-window / industries-department sites, one cluster file per sweep |
+| 00 | `layers/00_data_model.json` | **Canonical data model** — nine entity types every sweep maps into (Instrument, ApplicationWindow, InterlinkageEdge, SourceRoute…) |
+| 13 | `layers/13_flat_instrument_index.json` | **Flat instrument index** — all 312 instruments (195 central + 117 state) normalized to one schema |
+| 14 | `layers/14_update_engine.json` | **Auto-update engine** — per-source refresh design (PIB daily, NSWS/RBI/UNNATI weekly, quarterly sweeps; Orbis-upgrade path for company data). Flow diagram: [docs/DATA_MODEL.md](docs/DATA_MODEL.md) |
 
 ## State catalog clusters (layer 12)
 
@@ -30,7 +33,7 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | `south_tg_ap_kl` | Telangana, AP, Kerala | AP IDP 4.0 quantified (12–15% FCI + **PLI top-up = 10% of central PLI**, Early Bird 30–40% FCI); Telangana Next-Gen Life Sciences 2026-30 + "Meet or Beat" guarantee; Kerala's 18-category package (incl. 20% PLI-investor top-up); Telangana has NO enacted post-2024 industrial policy |
 | `north_up_hr_pb_uk_hp_dl` | UP, Haryana, Punjab, Uttarakhand, HP, Delhi | **UP ECMS top-up verified verbatim ("Equal to Central ECMS incentives")**; IIEPP-2022 10–30% grid; Punjab IBDP 2026 (gazette 08-03-2026, supersedes 2022; OCR-extracted); Uttarakhand MIIP 2025 + incentive calculator; Delhi has no post-2021 industrial policy |
 | `central_east_mp_cg_od_wb_jh_br` | MP, Chhattisgarh, Odisha, WB, Jharkhand, Bihar | MP IPP-2025 BIPA formula (40%→10% EFCI, ₹200cr cap, multiplier-scaled); Odisha IPR-2022 **uncapped** 20–30% capital subsidy + 20-year GH₂ power package; CG's 50% capital + 50% interest headline stack; **wbidc.com is a hijacked/parked domain**; Bihar's industrial-policy web presence effectively dead |
-| `ne_states_jk` | Assam, 7 NE states, J&K | **Assam semiconductor top-up = +40% of central ISM capex assistance** (Tata OSAT package, gazette-verified); J&K NCSS (30–50% capital, 100% GST-linked 10y) + IP-2021-30 state stack quantified, incl. an internal inconsistency in the official PDF; UNNATI registration window closes 31-Mar-2026; **investinassam.com is squatted** (real portal: eodb.assam.gov.in) |
+| `ne_states_jk` | Assam, 7 NE states, J&K | **Assam semiconductor top-up = +40% of central ISM capex assistance** (Tata OSAT package, gazette-verified); J&K NCSS (30–50% capital, 100% GST-linked 10y) + IP-2021-30 state stack quantified, incl. an internal inconsistency in the official PDF; UNNATI registration **CLOSED — oversubscribed** (portal notice: applications exceeded state-allocated funding; verified 2026-07-20); **investinassam.com is squatted** (real portal: eodb.assam.gov.in) |
 
 ## Catalog v2 clusters (layer 09)
 

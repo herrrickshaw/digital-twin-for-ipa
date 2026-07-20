@@ -1,0 +1,130 @@
+{
+ "layer": "canonical_data_model",
+ "built": "2026-07-20",
+ "purpose": "The clean extraction model every twin sweep and refresh maps into. Nine entity types, keyed and linkable; all existing layers are views over these.",
+ "entities": {
+  "OfferingEntity": {
+   "key": "entity_id (slug)",
+   "fields": [
+    "name",
+    "tier: central|state|regulator|psu",
+    "parent (e.g. department->ministry)",
+    "verdict: HAS-INCENTIVES|THIN|N/A|SUPERSEDED",
+    "pib_release_count",
+    "successor_of"
+   ],
+   "source_layers": [
+    "01_ministries_master",
+    "12_state_catalog"
+   ]
+  },
+  "Instrument": {
+   "key": "instrument_id (slug)",
+   "fields": [
+    "name",
+    "offering_entity_id",
+    "instrument_type (capital-subsidy|interest-subsidy|sgst-reimbursement|production-linked|grant|equity|guarantee|licence+mandated-demand|market-instrument|tax-expenditure|assured-offtake|land|regulatory-fast-track)",
+    "quantum (rates/caps/tenures as structured dict)",
+    "stacking_group (which ceilings it counts inside)",
+    "eligibility (thresholds: FCI, jobs, sector, zone)",
+    "status: open|closed|oversubscribed|lapsed|announced-not-operationalized",
+    "window (open_date, close_date, disposal_date)",
+    "verified_on_site",
+    "source_url",
+    "ocr_extracted"
+   ],
+   "source_layers": [
+    "02",
+    "09",
+    "12",
+    "13_flat_instrument_index"
+   ]
+  },
+  "ApplicationWindow": {
+   "key": "(instrument_id, window_no)",
+   "fields": [
+    "opens",
+    "closes",
+    "result: subscribed|oversubscribed|undersubscribed|extended",
+    "evidence (e.g. UNNATI stopped-for-oversubscription notice)"
+   ],
+   "note": "UNNATI 2024 is the type case: formal close 31-Mar-2026 AND stopped early for oversubscription"
+  },
+  "InterlinkageEdge": {
+   "key": "(instrument_a, instrument_b)",
+   "fields": [
+    "relationship: stacks|excludes|boundary|feeds|converges",
+    "legal_anchor (e.g. MeitY FAQ Clause 3.6)",
+    "source_type: OFFICIAL|SECONDARY",
+    "confidence"
+   ],
+   "source_layers": [
+    "10_interlinkages"
+   ]
+  },
+  "BudgetObservation": {
+   "key": "(entity_id, scheme, fy)",
+   "fields": [
+    "BE",
+    "RE",
+    "actual",
+    "utilization_pct",
+    "source (PRS DFG | budget docs)"
+   ],
+   "source_layers": [
+    "11_prs_budget_layer"
+   ]
+  },
+  "Company": {
+   "key": "(ticker, market)",
+   "fields": [
+    "name",
+    "country",
+    "sector (Damodaran industry group)",
+    "focus_sector_map",
+    "profitability_verified",
+    "expansion_signal",
+    "turnover_usd"
+   ],
+   "source_layers": [
+    "06_investor_map"
+   ],
+   "upgrade_path": "Orbis BvD-ID when licensed"
+  },
+  "Pairing": {
+   "key": "(company, instrument)",
+   "fields": [
+    "status: verified|prospective|stalled",
+    "evidence_prids"
+   ],
+   "source_layers": [
+    "07_investor_pairings"
+   ]
+  },
+  "SourceRoute": {
+   "key": "domain",
+   "fields": [
+    "access_method: direct|headless-wp(cms-*.digifootprint)|backend-api|js-shell-needs-browser|pinned-ip|OCR",
+    "health: live|dead|hijacked|login-gated",
+    "last_verified"
+   ],
+   "source_layers": [
+    "all access_issues blocks + memory"
+   ]
+  },
+  "Observation": {
+   "key": "(any_entity_id, field, observed_date)",
+   "fields": [
+    "value",
+    "source_url",
+    "method"
+   ],
+   "note": "append-only; corrections displayed by keeping superseded observations"
+  }
+ },
+ "identity_rules": [
+  "Instrument slugs stable across refreshes; renames recorded as successor_of (LSEM->MPMS, PSI-2019->MIISP-2025, TS-iPASS->TG-iPASS)",
+  "Never merge central instrument and its state top-up -- link with InterlinkageEdge(stacks)",
+  "'not published' is a valid Observation value, not a missing row"
+ ]
+}

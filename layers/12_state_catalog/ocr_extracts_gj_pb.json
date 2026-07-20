@@ -1,0 +1,138 @@
+{
+ "layer": "ocr_extracts_scanned_state_policies",
+ "built": "2026-07-20",
+ "method": "pdftoppm 150dpi -> tesseract 5 (eng) over all pages; 44pp Gujarat brochure + 63pp Punjab gazette. Language check: both documents are English throughout -- low-OCR-yield pages were covers/blanks; the only vernacular content is the Punjabi script inside the Punjab state emblem. No translation required.",
+ "viksit_gujarat_industrial_policy_2026": {
+  "source": "https://ic.gujarat.gov.in/documents/Viksit-Gujarat-Industrial-Policy2026_new.pdf (image-only CorelDRAW export, June 2026)",
+  "structure": "Investor chooses a COMBINATION of capital subsidy + interest subsidy + power tariff within a taluka-graded eFCI ceiling (Category-A talukas = higher rates than Category-B)",
+  "unit_definitions": {
+   "MSME": "GoI revised definition (micro <=2.5cr, small <=25cr, medium <=125cr P&M)",
+   "Large": ">= INR 125 Cr P&M",
+   "Mega": ">= INR 1,000 Cr AND 250 jobs AND thrust sector (each addl 200cr -> +50 jobs)",
+   "Ultra-Mega": ">= INR 10,000 Cr AND 3,000 jobs AND thrust sector (each addl 5,000cr -> +500 jobs)"
+  },
+  "incentive_matrix": {
+   "MSME": {
+    "ceiling": "35% eFCI (Cat-B) / 45% (Cat-A)",
+    "capital": "Micro 25%/35% of eFCI in 1y; Small&Medium 25%/35% over 5y",
+    "interest": "7% on term loan 5y up to 10% eFCI",
+    "power": "INR 1/2 per unit 5y up to 25% eFCI"
+   },
+   "Large_thrust": {
+    "ceiling": "25%/35%",
+    "capital": "15%/25% of eFCI over 8y",
+    "interest": "7% over 8y up to 15%/20% eFCI",
+    "power": "INR 1/2 per unit 8y up to 15%/20%"
+   },
+   "Large_general": {
+    "ceiling": "15%/20%",
+    "capital": "10%/15% over 10y",
+    "interest": "7% over 10y up to 10%/15%",
+    "power": "INR 1/2 per unit 10y up to 10%/15%"
+   },
+   "Mega": {
+    "ceiling": "30%/35%",
+    "capital": "20%/25% over 10y",
+    "interest": "7% over 10y up to 20%/25%",
+    "power": "INR 1/2 per unit 10y up to 20%/25%"
+   },
+   "Ultra_Mega": {
+    "ceiling": "35%/40%",
+    "capital": "25%/30% over 12y",
+    "interest": "7% over 12y up to 20%/25%",
+    "power": "INR 1/2 per unit 12y up to 20%/25%"
+   },
+   "selected_thrust_special": {
+    "sectors": "sports goods & equipment, toys, footwear, robots, drones (+ as notified)",
+    "ceiling": "45%/50%",
+    "capital": "30% of eFCI over 5y (MSME) / 8y (Large) / 10y (Mega) / 12y (Ultra-Mega)"
+   }
+  },
+  "cross_cutting": [
+   "EPF: 100% employer-contribution reimbursement -- 5y MSME, 8y Large-thrust, 10y Large-general/Mega/Ultra-Mega; caps INR 1,800/mo male, 2,500 female, 3,000 specially-abled",
+   "100% electricity-duty exemption (Gujarat Electricity Duty Act 1958)",
+   "100% stamp duty + registration fee reimbursement (Ultra-Mega ONLY)",
+   "SC/ST entrepreneurs (Dr. Babasaheb Ambedkar + Bhagwan Birsa Munda schemes): +5% on overall ceiling"
+  ],
+  "thrust_sectors_21": [
+   "Green energy ecosystem (green H2/ammonia, electrolyzers, RE equipment, battery storage, fuel cells)",
+   "Mobility (auto+components, aviation mfg, space mfg)",
+   "Capital equipment (electrical/industrial/telecom machinery)",
+   "Textiles & apparel (incl. technical textiles)",
+   "Critical mineral processing/refining/extraction, metals, ceramics",
+   "Sustainability (municipal solid/liquid waste recycling equipment)",
+   "Chemicals",
+   "Agro & food processing",
+   "Healthcare (bulk drugs/APIs/KSMs, medical devices, pharma)",
+   "Semiconductor ancillaries (UHP chemicals/gases)",
+   "Nuclear power equipment incl. SMRs",
+   "Vehicle scrapping facilities",
+   "E-waste recycling",
+   "Textile-waste recycling",
+   "Shipping container mfg",
+   "Heavy earth-moving equipment",
+   "Sports goods",
+   "Toys",
+   "Footwear",
+   "Robots",
+   "Drones"
+  ],
+  "rd_centres": {
+   "early_bird_first_5_min_300cr": "50% capital subsidy (building capped 20% of investment) over 5y up to INR 50 Cr/yr; land 25% of allotment price/Jantri reimbursed; power INR 1/unit 5y; payroll subsidy INR 10,000/person/month 3y; IPR 100% up to 10k/filing 10y; patents 75% up to 15L each, 25 patents/10y",
+   "other_min_100cr": "25% capital subsidy up to INR 20 Cr/yr over 5y",
+   "dsir_inhouse": "50% of machinery/equipment/hw/sw cost up to INR 50 Cr"
+  },
+  "startups_women_esg": {
+   "startups": "sustenance INR 25k/mo 1y (30k with woman co-founder; 2y for high-tech/fintech/biotech/green); seed up to 30L (+10L societal impact, +10L high-tech/green; max 50L); interest subsidy additional 1% up to 9%; acceleration 5L; soft skills 1L; cross-border innovation hubs up to INR 1 Cr",
+   "women": "+1% interest subsidy; rental assistance 75% of rent up to 3L p.a. for 5y; Return-to-Industry accelerator; WILC committee",
+   "workforce_housing": "common dormitory/labour/working-women hostel: 80% of project cost up to INR 40 Cr (40% if industry/private-park built; 5km radius qualifies)",
+   "esg": "wastewater recycling (>=70%) 50% up to 75 Cr (else 40% up to 50 Cr); common boiler 40% up to 30 Cr; cleaner production 50%/1 Cr MSME + 25%/2 Cr Large+; ZLD 50%/5 Cr per MLD MSME + 40%/7.5 Cr per MLD Large+"
+  }
+ },
+ "punjab_ibdp_2026": {
+  "source": "https://investpunjab.gov.in/investor-summit/pdfs/Industrial_and_Business_Development_Policy_2026.pdf (gazette 8-Mar-2026; supersedes IBDP 2022)",
+  "structure": "Flexible menu within an OVERALL ceiling; one-time irrevocable choice of eligibility period 10-15y; annual ceiling = (overall - pre-production - stamp duty)/years, unused lapses; absolute cap INR 500 Cr",
+  "classification": {
+   "MSME": "GoI definition by P&M",
+   "Large": "non-MSME",
+   "Mega": "FCI > 500 Cr; IT/ITeS > 250 Cr; first 3 GCCs with >1,000 direct jobs",
+   "zones": "Border districts (Pathankot, Gurdaspur, Amritsar, Tarn Taran, Ferozepur, Fazilka) + Kandi areas + General"
+  },
+  "priority_sectors_9": [
+   "EV manufacturing",
+   "Agri & food processing",
+   "IT/ITeS/GCC",
+   "ESDM & semiconductors",
+   "Defence & aerospace",
+   "Agro-waste/biomass to energy",
+   "Textiles NIC-2025 div 13 (dyeing/finishing only with ZLD)",
+   "Auto & auto components",
+   "Sports goods"
+  ],
+  "overall_ceiling": {
+   "MSME_and_Large": "up to 100% of eligible FCI, max INR 500 Cr",
+   "border_kandi_or_priority_sector": "up to 125% of eligible FCI, max INR 500 Cr",
+   "existing_MSMEs_non_investment": "100% of depreciated original FCI"
+  },
+  "fiscal_heads": {
+   "stamp_duty": "100% exemption/reimbursement on land+building purchase or lease (new + expansion)",
+   "capital_subsidy": "up to 20% of eligible FCI, cap INR 10 Cr, annual instalments over chosen period; modernization: 20% of P&M cap 10 Cr in 10 instalments, once per 5 years",
+   "electricity_duty": "100% exemption for the eligibility period (expansion: incremental consumption only)",
+   "net_sgst": "75% of Net SGST reimbursed for the eligibility period from DoCP (expansion: pro-rata on incremental sales); clawback on reduction/fraud with 18% interest",
+   "employment_generation_subsidy": "INR 3,000/mo male + 4,000/mo female/SC/OBC/BC/PwD per Punjab-resident direct employee for 5y; qualifying floor: FCI >= 25 Cr AND >= 50 direct Punjab jobs",
+   "marketing": "PSIEC Punjab Pavilion subsidized stalls; intl/national trade fair support by unit category",
+   "freight_subsidy": "fiscal assistance to exporting units (5.2.7)",
+   "rd_testing": "R&D/testing facility cost counts as FCI; cluster common R&D 50% up to 2.5 Cr, first 10 clusters FCFS",
+   "zld": "new/expansion: ZLD cost = FCI component; existing standalone 20% up to 10 Cr in 10 instalments; cluster shared ZLD 20% up to 10 Cr; CETP->ZLD upgrade 20% up to 10 Cr (first 10 clusters each)",
+   "paddy_straw_boilers": "50% of cost -- new: INR 1 Cr/8TPH cap 5 Cr; switching: 1.5 Cr/8TPH cap 7.5 Cr; upgrading: 0.75 Cr/8TPH cap 2.5 Cr; OVER AND ABOVE the overall+annual ceilings; commissioning within 3y of notification; +100% stamp duty exemption on straw-storage land",
+   "cgtmse_fee": "100% guarantee-fee reimbursement, cap INR 3 lakh/unit/yr, 7y from DoCP (MSEs)",
+   "nse_emerge": "financial assistance to MSMEs listing on NSE-EMERGE; ZED certification support (silver/gold); first-1,000-units support windows"
+  },
+  "service_sector": "only NEW service units eligible; exception: IT/ITeS and GCC expansions per sectoral policy",
+  "notes": [
+   "Sectoral-policy ceilings prevail and count inside the overall ceiling",
+   "Departments to notify implementing schemes within 30 days of policy notification",
+   "Effective from date of gazette notification"
+  ]
+ }
+}

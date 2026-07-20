@@ -22,12 +22,12 @@
     {
      "name": "Viksit Gujarat Industrial Policy 2026",
      "incentive_type": "umbrella industrial policy (successor)",
-     "what_companies_get": "NOT EXTRACTABLE: the official PDF (18.8 MB, created Jun 2026 in CorelDRAW) has no text layer, so incentive quanta could not be machine-verified. Its presence on the Industries Commissionerate site confirms a 2026 successor policy exists.",
-     "status": "published on official site June 2026",
+     "what_companies_get": "NOW OCR-EXTRACTED (see ocr_extracts_gj_pb.json): taluka-graded choose-your-combination matrix -- MSME ceiling 35/45% eFCI, Large-thrust 25/35%, Mega 30/35%, Ultra-Mega 35/40%, selected-thrust (toys/footwear/robots/drones/sports goods) 45/50%; capital 10-35% eFCI over 5-12y + 7% interest subsidy + INR 1-2/unit power tariff; EPF 100% reimbursement 5-10y; 100% electricity-duty exemption; Ultra-Mega-only 100% stamp duty; 21 thrust sectors incl. nuclear SMR equipment + semiconductor ancillaries; R&D early-bird (first 5, >=300cr) 50% capital up to 50cr/yr; SC/ST +5% ceiling.",
+     "status": "operative -- full incentive schedule now machine-readable via OCR (tesseract, 44pp, English throughout)",
      "application_status": "unknown -- IFP portal modules still reference Aatmanirbhar/IP-2020 schemes",
      "verified_on_site": true,
      "site_url": "https://ic.gujarat.gov.in/documents/Viksit-Gujarat-Industrial-Policy2026_new.pdf",
-     "site_notes": "Image-only PDF; needs OCR or manual reading for details."
+     "site_notes": "Was image-only CorelDRAW export; OCR-extracted 2026-07-20. Structured schedule in layers/12_state_catalog/ocr_extracts_gj_pb.json."
     },
     {
      "name": "Gujarat Textile Policy 2024",

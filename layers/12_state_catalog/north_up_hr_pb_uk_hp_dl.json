@@ -131,12 +131,12 @@
     {
      "name": "Industrial and Business Development Policy 2026 (IBDP 2026)",
      "incentive_type": "Umbrella fiscal-incentive policy (successor to IBDP 2022)",
-     "what_companies_get": "Notified via Punjab Govt Gazette (Extraordinary) 8 March 2026 after Council of Ministers approval 07/03/2026 \u2014 this SUPERSEDES the IBDP 2022 named in the brief. The gazette PDF on investpunjab.gov.in is a 21.8MB scanned document; incentive tables are not machine-readable, so percentages (SGST reimbursement, electricity-duty and stamp-duty exemptions traditionally in the IBDP series) could not be extracted this pass.",
-     "status": "Notified 8 March 2026; in force",
+     "what_companies_get": "NOW OCR-EXTRACTED (see ocr_extracts_gj_pb.json): overall ceiling 100% of FCI (125% in Border/Kandi zones or 9 priority sectors), absolute cap INR 500 Cr; one-time irrevocable 10-15y eligibility period with annual ceiling; heads: 100% stamp-duty exemption, capital subsidy 20% FCI cap 10 Cr, 100% electricity-duty exemption, 75% net-SGST reimbursement, employment subsidy 3,000-4,000/mo per Punjab-resident employee 5y (floor: 25cr FCI + 50 jobs), paddy-straw-boiler 50% subsidies OVER the ceiling, CGTMSE fee 100% reimbursed, cluster R&D/ZLD 20-50% grants; Mega = FCI>500cr (IT/ITeS>250cr; first 3 GCCs>1,000 jobs); service sector new-units-only except IT/GCC.",
+     "status": "Notified 8 March 2026; in force -- full incentive schedule now machine-readable via OCR (tesseract, 63pp English gazette)",
      "application_status": "Invest Punjab single-window portal is live (Angular app); application status unverifiable without login",
      "verified_on_site": true,
      "site_url": "https://investpunjab.gov.in/investor-summit/pdfs/Industrial_and_Business_Development_Policy_2026.pdf",
-     "site_notes": "PDF downloaded and confirmed as the official gazette notification (No. PIU/Industrial & Business Development Policy-2026/898). Only the 2017 and 2026 policy PDFs are discoverable on the domain \u2014 no 2022 document found."
+     "site_notes": "Scanned gazette OCR-extracted 2026-07-20; structured schedule in layers/12_state_catalog/ocr_extracts_gj_pb.json. Only vernacular content is the Punjabi in the state emblem -- no translation needed."
     },
     {
      "name": "Industrial & Business Development Policy 2022 / EV Policy",

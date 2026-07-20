@@ -1,11 +1,14 @@
 {
-  "name": "Digital Twin IPA — auto-refresh",
+  "name": "Digital Twin IPA \u2014 auto-refresh",
   "nodes": [
     {
       "parameters": {
         "rule": {
           "interval": [
-            { "field": "cronExpression", "expression": "17 7 * * *" }
+            {
+              "field": "cronExpression",
+              "expression": "17 7 * * *"
+            }
           ]
         }
       },
@@ -13,7 +16,10 @@
       "name": "Daily 07:17 (PIB)",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
-      "position": [0, 0]
+      "position": [
+        0,
+        0
+      ]
     },
     {
       "parameters": {
@@ -23,13 +29,19 @@
       "name": "refresh_twin.py pib",
       "type": "n8n-nodes-base.executeCommand",
       "typeVersion": 1,
-      "position": [220, 0]
+      "position": [
+        220,
+        0
+      ]
     },
     {
       "parameters": {
         "rule": {
           "interval": [
-            { "field": "cronExpression", "expression": "23 8 * * 1" }
+            {
+              "field": "cronExpression",
+              "expression": "23 8 * * 1"
+            }
           ]
         }
       },
@@ -37,7 +49,10 @@
       "name": "Weekly Mon 08:23",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
-      "position": [0, 220]
+      "position": [
+        0,
+        220
+      ]
     },
     {
       "parameters": {},
@@ -45,7 +60,10 @@
       "name": "Manual run",
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [0, 420]
+      "position": [
+        0,
+        420
+      ]
     },
     {
       "parameters": {
@@ -55,27 +73,40 @@
       "name": "refresh_twin.py weekly",
       "type": "n8n-nodes-base.executeCommand",
       "typeVersion": 1,
-      "position": [220, 320]
+      "position": [
+        220,
+        320
+      ]
     },
     {
       "parameters": {
-        "jsCode": "// Parse refresh output into alerts.\n// CHANGE lines = state transitions (route up/down flips, UNNATI notice edits, new RBI WSS issue).\n// DOWN lines are informational unless newly flipped (those also appear as CHANGE).\nconst out = ($json.stdout || '') + '\\n' + ($json.stderr || '');\nconst lines = out.split('\\n');\nconst changes = lines.filter(l => l.trim().startsWith('CHANGE'));\nconst downs = lines.filter(l => l.trim().startsWith('DOWN'));\nconst unnatiResumed = /registration_stopped=False/.test(out);\nif (unnatiResumed) changes.push('CHANGE UNNATI registration appears RESUMED — verify unnati.dpiit.gov.in immediately');\nreturn [{ json: {\n  hasChanges: changes.length > 0,\n  changes,\n  downs,\n  summary: `twin weekly: ${changes.length} change(s), ${downs.length} portal(s) down`,\n  raw: out.slice(0, 6000)\n}}];"
+        "jsCode": "// Parse refresh output into alerts.\n// CHANGE lines = state transitions (route up/down flips, UNNATI notice edits, new RBI WSS issue).\n// DOWN lines are informational unless newly flipped (those also appear as CHANGE).\nconst out = ($json.stdout || '') + '\\n' + ($json.stderr || '');\nconst lines = out.split('\\n');\nconst changes = lines.filter(l => l.trim().startsWith('CHANGE'));\nconst downs = lines.filter(l => l.trim().startsWith('DOWN'));\nconst unnatiResumed = /registration_stopped=False/.test(out);\nif (unnatiResumed) changes.push('CHANGE UNNATI registration appears RESUMED \u2014 verify unnati.dpiit.gov.in immediately');\nreturn [{ json: {\n  hasChanges: changes.length > 0,\n  changes,\n  downs,\n  summary: `twin weekly: ${changes.length} change(s), ${downs.length} portal(s) down`,\n  raw: out.slice(0, 6000)\n}}];"
       },
       "id": "parse-output",
       "name": "Detect CHANGE lines",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [440, 320]
+      "position": [
+        440,
+        320
+      ]
     },
     {
       "parameters": {
         "conditions": {
-          "options": { "caseSensitive": true, "version": 2 },
+          "options": {
+            "caseSensitive": true,
+            "version": 2
+          },
           "conditions": [
             {
               "leftValue": "={{ $json.hasChanges }}",
               "rightValue": true,
-              "operator": { "type": "boolean", "operation": "true", "singleValue": true }
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
             }
           ],
           "combinator": "and"
@@ -85,7 +116,10 @@
       "name": "Any changes?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
-      "position": [660, 320]
+      "position": [
+        660,
+        320
+      ]
     },
     {
       "parameters": {
@@ -99,7 +133,10 @@
       "name": "Email alert (attach SMTP credential)",
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
-      "position": [880, 220]
+      "position": [
+        880,
+        220
+      ]
     },
     {
       "parameters": {
@@ -109,23 +146,103 @@
       "name": "Commit snapshots",
       "type": "n8n-nodes-base.executeCommand",
       "typeVersion": 1,
-      "position": [880, 420]
+      "position": [
+        880,
+        420
+      ]
     }
   ],
   "connections": {
-    "Daily 07:17 (PIB)": { "main": [[{ "node": "refresh_twin.py pib", "type": "main", "index": 0 }]] },
-    "Weekly Mon 08:23": { "main": [[{ "node": "refresh_twin.py weekly", "type": "main", "index": 0 }]] },
-    "Manual run": { "main": [[{ "node": "refresh_twin.py weekly", "type": "main", "index": 0 }]] },
-    "refresh_twin.py weekly": { "main": [[{ "node": "Detect CHANGE lines", "type": "main", "index": 0 }]] },
-    "Detect CHANGE lines": { "main": [[{ "node": "Any changes?", "type": "main", "index": 0 }]] },
-    "Any changes?": {
+    "Daily 07:17 (PIB)": {
       "main": [
-        [{ "node": "Email alert (attach SMTP credential)", "type": "main", "index": 0 }],
-        [{ "node": "Commit snapshots", "type": "main", "index": 0 }]
+        [
+          {
+            "node": "refresh_twin.py pib",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
-    "Email alert (attach SMTP credential)": { "main": [[{ "node": "Commit snapshots", "type": "main", "index": 0 }]] }
+    "Weekly Mon 08:23": {
+      "main": [
+        [
+          {
+            "node": "refresh_twin.py weekly",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual run": {
+      "main": [
+        [
+          {
+            "node": "refresh_twin.py weekly",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "refresh_twin.py weekly": {
+      "main": [
+        [
+          {
+            "node": "Detect CHANGE lines",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Detect CHANGE lines": {
+      "main": [
+        [
+          {
+            "node": "Any changes?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Any changes?": {
+      "main": [
+        [
+          {
+            "node": "Email alert (attach SMTP credential)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Commit snapshots",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Email alert (attach SMTP credential)": {
+      "main": [
+        [
+          {
+            "node": "Commit snapshots",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
   },
-  "settings": { "executionOrder": "v1", "timezone": "Asia/Kolkata" },
-  "pinData": {}
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata"
+  },
+  "pinData": {},
+  "id": "TwinRefreshIPA001",
+  "active": false
 }

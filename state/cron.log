@@ -1,0 +1,12 @@
+=== manual test: pib job Mon Jul 20 19:59:14 IST 2026 ===
+  2026-07-20   51 releases
+indexed 51 release rows 2026-07-20 → 2026-07-20
+=== manual test: weekly job Mon Jul 20 19:59:24 IST 2026 ===
+routes: 64 checked, 4 down -> /Users/umashankar/digital-twin-for-ipa/state/routes_2026-07-20.json
+  DOWN DSIR CMS (000) https://cms-dsir.digifootprint.gov.in/wp-json/wp/v2/
+  DOWN BIRAC (000) https://birac.nic.in/cfp.php
+  DOWN UP Nivesh Mitra (000) https://niveshmitra.up.nic.in
+  DOWN WB Silpasathi (000) https://silpasathi.wb.gov.in/msme_Incentives
+unnati: http=200, registration_stopped=True -> /Users/umashankar/digital-twin-for-ipa/state/unnati_2026-07-20.json
+nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-07-20.json
+rbi: latest WSS issue = Jul 20, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-07-20.json

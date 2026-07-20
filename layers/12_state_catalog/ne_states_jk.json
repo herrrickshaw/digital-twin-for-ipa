@@ -1,0 +1,336 @@
+{
+ "cluster": "ne_states_jk",
+ "swept": "2026-07-20",
+ "states": [
+  {
+   "state": "Assam",
+   "sites_used": [
+    "https://industriescom.assam.gov.in",
+    "https://eodb.assam.gov.in (real single-window / EODB portal)",
+    "https://eodb.assam.gov.in/site/policy_scheme_guidelines",
+    "https://eodb.assam.gov.in/site/government_incentives"
+   ],
+   "policies": [
+    {
+     "name": "Industrial and Investment Policy of Assam, 2019 (IIPA 2019)",
+     "incentive_type": "Multi-head fiscal incentive package",
+     "what_companies_get": "SGST reimbursement; power subsidy; generating-set subsidy; stamp duty reimbursement; technology-transfer & quality-certification assistance; interest subsidy on working-capital loans; financial assistance for MSMEs listing on stock exchanges; environmental-compliance assistance; incentives to private-sector infrastructure developers. Percentages/caps are in the operational guidelines PDF (hosted on both official sites), not restated on the incentive page.",
+     "status": "In force; no 2025 successor policy found on either official site (EODB site last updated 01-Feb-2025; Advantage Assam 2.0 summit Feb 2025 referenced but no new umbrella policy posted)",
+     "application_status": "Claims via EODB single-window investor login; 'Know Your Incentives' wizard (eodbmis.assam.gov.in/kyi_incentives/kyi) and a public 'Incentives Granted Dashboard' are live",
+     "verified_on_site": true,
+     "site_url": "https://eodb.assam.gov.in/site/government_incentives",
+     "site_notes": "Policy PDF at eodb.assam.gov.in/storage/documents/industrial_and_investment_policy_of_assam_2019.pdf; operational guidelines also on industriescom.assam.gov.in/documents-detail/operational-guidelines-for-industrial-and-investment-policy-of-assam-2019"
+    },
+    {
+     "name": "Assam Industrial & Investment Policy (Amendment) 2023 \u2014 Mega Investment customized package",
+     "incentive_type": "Bespoke/customized incentives for mega projects",
+     "what_companies_get": "For investments of min Rs 100 crore: capital investment/production-linked subsidy, power-tariff subsidy, land subsidy, subsidy on drawl of power lines, stamp duty reimbursement, employment/payroll subsidy, road-connectivity assistance, utility support \u2014 negotiated case-by-case",
+     "status": "In force (amendment to IIPA 2019)",
+     "application_status": "Via EODB single window; case-by-case approval",
+     "verified_on_site": true,
+     "site_url": "https://eodb.assam.gov.in/site/government_incentives",
+     "site_notes": "PDF: eodb.assam.gov.in/storage/documents/24-25/1735540879218-2-Assam-Industrial-and-Investment-Policy-(Amendment)-2023.pdf; AIIDC page also linked"
+    },
+    {
+     "name": "Assam Electronics (Semiconductor etc.) Policy 2023",
+     "incentive_type": "State top-up package for ISM-approved semiconductor/electronics projects (the state package around Tata's OSAT at Jagiroad/Morigaon)",
+     "what_companies_get": "Capital subsidy = ADDITIONAL 40% of the GoI (India Semiconductor Mission) capex assistance, disbursed 20%/yr over 5 years (adjustable 18-22%/yr); land at nominal price with freehold transfer case-by-case; 100% stamp duty exemption on govt/AIDC/AIIDC-allotted land; power-tariff incentive up to 50% for 10 years from COD; water at Rs 5/cubic meter for first 10 years (further up to 100% water-tariff subsidy case-by-case); SGST reimbursement up to max 15 years case-by-case; payroll assistance 20% of net wages for local employees; further customized incentives (green energy, accommodation, connectivity) via Empowered Committee with Cabinet approval. Eligible: ISM-qualified fabs (any node), display fabs (TFT-LCD Gen-8+, AMOLED Gen-6+), compound semi/silicon photonics/sensor fabs, ATMP/OSAT. Commissioning window 3y MSME / 5y large",
+     "status": "Notified 29-08-2023 (ECF No. 358679/1), in force 5 years from notification",
+     "application_status": "Via Empowered Committee chaired by Minister IC&PE; no separate portal \u2014 routed through single window",
+     "verified_on_site": true,
+     "site_url": "https://eodb.assam.gov.in/storage/documents/24-25/1735540795220-1-Assam_electronics_semiconductor_etc_231211_101812.pdf",
+     "site_notes": "Full 15-page gazette PDF read; EODB semiconductor page (eodb.assam.gov.in/site/semiconductor_industries) confirms Tata TSAT Jagiroad context (Rs 27,000 cr, 48M chips/day) but the page itself describes no incentives"
+    },
+    {
+     "name": "Assam Ethanol Production Promotion Policy 2021",
+     "incentive_type": "Sector fiscal incentives (biofuel)",
+     "what_companies_get": "Full incentive schedule in policy PDF hosted on EODB portal (not restated inline on the page); listed as an active sector policy",
+     "status": "In force, listed among current policies",
+     "application_status": "Via EODB single window",
+     "verified_on_site": true,
+     "site_url": "https://eodb.assam.gov.in/storage/documents/24-25/1735541117242-5-Assam-Ethanol-Production-Promotion-Policy-2021.pdf",
+     "site_notes": "PDF verified present; contents not extracted in this pass"
+    },
+    {
+     "name": "Assam Bamboo and Cane Policy 2019 & 2021 (+ National Bamboo Mission assistance)",
+     "incentive_type": "Sector policy + central-scheme financial assistance",
+     "what_companies_get": "Bamboo & Cane Policy PDFs (2019 and 2021 versions) on EODB; separate 'Financial assistance under National Bamboo Mission' application track on industriescom.assam.gov.in",
+     "status": "In force (2021 version listed as validated 15-Jul-2021)",
+     "application_status": "NBM assistance applications via industriescom.assam.gov.in information-services section",
+     "verified_on_site": true,
+     "site_url": "https://eodb.assam.gov.in/storage/documents/assam_bamboo_and_cane_policy_2021.pdf",
+     "site_notes": "Also industriescom.assam.gov.in/information-services/financial-assistance-under-national-bamboo-mission"
+    },
+    {
+     "name": "Assam Startup Policy 2018 (and 2017 predecessor)",
+     "incentive_type": "Startup support",
+     "what_companies_get": "Policy PDF on EODB; dedicated 'Assam Startup' information hub linked from portal",
+     "status": "Listed as current (2018) on policy page",
+     "application_status": "Via Assam Startup hub (eodb.assam.gov.in/site/startup_assam_information_hub)",
+     "verified_on_site": true,
+     "site_url": "https://eodb.assam.gov.in/storage/documents/24-25/1735541270071-7-Assam-Startup-Policy-2018.pdf",
+     "site_notes": "Both 2017 and 2018 PDFs hosted"
+    },
+    {
+     "name": "UNNATI 2024 (central, cross-referenced by Assam)",
+     "incentive_type": "Central capital/interest/manufacturing-services incentives",
+     "what_companies_get": "Capital Investment Incentive (CII), Capital Interest Subvention (CIS), Manufacturing & Services Linked Incentive (MSLI) \u2014 Assam's incentive page presents it alongside state incentives and links the DPIIT gazette",
+     "status": "Active; NEIDS 2017 guidelines also still hosted on industriescom.assam.gov.in",
+     "application_status": "Central portal (unnati.dpiit.gov.in)",
+     "verified_on_site": true,
+     "site_url": "https://eodb.assam.gov.in/site/government_incentives",
+     "site_notes": "Confirms the state cross-references UNNATI as complement to IIPA 2019/Amendment 2023; no explicit Assam state top-up to UNNATI stated"
+    }
+   ]
+  },
+  {
+   "state": "Meghalaya",
+   "sites_used": [
+    "https://megindustry.gov.in",
+    "https://megindustry.gov.in/ind_policy.html"
+   ],
+   "policies": [
+    {
+     "name": "Meghalaya Industrial & Investment Promotion Policy, 2024 (MIIPP 2024)",
+     "incentive_type": "Umbrella state industrial incentive policy",
+     "what_companies_get": "Current policy PDF (1.44 MB) hosted; incentive schedule inside PDF, not restated on page (brief pass \u2014 not extracted)",
+     "status": "Current policy, supersedes MIIPP 2012/MIIPS 2016",
+     "application_status": "Single Window Agency listed under Citizen Corners",
+     "verified_on_site": true,
+     "site_url": "https://megindustry.gov.in/policy/MIIPP-2024.pdf",
+     "site_notes": "Older instruments also hosted: MIIPS 2016, MIIPP 2012, Startup Policy 2018, MSE Procurement Preference Policy 2020"
+    },
+    {
+     "name": "UNNATI 2024 implementation (state steering committee)",
+     "incentive_type": "Central scheme, state-administered screening",
+     "what_companies_get": "State-level Steering Committee actively processing units \u2014 homepage carries 'Minutes of the 8th Meeting of the Steering Committee under UNNATI, 2024' plus public notice and list of units",
+     "status": "Actively implemented",
+     "application_status": "Registration via central UNNATI portal; state steering committee vetting live",
+     "verified_on_site": true,
+     "site_url": "https://megindustry.gov.in/",
+     "site_notes": "UNNATI is the dominant incentive instrument visible; no state top-up scheme found on site"
+    }
+   ]
+  },
+  {
+   "state": "Tripura",
+   "sites_used": [
+    "https://industries.tripura.gov.in",
+    "https://industries.tripura.gov.in/incentives"
+   ],
+   "policies": [
+    {
+     "name": "Tripura Industrial Investment Promotion Incentive Scheme (TIIPIS), 2017",
+     "incentive_type": "State capital/fiscal incentive scheme",
+     "what_companies_get": "Incentive Eligibility Certificate regime; a live notification on the homepage covers submission of offline claims under 'TIIPIS, 17' \u2014 scheme is being administered; detailed rates are in scheme PDFs not rendered inline",
+     "status": "Active (claims notification current)",
+     "application_status": "Claims for Incentive Eligibility Certificate accepted (offline claim notification posted); EODB 'SWAAGAT' single-window section on site",
+     "verified_on_site": true,
+     "site_url": "https://industries.tripura.gov.in/incentives",
+     "site_notes": "Incentives section splits Central Incentives (links to ncog.gov.in/neind NE incentive portal) vs State Incentives; state-incentives page rendered as navigation shell in fetch \u2014 detailed schedule not extractable without JS"
+    },
+    {
+     "name": "Land Allotment Policy + Land Allotment Rates",
+     "incentive_type": "Industrial land",
+     "what_companies_get": "Allotment in Industrial Growth Centres, Industrial/Bamboo/Export Promotion/Food/Rubber parks and SEZ at published rates",
+     "status": "Active",
+     "application_status": "Via department; SWAAGAT single window for approvals",
+     "verified_on_site": true,
+     "site_url": "https://industries.tripura.gov.in/land-allotment-policy",
+     "site_notes": "Sector pages: rubber, bamboo, food processing, natural gas, tea listed as thrust sectors"
+    }
+   ]
+  },
+  {
+   "state": "Mizoram",
+   "sites_used": [
+    "https://industries.mizoram.gov.in",
+    "https://industries.mizoram.gov.in/page/state-government-incentives"
+   ],
+   "policies": [
+    {
+     "name": "The Industrial and Investment Policy of Mizoram 2025",
+     "incentive_type": "New umbrella state industrial policy",
+     "what_companies_get": "Newly listed 2025 policy (separate 'The Industrial Policy of Mizoram 2025' also listed, one marked draft in URL); detail schedule in policy pages \u2014 brief pass, not extracted",
+     "status": "Notified/listed 2025 alongside legacy Mizoram Industrial Policy 2012",
+     "application_status": "Via Commerce & Industries Dept / DCICs",
+     "verified_on_site": true,
+     "site_url": "https://industries.mizoram.gov.in/page/the-industrial-and-investment-policy-of-mizoram-2025",
+     "site_notes": "Also: Mizoram Procurement Preference Policy for MSEs 2025, State Logistics Policy 2022, Mizoram EoDB Rules 2023"
+    },
+    {
+     "name": "State incentive subsidies under Mizoram Industrial Policy 2012 (still published schedule)",
+     "incentive_type": "MSME subsidies",
+     "what_companies_get": "Project report cost subsidy: 90% micro (cap Rs 5,000), 75% small (cap Rs 25,000), 50% medium (cap Rs 50,000); land subsidy for units in notified industrial areas; further heads listed on page. Application forms Rs 50 each from directorate",
+     "status": "Published as current 'State Government Incentives' page (2012-policy schedule; likely to be superseded by 2025 policy)",
+     "application_status": "Prescribed paper forms via directorate",
+     "verified_on_site": true,
+     "site_url": "https://industries.mizoram.gov.in/page/state-government-incentives",
+     "site_notes": "State handholding scheme 'Bana Kaih' and SEDP also active; UNNATI 2024 overview + Model DPR pages hosted (central scheme cross-referenced, no state top-up stated)"
+    }
+   ]
+  },
+  {
+   "state": "Nagaland",
+   "sites_used": [
+    "https://industry.nagaland.gov.in",
+    "https://industry.nagaland.gov.in/unnati/"
+   ],
+   "policies": [
+    {
+     "name": "UNNATI 2024 (state implementation)",
+     "incentive_type": "Central capital/interest/production incentives \u2014 the dominant instrument",
+     "what_companies_get": "Subsidies and interest assistance under UNNATI; min investment Rs 1 crore (manufacturing) / Rs 50 lakh (services); scheme duration 10 years + 8 years for committed liabilities; Rs 10,037 crore total NE outlay; NEDFi and SIDBI nodal disbursal agencies; 18 model DPRs published by the state (fish/dry-fruit/rubber processing, cold storage, medical devices, resorts, film/VFX studios, EV charging, etc.). Registration window 09-Mar-2024 to 31-Mar-2026",
+     "status": "Active, FY2024-25 to FY2033-34",
+     "application_status": "Registration open until 31-Mar-2026 via central portal; state provides model DPRs",
+     "verified_on_site": true,
+     "site_url": "https://industry.nagaland.gov.in/unnati/",
+     "site_notes": "Dedicated UNNATI page verified; site has Policies & Acts section but no new state-specific incentive scheme surfaced in brief pass. Note: dic.nagaland.gov.in does not exist \u2014 correct domain is industry.nagaland.gov.in"
+    }
+   ]
+  },
+  {
+   "state": "Manipur",
+   "sites_used": [
+    "https://dcimanipur.gov.in (unreachable at verification time)"
+   ],
+   "policies": [
+    {
+     "name": "Industrial and Investment Policy of Manipur, 2013 (and Industrial Policy 1996)",
+     "incentive_type": "State industrial policy",
+     "what_companies_get": "Policy PDFs are indexed on dcimanipur.gov.in (search-verified paths /media/filer_public/...), but the site refused connections during verification \u2014 contents not confirmed live",
+     "status": "Unverified \u2014 site down",
+     "application_status": "Unknown",
+     "verified_on_site": false,
+     "site_url": "https://dcimanipur.gov.in/en/acts-rules/",
+     "site_notes": "DNS resolves to NIC IP 164.100.234.15 but HTTPS connection refused and HTTP silent; dtci.manipur.gov.in is NXDOMAIN. Manipur is a UNNATI 2024 covered state per other NE state sites"
+    }
+   ]
+  },
+  {
+   "state": "Arunachal Pradesh",
+   "sites_used": [
+    "https://industries.arunachal.gov.in (JS shell)"
+   ],
+   "policies": [
+    {
+     "name": "None verifiable",
+     "incentive_type": "n/a",
+     "what_companies_get": "Site is a React/Vite single-page app returning an empty HTML shell to non-JS clients; no policy content extractable. Covered by UNNATI 2024 (per DPIIT gazette and other NE state sites)",
+     "status": "Unverified",
+     "application_status": "Unknown",
+     "verified_on_site": false,
+     "site_url": "https://industries.arunachal.gov.in/",
+     "site_notes": "Not WordPress, so the /cms/wp-json headless-WP probe is inapplicable; would need a rendering browser"
+    }
+   ]
+  },
+  {
+   "state": "Sikkim",
+   "sites_used": [
+    "https://industries.sikkim.gov.in"
+   ],
+   "policies": [
+    {
+     "name": "Schemes & Guidelines (central schemes only) + UNNATI promotion",
+     "incentive_type": "Central scheme facilitation",
+     "what_companies_get": "Site lists ODOP, SC-ST Hub, MSE-CDP guidelines and industrial licence application/renewal; news items show active UNNATI 2024 awareness programmes. NO state-specific incentive scheme for the pharma manufacturing hub found on the site beyond legacy NEIDS/central instruments \u2014 'Invest In Sikkim' page exists but no state top-up scheme is published",
+     "status": "Central schemes active; no state incentive scheme verified",
+     "application_status": "Industrial licence application/renewal online via site",
+     "verified_on_site": true,
+     "site_url": "https://industries.sikkim.gov.in/visitors/schemes",
+     "site_notes": "Answer to brief question: no state pharma incentive beyond legacy NEIDS/central schemes is visible on the official site"
+    }
+   ]
+  },
+  {
+   "state": "Jammu & Kashmir",
+   "sites_used": [
+    "https://singlewindow.jk.gov.in (live, rich)",
+    "https://singlewindow.jk.gov.in/assets/pdfs/J-and-K-Policies-Sector-and-Incentives.pdf",
+    "jkindustriescommerce.nic.in (unreachable)"
+   ],
+   "policies": [
+    {
+     "name": "New Central Sector Scheme (NCSS) 2021 (F.No.1(1)/2020-SSS, DPIIT-administered, applied via J&K)",
+     "incentive_type": "Capital investment + interest subvention + GST-linked incentive",
+     "what_companies_get": "Capital Investment Incentive: 30% in Zone A (max Rs 5 cr), 50% in Zone B (max Rs 7.5 cr) \u2014 for new units and existing units undertaking substantial expansion with P&M investment up to Rs 50 cr (mfg) or building/durable assets >= Rs 1 cr (services). Capital Interest Subvention: 6% p.a. for max 7 consecutive years on term-loan principal up to Rs 500 cr. GST-Linked Incentive: 100% of gross GST paid (cash + ITC) for max 10 years from commercial production, capped at 300% of P&M investment. Working Capital Interest Subvention for existing units: stated as 5% for 5 years max Rs 1 cr on one slide and 5.5% for 5 years max Rs 5 cr on the scheme table \u2014 the official PDF is internally inconsistent on this head",
+     "status": "Listed as notified 2021 and presented as the flagship incentive on the live portal; scheme validity to 2037 per DPIIT gazette (registration-window status not restated on this portal \u2014 not verified here)",
+     "application_status": "Portal's 'Know Your Incentive' wizard and Incentive Calculator are live and map applicants to applicable incentives",
+     "verified_on_site": true,
+     "site_url": "https://singlewindow.jk.gov.in/assets/pdfs/J-and-K-Policies-Sector-and-Incentives.pdf",
+     "site_notes": "The Rs 28,400 cr outlay from the brief is not stated in the portal PDF pages read; zone A/B lists linked in-document"
+    },
+    {
+     "name": "Jammu and Kashmir Industrial Policy 2021-30 (GO 117-IND, effective 01.04.2021, 10 years)",
+     "incentive_type": "State fiscal incentive package (stacked on NCSS)",
+     "what_companies_get": "100% stamp duty and court-fee exemption for new units; 100% subsidy on new DG sets 10KW-2000KW (cap Rs 40 lakh Zone A / Rs 45 lakh Zone B); 30% on quality certification (max Rs 2 lakh); 25% on automation (max Rs 2 lakh, if not claimed under CII); 60% on pollution-control devices (max Rs 50 lakh); 50% on green & environment protection initiatives; turnover incentive for existing units for 5 years \u2014 3% micro (max Rs 10 lakh), 2% small/medium/large (max Rs 50 lakh); 100% net SGST reimbursement for 10 years from 01.04.2021. Applies to all industries incl. commercial and institutional units",
+     "status": "In force to 2031",
+     "application_status": "Incentive applications through the single-window Know Your Incentive flow tied to 'Incentives under Jammu and Kashmir Industrial Policy, 2021-30'",
+     "verified_on_site": true,
+     "site_url": "https://singlewindow.jk.gov.in/know_your_incentive",
+     "site_notes": "KYI wizard collects unit type, P&M slab, turnover slab, district/block/zone (A/B), sector, negative-list check, then lists applicable subsidies with SOP and Apply links"
+    },
+    {
+     "name": "J&K Industrial Land Allotment Policy 2021 (GO 65-IND, 24.03.2021, 10 years)",
+     "incentive_type": "Industrial land on long lease",
+     "what_companies_get": "Land in industrial estates on 40-year lease extendible to 99 years; DPR appraisal within 30 days; application fees Rs 10,000 (<1 acre), Rs 25,000 (1-5 acres), Rs 50,000 (>5 acres); allotment committees by project size \u2014 Divisional (<Rs 50 cr), High Level (Rs 50-200 cr), Apex (>Rs 200 cr); online allotment cycle 75 days; 100% land premium payable within 60 days via portal",
+     "status": "Actively administered \u2014 portal carries High Level Land Allotment Committee minutes (May 2026), relocation lists (Jun 2026), provisional merit lists for Jammu and Kashmir divisions (Apr 2026)",
+     "application_status": "Live: land bank, GIS land bank, MIS land application, private-land requisition dashboards all online",
+     "verified_on_site": true,
+     "site_url": "https://singlewindow.jk.gov.in/land_bank",
+     "site_notes": "Brief's 'private industrial estate policy' as a named document was not found; portal does have Private Land Bank / Land Requisition dashboards (singlewindow.jk.gov.in/privateLandDashboard/privateLandBank)"
+    },
+    {
+     "name": "J&K IT/ITeS Policy 2020 (GO 41-JK(ITD), effective 21.08.2020, 10 years)",
+     "incentive_type": "Sector incentives (IT/ITeS/ESDM, min 15 employees)",
+     "what_companies_get": "25% lease-rental reimbursement in govt IT parks (max Rs 10 lakh/yr for 5 yrs); FAR relaxation up to 50% in IT parks / 25% elsewhere; 50% technology-acquisition reimbursement (max Rs 1 cr once in 5 yrs); 25% bandwidth subsidy (max Rs 2 lakh/yr); recruitment assistance Rs 26,000 per employee/yr (min 50 new hires, max 500/yr, for 5 yrs); patent-filing and 30% quality-certificate reimbursement (max Rs 2 lakh); industry status; first-year inspection exemption; 15% plug-and-play space reserved for women entrepreneurs",
+     "status": "In force to 2030; JaKeGA is registering authority",
+     "application_status": "Via single window / IT Department",
+     "verified_on_site": true,
+     "site_url": "https://singlewindow.jk.gov.in/assets/pdfs/J-and-K-Policies-Sector-and-Incentives.pdf",
+     "site_notes": ""
+    },
+    {
+     "name": "J&K Film Policy 2021",
+     "incentive_type": "Production fiscal incentive",
+     "what_companies_get": "Fiscal incentive up to Rs 2 crore per film/TV show/web series/documentary; no location charges; single-window shooting clearances; film-city development",
+     "status": "Effective 05.08.2021 till 2026",
+     "application_status": "Film Shooting Subsidy Calculator live on portal",
+     "verified_on_site": true,
+     "site_url": "https://singlewindow.jk.gov.in/",
+     "site_notes": ""
+    },
+    {
+     "name": "Sector policies: Poultry Policy 2020; Wool Processing, Handloom & Handicrafts Policy 2020; Housing/Township Policy 2020",
+     "incentive_type": "Sector packages",
+     "what_companies_get": "Poultry (10 yrs from 11.03.2020): 30% capital investment incentive max Rs 50 lakh; 100% DG-set subsidy max Rs 4.5 lakh; 3% working-capital interest incentive 5 yrs on expansion; 100% P&M insurance-premium reimbursement 5 yrs; 50% incinerator subsidy max Rs 1 lakh. Wool/Handloom/Handicraft: 10% export subsidy; one-time working-capital subsidy 10% (max Rs 5 lakh); 50% e-platform marketing support; artisan credit enhancements. Housing/Township: compensatory FAR 100% for EWS build-up, land-use conversion and fee exemptions for developers",
+     "status": "All 10-year policies from 2020, in force",
+     "application_status": "Via respective departments through single window",
+     "verified_on_site": true,
+     "site_url": "https://singlewindow.jk.gov.in/assets/pdfs/J-and-K-Policies-Sector-and-Incentives.pdf",
+     "site_notes": ""
+    }
+   ]
+  }
+ ],
+ "site_access_issues": [
+  "investinassam.com is NOT a government site \u2014 the domain has been squatted/expired and now hosts an unrelated internet-safety blog with online-gambling links. The real Assam investment single-window is eodb.assam.gov.in.",
+  "jkindustriescommerce.nic.in: unreachable (no HTTP/HTTPS response) \u2014 all J&K verification done via singlewindow.jk.gov.in instead.",
+  "dcimanipur.gov.in (correct Manipur dept domain per search): DNS resolves to NIC 164.100.234.15 but connection refused on 443 and silent on 80 at verification time; Manipur entries therefore unverified. dtci.manipur.gov.in and commerceandindustries.mn.gov.in are NXDOMAIN.",
+  "dic.nagaland.gov.in and industries.nagaland.gov.in are NXDOMAIN; the live official domain is industry.nagaland.gov.in.",
+  "industries.arunachal.gov.in serves a React/Vite JS shell with no server-rendered content; not WordPress so the /cms/wp-json headless probe is inapplicable \u2014 no policy content extractable without a rendering browser.",
+  "industriescom.assam.gov.in/portlets/industrial-policies returns 404 (page moved); policy documents live under /documents-detail/ paths and on eodb.assam.gov.in instead.",
+  "Tripura industries.tripura.gov.in/state-incentives renders as a navigation shell to curl; detailed state incentive schedule sits in JS-loaded subpages/PDFs.",
+  "dipr.sikkim.gov.in: no response (industries.sikkim.gov.in works).",
+  "J&K portal internal inconsistency: NCSS Working Capital Interest Subvention stated as 5% / max Rs 1 cr on the highlights slide but 5.5% / max Rs 5 cr in 5 years on the scheme table of the same official PDF."
+ ],
+ "schemes_found_on_site_not_in_brief": [
+  "Assam: Agarwood Promotion Policy 2020, Handicraft Policy 2022, Logistics & Warehousing Policy 2022, Biotechnology Policy 2022, Tourism Policy 2022, Renewable Energy Policy 2022, Electric Vehicle Policy 2021 (+2021 operational guidelines), Poultry Sector Commercialization Policy 2024, Agroforestry Policy 2024, State Township Policy 2023, Vehicle Scrappage Policy 2022, Sugar Policy, IT Policy, Export & Logistics Policy 2019, MSME Facilitation Act 2020, 'Scheme for incentives to industrial units for local employment generation', Credit Linked Fiscal Incentive, Freight Subsidy Scheme, Margin Money Grant",
+  "Assam Amendment 2023 mega-investment customized package (min Rs 100 cr) \u2014 bespoke negotiated incentives beyond the 2019 policy schedule",
+  "Mizoram: 'Bana Kaih' state handholding scheme and SEDP; Mizoram Procurement Preference Policy for MSEs 2025; State Logistics Policy 2022",
+  "Meghalaya: MSE Procurement Preference Policy 2020; Meghalaya Startup Policy 2018",
+  "J&K: IT/ITeS Policy 2020 (recruitment assistance Rs 26k/employee/yr up to 500), Film Policy 2021 (up to Rs 2 cr per production, live subsidy calculator), Poultry Policy 2020, Wool Processing/Handloom/Handicrafts Policy 2020, Housing & Township Policy 2020, and a Private Land Bank / land-requisition mechanism on the single window",
+  "Nagaland: 18 state-published Model DPRs to help applicants into UNNATI (incl. medical devices, cold chain, EV charging, film/VFX)"
+ ]
+}

@@ -1,0 +1,264 @@
+{
+ "cluster": "central_east_mp_cg_od_wb_jh_br",
+ "swept": "2026-07-20",
+ "states": [
+  {
+   "state": "MADHYA PRADESH",
+   "sites_used": [
+    "invest.mp.gov.in (WordPress content pages + sws.invest.mp.gov.in React single-window shell)",
+    "mpidc.co.in (DOWN, HTTP 522)"
+   ],
+   "policies": [
+    {
+     "name": "MP Industrial Promotion Policy 2025 + MP Investment Promotion Scheme 2025",
+     "incentive_type": "Capital-linked cash assistance (BIPA) + multipliers + sector add-ons + customized mega packages",
+     "what_companies_get": "Basic Investment Promotion Assistance (BIPA) of 40% down to 10% of Eligible Fixed Capital Investment on a published sliding formula (40% of EFCI up to Rs 50 Cr, tapering; hard cap Rs 200 Cr), paid in 7 equal annual instalments. Yearly BIPA is scaled by multipliers: Gross Supply Multiple (production >=40% of installed capacity yr-1; 75% of peak thereafter), Export Multiple 1.0-1.3 (ramps between 25% and 75% direct exports; fixed 1.0 in SEZs), Employment Multiple. EFCI add-ins: in-house R&D capped at 40% of P&M (pharma/biotech 50% incl. building), captive renewable power up to 50% of cost capped at 20% of P&M (needs >=51% self-consumption), energy-saving devices up to 20%. Separate heads: Green Industrialisation Assistance, Infrastructure Development Assistance, IPR/organic/quality-certification assistance, capital subsidy on testing facility (pharma/biotech/medical devices), cost of international technology transfer, assistance for units bringing FDI >26%. CCIP (CM-chaired cabinet committee) can sanction customized packages beyond policy for Mega units only.",
+     "status": "In force \u2014 policy PDF (Feb 2025) plus implementing Scheme notification (Jul 2025) both on portal",
+     "application_status": "Open \u2014 incentive application templates (new/expansion/review/appeal), SOP, checklist and offline calculators for IPP-2014 and IPP-2025 live on /ccip-and-incentives/; sanction orders published through Jul 2025",
+     "verified_on_site": true,
+     "site_url": "https://invest.mp.gov.in/policy-acts-rules/ ; https://invest.mp.gov.in/wp-content/uploads/2025/02/IPP_2025_Policy.pdf ; https://invest.mp.gov.in/wp-content/uploads/2025/07/Notification-with-IPP-Scheme-2025.pdf ; https://invest.mp.gov.in/ccip-and-incentives/",
+     "site_notes": "Root invest.mp.gov.in redirects to sws.invest.mp.gov.in (JS shell), but the WordPress pages /policy-acts-rules/ and /ccip-and-incentives/ serve full content to curl. BIPA formula and multiplier details extracted from the IPP 2025 PDF itself (pdftotext). Historic CCIP sanction orders (Trident, UltraTech, P&G, Pepsico, BPCL Bina etc.) published on-site \u2014 real disbursal trail."
+    },
+    {
+     "name": "MP Electric Vehicle (EV) Policy 2025",
+     "incentive_type": "Sectoral (EV manufacturing/adoption)",
+     "what_companies_get": "Not extracted \u2014 full policy PDF verified present on portal (MP-EV-Policy-2025_FINAL, Feb 2025)",
+     "status": "In force (2025 policy on official policy page)",
+     "application_status": "Not stated on page",
+     "verified_on_site": true,
+     "site_url": "https://invest.mp.gov.in/wp-content/uploads/2025/02/MP-EV-Policy-2025_FINAL-1.pdf",
+     "site_notes": "PDF existence and placement on official policy list verified; contents not read (fetch budget)."
+    },
+    {
+     "name": "MP Semiconductor Policy 2025",
+     "incentive_type": "Sectoral (semiconductor)",
+     "what_companies_get": "Not extracted \u2014 policy PDF verified present (Feb 2025)",
+     "status": "In force",
+     "application_status": "Not stated on page",
+     "verified_on_site": true,
+     "site_url": "https://invest.mp.gov.in/wp-content/uploads/2025/02/Semiconductor-Policy-2025_compressed.pdf",
+     "site_notes": "Listed on official Policy, Acts & Rules page."
+    },
+    {
+     "name": "MP Drone Promotion and Usage Policy 2025",
+     "incentive_type": "Sectoral (drones)",
+     "what_companies_get": "Not extracted \u2014 policy PDF verified present (Feb 2025)",
+     "status": "In force",
+     "application_status": "Not stated on page",
+     "verified_on_site": true,
+     "site_url": "https://invest.mp.gov.in/wp-content/uploads/2025/02/Drone-Policy-2025-1.pdf",
+     "site_notes": "Brief's 'Space policy' NOT found on the policy page; only Drone policy present."
+    },
+    {
+     "name": "GIS-2025 (Global Investors Summit) announced packages",
+     "incentive_type": "Summit packages",
+     "what_companies_get": "Not found as a distinct scheme on the portal; the Feb-2025 policy wave (IPP/EV/Semiconductor/Drone/GCC/AVGC/Energy etc.) is evidently the GIS-2025 output, but no page labels packages as GIS commitments",
+     "status": "Not verifiable as a separate instrument",
+     "application_status": "n/a",
+     "verified_on_site": false,
+     "site_url": "https://invest.mp.gov.in/policy-acts-rules/",
+     "site_notes": "Portal carries only event/roadshow registration forms (Dubai, Madrid, Barcelona, Pune) \u2014 no GIS package catalogue."
+    }
+   ]
+  },
+  {
+   "state": "CHHATTISGARH",
+   "sites_used": [
+    "invest.cg.gov.in (live)",
+    "industries.cg.gov.in (TIMED OUT)",
+    "swsportal.cgstate.gov.in (single-window login, linked live)"
+   ],
+   "policies": [
+    {
+     "name": "Chhattisgarh Industrial Development Policy 2024-30",
+     "incentive_type": "Umbrella industrial policy \u2014 capital/interest/stamp/EPF subsidies",
+     "what_companies_get": "Key features stated on the official portal: 100% stamp duty exemption; 50% capital investment subsidy; 50% interest subsidy; 50% ETP (effluent treatment) subsidy; 50% technical patent subsidy; 50% technology purchase subsidy; 20% employment assistance; 75% EPF reimbursement. Full policy PDF downloadable; an interactive Subsidy Calculator (invest.cg.gov.in/calculator) lets a company compute its own entitlement.",
+     "status": "In force (2024-30 window)",
+     "application_status": "Open \u2014 investor registration and applications via 'One Click Single Window System' (swsportal.cgstate.gov.in), Express Investment Intent form live",
+     "verified_on_site": true,
+     "site_url": "https://invest.cg.gov.in/investment_promotion ; https://invest.cg.gov.in/storage/pdfs/Industrial%20Policy%202024-30.pdf ; https://invest.cg.gov.in/calculator",
+     "site_notes": "Percentages are the portal's own headline figures; caps/tenures and the core-sector (steel/cement) vs sunrise-sector differentiation are inside the policy PDF, not extracted. industries.cg.gov.in unreachable (connection timeout) \u2014 invest.cg.gov.in is the working official face."
+    },
+    {
+     "name": "Chhattisgarh Logistics Policy 2025",
+     "incentive_type": "Sectoral (logistics/warehousing)",
+     "what_companies_get": "Not extracted \u2014 policy PDF verified present on portal",
+     "status": "In force",
+     "application_status": "Not stated",
+     "verified_on_site": true,
+     "site_url": "https://invest.cg.gov.in/storage/pdfs/CG%20Logistics%20Policy%202025.pdf",
+     "site_notes": "Download link on invest.cg.gov.in homepage."
+    }
+   ]
+  },
+  {
+   "state": "ODISHA",
+   "sites_used": [
+    "investodisha.gov.in (live, full policy library)",
+    "industries.odisha.gov.in (live, Odia-default Drupal)"
+   ],
+   "policies": [
+    {
+     "name": "Industrial Policy Resolution (IPR) 2022 (+ two amendments)",
+     "incentive_type": "Umbrella policy \u2014 capital subsidy, SGST reimbursement, power/electricity-duty, land, employment",
+     "what_companies_get": "Capital investment subsidy 20% (Priority) / 30% (Thrust sector) of P&M with NO upper limit, disbursed over 5 years; 100% net SGST reimbursement capped at 200% of P&M cost (300% in Biju Economic Corridor); 100% electricity-duty exemption 7y (Priority) / 10y (Thrust); power tariff reimbursement Rs 2/unit for 7y/10y; 100% ESI+EPF employer-contribution reimbursement 5y/7y for state-domiciled workers; 100% stamp duty exemption on IDCO/govt land; land at concessional rates (50% of concessional rate for Thrust units employing >1000); green infra subsidy 25% up to Rs 10 Cr (ZLD equipment 50% up to Rs 10 Cr); private industrial parks 50% of infra cost up to Rs 25 Cr; R&D 50% up to Rs 10 Cr; captive RE plants 30% capital subsidy + 20-year ED/transmission exemptions.",
+     "status": "In force \u2014 remains the operative industrial policy on the portal (no IPR 2025 successor listed as of 2026-07-20)",
+     "application_status": "Open \u2014 operational guidelines for each incentive head published; applications via GO-SWIFT single window (linked under EoDB)",
+     "verified_on_site": true,
+     "site_url": "https://investodisha.gov.in/policy-framework/industrial-policy-resolution-2022",
+     "site_notes": "Full incentive table read from the page; ~20 operational-guideline documents listed, indicating live administration. 'HLC Special Package of Incentives' notification also present."
+    },
+    {
+     "name": "Green Hydrogen / Green Ammonia incentives (embedded in IPR 2022)",
+     "incentive_type": "Sectoral incentives inside umbrella policy \u2014 NOT a standalone GH2 policy",
+     "what_companies_get": "GH2/green-ammonia manufacturing units: 100% electricity-duty exemption for 20 years; power tariff reimbursement Rs 3/unit (from DISCOMs/GRIDCO) for 20 years; 20-year exemption/reimbursement of cross-subsidy surcharge, additional surcharge and state transmission charges on renewable energy; GH2/ammonia is a Thrust Sector (so 30% capital subsidy, SGST reimbursement etc. also apply).",
+     "status": "In force via IPR 2022",
+     "application_status": "Open (dedicated operational guideline for the surcharge/transmission reimbursement published)",
+     "verified_on_site": true,
+     "site_url": "https://investodisha.gov.in/policy-framework/industrial-policy-resolution-2022",
+     "site_notes": "No separate 'Green Hydrogen Policy' document exists on the portal \u2014 the brief's standalone-policy framing is wrong; incentives live inside IPR 2022 and the Renewable Energy Policy 2022."
+    },
+    {
+     "name": "Food Processing Policy 2022 (covers food & seafood processing)",
+     "incentive_type": "Sectoral",
+     "what_companies_get": "Not extracted from the policy page; note that 'Food and Sea-food Processing' is an IPR-2022 Priority Sector, so those units also get the 20%-capital-subsidy/SGST/power stack above",
+     "status": "In force (listed among current sectoral policies)",
+     "application_status": "Via GO-SWIFT",
+     "verified_on_site": true,
+     "site_url": "https://investodisha.gov.in/policy-framework/sectoral-policies/food-processing-policy-2022",
+     "site_notes": "Policy listed in the live nav; detail page not fetched."
+    },
+    {
+     "name": "Utkarsh Odisha 2025 (Make-in-Odisha conclave packages)",
+     "incentive_type": "Summit packages",
+     "what_companies_get": "Not found on investodisha.gov.in \u2014 zero mentions of 'Utkarsh' in fetched pages",
+     "status": "Not verifiable on the official investment portal",
+     "application_status": "n/a",
+     "verified_on_site": false,
+     "site_url": "https://investodisha.gov.in/",
+     "site_notes": "May live on a separate conclave microsite; the policy library still centers on IPR 2022. Newer sectoral instruments that DO exist: Pharma & Medical Devices Policy 2025, PSP Policy 2025, Biotechnology Policy 2024, Semicon Fabless Policy 2023."
+    }
+   ]
+  },
+  {
+   "state": "WEST BENGAL",
+   "sites_used": [
+    "silpasathi.wb.gov.in (live single window)",
+    "wbidc.com (SUSPENDED/hijacked)"
+   ],
+   "policies": [
+    {
+     "name": "MSME incentive schemes (Silpasathi 'Incentives/Subsidies/Schemes')",
+     "incentive_type": "MSME grants \u2014 capital/interest/power/stamp/SGST subsidies",
+     "what_companies_get": "MSMEs entitled to: State Capital Investment Subsidy; interest subsidy on term loan; power subsidy; energy-efficiency subsidy; stamp duty & registration fee subsidy; SGST subsidy; water-conservation/environment-compliance subsidy; standard-quality-compliance subsidy; workforce-welfare assistance; patent registration subsidy. Percentages/caps are in the linked scheme notification PDFs (byte-served, not fetched). Site states explicitly: 'The State has no credit schemes at present for business. Only grants are provided to Business through the above two schemes' (MSME + Tourism).",
+     "status": "In force \u2014 scheme notifications + online application links live",
+     "application_status": "Open \u2014 'Apply Online' buttons per scheme on Silpasathi",
+     "verified_on_site": true,
+     "site_url": "https://silpasathi.wb.gov.in/msme_Incentives",
+     "site_notes": "Silpasathi portal is fully live (revamped; QRT helpline; licenses/NOCs/renewals operational). Tourism incentive scheme similarly listed (capital subsidy, interest subsidy, electricity-duty waiver, employment-generation incentive, mega-project subsidy)."
+    },
+    {
+     "name": "New West Bengal Incentive Scheme (large industries, reportedly announced 2025)",
+     "incentive_type": "Large-industry incentive scheme",
+     "what_companies_get": "COULD NOT VERIFY on official state web properties. Silpasathi's notifications page (through Jul-2025 entries) carries only RTPS-timeline and process notices \u2014 no WBIS-2025 notification; the incentives page covers only MSME + Tourism and states only those two grant schemes exist.",
+     "status": "Unverified \u2014 no trace on reachable official portals",
+     "application_status": "Unknown",
+     "verified_on_site": false,
+     "site_url": "https://silpasathi.wb.gov.in/notice-circular-order",
+     "site_notes": "WBIDC.com \u2014 the natural home for a large-industry scheme \u2014 is suspended (see access issues), so absence of evidence here is weak evidence of absence. Treat media claims of a 2025 WBIS as unconfirmed by official sources. Textile incentive scheme and data-centre policy: also not found on Silpasathi."
+    }
+   ]
+  },
+  {
+   "state": "JHARKHAND",
+   "sites_used": [
+    "advantage.jharkhand.gov.in (live single window + policy library)",
+    "jharkhandindustry.gov.in (TIMED OUT)"
+   ],
+   "policies": [
+    {
+     "name": "Jharkhand Industrial and Investment Promotion Policy (JIIPP) 2021",
+     "incentive_type": "Umbrella industrial policy",
+     "what_companies_get": "Percentages not published on the HTML page (in the policy PDF). The portal operationalizes it end-to-end: 'Know your Incentives' eligibility checker (/incentive/incentives/check), 'Apply for Incentives' module, SOP of Incentive, Incentive Guideline, and a Common Incentive Disbursement Guideline \u2014 i.e., incentive workflow is live, not just a document.",
+     "status": "In force \u2014 listed under current downloadable policies (JIIPP 2016 relegated to the archive list; NO JIIPP 2025 successor on site as of 2026-07-20)",
+     "application_status": "Open \u2014 online incentive application + Combined Application Form (CAF) live on the Single Window",
+     "verified_on_site": true,
+     "site_url": "https://advantage.jharkhand.gov.in/SingleWindow/registrations/policies/",
+     "site_notes": "Active policy list also includes: Jharkhand Electric Vehicle Policy (no year in link title), Ethanol Production Promotion Policy 2022, Export Policy 2023, Food & Feed Processing Industry Policy 2024, MSME Promotion Policy 2023, Industrial Park and Logistic Policy, State Solar Policy 2022, Tourism Policy 2021, and the Jharkhand MSME (Special Concession) Act 2025."
+    },
+    {
+     "name": "Jharkhand Electric Vehicle Policy",
+     "incentive_type": "Sectoral (EV)",
+     "what_companies_get": "Not extracted \u2014 listed with download on the official policies page (title carries no year)",
+     "status": "Current (in active list)",
+     "application_status": "Via Single Window incentive module",
+     "verified_on_site": true,
+     "site_url": "https://advantage.jharkhand.gov.in/SingleWindow/registrations/policies/",
+     "site_notes": "Brief's 'textile policy': only Textile, Apparel and Footwear Policy 2016 exists, and it sits in the ARCHIVED list \u2014 no current textile policy on site."
+    }
+   ]
+  },
+  {
+   "state": "BIHAR",
+   "sites_used": [
+    "udyami.bihar.gov.in (live)",
+    "biada1.bihar.gov.in (live)",
+    "state.bihar.gov.in/industries (live but content-empty IPRD shell)",
+    "startup.bihar.gov.in (live JS shell)"
+   ],
+   "policies": [
+    {
+     "name": "Mukhyamantri Udyami Yojana (MMUY) + Bihar Laghu Udyami Yojana (BLUY)",
+     "incentive_type": "Entrepreneur financing (subsidy + interest-free loan) \u2014 micro/small, not large-company incentives",
+     "what_companies_get": "Amounts not stated on the fetched pages (guidelines PDF 'MMUY 2024-25 Selection Process & Guidelines' hosted on portal). What IS verified: the scheme is actively administered \u2014 FY 2025-26 beneficiary selection done by computerized lottery on 20-05-2026, document-upload deadline 24-06-2026, utilization-certificate deadline 30-06-2026 for FY22-25 cohorts receiving 1st/2nd instalments.",
+     "status": "In force, actively running FY 2025-26 cycle",
+     "application_status": "FY 2025-26 application window CLOSED (extended to 23-03-2026); currently in post-selection document/disbursement phase",
+     "verified_on_site": true,
+     "site_url": "https://udyami.bihar.gov.in/",
+     "site_notes": "This is the only live incentive-delivery portal found for Bihar's Dept of Industries."
+    },
+    {
+     "name": "BIADA Land Allotment & Management Policy 2026",
+     "incentive_type": "Industrial land/shed allotment (plug-and-play sheds, 9 regional clusters)",
+     "what_companies_get": "Industrial land and plug-and-play shed allotment terms under the new 2026 policy (PDF + Jun-2026 corrigendum on site); Amnesty Policy portal for defaulting allottees also live",
+     "status": "In force (policy dated May 2026, corrigendum 03-06-2026)",
+     "application_status": "Open \u2014 online land/shed application with user manual on BIADA portal",
+     "verified_on_site": true,
+     "site_url": "https://biada1.bihar.gov.in/ActRule.aspx ; https://biada1.bihar.gov.in/pdf/BIADA-LAMP-2026.pdf",
+     "site_notes": "BIADA acts/policies page carries only BIADA's own instruments \u2014 no state industrial policy."
+    },
+    {
+     "name": "Bihar Industrial Investment Promotion Policy 2016 (and reported 2025 successor), Ethanol Production Promotion Policy 2021, Textile & Leather Policy 2022, Bihar Business Connect packages",
+     "incentive_type": "Umbrella + sectoral policies",
+     "what_companies_get": "COULD NOT VERIFY on any official Bihar site this run \u2014 every hosting location is dead or content-empty (see access issues). No official page found stating current status or incentive terms.",
+     "status": "Unverifiable on official web properties as of 2026-07-20",
+     "application_status": "Unknown",
+     "verified_on_site": false,
+     "site_url": "https://state.bihar.gov.in/industries/CitizenHome.html",
+     "site_notes": "The Dept of Industries page on state.bihar.gov.in is a generic IPRD-managed template (governor speeches, district links) with zero industrial-policy content."
+    }
+   ]
+  }
+ ],
+ "site_access_issues": [
+  "wbidc.com: account SUSPENDED \u2014 serves cPanel suspendedpage.cgi embedding an iframe to a third-party ad/redirect domain (iyfhshsp.com). The flagship WBIDC domain is effectively hijacked-by-parking; do not trust any content there.",
+  "mpidc.co.in: HTTP 522 (Cloudflare \u2014 origin down).",
+  "industries.cg.gov.in: connection timeout (invest.cg.gov.in works and is the operative portal).",
+  "jharkhandindustry.gov.in: connection timeout (advantage.jharkhand.gov.in works).",
+  "udyog.bihar.gov.in: DNS does not resolve (NXDOMAIN) \u2014 the historical Dept of Industries portal is gone.",
+  "swc.bihar.gov.in, invest.bihar.gov.in, industries.bihar.gov.in: DNS does not resolve.",
+  "biharbusinessconnect.com: 302-redirects to ww547.biharbusinessconnect.com (classic parked/lapsed-domain pattern) \u2014 the summit domain appears to have lapsed; not followed for safety.",
+  "invest.mp.gov.in root: redirects to sws.invest.mp.gov.in React JS shell (empty to curl); content only reachable via direct WordPress paths (/policy-acts-rules/, /ccip-and-incentives/). /cms/wp-json returns the WP 404 theme page (wp-json REST not exposed at that path).",
+  "startup.bihar.gov.in: live but pure JS shell (Vite bundle) \u2014 no content without a browser.",
+  "state.bihar.gov.in/industries: reachable but is an IPRD template with no departmental policy content.",
+  "silpasathi.wb.gov.in scheme notifications are served as base64-parameterized byte streams (read-bytea-file-all/...) \u2014 PDF contents (percentages/caps) not extractable within fetch budget."
+ ],
+ "schemes_found_on_site_not_in_brief": [
+  "MP: GCC Policy 2025, AVGC-XR Policy 2025, Energy Policy 2025, Pumped Hydro Storage project scheme, Scheme for Promotion of Ethanol & Bio-fuel Production, MSME Development Policy 2025, Export Promotion Policy + Export Promotion Scheme 2025, Logistics Policy + Logistics Scheme 2025, Health Sector Investment Promotion Policy 2025, Tourism Policy 2025, Civil Aviation Policy 2025, Integrated Township Policy 2025, IT/ITeS & ESDM Policy 2023, Jan Vishwas (Amendment of Provisions) Act 2025, Policy Compendium PDF",
+  "CG: Chhattisgarh Innovation and Startup Promotion Policy 2025-2030, CG Logistics Policy 2025, CSR facilitation portal, RAMP, Export Promotion section, online Subsidy Calculator",
+  "Odisha: Semicon Fabless Policy 2023, Biotechnology Policy 2024, Pharmaceutical & Medical Devices Policy 2025, PSP Policy 2025, Data Centre Policy 2022, IT Policy 2022, Renewable Energy Policy 2022, Apparel & Technical Textiles Policy 2022, Logistics Policy 2022, MSME Development Policy 2022, Long Term Linkage Policy of Minerals 2023, HLC Special Package of Incentives notification, captive-RE-plant incentive block and private-industrial-park capital grant inside IPR 2022",
+  "WB: Tourism incentive scheme on Silpasathi (capital subsidy, interest subsidy, electricity-duty waiver, employment incentive, mega-project subsidy, adventure-tour-operator incentive)",
+  "Jharkhand: MSME (Special Concession) Act 2025, MSME Promotion Policy 2023, Food & Feed Processing Industry Policy 2024, Export Policy 2023, Industrial Park & Logistic Policy, State Solar Policy 2022, Common Incentive Disbursement Guideline, ONDC onboarding, ODOP program",
+  "Bihar: Bihar Laghu Udyami Yojana (BLUY) alongside MMUY, BIADA Land Allotment & Management Policy 2026 + Amnesty Policy"
+ ]
+}

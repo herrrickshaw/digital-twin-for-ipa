@@ -123,16 +123,12 @@
     },
     {
       "parameters": {
-        "fromEmail": "twin-bot@localhost",
-        "toEmail": "umashankartd1991@gmail.com",
-        "subject": "={{ '[digital-twin] ' + $json.summary }}",
-        "text": "={{ $json.changes.join('\\n') + '\\n\\nPortals down:\\n' + $json.downs.join('\\n') + '\\n\\n--- raw ---\\n' + $json.raw }}",
-        "options": {}
+        "command": "/usr/bin/python3 scripts/send_twin_alert.py --subject \"[digital-twin] {{ $json.summary }}\" --body \"{{ $json.changes.join('\\n') }}\""
       },
       "id": "email-alert",
-      "name": "Email alert (attach SMTP credential)",
-      "type": "n8n-nodes-base.emailSend",
-      "typeVersion": 2.1,
+      "name": "Email alert (send_twin_alert.py)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
       "position": [
         880,
         220
@@ -212,7 +208,7 @@
       "main": [
         [
           {
-            "node": "Email alert (attach SMTP credential)",
+            "node": "Email alert (send_twin_alert.py)",
             "type": "main",
             "index": 0
           }
@@ -226,7 +222,7 @@
         ]
       ]
     },
-    "Email alert (attach SMTP credential)": {
+    "Email alert (send_twin_alert.py)": {
       "main": [
         [
           {

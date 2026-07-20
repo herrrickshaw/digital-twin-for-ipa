@@ -14,8 +14,9 @@ Manual trigger ───┴▶ refresh_twin.py weekly ─▶ Detect CHANGE lines
 - **CHANGE detection**: the Code node parses the script output for `CHANGE` / `DOWN` lines and
   raises a synthetic alert if the UNNATI notice ever flips to `registration_stopped=False`
   (the resumption signal worth acting on same-day).
-- **Email alert**: `emailSend` node targets umashankartd1991@gmail.com — attach an SMTP
-  credential in the n8n UI before activating (the node is a placeholder until then).
+- **Email alert**: credential-free by design — the node shells out to
+  `scripts/send_twin_alert.py`, which sources Gmail creds at runtime from the machine's
+  existing dailybrief launchd plist. No SMTP credential is ever stored in n8n or the repo.
 - **Snapshot commits**: every weekly run commits `state/` locally (no push — pushing stays a
   human/main-session action per program convention).
 

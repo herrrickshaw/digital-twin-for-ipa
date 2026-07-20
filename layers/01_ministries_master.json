@@ -2,7 +2,7 @@
  "purpose": "Master list of ALL ministries/departments India's government publishes under -- derived from the program's own PIB register (122,141 releases, 2017-2026): every distinct publishing entity with its release count (activity measure) and first/last dates. The 16 entities already swept in the site-verified incentive catalog are flagged CATALOGED; extending the company-facing-incentive sweep to the remaining entities is the stated NEXT STEP.",
  "retrieved": "2026-07-20",
  "source": "data/pib_index.sqlite GROUP BY ministry",
- "cataloged_count": 82,
+ "cataloged_count": 86,
  "total_entities": 86,
  "ministries": [
   {
@@ -73,7 +73,7 @@
    "releases": 2686,
    "first": "2017-01-10",
    "last": "2026-07-19",
-   "incentive_catalog": "PENDING SWEEP"
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (GCT terminals, Bharat Gaurav, rolling-stock investment; 2020 private-train PPP lapsed; cluster transport_tourism_skills)"
   },
   {
    "ministry": "Vice President's Secretariat",
@@ -115,7 +115,7 @@
    "releases": 2032,
    "first": "2017-01-06",
    "last": "2026-07-19",
-   "incentive_catalog": "PENDING SWEEP"
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (RVSF + ATS licence-plus-mandated-demand tracks, rules amended Apr/May-2026; BOT/HAM/TOT on NHAI; cluster transport_tourism_skills)"
   },
   {
    "ministry": "Ministry of Culture",
@@ -248,7 +248,7 @@
    "releases": 1222,
    "first": "2017-01-11",
    "last": "2026-07-13",
-   "incentive_catalog": "PENDING SWEEP"
+   "incentive_catalog": "SWEPT-v2: THIN-to-MODERATE (MDA reimbursement company-facing; SD2.0 state-routed; Budget-2025 hotel measures NOT operationalized on-site; cluster transport_tourism_skills)"
   },
   {
    "ministry": "Ministry of Micro,Small & Medium Enterprises",
@@ -332,7 +332,7 @@
    "releases": 878,
    "first": "2017-01-04",
    "last": "2026-07-17",
-   "incentive_catalog": "PENDING SWEEP"
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (PM-SETU Rs 60,000cr w/ Rs 10,000cr industry tranche, NAPS stipend sharing; cluster transport_tourism_skills)"
   },
   {
    "ministry": "Ministry of New and Renewable Energy",
@@ -608,5 +608,5 @@
    "incentive_catalog": "SUPERSEDED (merged into Ministry of MSME 2007 -- see MSME entry)"
   }
  ],
- "sweep_status": "v2 sweep 2026-07-20: 82/86 resolved; remainder awaiting transport/tourism/skills cluster"
+ "sweep_status": "v2 sweep COMPLETE 2026-07-20: 86/86 entities resolved"
 }

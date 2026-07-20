@@ -1,0 +1,139 @@
+{
+ "cluster": "transport_tourism_skills",
+ "swept": "2026-07-20",
+ "ministries": [
+  {
+   "ministry": "MoRTH",
+   "verdict": "HAS-INCENTIVES (licence+mandated-demand model)",
+   "policies": [
+    {
+     "n": "Vehicle Scrapping / RVSF investor track",
+     "t": "regulatory licence + demand-side fiscal push",
+     "d": "RVSF Rules 2021 amended thru Apr-2026 (GSR 298(E) 20.04.2026); MV-tax concession against scrapping certificate; OPEN single-window at vscrap.parivahan.gov.in; ship-breaking cos now eligible (GSR 700(E))",
+     "v": true
+    },
+    {
+     "n": "Automated Testing Stations (ATS)",
+     "t": "licence + mandated captive demand",
+     "d": "GSR 652(E) amended 08.05.2026; mandatory fitness testing only via ATS guarantees paying customer base",
+     "v": true
+    },
+    {
+     "n": "BOT/HAM/TOT/InvIT highway products",
+     "t": "concessions",
+     "d": "live on nhai.gov.in not MoRTH site; MoRTH policies section holds only 6 files",
+     "v": false
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of Railways",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "Gati Shakti Cargo Terminal (GCT) policy",
+     "t": "terminal development rights",
+     "d": "Master Circular 2026 current; OPEN application on RailSAHAY 'Partner with Us'; PRS layer: 118 GCTs commissioned, Rs 23,200cr freight revenue 2022-25",
+     "v": true
+    },
+    {
+     "n": "Bharat Gaurav trains",
+     "t": "rake leasing + operation rights",
+     "d": "OPEN registration; de-facto successor to lapsed 2020 private-train PPP (151-train tender discontinued)",
+     "v": true
+    },
+    {
+     "n": "Invest in Rolling Stock (GPWIS-type)",
+     "t": "freight concessions vs wagon investment",
+     "d": "live RailSAHAY offering",
+     "v": true
+    },
+    {
+     "n": "Amrit Bharat Station Scheme",
+     "t": "EPC + commercial development",
+     "d": "IRSDC PPP model wound up 2021; current 1,300+ station programme is EPC-led -- contractual not concessional",
+     "v": true
+    },
+    {
+     "n": "Private train operations 2020 PPP",
+     "t": "LAPSED",
+     "d": "no trace on current site",
+     "v": false
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of Tourism",
+   "verdict": "THIN-to-MODERATE",
+   "policies": [
+    {
+     "n": "Marketing Development Assistance (MDA)",
+     "t": "reimbursement to tourism companies",
+     "d": "revised guidelines 10.03.2022; overseas fairs/roadshows for approved operators -- most directly company-facing",
+     "v": true
+    },
+    {
+     "n": "Swadesh Darshan 2.0 + CBDD",
+     "t": "state-routed CFA; PPP openings",
+     "d": "companies participate as developers/operators, not applicants",
+     "v": true
+    },
+    {
+     "n": "Hotel infra-lending status / MUDRA homestays (Budget 2025)",
+     "t": "announced fiscal measures",
+     "d": "NOTHING on tourism.gov.in -- no operationalization artifact as of 2026-07-20 (honest gap)",
+     "v": false
+    }
+   ]
+  },
+  {
+   "ministry": "MSDE (+ Labour employer-facing)",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "PM-SETU (NEW, Apr-2026)",
+     "t": "industry co-investment partnership",
+     "d": "Rs 60,000cr ITI upgradation: Centre 30k + States 20k + INDUSTRY PARTNERS Rs 10,000cr, joint ownership -- most significant new company-facing find",
+     "v": true
+    },
+    {
+     "n": "NAPS/NAPS-2",
+     "t": "stipend cost-sharing",
+     "d": "GoI 25% of stipend up to Rs 1,500/mo via DBT; OPEN at apprenticeshipindia.gov.in",
+     "v": true
+    },
+    {
+     "n": "PMKVY 4.0 / Skill India Digital",
+     "t": "funded training delivery",
+     "d": "partner-side benefit for training companies",
+     "v": true
+    },
+    {
+     "n": "Flexi-MoU + Dual System of Training",
+     "t": "regulatory flexibility",
+     "d": "in-company training via DGT",
+     "v": true
+    },
+    {
+     "n": "ELI (Labour/EPFO)",
+     "t": "employer cash incentive",
+     "d": "Cabinet-approved Jul-2025 but NO page on labour.gov.in and epfindia.gov.in unreachable by every channel -- absence is itself a finding",
+     "v": false
+    }
+   ]
+  }
+ ],
+ "access_issues": [
+  "morth.nic.in DNS-dead; morth.gov.in Angular SPA w/ /backend/api/* JSON (search params ignored -- full archive download + local grep needed)",
+  "tourism/msde = headless WP at cms-*.digifootprint.gov.in; scheme text in ACF fields not content.rendered; WebFetch 403 (WAF), curl+Chrome-UA works",
+  "epfindia.gov.in unreachable (curl timeout, ECONNRESET, browser denied)",
+  "labour.gov.in Next.js shell -- scheme list only via rendered browser",
+  "indianrailways.gov.in = splash portal; substance on RailSAHAY/zonal PDFs, several railwayboard links 404"
+ ],
+ "not_in_brief": [
+  "PM-SETU Rs 60,000cr",
+  "Bharat Gaurav + Invest-in-Rolling-Stock as open channels",
+  "Tourism PRASHAD/MRPSS",
+  "MoRTH PM Rahat/Setu Bharatam (infra not incentives)"
+ ]
+}

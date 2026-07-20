@@ -1,0 +1,143 @@
+{
+ "cluster": "finance_mca_niti",
+ "swept": "2026-07-20",
+ "ministries": [
+  {
+   "ministry": "Ministry of Finance (DEA/DFS/IFSCA/NCGTC)",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "PPP Viability Gap Funding",
+     "t": "capital grant",
+     "d": "up to ~30% of project cost (higher social sectors) to PPP concessionaires; open via sponsoring authorities",
+     "v": true,
+     "u": "dea.gov.in/schemes-services/viability-gap-funding-scheme"
+    },
+    {
+     "n": "IIPDF",
+     "t": "project-dev funding",
+     "d": "funds PPP transaction-advisory costs",
+     "v": true
+    },
+    {
+     "n": "IDEAS concessional LOCs",
+     "t": "export facilitation",
+     "d": "Indian companies win project-export contracts under GoI-backed LOCs via Exim",
+     "v": true
+    },
+    {
+     "n": "GSCD corporate-debt guarantee",
+     "t": "credit guarantee",
+     "d": "sovereign backstop via CDMDF for corporate-debt purchases in dislocations",
+     "v": true
+    },
+    {
+     "n": "NIIF + SWAMIH + SME Fund",
+     "t": "equity",
+     "d": "infrastructure/growth equity; stalled-housing completion; Rs 30,000cr 2026 top-up not restated on page",
+     "v": true
+    },
+    {
+     "n": "GIFT IFSC regime",
+     "t": "tax holiday + single-window",
+     "d": "s.80LA 100% deduction 10-of-15y, GST/STT exemptions, unified IFSCA licensing; Finance Company Regulations 2026",
+     "v": true,
+     "u": "ifsca.gov.in"
+    },
+    {
+     "n": "IFSCA FinTech Incentive Scheme 2022 + sandbox",
+     "t": "grants",
+     "d": "PoC/sandbox/accelerator/listing-support grants; framework refreshed 2026; OPEN",
+     "v": true
+    },
+    {
+     "n": "Ship & aircraft leasing regime (GIFT)",
+     "t": "tax-advantaged regime",
+     "d": "lessor Finance Company registration, CG exemptions; leasing summit 2.0 May-2026",
+     "v": true
+    },
+    {
+     "n": "MCGS-MSME (2025)",
+     "t": "credit guarantee",
+     "d": "60% cover on equipment loans up to Rs 100cr; open via MLIs",
+     "v": true,
+     "u": "financialservices.gov.in"
+    },
+    {
+     "n": "MUDRA + Stand-Up India + NCGTC funds",
+     "t": "guaranteed credit",
+     "d": "Rs 20L Tarun-Plus; SC/ST+women greenfield Rs 10L-1cr; CGFMU/CGSSI umbrella; JanSamarth gateway",
+     "v": true
+    },
+    {
+     "n": "ECLGS + LGSCAS",
+     "t": "credit guarantee",
+     "d": "CLOSED to new sanctions (COVID-era); note ECLGS 5.0 revival sits at Cabinet (2026)",
+     "v": true
+    },
+    {
+     "n": "Startup 80-IAC tax holiday",
+     "t": "tax holiday",
+     "d": "3-year 100% deduction; extended to incorporations up to 01-04-2030; DPIIT+CBDT administered",
+     "v": false
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of Corporate Affairs",
+   "verdict": "THIN (site 403-blocked)",
+   "policies": [
+    {
+     "n": "SPICe+ zero-fee incorporation / small-company relief",
+     "t": "fee waiver/compliance relief",
+     "d": "not fiscal incentives; CSR is an obligation not incentive; IEPF investor-facing",
+     "v": false,
+     "u": "mca.gov.in (Akamai 403 to all fetches)"
+    }
+   ]
+  },
+  {
+   "ministry": "NITI Aayog / AIM",
+   "verdict": "HAS-INCENTIVES (grants)",
+   "policies": [
+    {
+     "n": "AIM 2.0 (Rs 2,750cr to Mar-2028)",
+     "t": "grant umbrella",
+     "d": "ATL/AIC/ANIC/ACIC verticals",
+     "v": true,
+     "u": "aim.gov.in"
+    },
+    {
+     "n": "AIC incubator grants",
+     "t": "grant",
+     "d": "up to ~Rs 10cr incl. private hosts; periodic rounds",
+     "v": true
+    },
+    {
+     "n": "ANIC",
+     "t": "milestone grant",
+     "d": "~Rs 1cr productisation grants; Millet Challenge live",
+     "v": true
+    },
+    {
+     "n": "ACIC",
+     "t": "grant",
+     "d": "applications currently CLOSED (site-stated)",
+     "v": true
+    },
+    {
+     "n": "WEP",
+     "t": "facilitation",
+     "d": "non-fiscal platform",
+     "v": true
+    }
+   ]
+  }
+ ],
+ "access_issues": [
+  "finmin.nic.in no response",
+  "mca.gov.in Akamai 403 (curl+WebFetch)",
+  "dea.gov.in scheme list not server-rendered (slugs from homepage slider)",
+  "ncgtc.in JS-heavy"
+ ]
+}

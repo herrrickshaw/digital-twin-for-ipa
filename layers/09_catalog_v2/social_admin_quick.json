@@ -1,0 +1,82 @@
+{
+ "cluster": "social_admin_quick_assess",
+ "swept": "2026-07-20",
+ "assessed": [
+  {
+   "m": "Health & Family Welfare",
+   "verdict": "THIN",
+   "note": "PMJAY empanelment economics: HBP top-ups +10-15% NABH, +10% aspirational districts -- margin lever for hospital chains (hospitals.pmjay.gov.in live)"
+  },
+  {
+   "m": "Rural Development",
+   "verdict": "THIN",
+   "note": "DDU-GKY pays private training companies (PIAs) per candidate ~Rs 35k-100k+"
+  },
+  {
+   "m": "Tribal Affairs",
+   "verdict": "THIN",
+   "note": "MSP-for-MFP price floors (~87 items) + Van Dhan; corporate exposure via ayurveda/FMCG input sourcing"
+  },
+  {
+   "m": "Social Justice",
+   "verdict": "THIN",
+   "note": "IFCI-run VC Fund for SCs (equity into SC-promoted companies); SCLCSS cross-ref -> MSME ministry"
+  },
+  {
+   "m": "Minority Affairs",
+   "verdict": "THIN",
+   "note": "PM VIKAS: companies only as empanelled training partners"
+  },
+  {
+   "m": "Culture",
+   "verdict": "THIN",
+   "note": "Monument Mitra = CSR visibility, no fiscal incentive"
+  },
+  {
+   "m": "Youth Affairs & Sports",
+   "verdict": "THIN",
+   "note": "Khelo India academy funding per-athlete; sports-goods mfg sits with MSME/DPIIT"
+  },
+  {
+   "m": "Home Affairs",
+   "verdict": "N/A"
+  },
+  {
+   "m": "External Affairs",
+   "verdict": "N/A"
+  },
+  {
+   "m": "WCD",
+   "verdict": "N/A"
+  },
+  {
+   "m": "Panchayati Raj",
+   "verdict": "N/A"
+  },
+  {
+   "m": "Law & Justice",
+   "verdict": "N/A"
+  },
+  {
+   "m": "Parliamentary Affairs",
+   "verdict": "N/A"
+  },
+  {
+   "m": "MoSPI",
+   "verdict": "N/A"
+  },
+  {
+   "m": "Personnel/PG/Pensions",
+   "verdict": "N/A"
+  },
+  {
+   "m": "CIC-type bodies",
+   "verdict": "N/A"
+  }
+ ],
+ "notable": [
+  "PMJAY empanelment is the sleeper company-facing lever in Health",
+  "DDU-GKY the only firm-facing RD channel",
+  "AIM grants are NITI's one firm-facing money channel"
+ ]
+}

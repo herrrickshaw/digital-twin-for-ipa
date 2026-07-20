@@ -1,0 +1,115 @@
+{
+ "cluster": "defence_space_atomic",
+ "swept": "2026-07-20",
+ "ministries": [
+  {
+   "ministry": "MoD (DDP/DRDO)",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "iDEX",
+     "t": "R&D grant",
+     "d": "Rs 498.78cr FY22-26, ~300 startups/MSMEs; DISC 12 reopen live; path to procurement",
+     "v": true,
+     "u": "ddpmod.gov.in + idex.gov.in"
+    },
+    {
+     "n": "ADITI",
+     "t": "large R&D grant",
+     "d": "up to 50% of PDB, max Rs 25cr/project; Rs 750cr FY24-26; critical tech (satcom/AI/quantum/semis)",
+     "v": true
+    },
+    {
+     "n": "DTIS",
+     "t": "capital grant",
+     "d": "Rs 400cr for private testing infrastructure (launched 15-May-2020)",
+     "v": true
+    },
+    {
+     "n": "TDF (DRDO)",
+     "t": "R&D grant",
+     "d": "industry/MSME tech development; caps (Rs 50cr/90%) unverified -- tdf.drdo.gov.in unreachable",
+     "v": "partial"
+    },
+    {
+     "n": "SRIJAN + Positive Indigenisation Lists",
+     "t": "assured market access",
+     "d": "import-substitution marketplace; PIL 1-5 = import embargo reserving demand; Long-Term-Order framework",
+     "v": true
+    },
+    {
+     "n": "Make-I / Make-II (DAP-2020)",
+     "t": "funded prototyping / assured order",
+     "d": "LIVE: HAPS EOI, Viraj mine (03.08.26), Loiter Munition (20.07.26)",
+     "v": "partial"
+    },
+    {
+     "n": "Defence export SOP",
+     "t": "export facilitation",
+     "d": "record Rs 38,424cr exports FY26; SOP on DDP site",
+     "v": "partial"
+    },
+    {
+     "n": "Defence Industrial Corridors (UP/TN)",
+     "t": "investment incentives",
+     "d": "UNVERIFIED -- makeinindiadefence.gov.in 503 on both attempts",
+     "v": false
+    }
+   ]
+  },
+  {
+   "ministry": "Department of Space",
+   "verdict": "HAS-INCENTIVES (site-opaque)",
+   "policies": [
+    {
+     "n": "Indian Space Policy 2023",
+     "t": "liberalisation/market access",
+     "d": "end-to-end NGE participation, IN-SPACe authorisations",
+     "v": true,
+     "u": "isro.gov.in/IndiaSpacePolicy.html"
+    },
+    {
+     "n": "ISRO tech transfer (SSLV ToT)",
+     "t": "technology licensing",
+     "d": "flight-proven tech to industry via NSIL/IN-SPACe",
+     "v": "partial"
+    },
+    {
+     "n": "IN-SPACe Seed Fund / Rs 1,000cr Space VC Fund / EO-PPP / FDI-2024",
+     "t": "seed grant / VC equity / PPP",
+     "d": "ALL UNVERIFIABLE on-site: inspace.gov.in is a ServiceNow JS shell",
+     "v": false
+    }
+   ]
+  },
+  {
+   "ministry": "DAE",
+   "verdict": "THIN",
+   "policies": [
+    {
+     "n": "DAE Technology Transfer",
+     "t": "tech licensing",
+     "d": "250+ spin-off techs, 800+ licenses over ~40y -- only company-facing standing offer",
+     "v": true
+    },
+    {
+     "n": "Bharat Small Reactors private participation",
+     "t": "policy signal only",
+     "d": "NO scheme page on dae.gov.in; lives in Budget speeches + NPCIL RFPs",
+     "v": false
+    }
+   ]
+  }
+ ],
+ "access_issues": [
+  "tdf.drdo.gov.in timeout+ECONNREFUSED",
+  "inspace.gov.in = ServiceNow JS shell (curl gets 'browser not supported')",
+  "makeinindiadefence.gov.in 503 twice (hosts corridor + export scheme content)"
+ ],
+ "not_in_brief": [
+  "DTIS Rs 400cr",
+  "MSME Defence Conclave scheme FY27",
+  "Long-Term-Order framework (SRIJAN)",
+  "Defence Offset Management Wing channel"
+ ]
+}

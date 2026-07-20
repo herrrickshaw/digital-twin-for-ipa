@@ -1,0 +1,612 @@
+{
+ "purpose": "Master list of ALL ministries/departments India's government publishes under -- derived from the program's own PIB register (122,141 releases, 2017-2026): every distinct publishing entity with its release count (activity measure) and first/last dates. The 16 entities already swept in the site-verified incentive catalog are flagged CATALOGED; extending the company-facing-incentive sweep to the remaining entities is the stated NEXT STEP.",
+ "retrieved": "2026-07-20",
+ "source": "data/pib_index.sqlite GROUP BY ministry",
+ "cataloged_count": 82,
+ "total_entities": 86,
+ "ministries": [
+  {
+   "ministry": "Prime Minister's Office",
+   "releases": 13847,
+   "first": "2017-01-01",
+   "last": "2026-07-19",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Defence",
+   "releases": 8527,
+   "first": "2017-01-01",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (8 policies: iDEX/ADITI/DTIS/TDF/SRIJAN-PIL/Make-I-II; cluster defence_space_atomic)"
+  },
+  {
+   "ministry": "Ministry of Health and Family Welfare",
+   "releases": 6281,
+   "first": "2017-01-05",
+   "last": "2026-07-18",
+   "incentive_catalog": "SWEPT-v2: THIN (PMJAY empanelment +10-15% NABH top-ups = hospital margin lever; cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Finance",
+   "releases": 5771,
+   "first": "2017-01-01",
+   "last": "2026-07-18",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (DEA VGF/IIPDF, GIFT-IFSC stack, DFS MCGS-MSME/MUDRA; cluster finance_mca_niti)"
+  },
+  {
+   "ministry": "Ministry of Commerce & Industry",
+   "releases": 4102,
+   "first": "2017-01-02",
+   "last": "2026-07-19",
+   "incentive_catalog": "CATALOGED (DPIIT + Commerce/DGFT)"
+  },
+  {
+   "ministry": "Ministry of Science & Technology",
+   "releases": 3815,
+   "first": "2017-01-08",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (NIDHI/RDI-Fund/TDB + BIRAC family + DSIR PRISM/recognition; cluster scitech_earth_ayush)"
+  },
+  {
+   "ministry": "Ministry of Home Affairs",
+   "releases": 3809,
+   "first": "2017-01-03",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Agriculture & Farmers Welfare",
+   "releases": 3036,
+   "first": "2017-01-02",
+   "last": "2026-07-16",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (5 policies, cluster agri_food_cooperation)"
+  },
+  {
+   "ministry": "President's Secretariat",
+   "releases": 2722,
+   "first": "2017-01-02",
+   "last": "2026-07-17",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Railways",
+   "releases": 2686,
+   "first": "2017-01-10",
+   "last": "2026-07-19",
+   "incentive_catalog": "PENDING SWEEP"
+  },
+  {
+   "ministry": "Vice President's Secretariat",
+   "releases": 2685,
+   "first": "2017-01-06",
+   "last": "2026-07-17",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Information & Broadcasting",
+   "releases": 2582,
+   "first": "2017-01-10",
+   "last": "2026-07-18",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (4 policies, cluster environment_ib_education_doner)"
+  },
+  {
+   "ministry": "Ministry of Personnel, Public Grievances & Pensions",
+   "releases": 2414,
+   "first": "2017-01-02",
+   "last": "2026-07-17",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Education",
+   "releases": 2386,
+   "first": "2017-01-06",
+   "last": "2026-07-08",
+   "incentive_catalog": "SWEPT-v2: N/A (0 policies, cluster environment_ib_education_doner)"
+  },
+  {
+   "ministry": "Ministry of Jal Shakti",
+   "releases": 2068,
+   "first": "2019-06-11",
+   "last": "2026-07-14",
+   "incentive_catalog": "SWEPT-v2: THIN (procurement-heavy) (3 policies, cluster power_mohua_jalshakti)"
+  },
+  {
+   "ministry": "Ministry of Road Transport & Highways",
+   "releases": 2032,
+   "first": "2017-01-06",
+   "last": "2026-07-19",
+   "incentive_catalog": "PENDING SWEEP"
+  },
+  {
+   "ministry": "Ministry of Culture",
+   "releases": 1932,
+   "first": "2017-01-05",
+   "last": "2026-07-08",
+   "incentive_catalog": "SWEPT-v2: THIN (Monument Mitra = CSR visibility only; cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Women and Child Development",
+   "releases": 1886,
+   "first": "2017-01-03",
+   "last": "2026-07-17",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Environment, Forest and Climate Change",
+   "releases": 1847,
+   "first": "2017-01-10",
+   "last": "2026-07-11",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (market instruments) (3 policies, cluster environment_ib_education_doner)"
+  },
+  {
+   "ministry": "Ministry of Consumer Affairs, Food & Public Distribution",
+   "releases": 1833,
+   "first": "2017-01-02",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (windows mostly closed) (6 policies, cluster agri_food_cooperation)"
+  },
+  {
+   "ministry": "Ministry of Youth Affairs and Sports",
+   "releases": 1821,
+   "first": "2017-01-02",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: THIN (Khelo India per-athlete; mfg sits w/ MSME/DPIIT; cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Social Justice & Empowerment",
+   "releases": 1796,
+   "first": "2017-01-04",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: THIN (IFCI VC Fund for SCs; cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Communications",
+   "releases": 1682,
+   "first": "2017-01-13",
+   "last": "2026-07-18",
+   "incentive_catalog": "CATALOGED (DoT (under Communications))"
+  },
+  {
+   "ministry": "Ministry of Power",
+   "releases": 1614,
+   "first": "2017-01-04",
+   "last": "2026-07-16",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (7 policies, cluster power_mohua_jalshakti)"
+  },
+  {
+   "ministry": "Ministry of Labour & Employment",
+   "releases": 1600,
+   "first": "2017-01-06",
+   "last": "2026-07-17",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (ELI Rs 99,446cr: Part-B employer Rs 3,000/mo/additional-employee for 2y, effective 01-Aug-2025 -- verified via interlinkage layer, PIB PRID 2141127)"
+  },
+  {
+   "ministry": "Ministry of Ports, Shipping and Waterways",
+   "releases": 1545,
+   "first": "2017-01-10",
+   "last": "2026-07-15",
+   "incentive_catalog": "CATALOGED (MoPSW)"
+  },
+  {
+   "ministry": "Ministry of Electronics & IT",
+   "releases": 1487,
+   "first": "2017-01-18",
+   "last": "2026-07-18",
+   "incentive_catalog": "CATALOGED (MeitY)"
+  },
+  {
+   "ministry": "Ministry of Petroleum & Natural Gas",
+   "releases": 1441,
+   "first": "2017-01-02",
+   "last": "2026-07-10",
+   "incentive_catalog": "CATALOGED (MoPNG)"
+  },
+  {
+   "ministry": "Cabinet",
+   "releases": 1420,
+   "first": "2017-01-04",
+   "last": "2026-07-15",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "AYUSH",
+   "releases": 1359,
+   "first": "2017-01-03",
+   "last": "2026-07-17",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (AOGUSY, IC export reimbursement; cluster scitech_earth_ayush)"
+  },
+  {
+   "ministry": "Ministry of Coal",
+   "releases": 1305,
+   "first": "2017-01-01",
+   "last": "2026-07-15",
+   "incentive_catalog": "CATALOGED (Coal)"
+  },
+  {
+   "ministry": "Ministry of Fisheries, Animal Husbandry & Dairying",
+   "releases": 1288,
+   "first": "2019-06-21",
+   "last": "2026-07-09",
+   "incentive_catalog": "CATALOGED (FAHD)"
+  },
+  {
+   "ministry": "Ministry of Housing & Urban Affairs",
+   "releases": 1231,
+   "first": "2017-01-17",
+   "last": "2026-07-16",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (5 policies, cluster power_mohua_jalshakti)"
+  },
+  {
+   "ministry": "Ministry of Tribal Affairs",
+   "releases": 1222,
+   "first": "2017-01-02",
+   "last": "2026-07-08",
+   "incentive_catalog": "SWEPT-v2: THIN (MSP-for-MFP floors, Van Dhan sourcing; cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Tourism",
+   "releases": 1222,
+   "first": "2017-01-11",
+   "last": "2026-07-13",
+   "incentive_catalog": "PENDING SWEEP"
+  },
+  {
+   "ministry": "Ministry of Micro,Small & Medium Enterprises",
+   "releases": 1145,
+   "first": "2017-01-02",
+   "last": "2026-07-15",
+   "incentive_catalog": "CATALOGED (MSME)"
+  },
+  {
+   "ministry": "Ministry of Textiles",
+   "releases": 1140,
+   "first": "2017-01-04",
+   "last": "2026-07-17",
+   "incentive_catalog": "CATALOGED (Textiles)"
+  },
+  {
+   "ministry": "PIB Backgrounder",
+   "releases": 1110,
+   "first": "2018-09-27",
+   "last": "2026-07-19",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Earth Sciences",
+   "releases": 1101,
+   "first": "2017-01-09",
+   "last": "2026-07-16",
+   "incentive_catalog": "SWEPT-v2: N/A (procurement only) (1 policies, cluster scitech_earth_ayush)"
+  },
+  {
+   "ministry": "Election Commission",
+   "releases": 1070,
+   "first": "2017-01-04",
+   "last": "2026-07-17",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Steel",
+   "releases": 1021,
+   "first": "2017-01-17",
+   "last": "2026-07-18",
+   "incentive_catalog": "CATALOGED (Steel)"
+  },
+  {
+   "ministry": "Ministry of Law and Justice",
+   "releases": 989,
+   "first": "2017-01-12",
+   "last": "2026-07-15",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Rural Development",
+   "releases": 984,
+   "first": "2017-01-13",
+   "last": "2026-07-18",
+   "incentive_catalog": "SWEPT-v2: THIN (DDU-GKY per-candidate PIA payments; cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Civil Aviation",
+   "releases": 939,
+   "first": "2017-01-18",
+   "last": "2026-07-17",
+   "incentive_catalog": "CATALOGED (MoCA)"
+  },
+  {
+   "ministry": "Ministry of Statistics & Programme Implementation",
+   "releases": 929,
+   "first": "2017-01-06",
+   "last": "2026-07-16",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Chemicals and Fertilizers",
+   "releases": 880,
+   "first": "2017-01-18",
+   "last": "2026-07-15",
+   "incentive_catalog": "CATALOGED (DoP + Dept of Fertilizers)"
+  },
+  {
+   "ministry": "Ministry of Skill Development and Entrepreneurship",
+   "releases": 878,
+   "first": "2017-01-04",
+   "last": "2026-07-17",
+   "incentive_catalog": "PENDING SWEEP"
+  },
+  {
+   "ministry": "Ministry of New and Renewable Energy",
+   "releases": 864,
+   "first": "2017-01-24",
+   "last": "2026-07-18",
+   "incentive_catalog": "CATALOGED (MNRE)"
+  },
+  {
+   "ministry": "Ministry of Development of North-East Region",
+   "releases": 850,
+   "first": "2017-01-03",
+   "last": "2026-07-09",
+   "incentive_catalog": "SWEPT-v2: THIN (PM-DevINE/NESIDS project-facing; NEVCF unverifiable on-site; cluster environment_ib_education_doner)"
+  },
+  {
+   "ministry": "NITI Aayog",
+   "releases": 790,
+   "first": "2017-01-17",
+   "last": "2026-07-17",
+   "incentive_catalog": "SWEPT-v2: THIN (AIM 2.0 grants only firm-facing channel; cluster finance_mca_niti)"
+  },
+  {
+   "ministry": "Ministry of Minority Affairs",
+   "releases": 729,
+   "first": "2017-01-02",
+   "last": "2026-07-11",
+   "incentive_catalog": "SWEPT-v2: THIN (PM VIKAS training-partner empanelment only; cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Competition Commission of India",
+   "releases": 669,
+   "first": "2017-01-19",
+   "last": "2026-07-15",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Mines",
+   "releases": 654,
+   "first": "2017-01-20",
+   "last": "2026-07-15",
+   "incentive_catalog": "CATALOGED (Mines (site unreachable))"
+  },
+  {
+   "ministry": "Ministry of Heavy Industries",
+   "releases": 603,
+   "first": "2017-02-02",
+   "last": "2026-07-15",
+   "incentive_catalog": "CATALOGED (MHI)"
+  },
+  {
+   "ministry": "Ministry of Corporate Affairs",
+   "releases": 603,
+   "first": "2017-02-14",
+   "last": "2026-07-18",
+   "incentive_catalog": "SWEPT-v2: THIN (site 403-blocked) (1 policies, cluster finance_mca_niti)"
+  },
+  {
+   "ministry": "Ministry of Cooperation",
+   "releases": 590,
+   "first": "2021-08-10",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (coop-facing) (4 policies, cluster agri_food_cooperation)"
+  },
+  {
+   "ministry": "Ministry of Food Processing Industries",
+   "releases": 554,
+   "first": "2017-01-02",
+   "last": "2026-07-14",
+   "incentive_catalog": "CATALOGED (MoFPI)"
+  },
+  {
+   "ministry": "Ministry of Panchayati Raj",
+   "releases": 546,
+   "first": "2017-06-05",
+   "last": "2026-07-14",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Water Resources, River Development and Ganga Rejuvenation",
+   "releases": 508,
+   "first": "2017-01-02",
+   "last": "2024-02-21",
+   "incentive_catalog": "SWEPT-v2: THIN (Namami Gange HAM partial; JJM=procurement; as Jal Shakti, cluster power_mohua_jalshakti)"
+  },
+  {
+   "ministry": "Department of Space",
+   "releases": 497,
+   "first": "2017-02-08",
+   "last": "2026-07-18",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (site-opaque) (3 policies, cluster defence_space_atomic)"
+  },
+  {
+   "ministry": "UPSC",
+   "releases": 493,
+   "first": "2017-01-02",
+   "last": "2026-07-17",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Cabinet Committee on Economic Affairs (CCEA)",
+   "releases": 451,
+   "first": "2017-01-18",
+   "last": "2026-07-15",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Department of Atomic Energy",
+   "releases": 398,
+   "first": "2017-02-02",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: THIN (2 policies, cluster defence_space_atomic)"
+  },
+  {
+   "ministry": "Ministry of Parliamentary Affairs",
+   "releases": 293,
+   "first": "2017-01-30",
+   "last": "2026-07-19",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Lok Sabha Secretariat",
+   "releases": 274,
+   "first": "2024-10-14",
+   "last": "2026-07-15",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "National Human Rights Commission",
+   "releases": 254,
+   "first": "2024-08-23",
+   "last": "2026-07-13",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Office of Principal Scientific Advisor to GoI",
+   "releases": 136,
+   "first": "2020-03-31",
+   "last": "2026-07-10",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Chemicals and Fertilizers - Department of Pharmaceuticals",
+   "releases": 127,
+   "first": "2025-10-22",
+   "last": "2026-07-01",
+   "incentive_catalog": "CATALOGED-v1 (PLI pharma/medical devices, bulk drug + medical device parks, PRIP -- see layer 02 catalog v1)"
+  },
+  {
+   "ministry": "Finance Commission",
+   "releases": 126,
+   "first": "2019-01-04",
+   "last": "2021-02-01",
+   "incentive_catalog": "N/A (constitutional/apex body -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Ministry of Drinking Water & Sanitation",
+   "releases": 113,
+   "first": "2017-01-03",
+   "last": "2019-06-05",
+   "incentive_catalog": "SUPERSEDED (merged into Jal Shakti 2019 -- see Jal Shakti entry)"
+  },
+  {
+   "ministry": "Ministry of External Affairs",
+   "releases": 104,
+   "first": "2017-01-03",
+   "last": "2025-03-09",
+   "incentive_catalog": "SWEPT-v2: N/A (cluster social_admin_quick)"
+  },
+  {
+   "ministry": "Ministry of Urban Development",
+   "releases": 72,
+   "first": "2017-01-05",
+   "last": "2019-11-27",
+   "incentive_catalog": "SUPERSEDED (renamed MoHUA 2017 -- see MoHUA entry, cluster power_mohua_jalshakti)"
+  },
+  {
+   "ministry": "Special Service and Features",
+   "releases": 60,
+   "first": "2017-07-11",
+   "last": "2025-11-29",
+   "incentive_catalog": "N/A (register artifact -- PIB feature-article category)"
+  },
+  {
+   "ministry": "Rajya Sabha Secretariat",
+   "releases": 57,
+   "first": "2025-08-27",
+   "last": "2026-07-15",
+   "incentive_catalog": "N/A (parliamentary secretariat)"
+  },
+  {
+   "ministry": "Ministry of Chemicals and Fertilizers - Department of Fertilizers",
+   "releases": 46,
+   "first": "2025-11-03",
+   "last": "2026-07-05",
+   "incentive_catalog": "PARTIAL: NBS + urea NIP subsidies are company-facing (paid to manufacturers) but fert.nic.in is a dead domain (v1 access note) -- site verification impossible"
+  },
+  {
+   "ministry": "IFSC Authority",
+   "releases": 39,
+   "first": "2021-09-30",
+   "last": "2024-07-02",
+   "incentive_catalog": "SWEPT-v2: HAS-INCENTIVES (GIFT-IFSC stack: FinTech Incentive Scheme 2022, ship/aircraft leasing, s.80LA -- covered under Finance, cluster finance_mca_niti)"
+  },
+  {
+   "ministry": "National Financial Reporting Authority",
+   "releases": 36,
+   "first": "2019-12-12",
+   "last": "2026-06-19",
+   "incentive_catalog": "N/A (audit regulator -- not an incentive-issuing entity)"
+  },
+  {
+   "ministry": "Cabinet Secretariat",
+   "releases": 34,
+   "first": "2019-06-06",
+   "last": "2026-01-02",
+   "incentive_catalog": "N/A (apex coordination body)"
+  },
+  {
+   "ministry": "EAC-PM",
+   "releases": 31,
+   "first": "2017-08-16",
+   "last": "2023-02-24",
+   "incentive_catalog": "N/A (advisory council -- reports only)"
+  },
+  {
+   "ministry": "National Security Council Secretariat",
+   "releases": 25,
+   "first": "2021-12-09",
+   "last": "2025-11-25",
+   "incentive_catalog": "N/A (security apex body)"
+  },
+  {
+   "ministry": "Ministry of Chemicals and Fertilizers - Department of Chemicals and Petrochemicals",
+   "releases": 16,
+   "first": "2025-10-15",
+   "last": "2026-07-02",
+   "incentive_catalog": "PARTIAL: PCPIR framework + petrochemical incentive proposals; site verification pending (chemicals.gov.in not swept this pass)"
+  },
+  {
+   "ministry": "Lokpal of India",
+   "releases": 9,
+   "first": "2024-10-25",
+   "last": "2026-01-26",
+   "incentive_catalog": "N/A (ombudsman body)"
+  },
+  {
+   "ministry": "Ministry of Company Affairs",
+   "releases": 5,
+   "first": "2017-01-17",
+   "last": "2022-08-18",
+   "incentive_catalog": "SUPERSEDED (old name of Ministry of Corporate Affairs -- see MCA entry, cluster finance_mca_niti)"
+  },
+  {
+   "ministry": "Ministry of Planning",
+   "releases": 2,
+   "first": "2017-08-10",
+   "last": "2017-08-10",
+   "incentive_catalog": "N/A (legacy register label; planning function moved to NITI Aayog)"
+  },
+  {
+   "ministry": "PM Speech",
+   "releases": 1,
+   "first": "2018-06-23",
+   "last": "2018-06-23",
+   "incentive_catalog": "N/A (register artifact, not an entity)"
+  },
+  {
+   "ministry": "Ministry of Agro & Rural Industries",
+   "releases": 1,
+   "first": "2026-07-01",
+   "last": "2026-07-01",
+   "incentive_catalog": "SUPERSEDED (merged into Ministry of MSME 2007 -- see MSME entry)"
+  }
+ ],
+ "sweep_status": "v2 sweep 2026-07-20: 82/86 resolved; remainder awaiting transport/tourism/skills cluster"
+}

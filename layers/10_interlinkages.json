@@ -1,0 +1,378 @@
+{
+ "layer": "scheme_interlinkages",
+ "built": "2026-07-20",
+ "method": "aggregator sweep (myscheme/india.gov.in/vikaspedia dead-ends; drishtiias-class explainers + subsidy-consultant sites as SECONDARY; MeitY PLI FAQ + PMFME-AIF SOP + PIB as OFFICIAL anchors)",
+ "note": "No aggregator -- official or private -- maintains stacking info systematically; this layer has no existing substitute.",
+ "interlinkages": [
+  {
+   "schemes": [
+    "PLI (Large Scale Electronics)",
+    "SPECS",
+    "State government schemes"
+   ],
+   "relationship": "stacks",
+   "detail": "MeitY PLI FAQ (Clause 3.6): 'Eligibility under PLI Scheme shall not affect eligibility under any other scheme and vice-versa. A company may apply under both the schemes... incentive disbursal under PLI and SPECS scheme will be independent of each other and also not linked to eligibility and disbursement of incentives under any other central or state government schemes.' Same capex can count under both PLI and SPECS if each scheme's own criteria are met. This is the explicit central-side legal basis for the PLI + state top-up stack.",
+   "source": "meity.gov.in/static/uploads/2024/02/Frequently_Asked_Questions_on_PLI_Scheme.pdf (fetched, pdftotext extracted)",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "PLI/ECMS (central)",
+    "State capital subsidy + SGST reimbursement policies"
+   ],
+   "relationship": "stacks",
+   "detail": "States deliberately design top-ups on central schemes: Gujarat's Aatmanirbhar scheme treats any central-PLI-listed sector as an automatic 'sunrise sector' eligible for higher state incentives on top of central PLI; UP Electronics Component Manufacturing Policy 2025 offers explicit 'ECMS top-up' capital subsidy; Maharashtra PSI 2019 SGST refund is claimed alongside PLI sales incentives (consultant-documented example: Rs 3.2 cr combined Year-1 benefit for one electronics client). Typical state SGST reimbursement is 30-100% of cash-paid SGST capped to fixed capital investment over 5-10 years.",
+   "source": "finraja.com (UP ECMS top-up), entrepreneurindia.co (Gujarat), rmpsco.com + bizastra.com (SGST/PSI stacking practice)",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "AIF",
+    "PMFME"
+   ],
+   "relationship": "stacks",
+   "detail": "Formal convergence module launched Sep 2022 (PIB PRID 1861268) with a published SOP: a PMFME beneficiary with credit-linked 35% subsidy can additionally apply on the AIF portal using the already-approved DPR and sanction letter to get AIF's 3% interest subvention on the same project loan; conversely AIF beneficiaries eligible under PMFME can apply on the PMFME MIS portal with the AIF sanction letter for the capital subsidy. Bank ROI norms for the converged loan are published (pmfmeap.org 'Rate of Interest_Loans under PMFME_convergence with AIF').",
+   "source": "pmfme.mofpi.gov.in convergence SOP + instruction PDFs; pib.gov.in PRID 1861268",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "AIF",
+    "PMKSY (Kisan Sampada)"
+   ],
+   "relationship": "stacks",
+   "detail": "Same convergence module and SOP covers PMKSY of MoFPI: PMKSY credit-linked subsidy beneficiaries can layer AIF 3% interest subvention (AIF terms: Rs 1 lakh crore fund, 3% subvention on loans up to Rs 2 crore, max 7 years).",
+   "source": "pmfme.mofpi.gov.in SOP 'Convergence of AIF of DA&FW with PMFME and PMKSY of MoFPI'; agri.bot/aif",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "AHIDF",
+    "PMMSY"
+   ],
+   "relationship": "boundary",
+   "detail": "AHIDF (Rs 29,610 cr, 3% interest subvention, up to 90% bank loan for dairy/meat/feed/breeding infra) deliberately excludes pure fisheries projects to avoid double-funding with PMMSY; fisheries infra goes to PMMSY. National Livestock Mission's entrepreneurship sub-component (capital subsidy on smaller sheep/goat/poultry/piggery/feed projects) is positioned as complementary to AHIDF's medium-ticket processing focus, not overlapping.",
+   "source": "agri.bot/ahidf (explainer aggregating DAHD guidelines)",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "PM-KUSUM",
+    "PM Surya Ghar Muft Bijli Yojana"
+   ],
+   "relationship": "boundary",
+   "detail": "Clean segmentation: PM Surya Ghar (launched 15 Feb 2024) = residential rooftop only \u2014 up to Rs 78,000 subsidy, 300 free units/month, 1 crore households. PM-KUSUM = agricultural only \u2014 Component A (500 kW-2 MW decentralized plants on barren/stilted farmland), Component B (standalone solar pumps), Component C (solarisation of grid-connected pumps + feeder-level solarisation, surplus sold to DISCOM). No stacking case exists because beneficiary classes and asset classes are disjoint. All KUSUM components currently valid till 31 Dec 2026.",
+   "source": "MNRE PM Surya Ghar guidelines PDF (cdnbbsr.s3waas.gov.in); pmsuryaghar.gov.in; alpexsolar/vikramsolar explainers",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "PM Gati Shakti",
+    "Bharatmala",
+    "Sagarmala",
+    "UDAN",
+    "Inland Waterways",
+    "dry/land ports"
+   ],
+   "relationship": "converges",
+   "detail": "Gati Shakti NMP is the meta-coordination layer, not a funding scheme: it 'will incorporate the infrastructure schemes of various Ministries and State Governments like Bharatmala, Sagarmala, inland waterways, dry/land ports, UDAN'. Started with 16 ministries (Oct 2021); now 44 central ministries + 36 states/UTs onboarded with 1,614 geospatial data layers; every department gets visibility of others' project pipelines for synchronized planning. Individual scheme outlays remain with their nodal ministries.",
+   "source": "pib.gov.in PRID 1763638; pmgatishakti.gov.in/about; negd.gov.in NMP case study",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "PM Dhan-Dhaanya Krishi Yojana",
+    "36 existing schemes across 11 departments"
+   ],
+   "relationship": "converges",
+   "detail": "PMDDKY (2025-26 to 2030-31, 100 districts) has NO separate budget line \u2014 it converges the budgets of 36 existing schemes from 11 departments (incl. PM-KISAN, PMFBY, PMKSY-irrigation) at Rs 24,000 crore/year (Rs 1.44 lakh cr total), executed through District Agriculture Development Plans under Collector-chaired DDKY Samitis, monitored on 117 KPIs monthly. It is the agriculture-sector analogue of Gati Shakti-style convergence: an allocation-routing layer, not a new incentive.",
+   "source": "pmindia.gov.in cabinet approval; drishtiias.com/daily-updates/daily-news-analysis/pm-dhan-dhaanya-krishi-yojana-1",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "Ethanol Blended Petrol (EBP) programme",
+    "Sugar-sector ethanol interest subvention schemes"
+   ],
+   "relationship": "feeds",
+   "detail": "DFPD interest subvention schemes (six notifications 2018-2022; 6% p.a. or 50% of bank rate, whichever lower, for 5 years incl. 1-year moratorium) financed distillery capacity explicitly to meet EBP blending targets and relieve sugar-mill liquidity from surplus sugar; extended to grain-based ethanol in 2021. A 2025 scheme funds cooperative sugar mills converting cane-only ethanol plants to multi-feedstock (maize, damaged foodgrains) \u2014 de-risking EBP supply from cane cycles (PIB PRID 2109157).",
+   "source": "nabard.org scheme page; pib.gov.in PRID 2109157; nsws.gov.in Ethanol Policy page",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "EBP/distilleries",
+    "SATAT (CBG)"
+   ],
+   "relationship": "feeds",
+   "detail": "Feedstock-sharing overlap rather than exclusion: SATAT CBG plants are frequently co-located with ethanol distilleries and sugar mills (press-mud, spent wash, bagasse co-gen), forming integrated bio-refineries; explainers cite 8-12% plant-economics improvement from co-location. Same agri-residue/press-mud feedstock pool serves both programmes \u2014 a real allocation boundary companies must plan, though no formal exclusivity rule surfaced.",
+   "source": "multibagg.ai / oneindia EBP explainers; SATAT co-location coverage",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "ECMS",
+    "India Semiconductor Mission (ISM/ISM 2.0)"
+   ],
+   "relationship": "boundary",
+   "detail": "Product-line split: ECMS covers passive components (resistors, capacitors, connectors, relays, speakers), bare components (multi-layer PCBs), sub-assemblies (camera/display modules) and capital equipment \u2014 ~90% of mobile BoM; active components/semiconductors are explicitly excluded and routed to ISM. ECMS is described as a 'horizontal enabler working alongside ISM 2.0'. Incentives: turnover-linked, capex-linked and hybrid, with a portion of BOTH tied to employment generation; first-come-first-served allocation; 6-year tenure (1-year gestation).",
+   "source": "drishtiias.com/daily-updates/daily-news-analysis/electronics-components-manufacturing-scheme; PIB PRID 2120240",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "ECMS",
+    "Mobile/IT-hardware PLI"
+   ],
+   "relationship": "feeds",
+   "detail": "ECMS deliberately backfills the component layer beneath assembly-stage PLI \u2014 drishtiias frames the PLI criticism ('very little apart from assembly is done in India; component imports rose during peak export years') as the gap ECMS closes. Same company can hold assembly PLI and component ECMS approvals for different product lines.",
+   "source": "drishtiias PLI + ECMS pages; investindia.gov.in team-india blog",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "ECMS",
+    "MPMS (electronics supply chain)"
+   ],
+   "relationship": "boundary",
+   "detail": "NOT VERIFIED THIS RUN: no fetched aggregator/explainer page delineated the ECMS vs MPMS product boundary; searches surfaced only ECMS-ISM boundary. Treat any ECMS/MPMS boundary claim in our dataset as unconfirmed pending a MeitY guideline check.",
+   "source": "absence across drishtiias/vajiram/pwonlyias ECMS pages",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "RoDTEP",
+    "Advance Authorisation / EOU / SEZ"
+   ],
+   "relationship": "excludes",
+   "detail": "Timeline matters: AA/EOU/SEZ exports were originally excluded from RoDTEP; benefits were extended to them (separate lower rates in Appendix 4RE, vs Appendix 4R for normal exports) only until 5 Feb 2025, then lapsed, then RESTORED for exports from 1 Jun 2025 onwards (PIB PRID 2131526). So the current stance (as of mid-2026) is: AA holders CAN take RoDTEP on the same shipment, but at the segregated 4RE rates \u2014 the historical blanket exclusivity no longer holds.",
+   "source": "pib.gov.in PRID 2131526; lakshmisri.com and leatherindia.org briefings; afleo.com RoDTEP guide",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "RoDTEP",
+    "RoSCTL"
+   ],
+   "relationship": "excludes",
+   "detail": "Mutually exclusive by product chapter, not stackable on the same shipment: apparel/garments and made-ups (Ch. 61-63) get RoSCTL (separately notified rebate of state+central levies); all other eligible products get RoDTEP. One shipment line claims one of the two.",
+   "source": "rodtepexchange.com FAQs; dhl.com RoDTEP guide; drishtiias RoDTEP page",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "EPCG",
+    "PLI"
+   ],
+   "relationship": "stacks",
+   "detail": "No exclusivity bar found: MeitY FAQ's blanket 'eligibility under PLI shall not affect eligibility under any other scheme' covers duty-remission/exemption instruments, and secondary comparative analyses (TaxTMI 'Comparative Analysis of MOOWR, PLI, SEZ, EOU, STPI, Advance Authorisation and EPCG') treat PLI (performance cash incentive) and EPCG (capital-goods duty exemption against export obligation) as distinct, combinable regimes. Caveat: sector-specific PLI guidelines can bar counting the same capex under multiple CENTRAL capex-subsidy schemes \u2014 duty exemption is not a capex subsidy, so the stack survives.",
+   "source": "MeitY PLI FAQ Clause 3.6 (OFFICIAL) + taxtmi.com comparative analysis (SECONDARY)",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "SEZ units",
+    "PLI"
+   ],
+   "relationship": "boundary",
+   "detail": "UNRESOLVED \u2014 flag for primary-source verification: the claim that SEZ units are historically excluded from PLI could NOT be confirmed or refuted from aggregators/explainers. MeitY's PLI FAQ contains zero SEZ references (grep of full extracted text). Circumstantial evidence cuts the other way: manufacturers run dual SEZ+DTA campuses (Flex Chennai) and 2025-26 SEZ-rule relaxations for electronics/semicon units suggest active accommodation. The correct primary check is each sector's PLI guideline definition of 'eligible sales' (domestic vs physical exports from SEZ).",
+   "source": "MeitY FAQ (silent); taxtmi.com; angelone.in SEZ-relaxation news",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "RDI Scheme",
+    "AIFs/NBFCs/DFIs/Deep-tech Fund of Funds"
+   ],
+   "relationship": "feeds",
+   "detail": "RDI (Rs 1 lakh cr, Cabinet 1 Jul 2025, launched at ESTIC 3 Nov 2025) never funds companies directly: a Special Purpose Fund under ANRF channels 50-year interest-free money to second-level fund managers (AIFs, DFIs, NBFCs) who lend long-tenor concessional/nil-interest loans or take equity in startups, and may contribute to Deep-Tech FoF. Governance: ANRF Governing Board (PM-chaired) \u2192 Executive Council \u2192 EGoS under Cabinet Secretary. It is a financing layer that stacks beneath any company also holding PLI/ECMS/SIGHT incentives.",
+   "source": "pib.gov.in PRID 2141130; drishtiias RDI page; rdifund.anrf.gov.in",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "Shipbuilding package: SBFAS 2.0",
+    "Maritime Development Fund",
+    "Shipbuilding Development Scheme",
+    "Interest Incentivisation Fund"
+   ],
+   "relationship": "converges",
+   "detail": "The Rs 69,725 cr package (Cabinet ~Sep 2025) is itself a designed 4-pillar stack a shipyard can assemble: SBFAS (Rs 24,736 cr, extended to 31 Mar 2036) gives per-contract financial assistance; MDF (Rs 25,000 cr corpus) provides long-tenor capital; the Rs 5,000 cr Interest Incentivisation Fund cuts borrowing cost; SbDS (Rs 19,989 cr) funds capacity expansion incl. mega clusters \u2014 targeting 4.5 MGT annual capacity, ~Rs 4.5 lakh cr investment.",
+   "source": "pib.gov.in PRID 2170573; maritimegateway.com; business-standard.com",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "NGHM SIGHT",
+    "Fertilizer sector (green ammonia offtake)"
+   ],
+   "relationship": "feeds",
+   "detail": "SIGHT (Rs 17,490 cr of NGHM's Rs 19,744 cr: Rs 4,440 cr electrolyser manufacturing Component-1; Rs 13,050 cr green H2/ammonia production Component-2) links to fertilizer demand via SECI aggregation: prices discovered for ~7.24 lakh MT/yr green ammonia supply to 13 fertilizer units, agreements signed for 6.7 lakh MTPA to 11 plants \u2014 making fertilizer plants the anchor offtake feeding SIGHT production incentives. 15 firms awarded 3,000 MW/yr electrolyser capacity.",
+   "source": "mnre.gov.in NGHM; SECI SIGHT Component-II guidelines PDF; deccanherald",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "ELI",
+    "PLI"
+   ],
+   "relationship": "stacks",
+   "detail": "Design-level complement from the Budget 2024-25 Rs 2 lakh cr employment package: ELI (Rs 99,446 cr, effective 1 Aug 2025-31 Jul 2027) pays on EPFO-verified headcount (Part A: one month EPF wage up to Rs 15,000 to first-timers in two instalments; Part B: up to Rs 3,000/month/additional-employee for 2 years to employers, salary \u2264 Rs 1 lakh, +2 hires if <50 staff, +5 if \u226550, 6-month retention) while PLI pays on incremental sales \u2014 different bases, no exclusivity clause surfaced, so a manufacturer can hold both.",
+   "source": "pib.gov.in PRID 2141127; epfindia.gov.in press release; drishtiias ELI page",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "Urban Challenge Fund",
+    "Municipal bonds / PPP / bank finance"
+   ],
+   "relationship": "feeds",
+   "detail": "UCF (Rs 1 lakh cr central assistance FY26-FY31, extendable to FY34; Rs 10,000 cr in FY26) is structurally a leverage layer: Centre funds max 25% of project cost AND only if the city raises \u226550% from market sources (municipal bonds, loans, PPP) \u2014 i.e., it converges public grant with private capital rather than standing alone. Three verticals: Cities as Growth Hubs, Creative Redevelopment, Water & Sanitation. Eligible: cities \u226510 lakh population, all state/UT capitals, industrial cities \u22651 lakh.",
+   "source": "pib.gov.in PRID 2098385 + 2227986; drishtiias Urban Challenge Fund page",
+   "source_type": "OFFICIAL"
+  },
+  {
+   "schemes": [
+    "Coal Gasification Scheme (Rs 8,500 cr)",
+    "PSU vs private category walls"
+   ],
+   "relationship": "boundary",
+   "detail": "Internal category exclusivity: Category I Rs 4,050 cr reserved for PSUs (\u22643 projects, lump sum Rs 1,350 cr or 15% capex, lower); Category II Rs 3,850 cr open to govt+private (Rs 1,000 cr or 15% capex per project); Category III Rs 600 cr demonstration/small-scale (Rs 100 cr or 15%). 8 projects worth Rs 6,233 cr under implementation. Part of the wider Rs 37,500 cr surface gasification outlay.",
+   "source": "coal.gov.in guidelines PDF; pmindia.gov.in; business-standard",
+   "source_type": "OFFICIAL"
+  }
+ ],
+ "clarity_checks": [
+  {
+   "scheme": "PLI (umbrella)",
+   "explainer_account": "drishtiias 'production-linked-incentive-scheme-1': launched March 2020 (3 sectors) expanding to 14; incentives on incremental sales over 5 years; Empowered Committee oversees; mobile exports $334M (FY18)\u2192~$11B (FY23); criticisms: 'process of awarding incentives lacks clarity', no centralized outcome database, 'very little apart from assembly is done in India', component imports rose during peak export years",
+   "matches_primary": "ADDS",
+   "note": "Consistent with the Nov-2020 Rs 1.97 lakh cr / 14-sector cabinet framing (drishtiias omits the outlay figure entirely \u2014 a gap, not a contradiction). The assembly-vs-manufacture criticism and missing-database point are analytical additions worth carrying; the March-2020 date refers to the mobile/pharma/medical-devices pilot, Nov 2020 to the 10-sector expansion \u2014 both dates are correct, ensure our layer doesn't conflate them"
+  },
+  {
+   "scheme": "ECMS",
+   "explainer_account": "drishtiias: Budget 2026-27 raised ECMS outlay to Rs 40,000 cr; 6-year tenure, 1-year gestation for turnover incentives; covers ~90% of mobile BoM; semiconductors excluded to ISM 2.0; turnover/capex/hybrid incentives with employment-linked portions; FCFS allocation; projected Rs 10.34 lakh cr revenue, 1.41 lakh direct jobs. PIB: 29 more proposals approved (Rs 7,104 cr investment, Rs 84,515 cr production, 14,246 jobs)",
+   "matches_primary": "ADDS",
+   "note": "CAUTION: the widely-known original ECMS outlay at April-2025 notification was ~Rs 22,919 cr; drishtiias's Rs 40,000 cr is presented as a Budget 2026-27 enhancement. If our primary record still says 22,919, that's a genuine time-skew, not an error on either side \u2014 record both with dates"
+  },
+  {
+   "scheme": "AIF",
+   "explainer_account": "agri.bot + official SOP: Rs 1 lakh cr, 3% interest subvention on loans up to Rs 2 cr (max 7 yrs), formal convergence with PMFME/PMKSY via portal using already-approved DPR + sanction letter",
+   "matches_primary": "YES",
+   "note": "Explainer and official SOP fully agree; the convergence module (Sep 2022, PIB 1861268) is itself the primary source"
+  },
+  {
+   "scheme": "NGHM/SIGHT",
+   "explainer_account": "Rs 19,744 cr total = Rs 17,490 cr SIGHT + Rs 1,466 cr pilots + Rs 400 cr R&D + Rs 388 cr other; SIGHT split Rs 4,440 cr electrolysers / Rs 13,050 cr production; 15 firms 3,000 MW electrolyser awards; 7.24 lakh MTPA ammonia price discovery for 13 fertilizer units; targets 5 MMT/yr, 125 GW RE, Rs 8 lakh cr investment, 6 lakh jobs",
+   "matches_primary": "YES",
+   "note": "Numbers match the Jan 2023 mission document exactly across MNRE, SECI and explainer accounts"
+  },
+  {
+   "scheme": "ELI",
+   "explainer_account": "drishtiias + PIB: Rs 99,446 cr, Cabinet 1 Jul 2025, in force 1 Aug 2025-31 Jul 2027, >3.5 cr jobs target; Part A 1.92 cr first-timers, one month EPF wage \u2264Rs 15,000 in 2 instalments (6 and 12 months, second tied to financial-literacy course); Part B employer Rs 3,000/mo/employee for 2 yrs, ~2.6 cr additional jobs",
+   "matches_primary": "YES",
+   "note": "Explainers (cleartax, pmfias, drishtiias) track the PIB release verbatim; note some explainers round to 'Rs 1 lakh crore' \u2014 use 99,446"
+  },
+  {
+   "scheme": "RDI",
+   "explainer_account": "Rs 1 lakh cr over 6 years (Rs 20,000 cr FY26); Cabinet 1 Jul 2025, PM launch at ESTIC 3 Nov 2025; two-tier SPF-under-ANRF \u2192 2nd-level fund managers (AIF/DFI/NBFC); concessional/nil-interest long loans + startup equity + possible Deep-Tech FoF contribution; EGoS under Cabinet Secretary; sunrise sectors: energy transition, quantum, robotics, AI, biotech, space",
+   "matches_primary": "YES",
+   "note": "drishtiias account matches PIB PRID 2141130 and rdifund.anrf.gov.in; the 'does not directly invest in industries' design point is the detail most often mangled elsewhere \u2014 drishtiias gets it right"
+  },
+  {
+   "scheme": "Shipbuilding package",
+   "explainer_account": "Rs 69,725 cr, 4 pillars: SBFAS Rs 24,736 cr extended to 31 Mar 2036; MDF Rs 25,000 cr + Rs 5,000 cr Interest Incentivisation Fund; SbDS Rs 19,989 cr for 4.5 MGT capacity; ~Rs 4.5 lakh cr investment, ~30 lakh jobs expected",
+   "matches_primary": "YES",
+   "note": "Secondary (maritimegateway, business-standard) and PIB PRID 2170573 agree; pillar sub-totals sum correctly (24,736+25,000+5,000+19,989 \u2248 74,725 \u2014 note the components as reported sum ABOVE 69,725; likely the 5,000 cr IIF sits inside MDF corpus accounting \u2014 flag for reconciliation)"
+  },
+  {
+   "scheme": "UCF (Urban Challenge Fund)",
+   "explainer_account": "drishtiias/PIB: Rs 1 lakh cr central assistance FY2025-26 to 2030-31 (extendable FY34), Rs 10,000 cr FY26 allocation; Centre 25% of project cost, city must raise \u226550% from market; verticals: growth hubs, creative redevelopment, water/sanitation",
+   "matches_primary": "YES",
+   "note": "Budget-speech announcement (Feb 2025) and later Cabinet approval (PIB 2227986) are consistent; UCF is company-facing only indirectly (PPP concessionaires, municipal bond arrangers)"
+  },
+  {
+   "scheme": "Coal gasification incentive",
+   "explainer_account": "drishtiias/coal.gov.in: Rs 8,500 cr in 3 categories (4,050 PSU / 3,850 mixed / 600 demo) with 15%-of-capex-capped lump sums; 8 projects Rs 6,233 cr under implementation",
+   "matches_primary": "CONTRADICTS",
+   "note": "Devdiscourse-style explainers describe 'up to 20% of Plant & Machinery cost in 4 milestone-linked instalments' while the coal.gov.in guideline framing is '15% of capex or fixed lump sum, whichever lower'. One of these is wrong or describes a different window \u2014 verify against the Feb 2024 guidelines PDF before our layer states a percentage"
+  },
+  {
+   "scheme": "PMDDKY",
+   "explainer_account": "drishtiias: 36 schemes/11 departments converged, Rs 24,000 cr/yr 2025-31 (Rs 1.44 lakh cr), 100 districts, 1.7 cr farmers, 117 KPIs, DDKY Samiti under Collector, 40% subsidies/30% infra/20% loans/10% training split",
+   "matches_primary": "YES",
+   "note": "Matches pmindia.gov.in cabinet note; the 40/30/20/10 split appears only in some explainers \u2014 treat as SECONDARY until found in an official annexure"
+  },
+  {
+   "scheme": "NIPU",
+   "explainer_account": "No scheme by this acronym found on any aggregator or explainer",
+   "matches_primary": "CONTRADICTS",
+   "note": "Searches return only NEIIPP/NEIDS/UNNATI (NE industrialization). 'NIPU' in our scheme list is either an internal/erroneous acronym or a very recent unindexed announcement \u2014 must be resolved from our own primary notes before publication"
+  }
+ ],
+ "aggregator_assessment": [
+  {
+   "site": "myscheme.gov.in",
+   "verdict": "NOT useful for company-facing interlinkage work",
+   "detail": "Search/category pages (including 'Business & Entrepreneurship') are client-side React shells \u2014 zero scheme data in served HTML; the backing api.myscheme.gov.in returns 401 Unauthorized without an x-api-key; even a direct scheme-detail URL (schemes/dot-pli-scheme) served an error shell to a non-JS fetcher. Platform's own framing is citizen-eligibility discovery ('based upon the eligibility of the citizen', demographic-driven matching). It does index some company-facing schemes (a DoT PLI page exists per search engines) but carries no stacking/exclusivity metadata at all."
+  },
+  {
+   "site": "india.gov.in/my-government/schemes",
+   "verdict": "Directory shell only",
+   "detail": "Static HTML is portal chrome (accessibility widgets, calendar, FAQ toggles); the scheme listing itself is JS-loaded \u2014 0 scheme anchors extractable server-side. Even when rendered it is a link directory to nodal ministries, with no cross-scheme relationships."
+  },
+  {
+   "site": "vikaspedia.in",
+   "verdict": "Citizen/rural focus; content unreachable to plain fetchers",
+   "detail": "Home page server-renders marketing copy; content routes (viewcontent/...) return ~11KB JS shells with no article text via curl. Historically decent scheme write-ups, but orientation is 'poor and vulnerable groups', not corporate incentives; no interlinkage layer."
+  },
+  {
+   "site": "NSWS (nsws.gov.in) \u2014 encountered incidentally",
+   "verdict": "The actual government-run company-facing aggregator",
+   "detail": "Kept surfacing in searches as the canonical page for company-facing schemes (Ethanol Policy, National Green Hydrogen Mission scheme pages). For this project NSWS, not myscheme, is the official aggregator worth systematic scraping \u2014 not fetched this run, flagging as follow-up."
+  },
+  {
+   "site": "drishtiias.com (and peers: vajiramandravi, pwonlyias, insightsonindia, forumias)",
+   "verdict": "Best per-scheme clarity, zero systematic interlinkage",
+   "detail": "UPSC explainers are current (already reflect Budget 2026-27 changes), numerically careful, and WebFetch-accessible without blocks. But every scheme is a standalone article; convergence/stacking appears only when it IS the news (PMDDKY, AIF convergence module). Nobody maintains a stacking matrix."
+  },
+  {
+   "site": "Consultancy/subsidy-advisory sites (finraja, rmpsco, bizastra, afleo, taxtmi, agri.bot)",
+   "verdict": "Only ecosystem documenting stacking practice",
+   "detail": "The center-state stacking knowledge (PLI+PSI SGST refunds, UP ECMS top-ups, Gujarat auto-sunrise, RoDTEP Appendix 4R vs 4RE mechanics, MOOWR/PLI/SEZ/EPCG comparisons) lives on commercial subsidy-consultant sites \u2014 commercially motivated but operationally specific. Treat as SECONDARY with per-claim verification against scheme guidelines; they are, however, the closest thing to a systematic interlinkage source that exists."
+  },
+  {
+   "conclusion": "No aggregator \u2014 official or private \u2014 maintains interlinkage/stacking information systematically. The interlinkage layer being built here has no existing substitute; primary anchors for each edge are scheme-specific guideline PDFs (MeitY FAQ Clause 3.6, PMFME-AIF SOP, DGFT Appendix 4R/4RE, coal.gov.in guidelines) plus PIB releases."
+  }
+ ],
+ "site_access_issues": [
+  {
+   "site": "myscheme.gov.in",
+   "issue": "Category/search pages are JS shells (curl returns app skeleton, 65-134KB, no scheme data; no usable __NEXT_DATA__ payload); api.myscheme.gov.in/search/v4/schemes returns {\"message\":\"Unauthorized\"} without an API key; scheme detail page served 'Something went wrong' error state to WebFetch"
+  },
+  {
+   "site": "india.gov.in/my-government/schemes",
+   "issue": "226KB static HTML is all portal chrome; scheme list is client-side loaded \u2014 no scheme links extractable"
+  },
+  {
+   "site": "vikaspedia.in",
+   "issue": "Home page fine (316KB, server-rendered); content pages (viewcontent/*) return ~11KB JS shells with no article text"
+  },
+  {
+   "site": "clearias.com",
+   "issue": "Not directly fetched \u2014 search engines consistently ranked drishtiias/vajiram/pwonlyias/insightsonindia above it for every target scheme, so budget was spent there instead"
+  },
+  {
+   "site": "drishtiias.com",
+   "issue": "No blocks; WebFetch rendered both target pages cleanly"
+  },
+  {
+   "site": "meity.gov.in PLI FAQ PDF",
+   "issue": "Fetched OK (183KB); text extracted via pdftotext; contains the load-bearing Clause 3.6 stacking answer; contains ZERO references to 'SEZ' \u2014 SEZ-PLI stance remains unverified"
+  },
+  {
+   "site": "fetch budget",
+   "issue": "~9 curl/WebFetch fetches + 14 web searches used; myscheme API and vikaspedia content are the two honest dead-ends; NSWS deliberately left unfetched as follow-up"
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "cluster": "environment_ib_education_doner",
+ "swept": "2026-07-20",
+ "ministries": [
+  {
+   "ministry": "MoEFCC",
+   "verdict": "HAS-INCENTIVES (market instruments)",
+   "policies": [
+    {
+     "n": "EPR certificate markets x5 (plastic, e-waste, battery, tyres, used oil) + ELV",
+     "t": "tradeable-certificate obligation markets",
+     "d": "registered recyclers SELL certificates to obligated producers = demand-guaranteed revenue; six-portal CPCB SSO system",
+     "v": "partial (portals are JS shells; CPCB listing verified)"
+    },
+    {
+     "n": "Green Credit Programme 2023",
+     "t": "tradeable green credits",
+     "d": "eco-restoration/plantation credits via ICFRE; registration OPEN on moefcc-gcp.in; NOT on moef.gov.in main site",
+     "v": true
+    },
+    {
+     "n": "CCTS linkage",
+     "t": "carbon credits",
+     "d": "legally under Ministry of Power/BEE not MoEFCC; GCP-CCTS exchange announced, not operational",
+     "v": false
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of I&B",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "Foreign film production incentive",
+     "t": "cash reimbursement",
+     "d": "30% QPE +5% Indian-labour +5% Indian-content = up to 40%, cap Rs 30cr/project; via Film Facilitation Office; Feb-2024 revised guidelines (71pp PDF verified)",
+     "v": true
+    },
+    {
+     "n": "Official co-production incentive",
+     "t": "cash reimbursement",
+     "d": "30% of QCPE cap Rs 30cr, no minimum for treaty co-productions",
+     "v": true
+    },
+    {
+     "n": "Animation/post/VFX services incentive",
+     "t": "cash reimbursement",
+     "d": "30%+5% cap Rs 30cr, min QPE Rs 1cr; company-facing for Indian service exporters",
+     "v": true
+    },
+    {
+     "n": "AVGC-XR / Create in India Mission",
+     "t": "ecosystem programme",
+     "d": "no standing fiscal incentive published yet",
+     "v": "partial"
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of Education",
+   "verdict": "N/A",
+   "policies": [],
+   "note": "CMS schemes endpoint EMPTY; ANRF is DST's; IIT research parks are institution-level. Recorded honestly as thin."
+  },
+  {
+   "ministry": "MDoNER",
+   "verdict": "THIN (mostly state/project-facing)",
+   "policies": [
+    {
+     "n": "NE Venture Capital Fund (NEDFi)",
+     "t": "VC equity",
+     "d": "unverifiable on-site this pass: not in mdoner CMS, nedfi.com/NEVF 404",
+     "v": false
+    },
+    {
+     "n": "PM-DevINE Rs 6,600cr",
+     "t": "project funding",
+     "d": "no direct company window; contractor/EPC benefit",
+     "v": true
+    },
+    {
+     "n": "NESIDS (Roads/OTRI)",
+     "t": "infra funding",
+     "d": "state route; extended to 31-Mar-2026",
+     "v": true
+    },
+    {
+     "n": "Bamboo/Agarwood value-chain initiatives",
+     "t": "sector development",
+     "d": "titles verified, detail pages empty (CMS quirk)",
+     "v": "partial"
+    }
+   ]
+  }
+ ],
+ "access_issues": [
+  "moef.gov.in has NO pages for GCP/EPR markets/CCTS -- content lives on CPCB portals + moefcc-gcp.in",
+  "battery EPR portal DNS-failed",
+  "education.gov.in CMS schemes endpoint EMPTY",
+  "mdoner CMS per-slug query returns [] even for indexed slugs",
+  "mib.gov.in guideline = 6MB scanned PDF, needed local pypdf"
+ ],
+ "not_in_brief": [
+  "EPR Used Oil + End-of-Life Vehicles markets",
+  "MDoNER SIDF (closed pipeline)"
+ ]
+}

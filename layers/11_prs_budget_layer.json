@@ -1,0 +1,499 @@
+{
+ "layer": "prs_budget_and_legislation",
+ "built": "2026-07-20",
+ "source": "PRS Legislative Research (prsindia.org) -- Demand-for-Grants analyses + Bill Track, scraped 2026-07-20; SECONDARY analytical source over official budget documents",
+ "headline": "PRS DFG coverage maps to only ~12-14 of ~25 incentive-relevant ministries; the manufacturing-incentive core (Commerce/DPIIT, Heavy Industries, Textiles, Steel, Chemicals, Food Processing, MSME) has NO DFG analysis -- PLI-underspend visibility exists only for MeitY and telecom.",
+ "dfg_coverage": [
+  "Agriculture and Farmers' Welfare (2026-27)",
+  "Defence (2026-27)",
+  "Education (2026-27)",
+  "Environment, Forests and Climate Change (2026-27)",
+  "Food and Public Distribution (2026-27)",
+  "Health and Family Welfare (2026-27)",
+  "Home Affairs (2026-27)",
+  "Housing and Urban Affairs (2026-27)",
+  "Jal Shakti (2026-27)",
+  "Power and New & Renewable Energy (2026-27, combined note)",
+  "Railways (2026-27)",
+  "Road Transport and Highways (2026-27)",
+  "Rural Development (2026-27)",
+  "Telecommunications (2026-27)",
+  "Electronics and Information Technology (latest URL 2025-26; content updated to 2026-27)",
+  "Petroleum and Natural Gas (2025-26, latest)",
+  "Women and Child Development (2025-26, latest)",
+  "Science and Technology (2024-25, latest)",
+  "Civil Aviation (2022-23, latest)",
+  "Historical only: Coal (2017-18), Drinking Water & Sanitation (2018-19), Human Resource Development (2020-21), Social Justice and Empowerment (2018-19), Youth Affairs and Sports (2018-19)"
+ ],
+ "ministry_findings": [
+  {
+   "ministry": "Power and New & Renewable Energy",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Ministry of Power allocated Rs 29,997 crore (+39% over 2025-26 RE); RDSS gets Rs 18,000 crore (+15%). In 2022-23 the Ministry's actual spend was 42% below budget, mainly from 64% RDSS utilisation",
+     "figure": "Power BE Rs 29,997 cr; RDSS Rs 18,000 cr; 2022-23 underspend 42%",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-power-and-new-renewable-energy"
+    },
+    {
+     "fact": "RDSS smart metering far behind: 22 crore consumer meters sanctioned but only 5 crore (23%) installed as of Dec 2025; central grant capped at Rs 900/meter vs discovered costs of Rs 7,000-16,000",
+     "figure": "23% of sanctioned consumer meters installed",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-power-and-new-renewable-energy"
+    },
+    {
+     "fact": "MNRE allocated Rs 32,915 crore (+30%); PM Surya Ghar gets Rs 22,000 crore but only 24 lakh of 1 crore target households have rooftop solar (24%) as of Dec 9, 2025; 2025-26 scheme spend est 15% below BE; mandatory domestic modules constrained by insufficient manufacturing capacity",
+     "figure": "PM Surya Ghar Rs 22,000 cr; 24% of target achieved",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-power-and-new-renewable-energy"
+    },
+    {
+     "fact": "PM-KUSUM: grid-connected decentralised solar plants at 765 MW installed vs 10,000 MW sanctioned (8%); grid-connected solar pumps 22%; but 2025-26 spend est 92% ABOVE budget as backlog clears",
+     "figure": "8% of sanctioned solar-plant MW installed; Rs 5,000 cr BE",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-power-and-new-renewable-energy"
+    },
+    {
+     "fact": "National Green Hydrogen Mission allocation doubled to Rs 600 crore; 18 companies awarded 0.86 MMT/yr capacity vs 5 MMT-by-2030 target; green hydrogen at USD 3-6/kg vs grey USD 1.5-3/kg",
+     "figure": "Rs 600 cr (+100%); 17% of 2030 capacity awarded",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-power-and-new-renewable-energy"
+    }
+   ]
+  },
+  {
+   "ministry": "Electronics and Information Technology",
+   "budget_year": "2026-27 (analysis published under the 2025-26 URL)",
+   "findings": [
+    {
+     "fact": "MeitY allocated Rs 21,633 crore for 2026-27, 17% LOWER than 2025-26 BE (Rs 26,026 cr), driven by cuts to PLI schemes and IndiaAI; ministry-level utilisation ranged 57% (2022-23) to est 78% (2025-26)",
+     "figure": "Rs 21,633 cr; -17% y/y BE",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-electronics-and-information-technology"
+    },
+    {
+     "fact": "Semicon India funds underutilised since 2023-24: 23% utilisation in 2023-24, 9% in 2024-25, est 61% in 2025-26; allocated Rs 8,000 crore for 2026-27 (37% of MeitY budget); new India Semiconductor Mission 2.0 gets Rs 1,000 crore",
+     "figure": "Semicon utilisation 23%/9%/61%; Rs 8,000 cr BE",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-electronics-and-information-technology"
+    },
+    {
+     "fact": "PLI split verdict: LSEM exceeded investment target (Rs 10,905 cr vs Rs 7,000 cr; smartphone exports USD 7bn 2022 to USD 20bn 2024) but PLI IT Hardware 2.0 achieved only ~20% of investment and 3% of production targets (as of Feb 2025); PLI funds underutilised since 2022-23 due to fewer claims; 2026-27 PLI allocation cut 78% to Rs 1,527 crore",
+     "figure": "IT-hardware PLI: 3% of production target; PLI BE -78%",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-electronics-and-information-technology"
+    },
+    {
+     "fact": "IndiaAI Mission utilisation below 50% since launch despite allocation quadrupling in 2025-26; 2026-27 allocation halved to Rs 1,000 crore",
+     "figure": "<50% utilisation; Rs 2,000 cr to Rs 1,000 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-electronics-and-information-technology"
+    },
+    {
+     "fact": "Electronics Component Manufacturing Scheme outlay proposed to rise to Rs 40,000 crore in Budget 2026-27; Rs 1,500 crore allocated for the year; NITI Aayog (2026) noted principal LSEM PLI beneficiaries were Apple contract manufacturers",
+     "figure": "ECMS outlay Rs 40,000 cr; Rs 1,500 cr BE",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-electronics-and-information-technology"
+    }
+   ]
+  },
+  {
+   "ministry": "Communications (Department of Telecommunications)",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "DoT allocated Rs 73,991 crore; 41% is BSNL/MTNL revival support, and 2025-26 spending is estimated 34% below budget mainly on underutilised BSNL/MTNL support",
+     "figure": "Rs 73,991 cr; -34% utilisation 2025-26",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-telecommunications"
+    },
+    {
+     "fact": "BharatNet allocated Rs 20,000 crore (+264% over 2025-26 RE) but 2025-26 BharatNet spend est 75% below budget; underutilised since 2022-23; only 766 of ~1 lakh gram-panchayat Wi-Fi hotspots active",
+     "figure": "Rs 20,000 cr; 75% underspend; 0.8% hotspots active",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-telecommunications"
+    },
+    {
+     "fact": "Telecom instrument imports rose 21% in 2024-25; PRS flags domestic manufacturing cost disabilities and weak component base despite telecom PLI",
+     "figure": "imports +21% y/y",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-telecommunications"
+    },
+    {
+     "fact": "Chronic forecasting volatility: 2021-22 spend 62% below BE, 2022-23 41% above, 2023-24 11% below \u2014 driven by carryover of BSNL/MTNL revival allocations",
+     "figure": "swings of -62% to +41% vs BE",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-telecommunications"
+    }
+   ]
+  },
+  {
+   "ministry": "Agriculture and Farmers' Welfare",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Ministry allocated Rs 1,40,529 crore (+5.4% over 2025-26 RE); PM-KISAN takes Rs 63,500 crore (45% of budget, flat y/y); cumulative PM-KISAN disbursal Rs 4.09 lakh crore over 21 instalments",
+     "figure": "Rs 1,40,529 cr; PM-KISAN Rs 63,500 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-agriculture-and-farmers-welfare"
+    },
+    {
+     "fact": "Agriculture Infrastructure Fund (AIF) allocated Rs 910 crore (+1.1% over RE); scheme expanded Aug 2024 (financing window to 2025-26, operations to 2032-33, APMCs and integrated processing projects made eligible)",
+     "figure": "AIF Rs 910 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-agriculture-and-farmers-welfare"
+    },
+    {
+     "fact": "Namo Drone Didi underspent 85% in 2025-26 (Rs 100 cr spent vs Rs 677 cr BE); re-allocated Rs 677 crore for 2026-27",
+     "figure": "85% underspend",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-agriculture-and-farmers-welfare"
+    },
+    {
+     "fact": "Two 2025-26 budget-announcement schemes died unspent: National Mission on High-Yielding Seeds (Rs 100 cr, zero utilisation, no 2026-27 allocation) and Mission for Pulses (Rs 1,000 cr, zero utilisation, no 2026-27 allocation)",
+     "figure": "Rs 1,100 cr allocated, Rs 0 utilised",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-agriculture-and-farmers-welfare"
+    },
+    {
+     "fact": "Overall ministry fund utilisation was 90% of allocations between 2015-16 and 2025-26; crop insurance flat at Rs 12,200 crore; RKVY (state incentive scheme) up 22% to Rs 8,550 crore",
+     "figure": "90% decade utilisation",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-agriculture-and-farmers-welfare"
+    }
+   ]
+  },
+  {
+   "ministry": "Rural Development",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Ministry allocated Rs 1,97,023 crore (+4%); MGNREGS restructured into VB-G RAM G (125 guaranteed days vs 100) allocated Rs 95,692 crore, while residual MGNREGS falls 66% to Rs 30,000 crore",
+     "figure": "VB-G RAM G Rs 95,692 cr; MGNREGS -66%",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-rural-development"
+    },
+    {
+     "fact": "PMAY-Gramin allocated Rs 54,917 crore (+69% over RE) but 2025-26 spend of Rs 32,500 crore was 41% BELOW budget; scheme under-utilising since 2023-24 after years of overspending",
+     "figure": "PMAY-G 41% underspend in 2025-26",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-rural-development"
+    },
+    {
+     "fact": "PMGSY rural roads allocated Rs 19,000 crore, 73% higher than 2025-26 RE",
+     "figure": "Rs 19,000 cr (+73%)",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-rural-development"
+    },
+    {
+     "fact": "Department of Land Resources up 67% to Rs 2,654 crore but has consistently spent below budget since 2013-14; DILRMP (digital land records, an ease-of-business enabler) cut 46% to Rs 125 crore",
+     "figure": "DoLR Rs 2,654 cr; DILRMP -46%",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-rural-development"
+    }
+   ]
+  },
+  {
+   "ministry": "Housing and Urban Affairs",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Ministry allocated Rs 85,522 crore, +50% over 2025-26 RE; the RE itself was dragged down by 69.4% underspending on PMAY-Urban",
+     "figure": "Rs 85,522 cr (+50%)",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-housing-and-urban-affairs"
+    },
+    {
+     "fact": "PMAY-U chronic underspend documented: 2025-26 RE Rs 7,900 crore vs BE Rs 25,794 crore; 2024-25 actuals only 19% of budget; 2026-27 allocates Rs 22,025 crore (+179% over RE)",
+     "figure": "PMAY-U 69% underspend 2025-26; 19% utilisation 2024-25",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-housing-and-urban-affairs"
+    },
+    {
+     "fact": "Ministry-level budget utilisation fell from 94% (2017-18 to 2020-21) to 77% (2021-22 to 2025-26), primarily due to PMAY-U",
+     "figure": "94% to 77% utilisation",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-housing-and-urban-affairs"
+    },
+    {
+     "fact": "PM-eBus Sewa 2025-26 spend est 77% below BE (Rs 300 cr vs budgeted); allocated Rs 500 crore for 2026-27; Swachh Bharat Urban est to use only 40% of its Rs 5,000 crore 2025-26 budget; AMRUT spend 25% below BE at revised stage",
+     "figure": "e-Bus -77%; SBM-U 40% utilisation",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-housing-and-urban-affairs"
+    },
+    {
+     "fact": "Metro/MRTS allocated Rs 30,996 crore (+5% over RE), the single largest capital head",
+     "figure": "Rs 30,996 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-housing-and-urban-affairs"
+    }
+   ]
+  },
+  {
+   "ministry": "Road Transport and Highways",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Ministry allocated Rs 3,09,875 crore, +8% over 2025-26 RE; NHAI budgetary support up 10% for Bharatmala upgradation",
+     "figure": "Rs 3,09,875 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-road-transport-and-highways"
+    },
+    {
+     "fact": "Road transport and safety head has averaged only ~63% utilisation between 2017 and 2026; allocated Rs 400 crore (+11%)",
+     "figure": "63% average utilisation",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-road-transport-and-highways"
+    },
+    {
+     "fact": "Rs 30,000 crore to be drawn from the National Highways Fee Fund in 2026-27 for NHAI debt repayment (-11% vs RE); CRIF transfers to states est Rs 10,430 crore",
+     "figure": "NHF Rs 30,000 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-road-transport-and-highways"
+    }
+   ]
+  },
+  {
+   "ministry": "Railways",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Capital expenditure budgeted at Rs 2,93,030 crore (+10.5%), with 95% financed by gross budgetary support; EBR from PPP only Rs 12,000 crore, well below 2017-19 levels",
+     "figure": "capex Rs 2,93,030 cr; 95% GBS-funded",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-railways"
+    },
+    {
+     "fact": "2025-26 revenue shortfalls: freight 5.1% and passenger 13.8% below budget targets; operating ratio at RE 98.8% vs 98.4% budgeted; CAG says full pension/DRF appropriation would push true OR above 107%",
+     "figure": "OR 98.8%; passenger revenue -13.8% vs BE",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-railways"
+    },
+    {
+     "fact": "Capital-output ratio rose from 418 paise (2017-18) to 704 paise (2023-24) \u2014 no improvement in capital efficiency despite capex growing 17%/yr; Western DFC runs 159 of 380 trains/day capacity",
+     "figure": "COR +7.7%/yr; WDFC at 42% capacity",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-railways"
+    },
+    {
+     "fact": "Passenger subsidy about Rs 60,466 crore (2023-24), covering ~45% of travel cost; lease-charge servicing to hit 25% of internal revenue in 2026-27 (from 19%)",
+     "figure": "subsidy Rs 60,466 cr; lease charges 25% of revenue",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-railways"
+    },
+    {
+     "fact": "Gati Shakti Cargo Terminals: 118 commissioned with Rs 8,600 crore investment, generating Rs 23,200 crore freight revenue 2022-25 \u2014 a working private-participation incentive",
+     "figure": "118 GCTs; Rs 23,200 cr revenue",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-railways"
+    }
+   ]
+  },
+  {
+   "ministry": "Defence",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Allocated Rs 7,84,678 crore (+7% over RE), the largest ministry at 14.7% of central expenditure; 2025-26 RE was 8% above BE due to Rs 36,131 crore spectrum charges",
+     "figure": "Rs 7,84,678 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-defence"
+    },
+    {
+     "fact": "Capital outlay (acquisition) up 17% but is only 29% of the defence budget vs the Standing Committee's recommended 40%; salaries+pensions absorb 44%",
+     "figure": "capital outlay 29% vs 40% norm",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-defence"
+    },
+    {
+     "fact": "Over 35% of modernisation spend Apr 2014-Dec 2024 went to foreign vendors (Rs 1,65,881 crore from 2020-21 to Dec 2024) \u2014 the gap the domestic defence-production incentive push targets; 28% foreign share in 2023-24",
+     "figure": "35% foreign procurement share",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-defence"
+    },
+    {
+     "fact": "Non-lapsable defence modernisation fund (proposed since 2004 with Rs 25,000 crore corpus) still not operationalised; MoF exploring alternative mechanism",
+     "figure": "Rs 25,000 cr fund unimplemented since 2004",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-defence"
+    }
+   ]
+  },
+  {
+   "ministry": "Consumer Affairs, Food and Public Distribution (Dept of Food & PD)",
+   "budget_year": "2026-27",
+   "findings": [
+    {
+     "fact": "Department allocated Rs 2,35,047 crore, flat vs 2025-26 RE; food subsidy 2025-26 RE of Rs 2,27,754 crore ran 12% ABOVE the Rs 2,03,000 crore BE \u2014 an overspend, not underspend",
+     "figure": "food subsidy +12% vs BE",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-food-and-public-distribution"
+    },
+    {
+     "fact": "Sugarcane FRP/radius policies give returns 60-70% above other crops, incentivising overproduction; surplus channelled to exports and ethanol blending",
+     "figure": "returns 60-70% higher",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2026-27-analysis-food-and-public-distribution"
+    }
+   ]
+  },
+  {
+   "ministry": "Petroleum and Natural Gas",
+   "budget_year": "2025-26 (latest available)",
+   "findings": [
+    {
+     "fact": "Ministry allocated Rs 19,327 crore, +11% over 2024-25 RE; LPG subsidy (PAHAL + Ujjwala) allocated Rs 12,100 crore vs Rs 14,700 crore 2024-25 RE",
+     "figure": "Rs 19,327 cr; LPG Rs 12,100 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-petroleum-and-natural-gas"
+    },
+    {
+     "fact": "Strategic Oil Reserves allocation jumped to Rs 5,876 crore (from Rs 130 crore 2024-25 RE); new Mission Anveshan (exploration) at Rs 592 crore",
+     "figure": "SOR Rs 5,876 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-petroleum-and-natural-gas"
+    },
+    {
+     "fact": "Legacy oil bonds to OMCs: Rs 92,200 crore outstanding (Rs 1,06,933 crore with interest), all maturing by April 2026",
+     "figure": "Rs 92,200 cr oil bonds",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2025-26-analysis-petroleum-and-natural-gas"
+    }
+   ]
+  },
+  {
+   "ministry": "Science and Technology",
+   "budget_year": "2024-25 (latest available)",
+   "findings": [
+    {
+     "fact": "Ministry allocated Rs 16,628 crore (+31% over 2023-24 RE): DST Rs 8,029 cr, DSIR Rs 6,323 cr, DBT Rs 2,276 cr; >99% is revenue expenditure",
+     "figure": "Rs 16,628 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2024-25-analysis-science-and-technology"
+    },
+    {
+     "fact": "National Research Foundation (ANRF) \u2014 the private-R&D-leveraging vehicle \u2014 allocated Rs 2,000 crore in 2024-25",
+     "figure": "NRF Rs 2,000 cr",
+     "source_url": "https://prsindia.org/budgets/parliament/demand-for-grants-2024-25-analysis-science-and-technology"
+    }
+   ]
+  }
+ ],
+ "bill_track": [
+  {
+   "bill": "The Jan Vishwas (Amendment of Provisions) Bill, 2026",
+   "year": 2026,
+   "status": "Passed",
+   "incentive_relevance": "Jan Vishwas 2.0 \u2014 decriminalises offences across business-facing laws; core ease-of-doing-business measure (the 2025 version was withdrawn and reintroduced)"
+  },
+  {
+   "bill": "The Jan Vishwas (Amendment of Provisions) Bill, 2025",
+   "year": 2025,
+   "status": "Withdrawn",
+   "incentive_relevance": "Predecessor of the 2026 Act; withdrawn and replaced"
+  },
+  {
+   "bill": "The Mines and Minerals (Development and Regulation) Amendment Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Critical-minerals framework: enables National Critical Mineral Mission-linked exploration/leasing changes affecting mining and battery-materials companies"
+  },
+  {
+   "bill": "The Oilfields (Regulation and Development) Amendment Bill, 2024",
+   "year": 2024,
+   "status": "Passed",
+   "incentive_relevance": "Modernises petroleum lease regime, delinks from mining law, policy stability clauses to attract E&P investment"
+  },
+  {
+   "bill": "The Draft Electricity (Amendment) Bill, 2025",
+   "year": 2025,
+   "status": "Draft",
+   "incentive_relevance": "Distribution reform/competition in supply \u2014 bears directly on discom finances and RDSS-linked incentives"
+  },
+  {
+   "bill": "The Sustainable Harnessing and Advancement of Nuclear Energy for Transforming India (SHANTI) Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Opens nuclear power to private participation \u2014 new company-facing investment framework"
+  },
+  {
+   "bill": "The Income-Tax (No.2) Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Replaces the Income-tax Act, 1961; consolidates concessional-rate and IFSC/SEZ-linked tax incentive provisions (first 2025 version withdrawn after Select Committee)"
+  },
+  {
+   "bill": "The Taxation Laws (Amendment) Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Extends tax exemptions incl. for sovereign/IFSC-relevant investment vehicles"
+  },
+  {
+   "bill": "The Insolvency and Bankruptcy Code (Amendment) Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Creditor-recovery and resolution reform: group/cross-border insolvency, out-of-court initiation \u2014 investment-climate legislation"
+  },
+  {
+   "bill": "The Banking Laws (Amendment) Bill, 2024",
+   "year": 2024,
+   "status": "Passed",
+   "incentive_relevance": "Bank governance and investor-facing changes (nominations, substantial interest thresholds)"
+  },
+  {
+   "bill": "The Sabka Bima Sabki Raksha (Amendment of Insurance Laws) Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Insurance-sector liberalisation including higher FDI \u2014 company-facing entry incentive"
+  },
+  {
+   "bill": "The Securities Markets Code, 2025",
+   "year": 2025,
+   "status": "In Committee",
+   "incentive_relevance": "Consolidates SEBI/SCRA/Depositories law \u2014 capital-markets framework for corporates and IFSC"
+  },
+  {
+   "bill": "The Corporate Laws (Amendment) Bill, 2026",
+   "year": 2026,
+   "status": "In Committee",
+   "incentive_relevance": "Companies Act/LLP amendments \u2014 compliance-burden and ease-of-business changes"
+  },
+  {
+   "bill": "The Indian Ports Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Replaces 1908 Act; state maritime boards and port-sector investment framework"
+  },
+  {
+   "bill": "The Merchant Shipping Bill, 2024 / Coastal Shipping Bill, 2024 / Bills of Lading Bill, 2024 / Carriage of Goods by Sea Bill, 2024",
+   "year": 2024,
+   "status": "Passed",
+   "incentive_relevance": "Shipping-law modernisation package easing vessel registration, coastal trade licensing and trade documentation"
+  },
+  {
+   "bill": "The Protection of Interests in Aircraft Objects Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Implements Cape Town Convention \u2014 lowers aircraft leasing costs, supports aviation/IFSC leasing industry"
+  },
+  {
+   "bill": "The Bharatiya Vayuyan Vidheyak, 2024",
+   "year": 2024,
+   "status": "Passed",
+   "incentive_relevance": "Replaces Aircraft Act 1934 \u2014 licensing/manufacturing (design and manufacture explicitly covered) for aviation industry"
+  },
+  {
+   "bill": "The Boilers Bill, 2024",
+   "year": 2024,
+   "status": "Passed",
+   "incentive_relevance": "Decriminalisation and compliance simplification for industrial users \u2014 Jan Vishwas-adjacent"
+  },
+  {
+   "bill": "The 'Tribhuvan' Sahkari University Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Cooperative-sector capacity building under Ministry of Cooperation's sector-expansion agenda"
+  },
+  {
+   "bill": "The Railways (Amendment) Bill, 2024",
+   "year": 2024,
+   "status": "Passed",
+   "incentive_relevance": "Statutory basis for Railway Board; ancillary to rail investment framework"
+  },
+  {
+   "bill": "The Industrial Relations Code (Amendment) Bill, 2026 + Code on Wages (Central) Rules, 2026 + Industrial Relations (Central) Rules, 2026",
+   "year": 2026,
+   "status": "Passed / Rules notified",
+   "incentive_relevance": "Labour-code operationalisation \u2014 key input to manufacturing-incentive (PLI/ELI) viability"
+  },
+  {
+   "bill": "The Viksit Bharat \u2013 Guarantee for Rozgar and Ajeevika Mission (Gramin) VB-G RAM G Bill, 2025",
+   "year": 2025,
+   "status": "Passed",
+   "incentive_relevance": "Statutory restructure of MGNREGA into 125-day employment guarantee \u2014 largest rural transfer scheme rebuilt"
+  }
+ ],
+ "coverage_gaps": [
+  "Commerce & Industry (DPIIT + Dept of Commerce) \u2014 NO PRS DFG ever; home of most PLI administration, ODOP, industrial corridors, startup/FDI policy",
+  "MSME \u2014 no DFG (CGTMSE, PMEGP, RAMP uncovered)",
+  "Heavy Industries \u2014 no DFG (auto/auto-component PLI, PM E-DRIVE/FAME uncovered)",
+  "Chemicals & Fertilizers \u2014 no DFG (fertilizer subsidy ~Rs 1.7 lakh cr, pharma/bulk-drug/medical-device PLI uncovered)",
+  "Textiles \u2014 no DFG (PLI textiles, PM MITRA, ATUFS uncovered)",
+  "Steel \u2014 no DFG (specialty-steel PLI uncovered)",
+  "Food Processing Industries \u2014 no DFG (PLI-FPI, PMKSY uncovered)",
+  "New & Renewable Energy \u2014 covered only jointly with Power (no standalone solar-PLI/ALMM deep dive)",
+  "Coal \u2014 last DFG 2017-18 (gasification incentives uncovered)",
+  "Mines \u2014 no DFG (critical-minerals mission spending uncovered; only the MMDR Bill is tracked)",
+  "Ports, Shipping & Waterways \u2014 no DFG (Maritime Development Fund, shipbuilding incentives uncovered)",
+  "Civil Aviation \u2014 last DFG 2022-23 (UDAN, MRO incentives stale)",
+  "Fisheries, Animal Husbandry & Dairying \u2014 no DFG (PMMSY, AHIDF uncovered)",
+  "Finance \u2014 no DFG analysis of MoF demands (interest subvention, IFSCA funding, credit guarantee schemes uncovered; PRS covers Finance via Union Budget analysis instead)",
+  "Skill Development & Entrepreneurship \u2014 no DFG",
+  "Labour & Employment \u2014 no recent DFG (ELI scheme uncovered)",
+  "Tourism, Ayush, Earth Sciences, Corporate Affairs, DPE, Cooperation, Panchayati Raj \u2014 no DFG",
+  "Net: of ~25 incentive-relevant ministries in an 86-entity master list, PRS's current DFG set covers only ~12-14; the manufacturing-incentive core (Commerce, Heavy Industries, Textiles, Steel, Chemicals, Food Processing, MSME) is entirely absent \u2014 PRS's PLI-underspend visibility exists only for MeitY and telecom"
+ ],
+ "site_access_issues": [
+  "All 20 fetches returned HTTP 200 via curl with a Chrome UA; no blocking, rate-limiting or CAPTCHA encountered (fetches spaced ~1s)",
+  "Petroleum & Natural Gas 2025-26 page is an abridged HTML stub (summary tables only); the full analysis is a linked PDF (/files/budget/budget_parliament/2025/DFG_Analysis_Petroleum_2025-26.pdf) which was not parsed",
+  "MeitY: no separate 2026-27 DFG URL exists (probe returned 404); PRS has published the full 2026-27 analysis under the 2025-26-titled URL \u2014 findings above use the 2026-27 figures from that page",
+  "Annual Policy Review: both the listing page and the APR 2025-26 detail page carry no HTML body text; content is PDF-only (APR_2025-26.pdf, dated 2026-04-01) and was not parsed \u2014 policy-section findings therefore come from Bill Track and DFG pages instead",
+  "Bill Track statuses were scraped from the listing page as of 2026-07-20; individual bill pages were not fetched, so incentive_relevance descriptions rest on bill titles and general knowledge, not PRS's per-bill summaries",
+  "The Science & Technology DFG is two budget cycles old (2024-25) and Civil Aviation four (2022-23); facts from them should be treated as dated"
+ ]
+}

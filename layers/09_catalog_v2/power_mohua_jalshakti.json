@@ -1,0 +1,119 @@
+{
+ "cluster": "power_mohua_jalshakti",
+ "swept": "2026-07-20",
+ "ministries": [
+  {
+   "ministry": "Ministry of Power",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "RDSS (Rs 3.04L cr, FY22-FY26 final year)",
+     "t": "results-linked grant + AMISP concessions",
+     "d": "smart-meter DBFOOT concessions per-meter payouts; loss-reduction works; discom reform-linked GBS",
+     "v": true
+    },
+    {
+     "n": "BESS VGF via PSDF (Jul-2025)",
+     "t": "viability-gap",
+     "d": "capital-share VGF for standalone battery storage via competitive bidding -- NEW FIND",
+     "v": true
+    },
+    {
+     "n": "Pumped-storage TBCB (26-May-2026)",
+     "t": "assured offtake",
+     "d": "long-term stored-energy contracts for PSP developers",
+     "v": true
+    },
+    {
+     "n": "ISTS private transmission TBCB",
+     "t": "35y concessions",
+     "d": "live global TSP invitation (ERES-47 765kV) on site",
+     "v": true
+    },
+    {
+     "n": "Hydro flood-moderation budgetary support",
+     "t": "capital grant",
+     "d": "capex support for storage HEP components; HPO not findable on site",
+     "v": true
+    },
+    {
+     "n": "CCTS carbon credits + PAT ESCerts",
+     "t": "market instruments",
+     "d": "tradeable certificates; operational detail with BEE",
+     "v": "partial"
+    },
+    {
+     "n": "FDRE procurement guidelines",
+     "t": "PPA framework",
+     "d": "firm & dispatchable RE+storage long-term contracts -- NEW FIND",
+     "v": true
+    }
+   ]
+  },
+  {
+   "ministry": "MoHUA",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "Urban Challenge Fund Rs 1L cr",
+     "t": "challenge CA ~25% + mandatory market leverage",
+     "d": "OPERATIONAL GUIDELINES LAUNCHED 16-Apr-2026; CRGSS credit/risk-guarantee companion attached",
+     "v": true
+    },
+    {
+     "n": "PM-eBus Sewa + PSM",
+     "t": "per-km CA + payment security",
+     "d": "GCC concessions; CA-disbursement SOPs; portal live",
+     "v": true
+    },
+    {
+     "n": "PMAY-U 2.0 (AHP + ARH verticals)",
+     "t": "per-unit CA / concessions",
+     "d": "private-developer participation; ARHC branding retired",
+     "v": true
+    },
+    {
+     "n": "TOD policy + Delhi TOD Regulations 2026",
+     "t": "development-rights incentive",
+     "d": "FAR/density entitlements in transit zones",
+     "v": true
+    },
+    {
+     "n": "AMRUT 2.0 / SBM-U 2.0",
+     "t": "infra procurement w/ PPP elements",
+     "d": "classified procurement-not-incentive where true",
+     "v": true
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of Jal Shakti",
+   "verdict": "THIN (procurement-heavy)",
+   "policies": [
+    {
+     "n": "Namami Gange HAM STPs",
+     "t": "hybrid-annuity concessions",
+     "d": "40% capex + 15y performance annuities; 8 projects under tendering; HAM detail rests with NMCG (site unreachable)",
+     "v": "partial"
+    },
+    {
+     "n": "JJM",
+     "t": "procurement NOT incentive",
+     "d": "site card still says 'by 2024' -- extension to 2028 unreflected",
+     "v": true
+    },
+    {
+     "n": "Atal Bhujal",
+     "t": "state-facing DLI",
+     "d": "correctly NOT company-facing",
+     "v": true
+    }
+   ]
+  }
+ ],
+ "access_issues": [
+  "powermin/mohua/jalshakti ALL headless-WP at cms-<name>.digifootprint.gov.in -- the generalized government backend pattern",
+  "CMS searches miss acronyms (RDSS/HPO/ARHC/hybrid-annuity)",
+  "nmcg.nic.in unreachable"
+ ]
+}

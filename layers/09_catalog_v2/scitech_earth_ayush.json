@@ -1,0 +1,147 @@
+{
+ "cluster": "scitech_earth_ayush",
+ "swept": "2026-07-20",
+ "ministries": [
+  {
+   "ministry": "MoST -- DST/TDB",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "NIDHI umbrella (PRAYAS/PRAYAS 2.0, SSP, EiR, Accelerator, TBI/iTBI)",
+     "t": "grants/seed via incubators",
+     "d": "start-to-scale startup support; PRAYAS 2.0 guidelines May-2026; open-calls tab live",
+     "v": true,
+     "u": "nidhi.dst.gov.in"
+    },
+    {
+     "n": "RDI Fund / RDIF (NEW FLAGSHIP)",
+     "t": "long-tenor concessional financing",
+     "d": "OPEN: 'CFP RDIF 2026' + Apply-for-RDI-Fund CTA on tdb.gov.in; routed via 2nd-level fund managers",
+     "v": true
+    },
+    {
+     "n": "TDB core funding",
+     "t": "soft loans/equity/grants",
+     "d": "444+ agreements, Rs 3,261.6cr funded; OPEN India-Finland CFP; sectoral tracks: semis supply chain, telecom, medical devices, rare disease, 3D printing",
+     "v": true
+    },
+    {
+     "n": "ANRF industry co-funding",
+     "t": "R&D co-funding",
+     "d": "link-only verification; ANRF portal not fetched",
+     "v": "partial"
+    }
+   ]
+  },
+  {
+   "ministry": "MoST -- DBT/BIRAC",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "BIG",
+     "t": "ignition grant",
+     "d": "25th call closed 30-Nov-2025; annual cycle",
+     "v": true,
+     "u": "birac.nic.in/cfp.php"
+    },
+    {
+     "n": "SBIRI / BIPP / PACE",
+     "t": "PPP grants/cost-share",
+     "d": "joint RFP window Apr-May 2025 closed; annual",
+     "v": true
+    },
+    {
+     "n": "BioE3 joint-call family",
+     "t": "grants across biomanufacturing verticals",
+     "d": "most active current theme; Bio-AI call extended to 15-Jul-2026",
+     "v": true
+    },
+    {
+     "n": "Equity: SEED/LEAP/BioAngels/AcE FoF + PCP Fund",
+     "t": "equity/commercialization",
+     "d": "PCP call closed 15-Mar-2026",
+     "v": "partial"
+    },
+    {
+     "n": "Grand Challenges India",
+     "t": "challenge grants",
+     "d": "screening & diagnosis call closing 15-Jul-2026",
+     "v": true
+    }
+   ]
+  },
+  {
+   "ministry": "MoST -- DSIR",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "PRISM",
+     "t": "innovator/MSME grants via TOCICs",
+     "d": "Creative-India-PRISM 2025 guidelines live",
+     "v": true
+    },
+    {
+     "n": "In-house R&D / SIRO recognition",
+     "t": "gateway recognition unlocking tax/customs benefits",
+     "d": "NEW: relaxed guidelines for Deep-Tech Startups",
+     "v": true
+    },
+    {
+     "n": "A2K+ studies",
+     "t": "study grants",
+     "d": "mainly via industry associations not direct firms",
+     "v": true
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of Earth Sciences",
+   "verdict": "N/A (procurement only)",
+   "policies": [
+    {
+     "n": "Deep Ocean Mission / PRITHVi",
+     "t": "mission procurement",
+     "d": "no company-facing incentive scheme exists -- recorded honestly",
+     "v": true
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of AYUSH",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "AOGUSY",
+     "t": "quality/production support",
+     "d": "GMP/pharmacopoeia support to Ayush drug manufacturers",
+     "v": true
+    },
+    {
+     "n": "International Co-operation incentive",
+     "t": "export promotion reimbursement",
+     "d": "travel + stall-hire reimbursement for intl exhibitions -- clearest company-facing AYUSH incentive",
+     "v": true
+    },
+    {
+     "n": "AYURSWASTHYA (CoE)",
+     "t": "institution grants",
+     "d": "institution-facing mostly",
+     "v": true
+    }
+   ]
+  }
+ ],
+ "access_issues": [
+  "birac.nic.in resolves ONLY via pinned IP 164.100.228.150 (--resolve)",
+  "dbtindia.gov.in fully unreachable (timeout+ECONNREFUSED)",
+  "dsir/moes = Next.js shells -> cms-dsir/cms-moes.digifootprint.gov.in wp-json",
+  "ayush.gov.in = Angular SPA; scheme text extracted from JS bundle main-HNPDMX6D.js"
+ ],
+ "not_in_brief": [
+  "RDI Fund/RDIF flagship with open call",
+  "TDB sectoral+bilateral CFP tracks",
+  "full BioE3 call family",
+  "LEAP/BioAngels/AcE/PCP",
+  "DSIR deep-tech recognition relaxation"
+ ]
+}

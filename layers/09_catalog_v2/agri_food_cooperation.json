@@ -1,0 +1,128 @@
+{
+ "cluster": "agri_food_cooperation",
+ "swept": "2026-07-20",
+ "ministries": [
+  {
+   "ministry": "Agriculture & Farmers Welfare",
+   "verdict": "HAS-INCENTIVES",
+   "policies": [
+    {
+     "n": "Agriculture Infrastructure Fund (AIF)",
+     "t": "3% interest subvention + CGTMSE guarantee",
+     "d": "Rs 1L cr facility; LIVE STATS: 2,10,407 projects, Rs 94,272cr sanctioned, Rs 68,153cr disbursed; OPEN portal; converges w/ MIDH/PMFME/SMAM/PM-KUSUM",
+     "v": true,
+     "u": "agriinfra.dac.gov.in"
+    },
+    {
+     "n": "MIDH",
+     "t": "credit-linked back-ended subsidy",
+     "d": "cold chains/pack houses; guidelines 07-May-2026",
+     "v": true
+    },
+    {
+     "n": "PMFBY",
+     "t": "premium-subsidised insurance",
+     "d": "company-facing for insurers/intermediaries only",
+     "v": true
+    },
+    {
+     "n": "e-NAM",
+     "t": "market access",
+     "d": "unified trader licence",
+     "v": true
+    },
+    {
+     "n": "AgriStack/Digital Agriculture Mission",
+     "t": "DPI empanelment",
+     "d": "only a letters-compendium nav entry on site",
+     "v": "partial"
+    }
+   ]
+  },
+  {
+   "ministry": "DFPD (Food & PD)",
+   "verdict": "HAS-INCENTIVES (windows mostly closed)",
+   "policies": [
+    {
+     "n": "Ethanol interest subvention windows 2018-2022",
+     "t": "interest subvention",
+     "d": "ALL CLOSED; benefits continue for approved; 06-03-2025: coop mills may convert to multi-feedstock",
+     "v": true
+    },
+    {
+     "n": "Sugar Development Fund loans",
+     "t": "concessional loans",
+     "d": "CLOSED forthwith per site; OTS window for legacy defaulters",
+     "v": true
+    },
+    {
+     "n": "Sugar export quotas + monthly release orders",
+     "t": "regulatory allocation",
+     "d": "SS 2025-26: 15 LMT + 5 LMT willingness, 7 re-allocation rounds; NSWS-registered",
+     "v": true
+    },
+    {
+     "n": "PEG godown guarantee",
+     "t": "10y FCI hiring guarantee",
+     "d": "de-risks private storage investment",
+     "v": true
+    },
+    {
+     "n": "Silos under PPP",
+     "t": "DBFOO concessions",
+     "d": "via FCI tenders",
+     "v": true
+    },
+    {
+     "n": "WDRA e-NWR",
+     "t": "regulatory enablement",
+     "d": "pledge-finance for registered warehouses",
+     "v": true
+    }
+   ]
+  },
+  {
+   "ministry": "Ministry of Cooperation",
+   "verdict": "HAS-INCENTIVES (coop-facing)",
+   "policies": [
+    {
+     "n": "World's Largest Grain Storage Plan",
+     "t": "convergence-funded infra",
+     "d": "PACS godowns via AIF/AMI/SMAM subsidies; SOP Aug-2025",
+     "v": true
+    },
+    {
+     "n": "NCDC grant-in-aid for coop sugar mills",
+     "t": "grant via NCDC",
+     "d": "ethanol/cogen at coop mills",
+     "v": true
+    },
+    {
+     "n": "NCDC loan family (Yuva/Ayushman/Nandini/Dairy Sahakar)",
+     "t": "concessional loans",
+     "d": "OPEN common application portal on ncdc.in",
+     "v": true
+    },
+    {
+     "n": "National Cooperation Policy 2025 + 80P tax + NCEL/BBSSL/NCOL",
+     "t": "policy/tax/market access",
+     "d": "20y roadmap notified Jul-2025",
+     "v": true
+    }
+   ]
+  }
+ ],
+ "access_issues": [
+  "dfpd.gov.in fully client-side rendered -- wp-json trick does NOT apply, needed headless browser",
+  "agriwelfare.gov.in serves Hindi titles even on /en/ (cookie-based)",
+  "agricoop.gov.in dead (superseded)",
+  "ncdc.in language toggle unreliable via curl"
+ ],
+ "not_in_brief": [
+  "SDF OTS window",
+  "live sugar export-quota machinery",
+  "Sugar (Control) Order 2025 w/ khandsari+NSWS",
+  "PM-DDY MIS inside AIF portal",
+  "Sahakar Mitra/CSISAC/coops-on-GeM"
+ ]
+}

@@ -1,0 +1,295 @@
+{
+ "cluster": "TW+HK+SG",
+ "leads": [
+  {
+   "company": "Taiwan Semiconductor Manufacturing Company",
+   "ticker": "TWSE:2330",
+   "yfinance_ticker": "2330.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$2,216.8bn, 49.9% net margin, mcap NT$60.2tn",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "2025 Annual Report (English, investor.tsmc.com) contains ZERO mentions of India or South Asia \u2014 verified by fetching the AR site and querying for India references",
+     "All disclosed overseas capacity is US/Japan/Germany: 'Construction of our third fab has also begun in 2025' (Arizona, total planned US investment $165bn); Kumamoto fab 1 'began volume production at the end of 2024, with very good yield'; Dresden specialty fab under construction",
+     "India relevance is indirect only: TSMC's ecosystem partners (PSMC alumni engineers, OSAT suppliers) and customers (MediaTek, Apple chain) are the India vector, not TSMC itself"
+    ],
+    "india_operations": "None disclosed. No fab, no design center, no India entity in the annual report.",
+    "report_used": "TSMC 2025 Annual Report (English) via investor.tsmc.com AR microsite (PDF download blocked by Cloudflare; HTML AR site fetched)"
+   }
+  },
+  {
+   "company": "Hon Hai Precision Industry (Foxconn)",
+   "ticker": "TWSE:2317",
+   "yfinance_ticker": "2317.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE: FY2024 net profit NT$152.7bn, EPS NT$11.01 (17-year high); yfinance TTM net income NT$197.2bn, 2.3% margin (EMS-typical)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Foxconn Singapore raised its India-subsidiary stake to 99.9% with a cumulative investment value of $2.82bn (June 2026 filings coverage)",
+     "Subsidiary Yuzhan Technology India announced a $1.5bn investment to expand iPhone production capacity",
+     "Devanahalli (Karnataka) campus hired 30,000+ employees in a year \u2014 'one of the fastest-growing industrial ramp-ups in the country'; largest base remains Sriperumbudur near Chennai",
+     "Company press release (Aug 2024): Hon Hai and Tamil Nadu 'inaugurated a new residential complex in Vallam Vadagal Industrial Park, providing a sustainable living community for thousands of employees'",
+     "Earlier board-approved $1.54bn India investment for 'operational needs'; chip packaging/testing JV explored with HCL Group"
+    ],
+    "india_operations": "iPhone assembly at Sriperumbudur (TN) + Devanahalli (Karnataka) campus; Yuzhan component ops; employee housing built with TN government; India is Hon Hai's flagship China+1 site.",
+    "report_used": "FY2024 results release + Hon Hai/Foxconn press releases (foxconn.com); AR PDF page is JS-driven \u2014 India figures from company releases and filings coverage, AR-PDF quote UNVERIFIED"
+   }
+  },
+  {
+   "company": "Pegatron Corporation",
+   "ticker": "TWSE:4938",
+   "yfinance_ticker": "4938.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$11.7bn, 1.1% net margin",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Jan 2025: Tata Electronics acquired 60% of Pegatron's Chennai iPhone plant; 'Tata will hold 60% and run daily operations under the joint venture, while Pegatron will hold the rest and provide technical support'",
+     "The Chennai plant has ~10,000 employees and makes ~5 million iPhones annually",
+     "Deal had Apple's backing as part of supply-chain diversification beyond China; Pegatron stays as 40% JV technology partner rather than exiting India"
+    ],
+    "india_operations": "40% partner + technical-support provider in the Tata-Pegatron Chennai iPhone JV (formerly Pegatron Technology India).",
+    "report_used": "Deal coverage (TechCrunch/Business Today/TrendForce, Jan 2025); Pegatron TWSE English AR quote UNVERIFIED (not fetched)"
+   }
+  },
+  {
+   "company": "Wistron Corporation",
+   "ticker": "TWSE:3231",
+   "yfinance_ticker": "3231.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$31.7bn, 1.2% margin (AI-server upcycle)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Oct 2023: sold 100% of Wistron InfoComm Manufacturing (India) \u2014 the Narasapura, Karnataka iPhone plant operated since 2017 \u2014 to Tata Electronics for ~US$125M; SPA signed via SMS InfoComm (Singapore) and Wistron Hong Kong",
+     "This made Tata 'the country's first homegrown iPhone maker' \u2014 Wistron is the cautionary counter-case in the India-Taiwan story: full manufacturing exit after labor/margin problems",
+     "Wistron group retains India service/repair presence via SMS InfoComm; any re-entry into India laptop/server assembly is UNVERIFIED"
+    ],
+    "india_operations": "Exited iPhone manufacturing (Narasapura sold to Tata); residual after-sales/repair services footprint.",
+    "report_used": "Divestiture filings coverage (Bloomberg/Business Standard, Oct-Nov 2023); Wistron English AR quote UNVERIFIED"
+   }
+  },
+  {
+   "company": "Delta Electronics",
+   "ticker": "TWSE:2308",
+   "yfinance_ticker": "2308.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$70.4bn, 11.8% net margin; 2024 global revenue ~US$13.1bn",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Krishnagiri (Tamil Nadu) campus: 95 acres, 3,800+ employees, four manufacturing units after two new factories; Sept 2025 groundbreaking attended by TN CM M.K. Stalin",
+     "Planned ~$500M India investment; \u20b9450 cr expansion tranche kicked off 2025; proposed ARIVAM testing facility at Krishnagiri for AI data centers and green energy",
+     "Krishnagiri produces high-efficiency power supplies, DC brushless fans, telecom power, industrial automation, data-center infrastructure and EV-mobility solutions; site runs on up to 53% renewable energy (6.9MWp solar rooftop + wind)",
+     "Three India manufacturing sites: Rudrapur, Gurgaon (Delta Energy), Krishnagiri; India arm held under Delta Electronics (Thailand) PCL"
+    ],
+    "india_operations": "Delta Electronics India Pvt Ltd \u2014 Krishnagiri mega-campus plus Rudrapur/Gurgaon plants; one of the largest Taiwanese electronics manufacturing footprints in India outside the Apple chain.",
+    "report_used": "Delta India press releases (deltaelectronicsindia.com) + Bangkok Post capex coverage; Delta TWSE English AR quote UNVERIFIED"
+   }
+  },
+  {
+   "company": "MediaTek",
+   "ticker": "TWSE:2454",
+   "yfinance_ticker": "2454.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$100.1bn, 16.9% net margin",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "In India since 2004; R&D centres in Noida and Bengaluru with a combined team of over 1,000 engineers contributing to global SoC design, software and connectivity",
+     "Second India R&D center launched in Bengaluru; Noida space expanded (>100,000 sq ft, lease ~\u20b91.44bn)",
+     "MediaTek chipsets account for roughly half of India smartphone-chipset shipments; company earmarked US$200M+ further India investment and is evaluating sourcing from India's new fabs/OSATs"
+    ],
+    "india_operations": "Two R&D centers (Noida, Bengaluru), 1,000+ engineers; dominant India smartphone chipset market share; no manufacturing (fabless).",
+    "report_used": "MediaTek press releases (mediatek.com/prnewswire) + Indian trade press; TWSE English AR quote UNVERIFIED"
+   }
+  },
+  {
+   "company": "Powerchip Semiconductor Manufacturing Corp (PSMC)",
+   "ticker": "TWSE:6770",
+   "yfinance_ticker": "6770.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "MARGINAL-TO-PROFITABLE (yfinance TTM): net income NT$7.5bn shown, but PSMC posted losses through the 2023-24 memory-foundry downturn \u2014 treat margin as cyclical, flag for re-check",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Sept 2024: 'Tata Electronics has completed the Definitive Agreement with Powerchip Semiconductor Manufacturing Corporation (PSMC) of Taiwan' for India's first 12-inch greenfield fab at Dholera, Gujarat",
+     "PSMC licenses 28/40/55/90/110nm technologies and provides design, construction and engineering support; total project up to INR 91,000 crore (~US$11bn), up to 50,000 wafers/month, 20,000+ jobs",
+     "PSMC's own press release: 'Tata joins hands with PSMC to build India's first 12-inch fab'; first technology-transfer payments received late 2024; Tata engineers trained in Taiwan, PSMC personnel deployed to Dholera",
+     "This is the anchor deal of the India-Taiwan semiconductor dynamic \u2014 a mid-tier Taiwanese foundry monetizing mature-node IP into India's ISM 1.0 subsidy program"
+    ],
+    "india_operations": "No owned India assets; technology-transfer + engineering-services partner to Tata Electronics' Dholera fab (revenue via license fees and milestone payments).",
+    "report_used": "PSMC press release (powerchip.com, 2024-02-29) + Tata Electronics definitive-agreement release (Sept 2024); PSMC AR quote UNVERIFIED"
+   }
+  },
+  {
+   "company": "Compal Electronics",
+   "ticker": "TWSE:2324",
+   "yfinance_ticker": "2324.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$5.8bn, 0.8% net margin (thin, EMS-typical)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Feb 2025: MOU with Kalyani Group's electronics division to develop a server business 'using locally manufactured solutions in India'; Made-in-India servers launched from Kalyani's Pune facility",
+     "Compal 'will provide technological support related to servers, including overseeing local production, assembly, testing activities, and final sales' (compal.com media release)",
+     "Asset-light India entry \u2014 technology partner to an Indian industrial group rather than owned plant; contrasts with earlier abandoned Compal India smartphone plans"
+    ],
+    "india_operations": "Server technology partnership with Kalyani Group (Pune); no significant owned manufacturing disclosed.",
+    "report_used": "Compal media release (compal.com/en-us/media/251) + trade press; TWSE English AR quote UNVERIFIED"
+   }
+  },
+  {
+   "company": "Quanta Computer",
+   "ticker": "TWSE:2382",
+   "yfinance_ticker": "2382.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$76.7bn, 3.1% net margin (AI-server leader)",
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "No India manufacturing or investment plans surfaced in searches of Quanta's disclosures or credible trade press; AI-server capacity additions (Nvidia GB200 from Q1 2025) are going to the US, Thailand and Taiwan",
+     "Kept in the sample deliberately as the negative control: Taiwan's top AI-server ODM has so far bypassed India"
+    ],
+    "india_operations": "None found.",
+    "report_used": "Web search sweep only; Quanta English AR quote UNVERIFIED \u2014 absence of evidence, flagged honestly"
+   }
+  },
+  {
+   "company": "Johnson Electric Holdings",
+   "ticker": "SEHK:179",
+   "yfinance_ticker": "0179.HK",
+   "country": "Hong Kong",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "PROFITABLE: FY24 (Mar-2024) net income US$229M on US$3.8bn revenue; yfinance TTM net income US$202M, 5.5% margin",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report subsidiary schedule (fetched PDF) lists 'Johnson Electric Private Limited \u2014 Manufacturing, sales and marketing \u2014 India \u2014 INR1,044,096,500 \u2014 100%' owned",
+     "Company news: Chennai plant opened to 'increase production of its automotive motors... will strengthen Johnson Electric's existing position in the Indian automotive sector', producing engine-cooling-fan and window-lift motors, expected to grow into 'a full range supplier of electric motors and motion subsystems to the automotive industry in India'",
+     "India entity FY25 revenue ~INR 316 cr, ~709 employees (Tracxn) \u2014 real but small relative to the group's 22-country footprint; no India-specific growth narrative in the AR"
+    ],
+    "india_operations": "Wholly-owned Chennai manufacturing/sales subsidiary supplying auto motors to Indian OEMs.",
+    "report_used": "Johnson Electric Annual Report 2023 PDF (fetched, pdftotext, India entries verified) + johnsonelectric.com Chennai plant release"
+   }
+  },
+  {
+   "company": "Lenovo Group",
+   "ticker": "SEHK:992",
+   "yfinance_ticker": "0992.HK",
+   "country": "Hong Kong",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income US$1.91bn, 2.3% net margin",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "FY2024/25 Annual Report (fetched PDF): the Board held 'deep-dive discussions on topics such as AI, investment and growth opportunities in India' \u2014 India singled out at board level",
+     "AR subsidiary schedule: Lenovo (India) Private Limited, 'manufacture and distribution of IT products', share capital INR 8,607,471,514",
+     "Puducherry facility making ~50,000 enterprise AI servers and 2,400 high-end GPU units annually, with '60% of the servers slated for export across the Asia Pacific region'",
+     "India production doubled from 6.4M units (FY24) toward 12M+, targeting ~17M and 100% local PC manufacturing for the Indian market within three years; Motorola smartphones also built locally; ~\u20b918,000 cr of product built/shipped in 2024"
+    ],
+    "india_operations": "Puducherry PC/server plant (with Flex partner lines), Motorola phone assembly, AI-server export hub for APAC; India named a strategic growth market at board level.",
+    "report_used": "Lenovo FY2024/25 Annual Report PDF (doc.irasia.com, fetched and grepped) + news for unit/volume figures"
+   }
+  },
+  {
+   "company": "CLP Holdings",
+   "ticker": "SEHK:2",
+   "yfinance_ticker": "0002.HK",
+   "country": "Hong Kong",
+   "sector": "Green Energy & Fuels",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income HK$10.5bn, 12.1% net margin",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "2024 Annual Report: Apraava Energy (CLP's India platform with La Caisse/CDPQ) holds 3,150 MW installed capacity including 924 MW wind and 250 MW solar across seven states, plus transmission infrastructure",
+     "AR states Apraava targets doubling its energy portfolio in three to four years, contributing to India's 2030 renewable targets, and plans to expand power transmission and enter electricity distribution",
+     "AR cites a 300MW Karnataka wind project starting soon and 'good progress... on the Fatehgarh III and Fatehgarh IV interstate transmission projects in Rajasthan' (250+ km lines, 2,500 MVA substation, operational 2025)",
+     "Apraava ranked among top-10 private power producers in India; CLP invested in India since 2002"
+    ],
+    "india_operations": "Apraava Energy JV \u2014 wind, solar, transmission across 7 states; among India's top-10 private power producers; explicit doubling target.",
+    "report_used": "CLP Holdings 2024 Annual Report (annualreport.clpgroup.com AR2024 snapshot + results announcement PDFs)"
+   }
+  },
+  {
+   "company": "Singapore Technologies Engineering (ST Engineering)",
+   "ticker": "SGX:S63",
+   "yfinance_ticker": "S63.SI",
+   "country": "Singapore",
+   "sector": "Aerospace & Defence",
+   "profitability_check": "PROFITABLE: FY2024 record revenue S$11.28bn (+12%), net profit S$702M (+20%); yfinance TTM shows S$463M/3.7% (TTM basis differs from FY figure)",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "FY2024 Results Announcement PDF (fetched, pdftotext): ZERO occurrences of 'India' \u2014 growth narrative centers on defence exports, US operations and Satcom, with 'operations spanning Asia, Europe, the Middle East and the U.S., serving customers in more than 100 countries'",
+     "No India JV or facility disclosed in FY2024 materials; the Adani MRO/defence buildout that dominates India aerospace news involves Air Works/Elbit/Embraer, not ST Engineering",
+     "India relevance is prospective: India's defence-procurement opening is an addressable market, but nothing concrete is disclosed"
+    ],
+    "india_operations": "None material disclosed; commercial aerospace MRO customers may include Indian carriers (UNVERIFIED).",
+    "report_used": "ST Engineering FY2024 Results Announcement PDF (stengg.com, fetched and grepped); full AR2024 is an HTML microsite, not separately parsed"
+   }
+  },
+  {
+   "company": "Venture Corporation",
+   "ticker": "SGX:V03",
+   "yfinance_ticker": "V03.SI",
+   "country": "Singapore",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income S$227M, 9.0% net margin \u2014 best-in-class EMS margins",
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "No India manufacturing site found: clusters are Singapore, Penang/Johor (Malaysia), Batam (Indonesia), China, plus US/Europe \u2014 ~40 companies, 12,000+ employees concentrated in Southeast Asia",
+     "AR2024 PDF (venture.listedcompany.com) blocked by AWS WAF challenge \u2014 India-mention grep could not be run; search excerpts surfaced no India references",
+     "Venture benefits from the same China+1 flows courting India, but its diversification bet is Malaysia/Batam, not India"
+    ],
+    "india_operations": "None found (UNVERIFIED against full AR text due to WAF block).",
+    "report_used": "Venture Corporation AR2024 (download blocked \u2014 evidence from search excerpts and company site only)"
+   }
+  },
+  {
+   "company": "Food Empire Holdings",
+   "ticker": "SGX:F03",
+   "yfinance_ticker": "F03.SI",
+   "country": "Singapore",
+   "sector": "Food Processing",
+   "profitability_check": "PROFITABLE: 2024 record revenue US$476.3M (4th consecutive growth year); yfinance TTM net income US$36.0M, 6.2% margin",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "AR2024/announcements: spray-dried (2015) and freeze-dried (2021) soluble-coffee plants in Andhra Pradesh are 'running at optimum capacities and delivering strong results', driving South Asia segment growth",
+     "US$37M expansion announced to raise Andhra Pradesh spray-dried coffee capacity by ~60%, construction from 4Q, completion end-2027",
+     "Expansion framed as vertical integration 'to have better control over the entire coffee processing cycle' supporting its branded consumer business across markets \u2014 India is both manufacturing base and growth market (Russia/CIS remains the largest revenue segment)"
+    ],
+    "india_operations": "Two soluble-coffee manufacturing facilities in Andhra Pradesh (spray-dried + freeze-dried) with a 60% capacity expansion underway.",
+    "report_used": "Food Empire Annual Report 2024 (investor.foodempire.com/misc/ar2024) + expansion announcements"
+   }
+  }
+ ],
+ "method_notes": [
+  "All 14 leads verified present in candidates_tw_hk_sg.csv (2,007 names) before inclusion; sector labels taken from the CSV's FocusSector column.",
+  "Requested SG names Sembcorp, Wilmar and Olam, and HK name Techtronic Industries are NOT in the candidate CSV and were excluded per instructions; CLP Holdings (Green Energy) and Food Empire (Food Processing) substituted to keep sector breadth.",
+  "Selection: 9 Taiwan (priority per India's semicon/electronics courting, incl. PSMC for the Tata-Dholera tie-up and Quanta as a deliberate negative control), 3 Hong Kong, 3 Singapore; 15 profitability checks run, 14 leads returned (all pass profitability except Powerchip flagged as cyclical).",
+  "Reports directly fetched and grepped with pdftotext: Lenovo FY2024/25 AR, Johnson Electric AR2023, ST Engineering FY2024 results, TSMC 2025 AR (via HTML microsite). Where the English AR PDF itself was not parsed (Hon Hai, Pegatron, Delta, MediaTek, PSMC, Wistron, Compal, Quanta), evidence rests on company press releases/filings coverage and is marked UNVERIFIED at the AR-quote level.",
+  "Profitability figures are yfinance TTM info fields (netIncomeToCommon, profitMargins) pulled 2026-07-20, cross-checked against FY announcements where available; ST Engineering TTM differs from its FY2024 announced S$702M net profit.",
+  "Key India-Taiwan semicon dynamic captured: PSMC-Tata Dholera fab (INR 91,000 cr, 28-110nm tech transfer), Foxconn's $2.82bn cumulative India build-out with Devanahalli ramp, Pegatron's 60/40 Chennai JV with Tata, and Wistron's full exit as the counter-case."
+ ],
+ "site_access_issues": [
+  "investor.tsmc.com AR PDF returns a Cloudflare 'Just a moment' challenge to curl; worked around via the HTML annual-report microsite",
+  "venture.listedcompany.com AR2024 PDF blocked by AWS WAF (x-amzn-waf-action: challenge) \u2014 Venture's India grep could not be executed",
+  "foxconn.com annual-report page is JavaScript-rendered; direct AR PDF link not resolvable \u2014 Hon Hai evidence sourced from press releases and results announcements instead",
+  "stengg.com AR2024 is an HTML microsite (no single PDF); the FY2024 Results Announcement PDF was fetched as proxy",
+  "Lenovo AR PDF retrieved successfully from doc.irasia.com mirror; pdftotext emitted benign 'Invalid Font Weight' warnings only"
+ ]
+}

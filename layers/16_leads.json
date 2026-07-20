@@ -1,9 +1,9 @@
 {
  "layer": "leads_generation",
  "built": "2026-07-20",
- "method": "yfinance-verified profitable (margin>0 AND roe>0) x curated open-lane map; score = profitability 40 + expansion 25 + open central lane 25 + state top-up 10. Contact enrichment is a separate deliberate step (no personal data collected here). ENRICHED 2026-07-20: US foreign leads carry SEC 10-K India/APAC mention-mining (latest+prior filing, trend); 59 annual-report deep-dive leads added from JP/KR/CN/UK/AU agents (interest levels HIGH/MEDIUM/LOW/NONE with quoted evidence; China leads carry the Press Note 3 lens).",
+ "method": "yfinance-verified profitable (margin>0 AND roe>0) x curated open-lane map; score = profitability 40 + expansion 25 + open central lane 25 + state top-up 10. Contact enrichment is a separate deliberate step (no personal data collected here). ENRICHED 2026-07-20: US foreign leads carry SEC 10-K India/APAC mention-mining (latest+prior filing, trend); 59 annual-report deep-dive leads added from JP/KR/CN/UK/AU agents (interest levels HIGH/MEDIUM/LOW/NONE with quoted evidence; China leads carry the Press Note 3 lens). WAVE-2 2026-07-20: +57 deep-dive leads from DACH/NL, France/SouthEU/Nordics, TW/HK/SG, CA/BR/ZA/SA/IL clusters (yfinance tickers carried; TEPA/PN3/SHANTI/EU-FTA context per cluster).",
  "source": "focus-sector-investor-map/data/focus_sector_companies_final.csv (147 verified names from the 19,795-company catalog)",
- "count": 206,
+ "count": 263,
  "leads": [
   {
    "company": "MICRON TECHNOLOGY INC",
@@ -1446,6 +1446,1751 @@
     ],
     "india_operations": "Established Indian manufacturing (packaged/bulk explosives via Indian Explosives Pvt Ltd), a Hyderabad technology/digital centre, and blasting-services supply to Indian mining and infrastructure customers - one of the deepest India footprints of any ASX-100 industrial.",
     "report_used": "Orica FY2025 Full Year Results (13 Nov 2025) + Orica Annual Report 2025 + orica.com India location page (403 to fetcher; corroborated via Tracxn registry extracts)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Siemens Energy AG",
+   "ticker": "ENR.DE",
+   "market": "Germany",
+   "country": "Germany",
+   "sector": "White Goods & Electricals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 (ended Sep-2024) returned to net profit (~EUR 1.3bn), heavily boosted by EUR 2,079m cash inflow from selling its 18% stake in Siemens Limited India; record order backlog ~EUR 123bn",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"In fiscal year 2025, a spin-off of the energy business of Siemens Limited, India, is intended. We expect a non-cash profit from this, which, among other things, depends on the performance of the shares of Siemens Limited, India, traded on the stock exchange\" \u2014 Siemens Energy Annual Report 2024, pdftotext-verified",
+     "\"At EUR 2,079 million, by far the largest cash inflow was contributed by the sale of the stake in Siemens Limited, India.\" \u2014 Siemens Energy Annual Report 2024, pdftotext-verified",
+     "Siemens Energy India Limited was demerged from Siemens Limited and listed on NSE/BSE in June 2025 and now publishes its own annual report \u2014 siemens-energy.com press release 'Energy business in India successfully listed' + siemens-energy-india.com/annual-reports.html"
+    ],
+    "india_operations": "Siemens Energy India Limited (listed NSE/BSE June 2025, separate annual report at siemens-energy-india.com) \u2014 full grid technologies, transformers and power-generation manufacturing/service footprint inherited from Siemens Ltd India",
+    "report_used": "Siemens Energy Annual Report 2024 (FY Oct-2023-Sep-2024) \u2014 https://assets.siemens-energy.com/dam/990c55de-3afe-487a-862b-b3b500b33756/A-Siemens-Energy-Annual-Report-2024-pdf_Original-pdf_Original%20file.pdf (36 India mentions)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI White Goods",
+     "status": "operational (85->80 attrition noted)"
+    },
+    {
+     "instrument": "BEE/star-rating demand levers",
+     "status": "standing"
+    }
+   ],
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "ABB Ltd",
+   "ticker": "ABBN.SW",
+   "market": "Switzerland",
+   "country": "Switzerland",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 net income ~USD 3.9bn on ~USD 32.9bn revenue, operational EBITA margin ~18% \u2014 strongly profitable",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"Similarly, India is focused on increasing grid capacity and securing access even across its most remote regions.\" \u2014 ABB Integrated Report 2024, pdftotext-verified",
+     "\"Revenues grew in India, Saudi Arabia, Australia, and Singapore, partially offset by a decline in China of 4 percent.\" \u2014 ABB Integrated Report 2024, pdftotext-verified",
+     "\"ABB India is planning to certify one of ABB's sites in Bangalore according to AWS requirements.\" \u2014 ABB Integrated Report 2024, pdftotext-verified",
+     "ABB announced ~USD 75 million investment in India by 2026 for manufacturing and R&D expansion (new Motion facility Peenya, Nelamangala Campus 2), on top of USD 35m in 2025; ~85% of India products manufactured locally \u2014 abb.com news 134015 / new.abb.com news 134105"
+    ],
+    "india_operations": "ABB India Ltd (listed NSE/BSE, ~75% ABB-owned); 3 manufacturing locations in Karnataka alone with 3,000+ manufacturing employees; publishes its own Integrated Annual Report",
+    "report_used": "ABB Integrated Report 2024 \u2014 https://library.e.abb.com/public/ab32fda35c6f4a3cb62f8c5e2e4476c6/Integrated%20Report%202024_ENGLISH.pdf"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Sika AG",
+   "ticker": "SIKA.SW",
+   "market": "Switzerland",
+   "country": "Switzerland",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 record sales CHF ~11.76bn, net profit ~CHF 1.25bn \u2014 strongly profitable; 39% of 2024 investments went to production-capacity expansion (vs 29% in 2023)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"In the automotive and industry business, Sika continued to increase the share of its technologies in vehicles of local and international manufacturers in China, Japan, and India.\" \u2014 Sika Annual Report 2024, pdftotext-verified",
+     "\"Meanwhile, India, Indonesia, Vietnam, the Philippines, and Malaysia recorded robust growth rates.\" \u2014 Sika Annual Report 2024 (Region Asia/Pacific), pdftotext-verified",
+     "New Kharagpur (West Bengal) plant for mortar, concrete admixtures and shotcrete accelerators; \"Sika now has twelve manufacturing facilities in India and has been active in the Indian market for close to four decades\" \u2014 sika.com media release 'Sika continues to expand production in growth market India'"
+    ],
+    "india_operations": "Sika India Private Ltd, Mumbai (100%-owned, listed in AR subsidiary list) + Axson India Private Limited, Pune; 12 manufacturing plants across India",
+    "report_used": "Sika Annual Report 2024 \u2014 https://www.sika.com/dam/dms/corporate/media/glo-ar-24-annual-report.pdf"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Merck KGaA",
+   "ticker": "MRK.DE",
+   "market": "Germany",
+   "country": "Germany",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 net sales ~EUR 21.2bn, net income ~EUR 2.8bn \u2014 profitable ('Delivering Profitable Growth' FY2024 release)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"In 2024, Asia-Pacific generated 68% of Electronics' net sales\" and Merck lists R&D units in India among its global network \u2014 Merck Annual Report 2024 (reports.merckgroup.com; UNVERIFIED exact wording, taken from AR web-report search summary; the Electronics R&D sub-page itself contains no India mention when fetched)",
+     "Tata Electronics and Merck signed an MoU for \"strategic collaboration to jointly develop capabilities in semiconductor materials, semiconductor fabrication infrastructure, and specialty chemical and gas distribution in India\" \u2014 tataelectronics.com press release, Sep 2025 (UNVERIFIED exact wording)",
+     "Merck opened a Global Capability Centre in Bengaluru supporting digital/technology operations across Life Science, Healthcare and Electronics, and expanded its Peenya (Bengaluru) Life Science manufacturing facility into a key APAC manufacturing location (Jan 2025) \u2014 indianpharmapost.com / biotecnika.org"
+    ],
+    "india_operations": "Merck Life Science Pvt Ltd (Peenya Bengaluru manufacturing, Jigani labs, Mumbai distribution centre), new Bengaluru GCC, Electronics semiconductor-materials partnership with Tata Electronics",
+    "report_used": "Merck KGaA Annual Report 2024 web report \u2014 https://www.reports.merckgroup.com/en/annualreport/2024/ (Electronics sections)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "NXP Semiconductors N.V.",
+   "ticker": "NXPI",
+   "market": "Netherlands",
+   "country": "Netherlands",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 revenue ~USD 12.6bn, net income ~USD 2.5bn \u2014 highly profitable",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"NXP is committed to doubling its R&D efforts here in the country in the next few years, which is far in excess of a billion dollars.\" \u2014 CEO Kurt Sievers at SEMICON India, Greater Noida, Sep 2024, via datacenterdynamics.com",
+     "NXP operates four semiconductor design centers in India employing ~3,000 people, focused on advanced automotive/AI systems, and is in discussions with Indian automotive and other industries to expand its footprint \u2014 autotechinsight.spglobal.com / sdxcentral.com (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Four design centres (Noida, Bengaluru, Hyderabad, Pune), ~3,000 engineers \u2014 one of NXP's largest R&D bases globally; $1bn+ committed expansion",
+    "report_used": "NXP 2024 Annual Report (Form 10-K) not directly fetched \u2014 evidence from SEMICON India 2024 CEO announcement coverage: https://www.datacenterdynamics.com/en/news/nxp-semiconductors-to-invest-more-than-1-billion-to-boost-its-rd-in-india/"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Koninklijke Philips N.V.",
+   "ticker": "PHIA.AS",
+   "market": "Netherlands",
+   "country": "Netherlands",
+   "sector": "Medical Devices",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "Group FY2024 sales ~EUR 18bn with positive adjusted EBITA margin (~11.5%) but net result burdened by Respironics settlement (UNVERIFIED exact net figure); Philips India Limited PBT INR 4,480 million FY2024-25, +37% YoY \u2014 India arm clearly profitable",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"Philips Innovation Campus, Bengaluru (PIC-B) established in 1996 as a software development Centre for Royal Philips, hosts 4200+ employees working on software development for products across the healthcare continuum\" \u2014 Philips India Limited Annual Report 2024-25, pdftotext-verified",
+     "\"Your Company's manufacturing at Healthcare Innovation Centre (HIC), Pune, are delivering world-class 'Make in India' medical equipment... the Affiniti series of Ultrasounds\" \u2014 Philips India Limited Annual Report 2024-25, pdftotext-verified",
+     "\"capital expenditure incurred is INR 1,534 million... towards HIC capacity, PIC new facility and IT equipment\" \u2014 Philips India Limited Annual Report 2024-25, pdftotext-verified",
+     "New 650,000 sq ft Yelahanka Bengaluru innovation campus built with INR 500 crore investment (5,000+ professionals) and a new Pune R&D centre opened April 2024 \u2014 philips.co.in press releases"
+    ],
+    "india_operations": "Philips India Limited (unlisted subsidiary): PIC Bengaluru (software R&D, 4,200+), HIC Pune (medtech manufacturing + R&D), Personal Health commercial business",
+    "report_used": "Philips India Limited Annual Report 2024-25 \u2014 https://www.philips.co.in/c-dam/corporate/en_IN/about/philips-india-limited/annual-report/annual-report-2024-25.pdf (global Philips Annual Report 2024 at results.philips.com was not fetchable)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Medical Devices + parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "TDB Medical Devices CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Schaeffler AG",
+   "ticker": "SHA0.DE",
+   "market": "Germany",
+   "country": "Germany",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "Parent FY2024 net result negative after Vitesco merger/restructuring charges (UNVERIFIED exact); listed arm Schaeffler India strongly profitable \u2014 FY2024 revenue INR 80,763 million (+11.8%), Q4 FY25 profit +31.5% YoY",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Schaeffler India invested ~INR 1,700 crore over 2022-2024 in powertrain, e-mobility and industrial bearings capacity, with a further ~INR 4,500 crore capex plan to 2030 for manufacturing and localization \u2014 Schaeffler India Integrated Annual Report 2024 (schaeffler-india-ar.com) via search summary (UNVERIFIED exact wording)",
+     "Localization ratio reached 79%; 'Localization is at the core of Schaeffler's strategy for addressing the unique demands of the Indian market' \u2014 Schaeffler India Integrated Annual Report 2024 (UNVERIFIED exact wording)",
+     "2023 acquisition of KRSV Innovative Auto Solutions (Koovers) to build digital aftermarket presence in India"
+    ],
+    "india_operations": "Schaeffler India Limited (listed NSE/BSE, ~74% Schaeffler-owned): 4 plants (Pune, Vadodara, Savli, Hosur), R&D centre, one of the group's fastest-growing regions",
+    "report_used": "Schaeffler India Integrated Annual Report 2024 \u2014 https://schaeffler-india-ar.com/ (Schaeffler AG group AR PDF at schaeffler.com returned an HTML block page)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Safran SA",
+   "ticker": "SAF.PA",
+   "market": "France",
+   "country": "France",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 7.18bn TTM, 23.0% net margin, mcap EUR 134.6bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Company statement (Nov 2025 press release accompanying integrated reporting): 'Safran will triple its revenue in India to exceed 3 billion euros by 2030, of which half will be generated by our sites in India.'",
+     "LEAP engine MRO centre in Hyderabad: EUR 200m investment, 45,000 sqm, capacity 300 LEAP shop visits/year, operational 2026, headcount rising to 1,100; India is CFM's third-largest market with ~2,000 more LEAP engines on order by Indian airlines.",
+     "M88 (Rafale engine) MRO facility Hyderabad: >EUR 40m, first Safran military-engine maintenance site outside France, prioritizing Indian Air Force engines, up to 150 jobs.",
+     "JV and Cooperation Agreement with Bharat Electronics Ltd to manufacture the HAMMER air-to-surface weapon in India, integrable on Rafale and HAL Tejas."
+    ],
+    "india_operations": "Multiple existing plants + Hyderabad LEAP/M88 MRO complex; deep HAL/IAF ties; explicit 'Make in India' commitment and 2030 India revenue target of >EUR 3bn.",
+    "report_used": "Safran 2025 Integrated Report (safran-group.com/download/media/450817) + Safran press release 2025-11-26; report PDF not parsed page-by-page \u2014 figures cross-checked via Safran's own press page (flag: quotes sourced from company releases, not the report body)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Thales S.A.",
+   "ticker": "HO.PA",
+   "market": "France",
+   "country": "France",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 1.67bn TTM, 7.6% net margin, mcap EUR 46.0bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Thales press release: 'India is now part of the five Thales global corporate research centers' \u2014 Thales Research & Technology India launched in Bengaluru during the India-France Year of Innovation 2026, focused on embedded AI and edge computing.",
+     "Engineering Competence Centre (Bengaluru) serves Thales's GLOBAL civil+defence engineering needs (ATM, avionics, radar software, airborne ISR); target of 3,000 engineers with partners; second Bengaluru office opened.",
+     "Avionics MRO centre opened in Gurugram, India (March 2025).",
+     "Rafale ecosystem exposure: Thales supplies radar/EW for the 26 Rafale Marine ordered by India in 2025 and the 114-aircraft IAF negotiation opened Feb 2026."
+    ],
+    "india_operations": "Bengaluru global ECC + corporate research centre (1 of only 5 worldwide), Gurugram avionics MRO, offset-driven supply partnerships (BEL etc.).",
+    "report_used": "Thales Group India country pages + press releases 2025-2026; 2025 Universal Registration Document NOT directly parsed (flag: URD-level quotes UNVERIFIED, evidence from company press releases)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Dassault Aviation SA",
+   "ticker": "AM.PA",
+   "market": "France",
+   "country": "France",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 977m TTM, 12.9% net margin, mcap EUR 21.7bn; 2025 revenue +19%, record backlog (yfinance + 2025 results release)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "2025 Annual Financial Report: 26 Rafale (Marine) ordered by the Indian Navy in 2025; in Feb 2026 India's Defence Acquisition Council authorized direct negotiations for 114 Rafale for the IAF.",
+     "Annual report: Dassault Reliance Aerospace Ltd (DRAL, Nagpur) is now 51% owned by Dassault Aviation; DRAL 'will become the first Falcon Center of Excellence outside of France', building forward fuselages for Falcon 2000/8X/6X and hosting the first Falcon 2000LXS final assembly line outside France; ~100 major components already sourced from the facility.",
+     "Annual report: MRO subsidiary DAMROI being set up in India for Mirage 2000 and Rafale fleets of the Indian (and Indonesian) Air Force.",
+     "Dual-source 'Make in India' industrialization: Rafale fuselage sections with Tata Advanced Systems; Falcon 6X rear section with Dynamatic."
+    ],
+    "india_operations": "Majority-owned Nagpur production JV (DRAL), Tata/Dynamatic supply chain, DAMROI MRO \u2014 India is Dassault's single largest export industrial footprint.",
+    "report_used": "Dassault Aviation 2025 Annual Financial Report (dassault-aviation.com, published Mar 2026) \u2014 India content confirmed via search-indexed report text and 2025 Annual Results release"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Schneider Electric S.E.",
+   "ticker": "SU.PA",
+   "market": "France",
+   "country": "France",
+   "sector": "White Goods & Electricals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 4.16bn TTM, 10.4% net margin, mcap EUR 149.2bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Rs 3,200 crore (~EUR 360m) investment plan to expand India footprint by 2026: new plants in Kolkata and Hyderabad plus capacity additions \u2014 ~1.2m sq ft across nine states (Gujarat, Telangana, Karnataka, West Bengal, Odisha, Tamil Nadu, Maharashtra, Himachal Pradesh, Uttarakhand).",
+     "India is one of Schneider's four global hubs and its third-largest market worldwide; company states intent to make India a manufacturing hub for domestic sales AND exports.",
+     "Schneider Electric India Private Limited statutory revenues of EUR 1.8bn (per 2024/2025 URD subsidiary disclosures \u2014 flag: exact URD page not parsed).",
+     "Listed Indian arm (Schneider Electric Infrastructure Ltd, NSE: SCHNEIDER) plus the large L&T E&A-derived business \u2014 India is Schneider's largest employee base outside/comparable to France (UNVERIFIED exact rank)."
+    ],
+    "india_operations": "30+ factories/sites, ~30,000+ employees (UNVERIFIED count), listed NSE subsidiary, global hub status, Rs 3,200cr capex program to 2026.",
+    "report_used": "Schneider Electric 2025 Universal Registration Document (filed with AMF 2026-03-27; se.com/us/en/download/document/2025-URD/) \u2014 URD body not parsed; India evidence from company announcements and URD-linked subsidiary disclosure"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI White Goods",
+     "status": "operational (85->80 attrition noted)"
+    },
+    {
+     "instrument": "BEE/star-rating demand levers",
+     "status": "standing"
+    }
+   ],
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Sanofi",
+   "ticker": "SAN.PA",
+   "market": "France",
+   "country": "France",
+   "sector": "Pharma & Bulk Drugs",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 4.83bn TTM, 16.0% net margin, mcap EUR 92.1bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Sanofi India press release: expansion of the Hyderabad Global Capability Centre with ~EUR 400m investment over six years (EUR 100m by 2025) \u2014 reported elsewhere as a $437m expansion more than doubling the workforce.",
+     "2026 press release: 'Sanofi expands its Hyderabad GCC to grow capabilities and drive innovation' \u2014 capacity raised to ~4,500 specialists, adding workspace at the HITEC City campus; among the top three pharma GCCs in India by scale.",
+     "Hyderabad hub houses AI, data analytics, medical affairs, R&D and enterprise operations supporting the global drug development lifecycle \u2014 the largest of Sanofi's four global hubs."
+    ],
+    "india_operations": "Hyderabad GCC (~4,500 capacity, largest of 4 global hubs), listed Indian subsidiary Sanofi India Ltd, Goa manufacturing site.",
+    "report_used": "Sanofi GCC press releases 2024 + 2026 (sanofi.com/assets/countries/india); Form 20-F / Document d'Enregistrement Universel 2025 NOT directly parsed (flag: annual-report-body quotes UNVERIFIED)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Pharma / bulk drug parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "PRIP",
+     "status": "R&D push"
+    },
+    {
+     "instrument": "TDB Rare Disease CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Leonardo S.p.a.",
+   "ticker": "LDO.MI",
+   "market": "Italy",
+   "country": "Italy",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 1.29bn TTM, 5.1% net margin, mcap EUR 28.8bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Leonardo press release 2026-02-03 (post-balance-sheet event to the 2025 Integrated Annual Report): 'Adani Defence & Aerospace and Leonardo Forge Strategic Partnership to Build India's Helicopter Ecosystem' \u2014 MoU covering production localization, MRO including major overhauls, and pilot training for AW169M and AW109 TrekkerM.",
+     "Projected Indian armed-forces demand exceeds 1,000 helicopters \u2014 the partnership targets domestic production against this pipeline.",
+     "Context: India lifted its 2014 ban on Leonardo/AgustaWestland in Nov 2021; Leonardo has since re-entered via civil helicopter orders and a local entity (Leonardo Aerospace Defense & Security India Pvt Ltd)."
+    ],
+    "india_operations": "Re-established Indian subsidiary; Adani Defence helicopter-ecosystem MoU (Feb 2026); civil helicopter sales resumed.",
+    "report_used": "Leonardo 2025 Annual Report Summary + Integrated Annual Report 2025 (leonardo.com PDFs, published Mar 2026) \u2014 India MoU verified via Leonardo's own press release; report-body India wording not independently quoted"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Vestas Wind Systems A/S",
+   "ticker": "VWS.CO",
+   "market": "Denmark",
+   "country": "Denmark",
+   "sector": "White Goods & Electricals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 FY2025 revenue EUR 18,822m, EBIT margin before special items 5.7%, net income DKK ~0.86bn TTM, mcap DKK 178.1bn (Annual Report 2025 + yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Company announcement alongside Annual Report 2025: 'Vestas intends to establish a new nacelle and hub assembly factory in Chennai in the state of Tamil Nadu to improve competitiveness and expand its supply chain footprint in India.'",
+     "The new factory 'will combine Vestas' two existing facilities in the state of Tamil Nadu, creating an expanded, optimised and scalable production hub with four times as many local manufacturing jobs in the state.'",
+     "Vestas has been in India since 1997, is headquartered for the region in Chennai with one of its largest global wind-turbine R&D facilities, and has installed ~3 GW in India; Indian factories also export blades/components to global projects."
+    ],
+    "india_operations": "Two existing Tamil Nadu factories consolidating into a 4x-larger Chennai production hub; Chennai R&D centre; ~3 GW installed base.",
+    "report_used": "Vestas Annual Report 2025 (vestas.com PDF, published 2026-02-05) + accompanying company announcement"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI White Goods",
+     "status": "operational (85->80 attrition noted)"
+    },
+    {
+     "instrument": "BEE/star-rating demand levers",
+     "status": "standing"
+    }
+   ],
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Novo Nordisk A/S",
+   "ticker": "NOVO-B.CO",
+   "market": "Denmark",
+   "country": "Denmark",
+   "sector": "Pharma & Bulk Drugs",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income DKK 122.0bn TTM, 37.2% net margin, mcap DKK 1,451bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Annual Report 2025 / FY25 results: APAC region 'led by India' was a key growth contributor \u2014 APAC sales +19% (+25% at constant exchange rates) against global growth of only 6.4%.",
+     "Wegovy (semaglutide) launched in India in 2025 for chronic weight management; price cut 37% in Nov 2025 ahead of Indian patent expiry to defend against generics \u2014 India is an explicitly contested strategic market.",
+     "Bangalore Global Business Services hub ~4,000 employees; per company executives, 'probably not a medicine launched anywhere in the world hasn't had a thumbprint of Bangalore on it' \u2014 clinical data analysis, regulatory submissions and commercial planning executed from India."
+    ],
+    "india_operations": "Bangalore GBS (~4,000 staff, one of the largest pharma GCCs), full commercial affiliate, Wegovy/Ozempic launch market.",
+    "report_used": "Novo Nordisk Annual Report 2025 (annualreport.novonordisk.com/2025) + FY25 results coverage (BusinessToday 2026-02-05); Bangalore quote is from executive interviews, not the report body (flagged)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Pharma / bulk drug parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "PRIP",
+     "status": "R&D push"
+    },
+    {
+     "instrument": "TDB Rare Disease CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Telefonaktiebolaget LM Ericsson",
+   "ticker": "ERIC-B.ST",
+   "market": "Sweden",
+   "country": "Sweden",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income SEK 24.6bn TTM, 10.8% net margin, mcap SEK 309.7bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Annual Report 2025: the market area 'South East Asia, Oceania and India' grew in 2025; Ericsson had 25,100 employees in the market area at end-2025 \u2014 its largest headcount region, driven by India.",
+     "~22,500 employees in India with ~2,000 in R&D; India unit evolving into a major research centre for 5G Advanced, 6G, cloud and AI (company statements, June 2025).",
+     "Full localization of passive antenna manufacturing in India by June 2025; 4G/5G radio production with Jabil (Pune) and antennas with VVDN.",
+     "Ericsson Mobility Report: India to reach ~394m 5G subscriptions by end-2025 (32% penetration), ~79% by 2031 \u2014 the core commercial rationale for the Jio/Airtel radio and core contracts."
+    ],
+    "india_operations": "Largest employee base by market area; Pune contract manufacturing; pan-India Jio/Airtel 4G/5G deployments; growing India R&D mandate.",
+    "report_used": "Ericsson Annual Report 2025 (mb.cision.com PDF, published Mar 2026) + Q4/FY2025 results release + company statements"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Saab AB (publ)",
+   "ticker": "SAAB-B.ST",
+   "market": "Sweden",
+   "country": "Sweden",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income SEK 7.10bn TTM, 8.0% net margin, mcap SEK 309.5bn (yfinance)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Saab press material: the Carl-Gustaf M4 factory (Saab FFVO India Pvt Ltd, MET City, Jhajjar, Haryana) is 'the first foreign fully-owned defence production facility in India' \u2014 India's first-ever 100% FDI defence manufacturing approval.",
+     "Production of Carl-Gustaf M4 for the Indian armed forces targeted from 2025, including advanced carbon-fibre winding and latest sighting technology; components may feed other global customers' systems.",
+     "Saab: the facility 'will fully meet the requirements of Make in India' with Indian supplier partnerships; sustained India presence showcased at Aero India 2025."
+    ],
+    "india_operations": "Wholly-owned Haryana weapons factory (unique 100% FDI status), long-standing Indian Army Carl-Gustaf user base, local supplier network.",
+    "report_used": "Saab India market pages + press releases (saab.com) incl. Aero India 2025; Saab Annual & Sustainability Report 2025 NOT directly parsed (flag: report-body wording UNVERIFIED)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Nokia Oyj",
+   "ticker": "NOKIA.HE",
+   "market": "Finland",
+   "country": "Finland",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 774m TTM, 4.0% net margin, mcap EUR 49.8bn (yfinance); thinnest margin in this set but positive",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Nokia (company disclosures alongside Annual Report 2025): Chennai factory manufactures 5G NR and 5G Massive MIMO equipment 'for the domestic and global markets'; new 5G FWA equipment manufacturing line added under Make in India; ~18,000 employees in India with ongoing Chennai factory and R&D investment.",
+     "Siruseri (Chennai) centre to house Nokia's LARGEST fixed-networks R&D laboratory globally \u2014 10G/25G/50G/100G optical and FWA innovation hub.",
+     "Bangalore R&D centre, one of Nokia's largest globally, hosts India's first 6G Lab (inaugurated Oct 2023); research spans telco cloud, IP, optical, 5G/6G.",
+     "April 2025: expanded Bharti Airtel partnership \u2014 packet core and FWA deployment; Nokia is a principal radio vendor in the Jio+Airtel 5G rollout, one of the world's fastest."
+    ],
+    "india_operations": "Chennai manufacturing (domestic + export), ~18,000 employees, Bangalore + Chennai global R&D mandates, top-2 Indian operator relationships.",
+    "report_used": "Nokia Annual Report 2025 (nokia.com/system/files/2026-03/nokia-annual-report-2025.pdf) + nokia.com India presence page + Airtel/Nokia release 2025-04-02; report PDF not parsed page-by-page"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Hon Hai Precision Industry (Foxconn)",
+   "ticker": "2317.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE: FY2024 net profit NT$152.7bn, EPS NT$11.01 (17-year high); yfinance TTM net income NT$197.2bn, 2.3% margin (EMS-typical)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Foxconn Singapore raised its India-subsidiary stake to 99.9% with a cumulative investment value of $2.82bn (June 2026 filings coverage)",
+     "Subsidiary Yuzhan Technology India announced a $1.5bn investment to expand iPhone production capacity",
+     "Devanahalli (Karnataka) campus hired 30,000+ employees in a year \u2014 'one of the fastest-growing industrial ramp-ups in the country'; largest base remains Sriperumbudur near Chennai",
+     "Company press release (Aug 2024): Hon Hai and Tamil Nadu 'inaugurated a new residential complex in Vallam Vadagal Industrial Park, providing a sustainable living community for thousands of employees'",
+     "Earlier board-approved $1.54bn India investment for 'operational needs'; chip packaging/testing JV explored with HCL Group"
+    ],
+    "india_operations": "iPhone assembly at Sriperumbudur (TN) + Devanahalli (Karnataka) campus; Yuzhan component ops; employee housing built with TN government; India is Hon Hai's flagship China+1 site.",
+    "report_used": "FY2024 results release + Hon Hai/Foxconn press releases (foxconn.com); AR PDF page is JS-driven \u2014 India figures from company releases and filings coverage, AR-PDF quote UNVERIFIED"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Pegatron Corporation",
+   "ticker": "4938.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$11.7bn, 1.1% net margin",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Jan 2025: Tata Electronics acquired 60% of Pegatron's Chennai iPhone plant; 'Tata will hold 60% and run daily operations under the joint venture, while Pegatron will hold the rest and provide technical support'",
+     "The Chennai plant has ~10,000 employees and makes ~5 million iPhones annually",
+     "Deal had Apple's backing as part of supply-chain diversification beyond China; Pegatron stays as 40% JV technology partner rather than exiting India"
+    ],
+    "india_operations": "40% partner + technical-support provider in the Tata-Pegatron Chennai iPhone JV (formerly Pegatron Technology India).",
+    "report_used": "Deal coverage (TechCrunch/Business Today/TrendForce, Jan 2025); Pegatron TWSE English AR quote UNVERIFIED (not fetched)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Delta Electronics",
+   "ticker": "2308.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$70.4bn, 11.8% net margin; 2024 global revenue ~US$13.1bn",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Krishnagiri (Tamil Nadu) campus: 95 acres, 3,800+ employees, four manufacturing units after two new factories; Sept 2025 groundbreaking attended by TN CM M.K. Stalin",
+     "Planned ~$500M India investment; \u20b9450 cr expansion tranche kicked off 2025; proposed ARIVAM testing facility at Krishnagiri for AI data centers and green energy",
+     "Krishnagiri produces high-efficiency power supplies, DC brushless fans, telecom power, industrial automation, data-center infrastructure and EV-mobility solutions; site runs on up to 53% renewable energy (6.9MWp solar rooftop + wind)",
+     "Three India manufacturing sites: Rudrapur, Gurgaon (Delta Energy), Krishnagiri; India arm held under Delta Electronics (Thailand) PCL"
+    ],
+    "india_operations": "Delta Electronics India Pvt Ltd \u2014 Krishnagiri mega-campus plus Rudrapur/Gurgaon plants; one of the largest Taiwanese electronics manufacturing footprints in India outside the Apple chain.",
+    "report_used": "Delta India press releases (deltaelectronicsindia.com) + Bangkok Post capex coverage; Delta TWSE English AR quote UNVERIFIED"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "MediaTek",
+   "ticker": "2454.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$100.1bn, 16.9% net margin",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "In India since 2004; R&D centres in Noida and Bengaluru with a combined team of over 1,000 engineers contributing to global SoC design, software and connectivity",
+     "Second India R&D center launched in Bengaluru; Noida space expanded (>100,000 sq ft, lease ~\u20b91.44bn)",
+     "MediaTek chipsets account for roughly half of India smartphone-chipset shipments; company earmarked US$200M+ further India investment and is evaluating sourcing from India's new fabs/OSATs"
+    ],
+    "india_operations": "Two R&D centers (Noida, Bengaluru), 1,000+ engineers; dominant India smartphone chipset market share; no manufacturing (fabless).",
+    "report_used": "MediaTek press releases (mediatek.com/prnewswire) + Indian trade press; TWSE English AR quote UNVERIFIED"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Lenovo Group",
+   "ticker": "0992.HK",
+   "market": "Hong Kong",
+   "country": "Hong Kong",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income US$1.91bn, 2.3% net margin",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "FY2024/25 Annual Report (fetched PDF): the Board held 'deep-dive discussions on topics such as AI, investment and growth opportunities in India' \u2014 India singled out at board level",
+     "AR subsidiary schedule: Lenovo (India) Private Limited, 'manufacture and distribution of IT products', share capital INR 8,607,471,514",
+     "Puducherry facility making ~50,000 enterprise AI servers and 2,400 high-end GPU units annually, with '60% of the servers slated for export across the Asia Pacific region'",
+     "India production doubled from 6.4M units (FY24) toward 12M+, targeting ~17M and 100% local PC manufacturing for the Indian market within three years; Motorola smartphones also built locally; ~\u20b918,000 cr of product built/shipped in 2024"
+    ],
+    "india_operations": "Puducherry PC/server plant (with Flex partner lines), Motorola phone assembly, AI-server export hub for APAC; India named a strategic growth market at board level.",
+    "report_used": "Lenovo FY2024/25 Annual Report PDF (doc.irasia.com, fetched and grepped) + news for unit/volume figures"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "CLP Holdings",
+   "ticker": "0002.HK",
+   "market": "Hong Kong",
+   "country": "Hong Kong",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income HK$10.5bn, 12.1% net margin",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "2024 Annual Report: Apraava Energy (CLP's India platform with La Caisse/CDPQ) holds 3,150 MW installed capacity including 924 MW wind and 250 MW solar across seven states, plus transmission infrastructure",
+     "AR states Apraava targets doubling its energy portfolio in three to four years, contributing to India's 2030 renewable targets, and plans to expand power transmission and enter electricity distribution",
+     "AR cites a 300MW Karnataka wind project starting soon and 'good progress... on the Fatehgarh III and Fatehgarh IV interstate transmission projects in Rajasthan' (250+ km lines, 2,500 MVA substation, operational 2025)",
+     "Apraava ranked among top-10 private power producers in India; CLP invested in India since 2002"
+    ],
+    "india_operations": "Apraava Energy JV \u2014 wind, solar, transmission across 7 states; among India's top-10 private power producers; explicit doubling target.",
+    "report_used": "CLP Holdings 2024 Annual Report (annualreport.clpgroup.com AR2024 snapshot + results announcement PDFs)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Food Empire Holdings",
+   "ticker": "F03.SI",
+   "market": "Singapore",
+   "country": "Singapore",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE: 2024 record revenue US$476.3M (4th consecutive growth year); yfinance TTM net income US$36.0M, 6.2% margin",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "AR2024/announcements: spray-dried (2015) and freeze-dried (2021) soluble-coffee plants in Andhra Pradesh are 'running at optimum capacities and delivering strong results', driving South Asia segment growth",
+     "US$37M expansion announced to raise Andhra Pradesh spray-dried coffee capacity by ~60%, construction from 4Q, completion end-2027",
+     "Expansion framed as vertical integration 'to have better control over the entire coffee processing cycle' supporting its branded consumer business across markets \u2014 India is both manufacturing base and growth market (Russia/CIS remains the largest revenue segment)"
+    ],
+    "india_operations": "Two soluble-coffee manufacturing facilities in Andhra Pradesh (spray-dried + freeze-dried) with a 60% capacity expansion underway.",
+    "report_used": "Food Empire Annual Report 2024 (investor.foodempire.com/misc/ar2024) + expansion announcements"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Cameco Corporation",
+   "ticker": "CCO.TO",
+   "market": "Canada",
+   "country": "Canada",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - profitable in 2025; uranium segment earnings strong on higher realized prices and Westinghouse equity contribution",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Signed a long-term agreement to supply uranium ore concentrate (U3O8) to the Government of India's Department of Atomic Energy for its fleet of nuclear reactors",
+     "Contract covers nearly 22 million pounds of U3O8 over nine years on market-related price terms, total value estimated at approximately USD 2.6 billion; deliveries expected 2027 through 2035",
+     "Cameco cites India's 24 operating reactors and plans to reach 100 GW nuclear by 2047 as demand driver; volumes were folded into the long-term contracting disclosure in the 2025 annual MD&A (Feb 2026)",
+     "Context: India's 2025 nuclear-liability/civil-nuclear liberalisation (SHANTI Act) and cooling India-Canada diplomatic tensions directly enable this deal"
+    ],
+    "india_operations": "No India assets; direct long-term supply relationship with India's Department of Atomic Energy (deliveries from 2027)",
+    "report_used": "Cameco 2025 annual MD&A (Feb 2026) + SEC Form 6-K/40-F exhibits (sec.gov, full-text blocked 403; details via filing summaries)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "CAE Inc.",
+   "ticker": "CAE.TO",
+   "market": "Canada",
+   "country": "Canada",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - returned to profitability in FY2025 after FY2024 impairments; FY2026 results show multi-year transformation targets on track",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Operates CAE Gondia / National Flying Training Institute (NFTI), a JV with Airports Authority of India since 2007; second-largest flying school in India by fleet; IndiGo has inducted ~941 cadets from the programme through Dec 2023",
+     "CAE Simulation Training Pvt Ltd (CSTPL), 50:50 JV with InterGlobe Enterprises: 16 full-flight simulators at fiscal-end with 112% capacity utilization in FY2025 (two simulators added in-year)",
+     "CAE annual disclosure ties growth to training 280,000+ new pilots over the next decade, with India one of the fastest-growing civil aviation markets"
+    ],
+    "india_operations": "Two India training JVs (NFTI Gondia with AAI; CSTPL with InterGlobe/IndiGo), Bengaluru training centre; expanding simulator capacity",
+    "report_used": "CAE FY2025 Financial Report + 2025 Annual Information Form (cae.com); ICRA rating note on CSTPL for India utilization data"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "WEG S.A.",
+   "ticker": "WEGE3.SA",
+   "market": "Brazil",
+   "country": "Brazil",
+   "sector": "White Goods & Electricals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - among Brazil's most profitable industrials; India subsidiary itself revenue INR 686 crore FY2025 (8% 1-yr CAGR)",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Operates WEG Industries (India) Pvt Ltd manufacturing plant at Hosur, Tamil Nadu (est. 2008, IFC co-financed)",
+     "Announced ~USD 20 million investment in the Hosur plant: 13,000 m2 of built area with capacity for up to 250,000 low-voltage electric motors/year up to 355 kW, plus product development, application engineering, sales and technical assistance",
+     "WEG Motors Managing Director: the new unit will facilitate 'penetration of the low-voltage motor market in India and expand its participation in the local market with new opportunities'; WEG also joined Brazil business missions to India"
+    ],
+    "india_operations": "Hosur (Tamil Nadu) manufacturing complex - motors and electrical equipment; local engineering and sales; expanding LV motor capacity",
+    "report_used": "WEG corporate news/institutional disclosures (weg.net) + Tofler/Tracxn India-subsidiary financials; WEG 2025 integrated report India detail UNVERIFIED at page level"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI White Goods",
+     "status": "operational (85->80 attrition noted)"
+    },
+    {
+     "instrument": "BEE/star-rating demand levers",
+     "status": "standing"
+    }
+   ],
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Embraer S.A.",
+   "ticker": "EMBR3.SA",
+   "market": "Brazil",
+   "country": "Brazil",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - profitable in 2025 with record backlog and rising C-390/E2 deliveries",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Oct 2025: Embraer Defense & Security and Mahindra Group signed a Strategic Cooperation Agreement for the C-390 Millennium in the Indian Air Force's Medium Transport Aircraft (MTA) programme, deepening a Feb 2024 MoU - covering joint marketing, industrialisation and 'developing India as a hub for the C-390 Millennium'",
+     "Long-term ambition stated: position India as a manufacturing and support hub for the C-390 'serving both domestic and regional requirements' (local manufacturing, assembly, supply chain, MRO)",
+     "Feb 2026: Embraer-Mahindra announced planned C-390 MRO capability in India (base/heavy maintenance, component repair, avionics, training); June 2026 (FlightGlobal): Embraer prepared to open an Indian C-390 assembly line as part of the MTA bid"
+    ],
+    "india_operations": "Mahindra strategic alliance for C-390 MTA campaign; planned India assembly line and MRO hub; existing Indian operators of Embraer jets (govt/Netra AEW&C)",
+    "report_used": "Embraer media-center releases + Mahindra press releases + FlightGlobal (Jun 2026); 2025 annual report references the Mahindra SCA in defense-segment commentary"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Thungela Resources Limited",
+   "ticker": "TGA.JO",
+   "market": "South Africa",
+   "country": "South Africa",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - profitable though earnings fell ~30% in 2024 (revenue ~R35.55bn, +16%); on track to exceed 2025 production targets",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "India is described as a cornerstone export market for Thungela, 'absorbing large volumes amid rising power needs and limited domestic supply'; exports go to India, Asia, Southeast Asia, Middle East and North Africa",
+     "Annual/interim commentary explicitly tracks Indian buyer behaviour: 'end-users in India showed greater preference for cheaper, lower quality material' with Indian buyers shifting toward lower-cost imports - i.e., India demand is a named earnings driver",
+     "Richards Bay export chain positioned primarily for the India/Asia trade; H1 export saleable production ~6.3 Mt (SA) + ~2 Mt (Ensham, Australia)"
+    ],
+    "india_operations": "No India assets; India is one of its largest thermal-coal export destinations (trade relationship, not investment)",
+    "report_used": "Thungela 2024/2025 annual and interim results commentary (thungela.com, Mining Weekly, IOL)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Saudi Arabian Mining Company (Ma'aden)",
+   "ticker": "1211.SR",
+   "market": "Saudi Arabia",
+   "country": "Saudi Arabia",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - profitable and growing; phosphates among lowest-cost globally",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "July 2025 (Riyadh, witnessed by Union Minister J.P. Nadda and the Saudi Minister of Industry and Mineral Resources): Ma'aden signed long-term agreements with Indian companies IPL, KRIBHCO and CIL for supply of an enhanced 3.1 million MT of DAP fertilizer per annum for five years from FY2025-26, extendable five more years by mutual consent",
+     "April 2025: separate MoU with Coromandel International for long-term supply of DAP and NP/NPK fertilisers",
+     "Argus: India offtake covers 3.1 Mt/yr of phosphates over five years from India's 2025-26 fiscal year, mostly DAP plus NPS - agreed as India scrambles to replace vanished Chinese DAP exports"
+    ],
+    "india_operations": "No India assets; multi-year structural DAP/NPK supply relationships with IPL, KRIBHCO, CIL and Coromandel - India is Ma'aden's anchor phosphate market",
+    "report_used": "Ma'aden/Coromandel press releases, Argus Media, Indian Chemical News (Jul 2025); Ma'aden 2025 annual report board commentary references India offtake"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Elbit Systems Ltd.",
+   "ticker": "ESLT.TA",
+   "market": "Israel",
+   "country": "Israel",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - profitable with record backlog",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "20-F discloses the Adani Defence & Aerospace JV (Adani-Elbit Advanced Systems India Ltd, Elbit 49%): the Hyderabad Adani Elbit UAV Complex is India's first private UAV manufacturing facility and the sole Hermes 900 production facility outside Israel; has delivered 20+ Hermes 900 MALE UAVs including back to Israel",
+     "20-F also discloses 26% holding in HALBIT Avionics Pvt Ltd (Bangalore), engaged in avionics programs for the Indian defense market",
+     "Elbit describes itself as a trusted partner of the Indian MoD/Armed Forces (~70-year legacy); regular Aero India participation; India military EO/IR market (where Elbit is a leading player) projected USD 1.19bn (2026) to 1.78bn (2030)"
+    ],
+    "india_operations": "Adani-Elbit Hyderabad UAV manufacturing JV (49%); HALBIT Avionics Bangalore (26%); ongoing Indian armed-forces programs (UAVs, EO/IR, artillery upgrades)",
+    "report_used": "Elbit Systems Form 20-F (subsidiaries/JV disclosures) + Adani Defence media releases"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "ICL Group Ltd",
+   "ticker": "ICL",
+   "market": "Israel",
+   "country": "Israel",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - profitable; Q2 sales USD 1.8B with specialty segments driving growth",
+   "lead_score": 105,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "June 2026 (6-K): new agreement with Indian Potash Limited (IPL) to supply 375,000 MT of potash over the coming year (option for 50,000 extra tons) at prevailing Indian market prices, within ICL's 2022-2027 five-year supply framework with IPL - 'reinforces its strategic position in India's fertilizer market'",
+     "Long-term Polysulphate agreement with IPL: five-year term for an aggregate 1 million MT through 2026 with renewal option",
+     "Annual results attribute higher potash volumes 'mainly due to higher sales volumes in India and Europe'; India is a recurring named market in ICL's annual 20-F potash segment"
+    ],
+    "india_operations": "No India plants; structural multi-year potash + Polysulphate supply frameworks with IPL (India's largest potash importer); India sales offices for specialty products",
+    "report_used": "ICL Form 6-K (Jun 2026 IPL deal) + FY2024/2025 results releases (investors.icl-group.com)"
    },
    "central_lanes": [
     {
@@ -3793,6 +5538,669 @@
    }
   },
   {
+   "company": "BASF SE",
+   "ticker": "BAS.DE",
+   "market": "Germany",
+   "country": "Germany",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 sales EUR 65,260m (per India factsheet), EBITDA before special items ~EUR 7.9bn, net income positive but depressed (~EUR 1.3bn, UNVERIFIED exact) \u2014 profitable, cyclically weak",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "BASF in India sales 2024: EUR 2,392 million (2023: EUR 2,386 million); Number of employees (BASF India): 2,411 \u2014 BASF in India Factsheet 2024, pdftotext-verified figures",
+     "BASF's Verbund mega-site investment is directed at Zhanjiang, China (start-up Q4 2025), not India \u2014 no India Verbund site is planned in the BASF Report 2024; India interest is steady-state local production (8 sites) plus a listed arm, not new large capex",
+     "\"For the 7th consecutive year, BASF India received the 2024 Best Company for Women in India \u2014 Hall of Fame\" \u2014 BASF in India Factsheet 2024, pdftotext-verified"
+    ],
+    "india_operations": "BASF India Limited (listed NSE/BSE) \u2014 ~EUR 2.4bn annual sales to India, 8 production sites (Thane, Mangalore, Dahej etc.), 42 offices, 2,411 employees; Group Captive renewable-energy co-investment projects in India",
+    "report_used": "BASF in India Factsheet 2024 + BASF Report 2024 \u2014 https://www.basf.com/dam/jcr:37a3ea0e-ef5a-4c1a-bbd8-cb67e746f346/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2025/BASF_in_India_Factsheet_2024.pdf and https://www.basf.com/dam/jcr:a0caf160-c019-40b1-a4ea-eaedb29b0685/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2025/BASF_Report_2024.pdf"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Novartis AG",
+   "ticker": "NOVN.SW",
+   "market": "Switzerland",
+   "country": "Switzerland",
+   "sector": "Pharma & Bulk Drugs",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 net income ~USD 11.9bn on ~USD 50bn sales \u2014 highly profitable",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report 2024 discloses Novartis AG holds 70.68% of Novartis India Ltd. (registered office Mumbai, BSE-listed) and values the 29.32% free float at USD 77.7 million, following the announced strategic review of the listed entity \u2014 Novartis Annual Report 2024, pdftotext-verified (text extraction partially garbled; sense verified against novartis.com media release 'Novartis announces strategic review of Novartis India Limited')",
+     "\"India has a broad Novartis presence including Pharma International, Development, Novartis Corporate Center (Global Capability Center) and Biomedical Research... Novartis India employs nearly 8,100 people\" \u2014 novartis.com/in-en (UNVERIFIED exact wording)",
+     "Interest is barbell-shaped: shrinking the small listed commercial entity while the Hyderabad Novartis Corporate Center is one of the company's largest global capability sites"
+    ],
+    "india_operations": "Novartis Corporate Center Hyderabad (one of largest GCCs, ~8,000+ staff), Development/clinical-trial network (300+ sites), Novartis India Ltd (BSE-listed, under strategic review/minority buyout)",
+    "report_used": "Novartis Annual Report 2024 \u2014 https://www.novartis.com/sites/novartis_com/files/novartis-annual-report-2024.pdf"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Pharma / bulk drug parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "PRIP",
+     "status": "R&D push"
+    },
+    {
+     "instrument": "TDB Rare Disease CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Infineon Technologies AG",
+   "ticker": "IFX.DE",
+   "market": "Germany",
+   "country": "Germany",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 (ended Sep-2024) revenue ~EUR 15.0bn, net income ~EUR 1.3bn \u2014 profitable despite cyclical downturn",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report 2024 lists three wholly-owned Indian entities \u2014 'Infineon Technologies India Private Limited, Bangalore', 'Infineon Technologies Memory Solutions India LLP, Bangalore', 'Infineon Technologies Semiconductor India Private Limited, Bangalore' \u2014 and the site map shows 'India: 1 Bangalore' \u2014 Infineon Annual Report 2024, pdftotext-verified; no strategic India narrative in the AR itself",
+     "\"CDIL Semiconductors and Infineon Technologies Asia Pacific Pte Ltd have signed a Memorandum of Understanding\" under which Infineon supplies bare die wafers that CDIL packages at Mohali (600 million units/yr capacity) for Indian light-EV and energy-storage customers \u2014 Infineon's first manufacturing partnership in India \u2014 techcrunch.com / circuitdigest.com, Mar-Apr 2025 (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Large Bangalore R&D/GCC (3 legal entities); no own fab/OSAT \u2014 manufacturing entry via CDIL packaging partnership (Mohali)",
+    "report_used": "Infineon Annual Report 2024 \u2014 https://www.infineon.com/dgdl/Infineon+Annual+Report+2024.pdf?fileId=8ac78c8b92bced620193694bfb970095"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "ASML Holding N.V.",
+   "ticker": "ASML.AS",
+   "market": "Netherlands",
+   "country": "Netherlands",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 net sales ~EUR 28.3bn, net income ~EUR 7.6bn \u2014 highly profitable",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "ASML Annual Report 2024 Strategic report section (43,399 words parsed) contains ZERO 'India' mentions \u2014 India is not yet a named strategic market in the AR; interest is visible in operations and 2026 partnerships instead",
+     "\"ASML has already established a foothold in India with software development centres that support its global lithography platforms. The biggest ASML R&D center for software in Asia is located there\" \u2014 elnion.com, Sep 2025 (UNVERIFIED exact wording)",
+     "ASML is set to support Tata Electronics' upcoming ~US$11bn 300mm semiconductor fab in Dholera, Gujarat, with lithography tools plus talent/supply-chain development \u2014 aljazeera.com 'Tata-ASML deal', May 2026 (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Bengaluru software development/R&D centre (ASML's largest software R&D site in Asia); tool-supply and ecosystem partnership with Tata Electronics for the Dholera fab",
+    "report_used": "ASML Annual Report 2024, Strategic report section \u2014 https://ourbrand.asml.com/m/5f0bf644f7e26c9a/original/2024-Strategic-report-section.pdf"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "voestalpine AG",
+   "ticker": "VOE.VI",
+   "market": "Austria",
+   "country": "Austria",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "BY2024/25 (ended Mar-2025) 'solid result despite difficult environment' \u2014 positive but modest profit after tax (EBITDA ~EUR 1.3bn scale; exact net figure UNVERIFIED)",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"...the growth markets of India, Africa and the Middle East showed solid demand for welding technology products.\" \u2014 voestalpine Annual Report 2024/25, pdftotext-verified",
+     "\"Demand for turnout systems remained solid in Australia and India.\" \u2014 voestalpine Annual Report 2024/25, pdftotext-verified",
+     "\"In the niche area of welding technology, voestalpine has invested in expanding its production of welding consumables in India and in strengthening its application technology\" \u2014 voestalpine Annual Report 2024/25 investments section, reports.voestalpine.com (UNVERIFIED exact wording); expansion projects executed in 'dynamic markets such as Egypt, India, Brazil, and North America' under the local-for-local strategy"
+    ],
+    "india_operations": "voestalpine High Performance Metals India Pvt Ltd (tool steel/HPM distribution + value-added services, revenue INR 100-500 crore, ~14% growth), welding consumables production (B\u00f6hler welding), railway turnout systems JV presence",
+    "report_used": "voestalpine AG Annual Report 2024/25 \u2014 https://www.voestalpine.com/group/static/sites/group/.downloads/en/publications-2024-25/2024-25-annual-report.pdf"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "EssilorLuxottica Soci\u00e9t\u00e9 anonyme",
+   "ticker": "EL.PA",
+   "market": "France",
+   "country": "France",
+   "sector": "Medical Devices",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 2.32bn TTM, 8.1% net margin, mcap EUR 77.3bn (yfinance)",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Per trade press citing the company: EssilorLuxottica is 'strategically considering an expansion of its manufacturing footprint in India, focusing particularly on ramping up the production of fundamental lens castings' (source page returned HTTP 403 \u2014 quote UNVERIFIED verbatim).",
+     "April 2025 company announcement with Meta: Ray-Ban Meta smart glasses expansion into three new markets including India.",
+     "Existing large India base: lens labs and mass-market eyewear plants plus a majority stake in GKB Rx Lens and other Indian lens manufacturers (UNVERIFIED from annual report body)."
+    ],
+    "india_operations": "Lens manufacturing/prescription labs across India, 2.5 New (inclusive business) programs, smart-glasses retail entry 2025.",
+    "report_used": "2025 Universal Registration Document (filed with AMF 2026-03-06, ref D.26-0067) \u2014 not parsed; evidence from press releases and trade press (honest flag: weakest sourcing in this set)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Medical Devices + parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "TDB Medical Devices CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Yara International ASA",
+   "ticker": "YAR.OL",
+   "market": "Norway",
+   "country": "Norway",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income NOK 1.53bn TTM, 9.3% net margin, mcap NOK 114.0bn (yfinance)",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Yara Annual Report 2025: Babrala (Uttar Pradesh) plant cut GHG intensity to 2.522 tCO2e/tN, beating Yara's global 2.7 target \u2014 positioned as India's most sustainable urea plant; India Scope 1+2 emissions -3.4%; logistics distribution emissions -52.4% via rail/bulk-vessel shift.",
+     "Digital farming scale in India: YaraFarmcare app >6.15m downloads; YaraConnect retailer network >19,000 channel partners (Annual Report 2025 sustainability disclosures).",
+     "Clean ammonia is 'central to Yara's long-term commercial strategy' as a hydrogen carrier for shipping/power \u2014 directly adjacent to India's green-ammonia SIGHT incentives (no firm India clean-ammonia FID disclosed; UNVERIFIED beyond strategy statements).",
+     "TEPA relevance: as a Norwegian (EFTA) company, Yara sits under the India-EFTA TEPA's binding $100bn/15-year investment commitment (in force Oct 2025); no company-specific TEPA pledge found."
+    ],
+    "india_operations": "Owns and operates the Babrala ammonia-urea complex (acquired from Tata Chemicals, 2018); nationwide crop-nutrition retail and digital-farming footprint.",
+    "report_used": "Yara Annual Report 2025 (yara.com PDF, published 2026-03-20) + Yara India site"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Wistron Corporation",
+   "ticker": "3231.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$31.7bn, 1.2% margin (AI-server upcycle)",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Oct 2023: sold 100% of Wistron InfoComm Manufacturing (India) \u2014 the Narasapura, Karnataka iPhone plant operated since 2017 \u2014 to Tata Electronics for ~US$125M; SPA signed via SMS InfoComm (Singapore) and Wistron Hong Kong",
+     "This made Tata 'the country's first homegrown iPhone maker' \u2014 Wistron is the cautionary counter-case in the India-Taiwan story: full manufacturing exit after labor/margin problems",
+     "Wistron group retains India service/repair presence via SMS InfoComm; any re-entry into India laptop/server assembly is UNVERIFIED"
+    ],
+    "india_operations": "Exited iPhone manufacturing (Narasapura sold to Tata); residual after-sales/repair services footprint.",
+    "report_used": "Divestiture filings coverage (Bloomberg/Business Standard, Oct-Nov 2023); Wistron English AR quote UNVERIFIED"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Compal Electronics",
+   "ticker": "2324.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$5.8bn, 0.8% net margin (thin, EMS-typical)",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Feb 2025: MOU with Kalyani Group's electronics division to develop a server business 'using locally manufactured solutions in India'; Made-in-India servers launched from Kalyani's Pune facility",
+     "Compal 'will provide technological support related to servers, including overseeing local production, assembly, testing activities, and final sales' (compal.com media release)",
+     "Asset-light India entry \u2014 technology partner to an Indian industrial group rather than owned plant; contrasts with earlier abandoned Compal India smartphone plans"
+    ],
+    "india_operations": "Server technology partnership with Kalyani Group (Pune); no significant owned manufacturing disclosed.",
+    "report_used": "Compal media release (compal.com/en-us/media/251) + trade press; TWSE English AR quote UNVERIFIED"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Johnson Electric Holdings",
+   "ticker": "0179.HK",
+   "market": "Hong Kong",
+   "country": "Hong Kong",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE: FY24 (Mar-2024) net income US$229M on US$3.8bn revenue; yfinance TTM net income US$202M, 5.5% margin",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report subsidiary schedule (fetched PDF) lists 'Johnson Electric Private Limited \u2014 Manufacturing, sales and marketing \u2014 India \u2014 INR1,044,096,500 \u2014 100%' owned",
+     "Company news: Chennai plant opened to 'increase production of its automotive motors... will strengthen Johnson Electric's existing position in the Indian automotive sector', producing engine-cooling-fan and window-lift motors, expected to grow into 'a full range supplier of electric motors and motion subsystems to the automotive industry in India'",
+     "India entity FY25 revenue ~INR 316 cr, ~709 employees (Tracxn) \u2014 real but small relative to the group's 22-country footprint; no India-specific growth narrative in the AR"
+    ],
+    "india_operations": "Wholly-owned Chennai manufacturing/sales subsidiary supplying auto motors to Indian OEMs.",
+    "report_used": "Johnson Electric Annual Report 2023 PDF (fetched, pdftotext, India entries verified) + johnsonelectric.com Chennai plant release"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Nutrien Ltd.",
+   "ticker": "NTR.TO",
+   "market": "Canada",
+   "country": "Canada",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - Potash adjusted EBITDA USD 2.25B in 2025 on record sales volumes; group profitable",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "India represents 6% of Canpotex sales volumes (Canpotex is Nutrien's offshore potash marketing arm)",
+     "Annual disclosure: 'India continues to face political barriers to significantly growing potash demand, however, the agronomic need and willingness of farmers to improve yields persists'",
+     "2025 record offshore potash volumes explicitly supported by consumption growth in key offshore markets incl. India; relevant to India's fertilizer-security push (NIPU-2026 context)"
+    ],
+    "india_operations": "No India assets; recurring Canpotex potash supply contracts with Indian importers (IPL et al.)",
+    "report_used": "Nutrien 2025 Form 40-F / annual report and 6-K market-outlook exhibits (sec.gov)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Magna International Inc.",
+   "ticker": "MG.TO",
+   "market": "Canada",
+   "country": "Canada",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - profitable; sales USD 42.0B in FY2025 (vs 42.8B in 2024)",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "MIXED SIGNAL: 2025 annual report discloses Magna sold a body & chassis business in India in 2024; the divestiture decreased sales by USD 112 million",
+     "Retains long-standing India manufacturing footprint (e.g., Sanand, Gujarat: 215,000 sq ft seating plant and 356,000 sq ft body & chassis plant announced for multiple customers) plus large India engineering/R&D centers",
+     "UNVERIFIED: no India-specific expansion capex commitment found in the 2025 annual report; India is treated as part of 'geographic footprint' optimization rather than a named growth market"
+    ],
+    "india_operations": "Multiple operating plants (seating, mirrors, powertrain) and engineering centers in India; recently divested one India body & chassis business",
+    "report_used": "Magna 2025 Annual Report (magna.com PDF / SEC EX-99.1) + Magna press releases"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Vale S.A.",
+   "ticker": "VALE3.SA",
+   "market": "Brazil",
+   "country": "Brazil",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - consistently profitable; Q1 2026 iron ore output 69.7 Mt (record S11D/Brucutu), 2026 guidance 335-345 Mt maintained",
+   "lead_score": 90,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Vale executive vice president publicly stated Vale 'intends to expand its business in India', seeing a great opportunity to boost iron ore sales as 'India is emerging as a new hub for growth in the steel sector' (Kallanish)",
+     "Industry forecasts cited by Vale suggest India iron ore imports could rise from ~16 Mt/yr to nearly 30 Mt/yr by 2027",
+     "20-F describes Asia-focused distribution network (Malaysia and Oman blending/distribution hubs) positioned to serve Indian buyers; exploring logistics associations with Asian companies"
+    ],
+    "india_operations": "No India assets; sales/marketing coverage of India via global distribution network (Oman/Malaysia hubs)",
+    "report_used": "Vale Form 20-F (FY2024, minedocs mirror) + 6-K production reports + Kallanish interview"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
    "company": "PIDILITE INDUSTRIES LTD",
    "ticker": "PIDILITIND",
    "market": "IN",
@@ -4260,6 +6668,165 @@
     "TN EV 2023 (20% battery capital subsidy)",
     "MP EV 2025",
     "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Bayer AG",
+   "ticker": "BAYN.DE",
+   "market": "Germany",
+   "country": "Germany",
+   "sector": "Pharma & Bulk Drugs",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2024 net loss ~EUR -2.5bn at group level (impairments/litigation; core EPS positive) \u2014 group loss-making, but Indian listed arm Bayer CropScience Ltd is solidly profitable (FY2024-25 revenue INR 54,734 million, up from INR 51,062 million)",
+   "lead_score": 85,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Bayer's Crop Science division works with more than 30 million smallholder farmers in India; 350+ FPOs established across 20 states with the Small Farmers Agri-Business Consortium, engagement with 1,500+ FPOs reaching ~1 million farmers \u2014 bayer.in Crop Science pages (UNVERIFIED exact wording; bayer.com AR PDF blocked to fetcher)",
+     "Bayer 2024 Annual Report cites helping smallholder farmers with nutrition education reaching 170,000 people in rural communities \u2014 via search snippet of bayer-annual-report-2024.pdf (UNVERIFIED exact wording)",
+     "Bayer ForwardFarming regenerative-agriculture initiative and FarmRise One phygital platform (100,000+ farmers) launched in India in 2024-25 \u2014 bayer.in news"
+    ],
+    "india_operations": "Bayer CropScience Limited (listed NSE/BSE, ~68% Bayer-owned), Bayer Pharmaceuticals and Bayer Zydus Pharma JV; India is Bayer's designated smallholder-farming hub market",
+    "report_used": "Bayer Annual Report 2024 \u2014 https://www.bayer.com/sites/default/files/2025-03/bayer-annual-report-2024.pdf (direct PDF download returned HTML block page; quotes sourced from bayer.in/bayer.com pages instead)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Pharma / bulk drug parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "PRIP",
+     "status": "R&D push"
+    },
+    {
+     "instrument": "TDB Rare Disease CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Powerchip Semiconductor Manufacturing Corp (PSMC)",
+   "ticker": "6770.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "MARGINAL-TO-PROFITABLE (yfinance TTM): net income NT$7.5bn shown, but PSMC posted losses through the 2023-24 memory-foundry downturn \u2014 treat margin as cyclical, flag for re-check",
+   "lead_score": 85,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Sept 2024: 'Tata Electronics has completed the Definitive Agreement with Powerchip Semiconductor Manufacturing Corporation (PSMC) of Taiwan' for India's first 12-inch greenfield fab at Dholera, Gujarat",
+     "PSMC licenses 28/40/55/90/110nm technologies and provides design, construction and engineering support; total project up to INR 91,000 crore (~US$11bn), up to 50,000 wafers/month, 20,000+ jobs",
+     "PSMC's own press release: 'Tata joins hands with PSMC to build India's first 12-inch fab'; first technology-transfer payments received late 2024; Tata engineers trained in Taiwan, PSMC personnel deployed to Dholera",
+     "This is the anchor deal of the India-Taiwan semiconductor dynamic \u2014 a mid-tier Taiwanese foundry monetizing mature-node IP into India's ISM 1.0 subsidy program"
+    ],
+    "india_operations": "No owned India assets; technology-transfer + engineering-services partner to Tata Electronics' Dholera fab (revenue via license fees and milestone payments).",
+    "report_used": "PSMC press release (powerchip.com, 2024-02-29) + Tata Electronics definitive-agreement release (Sept 2024); PSMC AR quote UNVERIFIED"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Saudi Basic Industries Corporation (SABIC)",
+   "ticker": "2010.SR",
+   "market": "Saudi Arabia",
+   "country": "Saudi Arabia",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FLAG - FY2025 reported net LOSS of SAR 25.78bn (USD -6.87bn) driven by fair-value writedowns on planned divestiture of European petrochemicals (SAR 9.85bn) and Engineering Thermoplastics (SAR 5.33bn); adjusted net income positive at SAR 2.07bn; revenue SAR 116.5bn; FCF +17% to SAR 7.2bn",
+   "lead_score": 85,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "SABIC Integrated Annual Report 2025 and corporate disclosures: invested more than USD 100 million in the SABIC Technology & Innovation Center in Bengaluru - described as one of the largest investments in India by a Saudi company - with 300+ research scientists and engineers 'driving innovation... for India and for the world'",
+     "Corporate positioning statement: 'SABIC in India, for the World' - excited to partner in India's on-going growth journey (sabic.com news)",
+     "Operates SABIC Research and Technology Pvt Ltd, Bangalore, plus India sales offices; SABIC Agri-Nutrients (SASE:2020, also in candidate pool) is a recurring urea/DAP supplier to India"
+    ],
+    "india_operations": "Bengaluru Technology & Innovation Center (USD 100M+, 300+ researchers); SABIC Research & Technology Pvt Ltd; India sales/marketing offices; fertilizer exports to India via SABIC Agri-Nutrients",
+    "report_used": "SABIC Integrated Annual Report 2025 (sabic.com PDF) + 2025 earnings release + sabic.com India location/news pages"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
    ],
    "enrichment": {
     "status": "PENDING",
@@ -6485,6 +9052,219 @@
    }
   },
   {
+   "company": "Iberdrola, S.A.",
+   "ticker": "IBE.MC",
+   "market": "Spain",
+   "country": "Spain",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE \u2014 net income EUR 5.49bn TTM (company-reported FY2025 net profit EUR 6.285bn, +12%), mcap EUR 139.9bn (yfinance + FY25 results)",
+   "lead_score": 75,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "FY2025 results/integrated report: APAC entry is via AUSTRALIA, not India \u2014 metocean surveys for the 3 GW Aurora Green offshore wind project (Victoria) described as 'a potential entry into the Asia-Pacific market'; ~EUR 1.2bn Australian networks/transport project; Broadsound PV (376 MW) + 180 MW batteries in Queensland.",
+     "No India generation, networks, or supply operations identified in the 2025 reporting; India does not appear as an investment geography in the 2025-2028 plan (record EUR 14.46bn group investment concentrated in US/UK/EU/Australia/Brazil).",
+     "Indirect India link only: procurement of Indian-made wind/solar components (UNVERIFIED)."
+    ],
+    "india_operations": "None identified. APAC interest real but Australia-centred.",
+    "report_used": "Iberdrola FY2025 results presentation (report-25FY.pdf) + Integrated Report March 2026 (iberdrola.com) \u2014 searched, India absent"
+   },
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Taiwan Semiconductor Manufacturing Company",
+   "ticker": "2330.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$2,216.8bn, 49.9% net margin, mcap NT$60.2tn",
+   "lead_score": 75,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "2025 Annual Report (English, investor.tsmc.com) contains ZERO mentions of India or South Asia \u2014 verified by fetching the AR site and querying for India references",
+     "All disclosed overseas capacity is US/Japan/Germany: 'Construction of our third fab has also begun in 2025' (Arizona, total planned US investment $165bn); Kumamoto fab 1 'began volume production at the end of 2024, with very good yield'; Dresden specialty fab under construction",
+     "India relevance is indirect only: TSMC's ecosystem partners (PSMC alumni engineers, OSAT suppliers) and customers (MediaTek, Apple chain) are the India vector, not TSMC itself"
+    ],
+    "india_operations": "None disclosed. No fab, no design center, no India entity in the annual report.",
+    "report_used": "TSMC 2025 Annual Report (English) via investor.tsmc.com AR microsite (PDF download blocked by Cloudflare; HTML AR site fetched)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Singapore Technologies Engineering (ST Engineering)",
+   "ticker": "S63.SI",
+   "market": "Singapore",
+   "country": "Singapore",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE: FY2024 record revenue S$11.28bn (+12%), net profit S$702M (+20%); yfinance TTM shows S$463M/3.7% (TTM basis differs from FY figure)",
+   "lead_score": 75,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "FY2024 Results Announcement PDF (fetched, pdftotext): ZERO occurrences of 'India' \u2014 growth narrative centers on defence exports, US operations and Satcom, with 'operations spanning Asia, Europe, the Middle East and the U.S., serving customers in more than 100 countries'",
+     "No India JV or facility disclosed in FY2024 materials; the Adani MRO/defence buildout that dominates India aerospace news involves Air Works/Elbit/Embraer, not ST Engineering",
+     "India relevance is prospective: India's defence-procurement opening is an addressable market, but nothing concrete is disclosed"
+    ],
+    "india_operations": "None material disclosed; commercial aerospace MRO customers may include Indian carriers (UNVERIFIED).",
+    "report_used": "ST Engineering FY2024 Results Announcement PDF (stengg.com, fetched and grepped); full AR2024 is an HTML microsite, not separately parsed"
+   },
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Teck Resources Limited",
+   "ticker": "TECK-B.TO",
+   "market": "Canada",
+   "country": "Canada",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PASS - FY2025 revenue ~USD 7.7B; copper 453.5kt and zinc 565kt at high end of guidance; profitable post coal divestiture",
+   "lead_score": 75,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Historic India exposure was mainly via steelmaking coal exported to Asia-Pacific, but that business was sold (Elk Valley Resources to Glencore, 2024), removing most direct India revenue",
+     "2025 Annual Report describes Asia as a core market for copper/zinc concentrates but names no India-specific operations, offices, or investment plans",
+     "Relevance is prospective only: India's critical-minerals incentive push makes Teck a plausible future supplier, not a current India investor - UNVERIFIED beyond generic Asia sales"
+    ],
+    "india_operations": "None identified; sells copper/zinc into Asian markets generally",
+    "report_used": "Teck 2025 Annual Report (teck.com/media/2025-Annual-Report.pdf) + Q3/Q1 news releases"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
    "company": "SANSERA ENGINEERING LTD",
    "ticker": "SANSERA",
    "market": "IN",
@@ -7541,6 +10321,54 @@
    }
   },
   {
+   "company": "thyssenkrupp AG",
+   "ticker": "TKA.DE",
+   "market": "Germany",
+   "country": "Germany",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "FY2023/24 net loss ~EUR -1.5bn (steel impairments); adjusted EBIT EUR 567m \u2014 group loss-making at net level",
+   "lead_score": 70,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"India's economy continues to expand robustly. Growth of 6.8% is forecast for 2024... India is benefiting from a growing population\" and steel demand \"rose significantly in India (+14.4%)\" with 2025 world steel growth \"boosted by continuing high growth in demand in India especially (+8.5%)\" \u2014 thyssenkrupp Annual Report 2023/24, pdftotext-verified",
+     "COUNTER-SIGNAL: \"At the start of May 2024, we sold the 55% interest in thyssenkrupp Industries India... to a consortium of former co-owners\" and \"a divestment process was initiated for the activities of thyssenkrupp Electrical Steel India\" \u2014 thyssenkrupp Annual Report 2023/24, pdftotext-verified (divesting legacy Indian industrial assets)",
+     "thyssenkrupp Marine Systems entered official contract negotiations with Mazagon Dock Shipbuilders for six P75(I) submarines (>INR 70,000 crore programme), Concept Design Agreement completed Aug 2025 \u2014 defencereviewasia.com/theprint.in (UNVERIFIED exact wording)",
+     "thyssenkrupp nucera signed a strategic collaboration with BHEL to localize alkaline-water-electrolyzer manufacturing in India, plus a 260 MW green-hydrogen FEED contract with Juno Joule \u2014 thyssenkrupp-nucera.com press releases, 2026 (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Barbell: divested Industries India and Electrical Steel India (Nashik), but Marine Systems pursuing India's largest defence submarine order (P75I with MDL) and nucera building green-hydrogen electrolyser localization with BHEL",
+    "report_used": "thyssenkrupp Annual Report 2023/2024 \u2014 https://d2zo35mdb530wx.cloudfront.net/_binary/thyssenkruppAGReport/354e8b26-9f91-40f1-80cf-91207a65c9d0/Annual-report_2023-2024.pdf (56 India mentions)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
    "company": "PTC INC.",
    "ticker": "PTC",
    "market": "IN",
@@ -8394,6 +11222,117 @@
     "AP Food Processing 4.0",
     "MP (IPP + food parks)",
     "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Quanta Computer",
+   "ticker": "2382.TW",
+   "market": "Taiwan",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income NT$76.7bn, 3.1% net margin (AI-server leader)",
+   "lead_score": 65,
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "No India manufacturing or investment plans surfaced in searches of Quanta's disclosures or credible trade press; AI-server capacity additions (Nvidia GB200 from Q1 2025) are going to the US, Thailand and Taiwan",
+     "Kept in the sample deliberately as the negative control: Taiwan's top AI-server ODM has so far bypassed India"
+    ],
+    "india_operations": "None found.",
+    "report_used": "Web search sweep only; Quanta English AR quote UNVERIFIED \u2014 absence of evidence, flagged honestly"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Venture Corporation",
+   "ticker": "V03.SI",
+   "market": "Singapore",
+   "country": "Singapore",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "PROFITABLE (yfinance TTM): net income S$227M, 9.0% net margin \u2014 best-in-class EMS margins",
+   "lead_score": 65,
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "No India manufacturing site found: clusters are Singapore, Penang/Johor (Malaysia), Batam (Indonesia), China, plus US/Europe \u2014 ~40 companies, 12,000+ employees concentrated in Southeast Asia",
+     "AR2024 PDF (venture.listedcompany.com) blocked by AWS WAF challenge \u2014 India-mention grep could not be run; search excerpts surfaced no India references",
+     "Venture benefits from the same China+1 flows courting India, but its diversification bet is Malaysia/Batam, not India"
+    ],
+    "india_operations": "None found (UNVERIFIED against full AR text due to WAF block).",
+    "report_used": "Venture Corporation AR2024 (download blocked \u2014 evidence from search excerpts and company site only)"
+   },
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
    ],
    "enrichment": {
     "status": "PENDING",
@@ -9408,6 +12347,57 @@
     "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
     "Chhattisgarh (core-sector stack)",
     "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   }
+  },
+  {
+   "company": "Sasol Limited",
+   "ticker": "SOL.JO",
+   "market": "South Africa",
+   "country": "South Africa",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "source": "annual-report deep-dive",
+   "profitability_check": "MARGINAL PASS - FY2025 (to Jun 2025) returned to profit: EPS R10.60 vs loss of R69.94 in FY2024; HEPS R35.13; but R20.7bn further impairments and no dividend declared",
+   "lead_score": 55,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Maintains Sasol India Private Limited (inc. 2012), a sales/representation office at Vibgyor Towers, Bandra Kurla Complex, Mumbai, under Sasol Performance Chemicals (offices in 18 countries)",
+     "Coal-gasification relevance is real but stale: Coal India-Sasol CTL tie-up talks (2016) and the earlier Tata-Sasol SETSPL JV (Talcher, Odisha coal block) collapsed after the prospecting licence was cancelled; India's 100 Mt coal-gasification mission (2030) keeps Sasol's Fischer-Tropsch tech relevant, but FY2025 report names no India project",
+     "FY2025 integrated report/AFS contain no India capex or growth commitment - interest is commercial (chemicals sales) only"
+    ],
+    "india_operations": "Mumbai chemicals sales office (Sasol India Pvt Ltd); no manufacturing or announced projects",
+    "report_used": "Sasol Annual Financial Statements FY2025 + Integrated Report (sasol.com); Business Standard (2016) for CIL-Sasol history"
+   },
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
    ],
    "enrichment": {
     "status": "PENDING",

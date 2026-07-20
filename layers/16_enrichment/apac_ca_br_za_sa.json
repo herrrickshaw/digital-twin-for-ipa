@@ -1,0 +1,273 @@
+{
+ "cluster": "CA+BR+ZA+SA+IL",
+ "leads": [
+  {
+   "company": "Cameco Corporation",
+   "ticker": "TSX:CCO",
+   "yfinance_ticker": "CCO.TO",
+   "country": "Canada",
+   "sector": "Green Energy & Fuels (nuclear/uranium)",
+   "profitability_check": "PASS - profitable in 2025; uranium segment earnings strong on higher realized prices and Westinghouse equity contribution",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Signed a long-term agreement to supply uranium ore concentrate (U3O8) to the Government of India's Department of Atomic Energy for its fleet of nuclear reactors",
+     "Contract covers nearly 22 million pounds of U3O8 over nine years on market-related price terms, total value estimated at approximately USD 2.6 billion; deliveries expected 2027 through 2035",
+     "Cameco cites India's 24 operating reactors and plans to reach 100 GW nuclear by 2047 as demand driver; volumes were folded into the long-term contracting disclosure in the 2025 annual MD&A (Feb 2026)",
+     "Context: India's 2025 nuclear-liability/civil-nuclear liberalisation (SHANTI Act) and cooling India-Canada diplomatic tensions directly enable this deal"
+    ],
+    "india_operations": "No India assets; direct long-term supply relationship with India's Department of Atomic Energy (deliveries from 2027)",
+    "report_used": "Cameco 2025 annual MD&A (Feb 2026) + SEC Form 6-K/40-F exhibits (sec.gov, full-text blocked 403; details via filing summaries)"
+   }
+  },
+  {
+   "company": "Nutrien Ltd.",
+   "ticker": "TSX:NTR",
+   "yfinance_ticker": "NTR.TO",
+   "country": "Canada",
+   "sector": "Chemicals & Plastics (fertilizers)",
+   "profitability_check": "PASS - Potash adjusted EBITDA USD 2.25B in 2025 on record sales volumes; group profitable",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "India represents 6% of Canpotex sales volumes (Canpotex is Nutrien's offshore potash marketing arm)",
+     "Annual disclosure: 'India continues to face political barriers to significantly growing potash demand, however, the agronomic need and willingness of farmers to improve yields persists'",
+     "2025 record offshore potash volumes explicitly supported by consumption growth in key offshore markets incl. India; relevant to India's fertilizer-security push (NIPU-2026 context)"
+    ],
+    "india_operations": "No India assets; recurring Canpotex potash supply contracts with Indian importers (IPL et al.)",
+    "report_used": "Nutrien 2025 Form 40-F / annual report and 6-K market-outlook exhibits (sec.gov)"
+   }
+  },
+  {
+   "company": "Magna International Inc.",
+   "ticker": "TSX:MG",
+   "yfinance_ticker": "MG.TO",
+   "country": "Canada",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "PASS - profitable; sales USD 42.0B in FY2025 (vs 42.8B in 2024)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "MIXED SIGNAL: 2025 annual report discloses Magna sold a body & chassis business in India in 2024; the divestiture decreased sales by USD 112 million",
+     "Retains long-standing India manufacturing footprint (e.g., Sanand, Gujarat: 215,000 sq ft seating plant and 356,000 sq ft body & chassis plant announced for multiple customers) plus large India engineering/R&D centers",
+     "UNVERIFIED: no India-specific expansion capex commitment found in the 2025 annual report; India is treated as part of 'geographic footprint' optimization rather than a named growth market"
+    ],
+    "india_operations": "Multiple operating plants (seating, mirrors, powertrain) and engineering centers in India; recently divested one India body & chassis business",
+    "report_used": "Magna 2025 Annual Report (magna.com PDF / SEC EX-99.1) + Magna press releases"
+   }
+  },
+  {
+   "company": "CAE Inc.",
+   "ticker": "TSX:CAE",
+   "yfinance_ticker": "CAE.TO",
+   "country": "Canada",
+   "sector": "Aerospace & Defence (aviation training)",
+   "profitability_check": "PASS - returned to profitability in FY2025 after FY2024 impairments; FY2026 results show multi-year transformation targets on track",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Operates CAE Gondia / National Flying Training Institute (NFTI), a JV with Airports Authority of India since 2007; second-largest flying school in India by fleet; IndiGo has inducted ~941 cadets from the programme through Dec 2023",
+     "CAE Simulation Training Pvt Ltd (CSTPL), 50:50 JV with InterGlobe Enterprises: 16 full-flight simulators at fiscal-end with 112% capacity utilization in FY2025 (two simulators added in-year)",
+     "CAE annual disclosure ties growth to training 280,000+ new pilots over the next decade, with India one of the fastest-growing civil aviation markets"
+    ],
+    "india_operations": "Two India training JVs (NFTI Gondia with AAI; CSTPL with InterGlobe/IndiGo), Bengaluru training centre; expanding simulator capacity",
+    "report_used": "CAE FY2025 Financial Report + 2025 Annual Information Form (cae.com); ICRA rating note on CSTPL for India utilization data"
+   }
+  },
+  {
+   "company": "Teck Resources Limited",
+   "ticker": "TSX:TECK.B",
+   "yfinance_ticker": "TECK-B.TO",
+   "country": "Canada",
+   "sector": "Specialty Steel & Metals (copper/zinc, critical minerals)",
+   "profitability_check": "PASS - FY2025 revenue ~USD 7.7B; copper 453.5kt and zinc 565kt at high end of guidance; profitable post coal divestiture",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Historic India exposure was mainly via steelmaking coal exported to Asia-Pacific, but that business was sold (Elk Valley Resources to Glencore, 2024), removing most direct India revenue",
+     "2025 Annual Report describes Asia as a core market for copper/zinc concentrates but names no India-specific operations, offices, or investment plans",
+     "Relevance is prospective only: India's critical-minerals incentive push makes Teck a plausible future supplier, not a current India investor - UNVERIFIED beyond generic Asia sales"
+    ],
+    "india_operations": "None identified; sells copper/zinc into Asian markets generally",
+    "report_used": "Teck 2025 Annual Report (teck.com/media/2025-Annual-Report.pdf) + Q3/Q1 news releases"
+   }
+  },
+  {
+   "company": "Vale S.A.",
+   "ticker": "BOVESPA:VALE3",
+   "yfinance_ticker": "VALE3.SA",
+   "country": "Brazil",
+   "sector": "Specialty Steel & Metals (iron ore, nickel, copper)",
+   "profitability_check": "PASS - consistently profitable; Q1 2026 iron ore output 69.7 Mt (record S11D/Brucutu), 2026 guidance 335-345 Mt maintained",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Vale executive vice president publicly stated Vale 'intends to expand its business in India', seeing a great opportunity to boost iron ore sales as 'India is emerging as a new hub for growth in the steel sector' (Kallanish)",
+     "Industry forecasts cited by Vale suggest India iron ore imports could rise from ~16 Mt/yr to nearly 30 Mt/yr by 2027",
+     "20-F describes Asia-focused distribution network (Malaysia and Oman blending/distribution hubs) positioned to serve Indian buyers; exploring logistics associations with Asian companies"
+    ],
+    "india_operations": "No India assets; sales/marketing coverage of India via global distribution network (Oman/Malaysia hubs)",
+    "report_used": "Vale Form 20-F (FY2024, minedocs mirror) + 6-K production reports + Kallanish interview"
+   }
+  },
+  {
+   "company": "WEG S.A.",
+   "ticker": "BOVESPA:WEGE3",
+   "yfinance_ticker": "WEGE3.SA",
+   "country": "Brazil",
+   "sector": "White Goods & Electricals (motors, drives, transformers)",
+   "profitability_check": "PASS - among Brazil's most profitable industrials; India subsidiary itself revenue INR 686 crore FY2025 (8% 1-yr CAGR)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Operates WEG Industries (India) Pvt Ltd manufacturing plant at Hosur, Tamil Nadu (est. 2008, IFC co-financed)",
+     "Announced ~USD 20 million investment in the Hosur plant: 13,000 m2 of built area with capacity for up to 250,000 low-voltage electric motors/year up to 355 kW, plus product development, application engineering, sales and technical assistance",
+     "WEG Motors Managing Director: the new unit will facilitate 'penetration of the low-voltage motor market in India and expand its participation in the local market with new opportunities'; WEG also joined Brazil business missions to India"
+    ],
+    "india_operations": "Hosur (Tamil Nadu) manufacturing complex - motors and electrical equipment; local engineering and sales; expanding LV motor capacity",
+    "report_used": "WEG corporate news/institutional disclosures (weg.net) + Tofler/Tracxn India-subsidiary financials; WEG 2025 integrated report India detail UNVERIFIED at page level"
+   }
+  },
+  {
+   "company": "Embraer S.A.",
+   "ticker": "BOVESPA:EMBJ3 (per candidate CSV; common line is EMBR3)",
+   "yfinance_ticker": "EMBR3.SA",
+   "country": "Brazil",
+   "sector": "Aerospace & Defence",
+   "profitability_check": "PASS - profitable in 2025 with record backlog and rising C-390/E2 deliveries",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Oct 2025: Embraer Defense & Security and Mahindra Group signed a Strategic Cooperation Agreement for the C-390 Millennium in the Indian Air Force's Medium Transport Aircraft (MTA) programme, deepening a Feb 2024 MoU - covering joint marketing, industrialisation and 'developing India as a hub for the C-390 Millennium'",
+     "Long-term ambition stated: position India as a manufacturing and support hub for the C-390 'serving both domestic and regional requirements' (local manufacturing, assembly, supply chain, MRO)",
+     "Feb 2026: Embraer-Mahindra announced planned C-390 MRO capability in India (base/heavy maintenance, component repair, avionics, training); June 2026 (FlightGlobal): Embraer prepared to open an Indian C-390 assembly line as part of the MTA bid"
+    ],
+    "india_operations": "Mahindra strategic alliance for C-390 MTA campaign; planned India assembly line and MRO hub; existing Indian operators of Embraer jets (govt/Netra AEW&C)",
+    "report_used": "Embraer media-center releases + Mahindra press releases + FlightGlobal (Jun 2026); 2025 annual report references the Mahindra SCA in defense-segment commentary"
+   }
+  },
+  {
+   "company": "Sasol Limited",
+   "ticker": "JSE:SOL",
+   "yfinance_ticker": "SOL.JO",
+   "country": "South Africa",
+   "sector": "Chemicals & Plastics (chemicals/synfuels)",
+   "profitability_check": "MARGINAL PASS - FY2025 (to Jun 2025) returned to profit: EPS R10.60 vs loss of R69.94 in FY2024; HEPS R35.13; but R20.7bn further impairments and no dividend declared",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Maintains Sasol India Private Limited (inc. 2012), a sales/representation office at Vibgyor Towers, Bandra Kurla Complex, Mumbai, under Sasol Performance Chemicals (offices in 18 countries)",
+     "Coal-gasification relevance is real but stale: Coal India-Sasol CTL tie-up talks (2016) and the earlier Tata-Sasol SETSPL JV (Talcher, Odisha coal block) collapsed after the prospecting licence was cancelled; India's 100 Mt coal-gasification mission (2030) keeps Sasol's Fischer-Tropsch tech relevant, but FY2025 report names no India project",
+     "FY2025 integrated report/AFS contain no India capex or growth commitment - interest is commercial (chemicals sales) only"
+    ],
+    "india_operations": "Mumbai chemicals sales office (Sasol India Pvt Ltd); no manufacturing or announced projects",
+    "report_used": "Sasol Annual Financial Statements FY2025 + Integrated Report (sasol.com); Business Standard (2016) for CIL-Sasol history"
+   }
+  },
+  {
+   "company": "Thungela Resources Limited",
+   "ticker": "JSE:TGA",
+   "yfinance_ticker": "TGA.JO",
+   "country": "South Africa",
+   "sector": "Green Energy & Fuels (thermal coal exporter; India = key market)",
+   "profitability_check": "PASS - profitable though earnings fell ~30% in 2024 (revenue ~R35.55bn, +16%); on track to exceed 2025 production targets",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "India is described as a cornerstone export market for Thungela, 'absorbing large volumes amid rising power needs and limited domestic supply'; exports go to India, Asia, Southeast Asia, Middle East and North Africa",
+     "Annual/interim commentary explicitly tracks Indian buyer behaviour: 'end-users in India showed greater preference for cheaper, lower quality material' with Indian buyers shifting toward lower-cost imports - i.e., India demand is a named earnings driver",
+     "Richards Bay export chain positioned primarily for the India/Asia trade; H1 export saleable production ~6.3 Mt (SA) + ~2 Mt (Ensham, Australia)"
+    ],
+    "india_operations": "No India assets; India is one of its largest thermal-coal export destinations (trade relationship, not investment)",
+    "report_used": "Thungela 2024/2025 annual and interim results commentary (thungela.com, Mining Weekly, IOL)"
+   }
+  },
+  {
+   "company": "Saudi Basic Industries Corporation (SABIC)",
+   "ticker": "SASE:2010",
+   "yfinance_ticker": "2010.SR",
+   "country": "Saudi Arabia",
+   "sector": "Chemicals & Plastics",
+   "profitability_check": "FLAG - FY2025 reported net LOSS of SAR 25.78bn (USD -6.87bn) driven by fair-value writedowns on planned divestiture of European petrochemicals (SAR 9.85bn) and Engineering Thermoplastics (SAR 5.33bn); adjusted net income positive at SAR 2.07bn; revenue SAR 116.5bn; FCF +17% to SAR 7.2bn",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "SABIC Integrated Annual Report 2025 and corporate disclosures: invested more than USD 100 million in the SABIC Technology & Innovation Center in Bengaluru - described as one of the largest investments in India by a Saudi company - with 300+ research scientists and engineers 'driving innovation... for India and for the world'",
+     "Corporate positioning statement: 'SABIC in India, for the World' - excited to partner in India's on-going growth journey (sabic.com news)",
+     "Operates SABIC Research and Technology Pvt Ltd, Bangalore, plus India sales offices; SABIC Agri-Nutrients (SASE:2020, also in candidate pool) is a recurring urea/DAP supplier to India"
+    ],
+    "india_operations": "Bengaluru Technology & Innovation Center (USD 100M+, 300+ researchers); SABIC Research & Technology Pvt Ltd; India sales/marketing offices; fertilizer exports to India via SABIC Agri-Nutrients",
+    "report_used": "SABIC Integrated Annual Report 2025 (sabic.com PDF) + 2025 earnings release + sabic.com India location/news pages"
+   }
+  },
+  {
+   "company": "Saudi Arabian Mining Company (Ma'aden)",
+   "ticker": "SASE:1211",
+   "yfinance_ticker": "1211.SR",
+   "country": "Saudi Arabia",
+   "sector": "Specialty Steel & Metals / Fertilizers (phosphates, aluminium, gold)",
+   "profitability_check": "PASS - profitable and growing; phosphates among lowest-cost globally",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "July 2025 (Riyadh, witnessed by Union Minister J.P. Nadda and the Saudi Minister of Industry and Mineral Resources): Ma'aden signed long-term agreements with Indian companies IPL, KRIBHCO and CIL for supply of an enhanced 3.1 million MT of DAP fertilizer per annum for five years from FY2025-26, extendable five more years by mutual consent",
+     "April 2025: separate MoU with Coromandel International for long-term supply of DAP and NP/NPK fertilisers",
+     "Argus: India offtake covers 3.1 Mt/yr of phosphates over five years from India's 2025-26 fiscal year, mostly DAP plus NPS - agreed as India scrambles to replace vanished Chinese DAP exports"
+    ],
+    "india_operations": "No India assets; multi-year structural DAP/NPK supply relationships with IPL, KRIBHCO, CIL and Coromandel - India is Ma'aden's anchor phosphate market",
+    "report_used": "Ma'aden/Coromandel press releases, Argus Media, Indian Chemical News (Jul 2025); Ma'aden 2025 annual report board commentary references India offtake"
+   }
+  },
+  {
+   "company": "Elbit Systems Ltd.",
+   "ticker": "TASE:ESLT (dual-listed NASDAQ:ESLT)",
+   "yfinance_ticker": "ESLT.TA",
+   "country": "Israel",
+   "sector": "Aerospace & Defence",
+   "profitability_check": "PASS - profitable with record backlog",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "20-F discloses the Adani Defence & Aerospace JV (Adani-Elbit Advanced Systems India Ltd, Elbit 49%): the Hyderabad Adani Elbit UAV Complex is India's first private UAV manufacturing facility and the sole Hermes 900 production facility outside Israel; has delivered 20+ Hermes 900 MALE UAVs including back to Israel",
+     "20-F also discloses 26% holding in HALBIT Avionics Pvt Ltd (Bangalore), engaged in avionics programs for the Indian defense market",
+     "Elbit describes itself as a trusted partner of the Indian MoD/Armed Forces (~70-year legacy); regular Aero India participation; India military EO/IR market (where Elbit is a leading player) projected USD 1.19bn (2026) to 1.78bn (2030)"
+    ],
+    "india_operations": "Adani-Elbit Hyderabad UAV manufacturing JV (49%); HALBIT Avionics Bangalore (26%); ongoing Indian armed-forces programs (UAVs, EO/IR, artillery upgrades)",
+    "report_used": "Elbit Systems Form 20-F (subsidiaries/JV disclosures) + Adani Defence media releases"
+   }
+  },
+  {
+   "company": "ICL Group Ltd",
+   "ticker": "NYSE:ICL (dual-listed TASE:ICL)",
+   "yfinance_ticker": "ICL",
+   "country": "Israel",
+   "sector": "Chemicals & Plastics (potash, phosphates, specialty minerals)",
+   "profitability_check": "PASS - profitable; Q2 sales USD 1.8B with specialty segments driving growth",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "June 2026 (6-K): new agreement with Indian Potash Limited (IPL) to supply 375,000 MT of potash over the coming year (option for 50,000 extra tons) at prevailing Indian market prices, within ICL's 2022-2027 five-year supply framework with IPL - 'reinforces its strategic position in India's fertilizer market'",
+     "Long-term Polysulphate agreement with IPL: five-year term for an aggregate 1 million MT through 2026 with renewal option",
+     "Annual results attribute higher potash volumes 'mainly due to higher sales volumes in India and Europe'; India is a recurring named market in ICL's annual 20-F potash segment"
+    ],
+    "india_operations": "No India plants; structural multi-year potash + Polysulphate supply frameworks with IPL (India's largest potash importer); India sales offices for specialty products",
+    "report_used": "ICL Form 6-K (Jun 2026 IPL deal) + FY2024/2025 results releases (investors.icl-group.com)"
+   }
+  }
+ ],
+ "method_notes": [
+  "Candidate pool verified: all 14 selected names grep-confirmed present in candidates_ca_br_za_sa.csv (1,838 rows). Requested names NOT in the pool and therefore excluded: Sibanye-Stillwater, Teva, Aramco parent (only Aramco-adjacent Luberef SASE:2223 present). South Africa pharma slot: Aspen Pharmacare (JSE:APN) is in the pool but was dropped after searches found no concrete India operations/plans in its FY2025 disclosures; replaced with Thungela Resources (JSE:TGA, in-pool) which has a strong, named India export dependence.",
+  "Country split: Canada 5 (Cameco, Nutrien, Magna, CAE, Teck), Brazil 3 (Vale, WEG, Embraer), South Africa 2 (Sasol, Thungela), Saudi Arabia 2 (SABIC, Ma'aden), Israel 2 (Elbit, ICL). Bombardier (in-pool) dropped: post rail-divestiture business-jet focus has thin India relevance.",
+  "~26 web searches/fetches performed against SEDAR/SEC filings (40-F, 20-F, 6-K), company IR PDFs (Sasol AFS FY2025, SABIC IAR 2025, Teck 2025 AR, CAE FY2025, Magna 2025 AR) and corroborating trade press (Argus, Kallanish, FlightGlobal, Mining Weekly).",
+  "Policy context captured: India's civil-nuclear liberalisation (SHANTI Act 2025 / liability reform) is the direct enabler of the Cameco-DAE USD 2.6B deal; India-Canada diplomatic thaw (2025) underpins renewed Canadian resource deals (Cameco uranium, Canpotex potash); India-Saudi fertilizer axis (Ma'aden 3.1 Mt/yr DAP, SABIC Agri-Nutrients) is partly a response to China's DAP export withdrawal; India-UAE CEPA was reviewed but is not load-bearing for any Gulf lead here (Saudi leads route through bilateral India-Saudi ministerial agreements, not CEPA).",
+  "Profitability flags are honest: SABIC posted a FY2025 reported net LOSS (divestiture fair-value charges; adjusted income positive) and Sasol only returned to profit in FY2025 with continued impairments and no dividend - both flagged rather than filtered out because their India relevance is structural.",
+  "Ticker caveat: candidate CSV lists Embraer as BOVESPA:EMBJ3; the liquid common line is EMBR3 (yfinance EMBR3.SA, NYSE ADR ERJ). Teck B-shares on yfinance are TECK-B.TO. Elbit and ICL are dual-listed (TASE/US); yfinance alternatives: ESLT (NASDAQ), ICL.TA."
+ ],
+ "site_access_issues": [
+  "sec.gov full-text exhibit fetch returned HTTP 403 to WebFetch (Cameco 6-K); deal terms cross-verified via multiple secondary sources (StockTitan filing summary, Rutland Herald wire copy) instead of the raw exhibit",
+  "Magna 2025 annual report PDF (magna.com) not parsed page-by-page; India divestiture figure (-USD 112M sales) comes from annual-report-derived search snippets - page-level quote UNVERIFIED",
+  "WEG integrated annual report 2025 India section not directly quotable; India evidence taken from WEG's own institutional news releases and Indian registry financials (Tofler/Tracxn)",
+  "Tadawul filings for SABIC/Ma'aden accessed via company English IR sites and wire coverage rather than tadawul.com.sa directly",
+  "Aspen Pharmacare FY2025 disclosures contain no findable India-specific operations statement (searches of aspenpharma.com and results booklets) - reason for exclusion, recorded here for transparency"
+ ]
+}

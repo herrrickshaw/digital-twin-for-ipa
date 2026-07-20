@@ -1,0 +1,273 @@
+{
+ "cluster": "DACH+NL",
+ "leads": [
+  {
+   "company": "Siemens Energy AG",
+   "ticker": "ENR",
+   "yfinance_ticker": "ENR.DE",
+   "country": "Germany",
+   "sector": "White Goods & Electricals / Green Energy (capital equipment, grid, power gen)",
+   "profitability_check": "FY2024 (ended Sep-2024) returned to net profit (~EUR 1.3bn), heavily boosted by EUR 2,079m cash inflow from selling its 18% stake in Siemens Limited India; record order backlog ~EUR 123bn",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"In fiscal year 2025, a spin-off of the energy business of Siemens Limited, India, is intended. We expect a non-cash profit from this, which, among other things, depends on the performance of the shares of Siemens Limited, India, traded on the stock exchange\" \u2014 Siemens Energy Annual Report 2024, pdftotext-verified",
+     "\"At EUR 2,079 million, by far the largest cash inflow was contributed by the sale of the stake in Siemens Limited, India.\" \u2014 Siemens Energy Annual Report 2024, pdftotext-verified",
+     "Siemens Energy India Limited was demerged from Siemens Limited and listed on NSE/BSE in June 2025 and now publishes its own annual report \u2014 siemens-energy.com press release 'Energy business in India successfully listed' + siemens-energy-india.com/annual-reports.html"
+    ],
+    "india_operations": "Siemens Energy India Limited (listed NSE/BSE June 2025, separate annual report at siemens-energy-india.com) \u2014 full grid technologies, transformers and power-generation manufacturing/service footprint inherited from Siemens Ltd India",
+    "report_used": "Siemens Energy Annual Report 2024 (FY Oct-2023-Sep-2024) \u2014 https://assets.siemens-energy.com/dam/990c55de-3afe-487a-862b-b3b500b33756/A-Siemens-Energy-Annual-Report-2024-pdf_Original-pdf_Original%20file.pdf (36 India mentions)"
+   }
+  },
+  {
+   "company": "ABB Ltd",
+   "ticker": "ABBN",
+   "yfinance_ticker": "ABBN.SW",
+   "country": "Switzerland",
+   "sector": "White Goods & Electricals (electrification, motion, automation)",
+   "profitability_check": "FY2024 net income ~USD 3.9bn on ~USD 32.9bn revenue, operational EBITA margin ~18% \u2014 strongly profitable",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"Similarly, India is focused on increasing grid capacity and securing access even across its most remote regions.\" \u2014 ABB Integrated Report 2024, pdftotext-verified",
+     "\"Revenues grew in India, Saudi Arabia, Australia, and Singapore, partially offset by a decline in China of 4 percent.\" \u2014 ABB Integrated Report 2024, pdftotext-verified",
+     "\"ABB India is planning to certify one of ABB's sites in Bangalore according to AWS requirements.\" \u2014 ABB Integrated Report 2024, pdftotext-verified",
+     "ABB announced ~USD 75 million investment in India by 2026 for manufacturing and R&D expansion (new Motion facility Peenya, Nelamangala Campus 2), on top of USD 35m in 2025; ~85% of India products manufactured locally \u2014 abb.com news 134015 / new.abb.com news 134105"
+    ],
+    "india_operations": "ABB India Ltd (listed NSE/BSE, ~75% ABB-owned); 3 manufacturing locations in Karnataka alone with 3,000+ manufacturing employees; publishes its own Integrated Annual Report",
+    "report_used": "ABB Integrated Report 2024 \u2014 https://library.e.abb.com/public/ab32fda35c6f4a3cb62f8c5e2e4476c6/Integrated%20Report%202024_ENGLISH.pdf"
+   }
+  },
+  {
+   "company": "BASF SE",
+   "ticker": "BAS",
+   "yfinance_ticker": "BAS.DE",
+   "country": "Germany",
+   "sector": "Chemicals & Plastics",
+   "profitability_check": "FY2024 sales EUR 65,260m (per India factsheet), EBITDA before special items ~EUR 7.9bn, net income positive but depressed (~EUR 1.3bn, UNVERIFIED exact) \u2014 profitable, cyclically weak",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "BASF in India sales 2024: EUR 2,392 million (2023: EUR 2,386 million); Number of employees (BASF India): 2,411 \u2014 BASF in India Factsheet 2024, pdftotext-verified figures",
+     "BASF's Verbund mega-site investment is directed at Zhanjiang, China (start-up Q4 2025), not India \u2014 no India Verbund site is planned in the BASF Report 2024; India interest is steady-state local production (8 sites) plus a listed arm, not new large capex",
+     "\"For the 7th consecutive year, BASF India received the 2024 Best Company for Women in India \u2014 Hall of Fame\" \u2014 BASF in India Factsheet 2024, pdftotext-verified"
+    ],
+    "india_operations": "BASF India Limited (listed NSE/BSE) \u2014 ~EUR 2.4bn annual sales to India, 8 production sites (Thane, Mangalore, Dahej etc.), 42 offices, 2,411 employees; Group Captive renewable-energy co-investment projects in India",
+    "report_used": "BASF in India Factsheet 2024 + BASF Report 2024 \u2014 https://www.basf.com/dam/jcr:37a3ea0e-ef5a-4c1a-bbd8-cb67e746f346/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2025/BASF_in_India_Factsheet_2024.pdf and https://www.basf.com/dam/jcr:a0caf160-c019-40b1-a4ea-eaedb29b0685/basf/www/global/documents/en/investor-relations/calendar-and-publications/reports/2025/BASF_Report_2024.pdf"
+   }
+  },
+  {
+   "company": "Sika AG",
+   "ticker": "SIKA",
+   "yfinance_ticker": "SIKA.SW",
+   "country": "Switzerland",
+   "sector": "Chemicals & Plastics (construction chemicals, auto adhesives)",
+   "profitability_check": "FY2024 record sales CHF ~11.76bn, net profit ~CHF 1.25bn \u2014 strongly profitable; 39% of 2024 investments went to production-capacity expansion (vs 29% in 2023)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"In the automotive and industry business, Sika continued to increase the share of its technologies in vehicles of local and international manufacturers in China, Japan, and India.\" \u2014 Sika Annual Report 2024, pdftotext-verified",
+     "\"Meanwhile, India, Indonesia, Vietnam, the Philippines, and Malaysia recorded robust growth rates.\" \u2014 Sika Annual Report 2024 (Region Asia/Pacific), pdftotext-verified",
+     "New Kharagpur (West Bengal) plant for mortar, concrete admixtures and shotcrete accelerators; \"Sika now has twelve manufacturing facilities in India and has been active in the Indian market for close to four decades\" \u2014 sika.com media release 'Sika continues to expand production in growth market India'"
+    ],
+    "india_operations": "Sika India Private Ltd, Mumbai (100%-owned, listed in AR subsidiary list) + Axson India Private Limited, Pune; 12 manufacturing plants across India",
+    "report_used": "Sika Annual Report 2024 \u2014 https://www.sika.com/dam/dms/corporate/media/glo-ar-24-annual-report.pdf"
+   }
+  },
+  {
+   "company": "Bayer AG",
+   "ticker": "BAYN",
+   "yfinance_ticker": "BAYN.DE",
+   "country": "Germany",
+   "sector": "Pharma & Bulk Drugs (+ Crop Science)",
+   "profitability_check": "FY2024 net loss ~EUR -2.5bn at group level (impairments/litigation; core EPS positive) \u2014 group loss-making, but Indian listed arm Bayer CropScience Ltd is solidly profitable (FY2024-25 revenue INR 54,734 million, up from INR 51,062 million)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Bayer's Crop Science division works with more than 30 million smallholder farmers in India; 350+ FPOs established across 20 states with the Small Farmers Agri-Business Consortium, engagement with 1,500+ FPOs reaching ~1 million farmers \u2014 bayer.in Crop Science pages (UNVERIFIED exact wording; bayer.com AR PDF blocked to fetcher)",
+     "Bayer 2024 Annual Report cites helping smallholder farmers with nutrition education reaching 170,000 people in rural communities \u2014 via search snippet of bayer-annual-report-2024.pdf (UNVERIFIED exact wording)",
+     "Bayer ForwardFarming regenerative-agriculture initiative and FarmRise One phygital platform (100,000+ farmers) launched in India in 2024-25 \u2014 bayer.in news"
+    ],
+    "india_operations": "Bayer CropScience Limited (listed NSE/BSE, ~68% Bayer-owned), Bayer Pharmaceuticals and Bayer Zydus Pharma JV; India is Bayer's designated smallholder-farming hub market",
+    "report_used": "Bayer Annual Report 2024 \u2014 https://www.bayer.com/sites/default/files/2025-03/bayer-annual-report-2024.pdf (direct PDF download returned HTML block page; quotes sourced from bayer.in/bayer.com pages instead)"
+   }
+  },
+  {
+   "company": "Novartis AG",
+   "ticker": "NOVN",
+   "yfinance_ticker": "NOVN.SW",
+   "country": "Switzerland",
+   "sector": "Pharma & Bulk Drugs",
+   "profitability_check": "FY2024 net income ~USD 11.9bn on ~USD 50bn sales \u2014 highly profitable",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report 2024 discloses Novartis AG holds 70.68% of Novartis India Ltd. (registered office Mumbai, BSE-listed) and values the 29.32% free float at USD 77.7 million, following the announced strategic review of the listed entity \u2014 Novartis Annual Report 2024, pdftotext-verified (text extraction partially garbled; sense verified against novartis.com media release 'Novartis announces strategic review of Novartis India Limited')",
+     "\"India has a broad Novartis presence including Pharma International, Development, Novartis Corporate Center (Global Capability Center) and Biomedical Research... Novartis India employs nearly 8,100 people\" \u2014 novartis.com/in-en (UNVERIFIED exact wording)",
+     "Interest is barbell-shaped: shrinking the small listed commercial entity while the Hyderabad Novartis Corporate Center is one of the company's largest global capability sites"
+    ],
+    "india_operations": "Novartis Corporate Center Hyderabad (one of largest GCCs, ~8,000+ staff), Development/clinical-trial network (300+ sites), Novartis India Ltd (BSE-listed, under strategic review/minority buyout)",
+    "report_used": "Novartis Annual Report 2024 \u2014 https://www.novartis.com/sites/novartis_com/files/novartis-annual-report-2024.pdf"
+   }
+  },
+  {
+   "company": "Merck KGaA",
+   "ticker": "MRK",
+   "yfinance_ticker": "MRK.DE",
+   "country": "Germany",
+   "sector": "Pharma & Bulk Drugs + Electronics/Semiconductor materials",
+   "profitability_check": "FY2024 net sales ~EUR 21.2bn, net income ~EUR 2.8bn \u2014 profitable ('Delivering Profitable Growth' FY2024 release)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"In 2024, Asia-Pacific generated 68% of Electronics' net sales\" and Merck lists R&D units in India among its global network \u2014 Merck Annual Report 2024 (reports.merckgroup.com; UNVERIFIED exact wording, taken from AR web-report search summary; the Electronics R&D sub-page itself contains no India mention when fetched)",
+     "Tata Electronics and Merck signed an MoU for \"strategic collaboration to jointly develop capabilities in semiconductor materials, semiconductor fabrication infrastructure, and specialty chemical and gas distribution in India\" \u2014 tataelectronics.com press release, Sep 2025 (UNVERIFIED exact wording)",
+     "Merck opened a Global Capability Centre in Bengaluru supporting digital/technology operations across Life Science, Healthcare and Electronics, and expanded its Peenya (Bengaluru) Life Science manufacturing facility into a key APAC manufacturing location (Jan 2025) \u2014 indianpharmapost.com / biotecnika.org"
+    ],
+    "india_operations": "Merck Life Science Pvt Ltd (Peenya Bengaluru manufacturing, Jigani labs, Mumbai distribution centre), new Bengaluru GCC, Electronics semiconductor-materials partnership with Tata Electronics",
+    "report_used": "Merck KGaA Annual Report 2024 web report \u2014 https://www.reports.merckgroup.com/en/annualreport/2024/ (Electronics sections)"
+   }
+  },
+  {
+   "company": "Infineon Technologies AG",
+   "ticker": "IFX",
+   "yfinance_ticker": "IFX.DE",
+   "country": "Germany",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "FY2024 (ended Sep-2024) revenue ~EUR 15.0bn, net income ~EUR 1.3bn \u2014 profitable despite cyclical downturn",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report 2024 lists three wholly-owned Indian entities \u2014 'Infineon Technologies India Private Limited, Bangalore', 'Infineon Technologies Memory Solutions India LLP, Bangalore', 'Infineon Technologies Semiconductor India Private Limited, Bangalore' \u2014 and the site map shows 'India: 1 Bangalore' \u2014 Infineon Annual Report 2024, pdftotext-verified; no strategic India narrative in the AR itself",
+     "\"CDIL Semiconductors and Infineon Technologies Asia Pacific Pte Ltd have signed a Memorandum of Understanding\" under which Infineon supplies bare die wafers that CDIL packages at Mohali (600 million units/yr capacity) for Indian light-EV and energy-storage customers \u2014 Infineon's first manufacturing partnership in India \u2014 techcrunch.com / circuitdigest.com, Mar-Apr 2025 (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Large Bangalore R&D/GCC (3 legal entities); no own fab/OSAT \u2014 manufacturing entry via CDIL packaging partnership (Mohali)",
+    "report_used": "Infineon Annual Report 2024 \u2014 https://www.infineon.com/dgdl/Infineon+Annual+Report+2024.pdf?fileId=8ac78c8b92bced620193694bfb970095"
+   }
+  },
+  {
+   "company": "ASML Holding N.V.",
+   "ticker": "ASML",
+   "yfinance_ticker": "ASML.AS",
+   "country": "Netherlands",
+   "sector": "Electronics & Semiconductors (lithography)",
+   "profitability_check": "FY2024 net sales ~EUR 28.3bn, net income ~EUR 7.6bn \u2014 highly profitable",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "ASML Annual Report 2024 Strategic report section (43,399 words parsed) contains ZERO 'India' mentions \u2014 India is not yet a named strategic market in the AR; interest is visible in operations and 2026 partnerships instead",
+     "\"ASML has already established a foothold in India with software development centres that support its global lithography platforms. The biggest ASML R&D center for software in Asia is located there\" \u2014 elnion.com, Sep 2025 (UNVERIFIED exact wording)",
+     "ASML is set to support Tata Electronics' upcoming ~US$11bn 300mm semiconductor fab in Dholera, Gujarat, with lithography tools plus talent/supply-chain development \u2014 aljazeera.com 'Tata-ASML deal', May 2026 (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Bengaluru software development/R&D centre (ASML's largest software R&D site in Asia); tool-supply and ecosystem partnership with Tata Electronics for the Dholera fab",
+    "report_used": "ASML Annual Report 2024, Strategic report section \u2014 https://ourbrand.asml.com/m/5f0bf644f7e26c9a/original/2024-Strategic-report-section.pdf"
+   }
+  },
+  {
+   "company": "NXP Semiconductors N.V.",
+   "ticker": "NXPI",
+   "yfinance_ticker": "NXPI",
+   "country": "Netherlands",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "FY2024 revenue ~USD 12.6bn, net income ~USD 2.5bn \u2014 highly profitable",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"NXP is committed to doubling its R&D efforts here in the country in the next few years, which is far in excess of a billion dollars.\" \u2014 CEO Kurt Sievers at SEMICON India, Greater Noida, Sep 2024, via datacenterdynamics.com",
+     "NXP operates four semiconductor design centers in India employing ~3,000 people, focused on advanced automotive/AI systems, and is in discussions with Indian automotive and other industries to expand its footprint \u2014 autotechinsight.spglobal.com / sdxcentral.com (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Four design centres (Noida, Bengaluru, Hyderabad, Pune), ~3,000 engineers \u2014 one of NXP's largest R&D bases globally; $1bn+ committed expansion",
+    "report_used": "NXP 2024 Annual Report (Form 10-K) not directly fetched \u2014 evidence from SEMICON India 2024 CEO announcement coverage: https://www.datacenterdynamics.com/en/news/nxp-semiconductors-to-invest-more-than-1-billion-to-boost-its-rd-in-india/"
+   }
+  },
+  {
+   "company": "Koninklijke Philips N.V.",
+   "ticker": "PHIA",
+   "yfinance_ticker": "PHIA.AS",
+   "country": "Netherlands",
+   "sector": "Medical Devices",
+   "profitability_check": "Group FY2024 sales ~EUR 18bn with positive adjusted EBITA margin (~11.5%) but net result burdened by Respironics settlement (UNVERIFIED exact net figure); Philips India Limited PBT INR 4,480 million FY2024-25, +37% YoY \u2014 India arm clearly profitable",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"Philips Innovation Campus, Bengaluru (PIC-B) established in 1996 as a software development Centre for Royal Philips, hosts 4200+ employees working on software development for products across the healthcare continuum\" \u2014 Philips India Limited Annual Report 2024-25, pdftotext-verified",
+     "\"Your Company's manufacturing at Healthcare Innovation Centre (HIC), Pune, are delivering world-class 'Make in India' medical equipment... the Affiniti series of Ultrasounds\" \u2014 Philips India Limited Annual Report 2024-25, pdftotext-verified",
+     "\"capital expenditure incurred is INR 1,534 million... towards HIC capacity, PIC new facility and IT equipment\" \u2014 Philips India Limited Annual Report 2024-25, pdftotext-verified",
+     "New 650,000 sq ft Yelahanka Bengaluru innovation campus built with INR 500 crore investment (5,000+ professionals) and a new Pune R&D centre opened April 2024 \u2014 philips.co.in press releases"
+    ],
+    "india_operations": "Philips India Limited (unlisted subsidiary): PIC Bengaluru (software R&D, 4,200+), HIC Pune (medtech manufacturing + R&D), Personal Health commercial business",
+    "report_used": "Philips India Limited Annual Report 2024-25 \u2014 https://www.philips.co.in/c-dam/corporate/en_IN/about/philips-india-limited/annual-report/annual-report-2024-25.pdf (global Philips Annual Report 2024 at results.philips.com was not fetchable)"
+   }
+  },
+  {
+   "company": "thyssenkrupp AG",
+   "ticker": "TKA",
+   "yfinance_ticker": "TKA.DE",
+   "country": "Germany",
+   "sector": "Specialty Steel & Metals + Shipbuilding & Marine",
+   "profitability_check": "FY2023/24 net loss ~EUR -1.5bn (steel impairments); adjusted EBIT EUR 567m \u2014 group loss-making at net level",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"India's economy continues to expand robustly. Growth of 6.8% is forecast for 2024... India is benefiting from a growing population\" and steel demand \"rose significantly in India (+14.4%)\" with 2025 world steel growth \"boosted by continuing high growth in demand in India especially (+8.5%)\" \u2014 thyssenkrupp Annual Report 2023/24, pdftotext-verified",
+     "COUNTER-SIGNAL: \"At the start of May 2024, we sold the 55% interest in thyssenkrupp Industries India... to a consortium of former co-owners\" and \"a divestment process was initiated for the activities of thyssenkrupp Electrical Steel India\" \u2014 thyssenkrupp Annual Report 2023/24, pdftotext-verified (divesting legacy Indian industrial assets)",
+     "thyssenkrupp Marine Systems entered official contract negotiations with Mazagon Dock Shipbuilders for six P75(I) submarines (>INR 70,000 crore programme), Concept Design Agreement completed Aug 2025 \u2014 defencereviewasia.com/theprint.in (UNVERIFIED exact wording)",
+     "thyssenkrupp nucera signed a strategic collaboration with BHEL to localize alkaline-water-electrolyzer manufacturing in India, plus a 260 MW green-hydrogen FEED contract with Juno Joule \u2014 thyssenkrupp-nucera.com press releases, 2026 (UNVERIFIED exact wording)"
+    ],
+    "india_operations": "Barbell: divested Industries India and Electrical Steel India (Nashik), but Marine Systems pursuing India's largest defence submarine order (P75I with MDL) and nucera building green-hydrogen electrolyser localization with BHEL",
+    "report_used": "thyssenkrupp Annual Report 2023/2024 \u2014 https://d2zo35mdb530wx.cloudfront.net/_binary/thyssenkruppAGReport/354e8b26-9f91-40f1-80cf-91207a65c9d0/Annual-report_2023-2024.pdf (56 India mentions)"
+   }
+  },
+  {
+   "company": "voestalpine AG",
+   "ticker": "VOE",
+   "yfinance_ticker": "VOE.VI",
+   "country": "Austria",
+   "sector": "Specialty Steel & Metals",
+   "profitability_check": "BY2024/25 (ended Mar-2025) 'solid result despite difficult environment' \u2014 positive but modest profit after tax (EBITDA ~EUR 1.3bn scale; exact net figure UNVERIFIED)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"...the growth markets of India, Africa and the Middle East showed solid demand for welding technology products.\" \u2014 voestalpine Annual Report 2024/25, pdftotext-verified",
+     "\"Demand for turnout systems remained solid in Australia and India.\" \u2014 voestalpine Annual Report 2024/25, pdftotext-verified",
+     "\"In the niche area of welding technology, voestalpine has invested in expanding its production of welding consumables in India and in strengthening its application technology\" \u2014 voestalpine Annual Report 2024/25 investments section, reports.voestalpine.com (UNVERIFIED exact wording); expansion projects executed in 'dynamic markets such as Egypt, India, Brazil, and North America' under the local-for-local strategy"
+    ],
+    "india_operations": "voestalpine High Performance Metals India Pvt Ltd (tool steel/HPM distribution + value-added services, revenue INR 100-500 crore, ~14% growth), welding consumables production (B\u00f6hler welding), railway turnout systems JV presence",
+    "report_used": "voestalpine AG Annual Report 2024/25 \u2014 https://www.voestalpine.com/group/static/sites/group/.downloads/en/publications-2024-25/2024-25-annual-report.pdf"
+   }
+  },
+  {
+   "company": "Schaeffler AG",
+   "ticker": "SHA0",
+   "yfinance_ticker": "SHA0.DE",
+   "country": "Germany",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "Parent FY2024 net result negative after Vitesco merger/restructuring charges (UNVERIFIED exact); listed arm Schaeffler India strongly profitable \u2014 FY2024 revenue INR 80,763 million (+11.8%), Q4 FY25 profit +31.5% YoY",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Schaeffler India invested ~INR 1,700 crore over 2022-2024 in powertrain, e-mobility and industrial bearings capacity, with a further ~INR 4,500 crore capex plan to 2030 for manufacturing and localization \u2014 Schaeffler India Integrated Annual Report 2024 (schaeffler-india-ar.com) via search summary (UNVERIFIED exact wording)",
+     "Localization ratio reached 79%; 'Localization is at the core of Schaeffler's strategy for addressing the unique demands of the Indian market' \u2014 Schaeffler India Integrated Annual Report 2024 (UNVERIFIED exact wording)",
+     "2023 acquisition of KRSV Innovative Auto Solutions (Koovers) to build digital aftermarket presence in India"
+    ],
+    "india_operations": "Schaeffler India Limited (listed NSE/BSE, ~74% Schaeffler-owned): 4 plants (Pune, Vadodara, Savli, Hosur), R&D centre, one of the group's fastest-growing regions",
+    "report_used": "Schaeffler India Integrated Annual Report 2024 \u2014 https://schaeffler-india-ar.com/ (Schaeffler AG group AR PDF at schaeffler.com returned an HTML block page)"
+   }
+  }
+ ],
+ "method_notes": [
+  "All 14 leads verified present in candidates_dach_nl.csv (grep on company name; sector field taken from the CSV's FocusSector). Siemens AG itself, OMV, VAT Group, Daimler Truck, Lonza, Bosch are NOT in the candidate CSV and were therefore excluded despite being suggested examples.",
+  "Country spread: Germany 7 (Siemens Energy, BASF, Bayer, Merck KGaA, Infineon, thyssenkrupp, Schaeffler), Switzerland 3 (ABB, Sika, Novartis), Netherlands 3 (ASML, NXP, Philips), Austria 1 (voestalpine). Sector spread covers 8 of the 12 focus sectors: Electricals, Chemicals, Pharma, Semiconductors, Medical Devices, Specialty Steel, Shipbuilding/Marine (via thyssenkrupp Marine Systems), Auto/EV, Green Energy (via Siemens Energy/nucera).",
+  "9 annual-report PDFs were downloaded with curl (Mozilla/5.0 UA, ~1s apart) and parsed with pdftotext, then grepped for India context: Siemens Energy AR2024 (36 India mentions), Sika AR2024 (12), Novartis AR2024 (11), voestalpine AR2024/25 (15), Infineon AR2024 (7), thyssenkrupp AR2023/24 (56), ABB Integrated Report 2024 (7), BASF India Factsheet 2024 (13), Philips India AR2024-25. Quotes marked 'pdftotext-verified' are exact extracted sentences; others are marked UNVERIFIED (from press releases/news/search summaries).",
+  "EU-India FTA: none of the parsed annual reports contained an explicit reference to the EU-India Free Trade Agreement negotiations in the extracted India passages; FTA-linked commentary appears mainly in press coverage (e.g. Tata-ASML, P75I) rather than in the ARs themselves \u2014 noted as absent rather than invented.",
+  "Level rubric applied: HIGH = named India capex/expansion or listed India arm plus stated growth commitment in report/CEO statement; MEDIUM = material India operations or demand commentary but mixed/no new capex signal (Novartis is buying out its listed India arm while growing its Hyderabad GCC; thyssenkrupp is divesting industrial India assets while chasing P75I submarines and BHEL electrolyser localization); no NONE ratings because candidates were pre-screened for size/relevance."
+ ],
+ "site_access_issues": [
+  "bayer.com annual-report PDF (bayer-annual-report-2024.pdf) returns an HTML anti-bot page to curl even with browser UA; bayer.in AGM transcript PDF likewise blocked (403 via WebFetch) \u2014 Bayer evidence sourced from bayer.in web pages and search snippets, marked UNVERIFIED",
+  "schaeffler.com group Annual Report 2024 PDF returns a 562-byte HTML stub to curl \u2014 fell back to Schaeffler India integrated AR microsite via search",
+  "results.philips.com (global AR24) and asml.com/careers/find-your-location return 404 to WebFetch; philips.co.in India AR PDF downloaded fine instead",
+  "ASML Annual Report 2024 Strategic report PDF parsed cleanly (43k words) but contains zero 'India' mentions \u2014 absence itself reported as evidence, India detail taken from 2025-26 press coverage",
+  "Merck KGaA AR is an HTML web-report (reports.merckgroup.com); the Electronics R&D sub-page fetched contains no India mention \u2014 the '68% of Electronics net sales from Asia-Pacific' figure comes from other AR pages surfaced via search and is marked UNVERIFIED",
+  "ABB group report was only obtainable via a third-party-mirrored signed URL (library.e.abb.com); official search.abb.com download links require JS"
+ ]
+}

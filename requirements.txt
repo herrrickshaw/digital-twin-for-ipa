@@ -1,0 +1,19 @@
+# digital-twin-for-ipa -- runtime requirements
+#
+# The automation scripts (scripts/refresh_twin.py, scripts/build_catalogue.py)
+# are deliberately STDLIB-ONLY: no Python packages are required to run the
+# daily/weekly refreshes. Network fetches shell out to curl.
+#
+# System tools (install via Homebrew on macOS):
+#   curl                          -- all portal fetches (brew: preinstalled on macOS)
+#   poppler (pdftoppm, pdftotext) -- rendering/extracting policy PDFs      [brew install poppler]
+#   tesseract (+eng)              -- OCR for scanned gazettes/brochures    [brew install tesseract]
+#
+# Optional Python packages -- only needed for the analysis/reporting extras:
+pypdf>=4.0          # text extraction from scanned-layout PDFs the WebFetch converter rejects (e.g. MIB guidelines)
+pandas>=2.0         # ad-hoc analysis over layers/13_flat_instrument_index.json and state/ snapshots
+#
+# NOT required here (live in companion repos):
+#   india-trade-sector-policy-recommendations: weasyprint (PDF bulletins; must run under
+#     /opt/homebrew/bin/python3 -- SIP blocks system Python's pango), python-docx (report synthesizer)
+#   focus-sector-investor-map: yfinance, pyarrow (company-layer enrichment)

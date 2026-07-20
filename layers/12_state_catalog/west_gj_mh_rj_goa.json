@@ -1,0 +1,244 @@
+{
+ "cluster": "west_gujarat_maharashtra_rajasthan_goa",
+ "swept": "2026-07-20",
+ "states": [
+  {
+   "state": "GUJARAT",
+   "sites_used": [
+    "ic.gujarat.gov.in",
+    "ifp.gujarat.gov.in"
+   ],
+   "policies": [
+    {
+     "name": "Aatmanirbhar Gujarat Schemes 2022 for Assistance to Industries (MSME / Large & Thrust Sector / Mega Industries)",
+     "incentive_type": "capital subsidy + interest subsidy + net SGST reimbursement + EPF reimbursement",
+     "what_companies_get": "Three GR-backed tracks verified on site: (1) 'Capital Subsidy to Large Industries and Thrust Sector' GR; (2) MSME assistance; (3) Mega Industries. From the official 'Draft Guidelines for Large and Thrust Sector' PDF: net SGST reimbursement with annual ceiling of 1.2% of eFCI (large) and 8% of eFCI (thrust/PEC-based track), interest subsidy claimable up to 9.5 years from DoCP, 90% of eligible net SGST disbursed at claim with balance later. Full rate matrix is in the GR PDFs (capital subsidy % of eFCI by taluka category I/II/III). Separate draft guideline PDFs exist for MSMEs, Large & Thrust, and Mega.",
+     "status": "operative (GRs of 2022 with 2023-2024 guideline updates and 2024 reconstitution of sanctioning authorities)",
+     "application_status": "live -- applications via ifp.gujarat.gov.in Common Application Form; portal has an 'Incentive to Industry Scheme' module, CAF Incentives Manual, user manuals, and a public 'Incentives Granted Dashboard'",
+     "verified_on_site": true,
+     "site_url": "https://ic.gujarat.gov.in/industrial-policy2020.aspx and https://ic.gujarat.gov.in/guideline-under-aatmanirbhar-gujarat-schemes.aspx",
+     "site_notes": "Guidelines still labelled 'Draft' on the site; scheme GRs (e.g. GR No. MIS-102020-327024-I capital subsidy, taluka classification GR MIS-102020-347965-I) are downloadable."
+    },
+    {
+     "name": "Viksit Gujarat Industrial Policy 2026",
+     "incentive_type": "umbrella industrial policy (successor)",
+     "what_companies_get": "NOT EXTRACTABLE: the official PDF (18.8 MB, created Jun 2026 in CorelDRAW) has no text layer, so incentive quanta could not be machine-verified. Its presence on the Industries Commissionerate site confirms a 2026 successor policy exists.",
+     "status": "published on official site June 2026",
+     "application_status": "unknown -- IFP portal modules still reference Aatmanirbhar/IP-2020 schemes",
+     "verified_on_site": true,
+     "site_url": "https://ic.gujarat.gov.in/documents/Viksit-Gujarat-Industrial-Policy2026_new.pdf",
+     "site_notes": "Image-only PDF; needs OCR or manual reading for details."
+    },
+    {
+     "name": "Gujarat Textile Policy 2024",
+     "incentive_type": "sector policy (capital/interest support for textiles)",
+     "what_companies_get": "Official policy PDF hosted on IC site; percentages not extracted in this pass. Predecessor 'Schemes for Textiles Sectors' GR dated 10.01.2019 also still hosted.",
+     "status": "operative",
+     "application_status": "via IFP single window",
+     "verified_on_site": true,
+     "site_url": "https://ic.gujarat.gov.in/documents/pagecontent/Gujarat%20Textile%20Policy_2024.pdf",
+     "site_notes": "Verified as a link target only; PDF not parsed."
+    },
+    {
+     "name": "IP-2020 operative schemes: Assistance for Industrial Infrastructure; Scheme for Industrial Park; Scheme for Logistic Park; Financial Assistance to Integrated Logistics Facilities (revised guideline 2025); Assistance for Environment Protection Measures (Scheme 1 EPM + Scheme 2 Green Practices/environmental audit for MSMEs); Assistance for R&D Activities 2020; Assistance for Startups/Innovation",
+     "incentive_type": "infrastructure/park capex assistance, environment capex assistance, R&D grants, startup support",
+     "what_companies_get": "Each has downloadable guideline + application form + claim checklist on the IC schemes page (e.g. R&D operational guidelines updated 2025, EPM guidelines updated 2026, logistics guideline revised 2025). Quanta are in the individual guideline PDFs, not extracted here.",
+     "status": "operative, actively maintained (2025-2026 dated documents)",
+     "application_status": "live via IFP CAF",
+     "verified_on_site": true,
+     "site_url": "https://ic.gujarat.gov.in/industrial-policy2020.aspx",
+     "site_notes": "Page mixes IP-2020 and Aatmanirbhar-2022 documents."
+    },
+    {
+     "name": "Gujarat Garment and Apparel Policy 2017 (registration module)",
+     "incentive_type": "sector wage/capital support",
+     "what_companies_get": "Registration guidelines hosted on IFP; a live registration workflow exists on the single-window portal.",
+     "status": "listed as live module",
+     "application_status": "live on ifp.gujarat.gov.in",
+     "verified_on_site": true,
+     "site_url": "https://ifp.gujarat.gov.in/DIGIGOV/",
+     "site_notes": "Verified via portal menu 'Registration Under Gujarat Garment and Apparel policy 2017'."
+    },
+    {
+     "name": "Gujarat Semiconductor Policy 2022-27 / Electronics Policy / EV Policy / Green Hydrogen / Biotechnology / IT-ITeS / Tourism policies",
+     "incentive_type": "sector policies (candidates from brief)",
+     "what_companies_get": "NOT VERIFIED in this pass -- these live on other departmental sites (DST/GSEM/imd-gujarat.gov.in, energy dept, tourism dept). imd-gujarat.gov.in did not resolve (DNS failure). They were not listed on ic.gujarat.gov.in's scheme pages fetched.",
+     "status": "unverified",
+     "application_status": "unverified",
+     "verified_on_site": false,
+     "site_url": "",
+     "site_notes": "Do not cite as site-verified."
+    }
+   ]
+  },
+  {
+   "state": "MAHARASHTRA",
+   "sites_used": [
+    "maitri.maharashtra.gov.in",
+    "midcindia.org (policies page 404)"
+   ],
+   "policies": [
+    {
+     "name": "Maharashtra Industries, Investment and Services Policy 2025 (MIISP 2025) -- successor to Package Scheme of Incentives (PSI) 2019",
+     "incentive_type": "umbrella industrial incentive policy (industrial promotion subsidy, interest subsidy, capex support)",
+     "what_companies_get": "GR dated 31-12-2025 hosted on MAITRI. GR is in Marathi; fragments extracted: industrial-park support of 55% or Rs 250 crore (whichever lower), 50% capital subsidy for ETPs (cap ~Rs 10 crore), 20% of solar-project cost (cap ~Rs 4.8 crore), 3% subsidised-interest loans for entrepreneurs, targets of 27% GSVA industry share by 2036. Full incentive schedule requires reading the Marathi GR. PSI-2019 GR ('Maharashtra New Industrial Policy 2019' + IPS-GST modification GR) still hosted alongside.",
+     "status": "operative -- GR issued 31 Dec 2025",
+     "application_status": "MAITRI single-window portal live with an online 'Incentive calculator' and PSI beneficiaries GIS map",
+     "verified_on_site": true,
+     "site_url": "https://maitri.maharashtra.gov.in/resources/policies/ (PDF: /wp-content/themes/maitri/PDF/MaharashtraIndustriesInvestmentandServicesPolicy2025-GR-31122025.pdf)",
+     "site_notes": "This is the 'Industrial Policy 2025' the brief speculated about; official name confirmed."
+    },
+    {
+     "name": "Integrated and Sustainable Textile Policy 2023-28",
+     "incentive_type": "sector capex/opex incentives for textiles",
+     "what_companies_get": "Policy PDF hosted on MAITRI policies page; quanta not extracted.",
+     "status": "operative",
+     "application_status": "via MAITRI",
+     "verified_on_site": true,
+     "site_url": "https://maitri.maharashtra.gov.in/wp-content/themes/maitri/PDF/Integrated%20and%20Sustainable%20Textile%20Policy%202023-28.pdf",
+     "site_notes": ""
+    },
+    {
+     "name": "IT/ITeS Policy 2024",
+     "incentive_type": "sector fiscal incentives (stamp duty, electricity, FSI etc.)",
+     "what_companies_get": "Policy PDF hosted on MAITRI; note the live version is 2024, not the 2023 version named in the brief.",
+     "status": "operative",
+     "application_status": "via MAITRI",
+     "verified_on_site": true,
+     "site_url": "https://maitri.maharashtra.gov.in/wp-content/themes/maitri/PDF/ITI_Tes_Policy_2024.pdf",
+     "site_notes": ""
+    },
+    {
+     "name": "Maharashtra Electric Vehicle Policy 2021 (+ corrigendum)",
+     "incentive_type": "demand + manufacturing incentives for EVs",
+     "what_companies_get": "EV Policy 2021 GR + corrigendum hosted. NO 'EV Policy 2025' found on the policies page -- brief's candidate not verified; 2021 remains the listed version. MIISP-2025 GR text targets 30% of new registrations electric by 2030.",
+     "status": "operative (2021 version listed)",
+     "application_status": "via MAITRI / transport dept",
+     "verified_on_site": true,
+     "site_url": "https://maitri.maharashtra.gov.in/resources/policies/",
+     "site_notes": "Brief said 'EV Policy 2025'; site shows 2021 only."
+    },
+    {
+     "name": "Maharashtra Electronics Policy 2016",
+     "incentive_type": "sector incentives for ESDM",
+     "what_companies_get": "'Electronic_Policy_2016.pdf' is the version hosted; no newer electronics policy and no explicit semiconductor-fab D-block scheme found on MAITRI.",
+     "status": "listed (2016)",
+     "application_status": "via MAITRI",
+     "verified_on_site": true,
+     "site_url": "https://maitri.maharashtra.gov.in/resources/policies/",
+     "site_notes": "Thrust-sector/high-tech mega-project semiconductor support was NOT found as a standalone document in this pass."
+    },
+    {
+     "name": "Other operative sector policies hosted on MAITRI: Maharashtra Logistics Policy 2024; Logistics Park Policy 2018 (+2019 modalities); Aerospace & Defence Manufacturing Policy 2018; FinTech Policy 2018; Maharashtra State Export Promotion Policy 2023 (+modalities); Maharashtra Global Capability Centre (GCC) Policy 2025 (GR 03-11-2025); AVGC-XR Policy 2025 (GR 03-11-2025); MATRIX (Technology, Research Incubator and Xcelerator) Policy 2025 (GR 27-11-2025); Gems & Jewellery Policy 2025 (GR 12-12-2025); Bamboo Industry Policy 2025; Cluster schemes (MSICDP, MSE-CDP); Dr. Babasaheb Ambedkar SC/ST Special Package Scheme of Incentives; CMEGP; Special Amnesty Scheme for closed units (2021)",
+     "incentive_type": "sector-specific fiscal incentives, cluster grants, SC/ST entrepreneur package",
+     "what_companies_get": "GR PDFs for each are hosted; quanta not extracted per-policy in this pass.",
+     "status": "operative; five new policies issued Nov-Dec 2025",
+     "application_status": "via MAITRI single window",
+     "verified_on_site": true,
+     "site_url": "https://maitri.maharashtra.gov.in/resources/policies/",
+     "site_notes": "GCC, AVGC-XR, MATRIX, Gems & Jewellery, Bamboo 2025 are all NEW vs the brief."
+    }
+   ]
+  },
+  {
+   "state": "RAJASTHAN",
+   "sites_used": [
+    "finance.rajasthan.gov.in (official RIPS 2024 PDF)",
+    "rajnivesh.rajasthan.gov.in",
+    "industries.rajasthan.gov.in (JS shell only)"
+   ],
+   "policies": [
+    {
+     "name": "Rajasthan Investment Promotion Scheme 2024 (RIPS 2024), updated 16 May 2025",
+     "incentive_type": "asset creation incentive (choice of investment subsidy / capital subsidy / turnover-linked incentive) + top-up boosters + duty exemptions",
+     "what_companies_get": "Verified from the official state PDF: Asset Creation Incentive is a one-time, irreversible choice among (a) Investment Subsidy: reimbursement of 75% of State tax (SGST) due and deposited for 7 years; (b) Capital Subsidy: 13% to 28% of EFCI depending on project category and area category, disbursed in annual instalments over 10 years post commercial production; (c) Turnover Linked Incentive: 1.20% to 2.00% of Net Sales Turnover annually for 10 years, subject to annual ceilings. Top-ups: Employment Booster (e.g. lifts TLI 1.4%->1.54%), plus one of Thrust Booster / Anchor Booster / 5% Interest Subvention on term loans. Exemptions: 100% electricity duty for 7 years; 100% mandi/market fee reimbursement 7 years; 75% stamp duty exemption + 25% reimbursement; 75% land conversion charge exemption + 25% reimbursement; 5%-point VAT reimbursement on PNG for 7 years. Land: 25% upfront + balance 75% over 10 years at 8% interest. Sunrise sectors (sec 3.3) get an additional booster; separate manufacturing and services thrust-sector lists (secs 9.4/9.5).",
+     "status": "operative (updated edition 16 May 2025)",
+     "application_status": "RajNivesh one-stop-shop portal is live (rajnivesh.rajasthan.gov.in responded, title 'Home - RAJNIVESH'); dedicated rips.rajasthan.gov.in REFUSED connections",
+     "verified_on_site": true,
+     "site_url": "https://finance.rajasthan.gov.in/PDFDOCS/TAX/CCT/14514.pdf",
+     "site_notes": "Incentive numbers come from the official Government of Rajasthan PDF on finance.rajasthan.gov.in since the RIPS portal itself was down."
+    },
+    {
+     "name": "Solar/renewable land allotment policies and M-SIPS-style electronics top-ups",
+     "incentive_type": "candidates from brief",
+     "what_companies_get": "NOT separately verified -- RIPS 2024 itself carries the green-growth/clean-energy incentives and flexible land payment; no separate electronics top-up document reachable (energy/industries portals unreachable or JS shells).",
+     "status": "unverified as standalone schemes",
+     "application_status": "unverified",
+     "verified_on_site": false,
+     "site_url": "",
+     "site_notes": ""
+    }
+   ]
+  },
+  {
+   "state": "GOA",
+   "sites_used": [
+    "ditc.goa.gov.in (Directorate of Industries, Trade and Commerce)"
+   ],
+   "policies": [
+    {
+     "name": "Goa Industrial Policy 2003 incentive schemes (component schemes still listed as live services): Capital Contribution, Share Capital Category, Preferential Purchase Incentive, Interest Subsidy Scheme 2008, Certification & Patenting, Women Entrepreneurs, Employment Subsidy, Consumption of Local Raw Materials, Export Market Development, State Investment Subsidy",
+     "incentive_type": "capital contribution/equity support, interest subsidy, employment subsidy, purchase preference, certification/patent cost reimbursement",
+     "what_companies_get": "Each component has a notification page on DITC. Caveat verified on the Interest Subsidy page: the INTEREST SUBSIDY SCHEME 2008 notification (No. 3/40/2003/IND) states validity only up to 31 March 2011 yet is still presented as a current service -- currency of several component schemes is doubtful.",
+     "status": "listed on official site; at least one (Interest Subsidy 2008) textually lapsed in 2011 with no renewal notification shown",
+     "application_status": "offline/departmental; no online application portal evident on DITC",
+     "verified_on_site": true,
+     "site_url": "https://ditc.goa.gov.in/state-policies-ss and https://ditc.goa.gov.in/interest-subsidy",
+     "site_notes": "Site is Drupal, valid content but expired/mismatched TLS certificate (fetch required -k)."
+    },
+    {
+     "name": "Goa Investment Policy 2014 + State Export Strategy of Goa (Notification 2021-35-SI-OG)",
+     "incentive_type": "umbrella investment policy + export strategy",
+     "what_companies_get": "PDFs hosted on DITC state-policies page (1.01 MB and 1.7 MB); quanta not extracted.",
+     "status": "listed",
+     "application_status": "via Investment Promotion Board (IPB) -- DITC has an /ipb menu entry, but the IPB's own site was unreachable",
+     "verified_on_site": true,
+     "site_url": "https://ditc.goa.gov.in/state-policies",
+     "site_notes": ""
+    },
+    {
+     "name": "State schemes page documents: Employment Subsidy Scheme for Cashew Industry (new), Capital (new), Umbrella Scheme (amended), Target Schemes, Preferential Purchase Incentives for Micro and Small Enterprises",
+     "incentive_type": "employment subsidy (cashew sector), capital subsidy, MSE purchase preference",
+     "what_companies_get": "Scheme PDFs hosted (138 KB - 993 KB); quanta not extracted in this pass.",
+     "status": "listed as current state schemes",
+     "application_status": "departmental",
+     "verified_on_site": true,
+     "site_url": "https://ditc.goa.gov.in/state-policies-ss",
+     "site_notes": "The 'Umbrella Ammended' and 'Target Schemes' documents suggest a consolidated incentives umbrella newer than the 2003-era component schemes."
+    },
+    {
+     "name": "Goa IT Policy / Goa-IDC industrial estate incentives",
+     "incentive_type": "candidates from brief",
+     "what_companies_get": "NOT VERIFIED -- goa-idc.com and investmentpromotion.goa.gov.in both failed DNS resolution (local curl and remote WebFetch); IT policy lives on a separate IT dept domain not fetched. DITC does list 19 industrial estates (Verna, Kundaim, Pilerne etc.) but estate-level incentives were not documented on fetched pages.",
+     "status": "unverified",
+     "application_status": "unverified",
+     "verified_on_site": false,
+     "site_url": "",
+     "site_notes": ""
+    }
+   ]
+  }
+ ],
+ "site_access_issues": [
+  "rips.rajasthan.gov.in -- connection refused on both 443 and 80 (ECONNREFUSED 103.122.37.107), from local curl and remote fetcher; official RIPS PDF sourced from finance.rajasthan.gov.in instead",
+  "invest.rajasthan.gov.in -- DNS does not resolve (NXDOMAIN from two resolvers); domain appears retired",
+  "industries.rajasthan.gov.in -- resolves but serves only a JavaScript 'Sectoral Portal' SPA shell with no crawlable scheme content or obvious open API",
+  "goa-idc.com / www.goa-idc.com -- DNS does not resolve (NXDOMAIN from two resolvers)",
+  "investmentpromotion.goa.gov.in -- DNS does not resolve",
+  "ditc.goa.gov.in -- serves content but with an invalid TLS certificate (curl exit 60; fetched with certificate check disabled)",
+  "imd-gujarat.gov.in -- DNS does not resolve; Gujarat Electronics/Semiconductor policies therefore unverified",
+  "midcindia.org/policies -- returns 'Page not found'; MIDC policy path has moved",
+  "ic.gujarat.gov.in Viksit Gujarat Industrial Policy 2026 PDF -- downloads fine (18.8 MB) but is an image-only CorelDRAW export with no text layer; incentive details unverifiable without OCR",
+  "MIISP 2025 GR (Maharashtra) is Marathi-only; incentive schedule only partially machine-readable"
+ ],
+ "schemes_found_on_site_not_in_brief": [
+  "GUJARAT: Viksit Gujarat Industrial Policy 2026 (successor policy PDF published June 2026 on ic.gujarat.gov.in)",
+  "GUJARAT: IP-2020 sub-schemes still operative with 2025-2026 guideline updates -- Integrated Logistics Facilities assistance (revised 2025), Environment Protection Measures Schemes 1-2 (2026 guidelines), R&D Assistance (2025 operational guidelines), Industrial Park / Logistic Park schemes, Industrial Infrastructure assistance",
+  "GUJARAT: Garment and Apparel Policy 2017 live registration module on IFP; public 'Incentives Granted Dashboard' on IFP",
+  "MAHARASHTRA: Maharashtra Industries, Investment and Services Policy 2025 (GR 31-12-2025) -- the actual PSI-2019 successor",
+  "MAHARASHTRA: Global Capability Centre (GCC) Policy 2025; AVGC-XR Policy 2025; MATRIX Policy 2025; Gems & Jewellery Policy 2025; Bamboo Industry Policy 2025; Maharashtra Logistics Policy 2024; State Export Promotion Policy 2023; Special Amnesty Scheme for closed units; Dr. Babasaheb Ambedkar SC/ST special incentive package; online Incentive Calculator on MAITRI",
+  "MAHARASHTRA: IT/ITeS policy live version is 2024 (brief said 2023); EV policy live version is 2021 (brief said 2025)",
+  "RAJASTHAN: RIPS 2024 top-up architecture beyond brief -- Employment Booster, Thrust/Anchor Boosters, 5% Interest Subvention, PNG VAT reimbursement, mandi-fee reimbursement, 25%-upfront land payment model; RajNivesh portal as the live one-stop shop",
+  "GOA: Employment Subsidy Scheme for Cashew Industry; amended Umbrella Scheme; Target Schemes; Preferential Purchase Incentives for MSEs; State Export Strategy 2021; evidence that Interest Subsidy Scheme 2008 formally lapsed 31-03-2011 while still listed"
+ ]
+}

@@ -19,6 +19,18 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 09 | `layers/09_catalog_v2/` | **Catalog v2 — the full-government sweep** (the other 70 entities), one cluster file per agent sweep |
 | 10 | `layers/10_interlinkages.json` | **Scheme interlinkage graph**: 23 edges (stacks / excludes / boundary / feeds / converges) + 11 clarity checks against explainer sources. Anchor: MeitY PLI FAQ Clause 3.6 (the legal basis for PLI + state stacking) |
 | 11 | `layers/11_prs_budget_layer.json` | **PRS Legislative Research overlay**: Demand-for-Grants utilization findings (12 ministries), 22-bill legislative track, and PRS's own coverage gaps |
+| 12 | `layers/12_state_catalog/` | **State catalog** — state-government incentive schemes verified on state single-window / industries-department sites, one cluster file per sweep |
+
+## State catalog clusters (layer 12)
+
+| Cluster | States | Strongest verified finds |
+|---|---|---|
+| `west_gj_mh_rj_goa` | Gujarat, Maharashtra, Rajasthan, Goa | **MIISP 2025** (PSI-2019's actual successor, GR 31-12-2025) + 5 new Nov–Dec 2025 Maharashtra sector policies; RIPS 2024 full menu (75% SGST-7y / 13–28% capital / 1.2–2% turnover); Viksit Gujarat 2026 successor (image-only PDF, needs OCR); Goa's Interest Subsidy 2008 lapsed-but-still-listed |
+| `south_tn_ka` | Tamil Nadu, Karnataka | TN's 4 mutually-exclusive options (incl. 100% SGST 15y, flexible subsidy to 40% EFA); Karnataka IP 2025-30 capex-vs-production-linked choice (2.5/2.0/1.0% turnover by zone); GCC Policy 2024-29 full schedule; TN Shipbuilding + Circular Economy 2026 policies |
+| `south_tg_ap_kl` | Telangana, AP, Kerala | AP IDP 4.0 quantified (12–15% FCI + **PLI top-up = 10% of central PLI**, Early Bird 30–40% FCI); Telangana Next-Gen Life Sciences 2026-30 + "Meet or Beat" guarantee; Kerala's 18-category package (incl. 20% PLI-investor top-up); Telangana has NO enacted post-2024 industrial policy |
+| `north_up_hr_pb_uk_hp_dl` | UP, Haryana, Punjab, Uttarakhand, HP, Delhi | **UP ECMS top-up verified verbatim ("Equal to Central ECMS incentives")**; IIEPP-2022 10–30% grid; Punjab IBDP 2026 (gazette 08-03-2026, supersedes 2022); Uttarakhand MIIP 2025 + incentive calculator; Delhi has no post-2021 industrial policy |
+| `central_east` | MP, Chhattisgarh, Odisha, WB, Jharkhand, Bihar | *(sweep in progress)* |
+| `ne_jk` | Assam, NE states, J&K | *(sweep in progress)* |
 
 ## Catalog v2 clusters (layer 09)
 

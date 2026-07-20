@@ -1,0 +1,281 @@
+{
+ "cluster": "north_up_hr_pb_uk_hp_dl",
+ "swept": "2026-07-20",
+ "states": [
+  {
+   "state": "Uttar Pradesh",
+   "sites_used": [
+    "https://invest.up.gov.in/",
+    "https://invest.up.gov.in/policies/",
+    "https://niveshmitra.up.nic.in/"
+   ],
+   "policies": [
+    {
+     "name": "UP Industrial Investment & Employment Promotion Policy 2022 (IIEPP)",
+     "incentive_type": "Capital subsidy (one of 3 mutually exclusive options) + stamp duty exemption + boosters",
+     "what_companies_get": "Base capital subsidy 10-30% of Eligible Capital Investment paid over 10-20 years, graded by region and project size: Large (>Rs50cr-<200cr) 10-15% over 10y; Mega (Rs200-500cr) 18-22% over 12y; Super Mega (Rs500-3000cr) 20-25% over 15y; Ultra-Mega (>Rs3000cr) 22-30% over 20y. Highest rates in Bundelkhand/Poorvanchal. Annual ceilings Rs5cr/10cr/50cr/150cr (Rs15/75/210cr with boosters). Subsidy scaled by Gross Capacity Utilisation Multiple (75% peak utilisation = full). Employment/Exports/Ecosystem boosters +2-3% each (min employment 300/600/1500 for Mega/Super/Ultra). Stamp duty exemption: 100% Bundelkhand & Poorvanchal, 75% Madhyanchal & Paschimanchal, 50% Gautam Buddh Nagar & Ghaziabad.",
+     "status": "Active",
+     "application_status": "Applications via Nivesh Sarathi / Nivesh Mitra single-window (both portals live); one-time option choice at application, one change allowed before HLEC/EC approval",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/uttar-pradesh-industrial-investment-employment-promotion-policy-2022/",
+     "site_notes": "Full incentive tables rendered on page; verified 2026-07-20. Site last-updated stamp July 15, 2026."
+    },
+    {
+     "name": "UP Electronics Component Manufacturing Policy 2025 (First Amendment)",
+     "incentive_type": "State top-up on central ECMS + capital subsidy + land/stamp/electricity concessions",
+     "what_companies_get": "Top-up benefits EQUAL to Central ECMS incentives (doubling the central payout); capital subsidy up to 20% for units NOT covered under Central ECMS; customized mega packages for investments above Rs2,000cr; additional +2% for Li-ion cell mfg (digital applications) with local sourcing and +1% for multi-layer PCB with local laminates; 25% land subsidy (up to 50% in Bundelkhand & Purvanchal); 100% stamp duty and electricity duty exemption; interest subsidy, EPF reimbursement, patent cost reimbursement, logistics & R&D support. Focus segments: display/camera module sub-assemblies, bare components (non-SMD passives, multi-layer/HDI/MSAP/flex PCB, Li-ion cells, enclosures), capital equipment.",
+     "status": "Active (First Amendment; English policy document updated on site 20 May 2026)",
+     "application_status": "Policy document downloadable; applications via UP single-window ecosystem",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/uttar-pradesh-electronics-component-manufacturing-policy-2025",
+     "site_notes": "This is the state top-up policy on central ECMS the brief asked to verify \u2014 confirmed verbatim on the page ('Top-up Benefits: Equal to Central ECMS incentives')."
+    },
+    {
+     "name": "UP Electronics Manufacturing Policy 2020",
+     "incentive_type": "Capital/interest subsidy, stamp duty and land incentives for ESDM units",
+     "what_companies_get": "Listed as live policy alongside ECMP 2025; detail page not fetched (percentages not verified this pass)",
+     "status": "Active (listed)",
+     "application_status": "Via Nivesh Mitra",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/uttar-pradesh-electronics-manufacturing-policy-2020/",
+     "site_notes": "Link verified on the official policies index; incentive detail not extracted."
+    },
+    {
+     "name": "UP Electric Vehicle Manufacturing & Mobility Policy 2022",
+     "incentive_type": "Manufacturing capital subsidy + demand incentives",
+     "what_companies_get": "Listed on policies index; state also runs dedicated portals upevsubsidy.in (subsidy disbursal) and EVUpyog (EV mobility planning), both linked from invest.up.gov.in \u2014 indicates active administration. Percentages not verified on this pass.",
+     "status": "Active (listed; live subsidy portal linked)",
+     "application_status": "Subsidy applications via upevsubsidy.in",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/uttar-pradesh-electric-vehicle-manufacturing-policy-2022/",
+     "site_notes": "Link + companion portals verified on invest.up.gov.in."
+    },
+    {
+     "name": "UP Defence & Aerospace Unit and Employment Promotion Policy 2022 (Defence Corridor)",
+     "incentive_type": "Capital subsidy, land concessions in UP Defence Industrial Corridor nodes",
+     "what_companies_get": "Listed on policies index; a newer 'Defence Policy 2025' page also exists (https://invest.up.gov.in/defence-policy-2025/). UPEIDA site not separately fetched.",
+     "status": "2022 policy listed; 2025 defence policy page live on invest.up.gov.in",
+     "application_status": "Via Nivesh Mitra / UPEIDA",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/uttar-pradesh-defence-aerospace-unit-employment-promotion-policy-2022/",
+     "site_notes": "Both 2022 policy link and defence-policy-2025 link verified on policies index; incentive numbers not extracted."
+    },
+    {
+     "name": "UP Data Centre Policy 2021 / Data Centre Policy 2026",
+     "incentive_type": "Capital subsidy, dual-grid power, stamp duty exemption for data centre parks/units",
+     "what_companies_get": "2021 policy listed AND a new 'Uttar Pradesh Data Centre Policy 2026' link is on the policies index \u2014 the 2026 successor was not in the brief. Details not extracted.",
+     "status": "2026 policy listed (appears to supersede/extend 2021)",
+     "application_status": "Via Nivesh Mitra",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/uttar-pradesh-data-centre-policy-2026",
+     "site_notes": "Both up-data-centre-policy-2021/ and uttar-pradesh-data-centre-policy-2026 hrefs verified on policies index."
+    },
+    {
+     "name": "UP Textile & Garmenting Policy 2022",
+     "incentive_type": "Capital subsidy + employment-linked incentives for textile units",
+     "what_companies_get": "Listed on policies index; detail not extracted this pass",
+     "status": "Active (listed)",
+     "application_status": "Via Nivesh Mitra",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/up-textile-and-garmenting-policy-2022",
+     "site_notes": "Link verified on policies index."
+    },
+    {
+     "name": "UP FDI/FCI, Fortune Global 500 & Fortune India 500 Companies Investment Promotion Policy 2023",
+     "incentive_type": "Enhanced/fast-tracked incentive package for FDI and Fortune-500 investors",
+     "what_companies_get": "Policy title verified verbatim as a card on the policies page; incentive detail not extracted this pass",
+     "status": "Active (listed)",
+     "application_status": "Via Invest UP / Nivesh Sarathi",
+     "verified_on_site": true,
+     "site_url": "https://invest.up.gov.in/policies/",
+     "site_notes": "Exact title 'UP FDI/FCI, Fortune Global 500 & Fortune India 500 Companies Investment Promotion Policy 2023' rendered on the policies index."
+    }
+   ]
+  },
+  {
+   "state": "Haryana",
+   "sites_used": [
+    "https://investharyana.in/",
+    "https://msme.haryana.gov.in/haryana-enterprises-and-employment-policy-2020/"
+   ],
+   "policies": [
+    {
+     "name": "Haryana Enterprises & Employment Policy (HEEP) 2020",
+     "incentive_type": "SGST-linked investment subsidy + block-graded capital/interest/duty concessions",
+     "what_companies_get": "Investment subsidy on SGST (reimbursement of net SGST paid, block-graded, capped as % of Fixed Capital Investment); interest subsidy 5% on term loan for micro/small units (max Rs20 lakh/yr; 5 years in C & D blocks, 3 years in B blocks); stamp duty refund; electricity duty exemption; power tariff subsidy; EPF/ESI reimbursement; employment generation subsidy; plus ~20 named MSME schemes (Technology Acquisition, Patent Registration, Quality Certification, Freight Assistance, Generator Set Subsidy, R&D Center, SME Exchange Equity, Mini Cluster Development, etc.). Incentives graded by A/B/C/D block categorization (D = most backward, max benefits).",
+     "status": "Active as amended ('Amended HEEP-2020, CAQM' listed); a 2025 successor policy was NOT found on the pages fetched",
+     "application_status": "Applications via investharyana.in single-window (portal live; login-gated) and HUM/Udyam registration",
+     "verified_on_site": true,
+     "site_url": "https://msme.haryana.gov.in/haryana-enterprises-and-employment-policy-2020/",
+     "site_notes": "Full HEEP scheme list verified on Directorate of MSME Haryana page 2026-07-20; SGST/interest-subsidy specifics from search snippets of the official policy PDF (investharyana.in/content/pdfs/Draft EPP 2020 chapters). investharyana.in itself is a JS shell \u2014 see access issues."
+    },
+    {
+     "name": "Sector policies referenced in investharyana.in application system (EV/ESDM/Textile/Pharma/Data-centre-adjacent)",
+     "incentive_type": "Sector-specific capital subsidies and exemptions",
+     "what_companies_get": "The investharyana.in Angular bundle names live application flows for: ESDM Policy, Textile Policy, Pharmaceutical Policy, Haryana Agri Business & Food Processing Policy, Logistic Policy, ITeS Policy, Haryana State Startup Policy, MSME Policy, Retail Policy, CCIP Policy, plus schemes (Stamp Duty Refund, Patent Fee Reimbursement, Employment Subsidy, SIIDS). EV Policy 2022, Data Centre Policy and Aerospace & Defence Policy could NOT be individually verified because content is served only after login (API returns 401).",
+     "status": "Application flows exist in the portal code; individual policy texts not verifiable without login",
+     "application_status": "investharyana.in single-window, login required",
+     "verified_on_site": false,
+     "site_url": "https://investharyana.in/",
+     "site_notes": "Names recovered from the portal's public JS bundle (app-c8bd595895.js), not from rendered pages \u2014 treat as portal-supported but unverified."
+    }
+   ]
+  },
+  {
+   "state": "Punjab",
+   "sites_used": [
+    "https://investpunjab.gov.in/",
+    "https://pbindustries.gov.in/"
+   ],
+   "policies": [
+    {
+     "name": "Industrial and Business Development Policy 2026 (IBDP 2026)",
+     "incentive_type": "Umbrella fiscal-incentive policy (successor to IBDP 2022)",
+     "what_companies_get": "Notified via Punjab Govt Gazette (Extraordinary) 8 March 2026 after Council of Ministers approval 07/03/2026 \u2014 this SUPERSEDES the IBDP 2022 named in the brief. The gazette PDF on investpunjab.gov.in is a 21.8MB scanned document; incentive tables are not machine-readable, so percentages (SGST reimbursement, electricity-duty and stamp-duty exemptions traditionally in the IBDP series) could not be extracted this pass.",
+     "status": "Notified 8 March 2026; in force",
+     "application_status": "Invest Punjab single-window portal is live (Angular app); application status unverifiable without login",
+     "verified_on_site": true,
+     "site_url": "https://investpunjab.gov.in/investor-summit/pdfs/Industrial_and_Business_Development_Policy_2026.pdf",
+     "site_notes": "PDF downloaded and confirmed as the official gazette notification (No. PIU/Industrial & Business Development Policy-2026/898). Only the 2017 and 2026 policy PDFs are discoverable on the domain \u2014 no 2022 document found."
+    },
+    {
+     "name": "Industrial & Business Development Policy 2022 / EV Policy",
+     "incentive_type": "SGST reimbursement, electricity duty and stamp duty exemptions (IBDP series); EV manufacturing incentives",
+     "what_companies_get": "Could not be verified on official sites: IBDP 2022 text is not discoverable on investpunjab.gov.in (superseded by IBDP 2026), and the EV policy page is inside the Angular SPA.",
+     "status": "IBDP 2022 superseded by IBDP 2026; EV policy unverified",
+     "application_status": "Unknown",
+     "verified_on_site": false,
+     "site_url": "https://investpunjab.gov.in/",
+     "site_notes": "investpunjab.gov.in is a client-rendered Angular shell; pbindustries.gov.in shows 'Website is down for maintenance'."
+    }
+   ]
+  },
+  {
+   "state": "Uttarakhand",
+   "sites_used": [
+    "https://investuttarakhand.uk.gov.in/",
+    "https://investuttarakhand.uk.gov.in/site/Policies",
+    "https://investuttarakhand.uk.gov.in/site/knowYourIncentive"
+   ],
+   "policies": [
+    {
+     "name": "Uttarakhand Mega Industrial and Investment Policy 2025 (MIIP 2025) + Implementing Guideline",
+     "incentive_type": "Capital subsidy / CAPEX subsidy for large investments, hill-area weighted",
+     "what_companies_get": "MIIP-2025 and its Implementing Guideline are both listed with English+Hindi PDFs on the official Policies page (successor to MIIP 2021, which is also still listed). The live 'Know Your Incentive' calculator computes eligibility by district, plain vs hilly land, MSME/MIIP category and entrepreneur category across incentive heads including CAPEX Subsidy, Capital Subsidy, Anchor Unit Subsidy, Electricity Bill/Duty Reimbursement, Custom Duty Reimbursement, Stamp-duty-type exemptions, EPI Subsidy, Export Assistance, DPR Assistance. Exact percentages sit in unlabeled PDFs (see access issues) and were not extracted.",
+     "status": "Active (2025 policy + guideline listed; 2021 MIIP also still listed)",
+     "application_status": "Live single-window with Incentive Dashboard, 'Mega Incentive Login' and incentive calculator \u2014 applications clearly operational",
+     "verified_on_site": true,
+     "site_url": "https://investuttarakhand.uk.gov.in/site/Policies",
+     "site_notes": "Policy names verified in rendered page text 2026-07-20."
+    },
+    {
+     "name": "Hill-area / district-graded incentives + Customized Incentive Package Guidelines",
+     "incentive_type": "Region-graded capital subsidies; bespoke packages for large projects",
+     "what_companies_get": "'Customized Incentive Package Guidelines' is a listed live document (case-to-case packages). Incentive calculator distinguishes Plain vs Hilly area and all 13 districts, confirming hill-weighted subsidy structure. 'IDS Claim Status' menu confirms legacy central Industrial Development Scheme 2017 claims are still being processed through this portal; no state-notified successor to IDS-2017 was found on the site.",
+     "status": "Active",
+     "application_status": "Claims tracked via portal (IDS Claim Status, Incentive Dashboard)",
+     "verified_on_site": true,
+     "site_url": "https://investuttarakhand.uk.gov.in/site/knowYourIncentive",
+     "site_notes": "Calculator marked 'indicative data only'."
+    },
+    {
+     "name": "Sector policies: MSME Policy 2023, Startup Policy 2023, Logistics Policy 2023, Solar Policy 2023, Aerospace & Defence Industrial Policy 2020, Drone Promotion & Usage Policy 2023, Pumped Storage Policy 2023, Service Sector Policy 2024, Tourism Policy 2023-30, Export Policy 2021, AYUSH Policy 2023, Film Policy 2024, Private Industrial Estates Policy 2023, Tourism Entrepreneur Promotion Scheme 2024",
+     "incentive_type": "Sector-specific capital/CAPEX subsidies, duty reimbursements, EV mobility incentive",
+     "what_companies_get": "All fourteen names verified verbatim on the official Policies page; the incentive calculator maps 20+ incentive heads (incl. EV Mobility Incentive, Deferred Royalty, Entry Tax Exemption) to these policies. Per-policy percentages not extracted (unlabeled PDF filenames).",
+     "status": "Active (listed)",
+     "application_status": "Via single-window portal",
+     "verified_on_site": true,
+     "site_url": "https://investuttarakhand.uk.gov.in/site/Policies",
+     "site_notes": "MSME policy 2015 amendment PDF also linked from homepage."
+    }
+   ]
+  },
+  {
+   "state": "Himachal Pradesh",
+   "sites_used": [
+    "https://emerginghimachal.hp.gov.in/ (redirects to https://app.emerginghimachal.hp.gov.in/)",
+    "https://app.emerginghimachal.hp.gov.in/frontend/web/index.php/site/schemes-policies"
+   ],
+   "policies": [
+    {
+     "name": "Himachal Pradesh Industrial Investment Policy 2019 (with all amendments up to 08.10.2024)",
+     "incentive_type": "Capital subsidy, interest subsidy, tax benefits, employment incentives",
+     "what_companies_get": "The portal's Investor Incentives section lists four heads \u2014 Capital Subsidy, Interest Subsidy, Tax Benefits, Employment Incentives \u2014 under HPIIP 2019. A consolidated PDF 'HPIIP-2019-with-all-amendments-upto-08.10.2024' is the authoritative document (linked three times on the schemes page). Specific percentages are inside the PDF and were not extracted this pass.",
+     "status": "Active as amended through 08.10.2024",
+     "application_status": "Applications via Single Window Clearance System 2.0 (sign-up/sign-in and track-application live)",
+     "verified_on_site": true,
+     "site_url": "https://emerginghimachal.hp.gov.in/themes/backend/uploads/policies/HPIIP-2019-with-all-amendments-upto-08.10.2024.pdf",
+     "site_notes": "Verified on SWCS 2.0 schemes-policies page 2026-07-20; site footer shows (c) 2026."
+    },
+    {
+     "name": "HP Logistics Policy 2022",
+     "incentive_type": "Logistics infrastructure incentives",
+     "what_companies_get": "Official policy PDF linked ('HP Logistics Policy 2022_Final.pdf'); details not extracted",
+     "status": "Active (listed with PDF)",
+     "application_status": "Via SWCS 2.0",
+     "verified_on_site": true,
+     "site_url": "https://emerginghimachal.hp.gov.in//themes/backend/uploads/indus/HP%20Logistics%20Policy%20%202022_Final.pdf",
+     "site_notes": "Double-slash in official href, works."
+    },
+    {
+     "name": "Medical Device Park, Nalagarh",
+     "incentive_type": "Plug-and-play park infrastructure + common facilities",
+     "what_companies_get": "NOT FOUND on emerginghimachal portal pages fetched \u2014 no mention on the schemes-policies page. Cannot verify from the official state investment site this pass.",
+     "status": "Unverified on site",
+     "application_status": "Unknown",
+     "verified_on_site": false,
+     "site_url": "https://app.emerginghimachal.hp.gov.in/frontend/web/index.php/site/schemes-policies",
+     "site_notes": "Brief asked for it; the SWCS schemes page carries only 7 scheme/policy cards and it is not among them."
+    }
+   ]
+  },
+  {
+   "state": "Delhi (NCT)",
+   "sites_used": [
+    "https://industries.delhi.gov.in/",
+    "https://ev.delhi.gov.in/"
+   ],
+   "policies": [
+    {
+     "name": "Industrial Policy for Delhi 2010-21 successor",
+     "incentive_type": "n/a",
+     "what_companies_get": "NO successor industrial policy found on the Department of Industries site. The live content is registration/land-cell/CETP oriented (SSI registration, benefits of provisional registration, relocation of non-conforming industries). Newest company-relevant item: circular on Delhi Credit Guarantee Scheme (DCGS) to boost MSEs.",
+     "status": "No post-2021 industrial policy verifiable on the department site",
+     "application_status": "Registration services live",
+     "verified_on_site": false,
+     "site_url": "https://industries.delhi.gov.in/",
+     "site_notes": "Site is live (Drupal, HTTP 200); DSIIDC site is dead (see access issues)."
+    },
+    {
+     "name": "Delhi EV Policy (Aug 2020, as extended) \u2014 company-facing components",
+     "incentive_type": "Charging-infrastructure incentives, single-window for charger installation, open database registration",
+     "what_companies_get": "Portal is live with an 'INCENTIVES LOGIN', charging-station finder, and a single-window process for EV charger installation at private/semi-public spaces tied to a 30,000-charging-point rollout (company-facing for CPOs); retrofitting companies being empanelled by Transport Dept; Open Database registration mandatory for charging/swapping providers. NO 'EV Policy 2.0' document is on the site \u2014 the Policy Update page's most recent entry is 12 September 2022.",
+     "status": "Policy 1.0 content only; site stale since ~Sep 2022; EV Policy 2.0 NOT verifiable on ev.delhi.gov.in",
+     "application_status": "Incentives login portal present; charger single-window described as operational",
+     "verified_on_site": true,
+     "site_url": "https://ev.delhi.gov.in/policy-update",
+     "site_notes": "Site reachable only with TLS verification relaxed (certificate issue for curl). Purchase incentives are consumer-facing and excluded per brief."
+    }
+   ]
+  }
+ ],
+ "site_access_issues": [
+  "dsiidc.delhi.gov.in: unreachable \u2014 TLS failure on strict fetch, 404 with verification disabled; DSIIDC has no working site at this URL",
+  "industries.haryana.gov.in: connection failed (curl exit, no response)",
+  "investharyana.in: Angular SPA with no server-side rendering; /api/policies returns 401; policy names only recoverable from public JS bundle, texts login-gated",
+  "investpunjab.gov.in: Angular SPA shell \u2014 no policy content server-rendered; IBDP 2026 gazette PDF (21.8MB) is scanned images, pdftotext yields only header lines",
+  "pbindustries.gov.in: 'Website is down for maintenance' interstitial",
+  "ev.delhi.gov.in: TLS certificate problem for curl (needs -k); content stale \u2014 newest policy update dated 12 Sep 2022",
+  "investuttarakhand.uk.gov.in/site/Policies: policy PDFs use anonymous filenames (act_english<epoch>.pdf) with 'English/Hindi' link text only \u2014 titles cannot be programmatically paired to files, so per-policy percentages not extracted",
+  "invest.up.gov.in: one malformed href on policies index ('uttar-pradesh-semiconductor-policy, 2024' contains a raw comma+space)",
+  "Fetch budget: incentive percentages verified in depth for UP (IIEPP 2022, ECMP 2025) and Haryana (HEEP 2020); other states verified at policy-existence + document-link level"
+ ],
+ "schemes_found_on_site_not_in_brief": [
+  "UP: Semiconductor Policy 2024; GCC Policy 2024; Data Centre Policy 2026 (new successor); Startup Policy 2026; Defence Policy 2025; Leather & Footwear Policy 2025; Export Promotion Policy 2025-30; Bioplastic Industry Policy 2024; Multi Modal Logistics Park Policy 2024; Pharmaceutical & Medical Device Policy 2023; Food Processing Industry Policy 2023; Film Policy 2023; Sports Policy 2023; IT & ITES Policy 2022; MSME Promotion Policy 2022; Solar Energy Policy 2022; Tourism Policy 2022; Dairy 2022; Poultry 2022; Bio-Energy Enterprises Promotion Programme 2022; Private Business Park Development Scheme; Warehousing & Logistics Policy 2022; Gold Card Scheme (top-investor facilitation); Incentive Policy 2023 (medical colleges)",
+  "Haryana: PADMA (Programme to Accelerate Development for MSME Advancement); Haryana MSME Policy 2019; Haryana Pharmaceutical Policy; Haryana Logistics, Warehousing & Retail Policy; Haryana Textile Policy; ~20 HEEP sub-schemes incl. Technology Acquisition, SME Exchange Equity, Generator Set Subsidy, Freight Assistance, Mini Cluster Development",
+  "Punjab: Industrial and Business Development Policy 2026 (gazette-notified 8 Mar 2026 \u2014 supersedes the IBDP 2022 named in the brief)",
+  "Uttarakhand: Mega Industrial and Investment Policy 2025 + Implementing Guideline (successor to MIIP 2021); Service Sector Policy 2024; Pumped Storage Policy 2023; Drone Promotion & Usage Policy 2023; Private Industrial Estates Policy 2023; AYUSH Policy 2023; Film Policy 2024; Tourism Entrepreneur Promotion Scheme 2024; Customized Incentive Package Guidelines; Overseas Placement Scheme 2023; Private Helipad & Heliport Policy",
+  "Himachal Pradesh: HP Logistics Policy 2022; Mukhya Mantri Swavalamban Yojana; State Mission on Food Processing; PM FME (central, state-administered); Startup Himachal",
+  "Delhi: Delhi Credit Guarantee Scheme (DCGS) for MSEs; EV charging Open Database registration regime; retrofitting-company empanelment"
+ ]
+}

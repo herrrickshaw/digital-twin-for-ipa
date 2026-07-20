@@ -1,0 +1,217 @@
+{
+ "cluster": "south_tamilnadu_karnataka",
+ "swept": "2026-07-20",
+ "states": [
+  {
+   "state": "Tamil Nadu",
+   "sites_used": [
+    "https://www.investingintamilnadu.com/ (Guidance Tamil Nadu, HTTP 200)",
+    "https://storage.investingintamilnadu.com/ (official policy PDF store)",
+    "https://tnswp.com/DIGIGOV/swp-tnswp.jsp (TN Single Window Portal, HTTP 200, live)"
+   ],
+   "policies": [
+    {
+     "name": "Tamil Nadu Industrial Policy 2021 (validity extended; structured package for Large/Mega/Ultra-Mega)",
+     "incentive_type": "Investor's one-time choice of 4 mutually exclusive Investment Promotion Subsidy options + standard incentives",
+     "what_companies_get": "Categories: Sub-Large Rs50-300cr, Large Rs300-500cr (150 jobs), Mega Rs500-5000cr (400 jobs), Ultra-Mega >Rs5000cr (2000 jobs); min 50 jobs to qualify. Choice of: (I) 100% SGST reimbursement on final products for 15 years; (II) Fixed Capital Subsidy %EFA by district: A-district Mega 10%/Ultra-Mega 20%; B: 10/12/22%; C: 12/15/25%; (III) Flexible Capital Subsidy up to 35% EFA (A), 37% (B), 40% (C) = 5% standard + boosters for location/employment/exports/ecosystem/sunrise sector; (IV) Turnover-based subsidy for Mega/Ultra-Mega: 1.5-2.0% of turnover (by district and >2000/>4000 jobs), capped at 4% of cumulative EFA/yr for 10 years. Plus: training subsidy Rs4,000/worker/month x6 months (Rs6,000 for women/transgender/PwD/SC-ST), SIPCOT land at 10% concession (A/B) and 50% (C) up to 20% of EFA, 5% interest subvention (Ultra-Mega), electricity tax exemption, stamp duty incentive, SGST refund on capital goods, green industry / quality certification / IP creation incentives",
+     "status": "In force; official validity-extension GO published (tnip_2021_validity_extension.pdf). No 2025/2026 successor industrial policy on the site - 2021 policy still the headline policy",
+     "application_status": "TN Single Window Portal (tnswp.com) live and serving; incentives administered via Guidance TN/MoU route for structured packages",
+     "verified_on_site": true,
+     "site_url": "https://storage.investingintamilnadu.com/Guidance/Uploads/Others/industrial_policy_2021.pdf",
+     "site_notes": "Full 62-page PDF downloaded from official store and parsed; listed on https://www.investingintamilnadu.com/business-in-tamil-nadu/policy-notifications"
+    },
+    {
+     "name": "Tamil Nadu Electric Vehicles Policy 2023",
+     "incentive_type": "Choice of SGST reimbursement / turnover subsidy / capital subsidy; special battery-ACC subsidy; retrofit incentives",
+     "what_companies_get": "EV OEMs: 100% gross SGST reimbursement on EVs sold+registered in TN for 15 years (min Rs50cr investment, 50 jobs); OR turnover-based subsidy up to 2% of annual turnover capped at 4% of cumulative EFA/yr for 10 years; OR 15% capital subsidy on EFA in 10 equal annual installments (EV/components/EVSE/charging infra). Battery manufacturing: special 20% capital subsidy in 15 installments; Advanced Chemistry Cell plants: 20% capital subsidy in 10 installments. Retrofitting of ICE commercial vehicles to EV (ARAI-compliant) incentivised up to 31.12.2025; battery recycling projects get battery-manufacturing-level incentives",
+     "status": "In force (policy period per document)",
+     "application_status": "Via TNSWP/Guidance TN; portal live",
+     "verified_on_site": true,
+     "site_url": "https://storage.investingintamilnadu.com/Guidance/Uploads/Others/tn_electric_vehicles_policy_2023.pdf",
+     "site_notes": "28-page PDF parsed from official store"
+    },
+    {
+     "name": "Tamil Nadu R&D Policy 2022",
+     "incentive_type": "Capital subsidy + reimbursements for R&D centres",
+     "what_companies_get": "Special capital subsidy of 25% of EFA disbursed in equal installments over 10 years, ceiling Rs25cr; EFA may include intangible R&D expenditure up to 20% of EFA; 50% reimbursement of national/international certification cost up to Rs1cr; 50% reimbursement of IP (patent/copyright/trademark/GI) expenditure up to Rs1cr (up to Rs5cr for standalone R&D assets); plus TNIP-2021 standard incentives",
+     "status": "In force; promoted as the operative policy for GCC/R&D investors ('Latest Policies' on the GCC & R&D sector page)",
+     "application_status": "Via Guidance TN/TNSWP; portal live",
+     "verified_on_site": true,
+     "site_url": "https://storage.investingintamilnadu.com/Guidance/Uploads/Others/tamil_nadu_randd_policy_2022.pdf",
+     "site_notes": "32-page PDF parsed; available in EN/KO/JA/DE/FR on the policy page"
+    },
+    {
+     "name": "Tamil Nadu FinTech Policy 2021",
+     "incentive_type": "Operating-expense, marketing and accelerator reimbursements (startup/firm level)",
+     "what_companies_get": "75% reimbursement of operating expenses (rent, power, internet, statutory charges, company registration, R&D/IP costs) up to Rs5 lakh/yr; FinTech Accelerator Kit - free cloud/financial-data/payment-gateway credits up to Rs5 lakh/yr; 50% marketing expense reimbursement; stock-exchange listing fee reimbursement; access to Tamil Nadu Startup Fund of Funds; category expenses non-stackable",
+     "status": "In force (2021 policy still the listed FinTech policy)",
+     "application_status": "Back-ended subsidy claims; firm must file undertaking on core TN operations",
+     "verified_on_site": true,
+     "site_url": "https://storage.investingintamilnadu.com/Guidance/Uploads/Others/tamil_nadu_fintech_policy_2021.pdf",
+     "site_notes": "36-page PDF parsed from official store"
+    },
+    {
+     "name": "Tamil Nadu Footwear & Leather Products Policy 2022",
+     "incentive_type": "Turnover-based subsidy or fixed capital subsidy with relaxed eligibility",
+     "what_companies_get": "Relaxed 'Special Package for FLP Manufacturing' thresholds (e.g. Rs50cr entry vs Rs300cr standard); (a) turnover-based subsidy as % of annual turnover capped at 4% of cumulative EFA/yr for 10 years, or (b) fixed capital subsidy 10% of EFA in 10 equal installments for allied/component units outside clusters (min Rs150cr, 100 jobs); 75% reimbursement of transport/logistics cost for relocating capital goods from abroad (per TNIP 2021); SGST refund on capital goods, interest subvention, electricity tax exemption",
+     "status": "In force",
+     "application_status": "Via Guidance TN/TNSWP",
+     "verified_on_site": true,
+     "site_url": "https://storage.investingintamilnadu.com/Guidance/Uploads/Others/footwear_and_leather_products_policy_2022.pdf",
+     "site_notes": "28-page PDF parsed"
+    },
+    {
+     "name": "Tamil Nadu Semiconductor and Advanced Electronics Policy 2024 + Semiconductor Mission 2030",
+     "incentive_type": "Sector policy + mission GO (details not machine-extractable this run)",
+     "what_companies_get": "Policy listed on the official policy page in EN/JA/KO/ZH; companion 'Tamil Nadu Semiconductor Mission 2030' GO PDF hosted (semiconductor_mission_go.pdf). Incentive percentages NOT verified this run - the English PDF is served via JS, only translation PDFs appear in static links",
+     "status": "In force / listed as current",
+     "application_status": "Via Guidance TN; portal live",
+     "verified_on_site": true,
+     "site_url": "https://www.investingintamilnadu.com/business-in-tamil-nadu/policy-notifications",
+     "site_notes": "Existence and official hosting verified; quantitative terms unverified (flagged honestly)"
+    },
+    {
+     "name": "Tamil Nadu Space Industrial Policy 2025",
+     "incentive_type": "Sector policy (details not extracted)",
+     "what_companies_get": "Listed under State Policies (English). Incentive numbers not verified - PDF link JS-rendered",
+     "status": "Listed as current 2025 policy - confirms the 'Space Industrial Policy 2025?' candidate exists",
+     "application_status": "Not determined",
+     "verified_on_site": true,
+     "site_url": "https://www.investingintamilnadu.com/business-in-tamil-nadu/policy-notifications",
+     "site_notes": "Name/existence verified on official policy list; contents unverified"
+    },
+    {
+     "name": "Global Capability Centre Policy 2024 (candidate)",
+     "incentive_type": "NOT FOUND as a standalone policy",
+     "what_companies_get": "No dedicated TN GCC policy appears on the official policy list or the GCC & R&D sector page; that page markets 350+ Chennai GCCs and points investors to 'Tamil Nadu R&D Policy 2022' plus an incentive calculator",
+     "status": "Unverifiable on official sites - likely handled via R&D Policy 2022 and case-by-case structured packages",
+     "application_status": "n/a",
+     "verified_on_site": false,
+     "site_url": "https://www.investingintamilnadu.com/sectors/gcc-and-rnd",
+     "site_notes": "Candidate from brief could not be confirmed; recorded honestly"
+    },
+    {
+     "name": "Tamil Nadu Electronics Hardware Manufacturing Policy 2020",
+     "incentive_type": "Capital subsidy + MSME add-ons",
+     "what_companies_get": "Per official sector-wise incentive summary: capital subsidy up to 30% (by location/investment/employment), up to 50% land-lease subsidy in govt parks / C-district private land, 50% stamp duty exemption, training subsidy Rs4,000 (Rs6,000 women)/employee/month x6 months, interest subsidy up to 5% for up to 6 years, 5-year electricity tax exemption, 50% patent and quality-certification subsidies",
+     "status": "In force (2020 policy still listed; semiconductor/advanced-electronics 2024 policy sits alongside)",
+     "application_status": "Via Guidance TN/TNSWP",
+     "verified_on_site": true,
+     "site_url": "https://storage.investingintamilnadu.com/Guidance/Uploads/Others/tn_sector-wise_incentives.pdf",
+     "site_notes": "Numbers from official 'Incentives Offered by GoTN' summary PDF + policy PDF hosted at tn_electronics_hardware_manufacturing_policy.pdf"
+    }
+   ]
+  },
+  {
+   "state": "Karnataka",
+   "sites_used": [
+    "https://investkarnataka.co.in/ (official investment-promotion portal + new Single Window System; HTTP 200)",
+    "https://eitbt.karnataka.gov.in/ (Dept of Electronics, IT/BT - GCC/ESDM/IT policy pages; HTTP 200)",
+    "https://ebiz.karnataka.gov.in/ (legacy eBiz single-window; HTTP 200)"
+   ],
+   "policies": [
+    {
+     "name": "Karnataka Industrial Policy 2025-30",
+     "incentive_type": "Investor's choice: capex subsidy OR production/turnover-linked incentive (PLI), with employment and women-workforce boosters - confirms the shift to production-turnover-linked incentives",
+     "what_companies_get": "Categories: Large Rs50-300cr, Mega Rs300-1000cr, Ultra Mega >Rs1000cr (Ultra Mega min 500 jobs + 6 jobs per additional Rs50cr; employment floor = 50% of investment amount in Rs cr, range 25-500). Choice of (a) Capex subsidy: 25% of Value of Fixed Assets (Zone 1), 20% (Zone 2), 10% (Zone 3, Bengaluru Rural only), disbursed over 5 years post commercial production; or (b) PLI: 2.5% / 2.0% / 1.0% of Net Sales Turnover for 7 years by zone. Total incentives capped at 60% of VFA (30% in Zone 3). Employment boosters +7.5/10/15% on the chosen incentive for 3x-4x/4x-5x/>5x minimum employment (PLI users also get +5% VFA cap); women-workforce boosters +7.5/10/15% at 50/60/70%+ women. Additional: 10% capital subsidy or 10% PLI (+5% VFA) on manufacturing add-ons, stamp duty exemption on loan/lease/sale deeds for first 5 years, existing units qualify with >=25% expansion of fixed assets",
+     "status": "In force (current policy, supersedes Industrial Policy 2020-25; operative guidelines also published)",
+     "application_status": "New Single Window System live on investkarnataka.co.in (investor registration, Combined Application Form, Know-Your-Incentives wizard, incentive calculator, UMA chatbot); site FAQ states online incentive-CLAIM module was under development with availability targeted Apr-Jun 2025 quarter; legacy eBiz still live for Affidavit Based Clearances",
+     "verified_on_site": true,
+     "site_url": "https://investkarnataka.co.in/wp-content/uploads/2025/02/IndustrialPolicy2025_PrintPagesSingle_.pdf",
+     "site_notes": "96-page official PDF downloaded and parsed; policy list also verified at https://investkarnataka.co.in/ka-proposition/investor-friendly-policies/"
+    },
+    {
+     "name": "Karnataka Global Capability Centres (GCC) Policy 2024-29 (India's first dedicated GCC policy)",
+     "incentive_type": "Rental/EPF/opex reimbursements, grants and duty exemptions, weighted to 'Beyond Bengaluru' locations",
+     "what_companies_get": "For GCCs with min 100 employees in Beyond Bengaluru clusters: rent reimbursement capped at 50% up to Rs2cr; EPF contribution reimbursement up to Rs3,000/employee/month for 2 years; 25% internet-expense reimbursement up to Rs12 lakh for 3 years; electricity duty exemption 5 years + switch from commercial to industrial power tariff; property-tax reimbursement; skilling/new-hire training reimbursement capped 50% up to Rs7cr; R&D infrastructure grants up to 40% or Rs50cr; co-working operator support 75%/50%/25% of vacant-seat cost in years 1-3, max Rs6,000/seat, up to 30 new spaces across 6 clusters; internship stipend reimbursement (1 lakh internships target); Nano GCC (5-50 employees) support; Rs100cr Innovation Fund, AI CoE. Targets: 500 new GCCs (1,000 total), 3.5 lakh jobs, USD 50bn output by 2029",
+     "status": "In force (launched November 2024)",
+     "application_status": "Administered by Dept of Electronics, IT/BT; policy page live with Benefits/Eligibility tabs; no separate GCC application portal observed",
+     "verified_on_site": true,
+     "site_url": "https://eitbt.karnataka.gov.in/it/public/policy5/en",
+     "site_notes": "72-page official policy PDF (eitbt.karnataka.gov.in/uploads/media_to_upload1732030878.pdf) downloaded and parsed"
+    },
+    {
+     "name": "KESDM Policy 2017-25 (extended) + Special Incentive Scheme for ESDM Sector 2020-25",
+     "incentive_type": "Capital subsidy, reimbursements and state top-ups for electronics manufacturing/design",
+     "what_companies_get": "Capital subsidy up to 10% capped Rs10cr for first two anchor units in each greenfield KESDM cluster; 50% prototyping-cost reimbursement up to Rs10 lakh/yr (startups/MSMEs, max 2 approvals/yr); 50% testing/quality-certification reimbursement up to Rs10 lakh/yr; R&D grants up to Rs2cr/yr for registered companies <7 years old (claimable twice per policy period); PF/ESI reimbursement Rs2,000/employee/month for 2 years capped Rs12 lakh/company; industrial (not commercial) power tariff. Eligibility: state value addition rising 25% (Y1) to 45% (Y5); >=50% of workforce in Karnataka; Karnataka registration",
+     "status": "In force - KESDM Policy formally extended (an 'Extension of KESDM Policy' GO is hosted; page headline shows 'Karnataka ESDM Policy 2017-30'); Special Incentive Scheme 2020-25 remains the named vehicle for electronic components/EMS/semiconductor manufacturing in the Industrial Policy 2025-30 sector table",
+     "application_status": "KESDM company registration live on the eitbt ESDM vertical; operative guidelines for both the policy and the Special Incentive Scheme hosted",
+     "verified_on_site": true,
+     "site_url": "https://eitbt.karnataka.gov.in/esdm/public/policy/en",
+     "site_notes": "Incentive figures read from the official ESDM policy page"
+    },
+    {
+     "name": "Karnataka Aerospace & Defence Policy 2022-27",
+     "incentive_type": "Sector package (details not extracted this run)",
+     "what_companies_get": "Official policy PDF hosted; named as the operative policy for aerospace/defence, drones and space tech in the Industrial Policy 2025-30 sector table. Quantitative terms not extracted",
+     "status": "In force",
+     "application_status": "Via Single Window System",
+     "verified_on_site": true,
+     "site_url": "https://investkarnataka.co.in/wp-content/uploads/2025/02/Karnataka-Aerospace-Defence-Policy-22-27_compressed.pdf",
+     "site_notes": "Existence + official hosting verified; contents unparsed"
+    },
+    {
+     "name": "Electric Vehicle and Energy Storage Policy 2017",
+     "incentive_type": "EV/battery/fuel-cell manufacturing incentives (details not extracted)",
+     "what_companies_get": "Named in the Industrial Policy 2025-30 sector table as the CURRENT policy for 'Future Mobility - Battery/EV/Fuel Cell' - i.e. the 2017 EV & Energy Storage Policy is still the referenced instrument; no newer Clean Mobility/EV policy found on the sites checked",
+     "status": "Referenced as current in the 2025-30 industrial policy despite its 2017 vintage",
+     "application_status": "Via Single Window System",
+     "verified_on_site": true,
+     "site_url": "https://investkarnataka.co.in/wp-content/uploads/2025/02/IndustrialPolicy2025_PrintPagesSingle_.pdf",
+     "site_notes": "Verified only as a cross-reference inside the official Industrial Policy 2025-30 PDF"
+    },
+    {
+     "name": "Karnataka Startup Policy 2022-27",
+     "incentive_type": "Startup grants/funding (details not extracted)",
+     "what_companies_get": "Listed on the official investor-friendly-policies page; quantitative terms not extracted this run",
+     "status": "In force",
+     "application_status": "Startup Karnataka vertical exists on eitbt/missionstartupkarnataka",
+     "verified_on_site": true,
+     "site_url": "https://investkarnataka.co.in/ka-proposition/investor-friendly-policies/",
+     "site_notes": "Existence verified"
+    },
+    {
+     "name": "Karnataka R&D and Innovation Policy 2022 (+ Engineering R&D Policy 2021)",
+     "incentive_type": "R&D promotion (details not extracted)",
+     "what_companies_get": "Both listed on official pages (investkarnataka policies list; ER&D Policy 2021 also in eitbt IT-department policy menu). KWIN City NOT found on either site - unverifiable as a scheme on official web presence",
+     "status": "Listed as current",
+     "application_status": "Not determined",
+     "verified_on_site": true,
+     "site_url": "https://investkarnataka.co.in/ka-proposition/investor-friendly-policies/",
+     "site_notes": "Existence verified; incentive detail and KWIN linkage unverified"
+    }
+   ]
+  }
+ ],
+ "site_access_issues": [
+  "invest.karnataka.gov.in and kum.karnataka.gov.in: DNS NXDOMAIN - these domains from the brief do not exist; the official portal is investkarnataka.co.in (Karnataka Udyog Mitra/Single Window) and ebiz.karnataka.gov.in (legacy)",
+  "industries.tn.gov.in: connection timeout (HTTP 000) via curl - unreachable this run; investingintamilnadu.com used instead",
+  "itbtst.karnataka.gov.in: resolves but TLS handshake fails (TLSV1_ALERT_UNRECOGNIZED_NAME) - live department site is eitbt.karnataka.gov.in",
+  "eitbt.karnataka.gov.in/esdm/public/english returned HTTP 500; working path is /esdm/public/policy/en",
+  "investingintamilnadu.com serves English PDFs for Space Industrial Policy 2025 and Semiconductor & Advanced Electronics Policy 2024 via JS only (translation PDFs are statically linked) - names verified, incentive numbers not extractable without a browser",
+  "investtn.in returns a 114-byte stub (redirect shell) - not a content site"
+ ],
+ "schemes_found_on_site_not_in_brief": [
+  "TN Circular Economy Policy 2026 (English/Danish/Finnish PDFs live)",
+  "TN Shipbuilding Policy 2026 (7 languages)",
+  "TN Textile Policy 2025-26",
+  "TN Toy Manufacturing Policy 2025",
+  "TN Public-Private-Partnership Policy 2024",
+  "TN Semiconductor Mission 2030 (GO hosted separately from the 2024 semiconductor policy)",
+  "TN Data Centre Policy 2021",
+  "TN Life Sciences Promotion Policy 2022",
+  "TN MSME Policy 2021",
+  "TN Logistics Policy & Integrated Logistics Plan 2023",
+  "TN Ethanol Blending Policy 2023",
+  "TN Special Scheme for Technical Textiles/MMF (2023)",
+  "TN Tourism Policy 2023, Organic Farming Policy 2023, M-Sand Policy 2023, City Gas Distribution Plan 2023",
+  "Karnataka IT Policy 2025-30 (listed on eitbt - newer than the 2020-25 IT policy the brief and investkarnataka list carry)",
+  "Karnataka Data Centre Policy 2022-27 (case-to-case incentives + capital subsidy, Rs10,000cr investment target, focus outside Bengaluru)",
+  "Karnataka Cybersecurity Policy 2024-29 (Rs100cr+ budget, R&D grants, internships)",
+  "Karnataka AVGC-XR Policy 2024-29 (Policy 3.0 for animation/VFX/gaming/comics/XR)",
+  "Karnataka Biotechnology Policy 2024-29",
+  "Karnataka Renewable Energy Policy 2022-27 (also covers green hydrogen)",
+  "Karnataka Tourism Policy 2024-29",
+  "Karnataka i4 Policy (listed on investkarnataka policies page)"
+ ]
+}

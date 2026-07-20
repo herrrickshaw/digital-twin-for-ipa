@@ -1,0 +1,274 @@
+{
+ "cluster": "south_telangana_ap_kerala",
+ "swept": "2026-07-20",
+ "states": [
+  {
+   "state": "TELANGANA",
+   "sites_used": [
+    "invest.telangana.gov.in",
+    "ipass.telangana.gov.in",
+    "tsiic.telangana.gov.in (redirects to tgiic.telangana.gov.in)",
+    "lifesciences.telangana.gov.in"
+   ],
+   "policies": [
+    {
+     "name": "TS-iPASS / TG-iPASS (Telangana Industrial Project Approval and Self-Certification System)",
+     "incentive_type": "Regulatory fast-track / single-window clearance",
+     "what_companies_get": "All industrial approvals in under 15 days via single window; self-certification allows construction commencement from Day 1; TS-iPASS Act PDF on policies page. Portal rebranded TG-iPASS under the new government.",
+     "status": "Active",
+     "application_status": "Portal live - ipass.telangana.gov.in returns HTTP 200 with full TG-iPASS application site",
+     "verified_on_site": true,
+     "site_url": "https://ipass.telangana.gov.in/ and https://invest.telangana.gov.in/unparalleled-policies/",
+     "site_notes": "Homepage is a 22MB page titled TG-iPASS (18 mentions of TG-iPASS vs 17 legacy TS-iPASS). Act PDF: invest.telangana.gov.in/wp-content/uploads/2020/05/TS-iPASS-BILL.pdf"
+    },
+    {
+     "name": "T-IDEA (Telangana State Industrial Development and Entrepreneur Advancement) incentive scheme",
+     "incentive_type": "Capital subsidy, tax reimbursement, power tariff, land",
+     "what_companies_get": "Large industries: reimbursement of 50% net VAT/CST or SGST for 7 years from commencement OR until 100% fixed capital recovery, whichever first; fixed power cost reimbursement @ Re 1/unit for 5 years from CoCP; 25% rebate on land cost in industrial estates (capped ~Rs 10 lakh); 50% of infrastructure cost for standalone units capped Rs 1 crore (roads/power/water); 25% subsidy on cleaner production measures capped Rs 5 lakh; 100% stamp/transfer duty reimbursement (as cross-referenced in Life Sciences Policy 2026).",
+     "status": "Active (still the base industrial incentive framework; Life Sciences Policy 2026-30 explicitly grants large-unit SGST 'as per T-IDEA')",
+     "application_status": "Incentive applications routed through TG-iPASS ecosystem; portal live",
+     "verified_on_site": true,
+     "site_url": "https://invest.telangana.gov.in/unparalleled-policies/",
+     "site_notes": "Scheme PDF also listed: invest.telangana.gov.in/wp-content/uploads/2020/05/T-IDEA-Telangana-State-Industrial-Development-and-Entrepreneur-Advancement.pdf"
+    },
+    {
+     "name": "T-PRIDE (Telangana State Program for Rapid Incubation of Dalit Entrepreneurs)",
+     "incentive_type": "Enhanced incentives for SC/ST entrepreneurs",
+     "what_companies_get": "Enhanced version of T-IDEA incentives for SC/ST-owned enterprises (document verified present; percentages not extracted in this pass)",
+     "status": "Active (listed under current State Policies)",
+     "application_status": "Via TG-iPASS; portal live",
+     "verified_on_site": true,
+     "site_url": "https://invest.telangana.gov.in/policies/",
+     "site_notes": "PDF listed on official policies page; incentive numbers not extracted from the PDF in this session"
+    },
+    {
+     "name": "Telangana Next-Gen Life Sciences Policy 2026-30 (covers Genome Valley / Green Pharma City ecosystem)",
+     "incentive_type": "Capital subsidy, SGST reimbursement, power subsidy, employment and skilling grants",
+     "what_companies_get": "100% stamp+transfer duty reimbursement; power reimbursement Rs 1.00/unit for 5 years from CoCP; 25% investment subsidy on FCI max Rs 30 lakh (micro/small) + extra 20% max Rs 20 lakh for women-owned; 25% land cost reimbursement max Rs 10 lakh in TGIIC/approved private parks; net SGST reimbursement 100%/5yrs (micro-small), 75%/7yrs (medium), 50%/7yrs (large, per T-IDEA), all capped at 100% FCI; CSR matching grant 10% of project cost max Rs 1 crore; EPF reimbursement Rs 2,000/domiciled employee up to 500 employees (twice in policy term); 50% skill-training cost max Rs 2,000/person; 50% quality/ZED certification subsidy max Rs 2 lakh; 25% cleaner production subsidy max Rs 5 lakh; 25% land conversion charges max Rs 10 lakh (MSME); 30% international marketing cost max Rs 2 lakh/yr; 25% or Rs 4 lakh grant for licensing patented tech. Additional negotiated incentives for focus industries decided case-by-case by Telangana Life Sciences Foundation.",
+     "status": "Active - NEW policy issued under current government (uploaded Jan 2026, policy period 2026-2030)",
+     "application_status": "Incentives administered via TLSF/TG-iPASS; dedicated Genome Valley and Green Pharma City pages live",
+     "verified_on_site": true,
+     "site_url": "https://lifesciences.telangana.gov.in/wp-content/uploads/2026/01/Telangana-Next-Gen-Life-Sciences-Policy-2026-30.pdf",
+     "site_notes": "Full incentive schedule extracted from the official PDF (6.2MB). Genome Valley: lifesciences.telangana.gov.in/genome-valley/, Green Pharma City: /green-pharma-city/"
+    },
+    {
+     "name": "Telangana Electronics Policy 2016",
+     "incentive_type": "Sector policy (capital/SGST/power incentives for ESDM)",
+     "what_companies_get": "Policy document verified present on official policies page; incentive percentages not extracted in this pass",
+     "status": "Listed as current State Sector-specific Policy (2016 vintage, re-uploaded 2024)",
+     "application_status": "Via TG-iPASS; portal live",
+     "verified_on_site": true,
+     "site_url": "https://invest.telangana.gov.in/wp-content/uploads/2024/07/Telangana-Electronics-Policy-2016-1.pdf",
+     "site_notes": "Also on site: separate 'Incentives for Expansion of IT/ITeS Companies' PDF (uploads/2020/05/)"
+    },
+    {
+     "name": "Telangana EV & Energy Storage Policy (TS EV-ESS)",
+     "incentive_type": "Sector policy (EV and energy-storage manufacturing incentives)",
+     "what_companies_get": "Policy document verified present; specific manufacturer incentives (capital subsidy/SGST/power tariff tiers) not extracted in this pass",
+     "status": "Listed as current sector policy (re-uploaded Jul 2024)",
+     "application_status": "Via TG-iPASS; portal live",
+     "verified_on_site": true,
+     "site_url": "https://invest.telangana.gov.in/wp-content/uploads/2024/07/TS-EV-ESS-Policy-4-18.pdf",
+     "site_notes": "Verified as link on invest.telangana.gov.in/policies/"
+    },
+    {
+     "name": "Telangana MSME Policy 2024",
+     "incentive_type": "MSME incentive framework",
+     "what_companies_get": "MSME Policy booklet (English + Telugu) published Sep 2024; details not extracted",
+     "status": "Active (2024)",
+     "application_status": "Via TG-iPASS; portal live",
+     "verified_on_site": true,
+     "site_url": "https://invest.telangana.gov.in/wp-content/uploads/2024/09/MSME-Policy-Booklet-English1.pdf",
+     "site_notes": "One of the few post-2024 policy documents on the invest portal"
+    },
+    {
+     "name": "Meet or Beat commitment (mega projects)",
+     "incentive_type": "Tailor-made incentive guarantee",
+     "what_companies_get": "For projects >USD 30 million investment or >1,000 jobs, government commits to match or exceed incentive offers from competing states",
+     "status": "Active (stated on investment portal)",
+     "application_status": "Negotiated case-by-case",
+     "verified_on_site": true,
+     "site_url": "https://invest.telangana.gov.in/unparalleled-policies/",
+     "site_notes": "Stated as standing commitment on the 'Best-in-Class Policies' page"
+    },
+    {
+     "name": "New 2024-26 industrial policy under new government",
+     "incentive_type": "n/a",
+     "what_companies_get": "No enacted replacement industrial policy found on official sites; the new government's flagship document is the 'Telangana Rising 2047' Vision Document (linked from invest portal). Old Industrial Framework 2014 and T-IDEA remain the operative incentive regime; the Next-Gen Life Sciences Policy 2026-30 is the first major new sector policy verified",
+     "status": "Not found as enacted policy",
+     "application_status": "n/a",
+     "verified_on_site": false,
+     "site_url": "https://telanganarising2047.org/TelanganaRising-2047-Vision-Document.pdf",
+     "site_notes": "Honest note: searched policies page and homepage; only vision document + rebranding (TS->TG, TSIIC->TGIIC) evidence the new government's changes"
+    }
+   ]
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "sites_used": [
+    "apindustries.gov.in (live, ASP.NET portal at /APIndus/Default.aspx)",
+    "apedb.gov.in (unreachable)",
+    "apsingledesk.ap.gov.in (unreachable)"
+   ],
+   "policies": [
+    {
+     "name": "AP Industrial Development Policy 4.0 (2024-29)",
+     "incentive_type": "Capital subsidy, SGST reimbursement, employment subsidy, PLI top-up, stamp duty, decarbonization subsidy",
+     "what_companies_get": "Four bands: Sub-Large (FCI Rs 51-500cr, 2yr build), Large (501-1,000cr, 3yr), Mega (1,001-5,000cr, 3yr), Ultra Mega (5,001cr+, 4yr); total incentives capped at 100% of FCI. Sub-Large: 12% FCI capital subsidy (5 annual installments; -0.5%/month for delay; +5% extra for women/BC/SC/ST/specially-abled AP-domiciled owners); power reimbursement Rs 1/unit for 2 years; 100% net SGST reimbursement 5 years; 1% of annual export turnover reimbursed 3 years (local procurement). Large: 12% FCI (7 installments, milestone-linked 6%+6%); 100% net SGST 5 years. Mega/Ultra Mega: 15% FCI (10 installments, 5%+5%+5% by capacity milestones) plus tailor-made packages case-by-case. All bands: PLI top-up = 10% of GoI PLI incentive sanctioned, capped 5% of FCI; employment creation subsidy 8-10% of FCI by employment-to-investment ratio (E/I>=5 gets 10%), paid over 5-10 years; decarbonization capital subsidy 10-35% of eligible cost capped 6% FCI; 100% stamp duty + transfer duty reimbursement (one-time); 100% land conversion fee reimbursement. Early Bird Scheme: first 200 projects getting CFE within 18 months of notification get 30% of FCI investment subsidy; PLI-sector value-added manufacturing gets 40% of FCI (CFE window 24 months). ESCROW-based disbursement mechanism being set up.",
+     "status": "Active (2024-29)",
+     "application_status": "Single Desk Portal: >93 clearances from 19 departments in 21 days, end-to-end online with payment and tracking; login portal linked from apindustries.gov.in homepage (link verified present, login page itself not tested)",
+     "verified_on_site": true,
+     "site_url": "https://www.apindustries.gov.in/APIndus/Data/policies/AP%20Industrial%20Development%20Policy%20(4.0)%202024-29.pdf",
+     "site_notes": "Full 32-page official PDF downloaded from apindustries.gov.in and text-extracted; numbers above are verbatim from Sections 8-9"
+    },
+    {
+     "name": "AP MSME & Entrepreneur Development Policy 4.0 (2024-29)",
+     "incentive_type": "MSME capital and entrepreneurship incentives",
+     "what_companies_get": "Issued via G.O.Ms.No.69 (26-10-2024), amended by G.O.Ms.No.22 (17-02-2025) and G.O.Ms.No.110 (27-06-2025) which adopts GoI's revised MSME investment/turnover classification w.e.f. 01-04-2025; GO describes it as a 'competitive and best package of incentives to MSMEs and Entrepreneurs' (detailed rates live in GO Ms 69, not fetched)",
+     "status": "Active (2024-29, amended June 2025)",
+     "application_status": "Via Single Desk Portal on apindustries.gov.in",
+     "verified_on_site": true,
+     "site_url": "https://www.apindustries.gov.in/APIndus/Data/policies/2025INDS_MS110_E.pdf",
+     "site_notes": "Verified via the amendment GO PDF hosted on the official portal"
+    },
+    {
+     "name": "AP Food Processing Policy 4.0 (2024-29)",
+     "incentive_type": "Sector policy",
+     "what_companies_get": "Policy PDF verified on official portal; details not extracted in this pass",
+     "status": "Active (2024-29)",
+     "application_status": "Via Single Desk Portal",
+     "verified_on_site": true,
+     "site_url": "https://www.apindustries.gov.in/APIndus/Data/policies/AP%20Food%20Processing%20Policy%20(4.0)%20%202024-29.pdf",
+     "site_notes": "Link on apindustries.gov.in homepage"
+    },
+    {
+     "name": "AP Private Industrial Parks Policy 4.0 (2024-29)",
+     "incentive_type": "Industrial park developer incentives",
+     "what_companies_get": "Policy PDF verified on official portal; details not extracted in this pass",
+     "status": "Active (2024-29)",
+     "application_status": "Via Single Desk Portal",
+     "verified_on_site": true,
+     "site_url": "https://www.apindustries.gov.in/APIndus/Data/policies/AP%20Private%20Industrial%20%20Parks%20Policy%20(4.0)-%202024-29.pdf",
+     "site_notes": "Link on apindustries.gov.in homepage"
+    },
+    {
+     "name": "Legacy sector policy pages (Aerospace & Defence, Agro & Food Processing, Automobile & Auto Components, Biotechnology, Electronics, Textile & Apparel)",
+     "incentive_type": "Sector policies (previous generation)",
+     "what_companies_get": "Dedicated policy pages still live on the Single Window portal; these predate the 4.0 series and appear to be prior-cycle sector policies",
+     "status": "Pages live; likely superseded/being refreshed by 4.0-series policies",
+     "application_status": "Via Single Desk Portal",
+     "verified_on_site": true,
+     "site_url": "https://www.apindustries.gov.in/APIndus/UserInterface/SingleWindowServicesApplication/Public/ElectronicsPolicy.aspx",
+     "site_notes": "Sibling pages: AerospaceAndDefencePolicy.aspx, AgroAndFoodProcessingPolicy.aspx, AutomobileAndAutoComponentsPolicy.aspx, BiotechnologyPolicy.aspx, TextileAndApparelPolicy.aspx"
+    },
+    {
+     "name": "Single Desk Portal / Single Window Mechanism 2.0 (speed-of-doing-business guarantee)",
+     "incentive_type": "Regulatory fast-track",
+     "what_companies_get": "93+ regulatory clearances across 19 departments within 21 days; three-tier self-certification/deemed-approval regime; dedicated Investment Facilitation Cell with a liaison officer per investor; country-specific FDI desks",
+     "status": "Active (SDP launched 2015, being upgraded to Single Window 2.0 under IDP 4.0)",
+     "application_status": "Login portal linked from apindustries.gov.in homepage (Introduction.aspx / LoginPortal); dedicated apsingledesk.ap.gov.in domain did not resolve",
+     "verified_on_site": true,
+     "site_url": "https://www.apindustries.gov.in/APIndus/Default.aspx",
+     "site_notes": "Section 6 of IDP 4.0 PDF; Sri City / port-based incentives not found on the two official sites checked (Sri City is a private developer site, not state government)"
+    }
+   ]
+  },
+  {
+   "state": "KERALA",
+   "sites_used": [
+    "industry.kerala.gov.in",
+    "ksidc.org",
+    "invest.kerala.gov.in",
+    "kswift.kerala.gov.in"
+   ],
+   "policies": [
+    {
+     "name": "Kerala Industrial Policy 2023 incentive package (administered via K-RIIS)",
+     "incentive_type": "Capital subsidy, SGST reimbursement, electricity duty exemption, employment incentive, ESG/IR4.0 support",
+     "what_companies_get": "18 incentive categories: MSME capital subsidy up to 45% (caps Rs 40-200 lakh by category); large/mega investment subsidy 10% of FCI max Rs 10 crore in phases; 100% SGST reimbursement on capital investment for 5 years; 100% electricity duty exemption 5 years; employment enhancer up to Rs 5,000/month per employee for 1 year; stamp duty waiver up to 100% for manufacturing in industrial parks; 4% interest loans up to Rs 10 lakh; trade fair reimbursement up to 100% max Rs 5 lakh/yr; IP creation 50% max Rs 30 lakh; quality certification 50% max Rs 25 lakh/yr; sustainability (ETP/renewables) 25% max Rs 25 lakh; IR 4.0 adoption 20% max Rs 25 lakh; R&D with universities 20% max Rs 1 crore; startup scale-up loans to Rs 1 crore; PLI investor top-up 20% of fixed investment max Rs 1 crore",
+     "status": "Active (Industrial Policy 2023, ESG/responsible-investment focus)",
+     "application_status": "Applications live via K-RIIS portal (kriis.kerala.gov.in) per KSIDC; helpline 1800-890-1030",
+     "verified_on_site": true,
+     "site_url": "https://ksidc.org/invest-kerala/incentive-schemes/",
+     "site_notes": "Policy page also at ksidc.org/invest-kerala/industrial-policy-2023/ and industry.kerala.gov.in/index.php/industrial-policy; full policy PDF at invest.kerala.gov.in/media/urulj14k/industrial-policy.pdf"
+    },
+    {
+     "name": "Entrepreneur Support Scheme (ESS)",
+     "incentive_type": "Capital investment subsidy for MSMEs",
+     "what_companies_get": "15% of capital investment max Rs 30 lakh (general); 25% max Rs 40 lakh for young (18-45), women, SC/ST and NRK entrepreneurs; additional 10% (max Rs 10 lakh each) for priority sectors (rubber, agro-processing, biotech, pharma etc.), for units in Idukki/Wayanad/Kasargode/Pathanamthitta, and for new technology from approved research institutions; overall ceiling Rs 40 lakh; three stages - startup support (50% of eligible, max Rs 3 lakh, pre-production on bank loan sanction), investment support (post-production, no bank loan needed), technology support (within 6 months of tech adoption)",
+     "status": "Active",
+     "application_status": "Online application portal live at ess.kerala.gov.in/login (application fee Rs 1,105); processed by district committees chaired by District Collector",
+     "verified_on_site": true,
+     "site_url": "https://invest.kerala.gov.in/resources/schemes/entrepreneur-support-scheme/",
+     "site_notes": "Also listed on industry.kerala.gov.in schemes menu"
+    },
+    {
+     "name": "Campus Industrial Parks (CIP) Scheme",
+     "incentive_type": "Infrastructure grant for campus-based industrial parks",
+     "what_companies_get": "Educational institutions (colleges/polytechnics/ITIs) with min 5 acres (2 acres for a Standard Design Factory) get up to Rs 1.5 crore infrastructure support @ Rs 20 lakh/acre (roads, power, drainage, labs) plus an additional Rs 1.5 crore for Standard Design Factory setup; reimbursement basis; 14 eligible manufacturing/service sectors",
+     "status": "Active (state targeted 25 CIPs in 2024 per invest-kerala news)",
+     "application_status": "Apply via Directorate of Industries & Commerce web portal with Higher Education Dept NOC; district Site Selection Committee then state apex committee issue the developer permit",
+     "verified_on_site": true,
+     "site_url": "https://invest.kerala.gov.in/resources/policies/campus-industrial-parks-cips-scheme/",
+     "site_notes": "Cross-listed at industry.kerala.gov.in/index.php/schemes-mainmenu/campus-industrial-park"
+    },
+    {
+     "name": "Private Industrial Estate (PIE) Scheme (private industrial-park policy)",
+     "incentive_type": "Infrastructure subsidy for private park developers",
+     "what_companies_get": "Up to Rs 30 lakh/acre, max Rs 3 crore per estate, for power/water/roads/common facilities; min 10 acres (5 acres for Special Development Facilities); land owned or leased 30 years; PIE Developer Permit includes single-window clearances; up to 30% of land may go to service sector (no retail). Policy revised to allow individual developers per invest-kerala news",
+     "status": "Active",
+     "application_status": "Structured evaluation by Director of Industries & Commerce; final approval by State Level Selection Committee",
+     "verified_on_site": true,
+     "site_url": "https://invest.kerala.gov.in/resources/policies/the-private-industrial-estate-pie-scheme/",
+     "site_notes": "Tenant-company incentives not spelled out on the page (they use standard IP-2023/ESS incentives)"
+    },
+    {
+     "name": "K-SWIFT single window clearance",
+     "incentive_type": "Regulatory fast-track",
+     "what_companies_get": "Kerala Single Window Interface for Fast & Transparent clearance - composite application for licences/clearances for industrial units",
+     "status": "Active",
+     "application_status": "Portal live at kswift.kerala.gov.in (HTTP 200, title 'K-Swift')",
+     "verified_on_site": true,
+     "site_url": "https://kswift.kerala.gov.in/",
+     "site_notes": "Portal responds and serves the application interface"
+    },
+    {
+     "name": "KSIDC direct loan schemes",
+     "incentive_type": "Debt finance",
+     "what_companies_get": "Corporate loans, equipment purchase loans, bill discounting, contractor loans, caravan (tourism) loans, working-capital products; published interest-rate card and application forms",
+     "status": "Active",
+     "application_status": "Application forms downloadable on ksidc.org; offline/assisted process",
+     "verified_on_site": true,
+     "site_url": "https://ksidc.org/loan-schemes/",
+     "site_notes": "KSIDC also runs Bio360 Life Sciences Park, mega food park Cherthala and multiple IGCs (ksidc.org/industrial-parks/)"
+    },
+    {
+     "name": "Technopark/Infopark IT-park incentives",
+     "incentive_type": "IT park incentives",
+     "what_companies_get": "Not verified - IT park incentive pages were not checked on this pass (separate technopark.org / infopark.in domains under IT Dept, not the industries sites fetched)",
+     "status": "Unverified",
+     "application_status": "Unverified",
+     "verified_on_site": false,
+     "site_url": "",
+     "site_notes": "Honest gap: brief asked for IT-park incentives; industries-department sites reviewed do not carry them"
+    }
+   ]
+  }
+ ],
+ "site_access_issues": [
+  "apedb.gov.in: connection failed entirely (curl exit, HTTP 000) - AP Economic Development Board site unreachable; all AP verification done via apindustries.gov.in",
+  "apsingledesk.ap.gov.in: connection failed (HTTP 000); the Single Desk Portal actually runs inside apindustries.gov.in (/APIndus/UserInterface/SingleWindowServicesApplication/LoginPortal/), link verified but login page not tested",
+  "tsiic.telangana.gov.in: meta-refresh redirect to tgiic.telangana.gov.in (TSIIC renamed TGIIC under the new government); content not separately catalogued",
+  "apindustries.gov.in front door is a bare meta-refresh stub to /APIndus/Default.aspx (legacy ASP.NET portal); many links are .aspx postbacks",
+  "AP Industrial Development Policy 4.0 PDF could not be parsed by the WebFetch summarizer (encoding); downloaded and text-extracted locally with pdftotext instead - all numbers verbatim from the official PDF",
+  "ipass.telangana.gov.in homepage is a 22MB single page (heavy inline assets) but live and functional",
+  "No enacted post-2024 Telangana industrial policy found on invest.telangana.gov.in; only the Telangana Rising 2047 vision document and the 2026-30 Life Sciences Policy evidence the new government's program"
+ ],
+ "schemes_found_on_site_not_in_brief": [
+  "TELANGANA: Next-Gen Life Sciences Policy 2026-30 (brand-new, full incentive schedule - the brief only anticipated the older Life Sciences policy)",
+  "TELANGANA: 'Meet or Beat' tailored-incentive guarantee for projects >USD 30M or >1,000 jobs",
+  "TELANGANA: MSME Policy 2024 booklet; Data Centres Policy; 2nd ICT Policy 2021; IoT Policy 2017; Gaming & Animation Policy 2016; Cyber Security Policy; Data Analytics Policy; Solar Policy; Logistics Policy 2021; Food Processing Policy 2021; Textile policy (T-TAP); Rural Technology Centres Policy; separate 'Incentives for Expansion of IT/ITeS Companies' document",
+  "ANDHRA PRADESH: AP MSME & Entrepreneur Development Policy 4.0 (2024-29) with 2025 amendments (GO Ms 22, GO Ms 110); Early Bird Project Scheme (30%/40% of FCI investment subsidy overriding band rates); AP Private Industrial Parks Policy 4.0; de-carbonization subsidy (10-35% of eligible cost); employment-creation subsidy tied to E/I ratio; ESCROW-based incentive disbursement mechanism",
+  "KERALA: K-RIIS incentive-application portal (kriis.kerala.gov.in); MSME Scale-Up Mission 1000; Interest Subvention Scheme for nano units; Margin Money Grant to nano units; One Family One Enterprise (OFOE); One Local Body One Product (OLOP); ASHA (handicrafts artisans) scheme; MSME Insurance Scheme; Kerala Entrepreneur Loan Scheme (KELS); stressed-MSME revival & rehabilitation schemes; KSIDC loan products; draft Kerala Logistics Parks Policy 2024; draft Export Promotion Policy; Bio360 Life Sciences Park and KSIDC industrial parks"
+ ]
+}

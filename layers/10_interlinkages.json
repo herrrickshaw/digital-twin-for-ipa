@@ -306,8 +306,8 @@
   {
    "scheme": "NIPU",
    "explainer_account": "No scheme by this acronym found on any aggregator or explainer",
-   "matches_primary": "CONTRADICTS",
-   "note": "Searches return only NEIIPP/NEIDS/UNNATI (NE industrialization). 'NIPU' in our scheme list is either an internal/erroneous acronym or a very recent unindexed announcement \u2014 must be resolved from our own primary notes before publication"
+   "matches_primary": "RESOLVED-PRIMARY-WINS",
+   "note": "RESOLVED 2026-07-20: NIPU-2026 is REAL and the acronym is OFFICIAL -- PIB Cabinet release PRID 2284800 (15-Jul-2026) is titled 'Cabinet approves National Investment Policy for Urea-2026 for Atmanirbhar Bharat (NIPU-2026)': 8-9 gas-based urea plants, RoE band 12-16%. IAS aggregators (incl. Drishti, which suggested it was a truncated 'NIPUN') are simply ~5 days behind the primary source. A demonstration of the register's value: never drop an entry on aggregator silence alone."
   }
  ],
  "aggregator_assessment": [
@@ -374,5 +374,254 @@
    "site": "fetch budget",
    "issue": "~9 curl/WebFetch fetches + 14 web searches used; myscheme API and vikaspedia content are the two honest dead-ends; NSWS deliberately left unfetched as follow-up"
   }
+ ],
+ "verification_2026_07_20": {
+  "method": "Two agents: drishtiias.com (~19 fetches) + vajiram/pwonlyias/insights/clearias/forumias/nextias/visionias (~22 fetches). All SECONDARY. Verdicts per edge below.",
+  "tally": {
+   "confirmed": "12 edges confirmed by at least one source family",
+   "adds": "5 edges implicitly supported",
+   "silent": "4 edges (incl. the two whose only anchor is the OFFICIAL MeitY FAQ)",
+   "resolved": "edge 13 (ECMS-MPMS boundary) + edge 19 arithmetic",
+   "disputed": "edge 23 coal-gasification percentage -- secondary sources contradict each other; official PDF is sole arbiter",
+   "unresolved": "edge 17 SEZ+PLI (with new Apr-2026 SEZ Rule 18 context)"
+  },
+  "edge_verdicts": {
+   "1": {
+    "drishti": "SILENT",
+    "other_ias": "SILENT",
+    "note": "No IAS site addresses same-capex stacking; MeitY FAQ 3.6 remains the sole (OFFICIAL) anchor"
+   },
+   "2": {
+    "drishti": "CONFIRMS",
+    "other_ias": "-",
+    "note": "Drishti: UP ECMP-2025 'state-level incentives in addition to central benefits under ECMS' (magnitude not stated)"
+   },
+   "3": {
+    "drishti": "CONFIRMS",
+    "other_ias": "CONFIRMS",
+    "note": "Drishti MoFPI Convergence Portal + ForumIAS: 3% subvention 'over and above the 35% subsidy'"
+   },
+   "4": {
+    "drishti": "CONFIRMS",
+    "other_ias": "CONFIRMS",
+    "note": "Same convergence portal covers PMKSY"
+   },
+   "5": {
+    "drishti": "ADDS",
+    "other_ias": "-",
+    "note": "Implicit: AHIDF eligible-activity list has no fisheries; boundary never stated explicitly"
+   },
+   "6": {
+    "drishti": "CONFIRMS",
+    "other_ias": "CONFIRMS",
+    "note": "Direct contrast on both Drishti and ForumIAS/VisionIAS"
+   },
+   "7": {
+    "drishti": "CONFIRMS",
+    "other_ias": "-",
+    "note": "'Digital backbone linking existing schemes', no own corpus"
+   },
+   "8": {
+    "drishti": "CONFIRMS",
+    "other_ias": "-",
+    "note": "Rs 24,000cr/yr = convergence envelope of constituent budgets; NOT a contradiction of no-separate-budget"
+   },
+   "9": {
+    "drishti": "CONFIRMS",
+    "other_ias": "-",
+    "note": "16.2bn litres capacity by Sep-2024, ~20bn by Nov-2025; mills earned Rs 1.29L cr from ethanol FY15-FY25"
+   },
+   "10": {
+    "drishti": "ADDS",
+    "other_ias": "-",
+    "note": "Pressmud (3-4% of cane) confirmed as CBG feedstock; physical co-location not discussed"
+   },
+   "11": {
+    "drishti": "CONFIRMS",
+    "other_ias": "CONFIRMS",
+    "note": "'Active components fall under ISM; ECMS focuses on passive components' (Insights); ~90% of mobile BoM (Drishti)"
+   },
+   "12": {
+    "drishti": "ADDS",
+    "other_ias": "-",
+    "note": "ECMS 90%-of-BoM + MPMS 1.5% sourcing bonus together document the architecture"
+   },
+   "13": {
+    "drishti": "RESOLVED",
+    "other_ias": "SILENT",
+    "note": "Boundary resolved: MPMS = finished mobile phones (sales-linked 2.25-5%); ECMS = components/sub-assemblies/capital equipment; the MPMS +1.5% domestic-sourcing bonus is the coupling, not an overlap"
+   },
+   "14": {
+    "drishti": "CONFIRMS",
+    "other_ias": "CONFIRMS",
+    "note": "Halted Feb-2025, reinstated from Jun-2025 (both); Appendix 4RE label not used by IAS sites; RoDTEP extended to Mar-2026"
+   },
+   "15": {
+    "drishti": "ADDS",
+    "other_ias": "SILENT",
+    "note": "Drishti indirect: RoSCTL garments/made-ups-only + no-double-remission principle yields the exclusivity"
+   },
+   "16": {
+    "drishti": "SILENT",
+    "other_ias": "SILENT",
+    "note": "No site discusses EPCG+PLI combination; nothing contradicts"
+   },
+   "17": {
+    "drishti": "SILENT",
+    "other_ias": "SILENT",
+    "note": "STILL UNRESOLVED. New context: SEZ Rule 18 amended Apr-2026 (DTA sales for semiconductor/component SEZ units on duty payment + one-time concessional window Apr-26 to Mar-27) -- softens the boundary but does not resolve PLI eligibility. Primary check still needed"
+   },
+   "18": {
+    "drishti": "CONFIRMS",
+    "other_ias": "CONFIRMS",
+    "note": "Two-tier SPF-under-ANRF -> AIFs/DFIs/NBFCs/FROs confirmed by both; guidelines+SPF approved Oct-2025; no disbursal reports as of Jul-2026"
+   },
+   "19": {
+    "drishti": "ADDS",
+    "other_ias": "RESOLVED",
+    "note": "ARITHMETIC RESOLVED (two independent secondary corroborations): IIF Rs 5,000cr sits INSIDE MDF Rs 25,000cr (= MIF Rs 20,000cr equity 49% govt + IIF Rs 5,000cr grant/interest-subvention). 24,736 + 25,000 + 19,989 = 69,725 exactly; our 74,725 double-counted IIF"
+   },
+   "20": {
+    "drishti": "CONFIRMS",
+    "other_ias": "-",
+    "note": "SECI 10-year contracts, 7.24L t/yr to 13 fertilizer plants, ~USD 2.5bn forex savings"
+   },
+   "21": {
+    "drishti": "ADDS",
+    "other_ias": "ADDS",
+    "note": "Bases confirmed structurally distinct (EPFO headcount vs incremental sales); exclusivity never mentioned anywhere -- 'no exclusivity' unopposed but unaffirmed"
+   },
+   "22": {
+    "drishti": "CONFIRMS",
+    "other_ias": "-",
+    "note": "25% centre + minimum 50% market sources verbatim; ~Rs 4L cr catalysis target"
+   },
+   "23": {
+    "drishti": "DISPUTED",
+    "other_ias": "DISPUTED",
+    "note": "SECONDARY SOURCES DISAGREE AMONG THEMSELVES: Drishti ties '20% of P&M in 4 milestone instalments' to the Rs 8,500cr scheme; PWOnlyIAS ties '15% of capex or lump sum whichever LOWER, 2 instalments, category caps 1,350/1,000/100cr' to the same Feb-2024 guidelines; VisionIAS-family ties 20%/4 to the separate Rs 37,500cr surface-gasification scheme. KEEP FLAGGED: the coal.gov.in guideline PDF is the only arbiter -- do not cite a percentage until read from it"
+   }
+  }
+ },
+ "new_edges_2026_07_20": [
+  {
+   "schemes": [
+    "PM E-DRIVE",
+    "PLI-Auto",
+    "PLI-ACC"
+   ],
+   "relationship": "stacks",
+   "detail": "EXPLICIT in scheme terms (quoted by VisionIAS): E-DRIVE incentives 'are independent of and in addition to incentives given under PLI-Auto and PLI-ACC' -- demand-side + supply-side stack; also complements GST cuts and s.80EEB",
+   "source_type": "SECONDARY (quoting scheme terms)"
+  },
+  {
+   "schemes": [
+    "MPMS",
+    "ECMS"
+   ],
+   "relationship": "feeds",
+   "detail": "MPMS pays +1.5% on eligible sales for domestic sourcing of components/sub-assemblies -- designed demand-pull for the ECMS-incentivised layer (+3% for Indian-brand design/R&D)",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "ECMS",
+    "PLI/MPMS",
+    "ISM 2.0",
+    "EMC 2.0",
+    "SPECS",
+    "NPE-2019"
+   ],
+   "relationship": "converges",
+   "detail": "ECMS framed as horizontal enabler across the full electronics stack: ISM=active components, ECMS=passives/sub-assemblies/equipment, MPMS=finished devices, EMC=clusters",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "AIF",
+    "CGTMSE"
+   ],
+   "relationship": "stacks",
+   "detail": "AIF loans carry CGTMSE guarantee cover ALONGSIDE the 3% subvention -- two stacked benefits in one loan",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "AIF",
+    "any Central/State scheme"
+   ],
+   "relationship": "stacks",
+   "detail": "AIF has a built-in GENERAL convergence clause with any other scheme -- wider than the PMFME/PMKSY edges",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "AHIDF",
+    "Credit Guarantee Scheme (livestock)"
+   ],
+   "relationship": "stacks",
+   "detail": "Collateral-free credit-guarantee layer operating under AHIDF atop the 3% subvention",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "EBP",
+    "GST concession on ethanol"
+   ],
+   "relationship": "stacks",
+   "detail": "5% GST on ethanol alongside the interest-subvention windows -- tax-side stack on the same capacity build-out",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "RDI SPF",
+    "Deep-Tech Fund of Funds",
+    "startups"
+   ],
+   "relationship": "feeds",
+   "detail": "Third nested layer: SPF -> 2nd-level managers/FoF -> startups; twin should not model RDI as single-hop",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "UP Semiconductor Policy 2024",
+    "ISM"
+   ],
+   "relationship": "stacks",
+   "detail": "State top-ups exist PER LAYER of the electronics stack (UP-ECMP||ECMS and UP-Semiconductor||ISM)",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "MEIS",
+    "RoDTEP"
+   ],
+   "relationship": "succession",
+   "detail": "Lineage: RoDTEP replaced MEIS; currently extended to Mar-2026",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "Coal gasification",
+    "GST compensation cess reimbursement"
+   ],
+   "relationship": "stacks (proposed)",
+   "detail": "10-year GST-cess reimbursement proposed for gasification projects -- status unverified",
+   "source_type": "SECONDARY"
+  },
+  {
+   "schemes": [
+    "ELI",
+    "PM Viksit Bharat Rozgar Yojana"
+   ],
+   "relationship": "possible rename/subsumption -- VERIFY",
+   "detail": "Drishti carries a PM-VBRY page adjacent to ELI coverage; verify against EPFO/PIB before register changes",
+   "source_type": "SECONDARY (unverified)"
+  }
+ ],
+ "corrections_2026_07_20": [
+  "ISM 2.0 clarification: the Rs 1,000cr figure (PRS layer, Budget FY27) is the ANNUAL OPERATIONAL ALLOCATION only; the approved Semicon 2.0 outlay is Rs 1.27 lakh cr (Cabinet ~15-Jul-2026) -- consistent with catalog v1's Rs 1,27,500cr.",
+  "Shipbuilding edge 19 detail corrected: pillar sum reconciled (IIF inside MDF); prior 74,725 reading superseded.",
+  "Coal-gasification edge 23: percentage claim DOWNGRADED to disputed -- secondary sources contradict each other; official guideline PDF required."
  ]
 }

@@ -26,6 +26,13 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 13 | `layers/13_flat_instrument_index.json` | **Flat instrument index** — all 312 instruments (195 central + 117 state) normalized to one schema |
 | 14 | `layers/14_update_engine.json` | **Auto-update engine** — per-source refresh design (PIB daily, NSWS/RBI/UNNATI weekly, quarterly sweeps; Orbis-upgrade path for company data). Flow diagram: [docs/DATA_MODEL.md](docs/DATA_MODEL.md) |
 | 15 | `layers/15_directory.json` | **Portal directory** — 64 verified portals (27 central + 37 state) + 12 known-bad domains; human version: [docs/DIRECTORY.md](docs/DIRECTORY.md) |
+| 16 | `layers/16_leads.json` | **Leads generation** — 147 yfinance-verified-profitable listed firms scored against the open incentive lanes; view: [docs/LEADS.md](docs/LEADS.md) |
+
+## Leads generation (layer 16)
+
+`scripts/build_leads.py` crosses the market layer's **verified-profitable** screen (margin>0 AND ROE>0, from the 19,795-company catalog) with the twin's curated lane map — which central instruments are open per sector, and which states pay top-ups. Score = profitability (40) + expansion signal (25) + open central lane (25) + state top-up available (10).
+
+Each lead carries its central lanes with live statuses (e.g. E-DRIVE closing 31-Jul, Make-II EOIs in August), state landing options, and a **contact-enrichment block** naming the roles to pull (CFO, Corp Dev, India country head, Govt Affairs) via **Lusha or Apollo** — enrichment is a separate deliberate step, no personal data is collected by the script (the Apollo MCP connector works once authenticated in claude.ai settings; Lusha has no connector, use its export).
 
 ## Auto-update scripts
 

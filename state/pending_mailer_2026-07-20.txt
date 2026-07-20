@@ -1,0 +1,36 @@
+SUBJECT: [digital-twin] Inaugural mailer -- your auto-update workflow is live
+
+DIGITAL TWIN FOR IPA -- WORKFLOW BRIEF (first mailer, 20 Jul 2026)
+
+WHAT THIS IS
+A machine-readable twin of India's investment-promotion apparatus:
+312 incentive instruments across 86 central entities and 30 states/UTs,
+a 23+12-edge scheme-interlinkage graph (source-verified), PRS budget
+overlay, and a 64-portal directory -- all public at:
+https://github.com/herrrickshaw/digital-twin-for-ipa
+
+WHAT RUNS AUTOMATICALLY (installed on this Mac)
+- Daily 07:17  PIB register update (caught 51 releases today)
+- Weekly Mon 08:23  full check: 64 portal probes, UNNATI notice diff,
+  NSWS pages, latest RBI WSS -> snapshots in state/, log in state/cron.log
+
+WHEN YOU GET EMAIL
+Only on a CHANGE: portal up/down flip, UNNATI notice text change
+(registration_stopped=False = the oversubscribed scheme REOPENED -- act
+same-day), or a new RBI issue. Quiet week = no email.
+
+TODAY'S STATE
+- UNNATI 2024: registration STOPPED (oversubscribed); disposal due 30-Sep-2026
+- Portals down (known quirks): DSIR CMS, BIRAC, WB Silpasathi;
+  Nivesh Mitra recovered today
+- Imminent: PM E-DRIVE e-2W claims close 31-Jul-2026; Make-II Viraj 03-Aug;
+  TAC 15-Aug
+- Fresh Cabinet wave (15-Jul): MPMS Rs 62,500cr, Semicon 2.0 Rs 1.27L cr,
+  NIPU-2026 urea policy (PRID 2284800)
+
+ON-DEMAND
+  python3 scripts/refresh_twin.py weekly
+  python3 scripts/build_catalogue.py
+  n8n (Node 22) -> http://localhost:5678 -> TwinRefreshIPA001 Manual run
+
+Reference docs under docs/: SCHEME_CATALOGUE, DIRECTORY, ABBREVIATIONS, DATA_MODEL.

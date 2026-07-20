@@ -65,6 +65,7 @@ main{max-width:1080px;margin:0 auto;padding:10px 22px 60px;}
   <select id="fq"><option value="">All quarters</option></select>
   <select id="fs"><option value="">All schemes</option></select>
   <select id="fm"><option value="">All ministries</option></select>
+  <select id="fst"><option value="">All states</option></select>
   <input type="search" id="ft" placeholder="Search titles…">
   <span class="count" id="count"></span>
 </div></div>
@@ -83,25 +84,27 @@ __STATES__
 <script>
 const fq=document.getElementById('fq'), fs=document.getElementById('fs'),
       fm=document.getElementById('fm'), ft=document.getElementById('ft'),
-      count=document.getElementById('count');
+      fst=document.getElementById('fst'), count=document.getElementById('count');
 const rows=[...document.querySelectorAll('.row')];
 const secs=[...document.querySelectorAll('.q')];
 const uniq=a=>[...new Set(a)].sort();
 uniq(secs.map(s=>s.dataset.q)).reverse().forEach(v=>fq.add(new Option(v,v)));
 uniq(rows.flatMap(r=>r.dataset.s.split('; '))).forEach(v=>fs.add(new Option(v,v)));
 uniq(rows.map(r=>r.dataset.m)).forEach(v=>fm.add(new Option(v,v)));
+uniq(rows.map(r=>r.dataset.st).filter(v=>v&&v!=='Central')).forEach(v=>fst.add(new Option(v,v)));
 function render(){
-  const q=fq.value,s=fs.value,m=fm.value,t=ft.value.toLowerCase();
+  const q=fq.value,s=fs.value,m=fm.value,st=fst.value,t=ft.value.toLowerCase();
   let vis=0;
   rows.forEach(r=>{
     const ok=(!q||r.dataset.q===q)&&(!s||r.dataset.s.split('; ').includes(s))&&
-             (!m||r.dataset.m===m)&&(!t||r.textContent.toLowerCase().includes(t));
+             (!m||r.dataset.m===m)&&(!st||r.dataset.st===st)&&(!t||r.textContent.toLowerCase().includes(t));
     r.classList.toggle('hidden',!ok); if(ok)vis++;
   });
   secs.forEach(sec=>sec.classList.toggle('hidden',!sec.querySelector('.row:not(.hidden)')));
+  document.querySelectorAll('#states section.q').forEach(sec=>sec.classList.toggle('hidden',!sec.querySelector('.row:not(.hidden)')));
   count.textContent=vis+' of '+rows.length+' announcements';
 }
-[fq,fs,fm].forEach(el=>el.addEventListener('change',render));
+[fq,fs,fm,fst].forEach(el=>el.addEventListener('change',render));
 ft.addEventListener('input',render);
 render();
 </script>

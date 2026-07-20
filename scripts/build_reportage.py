@@ -146,6 +146,53 @@ def main():
     write_html(by_q, total)
 
 
+MONTHS={m:i+1 for i,m in enumerate(["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"])}
+def _extract_date(text):
+    """Find the first plausible dd-mm-yyyy / dd Month yyyy / Month-yyyy date in text; return ISO or None."""
+    t=text or ""
+    m=re.search(r"\b(\d{1,2})[-./](\d{1,2})[-./](20[12]\d)\b", t)
+    if m:
+        d,mo,y=int(m.group(1)),int(m.group(2)),int(m.group(3))
+        if 1<=mo<=12 and 1<=d<=31: return f"{y:04d}-{mo:02d}-{d:02d}"
+    m=re.search(r"\b(\d{1,2})[- ]([A-Za-z]{3,9})[- ,]*(20[12]\d)\b", t)
+    if m and m.group(2)[:3].lower() in MONTHS:
+        return f"{int(m.group(3)):04d}-{MONTHS[m.group(2)[:3].lower()]:02d}-{min(int(m.group(1)),28):02d}"
+    m=re.search(r"\b([A-Za-z]{3,9})[- ](20[12]\d)\b", t)
+    if m and m.group(1)[:3].lower() in MONTHS:
+        return f"{int(m.group(2)):04d}-{MONTHS[m.group(1)[:3].lower()]:02d}-15"
+    return None
+
+
+def state_announcements():
+    """Dated state-scheme events from layers 12 (policy GR/notification dates) and 18 (funds evidence)."""
+    import json as _j, glob as _g
+    rows=[]
+    for f in _g.glob(os.path.join(ROOT, "layers/12_state_catalog/*.json")):
+        if "ocr_extracts" in f: continue
+        d=_j.load(open(f))
+        for s in d.get("states", []):
+            for p in s.get("policies", []):
+                blob=" ".join(str(p.get(k,"")) for k in ("name","status","site_notes","what_companies_get"))
+                iso=_extract_date(blob)
+                if iso and iso>="2017-01-01":
+                    rows.append({"date":iso,"state":s["state"].title(),"scheme":p.get("name","")[:110],
+                                 "detail":(p.get("status") or p.get("site_notes") or "")[:150],
+                                 "url":p.get("site_url","")})
+    try:
+        mon=_j.load(open(os.path.join(ROOT, "layers/18_state_monitor.json")))
+        for s in mon["states"]:
+            for sc in s["schemes"]:
+                for e in sc.get("funds_evidence", []):
+                    iso=_extract_date(str(e.get("date","")))
+                    if iso and e.get("figure") and "UNVERIFIED" not in e.get("figure",""):
+                        rows.append({"date":iso,"state":s["state"].title(),"scheme":sc["scheme"][:110],
+                                     "detail":(e.get("figure","")+" -- "+e.get("fact",""))[:170],
+                                     "url":e.get("source_url","")})
+    except FileNotFoundError:
+        pass
+    return rows
+
+
 def render_states():
     """State-level incentives section from layers/18_state_monitor.json + instrument counts from layer 12."""
     import html as _h, json as _j, glob as _g
@@ -170,7 +217,7 @@ def render_states():
             arrears = any("arrear" in (e.get("fact","")+sc.get("status_2025_26","")).lower() or "pending" in e.get("fact","").lower()
                           for e in sc.get("funds_evidence", []))
             flag = ' <span class="chip" style="background:#7a2e2e22;color:var(--warn);">arrears signal</span>' if arrears else ""
-            parts.append(f'<div class="row" data-q="state" data-s="{_h.escape(sc["scheme"][:60], quote=True)}" data-m="{_h.escape(st["state"], quote=True)}">'
+            parts.append(f'<div class="row" data-q="state" data-s="{_h.escape(sc["scheme"][:60], quote=True)}" data-m="{_h.escape(st["state"], quote=True)}" data-st="{_h.escape(st["state"].title(), quote=True)}">'
                          f'<div class="top"><span class="chip">{_h.escape(sc["scheme"][:80])}</span>{flag}</div>'
                          f'<div class="title" style="font-size:.88rem;color:var(--muted);">{_h.escape(sc.get("status_2025_26","")[:260])}</div>')
             for e in sc.get("funds_evidence", [])[:4]:
@@ -193,20 +240,36 @@ def render_states():
 def write_html(by_q, total):
     """Emit docs/reportage.html -- house-style page; list pre-rendered (works without JS), filters via JS."""
     import html as _h
+    st_by_q = {}
+    for r in state_announcements():
+        st_by_q.setdefault(quarter_of(r["date"]), []).append(r)
     parts = []
-    for q in sorted(by_q, reverse=True):
-        rows = by_q[q]["mapped"]
-        if not rows:
+    all_qs = sorted(set(list(by_q.keys()) + list(st_by_q.keys())), reverse=True)
+    for q in all_qs:
+        rows = by_q[q]["mapped"] if q in by_q else []
+        strows = sorted(st_by_q.get(q, []), key=lambda r: r["date"])
+        if not rows and not strows:
             continue
-        parts.append(f'<section class="q" data-q="{q}"><h2>{q} <span class="n">&middot; {len(rows)} announcement{"s" if len(rows)>1 else ""}</span></h2>')
+        n = len(rows) + len(strows)
+        parts.append(f'<section class="q" data-q="{q}"><h2>{q} <span class="n">&middot; {n} announcement{"s" if n>1 else ""} ({len(strows)} state)</span></h2>')
         for date, prid, ministry, title, hits in rows:
             scheme = "; ".join(s for s, _ in hits)
             chips = "".join(f'<span class="chip">{_h.escape(s)}</span>' for s, _ in hits)
             parts.append(
-                f'<div class="row" data-q="{q}" data-s="{_h.escape(scheme, quote=True)}" data-m="{_h.escape(ministry, quote=True)}">'
+                f'<div class="row" data-q="{q}" data-s="{_h.escape(scheme, quote=True)}" data-m="{_h.escape(ministry, quote=True)}" data-st="Central">'
                 f'<div class="top"><span class="date">{date}</span>{chips}<span class="min">{_h.escape(ministry)}</span></div>'
                 f'<div class="title"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID={prid}" target="_blank" rel="noopener">'
                 f'{_h.escape((title or "")[:160])}</a> <span class="prid">PRID {prid}</span></div></div>')
+        for r in strows:
+            link = (f'<a href="{r["url"]}" target="_blank" rel="noopener">' if r.get("url","").startswith("http") else "<span>")
+            close = "</a>" if r.get("url","").startswith("http") else "</span>"
+            parts.append(
+                f'<div class="row" style="border-left-color:var(--warn);" data-q="{q}" '
+                f'data-s="{_h.escape(r["scheme"][:60], quote=True)}" data-m="{_h.escape(r["state"], quote=True)}" data-st="{_h.escape(r["state"], quote=True)}">'
+                f'<div class="top"><span class="date">{r["date"]}</span>'
+                f'<span class="chip" style="background:#8a5a1222;color:var(--warn);">STATE · {_h.escape(r["state"])}</span>'
+                f'<span class="min">{_h.escape(r["scheme"][:80])}</span></div>'
+                f'<div class="title" style="font-size:.9rem;">{link}{_h.escape(r["detail"])}{close}</div></div>')
         parts.append("</section>")
     tpl = open(os.path.join(ROOT, "docs/_reportage_template.html")).read()
     html_out = tpl.replace("__ROWS__", "\n".join(parts)).replace("__STATES__", render_states()).replace("__TOTAL__", str(total)).replace(

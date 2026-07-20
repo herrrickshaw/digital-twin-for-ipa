@@ -153,6 +153,7 @@ def cmd_pib():
 
 def cmd_catalogue():
     subprocess.run([sys.executable, os.path.join(ROOT, "scripts/build_catalogue.py")], check=True)
+    subprocess.run([sys.executable, os.path.join(ROOT, "scripts/build_reportage.py")], check=True)
 
 
 def main():

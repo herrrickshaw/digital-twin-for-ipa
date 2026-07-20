@@ -143,6 +143,33 @@ def main():
     out = os.path.join(ROOT, "docs/REPORTAGE.md")
     open(out, "w").write("\n".join(lines))
     print(f"reportage: {total} scheme-mapped announcements across {len(by_q)} quarters -> {out}")
+    write_html(by_q, total)
+
+
+def write_html(by_q, total):
+    """Emit docs/reportage.html -- house-style page; list pre-rendered (works without JS), filters via JS."""
+    import html as _h
+    parts = []
+    for q in sorted(by_q, reverse=True):
+        rows = by_q[q]["mapped"]
+        if not rows:
+            continue
+        parts.append(f'<section class="q" data-q="{q}"><h2>{q} <span class="n">&middot; {len(rows)} announcement{"s" if len(rows)>1 else ""}</span></h2>')
+        for date, prid, ministry, title, hits in rows:
+            scheme = "; ".join(s for s, _ in hits)
+            chips = "".join(f'<span class="chip">{_h.escape(s)}</span>' for s, _ in hits)
+            parts.append(
+                f'<div class="row" data-q="{q}" data-s="{_h.escape(scheme, quote=True)}" data-m="{_h.escape(ministry, quote=True)}">'
+                f'<div class="top"><span class="date">{date}</span>{chips}<span class="min">{_h.escape(ministry)}</span></div>'
+                f'<div class="title"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID={prid}" target="_blank" rel="noopener">'
+                f'{_h.escape((title or "")[:160])}</a> <span class="prid">PRID {prid}</span></div></div>')
+        parts.append("</section>")
+    tpl = open(os.path.join(ROOT, "docs/_reportage_template.html")).read()
+    html_out = tpl.replace("__ROWS__", "\n".join(parts)).replace("__TOTAL__", str(total)).replace(
+        "__NQ__", str(len(by_q))).replace("__GEN__", datetime.date.today().isoformat())
+    path = os.path.join(ROOT, "docs/reportage.html")
+    open(path, "w").write(html_out)
+    print(f"reportage html: {sum(len(v['mapped']) for v in by_q.values())} rows pre-rendered -> {path}")
 
 
 if __name__ == "__main__":

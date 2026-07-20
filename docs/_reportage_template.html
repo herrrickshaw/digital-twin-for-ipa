@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quarterly Reportage — announcements × scheme × ministry</title>
+<style>
+:root{
+  --page-bg:#eef1ea; --card:#ffffff; --ink:#1d2321; --muted:#5c6660;
+  --accent:#1f5f5b; --accent-soft:#e3ecea; --line:#d7ddd4; --chip:#f2f5f0;
+  --warn:#8a5a12;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --page-bg:#151a18; --card:#1e2522; --ink:#e6eae7; --muted:#98a39d;
+         --accent:#6fb3ac; --accent-soft:#23332f; --line:#2e3833; --chip:#232b27; --warn:#d9a44a; }
+}
+:root[data-theme="dark"]{ --page-bg:#151a18; --card:#1e2522; --ink:#e6eae7; --muted:#98a39d;
+  --accent:#6fb3ac; --accent-soft:#23332f; --line:#2e3833; --chip:#232b27; --warn:#d9a44a; }
+:root[data-theme="light"]{ --page-bg:#eef1ea; --card:#ffffff; --ink:#1d2321; --muted:#5c6660;
+  --accent:#1f5f5b; --accent-soft:#e3ecea; --line:#d7ddd4; --chip:#f2f5f0; --warn:#8a5a12; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--page-bg);color:var(--ink);
+  font:16px/1.55 "Iowan Old Style",Georgia,serif;}
+header{padding:34px 22px 18px;max-width:1080px;margin:0 auto;}
+h1{font-size:1.75rem;margin:0 0 6px;letter-spacing:-.01em;text-wrap:balance;}
+.sub{color:var(--muted);font-family:-apple-system,"Segoe UI",sans-serif;font-size:.85rem;max-width:70ch;}
+.controls{position:sticky;top:0;z-index:5;background:var(--page-bg);
+  border-bottom:1px solid var(--line);padding:10px 22px;}
+.controls-inner{max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+  font-family:-apple-system,"Segoe UI",sans-serif;font-size:.85rem;}
+select,input[type=search]{background:var(--card);color:var(--ink);border:1px solid var(--line);
+  border-radius:6px;padding:7px 10px;font:inherit;}
+input[type=search]{flex:1;min-width:180px;}
+.count{color:var(--muted);white-space:nowrap;}
+main{max-width:1080px;margin:0 auto;padding:10px 22px 60px;}
+.q{margin-top:34px;}
+.q h2{font-size:1.15rem;border-bottom:2px solid var(--accent);display:inline-block;
+  padding-bottom:3px;margin:0 0 12px;}
+.q h2 .n{color:var(--muted);font-family:-apple-system,sans-serif;font-size:.8rem;font-weight:400;}
+.row{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:8px;padding:11px 15px;margin-bottom:9px;}
+.row .top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;
+  font-family:-apple-system,"Segoe UI",sans-serif;font-size:.76rem;margin-bottom:4px;}
+.chip{background:var(--accent-soft);color:var(--accent);border-radius:99px;padding:2px 10px;font-weight:600;}
+.min{color:var(--muted);}
+.date{color:var(--muted);font-variant-numeric:tabular-nums;}
+.title{font-size:.98rem;}
+.title a{color:inherit;text-decoration:none;}
+.title a:hover{text-decoration:underline;text-decoration-color:var(--accent);}
+.prid{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--accent);}
+.hidden{display:none;}
+.note{color:var(--muted);font-family:-apple-system,sans-serif;font-size:.8rem;
+  border-top:1px dashed var(--line);margin-top:40px;padding-top:14px;max-width:80ch;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Quarterly Reportage</h1>
+  <div class="sub">__TOTAL__ key announcements across __NQ__ quarters (2017Q1 → today), each mapped to its
+  scheme and ministry from the PIB register. Generated __GEN__ by <code>scripts/build_reportage.py</code> —
+  keyword mapping is an index into the register, not a substitute for reading the release.
+  Part of <a href="https://github.com/herrrickshaw/digital-twin-for-ipa" style="color:var(--accent)">digital-twin-for-ipa</a>.</div>
+</header>
+<div class="controls"><div class="controls-inner">
+  <select id="fq"><option value="">All quarters</option></select>
+  <select id="fs"><option value="">All schemes</option></select>
+  <select id="fm"><option value="">All ministries</option></select>
+  <input type="search" id="ft" placeholder="Search titles…">
+  <span class="count" id="count"></span>
+</div></div>
+<main id="list">
+__ROWS__
+</main>
+<div class="note" style="max-width:1080px;margin:0 auto;padding:0 22px 40px;">
+  Every PRID links to the original release on pib.gov.in. Corrections in the underlying registers are
+  displayed, never silent. Companion views: the scheme catalogue, portal directory and leads list in the repo's docs/.
+</div>
+<script>
+const fq=document.getElementById('fq'), fs=document.getElementById('fs'),
+      fm=document.getElementById('fm'), ft=document.getElementById('ft'),
+      count=document.getElementById('count');
+const rows=[...document.querySelectorAll('.row')];
+const secs=[...document.querySelectorAll('.q')];
+const uniq=a=>[...new Set(a)].sort();
+uniq(secs.map(s=>s.dataset.q)).reverse().forEach(v=>fq.add(new Option(v,v)));
+uniq(rows.flatMap(r=>r.dataset.s.split('; '))).forEach(v=>fs.add(new Option(v,v)));
+uniq(rows.map(r=>r.dataset.m)).forEach(v=>fm.add(new Option(v,v)));
+function render(){
+  const q=fq.value,s=fs.value,m=fm.value,t=ft.value.toLowerCase();
+  let vis=0;
+  rows.forEach(r=>{
+    const ok=(!q||r.dataset.q===q)&&(!s||r.dataset.s.split('; ').includes(s))&&
+             (!m||r.dataset.m===m)&&(!t||r.textContent.toLowerCase().includes(t));
+    r.classList.toggle('hidden',!ok); if(ok)vis++;
+  });
+  secs.forEach(sec=>sec.classList.toggle('hidden',!sec.querySelector('.row:not(.hidden)')));
+  count.textContent=vis+' of '+rows.length+' announcements';
+}
+[fq,fs,fm].forEach(el=>el.addEventListener('change',render));
+ft.addEventListener('input',render);
+render();
+</script>
+</body>
+</html>

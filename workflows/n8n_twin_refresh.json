@@ -1,0 +1,131 @@
+{
+  "name": "Digital Twin IPA — auto-refresh",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "17 7 * * *" }
+          ]
+        }
+      },
+      "id": "trigger-daily-pib",
+      "name": "Daily 07:17 (PIB)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "command": "cd /Users/umashankar/digital-twin-for-ipa && /usr/bin/python3 scripts/refresh_twin.py pib 2>&1"
+      },
+      "id": "exec-pib",
+      "name": "refresh_twin.py pib",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "23 8 * * 1" }
+          ]
+        }
+      },
+      "id": "trigger-weekly",
+      "name": "Weekly Mon 08:23",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 220]
+    },
+    {
+      "parameters": {},
+      "id": "trigger-manual",
+      "name": "Manual run",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 420]
+    },
+    {
+      "parameters": {
+        "command": "cd /Users/umashankar/digital-twin-for-ipa && /usr/bin/python3 scripts/refresh_twin.py weekly 2>&1"
+      },
+      "id": "exec-weekly",
+      "name": "refresh_twin.py weekly",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [220, 320]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse refresh output into alerts.\n// CHANGE lines = state transitions (route up/down flips, UNNATI notice edits, new RBI WSS issue).\n// DOWN lines are informational unless newly flipped (those also appear as CHANGE).\nconst out = ($json.stdout || '') + '\\n' + ($json.stderr || '');\nconst lines = out.split('\\n');\nconst changes = lines.filter(l => l.trim().startsWith('CHANGE'));\nconst downs = lines.filter(l => l.trim().startsWith('DOWN'));\nconst unnatiResumed = /registration_stopped=False/.test(out);\nif (unnatiResumed) changes.push('CHANGE UNNATI registration appears RESUMED — verify unnati.dpiit.gov.in immediately');\nreturn [{ json: {\n  hasChanges: changes.length > 0,\n  changes,\n  downs,\n  summary: `twin weekly: ${changes.length} change(s), ${downs.length} portal(s) down`,\n  raw: out.slice(0, 6000)\n}}];"
+      },
+      "id": "parse-output",
+      "name": "Detect CHANGE lines",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 320]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "version": 2 },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.hasChanges }}",
+              "rightValue": true,
+              "operator": { "type": "boolean", "operation": "true", "singleValue": true }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "if-changes",
+      "name": "Any changes?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [660, 320]
+    },
+    {
+      "parameters": {
+        "fromEmail": "twin-bot@localhost",
+        "toEmail": "umashankartd1991@gmail.com",
+        "subject": "={{ '[digital-twin] ' + $json.summary }}",
+        "text": "={{ $json.changes.join('\\n') + '\\n\\nPortals down:\\n' + $json.downs.join('\\n') + '\\n\\n--- raw ---\\n' + $json.raw }}",
+        "options": {}
+      },
+      "id": "email-alert",
+      "name": "Email alert (attach SMTP credential)",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [880, 220]
+    },
+    {
+      "parameters": {
+        "command": "cd /Users/umashankar/digital-twin-for-ipa && git add state/ && git -c user.name='twin-bot' -c user.email='twin-bot@localhost' commit -m 'chore: scheduled refresh snapshots (n8n)' --quiet || true"
+      },
+      "id": "commit-snapshots",
+      "name": "Commit snapshots",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [880, 420]
+    }
+  ],
+  "connections": {
+    "Daily 07:17 (PIB)": { "main": [[{ "node": "refresh_twin.py pib", "type": "main", "index": 0 }]] },
+    "Weekly Mon 08:23": { "main": [[{ "node": "refresh_twin.py weekly", "type": "main", "index": 0 }]] },
+    "Manual run": { "main": [[{ "node": "refresh_twin.py weekly", "type": "main", "index": 0 }]] },
+    "refresh_twin.py weekly": { "main": [[{ "node": "Detect CHANGE lines", "type": "main", "index": 0 }]] },
+    "Detect CHANGE lines": { "main": [[{ "node": "Any changes?", "type": "main", "index": 0 }]] },
+    "Any changes?": {
+      "main": [
+        [{ "node": "Email alert (attach SMTP credential)", "type": "main", "index": 0 }],
+        [{ "node": "Commit snapshots", "type": "main", "index": 0 }]
+      ]
+    },
+    "Email alert (attach SMTP credential)": { "main": [[{ "node": "Commit snapshots", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1", "timezone": "Asia/Kolkata" },
+  "pinData": {}
+}

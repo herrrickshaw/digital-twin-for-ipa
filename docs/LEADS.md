@@ -1,204 +1,205 @@
 # Leads — profitable firms × open government lanes
 
-*Generated 2026-07-20 by `scripts/build_leads.py` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
+*Generated 2026-07-20 from `layers/16_leads.json` (206 leads, 7 markets) by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
 
-## Aerospace & Defence (11 leads)
+> **China / Press Note 3**: Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected — BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' — SAIC diluted MG Motor India to JSW (49%→39% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts c…
 
-**Lanes**: iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project); Make-I/II (live EOIs: Viraj 03-Aug, TAC 15-Aug); SRIJAN/PIL (assured import-substitution demand); Defence corridors UP/TN (land + capex)
+## Electronics & Semiconductors (23 leads)
 
-**State landings**: Karnataka A&D 2022-27; UP Defence Corridor (UPEIDA); TN aerospace packages
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 116.0 | MICRON TECHNOLOGY INC | United States | 10-K: India×12, APAC×102, trend 2 | Other Government Incentive Commitments We receive incentives for the construction of a new assembly and test facility in Gujarat, India, representing  |
+| 112.3 | Apple Inc. | United States | 10-K: India×7, APAC×76, trend 2 | , Asia and Europe to supply and manufacture many components, and on partners primarily located in Asia, for final assembly of substantially all of the |
+| 106.4 | NVIDIA CORP | United States | 10-K: India×3, APAC×98, trend 0 | The laws of certain foreign countries in which our products are or may be manufactured or sold, including various countries in Asia, may not protect o |
+| 105 | Panasonic Holdings Corporation | Japan | HIGH | Panasonic Electric Works executives (Outlook Business interview): "India remains our top priority in our global expansion strategy" |
+| 105 | LG Electronics Inc. | South Korea | HIGH | Listed LG Electronics India Limited (LGEIL) on the NSE on 14 Oct 2025 — IPO of ~INR 11,607 cr (~USD 1.31 bn), 54x subscribed; stock closed +48% on deb |
+| 105 | Luxshare Precision Industry Co., Ltd. | China | HIGH | AR-level footprint statement: manufacturing bases in 'China, India, and Vietnam' (~420,000 employees globally) |
+| 105 | Hangzhou Hikvision Digital Technology Co | China | HIGH | Prama Hikvision India Pvt Ltd (est. 2009, Mumbai) — Indian-majority JV, the archetypal PN3-compatible structure: manufacturing done under an Indian pa |
+| 103.5 | Sandisk Corp | United States | 10-K: India×1, APAC×61, trend None | We conduct our operations at large, high-volume, purpose-built facilities in Japan, Malaysia and throughout Asia. |
+| 103.5 | Broadcom Inc. | United States | 10-K: India×1, APAC×61, trend 0 | Many of our semiconductor customers design products in North America or Europe that are then manufactured in Asia. |
+| 99.2 | Marvell Technology, Inc. | United States | 10-K: India×7, APAC×113, trend 0 | Because many manufacturers and manufacturing subcontractors of our customers are located in Asia, we expect that most of our net revenue will continue |
+| 96.4 | KERNEX MICROSYS(I) LTD | India | domestic |  |
+| 95.4 | PREMIER ENERGIES LIMITED | India | domestic |  |
 
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 96.2 | Howmet Aerospace Inc. | HWM | United States | 20.2% | 33.8% | 19.1% | ✅ |
-| 94.2 | GENERAL ELECTRIC CO | GE | United States | 17.7% | 48.2% | 21.1% | ✅ |
-| 91.2 | DATA PATTERNS INDIA LTD | DATAPATTNS | India | 29.3% | 16.7% | -13.0% | ✅ |
-| 89.2 | CARPENTER TECHNOLOGY CORP | CRS | United States | 15.8% | 24.9% | 11.6% | ✅ |
-| 88.5 | GARDEN REACH SHIP&ENG LTD | GRSE | India | 10.7% | 31.8% | 29.1% | ✅ |
-| 86.0 | UNIMECH AEROSPACE N MFG L | UNIMECH | India | 26.3% | 9.0% | 19.6% | ✅ |
-| 83.5 | PARAS DEF AND SPCE TECH L | PARAS | India | 18.5% | 13.1% | 57.9% | ✅ |
-| 78.4 | GENERAL DYNAMICS CORP | GD | United States | 8.1% | 18.0% | 10.3% | ✅ |
+## Chemicals & Plastics (21 leads)
 
-## Auto, EV & Components (11 leads)
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105.3 | CF Industries Holdings, Inc. | United States | 10-K: India×5, APAC×12, trend 2 | ogen, energy, environmental or carbon policies may support development of additional nitrogen production in locations outside North America, including |
+| 105 | Croda International Plc | United Kingdom | HIGH | AR 2024: 'A new surfactants plant in Dahej, India is due to be commissioned in 2025, supporting high-growth markets in Asia' - concrete NEW India manu |
+| 105 | Orica Limited | Australia | HIGH | Orica operates in India through Indian Explosives Private Limited (incorporated 1999, Hyderabad HQ), with ~634 employees (Mar 2026) and revenue of Rs  |
+| 93.6 | SOLAR INDUSTRIES (I) LTD | India | domestic |  |
+| 90.4 | ECOLAB INC. | United States | 10-K: India×8, APAC×24, trend 0 | Approximately 43% of our employees are employed in North America, 21% in Europe, 12% in Latin America, 8% in Asia Pacific, 8% in India, Middle East an |
+| 90 | Wanhua Chemical Group Co., Ltd. | China | MEDIUM | Company profile/AR materials list 'over ten branches across Europe, the Middle East, America, Japan, Russia, and India' — India is an explicitly named |
+| 90 | Johnson Matthey Plc | United Kingdom | MEDIUM | Annual Report 2025: 'good growth in Asia as their largest customers in Japan and India outperformed their respective markets' (Clean Air) |
+| 89.1 | PIDILITE INDUSTRIES LTD | India | domestic |  |
+| 83.7 | ASIAN PAINTS LIMITED | India | domestic |  |
+| 81.1 | CHAMBAL FERTILIZERS LTD | India | domestic |  |
+| 80.1 | BALL Corp | United States | 10-K: India×6, APAC×8, trend -2 | ​ Beverage Packaging, Other ​ Our aluminum beverage packaging operations in the beverage packaging, other, segment consist of three facilities – two i |
+| 77.9 | Corteva, Inc. | United States | 10-K: India×5, APAC×37, trend 2 | th was driven primarily by the expected recovery in Brazil Safrinha corn and growth in North America soybeans and cotton, partially offset by reduced  |
 
-**Lanes**: PM E-DRIVE (e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms); PLI-Auto / PLI-ACC (operational)
+## Auto, EV & Components (18 leads)
 
-**State landings**: TN EV 2023 (20% battery capital subsidy); MP EV 2025; UP EV 2022 + upevsubsidy portal
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105 | Suzuki Motor Corporation | Japan | HIGH | "Growth investment will primarily focus on increasing production capacity to meet growing demand in India and developing technology to minimize energy |
+| 105 | Hyundai Motor Company | South Korea | HIGH | Listed Hyundai Motor India Ltd in Oct 2024 in a ~Rs 27,870 cr offering the company itself describes as 'the largest in India's history' |
+| 105 | Kia Corporation | South Korea | HIGH | Anantapur (Andhra Pradesh) plant capacity expanded from 300,000 to ~350,000 units/yr; India accounts for ~9% of Kia's global sales |
+| 105 | Hyundai Mobis Co., Ltd | South Korea | HIGH | Official press release (8 Dec 2025): 'it has established a specialized software research branch in Bengaluru, India's IT hub... alongside its existing |
+| 105 | BYD Company Limited | China | HIGH | BYD India registered 2007 in Chennai with an electronics manufacturing plant; India listed among BYD's 30+ industrial-park countries alongside US, Bra |
+| 92.2 | BAJAJ AUTO LIMITED | India | domestic |  |
+| 90 | DENSO Corporation | Japan | MEDIUM | Integrated Report 2025 coverage (via aftermarketnews summary of the report; denso.com blocked direct fetch): DENSO plans to develop business in India  |
+| 85 | SAIC Motor Corporation Limited | China | HIGH | MG Motor India (Halol, Gujarat plant) restructured 2023 into JSW MG Motor India JV — JSW took 35% at ~$1.2bn valuation, the flagship PN3-era 'Indianiz |
+| 84.5 | GENTEX CORP | United States | 10-K: India×0, APAC×47, trend 0 | In April 2025, the Company acquired VOXX, which operates primarily out of facilities in Hauppauge, NY, and Indianapolis, IN. |
+| 78.6 | SONA BLW PRECISION FRGS L | India | domestic |  |
+| 76.0 | MARUTI SUZUKI INDIA LTD. | India | domestic |  |
+| 74.8 | SANSERA ENGINEERING LTD | India | domestic |  |
 
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 92.2 | BAJAJ AUTO LIMITED | BAJAJ-AUTO | India | 16.9% | 28.1% | 37.0% | ✅ |
-| 82.2 | GENTEX CORP | GNTX | United States | 14.8% | 15.6% | 17.1% | ✅ |
-| 78.6 | SONA BLW PRECISION FRGS L | SONACOMS | India | 14.4% | 10.7% | 45.4% | ✅ |
-| 76.0 | MARUTI SUZUKI INDIA LTD. | MARUTI | India | 8.0% | 14.4% | 28.2% | ✅ |
-| 74.8 | SANSERA ENGINEERING LTD | SANSERA | India | 9.3% | 11.1% | 27.8% | ✅ |
-| 72.5 | BELRISE INDUSTRIES LTD | BELRISE | India | 5.2% | 12.5% | 12.1% | ✅ |
-| 51.1 | Dorman Products, Inc. | DORM | United States | 8.8% | 13.6% | 4.2% |  |
-| 44.9 | LEAR CORP | LEA | United States | 2.2% | 12.2% | 4.7% |  |
+## White Goods & Electricals (21 leads)
 
-## Chemicals & Plastics (15 leads)
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105 | Mitsubishi Electric Corporation | Japan | HIGH | "Air-conditioning & refrigeration systems business: Strengthening capabilities in markets in Europe, North America, and India" (Integrated Report 2025 |
+| 105 | Haier Smart Home Co., Ltd. | China | HIGH | AR 2024 (English, smart-home.haier.com): South Asia revenue RMB 11.53bn, +21.05% YoY; 'Indian market... revenue growing by 30%... revenue grew over 30 |
+| 105 | Midea Group Co., Ltd. | China | HIGH | Committed >Rs 13.5bn (~$190m) to the Midea Science & Technology Park near Pune (~270,000 sqm; capacity 500k each refrigerators/washers/purifiers/heate |
+| 105 | Unilever PLC | United Kingdom | HIGH | India is one of Unilever's core emerging-market growth pillars; >50% of group turnover is from emerging markets with India among the named core growth |
+| 102.8 | GE Vernova Inc. | United States | 10-K: India×6, APAC×17, trend -3 | R&D is performed within each of our businesses, and at multiple locations around the world, including at our research facilities in Niskayuna, New Yor |
+| 99.6 | Vertiv Holdings Co | United States | 10-K: India×9, APAC×72, trend -1 | We have significant manufacturing and operations facilities in the Americas, Asia Pacific and Europe, Middle East & Africa. |
+| 95.2 | SUZLON ENERGY LIMITED | India | domestic |  |
+| 90 | LG Energy Solution, Ltd. | South Korea | MEDIUM | Signed a non-binding agreement with JSW Energy for a 50:50 India battery JV — >USD 1.5 bn, ~10 GWh plant for EV and renewable-storage cells; JSW to ta |
+| 90 | Reckitt Benckiser Group plc | United Kingdom | MEDIUM | 'India delivered double-digit growth led by strong growth in Germ Protection (Dettol), Intimate Wellness (Durex), and Household Care (Finish)' |
+| 83.7 | HITACHI ENERGY INDIA LTD | India | domestic |  |
+| 80.8 | CG POWER AND IND SOL LTD | India | domestic |  |
+| 77.9 | R R KABEL LIMITED | India | domestic |  |
 
-**Lanes**: PCPIR framework (partial); TDB Chemical CFP (open); Gujarat thrust-sector chemicals (25-40% eFCI)
+## Pharma & Bulk Drugs (17 leads)
 
-**State landings**: Gujarat (chemicals thrust); Odisha IPR (priority sector); Rajasthan RIPS
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105 | Eisai Co., Ltd. | Japan | HIGH | "Eisai established Eisai Knowledge Centre, India, in Andhra Pradesh in 2009. Since then the facility has served as a core operational hub for our glob |
+| 105 | AstraZeneca PLC | United Kingdom | HIGH | Listed Indian subsidiary AstraZeneca Pharma India Ltd 'marks a consistent 32% growth as the company announces its annual results for FY 2024-25' (comp |
+| 104.0 | ELI LILLY & Co | United States | 10-K: India×0, APAC×79, trend 0 | Business Eli Lilly and Company (referred to as the company, Lilly, we, or us) was incorporated in 1901 in Indiana to succeed to the drug manufacturing |
+| 90 | GSK plc | United Kingdom | MEDIUM | Listed Indian subsidiary GlaxoSmithKline Pharmaceuticals Ltd FY2024-25 'revenue of Rs 3,407 crores with 6% growth... strong volume recovery despite NL |
+| 87.1 | ZYDUS LIFESCIENCES LTD | India | domestic |  |
+| 85.5 | SUN PHARMACEUTICAL IND L | India | domestic |  |
+| 82.3 | LAURUS LABS LIMITED | India | domestic |  |
+| 79.8 | GLAND PHARMA LIMITED | India | domestic |  |
+| 78.3 | AMGEN INC | United States | 10-K: India×3, APAC×102, trend -1 | , Australia, India, Singapore, South Korea and Taiwan), and biosimilar products in market (e. |
+| 75.8 | GLENMARK PHARMACEUTICALS | India | domestic |  |
+| 75.0 | AUROBINDO PHARMA LTD | India | domestic |  |
+| 75 | CSL Limited | Australia | LOW | CSL 2025 Annual Report describes serving patients in '100+ countries' but the reviewed extracts contain no India-specific strategy, investment or manu |
 
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 97.2 | CF Industries Holdings, Inc. | CF | United States | 23.7% | 27.3% | 19.4% | ✅ |
-| 93.6 | SOLAR INDUSTRIES (I) LTD | SOLARINDS | India | 17.1% | 31.3% | 40.9% | ✅ |
-| 89.1 | PIDILITE INDUSTRIES LTD | PIDILITIND | India | 16.8% | 23.5% | 14.1% | ✅ |
-| 85.2 | ECOLAB INC. | ECL | United States | 12.8% | 22.4% | 10.0% | ✅ |
-| 83.7 | ASIAN PAINTS LIMITED | ASIANPAINT | India | 12.2% | 20.9% | 10.6% | ✅ |
-| 81.1 | CHAMBAL FERTILIZERS LTD | CHAMBLFERT | India | 9.4% | 20.4% | 13.7% | ✅ |
-| 76.7 | BALL Corp | BALL | United States | 6.9% | 16.8% | 16.3% | ✅ |
-| 74.3 | GUJARAT FLUOROCHEM LTD | FLUOROCHEM | India | 11.6% | 7.5% | 11.7% | ✅ |
+## Specialty Steel & Metals (23 leads)
 
-## Electronics & Semiconductors (14 leads)
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105 | Nippon Steel Corporation | Japan | HIGH | "AM/NS India has agreed to acquire land for a construction site of integrated steel mill from the government of Andhra Pradesh" — 890 ha (2,200 acres) |
+| 105 | POSCO Holdings Inc. | South Korea | HIGH | Oct 2024 MoU then Jul 2025 Heads of Agreement with JSW Group; JV agreement for a 50:50 co-managed integrated steel mill: 'The joint venture is structu |
+| 100.8 | SOUTHERN COPPER CORP/ | United States | 10-K: India×0, APAC×16, trend 0 |  |
+| 99.6 | NATIONAL ALUMINIUM CO LTD | India | domestic |  |
+| 90 | BHP Group Limited | Australia | MEDIUM | 'Indian commodity demand continues to grow strongly, though competing imports from China narrowed margins for the steel industry over the last year.'  |
+| 90 | Fortescue Ltd | Australia | MEDIUM | PMO readout (23 May 2023, Sydney): 'Prime Minister welcomed Fortescue Group's plans to work with Indian companies in the field of Green Hydrogen.' |
+| 79.4 | AEROFLEX INDUSTRIES LTD | India | domestic |  |
+| 77.6 | JINDAL STAINLESS LIMITED | India | domestic |  |
+| 76.2 | STEEL DYNAMICS INC | United States | 10-K: India×0, APAC×5, trend 0 | He was also a part of the team that constructed the company’s first steel mill in Butler, Indiana. |
+| 75 | Baoshan Iron & Steel Co., Ltd. (Baosteel | China | LOW | Stated strategy: 'strategically expanding its markets in South and Southeast Asia' with exports targeted at 10m t/yr by 2028 — South Asia is a named e |
+| 75 | Rio Tinto Group | United Kingdom | LOW | 2024 Annual Report / results materials discuss India primarily as a demand-side driver (steel/aluminium demand growth) rather than an investment desti |
+| 75 | BlueScope Steel Limited | Australia | LOW | Direction of travel is EXIT, not entry: in December 2025 BlueScope signed a binding agreement to sell its 50% stake in the Tata BlueScope Steel JV to  |
 
-**Lanes**: ECMS (open -- Rs 40,000cr outlay, FCFS); MPMS (approved 15-Jul-2026, Rs 62,500cr); Semicon 2.0 / ISM 2.0 (approved 15-Jul-2026, Rs 1.27L cr); SPECS (legacy 25% capex)
+## Shipbuilding & Marine (8 leads)
 
-**State landings**: UP (ECMS top-up = equal to central); Assam (+40% of ISM capex); TN (Semiconductor 2024 + Mission 2030); Gujarat (semicon ancillary thrust)
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105 | Mitsui O.S.K. Lines, Ltd. | Japan | HIGH | "...for example, oil and gas business in India and Southeast Asia, which are expected to see increased population and economic growth" (MOL REPORT 202 |
+| 90 | COSCO SHIPPING Holdings Co., Ltd. | China | MEDIUM | COSCO/OOCL liner networks call Indian ports (Nhava Sheva, Mundra, Chennai) as routine commercial operations; OOCL India and COSCO Shipping Lines India |
+| 82.1 | SHREEJI SHIPPING GLOBAL L | India | domestic |  |
+| 75.4 | ADANI PORT & SEZ LTD | India | domestic |  |
+| 74.3 | JSW INFRASTRUCTURE LTD | India | domestic |  |
+| 52.5 | GENCO SHIPPING & TRADING LTD | United States | 10-K: India×1, APAC×45, trend 0 | As a result, a negative change in economic conditions in any Asia Pacific country, particularly in China, India, or Japan, could adversely affect our  |
+| 44.4 | Matson, Inc. | United States | 10-K: India×0, APAC×68, trend 0 |  |
+| 35.5 | KIRBY CORP | United States | 10-K: India×0, APAC×0, trend 0 |  |
 
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 100.0 | MICRON TECHNOLOGY INC | MU | United States | 55.9% | 66.6% | 345.7% | ✅ |
-| 100.0 | NVIDIA CORP | NVDA | United States | 63.0% | 114.3% | 85.2% | ✅ |
-| 100.0 | Sandisk Corp | SNDK | United States | 34.2% | 39.3% | 251.0% | ✅ |
-| 100.0 | Apple Inc. | AAPL | United States | 27.2% | 141.5% | 16.6% | ✅ |
-| 100.0 | Broadcom Inc. | AVGO | United States | 38.9% | 37.3% | 47.9% | ✅ |
-| 96.4 | KERNEX MICROSYS(I) LTD | KERNEX | India | 20.5% | 43.6% | 206.5% | ✅ |
-| 95.4 | PREMIER ENERGIES LIMITED | PREMIERENE | India | 19.3% | 42.3% | 37.6% | ✅ |
-| 90.7 | Marvell Technology, Inc. | MRVL | United States | 29.0% | 16.0% | 27.6% | ✅ |
+## Aerospace & Defence (14 leads)
 
-## Food Processing (12 leads)
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105 | Hanwha Aerospace Co., Ltd. | South Korea | HIGH | Signed second India K9 contract on 3 Apr 2025: ~USD 253-254 mn for 100 additional K9 Vajra-T self-propelled howitzers for the Indian Army (Hanwha Aero |
+| 105 | Rolls-Royce Holdings plc | United Kingdom | HIGH | Rolls-Royce intends to establish India as a strategic 'home market' and is 'looking at more than doubling the size of its workforce to approximately 1 |
+| 100.5 | GENERAL ELECTRIC CO | United States | 10-K: India×1, APAC×15, trend 1 | S:        Singapore 178        United Kingdom 78        Ireland 60        Hungary 52        Italy 46        India 36        Other Non-U. |
+| 98.2 | Howmet Aerospace Inc. | United States | 10-K: India×2, APAC×20, trend 0 | , and Wheels India Limited. |
+| 91.2 | DATA PATTERNS INDIA LTD | India | domestic |  |
+| 90.0 | CARPENTER TECHNOLOGY CORP | United States | 10-K: India×0, APAC×16, trend 0 |  |
+| 90 | BAE Systems plc | United Kingdom | MEDIUM | Hawk Mk132 trainer built in collaboration with HAL: 'HAL's production line in India where the Hawk aircraft are assembled is a demonstration of the su |
+| 88.5 | GARDEN REACH SHIP&ENG LTD | India | domestic |  |
+| 86.0 | UNIMECH AEROSPACE N MFG L | India | domestic |  |
+| 83.5 | PARAS DEF AND SPCE TECH L | India | domestic |  |
+| 78.6 | GENERAL DYNAMICS CORP | United States | 10-K: India×0, APAC×4, trend 0 |  |
+| 77.5 | APOLLO MICRO SYSTEMS LTD | India | domestic |  |
 
-**Lanes**: PLI-FPI (operational); PMKSY (convergence with AIF 3% subvention); AIF (portal OPEN, Rs 94,272cr sanctioned); TDB Agriculture CFP (open)
+## Medical Devices (12 leads)
 
-**State landings**: AP Food Processing 4.0; MP (IPP + food parks); Jharkhand Food & Feed 2024
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 105 | Cochlear Limited | Australia | HIGH | FY25 results commentary explicitly discusses India: 'India saw low volumes and a high premium-tier mix' in 1H25, with 'strong growth in the smaller, b |
+| 105 | Ansell Limited | Australia | HIGH | 'Ansell is commencing an $80 million investment over three years for a new manufacturing site in Tamil Nadu, southern India, designed to produce a wid |
+| 97.3 | DEXCOM INC | United States | 10-K: India×0, APAC×38, trend 0 | We capture ethnic diversity data in the United States only, comprised of the following categories: Black or African American, Hispanic or Latino, Asia |
+| 90 | Terumo Corporation | Japan | MEDIUM | Terumo Report 2024 subsidiary table lists "Terumo Penpol Pvt. Ltd., Kerala, India" among principal consolidated subsidiaries (verified) |
+| 90 | Shenzhen Mindray Bio-Medical Electronics | China | MEDIUM | Earnings-call/AR materials: 'developing countries experienced growth exceeding 30%' — the company's fastest-growing segment, with India its largest de |
+| 90 | Smith & Nephew plc | United Kingdom | MEDIUM | FY2024: 'Emerging Markets revenue was up 9.5% (7.6% reported), with strong double-digit growth across the Middle East, India and Latin America' - Indi |
+| 83.0 | Edwards Lifesciences Corp | United States | 10-K: India×0, APAC×41, trend 0 |  |
+| 77.9 | Solventum Corp | United States | 10-K: India×6, APAC×20, trend 2 | stiture impacts include lost sales from the Company’s Purification and Filtration business that was sold in September 2025, certain health care busine |
+| 59.3 | ALIGN TECHNOLOGY INC | United States | 10-K: India×2, APAC×54, trend 1 | The Invisalign Palatal Expander System is currently available in the United States, Canada, Australia, New Zealand, Hong Kong, Singapore, Vietnam, Jap |
+| 58.5 | MASIMO CORP | United States | 10-K: India×3, APAC×27, trend 0 |  |
+| 50.9 | ZIMMER BIOMET HOLDINGS, INC. | United States | 10-K: India×1, APAC×83, trend 0 | Our history dates to 1927, when Zimmer Manufacturing Company, a predecessor, was founded in Warsaw, Indiana. |
+| 48.0 | BECTON DICKINSON & CO | United States | 10-K: India×3, APAC×59, trend 0 | -  Greater Asia , which includes facilities in Australia, Bangladesh, China, India, Indonesia, Japan, Malaysia, New Zealand, the Philippines, Singapor |
 
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 76.3 | KRBL LIMITED | KRBL | India | 10.6% | 11.7% | 5.8% | ✅ |
-| 72.5 | Mama's Creations, Inc. | MAMA | United States | 3.2% | 14.9% | 49.7% | ✅ |
-| 68.9 | TRIVENI ENGG. & INDS. LTD | TRIVENI | India | 4.3% | 8.3% | -7.4% | ✅ |
-| 66.9 | SANSTAR LIMITED | SANSTAR | India | 4.4% | 5.1% | -14.5% | ✅ |
-| 61.4 | PRATAAP SNACKS LIMITED | DIAMONDYD | India | 0.6% | 1.4% | 4.9% | ✅ |
-| 51.8 | SANFILIPPO JOHN B & SON INC | JBSS | United States | 5.8% | 18.3% | 8.0% |  |
-| 50.2 | SMITHFIELD FOODS INC | SFD | United States | 6.5% | 14.9% | 0.8% |  |
-| 47.5 | SEABOARD CORP /DE/ | SEB | United States | 5.9% | 11.6% | 3.6% |  |
+## Textiles & Apparel (16 leads)
 
-## Green Energy & Fuels (16 leads)
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 100.3 | RALPH LAUREN CORP | United States | 10-K: India×2, APAC×127, trend 2 | hat the participating institutions will be unable to fulfill their obligations to provide financing in accordance with the terms of the Global Credit  |
+| 97.0 | TAPESTRY, INC. | United States | 10-K: India×2, APAC×85, trend 1 | During fiscal 2025, manufacturers of Coach products were primarily located in Vietnam, Cambodia, the Philippines and India and no individual vendor pr |
+| 91.6 | PAGE INDUSTRIES LTD | India | domestic |  |
+| 90 | ASICS Corporation | Japan | MEDIUM | "I believe that we can achieve further brand penetration in Greater China, and that Southeast Asia and India will continue to be growth drivers." (Int |
+| 88.0 | Kontoor Brands, Inc. | United States | 10-K: India×0, APAC×28, trend -2 |  |
+| 85.6 | SHANTI GOLD INTERNATION L | India | domestic |  |
+| 81.2 | KPR MILL LTD. | India | domestic |  |
+| 78.4 | PEARL GLOBAL IND LIMITED | India | domestic |  |
+| 73.6 | STEVEN MADDEN, LTD. | United States | 10-K: India×2, APAC×92, trend 0 | n or operate any foreign manufacturing facilities; rather, we use agents and our own sourcing offices to source our products from independently owned  |
+| 72.9 | NITIN SPINNERS LIMITED | India | domestic |  |
+| 72.7 | DECKERS OUTDOOR CORP | United States | 10-K: India×0, APAC×53, trend 0 | Manufacturing and Supply Chain The production of our finished goods is outsourced to independent manufacturers , the majority of which are in Southeas |
+| 71.4 | SPORTKING INDIA LIMITED | India | domestic |  |
 
-**Lanes**: NGHM SIGHT (electrolyser + GH2/ammonia windows via SECI); BESS VGF via PSDF (Jul-2025); PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026); Ethanol/SATAT (multi-feedstock conversions open)
+## Green Energy & Fuels (17 leads)
 
-**State landings**: Odisha (GH2: 20y power package, uncapped 30% capital); Gujarat (green-energy thrust 25-40% eFCI); Rajasthan (RIPS boosters)
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 96.9 | AMERICAN EXPRESS CO | United States | 10-K: India×6, APAC×18, trend 0 | , Alipay, PayPal and Shop Pay), as well as regional payment networks (such as the National Payments Corporation of India). |
+| 93.5 | COAL INDIA LTD | India | domestic |  |
+| 90.9 | EOG RESOURCES INC | United States | 10-K: India×0, APAC×2, trend 0 | , North Dakota and Wyoming, as well as in other areas, are granted by the federal government and administered by the Bureau of Land Management (BLM) a |
+| 90 | Woodside Energy Group Ltd | Australia | MEDIUM | Woodside portfolio sales projections show India as a growth market: sales volumes projected to rise from 13 MMboe (base) to 48 MMboe (growth case) bet |
+| 86.0 | NHPC LTD | India | domestic |  |
+| 81.5 | AMERICAN ELECTRIC POWER CO INC | United States | 10-K: India×0, APAC×1, trend 0 | As of December 31, 2025, approximately 8%, 23% and 15% of the Registrants’ available credit facilities were with European, Canadian, and Asian banks,  |
+| 80.7 | NTPC LTD | India | domestic |  |
+| 75.2 | ADANI GREEN ENERGY LTD | India | domestic |  |
+| 73.1 | ADANI ENERGY SOLUTION LTD | India | domestic |  |
+| 69.8 | PTC INC. | India | domestic |  |
+| 68.9 | JAIPRAKASH POWER VEN. LTD | India | domestic |  |
+| 67.9 | ADANI POWER LTD | India | domestic |  |
 
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 93.5 | COAL INDIA LTD | COALINDIA | India | 18.5% | 28.1% | 16.2% | ✅ |
-| 93.0 | AMERICAN EXPRESS CO | AXP | United States | 16.3% | 34.4% | 11.6% | ✅ |
-| 90.8 | EOG RESOURCES INC | EOG | United States | 23.3% | 18.2% | 15.6% | ✅ |
-| 86.0 | NHPC LTD | NHPC | India | 32.4% | 9.0% | 19.2% | ✅ |
-| 81.4 | AMERICAN ELECTRIC POWER CO INC | AEP | United States | 16.3% | 12.6% | 10.2% | ✅ |
-| 80.7 | NTPC LTD | NTPC | India | 14.4% | 13.7% | 8.0% | ✅ |
-| 75.2 | ADANI GREEN ENERGY LTD | ADANIGREEN | India | 12.7% | 7.6% | 14.3% | ✅ |
-| 73.1 | ADANI ENERGY SOLUTION LTD | ADANIENSOL | India | 8.3% | 9.7% | 16.8% | ✅ |
+## Food Processing (16 leads)
 
-## Medical Devices (7 leads)
-
-**Lanes**: PLI Medical Devices + parks (operational); TDB Medical Devices CFP (open)
-
-**State landings**: Telangana LS 2026-30; TN (structured packages); HP medical-device park
-
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 95.4 | DEXCOM INC | DXCM | United States | 19.3% | 35.6% | 15.0% | ✅ |
-| 80.9 | Edwards Lifesciences Corp | EW | United States | 17.4% | 10.5% | 16.7% | ✅ |
-| 68.9 | Solventum Corp | SOLV | United States | 17.3% | 34.8% | -3.0% |  |
-| 55.6 | MASIMO CORP | MASI | United States | 4.9% | 25.0% | 8.5% |  |
-| 50.6 | ALIGN TECHNOLOGY INC | ALGN | United States | 10.5% | 10.8% | 6.2% |  |
-| 46.3 | ZIMMER BIOMET HOLDINGS, INC. | ZBH | United States | 9.0% | 6.1% | 9.3% |  |
-| 43.5 | BECTON DICKINSON & CO | BDX | United States | 5.1% | 6.7% | 5.2% |  |
-
-## Pharma & Bulk Drugs (13 leads)
-
-**Lanes**: PLI Pharma / bulk drug parks (operational); PRIP (R&D push); TDB Rare Disease CFP (open)
-
-**State landings**: Telangana Next-Gen Life Sciences 2026-30 (full stack); Himachal (Nalagarh ecosystem); Sikkim (legacy hub)
-
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 100.0 | ELI LILLY & Co | LLY | United States | 35.0% | 107.5% | 55.5% | ✅ |
-| 87.1 | ZYDUS LIFESCIENCES LTD | ZYDUSLIFE | India | 18.6% | 18.3% | 16.2% | ✅ |
-| 85.5 | SUN PHARMACEUTICAL IND L | SUNPHARMA | India | 19.6% | 14.7% | 12.8% | ✅ |
-| 82.3 | LAURUS LABS LIMITED | LAURUSLABS | India | 13.1% | 17.7% | 5.3% | ✅ |
-| 79.8 | GLAND PHARMA LIMITED | GLAND | India | 16.0% | 10.5% | 22.3% | ✅ |
-| 75.8 | GLENMARK PHARMACEUTICALS | GLENMARK | India | 8.0% | 14.1% | 14.3% | ✅ |
-| 75.0 | AUROBINDO PHARMA LTD | AUROPHARMA | India | 10.4% | 9.9% | 5.6% | ✅ |
-| 71.8 | AMGEN INC | AMGN | United States | 21.0% | 101.3% | 5.8% |  |
-
-## Shipbuilding & Marine (6 leads)
-
-**Lanes**: SBFAS 2.0 (to 31-Mar-2036, 15-25% of vessel cost); Maritime Development Fund (Rs 25,000cr incl. IIF Rs 5,000cr); SbDS (Rs 19,989cr capacity building); Ports/shipping bills 2024-25 (legal modernisation done)
-
-**State landings**: Gujarat (shipping-container thrust + scrapping); AP/TN coastal packages
-
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 82.1 | SHREEJI SHIPPING GLOBAL L | SHREEJISPG | India | 21.5% | 29.9% | 20.5% | ✅ |
-| 75.4 | ADANI PORT & SEZ LTD | ADANIPORTS | India | 33.1% | 15.6% | 26.5% | ✅ |
-| 74.3 | JSW INFRASTRUCTURE LTD | JSWINFRA | India | 28.4% | 14.0% | 18.4% | ✅ |
-| 49.8 | GENCO SHIPPING & TRADING LTD | GNK | United States | 4.4% | 1.9% | 60.6% | ✅ |
-| 41.0 | Matson, Inc. | MATX | United States | 12.9% | 16.0% | -3.1% |  |
-| 35.5 | KIRBY CORP | KEX | United States | 10.5% | 10.7% | 7.4% |  |
-
-## Specialty Steel & Metals (14 leads)
-
-**Lanes**: PLI Specialty Steel (operational (AM/NS precedent)); Critical minerals mission / MMDR-2025 (exploration+processing openings)
-
-**State landings**: Odisha (metals downstream parks, 50% infra to Rs 25cr); Chhattisgarh (core-sector stack); Jharkhand JIIPP
-
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 100.0 | SOUTHERN COPPER CORP/ | SCCO | United States | 34.1% | 46.3% | 36.2% | ✅ |
-| 99.6 | NATIONAL ALUMINIUM CO LTD | NATIONALUM | India | 32.5% | 29.4% | -4.8% | ✅ |
-| 79.4 | AEROFLEX INDUSTRIES LTD | AEROFLEX | India | 12.6% | 14.1% | 37.2% | ✅ |
-| 77.6 | JINDAL STAINLESS LIMITED | JSL | India | 7.4% | 17.4% | 11.2% | ✅ |
-| 75.9 | STEEL DYNAMICS INC | STLD | United States | 7.2% | 15.2% | 19.1% | ✅ |
-| 74.6 | MISHRA DHATU NIGAM LTD | MIDHANI | India | 10.9% | 8.9% | 34.6% | ✅ |
-| 73.6 | NUCOR CORP | NUE | United States | 6.8% | 12.3% | 21.3% | ✅ |
-| 71.9 | RELIANCE, INC. | RS | United States | 5.4% | 11.3% | 15.5% | ✅ |
-
-## Textiles & Apparel (15 leads)
-
-**Lanes**: PM MITRA parks (operational); RoSCTL (apparel/made-ups rebate (exclusive vs RoDTEP)); Technical textiles mission (open)
-
-**State landings**: TN Textile 2025-26 + MMF scheme; Gujarat Textile 2024; Maharashtra Textile 2023-28; UP Textile 2022
-
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 91.6 | PAGE INDUSTRIES LTD | PAGEIND | India | 14.6% | 52.5% | 14.1% | ✅ |
-| 89.3 | RALPH LAUREN CORP | RL | United States | 11.6% | 34.7% | 16.6% | ✅ |
-| 86.8 | TAPESTRY, INC. | TPR | United States | 8.4% | 60.9% | 21.2% | ✅ |
-| 86.6 | Kontoor Brands, Inc. | KTB | United States | 8.3% | 53.2% | 45.0% | ✅ |
-| 85.6 | SHANTI GOLD INTERNATION L | SHANTIGOLD | India | 6.9% | 37.3% | 121.6% | ✅ |
-| 81.2 | KPR MILL LTD. | KPRMILL | India | 13.0% | 16.2% | 0.9% | ✅ |
-| 78.4 | PEARL GLOBAL IND LIMITED | PGIL | India | 5.5% | 20.9% | 6.9% | ✅ |
-| 72.9 | NITIN SPINNERS LIMITED | NITINSPIN | India | 5.5% | 12.8% | 2.2% | ✅ |
-
-## White Goods & Electricals (13 leads)
-
-**Lanes**: PLI White Goods (operational (85->80 attrition noted)); BEE/star-rating demand levers (standing)
-
-**State landings**: Standard state stacks (UP/Gujarat/TN capital+SGST menus)
-
-| Score | Company | Ticker | Country | Margin | ROE | Growth | Expanding |
-|---|---|---|---|---|---|---|---|
-| 99.0 | GE Vernova Inc. | GEV | United States | 23.8% | 75.7% | 16.3% | ✅ |
-| 95.2 | SUZLON ENERGY LIMITED | SUZLON | India | 19.0% | 40.6% | 44.9% | ✅ |
-| 91.5 | Vertiv Holdings Co | VRT | United States | 14.4% | 45.1% | 30.1% | ✅ |
-| 83.7 | HITACHI ENERGY INDIA LTD | POWERINDIA | India | 12.1% | 21.0% | 46.2% | ✅ |
-| 80.8 | CG POWER AND IND SOL LTD | CGPOWER | India | 9.7% | 19.6% | 25.0% | ✅ |
-| 77.9 | R R KABEL LIMITED | RRKABEL | India | 5.1% | 20.8% | 33.6% | ✅ |
-| 70.3 | PROCTER & GAMBLE Co | PG | United States | 19.2% | 31.1% | 7.4% |  |
-| 66.8 | SFL Corp Ltd. | SFL | India | 4.2% | 5.1% | 23.6% | ✅ |
+| Score | Company | Country | India/APAC interest | Key evidence |
+|---|---|---|---|---|
+| 90 | Ajinomoto Co., Inc. | Japan | MEDIUM | Ajinomoto Group vision statement: "50 million customers in southern India to enjoy their products in their life" by 2030 (Ajinomoto India / group medi |
+| 90 | Associated British Foods plc | United Kingdom | MEDIUM | AR 2024 (Ingredients/AB Mauri): capital projects to drive long-term growth include 'the construction of a fresh yeast plant in northern India' - concr |
+| 76.3 | KRBL LIMITED | India | domestic |  |
+| 75 | Bega Cheese Limited | Australia | LOW | FY2025 results: Bega 'maintained strong market share positions across key categories and continued to grow in foodservice and key Asian markets' - Asi |
+| 72.5 | Mama's Creations, Inc. | United States | 10-K: India×0, APAC×0, trend 0 |  |
+| 68.9 | TRIVENI ENGG. & INDS. LTD | India | domestic |  |
+| 66.9 | SANSTAR LIMITED | India | domestic |  |
+| 65 | CJ Cheiljedang Corporation | South Korea | NONE | Disclosed K-food capacity expansion map is Japan (new bibigo dumpling plant, Chiba, 2025), Hungary (by 2026) and South Dakota, US (by 2027) — India do |
+| 61.4 | PRATAAP SNACKS LIMITED | India | domestic |  |
+| 56.9 | Mondelez International, Inc. | United States | 10-K: India×7, APAC×25, trend 1 | such as the launch of co-branded chocolate innovations combining Biscoff with Cadbury Dairy Milk, Milka and other key brands in Europe as well as zero |
+| 52.5 | SANFILIPPO JOHN B & SON INC | United States | 10-K: India×1, APAC×5, trend 0 | any agricultural products, federal and state government mandates related to the preceding or otherwise and purchasing behavior of certain countries, i |
+| 51.5 | SMITHFIELD FOODS INC | United States | 10-K: India×0, APAC×25, trend 0 | , we distribute products directly from some of our plants and from owned and leased distribution centers in Indiana, Kansas, Maryland, Nebraska and No |

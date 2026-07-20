@@ -1,0 +1,229 @@
+{
+ "country": "Japan",
+ "leads": [
+  {
+   "company": "Suzuki Motor Corporation",
+   "ticker": "TSE:7269",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "Suzuki Integrated Report 2025 (verified PDF): FY2024 (ended Mar-2025) consolidated revenue JPY 5,825.2bn, operating profit JPY 642.9bn, operating margin 11.0%, shareholders' equity JPY 2,970.7bn, issuer rating A+",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"Growth investment will primarily focus on increasing production capacity to meet growing demand in India and developing technology to minimize energy consumption.\" (Integrated Report 2025)",
+     "\"Specifically, we plan to invest a total of 4 trillion yen in growth by FY2030, including 2 trillion yen in capital investment, of which 1.2 trillion yen is related to India\" (Integrated Report 2025 \u2014 capex table explicitly shows 'India portion of total: 1,200' of 2,000 billion yen)",
+     "India = 42.0% of consolidated revenue and 55.4% of automobile unit sales by region; India passenger car share (FY2024) 40.6%, ranked 1st (Integrated Report 2025, 'Suzuki at a Glance')",
+     "\"Over 40 years ago, Suzuki entered the Indian market... For more than four decades, we have closely tied manufacturing and sales together in the Indian market. This is a major strength of Suzuki\" (Integrated Report 2025, 'India Strategy')",
+     "Report also details a biogas business in India with the National Dairy Development Board (NDDB) tied to CNG vehicles (Suzuki holds ~70% of India's CNG vehicle market per report) and carbon-neutrality work at the Gujarat plant",
+     "External corroboration: Maruti Suzuki's Kharkhoda (Haryana) mega plant opened 2025, ~Rs 35,000 crore program targeting 1M units (Deccan Herald/Zee Business, Jun-2025 news)"
+    ],
+    "india_operations": "Maruti Suzuki India (listed subsidiary, ~40.6% PV share), Suzuki Motor Gujarat plant, new Kharkhoda Haryana plant (2025), R&D and biogas JV with NDDB",
+    "report_used": "Suzuki Integrated Report 2025 \u2014 https://www.globalsuzuki.com/ir/library/annualreport/pdf/2025/2025.pdf"
+   }
+  },
+  {
+   "company": "DENSO Corporation",
+   "ticker": "TSE:6902",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "stockanalysis.com/quote/tyo/6902: FY ended Mar-2026 revenue JPY 7.54tn (+5.3% YoY), net income JPY 443.6bn (+5.9%), net margin ~5.9%",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Integrated Report 2025 coverage (via aftermarketnews summary of the report; denso.com blocked direct fetch): DENSO plans to develop business in India in 2026 and ASEAN (Thailand) in 2027 as market-expansion priorities \u2014 direct report quote UNVERIFIED (403 on report PDF)",
+     "Nikkei Asia: \"Denso plans to spend about 15 billion yen ($132 million)... adding to an existing facility in the state of Haryana... to increase capacity for making engines and other parts by about 50%\"",
+     "Autocar Professional: Denso stated intent to make India a global manufacturing hub with ~Rs 900 crore investment; six subsidiaries + JV across Greater Noida, Haridwar, Manesar, Jhajjar, Bangalore, Pune",
+     "Denso Haryana Pvt Ltd revenue Rs 6,700 crore FY ended Mar-2025, 1,761 employees (Tracxn)"
+    ],
+    "india_operations": "Six subsidiaries and a JV across 6 Indian locations incl. Denso Haryana (Manesar/Jhajjar plants \u2014 wipers, small motors, engine components) and Denso Kirloskar (Bangalore)",
+    "report_used": "DENSO Integrated Report 2025 (year ended Mar-2025) \u2014 https://www.denso.com/global/en/about-us/investors/annual-report/integrated-report-2025/ (PDF blocked 403; India content sourced from secondary coverage + news)"
+   }
+  },
+  {
+   "company": "Mitsubishi Electric Corporation",
+   "ticker": "TSE:6503",
+   "sector": "White Goods & Electricals",
+   "profitability_check": "stockanalysis.com/quote/tyo/6503: FY ended Mar-2026 revenue JPY 5.89tn (+6.8% YoY), net income JPY 407.8bn, net margin ~6.9%",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"Air-conditioning & refrigeration systems business: Strengthening capabilities in markets in Europe, North America, and India\" (Integrated Report 2025, business portfolio strategy)",
+     "\"Building systems business: Development of a global production system (new factory in India, etc.)\" (Integrated Report 2025)",
+     "\"Construction of a new factory in India for global business expansion\" listed as a main initiative of the A/C & Refrigeration Systems business (Integrated Report 2025)",
+     "Official release (12-Jan-2023, verified PDF): \"it will invest some 26.7 billion yen (about U.S.$ 222.5 million), in its subsidiary company Mitsubishi Electric India Pvt. Ltd. to establish a factory for the production of room air conditioners and compressors in India. Local production, targeted to start in October 2025... Initial annual capacity will total 300,000 room air conditioner outdoor units and, beginning in December 2025, 650,000 compressors.\"",
+     "The Tamil Nadu (Chennai region) plant was inaugurated 2025 with total investment reported around Rs 1,891-2,100 crore (IBEF / Manufacturing Today India)"
+    ],
+    "india_operations": "Mitsubishi Electric India Pvt. Ltd. (100% FDI); new room-AC + compressor factory in Tamil Nadu (production from Oct-2025); also elevator/building-systems factory plans in India",
+    "report_used": "Mitsubishi Electric Integrated Report 2025 \u2014 https://www.mitsubishielectric.com/investors/library/integrated-report/pdf/2025/integrated-report2025-en.pdf ; plus news release https://www.mitsubishielectric.com/en/pr/2023/pdf/0112.pdf"
+   }
+  },
+  {
+   "company": "Tokyo Electron Limited",
+   "ticker": "TSE:8035",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "stockanalysis.com/quote/tyo/8035: FY ended Mar-2026 revenue JPY 2.44tn, net income JPY 574.5bn (+5.6%), net margin ~23.5%",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"To further expand our business by contributing to technological innovation in semiconductors, TEL has established a new development site in Bengaluru, Karnataka, India.\" (TEL news release, 5-Sep-2025, verified)",
+     "\"This site will engage in software development, including equipment design and simulation.\" (same release)",
+     "\"TEL will promote joint research on next-generation semiconductor technologies with Indian universities and academic institutions that have advanced technical capabilities.\" (same release)",
+     "\"In India, the semiconductor industry ecosystem is developing fast due to the country's recent rapid economic growth.\" (same release)",
+     "No investment amount disclosed; interest is R&D/talent-led rather than manufacturing capex at this stage"
+    ],
+    "india_operations": "New Bengaluru development site (2025) \u2014 software, simulation, equipment design; university joint research. No India manufacturing.",
+    "report_used": "TEL news release 'Announcement of New Development Site in Bengaluru, India', Sep 2025 \u2014 https://www.tel.com/news/topics/2025/20250905_001.html (Integrated Report 2025 not directly quoted)"
+   }
+  },
+  {
+   "company": "Panasonic Holdings Corporation",
+   "ticker": "TSE:6752",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "stockanalysis.com/quote/tyo/6752: FY ended Mar-2026 revenue JPY 8.05tn (-4.8% YoY), net income JPY 189.5bn (-48.2%), net margin ~2.4%",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Panasonic Electric Works executives (Outlook Business interview): \"India remains our top priority in our global expansion strategy\"",
+     "Investment roadmap: \"100 billion yen (~Rs 7,000 crore) for global electrical and equipment business growth by fiscal 2030, excluding Japan\", with \"30 billion yen (~Rs 2,100 crore) earmarked\" in the earlier tranche (Outlook Business)",
+     "Sri City (Andhra Pradesh) wiring-device capacity to scale from \"120 million units\" to \"300 million units per year by FY2030\"; target \"50% market share\" in wiring devices by 2030; exports from India to rise from 2% to 10% of operations (Outlook Business)",
+     "Panasonic Life Solutions India revenue Rs 11,400 crore FY ended Mar-2025, ~14% 1-yr CAGR (Tracxn)",
+     "Anchor Electricals (acquired 2007) makes Panasonic a dominant player in Indian consumer electrical construction materials"
+    ],
+    "india_operations": "Panasonic Life Solutions India / Anchor by Panasonic (switches, wiring devices, wires & cables, fans); factories incl. Sri City AP and Daman; Panasonic Energy India (listed, PBT +14.35% FY2024-25)",
+    "report_used": "Panasonic Holdings Integrated Report library (holdings.panasonic blocked to fetcher); India evidence from Outlook Business executive interview + Panasonic India releases \u2014 https://holdings.panasonic/global/corporate/investors/library/annual-report.html"
+   }
+  },
+  {
+   "company": "Asahi Kasei Corporation",
+   "ticker": "TSE:3407",
+   "sector": "Chemicals & Plastics",
+   "profitability_check": "Asahi Kasei Report 2025 (verified PDF): FY2024 net sales JPY 3,037.3bn, operating income JPY 211.9bn; report states \"overall operating income reached a new record high\"; next MTP targets operating income JPY 270bn and ROIC 6.0%",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "The entire 200+ page Asahi Kasei Report 2025 contains only one India mention, an executive anecdote: \"During a visit to a customer in India, I was warmly welcomed by the entire team despite it being our first meeting.\" \u2014 no India investment plan, capex, or market strategy is disclosed in the report",
+     "No Asia/India growth-driver framing found in the report text (grep across full extracted text)",
+     "Existing India footprint (Asahi Kasei India Pvt. Ltd., Mumbai sales/R&D) is known from the company's own site but is not discussed in the report \u2014 footprint scale UNVERIFIED in this pass"
+    ],
+    "india_operations": "Sales/technical subsidiary Asahi Kasei India (Mumbai) \u2014 not featured in the integrated report; no disclosed India plant investment",
+    "report_used": "Asahi Kasei Report 2025 \u2014 https://www.asahi-kasei.com/content/dam/asahi-kasei/us/en/ir/library/asahikasei-report/pdf/25en.pdf"
+   }
+  },
+  {
+   "company": "Ajinomoto Co., Inc.",
+   "ticker": "TSE:2802",
+   "sector": "Food Processing",
+   "profitability_check": "Ajinomoto Consolidated Financial Results FY ended 31-Mar-2025 (verified company PDF): sales JPY 1,530,556M (+6.3% YoY), business profit JPY 159,302M (+7.9%)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Ajinomoto Group vision statement: \"50 million customers in southern India to enjoy their products in their life\" by 2030 (Ajinomoto India / group media pages, surfaced via search \u2014 exact ASV Report page not directly quoted)",
+     "ASV Report 2025 strategy coverage (secondary summary): India prioritized alongside ASEAN and Latin America, \"broadening retail distribution beyond metros and scaling foodservice partnerships targeting double-digit volume growth across FY2026-FY2028\" \u2014 direct report quote UNVERIFIED",
+     "Fierce Pharma: Ajinomoto (Bio-Pharma Services) is building a 91,500-sq-ft small-molecule facility at its existing Visakhapatnam, India complex that \"will double the site's production capacity\" \u2014 hard capex evidence on the pharma/CDMO side",
+     "Fetched ASV Report chapter 5 PDF (Sales & Business Profit) contained no India-specific lines \u2014 India detail sits elsewhere in the report"
+    ],
+    "india_operations": "Ajinomoto India Pvt Ltd (Chennai/Kancheepuram seasonings plant, JV heritage since 2003); Ajinomoto Bio-Pharma Visakhapatnam CDMO site being doubled",
+    "report_used": "Ajinomoto ASV Report (Integrated Report) 2025 + Consolidated Financial Results FY2024 \u2014 https://www.ajinomoto.com/sustainability/ir/ and https://www.ajinomoto.com/cms_wp_ajnmt_global/wp-content/uploads/pdf/2025_05_08_01E.pdf"
+   }
+  },
+  {
+   "company": "Eisai Co., Ltd.",
+   "ticker": "TSE:4523",
+   "sector": "Pharma & Bulk Drugs",
+   "profitability_check": "stockanalysis.com/quote/tyo/4523: FY ended Mar-2026 revenue JPY 825.4bn (+4.6% YoY), net income JPY 38.6bn (-17.0%), net margin ~4.7%",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"Eisai established Eisai Knowledge Centre, India, in Andhra Pradesh in 2009. Since then the facility has served as a core operational hub for our global production and process research.\" (Eisai news release, 2026, verified)",
+     "New Eisai Global Capability Centre (EGCC) opened in Visakhapatnam 2026: \"The Centre serves as Eisai's information technology hub\", initially \"standardizing global IT infrastructure operations\" and will \"gradually expand its scope to include cybersecurity, data & analytics, and operational applications\" (same release)",
+     "WHO inspection report (Mar-2025): Eisai Pharmaceuticals India, Visakha Pharmacity SEZ, is \"an integrated facility that includes the manufacturing of Active Pharmaceutical Ingredients, Finished products, and R&D... within the same premises\", registered with USFDA, PMDA, MHRA and WHO",
+     "Pattern: India functions repeatedly expanded (API+formulation plant 2009 -> global knowledge centre -> GCC 2026), though yen investment amounts are not disclosed"
+    ],
+    "india_operations": "Eisai Pharmaceuticals India / Eisai Knowledge Centre, Visakhapatnam (API + oral solids + R&D, USFDA/PMDA/MHRA/WHO registered); new Global Capability Centre (2026); Eisai India commercial arm (Mumbai)",
+    "report_used": "Eisai news release 'Eisai Established the Global Capability Centre in Visakhapatnam, India' 2026 \u2014 https://www.eisai.com/news/2026/news202614.html (Value Creation/Integrated Report not directly quoted)"
+   }
+  },
+  {
+   "company": "Terumo Corporation",
+   "ticker": "TSE:4543",
+   "sector": "Medical Devices",
+   "profitability_check": "Terumo Report 2024 (verified PDF): FY2023 (ended Mar-2024) revenue JPY 921.9bn, operating profit JPY 140.1bn, operating margin 15.2%",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Terumo Report 2024 subsidiary table lists \"Terumo Penpol Pvt. Ltd., Kerala, India\" among principal consolidated subsidiaries (verified)",
+     "Terumo Report 2024 lists a dedicated executive role: \"Regional Representative, Asia Pacific and India\" (verified) \u2014 India is carved out as a named management region",
+     "Terumo Penpol is India's largest blood-bag manufacturer; revenue Rs 655 crore FY ended Mar-2024, ~18% 1-yr revenue CAGR, 911 employees (Tracxn); a new plant was built to roughly double production capacity from 13 million blood bags (newsonprojects.com \u2014 date/amount UNVERIFIED)",
+     "The integrated report itself contains little forward India strategy text; interest evidenced mainly through organizational structure and the growing Indian subsidiary"
+    ],
+    "india_operations": "Terumo Penpol (Thiruvananthapuram, Kerala) \u2014 blood bag manufacturing for India + export; Terumo India Pvt Ltd (Gurugram) sales/marketing",
+    "report_used": "Terumo Report 2024 (integrated report, year ended Mar-2024) \u2014 https://www.terumo.com/sites/g/files/qlpvch391/files/document/2025-01/TR2024_all_E.pdf (Terumo Report 2025 online version blocked 402)"
+   }
+  },
+  {
+   "company": "Nippon Steel Corporation",
+   "ticker": "TSE:5401",
+   "sector": "Specialty Steel & Metals",
+   "profitability_check": "stockanalysis.com/quote/tyo/5401: FY ended Mar-2026 revenue JPY 10.06tn (+15.7% YoY incl. U.S. Steel consolidation), net income JPY 17.2bn (-95.1% YoY on acquisition-related one-offs) \u2014 underlying steel business remains profitable; treat net-income dip as one-off-driven",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"AM/NS India has agreed to acquire land for a construction site of integrated steel mill from the government of Andhra Pradesh\" \u2014 890 ha (2,200 acres) at Rajayyapeta, Anakapalli district; \"Integrated steel mill capacity: 7 million tons/year scale in crude steel production considered\" (Nippon Steel newsroom, 28-Mar-2025, verified)",
+     "\"The steel market in India is expected to grow steadily due to economic growth and population growth\" (same release); JV split \"Nippon Steel 40.0%, ArcelorMittal 60.0%\"",
+     "Earlier decision (Sep-2022 release): investment in upstream and hot-rolling facilities at the Hazira steel mill plus acquisition of port and power-related companies \u2014 Hazira expanding ~9 to 15 Mt/yr by 2026",
+     "External: AM/NS India expansion capex ~US$6.25bn / Rs 55,000-60,000 crore over FY2026-FY2028, targeting 25-26 Mt/yr by 2030 (SteelOrbis/Business Standard)"
+    ],
+    "india_operations": "ArcelorMittal Nippon Steel India (AM/NS India, 40% stake) \u2014 Hazira (Gujarat) integrated mill ~9 Mt/yr expanding to 15 Mt/yr, new Andhra Pradesh greenfield site acquired 2025, captive ports/power",
+    "report_used": "Nippon Steel newsroom release 'AM/NS India acquires land... Andhra Pradesh', Mar 2025 \u2014 https://www.nipponsteel.com/en/newsroom/news/2025/20250328_100.html (+ Sep-2022 Hazira investment release https://www.nipponsteel.com/en/news/20220928_200.html)"
+   }
+  },
+  {
+   "company": "Mitsui O.S.K. Lines, Ltd.",
+   "ticker": "TSE:9104",
+   "sector": "Shipbuilding & Marine",
+   "profitability_check": "stockanalysis.com/quote/tyo/9104: FY ended Mar-2026 revenue JPY 1.83tn (+2.8% YoY), net income JPY 213.3bn (-49.9% off post-COVID container peak), net margin ~11.6%",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"...for example, oil and gas business in India and Southeast Asia, which are expected to see increased population and economic growth\" (MOL REPORT 2025, verified PDF)",
+     "\"...securing robust demand for energy transport in emerging regions, mainly in India and Southeast Asia\" (MOL REPORT 2025)",
+     "\"In terms of regions, in addition to Africa, we are focusing on India, which is expected to make great strides as a vehicle exporter.\" (MOL REPORT 2025, car carrier business)",
+     "\"Signed an MoU to consider investing in a green ammonia production project in India\" (MOL REPORT 2025, FY2024 initiatives list)",
+     "\"Joined an Indian office building development project through DAIBIRU\" and \"Consolidated Indian subsidiaries into MOL (INDIA) PRIVATE LIMITED to strengthen corporate functions\" (MOL REPORT 2025)"
+    ],
+    "india_operations": "MOL (India) Private Limited (consolidated corporate entity), ship management/crewing via MOL SAME, DAIBIRU Indian real-estate project, green ammonia MoU (Mar-2025)",
+    "report_used": "MOL REPORT 2025 (integrated report, BLUE ACTION 2035 Phase 1 review) \u2014 https://ir.mol.co.jp/en/ir/library/integrated_report/main/01/teaserItems2/0/linkList/0/link/(E)MOL%20REPORT_2025%20.pdf"
+   }
+  },
+  {
+   "company": "ASICS Corporation",
+   "ticker": "TSE:7936",
+   "sector": "Textiles & Apparel",
+   "profitability_check": "ASICS Integrated Report 2024 (verified PDF): 2024 net sales JPY 678.5bn (+19% YoY), \"recording an operating profit of \u00a5100 billion for the first time in 2024 alongside achieving an industry-leading operating margin\"",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"I believe that we can achieve further brand penetration in Greater China, and that Southeast Asia and India will continue to be growth drivers.\" (Integrated Report 2024, top management message)",
+     "\"...we will leverage the Japanese market and increase sales volume in India, Southeast Asia, and other emerging markets to build a balanced regional portfolio.\" (Integrated Report 2024)",
+     "Report lists India among 'Accelerated growth' regions in its regional portfolio matrix and among countries \"where ASICS operates production sites, such as Vietnam, Indonesia, India, and Cambodia\" (Integrated Report 2024)",
+     "External: ASICS plans to lift India sportswear production to ~40% of local sales amid import restrictions (Business Standard, Jun-2025); ASICS India grew ~40% and plans to double its ~103-store network by 2026 (Images Business of Fashion)"
+    ],
+    "india_operations": "ASICS India sales subsidiary (~103 stores, Rs 428 crore revenue with 26-40% growth), contract manufacturing in India, trademark recognized as well-known mark in India (Feb-2024, per report)",
+    "report_used": "ASICS Integrated Report 2024 \u2014 https://assets.asics.com/system/libraries/4038/ASICS%20Integrated%20Report%202024.pdf"
+   }
+  }
+ ],
+ "method_notes": [
+  "Candidate pool /private/tmp/.../scratchpad/candidates_jp.csv (1,069 TSE names) grepped first; all 12 picks confirmed present with sector labels: Suzuki 7269, DENSO 6902, Mitsubishi Electric 6503, Panasonic HD 6752, Tokyo Electron 8035, Asahi Kasei 3407, Ajinomoto 2802, Eisai 4523, Terumo 4543, Nippon Steel 5401, Mitsui O.S.K. 9104, ASICS 7936. Mitsubishi Heavy, Kawasaki Heavy, IHI, Daikin, Hitachi, Yaskawa, Suntory, Fujitsu General are NOT in the CSV (Aerospace & Defence bucket contains only 5 small space startups; 'Shipbuilding & Marine' is mostly shipping/logistics lines), so shipping major MOL represents that sector and Mitsubishi Electric/Panasonic represent white goods/electricals.",
+  "Primary sources actually parsed as full PDFs (pdftotext, grep 'India'): Suzuki Integrated Report 2025, MOL REPORT 2025, Mitsubishi Electric Integrated Report 2025 + Jan-2023 India plant release, Terumo Report 2024, Asahi Kasei Report 2025, ASICS Integrated Report 2024, Ajinomoto FY2024 results + ASV chapter PDF. Nippon Steel, TEL, Eisai evidence from verified official news releases (WebFetch).",
+  "Profitability: taken from the parsed reports where available (Suzuki, Terumo, Asahi Kasei, ASICS, Ajinomoto), otherwise stockanalysis.com TYO quote pages (FY ended Mar-2026 figures for DENSO, TEL, Eisai, Nippon Steel, MELCO, Panasonic, MOL). All 12 are profitable; Nippon Steel's FY-Mar-2026 net income is depressed ~95% by U.S. Steel acquisition-related one-offs.",
+  "Levels: HIGH = named India capex/plant/strategic-priority commitments in company's own report or releases; MEDIUM = clear growth-driver framing or growing subsidiary without disclosed report-level capex; LOW = essentially no India strategy content in the report (Asahi Kasei).",
+  "Quotes marked 'verified' were extracted verbatim from fetched documents; anything sourced only from secondary press summaries is explicitly flagged UNVERIFIED (Denso report wording, Ajinomoto ASV distribution-strategy wording, Terumo Penpol new-plant amount)."
+ ],
+ "site_access_issues": [
+  "denso.com blocked all fetches (403 via WebFetch and curl with Mozilla UA, both HTML pages and PDFs) \u2014 Denso Integrated Report 2025 could not be quoted directly",
+  "terumo.com online report 2025 returned HTTP 402 (Cloudflare); direct PDF of Terumo Report 2024 downloaded fine via curl",
+  "holdings.panasonic IR library blocked to curl (445-byte stub) \u2014 Panasonic integrated report not directly quoted",
+  "asahi-kasei.com served the report PDF gzip-encoded without headers; required manual gunzip before pdftotext",
+  "globalsuzuki.com integrated-report path guess 404'd; correct PDF found via /ir/library/annualreport/ index scrape",
+  "aftermarketnews.com 403'd on fetch (Denso report summary used from search-result snippet only)"
+ ]
+}

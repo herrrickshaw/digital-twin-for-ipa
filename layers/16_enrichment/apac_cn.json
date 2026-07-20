@@ -1,0 +1,221 @@
+{
+ "country": "China",
+ "leads": [
+  {
+   "company": "BYD Company Limited",
+   "ticker": "SEHK:1211 (also SZSE:002594; CSV lists 1211)",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue RMB 777.1bn (+23% YoY), overseas revenue RMB 221.9bn; net profit ~RMB 40bn (approx., widely reported)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "BYD India registered 2007 in Chennai with an electronics manufacturing plant; India listed among BYD's 30+ industrial-park countries alongside US, Brazil, Hungary",
+     "First BYD K9 pure-electric bus arrived at Port of Chennai Aug 2013; BYD-Olectra partnership holds ~52% share of commercially operating e-buses in India; buses run in 10+ cities (Mumbai, Hyderabad, Pune, Kerala)",
+     "Cumulative India investment >$150m across two factories as of 2023",
+     "PN3 ceiling: the proposed $1bn BYD-Megha Engineering EV/battery JV (Telangana, 2023) was REJECTED by the Indian government after security-related deliberations under Press Note 3",
+     "2024 overseas passenger-NEV sales 417k units (+71.9% YoY) \u2014 APAC expansion is an explicit strategy (Thailand plant operating, Indonesia under construction)"
+    ],
+    "india_operations": "BYD India Pvt Ltd (Chennai) \u2014 electronics + EV assembly (Atto 3/Seal CKD), e-bus chassis via Olectra tie-up; expansion capped by PN3 (greenfield car-plant proposal rejected; press reports of a revived Hyderabad-area plant plan remain unapproved)",
+    "report_used": "BYD 2024 Annual Results (HKEX filing, en.byd.com/bydukmedia summary) + BYD India corporate disclosures; full HKEX AR PDF not parsed page-by-page"
+   }
+  },
+  {
+   "company": "SAIC Motor Corporation Limited",
+   "ticker": "SHSE:600104",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "MARGINALLY PROFITABLE \u2014 FY2024 revenue RMB 627.59bn (-15.7% YoY), net profit RMB 1.666bn (-88.2% YoY) per SAIC Annual Report 2024 (saicmotor.com English PDF)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "MG Motor India (Halol, Gujarat plant) restructured 2023 into JSW MG Motor India JV \u2014 JSW took 35% at ~$1.2bn valuation, the flagship PN3-era 'Indianization' of a Chinese OEM",
+     "2026 reports: SAIC selling a further 10% to JSW (JSW 35%\u219245%, SAIC 49%\u219239%), making JSW the largest shareholder; SAIC to reinvest ~Rs 6bn ($63m) of proceeds into new-model launches",
+     "Coverage explicitly ties the dilution to 'tighter scrutiny of Chinese investments in India' \u2014 Indian-majority ownership unlocks future investment flexibility",
+     "SAIC keeps supplying platforms/tech (Windsor EV etc.) \u2014 a technology-partner rather than owner posture"
+    ],
+    "india_operations": "JSW MG Motor India (SAIC minority partner post-dilution), Halol manufacturing plant, growing EV lineup; SAIC transitioning from controlling owner to technology/minority partner under PN3 pressure",
+    "report_used": "SAIC Motor Annual Report 2024 (English, saicmotor.com) for financials; stake-sale details from Autocar India/Yahoo Finance (May-Jun 2026), not yet in an annual report"
+   }
+  },
+  {
+   "company": "Contemporary Amperex Technology Co., Limited (CATL)",
+   "ticker": "SZSE:300750",
+   "sector": "EV Batteries (listed under White Goods & Electricals in candidate CSV)",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue ~RMB 362bn, net profit ~RMB 50.7bn (approx., widely reported); world's largest EV-battery maker",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Reliance-CATL talks on a technology-transfer arrangement for domestic Indian cell production 'did not result in an agreement'; Reliance pivoted to sourcing pre-made cells for BESS assembly",
+     "CATL's LRS (Licensing, Royalty, Service) model \u2014 'patent licenses, technology, and support to car manufacturers and battery companies worldwide' \u2014 is exactly the PN3-compatible structure, discussed with about a dozen OEMs, but no India LRS deal has closed",
+     "Beijing's tightening export controls on core battery-manufacturing technology now block the India licensing route from the CHINESE side as well",
+     "APAC/overseas build-out directed at Indonesia, Hungary, Spain (Stellantis JV) \u2014 not India"
+    ],
+    "india_operations": "No Indian entity or plant identified; interest is latent (licensing-model fit) but blocked bilaterally \u2014 PN3 on India's side, tech-export controls on China's side",
+    "report_used": "No India mention traced to CATL's annual report; evidence from CnEVPost, discoveryalert.com.au (Reliance talks), CATL official LRS statements \u2014 secondary sources, UNVERIFIED against the AR text"
+   }
+  },
+  {
+   "company": "Luxshare Precision Industry Co., Ltd.",
+   "ticker": "SZSE:002475",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue ~$37.3bn (up from $32.7bn in 2023), '2024 Annual Results: Sustained Revenue and Net Profit Growth' (net profit ~RMB 13.4bn approx.)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "AR-level footprint statement: manufacturing bases in 'China, India, and Vietnam' (~420,000 employees globally)",
+     "Luxshare India Co., Ltd. established Feb 2019 (pre-PN3), acquiring a defunct Tamil Nadu digital-products plant with planned Rs 7.5bn (~RMB 649m) investment to make Apple iPhone components",
+     "Wingtech ODM acquisition disclosure explicitly includes 'the relevant business asset packages of India Wingtech Co., Ltd.' \u2014 an indirect, acquisition-route deepening of India exposure",
+     "2025-26 press repeatedly links Luxshare to Apple's India supply-chain shift (incl. reported JV discussions with Indian EMS players such as Motherson \u2014 NOT confirmed in any filing found)"
+    ],
+    "india_operations": "Luxshare India Pvt Ltd (Tamil Nadu) operating as an Apple-chain component site (grandfathered pre-PN3); India Wingtech assets being folded in via the Wingtech ODM deal",
+    "report_used": "Luxshare Annual Report 2024 (Chinese PDF via 10jqka, not parsed in full) + Wingtech acquisition disclosure excerpts + Tracxn entity record for Luxshare India Pvt Ltd"
+   }
+  },
+  {
+   "company": "Hangzhou Hikvision Digital Technology Co., Ltd.",
+   "ticker": "SZSE:002415",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE \u2014 FY2024 overseas revenue RMB 25.99bn (+8.39% YoY, 28.1% of total) per 2024 Annual Report (English PDF, hikvision.com); net profit ~RMB 12bn (approx.)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Prama Hikvision India Pvt Ltd (est. 2009, Mumbai) \u2014 Indian-majority JV, the archetypal PN3-compatible structure: manufacturing done under an Indian partner's majority",
+     "Prama Hikvision FY2024: operating revenue >INR 500 crore, revenue +3.84%, profit +115%; ~1,569 employees; electronic components & equipment manufacturing in India",
+     "2024 AR: overseas main + innovative business revenue combined surpassed domestic main business for the first time \u2014 structural pivot to overseas markets incl. South Asia",
+     "Counterweight: Hikvision faces Indian government procurement restrictions/security scrutiny (trusted-source rules for surveillance gear), capping addressable market"
+    ],
+    "india_operations": "Prama Hikvision India Pvt Ltd \u2014 local manufacturing (Vasai plant) + nationwide distribution; Hikvision is minority technology partner in an Indian-controlled JV",
+    "report_used": "Hikvision 2024 Annual Report (English PDF, hikvision.com) + Prama Hikvision MCA-derived financials (thecompanycheck/Tofler)"
+   }
+  },
+  {
+   "company": "Haier Smart Home Co., Ltd.",
+   "ticker": "SHSE:600690",
+   "sector": "White Goods & Electricals",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue ~RMB 286bn, net profit ~RMB 18.7bn (approx.); AR 2024 confirms revenue and net-profit growth",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "AR 2024 (English, smart-home.haier.com): South Asia revenue RMB 11.53bn, +21.05% YoY; 'Indian market... revenue growing by 30%... revenue grew over 30% to USD 1 billion for the first time' in Haier's 20th anniversary year in India",
+     "India is Haier Group's third-largest market after China and the US",
+     "Dec 2025: Bharti Enterprises + Warburg Pincus agreed to buy 49% of Haier India for ~$2bn (Haier retains 49%, management 2%); Beijing cleared the sale Dec 2025",
+     "Coverage explicitly frames the deal as PN3 relief: 'diversified governance and indirect localization' to escape case-by-case Chinese-FDI approval"
+    ],
+    "india_operations": "Haier Appliances India \u2014 Pune and Greater Noida manufacturing parks, $1bn revenue, moving to a 49/49/2 Sino-Indian ownership structure to neutralize PN3 constraints",
+    "report_used": "Haier Smart Home Annual Report 2024 (English H-share PDF, smart-home.haier.com/media/adrjuuk3/h24ar-report.pdf); stake sale from Bloomberg/Business Standard (Dec 2025), will appear in AR 2025/2026"
+   }
+  },
+  {
+   "company": "Midea Group Co., Ltd.",
+   "ticker": "SZSE:000333",
+   "sector": "White Goods & Electricals",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue ~RMB 409bn, net profit ~RMB 38.5bn (approx., dual-listed SZSE/HKEX, consistently profitable)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Committed >Rs 13.5bn (~$190m) to the Midea Science & Technology Park near Pune (~270,000 sqm; capacity 500k each refrigerators/washers/purifiers/heaters, 1.5m residential ACs, 250k commercial ACs, 4.5m compressors; 2,000+ jobs) \u2014 announced pre-PN3, operational since ~2020",
+     "Carrier Midea India JV (Bangalore) \u2014 ACs under an existing foreign-JV wrapper, another PN3-tolerant structure",
+     "Midea India Pvt Ltd FY2025: revenue +74.4%, profit +201.4% (company-registry data)",
+     "Press reports (2025-26) of Midea exploring an Indian-partner stake structure similar to Haier's \u2014 UNVERIFIED in filings"
+    ],
+    "india_operations": "Midea India Pvt Ltd (Haryana, est. 2017) + Pune Science & Technology Park + Carrier Midea India JV; grandfathered pre-2020 investments now the growth platform since fresh Chinese capital needs approval",
+    "report_used": "Midea Group AR not directly parsed; evidence from Pandaily investment announcement, Carrier Midea India investor page, Midea India registry financials (thecompanycheck)"
+   }
+  },
+  {
+   "company": "Gree Electric Appliances, Inc. of Zhuhai",
+   "ticker": "SZSE:000651",
+   "sector": "White Goods & Electricals",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue RMB 190.04bn (-7.3% YoY), net profit RMB 32.185bn (+10.9% YoY) per 2024 Annual Report (English version, gree.com.cn)",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "English AR extracts name Southeast Asia, Middle East, Europe, North America as growth markets and new plants in Brazil and Pakistan \u2014 India conspicuously absent from the manufacturing map",
+     "India presence is dealer/distributor-only (IndiaMART/Justdial networks across Delhi, Mumbai, Ahmedabad etc.) \u2014 an export model requiring no PN3 approval",
+     "Pre-2020 Gree India manufacturing intentions never materialized post-PN3; Pakistan (also a Haier/Gree base) serves as its South Asia manufacturing foothold instead"
+    ],
+    "india_operations": "No Indian manufacturing entity identified; brand present via import-distribution only",
+    "report_used": "Gree 2024 Annual Report (English version, gree.com.cn PDF); India dealer footprint from trade directories"
+   }
+  },
+  {
+   "company": "Wanhua Chemical Group Co., Ltd.",
+   "ticker": "SHSE:600309",
+   "sector": "Chemicals & Plastics",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue ~RMB 182bn; FY2023 net profit RMB 16.82bn (+3.6%); FY2024 net profit ~RMB 13bn (approx.); world's largest MDI/TDI supplier (4.91m t isocyanate capacity end-2024)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Company profile/AR materials list 'over ten branches across Europe, the Middle East, America, Japan, Russia, and India' \u2014 India is an explicitly named overseas branch geography (Wanhua Chemical India Pvt Ltd, Mumbai sales office)",
+     "India is a major growth import market for MDI/TDI (polyurethanes for appliances/construction/footwear) where Wanhua is a leading supplier via exports",
+     "No Indian manufacturing announced; overseas plants are Hungary (BorsodChem) and planned US/Middle East \u2014 sales-office-plus-exports is the PN3-frictionless model for chemicals"
+    ],
+    "india_operations": "Wanhua Chemical India Pvt Ltd (Mumbai) sales/marketing branch; supplies MDI/TDI/polyols to Indian converters; no production assets",
+    "report_used": "Wanhua annual report/company publications (whchem.com) branch-network statement; financials from 2023 AR disclosure + 2024 results coverage (ECHEMI)"
+   }
+  },
+  {
+   "company": "Baoshan Iron & Steel Co., Ltd. (Baosteel)",
+   "ticker": "SHSE:600019",
+   "sector": "Specialty Steel & Metals",
+   "profitability_check": "PROFITABLE \u2014 FY2024 net profit ~RMB 7.4bn (approx.); FY2023 exports +46.6% to 5.84m t, record; Q1 2025 profit -8.6% on weak demand",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Stated strategy: 'strategically expanding its markets in South and Southeast Asia' with exports targeted at 10m t/yr by 2028 \u2014 South Asia is a named export destination, i.e., India interest is as a customer market, not an investment destination",
+     "First greenfield overseas project is a $1bn plate mill in SAUDI ARABIA; company says the model will be replicated in 'One Belt One Road countries across Southeast Asia and North Africa' \u2014 India not on the list",
+     "India's steel safeguard duties on Chinese imports (2025) and PN3 make both the trade and investment channels hostile"
+    ],
+    "india_operations": "No Indian entity or plant; exports of high-value flat products into South Asia only, and those face Indian safeguard/anti-dumping barriers",
+    "report_used": "Baosteel results coverage and company statements via SteelOrbis/SteelRadar/gmk.center; annual report itself not parsed \u2014 treat India-specific absence as UNVERIFIED-by-AR"
+   }
+  },
+  {
+   "company": "COSCO SHIPPING Holdings Co., Ltd.",
+   "ticker": "SEHK:1919 (also SHSE:601919; CSV lists 1919)",
+   "sector": "Shipbuilding & Marine",
+   "profitability_check": "PROFITABLE \u2014 2024 annual results strong (net profit ~RMB 49bn approx., freight-rate driven); 'global digital supply chain operation and investment platform' positioning per 2024 results announcement",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "COSCO/OOCL liner networks call Indian ports (Nhava Sheva, Mundra, Chennai) as routine commercial operations; OOCL India and COSCO Shipping Lines India agency entities long predate PN3 \u2014 presence is service-based, needing no FDI approval",
+     "2024 AR port-investment actions went to Egypt (Ain Sokhna), Thailand (Laem Chabang), Piraeus, Abu Dhabi \u2014 no Indian terminal investment (Chinese port investment in India is effectively impossible under PN3 plus port-sector security rules)",
+     "Group affiliate COSCO Shipping International (Singapore) states ambition to be 'the best-integrated logistics service provider in South and Southeast Asia'"
+    ],
+    "india_operations": "Agency/liner-service presence only (COSCO Shipping Lines India, OOCL India \u2014 entity details UNVERIFIED this session); zero terminal/asset investment in India, by structural necessity",
+    "report_used": "COSCO SHIPPING Holdings 2024 Annual Results announcement (en.hold.coscoshipping.com); COSCO Shipping International (Singapore) AR 2024; India-specific text not found in AR extracts"
+   }
+  },
+  {
+   "company": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd.",
+   "ticker": "SZSE:300760",
+   "sector": "Medical Devices",
+   "profitability_check": "PROFITABLE \u2014 FY2024 revenue RMB 36.73bn (+5.1% YoY); net profit ~RMB 11.7bn (approx.); FY2023 revenue RMB 34.93bn (+15%)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Earnings-call/AR materials: 'developing countries experienced growth exceeding 30%' \u2014 the company's fastest-growing segment, with India its largest developing-market healthcare opportunity",
+     "39 international subsidiaries in 30+ countries incl. Asia; Mindray maintains an India arm (mindray.com/in, Mindray Medical India Pvt Ltd \u2014 entity UNVERIFIED this session) selling patient monitoring, IVD, imaging",
+     "Model is sales-subsidiary + imports, not manufacturing \u2014 low PN3 friction; but Indian public-procurement 'Make in India'/local-content rules increasingly disadvantage imported Chinese devices"
+    ],
+    "india_operations": "Sales/service subsidiary; no Indian manufacturing found; growth via distribution into hospitals and labs",
+    "report_used": "Mindray FY2023 & 1Q2024 earnings-call script (mindray.com IR PDF) + annual report summaries; India-specific revenue not broken out"
+   }
+  }
+ ],
+ "geopolitical_note": "Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected \u2014 BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' \u2014 SAIC diluted MG Motor India to JSW (49%\u219239% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts carry the manufacturing \u2014 Prama Hikvision; (4) technology licensing/royalty (CATL's LRS model) is the theoretically PN3-compatible route but is now ALSO constrained from the Chinese side by Beijing's export controls on battery/rare-earth/process technology (the Reliance-CATL talks died partly on this); (5) pre-2020 grandfathered assets (Midea's Pune park, Luxshare's Tamil Nadu plant, BYD Chennai) become the only expansion platforms; (6) asset-light models \u2014 export/dealer networks (Gree, Baosteel, Wanhua sales office) and services (COSCO liner calls) \u2014 proceed freely because they involve no Indian FDI. Net effect: annual reports of Chinese majors show India as a fast-growing REVENUE geography (Haier +30%, 'developing countries' +30% for Mindray) while capex conspicuously routes to Vietnam, Thailand, Indonesia, Brazil, Hungary, Saudi Arabia instead.",
+ "method_notes": [
+  "All 12 companies verified present in candidates_cn.csv (3,514 names) before inclusion; tickers quoted as listed in the CSV (note BYD and COSCO SHIPPING Holdings appear via their SEHK lines 1211/1919; both are dual A+H listed)",
+  "Sector labels follow the CSV's FocusSector column; CATL sits under 'White Goods & Electricals' in the CSV though its real sector is EV batteries \u2014 flagged in-line",
+  "Evidence gathered via ~13 web searches surfacing English annual reports (Haier H-share AR 2024, Hikvision 2024 AR, SAIC AR 2024, Gree 2024 AR English) plus reputable secondary coverage quoting AR figures; cninfo.com.cn Chinese PDFs were NOT parsed page-by-page \u2014 where a claim could not be traced to a report it is marked UNVERIFIED",
+  "Profitability figures: revenue/segment numbers marked 'per AR' are sourced; net-profit figures marked 'approx.' are FY2024 consensus-reported values not re-verified against filings this session",
+  "SAIC is included despite an 88% FY2024 profit collapse because it remained net-profitable and is the single most instructive PN3 case (MG\u2192JSW MG)",
+  "Goertek was screened but excluded from the final 12 (present in CSV, profitable, but capex is overwhelmingly Vietnam-directed with no substantive India evidence) to keep sector spread at 8 of the 12 focus sectors within the 10-12 lead budget",
+  "Selection covers: Auto/EV (BYD, SAIC), Batteries (CATL), Electronics (Luxshare, Hikvision), White Goods (Haier, Midea, Gree), Chemicals (Wanhua), Steel (Baosteel), Marine (COSCO), Medical Devices (Mindray)"
+ ],
+ "site_access_issues": [
+  "cninfo.com.cn not fetched directly (Chinese-language PDF repository, anti-bot; all A-share AR evidence came via mirrored English ARs, IR-site PDFs, or press quoting the reports)",
+  "Large AR PDFs (200-600 pages: BYD HKEX filing, Luxshare 10jqka PDF, COSCO AR) were located but not parsed in full \u2014 India keyword sweeps of full Chinese texts (\u5370\u5ea6) not performed",
+  "COSCO Shipping Lines India / OOCL India and Mindray India legal entities asserted from general knowledge, not verified against registry sources this session \u2014 marked UNVERIFIED in-line",
+  "Reported Luxshare-Motherson and Midea-Indian-partner JV talks found only in press rumor form; no filing evidence \u2014 excluded from evidence weighting"
+ ]
+}

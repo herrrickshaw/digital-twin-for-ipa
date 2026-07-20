@@ -126,5 +126,36 @@ def build():
           + ", ".join(f"{l['company']} ({l['lead_score']})" for l in leads[:3]))
 
 
+def render():
+    """Regenerate docs/LEADS.md from layers/16_leads.json (preserves enrichment)."""
+    import collections
+    idx = json.load(open(os.path.join(ROOT, "layers/16_leads.json")))
+    leads = idx["leads"]
+    lines = ["# Leads — profitable firms × open government lanes", "",
+             f"*Generated {datetime.date.today().isoformat()} from `layers/16_leads.json` ({idx['count']} leads, 7 markets) "
+             "by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*", ""]
+    if idx.get("china_pn3_note"):
+        lines += ["> **China / Press Note 3**: " + idx["china_pn3_note"][:600] + "…", ""]
+    by = collections.defaultdict(list)
+    for l in leads: by[l["sector"]].append(l)
+    for sector, sec in sorted(by.items(), key=lambda kv: -max(x["lead_score"] for x in kv[1])):
+        lines += [f"## {sector} ({len(sec)} leads)", "",
+                  "| Score | Company | Country | India/APAC interest | Key evidence |", "|---|---|---|---|---|"]
+        for l in sorted(sec, key=lambda x: -x["lead_score"])[:12]:
+            ia = l.get("india_apac_interest", {})
+            if "level" in ia:
+                tag = ia["level"]; ev = (ia.get("evidence") or [""])[0][:150]
+            elif ia:
+                tag = f"10-K: India×{ia.get('india_mentions')}, APAC×{ia.get('apac_mentions')}, trend {ia.get('india_trend_yoy')}"
+                ev = (ia.get("investment_sentences") or ia.get("india_sentences") or [""])[0][:150]
+            else:
+                tag, ev = "domestic", ""
+            lines.append(f"| {l['lead_score']} | {l['company'][:40]} | {l['country'][:16]} | {tag} | {ev.replace('|','/')} |")
+        lines.append("")
+    open(os.path.join(ROOT, "docs/LEADS.md"), "w").write("\n".join(lines))
+    print(f"rendered {idx['count']} leads -> docs/LEADS.md")
+
+
 if __name__ == "__main__":
-    build()
+    import sys
+    render() if "--render" in sys.argv else build()

@@ -1,0 +1,219 @@
+{
+ "country": "South Korea",
+ "leads": [
+  {
+   "company": "LG Electronics Inc.",
+   "ticker": "A066570 (KOSE 066570)",
+   "sector": "White Goods & Electricals (CSV bucket: Electronics & Semiconductors)",
+   "profitability_check": "PROFITABLE \u2014 consistently profitable globally; Indian subsidiary LGEIL is among LG's most profitable units and drew a 54x-subscribed IPO",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Listed LG Electronics India Limited (LGEIL) on the NSE on 14 Oct 2025 \u2014 IPO of ~INR 11,607 cr (~USD 1.31 bn), 54x subscribed; stock closed +48% on debut",
+     "CEO William Cho: 'India is now at the center of our Global South strategy'",
+     "Three-part India vision disclosed at listing: 'Make for India', 'Make in India', 'Make India Global'",
+     "'Investing INR 50.01 billion in a new factory in Sri City, expected to create 1,900 direct and indirect jobs' \u2014 third India plant (USD ~600 mn, AC production from late 2026, phased expansion into refrigerators/washing machines/compressors through 2029; combined capacity by 2029: 2 mn TVs, 3.6 mn refrigerators, 3.75 mn washing machines, 4.7 mn ACs)"
+    ],
+    "india_operations": "Two operating plants (Greater Noida, Pune) + third under construction at Sri City, Andhra Pradesh (247 acres approved); #1 offline-channel player in Indian major home appliances; Indian arm now separately NSE-listed",
+    "report_used": "LG Global newsroom disclosure 'LG Electronics India Lists on NSE' (lg.com, Oct 2025) + LGEIL IPO filing coverage"
+   }
+  },
+  {
+   "company": "Hyundai Motor Company",
+   "ticker": "A005380 (KOSE 005380)",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "PROFITABLE \u2014 one of the world's most profitable automakers by absolute operating profit in 2024-2025",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Listed Hyundai Motor India Ltd in Oct 2024 in a ~Rs 27,870 cr offering the company itself describes as 'the largest in India's history'",
+     "Executive Chair Euisun Chung: 'We knew that India was the future. That is why we continuously increased investments, expanded our R&D capabilities and created more than 250,000 jobs'",
+     "Disclosed plan to 'localize the electric vehicle (EV) supply network for battery systems, battery cells and drive systems, and will invest in building EV infrastructure across India'",
+     "Rs 32,000 cr India expansion plan (Rs 26,000 cr Chennai, Rs 6,000 cr Pune/Talegaon plant acquired from GM for Rs 787 cr); capacity to rise from ~824k to 1.1 mn units by 2028"
+    ],
+    "india_operations": "Two Chennai plants + Talegaon (Pune) plant ramping from H2 2025; Indian subsidiary separately listed on NSE/BSE since Oct 2024",
+    "report_used": "Hyundai Motor worldwide newsroom disclosure on the HMIL IPO (hyundai.com) + HMIL IPO/expansion coverage"
+   }
+  },
+  {
+   "company": "Kia Corporation",
+   "ticker": "A000270 (KOSE 000270)",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "PROFITABLE \u2014 record operating margins among volume automakers in 2024-2025",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Anantapur (Andhra Pradesh) plant capacity expanded from 300,000 to ~350,000 units/yr; India accounts for ~9% of Kia's global sales",
+     "Committed Rs 2,000 cr for R&D, infrastructure and EV manufacturing in India; Anantapur plant is 'future proof to produce both EVs and IC engine models together'",
+     "Began local EV production at Anantapur in 2025 (Carens Clavis EV) to mitigate import duties; plans EV exports from India",
+     "Crossed 2.5 lakh cumulative export units from Anantapur (Seltos largest contributor)"
+    ],
+    "india_operations": "Kia India Pvt Ltd, Anantapur \u2014 full manufacturing hub, part of the Hyundai Motor Group Anantapur/Chennai ecosystem with Mobis module plants co-located",
+    "report_used": "Kia India press/industry disclosures (Autocar India, CarDekho); Kia Corp business-report PDF not directly parsed"
+   }
+  },
+  {
+   "company": "Hyundai Mobis Co., Ltd",
+   "ticker": "A012330 (KOSE 012330)",
+   "sector": "Auto, EV & Components",
+   "profitability_check": "PROFITABLE \u2014 steady mid-single-digit operating margins; large global Tier-1",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Official press release (8 Dec 2025): 'it has established a specialized software research branch in Bengaluru, India's IT hub... alongside its existing integrated R&D center in Hyderabad, established earlier this year, pursuing a dual R&D strategy'",
+     "'The company produces modules and core components at its two production hubs in Chennai and Anantapur, while its Gurugram parts hub ensures stable supply of after-sales service parts... Delhi and Chennai host the quality center and procurement center'",
+     "'It has set an aggressive target to increase the order value from Indian customers by approximately six times by 2028 compared to 2025'",
+     "Bengaluru branch to be a 'specialized hub for infotainment software' citing India's shift to mid-to-large vehicles and rising ADAS adoption"
+    ],
+    "india_operations": "Two module/component plants (Chennai, Anantapur), Gurugram after-sales parts hub, Hyderabad integrated R&D center, Bengaluru SW branch, Delhi quality center, Chennai procurement center",
+    "report_used": "Hyundai Mobis official newsroom press release (mobis.com, 2025-12-08), fetched and quoted directly"
+   }
+  },
+  {
+   "company": "POSCO Holdings Inc.",
+   "ticker": "A005490 (KOSE 005490)",
+   "sector": "Specialty Steel & Metals",
+   "profitability_check": "PROFITABLE \u2014 positive operating profit through the 2024-2025 steel downcycle, though margins compressed",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Oct 2024 MoU then Jul 2025 Heads of Agreement with JSW Group; JV agreement for a 50:50 co-managed integrated steel mill: 'The joint venture is structured as an equal partnership, with each company holding a 50% stake' with 'an integrated production capacity of 6 million tons of crude steel'",
+     "'A site has been secured in Odisha, offering proximity to iron ore mines and efficient access to logistics, power, and infrastructure'; targets 'completion by 2031, following a 48-month construction period'",
+     "POSCO's stated rationale: India 'steel consumption has grown by over 10% annually in recent years'; partnership also covers battery materials and renewable energy",
+     "History: the original standalone POSCO-India 12 MTPA Odisha project (2005 MoU) stalled on land/permits and was abandoned by 2017 \u2014 the JSW JV is the structural fix (local partner) for that failure"
+    ],
+    "india_operations": "Existing downstream base: POSCO Maharashtra (cold-rolled/galvanized, Talegaon) and steel processing/service centers; new 6 MTPA integrated JV mill in Odisha targeted 2031",
+    "report_used": "Official POSCO Group Newsroom release 'POSCO to Build Integrated Steel Mill in India via Joint Venture' (newsroom.posco.com), fetched and quoted directly + JSW Group press release"
+   }
+  },
+  {
+   "company": "Hanwha Aerospace Co., Ltd.",
+   "ticker": "A012450 (KOSE 012450)",
+   "sector": "Aerospace & Defence",
+   "profitability_check": "PROFITABLE \u2014 record revenue/operating profit in 2024-2025 on global K9/Chunmoo export backlog",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Signed second India K9 contract on 3 Apr 2025: ~USD 253-254 mn for 100 additional K9 Vajra-T self-propelled howitzers for the Indian Army (Hanwha Aerospace newsroom: 'Hanwha Aerospace Secures Second K9 Vajra-T Contract from India', 2025-04-03)",
+     "Systems manufactured in India by Larsen & Toubro at its Armored Systems Complex, Hazira, Gujarat; localization to rise from ~50% (first batch) to ~60%",
+     "First contract (2017, KRW 770 bn) delivered 100 units by 2020 \u2014 a decade-long India franchise, not a one-off",
+     "India and South Korea have discussed jointly exporting the K9 Vajra-T to third countries"
+    ],
+    "india_operations": "No owned plant; deep licensed-production partnership with L&T (Hazira) for K9 Vajra-T, plus component supply from Korea to L&T",
+    "report_used": "Hanwha Aerospace English newsroom item seq=499 (headline confirmed on-site; article body did not render) + KED Global / Breaking Defense / Janes coverage"
+   }
+  },
+  {
+   "company": "LG Energy Solution, Ltd.",
+   "ticker": "A373220 (KOSE 373220)",
+   "sector": "Green Energy & Fuels / Batteries (CSV bucket: White Goods & Electricals)",
+   "profitability_check": "PROFITABLE (headline) \u2014 positive operating profit in 2024-2025 but heavily dependent on US IRA (AMPC) tax credits; roughly breakeven excluding them",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Signed a non-binding agreement with JSW Energy for a 50:50 India battery JV \u2014 >USD 1.5 bn, ~10 GWh plant for EV and renewable-storage cells; JSW to take ~70% of output; production targeted end-2026 (Reuters/Business Standard, Dec 2024)",
+     "JSW proposed a 25-year agreement to LGES",
+     "LGES's own statement was cautious: 'no specific plans for India have been finalised' \u2014 no confirmed public announcement of a binding JV as of this check",
+     "Historical India footprint: supplied cells for Tata/Mahindra EV programs and e-scooter makers (Ola) from Korea/China \u2014 sales exposure without local manufacturing"
+    ],
+    "india_operations": "None owned; prospective JSW Energy JV (non-binding as last publicly disclosed); India currently served via cell exports",
+    "report_used": "Reuters-sourced coverage (Business Standard, just-auto, electrive, Dec 2024); no binding-JV confirmation found in later public disclosures \u2014 status UNVERIFIED beyond the non-binding agreement"
+   }
+  },
+  {
+   "company": "Samsung SDI Co., Ltd.",
+   "ticker": "A006400 (KOSE 006400)",
+   "sector": "Batteries (CSV bucket: Electronics & Semiconductors)",
+   "profitability_check": "LOSS-MAKING in FY2025 \u2014 revenue fell ~20% to KRW 13.27 tn; Energy Solutions segment swung to a KRW 1.85 tn operating loss on the EV demand chasm; no cash dividends for 3 years announced",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Company guidance/IR commentary: expects the small-battery market to grow with the electric two-wheeler market 'centered in India' and 'plans to enter electric two-wheeler battery markets in India and other Southeast Asian countries'",
+     "Industry coverage notes Samsung SDI 'is scouting opportunities in India's battery value chain' alongside LGES and CATL",
+     "All disclosed 2025 capex commitments are US (GM JV Indiana, USD 3.5 bn; 30 GWh US BESS by 2026) and Hungary \u2014 no India investment committed"
+    ],
+    "india_operations": "None; cylindrical-cell sales to Indian e-mobility customers from overseas plants only",
+    "report_used": "Samsung SDI IR news releases (samsungsdi.com Q1/Q3 2025 earnings, '2025 Samsung SDI in Brief') + FY2025 results coverage; full business report not parsed"
+   }
+  },
+  {
+   "company": "Samsung Electro-Mechanics Co., Ltd.",
+   "ticker": "A009150 (KOSE 009150)",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE \u2014 revenue and operating profit growing on AI-server MLCC/FCBGA demand; ~25% global MLCC share, >40% in AI-server MLCCs",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Only India presence found in company's own global-network disclosure: 'Samsung Electro-Mechanics Software India Bangalore Pvt. Ltd (SEMB)' \u2014 a software/R&D office, plus a Bangalore Innovation Centre (LinkedIn)",
+     "No India manufacturing plans in any 2025-2026 disclosure; capacity 'is being allocated first to AI server products' at Korean/Philippine/Chinese plants",
+     "Indirect India exposure via component supply into Samsung Electronics' Noida smartphone plant supply chain (not separately disclosed)"
+    ],
+    "india_operations": "Bangalore software subsidiary (SEMB) and innovation centre only; no manufacturing",
+    "report_used": "samsungsem.com global-network and newsroom pages (2025 Q4 business performance release); no India section in disclosures"
+   }
+  },
+  {
+   "company": "LG Innotek Co., Ltd.",
+   "ticker": "A011070 (KOSE 011070)",
+   "sector": "Electronics & Semiconductors",
+   "profitability_check": "PROFITABLE \u2014 consistently profitable on Apple camera-module franchise; diversifying into FC-BGA/automotive sensing",
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "Company/GlobalData profile lists operations in 'South Korea, Indonesia, China, Vietnam, Mexico, Poland, the US, Japan, Taiwan, and Germany' \u2014 India absent",
+     "APAC capacity strategy is explicitly Vietnam-centric: new Haiphong camera-module factory with Vietnam targeted at '70% to 80% of its total camera module production output in the next two to three years' (The Elec)",
+     "2024-era press speculation about an India camera-module line was not confirmed in any subsequent company disclosure found"
+    ],
+    "india_operations": "None found",
+    "report_used": "LG Innotek IR/newsroom pages + The Elec / DigiTimes coverage; annual report PDF not parsed \u2014 India absence corroborated across three sources"
+   }
+  },
+  {
+   "company": "LG Chem, Ltd.",
+   "ticker": "A051910 (KOSE 051910)",
+   "sector": "Chemicals & Plastics",
+   "profitability_check": "MARGINAL \u2014 petrochemical downcycle plus battery-materials softness compressed 2024-2025 operating profit; remains investment-grade, cash-generative via LGES stake",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Company disclosure lists production bases in 'Korea, China, Taiwan, Vietnam, India, Poland, and the U.S.' \u2014 the India base is LG Polymers India (Visakhapatnam, polystyrene)",
+     "Legacy liability rather than growth story: the 7 May 2020 styrene gas leak at LG Polymers' Gopalapatnam plant killed 12 and hospitalized 300+; no India expansion announced since",
+     "Cathode/battery-materials capex (80k\u2192260k tons by 2026) is directed at Korea (Gumi), US (Tennessee) and Morocco \u2014 not India"
+    ],
+    "india_operations": "LG Polymers India Pvt Ltd, Visakhapatnam (polystyrene compounding); no battery-materials footprint in India",
+    "report_used": "LG Chem corporate site/MarkLines profile + Wikipedia-corroborated incident record; business report PDF not parsed"
+   }
+  },
+  {
+   "company": "CJ Cheiljedang Corporation",
+   "ticker": "A097950 (KOSE 097950)",
+   "sector": "Food Processing",
+   "profitability_check": "PROFITABLE \u2014 overseas food revenue ~KRW 5.58 tn (near 50% of food sales), Q4 net income jumped; bio segment cyclical but positive",
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "Disclosed K-food capacity expansion map is Japan (new bibigo dumpling plant, Chiba, 2025), Hungary (by 2026) and South Dakota, US (by 2027) \u2014 India does not appear",
+     "APAC strategy runs through Vietnam (major production base), Japan, China, and new Thailand marketing pushes; bibigo sold in '70+ countries' but no India entity, plant, or entry plan found in any company disclosure",
+     "Sept 2025 ITOCHU business partnership covers Japan food sectors, again ex-India"
+    ],
+    "india_operations": "None found (note: CJ Darcl Logistics in India belongs to CJ Logistics, a sibling CJ Group affiliate, not CJ Cheiljedang)",
+    "report_used": "cj.co.kr investor pages, Korea Herald / Herald Business coverage of overseas expansion; annual report PDF not parsed"
+   }
+  }
+ ],
+ "method_notes": [
+  "All 12 companies verified present in candidates_kr.csv by ticker: A066570, A005380, A000270, A012330, A005490, A012450, A373220, A006400, A009150, A011070, A051910, A097950; sector field reflects the CSV FocusSector bucket where it differs from the natural sector",
+  "Requested shipbuilders (HD Hyundai Heavy Industries, HD KSOE, Samsung Heavy Industries, Hanwha Ocean) are NOT in the candidate CSV \u2014 its 'Shipbuilding & Marine' bucket (11 names) contains only shipping/logistics companies (HMM, Pan Ocean, Korea Line, etc.), so no shipbuilding lead is included per the verify-before-including rule",
+  "Evidence grounded in ~16 web searches/fetches: direct quotes pulled from official newsrooms of Hyundai Mobis (mobis.com press idx=6153, via curl with Mozilla UA), POSCO (newsroom.posco.com), LG (lg.com global newsroom), Hyundai Motor (hyundai.com worldwide newsroom); remainder from IR-sourced wire coverage (KED Global, Business Standard, Reuters-syndicated)",
+  "DART (dart.fss.or.kr) API not used \u2014 requires key registration, which was explicitly out of scope; formal audited annual-report PDFs were not parsed, so 'report_used' cites the nearest official disclosure (newsroom/IR release or IPO filing coverage)",
+  "Profitability checks are FY2024-FY2025 assessments from earnings releases/coverage, not recomputed from statements; Samsung SDI is the one loss-maker included deliberately (battery-sector leader with an explicitly stated India e2W entry intent)",
+  "Korean-language sources avoided per instruction (\uc778\ub3c4 homonym risk); all evidence is from English disclosures"
+ ],
+ "site_access_issues": [
+  "morningstar.com returned HTTP 403 on the Hyundai Mobis PR \u2014 worked around by fetching the identical release from mobis.com directly",
+  "m.hanwhaaerospace.com newsroom page rendered only the headline ('Hanwha Aerospace Secures Second K9 Vajra-T Contract from India', 2025-04-03) \u2014 article body is JS-loaded; contract details ($253-254 mn, 100 units, L&T Hazira, 60% localization) therefore corroborated from KED Global / Breaking Defense / Janes instead",
+  "LG Energy Solution: no official IR page confirming the JSW JV was found \u2014 only the Dec-2024 non-binding agreement is publicly evidenced, and LGES itself said 'no specific plans for India have been finalised'; final JV status marked UNVERIFIED",
+  "CJ Cheiljedang and LG Innotek India absence is an argument from silence across multiple sources, not a company statement",
+  "dart.fss.or.kr not queried (API key registration required, prohibited by task)"
+ ]
+}

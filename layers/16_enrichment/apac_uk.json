@@ -1,0 +1,216 @@
+{
+ "country": "United Kingdom",
+ "leads": [
+  {
+   "company": "Rolls-Royce Holdings plc",
+   "ticker": "RR.",
+   "sector": "Aerospace & Defence",
+   "profitability_check": "PROFITABLE - FY2024 underlying operating profit ~GBP 2.5bn on record results (2024 Full Year Results, 27-Feb-2025)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Rolls-Royce intends to establish India as a strategic 'home market' and is 'looking at more than doubling the size of its workforce to approximately 10,000 people in India and a 10-fold increase in local supply chain sourcing with a long-term goal to position the country as a global hub for its high-tech manufacturing'",
+     "Offer for co-development of an AMCA (Advanced Medium Combat Aircraft) engine 'will give India an opportunity to create and own IP for critical combat engine technology that is both customizable and exportable' - reaffirmed 2025-26",
+     "IAMPL (50:50 JV with HAL, making jet-engine parts since 2012 in Bengaluru) 'expanded its manufacturing footprint to Hosur in 2024'",
+     "More than 4,000 people work across the Rolls-Royce ecosystem in India including 2,800 engineers contributing to global programmes; HAL pact signed for Make-in-India Adour engine parts serving Rolls-Royce's international defence customer base; MT30 marine engine offered with full Transfer of Technology for Indian Navy next-gen destroyers",
+     "More than 1,400 Rolls-Royce engines in service across the Indian Armed Forces"
+    ],
+    "india_operations": "EXISTING footprint (70+ yr HAL relationship, IAMPL JV Bengaluru+Hosur, engineering centre Bengaluru) PLUS large stated NEW expansion ambition (10k workforce, 10x sourcing, AMCA co-development with IP transfer)",
+    "report_used": "Rolls-Royce Holdings Annual Report 2024 (rolls-royce.com PDF) + 2024 Full Year Results + company India statements 2025-26; expansion-ambition quotes are from company/press statements around the AR, not verified as verbatim AR text"
+   }
+  },
+  {
+   "company": "BAE Systems plc",
+   "ticker": "BA.",
+   "sector": "Aerospace & Defence",
+   "profitability_check": "PROFITABLE - FY2024 sales ~GBP 28.3bn, underlying EBIT ~GBP 3.0bn (FY2024 results, 19-Feb-2025)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Hawk Mk132 trainer built in collaboration with HAL: 'HAL's production line in India where the Hawk aircraft are assembled is a demonstration of the success of Make in India in defence manufacturing'",
+     "M777 Ultra Lightweight Howitzer (~$700m, 145 guns): BAE 'down-selected Mahindra as its business partner for the proposed in-country Assembly, Integration & Test (AIT) facility'",
+     "Company positioning: 'BAE Systems is proud to be a founding partner of defence manufacturing in India' with increasing collaboration with local industry on Indian Armed Forces modernisation",
+     "India is a named international market alongside the company's ~107,000 employees in 40+ countries; adjacent GE-Tejas/AMCA-era programs make India a stated pursuit market for trainers, artillery and naval systems"
+    ],
+    "india_operations": "EXISTING programme footprint (Hawk-HAL line, M777-Mahindra AIT facility) rather than large owned operations; NEW interest is pipeline-driven (follow-on Hawk, artillery, naval) - Annual Report 2024 itself confirmed published but India-specific AR passages could not be directly extracted",
+    "report_used": "BAE Systems Annual Report 2024 (investors.baesystems.com PDF, published 03-Mar-2025) - India programme evidence from company statements/announcements; AR India text UNVERIFIED verbatim"
+   }
+  },
+  {
+   "company": "AstraZeneca PLC",
+   "ticker": "AZN",
+   "sector": "Pharma & Bulk Drugs",
+   "profitability_check": "PROFITABLE - FY2024 revenue $54.1bn, core operating margin ~32% (Annual Report 2024)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Listed Indian subsidiary AstraZeneca Pharma India Ltd 'marks a consistent 32% growth as the company announces its annual results for FY 2024-25' (company press release) after 29% growth in FY2023-24",
+     "AZPIL Q1 FY25: 'Reports Strong Q1 Results, Achieving 31% Growth for Quarter ended June 30, 2024'",
+     "New Site-Lead, India Operations appointed effective 1-Aug-2024, signalling organisational build-out; India hosts AstraZeneca global capability/technology hubs in Chennai and Bengaluru (widely reported multi-thousand headcount - not verified from AR text in this pass)",
+     "India est. 1979, HQ Bengaluru; 800+ commercial employees plus GCC operations"
+    ],
+    "india_operations": "EXISTING listed arm (AstraZeneca Pharma India, BSE/NSE listed, ~75% parent-owned) growing >30% p.a. + GCC hubs; NEW interest = continued oncology/rare-disease launches and capability-centre expansion",
+    "report_used": "AstraZeneca Annual Report 2024 (astrazeneca.com) + AstraZeneca Pharma India Limited Annual Report 2024-25 (astrazeneca.in PDF)"
+   }
+  },
+  {
+   "company": "GSK plc",
+   "ticker": "GSK",
+   "sector": "Pharma & Bulk Drugs",
+   "profitability_check": "PROFITABLE - FY2024 turnover ~GBP 31.4bn, core operating profit ~GBP 9bn (FY2024 results announcement)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Listed Indian subsidiary GlaxoSmithKline Pharmaceuticals Ltd FY2024-25 'revenue of Rs 3,407 crores with 6% growth... strong volume recovery despite NLEM impact' (India AR 2024-25, titled 'Ahead Together with India')",
+     "Shingrix launched in India April 2023 - 'the first vaccine launch across more than seven specialities in the Indian market'; markets outside the US were 56% of 2024 global Shingrix sales",
+     "In FY2024-25 'GSK partnered with over 700 clinics and key hospitals across India to transform them into Adult Vaccination Centres (AVx)' - building the adult-immunisation category as a stated India growth driver"
+    ],
+    "india_operations": "EXISTING listed arm (GlaxoSmithKline Pharmaceuticals Ltd, ~75% parent-owned, Mumbai) with steady single-digit growth; NEW interest concentrated in vaccines (Shingrix) and adult-immunisation category creation rather than new manufacturing capex",
+    "report_used": "GSK Annual Report 2024 (gsk.com PDF) + GlaxoSmithKline Pharmaceuticals Ltd Annual Report 2024-25 (india-pharma.gsk.com PDF)"
+   }
+  },
+  {
+   "company": "Croda International Plc",
+   "ticker": "CRDA",
+   "sector": "Chemicals & Plastics",
+   "profitability_check": "PROFITABLE - FY2024 sales ~GBP 1.63bn, adjusted profit before tax ~GBP 260m (Annual Report & Accounts 2024)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "AR 2024: 'A new surfactants plant in Dahej, India is due to be commissioned in 2025, supporting high-growth markets in Asia' - concrete NEW India manufacturing capex",
+     "AR 2024: 'Sales in the key Asian markets of China, India and South Korea continued to grow strongly'; 'growth in India was strong, illustrating the continued premiumisation of consumer markets there'",
+     "Asia is 25.1% of net sales and the strongest-growing region, with India explicitly one of the investment destinations"
+    ],
+    "india_operations": "EXISTING Croda India consumer-care business PLUS NEW Dahej surfactants plant (commissioning 2025) - one of the clearest new-investment signals in this cohort",
+    "report_used": "Croda International Annual Report & Accounts 2024 (croda.com PDF)"
+   }
+  },
+  {
+   "company": "Johnson Matthey Plc",
+   "ticker": "JMAT",
+   "sector": "Chemicals & Plastics",
+   "profitability_check": "PROFITABLE - FY2024/25 underlying operating profit ~GBP 0.3bn (Preliminary results YE 31-Mar-2025); portfolio being reshaped (Catalyst Technologies sale to Honeywell agreed, completing H1 CY2026)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report 2025: 'good growth in Asia as their largest customers in Japan and India outperformed their respective markets' (Clean Air)",
+     "Manufacturing footprint in India: Manesar (Haryana) autocatalyst plant, Taloja (Maharashtra) chemicals/catalyst plant, plus Panki operations - 25-millionth Indian autocatalyst milestone previously marked with UK Business Secretary",
+     "June-2026: 'Johnson Matthey Proposes Expansion of Chemical Manufacturing Facility at Taloja' (environmental-clearance filing) - incremental NEW India capex"
+    ],
+    "india_operations": "EXISTING multi-plant footprint (Manesar autocatalysts, Taloja catalysts) serving India BS-VI emissions demand; NEW interest is moderate (Taloja expansion proposal) and clouded by group-level divestment of Catalyst Technologies",
+    "report_used": "Johnson Matthey Annual Report & Accounts 2025 (matthey.com) + FY2024/25 preliminary results; Taloja expansion from ProjectX India filing report"
+   }
+  },
+  {
+   "company": "Unilever PLC",
+   "ticker": "ULVR",
+   "sector": "White Goods & Electricals (FMCG)",
+   "profitability_check": "PROFITABLE - FY2024 turnover EUR 60.8bn, underlying operating profit ~EUR 11.2bn (Annual Report and Accounts 2024)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "India is one of Unilever's core emerging-market growth pillars; >50% of group turnover is from emerging markets with India among the named core growth regions",
+     "Hindustan Unilever reaches 9 of 10 Indian households across 50+ brands; HUL EBIT margins exceed 20% and serve as an internal benchmark for group emerging-market margin aspirations",
+     "January 2025: HUL 'signed an agreement to acquire the premium actives-led beauty brand Minimalist' - continued NEW investment in premium India categories",
+     "Unilever also announced (2025) intent to list its demerged Ice Cream business with Indian operations remaining under HUL structure - India repeatedly cited by group CEO as a top-priority market"
+    ],
+    "india_operations": "EXISTING flagship listed arm Hindustan Unilever Ltd (~61.9% owned; India is one of Unilever's largest markets, ~10-12% of group turnover) - deepest India footprint of any UK plc; NEW interest = premium/beauty M&A and portfolio investment via HUL",
+    "report_used": "Unilever Annual Report and Accounts 2024 (unilever.com PDF) + Q4/FY2024 results announcement + HUL Integrated Annual Report 2024-25"
+   }
+  },
+  {
+   "company": "Reckitt Benckiser Group plc",
+   "ticker": "RKT",
+   "sector": "White Goods & Electricals (Consumer Health/Hygiene)",
+   "profitability_check": "PROFITABLE - FY2024 net revenue ~GBP 14.2bn, adjusted operating profit ~GBP 3.4bn (Annual Report 2024, published 26-Mar-2025)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "'India delivered double-digit growth led by strong growth in Germ Protection (Dettol), Intimate Wellness (Durex), and Household Care (Finish)'",
+     "'Core Reckitt's growth was led by Emerging Markets, with double-digit growth in China and India'; Emerging Markets growth accelerated from 5% (2015-19) to 8% (2019-24) to ~14% (9M 2025)",
+     "Emerging markets incl. India described as the largest single area in Reckitt's Powerbrand portfolio, 'led by the high-growth markets of China and India'"
+    ],
+    "india_operations": "EXISTING large unlisted India business (Dettol, Durex, Harpic, Finish; local manufacturing) - India is an organic-growth engine; no major NEW India capex announced in AR",
+    "report_used": "Reckitt Annual Report 2024 (reckitt.com) + 'Scaling fast, winning big' EM strategy piece (reckitt.com)"
+   }
+  },
+  {
+   "company": "Associated British Foods plc",
+   "ticker": "ABF",
+   "sector": "Food Processing",
+   "profitability_check": "PROFITABLE - FY2024 (YE 14-Sep-2024) revenue ~GBP 20.1bn, adjusted operating profit ~GBP 2.0bn (Annual Report 2024)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "AR 2024 (Ingredients/AB Mauri): capital projects to drive long-term growth include 'the construction of a fresh yeast plant in northern India' - concrete NEW India capex",
+     "AB Mauri 'delivered very good growth in sales and profits' with 'strong growth in North America, Brazil, Mexico, south Asia and south east Asia'",
+     "International grocery brands (Twinings, Ovaltine, Patak's, Blue Dragon) give ABF Asia-facing brand exposure; Ovaltine RTD growth driven from Thailand (APAC)"
+    ],
+    "india_operations": "EXISTING AB Mauri India yeast/bakery-ingredients business; NEW interest = fresh yeast plant under construction in northern India; retail (Primark) has no India presence",
+    "report_used": "Associated British Foods Annual Report 2024 (abf.co.uk PDF) + FY2024 Annual Results Announcement (5-Nov-2024)"
+   }
+  },
+  {
+   "company": "Smith & Nephew plc",
+   "ticker": "SN.",
+   "sector": "Medical Devices",
+   "profitability_check": "PROFITABLE - FY2024 revenue $5,810m (underlying growth 5.3%), trading profit ~$1.05bn (Q4/FY2024 results, 25-Feb-2025)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "FY2024: 'Emerging Markets revenue was up 9.5% (7.6% reported), with strong double-digit growth across the Middle East, India and Latin America' - India explicitly named as a double-digit growth market",
+     "Smith & Nephew GBS Private Limited, Pune (World Trade Center, Kharadi) - global business services arm with ~493 employees (Apr-2024), i.e. India is also a capability/back-office hub, not just a sales market",
+     "China weakness (VBP procurement) is pushing the emerging-market growth engine toward India/Middle East in company commentary"
+    ],
+    "india_operations": "EXISTING commercial subsidiary + Pune GBS centre (~500 staff); NEW interest = India as offset growth engine within Emerging Markets; no India plant announced",
+    "report_used": "Smith+Nephew Q4/Full Year 2024 Results + Annual Report 2024 (20-F filed with SEC, YE 31-Dec-2024); Pune GBS detail from Indian registry data"
+   }
+  },
+  {
+   "company": "Rio Tinto Group",
+   "ticker": "RIO",
+   "sector": "Specialty Steel & Metals",
+   "profitability_check": "PROFITABLE - FY2024 underlying EBITDA ~$23.3bn, net earnings ~$11.6bn (2024 Annual Report / annual results, 19-Feb-2025)",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "2024 Annual Report / results materials discuss India primarily as a demand-side driver (steel/aluminium demand growth) rather than an investment destination - no India-specific operational investment plans found in AR search",
+     "Rio maintains a commercial/procurement presence in India (Rio Tinto India) but exited its only major Indian project (Bunder diamonds, returned to Madhya Pradesh govt 2017)",
+     "Growth capital is directed to Oyu Tolgoi (Mongolia), Simandou (Guinea) and lithium - India absent from the stated growth pipeline"
+    ],
+    "india_operations": "EXISTING minimal footprint (commercial office/procurement); NO stated new India investment interest - India matters to Rio as a customer market, not an operating geography. India-specific AR sentences UNVERIFIED (large PDF, not parsed)",
+    "report_used": "Rio Tinto 2024 Annual Report (riotinto.com PDF) + 2024 annual results pack + SEC 6-K/20-F filings"
+   }
+  },
+  {
+   "company": "Renishaw plc",
+   "ticker": "RSW",
+   "sector": "Electronics & Semiconductors (precision engineering)",
+   "profitability_check": "PROFITABLE - FY2024 (YE Jun-2024) revenue ~GBP 691m, adjusted profit before tax ~GBP 122.6m (Preliminary Results 2024)",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Annual Report 2024: India (Pune) is one of Renishaw's three global manufacturing countries - 'Most of Renishaw's R&D and manufacturing takes place in the UK, and they have other major manufacturing sites in Ireland and India'",
+     "AR climate-risk disclosure treats Pune as 'their site with the greatest asset value that currently faces high exposure' to chronic climate risks, producing cables and tool-setting arms - confirming Pune's materiality to group output",
+     "'Renishaw recently opened a new technology centre in Bangalore to support their growing customer base in India' - NEW demand-side investment"
+    ],
+    "india_operations": "EXISTING major manufacturing plant in Pune (one of only 3 manufacturing countries) + NEW Bangalore technology centre for the growing Indian customer base",
+    "report_used": "Renishaw plc Annual Report 2024 'Transforming Tomorrow Together' (renishaw.com PDF) + Preliminary Results 2024"
+   }
+  }
+ ],
+ "method_notes": [
+  "Candidate pool: scratchpad/candidates_uk.csv (329 names, 12 focus sectors). All 12 selected leads verified present in the CSV by grep before inclusion.",
+  "Requested exemplars NOT in the candidate CSV and therefore excluded: Spirax Group, Weir Group, Diageo, IMI, Smiths Group. Diageo's United Spirits FTA commentary is noted below only as FTA context, not as a lead.",
+  "Sector spread of the 12: Aerospace & Defence (2), Pharma & Bulk Drugs (2), Chemicals & Plastics (2), White Goods & Electricals/FMCG (2), Food Processing (1), Medical Devices (1), Specialty Steel & Metals (1), Electronics & Semiconductors (1). Green Energy & Fuels, Auto/EV, Shipbuilding and Textiles buckets in this CSV are dominated by AIM micro-caps/oil juniors with no credible India investment programme, so no lead taken from them.",
+  "India-UK FTA (signed May-2025, whisky tariff 150%->75% now, 40% by 2026): most FY2024 annual reports in this cohort were published Feb-Apr 2025 and largely predate or barely post-date signature, so explicit FTA passages were NOT found in the ARs reviewed; the clearest corporate FTA reaction found was Diageo's ('landmark treaty... the largest and most exciting whisky market' - Diageo India CEO), included as calculus context only. FTA relevance to the leads: BAE/Rolls-Royce (defence-procurement climate), Croda/JMAT (chemicals tariff lines), Unilever/Reckitt/ABF (consumer goods inputs).",
+  "Profitability figures are from FY results announcements/annual reports and are approximate (rounded); all 12 are solidly profitable at the operating level.",
+  "EXISTING vs NEW distinction applied throughout: Unilever(HUL), AstraZeneca Pharma India and GlaxoSmithKline Pharmaceuticals are LISTED Indian arms (existing footprint); NEW-interest signals are Croda Dahej plant, Rolls-Royce 10k-workforce/AMCA offer, AB Mauri north-India yeast plant, HUL Minimalist acquisition, JMAT Taloja expansion, Renishaw Bangalore tech centre.",
+  "Evidence gathered via ~14 web searches + 1 direct fetch against annual-report PDFs, IR pages and company statements; quotes are as returned by search extraction of the underlying reports - flagged UNVERIFIED where the sentence could not be tied verbatim to the AR itself (BAE AR India text, Rolls-Royce expansion quotes, Rio Tinto AR India text)."
+ ],
+ "site_access_issues": [
+  "baesystems.com India country page returned 404 via WebFetch; BAE India evidence sourced from BAE press articles and third-party defence media instead - BAE Annual Report 2024 PDF located but India passages not directly extracted",
+  "Large annual-report PDFs (Rio Tinto ~400pp, BAE, Unilever) not parsed page-by-page in this pass; relied on search-indexed extraction of report text, so India sentences for Rio Tinto and BAE are marked UNVERIFIED",
+  "Rolls-Royce workforce-expansion (10,000 people / 10x sourcing) quotes come from company statements to Indian media (inkl/Business Standard/Hans India), not confirmed as verbatim Annual Report 2024 text"
+ ]
+}

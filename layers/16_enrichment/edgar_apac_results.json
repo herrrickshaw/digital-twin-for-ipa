@@ -1,0 +1,1728 @@
+{
+ "GE": {
+  "ticker": "GE",
+  "company": "GENERAL ELECTRIC CO",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "S: \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Singapore 178 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0United Kingdom 78 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Ireland 60 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Hungary 52 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Italy 46 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0India 36 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Other Non-U."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-01-29",
+    "india_mentions": 1,
+    "apac_mentions": 15
+   },
+   {
+    "filing_date": "2025-02-03",
+    "india_mentions": 0,
+    "apac_mentions": 10
+   }
+  ],
+  "india_trend": 1
+ },
+ "RTX": {
+  "ticker": "RTX",
+  "company": "RTX Corp",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Collins also continues to invest in operational capacity in strategic locations in the United States (including Puerto Rico), India, Mexico, Singapore, and the Philippines.",
+   "ormal course of business, we are subject to examination by taxing authorities throughout the world, including such major jurisdictions as Canada, China, France, Germany, India, Poland, Saudi Arabia, Singapore, Switzerland, the United Kingdom, and the United States."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-06",
+    "india_mentions": 2,
+    "apac_mentions": 29
+   },
+   {
+    "filing_date": "2025-02-03",
+    "india_mentions": 2,
+    "apac_mentions": 33
+   }
+  ],
+  "india_trend": 0
+ },
+ "HWM": {
+  "ticker": "HWM",
+  "company": "Howmet Aerospace Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   ", and Wheels India Limited.",
+   "able of Contents In recent years, Forged Wheels has seen an increase in the number of aluminum wheel suppliers (both forged and cast aluminum wheels) from China, Taiwan, India, South Korea, and Turkey attempting to penetrate the global commercial transportation market."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 2,
+    "apac_mentions": 20
+   },
+   {
+    "filing_date": "2025-02-14",
+    "india_mentions": 2,
+    "apac_mentions": 17
+   }
+  ],
+  "india_trend": 0
+ },
+ "GD": {
+  "ticker": "GD",
+  "company": "GENERAL DYNAMICS CORP",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-01-30",
+    "india_mentions": 0,
+    "apac_mentions": 4
+   },
+   {
+    "filing_date": "2025-02-07",
+    "india_mentions": 0,
+    "apac_mentions": 6
+   }
+  ],
+  "india_trend": 0
+ },
+ "CRS": {
+  "ticker": "CRS",
+  "company": "CARPENTER TECHNOLOGY CORP",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2025-08-12",
+    "india_mentions": 0,
+    "apac_mentions": 16
+   },
+   {
+    "filing_date": "2024-08-13",
+    "india_mentions": 0,
+    "apac_mentions": 16
+   }
+  ],
+  "india_trend": 0
+ },
+ "GM": {
+  "ticker": "GM",
+  "company": "General Motors Co",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "se they primarily relate to the wind down of our manufacturing operations in Colombia and Ecuador and an asset sale resulting from our strategic decision in 2020 to exit India .",
+   "(b) Consists of charges related to the VSP and strategic activities related to Buick dealerships in GMNA; the gain associated with India asset sales and the partial resolution of Korean subcontractor matters in GMI; and charges related to Cruise restructuring."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-01-27",
+    "india_mentions": 3,
+    "apac_mentions": 105
+   },
+   {
+    "filing_date": "2025-01-28",
+    "india_mentions": 4,
+    "apac_mentions": 127
+   }
+  ],
+  "india_trend": -1
+ },
+ "BWA": {
+  "ticker": "BWA",
+  "company": "BORGWARNER INC",
+  "status": "ok",
+  "investment_sentences": [
+   "The Company operates manufacturing facilities serving customers in Europe, the Americas and Asia and is an original equipment supplier to nearly every major automotive OEM in the world.",
+   "We have manufacturing and technical facilities in many regions, including Europe, Asia, and the Americas.",
+   "The Company operates manufacturing facilities serving customers in Europe, the Americas and Asia and is an original equipment supplier to nearly every major automotive OEM in the world."
+  ],
+  "india_sentences": [
+   "6% India Sundaram Finance Limited; Brakes India Limited Fast Warner Intelligent Control Systems (Xi\u2019an) Co.",
+   "The Company provides defined benefit pension plans in Germany, India, Italy, Japan, Mexico, Poland, South Korea, Sweden, Switzerland, Thailand, Turkey, U."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-11",
+    "india_mentions": 4,
+    "apac_mentions": 63
+   },
+   {
+    "filing_date": "2025-02-06",
+    "india_mentions": 3,
+    "apac_mentions": 49
+   }
+  ],
+  "india_trend": 1
+ },
+ "LEA": {
+  "ticker": "LEA",
+  "company": "LEAR CORP",
+  "status": "ok",
+  "investment_sentences": [
+   "In particular, we believe that certain joint ventures have provided us, and will continue to provide us, with the opportunity to expand our business relationships with Asian automotive manufacturers, particularly in emerging markets.",
+   "Sixteen of the joint ventures operate in Asia, and two operate in North America (both of which are dedicated to serving Asian automotive manufacturers).",
+   "We have also increased our vertical integration capabilities globally, as well as expanded our component manufacturing capacity in Asia, Central America, Eastern Europe, Mexico and Northern Africa and our low-cost engineering capabilities in Asia, Eastern Europe and Northern Afri"
+  ],
+  "india_sentences": [
+   "49 United\u00a0States / Mexico Kyungshin-Lear Sales and Engineering LLC 49 India Hyundai Transys Lear Automotive India Private Limited 35 20 Table of Contents ITEM\u00a01A \u2013 RISK FACTORS Our business, financial condition, operating results and cash flows may be impacted by a number of fact",
+   "a privacy laws and regulations such as European Union General Data Privacy Regulation, China Cyber Security Laws including the China Personal Information Protection Law, India's Information Technology Act and supplementary rules, and the California Consumer Privacy Act, or litiga"
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-13",
+    "india_mentions": 6,
+    "apac_mentions": 74
+   },
+   {
+    "filing_date": "2025-02-14",
+    "india_mentions": 3,
+    "apac_mentions": 63
+   }
+  ],
+  "india_trend": 3
+ },
+ "GNTX": {
+  "ticker": "GNTX",
+  "company": "GENTEX CORP",
+  "status": "ok",
+  "investment_sentences": [
+   "In April 2025, the Company acquired VOXX, which operates primarily out of facilities in Hauppauge, NY, and Indianapolis, IN."
+  ],
+  "india_sentences": [
+   "In April 2025, the Company acquired VOXX, which operates primarily out of facilities in Hauppauge, NY, and Indianapolis, IN.",
+   "The Company's Premium Audio Products segment operates in the Indianapolis, Indiana facility, as well as sales offices in China, France, Germany, and the Netherlands."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-24",
+    "india_mentions": 0,
+    "apac_mentions": 47
+   },
+   {
+    "filing_date": "2025-02-25",
+    "india_mentions": 0,
+    "apac_mentions": 33
+   }
+  ],
+  "india_trend": 0
+ },
+ "HOG": {
+  "ticker": "HOG",
+  "company": "HARLEY-DAVIDSON, INC.",
+  "status": "ok",
+  "investment_sentences": [
+   "HDMC's Thailand facility manufactures motorcycles for certain Asian and European markets as well as limited non-core (Sport and Adventure Touring) motorcycle models for the North American market."
+  ],
+  "india_sentences": [
+   "merica Total Dealership points 554\u00a0 46\u00a0 296\u00a0 247\u00a0 31\u00a0 1,174\u00a0 HDMC also distributes its motorcycles through independent distributors in select overseas markets, including India.",
+   "The independent distributors sell HDMC's products through independent Harley-Davidson dealers in India and other markets, included in the table above, as well as through the distributors' existing dealer networks."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-26",
+    "india_mentions": 3,
+    "apac_mentions": 66
+   },
+   {
+    "filing_date": "2025-02-26",
+    "india_mentions": 3,
+    "apac_mentions": 59
+   }
+  ],
+  "india_trend": 0
+ },
+ "DORM": {
+  "ticker": "DORM",
+  "company": "Dorman Products, Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Properties Facilities As of December\u00a031, 2025, we had 38 warehouse and office facilities located throughout the United States, Canada, China, Taiwan, and India.",
+   "Owned (1) We lease two facilities in Madison, Indiana, and one facility in Shreveport, Louisiana (consisting of an aggregate of approximately 543,000 square feet) from limited liability companies in which Ms."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-27",
+    "india_mentions": 3,
+    "apac_mentions": 14
+   },
+   {
+    "filing_date": "2025-02-27",
+    "india_mentions": 3,
+    "apac_mentions": 14
+   }
+  ],
+  "india_trend": 0
+ },
+ "SHW": {
+  "ticker": "SHW",
+  "company": "SHERWIN WILLIAMS CO",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "h America region (which is comprised of the United States, Canada and the Caribbean region), slightly less than 10 % in the EMEAI region (Europe, Middle East, Africa and India), with the remaining global regions accounting for the residual balance."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-19",
+    "india_mentions": 1,
+    "apac_mentions": 21
+   },
+   {
+    "filing_date": "2025-02-20",
+    "india_mentions": 1,
+    "apac_mentions": 25
+   }
+  ],
+  "india_trend": 0
+ },
+ "ECL": {
+  "ticker": "ECL",
+  "company": "ECOLAB INC.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Approximately 43% of our employees are employed in North America, 21% in Europe, 12% in Latin America, 8% in Asia Pacific, 8% in India, Middle East and Africa, and 8% in Greater China.",
+   "In addition, Korea, Taiwan, Ukraine, Turkey, India, Peru, Chile and Colombia and other countries have implemented or are implementing similar requirements."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-23",
+    "india_mentions": 8,
+    "apac_mentions": 24
+   },
+   {
+    "filing_date": "2025-02-21",
+    "india_mentions": 8,
+    "apac_mentions": 28
+   }
+  ],
+  "india_trend": 0
+ },
+ "APD": {
+  "ticker": "APD",
+  "company": "Air Products & Chemicals, Inc.",
+  "status": "ok",
+  "investment_sentences": [
+   "We are the primary beneficiary of the NEOM Green Hydrogen Company and consolidate the joint venture within our Middle East and India segment.",
+   "ercise significant influence in the Jazan Integrated Gasification and Power Company joint venture (\"JIGPC\"), which we account for as an equity method investment in our Middle East and India segment.",
+   "92 Table of Contents We determined that assets and liabilities associated with two coal gasification plants in our Asia segment met the criteria for held-for-sale classification."
+  ],
+  "india_sentences": [
+   "We manage our operations, assess performance, and report earnings under five reportable segments:\u00a0Americas, Asia, Europe, Middle East and India, and Corporate and other.",
+   "All of our equity method investments are in foreign industrial gas producers, the largest of which operate in Algeria, China, India, Italy, Mexico, and Saudi Arabia."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-11-20",
+    "india_mentions": 28,
+    "apac_mentions": 76
+   },
+   {
+    "filing_date": "2024-11-21",
+    "india_mentions": 25,
+    "apac_mentions": 67
+   }
+  ],
+  "india_trend": 3
+ },
+ "CTVA": {
+  "ticker": "CTVA",
+  "company": "Corteva, Inc.",
+  "status": "ok",
+  "investment_sentences": [
+   "th was driven primarily by the expected recovery in Brazil Safrinha corn and growth in North America soybeans and cotton, partially offset by reduced planted areas in EMEA, Asia Pacific and corn in Argentina."
+  ],
+  "india_sentences": [
+   ") 9330 Zionsville Road, Indianapolis, Indiana 46268 \u00a0 (833) 267-8382 1000 N.",
+   ") 9330 Zionsville Road, Indianapolis, Indiana 46268 \u00a0 (833) 267-8382 1000 N."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 5,
+    "apac_mentions": 37
+   },
+   {
+    "filing_date": "2025-02-14",
+    "india_mentions": 3,
+    "apac_mentions": 36
+   }
+  ],
+  "india_trend": 2
+ },
+ "CF": {
+  "ticker": "CF",
+  "company": "CF Industries Holdings, Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "ogen, energy, environmental or carbon policies may support development of additional nitrogen production in locations outside North America, including Europe, Australia, India, and the Middle East.",
+   "Conditions in the United States, Europe, India, Brazil, China and other countries and regions of global significance in agricultural production significantly impact our operating results."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-25",
+    "india_mentions": 5,
+    "apac_mentions": 12
+   },
+   {
+    "filing_date": "2025-02-20",
+    "india_mentions": 3,
+    "apac_mentions": 5
+   }
+  ],
+  "india_trend": 2
+ },
+ "PPG": {
+  "ticker": "PPG",
+  "company": "PPG INDUSTRIES INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "to serve certain automotive refinish customers in India.",
+   "i Paints to serve Japanese-based automotive OEM customers in North America and Europe \u2022 Asian Paints to serve certain automotive OEM and industrial coatings customers in India Major Competitive Factors Product performance, technology, quality, technical and customer service, pric"
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-19",
+    "india_mentions": 2,
+    "apac_mentions": 50
+   },
+   {
+    "filing_date": "2025-02-20",
+    "india_mentions": 3,
+    "apac_mentions": 68
+   }
+  ],
+  "india_trend": -1
+ },
+ "BALL": {
+  "ticker": "BALL",
+  "company": "BALL Corp",
+  "status": "ok",
+  "investment_sentences": [
+   "\u200b Beverage Packaging, Other \u200b Our aluminum beverage packaging operations in the beverage packaging, other, segment consist of three facilities \u2013 two in India and one in Myanmar."
+  ],
+  "india_sentences": [
+   "or the transition period from \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 to \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \u200b Commission File Number 001-07349 \u200b Ball Corporation \u200b \u200b \u200b \u200b State of Indiana \u200b 35-0160610 (State or other jurisdiction of \u200b (I.",
+   "The company was organized in 1880 and incorporated in the state of Indiana, United States of America (U."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-19",
+    "india_mentions": 6,
+    "apac_mentions": 8
+   },
+   {
+    "filing_date": "2025-02-20",
+    "india_mentions": 8,
+    "apac_mentions": 10
+   }
+  ],
+  "india_trend": -2
+ },
+ "MU": {
+  "ticker": "MU",
+  "company": "MICRON TECHNOLOGY INC",
+  "status": "ok",
+  "investment_sentences": [
+   "Other Government Incentive Commitments We receive incentives for the construction of a new assembly and test facility in Gujarat, India, representing 50 % of the total project cost from the Indian central government and 20 % of the total project cost from the state of Gujarat."
+  ],
+  "india_sentences": [
+   "12 Table of Contents Manufacturing We manufacture our products within our own facilities located in Taiwan, Singapore, Japan, the United States, Malaysia, China, and India and also utilize subcontractors to perform certain manufacturing processes.",
+   "Our R&D centers are located in Boise, Idaho; San Jose, California; India; Japan; Taiwan; Singapore; China; Italy; Mexico; Germany; Malaysia; and other sites in the United States."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-10-03",
+    "india_mentions": 12,
+    "apac_mentions": 102
+   },
+   {
+    "filing_date": "2024-10-04",
+    "india_mentions": 10,
+    "apac_mentions": 104
+   }
+  ],
+  "india_trend": 2
+ },
+ "NVDA": {
+  "ticker": "NVDA",
+  "company": "NVIDIA CORP",
+  "status": "ok",
+  "investment_sentences": [
+   "The laws of certain foreign countries in which our products are or may be manufactured or sold, including various countries in Asia, may not protect our products or IP rights to the same extent as the laws of the United States."
+  ],
+  "india_sentences": [
+   "and in various international locations, primarily in China, India, Israel, and Taiwan.",
+   "the significant tax jurisdictions that may be subject to examination include the United States for fiscal years after 2022, as well as Canada, China, Germany, Hong Kong, India, Israel, Italy, and Taiwan for fiscal years 2014 through 2025."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-25",
+    "india_mentions": 3,
+    "apac_mentions": 98
+   },
+   {
+    "filing_date": "2025-02-26",
+    "india_mentions": 3,
+    "apac_mentions": 92
+   }
+  ],
+  "india_trend": 0
+ },
+ "SNDK": {
+  "ticker": "SNDK",
+  "company": "Sandisk Corp",
+  "status": "ok",
+  "investment_sentences": [
+   "We conduct our operations at large, high-volume, purpose-built facilities in Japan, Malaysia and throughout Asia."
+  ],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2025-08-21",
+    "india_mentions": 1,
+    "apac_mentions": 61
+   }
+  ]
+ },
+ "MRVL": {
+  "ticker": "MRVL",
+  "company": "Marvell Technology, Inc.",
+  "status": "ok",
+  "investment_sentences": [
+   "Because many manufacturers and manufacturing subcontractors of our customers are located in Asia, we expect that most of our net revenue will continue to be represented by sales to our customers in that region."
+  ],
+  "india_sentences": [
+   "We also have operations in many countries, including Argentina, China, India, Israel, Japan, Singapore, South Korea, Taiwan and Vietnam.",
+   "Our employees are located across three geographical regions: 49% of employees are based in the Americas, 42% are in APAC (which includes India) and 9% are in EMEA."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-03-11",
+    "india_mentions": 7,
+    "apac_mentions": 113
+   },
+   {
+    "filing_date": "2025-03-12",
+    "india_mentions": 7,
+    "apac_mentions": 112
+   }
+  ],
+  "india_trend": 0
+ },
+ "AMD": {
+  "ticker": "AMD",
+  "company": "ADVANCED MICRO DEVICES INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Existing and developing regulations related to electronic waste recycling and extended producer responsibility, including the EU, China, Brazil, India, as well as state and municipal jurisdictions like California and Sao Paulo Brazil, require labeling, fees and/or reporting to su",
+   "perations in Austin, Texas; San Jose, California; Shanghai, China; Markham, Ontario, Canada; Longmont, Colorado; Dublin, Ireland; Singapore; and Bengaluru and Hyderabad, India."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-04",
+    "india_mentions": 2,
+    "apac_mentions": 58
+   },
+   {
+    "filing_date": "2025-02-05",
+    "india_mentions": 2,
+    "apac_mentions": 41
+   }
+  ],
+  "india_trend": 0
+ },
+ "AAPL": {
+  "ticker": "AAPL",
+  "company": "Apple Inc.",
+  "status": "ok",
+  "investment_sentences": [
+   ", Asia and Europe to supply and manufacture many components, and on partners primarily located in Asia, for final assembly of substantially all of the Company\u2019s hardware products."
+  ],
+  "india_sentences": [
+   "Europe includes European countries, as well as India, the Middle East and Africa.",
+   "A significant majority of the Company\u2019s manufacturing is performed in whole or in part by outsourcing partners located primarily in China mainland, India, Japan, South Korea, Taiwan and Vietnam, in addition to sourcing from partners and facilities located in the U."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-10-31",
+    "india_mentions": 7,
+    "apac_mentions": 76
+   },
+   {
+    "filing_date": "2024-11-01",
+    "india_mentions": 5,
+    "apac_mentions": 63
+   }
+  ],
+  "india_trend": 2
+ },
+ "AVGO": {
+  "ticker": "AVGO",
+  "company": "Broadcom Inc.",
+  "status": "ok",
+  "investment_sentences": [
+   "Many of our semiconductor customers design products in North America or Europe that are then manufactured in Asia."
+  ],
+  "india_sentences": [
+   "and India, and our primary warehouse is in Malaysia."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-12-18",
+    "india_mentions": 1,
+    "apac_mentions": 61
+   },
+   {
+    "filing_date": "2024-12-20",
+    "india_mentions": 1,
+    "apac_mentions": 55
+   }
+  ],
+  "india_trend": 0
+ },
+ "MDLZ": {
+  "ticker": "MDLZ",
+  "company": "Mondelez International, Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "such as the launch of co-branded chocolate innovations combining Biscoff with Cadbury Dairy Milk, Milka and other key brands in Europe as well as zero sugar Bournvita in India.",
+   "EPR policies are being implemented or contemplated in other jurisdictions around the world, including India, Vietnam and certain states in the United States."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-04",
+    "india_mentions": 7,
+    "apac_mentions": 25
+   },
+   {
+    "filing_date": "2025-02-05",
+    "india_mentions": 6,
+    "apac_mentions": 26
+   }
+  ],
+  "india_trend": 1
+ },
+ "HRL": {
+  "ticker": "HRL",
+  "company": "HORMEL FOODS CORP /DE/",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2025-12-05",
+    "india_mentions": 0,
+    "apac_mentions": 21
+   },
+   {
+    "filing_date": "2024-12-05",
+    "india_mentions": 0,
+    "apac_mentions": 30
+   }
+  ],
+  "india_trend": 0
+ },
+ "SEB": {
+  "ticker": "SEB",
+  "company": "SEABOARD CORP /DE/",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 0,
+    "apac_mentions": 4
+   },
+   {
+    "filing_date": "2025-02-13",
+    "india_mentions": 0,
+    "apac_mentions": 3
+   }
+  ],
+  "india_trend": 0
+ },
+ "SFD": {
+  "ticker": "SFD",
+  "company": "SMITHFIELD FOODS INC",
+  "status": "ok",
+  "investment_sentences": [
+   ", we distribute products directly from some of our plants and from owned and leased distribution centers in Indiana, Kansas, Maryland, Nebraska and North Carolina."
+  ],
+  "india_sentences": [
+   ", we distribute products directly from some of our plants and from owned and leased distribution centers in Indiana, Kansas, Maryland, Nebraska and North Carolina.",
+   "Bennett holds a Bachelor of Arts in Political Science from DePauw University and a Juris Doctor (\u201cJD\u201d) from Indiana University Robert H."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-03-24",
+    "india_mentions": 0,
+    "apac_mentions": 25
+   },
+   {
+    "filing_date": "2025-03-25",
+    "india_mentions": 0,
+    "apac_mentions": 22
+   }
+  ],
+  "india_trend": 0
+ },
+ "JBSS": {
+  "ticker": "JBSS",
+  "company": "SANFILIPPO JOHN B & SON INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "any agricultural products, federal and state government mandates related to the preceding or otherwise and purchasing behavior of certain countries, including China and India."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-08-20",
+    "india_mentions": 1,
+    "apac_mentions": 5
+   },
+   {
+    "filing_date": "2024-08-21",
+    "india_mentions": 1,
+    "apac_mentions": 3
+   }
+  ],
+  "india_trend": 0
+ },
+ "MAMA": {
+  "ticker": "MAMA",
+  "company": "Mama's Creations, Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-04-14",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   },
+   {
+    "filing_date": "2025-04-08",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   }
+  ],
+  "india_trend": 0
+ },
+ "NEE": {
+  "ticker": "NEE",
+  "company": "NEXTERA ENERGY INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-13",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   },
+   {
+    "filing_date": "2025-02-14",
+    "india_mentions": 0,
+    "apac_mentions": 1
+   }
+  ],
+  "india_trend": 0
+ },
+ "AXP": {
+  "ticker": "AXP",
+  "company": "AMERICAN EXPRESS CO",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   ", Alipay, PayPal and Shop Pay), as well as regional payment networks (such as the National Payments Corporation of India).",
+   "er under the Payment and Settlement Systems Act, 2007 to regulate the membership and operations of card networks, issued a mandate requiring payment systems operators in India to store certain payments data locally."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-06",
+    "india_mentions": 6,
+    "apac_mentions": 18
+   },
+   {
+    "filing_date": "2025-02-07",
+    "india_mentions": 6,
+    "apac_mentions": 19
+   }
+  ],
+  "india_trend": 0
+ },
+ "COP": {
+  "ticker": "COP",
+  "company": "CONOCOPHILLIPS",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-17",
+    "india_mentions": 0,
+    "apac_mentions": 211
+   },
+   {
+    "filing_date": "2025-02-18",
+    "india_mentions": 0,
+    "apac_mentions": 229
+   }
+  ],
+  "india_trend": 0
+ },
+ "AEP": {
+  "ticker": "AEP",
+  "company": "AMERICAN ELECTRIC POWER CO INC",
+  "status": "ok",
+  "investment_sentences": [
+   "As of December\u00a031, 2025, approximately 8%, 23% and 15% of the Registrants\u2019 available credit facilities were with European, Canadian, and Asian banks, respectively."
+  ],
+  "india_sentences": [
+   "ember us-gaap:PensionPlansDefinedBenefitMember 2024-12-31 0000004904 aep:AppalachianPowerCompanyMember us-gaap:PensionPlansDefinedBenefitMember 2024-12-31 0000004904 aep:IndianaMichiganPowerCompanyMember us-gaap:PensionPlansDefinedBenefitMember 2024-12-31 0000004904 us-gaap:Pensi",
+   "ntBenefitPlansDefinedBenefitMember 2025-12-31 0000004904 aep:OhioPowerCompanyMember us-gaap:OtherPostretirementBenefitPlansDefinedBenefitMember 2025-12-31 0000004904 aep:IndianaMichiganPowerCompanyMember us-gaap:OtherPostretirementBenefitPlansDefinedBenefitMember 2025-12-31 00000"
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 0,
+    "apac_mentions": 1
+   },
+   {
+    "filing_date": "2025-02-13",
+    "india_mentions": 0,
+    "apac_mentions": 1
+   }
+  ],
+  "india_trend": 0
+ },
+ "SO": {
+  "ticker": "SO",
+  "company": "SOUTHERN CO",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-19",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   },
+   {
+    "filing_date": "2025-02-20",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   }
+  ],
+  "india_trend": 0
+ },
+ "DVN": {
+  "ticker": "DVN",
+  "company": "DEVON ENERGY CORP/DE",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Certain of our leases are granted or approved by the federal government and administered by the BLM or Bureau of Indian Affairs of the Department of the Interior.",
+   "y-owned subsidiary of the Company, received a notice of violation (\u201cNOV\u201d) from the EPA relating to specific historical air emission events occurring on the Fort Berthold Indian Reservation in North Dakota."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-18",
+    "india_mentions": 0,
+    "apac_mentions": 2
+   },
+   {
+    "filing_date": "2025-02-19",
+    "india_mentions": 0,
+    "apac_mentions": 1
+   }
+  ],
+  "india_trend": 0
+ },
+ "FANG": {
+  "ticker": "FANG",
+  "company": "Diamondback Energy, Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-25",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   },
+   {
+    "filing_date": "2025-02-26",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   }
+  ],
+  "india_trend": 0
+ },
+ "EOG": {
+  "ticker": "EOG",
+  "company": "EOG RESOURCES INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   ", North Dakota and Wyoming, as well as in other areas, are granted by the federal government and administered by the Bureau of Land Management (BLM) and/or the Bureau of Indian Affairs (BIA), both federal agencies."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-24",
+    "india_mentions": 0,
+    "apac_mentions": 2
+   },
+   {
+    "filing_date": "2025-02-27",
+    "india_mentions": 0,
+    "apac_mentions": 2
+   }
+  ],
+  "india_trend": 0
+ },
+ "EW": {
+  "ticker": "EW",
+  "company": "Edwards Lifesciences Corp",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-25",
+    "india_mentions": 0,
+    "apac_mentions": 41
+   },
+   {
+    "filing_date": "2025-02-28",
+    "india_mentions": 0,
+    "apac_mentions": 40
+   }
+  ],
+  "india_trend": 0
+ },
+ "DXCM": {
+  "ticker": "DXCM",
+  "company": "DEXCOM INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "We capture ethnic diversity data in the United States only, comprised of the following categories: Black or African American, Hispanic or Latino, Asian, American Indian or Alaska Native, Native Hawaiian or Other Pacific Islander, Two or More Races."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 0,
+    "apac_mentions": 38
+   },
+   {
+    "filing_date": "2025-02-18",
+    "india_mentions": 0,
+    "apac_mentions": 32
+   }
+  ],
+  "india_trend": 0
+ },
+ "BDX": {
+  "ticker": "BDX",
+  "company": "BECTON DICKINSON & CO",
+  "status": "ok",
+  "investment_sentences": [
+   "-\u00a0 Greater Asia , which includes facilities in Australia, Bangladesh, China, India, Indonesia, Japan, Malaysia, New Zealand, the Philippines, Singapore, South Korea, Taiwan, Thailand and Vietnam."
+  ],
+  "india_sentences": [
+   "BD has manufacturing operations outside the United States in Bosnia and Herzegovina, Brazil, Canada, China, Dominican Republic, France, Germany, Hungary, India, Ireland, Japan, Malaysia, Mexico, the Netherlands, Singapore, Spain, Switzerland, and the United Kingdom.",
+   "pment BD conducts its research and development (\u201cR&D\u201d) activities at its operating units and across global enterprise centers of excellence located in the United States, India, China, Singapore and Ireland."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-11-25",
+    "india_mentions": 3,
+    "apac_mentions": 59
+   },
+   {
+    "filing_date": "2024-11-27",
+    "india_mentions": 3,
+    "apac_mentions": 62
+   }
+  ],
+  "india_trend": 0
+ },
+ "ALGN": {
+  "ticker": "ALGN",
+  "company": "ALIGN TECHNOLOGY INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "The Invisalign Palatal Expander System is currently available in the United States, Canada, Australia, New Zealand, Hong Kong, Singapore, Vietnam, Japan, Thailand, India and certain countries in EMEA."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-27",
+    "india_mentions": 2,
+    "apac_mentions": 54
+   },
+   {
+    "filing_date": "2025-02-28",
+    "india_mentions": 1,
+    "apac_mentions": 43
+   }
+  ],
+  "india_trend": 1
+ },
+ "ZBH": {
+  "ticker": "ZBH",
+  "company": "ZIMMER BIOMET HOLDINGS, INC.",
+  "status": "ok",
+  "investment_sentences": [
+   "Our history dates to 1927, when Zimmer Manufacturing Company, a predecessor, was founded in Warsaw, Indiana.",
+   "Our primary research and development facilities are located in Warsaw, Indiana; Montreal, Quebec, Canada; Denver, Colorado; Jacksonville, Florida; Austin, Texas; Zug, Switzerland and Beijing, China."
+  ],
+  "india_sentences": [
+   "Our history dates to 1927, when Zimmer Manufacturing Company, a predecessor, was founded in Warsaw, Indiana.",
+   "The Asia Pacific operating segment includes key markets such as Japan, China, Australia, New Zealand, Korea, Taiwan, India, Thailand, Singapore, Hong Kong and Malaysia."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-20",
+    "india_mentions": 1,
+    "apac_mentions": 83
+   },
+   {
+    "filing_date": "2025-02-25",
+    "india_mentions": 1,
+    "apac_mentions": 76
+   }
+  ],
+  "india_trend": 0
+ },
+ "MASI": {
+  "ticker": "MASI",
+  "company": "MASIMO CORP",
+  "status": "ok",
+  "filings": [
+   {
+    "filing_date": "2026-02-27",
+    "india_mentions": 3,
+    "apac_mentions": 27
+   },
+   {
+    "filing_date": "2025-02-25",
+    "india_mentions": 3,
+    "apac_mentions": 28
+   }
+  ],
+  "india_trend": 0
+ },
+ "SOLV": {
+  "ticker": "SOLV",
+  "company": "Solventum Corp",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "stiture impacts include lost sales from the Company\u2019s Purification and Filtration business that was sold in September 2025, certain health care businesses retained by 3M India in connection with the Spin-Off, as well as impacts from other immaterial divested businesses.",
+   "\u2022 Other primarily includes lost sales from certain health care businesses retained by 3M India in connection with the Spin-Off."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-27",
+    "india_mentions": 6,
+    "apac_mentions": 20
+   },
+   {
+    "filing_date": "2025-02-28",
+    "india_mentions": 4,
+    "apac_mentions": 18
+   }
+  ],
+  "india_trend": 2
+ },
+ "LLY": {
+  "ticker": "LLY",
+  "company": "ELI LILLY & Co",
+  "status": "ok",
+  "investment_sentences": [
+   "Business Eli Lilly and Company (referred to as the company, Lilly, we, or us) was incorporated in 1901 in Indiana to succeed to the drug manufacturing business founded in Indianapolis, Indiana, in 1876 by Colonel Eli Lilly.",
+   "Investments to increase our manufacturing capacity include new sites in North Carolina, Wisconsin, Indiana, Virginia, Texas, Alabama, Pennsylvania, Ireland, Germany, and the Netherlands.",
+   "Major production sites include facilities in Indiana, North Carolina, Puerto Rico, and Wisconsin."
+  ],
+  "india_sentences": [
+   "ge Act of 1934 for the fiscal year ended December\u00a031 , 2025 Commission file number 001-06351 ELI LILLY AND COMPANY (Exact name of Registrant as specified in its charter) Indiana \u00a0 35-0470950 (State or other jurisdiction of (I.",
+   "Business Eli Lilly and Company (referred to as the company, Lilly, we, or us) was incorporated in 1901 in Indiana to succeed to the drug manufacturing business founded in Indianapolis, Indiana, in 1876 by Colonel Eli Lilly."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 0,
+    "apac_mentions": 79
+   },
+   {
+    "filing_date": "2025-02-19",
+    "india_mentions": 0,
+    "apac_mentions": 73
+   }
+  ],
+  "india_trend": 0
+ },
+ "MRK": {
+  "ticker": "MRK",
+  "company": "Merck & Co., Inc.",
+  "status": "ok",
+  "investment_sentences": [
+   ", through subsidiaries, the Company owns or has an interest in manufacturing plants or other properties in Western Europe, Africa and Asia."
+  ],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-24",
+    "india_mentions": 0,
+    "apac_mentions": 149
+   },
+   {
+    "filing_date": "2025-02-25",
+    "india_mentions": 0,
+    "apac_mentions": 160
+   }
+  ],
+  "india_trend": 0
+ },
+ "AMGN": {
+  "ticker": "AMGN",
+  "company": "AMGEN INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   ", Australia, India, Singapore, South Korea and Taiwan), and biosimilar products in market (e.",
+   "Consumer privacy laws were also passed in other states, including Iowa, Delaware, New Hampshire, Nebraska, New Jersey, Tennessee, Minnesota, Maryland, Indiana, Kentucky and Rhode Island, and became effective or are scheduled to become effective in 2025 through 2026."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-13",
+    "india_mentions": 3,
+    "apac_mentions": 102
+   },
+   {
+    "filing_date": "2025-02-14",
+    "india_mentions": 4,
+    "apac_mentions": 96
+   }
+  ],
+  "india_trend": -1
+ },
+ "BMY": {
+  "ticker": "BMY",
+  "company": "BRISTOL MYERS SQUIBB CO",
+  "status": "ok",
+  "investment_sentences": [
+   "For example, we (i) opened R&D facilities in Cambridge, Massachusetts in 2023 and Hyderabad, India in 2024, (ii) opened a radiopharmaceutical manufacturing facility in Indianapolis, Indiana in 2025, and (iii) are planning to open a new state of the art R&D facility in San Diego, ",
+   "Additionally, we opened a new radiopharmaceutical facility in Indianapolis, Indiana during 2025.",
+   "and diagnostic agent targeting prostate cancer, and (iv) expanded our development and manufacturing capabilities by opening a new radiopharmaceutical facility in Indianapolis, Indiana, which will support RPTs acquired in connection with the RayzeBio acquisition."
+  ],
+  "india_sentences": [
+   "For example, we (i) opened R&D facilities in Cambridge, Massachusetts in 2023 and Hyderabad, India in 2024, (ii) opened a radiopharmaceutical manufacturing facility in Indianapolis, Indiana in 2025, and (iii) are planning to open a new state of the art R&D facility in San Diego, ",
+   "Additionally, we opened a new radiopharmaceutical facility in Indianapolis, Indiana during 2025."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-11",
+    "india_mentions": 1,
+    "apac_mentions": 57
+   },
+   {
+    "filing_date": "2025-02-12",
+    "india_mentions": 1,
+    "apac_mentions": 48
+   }
+  ],
+  "india_trend": 0
+ },
+ "VRTX": {
+  "ticker": "VRTX",
+  "company": "VERTEX PHARMACEUTICALS INC / MA",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "in Biology from Indiana University and a Ph."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-13",
+    "india_mentions": 0,
+    "apac_mentions": 25
+   },
+   {
+    "filing_date": "2025-02-13",
+    "india_mentions": 0,
+    "apac_mentions": 25
+   }
+  ],
+  "india_trend": 0
+ },
+ "KEX": {
+  "ticker": "KEX",
+  "company": "KIRBY CORP",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-17",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   },
+   {
+    "filing_date": "2025-02-18",
+    "india_mentions": 0,
+    "apac_mentions": 0
+   }
+  ],
+  "india_trend": 0
+ },
+ "MATX": {
+  "ticker": "MATX",
+  "company": "Matson, Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-27",
+    "india_mentions": 0,
+    "apac_mentions": 68
+   },
+   {
+    "filing_date": "2025-02-28",
+    "india_mentions": 0,
+    "apac_mentions": 65
+   }
+  ],
+  "india_trend": 0
+ },
+ "GNK": {
+  "ticker": "GNK",
+  "company": "GENCO SHIPPING & TRADING LTD",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "As a result, a negative change in economic conditions in any Asia Pacific country, particularly in China,\u00a0India, or Japan, could adversely affect our business.",
+   "Our vessels may operate in dangerous areas, including areas of the South China Sea, the Arabian Sea, the Indian Ocean, the Gulf of Aden off the coast of Somalia, the Gulf of Guinea, and the Red Sea."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-18",
+    "india_mentions": 1,
+    "apac_mentions": 45
+   },
+   {
+    "filing_date": "2025-02-21",
+    "india_mentions": 1,
+    "apac_mentions": 52
+   }
+  ],
+  "india_trend": 0
+ },
+ "FCX": {
+  "ticker": "FCX",
+  "company": "FREEPORT-MCMORAN INC",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Additional factors affecting gold prices may include purchases and sales of gold by governments and central banks, demand from China and India (two of the world\u2019s largest consumers of gold), and global demand for jewelry containing gold.",
+   "rigation District; the Franklin Irrigation District; the San Carlos Irrigation and Drainage District; the Salt River Project; the San Carlos Apache Tribe; the Gila River Indian Community; and the U."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-13",
+    "india_mentions": 2,
+    "apac_mentions": 296
+   },
+   {
+    "filing_date": "2025-02-14",
+    "india_mentions": 2,
+    "apac_mentions": 306
+   }
+  ],
+  "india_trend": 0
+ },
+ "NUE": {
+  "ticker": "NUE",
+  "company": "NUCOR CORP",
+  "status": "ok",
+  "investment_sentences": [
+   "Construction is ongoing at both the Crawfordsville, Indiana and Brigham City, Utah facilities, with Crawfordsville planned to be completed in 2026 and Brigham City planned to be completed in 2027.",
+   "Chinese steel producers are also investing in new steelmaking capacity in several countries in southeast Asia and Africa."
+  ],
+  "india_sentences": [
+   "Those new facilities are located adjacent to Nucor's existing steel mills in Decatur, Alabama and Crawfordsville, Indiana.",
+   "Construction is ongoing at both the Crawfordsville, Indiana and Brigham City, Utah facilities, with Crawfordsville planned to be completed in 2026 and Brigham City planned to be completed in 2027."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-25",
+    "india_mentions": 0,
+    "apac_mentions": 16
+   },
+   {
+    "filing_date": "2025-02-27",
+    "india_mentions": 0,
+    "apac_mentions": 14
+   }
+  ],
+  "india_trend": 0
+ },
+ "STLD": {
+  "ticker": "STLD",
+  "company": "STEEL DYNAMICS INC",
+  "status": "ok",
+  "investment_sentences": [
+   "He was also a part of the team that constructed the company\u2019s first steel mill in Butler, Indiana.",
+   "namics since 1994, holding various operational and leadership roles within both steel fabrication and steel operations, and was part of the team that constructed the company\u2019s first steel mill in Butler, Indiana in 1994.",
+   "Our copper rod and wire facility, a controlled subsidiary, is in New Haven, Indiana on 35 owned and 4 leased acres."
+  ],
+  "india_sentences": [
+   "(Exact name of registrant as specified in its charter) \u200b \u200b \u200b \u200b Indiana \u00a0\u00a0\u200b\u00a0\u200b\u00a0\u200b 35-1929476 (State or other jurisdiction of incorporation or organization) \u200b (IRS Employer Identification No.",
+   "Millett was responsible for the design, construction, and start-up operation of all of our steel mills, including our Butler, Indiana flat roll, melting, and casting operations."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-27",
+    "india_mentions": 0,
+    "apac_mentions": 5
+   },
+   {
+    "filing_date": "2025-02-28",
+    "india_mentions": 0,
+    "apac_mentions": 5
+   }
+  ],
+  "india_trend": 0
+ },
+ "SCCO": {
+  "ticker": "SCCO",
+  "company": "SOUTHERN COPPER CORP/",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-27",
+    "india_mentions": 0,
+    "apac_mentions": 16
+   },
+   {
+    "filing_date": "2025-03-03",
+    "india_mentions": 0,
+    "apac_mentions": 17
+   }
+  ],
+  "india_trend": 0
+ },
+ "CENX": {
+  "ticker": "CENX",
+  "company": "CENTURY ALUMINUM CO",
+  "status": "ok",
+  "investment_sentences": [
+   "We have entered into financial contracts to fix a portion of our exposure to the Indiana Hub power market at our Sebree plant (\"Indiana Hub power price swaps\")."
+  ],
+  "india_sentences": [
+   "2) (1) Commodity contracts reflect our outstanding LME and MWP forward financial sales contracts, fixed for floating swaps, HFO price swaps and Indiana Hub power price swaps.",
+   "We have entered into financial contracts to fix a portion of our exposure to the Indiana Hub power market at our Sebree plant (\"Indiana Hub power price swaps\")."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-03-03",
+    "india_mentions": 0,
+    "apac_mentions": 1
+   },
+   {
+    "filing_date": "2025-03-03",
+    "india_mentions": 0,
+    "apac_mentions": 4
+   }
+  ],
+  "india_trend": 0
+ },
+ "RS": {
+  "ticker": "RS",
+  "company": "RELIANCE, INC.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "\u200b Operations that are majority owned by us include: Indiana Pickling and Processing Company in which our wholly-owned subsidiary, Feralloy Corporation, has a 56 % ownership interest; and Valex Corp."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-26",
+    "india_mentions": 0,
+    "apac_mentions": 14
+   },
+   {
+    "filing_date": "2025-02-27",
+    "india_mentions": 0,
+    "apac_mentions": 20
+   }
+  ],
+  "india_trend": 0
+ },
+ "MTRN": {
+  "ticker": "MTRN",
+  "company": "MATERION Corp",
+  "status": "ok",
+  "investment_sentences": [
+   "Performance Material's products are primarily sold directly from its facilities throughout the United States, Asia, and Europe, as well as distributed internationally through a network of Company-owned service centers, outside distributors, and agents.",
+   "Electronic Materials products are sold directly from its facilities throughout the United States, Asia, and Europe, as well as through direct sales offices and independent sales representatives throughout the world.",
+   "With manufacturing facilities strategically located in Europe, Asia, and the United States, Precision Optics ensures a global reach and efficient delivery of its products."
+  ],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 0,
+    "apac_mentions": 27
+   },
+   {
+    "filing_date": "2025-02-19",
+    "india_mentions": 0,
+    "apac_mentions": 22
+   }
+  ],
+  "india_trend": 0
+ },
+ "TPR": {
+  "ticker": "TPR",
+  "company": "TAPESTRY, INC.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "During fiscal 2025, manufacturers of Coach products were primarily located in Vietnam, Cambodia, the Philippines and India and no individual vendor provided 10% or more of the brand's total inventory purchases.",
+   "During fiscal 2025, the primary manufacturers of Coach products were located in Vietnam, Cambodia, the Philippines and India, and the primary manufacturers of Kate Spade products were located in Vietnam, Cambodia, mainland China, and the Philippines."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-08-14",
+    "india_mentions": 2,
+    "apac_mentions": 85
+   },
+   {
+    "filing_date": "2024-08-15",
+    "india_mentions": 1,
+    "apac_mentions": 80
+   }
+  ],
+  "india_trend": 1
+ },
+ "RL": {
+  "ticker": "RL",
+  "company": "RALPH LAUREN CORP",
+  "status": "ok",
+  "investment_sentences": [
+   "hat the participating institutions will be unable to fulfill their obligations to provide financing in accordance with the terms of the Global Credit Facility and the Pan-Asia Borrowing Facilities in the event of our election to draw additional funds in the foreseeable future."
+  ],
+  "india_sentences": [
+   ", primarily in Asia, Europe, and Latin America, with approximately 21% of our products sourced from Vietnam, 16% from Cambodia, and 11% from India.",
+   ", primarily in Asia, Europe, and Latin America, with approximately 21% of our products sourced from Vietnam, 16% from Cambodia, and 11% from India."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-05-21",
+    "india_mentions": 2,
+    "apac_mentions": 127
+   },
+   {
+    "filing_date": "2025-05-22",
+    "india_mentions": 0,
+    "apac_mentions": 142
+   }
+  ],
+  "india_trend": 2
+ },
+ "DECK": {
+  "ticker": "DECK",
+  "company": "DECKERS OUTDOOR CORP",
+  "status": "ok",
+  "investment_sentences": [
+   "Manufacturing and Supply Chain The production of our finished goods is outsourced to independent manufacturers , the majority of which are in Southeast Asia .",
+   "The production of our finished goods is outsourced to independent manufacturers , the majority of which are in Southeast Asia.",
+   "ue to diversify our independent manufacturers and the regions in which they operate; however, we maintain a significant concentration of sourcing and manufacturing in Southeast Asia ."
+  ],
+  "india_sentences": [
+   "We currently distribute products sold in the US through our DC s in Moreno Valley, California , and Mooresville, Indiana .",
+   "In the US , we distribute products primarily through self-managed warehouses and DC s in Moreno Valley, California, and in Mooresville, Indiana , which feature a complex warehouse management system that enables us to efficiently pack products for direct shipment to our customers "
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-05-22",
+    "india_mentions": 0,
+    "apac_mentions": 53
+   },
+   {
+    "filing_date": "2025-05-23",
+    "india_mentions": 0,
+    "apac_mentions": 49
+   }
+  ],
+  "india_trend": 0
+ },
+ "VFC": {
+  "ticker": "VFC",
+  "company": "V F CORP",
+  "status": "ok",
+  "investment_sentences": [
+   "During Fiscal 2026, VF\u2019s products were sourced from independent manufacturers primarily located in Asia."
+  ],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-05-20",
+    "india_mentions": 0,
+    "apac_mentions": 78
+   },
+   {
+    "filing_date": "2025-05-22",
+    "india_mentions": 0,
+    "apac_mentions": 77
+   }
+  ],
+  "india_trend": 0
+ },
+ "KTB": {
+  "ticker": "KTB",
+  "company": "Kontoor Brands, Inc.",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-03-04",
+    "india_mentions": 0,
+    "apac_mentions": 28
+   },
+   {
+    "filing_date": "2025-02-25",
+    "india_mentions": 2,
+    "apac_mentions": 26
+   }
+  ],
+  "india_trend": -2
+ },
+ "LEVI": {
+  "ticker": "LEVI",
+  "company": "LEVI STRAUSS & CO",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "In addition to the above, we operate finance shared service centers in Eugene, Oregon and Bangalore, India.",
+   "DTC and wholesale revenues benefited from price increases, primarily in Turkey and India."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-01-28",
+    "india_mentions": 5,
+    "apac_mentions": 37
+   },
+   {
+    "filing_date": "2025-01-29",
+    "india_mentions": 5,
+    "apac_mentions": 41
+   }
+  ],
+  "india_trend": 0
+ },
+ "SHOO": {
+  "ticker": "SHOO",
+  "company": "STEVEN MADDEN, LTD.",
+  "status": "ok",
+  "investment_sentences": [
+   "n or operate any foreign manufacturing facilities; rather, we use agents and our own sourcing offices to source our products from independently owned manufacturers in China, Cambodia, Vietnam, Mexico, Brazil, India, Bangladesh, Italy, and various other countries."
+  ],
+  "india_sentences": [
+   "facilities; rather, we use agents and our own sourcing offices to source our products from independently owned manufacturers in China, Cambodia, Vietnam, Mexico, Brazil, India, Bangladesh, Italy, and various other countries.",
+   "d by independent manufacturers at overseas locations, the majority of which are located in China, with a growing percentage located in Cambodia, Vietnam, Mexico, Brazil, India, Bangladesh, and various other countries in Asia, Europe, and Africa."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-03-02",
+    "india_mentions": 2,
+    "apac_mentions": 92
+   },
+   {
+    "filing_date": "2025-03-03",
+    "india_mentions": 2,
+    "apac_mentions": 77
+   }
+  ],
+  "india_trend": 0
+ },
+ "BE": {
+  "ticker": "BE",
+  "company": "Bloom Energy Corp",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Our supply base is global with presence in North America, Asia, Europe and India, consisting of suppliers with multiple areas of expertise in compaction, sintering, brazing and dealing with specialty material manufacturing techniques.",
+   "and India, we are able to provide coverage cost effectively and also provide a dual redundant system with either site designed to operate continuously should an issue arise."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-09",
+    "india_mentions": 12,
+    "apac_mentions": 75
+   },
+   {
+    "filing_date": "2025-02-27",
+    "india_mentions": 11,
+    "apac_mentions": 69
+   }
+  ],
+  "india_trend": 1
+ },
+ "GEV": {
+  "ticker": "GEV",
+  "company": "GE Vernova Inc.",
+  "status": "ok",
+  "investment_sentences": [
+   "R&D is performed within each of our businesses, and at multiple locations around the world, including at our research facilities in Niskayuna, New York and Bangalore, India, which we refer to collectively as Advanced Research."
+  ],
+  "india_sentences": [
+   "R&D is performed within each of our businesses, and at multiple locations around the world, including at our research facilities in Niskayuna, New York and Bangalore, India, which we refer to collectively as Advanced Research.",
+   "and Europe, we also engage with employee representative bodies in China (3,000 employees), India (2,000 employees), Canada (700 employees), Brazil (700 employees), and Mexico (175 employees)."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-01-29",
+    "india_mentions": 6,
+    "apac_mentions": 17
+   },
+   {
+    "filing_date": "2025-02-06",
+    "india_mentions": 9,
+    "apac_mentions": 20
+   }
+  ],
+  "india_trend": -3
+ },
+ "VRT": {
+  "ticker": "VRT",
+  "company": "Vertiv Holdings Co",
+  "status": "ok",
+  "investment_sentences": [
+   "We have significant manufacturing and operations facilities in the Americas, Asia Pacific and Europe, Middle East & Africa.",
+   "As of December\u00a031, 2025, we employed approximately 34,000 people globally and had manufacturing facilities and service centers in the Americas, Asia Pacific and Europe, Middle East & Africa.",
+   "To further support growth in thermal management solutions, we opened a new state-of-the-art manufacturing facility and test laboratory in Pune, India in 2024."
+  ],
+  "india_sentences": [
+   "de: \u2022 Finance, Human Resources, Sales, Engineering, and Field Services Leadership Development Rotational Programs for early-career employees based in the Americas, Asia, India, Europe, Middle-East, and Africa reporting units.",
+   "\u2022 Specialized partnership programs with local universities in India, United States, and China for high-potential engineers to earn a post-secondary bachelor and/or a graduate degree."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-13",
+    "india_mentions": 9,
+    "apac_mentions": 72
+   },
+   {
+    "filing_date": "2025-02-18",
+    "india_mentions": 10,
+    "apac_mentions": 81
+   }
+  ],
+  "india_trend": -1
+ },
+ "PG": {
+  "ticker": "PG",
+  "company": "PROCTER & GAMBLE Co",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [
+   "Throughout the MD&A, we reference business results by region, which are comprised of North America, Europe, Greater China, Latin America, Asia Pacific and India, Middle East and Africa (IMEA)."
+  ],
+  "filings": [
+   {
+    "filing_date": "2025-08-04",
+    "india_mentions": 1,
+    "apac_mentions": 29
+   },
+   {
+    "filing_date": "2024-08-05",
+    "india_mentions": 1,
+    "apac_mentions": 26
+   }
+  ],
+  "india_trend": 0
+ },
+ "CL": {
+  "ticker": "CL",
+  "company": "COLGATE PALMOLIVE CO",
+  "status": "ok",
+  "investment_sentences": [
+   "The Pet Nutrition segment has major manufacturing and warehousing facilities in Indiana, Kansas, Kentucky, Ohio and Oklahoma."
+  ],
+  "india_sentences": [
+   "The Pet Nutrition segment has major manufacturing and warehousing facilities in Indiana, Kansas, Kentucky, Ohio and Oklahoma.",
+   "housing facilities used by the Oral, Personal and Home Care product segment of our business are located in Australia, Brazil, China, Colombia, France, Greece, Guatemala, India, Italy, Mexico, Poland, South Africa, Thailand, T\u00fcrkiye and Vietnam."
+  ],
+  "filings": [
+   {
+    "filing_date": "2026-02-23",
+    "india_mentions": 4,
+    "apac_mentions": 65
+   },
+   {
+    "filing_date": "2025-02-13",
+    "india_mentions": 3,
+    "apac_mentions": 67
+   }
+  ],
+  "india_trend": 1
+ },
+ "KMB": {
+  "ticker": "KMB",
+  "company": "KIMBERLY CLARK CORP",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2026-02-12",
+    "india_mentions": 0,
+    "apac_mentions": 26
+   },
+   {
+    "filing_date": "2025-02-13",
+    "india_mentions": 0,
+    "apac_mentions": 22
+   }
+  ],
+  "india_trend": 0
+ },
+ "EMR": {
+  "ticker": "EMR",
+  "company": "EMERSON ELECTRIC CO",
+  "status": "ok",
+  "investment_sentences": [],
+  "india_sentences": [],
+  "filings": [
+   {
+    "filing_date": "2025-11-10",
+    "india_mentions": 0,
+    "apac_mentions": 25
+   },
+   {
+    "filing_date": "2024-11-12",
+    "india_mentions": 0,
+    "apac_mentions": 27
+   }
+  ],
+  "india_trend": 0
+ }
+}

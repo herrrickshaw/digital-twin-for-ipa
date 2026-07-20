@@ -1,0 +1,199 @@
+{
+ "country": "Australia",
+ "leads": [
+  {
+   "company": "BHP Group Limited",
+   "ticker": "ASX:BHP",
+   "sector": "Specialty Steel & Metals / Critical Minerals",
+   "profitability_check": "PASS - consistently profitable; FY2025 results confirmed strong earnings (copper production >2Mt for first time, revenue and underlying earnings robust); exact FY25 NPAT not re-verified this session",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "'Indian commodity demand continues to grow strongly, though competing imports from China narrowed margins for the steel industry over the last year.' (FY2025 results/outlook commentary)",
+     "'India's economic growth is expected to remain resilient over the next two years, supported by strong structural fundamentals... population growth, urbanisation, rising living standards, and infrastructure required for digitalisation and decarbonisation driving demand for steel, non-ferrous metals and fertilisers.' (FY2025 outlook)",
+     "'India is emerging as a key engine of demand, with strong domestic activity sustaining steel and rising copper needs.' (Operational Review, half year ended 31 Dec 2025)",
+     "Copper outlook: BHP states it is 'more optimistic for demand growth in North America and India, as well as Southeast Asia and the Middle East, where new fabricating capacity is expected to ramp up.'"
+    ],
+    "india_operations": "No producing assets in India; India is treated as a strategic demand market for steelmaking materials (met coal, iron ore), copper and fertilisers, served via marketing/offtake relationships. Demand-side interest, not stated FDI into India.",
+    "report_used": "BHP FY2025 Results (Aug 2025) and Operational Reviews FY2025 / HY Dec-2025 (bhp.com media releases; full release page timed out, quotes taken from search extracts of the official releases)"
+   }
+  },
+  {
+   "company": "Fortescue Ltd",
+   "ticker": "ASX:FMG",
+   "sector": "Specialty Steel & Metals / Green Hydrogen",
+   "profitability_check": "PASS - FY25 NPAT US$3.37bn (down 41% from US$5.68bn FY24; weakest in six years but solidly profitable), revenue US$15.5bn, record iron ore shipments",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "PMO readout (23 May 2023, Sydney): 'Prime Minister welcomed Fortescue Group's plans to work with Indian companies in the field of Green Hydrogen.'",
+     "Same readout: 'Dr. Forrest briefed Prime Minister on Fortescue Future Industries plans and projects in India.'",
+     "Caveat: Fortescue's global hydrogen retreat 2024-25 - 700+ green-energy jobs cut, Arizona Hydrogen and PEM50 (Queensland) projects terminated with ~US$150m write-down - makes near-term India hydrogen deployment uncertain; FY25 pivot toward the Christmas Creek Green Metal Project (1,500tpa green iron)."
+    ],
+    "india_operations": "Fortescue Future Industries previously scoped green-hydrogen projects and partnerships with Indian companies (Modi-Forrest engagement); no operating Indian assets confirmed. India hydrogen ambitions stated pre-2024 are UNVERIFIED as still active after the FY25 hydrogen pullback.",
+    "report_used": "Fortescue FY25 Annual Report/results (Aug 2025) via search extracts + Prime Minister's Office of India meeting readout (pmindia.gov.in, fetched via curl after WebFetch 403)"
+   }
+  },
+  {
+   "company": "PLS Group Limited (formerly Pilbara Minerals)",
+   "ticker": "ASX:PLS",
+   "sector": "Specialty Steel & Metals / Lithium",
+   "profitability_check": "MIXED - FY25 statutory loss after tax A$196m (lithium price downcycle, Mid-Stream Demonstration Plant costs, P-PLS investment impacts); strongly profitable in FY23-FY24 upcycle; retained as Australia's flagship ASX lithium producer",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "No company-specific India partnership found in FY25 report or announcements; downstream partnerships are with POSCO (South Korea) and Ganfeng (China).",
+     "Government-level frame exists: India's KABIL (NALCO/Hindustan Copper/MECL JV) signed an agreement with Australia's Critical Minerals Facilitation Office for joint due diligence on Australian lithium and cobalt projects (PIB release PRID 2039606) - PLS-type spodumene assets are the natural target set, but no PLS-KABIL deal is on record.",
+     "Nov 2025 Bloomberg: PLS 'open to US lithium venture' - strategic partnering appetite is directed at the US, not India, currently."
+    ],
+    "india_operations": "None identified. India relevance is prospective, via India's battery PLI (~US$2.4bn cell incentive) and the KABIL-CMFO government pipeline rather than any disclosed company engagement.",
+    "report_used": "PLS FY25 Full Year Financial Results (25 Aug 2025, pls.com) via search extracts"
+   }
+  },
+  {
+   "company": "Lynas Rare Earths Limited",
+   "ticker": "ASX:LYC",
+   "sector": "Specialty Steel & Metals / Rare Earths",
+   "profitability_check": "MARGINAL PASS - FY25 NPAT A$8m (down ~90% from A$84.5m FY24 on low RE prices, Kalgoorlie depreciation and sub-nameplate production); profitable across the prior cycle",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "No India commitment found in Lynas FY25 report or briefings; disclosed strategic partnerships are with Japan (JARE/Sojitz heritage), the US (DoD-backed Texas plant) and Malaysia operations.",
+     "India-side pull is explicit: policy commentary (360info/Rare Earth Exchanges) urges India to 'strengthen business-to-business ties with companies like Lynas to secure processed rare earths', and India launched the Rs 34,300cr National Critical Mineral Mission plus a Rs 7,280cr rare-earth magnet manufacturing scheme (Cabinet, Nov 2025) that will need non-China feedstock - Lynas is the obvious non-China supplier.",
+     "No confirmed Lynas-IREL or Lynas-GoI agreement located; treat any such tie-up as UNVERIFIED."
+    ],
+    "india_operations": "None. Directly relevant to India's critical-minerals mission as the largest non-China separated rare earths producer, but interest is currently India->Lynas, not evidenced in Lynas's own reporting.",
+    "report_used": "Lynas FY25 Results and Towards 2030 Strategy Presentation (Aug 2025) + 2025 Sustainability Report, via search extracts"
+   }
+  },
+  {
+   "company": "Woodside Energy Group Ltd",
+   "ticker": "ASX:WDS",
+   "sector": "Green Energy & Fuels / LNG",
+   "profitability_check": "PASS - 2025 NPAT US$2,718m (down 24%), underlying NPAT US$2,649m, record production 198.8 MMboe, full-year dividend US112cps at 80% payout",
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Woodside portfolio sales projections show India as a growth market: sales volumes projected to rise from 13 MMboe (base) to 48 MMboe (growth case) between 2024 and 2030 - roughly a 3.7x expansion, the steepest growth wedge in its Asian marketing book.",
+     "'Woodside signed six sales agreements for portfolio supply in 2025 with buyers in Asia and Europe' (2025 reporting).",
+     "New-energy portfolio (Beaumont ammonia offtakes, hydrogen positioning) targets Asian demand including India's import appetite for LNG/ammonia."
+    ],
+    "india_operations": "No Indian assets; India is a named growth destination for LNG portfolio marketing. Indian buyers (GAIL/Petronet-type counterparties) not individually named in the extracts reviewed.",
+    "report_used": "Woodside 2025 Annual Report and Full-Year 2025 Results (24 Feb 2026, woodside.com)"
+   }
+  },
+  {
+   "company": "CSL Limited",
+   "ticker": "ASX:CSL",
+   "sector": "Pharma & Bulk Drugs",
+   "profitability_check": "PASS - US$15.6bn revenue, ~US$3bn-scale NPAT (FY25 annual report confirms record plasma collections and profit growth; exact NPAT figure not re-verified this session)",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "CSL 2025 Annual Report describes serving patients in '100+ countries' but the reviewed extracts contain no India-specific strategy, investment or manufacturing commitment.",
+     "Growth engines named are US/Europe/China-centric (plasma, FLUCELVAX/FLUAD flu franchises, aTIVc development); India does not feature as a disclosed priority market.",
+     "India relevance is mainly as competitor/supplier geography (Indian plasma and vaccine players) rather than CSL investment destination - honest read: NONE-to-LOW stated interest."
+    ],
+    "india_operations": "Commercial/distribution presence only (CSL Behring products sold in India via partners); no disclosed Indian manufacturing or R&D investment found - UNVERIFIED beyond absence of evidence in AR extracts.",
+    "report_used": "CSL 2025 Annual Report (csl.com PDF / investors.csl.com), via search extracts"
+   }
+  },
+  {
+   "company": "Cochlear Limited",
+   "ticker": "ASX:COH",
+   "sector": "Medical Devices",
+   "profitability_check": "PASS - profitable; FY25 underlying NPAT ~A$390m class (Services revenue A$609.2m disclosed; exact statutory NPAT not re-verified this session)",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "FY25 results commentary explicitly discusses India: 'India saw low volumes and a high premium-tier mix' in 1H25, with 'strong growth in the smaller, but higher-priced, private pay segment in China and India.'",
+     "'Unit growth in emerging markets exceeded 20%', 'largely driven by lower-tier and tender activity' - India's government tenders are a core driver.",
+     "India's ADIP scheme has funded 20,000+ paediatric cochlear implants (Cochlear is a principal supplier), making India one of the company's most important volume growth markets in APAC.",
+     "Osia implant rollout extended into 'a number of emerging market countries' as part of geographic diversification."
+    ],
+    "india_operations": "Direct subsidiary presence (Cochlear India, clinics/service network) supplying both government tender (ADIP) and private-pay segments; India repeatedly named in results commentary as a growth market.",
+    "report_used": "Cochlear FY25 Annual Report and HY25/FY25 results presentations (assets.cochlear.com), via search extracts"
+   }
+  },
+  {
+   "company": "Ansell Limited",
+   "ticker": "ASX:ANN",
+   "sector": "Medical Devices / PPE",
+   "profitability_check": "PASS - long-run profitable; FY25 full year results released 25 Aug 2025 (investor.ansell.com); exact FY25 NPAT not re-verified this session",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "'Ansell is commencing an $80 million investment over three years for a new manufacturing site in Tamil Nadu, southern India, designed to produce a wide range of products with initial focus on surgical and life science gloves for the Indian domestic market and for export.' (Annual Report disclosure)",
+     "Kovai (India) plant phase one live: 'Ansell Limited marked the first phase of commissioning of its packaging and irradiation operations at its new manufacturing facility in Kovai, India' - press release explicitly ties it to the 'Made in India' initiative.",
+     "'To date, Ansell has invested US$80 million and will continue to invest in building world-class facilities' in India; Kovai facility won IGBC Platinum rating (2023) and will be zero-liquid-discharge with integrated gamma sterilisation - Ansell states it will be 'the only glove manufacturing company in India' with its own gamma sterilisation unit.",
+     "India plant listed among Ansell's 14 global manufacturing sites; 'commissioning of new lines for surgical glove production is being completed.'"
+    ],
+    "india_operations": "Operating manufacturing investment: Kovai, Tamil Nadu plant (US$80m committed) for surgical/life-science gloves serving Indian domestic and export markets, plus Ansell India Protective Products sales entity (Navi Mumbai). Directly aligned with India's medical-devices incentive push.",
+    "report_used": "Ansell Annual Report 2022-2025 disclosures + FY25 Full Year Results (25 Aug 2025) + Ansell India Kovai press release"
+   }
+  },
+  {
+   "company": "Orica Limited",
+   "ticker": "ASX:ORI",
+   "sector": "Chemicals & Plastics / Mining Chemicals",
+   "profitability_check": "PASS - FY2025 (Sep-YE): EBIT A$992m (+23%, highest earnings in 13 years), NPAT before significant items A$541m (+32%), statutory NPAT A$162m after A$379m significant items; revenue A$8,144.5m",
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Orica operates in India through Indian Explosives Private Limited (incorporated 1999, Hyderabad HQ), with ~634 employees (Mar 2026) and revenue of Rs 467 crore (FY Mar-2023) growing ~30% YoY, majority from manufacturing (Tracxn company registry data).",
+     "Orica's own site lists India within its Australia Pacific & Asia operating region with 'manufacturing facilities, technology centres and customer support sites'; the Hyderabad Knowledge City address corresponds to its India technology/digital hub serving global blasting-technology work.",
+     "FY2025 results cite 'earnings growth across all core segments and regions' (Blasting Solutions EBIT A$868m, Digital Solutions A$92m, Specialty Mining Chemicals A$101m) with Asia within the APA reporting segment; India-specific P&L is not broken out (honest gap)."
+    ],
+    "india_operations": "Established Indian manufacturing (packaged/bulk explosives via Indian Explosives Pvt Ltd), a Hyderabad technology/digital centre, and blasting-services supply to Indian mining and infrastructure customers - one of the deepest India footprints of any ASX-100 industrial.",
+    "report_used": "Orica FY2025 Full Year Results (13 Nov 2025) + Orica Annual Report 2025 + orica.com India location page (403 to fetcher; corroborated via Tracxn registry extracts)"
+   }
+  },
+  {
+   "company": "BlueScope Steel Limited",
+   "ticker": "ASX:BSL",
+   "sector": "Specialty Steel & Metals",
+   "profitability_check": "PASS - FY2025 underlying EBIT A$738m (company release 'BlueScope delivers FY2025 underlying EBIT of $738 million'); statutory result positive",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Direction of travel is EXIT, not entry: in December 2025 BlueScope signed a binding agreement to sell its 50% stake in the Tata BlueScope Steel JV to Tata Steel, ending a 20-year India partnership (JV est. 2005; Jamshedpur coated-steel plant, 250,000t metallic coating / 150,000t colour coating capacity; JV revenue Rs 4,270 crore FY Mar-2025; renamed Tata Steel Colors Pvt Ltd).",
+     "The divestment concentrates BlueScope's growth capital on North America and Australia - its FY2025 reporting frames India as a completed JV chapter rather than a growth market."
+    ],
+    "india_operations": "Until Dec 2025: 50% of Tata BlueScope Steel (coated steel, roofing, pre-engineered buildings). Post-sale: no Indian operations. Included as a documented case of an ASX major monetising rather than expanding an India position despite India's steel-sector incentives.",
+    "report_used": "BlueScope FY2025 Annual Report (bluescope.com PDF) + Dec 2025 JV sale announcements (Recycling Today / company releases)"
+   }
+  },
+  {
+   "company": "Bega Cheese Limited",
+   "ticker": "ASX:BGA",
+   "sector": "Food Processing",
+   "profitability_check": "PASS (modest) - FY2025 statutory EBITDA A$165.5m, normalised EBITDA A$202.0m (+23% YoY); NPAT not disclosed in the results release reviewed",
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "FY2025 results: Bega 'maintained strong market share positions across key categories and continued to grow in foodservice and key Asian markets' - Asia named, India not.",
+     "~23-30% of revenue from exports to ~40 countries, 'major exports directed at Asia-Pacific and Middle East countries'; Bega is among the world's largest lactoferrin producers (Tatura + Koroit), a category with strong Indian infant-nutrition demand, but no India channel is disclosed.",
+     "Structural headwind: dairy was largely excluded from India's tariff concessions under the India-Australia ECTA (in force Dec 2022), capping near-term Indian market access for Australian dairy majors - consistent with the absence of India in Bega's reporting."
+    ],
+    "india_operations": "None disclosed. APAC export interest is real (China/SE Asia focus); India specifically is not a stated market.",
+    "report_used": "Bega Cheese Limited 2025 Annual Report + FY2025 Financial Results and FY2026 Outlook release (begagroup.com.au, fetched directly)"
+   }
+  }
+ ],
+ "method_notes": [
+  "Selection: 11 leads (target 10-12) chosen from the 851-name candidates_au.csv, verified present in the CSV, skewed to critical-minerals/metals (BHP, FMG, PLS, LYC, BSL) per Australia's fit with India's incentive map, plus pharma (CSL), medical devices (COH, ANN), chemicals (ORI), green energy/LNG (WDS) and agrifood (BGA).",
+  "Profitability screen applied honestly: Nufarm excluded (FY2025 statutory net loss A$165.3m), IGO and Mineral Resources excluded (FY25 losses/impairments). PLS Group retained despite its FY25 cyclical statutory loss (A$196m) because it is the ASX lithium flagship explicitly relevant to India's battery PLI; Lynas retained on marginal FY25 NPAT (A$8m) given direct relevance to India's critical-minerals mission.",
+  "Naming notes: Pilbara Minerals rebranded to PLS Group Limited (Dec 2025) - it appears in the CSV as 'PLS Group Limited (ASX:PLS)'. ResMed is NOT in the candidate CSV (US primary listing) and was therefore excluded per instructions.",
+  "India-Australia ECTA (in force 29 Dec 2022) context captured: tariff eliminations favour pharma, medical devices, critical minerals and most goods trade; dairy largely carved out (relevant to Bega's LOW rating).",
+  "KABIL angle: India's KABIL signed an agreement with Australia's Critical Minerals Facilitation Office (CMFO) for joint due diligence on Australian greenfield/brownfield lithium and cobalt assets (PIB PRID 2039606); this is government-to-government - no ASX-company-specific KABIL deal (PLS or otherwise) was found. India's National Critical Mineral Mission (Rs 34,300cr) and rare-earth magnet PLI (Rs 7,280cr, Nov 2025 Cabinet) are the demand-side hooks for Lynas/PLS.",
+  "Fortescue green-hydrogen India evidence is real (PMO readout, 23 May 2023) but must be read against Fortescue's 2024-25 global hydrogen retrenchment (Arizona Hydrogen and PEM50 cancelled, US$150m write-down, 700+ green-energy job cuts); current India hydrogen project status is UNVERIFIED.",
+  "Quotes are drawn from company results releases, annual reports, the PMO of India readout, and reputable secondary extracts of those documents; where a figure or claim could not be re-verified against a primary document this session it is marked UNVERIFIED or approximate. Roughly 20 web searches/fetches were used."
+ ],
+ "site_access_issues": [
+  "pmindia.gov.in returned HTTP 403 to WebFetch; retrieved successfully via curl with a Mozilla/5.0 UA (Modi-Forrest readout quotes are from the primary page).",
+  "bhp.com FY2025 results release page timed out via WebFetch and returned empty via curl; BHP India quotes are from search-engine extracts of the official BHP releases rather than a direct page fetch.",
+  "orica.com India location page returned HTTP 403; Orica India operational detail corroborated via Tracxn registry data and Orica corporate pages surfaced in search.",
+  "Large annual-report PDFs (CSL, Woodside, Nufarm, BlueScope, Bega interactive AR) were not parsed page-by-page; extracts were obtained via targeted search of the documents - India-mention coverage inside full PDFs may be incomplete.",
+  "Bloomberg article on PLS (US lithium venture) is paywalled; only headline/lede used."
+ ]
+}

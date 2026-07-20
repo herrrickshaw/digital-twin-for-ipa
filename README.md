@@ -26,7 +26,7 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 13 | `layers/13_flat_instrument_index.json` | **Flat instrument index** — all 312 instruments (195 central + 117 state) normalized to one schema |
 | 14 | `layers/14_update_engine.json` | **Auto-update engine** — per-source refresh design (PIB daily, NSWS/RBI/UNNATI weekly, quarterly sweeps; Orbis-upgrade path for company data). Flow diagram: [docs/DATA_MODEL.md](docs/DATA_MODEL.md) |
 | 15 | `layers/15_directory.json` | **Portal directory** — 64 verified portals (27 central + 37 state) + 12 known-bad domains; human version: [docs/DIRECTORY.md](docs/DIRECTORY.md) |
-| 16 | `layers/16_leads.json` | **Leads generation** — 147 yfinance-verified-profitable listed firms scored against the open incentive lanes; view: [docs/LEADS.md](docs/LEADS.md) |
+| 16 | `layers/16_leads.json` | **Leads generation** — 206 leads across 7 markets: 147 yfinance-verified-profitable US/India firms (US leads carry SEC 10-K India/APAC mention-mining with YoY trend) + 59 annual-report deep-dive leads from JP/KR/CN/UK/AU with quoted evidence and interest levels; view: [docs/LEADS.md](docs/LEADS.md) |
 
 ## Leads generation (layer 16)
 

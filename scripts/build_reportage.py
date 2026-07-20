@@ -146,6 +146,50 @@ def main():
     write_html(by_q, total)
 
 
+def render_states():
+    """State-level incentives section from layers/18_state_monitor.json + instrument counts from layer 12."""
+    import html as _h, json as _j, glob as _g
+    try:
+        mon = _j.load(open(os.path.join(ROOT, "layers/18_state_monitor.json")))
+    except FileNotFoundError:
+        return "<p>(state monitor layer not built)</p>"
+    counts = {}
+    for f in _g.glob(os.path.join(ROOT, "layers/12_state_catalog/*.json")):
+        d = _j.load(open(f))
+        for s in d.get("states", []):
+            counts[s["state"].upper()] = len(s.get("policies", []))
+    parts = ['<div style="background:var(--accent-soft);border-radius:8px;padding:12px 16px;margin-bottom:18px;'
+             'font-family:-apple-system,sans-serif;font-size:.85rem;">'
+             + "".join(f"<p style='margin:4px 0'>{_h.escape(h)}</p>" for h in mon.get("headline_findings", []))
+             + "</div>"]
+    for st in mon["states"]:
+        n = counts.get(st["state"].upper(), "")
+        parts.append(f'<section class="q"><h2>{_h.escape(st["state"].title())} '
+                     f'<span class="n">&middot; {n} catalogued instruments</span></h2>')
+        for sc in st["schemes"]:
+            arrears = any("arrear" in (e.get("fact","")+sc.get("status_2025_26","")).lower() or "pending" in e.get("fact","").lower()
+                          for e in sc.get("funds_evidence", []))
+            flag = ' <span class="chip" style="background:#7a2e2e22;color:var(--warn);">arrears signal</span>' if arrears else ""
+            parts.append(f'<div class="row" data-q="state" data-s="{_h.escape(sc["scheme"][:60], quote=True)}" data-m="{_h.escape(st["state"], quote=True)}">'
+                         f'<div class="top"><span class="chip">{_h.escape(sc["scheme"][:80])}</span>{flag}</div>'
+                         f'<div class="title" style="font-size:.88rem;color:var(--muted);">{_h.escape(sc.get("status_2025_26","")[:260])}</div>')
+            for e in sc.get("funds_evidence", [])[:4]:
+                fig = _h.escape(e.get("figure",""))
+                fact = _h.escape(e.get("fact","")[:200])
+                url = e.get("source_url","")
+                src = _h.escape(e.get("source_type",""))
+                link = f' <a href="{url}" target="_blank" rel="noopener" class="prid">[{src}]</a>' if url and url.startswith("http") else f' <span class="prid">[{src}]</span>'
+                parts.append(f'<div style="font-size:.85rem;margin:5px 0 0;"><b>{fig}</b> — {fact}{link}</div>')
+            arts = sc.get("news_articles", [])
+            if arts:
+                parts.append('<div style="font-size:.78rem;color:var(--muted);margin-top:6px;font-family:-apple-system,sans-serif;">News: '
+                             + " · ".join(f'<a href="{a["url"]}" target="_blank" rel="noopener" style="color:var(--accent)">{_h.escape(a["outlet"])} ({_h.escape(str(a.get("date",""))[:10])})</a>'
+                                          for a in arts[:3] if a.get("url","").startswith("http")) + "</div>")
+            parts.append("</div>")
+        parts.append("</section>")
+    return "\n".join(parts)
+
+
 def write_html(by_q, total):
     """Emit docs/reportage.html -- house-style page; list pre-rendered (works without JS), filters via JS."""
     import html as _h
@@ -165,7 +209,7 @@ def write_html(by_q, total):
                 f'{_h.escape((title or "")[:160])}</a> <span class="prid">PRID {prid}</span></div></div>')
         parts.append("</section>")
     tpl = open(os.path.join(ROOT, "docs/_reportage_template.html")).read()
-    html_out = tpl.replace("__ROWS__", "\n".join(parts)).replace("__TOTAL__", str(total)).replace(
+    html_out = tpl.replace("__ROWS__", "\n".join(parts)).replace("__STATES__", render_states()).replace("__TOTAL__", str(total)).replace(
         "__NQ__", str(len(by_q))).replace("__GEN__", datetime.date.today().isoformat())
     path = os.path.join(ROOT, "docs/reportage.html")
     open(path, "w").write(html_out)

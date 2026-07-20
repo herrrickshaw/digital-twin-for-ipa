@@ -1,0 +1,778 @@
+{
+ "layer": "state_incentive_monitor",
+ "built": "2026-07-21",
+ "method": "Two public-record sweeps (2026-07-21): government releases, state budget documents, PIB/Parliament-reply reports, mainstream business press. Disbursals distinguished from approvals/LoCs/MoUs; ARREARS recorded as the key performance signal; 'UNVERIFIED' and absence-of-published-data recorded as findings.",
+ "headline_findings": [
+  "ARREARS DIVIDE: Telangana Rs 3,736cr confirmed arrears (overlapping counts to >Rs 4,500cr since 2016/17); AP Rs 3,000-5,000cr pending (YSRCP-era disbursal ~Rs 2,000cr/5y); Punjab's 'Rs 150cr Q1 FY26 exceeded prior two years combined' is an implicit arrears admission; J&K NCSS approved ~Rs 83cr in FY24 against Rs 28,400cr outlay with documented industry delay complaints.",
+  "TRANSPARENCY DIVIDE: Rajasthan press-releases annual RIPS disbursals (Rs 765.78cr FY25, +293%); Gujarat publishes MSME-track numbers (Rs 7,864cr/5y) but gates the Large/Mega dashboard behind login; Maharashtra and Karnataka publish NO annual disbursal series; Haryana and West Bengal have no findable aggregate outgo.",
+  "OUTLIERS: MP actively disburses on-stage (Rs 270cr+425cr at one conclave; claims liabilities cleared); Odisha budgets only Rs 15cr/yr for IPR subsidies against a Rs 24,823cr MoU pipeline; Assam's semiconductor state share is Rs 3,789cr of the Rs 14,044cr Tata OSAT stack."
+ ],
+ "states": [
+  {
+   "state": "GUJARAT",
+   "schemes": [
+    {
+     "scheme": "Aatmanirbhar Gujarat Schemes for Assistance to Industries 2022 (MSME / Large / Mega tracks)",
+     "status_2025_26": "ACTIVE - operative 5 Oct 2022 to Oct 2027 (replaced Industrial Policy 2020 incentive schemes); disbursals ongoing alongside legacy 2015 and 2020 policy claims",
+     "funds_evidence": [
+      {
+       "fact": "Aatmanirbhar Gujarat scheme (launched 2022) has provided assistance to enterprises since inception (MSME track)",
+       "figure": "Rs 245 crore to ~2,400 enterprises",
+       "source_type": "govt-release",
+       "source_url": "https://deshgujarat.com/2025/05/16/over-%E2%82%B97864-crore-aid-disbursed-to-around-1-3-lakh-msmes-in-last-5-years-gujarat-govt/",
+       "date": "2025-05-16"
+      },
+      {
+       "fact": "Total MSME industrial assistance disbursed by Gujarat govt FY2020-21 to FY2024-25 (capital subsidy, interest subvention, credit guarantee across policy frameworks)",
+       "figure": "Rs 7,864 crore to ~1.3 lakh MSMEs",
+       "source_type": "govt-release",
+       "source_url": "https://deshgujarat.com/2025/05/16/over-%E2%82%B97864-crore-aid-disbursed-to-around-1-3-lakh-msmes-in-last-5-years-gujarat-govt/",
+       "date": "2025-05-16"
+      },
+      {
+       "fact": "Legacy scheme disbursals still running in parallel: Industrial Policy 2020 claims Rs 345 crore across 8,700 claims; Industrial Policy 2015 claims Rs 137 crore across 4,400 claims (1 Apr 2024 - 8 Jan 2025 window)",
+       "figure": "Rs 345 cr (IP-2020) + Rs 137 cr (IP-2015)",
+       "source_type": "govt-release",
+       "source_url": "https://deshgujarat.com/2025/05/16/over-%E2%82%B97864-crore-aid-disbursed-to-around-1-3-lakh-msmes-in-last-5-years-gujarat-govt/",
+       "date": "2025-05-16"
+      },
+      {
+       "fact": "IFP (Investor Facilitation Portal) has an 'Incentives Granted Dashboard' menu item, but no numbers are publicly visible without login - Large/Mega-track disbursal totals UNVERIFIED from public web",
+       "figure": "UNVERIFIED (dashboard login-gated)",
+       "source_type": "govt-release",
+       "source_url": "https://ifp.gujarat.gov.in/DIGIGOV/Investor-dashboard.jsp",
+       "date": "2026-07-21"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Over Rs 7,864 crore aid disbursed to around 1.3 lakh MSMEs in last 5 years: Gujarat govt",
+       "outlet": "DeshGujarat (carrying Gujarat govt statement, Gandhinagar)",
+       "date": "2025-05-16",
+       "url": "https://deshgujarat.com/2025/05/16/over-%E2%82%B97864-crore-aid-disbursed-to-around-1-3-lakh-msmes-in-last-5-years-gujarat-govt/",
+       "gist": "Scheme-wise breakdown of Gujarat MSME incentive disbursals FY21-FY25 incl. Rs 245 cr under Aatmanirbhar Gujarat 2022; 23.79 lakh Udyam registrations since 2020"
+      },
+      {
+       "title": "Chief Minister announces 'The Aatmanirbhar Gujarat Schemes for assistance to Industries'",
+       "outlet": "CMO Gujarat (official)",
+       "date": "2022-10-05",
+       "url": "https://cmogujarat.gov.in/en/latest-news/the-aatmanirbhar-gujarat-schemes-for-assistance-to-industries",
+       "gist": "Launch release: scheme targets Rs 12.5 lakh crore investment and 15 lakh jobs; interest subsidy, SGST reimbursement, EPF reimbursement, electricity-duty waiver tracks"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "MAHARASHTRA",
+   "schemes": [
+    {
+     "scheme": "Package Scheme of Incentives PSI-2019 / Maharashtra Industry, Investment & Services Policy (MIISP) 2025",
+     "status_2025_26": "TRANSITION - PSI-2019 window closed for new units; MIISP-2025 announced with FY26 budget (target Rs 40 lakh crore investment, 50 lakh jobs); PSI-2019 committed disbursals continue via cabinet sub-committee / High Power Committee approvals",
+     "funds_evidence": [
+      {
+       "fact": "Cabinet sub-committee chaired by CM Fadnavis approved 5 mega/ultra-mega high-tech project proposals under the industrial promotion policy (incl. Adani Enterprises Rs 70,000 cr coal gasification Nagpur; Akshat Greentech Rs 12,500 cr solar in Chh. Sambhajinagar) with bespoke incentive packages",
+       "figure": "Rs 89,731 crore investment approved, ~20,000 jobs",
+       "source_type": "news",
+       "source_url": "https://www.deccanchronicle.com/nation/maharashtra-government-approves-rs-89731-crore-mega-projects-in-high-tech-sectors-1959335",
+       "date": "2025 (mid-year cabinet sub-committee meeting)"
+      },
+      {
+       "fact": "State later approved Rs 1.35 lakh crore of high-tech sector investment proposals (incentives under mega-project provisions) expected to create ~1 lakh jobs",
+       "figure": "Rs 1.35 lakh crore approvals",
+       "source_type": "govt-release",
+       "source_url": "https://newsonair.gov.in/maharashtra-approves-%E2%82%B91-35-lakh-crore-investment-in-high-tech-sectors-to-create-1-lakh-jobs/",
+       "date": "2025"
+      },
+      {
+       "fact": "Actual PSI/Industrial Promotion Subsidy disbursal (outgo) line for FY2024-25/FY2025-26 not found in public web sources; PRS budget analysis of Maharashtra Budget 2025-26 (total expenditure Rs 7,00,020 cr) does not break out the PSI subsidy line; Economic Survey of Maharashtra 2024-25 PDF exists but figures not extracted",
+       "figure": "UNVERIFIED (disbursal outgo not published in accessible summary form)",
+       "source_type": "budget-doc",
+       "source_url": "https://prsindia.org/budgets/states/maharashtra-budget-analysis-2025-26",
+       "date": "2025-03"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Maharashtra Government Approves Rs 89,731 Crore Mega Projects in High-Tech Sectors",
+       "outlet": "Deccan Chronicle",
+       "date": "2025",
+       "url": "https://www.deccanchronicle.com/nation/maharashtra-government-approves-rs-89731-crore-mega-projects-in-high-tech-sectors-1959335",
+       "gist": "Cabinet sub-committee clears 5 high-tech mega projects (coal gasification, solar, electrical steel, graphite anode) for incentives across Vidarbha/Marathwada/Nashik"
+      },
+      {
+       "title": "Maharashtra Budget Analysis 2025-26",
+       "outlet": "PRS Legislative Research",
+       "date": "2025-03",
+       "url": "https://prsindia.org/budgets/states/maharashtra-budget-analysis-2025-26",
+       "gist": "FY26 expenditure Rs 7,00,020 cr; announces new industrial policy targeting Rs 40 lakh cr investment / 50 lakh jobs; no explicit PSI outgo line in summary"
+      },
+      {
+       "title": "Maharashtra's New Industrial Incentive Policy (MIISP 2025) - Subsidy for Manufacturing Units",
+       "outlet": "KRPR & Associates (practitioner analysis)",
+       "date": "2025",
+       "url": "https://www.krprassociates.com/maharashtras-new-industrial-incentive-policy-miisp-2025/",
+       "gist": "MIISP-2025 replaces PSI-2019; Group A zones get Industrial Promotion Subsidy for the first time (30% of FCI over 5 years)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "TAMIL NADU",
+   "schemes": [
+    {
+     "scheme": "Industrial Policy 2021 structured packages (Mega/Super-Mega/Ultra-Mega investment promotion subsidy) via Guidance Tamil Nadu",
+     "status_2025_26": "ACTIVE - structured packages continue under Industrial Policy 2021; FY26 budget carries an explicit Investment Promotion Incentive allocation; MoU pipeline actively converting",
+     "funds_evidence": [
+      {
+       "fact": "Tamil Nadu Budget 2025-26 allocates an 'Investment Promotion Incentive for Industries' line (structured-package subsidy outgo) plus Rs 225 cr for Women Entrepreneurship Development Scheme",
+       "figure": "Rs 2,420 crore (FY2025-26 BE)",
+       "source_type": "budget-doc",
+       "source_url": "https://financedept.tn.gov.in/budget/",
+       "date": "2025-03 (budget); figure as reported in secondary budget coverage https://franchisebhoomi.com/blog/tamilnadu-budget-2025-2026/"
+      },
+      {
+       "fact": "Investment commitments received by TN in calendar 2025 via Guidance TN: 270 MoUs signed, expected to generate over 4 lakh jobs (Minister TRB Rajaa)",
+       "figure": "Rs 2.07 lakh crore (270 MoUs, 2025)",
+       "source_type": "news",
+       "source_url": "https://www.business-standard.com/india-news/tamil-nadu-received-investment-commitments-of-2-07-trn-in-2025-minister-126010200218_1.html",
+       "date": "2026-01-02"
+      },
+      {
+       "fact": "Global Investors Meet 2024 (Guidance TN) investment commitments announced by CM Stalin",
+       "figure": "Rs 6.64 lakh crore MoUs, ~26.90 lakh jobs claimed",
+       "source_type": "news",
+       "source_url": "https://www.deccanherald.com/india/tamil-nadu/tamil-nadu-signs-mous-for-rs-664-lakh-crore-investments-2841052",
+       "date": "2024-01"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Tamil Nadu received investment commitments of Rs 2.07 trn in 2025: Minister",
+       "outlet": "Business Standard (also PTI via The Week, Outlook Business)",
+       "date": "2026-01-02",
+       "url": "https://www.business-standard.com/india-news/tamil-nadu-received-investment-commitments-of-2-07-trn-in-2025-minister-126010200218_1.html",
+       "gist": "270 MoUs / Rs 2.07 lakh cr in 2025, 4+ lakh jobs; regional conclaves beyond Chennai; aerospace-defence, advanced electronics, rail and maritime manufacturing highlighted"
+      },
+      {
+       "title": "TN bags investments of over Rs 6 lakh crore at GIM 2024, to provide 26.90 lakh jobs: Stalin",
+       "outlet": "Deccan Herald",
+       "date": "2024-01",
+       "url": "https://www.deccanherald.com/amp/story/india%2Ftamil-nadu%2Ftn-bags-investments-of-over-rs-6-lakh-crore-at-gim-2024-to-provide-2690-lakh-jobs-stalin-2839925",
+       "gist": "GIM 2024 headline MoU tally underpinning the structured-package pipeline"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "KARNATAKA",
+   "schemes": [
+    {
+     "scheme": "Karnataka Industrial Policy 2020-25 (expired) / Industrial Policy 2025-30 incentive packages",
+     "status_2025_26": "ACTIVE - Industrial Policy 2025-30 notified 8 Feb 2025 (5-year validity; target Rs 7.5 lakh cr investment, 20 lakh jobs); 2020-25 policy commitments in disbursal tail; incentives are backend-loaded (released post-production/employment milestones)",
+     "funds_evidence": [
+      {
+       "fact": "Karnataka offered incentives and concessions worth at least Rs 10,980 crore to companies over the preceding three years; Industries Minister M B Patil noted bespoke incentives normally go to companies investing above Rs 500 crore",
+       "figure": "Rs 10,980 crore over 3 years",
+       "source_type": "news",
+       "source_url": "https://www.deccanherald.com/india/karnataka/karnataka-offers-incentives-worth-rs-10980-crore-to-companies-in-3-years-4033454",
+       "date": "2026-06 (approx.; article retrieved via search, full text 403-blocked)"
+      },
+      {
+       "fact": "Industrial Policy 2025-30 incentive structure: capital subsidy 10-25% of fixed assets OR production-linked subsidy 1.75-2.25% of turnover; investments above Rs 1,000 cr get case-by-case customised packages",
+       "figure": "Policy terms (not outgo)",
+       "source_type": "govt-release",
+       "source_url": "https://investkarnataka.co.in/wp-content/uploads/2025/02/IndustrialPolicy2025_PrintPagesSingle_.pdf",
+       "date": "2025-02-08"
+      },
+      {
+       "fact": "Year-wise actual incentive disbursal under Industrial Policy 2020-25 for FY2024-25/FY2025-26 not published in accessible budget summaries or news",
+       "figure": "UNVERIFIED (no public annual disbursal series found)",
+       "source_type": "news",
+       "source_url": "https://egov.eletsonline.com/2025/03/karnataka-budget-2025-26-ai-deep-tech-and-semiconductor-push-unlocks-major-business-opportunities/",
+       "date": "2025-03"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Karnataka offers incentives worth Rs 10,980 crore to companies in 3 years",
+       "outlet": "Deccan Herald",
+       "date": "2026-06 (approx.)",
+       "url": "https://www.deccanherald.com/india/karnataka/karnataka-offers-incentives-worth-rs-10980-crore-to-companies-in-3-years-4033454",
+       "gist": "Only public aggregate of Karnataka incentive commitments found; frames sops as competitive response to southern-state rivalry"
+      },
+      {
+       "title": "Government of Karnataka announces the Karnataka Industrial Policy 2025-30",
+       "outlet": "Grant Thornton Bharat (tax alert on official notification)",
+       "date": "2025-02",
+       "url": "https://www.grantthornton.in/globalassets/1.-member-firms/india/assets/pdfs/alerts/government_of_karnataka_announces_the_karnataka_industrial_policy_2025_30.pdf",
+       "gist": "Details capex-subsidy vs production-linked-subsidy choice, zone-wise rates, MSME 30% capital subsidy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "schemes": [
+    {
+     "scheme": "Industrial Investment & Employment Promotion Policy (IIEPP) 2022 - Invest UP Letters of Comfort + incentive disbursement",
+     "status_2025_26": "ACTIVE - IIEPP-2022 rules (Apr 2023) in force; High Level Empowered Committee (HLEC) issuing Letters of Comfort and CM-led disbursement events through Sep 2025",
+     "funds_evidence": [
+      {
+       "fact": "CM-presided event distributed incentives to 17 industrial units under two policies (incl. IIEPP-2022); beneficiaries included CP Milk, Omax Auto, Ambuja Cement, Suyash Paper Mill, Birla Corporation, Varun Beverages; same event awarded 10 LoC certificates for proposals worth Rs 10,715 cr",
+       "figure": "Rs 164.91 crore to 17 units",
+       "source_type": "govt-release",
+       "source_url": "https://invest.up.gov.in/wp-content/uploads/go/ENGLISH_PR_Incentive_LoC_distribution_Aug%2030_2024.pdf",
+       "date": "2024-08-30"
+      },
+      {
+       "fact": "Cumulative LoC issuance reported by Invest UP: 40 Mega/Mega-Plus/Super-Mega projects (investment ~Rs 17,113.79 cr, 19,750 jobs) and 36 large-category projects (~Rs 2,001.60 cr, 7,076 jobs)",
+       "figure": "76 LoCs, ~Rs 19,115 crore investment",
+       "source_type": "govt-release",
+       "source_url": "https://invest.up.gov.in/uttar-pradesh-industrial-investment-employment-promotion-policy-2022/",
+       "date": "2024-2025 (cumulative, per Invest UP releases)"
+      },
+      {
+       "fact": "HLEC cleared 6 proposals for Letters of Comfort under IIEPP-2022",
+       "figure": "Rs 576.78 crore (6 proposals)",
+       "source_type": "govt-release",
+       "source_url": "https://invest.up.gov.in/wp-content/uploads/2025/09/2-Eng_PressRelease_HLEC_LoC_02_Sep-2025.pdf",
+       "date": "2025-09-02"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "UP Govt clears Rs 1,829 cr investment proposals with Letters of Comfort under IIEPP-2022",
+       "outlet": "The Statesman",
+       "date": "2025 (retrieved via search; page 403-blocked to fetcher)",
+       "url": "https://www.thestatesman.com/india/up-govt-clears-%E2%82%B91829-cr-investment-proposals-with-letters-of-comfort-under-iiepp-2022-1503461298.html",
+       "gist": "HLEC round clearing Rs 1,829 cr of proposals for sovereign incentive commitments (LoCs) under IIEPP-2022"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "RAJASTHAN",
+   "schemes": [
+    {
+     "scheme": "Rajasthan Investment Promotion Scheme - RIPS-2019/2022 (legacy claims) and RIPS-2024 (current)",
+     "status_2025_26": "ACTIVE - RIPS-2024 in force (updated 16 May 2025); record disbursal year FY2024-25; approvals pipeline continuing into FY2025-26; LaabhCalc incentive calculator launched",
+     "funds_evidence": [
+      {
+       "fact": "Industries Department disbursed highest-ever RIPS incentives in FY2024-25, a 293% jump over Rs 261 crore in FY2023-24; manufacturing, renewable energy and MSME projects took the bulk",
+       "figure": "Rs 765.78 crore (FY2024-25) vs Rs 261 crore (FY2023-24)",
+       "source_type": "news",
+       "source_url": "https://www.business-standard.com/india-news/rajasthan-disburses-765-78-cr-under-investment-promotion-scheme-in-fy25-125080401063_1.html",
+       "date": "2025-08-04"
+      },
+      {
+       "fact": "Official confirmation of the FY25 record disbursal by BIP Rajasthan (Rising Rajasthan handle)",
+       "figure": "Rs 765 crore, +293% YoY",
+       "source_type": "govt-release",
+       "source_url": "https://x.com/biprajasthan/status/1953836534093795600",
+       "date": "2025-08"
+      },
+      {
+       "fact": "Over 75 proposals approved under RIPS in a subsequent approvals round (approvals count, FY2025-26 cycle)",
+       "figure": "75+ proposals",
+       "source_type": "news",
+       "source_url": "https://www.business-standard.com/industry/news/over-75-proposals-approved-under-rajasthan-s-investment-promotion-scheme-126052801309_1.html",
+       "date": "2026-05-28"
+      },
+      {
+       "fact": "RIPS-2024 consolidated scheme document (incl. customs-duty/SGST-linked benefit heads) published by Finance (Tax) Department",
+       "figure": "Scheme text (updated compendium)",
+       "source_type": "budget-doc",
+       "source_url": "https://finance.rajasthan.gov.in/PDFDOCS/TAX/CCT/14514.pdf",
+       "date": "2025-05-16"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Rajasthan disburses Rs 765.78 cr under investment promotion scheme in FY25",
+       "outlet": "Business Standard",
+       "date": "2025-08-04",
+       "url": "https://www.business-standard.com/india-news/rajasthan-disburses-765-78-cr-under-investment-promotion-scheme-in-fy25-125080401063_1.html",
+       "gist": "Record RIPS disbursal FY25; department credits faster claim honouring; sector mix led by manufacturing/RE/MSME"
+      },
+      {
+       "title": "Rajasthan launches LaabhCalc to help investors assess incentives under RIPS-2024",
+       "outlet": "The Statesman",
+       "date": "2025",
+       "url": "https://www.thestatesman.com/india/rajasthan-launches-laabhcalc-to-help-investors-assess-incentives-under-rips-2024-1503509191.html/amp",
+       "gist": "Self-service incentive calculator signalling active RIPS-2024 administration"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "TELANGANA",
+   "schemes": [
+    {
+     "scheme": "T-IDEA / T-PRIDE (Telangana State Industrial Development and Entrepreneur Advancement / incentives for SC-ST entrepreneurs)",
+     "status_2025_26": "Schemes operative since 2014 (now supplemented by TGFPS portal); large multi-year arrears confirmed; Congress govt (Dec 2023-) clearing dues in phased tranches through FY2025-26",
+     "funds_evidence": [
+      {
+       "fact": "BRS government left industrial-incentive arrears when it demitted office Dec 2023: Rs 3,007 cr to medium/small-scale industries + Rs 728 cr to mega industries; Rs 684 cr of FY2023-24 cheques lapsed unclaimed; adjusted arrears Rs 3,052.63 cr. Category split: General Rs 2,037 cr, SC Rs 662.40 cr, ST Rs 1,037.08 cr (industries department figures after CM Revanth Reddy review)",
+       "figure": "Rs 3,736 crore total arrears",
+       "source_type": "news",
+       "source_url": "https://www.deccanchronicle.com/southern-states/telangana/brs-govt-left-behind-rs-3736-cr-industrial-incentive-arrears-895378",
+       "date": "2024-05-23"
+      },
+      {
+       "fact": "Industries & IT Minister D. Sridhar Babu announced disbursal of Rs 400-500 crore in industrial subsidies by end-March 2025, addressing dues pending since 2014",
+       "figure": "Rs 400-500 crore tranche; dues pending since 2014",
+       "source_type": "news",
+       "source_url": "https://knnindia.co.in/news/newsdetails/state/telangana-government-to-disburse-rs-400-500-crore-in-industrial-subsidies",
+       "date": "2025-03-08"
+      },
+      {
+       "fact": "SC and ST entrepreneurs awaiting Rs 2,200 crore in industrial subsidies pending from 2017; total unpaid industrial subsidies since 2017 reported at over Rs 4,500 crore; first tranche of Rs 300 crore planned by end of March (figure from search snippet of Bizz Buzz report; article not directly fetched)",
+       "figure": "Rs 2,200 crore SC/ST dues; >Rs 4,500 crore total since 2017",
+       "source_type": "news",
+       "source_url": "https://www.bizzbuzz.news/State/Telangana/tgana-govt-prioritises-clearing-rs-2200-cr-subsidy-dues-to-sc-st-entrepreneurs-1353744",
+       "date": "2025 (exact date UNVERIFIED)"
+      },
+      {
+       "fact": "Separate reported figure: pending incentives to industries since 2016 stated as Rs 4,250 crore (search-snippet figure, not independently fetched; overlaps/conflicts with Rs 3,736 cr and Rs 4,500 cr figures depending on cutoff year)",
+       "figure": "Rs 4,250 crore (UNVERIFIED against primary source)",
+       "source_type": "news",
+       "source_url": "https://www.bizzbuzz.news/State/Telangana/govt-will-soon-clear-incentive-dues-to-inds-1348184",
+       "date": "2025 (exact date UNVERIFIED)"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "BRS govt left behind Rs 3,736 cr industrial incentive arrears",
+       "outlet": "Deccan Chronicle",
+       "date": "2024-05-23",
+       "url": "https://www.deccanchronicle.com/southern-states/telangana/brs-govt-left-behind-rs-3736-cr-industrial-incentive-arrears-895378",
+       "gist": "Industries dept figures: Rs 3,736 cr arrears (Rs 3,007 cr small/medium + Rs 728 cr mega), Rs 684 cr lapsed cheques; Congress govt clearing in phases"
+      },
+      {
+       "title": "Telangana Government to Disburse Rs 400-500 Crore in Industrial Subsidies",
+       "outlet": "KNN India",
+       "date": "2025-03-08",
+       "url": "https://knnindia.co.in/news/newsdetails/state/telangana-government-to-disburse-rs-400-500-crore-in-industrial-subsidies",
+       "gist": "Minister Sridhar Babu: Rs 400-500 cr tranche by end-March 2025 against dues pending since 2014"
+      },
+      {
+       "title": "T'gana Govt Prioritises Clearing Rs 2,200 Cr Subsidy Dues To SC, ST Entrepreneurs",
+       "outlet": "Bizz Buzz",
+       "date": "2025 (UNVERIFIED)",
+       "url": "https://www.bizzbuzz.news/State/Telangana/tgana-govt-prioritises-clearing-rs-2200-cr-subsidy-dues-to-sc-st-entrepreneurs-1353744",
+       "gist": "SC/ST entrepreneurs owed Rs 2,200 cr since 2017; total unpaid subsidies >Rs 4,500 cr; Rs 300 cr first tranche planned"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "schemes": [
+    {
+     "scheme": "AP Industrial Development Policy 4.0 (2024-29) + legacy pending incentives from IDP 2020-23 / YSRCP era",
+     "status_2025_26": "IDP 4.0 notified Nov 2024 (targets incl. Rs 83,000 cr FDI); TDP-led govt acknowledges large backlog of unpaid incentive claims from YSRCP period and has committed to phased FIFO release",
+     "funds_evidence": [
+      {
+       "fact": "Industries Minister T G Bharath: government will 'soon' release pending incentives ranging Rs 3,000-5,000 crore to entrepreneurs on first-in-first-out basis; YSRCP govt released only ~Rs 2,000 cr over its full 5-year term vs Rs 4,000 cr disbursed by TDP govt 2014-19",
+       "figure": "Rs 3,000-5,000 crore pending; YSRCP-era disbursal ~Rs 2,000 crore in 5 years",
+       "source_type": "news",
+       "source_url": "https://www.thehansindia.com/andhra-pradesh/govt-to-release-incentives-for-industries-soon-960035",
+       "date": "2025-04-05"
+      },
+      {
+       "fact": "IDP 4.0 policy document (official, apindustries.gov.in) sets 2024-29 incentive framework; no consolidated FY2025-26 disbursal-vs-arrears statement located in public budget docs during this sweep",
+       "figure": "UNVERIFIED (no exact FY2025-26 disbursal figure found)",
+       "source_type": "govt-release",
+       "source_url": "https://www.apindustries.gov.in/APIndus/Data/policies/AP%20Industrial%20Development%20Policy%20(4.0)%202024-29.pdf",
+       "date": "2024-11"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Govt to release incentives for industries soon",
+       "outlet": "The Hans India",
+       "date": "2025-04-05",
+       "url": "https://www.thehansindia.com/andhra-pradesh/govt-to-release-incentives-for-industries-soon-960035",
+       "gist": "Minister confirms Rs 3,000-5,000 cr pending incentives, FIFO release promised; frames YSRCP-era Rs 2,000 cr/5yr disbursal as the source of arrears"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "ODISHA",
+   "schemes": [
+    {
+     "scheme": "Industrial Policy Resolution (IPR) 2022 incentives",
+     "status_2025_26": "IPR-2022 operative with 2025-26 amendments (GO-EAST framework, extra incentives for 15 under-industrialised districts, Go-SWIFT tracking of incentive disbursement); budgeted subsidy outgo under IPR is strikingly small relative to MoU pipeline",
+     "funds_evidence": [
+      {
+       "fact": "Odisha Annual Budget 2025-26 allocates Rs 15 crore for 'Subsidies under IPR', Rs 30 crore for subsidies under MSME Policy, Rs 25 crore for Food Processing Policy subsidies (figures surfaced from finance.odisha.gov.in budget highlights via search; line-item PDF not independently parsed)",
+       "figure": "Rs 15 crore (IPR subsidies, BE 2025-26)",
+       "source_type": "budget-doc",
+       "source_url": "https://finance.odisha.gov.in/sites/default/files/2025-03/Annual%20Budget%202025-26%20Highlights%20English%20Final_17.02.2025.pdf",
+       "date": "2025-02-17"
+      },
+      {
+       "fact": "At GO-EAST policy launch alongside IPR-2022 amendments, state signed MoUs with 7 corporations worth ~Rs 24,823 crore (chemicals, power, green-energy equipment, apparel, steel); Go-SWIFT to track incentive disbursement",
+       "figure": "Rs 24,823 crore MoUs (commitments, not disbursals)",
+       "source_type": "news",
+       "source_url": "https://currentaffairs.adda247.com/odisha-launches-go-east-policy-to-accelerate-industrial-growth-and-attract-investments/",
+       "date": "2025-26 (exact date UNVERIFIED)"
+      },
+      {
+       "fact": "No cumulative IPR-2022 incentive disbursal total or arrears figure located in public record during this sweep",
+       "figure": "UNVERIFIED",
+       "source_type": "govt-release",
+       "source_url": "https://investodisha.gov.in/industrial-policy-resolution-2022",
+       "date": "2026-07-21 (as-checked)"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Odisha Launches GO-EAST Policy to Accelerate Industrial Growth and Attract Investments",
+       "outlet": "Adda247 Current Affairs",
+       "date": "2025-26 (UNVERIFIED)",
+       "url": "https://currentaffairs.adda247.com/odisha-launches-go-east-policy-to-accelerate-industrial-growth-and-attract-investments/",
+       "gist": "GO-EAST cell + IPR-2022 amendments; 15 backward districts get extra fiscal incentives; Rs 24,823 cr MoUs at launch"
+      },
+      {
+       "title": "Odisha Industries Budget 2026-27: Key Highlights",
+       "outlet": "Pragativadi",
+       "date": "2026",
+       "url": "https://pragativadi.com/odisha-govt-unveils-industries-budget-2026-27-eyes-viksit-odisha-2036/",
+       "gist": "FY2026-27 industries budget framed around Viksit Odisha 2036; continuation of IPR incentive lines"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "schemes": [
+    {
+     "scheme": "Investment Promotion Assistance (IPAS/MPIS) \u2014 MP Industrial Promotion Policy 2025 + MP Investment Promotion Scheme 2025; MPIDC-administered",
+     "status_2025_26": "New Industrial Promotion Policy notified 2025-02-24 with Investment Promotion Scheme 2025 for large/mega units (valid for projects commencing before 2030-03-31); state actively disbursing at Regional Industry Conclave events and claims pending liabilities cleared",
+     "funds_evidence": [
+      {
+       "fact": "At MP-RISE 2025 conclave (Ratlam), CM Mohan Yadav disbursed Rs 270 crore incentive grants to 288 MSMEs and Rs 425 crore financial support to 140 large industries; Rs 30,402 crore investment proposals received at the event",
+       "figure": "Rs 695 crore disbursed (Rs 270 cr MSME + Rs 425 cr large) in one event",
+       "source_type": "news",
+       "source_url": "https://www.indiasnews.net/news/278410001/investment-proposals-worth-rs-30402-crore-received-at-ratlam-mp-rise-2025-conclave-says-cm-mohan-yadav",
+       "date": "2025"
+      },
+      {
+       "fact": "CM Mohan Yadav disbursed over Rs 360 crore in incentives to ~900 MSMEs/industrial units and stated pending liabilities were cleared; ancillary releases: Rs 2.02 cr ETP assistance, Rs 1.07 cr mandi-fee reimbursement, Rs 3.69 cr electricity-tariff support to 11 units",
+       "figure": "Rs 360+ crore to ~900 units; 'pending liabilities cleared' claim",
+       "source_type": "news",
+       "source_url": "https://www.thehansindia.com/news/national/cm-mohan-yadav-disburses-rs-360cr-incentives-to-900-msmes-clears-pending-liabilities-1086253",
+       "date": "2024-25 (exact date UNVERIFIED)"
+      },
+      {
+       "fact": "MP Investment Promotion Scheme 2025 (official text via NSWS): large-scale units commencing production after 2025-02-24 eligible; SLEC (State Level Empowered Committee) sanctions assistance on MPIDC scrutiny \u2014 the sanction-order mechanism referenced in the task",
+       "figure": "framework document (no aggregate)",
+       "source_type": "govt-release",
+       "source_url": "https://www.nsws.gov.in/s3fs/2026-01/Madhya_Pradesh_Investment_Promotion_Scheme_2025.pdf",
+       "date": "2025-02-24 (notified)"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "CM Mohan Yadav disburses Rs 360cr incentives to 900 MSMEs, clears pending liabilities",
+       "outlet": "The Hans India",
+       "date": "2024-25 (UNVERIFIED)",
+       "url": "https://www.thehansindia.com/news/national/cm-mohan-yadav-disburses-rs-360cr-incentives-to-900-msmes-clears-pending-liabilities-1086253",
+       "gist": "MP positions itself as clearing incentive backlog \u2014 contrast with Telangana/AP arrears pattern"
+      },
+      {
+       "title": "Investment Proposals worth Rs 30,402 crore received at Ratlam's MP RISE 2025 Conclave",
+       "outlet": "India's News / ANI syndication",
+       "date": "2025",
+       "url": "https://www.indiasnews.net/news/278410001/investment-proposals-worth-rs-30402-crore-received-at-ratlam-mp-rise-2025-conclave-says-cm-mohan-yadav",
+       "gist": "Rs 270 cr to 288 MSMEs + Rs 425 cr to 140 large industries disbursed on-stage; 538 MSME land allotment letters"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "WEST BENGAL",
+   "schemes": [
+    {
+     "scheme": "Banglashree for MSMEs (2020) + WB MSME incentive outgo",
+     "status_2025_26": "Banglashree operative via Silpasathi single window; FY2025-26 budget carries Rs 1,229 crore MSME allocation; no consolidated public statement of annual incentive disbursal/outgo or arrears found",
+     "funds_evidence": [
+      {
+       "fact": "WB Budget 2025-26 allocated Rs 1,229 crore for MSMEs (department allocation, not scheme-wise disbursal); state also approved a Rs 5,000 crore electronics/semiconductor/EV incentive package",
+       "figure": "Rs 1,229 crore MSME allocation BE 2025-26",
+       "source_type": "news",
+       "source_url": "https://www.goodreturns.in/news/bengal-budget-2025-26-focus-on-msmes-infrastructure-011-1405919.html",
+       "date": "2025-02"
+      },
+      {
+       "fact": "Historical baseline: Banglashree budget allocation was Rs 100 crore in FY2020-21; no later scheme-wise outgo figures located",
+       "figure": "Rs 100 crore (FY2020-21 allocation)",
+       "source_type": "govt-release",
+       "source_url": "https://wbxpress.com/banglashree-micro-small-medium-enterprises/",
+       "date": "2020"
+      },
+      {
+       "fact": "Actual Banglashree/incentive disbursal for FY2024-25 or FY2025-26 and any arrears position",
+       "figure": "UNVERIFIED \u2014 not found in public record during this sweep",
+       "source_type": "budget-doc",
+       "source_url": "https://msme.wb.gov.in/",
+       "date": "2026-07-21 (as-checked)"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "West Bengal's 2025-26 Budget Emphasises MSMEs and Infrastructure for Economic Growth",
+       "outlet": "GoodReturns",
+       "date": "2025-02",
+       "url": "https://www.goodreturns.in/news/bengal-budget-2025-26-focus-on-msmes-infrastructure-011-1405919.html",
+       "gist": "Rs 1,229 cr MSME allocation; Rs 5,000 cr electronics/semiconductor/EV incentive package approved"
+      },
+      {
+       "title": "West Bengal Budget Analysis 2025-26",
+       "outlet": "PRS Legislative Research",
+       "date": "2025",
+       "url": "https://prsindia.org/budgets/states/west-bengal-budget-analysis-2025-26",
+       "gist": "Independent budget analysis; departmental allocations context for MSME & Textiles"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "PUNJAB",
+   "schemes": [
+    {
+     "scheme": "Industrial and Business Development Policy (IBDP) 2022 \u2014 Invest Punjab",
+     "status_2025_26": "Policy operative; state publicly claims accelerated FY2025-26 disbursals specifically to clear past pending incentive claims \u2014 implicit admission of prior arrears backlog",
+     "funds_evidence": [
+      {
+       "fact": "Over Rs 150 crore disbursed in Q1 FY2025-26 \u2014 stated to exceed the combined total of the previous two years (an implicit arrears signal: prior two full years together < Rs 150 cr); target ~Rs 250 crore by June 2025 to clear all past pending incentive claims (figure recurred in two searches but no single primary URL captured \u2014 treat attribution as UNVERIFIED)",
+       "figure": "Rs 150+ crore Q1 FY2025-26; Rs 250 crore target",
+       "source_type": "news",
+       "source_url": "UNVERIFIED (figure from search summaries; likely Invest Punjab/state release)",
+       "date": "2025-06 (approx)"
+      },
+      {
+       "fact": "State claims Rs 500 crore disbursed in 2025-26 to eligible industrial units under various state industrial policies (manufacturing, food processing, textiles, IT/ITeS, steel, auto, agro); reforms since 2022 credited with Rs 1.50 lakh crore investment proposals",
+       "figure": "Rs 500 crore disbursed FY2025-26 (state claim)",
+       "source_type": "news",
+       "source_url": "https://www.rozanaspokesman.com/news/punjab/050226/punjabs-industrial-transformation-strategic-reforms-yield-rs-150.html",
+       "date": "2026-02-05"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Punjab's Industrial Transformation: Strategic Reforms Yield Rs 1.50 Lakh Cr and 5 Lakh Jobs Ahead of 2026 Summit",
+       "outlet": "Rozana Spokesman",
+       "date": "2026-02-05",
+       "url": "https://www.rozanaspokesman.com/news/punjab/050226/punjabs-industrial-transformation-strategic-reforms-yield-rs-150.html",
+       "gist": "Govt-friendly claim of Rs 500 cr FY2025-26 incentive disbursal across sectors under state industrial policies"
+      },
+      {
+       "title": "Punjab emerges as an industrial hub, attracts investment worth Rs 86,000 crore since March 2022",
+       "outlet": "India TV",
+       "date": "2025-02-24",
+       "url": "https://www.indiatvnews.com/news/india/punjab-emerges-as-an-industrial-hub-attracts-investment-worth-rs-86-000-crore-since-march-2022-2025-02-24-977673",
+       "gist": "Investment-attraction claims under IBDP-2022 era (proposals, not disbursals)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "HARYANA",
+   "schemes": [
+    {
+     "scheme": "Haryana Enterprises & Employment Policy (HEEP) 2020",
+     "status_2025_26": "Policy valid until 2025-12-31 (successor policy expected); SGST-reimbursement 30-100% for 5-10 years by block category; NO public aggregate disbursal or arrears figure located",
+     "funds_evidence": [
+      {
+       "fact": "HEEP 2020 (notified 2020-12-29) framework: investment subsidy in lieu of net SGST 30-100% reimbursement 5-10 yrs by block A/B/C/D; interest subsidy 5-8% for 5-7 yrs; policy sunset 2025-12-31",
+       "figure": "framework only",
+       "source_type": "govt-release",
+       "source_url": "https://msme.haryana.gov.in/haryana-enterprises-and-employment-policy-2020/",
+       "date": "2020-12-29 (notified)"
+      },
+      {
+       "fact": "2025 announcements: Rs 170 crore MSME cluster development plan (11 clusters) and PADMA mini industrial parks across 143 blocks \u2014 allocations, not HEEP disbursals",
+       "figure": "Rs 170 crore (cluster plan)",
+       "source_type": "news",
+       "source_url": "https://eudyamaadhar.org/msme-schemes-in-haryana-2025/",
+       "date": "2025"
+      },
+      {
+       "fact": "Total HEEP-2020 incentive disbursed to date and any pendency/arrears position",
+       "figure": "UNVERIFIED \u2014 no figure found in budget docs, CAG extracts, or news during this sweep",
+       "source_type": "budget-doc",
+       "source_url": "https://investharyana.in/",
+       "date": "2026-07-21 (as-checked)"
+      }
+     ],
+     "news_articles": []
+    }
+   ]
+  },
+  {
+   "state": "ASSAM",
+   "schemes": [
+    {
+     "scheme": "Industrial & Investment Policy of Assam (IIPA) 2019 (amended 2023)",
+     "status_2025_26": "Operative with 2023 mega-investment amendment (Rs 100 cr+ investment / 200+ jobs get customised incentives); implementation sub-committee minutes public on industries dept site; no aggregate disbursal figure published",
+     "funds_evidence": [
+      {
+       "fact": "Via the 2023 IIPA amendment, Assam secured investments of INR 133.64 billion (~Rs 13,364 crore) and 17,800 jobs in 14 months (commitments under customised-incentive route, not disbursals)",
+       "figure": "Rs 13,364 crore investments secured",
+       "source_type": "news",
+       "source_url": "https://www.india-briefing.com/news/investing-in-assam-state-india-key-industries-31792.html/",
+       "date": "2024-25"
+      },
+      {
+       "fact": "Aggregate IIPA-2019 incentive disbursal / arrears figure",
+       "figure": "UNVERIFIED \u2014 only sub-committee minutes (case-by-case approvals) public",
+       "source_type": "govt-release",
+       "source_url": "https://industriescom.assam.gov.in/sites/default/files/swf_utility_folder/departments/coi_industry_uneecopscloud_com_oid_11/menu/document/minutes_of_2nd_sub-committee.pdf",
+       "date": "2025-06 (approx)"
+      }
+     ],
+     "news_articles": []
+    },
+    {
+     "scheme": "Semiconductor package (Tata Electronics OSAT, Jagiroad) + Rs 25,000 cr electronics manufacturing plan",
+     "status_2025_26": "Rs 27,000 crore Tata OSAT plant fast-tracked for production; combined govt incentive of Rs 14,044 crore confirmed (Centre Rs 10,255 cr under India Semiconductor Mission + Assam state Rs 3,789 cr)",
+     "funds_evidence": [
+      {
+       "fact": "Tata's Rs 27,000-crore Jagiroad (Morigaon) semiconductor ATMP plant to receive Rs 14,044 crore total government incentive: Rs 10,255 crore (\u20b9102.55 bn) central semiconductor-programme contribution + Rs 3,789 crore (\u20b937.89 bn) committed by Assam government; ~27,000 jobs (15,000 direct)",
+       "figure": "Rs 14,044 crore (Rs 3,789 crore state share)",
+       "source_type": "news",
+       "source_url": "https://www.etvbharat.com/amp/en/state/tata-semiconductor-plant-in-assam-to-get-rs-14044-crore-govt-incentive-enn26070906165",
+       "date": "2026-07-09"
+      },
+      {
+       "fact": "Assam unveiled Rs 25,000 crore plan (2025-05-27) to boost electronics manufacturing, large portion earmarked for incentivising component makers (PCB assemblies, display modules)",
+       "figure": "Rs 25,000 crore plan",
+       "source_type": "news",
+       "source_url": "https://www.ibef.org/industry/assam-presentation",
+       "date": "2025-05-27"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Tata's Semiconductor Plant In Assam To Get Rs 14,044 Cr Govt Incentive",
+       "outlet": "ETV Bharat",
+       "date": "2026-07-09",
+       "url": "https://www.etvbharat.com/amp/en/state/tata-semiconductor-plant-in-assam-to-get-rs-14044-crore-govt-incentive-enn26070906165",
+       "gist": "Centre Rs 10,255 cr + Assam Rs 3,789 cr incentive stack for the Rs 27,000 cr Jagiroad OSAT"
+      },
+      {
+       "title": "Mega Tech Leap: Assam's Rs 27,000 crore Jagiroad semiconductor plant fast-tracked for production this fiscal year",
+       "outlet": "BIS Infotech",
+       "date": "2025-26",
+       "url": "https://www.bisinfotech.com/mega-tech-leap-assam-s-27-000-crore-jagiroad-semiconductor-plant-fast-tracked-for-production-this-fiscal-year/",
+       "gist": "Production timeline acceleration for the Tata OSAT facility"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "state": "JAMMU & KASHMIR",
+   "schemes": [
+    {
+     "scheme": "New Central Sector Scheme (NCSS) 2021 for Industrial Development of J&K (DPIIT-administered; outlay Rs 28,400 crore, effective 2021-04-01 to 2037-03-31)",
+     "status_2025_26": "Registrations continuing (2,346 applications, 918 units granted registration per reported figures); early-year disbursals were very small relative to outlay; industry bodies publicly complaining of disbursement delays",
+     "funds_evidence": [
+      {
+       "fact": "Lok Sabha written reply (MoS Home Nityanand Rai): NCSS notified with Rs 28,400 crore outlay; components = Capital Investment Incentive, Capital Interest Subvention, GST-linked incentive, Working Capital Interest Subvention",
+       "figure": "Rs 28,400 crore outlay",
+       "source_type": "govt-release",
+       "source_url": "https://thenorthlines.com/rs-28400-crore-earmarked-to-encourage-new-investment-for-industrial-development-in-jk-centre/",
+       "date": "reply reported 2023-25 (Parliament reply; exact PQ date UNVERIFIED)"
+      },
+      {
+       "fact": "In 2023-24, approvals under NCSS: Rs 62.5 crore Capital Investment Incentive + Rs 19 crore Working Capital Interest Subvention + Rs 1.44 crore Capital Interest Subvention (per Lok Sabha reply as reported) \u2014 i.e. ~Rs 83 crore in-year against a Rs 28,400 crore scheme, the pace signal the task flagged",
+       "figure": "~Rs 82.94 crore approved 2023-24",
+       "source_type": "govt-release",
+       "source_url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2042127",
+       "date": "2024-08 (PIB PRID 2042127)"
+      },
+      {
+       "fact": "1,948 NCSS claims disbursed to date (1,139 Jammu + 809 Kashmir divisions); 2,346 industrial establishments applied, 918 granted registration (figures from Rising Kashmir reporting; Rs 31.76 crore figure in same coverage relates to pharma-sector releases/29 pharma units per Rajya Sabha reply by MoS Chemicals & Fertilizers Anupriya Patel \u2014 possible conflation in secondary reporting, treat the Rs 31.76 cr as pharma-specific)",
+       "figure": "1,948 claims disbursed; Rs 31.76 crore (pharma-sector releases)",
+       "source_type": "news",
+       "source_url": "https://risingkashmir.com/jk-pharma-sector-expands-as-centre-releases-%E2%82%B931-76-crore-registers-29-units/",
+       "date": "2025-26"
+      },
+      {
+       "fact": "672 new industrial units established in J&K in 2 years attributed to NCSS",
+       "figure": "672 units / 2 years",
+       "source_type": "news",
+       "source_url": "https://www.greaterkashmir.com/uncategorized/ncss-ignites-economic-sparks-jks-industrial-scene-booms-with-672-new-units-in-2-years/",
+       "date": "2023-24 (approx)"
+      }
+     ],
+     "news_articles": [
+      {
+       "title": "Delay in disbursement of incentives under NCSS stifles Industrial growth in J&K",
+       "outlet": "Daily Excelsior",
+       "date": "UNVERIFIED",
+       "url": "https://www.dailyexcelsior.com/delay-in-disbursement-of-incentives-under-ncss-stifles-industrial-growth-in-jk/",
+       "gist": "Industry-side complaint that NCSS incentive disbursement delays are choking growth \u2014 the arrears/pendency signal for J&K"
+      },
+      {
+       "title": "New policies attract investors to J&K, receive investment proposals worth Rs 1.69 lakh crore",
+       "outlet": "The Week",
+       "date": "2025-03-17",
+       "url": "https://www.theweek.in/news/india/2025/03/17/new-policies-attract-investors-to-j-k-receive-investment-proposals-worth-1-69-lakh-crore.html",
+       "gist": "Proposal pipeline vs the ~Rs 83 cr/yr actual approval pace \u2014 large promise-vs-payout gap"
+      },
+      {
+       "title": "INDUSTRIAL DEVELOPMENT OF JAMMU AND KASHMIR",
+       "outlet": "PIB (Press Information Bureau)",
+       "date": "2024-08",
+       "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2042127",
+       "gist": "Official PIB release accompanying the Parliament reply on NCSS registrations and disbursals"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "method_notes": [
+  "~21 web searches/fetches performed 2026-07-21; evidence restricted to government releases, budget documents/analyses, and mainstream Indian business press",
+  "Disbursal (money actually paid out) was distinguished from approvals/LoCs/MoUs (commitments): Rajasthan, Gujarat-MSME and UP have hard disbursal numbers; TN and Maharashtra evidence is dominated by budget allocations and approval/MoU pipelines; Karnataka only has a 3-year aggregate of 'incentives offered'",
+  "TN's Rs 2,420 cr Investment Promotion Incentive figure comes from secondary budget coverage (franchisebhoomi.com summarising the FY26 budget) - the finance dept demand-for-grants PDF was not parsed line-by-line; treat as reported-but-secondary",
+  "No CAG state-audit paragraphs on incentive outgo surfaced within the fetch budget for any of the six states - a targeted cag.gov.in search would be the next step",
+  "Karnataka Deccan Herald article date could not be confirmed (page 403-blocked); search metadata suggests mid-2026",
+  "Absence findings: neither Maharashtra (PSI outgo line) nor Karnataka (annual disbursal series) publishes an accessible yearly incentive-disbursal figure - this opacity is itself a result; contrast with Rajasthan which press-releases its annual RIPS disbursal",
+  "22 web searches/fetches total. Direct WebFetch verification performed on 3 key sources: Deccan Chronicle (Telangana Rs 3,736 cr arrears breakdown), KNN India (Telangana Rs 400-500 cr March-2025 tranche), Hans India (AP Rs 3,000-5,000 cr pending, minister on record, 2025-04-05).",
+  "Evidence hierarchy applied: J&K figures trace to Lok Sabha/Rajya Sabha written replies but were obtained via PIB release (PRID 2042127) and news reports of the replies, NOT the raw sansad.in PQ PDFs \u2014 figures should be re-confirmed against the PQ PDFs before publication.",
+  "Figures marked '(from search snippet)' or with UNVERIFIED dates came from search-engine summaries of news articles that were not individually fetched; the headline figures are consistent across multiple outlets but exact article dates were not captured.",
+  "Telangana arrears figures vary by cutoff: Rs 3,736 cr (as of Dec 2023, industries dept), Rs 4,250 cr (since 2016, 2025 reporting), >Rs 4,500 cr (since 2017, SC/ST-focused reporting incl. Rs 2,200 cr SC/ST component). These are overlapping counts, not additive.",
+  "Arrears-as-signal summary: Telangana and AP have explicit multi-thousand-crore confirmed arrears; Punjab's own 'Rs 150 cr in Q1 exceeded prior two years combined' is an implicit arrears admission; J&K NCSS shows ~Rs 83 cr/yr approvals against a Rs 28,400 cr outlay plus documented delay complaints; MP is the outlier actively disbursing on-stage (Rs 270+425 cr at one conclave) and claiming liabilities cleared; Odisha budgets only Rs 15 cr/yr for IPR subsidies against a Rs 24,823 cr MoU pipeline."
+ ],
+ "access_issues": [
+  "invest.up.gov.in PDFs fail TLS certificate verification for the fetcher ('unable to verify the first certificate') - figures taken from search-index snippets of the official press releases; URLs load fine in a normal browser",
+  "business-standard.com and deccanherald.com and thestatesman.com return HTTP 403 to the fetcher (bot-blocking) - details captured from search-result summaries only",
+  "Gujarat IFP portal 'Incentives Granted Dashboard' is behind login; public landing page shows menu links but no numbers",
+  "PRS Maharashtra budget analysis page does not itemise the industrial promotion subsidy line; the full Economic Survey of Maharashtra 2024-25 PDF (cdnbbsr.s3waas.gov.in) was not parsed due to size/fetch budget",
+  "MPIDC sanction orders: invest.mp.gov.in/notifications-orders/ confirmed public, but counting/totalling individual sanction orders requires paginated portal scraping not performed in this sweep \u2014 the conclave disbursal figures (Rs 270 cr/288 MSMEs, Rs 425 cr/140 large units, Rs 360 cr/900 units) are the best public proxy.",
+  "sansad.in PQ PDFs not directly fetched for NCSS/UNNATI state-wise numbers; relied on PIB + news reports of the Parliament replies.",
+  "West Bengal: no consolidated MSME incentive outgo (actual disbursal) figure exists in easily-searchable public record; only budget allocations (Rs 1,229 cr BE 2025-26) found. WB detailed demand-for-grants PDFs would be needed.",
+  "Haryana: no HEEP-2020 aggregate disbursal or pendency figure found anywhere public; CAG state finance audit for Haryana not checked directly.",
+  "Punjab Rs 150 cr Q1 FY2025-26 figure appeared identically in two independent search summaries but no primary URL was captured \u2014 attribution UNVERIFIED.",
+  "Possible conflation in Rising Kashmir coverage between Rs 31.76 cr pharma-sector NCSS releases and total FY2025-26 NCSS disbursals \u2014 flagged rather than resolved.",
+  "No CAG audit paras specifically on state industrial-incentive arrears were surfaced within the fetch budget for any of the 9 states."
+ ]
+}

@@ -26,6 +26,8 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 13 | `layers/13_flat_instrument_index.json` | **Flat instrument index** — all 312 instruments (195 central + 117 state) normalized to one schema |
 | 14 | `layers/14_update_engine.json` | **Auto-update engine** — per-source refresh design (PIB daily, NSWS/RBI/UNNATI weekly, quarterly sweeps; Orbis-upgrade path for company data). Flow diagram: [docs/DATA_MODEL.md](docs/DATA_MODEL.md) |
 | 15 | `layers/15_directory.json` | **Portal directory** — 64 verified portals (27 central + 37 state) + 12 known-bad domains; human version: [docs/DIRECTORY.md](docs/DIRECTORY.md) |
+| 17 | `layers/17_scheme_monitor.json` | **Scheme performance monitor** — per-scheme schema mapped to the owning ministry: funds allocated/disbursed, utilization, applicants, window, **arrears**, refresh source (15 central schemes seeded) |
+| 18 | `layers/18_state_monitor.json` | **State incentive monitor** — 15 states' status + funds evidence from public records (disbursals vs approvals vs MoUs; the arrears divide: TG/AP/PB/J&K vs MP/RJ; transparency divide: RJ/GJ publish, MH/KA don't) |
 | 16 | `layers/16_leads.json` | **Leads generation** — **263 leads across 26 countries**: 147 yfinance-verified-profitable US/India firms (US leads carry SEC 10-K India/APAC mention-mining with YoY trend) + 116 annual-report deep-dive leads from 19 more countries (JP/KR/CN/UK/AU + DACH/NL, France/South-EU/Nordics, TW/HK/SG, CA/BR/ZA/Saudi/Israel) with quoted evidence, yfinance tickers, and per-region policy context (PN3, TEPA, SHANTI, ECTA); view: [docs/LEADS.md](docs/LEADS.md) |
 
 ## Leads generation (layer 16)
@@ -52,7 +54,7 @@ Suggested crontab (not auto-installed):
 
 **Try it in 2 minutes**: the [quickstart notebook](notebooks/twin_quickstart.ipynb) clones the repo, explores the 312-instrument index, checks the interlinkage verification tally, and probes live portals — one click via the Colab badge at the top.
 
-Reference docs: [SCHEME_CATALOGUE.md](docs/SCHEME_CATALOGUE.md) (generated, 312 instruments) · [REPORTAGE.md](docs/REPORTAGE.md) + [reportage.html](docs/reportage.html) (**quarterly reportage** — 819 key announcements × scheme × ministry, 2017Q1→today, PRID-linked; the HTML page pre-renders all rows (works without JS) with quarter/scheme/ministry filters and title search, regenerated from the daily-refreshed PIB register) · [DIRECTORY.md](docs/DIRECTORY.md) · [ABBREVIATIONS.md](docs/ABBREVIATIONS.md) · [DATA_MODEL.md](docs/DATA_MODEL.md)
+Reference docs: [SCHEME_CATALOGUE.md](docs/SCHEME_CATALOGUE.md) (generated, 312 instruments) · [REPORTAGE.md](docs/REPORTAGE.md) + [reportage.html](docs/reportage.html) (**quarterly reportage** — 819 key announcements × scheme × ministry, 2017Q1→today, PRID-linked; the HTML page pre-renders all rows (works without JS) with quarter/scheme/ministry filters and title search, **plus a State-level incentives section** — 15 states' scheme status, funds evidence with citations, arrears flags and news links; regenerated from the daily-refreshed PIB register) · [DIRECTORY.md](docs/DIRECTORY.md) · [ABBREVIATIONS.md](docs/ABBREVIATIONS.md) · [DATA_MODEL.md](docs/DATA_MODEL.md)
 
 ## State catalog clusters (layer 12)
 

@@ -1,0 +1,306 @@
+{
+ "layer": "scheme_performance_monitor",
+ "built": "2026-07-21",
+ "purpose": "Per-scheme monitoring schema mapped to the owning ministry. One entry per tracked scheme; refresh quarterly. 'null' means not published -- recorded as data, never guessed.",
+ "record_schema": {
+  "scheme": "canonical name",
+  "ministry": "owning ministry/department",
+  "tier": "central|state",
+  "monitor": {
+   "funds_allocated": "latest BE/outlay with FY",
+   "funds_disbursed": "actual/RE with FY",
+   "utilization_pct": "disbursed/allocated where computable",
+   "applicants_or_beneficiaries": "latest published count",
+   "window": "open|closed|oversubscribed|rolling",
+   "arrears": "pending dues to industry where reported",
+   "last_verified": "date",
+   "sources": [
+    "where each figure came from"
+   ]
+  },
+  "refresh_sources": "which update-engine source refreshes this entry (PIB daily / PRS budget-session / portal dashboards / Parliament Questions)"
+ },
+ "entries": [
+  {
+   "scheme": "PLI -- LSEM (closed) -> MPMS",
+   "ministry": "MeitY",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "MPMS Rs 62,500cr (FY27-FY31)",
+    "funds_disbursed": "LSEM: exceeded investment target (Rs 10,905cr vs 7,000cr); smartphone exports USD 7bn(2022)->20bn(2024)",
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": "LSEM beneficiaries principally Apple contract manufacturers (NITI 2026 note)",
+    "window": "MPMS approved 15-Jul-2026; application window pending notification",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRS DFG MeitY",
+     "PRID 2284789"
+    ]
+   },
+   "refresh_sources": "PIB daily + PRS"
+  },
+  {
+   "scheme": "PLI -- IT Hardware 2.0",
+   "ministry": "MeitY",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "within MeitY PLI head (FY27 PLI BE cut 78% to Rs 1,527cr)",
+    "funds_disbursed": "~20% of investment and 3% of production targets achieved (Feb-2025)",
+    "utilization_pct": "PLI funds underutilised since FY23 (fewer claims)",
+    "applicants_or_beneficiaries": null,
+    "window": "operational",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRS DFG MeitY 2025-26"
+    ]
+   },
+   "refresh_sources": "PRS + PIB"
+  },
+  {
+   "scheme": "Semicon / ISM 2.0",
+   "ministry": "MeitY",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "ISM-1 Rs 76,000cr; Semicon 2.0 Rs 1.27L cr approved 15-Jul-2026 (FY27 operational allocation Rs 1,000cr)",
+    "funds_disbursed": "utilization 23% (FY24), 9% (FY25), ~61% est (FY26)",
+    "utilization_pct": "9-61% by year",
+    "applicants_or_beneficiaries": "Tata Dholera fab (PSMC), Tata OSAT Jagiroad, Micron Sanand et al.",
+    "window": "open",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRS DFG",
+     "PRID 2284784"
+    ]
+   },
+   "refresh_sources": "PRS + PIB"
+  },
+  {
+   "scheme": "ECMS",
+   "ministry": "MeitY",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 22,919cr (Mar-2025) -> Rs 40,000cr (Budget FY27); FY27 BE Rs 1,500cr",
+    "funds_disbursed": "22 proposals approved Jan-2026; cumulative Rs 41,863cr investment, Rs 2.58L cr production committed",
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": "22+29 proposals approved",
+    "window": "open (FCFS)",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "VisionIAS 04-Feb-2026",
+     "PRS"
+    ]
+   },
+   "refresh_sources": "PIB + PRS"
+  },
+  {
+   "scheme": "NGHM SIGHT",
+   "ministry": "MNRE",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 17,490cr of Rs 19,744cr mission; FY27 mission allocation Rs 600cr (+100%)",
+    "funds_disbursed": "awards: 3,000 MW/yr electrolyser capacity to 15 firms; 0.86 MMT/yr GH2 capacity to 18 companies",
+    "utilization_pct": "17% of 2030 5-MMT target awarded",
+    "applicants_or_beneficiaries": "15 electrolyser + 18 production awardees; 7.24L t/yr ammonia contracted to 13 fertilizer plants",
+    "window": "tranches ongoing via SECI",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRS DFG Power/MNRE",
+     "SECI"
+    ]
+   },
+   "refresh_sources": "PRS + SECI tranche results"
+  },
+  {
+   "scheme": "PM E-DRIVE",
+   "ministry": "Heavy Industries",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 10,900cr (fund-limited, to 31-Mar-2028)",
+    "funds_disbursed": null,
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": null,
+    "window": "e-2W claims close 31-Jul-2026; e-3W to 31-Mar-2028; L5 closed 26-Dec-2025",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "NextIAS 30-Mar-2026",
+     "scheme registry"
+    ]
+   },
+   "refresh_sources": "PIB + portal"
+  },
+  {
+   "scheme": "Agriculture Infrastructure Fund",
+   "ministry": "Agriculture & Farmers Welfare",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 1L cr facility; FY27 BE Rs 910cr (subvention outgo)",
+    "funds_disbursed": "Rs 68,153cr disbursed / Rs 94,272cr sanctioned across 2,10,407 projects",
+    "utilization_pct": "72% of sanctioned disbursed",
+    "applicants_or_beneficiaries": "3.66 lakh registered beneficiaries",
+    "window": "open (rolling to FY33)",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "agriinfra.dac.gov.in live dashboard",
+     "PRS DFG Agriculture"
+    ]
+   },
+   "refresh_sources": "portal dashboard (live stats)"
+  },
+  {
+   "scheme": "UNNATI 2024",
+   "ministry": "DPIIT",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 10,037cr (FY25-FY34)",
+    "funds_disbursed": null,
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": "applications EXCEEDED state-allocated funding (all 8 NE states)",
+    "window": "CLOSED-OVERSUBSCRIBED (stopped before 31-Mar-2026); disposal due 30-Sep-2026",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "unnati.dpiit.gov.in portal notice"
+    ]
+   },
+   "refresh_sources": "weekly UNNATI notice diff (cron)"
+  },
+  {
+   "scheme": "RDSS",
+   "ministry": "Power",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 3.04L cr (FY22-FY26); FY27 BE Rs 18,000cr",
+    "funds_disbursed": "FY23 actuals 64% of RDSS budget; smart meters 5cr installed of 22cr sanctioned (23%)",
+    "utilization_pct": "~64% (FY23); metering 23%",
+    "applicants_or_beneficiaries": "discoms + AMISP concessionaires",
+    "window": "final year",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRS DFG Power 2026-27"
+    ]
+   },
+   "refresh_sources": "PRS"
+  },
+  {
+   "scheme": "BharatNet",
+   "ministry": "DoT",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "FY27 BE Rs 20,000cr (+264% over RE)",
+    "funds_disbursed": "FY26 spend est 75% below budget; 766 of ~1L GP hotspots active",
+    "utilization_pct": "~25% (FY26 est)",
+    "applicants_or_beneficiaries": null,
+    "window": "ongoing",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRS DFG Telecom"
+    ]
+   },
+   "refresh_sources": "PRS"
+  },
+  {
+   "scheme": "Shipbuilding package (SBFAS 2.0/MDF/SbDS)",
+   "ministry": "Ports, Shipping & Waterways",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 69,725cr total = SBFAS 24,736 + MDF 25,000 (incl. IIF 5,000) + SbDS 19,989",
+    "funds_disbursed": null,
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": null,
+    "window": "SBFAS to 31-Mar-2036",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRID 2170573",
+     "VisionIAS reconciliation"
+    ]
+   },
+   "refresh_sources": "PIB"
+  },
+  {
+   "scheme": "ELI",
+   "ministry": "Labour & Employment / EPFO",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 99,446cr (Aug-2025 to Jul-2027)",
+    "funds_disbursed": null,
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": "target 1.92cr first-timers + ~2.6cr additional jobs",
+    "window": "open (EPFO-administered)",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRID 2141127"
+    ],
+    "note": "no page on labour.gov.in; EPFO unreachable at sweep"
+   },
+   "refresh_sources": "PIB + EPFO"
+  },
+  {
+   "scheme": "UCF",
+   "ministry": "MoHUA",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 1L cr central assistance (FY26-FY31); FY26 Rs 10,000cr",
+    "funds_disbursed": null,
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": null,
+    "window": "operational guidelines 16-Apr-2026",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRID 2098385/2227986"
+    ]
+   },
+   "refresh_sources": "PIB + MoHUA"
+  },
+  {
+   "scheme": "RDI Scheme",
+   "ministry": "DST / ANRF",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 1L cr corpus (50y interest-free to ANRF SPF); FY26 Rs 20,000cr",
+    "funds_disbursed": "NO disbursal to 2nd-level fund managers publicly reported as of Jul-2026",
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": "TDB RDIF CFP-2026 open",
+    "window": "open (via fund managers)",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "PRID 2141130",
+     "VisionIAS Oct-2025",
+     "IAS-source verification"
+    ]
+   },
+   "refresh_sources": "PIB + TDB"
+  },
+  {
+   "scheme": "Coal gasification incentives",
+   "ministry": "Coal",
+   "tier": "central",
+   "monitor": {
+    "funds_allocated": "Rs 8,500cr (2024 scheme; percentage formula DISPUTED between sources -- official PDF is arbiter) + Rs 37,500cr surface-gasification (2026)",
+    "funds_disbursed": "8 projects worth Rs 6,233cr under implementation",
+    "utilization_pct": null,
+    "applicants_or_beneficiaries": "8 projects",
+    "window": "Round-1 2026 open",
+    "arrears": null,
+    "last_verified": "2026-07-20",
+    "sources": [
+     "coal.gov.in",
+     "Drishti/PWOnlyIAS (conflicting)"
+    ]
+   },
+   "refresh_sources": "PIB + coal.gov.in"
+  }
+ ]
+}

@@ -223,8 +223,8 @@
   },
   "UP Nivesh Mitra": {
    "url": "https://niveshmitra.up.nic.in",
-   "http": "000",
-   "ok": false
+   "http": "200",
+   "ok": true
   },
   "Haryana single window": {
    "url": "https://investharyana.in",
@@ -325,7 +325,6 @@
  "down": [
   "DSIR CMS",
   "BIRAC",
-  "UP Nivesh Mitra",
   "WB Silpasathi"
  ]
 }

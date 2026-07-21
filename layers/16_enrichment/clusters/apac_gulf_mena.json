@@ -1,0 +1,300 @@
+{
+  "cluster": "gulf_mena",
+  "built": "2026-07-21",
+  "companies": [
+    {
+      "company": "ADNOC Gas plc",
+      "ticker": "ADNOCGAS (ADX)",
+      "market": "gulf_mena",
+      "country": "UAE",
+      "sector": "Green Energy & Fuels",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.205,
+        "roe": null,
+        "revenue_growth": 0.07
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "\"The agreement, valued in the range of $7 billion to $9 billion (AED25.7 to AED33 billion) over its 14-year term\" for \"up to 1.2 million metric tonnes per annum (mmtpa) of liquefied natural gas (LNG) to India\" (ADNOC Gas press release, 2023, IOCL)",
+          "\"14-year sales and purchase agreement (SPA) with Indian Oil Corporation Ltd (IndianOil) for the export of up to 1.2 million tonnes per annum (mtpa)\" ... \"with first deliveries to begin in 2026\" (ADNOC Gas press release, Feb 2025)",
+          "\"10-year agreement to supply 0.5 million metric tons per annum (mmtpa) of liquified natural gas (LNG) to GAIL India Limited\"; CEO: \"India continues to be a key market for ADNOC Gas, and this latest supply agreement underscores our ongoing dedication to fostering long-term partnerships\" (ADNOC Gas press release, Nov 2024)",
+          "CEO on HPCL SPA: \"This long-term agreement with HPCL, our third with Indian companies in the past year, reflects the robust energy partnership between the UAE and India\" (ADNOC Gas press release, 2025)",
+          "CEO: \"ADNOC Gas looks forward to supporting India's plans to make gas 15% of its primary energy basket by 2030\" (ADNOC Gas press release, Feb 2025)"
+        ],
+        "india_operations": "Three signed long-term India LNG SPAs: IOCL 14y up to 1.2 mtpa ($7-9bn), GAIL 10y 0.5 mmtpa, HPCL 10y 0.5 mmtpa - deliveries from 2026 ex Das Island",
+        "report_used": "ADNOC Gas FY2024 results press release (Feb 2025) + official ADNOC Gas press releases 2023-2025"
+      },
+      "notes": "UNVERIFIED (yfinance gap): ADX .AE tickers 404 on yfinance. Figures from FY2024 results release: revenue $24.43bn (+7%), record net income $5.0bn (margin ~20.5%); ROE not computed (equity not captured)."
+    },
+    {
+      "company": "Borouge plc",
+      "ticker": "BOROUGE (ADX)",
+      "market": "gulf_mena",
+      "country": "UAE",
+      "sector": "Chemicals & Plastics",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.206,
+        "roe": 0.277,
+        "revenue_growth": 0.041
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "\"India's growth was particularly notable, driven by infrastructure expansion, while ASEAN demand increased due to reshoring in consumer electronics, textiles, footwear, machinery and electrical industries. This, combined with a rising middle-class population, represents an exciting growth opportunity for Borouge.\" (Borouge Annual Report 2024)",
+          "\"Asia Pacific accounted for 63% of total sales volumes in 2024, while the Middle East and Africa contributed 30%\" (Borouge Annual Report 2024)",
+          "Revenue by customer location: India $818.8m in 2024 - second-largest country market after China $1,803.7m (Borouge Annual Report 2024, Note 18)",
+          "\"Through its HE3490-LS drainage system, Borouge was able to meet the demands of a highly challenging project at the Kakrapar Atomic Power Plant in Gujarat, India\" ... \"contributing to India's growing energy infrastructure\" (Borouge Annual Report 2024)"
+        ],
+        "india_operations": "Sales/marketing offices in New Delhi and Mumbai; India = 13.6% of FY2024 revenue (2nd-largest country market); no India manufacturing capex commitment in AR",
+        "report_used": "Borouge Annual Report 2024"
+      },
+      "notes": "UNVERIFIED (yfinance gap): ADX not on yfinance. AR2024: revenue $6,026.1m (+4.1%), net profit $1.24bn (+24%, margin ~20.6%), equity $4,482.1m (ROE ~27.7%). Borouge Group International merger (Borealis+Borouge+Nova, announced Mar 2025) will restructure the listed entity in 2026."
+    },
+    {
+      "company": "Fertiglobe plc",
+      "ticker": "FERTIGLB (ADX)",
+      "market": "gulf_mena",
+      "country": "UAE",
+      "sector": "Chemicals & Plastics",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.08,
+        "roe": 0.104,
+        "revenue_growth": -0.17
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "\"...access to key end markets (including Brazil, India, and East Africa), freight and logistics optimization...\" (Fertiglobe Annual Report 2024, commercial synergies of ADNOC control)",
+          "\"In November 2023, Fertiglobe announced its first shipment of ISCC PLUS-certified renewable ammonia from its facilities in Egypt for use in the production of near-zero emissions soda ash, a key ingredient in laundry powder, to be manufactured by Unilever in India.\" (Fertiglobe Annual Report 2024)",
+          "Revenue by destination FY2024: Asia & Oceania $709.4m (35%) - largest region alongside Europe $720.8m (Fertiglobe Annual Report 2024)"
+        ],
+        "india_operations": "None; India is an export end-market in passing. No India urea-tender or offtake language and no APAC expansion commitment in the 2024 AR (honest finding).",
+        "report_used": "Fertiglobe Annual Report 2024"
+      },
+      "notes": "UNVERIFIED (yfinance gap): ADX not on yfinance. AR2024: revenue $2,009m (~-17%), net profit attributable $160m (-54%, margin ~8.0%), equity $1,537.7m (ROE ~10.4% incl. NCI). ADNOC owns 86.2%."
+    },
+    {
+      "company": "Gulf Pharmaceutical Industries (Julphar)",
+      "ticker": "JULPHAR (ADX)",
+      "market": "gulf_mena",
+      "country": "UAE",
+      "sector": "Pharma & Bulk Drugs",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.034,
+        "roe": 0.055,
+        "revenue_growth": 0.027
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "Hetero is \"one of India's leading generic pharmaceutical companies and the world's largest producer of anti-retroviral drugs\"; \"Julphar will distribute and commercialize several products in multiple therapeutic areas such as cardiovascular and nervous system (NS) and pain management.\" (Julphar press release, 2022 - Indian products into MENA, not Julphar investing in India)",
+          "\"In 2025, Julphar announced an exclusive licensing partnership with Dong-A ST to tech transfer, manufacture, and commercialize a Darbepoetin Alfa biosimilar... across the MENA region.\" (Julphar Integrated Report 2025)"
+        ],
+        "india_operations": "No India operations; inbound licensing from India's Hetero (2022) and Korea's Dong-A ST (2025), plus Julphar Bangladesh Ltd plant (Dhaka, since 2009). Growth capex points at Saudi Arabia (AED 300m biologics facility), not APAC.",
+        "report_used": "Julphar Integrated Report 2025 + FY2024 results press release"
+      },
+      "notes": "UNVERIFIED (yfinance gap): ADX not on yfinance. FY2024: revenue AED 1,312.5m (+2.7%), net profit AED 44.9m (vs -98.5m FY23; margin ~3.4%), equity ~AED 806-810m (ROE ~5.5%). Weak-MEDIUM: real APAC touchpoints but all MENA-facing."
+    },
+    {
+      "company": "Americana Restaurants International",
+      "ticker": "6015.SR (Tadawul; dual-listed AMR on ADX)",
+      "market": "gulf_mena",
+      "country": "UAE",
+      "sector": "Food Processing",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.09656999,
+        "roe": 0.50802,
+        "revenue_growth": 0.133
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "NONE",
+        "evidence": [],
+        "india_operations": "None. FY2024 release describes operations \"across the Middle East, North Africa and Kazakhstan\"; FY2024 new markets were Kazakhstan, Morocco, Iraq + Jan-2025 Oman Pizza Hut acquisition. No South/Southeast Asia or India language found (honest NONE).",
+        "report_used": "Americana Restaurants FY2024 earnings release (Feb 2025)"
+      },
+      "notes": "Profitability VERIFIED via yfinance on the Tadawul dual listing 6015.SR (ADX line AMR.AE does not resolve). yfinance figures are trailing (margin 9.7%, ROE 50.8%, rev growth +13.3%); the FY2024 release itself showed revenue $2.20bn (-9%) and net profit $158.8m (-38.8%)."
+    },
+    {
+      "company": "Elsewedy Electric",
+      "ticker": "SWDY.CA",
+      "market": "gulf_mena",
+      "country": "Egypt",
+      "sector": "White Goods & Electricals",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0617,
+        "roe": 0.2592,
+        "revenue_growth": 0.2115
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "34+ production facilities \"across African and Asian countries including... Indonesia, Pakistan\" (Elsewedy Electric corporate website/IR materials, 2024-25; incl. PT Elsewedy Electric Indonesia transformer plant)"
+        ],
+        "india_operations": "None in India. Concrete Asian manufacturing footprint (Indonesia transformer plant, Pakistan) but new capex is all MENA; zero India presence found.",
+        "report_used": "Elsewedy Electric FY2024 earnings release + corporate site (cached: scratchpad swdy_fy2024.txt)"
+      },
+      "notes": "Profitability verified via yfinance financial statements (FY2025: margin 6.2%, ROE 25.9%, rev growth +21.2%; .info fields are null for EGX). Published FY2024: revenue EGP 232bn (+52%), NPM 7.5%, computed ROE ~29% - EGP figures are FX-inflated."
+    },
+    {
+      "company": "Juhayna Food Industries",
+      "ticker": "JUFO.CA",
+      "market": "gulf_mena",
+      "country": "Egypt",
+      "sector": "Food Processing",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0637,
+        "roe": 0.2378,
+        "revenue_growth": 0.2338
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "Aspiration to \"expand into a large number of new markets in Europe and Asia\" (Juhayna Gulfood 2024 press release)"
+        ],
+        "india_operations": "None; Egypt-domestic dairy/juice producer. Single aspiration sentence on Europe/Asia expansion, no concrete APAC investment.",
+        "report_used": "Juhayna FY2024 results + Gulfood 2024 press release"
+      },
+      "notes": "Profitability verified via yfinance financial statements (FY2025: margin 6.4%, ROE 23.8%, rev growth +23.4%). Published FY2024 NPM ~11.2%. EGP figures FX-inflated."
+    },
+    {
+      "company": "Abu Qir Fertilizers & Chemical Industries",
+      "ticker": "ABUK.CA",
+      "market": "gulf_mena",
+      "country": "Egypt",
+      "sector": "Chemicals & Plastics",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.4081,
+        "roe": 0.291,
+        "revenue_growth": 0.2368
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "India listed as an export destination on the company's own exports page; real spot urea cargoes into India tenders reported via traders (Argus, 2024-25) - no report-level India investment language (researcher finding, PARAPHRASE)"
+        ],
+        "india_operations": "None; India is a spot urea export destination via tenders only.",
+        "report_used": "Abou Kir Fertilizers exports page + Argus trade press (annual report contains no India investment language)"
+      },
+      "notes": "Profitability verified via yfinance financial statements (FY to 2025-06: margin 40.8%, ROE 29.1%, rev growth +23.7%). NPM ~41% is FX-inflated (EGP devaluation) - carry caution."
+    },
+    {
+      "company": "Ezz Steel",
+      "ticker": "ESRS.CA",
+      "market": "gulf_mena",
+      "country": "Egypt",
+      "sector": "Specialty Steel & Metals",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.005,
+        "roe": null,
+        "revenue_growth": null
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "NONE",
+        "evidence": [],
+        "india_operations": "None. Export record $1.58bn FY2023 but no Asia destination named (honest NONE).",
+        "report_used": "Ezz Steel FY2023/FY2024 results"
+      },
+      "notes": "FAILS PROFITABILITY SCREEN: FY2023 net LOSS EGP 717mn; FY2024 NPM ~0.5%. Kept in file for the record but excluded from any buy-interest shortlist. UNVERIFIED (yfinance has no financial statements for ESRS.CA; figures from published results)."
+    },
+    {
+      "company": "Industries Qatar Q.P.S.C.",
+      "ticker": "IQCD.QA",
+      "market": "gulf_mena",
+      "country": "Qatar",
+      "sector": "Chemicals & Plastics",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.24991,
+        "roe": 0.10975,
+        "revenue_growth": 0.062
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "Indian sub-continent = 16% of group revenue FY2025 (vs 12% FY2024); fertilizer (QAFCO) segment's Indian sub-continent share jumped 10% to 22% in one year, segment net profit +36% (Industries Qatar Annual Report 2025, geography disclosures)",
+          "\"seasonal demand from major markets such as India and Brazil\" (Industries Qatar Annual Report 2025)",
+          "\"government subsidies in key markets like India and Brazil\" (Industries Qatar Annual Report 2025)",
+          "QAFCO's exclusive marketer states urea export agreements \"to key markets, including India\" and a committed urea capacity doubling to 12.4 MTPA (QatarEnergy Annual Review 2024)"
+        ],
+        "india_operations": "No India assets; large and growing urea supply into India contracted at QatarEnergy Marketing level. Caveat: no named Indian counterparty in current reports (IFFCO not referenced; Muntajat consolidated into QE Marketing 2024).",
+        "report_used": "Industries Qatar Annual Report 2025 (published Jan-2026) + QatarEnergy Annual Review 2024"
+      },
+      "notes": "Profitability VERIFIED via yfinance (IQCD.QA resolves). Researcher graded MEDIUM-HIGH; schema forces MEDIUM - borderline HIGH on the QatarEnergy urea-supply language, held at MEDIUM because the commitment is the marketer's, not an IQ-report India investment statement. AR2025: NP QR 4.3bn, NPM ~23%, ROE ~11.3%, zero debt."
+    },
+    {
+      "company": "Mesaieed Petrochemical Holding Q.P.S.C.",
+      "ticker": "MPHC.QA",
+      "market": "gulf_mena",
+      "country": "Qatar",
+      "sector": "Chemicals & Plastics",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.205,
+        "roe": 0.033,
+        "revenue_growth": null
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "Indian sub-continent = 26% of group revenue FY2025 (joint-largest region) and 54% of the chlor-alkali segment - disclosed only via geography charts, no narrative prose (Mesaieed Petrochemical Annual Report 2025, geography disclosures; chart figures, not verbatim text)"
+        ],
+        "india_operations": "No India assets; quietly the most India-dependent Qatar name by revenue share (ISC 26% of group). New PVC capacity launched end-2025, destination unstated.",
+        "report_used": "Mesaieed Petrochemical Holding Annual Report 2025 (published Jan-2026)"
+      },
+      "notes": "yfinance MPHC.QA resolves but .info fields are JV-holding artifacts (margin 95.4%, revenue_growth -98.4% - income is share of JV profit vs tiny consolidated revenue); profitability block therefore carries AR2025 look-through figures: NP QR 533m (-26%), NPM ~20.5%, ROE ~3.3%. yfinance ROE 2.1% > 0 confirms positive profitability."
+    },
+    {
+      "company": "Qatar Aluminium Manufacturing Company Q.P.S.C.",
+      "ticker": "QAMC.QA",
+      "market": "gulf_mena",
+      "country": "Qatar",
+      "sector": "Specialty Steel & Metals",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.219,
+        "roe": 0.109,
+        "revenue_growth": null
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "\"sustained emphasis on Asian markets\" (Qatar Aluminium Manufacturing Annual Report 2025); Asia = 67% of sales (geography disclosure)"
+        ],
+        "india_operations": "None in India, and zero India-specific language found (honest India-NONE; MEDIUM reflects the deliberate Asia tilt only). 50% owner of Qatalum smelter JV with Hydro.",
+        "report_used": "Qatar Aluminium Manufacturing Annual Report 2025 (published Jan-2026)"
+      },
+      "notes": "yfinance QAMC.QA resolves but margin field reads 0.0 (JV-holding artifact - revenue near nil, income is share of Qatalum); profitability block carries AR2025 look-through: NP QR 768m (+25%), NPM ~21.9%, ROE ~10.9%. yfinance ROE 12.1% > 0 confirms positive profitability."
+    }
+  ],
+  "meta": {
+    "yfinance_coverage": "UAE ADX/DFM (.AE) does NOT resolve on yfinance (404 for BOROUGE.AE, ADNOCGAS.AE, FERTIGLB.AE, JULPHAR.AE, AMR.AE, ADNOCDRILL.AE) - all ADX names marked UNVERIFIED (yfinance gap), Americana verified via Tadawul 6015.SR. Qatar (.QA) resolves. Kuwait partial (BPCC.KW yes, AGILITY/AGLTY.KW 404). Egypt (.CA) resolves but .info profitability fields are null - margin/ROE computed from yfinance income_stmt/balance_sheet.",
+    "excluded": [
+      "Emirates Global Aluminium - CONFIRMED UNLISTED (50/50 Mubadala + Investment Corporation of Dubai; IPO explored, never executed)",
+      "Agility Public Warehousing (Kuwait) - MEDIUM India signal (Menzies BLR/Hyderabad cargo concessions incl. India's first dedicated domestic-cargo terminal, Dec-2024) but SECTOR MISFIT: logistics is not in the sector label list - recorded out-of-scope (evidence PARAPHRASE)",
+      "Boubyan Petrochemical (BPCC.KW) - NONE/LOW generic sales language (PARAPHRASE) and too small (~$0.35bn mcap) for the LARGE-cap brief",
+      "ADNOC Drilling - oilfield services, no fit in the sector label list"
+    ]
+  }
+}

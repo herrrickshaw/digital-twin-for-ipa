@@ -1,0 +1,341 @@
+{
+ "cluster": "asean",
+ "built": "2026-07-21",
+ "companies": [
+  {
+   "company": "Indofood CBP Sukses Makmur",
+   "ticker": "ICBP.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1197,
+    "roe": 0.1463,
+    "revenue_growth": 0.076
+   },
+   "expansion_signal": false,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"Sales to the Middle East and Africa increased +7.4% YoY to IDR 17.35 trillion\" (Binaartha Sekuritas ICBP note, Apr 2025)",
+     "\"Other Asia saw a strong increase of +32% YoY to IDR 2.09 trillion\" (Binaartha Sekuritas ICBP note, Apr 2025)"
+    ],
+    "india_operations": "No confirmed India operations; circulating 'Indomie India variant' claim did not verify",
+    "report_used": "FY2024 results — company IR site inaccessible (TLS); press-substituted: Binaartha Sekuritas note, Apr 2025"
+   },
+   "notes": "Overseas thrust is Middle East/Africa via Pinehill; 'Other Asia' growing +32% YoY but no country-level commitment"
+  },
+  {
+   "company": "Astra International",
+   "ticker": "ASII.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0994,
+    "roe": 0.1325,
+    "revenue_growth": -0.056
+   },
+   "expansion_signal": false,
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "\"Looking ahead, we are confident in Indonesia's long-term growth prospects...\" — Djony Bunarto Tjondro (PT Astra — 2024 Full Year Financial Statements, RNS via Investegate, 27 Feb 2025)"
+    ],
+    "india_operations": "None",
+    "report_used": "PT Astra — 2024 Full Year Financial Statements, RNS release via Investegate, 27 Feb 2025"
+   },
+   "notes": "Explicitly domestic posture; all 2024 capital deployment Indonesian. Quote is domestic-focus context, not APAC language"
+  },
+  {
+   "company": "Aneka Tambang (ANTAM)",
+   "ticker": "ANTM.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0966,
+    "roe": 0.2469,
+    "revenue_growth": 0.121
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"PT Aneka Tambang (IDX:ANTM) and Indonesia Battery Corporation (IBC) are developing a series of integrated electric vehicle projects\" (Mining.com.au, 7 Jul 2025)",
+     "\"battery cell factory with an initial capacity of 6.9 gigawatt per hour, which is forecast to scale up to 15 gigawatt per hour\" (Mining.com.au, 7 Jul 2025)",
+     "\"For ferronickel products, it is absorbed by the export market.\" (Kontan, 15 Mar 2024)"
+    ],
+    "india_operations": "None; nickel/ferronickel exports go to the seaborne market, no India-specific channel stated",
+    "report_used": "AR2024 PDF 403'd; press-substituted: Mining.com.au 7 Jul 2025 + Kontan 15 Mar 2024"
+   },
+   "notes": "~$6bn EV-battery ecosystem is entirely domestic (partners CBL = CATL/Brunp/Lygend + IBC; LG-involvement hint did NOT verify); zero India language"
+  },
+  {
+   "company": "Barito Renewables Energy",
+   "ticker": "BREN.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.2274,
+    "roe": 0.2044,
+    "revenue_growth": 0.098
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "\"This reflects our commitment to continuously develop our business and support the Indonesian Government's energy transition target.\" (Barito Renewables press release, May 2024)"
+    ],
+    "india_operations": "None",
+    "report_used": "Barito Renewables official press release, May 2024 (fetched)"
+   },
+   "notes": "All geothermal/wind expansion is domestic Indonesian; expansion_signal reflects stated capacity development, not APAC reach"
+  },
+  {
+   "company": "Chandra Asri Pacific",
+   "ticker": "TPIA.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1434,
+    "roe": 0.4237,
+    "revenue_growth": 2.864
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"This is a major step in expanding Chandra Asri Group's strategic footprint in the regional chemical, energy and infrastructure industries.\" (Indian Chemical News, 3 Apr 2025, mirroring official release)",
+     "\"Aster deepens Asia Pacific integration with acquisition of Chevron Phillips Singapore Chemicals\" (Aster newsroom headline, 1 Aug 2025)",
+     "\"Aster expands Bukom refinery capacity with USD $155 million rejuvenation drive\" (Aster newsroom headline, 9 Sep 2025)"
+    ],
+    "india_operations": "No India assets; Singapore is the outbound-APAC platform",
+    "report_used": "AR2024 inaccessible (TLS/403); press-substituted: Indian Chemical News 3 Apr 2025 + Aster newsroom releases"
+   },
+   "notes": "Only genuine outbound-APAC story in Indonesia set: acquired Shell's Singapore Energy & Chemicals Park (now Aster, with Glencore), then Chevron Phillips Singapore PE plant and $155m Bukom rejuvenation; revenue growth +286% reflects consolidation of the Singapore assets"
+  },
+  {
+   "company": "Press Metal Aluminium Holdings",
+   "ticker": "8869.KL",
+   "market": "Bursa",
+   "country": "Malaysia",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1378,
+    "roe": 0.245,
+    "revenue_growth": 0.052
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"In September 2024, we announced an equity participation of 80% in a new alumina refinery, PT Kalimantan Alumina Nusantara ('PT KAN') in Indonesia, which is expected to be completed by 2027.\" (Press Metal Annual Report 2024)",
+     "\"Our upstream expansion is expected to reinforce and continuously strengthen our leading position as the largest smelter in SEA\" (Press Metal Annual Report 2024)",
+     "\"serve a diverse customer base not only in the region but across Europe, US, Asia-Pacific and Oceania\" (Press Metal Annual Report 2024)"
+    ],
+    "india_operations": "None; zero India language in AR2024",
+    "report_used": "Annual Report 2024 (interactive edition pages fetched; full PDF TLS-failed — partial grep, not full-text)"
+   },
+   "notes": "Record FY2024 net profit RM1.76bn; concrete APAC expansion = 80% of PT KAN alumina refinery (Indonesia, due 2027), upstream integration play"
+  },
+  {
+   "company": "Top Glove Corporation",
+   "ticker": "7113.KL",
+   "market": "Bursa",
+   "country": "Malaysia",
+   "sector": "Medical Devices",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0478,
+    "roe": 0.0379,
+    "revenue_growth": 0.319
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "gradually increase its running capacity to \"70 billion pieces of gloves by end-FY2025 from the current 64 billion pieces\" (The Edge Malaysia, 20 Dec 2024)",
+     "\"Expansion in China will be nil due to US tariff issues\" (The Edge Malaysia, 20 Dec 2024)"
+    ],
+    "india_operations": "None; competes with Indian glove makers but no India presence or language found",
+    "report_used": "PRESS-SUBSTITUTED — Annual Report PDF inaccessible via 3 routes; The Edge Malaysia 20 Dec 2024 + 21 Dec 2018 (Vietnam subsidiary)"
+   },
+   "notes": "Operates a Vietnam subsidiary (initial 1.5bn vinyl gloves/yr). Current expansion is brownfield Malaysian line reactivation riding US-tariff diversion away from China, not new-geography APAC"
+  },
+  {
+   "company": "Delta Electronics (Thailand)",
+   "ticker": "DELTA.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1309,
+    "roe": 0.2958,
+    "revenue_growth": 0.442
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"We are expanding operations significantly in Thailand and India to meet customers' local manufacturing needs... In 2024, we inaugurated new India headquarters and R&D center in Bengaluru\" (Delta Electronics (Thailand) 56-1 One Report 2024)",
+     "\"following the investment in new factories in India and Thailand\" — PP&E up 21.1% (Delta Electronics (Thailand) 56-1 One Report 2024)"
+    ],
+    "india_operations": "Delta Electronics India Pvt Ltd + Delta India Manufacturing Pvt Ltd; plants at Rudrapur, Gurgaon and Krishnagiri (Tamil Nadu SEZ, 15-year tax exemption to 2034); Bengaluru HQ and R&D centre opened 2024",
+    "report_used": "56-1 One Report 2024 and FY2025 (both fetched, full-text)"
+   },
+   "notes": "Strongest India signal in the cluster. Board-approved additional India investments of INR 1,212m (25 Jul 2025) and USD 5m (26 Apr 2024) appear in company filings. The widely cited ~USD 500m India figure is PRESS ONLY (Benjamin Lin, Inc42, Feb 2025) — not in the report. Legacy Delta Energy Systems India is in liquidation; do not confuse with the operating entities"
+  },
+  {
+   "company": "Siam Cement Group (SCG)",
+   "ticker": "SCC.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0387,
+    "roe": 0.0385,
+    "revenue_growth": -0.009
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"SCG International partnered with BigBloc Construction to establish a Autoclaved Aerated Concrete Wall plant... in Gujarat, India... This marks SCG's first manufacturing operation in India\" (SCG One Report 2024, English)",
+     "\"(SCG's first investment into India)\" (SCG One Report 2024, English)"
+    ],
+    "india_operations": "First India manufacturing operation — AAC wall plant JV with BigBloc Construction in Gujarat; SCG International trading presence",
+    "report_used": "One Report 2024 (English) — official PDF retrieved via Wayback Machine; direct company site is bot-protected"
+   },
+   "notes": "Explicit first-India-investment language despite flat revenue. Flagship APAC project remains Long Son Petrochemicals (Vietnam); the report is internally inconsistent on LSP commissioning timing (2027 vs 2030)"
+  },
+  {
+   "company": "Charoen Pokphand Foods",
+   "ticker": "CPF.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.038,
+    "roe": 0.0848,
+    "revenue_growth": -0.053
+   },
+   "expansion_signal": false,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "India appears in the 17-country production-base list (Charoen Pokphand Foods 56-1 One Report 2024)",
+     "India appears in the 11-country animal-feed operations list (Charoen Pokphand Foods 56-1 One Report 2024)"
+    ],
+    "india_operations": "Long-established: CPF (India) Pvt Ltd (99.99%), C.P. Aquaculture (India), CP Norfolk, Charoen Pokphand Trading India, AP Brood Stock JV; dedicated President-India Livestock and President-India Aquaculture roles",
+    "report_used": "56-1 One Report 2024 (official; 28 India mentions)"
+   },
+   "notes": "Deepest existing India footprint in the cluster but the report states no NEW India commitment — hence MEDIUM not HIGH. Revenue declined 5.3%"
+  },
+  {
+   "company": "Thai Union Group",
+   "ticker": "TU.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0348,
+    "roe": 0.1056,
+    "revenue_growth": 0.076
+   },
+   "expansion_signal": false,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"TFM began its feed operations in Thailand and later expanded to India and Indonesia\" (Thai Union 56-1 One Report 2024)",
+     "\"Thai Union invested in Avanti Feeds Limited, an Indian producer of shrimp feed and frozen shrimp\" (Thai Union 56-1 One Report 2024)"
+    ],
+    "india_operations": "Avanti Feeds associate stake (8.78% via TUAIH, group ~24.2% at report date) plus Avanti Frozen Foods; Thai Union Feedmill (TFM) feed operations extended into India",
+    "report_used": "56-1 One Report 2024 (official PDF via Wayback Machine)"
+   },
+   "notes": "IMPORTANT — direction of travel post-report is DIVESTMENT, not expansion: March 2025 sale of 4.4% of Avanti Feeds (~Rs 435 crore) cut the group holding from 24.21% to 19.81% (press-reported, not in the report). Grade reflects real existing India operations, not new commitment"
+  },
+  {
+   "company": "Gulf Development (Gulf Energy)",
+   "ticker": "GULF.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.6527,
+    "roe": 0.3619,
+    "revenue_growth": 0.223
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"consumer demand for HD and UHD television signal broadcasting services remains robust in India and the Indochina region\" (Gulf Development 56-1 One Report 2024)"
+    ],
+    "india_operations": "No India power operations; India exposure only via Thaicom satellite business (IPSTAR India Pvt Ltd) and an Indian withholding-tax dispute pending before the Supreme Court",
+    "report_used": "56-1 One Report 2024 (official)"
+   },
+   "notes": "Overseas-investment country list covers Laos, Vietnam, Oman, Germany, UK and USA — India absent. India appears only as a satellite-broadcast demand market, i.e. a passing mention"
+  },
+  {
+   "company": "Universal Robina Corporation",
+   "ticker": "URC.PS",
+   "market": "PSE",
+   "country": "Philippines",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.077,
+    "roe": null,
+    "revenue_growth": 0.03
+   },
+   "expansion_signal": false,
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"BCF International delivered sales of Php34.8 billion, up 8%...\" (URC SEC Form 17-C FY2024 earnings release, 17 Mar 2025)"
+    ],
+    "india_operations": "Export region only — 'Africa, Middle East and India' sales team run from Singapore; URC exports to 38 countries, no India plant or subsidiary",
+    "report_used": "URC SEC Form 17-C FY2024 earnings release (17 Mar 2025), read in full"
+   },
+   "notes": "profitability: UNVERIFIED (yfinance gap — PSE tickers return no fundamentals). Company-verified from own FY2024 release: sales Php161.9bn (+3%), net income Php12.5bn (~7.7% net margin), core NI Php12.2bn; margin/revenue_growth fields are report-derived, ROE not company-verified"
+  },
+  {
+   "company": "Hoa Phat Group",
+   "ticker": "HPG.VN",
+   "market": "HOSE",
+   "country": "Vietnam",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1231,
+    "roe": 0.1647,
+    "revenue_growth": 0.406
+   },
+   "expansion_signal": true,
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"hot-rolled coil produced by Hoa Phat Group will not be subject to India's anti-dumping duties\" (hoaphat.com.vn official release, 23 Aug 2025)",
+     "\"This exemption gives Hoa Phat's products a strong competitive advantage in the Indian market\" (hoaphat.com.vn official release, 23 Aug 2025)"
+    ],
+    "india_operations": "Active steel export market; DGTR anti-dumping exemption gives HPG HRC duty-free access while other Vietnamese mills face duties; no India assets",
+    "report_used": "Annual Report 2024 (full English PDF, text-extracted) + hoaphat.com.vn official release 23 Aug 2025"
+   },
+   "notes": "Dual framing: AR2024 treats Indian steel as a competitive threat while the company's own release calls India a competitive-advantage export market post-exemption. All capex domestic (Dung Quat 2 ramp drove +40.6% revenue growth); no India investment plans"
+  }
+ ]
+}

@@ -1,0 +1,257 @@
+{
+  "cluster": "latam",
+  "built": "2026-07-21",
+  "companies": [
+    {
+      "company": "Grupo Bimbo",
+      "ticker": "BIMBOA.MX",
+      "market": "BMV (Mexico)",
+      "country": "Mexico",
+      "sector": "Food Processing",
+      "region": "Foreign",
+      "profitability": {"margin": 0.0276, "roe": 0.1069, "revenue_growth": -0.03},
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "The Group believes that markets like India, Romania, Tunisia, and other Eastern and Southeastern European countries have a high potential for continuous growth in the long term, and it plans to continue expanding by offering quality products made with innovative techniques. (Grupo Bimbo 2024 Annual Report, BMV filing)",
+          "Seventeen bakeries and plants were added, including six new plants in Mexico, India, China, Chile, and Paraguay, as well as the bakeries acquired through acquisitions. (Grupo Bimbo 2024 Annual Report)",
+          "It completed six acquisitions: Modern Foods in India, Emmy's Organics in the U.S., Cerealto Siro Foods in Spain, Popcornopolis in the U.S., Aryzta do Brasil and Kitty Industries in India. (Grupo Bimbo 2024 Annual Report, 2021 milestones section)",
+          "In May 2017, Grupo Bimbo acquired 65% of Ready Roti India Private Limited, a baking leader in New Delhi with sales of US$48 million in 2016. (Grupo Bimbo 2024 Annual Report, history section)"
+        ],
+        "india_operations": "Wholly-owned Bimbo India (Ready Roti 100% since 2021, plus Modern Foods and Kitty Industries acquisitions); ~14 India bakeries; one of the six new plants built in 2024 was in India.",
+        "report_used": "Grupo Bimbo Annual Report 2024 (BMV filing, English)"
+      },
+      "notes": "India explicitly named a long-term high-potential growth market and received new plant capex in 2024; EAA division grew with double-digit growth in India. Caveat: 2022 India goodwill impairment of MXN 275M recognized (same report, note on cumulative impairments)."
+    },
+    {
+      "company": "Gruma",
+      "ticker": "GRUMAB.MX",
+      "market": "BMV (Mexico)",
+      "country": "Mexico",
+      "sector": "Food Processing",
+      "region": "Foreign",
+      "profitability": {"margin": 0.0766, "roe": 0.2263, "revenue_growth": 0.049},
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "Our Asian and Oceania division, saw strong demand in all markets it serves but particularly in Malaysia and Australia. With our new plant in China adding to production, we have been able to dilute the incremental costs and destress operational leverage accordingly. We expect this effect to continue as we increase production in this plant on the back of greater demand. (GRUMA 4Q25 earnings report, 2026)",
+          "Net sales increased 2% to US$1.6 billion, mainly driven by strong performance in Europe, Asia & Oceania, and Central America, supported by a favorable price mix and higher demand in each one of these subsidiaries. (GRUMA 4Q25 earnings report, 2026)"
+        ],
+        "india_operations": "None in India; dedicated GRUMA Asia & Oceania division (Malaysia, China, Australia) with a new China plant ramping production.",
+        "report_used": "GRUMA Annual Report 2024 + GRUMA 4Q25 earnings report"
+      },
+      "notes": "Concrete APAC investment (new China plant, Asia-Oceania operating income +37% YoY in 4Q25) but zero India language in either document."
+    },
+    {
+      "company": "Sociedad Quimica y Minera de Chile (SQM)",
+      "ticker": "SQM-B.SN",
+      "market": "Santiago (also NYSE ADR: SQM)",
+      "country": "Chile",
+      "sector": "Green Energy & Fuels",
+      "region": "Foreign",
+      "profitability": {"margin": 0.1538, "roe": 0.1340, "revenue_growth": 0.698},
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "On April 22, 2024, the subsidiary SQM India Private Limited was incorporated. (SQM Form 20-F, FY2024)",
+          "SQM India Private Limited ... LEVAL 3A WING, TOWER B1 Symphony IT park, NANDED, Nanded, Pune City, Pune - 411041, Maharashtra India ... 100.0000 [percent ownership] (SQM Form 20-F FY2024, subsidiaries table)",
+          "Potassium sales volumes grew by more than 28% in 2024 compared to 2023, driven by strong market demand in key regions such as Brazil, Europe, and India. (SQM Form 20-F, FY2024)",
+          "During 2024, 93% of our sales of lithium were in Asia. (SQM Form 20-F, FY2024)",
+          "We are also developing the Mt. Holland lithium project in Australia through our joint venture with Wesfarmers. The concentrator plant is ramping up production to nameplate capacity, while the Kwinana lithium hydroxide refinery continues to advance in construction, with 95% completion ... and a planned production capacity of 50,000 metric tons of lithium hydroxide (50% SQM's share). (SQM Form 20-F, FY2024)",
+          "approximately US$200 million for the SQM Lithium International Division, which includes the completion of the construction of the lithium hydroxide refining plant in Kwinana, Australia, and exploration-related investments. (SQM Form 20-F, FY2024)"
+        ],
+        "india_operations": "SQM India Private Limited, 100%-owned staffed subsidiary incorporated 22-Apr-2024 in Pune, Maharashtra; India also named as a key potassium demand region.",
+        "report_used": "SQM Form 20-F FY2024 (SEC filing)"
+      },
+      "notes": "India disclosure is a subsidiary-footnote/table item, not a strategy-narrative statement; graded HIGH because an incorporated, staffed 100%-owned Indian subsidiary is a concrete India investment in SQM's own reporting. Separately (press, NOT SQM reporting; Reuters/Mining Weekly, 28-Mar-2025): India's KABIL consortium (Coal India/Oil India/ONGC Videsh) reported to be seeking a ~20% (~US$600M) stake in SQM's Australian lithium projects. 93% of lithium revenue is Asian; concrete APAC capex via Mt Holland JV (Wesfarmers) and Kwinana refinery."
+    },
+    {
+      "company": "Ternium",
+      "ticker": "TX",
+      "market": "NYSE ADR (Luxembourg-incorporated; Argentina listing TXAR.BA)",
+      "country": "Argentina/Latin America",
+      "sector": "Specialty Steel & Metals",
+      "region": "Foreign",
+      "profitability": {"margin": 0.0366, "roe": 0.0323, "revenue_growth": 0.0},
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "On September 19, 2024, the Brazilian government initiated an anti-dumping investigation into imports of pre-painted steel from China and India. (Ternium Form 20-F, FY2024)",
+          "March 2021: JSW Steel announced the acquisition of Bhushan Power and Steel Ltd under the provisions of India's insolvency bankruptcy code. (Ternium Form 20-F FY2024, industry-consolidation background section)"
+        ],
+        "india_operations": "None; all 11 India mentions in the 20-F are anti-dumping/trade-defense or industry-consolidation context, and Asia mentions are sales logistics.",
+        "report_used": "Ternium Form 20-F FY2024 (SEC filing)"
+      },
+      "notes": "India appears only as an import-competition threat and industry backdrop — no APAC investment interest. Profitability screened on NYSE ADR (TX, USD); Ternium Argentina (TXAR.BA) also profitable (margin 9.5%, ROE 4.2%, ARS)."
+    },
+    {
+      "company": "Aluar Aluminio Argentino",
+      "ticker": "ALUA.BA",
+      "market": "BYMA (Buenos Aires)",
+      "country": "Argentina",
+      "sector": "Specialty Steel & Metals",
+      "region": "Foreign",
+      "profitability": {"margin": 0.0461, "roe": 0.0563, "revenue_growth": 0.542},
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "Los mercados mas importantes para la Compania son los de Estados Unidos, Latinoamerica y Asia. [The Company's most important markets are the United States, Latin America and Asia.] (Aluar Prospecto de Emision, 2025)",
+          "en Asia los clientes son exclusivamente las companias de trading japonesas [in Asia the clients are exclusively Japanese trading companies] (Aluar Prospecto de Emision, 2025)"
+        ],
+        "india_operations": "None; Asia exposure is exports (~80% of volume exported overall) sold via Japanese trading houses (~5% of exports to Japan per FIX SCR rating report); zero India mentions in the 247-page prospectus.",
+        "report_used": "Aluar Prospecto de Emision 2025 (247pp) + FIX SCR rating report"
+      },
+      "notes": "Asia is an export destination handled by Japanese trading intermediaries, not an investment target; capex is entirely domestic (Puerto Madryn smelter, wind power). Revenue growth figure inflated by ARS terms."
+    },
+    {
+      "company": "Grupo Mexico",
+      "ticker": "GMEXICOB.MX",
+      "market": "BMV (Mexico)",
+      "country": "Mexico",
+      "sector": "Specialty Steel & Metals",
+      "region": "Foreign",
+      "profitability": {"margin": 0.2898, "roe": 0.2572, "revenue_growth": 0.326},
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "NONE",
+        "evidence": [
+          "FINDING (not a quote): zero India mentions in the 2024 annual report; Asia appears only as a 14.3% revenue-share label in the geographic revenue chart; announced capex is entirely in the Americas (Mexico, Peru, USA, Spain). (Grupo Mexico Informe Anual 2024)"
+        ],
+        "india_operations": "None.",
+        "report_used": "Grupo Mexico Informe Anual 2024"
+      },
+      "notes": "Copper major with Asian demand exposure but no India/APAC investment language whatsoever — recorded honestly as NONE."
+    },
+    {
+      "company": "Coca-Cola FEMSA",
+      "ticker": "KOFUBL.MX",
+      "market": "BMV (Mexico; also NYSE ADR: KOF)",
+      "country": "Mexico",
+      "sector": "Food Processing",
+      "region": "Foreign",
+      "profitability": {"margin": 0.0788, "roe": 0.1583, "revenue_growth": 0.011},
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "We purchase PET resin from several Asian suppliers, such as SFX - Jiangyin Xingyu New Material Co. Ltd. and India Reliance Industry (a joint venture with DAK Resinas Americas Mexico, S.A. de C.V.) (Coca-Cola FEMSA Form 20-F FY2024, raw materials section)",
+          "In December 2018, CIBR completed the sale of its stake in KOF Philippines back to The Coca-Cola Company through the exercise of CIBR's option to sell. (Coca-Cola FEMSA Form 20-F FY2024, corporate history)"
+        ],
+        "india_operations": "None; sole India link is Reliance Industries as a PET-resin supplier (via its JV with DAK Americas Mexico). Its former Asia venture (Coca-Cola FEMSA Philippines) was sold back to TCCC in 2018 and survives only as history.",
+        "report_used": "Coca-Cola FEMSA Form 20-F FY2024 (SEC filing, Apr-2025)"
+      },
+      "notes": "Borderline NONE: the India mention is procurement-only, with zero investment/expansion/strategy language for APAC. The pre-2019 'Asian division' language is gone from the 2024 filing."
+    },
+    {
+      "company": "Genomma Lab Internacional",
+      "ticker": "LABB.MX",
+      "market": "BMV (Mexico)",
+      "country": "Mexico",
+      "sector": "Pharma & Bulk Drugs",
+      "region": "Foreign",
+      "profitability": {"margin": 0.0925, "roe": 0.1405, "revenue_growth": -0.049},
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "envia equipos de investigacion a las principales ciudades de Europa, Estados Unidos y Asia con el proposito de identificar nuevas oportunidades de productos, ultimas tendencias del mercado, asi como los ingredientes activos mas novedosos utilizados en la produccion de productos farmaceuticos OTC. [sends research teams to major cities of Europe, the US and Asia to identify new product opportunities, market trends and novel active ingredients for OTC pharma production.] (Genomma Lab Reporte Anual 2024, CNBV/BMV)",
+          "Durante el ano 2023, las principales compras de insumos y producto terminado de la Compania fueron producidas por fabricantes en Argentina, Alemania, Brasil, China, Colombia, Espana, Estados Unidos, Francia y Mexico. [Main input/finished-product purchases came from manufacturers in Argentina, Germany, Brazil, China, Colombia, Spain, US, France and Mexico.] (Genomma Lab Reporte Anual 2024)"
+        ],
+        "india_operations": "None; India appears only in trademark-registration country lists (defensive IP). China is a named manufacturing source; India is notably absent from the supplier list.",
+        "report_used": "Genomma Lab Reporte Anual 2024 (CNBV) + integrated ESG report 2024"
+      },
+      "notes": "Asia features as a trend-scouting destination and China as a sourcing origin — passing mentions only; the India-API-sourcing hypothesis is NOT confirmed in its own reporting."
+    },
+    {
+      "company": "Enel Chile",
+      "ticker": "ENELCHILE.SN",
+      "market": "Santiago (also NYSE ADR: ENIC)",
+      "country": "Chile",
+      "sector": "Green Energy & Fuels",
+      "region": "Foreign",
+      "profitability": {"margin": 0.1159, "roe": 0.1016, "revenue_growth": -0.017},
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "NONE",
+        "evidence": [
+          "FINDING (not a quote): full-text search of the FY2025 Form 20-F returns zero hits for 'India' and 'APAC'; the three 'Asia' hits are all inside director/officer biographies, and the single 'Pacific' hit is Pacific Ocean temperatures in the El Nino hydrology discussion. (Enel Chile Form 20-F FY2025, SEC EDGAR)"
+        ],
+        "india_operations": "None; footprint is 100% Chile, and parent Enel SpA's Asia exit means no APAC exposure flows through Enel Chile's reporting.",
+        "report_used": "Enel Chile Form 20-F FY2025 (SEC filing, Apr-2026)"
+      },
+      "notes": "Largest Chilean renewables platform but a pure single-country utility — honest NONE."
+    },
+    {
+      "company": "Industrias Penoles",
+      "ticker": "PE&OLES.MX",
+      "market": "BMV (Mexico)",
+      "country": "Mexico",
+      "sector": "Specialty Steel & Metals",
+      "region": "Foreign",
+      "profitability": {"margin": 0.1799, "roe": 0.3622, "revenue_growth": 0.916},
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "Como parte de nuestra estrategia comercial, y aprovechando las condiciones de mercado, concretamos algunas ventas spot a Asia y diversificamos nuestra cartera de clientes. [As part of our commercial strategy, taking advantage of market conditions, we closed some spot sales to Asia and diversified our client portfolio.] (Penoles Informe Anual 2024, zinc commentary)",
+          "En 2025 alcanzamos records de produccion de hidroxido de magnesio... impulsados por la incorporacion de nuevos clientes y el aumento de nuestra participacion en el mercado de Asia Oriental. [2025 production records for magnesium hydroxide driven by new clients and increased share in the East Asia market.] (Penoles Informe Anual 2025)"
+        ],
+        "india_operations": "Zero — 'India' appears in neither the 2024 nor 2025 annual report; Asia is a standing export destination (US$457.2M FY2025, US$705.8M FY2024 of billed sales, ~5-8% of total) with no operations, offices or investment there.",
+        "report_used": "Penoles Informe Anual 2025 + Informe Anual 2024"
+      },
+      "notes": "Despite India being a top global silver importer, Penoles' own reporting never names it — sales likely route via East-Asian traders/refiners (related parties include Japan's Dowa Mining and Sumitomo). Export-demand mentions only, no investment language."
+    }
+  ],
+  "excluded_unprofitable": [
+    {
+      "company": "Orbia Advance Corporation",
+      "ticker": "ORBIA.MX",
+      "sector": "Chemicals & Plastics",
+      "profitability": {"margin": -0.0568, "roe": -0.1202, "revenue_growth": 0.084},
+      "india_apac_interest_level_if_it_had_passed": "HIGH",
+      "evidence": [
+        "growth through deeper penetration ... mainly in Brazil, India and the U.S. (Orbia Annual Report 2024, Netafim/Precision Agriculture section)",
+        "Completed the buyout of the minority stake in Vectus/Wavin India on June 30, 2024 (Orbia Annual Report 2024)"
+      ],
+      "notes": "TTM loss-making per yfinance (skip rule applied), yet the deepest India footprint in the cluster: 2 Netafim irrigation plants, Dura-Line ducts, 55% of Shakun Polymers, 2 India R&D centres. Counter-signal: Mar-2025 MoU to SELL the Building & Infrastructure India pipes/fittings business to Supreme Industries — India strategy is being reshaped, not abandoned (Netafim/Dura-Line retained). Re-test profitability next cycle; likeliest promotion candidate."
+    },
+    {
+      "company": "Nemak",
+      "ticker": "NEMAKA.MX",
+      "sector": "Auto, EV & Components",
+      "profitability": {"margin": -0.0154, "roe": -0.0469, "revenue_growth": 0.153},
+      "india_apac_interest_level_if_it_had_passed": "MEDIUM",
+      "evidence": [
+        "Operates a Chennai, India casting plant since 2013 (~1.2M castings/yr, ~300-400 staff, ASI-certified Jan-2026) per its own Annual Report 2024; no new Asia commitment stated."
+      ],
+      "notes": "TTM loss-making per yfinance; excluded under the skip rule."
+    },
+    {
+      "company": "Alpek",
+      "ticker": "ALPEKA.MX",
+      "sector": "Chemicals & Plastics",
+      "profitability": {"margin": -0.0334, "roe": -0.1141, "revenue_growth": -0.15},
+      "india_apac_interest_level_if_it_had_passed": "LOW",
+      "evidence": [
+        "Asia/India appear only as import-competition and anti-dumping context in Alpek's 2025 reporting."
+      ],
+      "notes": "TTM loss-making per yfinance; excluded under the skip rule."
+    },
+    {
+      "company": "Alfa / Sigma Foods",
+      "ticker": "ALFAA.MX",
+      "sector": "Food Processing",
+      "profitability": {"margin": null, "roe": null, "revenue_growth": null},
+      "india_apac_interest_level_if_it_had_passed": "NONE",
+      "evidence": [
+        "FINDING: Sigma's verified 17-country footprint includes no Asia/Oceania operations at all (Sigma Annual Report 2025)."
+      ],
+      "notes": "yfinance returns no data for ALFAA.MX after the Alpek spinoff restructuring (404). India/APAC interest is NONE anyway, so no verification effort was warranted."
+    }
+  ]
+}

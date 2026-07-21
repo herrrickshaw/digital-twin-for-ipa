@@ -3,7 +3,7 @@
  "built": "2026-07-20",
  "method": "yfinance-verified profitable (margin>0 AND roe>0) x curated open-lane map; score = profitability 40 + expansion 25 + open central lane 25 + state top-up 10. Contact enrichment is a separate deliberate step (no personal data collected here). ENRICHED 2026-07-20: US foreign leads carry SEC 10-K India/APAC mention-mining (latest+prior filing, trend); 59 annual-report deep-dive leads added from JP/KR/CN/UK/AU agents (interest levels HIGH/MEDIUM/LOW/NONE with quoted evidence; China leads carry the Press Note 3 lens). WAVE-2 2026-07-20: +57 deep-dive leads from DACH/NL, France/SouthEU/Nordics, TW/HK/SG, CA/BR/ZA/SA/IL clusters (yfinance tickers carried; TEPA/PN3/SHANTI/EU-FTA context per cluster).",
  "source": "focus-sector-investor-map/data/focus_sector_companies_final.csv (147 verified names from the 19,795-company catalog)",
- "count": 263,
+ "count": 311,
  "leads": [
   {
    "company": "MICRON TECHNOLOGY INC",
@@ -3631,6 +3631,65 @@
    }
   },
   {
+   "company": "Gulf Development (Gulf Energy)",
+   "ticker": "GULF.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.6527,
+    "roe": 0.3619,
+    "revenue_growth": 0.223
+   },
+   "expansion_signal": true,
+   "lead_score": 100.0,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"consumer demand for HD and UHD television signal broadcasting services remains robust in India and the Indochina region\" (Gulf Development 56-1 One Report 2024)"
+    ],
+    "india_operations": "No India power operations; India exposure only via Thaicom satellite business (IPSTAR India Pvt Ltd) and an Indian withholding-tax dispute pending before the Supreme Court",
+    "report_used": "56-1 One Report 2024 (official)"
+   },
+   "source_cluster": "asean",
+   "notes": "Overseas-investment country list covers Laos, Vietnam, Oman, Germany, UK and USA \u2014 India absent. India appears only as a satellite-broadcast demand market, i.e. a passing mention"
+  },
+  {
    "company": "NATIONAL ALUMINIUM CO LTD",
    "ticker": "NATIONALUM",
    "market": "IN",
@@ -4072,6 +4131,67 @@
    }
   },
   {
+   "company": "Kongsberg Gruppen",
+   "ticker": "KOG.OL",
+   "market": "OL",
+   "country": "Norway",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.2054,
+    "roe": 0.3264,
+    "revenue_growth": 0.296
+   },
+   "expansion_signal": true,
+   "lead_score": 96.4,
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "It is our pleasure to open this new facility in Kochi and expand our operations in India \u2014 Annette Holte, President of Kongsberg Maritime India (Kongsberg Maritime Kochi facility announcement via Yahoo Finance, May 2024)",
+     "This is a first step for us, and through strategic partnerships, we expect to expand our operations to include assembly and overhaul capability \u2014 Annette Holte (same announcement, May 2024; article also states 'The company is planning further expansion and investment in Kochi')",
+     "We value our long-standing relationship with the Indian Navy and Cochin Shipyard and are committed to supporting India's naval ambitions. \u2014 Anette Holte, Country Manager India (kongsbergmaritime.com press release on 18 Kamewa waterjets for Indian Navy NGMV programme, April 2026)"
+    ],
+    "india_operations": "Kongsberg Maritime India subsidiary with a waterjet assembly + technical-support facility opened May 2024 in the Maritime Park adjacent to Kochi's International Ship Repair Facility; supplier to the Indian Navy's Next Generation Missile Vessels (18 large Kamewa waterjets, built at Cochin Shipyard) \u2014 Kongsberg's largest single waterjet order to date.",
+    "report_used": "Annual report 2024 not directly parsed (PDF not fetched); official Kongsberg/Kongsberg Maritime press releases (kongsbergmaritime.com April 2026; May 2024 Kochi announcement via Yahoo Finance syndication, original kongsberg.com URL now 404)"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "The 2024-25 'manufacturing plant' reports check out as the Kochi waterjet assembly facility (opened May 2024) with explicitly stated further expansion/investment plans and a follow-on record naval order in April 2026. Caveats: no investment amount disclosed; the Kochi announcement text I fetched contains no explicit 'Make in India' phrase (secondary press adds that framing); Naval Strike Missile cooperation with India not verified in this session; per AR 2024 (via search summary only, not primary) Asia is ~5.6% of net sales, so India remains small in group revenue despite the strategic push."
+  },
+  {
    "company": "PREMIER ENERGIES LIMITED",
    "ticker": "PREMIERENE",
    "market": "IN",
@@ -4159,6 +4279,64 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Borouge plc",
+   "ticker": "BOROUGE (ADX)",
+   "market": "gulf_mena",
+   "country": "UAE",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.206,
+    "roe": 0.277,
+    "revenue_growth": 0.041
+   },
+   "expansion_signal": true,
+   "lead_score": 94.9,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"India's growth was particularly notable, driven by infrastructure expansion, while ASEAN demand increased due to reshoring in consumer electronics, textiles, footwear, machinery and electrical industries. This, combined with a rising middle-class population, represents an exciting growth opportunity for Borouge.\" (Borouge Annual Report 2024)",
+     "\"Asia Pacific accounted for 63% of total sales volumes in 2024, while the Middle East and Africa contributed 30%\" (Borouge Annual Report 2024)",
+     "Revenue by customer location: India $818.8m in 2024 - second-largest country market after China $1,803.7m (Borouge Annual Report 2024, Note 18)",
+     "\"Through its HE3490-LS drainage system, Borouge was able to meet the demands of a highly challenging project at the Kakrapar Atomic Power Plant in Gujarat, India\" ... \"contributing to India's growing energy infrastructure\" (Borouge Annual Report 2024)"
+    ],
+    "india_operations": "Sales/marketing offices in New Delhi and Mumbai; India = 13.6% of FY2024 revenue (2nd-largest country market); no India manufacturing capex commitment in AR",
+    "report_used": "Borouge Annual Report 2024"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "UNVERIFIED (yfinance gap): ADX not on yfinance. AR2024: revenue $6,026.1m (+4.1%), net profit $1.24bn (+24%, margin ~20.6%), equity $4,482.1m (ROE ~27.7%). Borouge Group International merger (Borealis+Borouge+Nova, announced Mar 2025) will restructure the listed entity in 2026."
   },
   {
    "company": "SOLAR INDUSTRIES (I) LTD",
@@ -4296,6 +4474,65 @@
    }
   },
   {
+   "company": "Barito Renewables Energy",
+   "ticker": "BREN.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.2274,
+    "roe": 0.2044,
+    "revenue_growth": 0.098
+   },
+   "expansion_signal": true,
+   "lead_score": 91.8,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "\"This reflects our commitment to continuously develop our business and support the Indonesian Government's energy transition target.\" (Barito Renewables press release, May 2024)"
+    ],
+    "india_operations": "None",
+    "report_used": "Barito Renewables official press release, May 2024 (fetched)"
+   },
+   "source_cluster": "asean",
+   "notes": "All geothermal/wind expansion is domestic Indonesian; expansion_signal reflects stated capacity development, not APAC reach"
+  },
+  {
    "company": "PAGE INDUSTRIES LTD",
    "ticker": "PAGEIND",
    "market": "IN",
@@ -4340,6 +4577,63 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Chandra Asri Pacific",
+   "ticker": "TPIA.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1434,
+    "roe": 0.4237,
+    "revenue_growth": 2.864
+   },
+   "expansion_signal": true,
+   "lead_score": 91.5,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"This is a major step in expanding Chandra Asri Group's strategic footprint in the regional chemical, energy and infrastructure industries.\" (Indian Chemical News, 3 Apr 2025, mirroring official release)",
+     "\"Aster deepens Asia Pacific integration with acquisition of Chevron Phillips Singapore Chemicals\" (Aster newsroom headline, 1 Aug 2025)",
+     "\"Aster expands Bukom refinery capacity with USD $155 million rejuvenation drive\" (Aster newsroom headline, 9 Sep 2025)"
+    ],
+    "india_operations": "No India assets; Singapore is the outbound-APAC platform",
+    "report_used": "AR2024 inaccessible (TLS/403); press-substituted: Indian Chemical News 3 Apr 2025 + Aster newsroom releases"
+   },
+   "source_cluster": "asean",
+   "notes": "Only genuine outbound-APAC story in Indonesia set: acquired Shell's Singapore Energy & Chemicals Park (now Aster, with Glencore), then Chevron Phillips Singapore PE plant and $155m Bukom rejuvenation; revenue growth +286% reflects consolidation of the Singapore assets"
   },
   {
    "company": "DATA PATTERNS INDIA LTD",
@@ -4506,6 +4800,67 @@
     "investment_sentences": [],
     "filing_date": "2026-02-23"
    }
+  },
+  {
+   "company": "Delta Electronics (Thailand)",
+   "ticker": "DELTA.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Electronics & Semiconductors",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1309,
+    "roe": 0.2958,
+    "revenue_growth": 0.442
+   },
+   "expansion_signal": true,
+   "lead_score": 90.2,
+   "central_lanes": [
+    {
+     "instrument": "ECMS",
+     "status": "open -- Rs 40,000cr outlay, FCFS"
+    },
+    {
+     "instrument": "MPMS",
+     "status": "approved 15-Jul-2026, Rs 62,500cr"
+    },
+    {
+     "instrument": "Semicon 2.0 / ISM 2.0",
+     "status": "approved 15-Jul-2026, Rs 1.27L cr"
+    },
+    {
+     "instrument": "SPECS",
+     "status": "legacy 25% capex"
+    }
+   ],
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)",
+    "Gujarat (semicon ancillary thrust)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"We are expanding operations significantly in Thailand and India to meet customers' local manufacturing needs... In 2024, we inaugurated new India headquarters and R&D center in Bengaluru\" (Delta Electronics (Thailand) 56-1 One Report 2024)",
+     "\"following the investment in new factories in India and Thailand\" \u2014 PP&E up 21.1% (Delta Electronics (Thailand) 56-1 One Report 2024)"
+    ],
+    "india_operations": "Delta Electronics India Pvt Ltd + Delta India Manufacturing Pvt Ltd; plants at Rudrapur, Gurgaon and Krishnagiri (Tamil Nadu SEZ, 15-year tax exemption to 2034); Bengaluru HQ and R&D centre opened 2024",
+    "report_used": "56-1 One Report 2024 and FY2025 (both fetched, full-text)"
+   },
+   "source_cluster": "asean",
+   "notes": "Strongest India signal in the cluster. Board-approved additional India investments of INR 1,212m (25 Jul 2025) and USD 5m (26 Apr 2024) appear in company filings. The widely cited ~USD 500m India figure is PRESS ONLY (Benjamin Lin, Inc42, Feb 2025) \u2014 not in the report. Legacy Delta Energy Systems India is in liquidation; do not confuse with the operating entities"
   },
   {
    "company": "CARPENTER TECHNOLOGY CORP",
@@ -6400,6 +6755,117 @@
    }
   },
   {
+   "company": "Press Metal Aluminium Holdings",
+   "ticker": "8869.KL",
+   "market": "Bursa",
+   "country": "Malaysia",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1378,
+    "roe": 0.245,
+    "revenue_growth": 0.052
+   },
+   "expansion_signal": true,
+   "lead_score": 87.4,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"In September 2024, we announced an equity participation of 80% in a new alumina refinery, PT Kalimantan Alumina Nusantara ('PT KAN') in Indonesia, which is expected to be completed by 2027.\" (Press Metal Annual Report 2024)",
+     "\"Our upstream expansion is expected to reinforce and continuously strengthen our leading position as the largest smelter in SEA\" (Press Metal Annual Report 2024)",
+     "\"serve a diverse customer base not only in the region but across Europe, US, Asia-Pacific and Oceania\" (Press Metal Annual Report 2024)"
+    ],
+    "india_operations": "None; zero India language in AR2024",
+    "report_used": "Annual Report 2024 (interactive edition pages fetched; full PDF TLS-failed \u2014 partial grep, not full-text)"
+   },
+   "source_cluster": "asean",
+   "notes": "Record FY2024 net profit RM1.76bn; concrete APAC expansion = 80% of PT KAN alumina refinery (Indonesia, due 2027), upstream integration play"
+  },
+  {
+   "company": "Industries Qatar Q.P.S.C.",
+   "ticker": "IQCD.QA",
+   "market": "gulf_mena",
+   "country": "Qatar",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.24991,
+    "roe": 0.10975,
+    "revenue_growth": 0.062
+   },
+   "expansion_signal": true,
+   "lead_score": 87.3,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Indian sub-continent = 16% of group revenue FY2025 (vs 12% FY2024); fertilizer (QAFCO) segment's Indian sub-continent share jumped 10% to 22% in one year, segment net profit +36% (Industries Qatar Annual Report 2025, geography disclosures)",
+     "\"seasonal demand from major markets such as India and Brazil\" (Industries Qatar Annual Report 2025)",
+     "\"government subsidies in key markets like India and Brazil\" (Industries Qatar Annual Report 2025)",
+     "QAFCO's exclusive marketer states urea export agreements \"to key markets, including India\" and a committed urea capacity doubling to 12.4 MTPA (QatarEnergy Annual Review 2024)"
+    ],
+    "india_operations": "No India assets; large and growing urea supply into India contracted at QatarEnergy Marketing level. Caveat: no named Indian counterparty in current reports (IFFCO not referenced; Muntajat consolidated into QE Marketing 2024).",
+    "report_used": "Industries Qatar Annual Report 2025 (published Jan-2026) + QatarEnergy Annual Review 2024"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "Profitability VERIFIED via yfinance (IQCD.QA resolves). Researcher graded MEDIUM-HIGH; schema forces MEDIUM - borderline HIGH on the QatarEnergy urea-supply language, held at MEDIUM because the commitment is the marketer's, not an IQ-report India investment statement. AR2025: NP QR 4.3bn, NPM ~23%, ROE ~11.3%, zero debt."
+  },
+  {
    "company": "ZYDUS LIFESCIENCES LTD",
    "ticker": "ZYDUSLIFE",
    "market": "IN",
@@ -6896,6 +7362,120 @@
    }
   },
   {
+   "company": "Aneka Tambang (ANTAM)",
+   "ticker": "ANTM.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0966,
+    "roe": 0.2469,
+    "revenue_growth": 0.121
+   },
+   "expansion_signal": true,
+   "lead_score": 84.2,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"PT Aneka Tambang (IDX:ANTM) and Indonesia Battery Corporation (IBC) are developing a series of integrated electric vehicle projects\" (Mining.com.au, 7 Jul 2025)",
+     "\"battery cell factory with an initial capacity of 6.9 gigawatt per hour, which is forecast to scale up to 15 gigawatt per hour\" (Mining.com.au, 7 Jul 2025)",
+     "\"For ferronickel products, it is absorbed by the export market.\" (Kontan, 15 Mar 2024)"
+    ],
+    "india_operations": "None; nickel/ferronickel exports go to the seaborne market, no India-specific channel stated",
+    "report_used": "AR2024 PDF 403'd; press-substituted: Mining.com.au 7 Jul 2025 + Kontan 15 Mar 2024"
+   },
+   "source_cluster": "asean",
+   "notes": "~$6bn EV-battery ecosystem is entirely domestic (partners CBL = CATL/Brunp/Lygend + IBC; LG-involvement hint did NOT verify); zero India language"
+  },
+  {
+   "company": "Indra Sistemas",
+   "ticker": "IDR.MC",
+   "market": "MC",
+   "country": "Spain",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0785,
+    "roe": 0.2651,
+    "revenue_growth": 0.163
+   },
+   "expansion_signal": true,
+   "lead_score": 84.0,
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"a contract worth more than 55 million euros\" to deploy \"an integrated system to centralize all the phases of air traffic surveillance and control in India\" \"at five of the country's main air traffic control centers and airports: Mumbai, Hyderabad, Bangalore, Navi Mumbai and Mopa\" (Indra press release, indragroup.com, 2023-03-09)",
+     "In India Indra has \"a radar network that provides surveillance of 80% of the country's airspace\" and has \"modernized several of India's main control centers for the Airports Authority of India (AAI), including those in Delhi and Kolkata, as well as 38 towers\" (Indra press release, indragroup.com, 2023-03-09)",
+     "\"Our collaboration with Indra reflects a shared commitment to strengthening radar manufacturing capabilities in India.\" \u2014 Sukaran Singh, CEO & MD, Tata Advanced Systems; Ana Buendia, head of Indra's naval business: \"we have worked to establish a radar factory in Bengaluru. This now provides us with local support to produce systems more efficiently\" (Indra press release on first Lanza-N naval 3D radar commissioning, indragroup.com, 2025-09-10)"
+    ],
+    "india_operations": "Deep, long-standing footprint: AAI ATM systems at 5 major centres (EUR 55m+, 2023) plus 40+ control centres/towers modernised and radar coverage of 80% of Indian airspace; Lanza-N naval 3D radar JV with Tata Advanced Systems including a radar assembly/integration/testing factory in Bengaluru (Karnataka) under a ~USD 143m TASL-MoD programme (23 shipborne radars, tech transfer since 2020); July 2026 commissioning of a new Indian ATC centre with AAI.",
+    "report_used": "Annual report inaccessible (indragroup.com PDF area behind Radware bot protection); press: Indra official press releases 2023-03-09 and 2025-09-10 (fetched), plus Janes/search coverage of the TASL radar contract and July 2026 four-country ATC commissioning"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Strongest India story of the three: repeated new orders (AAI 2023 award, executing through 2026), Make-in-India localisation via the Bengaluru radar factory with TASL, and continued Asia-Pacific ATM positioning (Indonesia). FY2024 group results: ATM revenue +30%, Defence +26% (Investing.com earnings-call coverage). Verbatim annual-report APAC language could not be extracted due to site bot-blocking; all quotes above are from fetched official Indra press pages."
+  },
+  {
    "company": "ADITYA INFOTECH LIMITED",
    "ticker": "CPPLUS",
    "market": "IN",
@@ -7174,6 +7754,55 @@
    }
   },
   {
+   "company": "Elsewedy Electric",
+   "ticker": "SWDY.CA",
+   "market": "gulf_mena",
+   "country": "Egypt",
+   "sector": "White Goods & Electricals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0617,
+    "roe": 0.2592,
+    "revenue_growth": 0.2115
+   },
+   "expansion_signal": true,
+   "lead_score": 82.2,
+   "central_lanes": [
+    {
+     "instrument": "PLI White Goods",
+     "status": "operational (85->80 attrition noted)"
+    },
+    {
+     "instrument": "BEE/star-rating demand levers",
+     "status": "standing"
+    }
+   ],
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "34+ production facilities \"across African and Asian countries including... Indonesia, Pakistan\" (Elsewedy Electric corporate website/IR materials, 2024-25; incl. PT Elsewedy Electric Indonesia transformer plant)"
+    ],
+    "india_operations": "None in India. Concrete Asian manufacturing footprint (Indonesia transformer plant, Pakistan) but new capex is all MENA; zero India presence found.",
+    "report_used": "Elsewedy Electric FY2024 earnings release + corporate site (cached: scratchpad swdy_fy2024.txt)"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "Profitability verified via yfinance financial statements (FY2025: margin 6.2%, ROE 25.9%, rev growth +21.2%; .info fields are null for EGX). Published FY2024: revenue EGP 232bn (+52%), NPM 7.5%, computed ROE ~29% - EGP figures are FX-inflated."
+  },
+  {
    "company": "SHREEJI SHIPPING GLOBAL L",
    "ticker": "SHREEJISPG",
    "market": "IN",
@@ -7331,6 +7960,130 @@
    }
   },
   {
+   "company": "Gruma",
+   "ticker": "GRUMAB.MX",
+   "market": "BMV (Mexico)",
+   "country": "Mexico",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0766,
+    "roe": 0.2263,
+    "revenue_growth": 0.049
+   },
+   "expansion_signal": true,
+   "lead_score": 81.2,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Our Asian and Oceania division, saw strong demand in all markets it serves but particularly in Malaysia and Australia. With our new plant in China adding to production, we have been able to dilute the incremental costs and destress operational leverage accordingly. We expect this effect to continue as we increase production in this plant on the back of greater demand. (GRUMA 4Q25 earnings report, 2026)",
+     "Net sales increased 2% to US$1.6 billion, mainly driven by strong performance in Europe, Asia & Oceania, and Central America, supported by a favorable price mix and higher demand in each one of these subsidiaries. (GRUMA 4Q25 earnings report, 2026)"
+    ],
+    "india_operations": "None in India; dedicated GRUMA Asia & Oceania division (Malaysia, China, Australia) with a new China plant ramping production.",
+    "report_used": "GRUMA Annual Report 2024 + GRUMA 4Q25 earnings report"
+   },
+   "source_cluster": "latam",
+   "notes": "Concrete APAC investment (new China plant, Asia-Oceania operating income +37% YoY in 4Q25) but zero India language in either document."
+  },
+  {
+   "company": "Sociedad Quimica y Minera de Chile (SQM)",
+   "ticker": "SQM-B.SN",
+   "market": "Santiago (also NYSE ADR: SQM)",
+   "country": "Chile",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1538,
+    "roe": 0.134,
+    "revenue_growth": 0.698
+   },
+   "expansion_signal": true,
+   "lead_score": 81.2,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "On April 22, 2024, the subsidiary SQM India Private Limited was incorporated. (SQM Form 20-F, FY2024)",
+     "SQM India Private Limited ... LEVAL 3A WING, TOWER B1 Symphony IT park, NANDED, Nanded, Pune City, Pune - 411041, Maharashtra India ... 100.0000 [percent ownership] (SQM Form 20-F FY2024, subsidiaries table)",
+     "Potassium sales volumes grew by more than 28% in 2024 compared to 2023, driven by strong market demand in key regions such as Brazil, Europe, and India. (SQM Form 20-F, FY2024)",
+     "During 2024, 93% of our sales of lithium were in Asia. (SQM Form 20-F, FY2024)",
+     "We are also developing the Mt. Holland lithium project in Australia through our joint venture with Wesfarmers. The concentrator plant is ramping up production to nameplate capacity, while the Kwinana lithium hydroxide refinery continues to advance in construction, with 95% completion ... and a planned production capacity of 50,000 metric tons of lithium hydroxide (50% SQM's share). (SQM Form 20-F, FY2024)",
+     "approximately US$200 million for the SQM Lithium International Division, which includes the completion of the construction of the lithium hydroxide refining plant in Kwinana, Australia, and exploration-related investments. (SQM Form 20-F, FY2024)"
+    ],
+    "india_operations": "SQM India Private Limited, 100%-owned staffed subsidiary incorporated 22-Apr-2024 in Pune, Maharashtra; India also named as a key potassium demand region.",
+    "report_used": "SQM Form 20-F FY2024 (SEC filing)"
+   },
+   "source_cluster": "latam",
+   "notes": "India disclosure is a subsidiary-footnote/table item, not a strategy-narrative statement; graded HIGH because an incorporated, staffed 100%-owned Indian subsidiary is a concrete India investment in SQM's own reporting. Separately (press, NOT SQM reporting; Reuters/Mining Weekly, 28-Mar-2025): India's KABIL consortium (Coal India/Oil India/ONGC Videsh) reported to be seeking a ~20% (~US$600M) stake in SQM's Australian lithium projects. 93% of lithium revenue is Asian; concrete APAC capex via Mt Holland JV (Wesfarmers) and Kwinana refinery."
+  },
+  {
    "company": "CHAMBAL FERTILIZERS LTD",
    "ticker": "CHAMBLFERT",
    "market": "IN",
@@ -7413,6 +8166,58 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Hoa Phat Group",
+   "ticker": "HPG.VN",
+   "market": "HOSE",
+   "country": "Vietnam",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1231,
+    "roe": 0.1647,
+    "revenue_growth": 0.406
+   },
+   "expansion_signal": true,
+   "lead_score": 80.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"hot-rolled coil produced by Hoa Phat Group will not be subject to India's anti-dumping duties\" (hoaphat.com.vn official release, 23 Aug 2025)",
+     "\"This exemption gives Hoa Phat's products a strong competitive advantage in the Indian market\" (hoaphat.com.vn official release, 23 Aug 2025)"
+    ],
+    "india_operations": "Active steel export market; DGTR anti-dumping exemption gives HPG HRC duty-free access while other Vietnamese mills face duties; no India assets",
+    "report_used": "Annual Report 2024 (full English PDF, text-extracted) + hoaphat.com.vn official release 23 Aug 2025"
+   },
+   "source_cluster": "asean",
+   "notes": "Dual framing: AR2024 treats Indian steel as a competitive threat while the company's own release calls India a competitive-advantage export market post-exemption. All capex domestic (Dung Quat 2 ramp drove +40.6% revenue growth); no India investment plans"
   },
   {
    "company": "NTPC LTD",
@@ -7816,6 +8621,67 @@
    }
   },
   {
+   "company": "Andritz",
+   "ticker": "ANDR.VI",
+   "market": "VI",
+   "country": "Austria",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0579,
+    "roe": 0.207,
+    "revenue_growth": 0.017
+   },
+   "expansion_signal": true,
+   "lead_score": 78.4,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "With a capacity of 3,000 MW, Saidongar-1 Karjat, located in the state of Maharashtra, will be India's largest pumped storage plant. ... ANDRITZ is currently involved in the implementation of seven new pumped storage plants in India. (ANDRITZ press release, andritz.com, April 2026, Torrent Power order, 'order value is in the low three-digit million euro range')",
+     "The project will be executed using ANDRITZ's state-of-the-art manufacturing facilities in India, supported by its global network. (ANDRITZ press release, andritz.com, September 2025 \u2014 Adani Green Energy 1800 MW Gandikota pumped storage order; release also states 'The repeat order from AGEL underlines ANDRITZ's strong position in the Indian hydropower market')",
+     "In Hydropower, order intake rose significantly to 1,345.4 MEUR (+72.1%), fueled by major plant upgrades and pumped storage projects in Asia (ANDRITZ H1 2025 results release, andritz.com, July 2025 \u2014 cites two large-scale India projects incl. the new Tarali pumped storage plant in Maharashtra)"
+    ],
+    "india_operations": "ANDRITZ Hydro Pvt. Ltd. (est. 1996, in India since 1903): manufacturing plants at Mandideep (Madhya Pradesh) and Prithla (Haryana), New Delhi HQ, 850+ engineers/technicians (India + SE Asia region), >21,000 MW of projects executed; Financial Report 2024 subsidiary list confirms further Indian entities (ANDRITZ O&M Pvt. Ltd. Mandideep, ANDRITZ Technologies Chennai, Schuler India Pune).",
+    "report_used": "ANDRITZ Financial Report 2024 (PDF downloaded from andritz.com and text-parsed \u2014 confirms Indian subsidiaries but its narrative contains no regional order-intake-by-country breakdown in the sections greped) + official andritz.com press releases 2025-2026 and H1 2025 results"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Strongest India order pipeline of the three: seven pumped storage plants under implementation simultaneously (Chitravathi 500 MW 2023, Tarali 1,500 MW and Gandikota 1,800 MW 2025, Saidongar-1 Karjat 3,000 MW 2026 \u2014 each of the two recent orders 'low three-digit million-euro'), executed through its own Indian factories. Correction to the brief: the plants are Mandideep + Prithla (not 'Prithviganj'), and the mega pumped-storage orders are in Andhra Pradesh/Maharashtra \u2014 Telangana appears only in lift-irrigation O&M contracts. FY2024 group order intake was 8,276.9 MEUR (-3.2%) with Hydropower +7%; the India surge shows up in H1 2025 (+72.1% hydropower order intake). No India pulp-mill order verified this session."
+  },
+  {
    "company": "AMGEN INC",
    "ticker": "AMGN",
    "market": "US",
@@ -8162,6 +9028,69 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "ADNOC Gas plc",
+   "ticker": "ADNOCGAS (ADX)",
+   "market": "gulf_mena",
+   "country": "UAE",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.205,
+    "roe": null,
+    "revenue_growth": 0.07
+   },
+   "expansion_signal": true,
+   "lead_score": 76.4,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"The agreement, valued in the range of $7 billion to $9 billion (AED25.7 to AED33 billion) over its 14-year term\" for \"up to 1.2 million metric tonnes per annum (mmtpa) of liquefied natural gas (LNG) to India\" (ADNOC Gas press release, 2023, IOCL)",
+     "\"14-year sales and purchase agreement (SPA) with Indian Oil Corporation Ltd (IndianOil) for the export of up to 1.2 million tonnes per annum (mtpa)\" ... \"with first deliveries to begin in 2026\" (ADNOC Gas press release, Feb 2025)",
+     "\"10-year agreement to supply 0.5 million metric tons per annum (mmtpa) of liquified natural gas (LNG) to GAIL India Limited\"; CEO: \"India continues to be a key market for ADNOC Gas, and this latest supply agreement underscores our ongoing dedication to fostering long-term partnerships\" (ADNOC Gas press release, Nov 2024)",
+     "CEO on HPCL SPA: \"This long-term agreement with HPCL, our third with Indian companies in the past year, reflects the robust energy partnership between the UAE and India\" (ADNOC Gas press release, 2025)",
+     "CEO: \"ADNOC Gas looks forward to supporting India's plans to make gas 15% of its primary energy basket by 2030\" (ADNOC Gas press release, Feb 2025)"
+    ],
+    "india_operations": "Three signed long-term India LNG SPAs: IOCL 14y up to 1.2 mtpa ($7-9bn), GAIL 10y 0.5 mmtpa, HPCL 10y 0.5 mmtpa - deliveries from 2026 ex Das Island",
+    "report_used": "ADNOC Gas FY2024 results press release (Feb 2025) + official ADNOC Gas press releases 2023-2025"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "UNVERIFIED (yfinance gap): ADX .AE tickers 404 on yfinance. Figures from FY2024 results release: revenue $24.43bn (+7%), record net income $5.0bn (margin ~20.5%); ROE not computed (equity not captured)."
   },
   {
    "company": "KRBL LIMITED",
@@ -9265,6 +10194,67 @@
    }
   },
   {
+   "company": "Kerry Group",
+   "ticker": "KRZ.IR",
+   "market": "IR",
+   "country": "Ireland",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0974,
+    "roe": 0.1059,
+    "revenue_growth": null
+   },
+   "expansion_signal": true,
+   "lead_score": 74.9,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"The India market is dynamic and evolving and we are looking at our next phase of investment in India.\" (Siddharth Rastogi, GM Indian Subcontinent/South-West Asia, Kerry, interviewed in FFOODS/NuFFooDS Spectrum, Feb 2023)",
+     "\"Our plans are to expand our manufacturing facilities in both the north and south of India. We have also opened a new development and application centre in Delhi.\" (Siddharth Rastogi, Kerry, NuFFooDS Spectrum interview, 2023)",
+     "\"Business volumes in emerging markets increased by 6.5%, with good growth across the Middle East, Africa, LATAM and Southeast Asia.\" (Kerry Group Preliminary Statement of Results FY2024, 18 Feb 2025, PDF text-extracted)"
+    ],
+    "india_operations": "In India since 2011; two manufacturing sites including the \u20ac20M, 40,585 sq m Tumakuru (Tumkur, Karnataka) taste & nutrition facility opened 2019 (~150 jobs, +150 planned at full capacity) serving South-West Asia, plus a development & application centre in Delhi.",
+    "report_used": "Kerry Group Preliminary Statement of Results FY2024 press-release PDF (kerry.com, fetched and text-extracted); India specifics from Asia Pacific Food Industry / DairyReporter (2019 Tumakuru opening) and NuFFooDS Spectrum executive interview (2023). Full Annual Report 2024 PDF not separately parsed."
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Strongest India/APAC case of the four: named executive on record about a 'next phase' of India investment and north+south manufacturing expansion; APMEA is a reported segment (FY2024 APMEA revenue \u20ac1,661m, volumes +4.8%) and from 2025 Kerry reorganized into Europe/Americas/APMEA reportable segments \u2014 structural evidence of APAC priority. Caveats: the flagship Tumakuru investment dates to 2019 and the expansion interview to 2023; FY2024 report itself flags 'challenging market conditions in China deteriorating through the fourth quarter'."
+  },
+  {
    "company": "SANSERA ENGINEERING LTD",
    "ticker": "SANSERA",
    "market": "IN",
@@ -9451,6 +10441,61 @@
     ],
     "filing_date": "2026-02-25"
    }
+  },
+  {
+   "company": "Abu Qir Fertilizers & Chemical Industries",
+   "ticker": "ABUK.CA",
+   "market": "gulf_mena",
+   "country": "Egypt",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.4081,
+    "roe": 0.291,
+    "revenue_growth": 0.2368
+   },
+   "expansion_signal": false,
+   "lead_score": 74.4,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "India listed as an export destination on the company's own exports page; real spot urea cargoes into India tenders reported via traders (Argus, 2024-25) - no report-level India investment language (researcher finding, PARAPHRASE)"
+    ],
+    "india_operations": "None; India is a spot urea export destination via tenders only.",
+    "report_used": "Abou Kir Fertilizers exports page + Argus trade press (annual report contains no India investment language)"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "Profitability verified via yfinance financial statements (FY to 2025-06: margin 40.8%, ROE 29.1%, rev growth +23.7%). NPM ~41% is FX-inflated (EGP devaluation) - carry caution."
   },
   {
    "company": "GUJARAT FLUOROCHEM LTD",
@@ -10121,6 +11166,57 @@
    }
   },
   {
+   "company": "Grupo Mexico",
+   "ticker": "GMEXICOB.MX",
+   "market": "BMV (Mexico)",
+   "country": "Mexico",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.2898,
+    "roe": 0.2572,
+    "revenue_growth": 0.326
+   },
+   "expansion_signal": false,
+   "lead_score": 72.1,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "FINDING (not a quote): zero India mentions in the 2024 annual report; Asia appears only as a 14.3% revenue-share label in the geographic revenue chart; announced capex is entirely in the Americas (Mexico, Peru, USA, Spain). (Grupo Mexico Informe Anual 2024)"
+    ],
+    "india_operations": "None.",
+    "report_used": "Grupo Mexico Informe Anual 2024"
+   },
+   "source_cluster": "latam",
+   "notes": "Copper major with Asian demand exposure but no India/APAC investment language whatsoever \u2014 recorded honestly as NONE."
+  },
+  {
    "company": "SPORTKING INDIA LIMITED",
    "ticker": "SPORTKING",
    "market": "IN",
@@ -10167,6 +11263,67 @@
    }
   },
   {
+   "company": "EDP - Energias de Portugal",
+   "ticker": "EDP.LS",
+   "market": "LS",
+   "country": "Portugal",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0706,
+    "roe": 0.0778,
+    "revenue_growth": -0.008
+   },
+   "expansion_signal": true,
+   "lead_score": 70.8,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"This acquisition will complement EDPR's portfolio globally, beyond its current markets, and position it as a powerful platform for growth in Asia-Pacific\" \u2014 Miguel Stilwell d'Andrade, CEO of EDP and EDPR, on the Sunseap acquisition (Reuters via Investing.com/Euronews, 2021-11)",
+     "\"global renewable energy leader EDPR established its Asia Pacific headquarters in Singapore via the acquisition of local renewable energy company Sunseap in February 2022\" ... EDPR APAC \"is targeting to expand its renewables portfolio to up to five GWp of installed capacity by 2030\" (Singapore EDB business-insights article on EDPR APAC, fetched 2026)",
+     "\"Singapore is an ideal regional hub from where EDPR is leading our APAC ambition, given the availability of talent, innovation centres, and capital which are key enablers for the energy transition.\" \u2014 Pedro Vasconcelos, Executive Chairman, EDP Renewables APAC (Singapore EDB article, fetched 2026)"
+    ],
+    "india_operations": "No verified India assets or offices. EDPR APAC (ex-Sunseap, HQ Singapore, ~1.6 GWp committed capacity as of Dec 2024) operates across Singapore, Vietnam, Malaysia, Indonesia, Thailand, Cambodia, China, Japan and Taiwan \u2014 India is absent from every market list found, including the Sunseap 5.5 GW pipeline (9 markets) and the EDB article.",
+    "report_used": "Annual report inaccessible (edp.com IntegratedAnnualReport2024 PDF and edpr-investors.com 2024_EDPRAnnualReport.pdf both returned HTTP 403); press: Reuters/Euronews Sunseap coverage (2021), Singapore EDB insight article (fetched), PV Tech on the USD 7.4bn APAC investment plan (2022)"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Clear, funded APAC expansion (Singapore-HQ platform, USD 7.4bn APAC investment plan per PV Tech 2022, 5 GWp-by-2030 target, SolarNova Phase 8 win of 130-200 MWp in 2024) but explicitly NOT an India story \u2014 India does not appear in any EDPR APAC market list found. Graded MEDIUM on concrete APAC expansion without India commitment. Group has also been in strategic-review/capex-trim mode since 2025, a caveat on the pace of APAC growth."
+  },
+  {
    "company": "SHYAM METALICS AND ENGY L",
    "ticker": "SHYAMMETL",
    "market": "IN",
@@ -10206,6 +11363,120 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Iveco Group",
+   "ticker": "IVG.MI",
+   "market": "MI",
+   "country": "Italy",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1056,
+    "roe": 0.0311,
+    "revenue_growth": 0.008
+   },
+   "expansion_signal": true,
+   "lead_score": 70.5,
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "Together, Iveco and the commercial vehicle business of Tata Motors will have combined revenues of c.\u20ac22bn (INR 2,20,000Cr+) split across Europe (c.50%), India (c.35%) and the Americas (c.15%) (Tata Motors-Iveco Group joint press release via GlobeNewswire, 2025-07-30)",
+     "This is a logical next step following the demerger of the Tata Motors Commercial Vehicle business and will allow the combined group to compete on a truly global basis with two strategic home markets in India and Europe. (Natarajan Chandrasekaran, Chairman of Tata Motors, joint press release, 2025-07-30)",
+     "The Engine Teardown Area is a global project which involves not only the Turin plant, but also those in Sete Lagoas (Brazil), York (USA) and Pune (India). (Iveco Group Annual Report 2024)"
+    ],
+    "india_operations": "FPT Industrial India Private Limited (100% subsidiary, per AR 2024 entity list) with an FPT Industrial plant in Pune; AR 2024 also discloses 'a minor investment in a non-listed company in India considered strategic in nature for \u20ac9 million'; India otherwise ~0.3%-of-headcount scale pre-deal.",
+    "report_used": "Iveco Group Annual Report 2024 (PDF downloaded from ivecogroup.com and searched in full) + Tata Motors-Iveco joint press release of 30 Jul 2025 (GlobeNewswire full text)"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Special situation confirmed: Tata Motors' all-cash voluntary tender offer at EUR 14.1/share (~EUR 3.8bn, announced 30 Jul 2025) \u2014 an INBOUND India linkage making India ~35% of the combined entity's revenue, not Iveco expanding into India. Conditional on separation of the defence business: Leonardo agreed to buy Iveco Defence (EUR 1.7bn EV) the same day and completed on 18 Mar 2026 at ~EUR 1.6bn after adjustments (Leonardo press releases per search); joint release states defence sale 'envisaged to close in Q1 2026 and ultimately no later than 31st March 2026'. Italy granted conditional (golden-power) approval per press. Tender offer completion was targeted for Q2 2026; I did not verify final settlement status as of Jul 2026 \u2014 check before relying on deal-closed status. Iveco's own organic India footprint (pre-deal) is modest: FPT engines/Pune plus the small strategic minority stake."
+  },
+  {
+   "company": "Metlen Energy & Metals",
+   "ticker": "MTLN.AT",
+   "market": "AT",
+   "country": "Greece",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0442,
+    "roe": 0.1048,
+    "revenue_growth": 0.093
+   },
+   "expansion_signal": true,
+   "lead_score": 70.5,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"NTPC, Sprng Energy, UPC Renewables, Metka EGN Singapore Pte, ReNew Power, and ACME Solar were declared winners\" in SECI's 1,785 MW Tranche IV solar auction in Rajasthan, lowest tariff Rs 2.17/kWh (Mercom India, 2021-12-24); SolarQuarter/Saur Energy coverage of the same award attributes 20 MW to Metka EGN Singapore Pte at Rs 2.17/kWh",
+     "\"The Company is active in the markets of all five continents, in 40 countries\" (Metlen press release, Flash Note - Financial Results 2024, metlen.com, Feb 2025)",
+     "\"During 2024, new third-party projects with a total capacity of c.1.1GW were contracted in Greece, Spain, Italy, Chile, New Zealand, and the United Kingdom, with the contracted backlog amounting to EUR 463.1 million.\" (Metlen press release, Flash Note - Financial Results 2024, metlen.com, Feb 2025)"
+    ],
+    "india_operations": "Thin and dated: Metka EGN Singapore Pte (the Mytilineos/M Renewables developer vehicle) won a 20 MW SECI Tranche IV solar allocation in Rajasthan in Dec 2021 at Rs 2.17/kWh; no evidence found that the project was subsequently built/commissioned, and no Indian subsidiary, plant, or office was verifiable. India is absent from Metlen's FY2024 market lists.",
+    "report_used": "Annual Financial Report 2024 exists on metlengroup.com but the PDF was not directly fetched; official Metlen 'Flash Note - Financial Results 2024' press release (metlen.com, fetched) used instead, plus Mercom India / SolarQuarter / Saur Energy for the SECI award"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "The claim that METKA EGN 'built solar in India' could only be verified as a 20 MW SECI auction WIN (Dec 2021), not a completed plant \u2014 treat construction/commissioning as unconfirmed. No India language found in FY2024 communications; APAC activity is real but Oceania-tilted (New Zealand third-party contracts in 2024, existing Australian solar track record). expansion_signal reflects APAC (NZ) contracting, not India. Defence expansion is Greece-focused (Volos hub); no India defence angle found. Rio Tinto bauxite/alumina agreements (2025) have no India component."
   },
   {
    "company": "BRISTOL MYERS SQUIBB CO",
@@ -10369,6 +11640,59 @@
    }
   },
   {
+   "company": "Danieli & C.",
+   "ticker": "DAN.MI",
+   "market": "MI",
+   "country": "Italy",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0573,
+    "roe": 0.0803,
+    "revenue_growth": -0.162
+   },
+   "expansion_signal": true,
+   "lead_score": 69.9,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "As on November 30, 2024, DIL had an order book of \u20b92,511 crore which basis the revenue for FY24, provides a medium-term revenue visibility for the next 2-3 years. (CARE Ratings press release on Danieli India Limited, 2025-02-04)",
+     "The parent has demonstrated strong commitment with share capital of \u20b9564.9 crores as on Mar 31, 2024 and has further infused \u20b990.2 crores for the ongoing capex of \u20b9100 crores in Sri City, Andhra Pradesh. (CARE Ratings press release, 2025-02-04)",
+     "design and supply of a water treatment plant (WTP) to serve the Phase-3 expansion ... JSW Steel's Dolvi Works in Maharashtra, India ... scheduled to enter operation by December 2026 (SteelOrbis, 2026-02-11, on new Danieli-JSW contract)"
+    ],
+    "india_operations": "Danieli India Ltd (100% step-down subsidiary, mfg plant at Sri City, Andhra Pradesh since 2013, ongoing \u20b9100cr capex); TOI grew ~39% CAGR \u20b9522cr (FY22) to \u20b91,002cr (FY24), \u20b9769cr in H1FY25; clients incl. JSW Steel (Dolvi WTP, Salem bloom caster) and Tata Steel (Jamshedpur BOF converter work, 'Most Innovative Partner Award' at Tata InnoVista 2024 per Danieli/AIST search results).",
+    "report_used": "Danieli & C. annual report itself inaccessible (danieli.com returns 403/Access Denied to fetches, incl. with browser UA); used CARE Ratings credit press release Feb 2025 (fetched PDF, text-extracted \u2014 it cites group orderbook 'The outstanding order book for Danieli SpA was \u20ac 5.7 bn as on June 30, 2024' and CY24 revenues of \u20ac4.35bn) plus SteelOrbis press"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Strongest concrete India order-book evidence of the four, but sourced via the rating agency and trade press rather than the annual report PDF, which Danieli's site blocks. Search-result snippets attribute to Danieli's FY2024-25 report the lines that India/SEA/MENA 'maintained good production volumes and significant steel consumption' and that negotiations 'point to a good order intake also for the fiscal year 2025-26' \u2014 plausible but NOT independently fetched, so excluded from evidence. Danieli India rated CARE AA-; Stable / CARE A1+ with parent letter-of-comfort; >60% of DIL orderbook from top-3 customers."
+  },
+  {
    "company": "PTC INC.",
    "ticker": "PTC",
    "market": "IN",
@@ -10502,6 +11826,120 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Industrias Penoles",
+   "ticker": "PE&OLES.MX",
+   "market": "BMV (Mexico)",
+   "country": "Mexico",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1799,
+    "roe": 0.3622,
+    "revenue_growth": 0.916
+   },
+   "expansion_signal": false,
+   "lead_score": 69.4,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Como parte de nuestra estrategia comercial, y aprovechando las condiciones de mercado, concretamos algunas ventas spot a Asia y diversificamos nuestra cartera de clientes. [As part of our commercial strategy, taking advantage of market conditions, we closed some spot sales to Asia and diversified our client portfolio.] (Penoles Informe Anual 2024, zinc commentary)",
+     "En 2025 alcanzamos records de produccion de hidroxido de magnesio... impulsados por la incorporacion de nuevos clientes y el aumento de nuestra participacion en el mercado de Asia Oriental. [2025 production records for magnesium hydroxide driven by new clients and increased share in the East Asia market.] (Penoles Informe Anual 2025)"
+    ],
+    "india_operations": "Zero \u2014 'India' appears in neither the 2024 nor 2025 annual report; Asia is a standing export destination (US$457.2M FY2025, US$705.8M FY2024 of billed sales, ~5-8% of total) with no operations, offices or investment there.",
+    "report_used": "Penoles Informe Anual 2025 + Informe Anual 2024"
+   },
+   "source_cluster": "latam",
+   "notes": "Despite India being a top global silver importer, Penoles' own reporting never names it \u2014 sales likely route via East-Asian traders/refiners (related parties include Japan's Dowa Mining and Sumitomo). Export-demand mentions only, no investment language."
+  },
+  {
+   "company": "Grupo Bimbo",
+   "ticker": "BIMBOA.MX",
+   "market": "BMV (Mexico)",
+   "country": "Mexico",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0276,
+    "roe": 0.1069,
+    "revenue_growth": -0.03
+   },
+   "expansion_signal": true,
+   "lead_score": 69.3,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "The Group believes that markets like India, Romania, Tunisia, and other Eastern and Southeastern European countries have a high potential for continuous growth in the long term, and it plans to continue expanding by offering quality products made with innovative techniques. (Grupo Bimbo 2024 Annual Report, BMV filing)",
+     "Seventeen bakeries and plants were added, including six new plants in Mexico, India, China, Chile, and Paraguay, as well as the bakeries acquired through acquisitions. (Grupo Bimbo 2024 Annual Report)",
+     "It completed six acquisitions: Modern Foods in India, Emmy's Organics in the U.S., Cerealto Siro Foods in Spain, Popcornopolis in the U.S., Aryzta do Brasil and Kitty Industries in India. (Grupo Bimbo 2024 Annual Report, 2021 milestones section)",
+     "In May 2017, Grupo Bimbo acquired 65% of Ready Roti India Private Limited, a baking leader in New Delhi with sales of US$48 million in 2016. (Grupo Bimbo 2024 Annual Report, history section)"
+    ],
+    "india_operations": "Wholly-owned Bimbo India (Ready Roti 100% since 2021, plus Modern Foods and Kitty Industries acquisitions); ~14 India bakeries; one of the six new plants built in 2024 was in India.",
+    "report_used": "Grupo Bimbo Annual Report 2024 (BMV filing, English)"
+   },
+   "source_cluster": "latam",
+   "notes": "India explicitly named a long-term high-potential growth market and received new plant capex in 2024; EAA division grew with double-digit growth in India. Caveat: 2022 India goodwill impairment of MXN 275M recognized (same report, note on cumulative impairments)."
   },
   {
    "company": "TRIVENI ENGG. & INDS. LTD",
@@ -10882,6 +12320,58 @@
    }
   },
   {
+   "company": "Top Glove Corporation",
+   "ticker": "7113.KL",
+   "market": "Bursa",
+   "country": "Malaysia",
+   "sector": "Medical Devices",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0478,
+    "roe": 0.0379,
+    "revenue_growth": 0.319
+   },
+   "expansion_signal": true,
+   "lead_score": 66.4,
+   "central_lanes": [
+    {
+     "instrument": "PLI Medical Devices + parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "TDB Medical Devices CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "gradually increase its running capacity to \"70 billion pieces of gloves by end-FY2025 from the current 64 billion pieces\" (The Edge Malaysia, 20 Dec 2024)",
+     "\"Expansion in China will be nil due to US tariff issues\" (The Edge Malaysia, 20 Dec 2024)"
+    ],
+    "india_operations": "None; competes with Indian glove makers but no India presence or language found",
+    "report_used": "PRESS-SUBSTITUTED \u2014 Annual Report PDF inaccessible via 3 routes; The Edge Malaysia 20 Dec 2024 + 21 Dec 2018 (Vietnam subsidiary)"
+   },
+   "source_cluster": "asean",
+   "notes": "Operates a Vietnam subsidiary (initial 1.5bn vinyl gloves/yr). Current expansion is brownfield Malaysian line reactivation riding US-tariff diversion away from China, not new-geography APAC"
+  },
+  {
    "company": "SailPoint, Inc.",
    "ticker": "SAIL",
    "market": "IN",
@@ -11021,6 +12511,62 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Siam Cement Group (SCG)",
+   "ticker": "SCC.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0387,
+    "roe": 0.0385,
+    "revenue_growth": -0.009
+   },
+   "expansion_signal": true,
+   "lead_score": 65.7,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "\"SCG International partnered with BigBloc Construction to establish a Autoclaved Aerated Concrete Wall plant... in Gujarat, India... This marks SCG's first manufacturing operation in India\" (SCG One Report 2024, English)",
+     "\"(SCG's first investment into India)\" (SCG One Report 2024, English)"
+    ],
+    "india_operations": "First India manufacturing operation \u2014 AAC wall plant JV with BigBloc Construction in Gujarat; SCG International trading presence",
+    "report_used": "One Report 2024 (English) \u2014 official PDF retrieved via Wayback Machine; direct company site is bot-protected"
+   },
+   "source_cluster": "asean",
+   "notes": "Explicit first-India-investment language despite flat revenue. Flagship APAC project remains Long Son Petrochemicals (Vietnam); the report is internally inconsistent on LSP commissioning timing (2027 vs 2030)"
   },
   {
    "company": "GOKALDAS EXPORTS LTD.",
@@ -11500,6 +13046,63 @@
    }
   },
   {
+   "company": "Americana Restaurants International",
+   "ticker": "6015.SR (Tadawul; dual-listed AMR on ADX)",
+   "market": "gulf_mena",
+   "country": "UAE",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.09656999,
+    "roe": 0.50802,
+    "revenue_growth": 0.133
+   },
+   "expansion_signal": false,
+   "lead_score": 62.7,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [],
+    "india_operations": "None. FY2024 release describes operations \"across the Middle East, North Africa and Kazakhstan\"; FY2024 new markets were Kazakhstan, Morocco, Iraq + Jan-2025 Oman Pizza Hut acquisition. No South/Southeast Asia or India language found (honest NONE).",
+    "report_used": "Americana Restaurants FY2024 earnings release (Feb 2025)"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "Profitability VERIFIED via yfinance on the Tadawul dual listing 6015.SR (ADX line AMR.AE does not resolve). yfinance figures are trailing (margin 9.7%, ROE 50.8%, rev growth +13.3%); the FY2024 release itself showed revenue $2.20bn (-9%) and net profit $158.8m (-38.8%)."
+  },
+  {
    "company": "NEXTERA ENERGY INC",
    "ticker": "NEE",
    "market": "US",
@@ -11607,6 +13210,62 @@
    }
   },
   {
+   "company": "UCB",
+   "ticker": "UCB.BR",
+   "market": "BR",
+   "country": "Belgium",
+   "sector": "Pharma & Bulk Drugs",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.2013,
+    "roe": 0.1491,
+    "revenue_growth": 0.266
+   },
+   "expansion_signal": false,
+   "lead_score": 61.0,
+   "central_lanes": [
+    {
+     "instrument": "PLI Pharma / bulk drug parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "PRIP",
+     "status": "R&D push"
+    },
+    {
+     "instrument": "TDB Rare Disease CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"In the short term, UCB is exploring the launch of novel medicines in immunology, neurology, and rare diseases in China.\" (Jean-Christophe Tellier, CEO, UCB press release, 26 August 2024)",
+     "\"We are convinced that the CBC Group and Mubadala are the ideal partners to advance the medicine portfolio and continue to improve the lives of people living with neurology and allergy diseases in mainland China.\" (Jean-Christophe Tellier, CEO, UCB press release, 26 August 2024)"
+    ],
+    "india_operations": "UCB India Pvt Ltd, Mumbai (Peninsula Towers, Lower Parel) \u2014 a small commercial affiliate (~13 employees per Tracxn, Jan 2025) focused on innovative neurology medicines; the ~350-person branded-generics business was sold to Dr Reddy's in 2015 for INR 8 bn (~$128M), per Fierce Pharma.",
+    "report_used": "Integrated Annual Report 2024 site (reports.ucb.com) returned HTTP 429 on fetch; used official UCB press release 26-Aug-2024 (China divestment) + Fierce Pharma / Tracxn for India footprint (Fierce Pharma page itself 403'd \u2014 divestment details taken from search-result text, corroborated across sources)."
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Direction of travel in APAC is DIVESTMENT, not expansion: mature neurology/allergy China business (Keppra, Vimpat, Neupro, Zyrtec, Xyzal + Zhuhai plant) sold to CBC Group/Mubadala for $680M, completed 29 Nov 2024. Residual APAC interest is commercial launches of novel medicines (China, Japan), not capacity/investment. India presence is a minimal sales office post-2015 Dr Reddy's divestment. No India investment language found."
+  },
+  {
    "company": "PPG INDUSTRIES INC",
    "ticker": "PPG",
    "market": "US",
@@ -11662,6 +13321,57 @@
     "investment_sentences": [],
     "filing_date": "2026-02-19"
    }
+  },
+  {
+   "company": "Qatar Aluminium Manufacturing Company Q.P.S.C.",
+   "ticker": "QAMC.QA",
+   "market": "gulf_mena",
+   "country": "Qatar",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.219,
+    "roe": 0.109,
+    "revenue_growth": null
+   },
+   "expansion_signal": false,
+   "lead_score": 59.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"sustained emphasis on Asian markets\" (Qatar Aluminium Manufacturing Annual Report 2025); Asia = 67% of sales (geography disclosure)"
+    ],
+    "india_operations": "None in India, and zero India-specific language found (honest India-NONE; MEDIUM reflects the deliberate Asia tilt only). 50% owner of Qatalum smelter JV with Hydro.",
+    "report_used": "Qatar Aluminium Manufacturing Annual Report 2025 (published Jan-2026)"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "yfinance QAMC.QA resolves but margin field reads 0.0 (JV-holding artifact - revenue near nil, income is share of Qatalum); profitability block carries AR2025 look-through: NP QR 768m (+25%), NPM ~21.9%, ROE ~10.9%. yfinance ROE 12.1% > 0 confirms positive profitability."
   },
   {
    "company": "FREEPORT-MCMORAN INC",
@@ -12112,6 +13822,65 @@
    }
   },
   {
+   "company": "Juhayna Food Industries",
+   "ticker": "JUFO.CA",
+   "market": "gulf_mena",
+   "country": "Egypt",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0637,
+    "roe": 0.2378,
+    "revenue_growth": 0.2338
+   },
+   "expansion_signal": false,
+   "lead_score": 55.9,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Aspiration to \"expand into a large number of new markets in Europe and Asia\" (Juhayna Gulfood 2024 press release)"
+    ],
+    "india_operations": "None; Egypt-domestic dairy/juice producer. Single aspiration sentence on Europe/Asia expansion, no concrete APAC investment.",
+    "report_used": "Juhayna FY2024 results + Gulfood 2024 press release"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "Profitability verified via yfinance financial statements (FY2025: margin 6.4%, ROE 23.8%, rev growth +23.4%). Published FY2024 NPM ~11.2%. EGP figures FX-inflated."
+  },
+  {
    "company": "EMERSON ELECTRIC CO",
    "ticker": "EMR",
    "market": "US",
@@ -12412,6 +14181,126 @@
    }
   },
   {
+   "company": "Fincantieri",
+   "ticker": "FCT.MI",
+   "market": "MI",
+   "country": "Italy",
+   "sector": "Shipbuilding & Marine",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0138,
+    "roe": 0.1281,
+    "revenue_growth": -0.078
+   },
+   "expansion_signal": true,
+   "lead_score": 54.6,
+   "central_lanes": [
+    {
+     "instrument": "SBFAS 2.0",
+     "status": "to 31-Mar-2036, 15-25% of vessel cost"
+    },
+    {
+     "instrument": "Maritime Development Fund",
+     "status": "Rs 25,000cr incl. IIF Rs 5,000cr"
+    },
+    {
+     "instrument": "SbDS",
+     "status": "Rs 19,989cr capacity building"
+    },
+    {
+     "instrument": "Ports/shipping bills 2024-25",
+     "status": "legal modernisation done"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (shipping-container thrust + scrapping)",
+    "AP/TN coastal packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "This agreement marks a key strategic step for Fincantieri in India, a market of central importance in our long-term international growth strategy (Pierroberto Folgiero, CEO, Fincantieri press release on WASS Black Shark Advanced torpedo contract with the Indian Navy \u2014 'With a total value of over 200 million euros, this agreement represents the largest contract in the history of WASS', 2025-12-30)",
+     "Fincantieri has been following the renewal and expansion program of the Indian Navy's fleet for some time, considering this market as strategic. (Fincantieri press release on Cochin Shipyard MoU, 2020-10-27)",
+     "The Group's expansion into high-potential markets continues: Fincantieri reinforces its presence in the Middle East and Southeast Asia through new strategic agreements ... an addressable market worth around euro 20 billion, especially in Italy and the United States, and in the Middle East and Southeast Asia (Fincantieri FY2024 results press release, March 2025)"
+    ],
+    "india_operations": "Fincantieri India subsidiary (named in the 2020 Cochin MoU release); MoU with Cochin Shipyard covering design/local construction of naval vessels, mechanical products, automation, repair and training; past deliveries to Indian Navy incl. fleet tankers Deepak and Shakti and research vessel Sagar Nidhi; P17A frigate consultancy with MDL/GRSE (press); Dec 2025 EUR 200m+ WASS torpedo order for India's six Scorpene submarines (deliveries 2028-2030, built in Livorno).",
+    "report_used": "Annual Report 2024 PDF download blocked (server returned an HTML block page); used official fincantieri.com press releases: FY2024 consolidated results (Mar 2025), WASS Indian Navy contract (Dec 2025), Cochin Shipyard MoU (Oct 2020)"
+   },
+   "source_cluster": "europe_tail",
+   "notes": "CEO explicitly calls India 'a market of central importance in our long-term international growth strategy' and 'one of the most dynamic naval hubs globally' (Dec 2025 release) \u2014 the clearest forward-looking India statement among the four. APAC breadth confirmed by the formalized EUR 1.18bn two-MPCS contract with the Indonesian Navy (FY2024 results release). No Fincantieri-ONGC master agreement found in searches \u2014 that specific claim is unverified; the concrete India instruments are the Cochin MoU (2020), P17A collaboration with MDL/GRSE, and the WASS torpedo contract (2025). Delivery/production remains in Italy (Livorno) for the torpedo order \u2014 no India plant."
+  },
+  {
+   "company": "Indofood CBP Sukses Makmur",
+   "ticker": "ICBP.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1197,
+    "roe": 0.1463,
+    "revenue_growth": 0.076
+   },
+   "expansion_signal": false,
+   "lead_score": 54.3,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"Sales to the Middle East and Africa increased +7.4% YoY to IDR 17.35 trillion\" (Binaartha Sekuritas ICBP note, Apr 2025)",
+     "\"Other Asia saw a strong increase of +32% YoY to IDR 2.09 trillion\" (Binaartha Sekuritas ICBP note, Apr 2025)"
+    ],
+    "india_operations": "No confirmed India operations; circulating 'Indomie India variant' claim did not verify",
+    "report_used": "FY2024 results \u2014 company IR site inaccessible (TLS); press-substituted: Binaartha Sekuritas note, Apr 2025"
+   },
+   "source_cluster": "asean",
+   "notes": "Overseas thrust is Middle East/Africa via Pinehill; 'Other Asia' growing +32% YoY but no country-level commitment"
+  },
+  {
    "company": "CIPLA LTD",
    "ticker": "CIPLA",
    "market": "IN",
@@ -12513,6 +14402,61 @@
     "investment_sentences": [],
     "filing_date": "2026-02-19"
    }
+  },
+  {
+   "company": "Mesaieed Petrochemical Holding Q.P.S.C.",
+   "ticker": "MPHC.QA",
+   "market": "gulf_mena",
+   "country": "Qatar",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.205,
+    "roe": 0.033,
+    "revenue_growth": null
+   },
+   "expansion_signal": false,
+   "lead_score": 53.6,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Indian sub-continent = 26% of group revenue FY2025 (joint-largest region) and 54% of the chlor-alkali segment - disclosed only via geography charts, no narrative prose (Mesaieed Petrochemical Annual Report 2025, geography disclosures; chart figures, not verbatim text)"
+    ],
+    "india_operations": "No India assets; quietly the most India-dependent Qatar name by revenue share (ISC 26% of group). New PVC capacity launched end-2025, destination unstated.",
+    "report_used": "Mesaieed Petrochemical Holding Annual Report 2025 (published Jan-2026)"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "yfinance MPHC.QA resolves but .info fields are JV-holding artifacts (margin 95.4%, revenue_growth -98.4% - income is share of JV profit vs tiny consolidated revenue); profitability block therefore carries AR2025 look-through figures: NP QR 533m (-26%), NPM ~20.5%, ROE ~3.3%. yfinance ROE 2.1% > 0 confirms positive profitability."
   },
   {
    "company": "Dorman Products, Inc.",
@@ -12744,6 +14688,173 @@
    }
   },
   {
+   "company": "Coca-Cola FEMSA",
+   "ticker": "KOFUBL.MX",
+   "market": "BMV (Mexico; also NYSE ADR: KOF)",
+   "country": "Mexico",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0788,
+    "roe": 0.1583,
+    "revenue_growth": 0.011
+   },
+   "expansion_signal": false,
+   "lead_score": 51.9,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "We purchase PET resin from several Asian suppliers, such as SFX - Jiangyin Xingyu New Material Co. Ltd. and India Reliance Industry (a joint venture with DAK Resinas Americas Mexico, S.A. de C.V.) (Coca-Cola FEMSA Form 20-F FY2024, raw materials section)",
+     "In December 2018, CIBR completed the sale of its stake in KOF Philippines back to The Coca-Cola Company through the exercise of CIBR's option to sell. (Coca-Cola FEMSA Form 20-F FY2024, corporate history)"
+    ],
+    "india_operations": "None; sole India link is Reliance Industries as a PET-resin supplier (via its JV with DAK Americas Mexico). Its former Asia venture (Coca-Cola FEMSA Philippines) was sold back to TCCC in 2018 and survives only as history.",
+    "report_used": "Coca-Cola FEMSA Form 20-F FY2024 (SEC filing, Apr-2025)"
+   },
+   "source_cluster": "latam",
+   "notes": "Borderline NONE: the India mention is procurement-only, with zero investment/expansion/strategy language for APAC. The pre-2019 'Asian division' language is gone from the 2024 filing."
+  },
+  {
+   "company": "Astra International",
+   "ticker": "ASII.JK",
+   "market": "IDX",
+   "country": "Indonesia",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0994,
+    "roe": 0.1325,
+    "revenue_growth": -0.056
+   },
+   "expansion_signal": false,
+   "lead_score": 51.8,
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "\"Looking ahead, we are confident in Indonesia's long-term growth prospects...\" \u2014 Djony Bunarto Tjondro (PT Astra \u2014 2024 Full Year Financial Statements, RNS via Investegate, 27 Feb 2025)"
+    ],
+    "india_operations": "None",
+    "report_used": "PT Astra \u2014 2024 Full Year Financial Statements, RNS release via Investegate, 27 Feb 2025"
+   },
+   "source_cluster": "asean",
+   "notes": "Explicitly domestic posture; all 2024 capital deployment Indonesian. Quote is domestic-focus context, not APAC language"
+  },
+  {
+   "company": "Genomma Lab Internacional",
+   "ticker": "LABB.MX",
+   "market": "BMV (Mexico)",
+   "country": "Mexico",
+   "sector": "Pharma & Bulk Drugs",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0925,
+    "roe": 0.1405,
+    "revenue_growth": -0.049
+   },
+   "expansion_signal": false,
+   "lead_score": 51.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI Pharma / bulk drug parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "PRIP",
+     "status": "R&D push"
+    },
+    {
+     "instrument": "TDB Rare Disease CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "envia equipos de investigacion a las principales ciudades de Europa, Estados Unidos y Asia con el proposito de identificar nuevas oportunidades de productos, ultimas tendencias del mercado, asi como los ingredientes activos mas novedosos utilizados en la produccion de productos farmaceuticos OTC. [sends research teams to major cities of Europe, the US and Asia to identify new product opportunities, market trends and novel active ingredients for OTC pharma production.] (Genomma Lab Reporte Anual 2024, CNBV/BMV)",
+     "Durante el ano 2023, las principales compras de insumos y producto terminado de la Compania fueron producidas por fabricantes en Argentina, Alemania, Brasil, China, Colombia, Espana, Estados Unidos, Francia y Mexico. [Main input/finished-product purchases came from manufacturers in Argentina, Germany, Brazil, China, Colombia, Spain, US, France and Mexico.] (Genomma Lab Reporte Anual 2024)"
+    ],
+    "india_operations": "None; India appears only in trademark-registration country lists (defensive IP). China is a named manufacturing source; India is notably absent from the supplier list.",
+    "report_used": "Genomma Lab Reporte Anual 2024 (CNBV) + integrated ESG report 2024"
+   },
+   "source_cluster": "latam",
+   "notes": "Asia features as a trend-scouting destination and China as a sourcing origin \u2014 passing mentions only; the India-API-sourcing hypothesis is NOT confirmed in its own reporting."
+  },
+  {
    "company": "RTX Corp",
    "ticker": "RTX",
    "market": "US",
@@ -12868,6 +14979,65 @@
    }
   },
   {
+   "company": "Enel Chile",
+   "ticker": "ENELCHILE.SN",
+   "market": "Santiago (also NYSE ADR: ENIC)",
+   "country": "Chile",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.1159,
+    "roe": 0.1016,
+    "revenue_growth": -0.017
+   },
+   "expansion_signal": false,
+   "lead_score": 51.0,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "FINDING (not a quote): full-text search of the FY2025 Form 20-F returns zero hits for 'India' and 'APAC'; the three 'Asia' hits are all inside director/officer biographies, and the single 'Pacific' hit is Pacific Ocean temperatures in the El Nino hydrology discussion. (Enel Chile Form 20-F FY2025, SEC EDGAR)"
+    ],
+    "india_operations": "None; footprint is 100% Chile, and parent Enel SpA's Asia exit means no APAC exposure flows through Enel Chile's reporting.",
+    "report_used": "Enel Chile Form 20-F FY2025 (SEC filing, Apr-2026)"
+   },
+   "source_cluster": "latam",
+   "notes": "Largest Chilean renewables platform but a pure single-country utility \u2014 honest NONE."
+  },
+  {
    "company": "ZIMMER BIOMET HOLDINGS, INC.",
    "ticker": "ZBH",
    "market": "US",
@@ -12924,6 +15094,59 @@
    }
   },
   {
+   "company": "Umicore",
+   "ticker": "UMI.BR",
+   "market": "BR",
+   "country": "Belgium",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0198,
+    "roe": 0.1858,
+    "revenue_growth": 0.441
+   },
+   "expansion_signal": false,
+   "lead_score": 49.0,
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"Umicore also operates an Automotive Catalysts plant located in Shirwal, Pune. This is a state of art facility for the manufacturing of automobile catalysts, which runs on the grounds of sustainability and is technologically novel with the production base.\" (umicore.com UMS India local-presence page, fetched 2026)",
+     "\"Umicore is assessing the configuration of its existing footprint in Asia and Europe as well as its expansion project in North America.\" (Umicore Half Year Results 2024, umicore.com newsroom)",
+     "\"This scenario results in a well utilized capacity in the last years of this decade, except for the Chinese CAM assets which Umicore assumes to remain underutilized.\" (Umicore Half Year Results 2024, umicore.com newsroom)"
+    ],
+    "india_operations": "Umicore Autocat India Pvt Ltd runs an automotive-catalyst plant at Shirwal (Khandala, near Pune, Maharashtra) \u2014 a greenfield site announced 2008 with capacity to equip ~1.5 million cars/year \u2014 plus a Mumbai shared-services/liaison office (UMS India, est. 1998).",
+    "report_used": "Annual Report 2024 PDF exceeded fetch size limit; used official Umicore Half Year Results 2024 release (umicore.com) + umicore.com India local-presence page + press (CarTrade on 2008 plant announcement)."
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Real, long-standing India manufacturing footprint (autocatalysts), but no new India capacity commitment found. APAC battery-materials signal is currently NEGATIVE: 2024 impairments hit Battery Materials assets 'mainly in Asia', Chinese CAM assets assumed to remain underutilized, and further Europe/Korea footprint expansion was 'minimized'. Korea remains an R&D hub (Cheonan cathode R&D center, per S&P AutoTechInsight). Grade MEDIUM rests on existing India operations, not forward investment."
+  },
+  {
    "company": "HARLEY-DAVIDSON, INC.",
    "ticker": "HOG",
    "market": "US",
@@ -12977,6 +15200,63 @@
     ],
     "filing_date": "2026-02-26"
    }
+  },
+  {
+   "company": "Fertiglobe plc",
+   "ticker": "FERTIGLB (ADX)",
+   "market": "gulf_mena",
+   "country": "UAE",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.08,
+    "roe": 0.104,
+    "revenue_growth": -0.17
+   },
+   "expansion_signal": false,
+   "lead_score": 48.3,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"...access to key end markets (including Brazil, India, and East Africa), freight and logistics optimization...\" (Fertiglobe Annual Report 2024, commercial synergies of ADNOC control)",
+     "\"In November 2023, Fertiglobe announced its first shipment of ISCC PLUS-certified renewable ammonia from its facilities in Egypt for use in the production of near-zero emissions soda ash, a key ingredient in laundry powder, to be manufactured by Unilever in India.\" (Fertiglobe Annual Report 2024)",
+     "Revenue by destination FY2024: Asia & Oceania $709.4m (35%) - largest region alongside Europe $720.8m (Fertiglobe Annual Report 2024)"
+    ],
+    "india_operations": "None; India is an export end-market in passing. No India urea-tender or offtake language and no APAC expansion commitment in the 2024 AR (honest finding).",
+    "report_used": "Fertiglobe Annual Report 2024"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "UNVERIFIED (yfinance gap): ADX not on yfinance. AR2024: revenue $2,009m (~-17%), net profit attributable $160m (-54%, margin ~8.0%), equity $1,537.7m (ROE ~10.4% incl. NCI). ADNOC owns 86.2%."
   },
   {
    "company": "BECTON DICKINSON & CO",
@@ -13194,6 +15474,66 @@
    }
   },
   {
+   "company": "Thai Union Group",
+   "ticker": "TU.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0348,
+    "roe": 0.1056,
+    "revenue_growth": 0.076
+   },
+   "expansion_signal": false,
+   "lead_score": 44.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "\"TFM began its feed operations in Thailand and later expanded to India and Indonesia\" (Thai Union 56-1 One Report 2024)",
+     "\"Thai Union invested in Avanti Feeds Limited, an Indian producer of shrimp feed and frozen shrimp\" (Thai Union 56-1 One Report 2024)"
+    ],
+    "india_operations": "Avanti Feeds associate stake (8.78% via TUAIH, group ~24.2% at report date) plus Avanti Frozen Foods; Thai Union Feedmill (TFM) feed operations extended into India",
+    "report_used": "56-1 One Report 2024 (official PDF via Wayback Machine)"
+   },
+   "source_cluster": "asean",
+   "notes": "IMPORTANT \u2014 direction of travel post-report is DIVESTMENT, not expansion: March 2025 sale of 4.4% of Avanti Feeds (~Rs 435 crore) cut the group holding from 24.21% to 19.81% (press-reported, not in the report). Grade reflects real existing India operations, not new commitment"
+  },
+  {
    "company": "Matson, Inc.",
    "ticker": "MATX",
    "market": "US",
@@ -13249,6 +15589,66 @@
     "investment_sentences": [],
     "filing_date": "2026-02-27"
    }
+  },
+  {
+   "company": "Charoen Pokphand Foods",
+   "ticker": "CPF.BK",
+   "market": "SET",
+   "country": "Thailand",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.038,
+    "roe": 0.0848,
+    "revenue_growth": -0.053
+   },
+   "expansion_signal": false,
+   "lead_score": 43.7,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "India appears in the 17-country production-base list (Charoen Pokphand Foods 56-1 One Report 2024)",
+     "India appears in the 11-country animal-feed operations list (Charoen Pokphand Foods 56-1 One Report 2024)"
+    ],
+    "india_operations": "Long-established: CPF (India) Pvt Ltd (99.99%), C.P. Aquaculture (India), CP Norfolk, Charoen Pokphand Trading India, AP Brood Stock JV; dedicated President-India Livestock and President-India Aquaculture roles",
+    "report_used": "56-1 One Report 2024 (official; 28 India mentions)"
+   },
+   "source_cluster": "asean",
+   "notes": "Deepest existing India footprint in the cluster but the report states no NEW India commitment \u2014 hence MEDIUM not HIGH. Revenue declined 5.3%"
   },
   {
    "company": "HORMEL FOODS CORP /DE/",
@@ -13309,6 +15709,58 @@
    }
   },
   {
+   "company": "Aluar Aluminio Argentino",
+   "ticker": "ALUA.BA",
+   "market": "BYMA (Buenos Aires)",
+   "country": "Argentina",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0461,
+    "roe": 0.0563,
+    "revenue_growth": 0.542
+   },
+   "expansion_signal": false,
+   "lead_score": 42.4,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Los mercados mas importantes para la Compania son los de Estados Unidos, Latinoamerica y Asia. [The Company's most important markets are the United States, Latin America and Asia.] (Aluar Prospecto de Emision, 2025)",
+     "en Asia los clientes son exclusivamente las companias de trading japonesas [in Asia the clients are exclusively Japanese trading companies] (Aluar Prospecto de Emision, 2025)"
+    ],
+    "india_operations": "None; Asia exposure is exports (~80% of volume exported overall) sold via Japanese trading houses (~5% of exports to Japan per FIX SCR rating report); zero India mentions in the 247-page prospectus.",
+    "report_used": "Aluar Prospecto de Emision 2025 (247pp) + FIX SCR rating report"
+   },
+   "source_cluster": "latam",
+   "notes": "Asia is an export destination handled by Japanese trading intermediaries, not an investment target; capex is entirely domestic (Puerto Madryn smelter, wind power). Revenue growth figure inflated by ARS terms."
+  },
+  {
    "company": "LUX INDUSTRIES LIMITED",
    "ticker": "LUXIND",
    "market": "IN",
@@ -13353,6 +15805,121 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Gulf Pharmaceutical Industries (Julphar)",
+   "ticker": "JULPHAR (ADX)",
+   "market": "gulf_mena",
+   "country": "UAE",
+   "sector": "Pharma & Bulk Drugs",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.034,
+    "roe": 0.055,
+    "revenue_growth": 0.027
+   },
+   "expansion_signal": false,
+   "lead_score": 41.4,
+   "central_lanes": [
+    {
+     "instrument": "PLI Pharma / bulk drug parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "PRIP",
+     "status": "R&D push"
+    },
+    {
+     "instrument": "TDB Rare Disease CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Hetero is \"one of India's leading generic pharmaceutical companies and the world's largest producer of anti-retroviral drugs\"; \"Julphar will distribute and commercialize several products in multiple therapeutic areas such as cardiovascular and nervous system (NS) and pain management.\" (Julphar press release, 2022 - Indian products into MENA, not Julphar investing in India)",
+     "\"In 2025, Julphar announced an exclusive licensing partnership with Dong-A ST to tech transfer, manufacture, and commercialize a Darbepoetin Alfa biosimilar... across the MENA region.\" (Julphar Integrated Report 2025)"
+    ],
+    "india_operations": "No India operations; inbound licensing from India's Hetero (2022) and Korea's Dong-A ST (2025), plus Julphar Bangladesh Ltd plant (Dhaka, since 2009). Growth capex points at Saudi Arabia (AED 300m biologics facility), not APAC.",
+    "report_used": "Julphar Integrated Report 2025 + FY2024 results press release"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "UNVERIFIED (yfinance gap): ADX not on yfinance. FY2024: revenue AED 1,312.5m (+2.7%), net profit AED 44.9m (vs -98.5m FY23; margin ~3.4%), equity ~AED 806-810m (ROE ~5.5%). Weak-MEDIUM: real APAC touchpoints but all MENA-facing."
+  },
+  {
+   "company": "Universal Robina Corporation",
+   "ticker": "URC.PS",
+   "market": "PSE",
+   "country": "Philippines",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.077,
+    "roe": null,
+    "revenue_growth": 0.03
+   },
+   "expansion_signal": false,
+   "lead_score": 41.2,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "\"BCF International delivered sales of Php34.8 billion, up 8%...\" (URC SEC Form 17-C FY2024 earnings release, 17 Mar 2025)"
+    ],
+    "india_operations": "Export region only \u2014 'Africa, Middle East and India' sales team run from Singapore; URC exports to 38 countries, no India plant or subsidiary",
+    "report_used": "URC SEC Form 17-C FY2024 earnings release (17 Mar 2025), read in full"
+   },
+   "source_cluster": "asean",
+   "notes": "profitability: UNVERIFIED (yfinance gap \u2014 PSE tickers return no fundamentals). Company-verified from own FY2024 release: sales Php161.9bn (+3%), net income Php12.5bn (~7.7% net margin), core NI Php12.2bn; margin/revenue_growth fields are report-derived, ROE not company-verified"
   },
   {
    "company": "PCBL CHEMICAL LIMITED",
@@ -13447,6 +16014,117 @@
      "Head of Government Affairs"
     ]
    }
+  },
+  {
+   "company": "Ternium",
+   "ticker": "TX",
+   "market": "NYSE ADR (Luxembourg-incorporated; Argentina listing TXAR.BA)",
+   "country": "Argentina/Latin America",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0366,
+    "roe": 0.0323,
+    "revenue_growth": 0.0
+   },
+   "expansion_signal": false,
+   "lead_score": 40.1,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "On September 19, 2024, the Brazilian government initiated an anti-dumping investigation into imports of pre-painted steel from China and India. (Ternium Form 20-F, FY2024)",
+     "March 2021: JSW Steel announced the acquisition of Bhushan Power and Steel Ltd under the provisions of India's insolvency bankruptcy code. (Ternium Form 20-F FY2024, industry-consolidation background section)"
+    ],
+    "india_operations": "None; all 11 India mentions in the 20-F are anti-dumping/trade-defense or industry-consolidation context, and Asia mentions are sales logistics.",
+    "report_used": "Ternium Form 20-F FY2024 (SEC filing)"
+   },
+   "source_cluster": "latam",
+   "notes": "India appears only as an import-competition threat and industry backdrop \u2014 no APAC investment interest. Profitability screened on NYSE ADR (TX, USD); Ternium Argentina (TXAR.BA) also profitable (margin 9.5%, ROE 4.2%, ARS)."
+  },
+  {
+   "company": "Orlen",
+   "ticker": "PKN.WA",
+   "market": "WA",
+   "country": "Poland",
+   "sector": "Green Energy & Fuels",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.0239,
+    "roe": 0.044,
+    "revenue_growth": 0.029
+   },
+   "expansion_signal": false,
+   "lead_score": 39.8,
+   "central_lanes": [
+    {
+     "instrument": "NGHM SIGHT",
+     "status": "electrolyser + GH2/ammonia windows via SECI"
+    },
+    {
+     "instrument": "BESS VGF via PSDF",
+     "status": "Jul-2025"
+    },
+    {
+     "instrument": "PM-KUSUM / Surya Ghar supply chain",
+     "status": "e-2W E-DRIVE closes 31-Jul-2026"
+    },
+    {
+     "instrument": "Ethanol/SATAT",
+     "status": "multi-feedstock conversions open"
+    }
+   ],
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "\"Central and Eastern Europe is experiencing dynamic growth\" and \"We provide energy and fuel for more than 100 million Europeans\" \u2014 ORLEN Strategy 2035 page (orlen.pl, fetched 2026), which contains no mention of India, Asia, or Asia-Pacific."
+    ],
+    "india_operations": "No Indian subsidiary, plant, JV, or disclosed trading relationship with Indian refiners found; ORLEN Group's only Asian presence is a China-registered entity listed among group companies in the Q4 2024 consolidated report.",
+    "report_used": "ORLEN Strategy 2035 page (orlen.pl, fetched \u2014 zero India/Asia mentions); ORLEN Group Consolidated Quarterly Report Q4 2024 (PDF located; entity-country list including China taken from search-result excerpt, full PDF not parsed). Targeted searches for Orlen-India crude/product/LNG/petrochemical links returned nothing."
+   },
+   "source_cluster": "europe_tail",
+   "notes": "Recorded honestly as NONE for India. Multiple targeted searches (Orlen + India crude/refiners/LNG/paraxylene/jet fuel, 2024-2026) surfaced no linkage. Strategy 2035 (~PLN 350-380 bn capex to 2035) is explicitly Central/Eastern Europe-focused, with upstream in Norway/Poland/North America. Sole Asia touchpoint is a Chinese group entity (likely procurement/trading rep office) \u2014 a passing structural mention, not an investment signal. Products 'available in over 90 countries on 6 continents' is generic distribution language, not India-specific."
   },
   {
    "company": "Diamondback Energy, Inc.",
@@ -13562,7 +16240,62 @@
     "investment_sentences": [],
     "filing_date": "2026-02-17"
    }
+  },
+  {
+   "company": "Ezz Steel",
+   "ticker": "ESRS.CA",
+   "market": "gulf_mena",
+   "country": "Egypt",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.005,
+    "roe": null,
+    "revenue_growth": null
+   },
+   "expansion_signal": false,
+   "lead_score": 35.4,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [],
+    "india_operations": "None. Export record $1.58bn FY2023 but no Asia destination named (honest NONE).",
+    "report_used": "Ezz Steel FY2023/FY2024 results"
+   },
+   "source_cluster": "gulf_mena",
+   "notes": "FAILS PROFITABILITY SCREEN: FY2023 net LOSS EGP 717mn; FY2024 NPM ~0.5%. Kept in file for the record but excluded from any buy-interest shortlist. UNVERIFIED (yfinance has no financial statements for ESRS.CA; figures from published results)."
   }
  ],
- "china_pn3_note": "Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected \u2014 BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' \u2014 SAIC diluted MG Motor India to JSW (49%\u219239% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts carry the manufacturing \u2014 Prama Hikvision; (4) technology licensing/royalty (CATL's LRS model) is the theoretically PN3-compatible route but is now ALSO constrained from the Chinese side by Beijing's export controls on battery/rare-earth/process technology (the Reliance-CATL talks died partly on this); (5) pre-2020 grandfathered assets (Midea's Pune park, Luxshare's Tamil Nadu plant, BYD Chennai) become the only expansion platforms; (6) asset-light models \u2014 export/dealer networks (Gree, Baosteel, Wanhua sales office) and services (COSCO liner calls) \u2014 proceed freely because they involve no Indian FDI. Net effect: annual reports of Chinese majors show India as a fast-growing REVENUE geography (Haier +30%, 'developing countries' +30% for Mindray) while capex conspicuously routes to Vietnam, Thailand, Indonesia, Brazil, Hungary, Saudi Arabia instead."
+ "china_pn3_note": "Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected \u2014 BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' \u2014 SAIC diluted MG Motor India to JSW (49%\u219239% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts carry the manufacturing \u2014 Prama Hikvision; (4) technology licensing/royalty (CATL's LRS model) is the theoretically PN3-compatible route but is now ALSO constrained from the Chinese side by Beijing's export controls on battery/rare-earth/process technology (the Reliance-CATL talks died partly on this); (5) pre-2020 grandfathered assets (Midea's Pune park, Luxshare's Tamil Nadu plant, BYD Chennai) become the only expansion platforms; (6) asset-light models \u2014 export/dealer networks (Gree, Baosteel, Wanhua sales office) and services (COSCO liner calls) \u2014 proceed freely because they involve no Indian FDI. Net effect: annual reports of Chinese majors show India as a fast-growing REVENUE geography (Haier +30%, 'developing countries' +30% for Mindray) while capex conspicuously routes to Vietnam, Thailand, Indonesia, Brazil, Hungary, Saudi Arabia instead.",
+ "clusters_merged": [
+  "asean",
+  "europe_tail",
+  "gulf_mena",
+  "latam"
+ ]
 }

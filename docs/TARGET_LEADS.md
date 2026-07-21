@@ -1,6 +1,6 @@
 # Target leads — foreign companies with verified India intent
 
-*Generated 2026-07-21 by `scripts/build_target_leads.py` from `layers/16_leads.json` — do not hand-edit. 66 priority + 37 warm targets across 23 countries; 9 China names held on the Press Note 3 watch-list. Evidence quotes are from each company's own latest annual report / 10-K. Contact enrichment (Lusha/Apollo) remains a separate, deliberate step — no personal data here.*
+*Generated 2026-07-21 by `scripts/build_target_leads.py` from `layers/16_leads.json` — do not hand-edit. 78 priority + 53 warm targets across 37 countries; 9 China names held on the Press Note 3 watch-list. Evidence quotes are from each company's own latest annual report / 10-K. Contact enrichment (Lusha/Apollo) remains a separate, deliberate step — no personal data here.*
 
 ## Tier 1 — priority targets (stated India intent)
 
@@ -328,73 +328,145 @@
 - Landing states: UP (ECMS top-up = equal to central); Assam (+40% of ISM capex); TN (Semiconductor 2024 + Mission 2030)
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**55. CF Industries Holdings, Inc.** (CF, United States) — Chemicals & Plastics — score 117.8
+**55. Kongsberg Gruppen** (KOG.OL, Norway) — Aerospace & Defence — score 126.4
+- Evidence: It is our pleasure to open this new facility in Kochi and expand our operations in India — Annette Holte, President of Kongsberg Maritime India (Kongsberg Maritime Kochi facility announcement via Yahoo Finance, May 2024)
+- Why now: iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)
+- Landing states: Karnataka A&D 2022-27; UP Defence Corridor (UPEIDA); TN aerospace packages
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**56. Delta Electronics (Thailand)** (DELTA.BK, Thailand) — Electronics & Semiconductors — score 120.2
+- Evidence: "We are expanding operations significantly in Thailand and India to meet customers' local manufacturing needs... In 2024, we inaugurated new India headquarters and R&D center in Bengaluru" (Delta Electronics (Thailand) 5
+- Why now: ECMS (open -- Rs 40,000cr outlay, FCFS)
+- Landing states: UP (ECMS top-up = equal to central); Assam (+40% of ISM capex); TN (Semiconductor 2024 + Mission 2030)
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**57. CF Industries Holdings, Inc.** (CF, United States) — Chemicals & Plastics — score 117.8
 - Evidence: ogen, energy, environmental or carbon policies may support development of additional nitrogen production in locations outside North America, including Europe, Australia, India, and the Middle East.
 - Why now: TDB Chemical CFP (open)
 - Landing states: Gujarat (chemicals thrust); Odisha IPR (priority sector); Rajasthan RIPS
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**56. Bayer AG** (BAYN.DE, Germany) — Pharma & Bulk Drugs — score 115
+**58. Bayer AG** (BAYN.DE, Germany) — Pharma & Bulk Drugs — score 115
 - Evidence: Bayer's Crop Science division works with more than 30 million smallholder farmers in India; 350+ FPOs established across 20 states with the Small Farmers Agri-Business Consortium, engagement with 1,500+ FPOs reaching ~1 
 - Why now: TDB Rare Disease CFP (open)
 - Landing states: Telangana Next-Gen Life Sciences 2026-30 (full stack); Himachal (Nalagarh ecosystem); Sikkim (legacy hub)
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**57. Powerchip Semiconductor Manufacturing Corp (PSMC)** (6770.TW, Taiwan) — Electronics & Semiconductors — score 115
+**59. Powerchip Semiconductor Manufacturing Corp (PSMC)** (6770.TW, Taiwan) — Electronics & Semiconductors — score 115
 - Evidence: Sept 2024: 'Tata Electronics has completed the Definitive Agreement with Powerchip Semiconductor Manufacturing Corporation (PSMC) of Taiwan' for India's first 12-inch greenfield fab at Dholera, Gujarat
 - Why now: ECMS (open -- Rs 40,000cr outlay, FCFS)
 - Landing states: UP (ECMS top-up = equal to central); Assam (+40% of ISM capex); TN (Semiconductor 2024 + Mission 2030)
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**58. Saudi Basic Industries Corporation (SABIC)** (2010.SR, Saudi Arabia) — Chemicals & Plastics — score 115
+**60. Saudi Basic Industries Corporation (SABIC)** (2010.SR, Saudi Arabia) — Chemicals & Plastics — score 115
 - Evidence: SABIC Integrated Annual Report 2025 and corporate disclosures: invested more than USD 100 million in the SABIC Technology & Innovation Center in Bengaluru - described as one of the largest investments in India by a Saudi
 - Why now: TDB Chemical CFP (open)
 - Landing states: Gujarat (chemicals thrust); Odisha IPR (priority sector); Rajasthan RIPS
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**59. Vertiv Holdings Co** (VRT, United States) — White Goods & Electricals — score 113.1
+**61. Indra Sistemas** (IDR.MC, Spain) — Aerospace & Defence — score 114.0
+- Evidence: "a contract worth more than 55 million euros" to deploy "an integrated system to centralize all the phases of air traffic surveillance and control in India" "at five of the country's main air traffic control centers and 
+- Why now: iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)
+- Landing states: Karnataka A&D 2022-27; UP Defence Corridor (UPEIDA); TN aerospace packages
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**62. Vertiv Holdings Co** (VRT, United States) — White Goods & Electricals — score 113.1
 - Evidence: We have significant manufacturing and operations facilities in the Americas, Asia Pacific and Europe, Middle East & Africa.
 - Why now: PLI White Goods; BEE/star-rating demand levers
 - Landing states: Standard state stacks (UP/Gujarat/TN capital+SGST menus)
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**60. Air Products & Chemicals, Inc.** (APD, United States) — Chemicals & Plastics — score 110.6
+**63. Sociedad Quimica y Minera de Chile (SQM)** (SQM-B.SN, Chile) — Green Energy & Fuels — score 111.2
+- Evidence: On April 22, 2024, the subsidiary SQM India Private Limited was incorporated. (SQM Form 20-F, FY2024)
+- Why now: PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)
+- Landing states: Odisha (GH2: 20y power package, uncapped 30% capital); Gujarat (green-energy thrust 25-40% eFCI); Rajasthan (RIPS boosters)
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**64. Air Products & Chemicals, Inc.** (APD, United States) — Chemicals & Plastics — score 110.6
 - Evidence: We are the primary beneficiary of the NEOM Green Hydrogen Company and consolidate the joint venture within our Middle East and India segment.
 - Why now: TDB Chemical CFP (open)
 - Landing states: Gujarat (chemicals thrust); Odisha IPR (priority sector); Rajasthan RIPS
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**61. ECOLAB INC.** (ECL, United States) — Chemicals & Plastics — score 102.4
+**65. Andritz** (ANDR.VI, Austria) — Green Energy & Fuels — score 108.4
+- Evidence: With a capacity of 3,000 MW, Saidongar-1 Karjat, located in the state of Maharashtra, will be India's largest pumped storage plant. ... ANDRITZ is currently involved in the implementation of seven new pumped storage plan
+- Why now: PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)
+- Landing states: Odisha (GH2: 20y power package, uncapped 30% capital); Gujarat (green-energy thrust 25-40% eFCI); Rajasthan (RIPS boosters)
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**66. ADNOC Gas plc** (ADNOCGAS (ADX), UAE) — Green Energy & Fuels — score 106.4
+- Evidence: "The agreement, valued in the range of $7 billion to $9 billion (AED25.7 to AED33 billion) over its 14-year term" for "up to 1.2 million metric tonnes per annum (mmtpa) of liquefied natural gas (LNG) to India" (ADNOC Gas
+- Why now: PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)
+- Landing states: Odisha (GH2: 20y power package, uncapped 30% capital); Gujarat (green-energy thrust 25-40% eFCI); Rajasthan (RIPS boosters)
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**67. Kerry Group** (KRZ.IR, Ireland) — Food Processing — score 104.9
+- Evidence: "The India market is dynamic and evolving and we are looking at our next phase of investment in India." (Siddharth Rastogi, GM Indian Subcontinent/South-West Asia, Kerry, interviewed in FFOODS/NuFFooDS Spectrum, Feb 2023
+- Why now: AIF (portal OPEN, Rs 94,272cr sanctioned)
+- Landing states: AP Food Processing 4.0; MP (IPP + food parks); Jharkhand Food & Feed 2024
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**68. ECOLAB INC.** (ECL, United States) — Chemicals & Plastics — score 102.4
 - Evidence: Approximately 43% of our employees are employed in North America, 21% in Europe, 12% in Latin America, 8% in Asia Pacific, 8% in India, Middle East and Africa, and 8% in Greater China.
 - Why now: TDB Chemical CFP (open)
 - Landing states: Gujarat (chemicals thrust); Odisha IPR (priority sector); Rajasthan RIPS
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**62. Bloom Energy Corp** (BE, United States) — White Goods & Electricals — score 98.8
+**69. Iveco Group** (IVG.MI, Italy) — Auto, EV & Components — score 100.5
+- Evidence: Together, Iveco and the commercial vehicle business of Tata Motors will have combined revenues of c.€22bn (INR 2,20,000Cr+) split across Europe (c.50%), India (c.35%) and the Americas (c.15%) (Tata Motors-Iveco Group joi
+- Why now: PM E-DRIVE; PLI-Auto / PLI-ACC
+- Landing states: TN EV 2023 (20% battery capital subsidy); MP EV 2025; UP EV 2022 + upevsubsidy portal
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**70. Danieli & C.** (DAN.MI, Italy) — Specialty Steel & Metals — score 99.9
+- Evidence: As on November 30, 2024, DIL had an order book of ₹2,511 crore which basis the revenue for FY24, provides a medium-term revenue visibility for the next 2-3 years. (CARE Ratings press release on Danieli India Limited, 202
+- Why now: Critical minerals mission / MMDR-2025 (exploration+processing openings)
+- Landing states: Odisha (metals downstream parks, 50% infra to Rs 25cr); Chhattisgarh (core-sector stack); Jharkhand JIIPP
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**71. Grupo Bimbo** (BIMBOA.MX, Mexico) — Food Processing — score 99.3
+- Evidence: The Group believes that markets like India, Romania, Tunisia, and other Eastern and Southeastern European countries have a high potential for continuous growth in the long term, and it plans to continue expanding by offe
+- Why now: AIF (portal OPEN, Rs 94,272cr sanctioned)
+- Landing states: AP Food Processing 4.0; MP (IPP + food parks); Jharkhand Food & Feed 2024
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**72. Bloom Energy Corp** (BE, United States) — White Goods & Electricals — score 98.8
 - Evidence: Our supply base is global with presence in North America, Asia, Europe and India, consisting of suppliers with multiple areas of expertise in compaction, sintering, brazing and dealing with specialty material manufacturi
 - Why now: PLI White Goods; BEE/star-rating demand levers
 - Landing states: Standard state stacks (UP/Gujarat/TN capital+SGST menus)
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**63. Solventum Corp** (SOLV, United States) — Medical Devices — score 91.9
+**73. Siam Cement Group (SCG)** (SCC.BK, Thailand) — Chemicals & Plastics — score 95.7
+- Evidence: "SCG International partnered with BigBloc Construction to establish a Autoclaved Aerated Concrete Wall plant... in Gujarat, India... This marks SCG's first manufacturing operation in India" (SCG One Report 2024, English)
+- Why now: TDB Chemical CFP (open)
+- Landing states: Gujarat (chemicals thrust); Odisha IPR (priority sector); Rajasthan RIPS
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**74. Solventum Corp** (SOLV, United States) — Medical Devices — score 91.9
 - Evidence: stiture impacts include lost sales from the Company’s Purification and Filtration business that was sold in September 2025, certain health care businesses retained by 3M India in connection with the Spin-Off, as well as 
 - Why now: TDB Medical Devices CFP (open)
 - Landing states: Telangana LS 2026-30; TN (structured packages); HP medical-device park
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**64. Corteva, Inc.** (CTVA, United States) — Chemicals & Plastics — score 90.4
+**75. Corteva, Inc.** (CTVA, United States) — Chemicals & Plastics — score 90.4
 - Evidence: th was driven primarily by the expected recovery in Brazil Safrinha corn and growth in North America soybeans and cotton, partially offset by reduced planted areas in EMEA, Asia Pacific and corn in Argentina.
 - Why now: TDB Chemical CFP (open)
 - Landing states: Gujarat (chemicals thrust); Odisha IPR (priority sector); Rajasthan RIPS
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**65. Mondelez International, Inc.** (MDLZ, United States) — Food Processing — score 72.4
+**76. Fincantieri** (FCT.MI, Italy) — Shipbuilding & Marine — score 84.6
+- Evidence: This agreement marks a key strategic step for Fincantieri in India, a market of central importance in our long-term international growth strategy (Pierroberto Folgiero, CEO, Fincantieri press release on WASS Black Shark 
+- Why now: SBFAS 2.0; Maritime Development Fund
+- Landing states: Gujarat (shipping-container thrust + scrapping); AP/TN coastal packages
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**77. Mondelez International, Inc.** (MDLZ, United States) — Food Processing — score 72.4
 - Evidence: such as the launch of co-branded chocolate innovations combining Biscoff with Cadbury Dairy Milk, Milka and other key brands in Europe as well as zero sugar Bournvita in India.
 - Why now: AIF (portal OPEN, Rs 94,272cr sanctioned)
 - Landing states: AP Food Processing 4.0; MP (IPP + food parks); Jharkhand Food & Feed 2024
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**66. LEAR CORP** (LEA, United States) — Auto, EV & Components — score 70.6
+**78. LEAR CORP** (LEA, United States) — Auto, EV & Components — score 70.6
 - Evidence: In particular, we believe that certain joint ventures have provided us, and will continue to provide us, with the opportunity to expand our business relationships with Asian automotive manufacturers, particularly in emer
 - Why now: PM E-DRIVE; PLI-Auto / PLI-ACC
 - Landing states: TN EV 2023 (20% battery capital subsidy); MP EV 2025; UP EV 2022 + upevsubsidy portal
@@ -405,7 +477,9 @@
 | Score | Company | Country | Sector | Why now |
 |---|---|---|---|---|
 | 111.8 | GE Vernova Inc. | United States | White Goods & Electricals | PLI White Goods; BEE/star-rating demand levers |
+| 109.9 | Borouge plc | UAE | Chemicals & Plastics | TDB Chemical CFP (open) |
 | 109.7 | Marvell Technology, Inc. | United States | Electronics & Semiconductors | ECMS (open -- Rs 40,000cr outlay, FCFS) |
+| 106.5 | Chandra Asri Pacific | Indonesia | Chemicals & Plastics | TDB Chemical CFP (open) |
 | 105.9 | AMERICAN EXPRESS CO | United States | Green Energy & Fuels | PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026) |
 | 105 | DENSO Corporation | Japan | Auto, EV & Components | PM E-DRIVE; PLI-Auto / PLI-ACC |
 | 105 | Tokyo Electron Limited | Japan | Electronics & Semiconductors | ECMS (open -- Rs 40,000cr outlay, FCFS) |
@@ -436,11 +510,25 @@
 | 105 | Nutrien Ltd. | Canada | Chemicals & Plastics | TDB Chemical CFP (open) |
 | 105 | Magna International Inc. | Canada | Auto, EV & Components | PM E-DRIVE; PLI-Auto / PLI-ACC |
 | 105 | Vale S.A. | Brazil | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
+| 102.4 | Press Metal Aluminium Holdings | Malaysia | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
+| 102.3 | Industries Qatar Q.P.S.C. | Qatar | Chemicals & Plastics | TDB Chemical CFP (open) |
+| 97.2 | Elsewedy Electric | Egypt | White Goods & Electricals | PLI White Goods; BEE/star-rating demand levers |
+| 96.2 | Gruma | Mexico | Food Processing | AIF (portal OPEN, Rs 94,272cr sanctioned) |
+| 95.8 | Hoa Phat Group | Vietnam | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
 | 89.1 | BALL Corp | United States | Chemicals & Plastics | TDB Chemical CFP (open) |
+| 85.8 | EDP - Energias de Portugal | Portugal | Green Energy & Fuels | PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026) |
+| 85.5 | Metlen Energy & Metals | Greece | Green Energy & Fuels | PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026) |
 | 85 | thyssenkrupp AG | Germany | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
 | 84.2 | COLGATE PALMOLIVE CO | United States | White Goods & Electricals | PLI White Goods; BEE/star-rating demand levers |
+| 81.4 | Top Glove Corporation | Malaysia | Medical Devices | TDB Medical Devices CFP (open) |
+| 74.8 | Qatar Aluminium Manufacturing Company  | Qatar | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
 | 71.5 | LEVI STRAUSS & CO | United States | Textiles & Apparel | Technical textiles mission (open) |
+| 68.6 | Mesaieed Petrochemical Holding Q.P.S.C | Qatar | Chemicals & Plastics | TDB Chemical CFP (open) |
+| 64.0 | Umicore | Belgium | Auto, EV & Components | PM E-DRIVE; PLI-Auto / PLI-ACC |
 | 63.0 | BORGWARNER INC | United States | Auto, EV & Components | PM E-DRIVE; PLI-Auto / PLI-ACC |
+| 59.8 | Thai Union Group | Thailand | Food Processing | AIF (portal OPEN, Rs 94,272cr sanctioned) |
+| 58.7 | Charoen Pokphand Foods | Thailand | Food Processing | AIF (portal OPEN, Rs 94,272cr sanctioned) |
+| 56.4 | Gulf Pharmaceutical Industries (Julpha | UAE | Pharma & Bulk Drugs | TDB Rare Disease CFP (open) |
 
 ## China — Press Note 3 watch-list (not outreach targets)
 

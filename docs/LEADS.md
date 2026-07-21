@@ -1,10 +1,10 @@
 # Leads — profitable firms × open government lanes
 
-*Generated 2026-07-20 from `layers/16_leads.json` (263 leads, 7 markets) by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
+*Generated 2026-07-21 from `layers/16_leads.json` (311 leads, 7 markets) by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
 
 > **China / Press Note 3**: Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected — BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' — SAIC diluted MG Motor India to JSW (49%→39% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts c…
 
-## Electronics & Semiconductors (40 leads)
+## Electronics & Semiconductors (41 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@
 | 105 | Nokia Oyj | Finland | HIGH | Nokia (company disclosures alongside Annual Report 2025): Chennai factory manufactures 5G NR and 5G Massive MIMO equipment 'for the domestic and globa |
 | 105 | Hon Hai Precision Industry (Foxconn) | Taiwan | HIGH | Foxconn Singapore raised its India-subsidiary stake to 99.9% with a cumulative investment value of $2.82bn (June 2026 filings coverage) |
 
-## Chemicals & Plastics (27 leads)
+## Chemicals & Plastics (34 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -29,16 +29,16 @@
 | 105 | Croda International Plc | United Kingdom | HIGH | AR 2024: 'A new surfactants plant in Dahej, India is due to be commissioned in 2025, supporting high-growth markets in Asia' - concrete NEW India manu |
 | 105 | Orica Limited | Australia | HIGH | Orica operates in India through Indian Explosives Private Limited (incorporated 1999, Hyderabad HQ), with ~634 employees (Mar 2026) and revenue of Rs  |
 | 105 | ICL Group Ltd | Israel | HIGH | June 2026 (6-K): new agreement with Indian Potash Limited (IPL) to supply 375,000 MT of potash over the coming year (option for 50,000 extra tons) at  |
+| 94.9 | Borouge plc | UAE | MEDIUM | "India's growth was particularly notable, driven by infrastructure expansion, while ASEAN demand increased due to reshoring in consumer electronics, t |
 | 93.6 | SOLAR INDUSTRIES (I) LTD | India | domestic |  |
+| 91.5 | Chandra Asri Pacific | Indonesia | MEDIUM | "This is a major step in expanding Chandra Asri Group's strategic footprint in the regional chemical, energy and infrastructure industries." (Indian C |
 | 90.4 | ECOLAB INC. | United States | 10-K: India×8, APAC×24, trend 0 | Approximately 43% of our employees are employed in North America, 21% in Europe, 12% in Latin America, 8% in Asia Pacific, 8% in India, Middle East an |
 | 90 | Wanhua Chemical Group Co., Ltd. | China | MEDIUM | Company profile/AR materials list 'over ten branches across Europe, the Middle East, America, Japan, Russia, and India' — India is an explicitly named |
 | 90 | Johnson Matthey Plc | United Kingdom | MEDIUM | Annual Report 2025: 'good growth in Asia as their largest customers in Japan and India outperformed their respective markets' (Clean Air) |
 | 90 | BASF SE | Germany | MEDIUM | BASF in India sales 2024: EUR 2,392 million (2023: EUR 2,386 million); Number of employees (BASF India): 2,411 — BASF in India Factsheet 2024, pdftote |
 | 90 | Yara International ASA | Norway | MEDIUM | Yara Annual Report 2025: Babrala (Uttar Pradesh) plant cut GHG intensity to 2.522 tCO2e/tN, beating Yara's global 2.7 target — positioned as India's m |
-| 90 | Nutrien Ltd. | Canada | MEDIUM | India represents 6% of Canpotex sales volumes (Canpotex is Nutrien's offshore potash marketing arm) |
-| 89.1 | PIDILITE INDUSTRIES LTD | India | domestic |  |
 
-## Auto, EV & Components (23 leads)
+## Auto, EV & Components (26 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -55,7 +55,7 @@
 | 90 | Johnson Electric Holdings | Hong Kong | MEDIUM | Annual Report subsidiary schedule (fetched PDF) lists 'Johnson Electric Private Limited — Manufacturing, sales and marketing — India — INR1,044,096,50 |
 | 90 | Magna International Inc. | Canada | MEDIUM | MIXED SIGNAL: 2025 annual report discloses Magna sold a body & chassis business in India in 2024; the divestiture decreased sales by USD 112 million |
 
-## White Goods & Electricals (25 leads)
+## White Goods & Electricals (26 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -72,7 +72,7 @@
 | 95.2 | SUZLON ENERGY LIMITED | India | domestic |  |
 | 90 | LG Energy Solution, Ltd. | South Korea | MEDIUM | Signed a non-binding agreement with JSW Energy for a 50:50 India battery JV — >USD 1.5 bn, ~10 GWh plant for EV and renewable-storage cells; JSW to ta |
 
-## Pharma & Bulk Drugs (21 leads)
+## Pharma & Bulk Drugs (24 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -89,7 +89,7 @@
 | 82.3 | LAURUS LABS LIMITED | India | domestic |  |
 | 79.8 | GLAND PHARMA LIMITED | India | domestic |  |
 
-## Specialty Steel & Metals (28 leads)
+## Specialty Steel & Metals (38 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -102,11 +102,11 @@
 | 90 | Fortescue Ltd | Australia | MEDIUM | PMO readout (23 May 2023, Sydney): 'Prime Minister welcomed Fortescue Group's plans to work with Indian companies in the field of Green Hydrogen.' |
 | 90 | voestalpine AG | Austria | MEDIUM | "...the growth markets of India, Africa and the Middle East showed solid demand for welding technology products." — voestalpine Annual Report 2024/25, |
 | 90 | Vale S.A. | Brazil | MEDIUM | Vale executive vice president publicly stated Vale 'intends to expand its business in India', seeing a great opportunity to boost iron ore sales as 'I |
-| 79.4 | AEROFLEX INDUSTRIES LTD | India | domestic |  |
-| 77.6 | JINDAL STAINLESS LIMITED | India | domestic |  |
-| 76.2 | STEEL DYNAMICS INC | United States | 10-K: India×0, APAC×5, trend 0 | He was also a part of the team that constructed the company’s first steel mill in Butler, Indiana. |
+| 87.4 | Press Metal Aluminium Holdings | Malaysia | MEDIUM | "In September 2024, we announced an equity participation of 80% in a new alumina refinery, PT Kalimantan Alumina Nusantara ('PT KAN') in Indonesia, wh |
+| 84.2 | Aneka Tambang (ANTAM) | Indonesia | LOW | "PT Aneka Tambang (IDX:ANTM) and Indonesia Battery Corporation (IBC) are developing a series of integrated electric vehicle projects" (Mining.com.au,  |
+| 80.8 | Hoa Phat Group | Vietnam | MEDIUM | "hot-rolled coil produced by Hoa Phat Group will not be subject to India's anti-dumping duties" (hoaphat.com.vn official release, 23 Aug 2025) |
 
-## Shipbuilding & Marine (8 leads)
+## Shipbuilding & Marine (9 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -115,11 +115,12 @@
 | 82.1 | SHREEJI SHIPPING GLOBAL L | India | domestic |  |
 | 75.4 | ADANI PORT & SEZ LTD | India | domestic |  |
 | 74.3 | JSW INFRASTRUCTURE LTD | India | domestic |  |
+| 54.6 | Fincantieri | Italy | HIGH | This agreement marks a key strategic step for Fincantieri in India, a market of central importance in our long-term international growth strategy (Pie |
 | 52.5 | GENCO SHIPPING & TRADING LTD | United States | 10-K: India×1, APAC×45, trend 0 | As a result, a negative change in economic conditions in any Asia Pacific country, particularly in China, India, or Japan, could adversely affect our  |
 | 44.4 | Matson, Inc. | United States | 10-K: India×0, APAC×68, trend 0 |  |
 | 35.5 | KIRBY CORP | United States | 10-K: India×0, APAC×0, trend 0 |  |
 
-## Aerospace & Defence (23 leads)
+## Aerospace & Defence (25 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -136,7 +137,7 @@
 | 100.5 | GENERAL ELECTRIC CO | United States | 10-K: India×1, APAC×15, trend 1 | S:        Singapore 178        United Kingdom 78        Ireland 60        Hungary 52        Italy 46        India 36        Other Non-U. |
 | 98.2 | Howmet Aerospace Inc. | United States | 10-K: India×2, APAC×20, trend 0 | , and Wheels India Limited. |
 
-## Medical Devices (14 leads)
+## Medical Devices (15 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -150,42 +151,42 @@
 | 90 | EssilorLuxottica Société anonyme | France | MEDIUM | Per trade press citing the company: EssilorLuxottica is 'strategically considering an expansion of its manufacturing footprint in India, focusing part |
 | 83.0 | Edwards Lifesciences Corp | United States | 10-K: India×0, APAC×41, trend 0 |  |
 | 77.9 | Solventum Corp | United States | 10-K: India×6, APAC×20, trend 2 | stiture impacts include lost sales from the Company’s Purification and Filtration business that was sold in September 2025, certain health care busine |
+| 66.4 | Top Glove Corporation | Malaysia | MEDIUM | gradually increase its running capacity to "70 billion pieces of gloves by end-FY2025 from the current 64 billion pieces" (The Edge Malaysia, 20 Dec 2 |
 | 59.3 | ALIGN TECHNOLOGY INC | United States | 10-K: India×2, APAC×54, trend 1 | The Invisalign Palatal Expander System is currently available in the United States, Canada, Australia, New Zealand, Hong Kong, Singapore, Vietnam, Jap |
-| 58.5 | MASIMO CORP | United States | 10-K: India×3, APAC×27, trend 0 |  |
 
-## Green Energy & Fuels (21 leads)
+## Green Energy & Fuels (30 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
 | 105 | CLP Holdings | Hong Kong | HIGH | 2024 Annual Report: Apraava Energy (CLP's India platform with La Caisse/CDPQ) holds 3,150 MW installed capacity including 924 MW wind and 250 MW solar |
 | 105 | Cameco Corporation | Canada | HIGH | Signed a long-term agreement to supply uranium ore concentrate (U3O8) to the Government of India's Department of Atomic Energy for its fleet of nuclea |
 | 105 | Thungela Resources Limited | South Africa | HIGH | India is described as a cornerstone export market for Thungela, 'absorbing large volumes amid rising power needs and limited domestic supply'; exports |
+| 100.0 | Gulf Development (Gulf Energy) | Thailand | LOW | "consumer demand for HD and UHD television signal broadcasting services remains robust in India and the Indochina region" (Gulf Development 56-1 One R |
 | 96.9 | AMERICAN EXPRESS CO | United States | 10-K: India×6, APAC×18, trend 0 | , Alipay, PayPal and Shop Pay), as well as regional payment networks (such as the National Payments Corporation of India). |
 | 93.5 | COAL INDIA LTD | India | domestic |  |
+| 91.8 | Barito Renewables Energy | Indonesia | NONE | "This reflects our commitment to continuously develop our business and support the Indonesian Government's energy transition target." (Barito Renewabl |
 | 90.9 | EOG RESOURCES INC | United States | 10-K: India×0, APAC×2, trend 0 | , North Dakota and Wyoming, as well as in other areas, are granted by the federal government and administered by the Bureau of Land Management (BLM) a |
 | 90 | Woodside Energy Group Ltd | Australia | MEDIUM | Woodside portfolio sales projections show India as a growth market: sales volumes projected to rise from 13 MMboe (base) to 48 MMboe (growth case) bet |
 | 86.0 | NHPC LTD | India | domestic |  |
 | 81.5 | AMERICAN ELECTRIC POWER CO INC | United States | 10-K: India×0, APAC×1, trend 0 | As of December 31, 2025, approximately 8%, 23% and 15% of the Registrants’ available credit facilities were with European, Canadian, and Asian banks,  |
-| 80.7 | NTPC LTD | India | domestic |  |
-| 75.2 | ADANI GREEN ENERGY LTD | India | domestic |  |
-| 75 | Iberdrola, S.A. | Spain | LOW | FY2025 results/integrated report: APAC entry is via AUSTRALIA, not India — metocean surveys for the 3 GW Aurora Green offshore wind project (Victoria) |
+| 81.2 | Sociedad Quimica y Minera de Chile (SQM) | Chile | HIGH | On April 22, 2024, the subsidiary SQM India Private Limited was incorporated. (SQM Form 20-F, FY2024) |
 
-## Food Processing (17 leads)
+## Food Processing (27 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
 | 105 | Food Empire Holdings | Singapore | HIGH | AR2024/announcements: spray-dried (2015) and freeze-dried (2021) soluble-coffee plants in Andhra Pradesh are 'running at optimum capacities and delive |
 | 90 | Ajinomoto Co., Inc. | Japan | MEDIUM | Ajinomoto Group vision statement: "50 million customers in southern India to enjoy their products in their life" by 2030 (Ajinomoto India / group medi |
 | 90 | Associated British Foods plc | United Kingdom | MEDIUM | AR 2024 (Ingredients/AB Mauri): capital projects to drive long-term growth include 'the construction of a fresh yeast plant in northern India' - concr |
+| 81.2 | Gruma | Mexico | MEDIUM | Our Asian and Oceania division, saw strong demand in all markets it serves but particularly in Malaysia and Australia. With our new plant in China add |
 | 76.3 | KRBL LIMITED | India | domestic |  |
 | 75 | Bega Cheese Limited | Australia | LOW | FY2025 results: Bega 'maintained strong market share positions across key categories and continued to grow in foodservice and key Asian markets' - Asi |
+| 74.9 | Kerry Group | Ireland | HIGH | "The India market is dynamic and evolving and we are looking at our next phase of investment in India." (Siddharth Rastogi, GM Indian Subcontinent/Sou |
 | 72.5 | Mama's Creations, Inc. | United States | 10-K: India×0, APAC×0, trend 0 |  |
+| 69.3 | Grupo Bimbo | Mexico | HIGH | The Group believes that markets like India, Romania, Tunisia, and other Eastern and Southeastern European countries have a high potential for continuo |
 | 68.9 | TRIVENI ENGG. & INDS. LTD | India | domestic |  |
 | 66.9 | SANSTAR LIMITED | India | domestic |  |
 | 65 | CJ Cheiljedang Corporation | South Korea | NONE | Disclosed K-food capacity expansion map is Japan (new bibigo dumpling plant, Chiba, 2025), Hungary (by 2026) and South Dakota, US (by 2027) — India do |
-| 61.4 | PRATAAP SNACKS LIMITED | India | domestic |  |
-| 56.9 | Mondelez International, Inc. | United States | 10-K: India×7, APAC×25, trend 1 | such as the launch of co-branded chocolate innovations combining Biscoff with Cadbury Dairy Milk, Milka and other key brands in Europe as well as zero |
-| 52.5 | SANFILIPPO JOHN B & SON INC | United States | 10-K: India×1, APAC×5, trend 0 | any agricultural products, federal and state government mandates related to the preceding or otherwise and purchasing behavior of certain countries, i |
 
 ## Textiles & Apparel (16 leads)
 

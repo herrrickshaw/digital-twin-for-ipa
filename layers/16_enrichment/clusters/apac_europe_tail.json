@@ -1,0 +1,353 @@
+{
+  "cluster": "europe_tail",
+  "built": "2026-07-21",
+  "companies": [
+    {
+      "company": "Leonardo",
+      "ticker": "LDO.MI",
+      "market": "MI",
+      "country": "Italy",
+      "sector": "Aerospace & Defence",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.051,
+        "roe": 0.1307,
+        "revenue_growth": 0.069
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "India has formally lifted the ban on Italian firm AgustaWestland and its parent company Leonardo, paving the way for them to take part in the multiple ongoing projects and bid for upcoming defence contracts. (ThePrint, 2021-11-14; new debarment list issued 12 Nov 2021 excluded both companies; Leonardo withdrew its EUR 350m claim on the cancelled VVIP order)",
+          "This partnership highlights our commitment to providing cutting-edge solutions for India's rapidly growing civil aviation market. (Stefano Villanti, SVP Sales and Marketing, Leonardo Helicopters, quoted in ThePrint, 2024-05-29, on the Universal Vulkaan distributor partnership)",
+          "Finally, the Indo-Pacific region is a crucial strategic area in the global geopolitical scenario, and the growing attention of the United States towards this region highlights the importance of the dynamics at play. (Leonardo Integrated Annual Report 2024)"
+        ],
+        "india_operations": "Two India subsidiaries listed in the 2024 Integrated Annual Report — Leonardo Aerospace Defense & Security India Private Ltd (New Delhi) and AgustaWestland India Private Ltd; helicopters sold via distributor Universal Vulkaan Aviation (order for 16 new units incl. AW109/AW139/AW169/AW09, plan for 30 in 3 years per Business Standard, May 2024); no manufacturing plant.",
+        "report_used": "Leonardo Integrated Annual Report 2024 (PDF downloaded from leonardo.com and searched in full); India-specific engagement evidence from ThePrint (2021, 2024) and Business Standard (2024)"
+      },
+      "notes": "Verified: ban lifted Nov 2021 with conditions (CBI/ED probe on the Rs 3,600cr VVIP chopper case continues; no financial claims on old deals). Important caveat: the 2024 annual report's only substantive India mentions are the AgustaWestland litigation and the subsidiary list — no India investment/expansion commitment in the report itself; Indo-Pacific appears only as geopolitical market context. Press reports (search results, page fetch blocked 403) say Leonardo exhibited radars (RAT 31DL, TMMR) at an Aero India show post-ban — I could not open the article to confirm verbatim, treat Aero India participation detail as secondary. Expansion signal rests on the civil-helicopter distributor ramp and regained eligibility to bid for Indian defence tenders. Separately, Leonardo agreed 30 Jul 2025 to buy Iveco Group's defence business (EUR 1.7bn EV, completed 18 Mar 2026) — an Italy-side link to the Tata-Iveco deal, not an India investment."
+    },
+    {
+      "company": "Danieli & C.",
+      "ticker": "DAN.MI",
+      "market": "MI",
+      "country": "Italy",
+      "sector": "Specialty Steel & Metals",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0573,
+        "roe": 0.0803,
+        "revenue_growth": -0.162
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "As on November 30, 2024, DIL had an order book of ₹2,511 crore which basis the revenue for FY24, provides a medium-term revenue visibility for the next 2-3 years. (CARE Ratings press release on Danieli India Limited, 2025-02-04)",
+          "The parent has demonstrated strong commitment with share capital of ₹564.9 crores as on Mar 31, 2024 and has further infused ₹90.2 crores for the ongoing capex of ₹100 crores in Sri City, Andhra Pradesh. (CARE Ratings press release, 2025-02-04)",
+          "design and supply of a water treatment plant (WTP) to serve the Phase-3 expansion ... JSW Steel's Dolvi Works in Maharashtra, India ... scheduled to enter operation by December 2026 (SteelOrbis, 2026-02-11, on new Danieli-JSW contract)"
+        ],
+        "india_operations": "Danieli India Ltd (100% step-down subsidiary, mfg plant at Sri City, Andhra Pradesh since 2013, ongoing ₹100cr capex); TOI grew ~39% CAGR ₹522cr (FY22) to ₹1,002cr (FY24), ₹769cr in H1FY25; clients incl. JSW Steel (Dolvi WTP, Salem bloom caster) and Tata Steel (Jamshedpur BOF converter work, 'Most Innovative Partner Award' at Tata InnoVista 2024 per Danieli/AIST search results).",
+        "report_used": "Danieli & C. annual report itself inaccessible (danieli.com returns 403/Access Denied to fetches, incl. with browser UA); used CARE Ratings credit press release Feb 2025 (fetched PDF, text-extracted — it cites group orderbook 'The outstanding order book for Danieli SpA was € 5.7 bn as on June 30, 2024' and CY24 revenues of €4.35bn) plus SteelOrbis press"
+      },
+      "notes": "Strongest concrete India order-book evidence of the four, but sourced via the rating agency and trade press rather than the annual report PDF, which Danieli's site blocks. Search-result snippets attribute to Danieli's FY2024-25 report the lines that India/SEA/MENA 'maintained good production volumes and significant steel consumption' and that negotiations 'point to a good order intake also for the fiscal year 2025-26' — plausible but NOT independently fetched, so excluded from evidence. Danieli India rated CARE AA-; Stable / CARE A1+ with parent letter-of-comfort; >60% of DIL orderbook from top-3 customers."
+    },
+    {
+      "company": "Fincantieri",
+      "ticker": "FCT.MI",
+      "market": "MI",
+      "country": "Italy",
+      "sector": "Shipbuilding & Marine",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0138,
+        "roe": 0.1281,
+        "revenue_growth": -0.078
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "This agreement marks a key strategic step for Fincantieri in India, a market of central importance in our long-term international growth strategy (Pierroberto Folgiero, CEO, Fincantieri press release on WASS Black Shark Advanced torpedo contract with the Indian Navy — 'With a total value of over 200 million euros, this agreement represents the largest contract in the history of WASS', 2025-12-30)",
+          "Fincantieri has been following the renewal and expansion program of the Indian Navy's fleet for some time, considering this market as strategic. (Fincantieri press release on Cochin Shipyard MoU, 2020-10-27)",
+          "The Group's expansion into high-potential markets continues: Fincantieri reinforces its presence in the Middle East and Southeast Asia through new strategic agreements ... an addressable market worth around euro 20 billion, especially in Italy and the United States, and in the Middle East and Southeast Asia (Fincantieri FY2024 results press release, March 2025)"
+        ],
+        "india_operations": "Fincantieri India subsidiary (named in the 2020 Cochin MoU release); MoU with Cochin Shipyard covering design/local construction of naval vessels, mechanical products, automation, repair and training; past deliveries to Indian Navy incl. fleet tankers Deepak and Shakti and research vessel Sagar Nidhi; P17A frigate consultancy with MDL/GRSE (press); Dec 2025 EUR 200m+ WASS torpedo order for India's six Scorpene submarines (deliveries 2028-2030, built in Livorno).",
+        "report_used": "Annual Report 2024 PDF download blocked (server returned an HTML block page); used official fincantieri.com press releases: FY2024 consolidated results (Mar 2025), WASS Indian Navy contract (Dec 2025), Cochin Shipyard MoU (Oct 2020)"
+      },
+      "notes": "CEO explicitly calls India 'a market of central importance in our long-term international growth strategy' and 'one of the most dynamic naval hubs globally' (Dec 2025 release) — the clearest forward-looking India statement among the four. APAC breadth confirmed by the formalized EUR 1.18bn two-MPCS contract with the Indonesian Navy (FY2024 results release). No Fincantieri-ONGC master agreement found in searches — that specific claim is unverified; the concrete India instruments are the Cochin MoU (2020), P17A collaboration with MDL/GRSE, and the WASS torpedo contract (2025). Delivery/production remains in Italy (Livorno) for the torpedo order — no India plant."
+    },
+    {
+      "company": "Iveco Group",
+      "ticker": "IVG.MI",
+      "market": "MI",
+      "country": "Italy",
+      "sector": "Auto, EV & Components",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.1056,
+        "roe": 0.0311,
+        "revenue_growth": 0.008
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "Together, Iveco and the commercial vehicle business of Tata Motors will have combined revenues of c.€22bn (INR 2,20,000Cr+) split across Europe (c.50%), India (c.35%) and the Americas (c.15%) (Tata Motors-Iveco Group joint press release via GlobeNewswire, 2025-07-30)",
+          "This is a logical next step following the demerger of the Tata Motors Commercial Vehicle business and will allow the combined group to compete on a truly global basis with two strategic home markets in India and Europe. (Natarajan Chandrasekaran, Chairman of Tata Motors, joint press release, 2025-07-30)",
+          "The Engine Teardown Area is a global project which involves not only the Turin plant, but also those in Sete Lagoas (Brazil), York (USA) and Pune (India). (Iveco Group Annual Report 2024)"
+        ],
+        "india_operations": "FPT Industrial India Private Limited (100% subsidiary, per AR 2024 entity list) with an FPT Industrial plant in Pune; AR 2024 also discloses 'a minor investment in a non-listed company in India considered strategic in nature for €9 million'; India otherwise ~0.3%-of-headcount scale pre-deal.",
+        "report_used": "Iveco Group Annual Report 2024 (PDF downloaded from ivecogroup.com and searched in full) + Tata Motors-Iveco joint press release of 30 Jul 2025 (GlobeNewswire full text)"
+      },
+      "notes": "Special situation confirmed: Tata Motors' all-cash voluntary tender offer at EUR 14.1/share (~EUR 3.8bn, announced 30 Jul 2025) — an INBOUND India linkage making India ~35% of the combined entity's revenue, not Iveco expanding into India. Conditional on separation of the defence business: Leonardo agreed to buy Iveco Defence (EUR 1.7bn EV) the same day and completed on 18 Mar 2026 at ~EUR 1.6bn after adjustments (Leonardo press releases per search); joint release states defence sale 'envisaged to close in Q1 2026 and ultimately no later than 31st March 2026'. Italy granted conditional (golden-power) approval per press. Tender offer completion was targeted for Q2 2026; I did not verify final settlement status as of Jul 2026 — check before relying on deal-closed status. Iveco's own organic India footprint (pre-deal) is modest: FPT engines/Pune plus the small strategic minority stake."
+    },
+    {
+      "company": "Indra Sistemas",
+      "ticker": "IDR.MC",
+      "market": "MC",
+      "country": "Spain",
+      "sector": "Aerospace & Defence",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0785,
+        "roe": 0.2651,
+        "revenue_growth": 0.163
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "\"a contract worth more than 55 million euros\" to deploy \"an integrated system to centralize all the phases of air traffic surveillance and control in India\" \"at five of the country's main air traffic control centers and airports: Mumbai, Hyderabad, Bangalore, Navi Mumbai and Mopa\" (Indra press release, indragroup.com, 2023-03-09)",
+          "In India Indra has \"a radar network that provides surveillance of 80% of the country's airspace\" and has \"modernized several of India's main control centers for the Airports Authority of India (AAI), including those in Delhi and Kolkata, as well as 38 towers\" (Indra press release, indragroup.com, 2023-03-09)",
+          "\"Our collaboration with Indra reflects a shared commitment to strengthening radar manufacturing capabilities in India.\" — Sukaran Singh, CEO & MD, Tata Advanced Systems; Ana Buendia, head of Indra's naval business: \"we have worked to establish a radar factory in Bengaluru. This now provides us with local support to produce systems more efficiently\" (Indra press release on first Lanza-N naval 3D radar commissioning, indragroup.com, 2025-09-10)"
+        ],
+        "india_operations": "Deep, long-standing footprint: AAI ATM systems at 5 major centres (EUR 55m+, 2023) plus 40+ control centres/towers modernised and radar coverage of 80% of Indian airspace; Lanza-N naval 3D radar JV with Tata Advanced Systems including a radar assembly/integration/testing factory in Bengaluru (Karnataka) under a ~USD 143m TASL-MoD programme (23 shipborne radars, tech transfer since 2020); July 2026 commissioning of a new Indian ATC centre with AAI.",
+        "report_used": "Annual report inaccessible (indragroup.com PDF area behind Radware bot protection); press: Indra official press releases 2023-03-09 and 2025-09-10 (fetched), plus Janes/search coverage of the TASL radar contract and July 2026 four-country ATC commissioning"
+      },
+      "notes": "Strongest India story of the three: repeated new orders (AAI 2023 award, executing through 2026), Make-in-India localisation via the Bengaluru radar factory with TASL, and continued Asia-Pacific ATM positioning (Indonesia). FY2024 group results: ATM revenue +30%, Defence +26% (Investing.com earnings-call coverage). Verbatim annual-report APAC language could not be extracted due to site bot-blocking; all quotes above are from fetched official Indra press pages."
+    },
+    {
+      "company": "EDP - Energias de Portugal",
+      "ticker": "EDP.LS",
+      "market": "LS",
+      "country": "Portugal",
+      "sector": "Green Energy & Fuels",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0706,
+        "roe": 0.0778,
+        "revenue_growth": -0.008
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "\"This acquisition will complement EDPR's portfolio globally, beyond its current markets, and position it as a powerful platform for growth in Asia-Pacific\" — Miguel Stilwell d'Andrade, CEO of EDP and EDPR, on the Sunseap acquisition (Reuters via Investing.com/Euronews, 2021-11)",
+          "\"global renewable energy leader EDPR established its Asia Pacific headquarters in Singapore via the acquisition of local renewable energy company Sunseap in February 2022\" ... EDPR APAC \"is targeting to expand its renewables portfolio to up to five GWp of installed capacity by 2030\" (Singapore EDB business-insights article on EDPR APAC, fetched 2026)",
+          "\"Singapore is an ideal regional hub from where EDPR is leading our APAC ambition, given the availability of talent, innovation centres, and capital which are key enablers for the energy transition.\" — Pedro Vasconcelos, Executive Chairman, EDP Renewables APAC (Singapore EDB article, fetched 2026)"
+        ],
+        "india_operations": "No verified India assets or offices. EDPR APAC (ex-Sunseap, HQ Singapore, ~1.6 GWp committed capacity as of Dec 2024) operates across Singapore, Vietnam, Malaysia, Indonesia, Thailand, Cambodia, China, Japan and Taiwan — India is absent from every market list found, including the Sunseap 5.5 GW pipeline (9 markets) and the EDB article.",
+        "report_used": "Annual report inaccessible (edp.com IntegratedAnnualReport2024 PDF and edpr-investors.com 2024_EDPRAnnualReport.pdf both returned HTTP 403); press: Reuters/Euronews Sunseap coverage (2021), Singapore EDB insight article (fetched), PV Tech on the USD 7.4bn APAC investment plan (2022)"
+      },
+      "notes": "Clear, funded APAC expansion (Singapore-HQ platform, USD 7.4bn APAC investment plan per PV Tech 2022, 5 GWp-by-2030 target, SolarNova Phase 8 win of 130-200 MWp in 2024) but explicitly NOT an India story — India does not appear in any EDPR APAC market list found. Graded MEDIUM on concrete APAC expansion without India commitment. Group has also been in strategic-review/capex-trim mode since 2025, a caveat on the pace of APAC growth."
+    },
+    {
+      "company": "Umicore",
+      "ticker": "UMI.BR",
+      "market": "BR",
+      "country": "Belgium",
+      "sector": "Auto, EV & Components",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0198,
+        "roe": 0.1858,
+        "revenue_growth": 0.441
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "\"Umicore also operates an Automotive Catalysts plant located in Shirwal, Pune. This is a state of art facility for the manufacturing of automobile catalysts, which runs on the grounds of sustainability and is technologically novel with the production base.\" (umicore.com UMS India local-presence page, fetched 2026)",
+          "\"Umicore is assessing the configuration of its existing footprint in Asia and Europe as well as its expansion project in North America.\" (Umicore Half Year Results 2024, umicore.com newsroom)",
+          "\"This scenario results in a well utilized capacity in the last years of this decade, except for the Chinese CAM assets which Umicore assumes to remain underutilized.\" (Umicore Half Year Results 2024, umicore.com newsroom)"
+        ],
+        "india_operations": "Umicore Autocat India Pvt Ltd runs an automotive-catalyst plant at Shirwal (Khandala, near Pune, Maharashtra) — a greenfield site announced 2008 with capacity to equip ~1.5 million cars/year — plus a Mumbai shared-services/liaison office (UMS India, est. 1998).",
+        "report_used": "Annual Report 2024 PDF exceeded fetch size limit; used official Umicore Half Year Results 2024 release (umicore.com) + umicore.com India local-presence page + press (CarTrade on 2008 plant announcement)."
+      },
+      "notes": "Real, long-standing India manufacturing footprint (autocatalysts), but no new India capacity commitment found. APAC battery-materials signal is currently NEGATIVE: 2024 impairments hit Battery Materials assets 'mainly in Asia', Chinese CAM assets assumed to remain underutilized, and further Europe/Korea footprint expansion was 'minimized'. Korea remains an R&D hub (Cheonan cathode R&D center, per S&P AutoTechInsight). Grade MEDIUM rests on existing India operations, not forward investment."
+    },
+    {
+      "company": "UCB",
+      "ticker": "UCB.BR",
+      "market": "BR",
+      "country": "Belgium",
+      "sector": "Pharma & Bulk Drugs",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.2013,
+        "roe": 0.1491,
+        "revenue_growth": 0.266
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "LOW",
+        "evidence": [
+          "\"In the short term, UCB is exploring the launch of novel medicines in immunology, neurology, and rare diseases in China.\" (Jean-Christophe Tellier, CEO, UCB press release, 26 August 2024)",
+          "\"We are convinced that the CBC Group and Mubadala are the ideal partners to advance the medicine portfolio and continue to improve the lives of people living with neurology and allergy diseases in mainland China.\" (Jean-Christophe Tellier, CEO, UCB press release, 26 August 2024)"
+        ],
+        "india_operations": "UCB India Pvt Ltd, Mumbai (Peninsula Towers, Lower Parel) — a small commercial affiliate (~13 employees per Tracxn, Jan 2025) focused on innovative neurology medicines; the ~350-person branded-generics business was sold to Dr Reddy's in 2015 for INR 8 bn (~$128M), per Fierce Pharma.",
+        "report_used": "Integrated Annual Report 2024 site (reports.ucb.com) returned HTTP 429 on fetch; used official UCB press release 26-Aug-2024 (China divestment) + Fierce Pharma / Tracxn for India footprint (Fierce Pharma page itself 403'd — divestment details taken from search-result text, corroborated across sources)."
+      },
+      "notes": "Direction of travel in APAC is DIVESTMENT, not expansion: mature neurology/allergy China business (Keppra, Vimpat, Neupro, Zyrtec, Xyzal + Zhuhai plant) sold to CBC Group/Mubadala for $680M, completed 29 Nov 2024. Residual APAC interest is commercial launches of novel medicines (China, Japan), not capacity/investment. India presence is a minimal sales office post-2015 Dr Reddy's divestment. No India investment language found."
+    },
+    {
+      "company": "Kerry Group",
+      "ticker": "KRZ.IR",
+      "market": "IR",
+      "country": "Ireland",
+      "sector": "Food Processing",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0974,
+        "roe": 0.1059,
+        "revenue_growth": null
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "\"The India market is dynamic and evolving and we are looking at our next phase of investment in India.\" (Siddharth Rastogi, GM Indian Subcontinent/South-West Asia, Kerry, interviewed in FFOODS/NuFFooDS Spectrum, Feb 2023)",
+          "\"Our plans are to expand our manufacturing facilities in both the north and south of India. We have also opened a new development and application centre in Delhi.\" (Siddharth Rastogi, Kerry, NuFFooDS Spectrum interview, 2023)",
+          "\"Business volumes in emerging markets increased by 6.5%, with good growth across the Middle East, Africa, LATAM and Southeast Asia.\" (Kerry Group Preliminary Statement of Results FY2024, 18 Feb 2025, PDF text-extracted)"
+        ],
+        "india_operations": "In India since 2011; two manufacturing sites including the €20M, 40,585 sq m Tumakuru (Tumkur, Karnataka) taste & nutrition facility opened 2019 (~150 jobs, +150 planned at full capacity) serving South-West Asia, plus a development & application centre in Delhi.",
+        "report_used": "Kerry Group Preliminary Statement of Results FY2024 press-release PDF (kerry.com, fetched and text-extracted); India specifics from Asia Pacific Food Industry / DairyReporter (2019 Tumakuru opening) and NuFFooDS Spectrum executive interview (2023). Full Annual Report 2024 PDF not separately parsed."
+      },
+      "notes": "Strongest India/APAC case of the four: named executive on record about a 'next phase' of India investment and north+south manufacturing expansion; APMEA is a reported segment (FY2024 APMEA revenue €1,661m, volumes +4.8%) and from 2025 Kerry reorganized into Europe/Americas/APMEA reportable segments — structural evidence of APAC priority. Caveats: the flagship Tumakuru investment dates to 2019 and the expansion interview to 2023; FY2024 report itself flags 'challenging market conditions in China deteriorating through the fourth quarter'."
+    },
+    {
+      "company": "Orlen",
+      "ticker": "PKN.WA",
+      "market": "WA",
+      "country": "Poland",
+      "sector": "Green Energy & Fuels",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0239,
+        "roe": 0.044,
+        "revenue_growth": 0.029
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "NONE",
+        "evidence": [
+          "\"Central and Eastern Europe is experiencing dynamic growth\" and \"We provide energy and fuel for more than 100 million Europeans\" — ORLEN Strategy 2035 page (orlen.pl, fetched 2026), which contains no mention of India, Asia, or Asia-Pacific."
+        ],
+        "india_operations": "No Indian subsidiary, plant, JV, or disclosed trading relationship with Indian refiners found; ORLEN Group's only Asian presence is a China-registered entity listed among group companies in the Q4 2024 consolidated report.",
+        "report_used": "ORLEN Strategy 2035 page (orlen.pl, fetched — zero India/Asia mentions); ORLEN Group Consolidated Quarterly Report Q4 2024 (PDF located; entity-country list including China taken from search-result excerpt, full PDF not parsed). Targeted searches for Orlen-India crude/product/LNG/petrochemical links returned nothing."
+      },
+      "notes": "Recorded honestly as NONE for India. Multiple targeted searches (Orlen + India crude/refiners/LNG/paraxylene/jet fuel, 2024-2026) surfaced no linkage. Strategy 2035 (~PLN 350-380 bn capex to 2035) is explicitly Central/Eastern Europe-focused, with upstream in Norway/Poland/North America. Sole Asia touchpoint is a Chinese group entity (likely procurement/trading rep office) — a passing structural mention, not an investment signal. Products 'available in over 90 countries on 6 continents' is generic distribution language, not India-specific."
+    },
+    {
+      "company": "Metlen Energy & Metals",
+      "ticker": "MTLN.AT",
+      "market": "AT",
+      "country": "Greece",
+      "sector": "Green Energy & Fuels",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0442,
+        "roe": 0.1048,
+        "revenue_growth": 0.093
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "\"NTPC, Sprng Energy, UPC Renewables, Metka EGN Singapore Pte, ReNew Power, and ACME Solar were declared winners\" in SECI's 1,785 MW Tranche IV solar auction in Rajasthan, lowest tariff Rs 2.17/kWh (Mercom India, 2021-12-24); SolarQuarter/Saur Energy coverage of the same award attributes 20 MW to Metka EGN Singapore Pte at Rs 2.17/kWh",
+          "\"The Company is active in the markets of all five continents, in 40 countries\" (Metlen press release, Flash Note - Financial Results 2024, metlen.com, Feb 2025)",
+          "\"During 2024, new third-party projects with a total capacity of c.1.1GW were contracted in Greece, Spain, Italy, Chile, New Zealand, and the United Kingdom, with the contracted backlog amounting to EUR 463.1 million.\" (Metlen press release, Flash Note - Financial Results 2024, metlen.com, Feb 2025)"
+        ],
+        "india_operations": "Thin and dated: Metka EGN Singapore Pte (the Mytilineos/M Renewables developer vehicle) won a 20 MW SECI Tranche IV solar allocation in Rajasthan in Dec 2021 at Rs 2.17/kWh; no evidence found that the project was subsequently built/commissioned, and no Indian subsidiary, plant, or office was verifiable. India is absent from Metlen's FY2024 market lists.",
+        "report_used": "Annual Financial Report 2024 exists on metlengroup.com but the PDF was not directly fetched; official Metlen 'Flash Note - Financial Results 2024' press release (metlen.com, fetched) used instead, plus Mercom India / SolarQuarter / Saur Energy for the SECI award"
+      },
+      "notes": "The claim that METKA EGN 'built solar in India' could only be verified as a 20 MW SECI auction WIN (Dec 2021), not a completed plant — treat construction/commissioning as unconfirmed. No India language found in FY2024 communications; APAC activity is real but Oceania-tilted (New Zealand third-party contracts in 2024, existing Australian solar track record). expansion_signal reflects APAC (NZ) contracting, not India. Defence expansion is Greece-focused (Volos hub); no India defence angle found. Rio Tinto bauxite/alumina agreements (2025) have no India component."
+    },
+    {
+      "company": "Yara International",
+      "ticker": "YAR.OL",
+      "market": "OL",
+      "country": "Norway",
+      "sector": "Chemicals & Plastics",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0926,
+        "roe": 0.1794,
+        "revenue_growth": 0.081
+      },
+      "expansion_signal": false,
+      "india_apac_interest": {
+        "level": "MEDIUM",
+        "evidence": [
+          "The other was signed with AM Green, for the supply of up to 50 percent of renewable ammonia from phase 1 of AM Green project in Kakinada, India. (Yara Integrated Report 2024, term-sheet footnoted as non-legally binding)",
+          "The region has offices and operational units in 17 countries, with the most significant business operations in China, India, Thailand, South Africa and Australia. (Yara Integrated Report 2024, Africa & Asia segment)",
+          "The urea produced at the site is sold under a subsidized government scheme in India. (Yara Integrated Report 2024, re Babrala facility)"
+        ],
+        "india_operations": "Yara Fertilisers India Pvt. Ltd. (wholly owned; ~755 employees per company filings): Babrala, UP ammonia+urea plant (~1.27 MMTPA) acquired from Tata Chemicals Jan 2018 for USD 421 million — described on yara.in as 'India's first and largest stand-alone foreign direct investment in the fertiliser sector'; >36% share of India's premium crop nutrients segment; HQ Gurugram; plus Yara Digital Farming India Pvt. Ltd.",
+        "report_used": "Yara Integrated Report 2024 (PDF fetched from yara.com and text-extracted; all quotes taken directly from the extracted text)"
+      },
+      "notes": "No new India capex commitment in IR 2024 — Yara is in a group-wide Fixed Cost and Capex Reduction Program (USD 150m fixed cost + USD 150m capex cuts, 'restricting growth capex'). The India-linked forward item is the AM Green Kakinada renewable-ammonia offtake term sheet (sourcing, not investment, and non-binding). India otherwise appears as an established operating asset (Babrala, subsidized-urea scheme) and as one of the Africa & Asia segment's most significant markets. The oft-cited premium-product India strategy is on yara.in marketing pages, not framed as new investment in the 2024 report."
+    },
+    {
+      "company": "Kongsberg Gruppen",
+      "ticker": "KOG.OL",
+      "market": "OL",
+      "country": "Norway",
+      "sector": "Aerospace & Defence",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.2054,
+        "roe": 0.3264,
+        "revenue_growth": 0.296
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "It is our pleasure to open this new facility in Kochi and expand our operations in India — Annette Holte, President of Kongsberg Maritime India (Kongsberg Maritime Kochi facility announcement via Yahoo Finance, May 2024)",
+          "This is a first step for us, and through strategic partnerships, we expect to expand our operations to include assembly and overhaul capability — Annette Holte (same announcement, May 2024; article also states 'The company is planning further expansion and investment in Kochi')",
+          "We value our long-standing relationship with the Indian Navy and Cochin Shipyard and are committed to supporting India's naval ambitions. — Anette Holte, Country Manager India (kongsbergmaritime.com press release on 18 Kamewa waterjets for Indian Navy NGMV programme, April 2026)"
+        ],
+        "india_operations": "Kongsberg Maritime India subsidiary with a waterjet assembly + technical-support facility opened May 2024 in the Maritime Park adjacent to Kochi's International Ship Repair Facility; supplier to the Indian Navy's Next Generation Missile Vessels (18 large Kamewa waterjets, built at Cochin Shipyard) — Kongsberg's largest single waterjet order to date.",
+        "report_used": "Annual report 2024 not directly parsed (PDF not fetched); official Kongsberg/Kongsberg Maritime press releases (kongsbergmaritime.com April 2026; May 2024 Kochi announcement via Yahoo Finance syndication, original kongsberg.com URL now 404)"
+      },
+      "notes": "The 2024-25 'manufacturing plant' reports check out as the Kochi waterjet assembly facility (opened May 2024) with explicitly stated further expansion/investment plans and a follow-on record naval order in April 2026. Caveats: no investment amount disclosed; the Kochi announcement text I fetched contains no explicit 'Make in India' phrase (secondary press adds that framing); Naval Strike Missile cooperation with India not verified in this session; per AR 2024 (via search summary only, not primary) Asia is ~5.6% of net sales, so India remains small in group revenue despite the strategic push."
+    },
+    {
+      "company": "Andritz",
+      "ticker": "ANDR.VI",
+      "market": "VI",
+      "country": "Austria",
+      "sector": "Green Energy & Fuels",
+      "region": "Foreign",
+      "profitability": {
+        "margin": 0.0579,
+        "roe": 0.207,
+        "revenue_growth": 0.017
+      },
+      "expansion_signal": true,
+      "india_apac_interest": {
+        "level": "HIGH",
+        "evidence": [
+          "With a capacity of 3,000 MW, Saidongar-1 Karjat, located in the state of Maharashtra, will be India's largest pumped storage plant. ... ANDRITZ is currently involved in the implementation of seven new pumped storage plants in India. (ANDRITZ press release, andritz.com, April 2026, Torrent Power order, 'order value is in the low three-digit million euro range')",
+          "The project will be executed using ANDRITZ's state-of-the-art manufacturing facilities in India, supported by its global network. (ANDRITZ press release, andritz.com, September 2025 — Adani Green Energy 1800 MW Gandikota pumped storage order; release also states 'The repeat order from AGEL underlines ANDRITZ's strong position in the Indian hydropower market')",
+          "In Hydropower, order intake rose significantly to 1,345.4 MEUR (+72.1%), fueled by major plant upgrades and pumped storage projects in Asia (ANDRITZ H1 2025 results release, andritz.com, July 2025 — cites two large-scale India projects incl. the new Tarali pumped storage plant in Maharashtra)"
+        ],
+        "india_operations": "ANDRITZ Hydro Pvt. Ltd. (est. 1996, in India since 1903): manufacturing plants at Mandideep (Madhya Pradesh) and Prithla (Haryana), New Delhi HQ, 850+ engineers/technicians (India + SE Asia region), >21,000 MW of projects executed; Financial Report 2024 subsidiary list confirms further Indian entities (ANDRITZ O&M Pvt. Ltd. Mandideep, ANDRITZ Technologies Chennai, Schuler India Pune).",
+        "report_used": "ANDRITZ Financial Report 2024 (PDF downloaded from andritz.com and text-parsed — confirms Indian subsidiaries but its narrative contains no regional order-intake-by-country breakdown in the sections greped) + official andritz.com press releases 2025-2026 and H1 2025 results"
+      },
+      "notes": "Strongest India order pipeline of the three: seven pumped storage plants under implementation simultaneously (Chitravathi 500 MW 2023, Tarali 1,500 MW and Gandikota 1,800 MW 2025, Saidongar-1 Karjat 3,000 MW 2026 — each of the two recent orders 'low three-digit million-euro'), executed through its own Indian factories. Correction to the brief: the plants are Mandideep + Prithla (not 'Prithviganj'), and the mega pumped-storage orders are in Andhra Pradesh/Maharashtra — Telangana appears only in lift-irrigation O&M contracts. FY2024 group order intake was 8,276.9 MEUR (-3.2%) with Hydropower +7%; the India surge shows up in H1 2025 (+72.1% hydropower order intake). No India pulp-mill order verified this session."
+    }
+  ]
+}

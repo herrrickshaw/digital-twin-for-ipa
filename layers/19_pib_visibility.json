@@ -7110,5 +7110,14 @@
    "releases": [],
    "visibility": "BELOW_RADAR"
   }
+ ],
+ "corrections": [
+  {
+   "company": "Fincantieri",
+   "was": "reported as BELOW_RADAR in the first pass of this analysis",
+   "actually": "MENTIONED_ONLY -- one PIB headline exists, 2026-04-30, Ministry of Defence: 'Interaction between Indian Coast Guard and M/S Fincantieri (Italy)'",
+   "why_missed": "the title carries no investment keyword (no MoU/contract/plant/invest), so the INVESTMENT_RX filter correctly excluded it from ANNOUNCED -- but any summary that says Fincantieri is absent from PIB is wrong. Kongsberg by contrast IS ANNOUNCED (2025-06-03 GRSE polar research vessel MoU).",
+   "lesson": "'no investment-related headline' and 'no headline at all' are different claims and must not be collapsed when reporting."
+  }
  ]
 }

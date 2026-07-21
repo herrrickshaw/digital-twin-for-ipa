@@ -1,0 +1,271 @@
+{
+  "cluster": "americas_row",
+  "built": "2026-07-21",
+  "companies": [
+    {
+      "company": "SQM / Sociedad Quimica y Minera",
+      "country": "Chile",
+      "india_news": [
+        {
+          "headline": "Exclusive-Indian state firms seek stake in SQM's lithium projects in Australia, sources say",
+          "outlet": "Reuters (via Mining Weekly)",
+          "date": "2025-03-28",
+          "url": "https://www.miningweekly.com/article/indian-state-firms-seek-stake-in-sqms-lithium-projects-in-australia-sources-say-2025-03-28",
+          "what_happened": "KABIL with Coal India, Oil India and ONGC Videsh in talks to buy 20% of SQM's Mount Holland and Andover lithium projects in Western Australia — India's largest overseas lithium play. Note direction: India investing INTO SQM's assets, not SQM investing into India.",
+          "figure": "20% stake for ~USD 600 million; full asset base valued ~USD 3 billion"
+        },
+        {
+          "headline": "Coal India, ONGC Videsh among firms seeking stake in SQM's lithium projects",
+          "outlet": "Business Standard",
+          "date": "2025-03-28",
+          "url": "https://www.business-standard.com/companies/news/coal-india-ongc-videsh-among-firms-seeking-stake-in-sqm-s-lithium-projects-125032800475_1.html",
+          "what_happened": "Indian business press confirmation of the four-PSU consortium approach to SQM.",
+          "figure": "USD 600 million for 20%"
+        }
+      ],
+      "activity_type": "investment",
+      "govt_visibility_note": "Deal is India-state-driven (KABIL is a Ministry of Mines JV) yet was reported only via a Reuters exclusive sourced to unnamed people — no PIB headline names SQM. The Apr-2024 incorporation of SQM India Pvt Ltd in Pune appears only in ROC/company-registry data and a secondary aggregator (discoveryalert.com.au); no trade-press article was found reporting it, so it is NOT counted as a citable news item here.",
+      "summary_line": "Genuinely below-radar but the traceable activity is inbound-to-SQM (Indian PSUs buying into its Australian lithium), and its own Pune subsidiary has zero press coverage — a real quiet-entry signal that trade press has not yet picked up."
+    },
+    {
+      "company": "Embraer",
+      "country": "Brazil",
+      "india_news": [
+        {
+          "headline": "Embraer and Mahindra announce collaboration on the C-390 Millennium Medium Transport Aircraft in India",
+          "outlet": "Embraer media centre",
+          "date": "2024-02-01",
+          "url": "https://www.embraer.com/media-center/en/?mediatype=NEWS&detail=13870",
+          "what_happened": "MoU with Mahindra to jointly pursue the Indian Air Force Medium Transport Aircraft programme. This is a campaign/bid, NOT a won order.",
+          "figure": "IAF MTA requirement reported at up to 80 aircraft"
+        },
+        {
+          "headline": "Embraer to offer India its own C-390 assembly line as part of bid for new military transport",
+          "outlet": "FlightGlobal",
+          "date": "2026-06",
+          "url": "https://www.flightglobal.com/archive/2026/06/embraer-prepared-to-open-indian-c-390-assembly-site-to-support-sale/",
+          "what_happened": "Embraer states willingness to open an Indian C-390 production site to support the MTA sale. Conditional offer tied to winning the competition.",
+          "figure": "fleet recapitalisation up to 80 transport aircraft"
+        },
+        {
+          "headline": "Embraer, Mahindra plan C-390 MRO facility for India air force bid",
+          "outlet": "FlightGlobal",
+          "date": "2026-02-20",
+          "url": "https://www.flightglobal.com/fixed-wing/embraer-mahindra-plan-india-mro-for-c-390-bid/166387.article",
+          "what_happened": "Embraer and Mahindra advance site selection for an Indian MRO base, explicitly subject to IAF selecting the C-390. Also covered by Aviation Week (https://aviationweek.com/defense/aircraft-propulsion/embraer-ramps-c-390-india-push-mahindra-mro-partnership).",
+          "figure": "not stated"
+        }
+      ],
+      "activity_type": "bid",
+      "govt_visibility_note": "All milestones are company-announced (Embraer/Mahindra press releases and defence trade press). No PIB headline names Embraer. MoD has not announced a C-390 selection.",
+      "summary_line": "Sustained, escalating India campaign (Feb-2024 MoU to Oct-2025 cooperation agreement to Feb-2026 MRO siting) but strictly a competition bid — no signed aircraft order, so 'investment intent' is conditional, not committed."
+    },
+    {
+      "company": "Cameco",
+      "country": "Canada",
+      "india_news": [
+        {
+          "headline": "Cameco Signs Long-Term Uranium Supply Agreement with India",
+          "outlet": "Cameco (also Businesswire)",
+          "date": "2026-03-02",
+          "url": "https://www.cameco.com/media/news/cameco-signs-long-term-uranium-supply-agreement-with-india",
+          "what_happened": "Nine-year uranium ore concentrate supply contract with India's Department of Atomic Energy; deliveries 2027-2035. Nearly 10x the value of Cameco's 2015 India contract.",
+          "figure": "~22 million lb U3O8; ~CAD 2.6 billion"
+        },
+        {
+          "headline": "Cameco uranium agreement a highlight of Canada-India deals",
+          "outlet": "American Nuclear Society / Nuclear Newswire",
+          "date": "2026-03-06",
+          "url": "https://www.ans.org/news/2026-03-06/article-7823/cameco-uranium-agreement-a-highlight-of-canadaindia-deals/",
+          "what_happened": "Trade-press framing of the deal within the broader Canada-India commercial reset.",
+          "figure": "CAD 2.6 billion"
+        }
+      ],
+      "activity_type": "order",
+      "govt_visibility_note": "STRONG POLITICAL VISIBILITY DESPITE NO PIB HEADLINE: the signing was celebrated at a Delhi event attended by PM Narendra Modi, Canadian PM Mark Carney and Saskatchewan Premier Scott Moe. Counterparty is the Department of Atomic Energy — a Government of India department. If PIB's headline never named Cameco, that is a naming-convention artefact, not genuine obscurity.",
+      "summary_line": "NOT below-radar in substance — a USD-scale sovereign supply contract signed in front of two prime ministers; treat any 'unpublicised' classification as a PIB-headline-text artefact."
+    },
+    {
+      "company": "CAE Inc",
+      "country": "Canada",
+      "india_news": [
+        {
+          "headline": "CAE and InterGlobe inaugurate new pilot training centre in Mumbai to support India's aviation growth",
+          "outlet": "PR Newswire India",
+          "date": "2026-04-15",
+          "url": "https://www.prnewswire.com/in/news-releases/cae-and-interglobe-inaugurate-new-pilot-training-centre-in-mumbai-to-support-indias-aviation-growth-302743367.html",
+          "what_happened": "CAE Simulation Training Pvt Ltd (CAE-InterGlobe JV) opened a fourth Indian training centre in Mumbai, starting with one A320 full-flight simulator and a second due later in 2026.",
+          "figure": "44,000 sq ft; scalable to 6 FFS; network 16 FFS today rising to 23; India needs ~22,000 new pilots by 2034"
+        },
+        {
+          "headline": "CAE expand in India with new pilot-training site",
+          "outlet": "FlightGlobal",
+          "date": "2026-04",
+          "url": "https://www.flightglobal.com/archive/2026/04/cae-expand-in-india-with-new-pilot-training-site/",
+          "what_happened": "Independent trade-press confirmation of the Mumbai site opening and CAE's India expansion trajectory.",
+          "figure": "not stated"
+        },
+        {
+          "headline": "New pilot training centre to open in Mumbai",
+          "outlet": "AviTrader",
+          "date": "2025-08-26",
+          "url": "https://avitrader.com/2025/08/26/new-pilot-training-centre-to-open-in-mumbai/",
+          "what_happened": "Earlier announcement of the Mumbai centre ahead of opening.",
+          "figure": "not stated"
+        }
+      ],
+      "activity_type": "expansion",
+      "govt_visibility_note": "Purely commercial JV expansion announced via company/PR channels and aviation trade press. No PIB headline names CAE; no minister or state government publicity found.",
+      "summary_line": "A clean example of the target pattern — steady physical capex (5 simulators added since FY2024, fourth centre opened 2026) reported only in aviation trade press, zero government amplification."
+    },
+    {
+      "company": "WEG S.A.",
+      "country": "Brazil",
+      "india_news": [
+        {
+          "headline": "WEG Expands Operations in India with Planned Acquisition of Sanelec",
+          "outlet": "The Machine Maker",
+          "date": "2025-12",
+          "url": "https://themachinemaker.com/news/weg-expands-operations-in-india-with-planned-acquisition-of-sanelec/",
+          "what_happened": "WEG (via subsidiary REIVAX) agreed to acquire Bengaluru-based Sanelec Excitation Systems, maker of automatic voltage regulators and excitation control systems — converting a long-standing exclusive-partner relationship into ownership.",
+          "figure": "USD 5.2 million; Sanelec 2024 net operating revenue ~USD 2.3m/month, EBITDA margin 29%"
+        },
+        {
+          "headline": "TT&A advises WEG on acquisition of Sanelec",
+          "outlet": "Bar and Bench (Dealstreet)",
+          "date": "2025-12",
+          "url": "https://www.barandbench.com/dealstreet/tta-advises-weg-on-acquisition-of-sanelec",
+          "what_happened": "Legal-press confirmation of the transaction, including deferred consideration in two tranches within an 18-month FEMA timeline.",
+          "figure": "two-tranche deferred consideration, 18-month FEMA window"
+        },
+        {
+          "headline": "WEG Delivers Breakthrough IE4 Motors Project in India's F&B Sector",
+          "outlet": "WEG / Electric Machinery",
+          "date": "2025-05",
+          "url": "https://www.electricmachinery.com/institutional/US/en/news/products-and-solutions/weg-delivers-breakthrough-ie4-motors-project-in-india-s-f-b-sector",
+          "what_happened": "IE4 high-efficiency motors manufactured at WEG's Hosur (Tamil Nadu) site delivered to an Indian food-and-beverage customer, evidencing live Indian production output.",
+          "figure": "dispatched 2025-04-22; WEG runs 4 production plants in India"
+        }
+      ],
+      "activity_type": "investment",
+      "govt_visibility_note": "M&A reported only in Indian manufacturing and legal trade press plus a Brazilian energy outlet. No PIB headline, no minister or state-government announcement found.",
+      "summary_line": "Textbook quiet investor — four Indian plants, active Hosur manufacturing output, and a Dec-2025 bolt-on acquisition in Bengaluru, all covered only by niche trade and legal press."
+    },
+    {
+      "company": "Ma'aden / Saudi Arabian Mining Company",
+      "country": "Saudi Arabia",
+      "india_news": [
+        {
+          "headline": "Three Indian Fertilizer Companies Sign Long-Term DAP Supply Agreement with Saudi Arabia's Ma'aden",
+          "outlet": "Krishi Jagran",
+          "date": "2025-07",
+          "url": "https://krishijagran.com/news/three-indian-fertilizer-companies-sign-long-term-dap-supply-agreement-with-saudi-arabia-s-ma-aden",
+          "what_happened": "IPL, KRIBHCO and Chambal Fertilizers signed long-term agreements lifting annual DAP supply from Ma'aden to 3.1 million tonnes from FY2025-26 for five years, extendable by five more.",
+          "figure": "3.1 million tonnes/yr DAP (up from 1.9 Mt in 2024-25); 5+5 year term"
+        },
+        {
+          "headline": "Coromandel International, Saudi Arabia's Ma'aden sign long-term DAP deal",
+          "outlet": "Business Standard",
+          "date": "2025-04-10",
+          "url": "https://www.business-standard.com/companies/news/coromandel-international-saudi-arabia-s-ma-aden-sign-long-term-dap-deal-125041000136_1.html",
+          "what_happened": "Separate long-term DAP and NP/NPK supply agreement between Coromandel International and Ma'aden.",
+          "figure": "not stated"
+        },
+        {
+          "headline": "India signs multiple phosphate agreements",
+          "outlet": "World Fertilizer",
+          "date": "2025-07-15",
+          "url": "https://www.worldfertilizer.com/phosphates/15072025/india-signs-multiple-phosphate-agreements/",
+          "what_happened": "Sector trade-press roundup of the India-Saudi phosphate supply agreements.",
+          "figure": "3.1 Mt/yr"
+        }
+      ],
+      "activity_type": "order",
+      "govt_visibility_note": "MINISTERIAL PUBLICITY CONFIRMED: the long-term agreements were signed during Union Minister J.P. Nadda's visit to Saudi Arabia and were carried by DD News, the state broadcaster (https://ddnews.gov.in/en/india-signs-long-term-fertilizer-supply-agreements-with-saudi-arabia-during-minister-jp-naddas-visit/). So even if no PIB headline names Ma'aden, the deal was actively publicised by the Government of India.",
+      "summary_line": "Large and strategically important, but NOT unpublicised — a minister-fronted, state-broadcaster-covered supply arrangement; also offtake, not Indian capex."
+    },
+    {
+      "company": "Thungela Resources",
+      "country": "South Africa",
+      "india_news": [
+        {
+          "headline": "Thungela establishes export marketing function in Dubai",
+          "outlet": "World Coal",
+          "date": "2024-02-13",
+          "url": "https://www.worldcoal.com/coal/13022024/thungela-establishes-export-marketing-function-in-dubai/",
+          "what_happened": "Thungela Marketing International registered with the Dubai Multi Commodity Centre Authority (15 Dec 2023) to run export marketing for South African and Australian assets, sited for proximity to main export markets including India. Not an India investment.",
+          "figure": "not stated"
+        }
+      ],
+      "activity_type": "none",
+      "govt_visibility_note": "No PIB, ministerial or state-government mention found. Also no India-based investment to publicise.",
+      "summary_line": "NO INDIA ACTIVITY FOUND IN WINDOW — India appears only as a demand-side export destination in results commentary (and 2024-25 commentary describes Indian demand as BELOW expectations); the marketing entity went to Dubai, not India."
+    },
+    {
+      "company": "Orica",
+      "country": "Australia",
+      "india_news": [],
+      "activity_type": "none",
+      "govt_visibility_note": "No PIB, ministerial or state-government mention found; also no dated in-window trade-press item to correlate against.",
+      "summary_line": "NO INDIA ACTIVITY FOUND IN WINDOW — Orica's Indian Explosives Pvt Ltd (Gomia, Jharkhand) is a long-standing wholly-owned subsidiary with revenue of Rs 467 crore in FY2023, but every located expansion reference (Gomia capacity upgrade, Nagpur site feasibility) predates July 2023; Orica's 2024 M&A (Cyanco, Terra Insights) was non-India."
+    },
+    {
+      "company": "Ansell",
+      "country": "Australia",
+      "india_news": [],
+      "activity_type": "none",
+      "govt_visibility_note": "The Kovai investment was company-PR-driven (Business Standard/ANI press-release wire, Mar-2023) with no government amplification found — but it falls outside the July-2023 window.",
+      "summary_line": "NO DATED IN-WINDOW NEWS ITEM FOUND — Ansell's material India commitment (the ~USD 80m Kovai greenfield plant in Tamil Nadu, with a further USD 40m phase taking it to USD 120m) was announced Dec-2022/Mar-2023, before the window; post-July-2023 coverage is only incidental status commentary (plant used for surgical packing and sterilisation while new glove lines are commissioned), with no discrete dated announcement located."
+    },
+    {
+      "company": "Elbit Systems",
+      "country": "Israel",
+      "india_news": [
+        {
+          "headline": "Adani Defence & Aerospace and Sparton Enter Strategic Partnership to Indigenise Anti-Submarine Warfare Solutions (Sonobuoys) for India",
+          "outlet": "Adani newsroom",
+          "date": "2025-05-18",
+          "url": "https://www.adani.com/newsroom/media-releases/adani-defence-aerospace-and-sparton-enter-strategic-partnership-to-indigenise-anti-submarine",
+          "what_happened": "Binding collaboration agreement with Sparton (DeLeon Springs LLC), an Elbit Systems group company, to localise sonobuoy and ASW system assembly in India — first Indian private-sector indigenised sonobuoy offering.",
+          "figure": "not stated"
+        },
+        {
+          "headline": "Adani Defence partners with US firm Sparton to build India's first indigenised sonobuoy systems for Navy",
+          "outlet": "Business Today",
+          "date": "2025-05-18",
+          "url": "https://www.businesstoday.in/india/story/adani-defence-partners-with-us-firm-sparton-to-build-indias-first-indigenised-sonobuoy-systems-for-navy-476724-2025-05-18",
+          "what_happened": "Indian mainstream business-press coverage of the Elbit-subsidiary tie-up.",
+          "figure": "not stated"
+        },
+        {
+          "headline": "Adani partners with Sparton to develop anti-submarine warfare system",
+          "outlet": "Business Standard",
+          "date": "2025-05-18",
+          "url": "https://www.business-standard.com/companies/news/adani-group-sparton-sonobuoy-manufacturing-india-125051800478_1.html",
+          "what_happened": "Further confirmation of the May-2025 binding agreement.",
+          "figure": "not stated"
+        }
+      ],
+      "activity_type": "investment",
+      "govt_visibility_note": "Announced by Adani, not by government; framed under 'Aatmanirbhar Bharat' but no PIB headline names Elbit or Sparton. Note the Hyderabad Adani-Elbit UAV complex itself was inaugurated in 2019 (pre-window); the in-window item is the sonobuoy localisation agreement.",
+      "summary_line": "Active in-window via its Sparton subsidiary — a binding May-2025 India localisation agreement covered by Indian business press only, with the Elbit link often understated (outlets described Sparton as a 'US firm')."
+    },
+    {
+      "company": "Arcelik",
+      "country": "Turkey",
+      "india_news": [
+        {
+          "headline": "JV Voltbek's FY25 revenue rises 39.5% to Rs 2,235.53 cr, volume grows 57%",
+          "outlet": "Business Standard",
+          "date": "2025-06-15",
+          "url": "https://www.business-standard.com/amp/companies/news/jv-voltbek-s-fy25-revenue-rises-39-5-to-2-235-53-cr-volume-grows-57-125061500286_1.html",
+          "what_happened": "Voltbek (Voltas-Arcelik 50:50 JV, Sanand Gujarat) reported sharp FY25 growth; Voltas injected further equity into the JV during FY25 and the Sanand facility is expanding capacity.",
+          "figure": "FY25 revenue Rs 2,235.53 crore (+39.5%); volume +57%; Voltas invested Rs 102.41 crore in Voltbek share capital in FY25; Sanand capacity being expanded ~50%"
+        }
+      ],
+      "activity_type": "expansion",
+      "govt_visibility_note": "Coverage is financial-results-driven (Indian business press and broker notes such as the ICICI Securities Dec-2024 Voltas Beko update). No PIB headline names Arcelik. The original 2018 Gujarat MoU/plant launch had state-government involvement but predates the window.",
+      "summary_line": "Quietly compounding — the Sanand JV is scaling hard (revenue +39.5%, capacity +50%, fresh equity from the Indian partner) but Arcelik's name surfaces only inside Voltas results coverage, never in its own right."
+    }
+  ]
+}

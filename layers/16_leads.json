@@ -3,7 +3,7 @@
  "built": "2026-07-20",
  "method": "yfinance-verified profitable (margin>0 AND roe>0) x curated open-lane map; score = profitability 40 + expansion 25 + open central lane 25 + state top-up 10. Contact enrichment is a separate deliberate step (no personal data collected here). ENRICHED 2026-07-20: US foreign leads carry SEC 10-K India/APAC mention-mining (latest+prior filing, trend); 59 annual-report deep-dive leads added from JP/KR/CN/UK/AU agents (interest levels HIGH/MEDIUM/LOW/NONE with quoted evidence; China leads carry the Press Note 3 lens). WAVE-2 2026-07-20: +57 deep-dive leads from DACH/NL, France/SouthEU/Nordics, TW/HK/SG, CA/BR/ZA/SA/IL clusters (yfinance tickers carried; TEPA/PN3/SHANTI/EU-FTA context per cluster).",
  "source": "focus-sector-investor-map/data/focus_sector_companies_final.csv (147 verified names from the 19,795-company catalog)",
- "count": 311,
+ "count": 321,
  "leads": [
   {
    "company": "MICRON TECHNOLOGY INC",
@@ -4533,6 +4533,59 @@
    "notes": "All geothermal/wind expansion is domestic Indonesian; expansion_signal reflects stated capacity development, not APAC reach"
   },
   {
+   "company": "Fisher & Paykel Healthcare Corporation Limited",
+   "ticker": "FPH.NZ",
+   "market": "NZX",
+   "country": "New Zealand",
+   "sector": "Medical Devices",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.20295,
+    "roe": 0.23391,
+    "revenue_growth": 0.14
+   },
+   "expansion_signal": true,
+   "lead_score": 91.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI Medical Devices + parks",
+     "status": "operational"
+    },
+    {
+     "instrument": "TDB Medical Devices CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Our products are sold either direct to customers or through distributors. Our largest markets by revenue are North America, Europe and Asia Pacific. (Fisher & Paykel Healthcare Annual Report 2025)",
+     "Revenue by region (NZ$m, FY24/FY25): North America 806.1 / 967.2 (+20%); Europe 477.3 / 541.5 (+13%); Asia Pacific 368.9 / 420.8 (+14%) \u2014 Asia Pacific is ~21% of group revenue. (Fisher & Paykel Healthcare Annual Report 2025, Results in Brief)",
+     "Fisher & Paykel Healthcare Asia Investments Limited (NZ) owns: Fisher & Paykel Healthcare India Private Limited \u2014 David Boyle, James Tuck, Prashant Kate (Fisher & Paykel Healthcare Annual Report 2025, subsidiary directors disclosure)"
+    ],
+    "india_operations": "Wholly-owned direct-sales subsidiary Fisher & Paykel Healthcare India Private Limited (Bengaluru; ~78 employees, ~INR 165Cr FY25 revenue per Tracxn registry data \u2014 press/registry, not the annual report); report also references an on-the-ground F&P India team and membership of the Medical Technology Association of India",
+    "report_used": "Fisher & Paykel Healthcare Annual Report 2025 (year ended 31 March 2025), via FY2025 ASX-lodged results bundle, 28 May 2025"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "Established operating India subsidiary and 14% APAC revenue growth, but the FY2025 report contains no NEW explicit India investment commitment (India appears in subsidiary, community and supply-chain contexts) \u2014 hence MEDIUM. Cleanest profitability in the cluster (margin 20.3%, ROE 23.4%)."
+  },
+  {
    "company": "PAGE INDUSTRIES LTD",
    "ticker": "PAGEIND",
    "market": "IN",
@@ -7476,6 +7529,67 @@
    "notes": "Strongest India story of the three: repeated new orders (AAI 2023 award, executing through 2026), Make-in-India localisation via the Bengaluru radar factory with TASL, and continued Asia-Pacific ATM positioning (Indonesia). FY2024 group results: ATM revenue +30%, Defence +26% (Investing.com earnings-call coverage). Verbatim annual-report APAC language could not be extracted due to site bot-blocking; all quotes above are from fetched official Indra press pages."
   },
   {
+   "company": "ASELSAN Elektronik Sanayi ve Ticaret A.S.",
+   "ticker": "ASELS.IS",
+   "market": "Borsa Istanbul",
+   "country": "Turkey",
+   "sector": "Aerospace & Defence",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.17581,
+    "roe": 0.14837,
+    "revenue_growth": 0.15
+   },
+   "expansion_signal": true,
+   "lead_score": 84.0,
+   "central_lanes": [
+    {
+     "instrument": "iDEX/ADITI",
+     "status": "DISC 12 reopen; ADITI to Rs 25cr/project"
+    },
+    {
+     "instrument": "Make-I/II",
+     "status": "live EOIs: Viraj 03-Aug, TAC 15-Aug"
+    },
+    {
+     "instrument": "SRIJAN/PIL",
+     "status": "assured import-substitution demand"
+    },
+    {
+     "instrument": "Defence corridors UP/TN",
+     "status": "land + capex"
+    }
+   ],
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "While carrying ASELSAN into the future within the framework of our export-oriented growth strategy, we delivered trust through our technologies to the global arena, especially in the Middle East, Balkans, Asia-Pacific and Gulf countries. (ASELSAN Annual Report 2024)",
+     "IdentIFF (IFF Interrogator and Transponder) was delivered to a country in the Asia-Pacific region for the first time. (ASELSAN Annual Report 2024)",
+     "Wide area critical communication solutions, which are widely and successfully used in Turkiye, continued to expand abroad with sales to the Asia-Pacific region. (ASELSAN Annual Report 2024)"
+    ],
+    "india_operations": "None. Zero India mentions in the 2024 annual report; no Aselsan-Bharat Electronics cooperation (active or cancelled) verifiable in report or reputable press \u2014 consistent with strained Turkey-India defence relations post-2019",
+    "report_used": "ASELSAN Annual Report 2024 (English, cdn.aselsan.com)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "MEDIUM is APAC-only: concrete first-time deliveries and signed contracts in unnamed Asia-Pacific countries (plausibly SE Asia, not India). India specifically = NONE. TAS 29 applies (TRY functional) but Aselsan remained strongly profitable post-restatement."
+  },
+  {
    "company": "ADITYA INFOTECH LIMITED",
    "ticker": "CPPLUS",
    "market": "IN",
@@ -10387,6 +10501,67 @@
    }
   },
   {
+   "company": "The a2 Milk Company Limited",
+   "ticker": "ATM.NZ",
+   "market": "NZX",
+   "country": "New Zealand",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.05936,
+    "roe": 0.14722,
+    "revenue_growth": 0.188
+   },
+   "expansion_signal": true,
+   "lead_score": 74.6,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "In addition, the Company continued to make progress against its emerging markets strategy expanding its reach of English label products into Vietnam through the launch of a2 Platinum in 1H25 and a2 Gentle Gold in 2H25 with a focus on building brand awareness and expanding distribution across MBS stores. (a2 Milk FY25 Annual Report, CEO's year in review)",
+     "Growing in existing and new emerging markets outside of China (e.g. South East Asia). (a2 Milk FY25 Annual Report, growth priorities)",
+     "Further established our footprint in Singapore, successfully launching a2 Milk in major retail chains FairPrice and Cold Storage. - Delivered more than 25% year-on-year growth in South Korea despite strong category headwinds (a2 Milk FY25 Annual Report)"
+    ],
+    "india_operations": "None \u2014 the word 'India' does not appear anywhere in the 156-page FY25 Annual Report (programmatic page-by-page search); segment is 'China & Other Asia' (revenue NZ$1,302.0m, +13.9%) with named expansion in Vietnam, Singapore, South Korea",
+    "report_used": "The a2 Milk Company 2025 Annual Report (FY ended 30 June 2025, thea2milkcompany.com)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "MEDIUM is APAC-only: concrete named South East Asia expansion (Vietnam launches, Singapore relaunch, >60% Vietnam growth, >25% Korea growth). India specifically = NONE."
+  },
+  {
    "company": "NUCOR CORP",
    "ticker": "NUE",
    "market": "US",
@@ -12466,6 +12641,63 @@
     ],
     "filing_date": "2026-03-03"
    }
+  },
+  {
+   "company": "Turkiye Sise ve Cam Fabrikalari A.S. (Sisecam)",
+   "ticker": "SISE.IS",
+   "market": "Borsa Istanbul",
+   "country": "Turkey",
+   "sector": "Chemicals & Plastics",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.04548,
+    "roe": 0.03601,
+    "revenue_growth": -0.034
+   },
+   "expansion_signal": true,
+   "lead_score": 66.0,
+   "central_lanes": [
+    {
+     "instrument": "PCPIR framework",
+     "status": "partial"
+    },
+    {
+     "instrument": "TDB Chemical CFP",
+     "status": "open"
+    },
+    {
+     "instrument": "Gujarat thrust-sector chemicals",
+     "status": "25-40% eFCI"
+    }
+   ],
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "MEDIUM",
+    "evidence": [
+     "Sisecam updated its strategies in India, a key global market, to enhance its market position, respond more effectively to market dynamics, and explore new opportunities. Following completion of the flat glass float line cold repair at its India production facility in 2023, the company identified new markets and customers and developed innovative products. (Sisecam Annual Report 2024)",
+     "Sisecam is exploring opportunities to generate electricity from renewable resources in countries such as India, Italy, Georgia, Romania, and other locations where the company has production operations. (Sisecam Annual Report 2024)",
+     "As of year-end 2024, Sisecam operates production facilities in the following countries: Turkiye, Bulgaria, Italy, Bosnia & Herzegovina, Romania, Germany, Hungary, Slovakia, USA, Russia, Georgia, Ukraine, India, and Egypt. (Sisecam Annual Report 2024)"
+    ],
+    "india_operations": "Wholly-owned Sisecam Flat Glass India Private Limited (100%) with flat glass/mirror plant at Halol, Gujarat (ex-HNG Float Glass, acquired 2013), plus Mobile Health Unit CSR project in Halol since 2018; India CGU carrying value TRY 1,134,286 thousand at end-2024",
+    "report_used": "Sisecam Annual Report 2024 (English, 256pp; site Cloudflare-gated, full text retrieved via reader proxy)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "Real wholly-owned India manufacturing plus active 'key global market' strategy language and exploratory renewable-energy interest in India, but no headline new India capex commitment in 2024 \u2014 hence MEDIUM not HIGH. TAS 29 restatement applies (TRY functional); yfinance margins modest partly for that reason."
   },
   {
    "company": "CARBORUNDUM UNIVERSAL LTD",
@@ -14632,6 +14864,109 @@
    }
   },
   {
+   "company": "Ford Otomotiv Sanayi A.S. (Ford Otosan)",
+   "ticker": "FROTO.IS",
+   "market": "Borsa Istanbul",
+   "country": "Turkey",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.03814,
+    "roe": 0.21429,
+    "revenue_growth": -0.086
+   },
+   "expansion_signal": false,
+   "lead_score": 52.3,
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "Zero India mentions in the Ford Otosan Integrated Annual Report 2024; only Asia references are macro commentary, e.g.: In the Asia-Pacific region, China is leveraging state... (Ford Otosan Integrated Annual Report 2024)",
+     "an agreement has been reached with Ford for the transfer of shares in Ford's Craiova plant ... EUR 575 million, plus a conditional additional payment up to EUR 140 million (Ford Otosan press kit, transaction completed 1 July 2022 \u2014 Romania, not India)"
+    ],
+    "india_operations": "None. The rumored Ford Otosan-Sanand engine plant deal does not check out: Ford India's Sanand plant was sold to Tata Passenger Electric Mobility (UTA signed Aug 2022, completed Jan 2023); Ford's later India engine investment (~$370M, Chennai) is Ford Motor Co.'s own, not Ford Otosan's",
+    "report_used": "Ford Otosan Integrated Annual Report 2024 (English, fordotosan.com.tr) + Tata Motors/Ford Otosan press releases for the Sanand/Craiova record"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "Honest NONE; expansion vector is Europe (Craiova, Romania). TAS 29 applies (inflation adjustment of TRY 4.37bn on legal reserves disclosed) but Ford Otosan remained profitable post-restatement \u2014 passes screen cleanly (ROE 21.4%)."
+  },
+  {
+   "company": "Tofas Turk Otomobil Fabrikasi A.S.",
+   "ticker": "TOASO.IS",
+   "market": "Borsa Istanbul",
+   "country": "Turkey",
+   "sector": "Auto, EV & Components",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.02897,
+    "roe": 0.22183,
+    "revenue_growth": 1.878
+   },
+   "expansion_signal": false,
+   "lead_score": 52.1,
+   "central_lanes": [
+    {
+     "instrument": "PM E-DRIVE",
+     "status": "e-2W claims close 31-Jul-2026; e-3W to 2028; STACKS with PLI-Auto/ACC in scheme terms"
+    },
+    {
+     "instrument": "PLI-Auto / PLI-ACC",
+     "status": "operational"
+    }
+   ],
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "Zero India mentions in the Tofas 2024 Annual Report (programmatic search); the only Asia-related string in the entire report is the incidental internal Stellantis region label 'Worldwide (CIIM EurAsiaMed)'. (Tofas 2024 Annual Report)"
+    ],
+    "india_operations": "None. Turkiye-focused Stellantis JV (domestic market + European exports)",
+    "report_used": "Tofas Turk Otomobil Fabrikasi A.S. 2024 Annual Report (English, tofas.com.tr)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "TAS 29 applied per the report's accounting policies; yfinance revenue_growth of +188% is a nominal-TRY / restatement artifact, not real volume growth \u2014 treat with caution."
+  },
+  {
    "company": "BORGWARNER INC",
    "ticker": "BWA",
    "market": "US",
@@ -15094,6 +15429,57 @@
    }
   },
   {
+   "company": "Arcelik A.S.",
+   "ticker": "ARCLK.IS",
+   "market": "Borsa Istanbul",
+   "country": "Turkey",
+   "sector": "White Goods & Electricals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": -0.01569,
+    "roe": -0.11971,
+    "revenue_growth": -0.088
+   },
+   "expansion_signal": true,
+   "lead_score": 50.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI White Goods",
+     "status": "operational (85->80 attrition noted)"
+    },
+    {
+     "instrument": "BEE/star-rating demand levers",
+     "status": "standing"
+    }
+   ],
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "HIGH",
+    "evidence": [
+     "VoltasBeko is a joint venture formed in 2017 between Arcelik and Voltas, India's leading air conditioner brand. This partnership leverages Arcelik's technology and innovation expertise along with Voltas' extensive domestic market knowledge and sales experience. (Arcelik Annual Report 2024)",
+     "VoltasBeko has set its sights on becoming a leading brand in India's home appliance market. To achieve this, the company is focused on accelerating its growth year over year as well as on increasing brand penetration across all regions of the country. (Arcelik Annual Report 2024)",
+     "VoltasBeko expanded its international presence in 2024, achieving two key milestones. The company began exporting top-loading washing machines to Bangladesh and made its first foray into the Sri Lankan market, extending its reach beyond Nepal, the Maldives, Bangladesh, and Turkey. (Arcelik Annual Report 2024)"
+    ],
+    "india_operations": "49%-owned VoltBek Home Appliances Pvt Ltd JV with Voltas (Tata) operating a refrigerator plant and R&D office in Sanand, Gujarat; 2.8M+ refrigerators produced 2020-2024, ~15,000 retail outlets, now exporting from India; JV still loss-making (Arcelik share of loss TRY 501.8M thousand-basis in 2024)",
+    "report_used": "Arcelik Annual Report 2024 (English, arcelikglobal.com)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "PROFITABILITY UNVERIFIED under yfinance screen: negative margin/ROE is a TAS 29 hyperinflation-accounting artifact. 2024 report shows consolidated net loss TRY 2.21bn driven by a TRY 28.3bn non-cash net monetary loss, but PARENT-ATTRIBUTABLE NET PROFIT of TRY +1.69bn; report itself names 'the introduction of inflation accounting' among the year's headwinds alongside Whirlpool EMEA integration. Retained as strong candidate on report-level profit."
+  },
+  {
    "company": "Umicore",
    "ticker": "UMI.BR",
    "market": "BR",
@@ -15370,6 +15756,67 @@
     "investment_sentences": [],
     "filing_date": "2026-02-12"
    }
+  },
+  {
+   "company": "Fonterra Co-operative Group Limited",
+   "ticker": "FCG.NZ",
+   "market": "NZX",
+   "country": "New Zealand",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.04369,
+    "roe": 0.12469,
+    "revenue_growth": 0.093
+   },
+   "expansion_signal": false,
+   "lead_score": 46.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "Fonterra India Private Limited [India] A Aggarwal, H D Gowans, S G Mathews (Fonterra Annual Report 2025, subsidiary listing \u2014 the only India mention; 'Fonterra Future Dairy' / Future Consumer appear nowhere in the 264-page report)",
+     "The co-op entered the joint venture as a capital-light way to test the Indian market, which has a large dairy consuming population but restrictive trade access for New Zealand dairy. (Judith Swales, Fonterra Asia Pacific CEO, quoted in Rural News Group, 7 April 2022, on the wind-down of the Fonterra Future Dairy JV \u2014 press source)",
+     "The divestment comprises the sale of shares in Mainland Group Holdings Limited... The transaction includes: - Fonterra's global Consumer brands and business (excluding Greater China) - Integrated Foodservice and Ingredients businesses in Oceania and Sri Lanka - Middle East and Africa Foodservice business... In August 2025, Fonterra announced an agreement to sell the businesses to Lactalis for a total value of $4.22 billion. (Fonterra Annual Report 2025)"
+    ],
+    "india_operations": "Past: Fonterra Future Dairy 50:50 JV with Future Consumer Ltd (2018/19-2022, Dreamery brand) exited April 2022 as Future Group collapsed. Present: only a residual Indian legal entity in the subsidiary list; strategy is B2B Ingredients/Foodservice with the Asian consumer + Sri Lanka businesses being sold to Lactalis",
+    "report_used": "Fonterra Annual Report 2025 (FY ended 31 July 2025, via NZX announcement 459423) + Rural News Group 7 Apr 2022 press article for the JV exit (stated as press source)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "Ticker note: FCG.NZ (co-operative group) used for fundamentals; FSF.NZ is the shareholders' fund wrapper (yfinance shows 0/0 there). Direction of travel is divestment, not Asian consumer expansion \u2014 the exited India JV is unmentioned in the current report."
   },
   {
    "company": "BALRAMPUR CHINI MILLS LTD",
@@ -15707,6 +16154,66 @@
     "investment_sentences": [],
     "filing_date": "2025-12-05"
    }
+  },
+  {
+   "company": "Ulker Biskuvi Sanayi A.S.",
+   "ticker": "ULKER.IS",
+   "market": "Borsa Istanbul",
+   "country": "Turkey",
+   "sector": "Food Processing",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.02987,
+    "roe": 0.08058,
+    "revenue_growth": 0.186
+   },
+   "expansion_signal": false,
+   "lead_score": 42.8,
+   "central_lanes": [
+    {
+     "instrument": "PLI-FPI",
+     "status": "operational"
+    },
+    {
+     "instrument": "PMKSY",
+     "status": "convergence with AIF 3% subvention"
+    },
+    {
+     "instrument": "AIF",
+     "status": "portal OPEN, Rs 94,272cr sanctioned"
+    },
+    {
+     "instrument": "TDB Agriculture CFP",
+     "status": "open"
+    }
+   ],
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "NONE",
+    "evidence": [
+     "In addition to leading Turkiye's biscuit market, Ulker Biskuvi maintains its leadership in Saudi Arabia and Egypt and is experiencing robust growth in Kazakhstan and other Central Asian countries. (Ulker Annual Report 2024)",
+     "Take a strategic position as the main hub for transportation to Central Asia and China and meet new consumers in regions where consumption is increasing rapidly through investments made with our pladis Kazakhstan company in Kazakhstan... (Ulker Annual Report 2024, strategy section)"
+    ],
+    "india_operations": "None within the listed entity; India appears in the 2024 report only in director biographies (7 mentions, all bios). pladis (Godiva, McVitie's \u2014 which has India reach) is a sister company wholly owned by Yildiz Uluslararasi Gida Yatirimlari A.S., NOT under Ulker Biskuvi",
+    "report_used": "Ulker Biskuvi Sanayi A.S. Annual Report 2024 (English, ulkerbiskuviyatirimciiliskileri.com)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "Expansion vector is Central Asia/MENA (Kazakhstan hub, Saudi, Egypt), which is not India/APAC as defined here. TAS 29 applied per report; profitable post-restatement."
   },
   {
    "company": "Aluar Aluminio Argentino",
@@ -16289,6 +16796,58 @@
    },
    "source_cluster": "gulf_mena",
    "notes": "FAILS PROFITABILITY SCREEN: FY2023 net LOSS EGP 717mn; FY2024 NPM ~0.5%. Kept in file for the record but excluded from any buy-interest shortlist. UNVERIFIED (yfinance has no financial statements for ESRS.CA; figures from published results)."
+  },
+  {
+   "company": "Eregli Demir ve Celik Fabrikalari T.A.S. (Erdemir)",
+   "ticker": "EREGL.IS",
+   "market": "Borsa Istanbul",
+   "country": "Turkey",
+   "sector": "Specialty Steel & Metals",
+   "region": "Foreign",
+   "profitability": {
+    "margin": 0.00218,
+    "roe": 0.00231,
+    "revenue_growth": 0.115
+   },
+   "expansion_signal": false,
+   "lead_score": 35.3,
+   "central_lanes": [
+    {
+     "instrument": "PLI Specialty Steel",
+     "status": "operational (AM/NS precedent)"
+    },
+    {
+     "instrument": "Critical minerals mission / MMDR-2025",
+     "status": "exploration+processing openings"
+    }
+   ],
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "enrichment": {
+    "status": "PENDING",
+    "provider": "Lusha or Apollo (Apollo MCP connector unauthenticated)",
+    "roles_to_pull": [
+     "CFO",
+     "Head of Corporate Development / M&A",
+     "VP Strategy / New Markets",
+     "India Country Head (if exists)",
+     "Head of Government Affairs"
+    ]
+   },
+   "india_apac_interest": {
+    "level": "LOW",
+    "evidence": [
+     "As in previous years, India followed China in production volume. In 2024, India's steel production rose by 6.3%, reaching 149.6 million tons, fueled by continued capacity expansions and consumption growth in recent years. (ERDEMIR Integrated Annual Report 2024)",
+     "Additionally, the outcomes of Europe and India's ongoing reviews of steel import measures will play a decisive role in shaping global steel trade patterns. (ERDEMIR Integrated Annual Report 2024)"
+    ],
+    "india_operations": "No operations; India appears only as global steel-market commentary, a trade-measures risk factor, and a ferro/auxiliary-material sourcing geography (supply-chain table: 'European Union, India, China')",
+    "report_used": "ERDEMIR Integrated Annual Report 2024 (English, erdemir.com.tr)"
+   },
+   "source_cluster": "tr_nz",
+   "notes": "Passes screen but only barely profitable (margin 0.2%, ROE 0.2%) \u2014 cyclical steel trough. TAS 29 distortion is LESS severe here than TRY-functional peers: the report states inflation adjustment applied only to TRY-functional consolidated subsidiaries; main steel entities are effectively USD-functional."
   }
  ],
  "china_pn3_note": "Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected \u2014 BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' \u2014 SAIC diluted MG Motor India to JSW (49%\u219239% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts carry the manufacturing \u2014 Prama Hikvision; (4) technology licensing/royalty (CATL's LRS model) is the theoretically PN3-compatible route but is now ALSO constrained from the Chinese side by Beijing's export controls on battery/rare-earth/process technology (the Reliance-CATL talks died partly on this); (5) pre-2020 grandfathered assets (Midea's Pune park, Luxshare's Tamil Nadu plant, BYD Chennai) become the only expansion platforms; (6) asset-light models \u2014 export/dealer networks (Gree, Baosteel, Wanhua sales office) and services (COSCO liner calls) \u2014 proceed freely because they involve no Indian FDI. Net effect: annual reports of Chinese majors show India as a fast-growing REVENUE geography (Haier +30%, 'developing countries' +30% for Mindray) while capex conspicuously routes to Vietnam, Thailand, Indonesia, Brazil, Hungary, Saudi Arabia instead.",
@@ -16296,6 +16855,7 @@
   "asean",
   "europe_tail",
   "gulf_mena",
-  "latam"
+  "latam",
+  "tr_nz"
  ]
 }

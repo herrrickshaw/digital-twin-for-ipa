@@ -3,7 +3,7 @@
  "built": "2026-07-21",
  "method": "foreign leads only; targeting score = lead_score + verified India-intent bonus (annual-report level or 10-K mention weight); China separated under Press Note 3",
  "source": "layers/16_leads.json",
- "count": 131,
+ "count": 136,
  "china_pn3_count": 9,
  "targets": [
   {
@@ -1661,6 +1661,26 @@
    ]
   },
   {
+   "company": "Arcelik A.S.",
+   "ticker": "ARCLK.IS",
+   "country": "Turkey",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 80.8,
+   "evidence": "VoltasBeko is a joint venture formed in 2017 between Arcelik and Voltas, India's leading air conditioner brand. This partnership leverages Arcelik's technology and innovation expertise along with Voltas' extensive domest",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
    "company": "Mondelez International, Inc.",
    "ticker": "MDLZ",
    "country": "United States",
@@ -1759,6 +1779,28 @@
     "UP (ECMS top-up = equal to central)",
     "Assam (+40% of ISM capex)",
     "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Fisher & Paykel Healthcare Corporation Limited",
+   "ticker": "FPH.NZ",
+   "country": "New Zealand",
+   "sector": "Medical Devices",
+   "tier": "MEDIUM",
+   "target_score": 106.8,
+   "evidence": "Our products are sold either direct to customers or through distributors. Our largest markets by revenue are North America, Europe and Asia Pacific. (Fisher & Paykel Healthcare Annual Report 2025)",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
    ],
    "roles_to_approach": [
     "CFO",
@@ -2491,6 +2533,28 @@
    ]
   },
   {
+   "company": "ASELSAN Elektronik Sanayi ve Ticaret A.S.",
+   "ticker": "ASELS.IS",
+   "country": "Turkey",
+   "sector": "Aerospace & Defence",
+   "tier": "MEDIUM",
+   "target_score": 99.0,
+   "evidence": "While carrying ASELSAN into the future within the framework of our export-oriented growth strategy, we delivered trust through our technologies to the global arena, especially in the Middle East, Balkans, Asia-Pacific an",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
    "company": "Elsewedy Electric",
    "ticker": "SWDY.CA",
    "country": "Egypt",
@@ -2545,6 +2609,28 @@
     "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
     "Chhattisgarh (core-sector stack)",
     "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "The a2 Milk Company Limited",
+   "ticker": "ATM.NZ",
+   "country": "New Zealand",
+   "sector": "Food Processing",
+   "tier": "MEDIUM",
+   "target_score": 89.6,
+   "evidence": "In addition, the Company continued to make progress against its emerging markets strategy expanding its reach of English label products into Vietnam through the launch of a2 Platinum in 1H25 and a2 Gentle Gold in 2H25 wi",
+   "why_now": "AIF (portal OPEN, Rs 94,272cr sanctioned)",
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
    ],
    "roles_to_approach": [
     "CFO",
@@ -2675,6 +2761,28 @@
     "Telangana LS 2026-30",
     "TN (structured packages)",
     "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Turkiye Sise ve Cam Fabrikalari A.S. (Sisecam)",
+   "ticker": "SISE.IS",
+   "country": "Turkey",
+   "sector": "Chemicals & Plastics",
+   "tier": "MEDIUM",
+   "target_score": 81.0,
+   "evidence": "Sisecam updated its strategies in India, a key global market, to enhance its market position, respond more effectively to market dynamics, and explore new opportunities. Following completion of the flat glass float line ",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
    ],
    "roles_to_approach": [
     "CFO",

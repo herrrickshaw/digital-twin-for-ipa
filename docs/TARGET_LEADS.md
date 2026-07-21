@@ -1,6 +1,6 @@
 # Target leads — foreign companies with verified India intent
 
-*Generated 2026-07-21 by `scripts/build_target_leads.py` from `layers/16_leads.json` — do not hand-edit. 78 priority + 53 warm targets across 37 countries; 9 China names held on the Press Note 3 watch-list. Evidence quotes are from each company's own latest annual report / 10-K. Contact enrichment (Lusha/Apollo) remains a separate, deliberate step — no personal data here.*
+*Generated 2026-07-21 by `scripts/build_target_leads.py` from `layers/16_leads.json` — do not hand-edit. 79 priority + 57 warm targets across 39 countries; 9 China names held on the Press Note 3 watch-list. Evidence quotes are from each company's own latest annual report / 10-K. Contact enrichment (Lusha/Apollo) remains a separate, deliberate step — no personal data here.*
 
 ## Tier 1 — priority targets (stated India intent)
 
@@ -460,13 +460,19 @@
 - Landing states: Gujarat (shipping-container thrust + scrapping); AP/TN coastal packages
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**77. Mondelez International, Inc.** (MDLZ, United States) — Food Processing — score 72.4
+**77. Arcelik A.S.** (ARCLK.IS, Turkey) — White Goods & Electricals — score 80.8
+- Evidence: VoltasBeko is a joint venture formed in 2017 between Arcelik and Voltas, India's leading air conditioner brand. This partnership leverages Arcelik's technology and innovation expertise along with Voltas' extensive domest
+- Why now: PLI White Goods; BEE/star-rating demand levers
+- Landing states: Standard state stacks (UP/Gujarat/TN capital+SGST menus)
+- Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
+
+**78. Mondelez International, Inc.** (MDLZ, United States) — Food Processing — score 72.4
 - Evidence: such as the launch of co-branded chocolate innovations combining Biscoff with Cadbury Dairy Milk, Milka and other key brands in Europe as well as zero sugar Bournvita in India.
 - Why now: AIF (portal OPEN, Rs 94,272cr sanctioned)
 - Landing states: AP Food Processing 4.0; MP (IPP + food parks); Jharkhand Food & Feed 2024
 - Approach: CFO, Head of Corporate Development / M&A, VP Strategy / New Markets
 
-**78. LEAR CORP** (LEA, United States) — Auto, EV & Components — score 70.6
+**79. LEAR CORP** (LEA, United States) — Auto, EV & Components — score 70.6
 - Evidence: In particular, we believe that certain joint ventures have provided us, and will continue to provide us, with the opportunity to expand our business relationships with Asian automotive manufacturers, particularly in emer
 - Why now: PM E-DRIVE; PLI-Auto / PLI-ACC
 - Landing states: TN EV 2023 (20% battery capital subsidy); MP EV 2025; UP EV 2022 + upevsubsidy portal
@@ -479,6 +485,7 @@
 | 111.8 | GE Vernova Inc. | United States | White Goods & Electricals | PLI White Goods; BEE/star-rating demand levers |
 | 109.9 | Borouge plc | UAE | Chemicals & Plastics | TDB Chemical CFP (open) |
 | 109.7 | Marvell Technology, Inc. | United States | Electronics & Semiconductors | ECMS (open -- Rs 40,000cr outlay, FCFS) |
+| 106.8 | Fisher & Paykel Healthcare Corporation | New Zealand | Medical Devices | TDB Medical Devices CFP (open) |
 | 106.5 | Chandra Asri Pacific | Indonesia | Chemicals & Plastics | TDB Chemical CFP (open) |
 | 105.9 | AMERICAN EXPRESS CO | United States | Green Energy & Fuels | PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026) |
 | 105 | DENSO Corporation | Japan | Auto, EV & Components | PM E-DRIVE; PLI-Auto / PLI-ACC |
@@ -512,15 +519,18 @@
 | 105 | Vale S.A. | Brazil | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
 | 102.4 | Press Metal Aluminium Holdings | Malaysia | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
 | 102.3 | Industries Qatar Q.P.S.C. | Qatar | Chemicals & Plastics | TDB Chemical CFP (open) |
+| 99.0 | ASELSAN Elektronik Sanayi ve Ticaret A | Turkey | Aerospace & Defence | iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project) |
 | 97.2 | Elsewedy Electric | Egypt | White Goods & Electricals | PLI White Goods; BEE/star-rating demand levers |
 | 96.2 | Gruma | Mexico | Food Processing | AIF (portal OPEN, Rs 94,272cr sanctioned) |
 | 95.8 | Hoa Phat Group | Vietnam | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
+| 89.6 | The a2 Milk Company Limited | New Zealand | Food Processing | AIF (portal OPEN, Rs 94,272cr sanctioned) |
 | 89.1 | BALL Corp | United States | Chemicals & Plastics | TDB Chemical CFP (open) |
 | 85.8 | EDP - Energias de Portugal | Portugal | Green Energy & Fuels | PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026) |
 | 85.5 | Metlen Energy & Metals | Greece | Green Energy & Fuels | PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026) |
 | 85 | thyssenkrupp AG | Germany | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
 | 84.2 | COLGATE PALMOLIVE CO | United States | White Goods & Electricals | PLI White Goods; BEE/star-rating demand levers |
 | 81.4 | Top Glove Corporation | Malaysia | Medical Devices | TDB Medical Devices CFP (open) |
+| 81.0 | Turkiye Sise ve Cam Fabrikalari A.S. ( | Turkey | Chemicals & Plastics | TDB Chemical CFP (open) |
 | 74.8 | Qatar Aluminium Manufacturing Company  | Qatar | Specialty Steel & Metals | Critical minerals mission / MMDR-2025 (exploration+processing openings |
 | 71.5 | LEVI STRAUSS & CO | United States | Textiles & Apparel | Technical textiles mission (open) |
 | 68.6 | Mesaieed Petrochemical Holding Q.P.S.C | Qatar | Chemicals & Plastics | TDB Chemical CFP (open) |

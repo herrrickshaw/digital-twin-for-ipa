@@ -1,6 +1,6 @@
 # Leads — profitable firms × open government lanes
 
-*Generated 2026-07-21 from `layers/16_leads.json` (311 leads, 7 markets) by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
+*Generated 2026-07-21 from `layers/16_leads.json` (321 leads, 7 markets) by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
 
 > **China / Press Note 3**: Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected — BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' — SAIC diluted MG Motor India to JSW (49%→39% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts c…
 
@@ -21,7 +21,7 @@
 | 105 | Nokia Oyj | Finland | HIGH | Nokia (company disclosures alongside Annual Report 2025): Chennai factory manufactures 5G NR and 5G Massive MIMO equipment 'for the domestic and globa |
 | 105 | Hon Hai Precision Industry (Foxconn) | Taiwan | HIGH | Foxconn Singapore raised its India-subsidiary stake to 99.9% with a cumulative investment value of $2.82bn (June 2026 filings coverage) |
 
-## Chemicals & Plastics (34 leads)
+## Chemicals & Plastics (35 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -38,7 +38,7 @@
 | 90 | BASF SE | Germany | MEDIUM | BASF in India sales 2024: EUR 2,392 million (2023: EUR 2,386 million); Number of employees (BASF India): 2,411 — BASF in India Factsheet 2024, pdftote |
 | 90 | Yara International ASA | Norway | MEDIUM | Yara Annual Report 2025: Babrala (Uttar Pradesh) plant cut GHG intensity to 2.522 tCO2e/tN, beating Yara's global 2.7 target — positioned as India's m |
 
-## Auto, EV & Components (26 leads)
+## Auto, EV & Components (28 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -55,7 +55,7 @@
 | 90 | Johnson Electric Holdings | Hong Kong | MEDIUM | Annual Report subsidiary schedule (fetched PDF) lists 'Johnson Electric Private Limited — Manufacturing, sales and marketing — India — INR1,044,096,50 |
 | 90 | Magna International Inc. | Canada | MEDIUM | MIXED SIGNAL: 2025 annual report discloses Magna sold a body & chassis business in India in 2024; the divestiture decreased sales by USD 112 million |
 
-## White Goods & Electricals (26 leads)
+## White Goods & Electricals (27 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -89,7 +89,7 @@
 | 82.3 | LAURUS LABS LIMITED | India | domestic |  |
 | 79.8 | GLAND PHARMA LIMITED | India | domestic |  |
 
-## Specialty Steel & Metals (38 leads)
+## Specialty Steel & Metals (39 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -120,7 +120,7 @@
 | 44.4 | Matson, Inc. | United States | 10-K: India×0, APAC×68, trend 0 |  |
 | 35.5 | KIRBY CORP | United States | 10-K: India×0, APAC×0, trend 0 |  |
 
-## Aerospace & Defence (25 leads)
+## Aerospace & Defence (26 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -137,7 +137,7 @@
 | 100.5 | GENERAL ELECTRIC CO | United States | 10-K: India×1, APAC×15, trend 1 | S:        Singapore 178        United Kingdom 78        Ireland 60        Hungary 52        Italy 46        India 36        Other Non-U. |
 | 98.2 | Howmet Aerospace Inc. | United States | 10-K: India×2, APAC×20, trend 0 | , and Wheels India Limited. |
 
-## Medical Devices (15 leads)
+## Medical Devices (16 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -145,6 +145,7 @@
 | 105 | Ansell Limited | Australia | HIGH | 'Ansell is commencing an $80 million investment over three years for a new manufacturing site in Tamil Nadu, southern India, designed to produce a wid |
 | 105 | Koninklijke Philips N.V. | Netherlands | HIGH | "Philips Innovation Campus, Bengaluru (PIC-B) established in 1996 as a software development Centre for Royal Philips, hosts 4200+ employees working on |
 | 97.3 | DEXCOM INC | United States | 10-K: India×0, APAC×38, trend 0 | We capture ethnic diversity data in the United States only, comprised of the following categories: Black or African American, Hispanic or Latino, Asia |
+| 91.8 | Fisher & Paykel Healthcare Corporation L | New Zealand | MEDIUM | Our products are sold either direct to customers or through distributors. Our largest markets by revenue are North America, Europe and Asia Pacific. ( |
 | 90 | Terumo Corporation | Japan | MEDIUM | Terumo Report 2024 subsidiary table lists "Terumo Penpol Pvt. Ltd., Kerala, India" among principal consolidated subsidiaries (verified) |
 | 90 | Shenzhen Mindray Bio-Medical Electronics | China | MEDIUM | Earnings-call/AR materials: 'developing countries experienced growth exceeding 30%' — the company's fastest-growing segment, with India its largest de |
 | 90 | Smith & Nephew plc | United Kingdom | MEDIUM | FY2024: 'Emerging Markets revenue was up 9.5% (7.6% reported), with strong double-digit growth across the Middle East, India and Latin America' - Indi |
@@ -152,7 +153,6 @@
 | 83.0 | Edwards Lifesciences Corp | United States | 10-K: India×0, APAC×41, trend 0 |  |
 | 77.9 | Solventum Corp | United States | 10-K: India×6, APAC×20, trend 2 | stiture impacts include lost sales from the Company’s Purification and Filtration business that was sold in September 2025, certain health care busine |
 | 66.4 | Top Glove Corporation | Malaysia | MEDIUM | gradually increase its running capacity to "70 billion pieces of gloves by end-FY2025 from the current 64 billion pieces" (The Edge Malaysia, 20 Dec 2 |
-| 59.3 | ALIGN TECHNOLOGY INC | United States | 10-K: India×2, APAC×54, trend 1 | The Invisalign Palatal Expander System is currently available in the United States, Canada, Australia, New Zealand, Hong Kong, Singapore, Vietnam, Jap |
 
 ## Green Energy & Fuels (30 leads)
 
@@ -171,7 +171,7 @@
 | 81.5 | AMERICAN ELECTRIC POWER CO INC | United States | 10-K: India×0, APAC×1, trend 0 | As of December 31, 2025, approximately 8%, 23% and 15% of the Registrants’ available credit facilities were with European, Canadian, and Asian banks,  |
 | 81.2 | Sociedad Quimica y Minera de Chile (SQM) | Chile | HIGH | On April 22, 2024, the subsidiary SQM India Private Limited was incorporated. (SQM Form 20-F, FY2024) |
 
-## Food Processing (27 leads)
+## Food Processing (30 leads)
 
 | Score | Company | Country | India/APAC interest | Key evidence |
 |---|---|---|---|---|
@@ -182,11 +182,11 @@
 | 76.3 | KRBL LIMITED | India | domestic |  |
 | 75 | Bega Cheese Limited | Australia | LOW | FY2025 results: Bega 'maintained strong market share positions across key categories and continued to grow in foodservice and key Asian markets' - Asi |
 | 74.9 | Kerry Group | Ireland | HIGH | "The India market is dynamic and evolving and we are looking at our next phase of investment in India." (Siddharth Rastogi, GM Indian Subcontinent/Sou |
+| 74.6 | The a2 Milk Company Limited | New Zealand | MEDIUM | In addition, the Company continued to make progress against its emerging markets strategy expanding its reach of English label products into Vietnam t |
 | 72.5 | Mama's Creations, Inc. | United States | 10-K: India×0, APAC×0, trend 0 |  |
 | 69.3 | Grupo Bimbo | Mexico | HIGH | The Group believes that markets like India, Romania, Tunisia, and other Eastern and Southeastern European countries have a high potential for continuo |
 | 68.9 | TRIVENI ENGG. & INDS. LTD | India | domestic |  |
 | 66.9 | SANSTAR LIMITED | India | domestic |  |
-| 65 | CJ Cheiljedang Corporation | South Korea | NONE | Disclosed K-food capacity expansion map is Japan (new bibigo dumpling plant, Chiba, 2025), Hungary (by 2026) and South Dakota, US (by 2027) — India do |
 
 ## Textiles & Apparel (16 leads)
 

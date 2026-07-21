@@ -37,6 +37,20 @@ CORRECTIONS = {
                "by the PM and the Canadian PM -- publicised, just not in a PIB headline"),
     "Ma'aden": ("HEADLINED", "minister-fronted (signed during J.P. Nadda's Saudi visit, "
                 "carried by DD News, the state broadcaster); also offtake, not Indian capex"),
+    "AstraZeneca": ("STATE_PUBLICISED", "Chennai tranche launched at Tamil Nadu's own 'TN Rising' "
+                    "London roadshow with CM Stalin and Minister T.R.B. Rajaa present"),
+    "Sanofi": ("STATE_PUBLICISED", "Hyderabad GCC publicly endorsed by Telangana CM Revanth Reddy; "
+               "note the India story is two-directional -- brand divestments (Myoril, Rs 234cr) and a "
+               "consumer-health demerger run alongside the GCC capex"),
+    "Thales": ("STATE_PUBLICISED", "R&T India launch attended by Karnataka IT Minister Priyank Kharge, "
+               "staged inside the bilateral India-France Year of Innovation"),
+    # Publicity exists and is loud -- but it names only the Indian principal, so the
+    # foreign supplier is invisible by construction rather than by neglect.
+    "Merck": ("SUBSUMED_IN_PARTNER", "materially involved in the Rs 91,000cr Dholera fab, which the "
+              "government publicises relentlessly -- but the publicity names Tata Electronics and the "
+              "India Semiconductor Mission, never Merck"),
+    "Danieli": ("SUBSUMED_IN_PARTNER", "~EUR 500m SAIL IISCO order sits inside a loudly-publicised PSU "
+                "project; announced at the Italy-India Business Forum, not by the ministry naming Danieli"),
 }
 PN3 = {"BYD", "Luxshare", "Hikvision", "Haier", "Midea", "SAIC"}
 
@@ -100,8 +114,8 @@ def main():
                 "summary": c.get("summary_line", ""),
             })
 
-    order = ["QUIET_INVESTOR", "STATE_PUBLICISED", "HEADLINED", "BLOCKED_PN3",
-             "DIRECTION_INBOUND", "NO_ACTIVITY"]
+    order = ["QUIET_INVESTOR", "SUBSUMED_IN_PARTNER", "STATE_PUBLICISED", "HEADLINED",
+             "BLOCKED_PN3", "DIRECTION_INBOUND", "NO_ACTIVITY"]
     merged.sort(key=lambda r: (order.index(r["verdict"]) if r["verdict"] in order else 9,
                                -len(r["india_news"])))
     counts = {}

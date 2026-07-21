@@ -40,11 +40,29 @@ The pattern is narrow: semiconductors, defence, and marquee PM-attended ribbon-c
 
 ## Verified against the trade press
 
-The 27 below-radar names with the strongest stated intent were checked against dated news. Absence from PIB headlines turns out to have four different causes — only one of them is an opportunity.
+The 41 below-radar names with the strongest stated intent were checked against dated news. Absence from PIB headlines turns out to have four different causes — only one of them is an opportunity.
 
-### Quiet investors — the outreach list (12)
+### Quiet investors — the outreach list (17)
 
 Dated, sourced India activity in the last three years and **no government publicity found at all**: not a PIB headline, not a minister at the ribbon-cutting, not a state-government announcement. These are companies committing capital to India that the government is not currently courting.
+
+**Andritz** (Austria, Green Energy & Fuels)
+- 2026-04-14: [Advancing renewable energy: ANDRITZ to equip India's largest pumped storage plant](https://www.andritz.com/newsroom-en/hydro/2026-04-14-saidongar-group) — Low three-digit million EUR range
+- 2026-03-17: [ANDRITZ secures major order from Tata Power for 1,000 MW Bhivpuri Pumped Storage Project in India](https://www.andritz.com/newsroom-en/hydro/2026-03-17-tata-power-group) — Low three-digit million EUR range
+- 2022-09: [ANDRITZ to supply equipment for Gandhi Sagar pumped storage project in India](https://www.renewableenergyworld.com/energy-storage/pumped-storage/andritz-to-supply-equipment-for-gandhi-sagar-pumped-storage-project-in-india/) — 1,440 MW, expandable to 1,680 MW
+- *Strongly active and genuinely unpublicised — two separate low-three-digit-EUR-million pumped-storage orders in six weeks (Tata Power Bhivpuri, Torrent Saidongar-1) plus a seven-project India pipeline, all announced only through Andritz's own hydro newsroom and*
+
+**Schaeffler AG** (Germany, Auto, EV & Components)
+- 2025-05-28: [Schaeffler India Opens Fifth Manufacturing Plant in Tamil Nadu to Boost Powertrain Production](https://www.autocarpro.in/news/schaeffler-india-opens-fifth-manufacturing-plant-in-tamil-nadu-to-boost-powertrain-production-126648) — INR 1,700 crore invested 2022-2024, against an original INR 1,500 crore commitment
+- 2026-05-27: [How Schaeffler India is pumping in EUR 500 million over the next five years to boost capacity and increase loc](https://www.businesstoday.in/magazine/deep-dive/story/how-schaeffler-india-is-pumping-in-eu500-million-over-the-next-five-years-to-boost-capacity-and-increase-localisation-533647-2026-05-27) — EUR 500 million over five years
+- 2026-02: [Schaeffler India to Raise Capex Above INR 5 Billion in 2026 as Plant Utilisation Crosses 85 Percent](https://machinist.in/2026/02/schaeffler-india-to-raise-capex-above-inr-5-billion-in-2026-as-plant-utilisation-crosses-85-percent/) — INR 5 billion+ 2026 capex; INR 4,500 crore by 2030
+- *One of the clearest below-radar heavyweights — a fifth Indian plant opened May 2025 with no official present, INR 1,700 crore already spent 2022-24, and a EUR 500m / INR 4,500 crore forward programme visible only through trade press and stock-exchange filings.*
+
+**Ericsson** (Sweden)
+- 2025-06-26: [Ericsson strengthens R&D in India - to commence ASIC development in Bengaluru](https://www.ericsson.com/en/press-releases/2/2025/6/ericsson-strengthens-rd-in-india--to-commence-asic-development-in-bengaluru) — 150+ new positions (no India capex figure; Ericsson spends ~USD 5 billion/year on R&D globally)
+- 2025-04-22: [Ericsson to expand local antenna manufacturing in India](https://developingtelecoms.com/telecom-business/vendor-news/18373-ericsson-to-expand-local-antenna-manufacturing-in-india.html) — 100% localisation of passive antennas by June 2025
+- 2025-06-03: [Ericsson expands capabilities in India](https://www.rcrwireless.com/20250603/5g/ericsson-india) — ~2,000 R&D engineers
+- *Consistently active and quiet — ASIC/semiconductor design added in Bengaluru with 150+ roles (Jun 2025), full passive-antenna localisation via VVDN and a Pune logistics hub (Apr 2025), all announced only through Ericsson's newsroom and telecom trade press.*
 
 **Lenovo Group** (Hong Kong, Electronics & Semiconductors)
 - 2024-09-17: [Lenovo begins AI server production in India, opens R&D lab in Bengaluru](https://www.business-standard.com/companies/news/lenovo-begins-ai-server-production-in-india-opens-r-d-lab-in-bengaluru-124091700983_1.html) — 50,000 enterprise AI servers and 2,400 high-end GPU units annually; 4th global R&D centre
@@ -69,6 +87,11 @@ Dated, sourced India activity in the last three years and **no government public
 - 2025-05-18: [Adani Defence partners with US firm Sparton to build India's first indigenised sonobuoy systems for Navy](https://www.businesstoday.in/india/story/adani-defence-partners-with-us-firm-sparton-to-build-indias-first-indigenised-sonobuoy-systems-for-navy-476724-2025-05-18) — not stated
 - 2025-05-18: [Adani partners with Sparton to develop anti-submarine warfare system](https://www.business-standard.com/companies/news/adani-group-sparton-sonobuoy-manufacturing-india-125051800478_1.html) — not stated
 - *Active in-window via its Sparton subsidiary — a binding May-2025 India localisation agreement covered by Indian business press only, with the Elbit link often understated (outlets described Sparton as a 'US firm').*
+
+**Croda International** (United Kingdom, Chemicals & Plastics)
+- 2026-03-19: [Croda opens new manufacturing facility in Dahej, India to support growth and sustainable innovation](https://www.croda.com/en-gb/media-hub/news/general/croda-opens-new-manufacturing-facility-in-dahej) — Not disclosed in the opening release
+- 2023-03-30: [Croda India to invest Rs. 500 crore in Dahej greenfield facility](https://www.indianchemicalnews.com/chemical/croda-india-to-invest-rs-500-crore-in-dahej-greenfield-facility-16925) — INR 500 crore (first phase). Note: one secondary source cites USD 5.4m for an earlier/narrower scope — figures conflict, prefer the INR 500 crore first-phase number.
+- *Genuinely active and unpublicised — a INR 500 crore greenfield surfactants plant at Dahej commissioned March 2026, evidenced by trade press, the company's own release and its P&L, with no Indian government presence found.*
 
 **Panasonic Holdings** (Japan, Electronics & Semiconductors)
 - 2025-09-19: [Panasonic India eyeing white goods PLI, new plant to tap market potential](https://www.business-standard.com/companies/news/panasonic-life-solutions-manufacturing-unit-pli-scheme-white-goods-125091900308_1.html) — PLI white-goods application; new unit unquantified
@@ -105,13 +128,47 @@ Dated, sourced India activity in the last three years and **no government public
 - 2025: [Food Empire to expand spray-dried soluble coffee manufacturing facility in India](https://www.comunicaffe.com/food-empire-to-expand-manufacturing-facility-in-india/) — USD 37 million
 - *USD 37m Andhra Pradesh soluble-coffee capacity expansion, covered only by drinks trade press.*
 
+**Leonardo** (Italy, Aerospace & Defence)
+- 2026-02-03: [Adani Defence & Aerospace and Leonardo Forge Strategic Partnership to Build India's Helicopter Ecosystem](https://www.leonardo.com/en/press-release-detail/-/detail/03-02-2026-adani-defence-aerospace-and-leonardo-forge-strategic-partnership-to-build-india-s-helicopter-ecosystem) — No value disclosed
+- *Genuinely below-radar and strategically significant — a Feb 2026 helicopter-manufacturing MoU with Adani that re-enters a market Leonardo was effectively locked out of, announced entirely through corporate and trade channels.*
+
 **Arcelik** (Turkey, White Goods & Electricals)
 - 2025-06-15: [JV Voltbek's FY25 revenue rises 39.5% to Rs 2,235.53 cr, volume grows 57%](https://www.business-standard.com/amp/companies/news/jv-voltbek-s-fy25-revenue-rises-39-5-to-2-235-53-cr-volume-grows-57-125061500286_1.html) — FY25 revenue Rs 2,235.53 crore (+39.5%); volume +57%; Voltas invested Rs 102.41 crore in Voltbek share capital in FY25; Sanand capacity being expanded ~50%
 - *Quietly compounding — the Sanand JV is scaling hard (revenue +39.5%, capacity +50%, fresh equity from the Indian partner) but Arcelik's name surfaces only inside Voltas results coverage, never in its own right.*
 
-### Publicised by a state, invisible at the centre (2)
+### Invisible by construction — the publicity names the Indian principal (2)
+
+These firms sit inside projects the government promotes *heavily* — but the announcements name the Indian principal (Tata Electronics, the India Semiconductor Mission, SAIL), never the foreign supplier. They are not being ignored; they are structurally unnameable in the current announcement format. The same mechanism is visible in the register itself: Nippon Steel surfaces only as *ArcelorMittal Nippon Steel India*, and CLP only as *Apraava Energy*.
+
+**Danieli** (Italy, Specialty Steel & Metals)
+- 2025-12-19: [SAIL Turns to Danieli For IISCO Plant Expansion](https://www.aist.org/sail-turns-to-danieli-for-iisco-plant-expansion) — ~4 million tonnes/year added capacity (contract value not stated in this item)
+- 2025-12: [Danieli to supply equipment for India's SAIL, EUR500 million contract](https://www.marketscreener.com/news/danieli-to-supply-equipment-for-india-s-sail-eur500-million-contract-ce7d50dbdd89f62d) — EUR 500 million
+- 2025-12: [Danieli strengthens its presence in India with major project for SAIL](https://www.danieli.com/en/news-media/news/danieli-strengthens-its-presence-india-major-project-sail_37_1020.htm) — EUR 500 million (per group)
+- *Genuinely large in-window India activity — an approx EUR 500m equipment order for SAIL's IISCO Burnpur expansion (Dec 2025) — but it is an export order, not Indian capex by Danieli, and it sits inside a project the Indian state publicises loudly.*
+
+**Merck KGaA** (Germany, Electronics & Semiconductors)
+- 2025-09-02: [Tata Electronics and Merck Electronics Sign Memorandum of Understanding to Strengthen Semiconductor Capabiliti](https://www.tataelectronics.com/w/tata-electronics-and-merck-electronics-sign-memorandum-of-understanding-to-strengthen-semiconductor-capabilities-in-india) — Dholera fab total investment INR 91,000 crore (~USD 11 billion); Merck group sales EUR 21.2 billion (2024). No Merck-specific India figure disclosed.
+- *Active but structurally invisible — a Sept 2025 materials-and-fab-infrastructure MoU for Tata's INR 91,000 crore Dholera fab, with Merck's role announced only by Tata and trade press while the government headline space goes to the Indian partner.*
+
+### Publicised by a state, invisible at the centre (5)
 
 Real activity that a **state government amplified** — land allotted and announced, a Chief Minister at the ground-breaking — while no PIB headline ever named the firm. This is a centre-versus-state visibility gap, not stealth, and it says something about which door these investors came through.
+
+**AstraZeneca** (United Kingdom, Pharma & Bulk Drugs)
+- 2025-06-26: [AstraZeneca expands Bangalore Global Hub in India with Rs 166 Crore Investment, creating 400 Jobs to boost R&D](https://www.astrazeneca.com/content/az-in/media/press-releases/2025/astrazeneca-expands-bangalore-global-hub-in-india.html) — INR 166 crore; 400 new jobs
+- 2025-09-08: [AstraZeneca announces Rs 176 crore investments in India to expand Chennai GITC](https://medicaldialogues.in/news/industry/pharma/astrazeneca-announces-rs-176-crore-investments-in-india-to-expand-chennai-gitc-154816) — INR 176 crore
+- 2024-07: [AstraZeneca plans to invest Rs 250 crore to grow its Global Innovation and Technology Centre in India, bringin](https://www.astrazeneca.com/content/az-in/media/press-releases/2024/astrazeneca-plans-to-invest-to-grow-its-gitc-in-india.html) — INR 250 crore; ~1,300 roles
+- *Very active (three tranches, ~INR 592 crore across Bengaluru and Chennai in 15 months) but only half-hidden — the Chennai tranche was launched at a Tamil Nadu government roadshow alongside the CM, so the 'no PIB headline' signal understates its official visibi*
+
+**Sanofi** (France, Pharma & Bulk Drugs)
+- 2024-07-17: [Sanofi announces expansion of its Global Capability Centre in Hyderabad](https://www.sanofi.com/assets/countries/india/docs/Media/press-releases/2024/sanofi-announces-expansion-of-its-global-capability-centre-in-hyderabad.pdf) — EUR 400 million over six years, of which EUR 100 million by 2025 (reported elsewhere as ~USD 437 million)
+- 2023-06: [Sanofi India sells muscle relaxant brand Myoril to Corona Remedies](https://www.business-standard.com/topic/sanofi-india) — INR 234 crore (divestment)
+- *Large and real (EUR 400m Hyderabad GCC, Jul 2024) but not truly quiet — the Telangana CM publicly endorsed it; and the India story is mixed, with brand divestments and a consumer-health demerger running alongside the GCC build-out.*
+
+**Thales** (France, Aerospace & Defence)
+- 2026-02-17: [India-France Year of Innovation 2026: India is now part of the five Thales global corporate research centers](https://www.webwire.com/ViewPressRel.asp?aId=350676) — No India-specific figure; Thales spends >EUR 4 billion/year on R&D globally. Over 2,300 staff across Thales and its Indian JVs.
+- date not verified: [Thales Unveils State-of-the-Art Inflight Entertainment & Services Lab at its Engineering Competence Centre in ](https://www.thalesgroup.com/en/news-centre/press-releases/thales-unveils-state-art-inflight-entertainment-services-lab-its) — Not disclosed
+- *Real R&D escalation (India promoted to one of five global Thales corporate research centres, Feb 2026) but the least 'quiet' name in the set — a Karnataka minister spoke at the launch and it was staged inside a bilateral India-France innovation year.*
 
 **LG Electronics** (South Korea, Electronics & Semiconductors)
 - 2025-05-08: [LG Electronics India Limited Begins Construction of Its Third Manufacturing Plant in India](https://www.lgnewsroom.com/2025/05/lg-electronics-india-limited-begins-construction-of-its-third-manufacturing-plant-in-india/) — USD 600 million / Rs 5,001 crore over four years; capacity 800k refrigerators, 850k washing machines, 1.5m ACs, 2m compressors p.a.
@@ -183,7 +240,7 @@ The traceable activity is India reaching for the company's assets abroad, not th
 - 2025-03-28: [Coal India, ONGC Videsh among firms seeking stake in SQM's lithium projects](https://www.business-standard.com/companies/news/coal-india-ongc-videsh-among-firms-seeking-stake-in-sqm-s-lithium-projects-125032800475_1.html) — USD 600 million for 20%
 - *Genuinely below-radar but the traceable activity is inbound-to-SQM (Indian PSUs buying into its Australian lithium), and its own Pune subsidiary has zero press coverage — a real quiet-entry signal that trade press has not yet picked up.*
 
-### Intent stated, not yet converted (4)
+### Intent stated, not yet converted (8)
 
 The annual report expresses India or APAC interest, but no dated India activity surfaced inside the three-year window — or the only commitment predates it. Intent has not become capex.
 
@@ -192,6 +249,22 @@ The annual report expresses India or APAC interest, but no dated India activity 
 - 2026-06: [Embraer to offer India its own C-390 assembly line as part of bid for new military transport](https://www.flightglobal.com/archive/2026/06/embraer-prepared-to-open-indian-c-390-assembly-site-to-support-sale/) — fleet recapitalisation up to 80 transport aircraft
 - 2026-02-20: [Embraer, Mahindra plan C-390 MRO facility for India air force bid](https://www.flightglobal.com/fixed-wing/embraer-mahindra-plan-india-mro-for-c-390-bid/166387.article) — not stated
 - *Sustained, escalating India campaign (Feb-2024 MoU to Oct-2025 cooperation agreement to Feb-2026 MRO siting) but strictly a competition bid — no signed aircraft order, so 'investment intent' is conditional, not committed.*
+
+**Kerry Group** (Ireland, Food Processing)
+- 2019-06-25: [Kerry opens new facility in India to boost research and innovation](https://www.foodbev.com/news/kerry-opens-new-facility-in-india-to-boost-research-and-innovation) — EUR 20 million
+- *No India activity found in window (Jul 2023 - Jul 2026); the widely-cited Kerry India facility story is from June 2019 and predates the window by four years.*
+
+**Indra Sistemas** (Spain, Aerospace & Defence)
+- 2023-03-09: [Indra is set to improve flight capacity and safety in India with a pioneering system that centralizes all air ](https://www.indragroup.com/en/noticia/indra-set-improve-flight-capacity-safety-india-pioneering-system-centralizes-air-traffic) — More than EUR 55 million
+- *No verifiable India activity found inside the window; the flagship EUR 55m AAI air-traffic contract lands March 2023, four months before the window opens — a genuine near-miss worth re-checking with better newsroom access.*
+
+**Iveco Group** (Italy, Auto, EV & Components)
+- 2025-07-30: [TATA MOTORS TO ACQUIRE IVECO GROUP, TOGETHER CREATING A GLOBAL PLAYER IN COMMERCIAL VEHICLES](https://static-assets.tatamotors.com/Production/www-tatamotors-com-NEW/wp-content/uploads/2025/07/TataMotorsIveco.pdf) — ~EUR 3.8 billion (Forbes India cites EUR 3.9bn)
+- *No in-window India investment by Iveco; the only major India-linked news is Tata Motors acquiring Iveco (Jul 2025) — an inbound takeover that must not be scored as European investment into India.*
+
+**Sika AG** (Switzerland, Auto, EV & Components)
+- 2023-06-27: [Sika opens plant in India](https://www.indianchemicalnews.com/chemical/sika-opens-plant-in-india-17974) — Not disclosed
+- *No India activity found in window — the Kharagpur plant opening lands 2023-06-27, four days before the window starts, and no later Indian plant, expansion or capex announcement could be verified.*
 
 **Thungela Resources** (South Africa, Green Energy & Fuels)
 - 2024-02-13: [Thungela establishes export marketing function in Dubai](https://www.worldcoal.com/coal/13022024/thungela-establishes-export-marketing-function-in-dubai/) — not stated

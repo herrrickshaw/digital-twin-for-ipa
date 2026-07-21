@@ -20,6 +20,12 @@ BLURB = {
     "Dated, sourced India activity in the last three years and **no government publicity found at all**: "
     "not a PIB headline, not a minister at the ribbon-cutting, not a state-government announcement. "
     "These are companies committing capital to India that the government is not currently courting."),
+ "SUBSUMED_IN_PARTNER": ("Invisible by construction — the publicity names the Indian principal",
+    "These firms sit inside projects the government promotes *heavily* — but the announcements name the "
+    "Indian principal (Tata Electronics, the India Semiconductor Mission, SAIL), never the foreign supplier. "
+    "They are not being ignored; they are structurally unnameable in the current announcement format. "
+    "The same mechanism is visible in the register itself: Nippon Steel surfaces only as *ArcelorMittal "
+    "Nippon Steel India*, and CLP only as *Apraava Energy*."),
  "STATE_PUBLICISED": ("Publicised by a state, invisible at the centre",
     "Real activity that a **state government amplified** — land allotted and announced, a Chief Minister at "
     "the ground-breaking — while no PIB headline ever named the firm. This is a centre-versus-state "
@@ -84,8 +90,8 @@ def main():
         L.append(f"| {r['pib_investment_hits_3y']} | {r['company'][:34]} | {r['country']} | {link} |")
     L += ["", "The pattern is narrow: semiconductors, defence, and marquee PM-attended ribbon-cuttings.", ""]
 
-    order = ["QUIET_INVESTOR", "STATE_PUBLICISED", "HEADLINED", "BLOCKED_PN3",
-             "DIRECTION_INBOUND", "NO_ACTIVITY"]
+    order = ["QUIET_INVESTOR", "SUBSUMED_IN_PARTNER", "STATE_PUBLICISED", "HEADLINED",
+             "BLOCKED_PN3", "DIRECTION_INBOUND", "NO_ACTIVITY"]
     L += ["## Verified against the trade press", "",
           f"The {len(ver['companies'])} below-radar names with the strongest stated intent were checked "
           "against dated news. Absence from PIB headlines turns out to have four different causes — only "

@@ -1,0 +1,177 @@
+{
+ "layer": "indian_entity_alias_check",
+ "built": "2026-07-21",
+ "question": "Do the parents our PIB matcher scored BELOW_RADAR appear under their INDIAN subsidiary/JV name instead? If so, the invisibility is a naming artefact, not neglect.",
+ "window": "2023-07-21 .. 2026-07-21",
+ "register_rows_in_window": 46170,
+ "found": 2,
+ "checked": 18,
+ "finding": "Only 2 of 18 surface under an Indian entity name: Nippon Steel appears solely as 'ArcelorMittal Nippon Steel India' (PM-SETU approval, 30-May-2026) and CLP Holdings solely as 'Apraava Energy' (RECPDCL transmission handover, 22-Aug-2024). The other 16 are absent under BOTH the parent and the Indian entity name, so for them the invisibility is real, not a naming artefact. CORRECTION LOGGED: an earlier pass reported 3 of 18 because the alias list for Delta Electronics included the place-name 'Krishnagiri', which matched a cracker-factory condolence release -- a location is not a company name and was removed.",
+ "companies": [
+  {
+   "parent": "Arcelik A.S.",
+   "indian_entity_names_tried": [
+    "Voltbek",
+    "Voltas Beko"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "CLP Holdings",
+   "indian_entity_names_tried": [
+    "Apraava"
+   ],
+   "found_under_indian_name": true,
+   "hits": [
+    {
+     "date": "2024-08-22",
+     "prid": 2047582,
+     "ministry": "Ministry of Power",
+     "title": "RECPDCL Hands Over Rajasthan IV-A Power Transmission Limited to M/s Apraava Energy Private Limited",
+     "matched_alias": "Apraava"
+    }
+   ]
+  },
+  {
+   "parent": "Nippon Steel Corporation",
+   "indian_entity_names_tried": [
+    "ArcelorMittal Nippon Steel",
+    "AM/NS"
+   ],
+   "found_under_indian_name": true,
+   "hits": [
+    {
+     "date": "2026-05-30",
+     "prid": 2266939,
+     "ministry": "Ministry of Skill Development and Entrepreneurship",
+     "title": "ArcelorMittal Nippon Steel India Secures First-Ever Strategic Investment Plan Approval under PM-SETU; Andhra Pradesh Emerges as Pioneer of Industry-Le",
+     "matched_alias": "ArcelorMittal Nippon Steel"
+    }
+   ]
+  },
+  {
+   "parent": "Delta Electronics (Thailand)",
+   "indian_entity_names_tried": [
+    "Delta Electronics India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "LG Electronics Inc.",
+   "indian_entity_names_tried": [
+    "LG Electronics India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Panasonic Holdings Corporation",
+   "indian_entity_names_tried": [
+    "Panasonic Life Solutions",
+    "Panasonic India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Elbit Systems Ltd.",
+   "indian_entity_names_tried": [
+    "Sparton",
+    "Alpha Design"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Kerry Group",
+   "indian_entity_names_tried": [
+    "Kerry India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Siam Cement Group (SCG)",
+   "indian_entity_names_tried": [
+    "BigBloc",
+    "Siam Cement"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Lenovo Group",
+   "indian_entity_names_tried": [
+    "Lenovo India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Eisai Co., Ltd.",
+   "indian_entity_names_tried": [
+    "Eisai Pharma"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "MediaTek",
+   "indian_entity_names_tried": [
+    "MediaTek India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "CAE Inc",
+   "indian_entity_names_tried": [
+    "CAE Simulation"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Danieli & C.",
+   "indian_entity_names_tried": [
+    "Danieli India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Andritz",
+   "indian_entity_names_tried": [
+    "Andritz Hydro"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Ansell Limited",
+   "indian_entity_names_tried": [
+    "Ansell India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "Schaeffler AG",
+   "indian_entity_names_tried": [
+    "Schaeffler India"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  },
+  {
+   "parent": "AstraZeneca PLC",
+   "indian_entity_names_tried": [
+    "AstraZeneca Pharma"
+   ],
+   "found_under_indian_name": false,
+   "hits": []
+  }
+ ]
+}

@@ -135,7 +135,13 @@ def render():
              f"*Generated {datetime.date.today().isoformat()} from `layers/16_leads.json` ({idx['count']} leads, 7 markets) "
              "by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*", ""]
     if idx.get("china_pn3_note"):
-        lines += ["> **China / Press Note 3**: " + idx["china_pn3_note"][:600] + "…", ""]
+        lines += ["> **China / Press Note 3**: " + idx["china_pn3_note"].split(" ‖ UPDATE")[0][:600] + "…", ""]
+    if idx.get("china_pn3_policy_update"):
+        u = idx["china_pn3_policy_update"]
+        lines += [f"> **⚠ Policy update — {u['press_note']} ({u['date']})**: {u['rule']}. "
+                  f"Still gated: {u['still_gated']}. Source: {u['primary_source'].split(', http')[0]}; "
+                  f"verified {u['verified']}. This makes the China cohort **conditionally relaxed, not "
+                  "flatly blocked** — passive minority stakes are now automatic-route.", ""]
     by = collections.defaultdict(list)
     for l in leads: by[l["sector"]].append(l)
     for sector, sec in sorted(by.items(), key=lambda kv: -max(x["lead_score"] for x in kv[1])):

@@ -46,10 +46,15 @@ BLURB = {
     "The PIB title match filed these as below-radar and the news check proved it wrong. Recorded here with "
     "the evidence, because the register indexes release *titles* only and these cases are exactly where "
     "that limit bites."),
- "BLOCKED_PN3": ("Press Note 3 cohort — absence has a different cause",
-    "Chinese-domiciled names. Their absence from Indian government headlines is not modesty: their India "
-    "activity is refusal, exclusion, or Indianisation of ownership. **None of this is inbound investment** "
-    "and none of it is an outreach opportunity."),
+ "BLOCKED_PN3": ("Press Note 3 cohort — conditionally relaxed by Press Note 2 of 2026",
+    "Chinese-domiciled names, whose India activity through 2020–2025 was refusal, exclusion or "
+    "Indianisation of ownership under Press Note 3 (2020). **UPDATE — Press Note 2 of 2026** (Cabinet "
+    "15-Mar-2026, verified via RS UQ3877 + India Briefing/Vistra) partially relaxes this: a foreign "
+    "company with **≤10% non-controlling** land-border ownership can now invest via the **automatic "
+    "route**. So the block is no longer absolute — passive minority stakes and sub-10% co-investment open "
+    "up as a narrow new lane, while controlling stakes, greenfield plants and board-control JVs still need "
+    "government approval. BYD-Megha-type proposals stay gated; financial-investor minority positions do "
+    "not. Read the gazette before acting on a specific deal."),
  "DIRECTION_INBOUND": ("Flow runs the other way",
     "The traceable activity is India reaching for the company's assets abroad, not the company investing in "
     "India. Worth tracking, wrong list for investment promotion."),

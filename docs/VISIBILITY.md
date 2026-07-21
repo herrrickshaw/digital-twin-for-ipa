@@ -1,6 +1,6 @@
 # Visibility map — who the government announces, and who invests quietly
 
-*Generated 2026-07-21 by `scripts/build_visibility_report.py` from `layers/19_pib_visibility.json` + `layers/20_visibility_verified.json` — do not hand-edit.*
+*Generated 2026-07-22 by `scripts/build_visibility_report.py` from `layers/19_pib_visibility.json` + `layers/20_visibility_verified.json` — do not hand-edit.*
 
 ## What this is
 
@@ -154,9 +154,9 @@ The PIB title match filed these as below-radar and the news check proved it wron
 - 2026-03-06: [Cameco uranium agreement a highlight of Canada-India deals](https://www.ans.org/news/2026-03-06/article-7823/cameco-uranium-agreement-a-highlight-of-canadaindia-deals/) — CAD 2.6 billion
 - *NOT below-radar in substance — a USD-scale sovereign supply contract signed in front of two prime ministers; treat any 'unpublicised' classification as a PIB-headline-text artefact.*
 
-### Press Note 3 cohort — absence has a different cause (6)
+### Press Note 3 cohort — conditionally relaxed by Press Note 2 of 2026 (6)
 
-Chinese-domiciled names. Their absence from Indian government headlines is not modesty: their India activity is refusal, exclusion, or Indianisation of ownership. **None of this is inbound investment** and none of it is an outreach opportunity.
+Chinese-domiciled names, whose India activity through 2020–2025 was refusal, exclusion or Indianisation of ownership under Press Note 3 (2020). **UPDATE — Press Note 2 of 2026** (Cabinet 15-Mar-2026, verified via RS UQ3877 + India Briefing/Vistra) partially relaxes this: a foreign company with **≤10% non-controlling** land-border ownership can now invest via the **automatic route**. So the block is no longer absolute — passive minority stakes and sub-10% co-investment open up as a narrow new lane, while controlling stakes, greenfield plants and board-control JVs still need government approval. BYD-Megha-type proposals stay gated; financial-investor minority positions do not. Read the gazette before acting on a specific deal.
 
 **SAIC Motor** (China, Auto, EV & Components)
 - 2024: [CCI approves JSW's acquisition of up to 38% stake in MG Motor India](https://www.autocarpro.in/news/cci-approves-jsws-acquisition-of-up-to-38-stake-in-mg-motor-india-118841) — ~35-38% stake; ~USD 300 million; JV valued ~USD 1.2 billion

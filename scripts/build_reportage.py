@@ -37,7 +37,23 @@ SCHEMES = [
  (r"ethanol", "EBP / ethanol interest subvention", "MoPNG / DFPD"),
  (r"\bSATAT\b|compressed bio.?gas|\bCBG\b", "SATAT / CBG", "MoPNG"),
  (r"coal gasification", "Coal gasification incentives", "Coal"),
- (r"critical mineral|\bKABIL\b|rare earth", "Critical Minerals Mission / RE magnet scheme", "Mines"),
+ (r"critical mineral|\bKABIL\b|\bNCMM\b", "National Critical Mineral Mission", "Mines"),
+ (r"rare earth|permanent magnet scheme", "Rare Earth Magnet scheme", "Heavy Industries/Mines"),
+ (r"dhan-?dhaanya|\bPMDDKY\b", "PM Dhan-Dhaanya Krishi Yojana", "Agriculture"),
+ (r"aatmanirbharta in pulses|pulses mission|national pulses", "Mission for Aatmanirbharta in Pulses", "Agriculture"),
+ (r"dairy development|\bNPDD\b|gokul mission", "NPDD / Rashtriya Gokul Mission", "DAHD"),
+ (r"export promotion mission|niryat protsahan|niryat disha|\bRELIEF\b.{0,30}export", "Export Promotion Mission", "Commerce"),
+ (r"\bBHAVYA\b|audyogik vikas yojna|plug.?and.?play industrial park", "BHAVYA industrial parks", "DPIIT"),
+ (r"\bUDAN\b|regional connectivity scheme|\bRCS\b", "UDAN / RCS (VGF)", "Civil Aviation"),
+ (r"fund of funds|\bFFS\b|startup india seed", "Startup FoF / seed funding", "DPIIT"),
+ (r"IndiaAI|india ai mission", "IndiaAI Mission (subsidized compute)", "MeitY"),
+ (r"bioenergy|waste.?to.?energy|biomass programme", "National Bioenergy Programme", "MNRE"),
+ (r"nuclear energy mission", "Nuclear Energy Mission (SMR)", "DAE/Finance"),
+ (r"national manufacturing mission", "National Manufacturing Mission", "DPIIT"),
+ (r"\bSASCI\b|challenge mode.{0,25}destinat|iconic tourist", "SASCI tourism challenge-mode", "Tourism/DEA"),
+ (r"gig worker|e-?shram", "Gig-worker coverage (PM-JAY/e-Shram)", "Labour/Health"),
+ (r"vishwakarma", "PM Vishwakarma", "MSME"),
+ (r"\bPRIP\b", "PRIP (pharma-medtech R&D)", "Pharmaceuticals"),
  (r"specialty steel", "PLI Specialty Steel", "Steel"),
  (r"\bUNNATI\b|north.?east.{0,15}industriali[sz]", "UNNATI 2024 (ex NEIDS)", "DPIIT"),
  (r"\bNIPU\b|urea.{0,25}(policy|plant)|new investment policy.{0,10}urea", "NIP/NIPU urea investment policy", "Fertilizers"),
@@ -77,10 +93,20 @@ SCHEMES = [
  (r"\bDAP-?2020\b|make.{0,4}(i|ii) categor", "Make-I/II (DAP-2020)", "Defence"),
  (r"interest subvention", "Interest subvention schemes (various)", "various"),
  (r"viability gap|\bVGF\b", "VGF schemes", "DEA"),
- (r"\bNIDHI\b|startup india seed|fund of funds", "Startup funding schemes", "DST/DPIIT"),
+ (r"\bNIDHI\b", "NIDHI (DST startups)", "DST"),
  (r"\bPM-?DevINE\b|\bNESIDS\b", "PM-DevINE / NESIDS", "MDoNER"),
  (r"jan vishwas", "Jan Vishwas (decriminalisation)", "DPIIT"),
- (r"national manufacturing mission", "National Manufacturing Mission", "DPIIT"),
+ (r"mutual credit guarantee|\bMCGS\b", "MCGS-MSME credit guarantee", "Finance (DFS)"),
+ (r"credit guarantee scheme for startups|\bCGSS\b", "CGSS (startups)", "DPIIT"),
+ (r"\bECLGS\b|emergency credit line", "ECLGS", "Finance"),
+ (r"BHIM|UPI.{0,25}incentive", "UPI incentive scheme", "MeitY"),
+ (r"\bSHAKTI\b.{0,30}coal|coal.{0,30}\bSHAKTI\b", "SHAKTI coal allocation", "Coal"),
+ (r"\bADEETIE\b|energy.?efficien.{0,30}MSME", "ADEETIE (EE interest subsidy)", "Power/BEE"),
+ (r"\bSPMEPCI\b|electric passenger car", "SPMEPCI (EV import-duty scheme)", "Heavy Industries"),
+ (r"diamond imprest", "Diamond Imprest Authorisation", "Commerce"),
+ (r"price stabili[sz]ation fund|\bATF\b.{0,30}(fund|support)", "ATF/price stabilisation funds", "Civil Aviation/DEA"),
+ (r"scheme for investment promotion", "Scheme for Investment Promotion", "DPIIT"),
+ (r"skill india programme", "Skill India Programme (incl. PM-NAPS)", "MSDE"),
 ]
 COMP = [(re.compile(p, re.I), s, m) for p, s, m in SCHEMES]
 # generic incentive-language filter for line-ministry releases
@@ -95,9 +121,7 @@ def quarter_of(datestr):
 def main():
     con = sqlite3.connect(DB)
     rows = con.execute(
-        "SELECT id, date, ministry, title FROM pib_items WHERE ministry IN "
-        "('Cabinet','Cabinet Committee on Economic Affairs (CCEA)') OR title LIKE '%scheme%' "
-        "OR title LIKE '%incentive%' OR title LIKE '%PLI%' ORDER BY date").fetchall()
+        "SELECT id, date, ministry, title FROM pib_items ORDER BY date").fetchall()
     by_q = defaultdict(lambda: {"mapped": [], "cabinet_other": [], "dropped": 0})
     for prid, date, ministry, title in rows:
         hits = [(s, m) for rx, s, m in COMP if rx.search(title or "")]

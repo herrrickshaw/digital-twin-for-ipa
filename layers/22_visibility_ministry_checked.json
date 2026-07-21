@@ -1,0 +1,1401 @@
+{
+ "layer": "visibility_news_verified",
+ "built": "2026-07-21",
+ "window": "2023-07-21 .. 2026-07-21 (3 years)",
+ "method": "PIB headline match (layer 19) x trade-press verification of India activity. Verdicts reconcile the two: a company absent from PIB headlines may still be loudly publicised by a state government, blocked under Press Note 3, or simply inactive -- only the residue is a genuine quiet investor.",
+ "corrections_applied": [
+  {
+   "company": "Cameco",
+   "to": "HEADLINED",
+   "reason": "PIB title match missed it: the CAD 2.6bn / 22M-lb uranium contract with the Dept of Atomic Energy was signed at a Delhi event attended by the PM and the Canadian PM -- publicised, just not in a PIB headline"
+  },
+  {
+   "company": "Ma'aden",
+   "to": "HEADLINED",
+   "reason": "minister-fronted (signed during J.P. Nadda's Saudi visit, carried by DD News, the state broadcaster); also offtake, not Indian capex"
+  },
+  {
+   "company": "AstraZeneca",
+   "to": "STATE_PUBLICISED",
+   "reason": "Chennai tranche launched at Tamil Nadu's own 'TN Rising' London roadshow with CM Stalin and Minister T.R.B. Rajaa present"
+  },
+  {
+   "company": "Sanofi",
+   "to": "STATE_PUBLICISED",
+   "reason": "Hyderabad GCC publicly endorsed by Telangana CM Revanth Reddy; note the India story is two-directional -- brand divestments (Myoril, Rs 234cr) and a consumer-health demerger run alongside the GCC capex"
+  },
+  {
+   "company": "Thales",
+   "to": "STATE_PUBLICISED",
+   "reason": "R&T India launch attended by Karnataka IT Minister Priyank Kharge, staged inside the bilateral India-France Year of Innovation"
+  },
+  {
+   "company": "Merck",
+   "to": "SUBSUMED_IN_PARTNER",
+   "reason": "materially involved in the Rs 91,000cr Dholera fab, which the government publicises relentlessly -- but the publicity names Tata Electronics and the India Semiconductor Mission, never Merck"
+  },
+  {
+   "company": "Danieli",
+   "to": "SUBSUMED_IN_PARTNER",
+   "reason": "~EUR 500m SAIL IISCO order sits inside a loudly-publicised PSU project; announced at the Italy-India Business Forum, not by the ministry naming Danieli"
+  }
+ ],
+ "counts": {
+  "QUIET_INVESTOR": 10,
+  "MINISTRY_NAMED_BRAND_ONLY": 1,
+  "MINISTRY_NAMED": 5,
+  "MINISTRY_NAMED_SUBSIDIARY_ONLY": 1,
+  "SUBSUMED_IN_PARTNER": 2,
+  "STATE_PUBLICISED": 5,
+  "HEADLINED": 2,
+  "BLOCKED_PN3": 6,
+  "DIRECTION_INBOUND": 1,
+  "NO_ACTIVITY": 8
+ },
+ "companies": [
+  {
+   "company": "Andritz",
+   "country": "Austria",
+   "sector": "Green Energy & Fuels",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "Strongly active and genuinely unpublicised \u2014 two separate low-three-digit-EUR-million pumped-storage orders in six weeks (Tata Power Bhivpuri, Torrent Saidongar-1) plus a seven-project India pipeline, all announced only through Andritz's own hydro newsroom and trade press.",
+   "activity_type": "order",
+   "india_news": [
+    {
+     "headline": "Advancing renewable energy: ANDRITZ to equip India's largest pumped storage plant",
+     "outlet": "Andritz (company press release)",
+     "date": "2026-04-14",
+     "url": "https://www.andritz.com/newsroom-en/hydro/2026-04-14-saidongar-group",
+     "what_happened": "Andritz won the electromechanical package for the 3,000 MW Saidongar-1 Karjat pumped storage plant in Maharashtra for Torrent Energy Storage Solutions (Torrent Power). Ten reversible pump turbines plus motor-generators. First-ever Torrent order for Andritz; 6,241 GWh/yr projected output.",
+     "figure": "Low three-digit million EUR range"
+    },
+    {
+     "headline": "ANDRITZ secures major order from Tata Power for 1,000 MW Bhivpuri Pumped Storage Project in India",
+     "outlet": "Andritz (company press release)",
+     "date": "2026-03-17",
+     "url": "https://www.andritz.com/newsroom-en/hydro/2026-03-17-tata-power-group",
+     "what_happened": "Three reversible pump turbines, motor-generators and electromechanical equipment for Tata Power's 1,000 MW Bhivpuri PSP in Maharashtra; booked into Q1 2026 order intake.",
+     "figure": "Low three-digit million EUR range"
+    },
+    {
+     "headline": "ANDRITZ to supply equipment for Gandhi Sagar pumped storage project in India",
+     "outlet": "Renewable Energy World",
+     "date": "2022-09",
+     "url": "https://www.renewableenergyworld.com/energy-storage/pumped-storage/andritz-to-supply-equipment-for-gandhi-sagar-pumped-storage-project-in-india/",
+     "what_happened": "OUT OF WINDOW (Sept 2022). Greenko awarded Andritz the 1,440 MW Gandhi Sagar PSP electromechanical package in Neemuch, Madhya Pradesh (5x240 MW + 2x120 MW). Included for context: Andritz is now on seven Indian pumped-storage projects.",
+     "figure": "1,440 MW, expandable to 1,680 MW"
+    }
+   ],
+   "govt_visibility_note": "Counterparties are private developers (Torrent Power, Tata Power, Greenko) rather than PSUs, which is exactly why Andritz stays off government press. Pumped storage as a category is heavily promoted by MNRE/Ministry of Power, but the OEM name does not surface. No minister or state MoU found attached to either 2026 order.",
+   "summary": "Strongly active and genuinely unpublicised \u2014 two separate low-three-digit-EUR-million pumped-storage orders in six weeks (Tata Power Bhivpuri, Torrent Saidongar-1) plus a seven-project India pipeline, all announced only through Andritz's own hydro newsroom and trade press."
+  },
+  {
+   "company": "Schaeffler AG",
+   "country": "Germany",
+   "sector": "Auto, EV & Components",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "One of the clearest below-radar heavyweights \u2014 a fifth Indian plant opened May 2025 with no official present, INR 1,700 crore already spent 2022-24, and a EUR 500m / INR 4,500 crore forward programme visible only through trade press and stock-exchange filings.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "Schaeffler India Opens Fifth Manufacturing Plant in Tamil Nadu to Boost Powertrain Production",
+     "outlet": "Autocar Professional",
+     "date": "2025-05-28",
+     "url": "https://www.autocarpro.in/news/schaeffler-india-opens-fifth-manufacturing-plant-in-tamil-nadu-to-boost-powertrain-production-126648",
+     "what_happened": "Schaeffler India inaugurated its fifth Indian plant at Shoolagiri, Tamil Nadu, for powertrain and chassis components; phase one targets full capacity by Q4 2025. Inaugurated by Georg F.W. Schaeffler (Chairman, Supervisory Board), Matthias Zink (CEO Powertrain & Chassis) and Harsha Kadam (MD & CEO, Schaeffler India).",
+     "figure": "INR 1,700 crore invested 2022-2024, against an original INR 1,500 crore commitment"
+    },
+    {
+     "headline": "How Schaeffler India is pumping in EUR 500 million over the next five years to boost capacity and increase localisation",
+     "outlet": "Business Today",
+     "date": "2026-05-27",
+     "url": "https://www.businesstoday.in/magazine/deep-dive/story/how-schaeffler-india-is-pumping-in-eu500-million-over-the-next-five-years-to-boost-capacity-and-increase-localisation-533647-2026-05-27",
+     "what_happened": "Deep-dive on Schaeffler India's five-year capacity and localisation programme.",
+     "figure": "EUR 500 million over five years"
+    },
+    {
+     "headline": "Schaeffler India to Raise Capex Above INR 5 Billion in 2026 as Plant Utilisation Crosses 85 Percent",
+     "outlet": "Machinist.in",
+     "date": "2026-02",
+     "url": "https://machinist.in/2026/02/schaeffler-india-to-raise-capex-above-inr-5-billion-in-2026-as-plant-utilisation-crosses-85-percent/",
+     "what_happened": "After Q4 2025 utilisation crossed 85%, Schaeffler India guided 2026 capex above INR 5 billion, versus INR 3.84 billion spent in 2025 and INR 6.91 billion in 2024. Separately a INR 4,500 crore capex plan to 2030 has been reported (Moneycontrol via TradingView).",
+     "figure": "INR 5 billion+ 2026 capex; INR 4,500 crore by 2030"
+    }
+   ],
+   "govt_visibility_note": "No government official identified at the Shoolagiri inauguration \u2014 the Autocar Professional account lists only Schaeffler executives. Tamil Nadu routinely publicises industrial MoUs, so the absence of a state presence here is itself notable. Much of the disclosure runs through Schaeffler India's listed-company reporting (BSE/NSE) rather than any government channel.",
+   "summary": "One of the clearest below-radar heavyweights \u2014 a fifth Indian plant opened May 2025 with no official present, INR 1,700 crore already spent 2022-24, and a EUR 500m / INR 4,500 crore forward programme visible only through trade press and stock-exchange filings."
+  },
+  {
+   "company": "Ericsson",
+   "country": "Sweden",
+   "sector": null,
+   "india_intent": null,
+   "pib_visibility": "UNKNOWN",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "Consistently active and quiet \u2014 ASIC/semiconductor design added in Bengaluru with 150+ roles (Jun 2025), full passive-antenna localisation via VVDN and a Pune logistics hub (Apr 2025), all announced only through Ericsson's newsroom and telecom trade press.",
+   "activity_type": "rd",
+   "india_news": [
+    {
+     "headline": "Ericsson strengthens R&D in India - to commence ASIC development in Bengaluru",
+     "outlet": "Ericsson (company press release)",
+     "date": "2025-06-26",
+     "url": "https://www.ericsson.com/en/press-releases/2/2025/6/ericsson-strengthens-rd-in-india--to-commence-asic-development-in-bengaluru",
+     "what_happened": "Ericsson set up ASIC (custom silicon) development in Bengaluru for its Ericsson Silicon platform, adding more than 150 new R&D positions and extending India into semiconductor design.",
+     "figure": "150+ new positions (no India capex figure; Ericsson spends ~USD 5 billion/year on R&D globally)"
+    },
+    {
+     "headline": "Ericsson to expand local antenna manufacturing in India",
+     "outlet": "Developing Telecoms",
+     "date": "2025-04-22",
+     "url": "https://developingtelecoms.com/telecom-business/vendor-news/18373-ericsson-to-expand-local-antenna-manufacturing-in-india.html",
+     "what_happened": "Ericsson Antenna System committed to localising 100% of passive antenna manufacturing for India by June 2025, produced in Gurgaon with VVDN Technologies, plus a Pune logistics hub for regional distribution; a significant share of output to be exported.",
+     "figure": "100% localisation of passive antennas by June 2025"
+    },
+    {
+     "headline": "Ericsson expands capabilities in India",
+     "outlet": "RCR Wireless News",
+     "date": "2025-06-03",
+     "url": "https://www.rcrwireless.com/20250603/5g/ericsson-india",
+     "what_happened": "Round-up of the India build-out: ~2,000 R&D engineers across Chennai, Bengaluru and Gurugram; 5G radios, RAN Compute, passive antennas and microwave products manufactured with Jabil in Pune; India 6G research team formed at the Chennai R&D centre in 2024.",
+     "figure": "~2,000 R&D engineers"
+    }
+   ],
+   "govt_visibility_note": "Manufacturing is done through contract partners (Jabil, VVDN), so output shows up as Indian PLI-scheme telecom manufacturing rather than as an Ericsson facility \u2014 a structural reason the name stays out of government announcements. No minister or state MoU found attached to the ASIC or antenna announcements.",
+   "summary": "Consistently active and quiet \u2014 ASIC/semiconductor design added in Bengaluru with 150+ roles (Jun 2025), full passive-antenna localisation via VVDN and a Pune logistics hub (Apr 2025), all announced only through Ericsson's newsroom and telecom trade press."
+  },
+  {
+   "company": "Lenovo Group",
+   "country": "Hong Kong",
+   "sector": "Electronics & Semiconductors",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "MINISTRY_NAMED_BRAND_ONLY",
+   "verdict_basis": "Genuine, substantial expansion \u2014 AI-server manufacturing in Puducherry plus a fourth global R&D lab in Bengaluru, export-oriented.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "Lenovo begins AI server production in India, opens R&D lab in Bengaluru",
+     "outlet": "Business Standard",
+     "date": "2024-09-17",
+     "url": "https://www.business-standard.com/companies/news/lenovo-begins-ai-server-production-in-india-opens-r-d-lab-in-bengaluru-124091700983_1.html",
+     "what_happened": "Lenovo started manufacturing AI servers at its Puducherry plant and opened an R&D lab in Bengaluru \u2014 its fourth globally \u2014 covering three rack-mounted enterprise AI servers and two flagship 8-way GPU servers.",
+     "figure": "50,000 enterprise AI servers and 2,400 high-end GPU units annually; 4th global R&D centre"
+    },
+    {
+     "headline": "Lenovo turns to India as source of AI servers",
+     "outlet": "The Register",
+     "date": "2024-09-19",
+     "url": "https://www.theregister.com/2024/09/19/lenovo_india_ai_server_manufacturing/",
+     "what_happened": "Independent trade-press confirmation that Lenovo is positioning India (Puducherry manufacturing, Bengaluru design) as an AI-server production and export base, with over 60% of output earmarked for Asia-Pacific export.",
+     "figure": ">60% of production for export"
+    },
+    {
+     "headline": "Lenovo to manufacture all PC models in India, plans AI server plant in Pondicherry",
+     "outlet": "DigiTimes",
+     "date": "2025-03-07",
+     "url": "https://www.digitimes.com/news/a20250307VL204/lenovo-pc-ai-server-development-manufacturing.html",
+     "what_happened": "Lenovo moving toward 100% local PC production in India; reported 12 million units produced from India in 2024 with ~40% capacity increase expected in 2025.",
+     "figure": "12 million units (2024); ~40% capacity increase planned for 2025"
+    }
+   ],
+   "govt_visibility_note": "Despite aligning squarely with IT-hardware PLI and export-hub policy goals, no PIB headline names Lenovo. Hong Kong domicile means Press Note 3 exposure, yet the expansion proceeded \u2014 worth noting as a contrast to the mainland-China names below.",
+   "summary": "Genuine, substantial expansion \u2014 AI-server manufacturing in Puducherry plus a fourth global R&D lab in Bengaluru, export-oriented.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "named as a brand in a MeitY/PIB backgrounder -- but DISPROOF: MeitY's own list of the 27 approved IT-hardware PLI 2.0 companies does NOT include Lenovo, so the widely-reported 'Lenovo approved under PLI 2.0' claim is unsupported by the ministry's own document"
+  },
+  {
+   "company": "CAE Inc",
+   "country": "Canada",
+   "sector": "Aerospace & Defence",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "A clean example of the target pattern \u2014 steady physical capex (5 simulators added since FY2024, fourth centre opened 2026) reported only in aviation trade press, zero government amplification.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "CAE and InterGlobe inaugurate new pilot training centre in Mumbai to support India's aviation growth",
+     "outlet": "PR Newswire India",
+     "date": "2026-04-15",
+     "url": "https://www.prnewswire.com/in/news-releases/cae-and-interglobe-inaugurate-new-pilot-training-centre-in-mumbai-to-support-indias-aviation-growth-302743367.html",
+     "what_happened": "CAE Simulation Training Pvt Ltd (CAE-InterGlobe JV) opened a fourth Indian training centre in Mumbai, starting with one A320 full-flight simulator and a second due later in 2026.",
+     "figure": "44,000 sq ft; scalable to 6 FFS; network 16 FFS today rising to 23; India needs ~22,000 new pilots by 2034"
+    },
+    {
+     "headline": "CAE expand in India with new pilot-training site",
+     "outlet": "FlightGlobal",
+     "date": "2026-04",
+     "url": "https://www.flightglobal.com/archive/2026/04/cae-expand-in-india-with-new-pilot-training-site/",
+     "what_happened": "Independent trade-press confirmation of the Mumbai site opening and CAE's India expansion trajectory.",
+     "figure": "not stated"
+    },
+    {
+     "headline": "New pilot training centre to open in Mumbai",
+     "outlet": "AviTrader",
+     "date": "2025-08-26",
+     "url": "https://avitrader.com/2025/08/26/new-pilot-training-centre-to-open-in-mumbai/",
+     "what_happened": "Earlier announcement of the Mumbai centre ahead of opening.",
+     "figure": "not stated"
+    }
+   ],
+   "govt_visibility_note": "Purely commercial JV expansion announced via company/PR channels and aviation trade press. No PIB headline names CAE; no minister or state government publicity found.",
+   "summary": "A clean example of the target pattern \u2014 steady physical capex (5 simulators added since FY2024, fourth centre opened 2026) reported only in aviation trade press, zero government amplification.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "WEAK/PARTIAL only -- the sole government-hosted trace is AAI's NFTI page linking to CAE Global Academy URLs; not a naming in a ministry publication, so the below-radar label stands"
+  },
+  {
+   "company": "WEG S.A.",
+   "country": "Brazil",
+   "sector": "White Goods & Electricals",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "MINISTRY_NAMED",
+   "verdict_basis": "Textbook quiet investor \u2014 four Indian plants, active Hosur manufacturing output, and a Dec-2025 bolt-on acquisition in Bengaluru, all covered only by niche trade and legal press.",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "WEG Expands Operations in India with Planned Acquisition of Sanelec",
+     "outlet": "The Machine Maker",
+     "date": "2025-12",
+     "url": "https://themachinemaker.com/news/weg-expands-operations-in-india-with-planned-acquisition-of-sanelec/",
+     "what_happened": "WEG (via subsidiary REIVAX) agreed to acquire Bengaluru-based Sanelec Excitation Systems, maker of automatic voltage regulators and excitation control systems \u2014 converting a long-standing exclusive-partner relationship into ownership.",
+     "figure": "USD 5.2 million; Sanelec 2024 net operating revenue ~USD 2.3m/month, EBITDA margin 29%"
+    },
+    {
+     "headline": "TT&A advises WEG on acquisition of Sanelec",
+     "outlet": "Bar and Bench (Dealstreet)",
+     "date": "2025-12",
+     "url": "https://www.barandbench.com/dealstreet/tta-advises-weg-on-acquisition-of-sanelec",
+     "what_happened": "Legal-press confirmation of the transaction, including deferred consideration in two tranches within an 18-month FEMA timeline.",
+     "figure": "two-tranche deferred consideration, 18-month FEMA window"
+    },
+    {
+     "headline": "WEG Delivers Breakthrough IE4 Motors Project in India's F&B Sector",
+     "outlet": "WEG / Electric Machinery",
+     "date": "2025-05",
+     "url": "https://www.electricmachinery.com/institutional/US/en/news/products-and-solutions/weg-delivers-breakthrough-ie4-motors-project-in-india-s-f-b-sector",
+     "what_happened": "IE4 high-efficiency motors manufactured at WEG's Hosur (Tamil Nadu) site delivered to an Indian food-and-beverage customer, evidencing live Indian production output.",
+     "figure": "dispatched 2025-04-22; WEG runs 4 production plants in India"
+    }
+   ],
+   "govt_visibility_note": "M&A reported only in Indian manufacturing and legal trade press plus a Brazilian energy outlet. No PIB headline, no minister or state-government announcement found.",
+   "summary": "Textbook quiet investor \u2014 four Indian plants, active Hosur manufacturing output, and a Dec-2025 bolt-on acquisition in Bengaluru, all covered only by niche trade and legal press.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "entry 28 on MNRE's ALMM-Wind approved-manufacturer list as 'WEG Industries (India) Pvt Ltd' -- a binding regulatory whitelist, not publicity"
+  },
+  {
+   "company": "Elbit Systems",
+   "country": "Israel",
+   "sector": "Aerospace & Defence",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "Active in-window via its Sparton subsidiary \u2014 a binding May-2025 India localisation agreement covered by Indian business press only, with the Elbit link often understated (outlets described Sparton as a 'US firm').",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "Adani Defence & Aerospace and Sparton Enter Strategic Partnership to Indigenise Anti-Submarine Warfare Solutions (Sonobuoys) for India",
+     "outlet": "Adani newsroom",
+     "date": "2025-05-18",
+     "url": "https://www.adani.com/newsroom/media-releases/adani-defence-aerospace-and-sparton-enter-strategic-partnership-to-indigenise-anti-submarine",
+     "what_happened": "Binding collaboration agreement with Sparton (DeLeon Springs LLC), an Elbit Systems group company, to localise sonobuoy and ASW system assembly in India \u2014 first Indian private-sector indigenised sonobuoy offering.",
+     "figure": "not stated"
+    },
+    {
+     "headline": "Adani Defence partners with US firm Sparton to build India's first indigenised sonobuoy systems for Navy",
+     "outlet": "Business Today",
+     "date": "2025-05-18",
+     "url": "https://www.businesstoday.in/india/story/adani-defence-partners-with-us-firm-sparton-to-build-indias-first-indigenised-sonobuoy-systems-for-navy-476724-2025-05-18",
+     "what_happened": "Indian mainstream business-press coverage of the Elbit-subsidiary tie-up.",
+     "figure": "not stated"
+    },
+    {
+     "headline": "Adani partners with Sparton to develop anti-submarine warfare system",
+     "outlet": "Business Standard",
+     "date": "2025-05-18",
+     "url": "https://www.business-standard.com/companies/news/adani-group-sparton-sonobuoy-manufacturing-india-125051800478_1.html",
+     "what_happened": "Further confirmation of the May-2025 binding agreement.",
+     "figure": "not stated"
+    }
+   ],
+   "govt_visibility_note": "Announced by Adani, not by government; framed under 'Aatmanirbhar Bharat' but no PIB headline names Elbit or Sparton. Note the Hyderabad Adani-Elbit UAV complex itself was inaugurated in 2019 (pre-window); the in-window item is the sonobuoy localisation agreement.",
+   "summary": "Active in-window via its Sparton subsidiary \u2014 a binding May-2025 India localisation agreement covered by Indian business press only, with the Elbit link often understated (outlets described Sparton as a 'US firm').",
+   "ministry_check": "searched, not found -- defence opacity: every retrievable account of the Adani-Elbit UAV facility and the May-2025 Sparton sonobuoy agreement traces to Adani corporate media, never a ministry document"
+  },
+  {
+   "company": "Croda International",
+   "country": "United Kingdom",
+   "sector": "Chemicals & Plastics",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "Genuinely active and unpublicised \u2014 a INR 500 crore greenfield surfactants plant at Dahej commissioned March 2026, evidenced by trade press, the company's own release and its P&L, with no Indian government presence found.",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "Croda opens new manufacturing facility in Dahej, India to support growth and sustainable innovation",
+     "outlet": "Croda (company press release); also Indian Chemical News, Chemical Industry Digest",
+     "date": "2026-03-19",
+     "url": "https://www.croda.com/en-gb/media-hub/news/general/croda-opens-new-manufacturing-facility-in-dahej",
+     "what_happened": "Croda opened its greenfield Dahej, Gujarat plant \u2014 a carbon-neutral surfactants site supporting Consumer Care, Life Sciences and Industrial Specialties. Group CEO Steve Foots called it 'a clear demonstration of Croda's commitment to the Indian market.'",
+     "figure": "Not disclosed in the opening release"
+    },
+    {
+     "headline": "Croda India to invest Rs. 500 crore in Dahej greenfield facility",
+     "outlet": "Indian Chemical News",
+     "date": "2023-03-30",
+     "url": "https://www.indianchemicalnews.com/chemical/croda-india-to-invest-rs-500-crore-in-dahej-greenfield-facility-16925",
+     "what_happened": "OUT OF WINDOW (Mar 2023) but supplies the capex number for the plant opened in 2026: first-phase INR 500 crore, zero-carbon and zero-liquid-discharge, adding to Croda's existing Navi Mumbai manufacturing and innovation hub.",
+     "figure": "INR 500 crore (first phase). Note: one secondary source cites USD 5.4m for an earlier/narrower scope \u2014 figures conflict, prefer the INR 500 crore first-phase number."
+    }
+   ],
+   "govt_visibility_note": "No government official identified at the Dahej opening; the Croda release names only its own executives. Croda's own FY commentary flags ~GBP 15m of 2025 depreciation and cost headwinds tied largely to the Dahej surfactants plant, and 30% India Consumer Care growth in H1 2025 \u2014 corroborating that this is real, sizeable capex.",
+   "summary": "Genuinely active and unpublicised \u2014 a INR 500 crore greenfield surfactants plant at Dahej commissioned March 2026, evidenced by trade press, the company's own release and its P&L, with no Indian government presence found."
+  },
+  {
+   "company": "Panasonic Holdings",
+   "country": "Japan",
+   "sector": "Electronics & Semiconductors",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "MINISTRY_NAMED",
+   "verdict_basis": "Actively expanding India manufacturing (Sri City phase-1 Rs 300cr, new PLI-linked plant planned) with only trade-press coverage.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "Panasonic India eyeing white goods PLI, new plant to tap market potential",
+     "outlet": "Business Standard",
+     "date": "2025-09-19",
+     "url": "https://www.business-standard.com/companies/news/panasonic-life-solutions-manufacturing-unit-pli-scheme-white-goods-125091900308_1.html",
+     "what_happened": "Panasonic Life Solutions India MD/CEO Tadashi Chiba said the company is planning a new manufacturing unit in India and preparing to apply under the reopened PLI window for white goods.",
+     "figure": "PLI white-goods application; new unit unquantified"
+    },
+    {
+     "headline": "Panasonic Life Solutions to invest Rs 300 crore in Sri City's Manufacturing Plant",
+     "outlet": "B2B Purchase",
+     "date": "2025",
+     "url": "https://b2bpurchase.com/panasonic-life-solutions-to-invest-%E2%82%B9300-crore-in-sri-citys-manufacturing-plant/",
+     "what_happened": "Capacity expansion at the Sri City (Andhra Pradesh) factory; Rs 300 crore is phase one of a planned Rs 600 crore two-phase investment, sitting inside a JPY 100bn (~Rs 7,000 crore) global ex-Japan electrical equipment allocation to FY2030.",
+     "figure": "Rs 300 crore (phase 1 of Rs 600 crore); JPY 100bn global programme"
+    }
+   ],
+   "govt_visibility_note": "Investment is tied to a central government scheme (white-goods PLI) yet Panasonic is not named in a PIB headline. Sri City is an Andhra Pradesh state-promoted industrial park, so state-level visibility exists without central press-release naming.",
+   "summary": "Actively expanding India manufacturing (Sri City phase-1 Rs 300cr, new PLI-linked plant planned) with only trade-press coverage.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "named White Goods PLI beneficiary -- 'PANASONIC INDIA PRIVATE LIMITED', Rs 50cr, Sl. 24 of the DPIIT 42-company annexure, plus a Rs 250cr compressor application at the Committee of Experts and a DSIR-recognised R&D unit. Strongest reversal in the batch."
+  },
+  {
+   "company": "Eisai",
+   "country": "Japan",
+   "sector": "Pharma & Bulk Drugs",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "MINISTRY_NAMED",
+   "verdict_basis": "Quietly adding an AI/data R&D capability centre in Visakhapatnam on top of a long-standing API and formulation site.",
+   "activity_type": "rd",
+   "india_news": [
+    {
+     "headline": "Eisai Pharma announces its plans to set up GCC in Vizag",
+     "outlet": "The Hans India",
+     "date": "2025-07",
+     "url": "https://www.thehansindia.com/andhra-pradesh/eisai-pharma-announces-its-plans-to-set-up-gcc-in-vizag-986846",
+     "what_happened": "Eisai announced a Global Capability Centre in Visakhapatnam for AI-enabled drug development, clinical data analytics, IT and process automation supporting its global R&D, manufacturing and supply-chain operations; expected operational by February 2026.",
+     "figure": "Capex not disclosed; operational target Feb 2026"
+    },
+    {
+     "headline": "Japan's Leading Pharma Company Eisai to Set Up GCC in Visakhapatnam",
+     "outlet": "Yo! Vizag",
+     "date": "2025-07",
+     "url": "https://www.yovizag.com/japans-leading-pharma-company-eisai-to-set-up-gcc-in-visakhapatnam/",
+     "what_happened": "Regional confirmation of the same Vizag GCC decision, adding to Eisai's existing 50-acre API/formulation/R&D site in Jawaharlal Nehru Pharma City SEZ, Parawada, operating since 2009.",
+     "figure": "50-acre existing site; GCC capex undisclosed"
+    }
+   ],
+   "govt_visibility_note": "Andhra Pradesh state government engagement is implied by the Vizag GCC siting and local press framing, but no PIB headline names Eisai.",
+   "summary": "Quietly adding an AI/data R&D capability centre in Visakhapatnam on top of a long-standing API and formulation site.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "live DSIR in-house R&D recognition TU/IV-RD/3214 for the Vizag centre, listed in the Ministry of Science & Technology directory -- a formal registration carrying fiscal benefits"
+  },
+  {
+   "company": "Mitsui O.S.K. Lines",
+   "country": "Japan",
+   "sector": "Shipbuilding & Marine",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "MINISTRY_NAMED",
+   "verdict_basis": "Building an India venture-capital beachhead (India desk 2024, first fund commitment Dec 2025) rather than physical shipping assets.",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "Mitsui O.S.K. Lines CVC (MOL PLUS) to Invest in India's Theia Ventures Fund 1",
+     "outlet": "Cyprus Shipping News",
+     "date": "2025-12-16",
+     "url": "https://cyprusshippingnews.com/2025/12/16/mitsui-o-s-k-lines-cvc-mol-plus-to-invest-in-indias-theia-ventures-fund-1/",
+     "what_happened": "MOL's corporate venture arm MOL PLUS made its first investment into an Indian venture capital fund (Theia Ventures Fund 1), targeting energy transition, deep tech, material science and advanced manufacturing. MOL PLUS set up its India desk in November 2024.",
+     "figure": "Fund commitment size not disclosed; India desk established Nov 2024"
+    },
+    {
+     "headline": "Shipping giant Mitsui O.S.K. Lines opens India CVC office",
+     "outlet": "Global Venturing",
+     "date": "2024-11",
+     "url": "https://globalventuring.com/corporate/asia/shipping-giant-mitsui-o-s-k-lines-opens-india-cvc-office/",
+     "what_happened": "MOL Plus opened an India office \u2014 its third overseas CVC location after the UK and Singapore \u2014 targeting early/mid-stage Indian startups in sustainability, deep tech, renewables, logistics and shipping. (URL returned HTTP 403 on direct fetch; details taken from search-result summary, treat date as approximate.)",
+     "figure": "Third overseas CVC office; no capital figure disclosed"
+    }
+   ],
+   "govt_visibility_note": "No ministerial or state-government publicity found. Purely corporate/VC-channel activity, entirely absent from PIB.",
+   "summary": "Building an India venture-capital beachhead (India desk 2024, first fund commitment Dec 2025) rather than physical shipping assets.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "PARENT name verbatim in the Ministry of Ports, Shipping & Waterways Monthly Summary, Aug-2025 (Kamarajar Port car transshipment) -- highest-confidence hit: no subsidiary alias needed"
+  },
+  {
+   "company": "Siam Cement Group (SCG)",
+   "country": "Thailand",
+   "sector": "Chemicals & Plastics",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "SCG's first-ever India investment \u2014 a Rs 65 crore Gujarat AAC-panel JV \u2014 landed entirely through trade press.",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "SIAM Cement BigBloc Construction Launches India Operations; Joint Venture inaugurates commercial production of India's First AAC Wall plant at Kheda",
+     "outlet": "Business Standard (ANI press release)",
+     "date": "2024-06-10",
+     "url": "https://www.business-standard.com/content/press-releases-ani/siam-cement-bigbloc-construction-launches-india-operations-joint-venture-inaugurates-commercial-production-of-india-s-first-aac-wall-plant-at-kheda-124061000859_1.html",
+     "what_happened": "The BigBloc Construction (52%) / SCG International (48%) JV started commercial production at Kheda district near Ahmedabad, Gujarat \u2014 India's first AAC Wall plant, branded 'ZMARTBUILD WALL by NXTBLOC'. Explicitly described as SCG Group's first investment in India.",
+     "figure": "Rs 65 crore invested; 2.5 lakh cubic metre p.a. capacity, expandable to 5 lakh CBM in phase 2"
+    },
+    {
+     "headline": "SCG International and BigBloc Start JV Operations for First Plant of AAC Wall in India",
+     "outlet": "SCG International (company channel)",
+     "date": "2024-06",
+     "url": "https://scginternational.com/joint-venture-operations-india/",
+     "what_happened": "SCG's own confirmation of the Kheda JV plant commissioning and the ZMARTBUILD brand launch.",
+     "figure": "52:48 JV split (BigBloc:SCG International)"
+    }
+   ],
+   "govt_visibility_note": "No ministerial or Gujarat state publicity found in the sources reviewed; coverage is trade press and company channels only.",
+   "summary": "SCG's first-ever India investment \u2014 a Rs 65 crore Gujarat AAC-panel JV \u2014 landed entirely through trade press.",
+   "ministry_check": "searched, not found -- absent centrally; the Kheda (Kapadvanj) AAC plant inauguration was a Gujarat state event"
+  },
+  {
+   "company": "MediaTek",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "Doubling India R&D via a second Noida centre; chip-manufacturing talk remains stated intent, not committed capex.",
+   "activity_type": "rd",
+   "india_news": [
+    {
+     "headline": "MediaTek leases 104,000 sq ft at BPTP Capital City in Noida for second India R&D hub",
+     "outlet": "PropNewsTime",
+     "date": "2026-05-09",
+     "url": "https://propnewstime.com/getdetailsStories/MzAwNTg=/mediatek-leases-104-000-sq-ft-at-bptp-capital-city-in-noida-for-second-india-r-d-hub",
+     "what_happened": "MediaTek leased ~104,000 sq ft across three floors at BPTP Capital City, Sector 94, Noida for its second India R&D hub, now operational, complementing the existing Bengaluru centre.",
+     "figure": "104,000 sq ft over three floors; part of a 780,000 sq ft development"
+    },
+    {
+     "headline": "MediaTek Eyes Chip Manufacturing In India, Sees $4.1 Billion R&D To Boost 5G and AI Innovation",
+     "outlet": "ETV Bharat",
+     "date": "2025-10-10",
+     "url": "https://www.etvbharat.com/en/!technology/mediatek-eyes-chip-manufacturing-in-india-sees-41-billion-r-d-to-boost-5g-and-ai-innovation-enn25101005874",
+     "what_happened": "MediaTek signalled interest in India chip manufacturing and cited its global R&D spend alongside its India footprint of Noida and Bengaluru R&D centres with 1,000+ engineers (India presence since 2004). Note: intent/commentary, not a committed India capex figure.",
+     "figure": "USD 4.1 billion global R&D spend cited; 1,000+ India engineers"
+    }
+   ],
+   "govt_visibility_note": "No PIB headline names MediaTek. Note the contrast: PIB-adjacent coverage exists for the Noida 3nm chip design centre unveiled by Ashwini Vaishnaw (May 2025), but that release relates to other firms, not MediaTek.",
+   "summary": "Doubling India R&D via a second Noida centre; chip-manufacturing talk remains stated intent, not committed capex.",
+   "ministry_check": "searched, not found -- structurally ineligible for the Design Linked Incentive, which is scoped to domestic startups/MSMEs/academia -- absence is by scheme design, not neglect"
+  },
+  {
+   "company": "CLP Holdings",
+   "country": "Hong Kong",
+   "sector": "Green Energy & Fuels",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "MINISTRY_NAMED",
+   "verdict_basis": "Roughly Rs 18,000 crore deployed in India via Apraava (~2 GW generation, transmission and 2.5m smart meters), invisible under a rebranded local name.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "Apraava commissions Fatehgarh IV transmission project in Rajasthan",
+     "outlet": "Power Peak Digest",
+     "date": "2025",
+     "url": "https://powerpeakdigest.com/apraava-commissions-fatehgarh-iv-transmission-project-in-rajasthan/",
+     "what_happened": "Apraava Energy (CLP Group + La Caisse/CDPQ JV, formerly CLP India) commissioned a 400 kV transmission line and 400/220 kV pooling substation in Barmer, Rajasthan, evacuating renewable power from Rajasthan REZ Phase-III zones. Completed despite land acquisition, right-of-way and border-tension demobilisation delays.",
+     "figure": "2.5 GW transmission capacity; five 500 MVA transformers; 22 km line"
+    },
+    {
+     "headline": "Apraava Bags Project to Evacuate 5.5 GW Renewable Energy in Rajasthan",
+     "outlet": "Mercom India",
+     "date": "2024",
+     "url": "https://www.mercomindia.com/apraava-bags-project-to-evacuate-renewable-energy-in-rajasthan",
+     "what_happened": "Apraava won a further Rajasthan transmission project to evacuate 5.5 GW of renewable energy, extending its transmission portfolio.",
+     "figure": "5.5 GW evacuation capacity"
+    }
+   ],
+   "govt_visibility_note": "Projects are awarded through central transmission tendering processes, so the Indian state is the counterparty \u2014 yet PIB headlines name neither CLP nor Apraava. The 2021 rebrand from 'CLP India' to 'Apraava Energy' further decouples the Hong Kong parent's name from Indian public discourse.",
+   "summary": "Roughly Rs 18,000 crore deployed in India via Apraava (~2 GW generation, transmission and 2.5m smart meters), invisible under a rebranded local name.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "'Apraava Energy Private Limited' named 10+ times in CERC Order 238/AT/2025 including a reproduced NTPC Letter of Award -- invisible to the matcher purely because CLP renamed its India arm in 2022"
+  },
+  {
+   "company": "Food Empire Holdings",
+   "country": "Singapore",
+   "sector": "Food Processing",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "MINISTRY_NAMED_SUBSIDIARY_ONLY",
+   "verdict_basis": "USD 37m Andhra Pradesh soluble-coffee capacity expansion, covered only by drinks trade press.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "Food Empire to expand coffee manufacturing facility in India",
+     "outlet": "just-drinks",
+     "date": "2025-07-10",
+     "url": "https://www.just-drinks.com/news/food-empire-india-facility-expansion/",
+     "what_happened": "Food Empire will expand its spray-dried soluble coffee manufacturing facility in Andhra Pradesh, raising capacity by approximately 60% as part of a vertical-integration push. Work to begin Q4 2025, completion targeted end-2027.",
+     "figure": "USD 37 million; ~60% capacity increase"
+    },
+    {
+     "headline": "Food Empire to expand spray-dried soluble coffee manufacturing facility in India",
+     "outlet": "Comunicaffe",
+     "date": "2025",
+     "url": "https://www.comunicaffe.com/food-empire-to-expand-manufacturing-facility-in-india/",
+     "what_happened": "Trade-press confirmation of the same Andhra Pradesh spray-dried soluble coffee capacity expansion.",
+     "figure": "USD 37 million"
+    }
+   ],
+   "govt_visibility_note": "No ministerial or state publicity found; this is the closest analogue to the Kerry example \u2014 a food-and-beverage manufacturer expanding an Indian facility covered exclusively by sector trade press.",
+   "summary": "USD 37m Andhra Pradesh soluble-coffee capacity expansion, covered only by drinks trade press.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "Indian arm 'Indus Coffee Private Limited' on the Coffee Board exporter register; the PARENT name appears nowhere, and Food Empire is definitively absent from the complete 119-company MoFPI PLI-FPI list"
+  },
+  {
+   "company": "Leonardo",
+   "country": "Italy",
+   "sector": "Aerospace & Defence",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "Genuinely below-radar and strategically significant \u2014 a Feb 2026 helicopter-manufacturing MoU with Adani that re-enters a market Leonardo was effectively locked out of, announced entirely through corporate and trade channels.",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "Adani Defence & Aerospace and Leonardo Forge Strategic Partnership to Build India's Helicopter Ecosystem",
+     "outlet": "Leonardo (company press release); also Adani newsroom, EDR Magazine, Vertical Mag, ASDNews",
+     "date": "2026-02-03",
+     "url": "https://www.leonardo.com/en/press-release-detail/-/detail/03-02-2026-adani-defence-aerospace-and-leonardo-forge-strategic-partnership-to-build-india-s-helicopter-ecosystem",
+     "what_happened": "Leonardo signed an MoU with Adani Defence & Aerospace to build a fully integrated helicopter manufacturing ecosystem in India, targeting Indian Armed Forces requirements for the AW169M and AW109 TrekkerM, with phased indigenisation, MRO and pilot training.",
+     "figure": "No value disclosed"
+    }
+   ],
+   "govt_visibility_note": "Framed around Indian Armed Forces procurement and self-reliance, so a downstream MoD contract would be government-publicised \u2014 but the Feb 2026 MoU itself is a private Adani-Leonardo announcement with no minister quoted and no PIB headline. Worth re-checking: Leonardo had a long-running Indian blacklisting history (AgustaWestland), which makes quiet re-entry via a private partner strategically deliberate.",
+   "summary": "Genuinely below-radar and strategically significant \u2014 a Feb 2026 helicopter-manufacturing MoU with Adani that re-enters a market Leonardo was effectively locked out of, announced entirely through corporate and trade channels."
+  },
+  {
+   "company": "Arcelik",
+   "country": "Turkey",
+   "sector": "White Goods & Electricals",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "QUIET_INVESTOR",
+   "verdict_basis": "Quietly compounding \u2014 the Sanand JV is scaling hard (revenue +39.5%, capacity +50%, fresh equity from the Indian partner) but Arcelik's name surfaces only inside Voltas results coverage, never in its own right.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "JV Voltbek's FY25 revenue rises 39.5% to Rs 2,235.53 cr, volume grows 57%",
+     "outlet": "Business Standard",
+     "date": "2025-06-15",
+     "url": "https://www.business-standard.com/amp/companies/news/jv-voltbek-s-fy25-revenue-rises-39-5-to-2-235-53-cr-volume-grows-57-125061500286_1.html",
+     "what_happened": "Voltbek (Voltas-Arcelik 50:50 JV, Sanand Gujarat) reported sharp FY25 growth; Voltas injected further equity into the JV during FY25 and the Sanand facility is expanding capacity.",
+     "figure": "FY25 revenue Rs 2,235.53 crore (+39.5%); volume +57%; Voltas invested Rs 102.41 crore in Voltbek share capital in FY25; Sanand capacity being expanded ~50%"
+    }
+   ],
+   "govt_visibility_note": "Coverage is financial-results-driven (Indian business press and broker notes such as the ICICI Securities Dec-2024 Voltas Beko update). No PIB headline names Arcelik. The original 2018 Gujarat MoU/plant launch had state-government involvement but predates the window.",
+   "summary": "Quietly compounding \u2014 the Sanand JV is scaling hard (revenue +39.5%, capacity +50%, fresh equity from the Indian partner) but Arcelik's name surfaces only inside Voltas results coverage, never in its own right.",
+   "ministry_check": "searched, not found -- AFFIRMATIVELY DISPROVED, not merely unconfirmed: absent from all 42 White Goods PLI beneficiaries, the FDI table and the CoE referral table. Trap recorded -- JV parent Voltas Limited IS a separate beneficiary at Sl. 11, which is how a careless match invents a hit"
+  },
+  {
+   "company": "Danieli",
+   "country": "Italy",
+   "sector": "Specialty Steel & Metals",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "SUBSUMED_IN_PARTNER",
+   "verdict_basis": "~EUR 500m SAIL IISCO order sits inside a loudly-publicised PSU project; announced at the Italy-India Business Forum, not by the ministry naming Danieli",
+   "activity_type": "order",
+   "india_news": [
+    {
+     "headline": "SAIL Turns to Danieli For IISCO Plant Expansion",
+     "outlet": "Association for Iron & Steel Technology (AIST)",
+     "date": "2025-12-19",
+     "url": "https://www.aist.org/sail-turns-to-danieli-for-iisco-plant-expansion",
+     "what_happened": "Steel Authority of India awarded Danieli the main technology packages for the IISCO Steel Plant expansion at Burnpur, West Bengal: a 5,557 cubic metre blast furnace, three slab continuous casters and a hot-strip mill; adds ~4 mtpa steelmaking capacity. Announced during the Italy-India Business Forum in Mumbai.",
+     "figure": "~4 million tonnes/year added capacity (contract value not stated in this item)"
+    },
+    {
+     "headline": "Danieli to supply equipment for India's SAIL, EUR500 million contract",
+     "outlet": "MarketScreener",
+     "date": "2025-12",
+     "url": "https://www.marketscreener.com/news/danieli-to-supply-equipment-for-india-s-sail-eur500-million-contract-ce7d50dbdd89f62d",
+     "what_happened": "Puts a value on the same SAIL IISCO award: total Danieli group orders approx EUR 500 million, effective on contract signature by December 2025.",
+     "figure": "EUR 500 million"
+    },
+    {
+     "headline": "Danieli strengthens its presence in India with major project for SAIL",
+     "outlet": "Danieli (company press release)",
+     "date": "2025-12",
+     "url": "https://www.danieli.com/en/news-media/news/danieli-strengthens-its-presence-india-major-project-sail_37_1020.htm",
+     "what_happened": "Company's own release on the SAIL IISCO award. NOTE: URL returned HTTP 403 to automated fetch; confirmed only via search-result snippet and the mirrored Danieli USA copy.",
+     "figure": "EUR 500 million (per group)"
+    }
+   ],
+   "govt_visibility_note": "IMPORTANT NUANCE: this is an order from SAIL, a Ministry of Steel PSU, and was announced at the Italy-India Business Forum in Mumbai \u2014 a bilateral government-facing event. The IISCO expansion itself is heavily publicised in India (BHEL's ~Rs 1,500 cr power-plant package and L&T's EPC packages for the same project were separately covered). So the PROJECT is government-visible even if the Danieli NAME is absent from PIB headlines. Treat as 'supplier hidden behind a publicised PSU project', not truly invisible.",
+   "summary": "Genuinely large in-window India activity \u2014 an approx EUR 500m equipment order for SAIL's IISCO Burnpur expansion (Dec 2025) \u2014 but it is an export order, not Indian capex by Danieli, and it sits inside a project the Indian state publicises loudly."
+  },
+  {
+   "company": "Merck KGaA",
+   "country": "Germany",
+   "sector": "Electronics & Semiconductors",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "SUBSUMED_IN_PARTNER",
+   "verdict_basis": "materially involved in the Rs 91,000cr Dholera fab, which the government publicises relentlessly -- but the publicity names Tata Electronics and the India Semiconductor Mission, never Merck",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "Tata Electronics and Merck Electronics Sign Memorandum of Understanding to Strengthen Semiconductor Capabilities in India",
+     "outlet": "Tata Electronics (company press release); also Indian Chemical News",
+     "date": "2025-09-02",
+     "url": "https://www.tataelectronics.com/w/tata-electronics-and-merck-electronics-sign-memorandum-of-understanding-to-strengthen-semiconductor-capabilities-in-india",
+     "what_happened": "Merck (Darmstadt) agreed to supply high-purity electronic materials, advanced gas and chemical delivery systems, turnkey fab infrastructure services and AI-based Material Intelligence for Tata Electronics' Dholera, Gujarat fab; plus localised warehousing, safety knowledge transfer and talent development.",
+     "figure": "Dholera fab total investment INR 91,000 crore (~USD 11 billion); Merck group sales EUR 21.2 billion (2024). No Merck-specific India figure disclosed."
+    }
+   ],
+   "govt_visibility_note": "STRONG FLAG: the Dholera fab is an India Semiconductor Mission flagship that the government publicises constantly \u2014 but the publicity names Tata Electronics and the ISM, never Merck. No minister is quoted in the MoU release. This is the classic pattern of a foreign supplier riding inside a heavily-publicised Indian project while staying nameless in government communication.",
+   "summary": "Active but structurally invisible \u2014 a Sept 2025 materials-and-fab-infrastructure MoU for Tata's INR 91,000 crore Dholera fab, with Merck's role announced only by Tata and trade press while the government headline space goes to the Indian partner."
+  },
+  {
+   "company": "AstraZeneca",
+   "country": "United Kingdom",
+   "sector": "Pharma & Bulk Drugs",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "STATE_PUBLICISED",
+   "verdict_basis": "Chennai tranche launched at Tamil Nadu's own 'TN Rising' London roadshow with CM Stalin and Minister T.R.B. Rajaa present",
+   "activity_type": "rd",
+   "india_news": [
+    {
+     "headline": "AstraZeneca expands Bangalore Global Hub in India with Rs 166 Crore Investment, creating 400 Jobs to boost R&D, global services and AI innovation",
+     "outlet": "AstraZeneca (company press release); also Business Standard, Analytics India Magazine",
+     "date": "2025-06-26",
+     "url": "https://www.astrazeneca.com/content/az-in/media/press-releases/2025/astrazeneca-expands-bangalore-global-hub-in-india.html",
+     "what_happened": "Expanded Bengaluru Global Hub to house nearly 1,300 employees including 400 new roles, covering R&D, Global Business Services, IT and digital health with an AI focus.",
+     "figure": "INR 166 crore; 400 new jobs"
+    },
+    {
+     "headline": "AstraZeneca announces Rs 176 crore investments in India to expand Chennai GITC",
+     "outlet": "Medical Dialogues",
+     "date": "2025-09-08",
+     "url": "https://medicaldialogues.in/news/industry/pharma/astrazeneca-announces-rs-176-crore-investments-in-india-to-expand-chennai-gitc-154816",
+     "what_happened": "Further INR 176 crore to expand the Chennai Global Innovation and Technology Centre; announced during Tamil Nadu's 'TN Rising' roadshow in London. Third India investment in ~15 months. Combined AZ India headcount heading toward ~4,000.",
+     "figure": "INR 176 crore"
+    },
+    {
+     "headline": "AstraZeneca plans to invest Rs 250 crore to grow its Global Innovation and Technology Centre in India, bringing some 1,300 highly skilled roles by 2025",
+     "outlet": "AstraZeneca (company press release)",
+     "date": "2024-07",
+     "url": "https://www.astrazeneca.com/content/az-in/media/press-releases/2024/astrazeneca-plans-to-invest-to-grow-its-gitc-in-india.html",
+     "what_happened": "Earlier tranche: INR 250 crore into the Chennai GITC with ~1,300 skilled roles targeted by 2025.",
+     "figure": "INR 250 crore; ~1,300 roles"
+    }
+   ],
+   "govt_visibility_note": "STRONG FLAG - this one is NOT unpublicised at state level. The Sept 2025 Chennai announcement was made inside Tamil Nadu's government-run 'TN Rising' investor roadshow in London, with Chief Minister M.K. Stalin and Industries Minister T.R.B. Rajaa named in the coverage. So a state government actively promoted it even if no PIB headline carries the AstraZeneca name. Reclassify away from 'truly below radar'.",
+   "summary": "Very active (three tranches, ~INR 592 crore across Bengaluru and Chennai in 15 months) but only half-hidden \u2014 the Chennai tranche was launched at a Tamil Nadu government roadshow alongside the CM, so the 'no PIB headline' signal understates its official visibility."
+  },
+  {
+   "company": "Sanofi",
+   "country": "France",
+   "sector": "Pharma & Bulk Drugs",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "STATE_PUBLICISED",
+   "verdict_basis": "Hyderabad GCC publicly endorsed by Telangana CM Revanth Reddy; note the India story is two-directional -- brand divestments (Myoril, Rs 234cr) and a consumer-health demerger run alongside the GCC capex",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "Sanofi announces expansion of its Global Capability Centre in Hyderabad",
+     "outlet": "Sanofi (company press release); also Medical Dialogues, World Pharma Today",
+     "date": "2024-07-17",
+     "url": "https://www.sanofi.com/assets/countries/india/docs/Media/press-releases/2024/sanofi-announces-expansion-of-its-global-capability-centre-in-hyderabad.pdf",
+     "what_happened": "Sanofi Healthcare India announced a six-year expansion of its Hyderabad GCC, growing headcount to ~2,600 within two years and making it the largest of Sanofi's four global hubs; scope spans commercial, manufacturing and supply, R&D and digital.",
+     "figure": "EUR 400 million over six years, of which EUR 100 million by 2025 (reported elsewhere as ~USD 437 million)"
+    },
+    {
+     "headline": "Sanofi India sells muscle relaxant brand Myoril to Corona Remedies",
+     "outlet": "reported via Business Standard / Screener company coverage",
+     "date": "2023-06",
+     "url": "https://www.business-standard.com/topic/sanofi-india",
+     "what_happened": "DIVESTMENT, and OUT OF WINDOW (June 2023). Sanofi India sold the Myoril brand to Ahmedabad-based Corona Remedies for INR 234 crore. Listed here only so the record is not read as pure one-way investment: Sanofi has been simultaneously pruning Indian brands (Soframycin, Sofradex in FY22) and demerging Sanofi Consumer Healthcare India (SCHIL). Exact URL for the primary Myoril announcement not verified.",
+     "figure": "INR 234 crore (divestment)"
+    }
+   ],
+   "govt_visibility_note": "STRONG FLAG - Telangana Chief Minister A. Revanth Reddy is quoted in coverage of the Hyderabad GCC expansion, praising it as evidence of Telangana's life-sciences standing. State government publicity is therefore present even without a PIB headline. Separately, the investment/divestment picture is two-directional: capability-centre capex up, Indian branded-product portfolio being sold down.",
+   "summary": "Large and real (EUR 400m Hyderabad GCC, Jul 2024) but not truly quiet \u2014 the Telangana CM publicly endorsed it; and the India story is mixed, with brand divestments and a consumer-health demerger running alongside the GCC build-out."
+  },
+  {
+   "company": "Thales",
+   "country": "France",
+   "sector": "Aerospace & Defence",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "STATE_PUBLICISED",
+   "verdict_basis": "R&T India launch attended by Karnataka IT Minister Priyank Kharge, staged inside the bilateral India-France Year of Innovation",
+   "activity_type": "rd",
+   "india_news": [
+    {
+     "headline": "India-France Year of Innovation 2026: India is now part of the five Thales global corporate research centers",
+     "outlet": "Thales Group (company press release); carried by WebWire, VARIndia, India Strategic, MarketScreener",
+     "date": "2026-02-17",
+     "url": "https://www.webwire.com/ViewPressRel.asp?aId=350676",
+     "what_happened": "Thales inaugurated Thales Research & Technology India at its Bengaluru Engineering Competence Centre, making India its fifth global corporate R&T laboratory alongside France, UK, Canada and Singapore. Focus: real-time embedded software, edge computing, embedded AI on open-source hardware, with a dedicated Masters/PhD research team.",
+     "figure": "No India-specific figure; Thales spends >EUR 4 billion/year on R&D globally. Over 2,300 staff across Thales and its Indian JVs."
+    },
+    {
+     "headline": "Thales Unveils State-of-the-Art Inflight Entertainment & Services Lab at its Engineering Competence Centre in Bengaluru",
+     "outlet": "Thales Group (company press release)",
+     "date": "date not verified",
+     "url": "https://www.thalesgroup.com/en/news-centre/press-releases/thales-unveils-state-art-inflight-entertainment-services-lab-its",
+     "what_happened": "Opened an inflight entertainment and services lab at the Bengaluru ECC, framed against 'Aatmanirbhar Bharat'. DATE NOT CONFIRMED \u2014 thalesgroup.com returned bot-detection to automated fetch, so this item is recorded from search-result metadata only and should be re-verified before citation.",
+     "figure": "Not disclosed"
+    }
+   ],
+   "govt_visibility_note": "STRONG FLAG - Shri Priyank Kharge, Karnataka Minister for Electronics, IT and Biotechnology, attended the Thales Research & Technology India launch and is quoted in the release. The launch was also deliberately timed to India AI Impact Summit week and the India-France Year of Innovation 2026 \u2014 a bilateral government programme. This is state-and-diplomatic-publicised activity that simply never became a PIB headline.",
+   "summary": "Real R&D escalation (India promoted to one of five global Thales corporate research centres, Feb 2026) but the least 'quiet' name in the set \u2014 a Karnataka minister spoke at the launch and it was staged inside a bilateral India-France innovation year."
+  },
+  {
+   "company": "LG Electronics",
+   "country": "South Korea",
+   "sector": "Electronics & Semiconductors",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "STATE_PUBLICISED",
+   "verdict_basis": "FLAG: the Andhra Pradesh state government approved and publicised the 247-acre land allotment, so state-level publicity clearly exists \u2014 but no PIB headline names LG Electronics. This is a case of state visibility without central visibility.",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "LG Electronics India Limited Begins Construction of Its Third Manufacturing Plant in India",
+     "outlet": "LG Newsroom / PR Newswire",
+     "date": "2025-05-08",
+     "url": "https://www.lgnewsroom.com/2025/05/lg-electronics-india-limited-begins-construction-of-its-third-manufacturing-plant-in-india/",
+     "what_happened": "LG began construction of its third India plant at Sri City, Andhra Pradesh on 247 acres approved by the state government, producing refrigerators, washing machines, ACs and AC compressors; operations expected end-2026, ~1,495 direct jobs.",
+     "figure": "USD 600 million / Rs 5,001 crore over four years; capacity 800k refrigerators, 850k washing machines, 1.5m ACs, 2m compressors p.a."
+    },
+    {
+     "headline": "LG Electronics Commences Construction of New Manufacturing Facility at Sri City",
+     "outlet": "Sri City (industrial park operator)",
+     "date": "2025-05",
+     "url": "https://sricity.in/en/news_events/lg-electronics-commences-construction-of-new-manufacturing-facility-at-sri-city/",
+     "what_happened": "Site-operator confirmation of the groundbreaking at Sri City, Andhra Pradesh.",
+     "figure": "247 acres"
+    }
+   ],
+   "govt_visibility_note": "FLAG: the Andhra Pradesh state government approved and publicised the 247-acre land allotment, so state-level publicity clearly exists \u2014 but no PIB headline names LG Electronics. This is a case of state visibility without central visibility.",
+   "summary": "Largest confirmed investment in this cluster \u2014 a USD 600m third India plant at Sri City, state-publicised but PIB-invisible."
+  },
+  {
+   "company": "Delta Electronics Thailand",
+   "country": "Thailand",
+   "sector": "Electronics & Semiconductors",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "STATE_PUBLICISED",
+   "verdict_basis": "FLAG: Tamil Nadu Chief Minister M.K. Stalin personally attended the September 2025 Krishnagiri ground-breaking \u2014 high state-government publicity, zero PIB headline mention. A clear state-vs-centre visibility gap.",
+   "activity_type": "expansion",
+   "india_news": [
+    {
+     "headline": "Delta Electronics India Begins Krishnagiri Plant Expansion",
+     "outlet": "Energetica India",
+     "date": "2025-09-12",
+     "url": "https://www.energetica-india.net/news/delta-electronics-india-begins-krishnagiri-plant-expansion",
+     "what_happened": "Ground-breaking for expansion of the Krishnagiri, Tamil Nadu manufacturing site \u2014 two new factory buildings on a 95-acre campus, smart manufacturing line with 6-axis/4-axis robots, producing high-efficiency power supplies, DC brushless fans, telecom power, industrial automation, data-centre infrastructure and e-mobility solutions. Site runs on 53% renewable energy.",
+     "figure": "95-acre campus; up to 95% productivity increase claimed; 6.9 MWp solar rooftop"
+    },
+    {
+     "headline": "Delta Expanding India Operations With $500 Mn Investment",
+     "outlet": "Inc42",
+     "date": "2025",
+     "url": "https://inc42.com/buzz/delta-expanding-india-operations-with-500-mn-investment/",
+     "what_happened": "Coverage of the USD 500 million India programme funding the Krishnagiri expansion; headcount to rise from ~3,750 to 5,000 within three years, with ~65% of the committed capital already deployed and full deployment expected by 2027.",
+     "figure": "USD 500 million; workforce 3,750 to 5,000; 65% deployed"
+    }
+   ],
+   "govt_visibility_note": "FLAG: Tamil Nadu Chief Minister M.K. Stalin personally attended the September 2025 Krishnagiri ground-breaking \u2014 high state-government publicity, zero PIB headline mention. A clear state-vs-centre visibility gap.",
+   "summary": "USD 500m Tamil Nadu expansion with the CM at the ground-breaking, yet never named in a central government release."
+  },
+  {
+   "company": "Ma'aden / Saudi Arabian Mining Company",
+   "country": "Saudi Arabia",
+   "sector": null,
+   "india_intent": null,
+   "pib_visibility": "UNKNOWN",
+   "pib_investment_hits_3y": 0,
+   "verdict": "HEADLINED",
+   "verdict_basis": "minister-fronted (signed during J.P. Nadda's Saudi visit, carried by DD News, the state broadcaster); also offtake, not Indian capex",
+   "activity_type": "order",
+   "india_news": [
+    {
+     "headline": "Three Indian Fertilizer Companies Sign Long-Term DAP Supply Agreement with Saudi Arabia's Ma'aden",
+     "outlet": "Krishi Jagran",
+     "date": "2025-07",
+     "url": "https://krishijagran.com/news/three-indian-fertilizer-companies-sign-long-term-dap-supply-agreement-with-saudi-arabia-s-ma-aden",
+     "what_happened": "IPL, KRIBHCO and Chambal Fertilizers signed long-term agreements lifting annual DAP supply from Ma'aden to 3.1 million tonnes from FY2025-26 for five years, extendable by five more.",
+     "figure": "3.1 million tonnes/yr DAP (up from 1.9 Mt in 2024-25); 5+5 year term"
+    },
+    {
+     "headline": "Coromandel International, Saudi Arabia's Ma'aden sign long-term DAP deal",
+     "outlet": "Business Standard",
+     "date": "2025-04-10",
+     "url": "https://www.business-standard.com/companies/news/coromandel-international-saudi-arabia-s-ma-aden-sign-long-term-dap-deal-125041000136_1.html",
+     "what_happened": "Separate long-term DAP and NP/NPK supply agreement between Coromandel International and Ma'aden.",
+     "figure": "not stated"
+    },
+    {
+     "headline": "India signs multiple phosphate agreements",
+     "outlet": "World Fertilizer",
+     "date": "2025-07-15",
+     "url": "https://www.worldfertilizer.com/phosphates/15072025/india-signs-multiple-phosphate-agreements/",
+     "what_happened": "Sector trade-press roundup of the India-Saudi phosphate supply agreements.",
+     "figure": "3.1 Mt/yr"
+    }
+   ],
+   "govt_visibility_note": "MINISTERIAL PUBLICITY CONFIRMED: the long-term agreements were signed during Union Minister J.P. Nadda's visit to Saudi Arabia and were carried by DD News, the state broadcaster (https://ddnews.gov.in/en/india-signs-long-term-fertilizer-supply-agreements-with-saudi-arabia-during-minister-jp-naddas-visit/). So even if no PIB headline names Ma'aden, the deal was actively publicised by the Government of India.",
+   "summary": "Large and strategically important, but NOT unpublicised \u2014 a minister-fronted, state-broadcaster-covered supply arrangement; also offtake, not Indian capex."
+  },
+  {
+   "company": "Cameco",
+   "country": "Canada",
+   "sector": "Green Energy & Fuels",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "HEADLINED",
+   "verdict_basis": "PIB title match missed it: the CAD 2.6bn / 22M-lb uranium contract with the Dept of Atomic Energy was signed at a Delhi event attended by the PM and the Canadian PM -- publicised, just not in a PIB headline",
+   "activity_type": "order",
+   "india_news": [
+    {
+     "headline": "Cameco Signs Long-Term Uranium Supply Agreement with India",
+     "outlet": "Cameco (also Businesswire)",
+     "date": "2026-03-02",
+     "url": "https://www.cameco.com/media/news/cameco-signs-long-term-uranium-supply-agreement-with-india",
+     "what_happened": "Nine-year uranium ore concentrate supply contract with India's Department of Atomic Energy; deliveries 2027-2035. Nearly 10x the value of Cameco's 2015 India contract.",
+     "figure": "~22 million lb U3O8; ~CAD 2.6 billion"
+    },
+    {
+     "headline": "Cameco uranium agreement a highlight of Canada-India deals",
+     "outlet": "American Nuclear Society / Nuclear Newswire",
+     "date": "2026-03-06",
+     "url": "https://www.ans.org/news/2026-03-06/article-7823/cameco-uranium-agreement-a-highlight-of-canadaindia-deals/",
+     "what_happened": "Trade-press framing of the deal within the broader Canada-India commercial reset.",
+     "figure": "CAD 2.6 billion"
+    }
+   ],
+   "govt_visibility_note": "STRONG POLITICAL VISIBILITY DESPITE NO PIB HEADLINE: the signing was celebrated at a Delhi event attended by PM Narendra Modi, Canadian PM Mark Carney and Saskatchewan Premier Scott Moe. Counterparty is the Department of Atomic Energy \u2014 a Government of India department. If PIB's headline never named Cameco, that is a naming-convention artefact, not genuine obscurity.",
+   "summary": "NOT below-radar in substance \u2014 a USD-scale sovereign supply contract signed in front of two prime ministers; treat any 'unpublicised' classification as a PIB-headline-text artefact."
+  },
+  {
+   "company": "SAIC Motor",
+   "country": "China",
+   "sector": "Auto, EV & Components",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "BLOCKED_PN3",
+   "verdict_basis": "NOT inbound investment \u2014 a staged retreat from majority ownership of MG India to JSW, forced by Press Note 3 and a rejected EV plant proposal, even as the brand thrives commercially.",
+   "activity_type": "divestment",
+   "india_news": [
+    {
+     "headline": "CCI approves JSW's acquisition of up to 38% stake in MG Motor India",
+     "outlet": "Autocar Professional",
+     "date": "2024",
+     "url": "https://www.autocarpro.in/news/cci-approves-jsws-acquisition-of-up-to-38-stake-in-mg-motor-india-118841",
+     "what_happened": "RESTRUCTURED / DIVESTMENT. The Competition Commission of India cleared JSW Group's acquisition of up to 38% of MG Motor India from SAIC. JSW paid roughly USD 300m for ~35%, valuing the JV near USD 1.2bn. SAIC pursued the dilution because its own India FDI proposal had been stuck for years and its EV production unit proposal was rejected.",
+     "figure": "~35-38% stake; ~USD 300 million; JV valued ~USD 1.2 billion"
+    },
+    {
+     "headline": "SAIC to reduce stake in JSW MG Motor JV amid investment curbs",
+     "outlet": "Autocar India",
+     "date": "2025",
+     "url": "https://www.autocarindia.com/industry/saic-to-reduce-stake-in-jsw-mg-motor-jv-amid-investment-curbs-437309",
+     "what_happened": "FURTHER DIVESTMENT. SAIC set to sell an additional 10% to JSW, lifting JSW from 35% to 45% and cutting SAIC from 49% to 39%, making JSW the largest shareholder. SAIC intends to dilute 'substantially' while continuing to supply technology and products; valuation not yet agreed.",
+     "figure": "Additional 10%; JSW 35%->45%, SAIC 49%->39%"
+    },
+    {
+     "headline": "JSW set to gain control of MG Motor JV as SAIC plans 10 percent stake sale",
+     "outlet": "Autocar India",
+     "date": "2025",
+     "url": "https://www.autocarindia.com/industry/jsw-to-gain-control-as-saic-plans-10-percent-stake-sale-in-jv-439840",
+     "what_happened": "DIVESTMENT. Confirms JSW moving to control of the JV. Note the operational contrast: MG India sales grew from 16,500 units (2019) to over 61,000 (2024), second-largest EV maker in India after Tata Motors \u2014 commercial success alongside ownership retreat.",
+     "figure": "MG India sales 16,500 (2019) -> 61,000+ (2024)"
+    }
+   ],
+   "govt_visibility_note": "Government involvement is visible through CCI clearance and the rejection of SAIC's EV production proposal \u2014 regulatory gatekeeping, not investment promotion. No PIB headline names SAIC.",
+   "summary": "NOT inbound investment \u2014 a staged retreat from majority ownership of MG India to JSW, forced by Press Note 3 and a rejected EV plant proposal, even as the brand thrives commercially."
+  },
+  {
+   "company": "BYD",
+   "country": "China",
+   "sector": "Auto, EV & Components",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "BLOCKED_PN3",
+   "verdict_basis": "NOT an investment \u2014 a USD 1bn manufacturing proposal refused under Press Note 3, with the refusal reaffirmed through 2025.",
+   "activity_type": "blocked",
+   "india_news": [
+    {
+     "headline": "BYD's US$1 billion investment plan reportedly rejected by India on security grounds in blow to global strategy",
+     "outlet": "South China Morning Post",
+     "date": "2023-07",
+     "url": "https://www.scmp.com/business/china-business/article/3228769/byds-go-global-strategy-dealt-setback-after-india-investment-plan-rejected-security-grounds-report",
+     "what_happened": "BLOCKED. India rejected BYD's USD 1bn proposal \u2014 a JV with Hyderabad-based Megha Engineering and Infrastructures Ltd to build EVs and batteries in Hyderabad, filed with DPIIT \u2014 under Press Note 3, with officials citing security concerns over Chinese investment and Chinese homegrown technology.",
+     "figure": "USD 1 billion proposal rejected"
+    },
+    {
+     "headline": "India says no to BYD while wooing rival Tesla to invest",
+     "outlet": "Bloomberg",
+     "date": "2025-04-07",
+     "url": "https://www.bloomberg.com/news/articles/2025-04-07/india-says-no-to-byd-while-wooing-rival-tesla-to-invest",
+     "what_happened": "BLOCKED / ongoing. Reporting that India's position against BYD investment persisted into 2025, contrasted with active courtship of Tesla. BYD nonetheless sells imported EVs and has become a notable EV player in India without a manufacturing footprint.",
+     "figure": "n/a"
+    }
+   ],
+   "govt_visibility_note": "Government visibility is inverted here \u2014 BYD is publicly discussed by Indian officials in the context of REFUSAL, not welcome. Absence from PIB investment headlines reflects rejection, not stealth.",
+   "summary": "NOT an investment \u2014 a USD 1bn manufacturing proposal refused under Press Note 3, with the refusal reaffirmed through 2025."
+  },
+  {
+   "company": "Luxshare Precision",
+   "country": "China",
+   "sector": "Electronics & Semiconductors",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "BLOCKED_PN3",
+   "verdict_basis": "Press Note 3 friction pushed capital to Vietnam; a 2024 India clearance was reported but no confirmed India plant materialised in the window.",
+   "activity_type": "blocked",
+   "india_news": [
+    {
+     "headline": "India reportedly allows Luxshare's investment in Tamil Nadu",
+     "outlet": "DigiTimes",
+     "date": "2024-08-23",
+     "url": "https://www.digitimes.com/news/a20240823VL202/investment-luxshare-government-manufacturing-electronics.html",
+     "what_happened": "Reported that India cleared a Luxshare investment in Tamil Nadu \u2014 a partial softening of Press Note 3 treatment for Apple-supply-chain entrants. Original 2019-2020 plan was to revive the defunct Motorola plant at Sriperumbudur for iPhone components.",
+     "figure": "Original plan Rs 7.5 billion (~USD 90m); clearance terms not detailed"
+    },
+    {
+     "headline": "Luxshare Precision (company profile \u2014 India/Vietnam capital reallocation)",
+     "outlet": "Grokipedia",
+     "date": "2024",
+     "url": "https://grokipedia.com/page/Luxshare",
+     "what_happened": "RESTRUCTURED / DIVERTED. Luxshare redirected USD 330m to Vietnam's Bac Giang province in 2023 amid India delays, taking total Vietnam investment to USD 504m by 2024, with operations slated for 2026 \u2014 India plans deprioritised. Caveat: this is a low-authority aggregated source; treat the specific figures as unverified.",
+     "figure": "USD 330m diverted to Vietnam (2023); USD 504m Vietnam total by 2024"
+    }
+   ],
+   "govt_visibility_note": "No PIB headline. The 2024 DigiTimes clearance report suggests case-by-case Press Note 3 approval for Apple-supply-chain firms, but no confirmed operational India plant was found in the window.",
+   "summary": "Press Note 3 friction pushed capital to Vietnam; a 2024 India clearance was reported but no confirmed India plant materialised in the window."
+  },
+  {
+   "company": "Hikvision",
+   "country": "China",
+   "sector": null,
+   "india_intent": null,
+   "pib_visibility": "UNKNOWN",
+   "pib_investment_hits_3y": 0,
+   "verdict": "BLOCKED_PN3",
+   "verdict_basis": "NOT an investment \u2014 progressive regulatory exclusion from the India market, culminating in an effective sales ban from April 2026.",
+   "activity_type": "blocked",
+   "india_news": [
+    {
+     "headline": "'China part of concern': India's CCTV crackdown over spying fears hits global giants like Hikvision, Xiaomi",
+     "outlet": "Business Today",
+     "date": "2025-05-28",
+     "url": "https://www.businesstoday.in/industry/story/china-part-of-concern-indias-cctv-crackdown-over-spying-fears-hits-global-giants-like-hikvision-xiaomi-478143-2025-05-28",
+     "what_happened": "BLOCKED / regulatory squeeze. From 9 April 2025 all internet-connected CCTV cameras sold in India require STQC certification under the IoT System Certification Scheme, potentially including source-code submission and factory audits. As of 28 May 2025, 342 applications were pending with only one foreign-brand approval.",
+     "figure": "342 applications pending; 1 foreign-brand approval"
+    },
+    {
+     "headline": "India to ban Chinese CCTV from Apr 1 as security concerns reshape market",
+     "outlet": "Business Standard",
+     "date": "2026-03-30",
+     "url": "https://www.business-standard.com/industry/news/india-ban-chinese-cctv-government-security-concerns-hikvision-dahua-market-126033000316_1.html",
+     "what_happened": "BLOCKED. MeitY ended the relaxation for non-compliant stock: from 1 April 2026 only ER/STQC-compliant internet-connected cameras may be sold in India. Indian brands' market share rose above 80% by February 2026, up from Chinese firms holding roughly a third of sales previously.",
+     "figure": "Indian brands >80% market share (Feb 2026), up from ~67%"
+    }
+   ],
+   "govt_visibility_note": "Government action against Hikvision is highly visible (MeitY certification regime, 2020 tender ban, Indian Navy camera removal orders) \u2014 but this is exclusion, not investment promotion.",
+   "summary": "NOT an investment \u2014 progressive regulatory exclusion from the India market, culminating in an effective sales ban from April 2026."
+  },
+  {
+   "company": "Haier Smart Home",
+   "country": "China",
+   "sector": "White Goods & Electricals",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "BLOCKED_PN3",
+   "verdict_basis": "NOT inbound investment \u2014 a 49% dilution to Bharti/Warburg Pincus (~USD 2bn) engineered to work around Press Note 3.",
+   "activity_type": "divestment",
+   "india_news": [
+    {
+     "headline": "Bharti Enterprises and Warburg Pincus Announce Strategic Investment in Haier India",
+     "outlet": "Warburg Pincus (company release)",
+     "date": "2025-12-24",
+     "url": "https://warburgpincus.com/2025/12/24/bharti-enterprises-and-warburg-pincus-announce-strategic-investment-in-haier-india/",
+     "what_happened": "RESTRUCTURED / PARTIAL DIVESTMENT. Haier Smart Home agreed to sell 49% of its India unit to Bharti Enterprises and Warburg Pincus (evenly split), with Haier Group retaining 49% and Haier India management holding the remainder. Leadership to be localised, with Satish NS expected as MD.",
+     "figure": "49% stake; deal valued around USD 2 billion"
+    },
+    {
+     "headline": "Haier Sells 49% Stake in Indian Unit to Bharti, Warburg Pincus",
+     "outlet": "Bloomberg",
+     "date": "2025-12-24",
+     "url": "https://www.bloomberg.com/news/articles/2025-12-24/haier-sells-49-stake-in-indian-unit-to-bharti-warburg-pincus",
+     "what_happened": "RESTRUCTURED. Independent confirmation of the stake sale. Reporting notes Haier sought a reputed Indian partner specifically to ease Press Note 3 approval friction; earlier talks had stalled over valuation.",
+     "figure": "~USD 2 billion valuation"
+    }
+   ],
+   "govt_visibility_note": "No PIB headline. The transaction is explicitly a response to the Press Note 3 approval regime \u2014 Indianising ownership to unlock regulatory headroom rather than seeking direct approval for Chinese capital.",
+   "summary": "NOT inbound investment \u2014 a 49% dilution to Bharti/Warburg Pincus (~USD 2bn) engineered to work around Press Note 3."
+  },
+  {
+   "company": "Midea Group",
+   "country": "China",
+   "sector": "White Goods & Electricals",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "BLOCKED_PN3",
+   "verdict_basis": "No confirmed India investment in the window \u2014 only a stated intent to form a local manufacturing JV, itself a Press Note 3 workaround pattern.",
+   "activity_type": "none",
+   "india_news": [
+    {
+     "headline": "This Chinese home appliances giant might start manufacturing in India",
+     "outlet": "NewsBytes",
+     "date": "2025",
+     "url": "https://www.newsbytesapp.com/news/business/midea-to-soon-announce-local-manufacturing-joint-venture-in-india/story",
+     "what_happened": "INTENT ONLY. India Country Head Siddharth Saxena (appointed January 2025) said Midea is in the final stages of a local manufacturing joint venture and plans to raise India-specific R&D investment once the JV structure is in place. Growth categories cited: premium Toshiba-brand refrigerators, washing machines, microwaves, dishwashers.",
+     "figure": "No capex figure disclosed; JV unannounced as of reporting"
+    }
+   ],
+   "govt_visibility_note": "No PIB headline and no confirmed transaction. The historic Rs 800 crore / Rs 1,350 crore Pune plant announcements date from 2017-2018, well outside the July 2023 window, and were not re-confirmed by anything found in-window.",
+   "summary": "No confirmed India investment in the window \u2014 only a stated intent to form a local manufacturing JV, itself a Press Note 3 workaround pattern."
+  },
+  {
+   "company": "SQM / Sociedad Quimica y Minera",
+   "country": "Chile",
+   "sector": null,
+   "india_intent": null,
+   "pib_visibility": "UNKNOWN",
+   "pib_investment_hits_3y": 0,
+   "verdict": "DIRECTION_INBOUND",
+   "verdict_basis": "Genuinely below-radar but the traceable activity is inbound-to-SQM (Indian PSUs buying into its Australian lithium), and its own Pune subsidiary has zero press coverage \u2014 a real quiet-entry signal that trade press has not yet picked up.",
+   "activity_type": "investment",
+   "india_news": [
+    {
+     "headline": "Exclusive-Indian state firms seek stake in SQM's lithium projects in Australia, sources say",
+     "outlet": "Reuters (via Mining Weekly)",
+     "date": "2025-03-28",
+     "url": "https://www.miningweekly.com/article/indian-state-firms-seek-stake-in-sqms-lithium-projects-in-australia-sources-say-2025-03-28",
+     "what_happened": "KABIL with Coal India, Oil India and ONGC Videsh in talks to buy 20% of SQM's Mount Holland and Andover lithium projects in Western Australia \u2014 India's largest overseas lithium play. Note direction: India investing INTO SQM's assets, not SQM investing into India.",
+     "figure": "20% stake for ~USD 600 million; full asset base valued ~USD 3 billion"
+    },
+    {
+     "headline": "Coal India, ONGC Videsh among firms seeking stake in SQM's lithium projects",
+     "outlet": "Business Standard",
+     "date": "2025-03-28",
+     "url": "https://www.business-standard.com/companies/news/coal-india-ongc-videsh-among-firms-seeking-stake-in-sqm-s-lithium-projects-125032800475_1.html",
+     "what_happened": "Indian business press confirmation of the four-PSU consortium approach to SQM.",
+     "figure": "USD 600 million for 20%"
+    }
+   ],
+   "govt_visibility_note": "Deal is India-state-driven (KABIL is a Ministry of Mines JV) yet was reported only via a Reuters exclusive sourced to unnamed people \u2014 no PIB headline names SQM. The Apr-2024 incorporation of SQM India Pvt Ltd in Pune appears only in ROC/company-registry data and a secondary aggregator (discoveryalert.com.au); no trade-press article was found reporting it, so it is NOT counted as a citable news item here.",
+   "summary": "Genuinely below-radar but the traceable activity is inbound-to-SQM (Indian PSUs buying into its Australian lithium), and its own Pune subsidiary has zero press coverage \u2014 a real quiet-entry signal that trade press has not yet picked up."
+  },
+  {
+   "company": "Embraer",
+   "country": "Brazil",
+   "sector": "Aerospace & Defence",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "campaign/bid only, not a committed investment: Sustained, escalating India campaign (Feb-2024 MoU to Oct-2025 cooperation agreement to Feb-2026 MRO siting) but strictly a competition bid \u2014 no signed aircraft order, so 'investment intent' is conditional, not committed.",
+   "activity_type": "bid",
+   "india_news": [
+    {
+     "headline": "Embraer and Mahindra announce collaboration on the C-390 Millennium Medium Transport Aircraft in India",
+     "outlet": "Embraer media centre",
+     "date": "2024-02-01",
+     "url": "https://www.embraer.com/media-center/en/?mediatype=NEWS&detail=13870",
+     "what_happened": "MoU with Mahindra to jointly pursue the Indian Air Force Medium Transport Aircraft programme. This is a campaign/bid, NOT a won order.",
+     "figure": "IAF MTA requirement reported at up to 80 aircraft"
+    },
+    {
+     "headline": "Embraer to offer India its own C-390 assembly line as part of bid for new military transport",
+     "outlet": "FlightGlobal",
+     "date": "2026-06",
+     "url": "https://www.flightglobal.com/archive/2026/06/embraer-prepared-to-open-indian-c-390-assembly-site-to-support-sale/",
+     "what_happened": "Embraer states willingness to open an Indian C-390 production site to support the MTA sale. Conditional offer tied to winning the competition.",
+     "figure": "fleet recapitalisation up to 80 transport aircraft"
+    },
+    {
+     "headline": "Embraer, Mahindra plan C-390 MRO facility for India air force bid",
+     "outlet": "FlightGlobal",
+     "date": "2026-02-20",
+     "url": "https://www.flightglobal.com/fixed-wing/embraer-mahindra-plan-india-mro-for-c-390-bid/166387.article",
+     "what_happened": "Embraer and Mahindra advance site selection for an Indian MRO base, explicitly subject to IAF selecting the C-390. Also covered by Aviation Week (https://aviationweek.com/defense/aircraft-propulsion/embraer-ramps-c-390-india-push-mahindra-mro-partnership).",
+     "figure": "not stated"
+    }
+   ],
+   "govt_visibility_note": "All milestones are company-announced (Embraer/Mahindra press releases and defence trade press). No PIB headline names Embraer. MoD has not announced a C-390 selection.",
+   "summary": "Sustained, escalating India campaign (Feb-2024 MoU to Oct-2025 cooperation agreement to Feb-2026 MRO siting) but strictly a competition bid \u2014 no signed aircraft order, so 'investment intent' is conditional, not committed."
+  },
+  {
+   "company": "Kerry Group",
+   "country": "Ireland",
+   "sector": "Food Processing",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "No India activity found in window (Jul 2023 - Jul 2026); the widely-cited Kerry India facility story is from June 2019 and predates the window by four years.",
+   "activity_type": "none",
+   "india_news": [
+    {
+     "headline": "Kerry opens new facility in India to boost research and innovation",
+     "outlet": "FoodBev Media",
+     "date": "2019-06-25",
+     "url": "https://www.foodbev.com/news/kerry-opens-new-facility-in-india-to-boost-research-and-innovation",
+     "what_happened": "OUT OF WINDOW (2019). Kerry opened a 40,600 sq m production/innovation site at Tumkur, Karnataka, 120km from Bangalore; 150 jobs immediately, 150 more at full capacity.",
+     "figure": "EUR 20 million"
+    }
+   ],
+   "govt_visibility_note": "The seed example is 2019, not in-window. Notably it was opened by Brian McElduff, Ireland's ambassador to India \u2014 i.e. FOREIGN diplomatic visibility, not Indian-government visibility. No Indian minister or state MoU found. Kerry's 2025 capacity/innovation-centre announcements (Frankfurt, Dubai, Jakarta, Karawang) explicitly skip India.",
+   "summary": "No India activity found in window (Jul 2023 - Jul 2026); the widely-cited Kerry India facility story is from June 2019 and predates the window by four years."
+  },
+  {
+   "company": "Indra Sistemas",
+   "country": "Spain",
+   "sector": "Aerospace & Defence",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "No verifiable India activity found inside the window; the flagship EUR 55m AAI air-traffic contract lands March 2023, four months before the window opens \u2014 a genuine near-miss worth re-checking with better newsroom access.",
+   "activity_type": "none",
+   "india_news": [
+    {
+     "headline": "Indra is set to improve flight capacity and safety in India with a pioneering system that centralizes all air traffic surveillance and management phases",
+     "outlet": "Indra Group (company press release)",
+     "date": "2023-03-09",
+     "url": "https://www.indragroup.com/en/noticia/indra-set-improve-flight-capacity-safety-india-pioneering-system-centralizes-air-traffic",
+     "what_happened": "OUT OF WINDOW by ~4 months. Airports Authority of India, after a 2-year international tender, awarded Indra and local partners an integrated ATM/surveillance system for Mumbai, Hyderabad, Bangalore, Navi Mumbai and Mopa. Indra had already modernised Delhi and Kolkata centres, 38 towers, radar covering 80% of Indian airspace and four ATC training simulators.",
+     "figure": "More than EUR 55 million"
+    }
+   ],
+   "govt_visibility_note": "The customer is AAI, a central-government authority under MoCA \u2014 so the counterparty is the state itself, yet no PIB headline names Indra. Searches for 2024-2026 India items (Aero India 2025, BEL tie-ups, follow-on AAI awards) returned nothing Indra-specific; the Indra newsroom is behind Radware bot protection, so an in-window item may exist but could not be verified.",
+   "summary": "No verifiable India activity found inside the window; the flagship EUR 55m AAI air-traffic contract lands March 2023, four months before the window opens \u2014 a genuine near-miss worth re-checking with better newsroom access."
+  },
+  {
+   "company": "Iveco Group",
+   "country": "Italy",
+   "sector": "Auto, EV & Components",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "No in-window India investment by Iveco; the only major India-linked news is Tata Motors acquiring Iveco (Jul 2025) \u2014 an inbound takeover that must not be scored as European investment into India.",
+   "activity_type": "none",
+   "india_news": [
+    {
+     "headline": "TATA MOTORS TO ACQUIRE IVECO GROUP, TOGETHER CREATING A GLOBAL PLAYER IN COMMERCIAL VEHICLES",
+     "outlet": "Iveco / Tata Motors (joint press release)",
+     "date": "2025-07-30",
+     "url": "https://static-assets.tatamotors.com/Production/www-tatamotors-com-NEW/wp-content/uploads/2025/07/TataMotorsIveco.pdf",
+     "what_happened": "DIRECTION REVERSAL, NOT AN INDIA INVESTMENT: Tata Motors agreed to acquire Iveco Group via a voluntary tender offer. The combined CV business would run ~EUR 22bn revenue split Europe 50% / India 35% / Americas 15%. Iveco is the TARGET; capital flows from India to Italy, not the other way.",
+     "figure": "~EUR 3.8 billion (Forbes India cites EUR 3.9bn)"
+    }
+   ],
+   "govt_visibility_note": "No Indian government involvement found in the acquisition coverage. Iveco's earlier India footprint (FPT Industrial India, incorporated June 2022 in Greater Noida; LNG engine supply and a minority stake in Pune's Blue Energy Motors, with a Chakan assembly plant announced at 'BEYOND - Iveco Group Days') all predates the window and could not be dated inside it.",
+   "summary": "No in-window India investment by Iveco; the only major India-linked news is Tata Motors acquiring Iveco (Jul 2025) \u2014 an inbound takeover that must not be scored as European investment into India."
+  },
+  {
+   "company": "Sika AG",
+   "country": "Switzerland",
+   "sector": "Auto, EV & Components",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "No India activity found in window \u2014 the Kharagpur plant opening lands 2023-06-27, four days before the window starts, and no later Indian plant, expansion or capex announcement could be verified.",
+   "activity_type": "none",
+   "india_news": [
+    {
+     "headline": "Sika opens plant in India",
+     "outlet": "Indian Chemical News",
+     "date": "2023-06-27",
+     "url": "https://www.indianchemicalnews.com/chemical/sika-opens-plant-in-india-17974",
+     "what_happened": "OUT OF WINDOW by four days. Sika opened a Kharagpur, West Bengal plant making mortar products, concrete admixtures and shotcrete accelerators, taking Sika to twelve Indian manufacturing facilities. Includes labs, offices, warehousing.",
+     "figure": "Not disclosed"
+    }
+   ],
+   "govt_visibility_note": "No Indian minister, state MoU or PIB reference found for the Kharagpur opening. Sika's own media-release page for this item now 404s, so the trade-press copy is the durable record.",
+   "summary": "No India activity found in window \u2014 the Kharagpur plant opening lands 2023-06-27, four days before the window starts, and no later Indian plant, expansion or capex announcement could be verified."
+  },
+  {
+   "company": "Thungela Resources",
+   "country": "South Africa",
+   "sector": "Green Energy & Fuels",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "NO INDIA ACTIVITY FOUND IN WINDOW \u2014 India appears only as a demand-side export destination in results commentary (and 2024-25 commentary describes Indian demand as BELOW expectations); the marketing entity went to Dubai, not India.",
+   "activity_type": "none",
+   "india_news": [
+    {
+     "headline": "Thungela establishes export marketing function in Dubai",
+     "outlet": "World Coal",
+     "date": "2024-02-13",
+     "url": "https://www.worldcoal.com/coal/13022024/thungela-establishes-export-marketing-function-in-dubai/",
+     "what_happened": "Thungela Marketing International registered with the Dubai Multi Commodity Centre Authority (15 Dec 2023) to run export marketing for South African and Australian assets, sited for proximity to main export markets including India. Not an India investment.",
+     "figure": "not stated"
+    }
+   ],
+   "govt_visibility_note": "No PIB, ministerial or state-government mention found. Also no India-based investment to publicise.",
+   "summary": "NO INDIA ACTIVITY FOUND IN WINDOW \u2014 India appears only as a demand-side export destination in results commentary (and 2024-25 commentary describes Indian demand as BELOW expectations); the marketing entity went to Dubai, not India."
+  },
+  {
+   "company": "Orica",
+   "country": "Australia",
+   "sector": "Chemicals & Plastics",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "NO INDIA ACTIVITY FOUND IN WINDOW \u2014 Orica's Indian Explosives Pvt Ltd (Gomia, Jharkhand) is a long-standing wholly-owned subsidiary with revenue of Rs 467 crore in FY2023, but every located expansion reference (Gomia capacity upgrade, Nagpur site feasibility) predates July 2023; Orica's 2024 M&A (Cy",
+   "activity_type": "none",
+   "india_news": [],
+   "govt_visibility_note": "No PIB, ministerial or state-government mention found; also no dated in-window trade-press item to correlate against.",
+   "summary": "NO INDIA ACTIVITY FOUND IN WINDOW \u2014 Orica's Indian Explosives Pvt Ltd (Gomia, Jharkhand) is a long-standing wholly-owned subsidiary with revenue of Rs 467 crore in FY2023, but every located expansion reference (Gomia capacity upgrade, Nagpur site feasibility) predates July 2023; Orica's 2024 M&A (Cyanco, Terra Insights) was non-India."
+  },
+  {
+   "company": "Ansell",
+   "country": "Australia",
+   "sector": "Medical Devices",
+   "india_intent": "HIGH",
+   "pib_visibility": "BELOW_RADAR",
+   "pib_investment_hits_3y": 0,
+   "verdict": "NO_ACTIVITY",
+   "verdict_basis": "NO DATED IN-WINDOW NEWS ITEM FOUND \u2014 Ansell's material India commitment (the ~USD 80m Kovai greenfield plant in Tamil Nadu, with a further USD 40m phase taking it to USD 120m) was announced Dec-2022/Mar-2023, before the window; post-July-2023 coverage is only incidental status commentary (plant used",
+   "activity_type": "none",
+   "india_news": [],
+   "govt_visibility_note": "The Kovai investment was company-PR-driven (Business Standard/ANI press-release wire, Mar-2023) with no government amplification found \u2014 but it falls outside the July-2023 window.",
+   "summary": "NO DATED IN-WINDOW NEWS ITEM FOUND \u2014 Ansell's material India commitment (the ~USD 80m Kovai greenfield plant in Tamil Nadu, with a further USD 40m phase taking it to USD 120m) was announced Dec-2022/Mar-2023, before the window; post-July-2023 coverage is only incidental status commentary (plant used for surgical packing and sterilisation while new glove lines are commissioned), with no discrete dated announcement located."
+  }
+ ],
+ "ministry_check": {
+  "run": "2026-07-21",
+  "sources_that_actually_name_companies": [
+   "PLI beneficiary annexures (DPIIT/MeitY/MoFPI)",
+   "DSIR Directory of Recognised In-house R&D Units",
+   "MNRE ALMM approved-manufacturer lists",
+   "CERC / regulator orders",
+   "Ministry monthly summaries (e.g. MoPSW)",
+   "Coffee Board / commodity-board registers"
+  ],
+  "headline_finding": "PIB headlines are the wrong instrument for this question. Of 12 quiet investors checked against ministry publications, 8 were found named and their labels corrected. The channels that name companies are annexure PDFs, long directories, regulator orders and monthly summaries -- none of which put a company name in a title, so a title-indexed register structurally cannot see them.",
+  "two_systemic_blind_spots": [
+   "RENAMED ENTITIES: CLP -> Apraava (2022) erases every post-rename government record from a parent-name match",
+   "SUBSIDIARY ALIASES: Indus Coffee, WEG Industries (India), Voltbek, Panasonic India -- the government names the Indian entity, never the foreign parent"
+  ],
+  "disproofs": [
+   "Lenovo is NOT on MeitY's list of 27 approved IT-hardware PLI 2.0 companies, contrary to wide reporting",
+   "Arcelik/Voltbek is NOT among the 42 White Goods PLI beneficiaries; JV parent Voltas Limited is (Sl. 11) -- a false-positive trap"
+  ],
+  "corrected": [
+   {
+    "company": "Lenovo Group",
+    "to": "MINISTRY_NAMED_BRAND_ONLY"
+   },
+   {
+    "company": "CAE Inc",
+    "to": "QUIET_INVESTOR"
+   },
+   {
+    "company": "WEG S.A.",
+    "to": "MINISTRY_NAMED"
+   },
+   {
+    "company": "Panasonic Holdings",
+    "to": "MINISTRY_NAMED"
+   },
+   {
+    "company": "Eisai",
+    "to": "MINISTRY_NAMED"
+   },
+   {
+    "company": "Mitsui O.S.K. Lines",
+    "to": "MINISTRY_NAMED"
+   },
+   {
+    "company": "CLP Holdings",
+    "to": "MINISTRY_NAMED"
+   },
+   {
+    "company": "Food Empire Holdings",
+    "to": "MINISTRY_NAMED_SUBSIDIARY_ONLY"
+   }
+  ],
+  "invisibility_survives": [
+   "Elbit Systems",
+   "Siam Cement Group (SCG)",
+   "MediaTek",
+   "Arcelik"
+  ],
+  "raw_files": [
+   "ministry_check_quiet.json"
+  ]
+ }
+}

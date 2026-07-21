@@ -42,7 +42,7 @@ The pattern is narrow: semiconductors, defence, and marquee PM-attended ribbon-c
 
 The 41 below-radar names with the strongest stated intent were checked against dated news. Absence from PIB headlines turns out to have four different causes — only one of them is an opportunity.
 
-### Quiet investors — the outreach list (17)
+### Quiet investors — the outreach list (10)
 
 Dated, sourced India activity in the last three years and **no government publicity found at all**: not a PIB headline, not a minister at the ribbon-cutting, not a state-government announcement. These are companies committing capital to India that the government is not currently courting.
 
@@ -64,23 +64,11 @@ Dated, sourced India activity in the last three years and **no government public
 - 2025-06-03: [Ericsson expands capabilities in India](https://www.rcrwireless.com/20250603/5g/ericsson-india) — ~2,000 R&D engineers
 - *Consistently active and quiet — ASIC/semiconductor design added in Bengaluru with 150+ roles (Jun 2025), full passive-antenna localisation via VVDN and a Pune logistics hub (Apr 2025), all announced only through Ericsson's newsroom and telecom trade press.*
 
-**Lenovo Group** (Hong Kong, Electronics & Semiconductors)
-- 2024-09-17: [Lenovo begins AI server production in India, opens R&D lab in Bengaluru](https://www.business-standard.com/companies/news/lenovo-begins-ai-server-production-in-india-opens-r-d-lab-in-bengaluru-124091700983_1.html) — 50,000 enterprise AI servers and 2,400 high-end GPU units annually; 4th global R&D centre
-- 2024-09-19: [Lenovo turns to India as source of AI servers](https://www.theregister.com/2024/09/19/lenovo_india_ai_server_manufacturing/) — >60% of production for export
-- 2025-03-07: [Lenovo to manufacture all PC models in India, plans AI server plant in Pondicherry](https://www.digitimes.com/news/a20250307VL204/lenovo-pc-ai-server-development-manufacturing.html) — 12 million units (2024); ~40% capacity increase planned for 2025
-- *Genuine, substantial expansion — AI-server manufacturing in Puducherry plus a fourth global R&D lab in Bengaluru, export-oriented.*
-
 **CAE Inc** (Canada, Aerospace & Defence)
 - 2026-04-15: [CAE and InterGlobe inaugurate new pilot training centre in Mumbai to support India's aviation growth](https://www.prnewswire.com/in/news-releases/cae-and-interglobe-inaugurate-new-pilot-training-centre-in-mumbai-to-support-indias-aviation-growth-302743367.html) — 44,000 sq ft; scalable to 6 FFS; network 16 FFS today rising to 23; India needs ~22,000 new pilots by 2034
 - 2026-04: [CAE expand in India with new pilot-training site](https://www.flightglobal.com/archive/2026/04/cae-expand-in-india-with-new-pilot-training-site/) — not stated
 - 2025-08-26: [New pilot training centre to open in Mumbai](https://avitrader.com/2025/08/26/new-pilot-training-centre-to-open-in-mumbai/) — not stated
 - *A clean example of the target pattern — steady physical capex (5 simulators added since FY2024, fourth centre opened 2026) reported only in aviation trade press, zero government amplification.*
-
-**WEG S.A.** (Brazil, White Goods & Electricals)
-- 2025-12: [WEG Expands Operations in India with Planned Acquisition of Sanelec](https://themachinemaker.com/news/weg-expands-operations-in-india-with-planned-acquisition-of-sanelec/) — USD 5.2 million; Sanelec 2024 net operating revenue ~USD 2.3m/month, EBITDA margin 29%
-- 2025-12: [TT&A advises WEG on acquisition of Sanelec](https://www.barandbench.com/dealstreet/tta-advises-weg-on-acquisition-of-sanelec) — two-tranche deferred consideration, 18-month FEMA window
-- 2025-05: [WEG Delivers Breakthrough IE4 Motors Project in India's F&B Sector](https://www.electricmachinery.com/institutional/US/en/news/products-and-solutions/weg-delivers-breakthrough-ie4-motors-project-in-india-s-f-b-sector) — dispatched 2025-04-22; WEG runs 4 production plants in India
-- *Textbook quiet investor — four Indian plants, active Hosur manufacturing output, and a Dec-2025 bolt-on acquisition in Bengaluru, all covered only by niche trade and legal press.*
 
 **Elbit Systems** (Israel, Aerospace & Defence)
 - 2025-05-18: [Adani Defence & Aerospace and Sparton Enter Strategic Partnership to Indigenise Anti-Submarine Warfare Solutio](https://www.adani.com/newsroom/media-releases/adani-defence-aerospace-and-sparton-enter-strategic-partnership-to-indigenise-anti-submarine) — not stated
@@ -93,21 +81,6 @@ Dated, sourced India activity in the last three years and **no government public
 - 2023-03-30: [Croda India to invest Rs. 500 crore in Dahej greenfield facility](https://www.indianchemicalnews.com/chemical/croda-india-to-invest-rs-500-crore-in-dahej-greenfield-facility-16925) — INR 500 crore (first phase). Note: one secondary source cites USD 5.4m for an earlier/narrower scope — figures conflict, prefer the INR 500 crore first-phase number.
 - *Genuinely active and unpublicised — a INR 500 crore greenfield surfactants plant at Dahej commissioned March 2026, evidenced by trade press, the company's own release and its P&L, with no Indian government presence found.*
 
-**Panasonic Holdings** (Japan, Electronics & Semiconductors)
-- 2025-09-19: [Panasonic India eyeing white goods PLI, new plant to tap market potential](https://www.business-standard.com/companies/news/panasonic-life-solutions-manufacturing-unit-pli-scheme-white-goods-125091900308_1.html) — PLI white-goods application; new unit unquantified
-- 2025: [Panasonic Life Solutions to invest Rs 300 crore in Sri City's Manufacturing Plant](https://b2bpurchase.com/panasonic-life-solutions-to-invest-%E2%82%B9300-crore-in-sri-citys-manufacturing-plant/) — Rs 300 crore (phase 1 of Rs 600 crore); JPY 100bn global programme
-- *Actively expanding India manufacturing (Sri City phase-1 Rs 300cr, new PLI-linked plant planned) with only trade-press coverage.*
-
-**Eisai** (Japan, Pharma & Bulk Drugs)
-- 2025-07: [Eisai Pharma announces its plans to set up GCC in Vizag](https://www.thehansindia.com/andhra-pradesh/eisai-pharma-announces-its-plans-to-set-up-gcc-in-vizag-986846) — Capex not disclosed; operational target Feb 2026
-- 2025-07: [Japan's Leading Pharma Company Eisai to Set Up GCC in Visakhapatnam](https://www.yovizag.com/japans-leading-pharma-company-eisai-to-set-up-gcc-in-visakhapatnam/) — 50-acre existing site; GCC capex undisclosed
-- *Quietly adding an AI/data R&D capability centre in Visakhapatnam on top of a long-standing API and formulation site.*
-
-**Mitsui O.S.K. Lines** (Japan, Shipbuilding & Marine)
-- 2025-12-16: [Mitsui O.S.K. Lines CVC (MOL PLUS) to Invest in India's Theia Ventures Fund 1](https://cyprusshippingnews.com/2025/12/16/mitsui-o-s-k-lines-cvc-mol-plus-to-invest-in-indias-theia-ventures-fund-1/) — Fund commitment size not disclosed; India desk established Nov 2024
-- 2024-11: [Shipping giant Mitsui O.S.K. Lines opens India CVC office](https://globalventuring.com/corporate/asia/shipping-giant-mitsui-o-s-k-lines-opens-india-cvc-office/) — Third overseas CVC office; no capital figure disclosed
-- *Building an India venture-capital beachhead (India desk 2024, first fund commitment Dec 2025) rather than physical shipping assets.*
-
 **Siam Cement Group (SCG)** (Thailand, Chemicals & Plastics)
 - 2024-06-10: [SIAM Cement BigBloc Construction Launches India Operations; Joint Venture inaugurates commercial production of](https://www.business-standard.com/content/press-releases-ani/siam-cement-bigbloc-construction-launches-india-operations-joint-venture-inaugurates-commercial-production-of-india-s-first-aac-wall-plant-at-kheda-124061000859_1.html) — Rs 65 crore invested; 2.5 lakh cubic metre p.a. capacity, expandable to 5 lakh CBM in phase 2
 - 2024-06: [SCG International and BigBloc Start JV Operations for First Plant of AAC Wall in India](https://scginternational.com/joint-venture-operations-india/) — 52:48 JV split (BigBloc:SCG International)
@@ -117,16 +90,6 @@ Dated, sourced India activity in the last three years and **no government public
 - 2026-05-09: [MediaTek leases 104,000 sq ft at BPTP Capital City in Noida for second India R&D hub](https://propnewstime.com/getdetailsStories/MzAwNTg=/mediatek-leases-104-000-sq-ft-at-bptp-capital-city-in-noida-for-second-india-r-d-hub) — 104,000 sq ft over three floors; part of a 780,000 sq ft development
 - 2025-10-10: [MediaTek Eyes Chip Manufacturing In India, Sees $4.1 Billion R&D To Boost 5G and AI Innovation](https://www.etvbharat.com/en/!technology/mediatek-eyes-chip-manufacturing-in-india-sees-41-billion-r-d-to-boost-5g-and-ai-innovation-enn25101005874) — USD 4.1 billion global R&D spend cited; 1,000+ India engineers
 - *Doubling India R&D via a second Noida centre; chip-manufacturing talk remains stated intent, not committed capex.*
-
-**CLP Holdings** (Hong Kong, Green Energy & Fuels)
-- 2025: [Apraava commissions Fatehgarh IV transmission project in Rajasthan](https://powerpeakdigest.com/apraava-commissions-fatehgarh-iv-transmission-project-in-rajasthan/) — 2.5 GW transmission capacity; five 500 MVA transformers; 22 km line
-- 2024: [Apraava Bags Project to Evacuate 5.5 GW Renewable Energy in Rajasthan](https://www.mercomindia.com/apraava-bags-project-to-evacuate-renewable-energy-in-rajasthan) — 5.5 GW evacuation capacity
-- *Roughly Rs 18,000 crore deployed in India via Apraava (~2 GW generation, transmission and 2.5m smart meters), invisible under a rebranded local name.*
-
-**Food Empire Holdings** (Singapore, Food Processing)
-- 2025-07-10: [Food Empire to expand coffee manufacturing facility in India](https://www.just-drinks.com/news/food-empire-india-facility-expansion/) — USD 37 million; ~60% capacity increase
-- 2025: [Food Empire to expand spray-dried soluble coffee manufacturing facility in India](https://www.comunicaffe.com/food-empire-to-expand-manufacturing-facility-in-india/) — USD 37 million
-- *USD 37m Andhra Pradesh soluble-coffee capacity expansion, covered only by drinks trade press.*
 
 **Leonardo** (Italy, Aerospace & Defence)
 - 2026-02-03: [Adani Defence & Aerospace and Leonardo Forge Strategic Partnership to Build India's Helicopter Ecosystem](https://www.leonardo.com/en/press-release-detail/-/detail/03-02-2026-adani-defence-aerospace-and-leonardo-forge-strategic-partnership-to-build-india-s-helicopter-ecosystem) — No value disclosed
@@ -275,6 +238,29 @@ The annual report expresses India or APAC interest, but no dated India activity 
 
 **Ansell** (Australia, Medical Devices)
 - *NO DATED IN-WINDOW NEWS ITEM FOUND — Ansell's material India commitment (the ~USD 80m Kovai greenfield plant in Tamil Nadu, with a further USD 40m phase taking it to USD 120m) was announced Dec-2022/Mar-2023, before the window; post-July-2023 coverage is only *
+
+## Then we checked ministry publications — and a third of the list was wrong
+
+PIB headlines are the wrong instrument for this question. Of 12 quiet investors checked against ministry publications, 8 were found named and their labels corrected. The channels that name companies are annexure PDFs, long directories, regulator orders and monthly summaries -- none of which put a company name in a title, so a title-indexed register structurally cannot see them.
+
+**Channels that actually name companies** (none of which title-index them): PLI beneficiary annexures (DPIIT/MeitY/MoFPI); DSIR Directory of Recognised In-house R&D Units; MNRE ALMM approved-manufacturer lists; CERC / regulator orders; Ministry monthly summaries (e.g. MoPSW); Coffee Board / commodity-board registers.
+
+**Two systemic blind spots in name-matching:**
+
+- RENAMED ENTITIES: CLP -> Apraava (2022) erases every post-rename government record from a parent-name match
+- SUBSIDIARY ALIASES: Indus Coffee, WEG Industries (India), Voltbek, Panasonic India -- the government names the Indian entity, never the foreign parent
+
+**Disproofs — worth more than the confirmations:**
+
+- Lenovo is NOT on MeitY's list of 27 approved IT-hardware PLI 2.0 companies, contrary to wide reporting
+- Arcelik/Voltbek is NOT among the 42 White Goods PLI beneficiaries; JV parent Voltas Limited is (Sl. 11) -- a false-positive trap
+
+**Invisibility that survived the check:**
+
+- **Elbit Systems** — searched, not found -- defence opacity: every retrievable account of the Adani-Elbit UAV facility and the May-2025 Sparton sonobuoy agreement traces to Adani corporate media, never a ministry document
+- **Siam Cement Group (SCG)** — searched, not found -- absent centrally; the Kheda (Kapadvanj) AAC plant inauguration was a Gujarat state event
+- **MediaTek** — searched, not found -- structurally ineligible for the Design Linked Incentive, which is scoped to domestic startups/MSMEs/academia -- absence is by scheme design, not neglect
+- **Arcelik** — searched, not found -- AFFIRMATIVELY DISPROVED, not merely unconfirmed: absent from all 42 White Goods PLI beneficiaries, the FDI table and the CoE referral table. Trap recorded -- JV parent Voltas Limited IS a separate beneficiary at Sl. 1
 
 ## How to use this
 

@@ -1,0 +1,258 @@
+{
+  "batch": "quiet_investors",
+  "built": "2026-07-21",
+  "companies": [
+    {
+      "company": "Lenovo",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "India's High-Tech Revolution: Driving Global Leadership in Advanced Technology & Manufacturing (PIB backgrounder PDF, not a press-release headline)",
+          "ministry_or_agency": "Press Information Bureau / Ministry of Electronics and Information Technology (MeitY)",
+          "doc_type": "other",
+          "date": "2024-09-11",
+          "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/sep/doc2024911392101.pdf",
+          "quote_or_listing": "\"Applications of 27 IT hardware manufacturers have also been approved. IT hardware of well-known brands such as Acer, Asus, Dell, HP, Lenovo, etc are being manufactured in India.\"",
+          "names_parent_or_subsidiary": "parent"
+        }
+      ],
+      "sources_checked": [
+        "MeitY official 'List of companies approved under PLI Scheme 2.0 for IT Hardware' (https://www.meity.gov.in/static/uploads/2024/02/List-of-companies-approved-under-PLI-Scheme-2.0-for-IT-Hardware.pdf) - retrieved and read in full, all 27 entries",
+        "PIB backgrounder doc2024911392101.pdf - FOUND",
+        "PIB release 1977846 (27 manufacturers approved under PLI 2.0)",
+        "DSIR Directory of Recognised In-house R&D Units as on 30.09.2025 - searched, no Lenovo entry",
+        "Invest India electronics sector pages",
+        "MeitY parliament questions index"
+      ],
+      "verdict_note": "CORRECT THE LABEL. Lenovo is named by brand in a MeitY/PIB backgrounder document. IMPORTANT CAVEAT: the official MeitY list of the 27 approved PLI 2.0 IT-hardware companies does NOT contain Lenovo - I read all 27 entries (Dell International Services India, Rising Stars Hi-Tech, HP India Sales, Flextronics, Padget Electronics, Sojo, VVDN, Goodworth, Neolync, Syrma SGS, Bhagwati Products, Netweb, Genus Electrotech, Sahasra, Hangshine, Riot Labz, Smile Electronics, Mega Networks, Plumage, HLBS Tech, Panache Digilife, RDP Workstations, Kaynes, INP Technologies, Optiemus Telecommunication, ITI Limited, Sancraft Industries). Widespread press reporting that 'Lenovo was approved under the IT hardware PLI' is NOT supported by MeitY's own beneficiary list; Lenovo appears to participate via contract manufacturers. The PIB brand mention is real, the PLI-beneficiary claim is not."
+    },
+    {
+      "company": "CAE Inc",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "NFTI (page under AAI Careers section)",
+          "ministry_or_agency": "Airports Authority of India (statutory body under Ministry of Civil Aviation)",
+          "doc_type": "ministry_news",
+          "date": "undated page, retrieved 2026-07-21",
+          "url": "https://www.aai.aero/en/careers/nfti",
+          "quote_or_listing": "AAI's own NFTI page carries no descriptive text; its entire content is three outbound links to CAE-branded domains: www.caeglobalacademy.com/rgnfi, www.caeglobalacademy.com/nfti, www.caeglobalacademy.com/gondia. CAE is not named in prose, and AAI does not state the JV relationship on this page.",
+          "names_parent_or_subsidiary": "parent"
+        }
+      ],
+      "sources_checked": [
+        "AAI NFTI page https://www.aai.aero/en/careers/nfti - FOUND (links only)",
+        "DGCA approved Flying Training Organisations list (flyclub.pdf) - retrieved, neither CAE nor NFTI found in retrieved content",
+        "Ministry of Civil Aviation Flying Training Organizations page https://www.civilaviation.gov.in/node/4635 - HTTP 403, could not retrieve",
+        "MoCA Annual Report 2021-22 index",
+        "PIB release 1885032 'Functioning of NFTI' (identified but not retrieved)"
+      ],
+      "verdict_note": "PARTIAL / WEAK - do not fully clear the below-radar label. The only government-hosted evidence retrieved is AAI's own website pointing at CAE Global Academy URLs. NFTI is widely reported as a CAE-AAI joint venture, but no government document I retrieved states this in prose or names 'CAE Inc'. A PIB release titled 'Functioning of NFTI' (PRID 1885032) exists and is the most likely place a ministry names CAE - it was not retrievable in this pass and should be checked before finalising."
+    },
+    {
+      "company": "WEG S.A.",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "Approved List of Models and Manufacturer (ALMM) - Wind, as on 22.06.2026 (formerly the Revised List of Models and Manufacturers, RLMM)",
+          "ministry_or_agency": "Ministry of New and Renewable Energy (MNRE), Government of India / National Institute of Wind Energy (NIWE)",
+          "doc_type": "scheme_dashboard",
+          "date": "2026-06-22",
+          "url": "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/03/202607081124991855.pdf",
+          "quote_or_listing": "Entry S.No. 28: \"WEG Industries (India) Pvt Ltd, Eshwari Arcade, No:250, 14th Main, 7th sector, HSR layout, Bengaluru, Karnataka - 560102, Ph: 7550122297, cbarros@weg.net\" | Incorporation 04-10-2008 | Document: \"WEG CoI\" | Model AGW 147/4.2 | Rotor dia 147 m | Hub height 120 m | Tubular Steel Tower | Capacity 4200 kW | Type cert valid till 11-01-2028",
+          "names_parent_or_subsidiary": "subsidiary"
+        }
+      ],
+      "sources_checked": [
+        "MNRE ALMM-Wind / RLMM list - FOUND",
+        "MNRE wind manufacturing page https://mnre.gov.in/en/wind-manufacturing/",
+        "DSIR Directory of Recognised In-house R&D Units as on 30.09.2025 - no WEG entry",
+        "Ministry of Heavy Industries site",
+        "Invest India / PIB searches for WEG India Hosur"
+      ],
+      "verdict_note": "CORRECT THE LABEL. WEG is on a live MNRE approved-manufacturer list - a binding regulatory whitelist, not publicity. Name-matching missed it because the listed entity is 'WEG Industries (India) Pvt Ltd', and because ALMM is a periodically-reissued PDF table, never a press-release title. Note the government relationship is on the WIND TURBINE side, not the Hosur electric-motor capex we catalogued."
+    },
+    {
+      "company": "Elbit Systems / Sparton",
+      "found_in_ministry_sources": false,
+      "mentions": [],
+      "sources_checked": [
+        "MoD / Department of Defence Production (ddpmod.gov.in) Defence Product List - licensing-authority-wise",
+        "DPIIT Industrial Licence services portal (services.dpiit.gov.in/lms/ilServices) - no public licensee register retrieved",
+        "iDEX / Defence India Startup Challenge listings",
+        "MoD positive indigenisation lists - searched, no Elbit or Sparton entry retrieved",
+        "DSIR Directory of Recognised In-house R&D Units as on 30.09.2025 - no Elbit entry",
+        "PIB searches for Adani-Elbit UAV Hyderabad and Adani-Sparton sonobuoy"
+      ],
+      "verdict_note": "NOT FOUND - the below-radar label SURVIVES. Every retrievable account of the Adani-Elbit UAV facility and the May-2025 Adani-Sparton sonobuoy agreement traces to Adani corporate media releases or defence trade press, not to a government document. Note also that the JV entity is 'Adani Elbit Advanced Systems India Ltd' - if a MoD document ever names it, our matcher would need the Adani-prefixed string. Defence procurement opacity is a plausible structural reason for genuine invisibility here, so absence of publicity should not be read as absence of government relationship."
+    },
+    {
+      "company": "Panasonic",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "Annexure to '42 companies selected under PLI Scheme for White Goods' - Table 1: Applicants provisionally selected under the PLI Scheme for White Goods, (i) Air Conditioners",
+          "ministry_or_agency": "Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce & Industry / PIB",
+          "doc_type": "pli_beneficiary_list",
+          "date": "2021-11-03",
+          "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc202111321.pdf",
+          "quote_or_listing": "Sl. 24: \"PANASONIC INDIA PRIVATE LIMITED\" - Products: 1. Control Assemblies for IDU or ODU or Remotes, 2. Heat exchangers, 3. Sheet Metal components, 4. Plastic Moulding components | Gestation period: Up to 03/22 | Committed Investment: Rs. 50.00 crore",
+          "names_parent_or_subsidiary": "subsidiary"
+        },
+        {
+          "source_title": "Annexure to '42 companies selected under PLI Scheme for White Goods' - Table 3: Applicants referred to the Committee of Experts (CoE)",
+          "ministry_or_agency": "DPIIT, Ministry of Commerce & Industry / PIB",
+          "doc_type": "pli_beneficiary_list",
+          "date": "2021-11-03",
+          "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc202111321.pdf",
+          "quote_or_listing": "Table 3 Sl. 1: \"PANASONIC INDIA NEW\" - Products: 1. Compressors | Gestation period: Up to 03/23 | Committed Investment: Rs. 250.00 crore",
+          "names_parent_or_subsidiary": "subsidiary"
+        },
+        {
+          "source_title": "Directory of Recognised In-house R&D Units as on 30.09.2025",
+          "ministry_or_agency": "Department of Scientific & Industrial Research (DSIR), Ministry of Science and Technology",
+          "doc_type": "scheme_dashboard",
+          "date": "2025-09-30",
+          "url": "https://www.dsir.gov.in/static/uploads/2025/11/52f958662514cd533f9daab221e5572b.pdf",
+          "quote_or_listing": "Entry 241, Reg. No. TU/IV-RD/1650: \"Panasonic Carbon India Co. Ltd., No. 77, 'Pottipati Plaza', 3rd Floor, Nungambakkam High Road, Nungambakkam, Chennai -600 034, Tamil Nadu\" - R&D unit at Tada Vill. & Mandal, Sullurpet, Dist. Nellore, AP | recognition valid till 31.03.2026",
+          "names_parent_or_subsidiary": "subsidiary"
+        }
+      ],
+      "sources_checked": [
+        "PIB/DPIIT White Goods PLI Annexure - FOUND in two separate tables",
+        "DSIR Directory of Recognised In-house R&D Units as on 30.09.2025 - FOUND",
+        "DPIIT PIB release 2189520 (4th round white goods PLI, Nov 2025) - retrieved, names no companies"
+      ],
+      "verdict_note": "CORRECT THE LABEL - strongly. Panasonic is an actual named White Goods PLI beneficiary with Rs 50 cr committed (plus a Rs 250 cr compressor application referred to the Committee of Experts), and separately holds a DSIR-recognised in-house R&D unit. The stated 'white-goods PLI interest' we recorded is understated: it is participation, not interest. Missed because the company name is 'PANASONIC INDIA PRIVATE LIMITED' inside an annexure PDF that hangs off a press release whose title names no companies at all."
+    },
+    {
+      "company": "Eisai",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "Directory of Recognised In-house R&D Units as on 30.09.2025",
+          "ministry_or_agency": "Department of Scientific & Industrial Research (DSIR), Ministry of Science and Technology",
+          "doc_type": "scheme_dashboard",
+          "date": "2025-09-30",
+          "url": "https://www.dsir.gov.in/static/uploads/2025/11/52f958662514cd533f9daab221e5572b.pdf",
+          "quote_or_listing": "Entry 784, Reg. No. TU/IV-RD/3214: \"Eisai Pharmaceuticals India Pvt. Ltd., Eisai Knowledge Centre, Plot Nos. 96, 97, 98, 124 & 126, Ramky Pharma City (SEZ), Parawada, Visakhapatnam - 531 019 AP\" - R&D unit address: \"Eisai Knowledge Centre, Plot Nos. 96, 97, 98, 124 & 126, Ramky Pharma City (SEZ), Parawada, Visakhapatnam, AP\" | recognition valid till 31.03.2026",
+          "names_parent_or_subsidiary": "subsidiary"
+        }
+      ],
+      "sources_checked": [
+        "DSIR Directory of Recognised In-house R&D Units as on 30.09.2025 (249 pages, full-text searched) - FOUND",
+        "Department of Pharmaceuticals publications",
+        "MoFPI / DoP PLI beneficiary lists",
+        "DSIR SIRO directory"
+      ],
+      "verdict_note": "CORRECT THE LABEL. Eisai holds a live DSIR recognition for its Vizag R&D centre - a formal government registration carrying fiscal benefits, listed in a Ministry of Science and Technology directory. This is exactly the class of document PIB headlines never surface: a 249-page annual directory. The Vizag GCC we catalogued is the same site named in the entry."
+    },
+    {
+      "company": "Mitsui O.S.K. Lines",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "Monthly Summary for the month of August 2025",
+          "ministry_or_agency": "Ministry of Ports, Shipping and Waterways",
+          "doc_type": "ministry_news",
+          "date": "2025-08",
+          "url": "https://shipmin.gov.in/sites/default/files/Monthly%20Summary%20for%20the%20month%20of%20August,%202025.pdf",
+          "quote_or_listing": "Section A 'Other Matters/Significant Developments', item 2: \"Kamarajar Port (KPL): Became the first port in India to commence handling of transshipment of cars. The first batch of cars of 550 units of Mitsui O.S.K. Lines, Ltd. Group were handled at the General Cargo Berth on August 27, 2025.\"",
+          "names_parent_or_subsidiary": "parent"
+        }
+      ],
+      "sources_checked": [
+        "MoPSW Monthly Summary August 2025 - FOUND, exact parent-name match",
+        "MoPSW MoU/Agreements page https://shipmin.gov.in/en/orders/mou-agreements",
+        "Indian Shipping Statistics 2022 and 2023 (shipmin.gov.in)",
+        "PIB India Maritime Week 2025 releases (2183140, 2184349, 2183509, 2183703)",
+        "Invest India ports & shipping sector page"
+      ],
+      "verdict_note": "CORRECT THE LABEL - highest-confidence hit in this batch. The PARENT NAME 'Mitsui O.S.K. Lines, Ltd.' appears verbatim in a Ministry of Ports, Shipping and Waterways monthly summary. This is a pure channel failure on our side: MoPSW publishes monthly summary PDFs that name commercial counterparties, and none of that text is in the PIB title corpus. The MOL-Shipping Corporation of India tugboat MoU (27 Oct 2025, India Maritime Week) is a further government-adjacent tie - SCI is a MoPSW-controlled CPSE - though I could not retrieve a government document naming MOL for that MoU specifically."
+    },
+    {
+      "company": "MediaTek",
+      "found_in_ministry_sources": false,
+      "mentions": [],
+      "sources_checked": [
+        "MeitY Design Linked Incentive (DLI) scheme approved-project coverage; PIB releases 156811, 2211220, 2147821, 2202899",
+        "India Semiconductor Mission (ism.gov.in) Future Design and SEMICON India 2024 pages",
+        "PIB 'SEMICON 2025: Building the Next Semiconductor Powerhouse' backgrounder",
+        "MeitY software/electronics publications; STPI document",
+        "DSIR Directory of Recognised In-house R&D Units as on 30.09.2025 - no MediaTek entry",
+        "Invest India electronics and semiconductor pages"
+      ],
+      "verdict_note": "NOT FOUND - the below-radar label SURVIVES. The DLI scheme is explicitly scoped to domestic startups, MSMEs and academic institutions, so MediaTek (a Taiwanese multinational) is structurally ineligible and correctly absent from those lists. Its Noida and Bengaluru R&D centres are self-funded and generate no government paperwork. MediaTek executives have publicly praised the DLI/Semicon programmes, but that is company speech, not a government document. Genuinely invisible."
+    },
+    {
+      "company": "CLP Holdings / Apraava Energy",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "Order in Petition No. 238/AT/2025 - Petition under Section 63 of the Electricity Act, 2003 for adoption of tariff of 1500 MW Solar PV Power Projects connected to the ISTS",
+          "ministry_or_agency": "Central Electricity Regulatory Commission (CERC), statutory regulator under the Ministry of Power",
+          "doc_type": "other",
+          "date": "2026-03-22",
+          "url": "https://cercind.gov.in/2026/orders/238.pdf",
+          "quote_or_listing": "Successful-bidder table: \"1. Apraava Energy Private Limited | 50 [MW] | 2.68 [INR/kWh] | 0 [% variation] | 1 [rank after reverse auction]\". Para 19: \"On 04.12.2024, the Petitioner issued Letters of Award (LoAs) to the successful bidders, namely Apraava Energy Private Limited, Avaada Energy Private Limited, JSW Neo Energy Limited, and Renew Solar Power Private Limited.\" LoA reproduced in the order: \"Ref. No.: NTPC/RE-CS/2023-24/Solar/B00-16-LOA-268 ... Dated: 04.12.2024 ... Apraava Energy Private Limited, 7th Floor, Fulcrum, Sahar Road, Andheri (East) Mumbai-400099 Maharashtra\"",
+          "names_parent_or_subsidiary": "subsidiary"
+        }
+      ],
+      "sources_checked": [
+        "CERC Order Petition No. 238/AT/2025 (cercind.gov.in) - FOUND, named 10+ times",
+        "SECI wind auction Tranche VIII / XIV award coverage",
+        "NTPC solar tender NTPC-ISTS-111",
+        "DSIR Directory as on 30.09.2025 - no Apraava or CLP entry",
+        "Ministry of Power RDSS National Conference on AI/ML in Power Distribution (runner-up award to Apraava, reported only in trade press - no government document retrieved)"
+      ],
+      "verdict_note": "CORRECT THE LABEL, and this is the clearest name-matching diagnosis in the batch. 'Apraava Energy Private Limited' appears repeatedly in a CERC tariff-adoption order including a verbatim NTPC Letter of Award - a statutory regulator's published order, about as official as it gets. The string 'CLP' appears NOWHERE in that document. Because CLP India rebranded to Apraava in 2022, any matcher keyed on the parent name 'CLP Holdings' is structurally blind to every Indian government record of this company from 2022 onward. This rename problem likely affects other entries in the wider dataset and is worth a dedicated alias pass."
+    },
+    {
+      "company": "Food Empire",
+      "found_in_ministry_sources": true,
+      "mentions": [
+        {
+          "source_title": "Database on Indian Coffee Exporters",
+          "ministry_or_agency": "Coffee Board, Ministry of Commerce and Industry, Government of India",
+          "doc_type": "other",
+          "date": "undated directory, retrieved 2026-07-21",
+          "url": "https://coffeeboard.gov.in/Indian%20Coffee/Indian%20Coffee%20Exporters.pdf",
+          "quote_or_listing": "Entry 3: \"INDUS COFFEE PRIVATE LIMITED, PLOT NO.84, BHEL ENCLAVE, AKBAR ROAD, SECUNDERABAD-500 009, Mob: +91 9700433308, Email: logistics@induscoffee.in, jagadeesh@induscoffee.in\"",
+          "names_parent_or_subsidiary": "subsidiary"
+        }
+      ],
+      "sources_checked": [
+        "MoFPI 'Details of companies covered under PLIS-FPI' - retrieved and read in full, all 119 approved companies; Food Empire ABSENT (the only coffee entity in the list is 'Sleepy Owl Coffee Private Limited', S.No. 49)",
+        "Coffee Board of India Database on Indian Coffee Exporters - FOUND (subsidiary only)",
+        "MoFPI Andhra Pradesh state profile and completed-projects list",
+        "APEDA site"
+      ],
+      "verdict_note": "PARTIAL - subsidiary only. Food Empire's Indian arm 'Indus Coffee Private Limited' is on the Coffee Board's official exporter register, but the parent name 'Food Empire' appears in no government document retrieved. Definitively NOT a PLI-FPI beneficiary: I read the complete 119-company MoFPI list. The AP capex we catalogued (US$37m spray-dried coffee expansion) has no central-government paper trail. Keep the below-radar label for the parent; note the subsidiary alias."
+    },
+    {
+      "company": "Arcelik / Voltbek / Voltas Beko",
+      "found_in_ministry_sources": false,
+      "mentions": [],
+      "sources_checked": [
+        "PIB/DPIIT White Goods PLI Annexure (doc202111321.pdf) - retrieved and read in full: all 26 AC beneficiaries, all 16 LED beneficiaries, all 6 Press Note 3 FDI-approval referrals, all 4 Committee of Experts referrals. Neither 'Arcelik', 'Voltbek', 'Voltas Beko' nor 'Ardutch' appears. ('VOLTAS LIMITED' at Sl. 11 is the separate Tata parent company, Rs 100 cr, not the Arcelik JV.)",
+        "DPIIT PIB release 2189520 (4th round, Nov 2025) - names no companies",
+        "DSIR Directory as on 30.09.2025 - no Arcelik or Voltbek entry",
+        "DPIIT Consolidated FDI Policy Circular 2020",
+        "Foreign Investment Facilitation Portal (fifp.gov.in)"
+      ],
+      "verdict_note": "NOT FOUND - the below-radar label SURVIVES, and the White Goods PLI hypothesis is affirmatively DISPROVED rather than merely unconfirmed. Important distinction for the dataset: Voltbek's JV parent Voltas Limited IS a named PLI beneficiary (Sl. 11, Rs 100 cr), which could produce a false positive if a matcher fuzzy-matches 'Voltas Beko' to 'VOLTAS LIMITED'. They are different applicants for different products. The Rs 1,000 cr Sanand refrigerator/washing-machine plant sits outside the AC-and-LED-components scope of the White Goods PLI entirely, so its absence is expected, not anomalous."
+    },
+    {
+      "company": "Siam Cement Group / SCG / SIAM Cement BigBloc",
+      "found_in_ministry_sources": false,
+      "mentions": [],
+      "sources_checked": [
+        "Ministry of Commerce & Industry / DPIIT publications",
+        "DSIR Directory as on 30.09.2025 - no SCG or BigBloc entry",
+        "PIB and Invest India searches for SCG / Siam Cement India",
+        "India-Thailand bilateral commerce documents"
+      ],
+      "verdict_note": "NOT FOUND at the central-government level - the below-radar label SURVIVES with one qualification. The Kheda (Kapadvanj) AAC wall plant was inaugurated in the presence of Shri Balvantsinh Rajput, Minister for Industries & MSME, Government of Gujarat, alongside the Thai Ambassador - a STATE government occasion reported only via company and trade press. No central ministry document names SCG, Siam Cement, or the JV entity 'SIAM Cement BigBloc Construction Technologies Pvt Ltd'. Flags a general blind spot: state-government industry departments are a channel this audit did not systematically cover, and Gujarat/Tamil Nadu/AP state sources may hold mentions for several companies in this batch."
+    }
+  ]
+}

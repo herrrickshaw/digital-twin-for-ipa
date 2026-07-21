@@ -20,6 +20,18 @@ BLURB = {
     "Dated, sourced India activity in the last three years and **no government publicity found at all**: "
     "not a PIB headline, not a minister at the ribbon-cutting, not a state-government announcement. "
     "These are companies committing capital to India that the government is not currently courting."),
+ "MINISTRY_NAMED": ("Named in ministry publications — the PIB label was wrong",
+    "The decisive correction. These companies ARE named by the government — in PLI beneficiary annexures, "
+    "the DSIR R&D directory, MNRE's ALMM whitelist, CERC orders, ministry monthly summaries. None of those "
+    "documents carries a company name in its **title**, which is why a title-indexed press-release register "
+    "cannot see them. *Not in a PIB headline* is a far weaker claim than *the government has not engaged "
+    "this company*, and these entries are the proof."),
+ "MINISTRY_NAMED_BRAND_ONLY": ("Named as a brand only — with a disproof attached",
+    "Named in a ministry backgrounder, but **not** in the authoritative scheme list. Recorded because the "
+    "disproof is more valuable than the mention."),
+ "MINISTRY_NAMED_SUBSIDIARY_ONLY": ("Named, but only the Indian subsidiary",
+    "The Indian entity appears on an official register while the foreign parent appears nowhere — the "
+    "subsidiary-alias blind spot, demonstrated."),
  "SUBSUMED_IN_PARTNER": ("Invisible by construction — the publicity names the Indian principal",
     "These firms sit inside projects the government promotes *heavily* — but the announcements name the "
     "Indian principal (Tata Electronics, the India Semiconductor Mission, SAIL), never the foreign supplier. "
@@ -49,7 +61,10 @@ BLURB = {
 
 def main():
     vis = json.load(open(os.path.join(ROOT, "layers/19_pib_visibility.json")))
-    ver = json.load(open(os.path.join(ROOT, "layers/20_visibility_verified.json")))
+    vpath = os.path.join(ROOT, "layers/22_visibility_ministry_checked.json")
+    if not os.path.exists(vpath):
+        vpath = os.path.join(ROOT, "layers/20_visibility_verified.json")
+    ver = json.load(open(vpath))
     today = datetime.date.today().isoformat()
 
     L = [f"# Visibility map — who the government announces, and who invests quietly", "",
@@ -117,6 +132,24 @@ def main():
             if r.get("summary"):
                 L.append(f"- *{r['summary'][:260]}*")
             L.append("")
+
+    mc = ver.get("ministry_check")
+    if mc:
+        L += ["## Then we checked ministry publications — and a third of the list was wrong", "",
+              mc["headline_finding"], "",
+              "**Channels that actually name companies** (none of which title-index them): "
+              + "; ".join(mc["sources_that_actually_name_companies"]) + ".", "",
+              "**Two systemic blind spots in name-matching:**", ""]
+        for b in mc["two_systemic_blind_spots"]:
+            L.append(f"- {b}")
+        L += ["", "**Disproofs — worth more than the confirmations:**", ""]
+        for b in mc["disproofs"]:
+            L.append(f"- {b}")
+        L += ["", "**Invisibility that survived the check:**", ""]
+        for s in mc["invisibility_survives"]:
+            row = next((r for r in ver["companies"] if r["company"] == s), {})
+            L.append(f"- **{s}** — {row.get('ministry_check','')[:240]}")
+        L += [""]
 
     L += ["## How to use this", "",
           "The **quiet investors** are the actionable list: they are spending money in India now, and no arm "

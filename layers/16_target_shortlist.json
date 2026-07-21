@@ -1,0 +1,2446 @@
+{
+ "layer": "target_shortlist",
+ "built": "2026-07-21",
+ "method": "foreign leads only; targeting score = lead_score + verified India-intent bonus (annual-report level or 10-K mention weight); China separated under Press Note 3",
+ "source": "layers/16_leads.json",
+ "count": 103,
+ "china_pn3_count": 9,
+ "targets": [
+  {
+   "company": "MICRON TECHNOLOGY INC",
+   "ticker": "MU",
+   "country": "United States",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 139.0,
+   "evidence": "Other Government Incentive Commitments We receive incentives for the construction of a new assembly and test facility in Gujarat, India, representing 50 % of the total project cost from the Indian central government and ",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Suzuki Motor Corporation",
+   "ticker": "TSE:7269",
+   "country": "Japan",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"Growth investment will primarily focus on increasing production capacity to meet growing demand in India and developing technology to minimize energy consumption.\" (Integrated Report 2025)",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Mitsubishi Electric Corporation",
+   "ticker": "TSE:6503",
+   "country": "Japan",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"Air-conditioning & refrigeration systems business: Strengthening capabilities in markets in Europe, North America, and India\" (Integrated Report 2025, business portfolio strategy)",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Panasonic Holdings Corporation",
+   "ticker": "TSE:6752",
+   "country": "Japan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Panasonic Electric Works executives (Outlook Business interview): \"India remains our top priority in our global expansion strategy\"",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Eisai Co., Ltd.",
+   "ticker": "TSE:4523",
+   "country": "Japan",
+   "sector": "Pharma & Bulk Drugs",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"Eisai established Eisai Knowledge Centre, India, in Andhra Pradesh in 2009. Since then the facility has served as a core operational hub for our global production and process research.\" (Eisai news release, 2026, verifi",
+   "why_now": "TDB Rare Disease CFP (open)",
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Nippon Steel Corporation",
+   "ticker": "TSE:5401",
+   "country": "Japan",
+   "sector": "Specialty Steel & Metals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"AM/NS India has agreed to acquire land for a construction site of integrated steel mill from the government of Andhra Pradesh\" \u2014 890 ha (2,200 acres) at Rajayyapeta, Anakapalli district; \"Integrated steel mill capacity:",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Mitsui O.S.K. Lines, Ltd.",
+   "ticker": "TSE:9104",
+   "country": "Japan",
+   "sector": "Shipbuilding & Marine",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"...for example, oil and gas business in India and Southeast Asia, which are expected to see increased population and economic growth\" (MOL REPORT 2025, verified PDF)",
+   "why_now": "SBFAS 2.0; Maritime Development Fund",
+   "state_landings": [
+    "Gujarat (shipping-container thrust + scrapping)",
+    "AP/TN coastal packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "LG Electronics Inc.",
+   "ticker": "A066570 (KOSE 066570)",
+   "country": "South Korea",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Listed LG Electronics India Limited (LGEIL) on the NSE on 14 Oct 2025 \u2014 IPO of ~INR 11,607 cr (~USD 1.31 bn), 54x subscribed; stock closed +48% on debut",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Hyundai Motor Company",
+   "ticker": "A005380 (KOSE 005380)",
+   "country": "South Korea",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Listed Hyundai Motor India Ltd in Oct 2024 in a ~Rs 27,870 cr offering the company itself describes as 'the largest in India's history'",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Kia Corporation",
+   "ticker": "A000270 (KOSE 000270)",
+   "country": "South Korea",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Anantapur (Andhra Pradesh) plant capacity expanded from 300,000 to ~350,000 units/yr; India accounts for ~9% of Kia's global sales",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Hyundai Mobis Co., Ltd",
+   "ticker": "A012330 (KOSE 012330)",
+   "country": "South Korea",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Official press release (8 Dec 2025): 'it has established a specialized software research branch in Bengaluru, India's IT hub... alongside its existing integrated R&D center in Hyderabad, established earlier this year, pu",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "POSCO Holdings Inc.",
+   "ticker": "A005490 (KOSE 005490)",
+   "country": "South Korea",
+   "sector": "Specialty Steel & Metals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Oct 2024 MoU then Jul 2025 Heads of Agreement with JSW Group; JV agreement for a 50:50 co-managed integrated steel mill: 'The joint venture is structured as an equal partnership, with each company holding a 50% stake' wi",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Hanwha Aerospace Co., Ltd.",
+   "ticker": "A012450 (KOSE 012450)",
+   "country": "South Korea",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Signed second India K9 contract on 3 Apr 2025: ~USD 253-254 mn for 100 additional K9 Vajra-T self-propelled howitzers for the Indian Army (Hanwha Aerospace newsroom: 'Hanwha Aerospace Secures Second K9 Vajra-T Contract f",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Rolls-Royce Holdings plc",
+   "ticker": "RR.",
+   "country": "United Kingdom",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Rolls-Royce intends to establish India as a strategic 'home market' and is 'looking at more than doubling the size of its workforce to approximately 10,000 people in India and a 10-fold increase in local supply chain sou",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "AstraZeneca PLC",
+   "ticker": "AZN",
+   "country": "United Kingdom",
+   "sector": "Pharma & Bulk Drugs",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Listed Indian subsidiary AstraZeneca Pharma India Ltd 'marks a consistent 32% growth as the company announces its annual results for FY 2024-25' (company press release) after 29% growth in FY2023-24",
+   "why_now": "TDB Rare Disease CFP (open)",
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Croda International Plc",
+   "ticker": "CRDA",
+   "country": "United Kingdom",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "AR 2024: 'A new surfactants plant in Dahej, India is due to be commissioned in 2025, supporting high-growth markets in Asia' - concrete NEW India manufacturing capex",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Unilever PLC",
+   "ticker": "ULVR",
+   "country": "United Kingdom",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "India is one of Unilever's core emerging-market growth pillars; >50% of group turnover is from emerging markets with India among the named core growth regions",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Cochlear Limited",
+   "ticker": "ASX:COH",
+   "country": "Australia",
+   "sector": "Medical Devices",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "FY25 results commentary explicitly discusses India: 'India saw low volumes and a high premium-tier mix' in 1H25, with 'strong growth in the smaller, but higher-priced, private pay segment in China and India.'",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Ansell Limited",
+   "ticker": "ASX:ANN",
+   "country": "Australia",
+   "sector": "Medical Devices",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "'Ansell is commencing an $80 million investment over three years for a new manufacturing site in Tamil Nadu, southern India, designed to produce a wide range of products with initial focus on surgical and life science gl",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Orica Limited",
+   "ticker": "ASX:ORI",
+   "country": "Australia",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Orica operates in India through Indian Explosives Private Limited (incorporated 1999, Hyderabad HQ), with ~634 employees (Mar 2026) and revenue of Rs 467 crore (FY Mar-2023) growing ~30% YoY, majority from manufacturing ",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Siemens Energy AG",
+   "ticker": "ENR.DE",
+   "country": "Germany",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"In fiscal year 2025, a spin-off of the energy business of Siemens Limited, India, is intended. We expect a non-cash profit from this, which, among other things, depends on the performance of the shares of Siemens Limite",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "ABB Ltd",
+   "ticker": "ABBN.SW",
+   "country": "Switzerland",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"Similarly, India is focused on increasing grid capacity and securing access even across its most remote regions.\" \u2014 ABB Integrated Report 2024, pdftotext-verified",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Sika AG",
+   "ticker": "SIKA.SW",
+   "country": "Switzerland",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"In the automotive and industry business, Sika continued to increase the share of its technologies in vehicles of local and international manufacturers in China, Japan, and India.\" \u2014 Sika Annual Report 2024, pdftotext-ve",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Merck KGaA",
+   "ticker": "MRK.DE",
+   "country": "Germany",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"In 2024, Asia-Pacific generated 68% of Electronics' net sales\" and Merck lists R&D units in India among its global network \u2014 Merck Annual Report 2024 (reports.merckgroup.com; UNVERIFIED exact wording, taken from AR web-",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "NXP Semiconductors N.V.",
+   "ticker": "NXPI",
+   "country": "Netherlands",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"NXP is committed to doubling its R&D efforts here in the country in the next few years, which is far in excess of a billion dollars.\" \u2014 CEO Kurt Sievers at SEMICON India, Greater Noida, Sep 2024, via datacenterdynamics.",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Koninklijke Philips N.V.",
+   "ticker": "PHIA.AS",
+   "country": "Netherlands",
+   "sector": "Medical Devices",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "\"Philips Innovation Campus, Bengaluru (PIC-B) established in 1996 as a software development Centre for Royal Philips, hosts 4200+ employees working on software development for products across the healthcare continuum\" \u2014 ",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Schaeffler AG",
+   "ticker": "SHA0.DE",
+   "country": "Germany",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Schaeffler India invested ~INR 1,700 crore over 2022-2024 in powertrain, e-mobility and industrial bearings capacity, with a further ~INR 4,500 crore capex plan to 2030 for manufacturing and localization \u2014 Schaeffler Ind",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Safran SA",
+   "ticker": "SAF.PA",
+   "country": "France",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Company statement (Nov 2025 press release accompanying integrated reporting): 'Safran will triple its revenue in India to exceed 3 billion euros by 2030, of which half will be generated by our sites in India.'",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Thales S.A.",
+   "ticker": "HO.PA",
+   "country": "France",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Thales press release: 'India is now part of the five Thales global corporate research centers' \u2014 Thales Research & Technology India launched in Bengaluru during the India-France Year of Innovation 2026, focused on embedd",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Dassault Aviation SA",
+   "ticker": "AM.PA",
+   "country": "France",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "2025 Annual Financial Report: 26 Rafale (Marine) ordered by the Indian Navy in 2025; in Feb 2026 India's Defence Acquisition Council authorized direct negotiations for 114 Rafale for the IAF.",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Schneider Electric S.E.",
+   "ticker": "SU.PA",
+   "country": "France",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Rs 3,200 crore (~EUR 360m) investment plan to expand India footprint by 2026: new plants in Kolkata and Hyderabad plus capacity additions \u2014 ~1.2m sq ft across nine states (Gujarat, Telangana, Karnataka, West Bengal, Odis",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Sanofi",
+   "ticker": "SAN.PA",
+   "country": "France",
+   "sector": "Pharma & Bulk Drugs",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Sanofi India press release: expansion of the Hyderabad Global Capability Centre with ~EUR 400m investment over six years (EUR 100m by 2025) \u2014 reported elsewhere as a $437m expansion more than doubling the workforce.",
+   "why_now": "TDB Rare Disease CFP (open)",
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Leonardo S.p.a.",
+   "ticker": "LDO.MI",
+   "country": "Italy",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Leonardo press release 2026-02-03 (post-balance-sheet event to the 2025 Integrated Annual Report): 'Adani Defence & Aerospace and Leonardo Forge Strategic Partnership to Build India's Helicopter Ecosystem' \u2014 MoU covering",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Vestas Wind Systems A/S",
+   "ticker": "VWS.CO",
+   "country": "Denmark",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Company announcement alongside Annual Report 2025: 'Vestas intends to establish a new nacelle and hub assembly factory in Chennai in the state of Tamil Nadu to improve competitiveness and expand its supply chain footprin",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Novo Nordisk A/S",
+   "ticker": "NOVO-B.CO",
+   "country": "Denmark",
+   "sector": "Pharma & Bulk Drugs",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Annual Report 2025 / FY25 results: APAC region 'led by India' was a key growth contributor \u2014 APAC sales +19% (+25% at constant exchange rates) against global growth of only 6.4%.",
+   "why_now": "TDB Rare Disease CFP (open)",
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Telefonaktiebolaget LM Ericsson",
+   "ticker": "ERIC-B.ST",
+   "country": "Sweden",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Annual Report 2025: the market area 'South East Asia, Oceania and India' grew in 2025; Ericsson had 25,100 employees in the market area at end-2025 \u2014 its largest headcount region, driven by India.",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Saab AB (publ)",
+   "ticker": "SAAB-B.ST",
+   "country": "Sweden",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Saab press material: the Carl-Gustaf M4 factory (Saab FFVO India Pvt Ltd, MET City, Jhajjar, Haryana) is 'the first foreign fully-owned defence production facility in India' \u2014 India's first-ever 100% FDI defence manufact",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Nokia Oyj",
+   "ticker": "NOKIA.HE",
+   "country": "Finland",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Nokia (company disclosures alongside Annual Report 2025): Chennai factory manufactures 5G NR and 5G Massive MIMO equipment 'for the domestic and global markets'; new 5G FWA equipment manufacturing line added under Make i",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Hon Hai Precision Industry (Foxconn)",
+   "ticker": "2317.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Foxconn Singapore raised its India-subsidiary stake to 99.9% with a cumulative investment value of $2.82bn (June 2026 filings coverage)",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Pegatron Corporation",
+   "ticker": "4938.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Jan 2025: Tata Electronics acquired 60% of Pegatron's Chennai iPhone plant; 'Tata will hold 60% and run daily operations under the joint venture, while Pegatron will hold the rest and provide technical support'",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Delta Electronics",
+   "ticker": "2308.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Krishnagiri (Tamil Nadu) campus: 95 acres, 3,800+ employees, four manufacturing units after two new factories; Sept 2025 groundbreaking attended by TN CM M.K. Stalin",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "MediaTek",
+   "ticker": "2454.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "In India since 2004; R&D centres in Noida and Bengaluru with a combined team of over 1,000 engineers contributing to global SoC design, software and connectivity",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Lenovo Group",
+   "ticker": "0992.HK",
+   "country": "Hong Kong",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "FY2024/25 Annual Report (fetched PDF): the Board held 'deep-dive discussions on topics such as AI, investment and growth opportunities in India' \u2014 India singled out at board level",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "CLP Holdings",
+   "ticker": "0002.HK",
+   "country": "Hong Kong",
+   "sector": "Green Energy & Fuels",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "2024 Annual Report: Apraava Energy (CLP's India platform with La Caisse/CDPQ) holds 3,150 MW installed capacity including 924 MW wind and 250 MW solar across seven states, plus transmission infrastructure",
+   "why_now": "PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)",
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Food Empire Holdings",
+   "ticker": "F03.SI",
+   "country": "Singapore",
+   "sector": "Food Processing",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "AR2024/announcements: spray-dried (2015) and freeze-dried (2021) soluble-coffee plants in Andhra Pradesh are 'running at optimum capacities and delivering strong results', driving South Asia segment growth",
+   "why_now": "AIF (portal OPEN, Rs 94,272cr sanctioned)",
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Cameco Corporation",
+   "ticker": "CCO.TO",
+   "country": "Canada",
+   "sector": "Green Energy & Fuels",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Signed a long-term agreement to supply uranium ore concentrate (U3O8) to the Government of India's Department of Atomic Energy for its fleet of nuclear reactors",
+   "why_now": "PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)",
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "CAE Inc.",
+   "ticker": "CAE.TO",
+   "country": "Canada",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Operates CAE Gondia / National Flying Training Institute (NFTI), a JV with Airports Authority of India since 2007; second-largest flying school in India by fleet; IndiGo has inducted ~941 cadets from the programme throug",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "WEG S.A.",
+   "ticker": "WEGE3.SA",
+   "country": "Brazil",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Operates WEG Industries (India) Pvt Ltd manufacturing plant at Hosur, Tamil Nadu (est. 2008, IFC co-financed)",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Embraer S.A.",
+   "ticker": "EMBR3.SA",
+   "country": "Brazil",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Oct 2025: Embraer Defense & Security and Mahindra Group signed a Strategic Cooperation Agreement for the C-390 Millennium in the Indian Air Force's Medium Transport Aircraft (MTA) programme, deepening a Feb 2024 MoU - co",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Thungela Resources Limited",
+   "ticker": "TGA.JO",
+   "country": "South Africa",
+   "sector": "Green Energy & Fuels",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "India is described as a cornerstone export market for Thungela, 'absorbing large volumes amid rising power needs and limited domestic supply'; exports go to India, Asia, Southeast Asia, Middle East and North Africa",
+   "why_now": "PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)",
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Saudi Arabian Mining Company (Ma'aden)",
+   "ticker": "1211.SR",
+   "country": "Saudi Arabia",
+   "sector": "Specialty Steel & Metals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "July 2025 (Riyadh, witnessed by Union Minister J.P. Nadda and the Saudi Minister of Industry and Mineral Resources): Ma'aden signed long-term agreements with Indian companies IPL, KRIBHCO and CIL for supply of an enhance",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Elbit Systems Ltd.",
+   "ticker": "ESLT.TA",
+   "country": "Israel",
+   "sector": "Aerospace & Defence",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "20-F discloses the Adani Defence & Aerospace JV (Adani-Elbit Advanced Systems India Ltd, Elbit 49%): the Hyderabad Adani Elbit UAV Complex is India's first private UAV manufacturing facility and the sole Hermes 900 produ",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "ICL Group Ltd",
+   "ticker": "ICL",
+   "country": "Israel",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "June 2026 (6-K): new agreement with Indian Potash Limited (IPL) to supply 375,000 MT of potash over the coming year (option for 50,000 extra tons) at prevailing Indian market prices, within ICL's 2022-2027 five-year supp",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Apple Inc.",
+   "ticker": "AAPL",
+   "country": "United States",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 127.8,
+   "evidence": ", Asia and Europe to supply and manufacture many components, and on partners primarily located in Asia, for final assembly of substantially all of the Company\u2019s hardware products.",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "CF Industries Holdings, Inc.",
+   "ticker": "CF",
+   "country": "United States",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 117.8,
+   "evidence": "ogen, energy, environmental or carbon policies may support development of additional nitrogen production in locations outside North America, including Europe, Australia, India, and the Middle East.",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Bayer AG",
+   "ticker": "BAYN.DE",
+   "country": "Germany",
+   "sector": "Pharma & Bulk Drugs",
+   "tier": "HIGH",
+   "target_score": 115,
+   "evidence": "Bayer's Crop Science division works with more than 30 million smallholder farmers in India; 350+ FPOs established across 20 states with the Small Farmers Agri-Business Consortium, engagement with 1,500+ FPOs reaching ~1 ",
+   "why_now": "TDB Rare Disease CFP (open)",
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Powerchip Semiconductor Manufacturing Corp (PSMC)",
+   "ticker": "6770.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 115,
+   "evidence": "Sept 2024: 'Tata Electronics has completed the Definitive Agreement with Powerchip Semiconductor Manufacturing Corporation (PSMC) of Taiwan' for India's first 12-inch greenfield fab at Dholera, Gujarat",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Saudi Basic Industries Corporation (SABIC)",
+   "ticker": "2010.SR",
+   "country": "Saudi Arabia",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 115,
+   "evidence": "SABIC Integrated Annual Report 2025 and corporate disclosures: invested more than USD 100 million in the SABIC Technology & Innovation Center in Bengaluru - described as one of the largest investments in India by a Saudi",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Vertiv Holdings Co",
+   "ticker": "VRT",
+   "country": "United States",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 113.1,
+   "evidence": "We have significant manufacturing and operations facilities in the Americas, Asia Pacific and Europe, Middle East & Africa.",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Air Products & Chemicals, Inc.",
+   "ticker": "APD",
+   "country": "United States",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 110.6,
+   "evidence": "We are the primary beneficiary of the NEOM Green Hydrogen Company and consolidate the joint venture within our Middle East and India segment.",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "ECOLAB INC.",
+   "ticker": "ECL",
+   "country": "United States",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 102.4,
+   "evidence": "Approximately 43% of our employees are employed in North America, 21% in Europe, 12% in Latin America, 8% in Asia Pacific, 8% in India, Middle East and Africa, and 8% in Greater China.",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Bloom Energy Corp",
+   "ticker": "BE",
+   "country": "United States",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 98.8,
+   "evidence": "Our supply base is global with presence in North America, Asia, Europe and India, consisting of suppliers with multiple areas of expertise in compaction, sintering, brazing and dealing with specialty material manufacturi",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Solventum Corp",
+   "ticker": "SOLV",
+   "country": "United States",
+   "sector": "Medical Devices",
+   "tier": "HIGH",
+   "target_score": 91.9,
+   "evidence": "stiture impacts include lost sales from the Company\u2019s Purification and Filtration business that was sold in September 2025, certain health care businesses retained by 3M India in connection with the Spin-Off, as well as ",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Corteva, Inc.",
+   "ticker": "CTVA",
+   "country": "United States",
+   "sector": "Chemicals & Plastics",
+   "tier": "HIGH",
+   "target_score": 90.4,
+   "evidence": "th was driven primarily by the expected recovery in Brazil Safrinha corn and growth in North America soybeans and cotton, partially offset by reduced planted areas in EMEA, Asia Pacific and corn in Argentina.",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Mondelez International, Inc.",
+   "ticker": "MDLZ",
+   "country": "United States",
+   "sector": "Food Processing",
+   "tier": "HIGH",
+   "target_score": 72.4,
+   "evidence": "such as the launch of co-branded chocolate innovations combining Biscoff with Cadbury Dairy Milk, Milka and other key brands in Europe as well as zero sugar Bournvita in India.",
+   "why_now": "AIF (portal OPEN, Rs 94,272cr sanctioned)",
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "LEAR CORP",
+   "ticker": "LEA",
+   "country": "United States",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 70.6,
+   "evidence": "In particular, we believe that certain joint ventures have provided us, and will continue to provide us, with the opportunity to expand our business relationships with Asian automotive manufacturers, particularly in emer",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "GE Vernova Inc.",
+   "ticker": "GEV",
+   "country": "United States",
+   "sector": "White Goods & Electricals",
+   "tier": "MEDIUM",
+   "target_score": 111.8,
+   "evidence": "R&D is performed within each of our businesses, and at multiple locations around the world, including at our research facilities in Niskayuna, New York and Bangalore, India, which we refer to collectively as Advanced Res",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Marvell Technology, Inc.",
+   "ticker": "MRVL",
+   "country": "United States",
+   "sector": "Electronics & Semiconductors",
+   "tier": "MEDIUM",
+   "target_score": 109.7,
+   "evidence": "Because many manufacturers and manufacturing subcontractors of our customers are located in Asia, we expect that most of our net revenue will continue to be represented by sales to our customers in that region.",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "AMERICAN EXPRESS CO",
+   "ticker": "AXP",
+   "country": "United States",
+   "sector": "Green Energy & Fuels",
+   "tier": "MEDIUM",
+   "target_score": 105.9,
+   "evidence": ", Alipay, PayPal and Shop Pay), as well as regional payment networks (such as the National Payments Corporation of India).",
+   "why_now": "PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)",
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "DENSO Corporation",
+   "ticker": "TSE:6902",
+   "country": "Japan",
+   "sector": "Auto, EV & Components",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Integrated Report 2025 coverage (via aftermarketnews summary of the report; denso.com blocked direct fetch): DENSO plans to develop business in India in 2026 and ASEAN (Thailand) in 2027 as market-expansion priorities \u2014 ",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Tokyo Electron Limited",
+   "ticker": "TSE:8035",
+   "country": "Japan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "\"To further expand our business by contributing to technological innovation in semiconductors, TEL has established a new development site in Bengaluru, Karnataka, India.\" (TEL news release, 5-Sep-2025, verified)",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Ajinomoto Co., Inc.",
+   "ticker": "TSE:2802",
+   "country": "Japan",
+   "sector": "Food Processing",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Ajinomoto Group vision statement: \"50 million customers in southern India to enjoy their products in their life\" by 2030 (Ajinomoto India / group media pages, surfaced via search \u2014 exact ASV Report page not directly quot",
+   "why_now": "AIF (portal OPEN, Rs 94,272cr sanctioned)",
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Terumo Corporation",
+   "ticker": "TSE:4543",
+   "country": "Japan",
+   "sector": "Medical Devices",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Terumo Report 2024 subsidiary table lists \"Terumo Penpol Pvt. Ltd., Kerala, India\" among principal consolidated subsidiaries (verified)",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "ASICS Corporation",
+   "ticker": "TSE:7936",
+   "country": "Japan",
+   "sector": "Textiles & Apparel",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "\"I believe that we can achieve further brand penetration in Greater China, and that Southeast Asia and India will continue to be growth drivers.\" (Integrated Report 2024, top management message)",
+   "why_now": "Technical textiles mission (open)",
+   "state_landings": [
+    "TN Textile 2025-26 + MMF scheme",
+    "Gujarat Textile 2024",
+    "Maharashtra Textile 2023-28"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "LG Energy Solution, Ltd.",
+   "ticker": "A373220 (KOSE 373220)",
+   "country": "South Korea",
+   "sector": "White Goods & Electricals",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Signed a non-binding agreement with JSW Energy for a 50:50 India battery JV \u2014 >USD 1.5 bn, ~10 GWh plant for EV and renewable-storage cells; JSW to take ~70% of output; production targeted end-2026 (Reuters/Business Stan",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "BAE Systems plc",
+   "ticker": "BA.",
+   "country": "United Kingdom",
+   "sector": "Aerospace & Defence",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Hawk Mk132 trainer built in collaboration with HAL: 'HAL's production line in India where the Hawk aircraft are assembled is a demonstration of the success of Make in India in defence manufacturing'",
+   "why_now": "iDEX/ADITI (DISC 12 reopen; ADITI to Rs 25cr/project)",
+   "state_landings": [
+    "Karnataka A&D 2022-27",
+    "UP Defence Corridor (UPEIDA)",
+    "TN aerospace packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "GSK plc",
+   "ticker": "GSK",
+   "country": "United Kingdom",
+   "sector": "Pharma & Bulk Drugs",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Listed Indian subsidiary GlaxoSmithKline Pharmaceuticals Ltd FY2024-25 'revenue of Rs 3,407 crores with 6% growth... strong volume recovery despite NLEM impact' (India AR 2024-25, titled 'Ahead Together with India')",
+   "why_now": "TDB Rare Disease CFP (open)",
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Johnson Matthey Plc",
+   "ticker": "JMAT",
+   "country": "United Kingdom",
+   "sector": "Chemicals & Plastics",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Annual Report 2025: 'good growth in Asia as their largest customers in Japan and India outperformed their respective markets' (Clean Air)",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Reckitt Benckiser Group plc",
+   "ticker": "RKT",
+   "country": "United Kingdom",
+   "sector": "White Goods & Electricals",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "'India delivered double-digit growth led by strong growth in Germ Protection (Dettol), Intimate Wellness (Durex), and Household Care (Finish)'",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Associated British Foods plc",
+   "ticker": "ABF",
+   "country": "United Kingdom",
+   "sector": "Food Processing",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "AR 2024 (Ingredients/AB Mauri): capital projects to drive long-term growth include 'the construction of a fresh yeast plant in northern India' - concrete NEW India capex",
+   "why_now": "AIF (portal OPEN, Rs 94,272cr sanctioned)",
+   "state_landings": [
+    "AP Food Processing 4.0",
+    "MP (IPP + food parks)",
+    "Jharkhand Food & Feed 2024"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Smith & Nephew plc",
+   "ticker": "SN.",
+   "country": "United Kingdom",
+   "sector": "Medical Devices",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "FY2024: 'Emerging Markets revenue was up 9.5% (7.6% reported), with strong double-digit growth across the Middle East, India and Latin America' - India explicitly named as a double-digit growth market",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Renishaw plc",
+   "ticker": "RSW",
+   "country": "United Kingdom",
+   "sector": "Electronics & Semiconductors",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Annual Report 2024: India (Pune) is one of Renishaw's three global manufacturing countries - 'Most of Renishaw's R&D and manufacturing takes place in the UK, and they have other major manufacturing sites in Ireland and I",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "BHP Group Limited",
+   "ticker": "ASX:BHP",
+   "country": "Australia",
+   "sector": "Specialty Steel & Metals",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "'Indian commodity demand continues to grow strongly, though competing imports from China narrowed margins for the steel industry over the last year.' (FY2025 results/outlook commentary)",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Fortescue Ltd",
+   "ticker": "ASX:FMG",
+   "country": "Australia",
+   "sector": "Specialty Steel & Metals",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "PMO readout (23 May 2023, Sydney): 'Prime Minister welcomed Fortescue Group's plans to work with Indian companies in the field of Green Hydrogen.'",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Woodside Energy Group Ltd",
+   "ticker": "ASX:WDS",
+   "country": "Australia",
+   "sector": "Green Energy & Fuels",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Woodside portfolio sales projections show India as a growth market: sales volumes projected to rise from 13 MMboe (base) to 48 MMboe (growth case) between 2024 and 2030 - roughly a 3.7x expansion, the steepest growth wed",
+   "why_now": "PM-KUSUM / Surya Ghar supply chain (e-2W E-DRIVE closes 31-Jul-2026)",
+   "state_landings": [
+    "Odisha (GH2: 20y power package, uncapped 30% capital)",
+    "Gujarat (green-energy thrust 25-40% eFCI)",
+    "Rajasthan (RIPS boosters)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "BASF SE",
+   "ticker": "BAS.DE",
+   "country": "Germany",
+   "sector": "Chemicals & Plastics",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "BASF in India sales 2024: EUR 2,392 million (2023: EUR 2,386 million); Number of employees (BASF India): 2,411 \u2014 BASF in India Factsheet 2024, pdftotext-verified figures",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Novartis AG",
+   "ticker": "NOVN.SW",
+   "country": "Switzerland",
+   "sector": "Pharma & Bulk Drugs",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Annual Report 2024 discloses Novartis AG holds 70.68% of Novartis India Ltd. (registered office Mumbai, BSE-listed) and values the 29.32% free float at USD 77.7 million, following the announced strategic review of the li",
+   "why_now": "TDB Rare Disease CFP (open)",
+   "state_landings": [
+    "Telangana Next-Gen Life Sciences 2026-30 (full stack)",
+    "Himachal (Nalagarh ecosystem)",
+    "Sikkim (legacy hub)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Infineon Technologies AG",
+   "ticker": "IFX.DE",
+   "country": "Germany",
+   "sector": "Electronics & Semiconductors",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Annual Report 2024 lists three wholly-owned Indian entities \u2014 'Infineon Technologies India Private Limited, Bangalore', 'Infineon Technologies Memory Solutions India LLP, Bangalore', 'Infineon Technologies Semiconductor ",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "ASML Holding N.V.",
+   "ticker": "ASML.AS",
+   "country": "Netherlands",
+   "sector": "Electronics & Semiconductors",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "ASML Annual Report 2024 Strategic report section (43,399 words parsed) contains ZERO 'India' mentions \u2014 India is not yet a named strategic market in the AR; interest is visible in operations and 2026 partnerships instead",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "voestalpine AG",
+   "ticker": "VOE.VI",
+   "country": "Austria",
+   "sector": "Specialty Steel & Metals",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "\"...the growth markets of India, Africa and the Middle East showed solid demand for welding technology products.\" \u2014 voestalpine Annual Report 2024/25, pdftotext-verified",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "EssilorLuxottica Soci\u00e9t\u00e9 anonyme",
+   "ticker": "EL.PA",
+   "country": "France",
+   "sector": "Medical Devices",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Per trade press citing the company: EssilorLuxottica is 'strategically considering an expansion of its manufacturing footprint in India, focusing particularly on ramping up the production of fundamental lens castings' (s",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Yara International ASA",
+   "ticker": "YAR.OL",
+   "country": "Norway",
+   "sector": "Chemicals & Plastics",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Yara Annual Report 2025: Babrala (Uttar Pradesh) plant cut GHG intensity to 2.522 tCO2e/tN, beating Yara's global 2.7 target \u2014 positioned as India's most sustainable urea plant; India Scope 1+2 emissions -3.4%; logistics",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Wistron Corporation",
+   "ticker": "3231.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Oct 2023: sold 100% of Wistron InfoComm Manufacturing (India) \u2014 the Narasapura, Karnataka iPhone plant operated since 2017 \u2014 to Tata Electronics for ~US$125M; SPA signed via SMS InfoComm (Singapore) and Wistron Hong Kong",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Compal Electronics",
+   "ticker": "2324.TW",
+   "country": "Taiwan",
+   "sector": "Electronics & Semiconductors",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Feb 2025: MOU with Kalyani Group's electronics division to develop a server business 'using locally manufactured solutions in India'; Made-in-India servers launched from Kalyani's Pune facility",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Johnson Electric Holdings",
+   "ticker": "0179.HK",
+   "country": "Hong Kong",
+   "sector": "Auto, EV & Components",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Annual Report subsidiary schedule (fetched PDF) lists 'Johnson Electric Private Limited \u2014 Manufacturing, sales and marketing \u2014 India \u2014 INR1,044,096,500 \u2014 100%' owned",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Nutrien Ltd.",
+   "ticker": "NTR.TO",
+   "country": "Canada",
+   "sector": "Chemicals & Plastics",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "India represents 6% of Canpotex sales volumes (Canpotex is Nutrien's offshore potash marketing arm)",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Magna International Inc.",
+   "ticker": "MG.TO",
+   "country": "Canada",
+   "sector": "Auto, EV & Components",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "MIXED SIGNAL: 2025 annual report discloses Magna sold a body & chassis business in India in 2024; the divestiture decreased sales by USD 112 million",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Vale S.A.",
+   "ticker": "VALE3.SA",
+   "country": "Brazil",
+   "sector": "Specialty Steel & Metals",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Vale executive vice president publicly stated Vale 'intends to expand its business in India', seeing a great opportunity to boost iron ore sales as 'India is emerging as a new hub for growth in the steel sector' (Kallani",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "BALL Corp",
+   "ticker": "BALL",
+   "country": "United States",
+   "sector": "Chemicals & Plastics",
+   "tier": "MEDIUM",
+   "target_score": 89.1,
+   "evidence": "\u200b Beverage Packaging, Other \u200b Our aluminum beverage packaging operations in the beverage packaging, other, segment consist of three facilities \u2013 two in India and one in Myanmar.",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "thyssenkrupp AG",
+   "ticker": "TKA.DE",
+   "country": "Germany",
+   "sector": "Specialty Steel & Metals",
+   "tier": "MEDIUM",
+   "target_score": 85,
+   "evidence": "\"India's economy continues to expand robustly. Growth of 6.8% is forecast for 2024... India is benefiting from a growing population\" and steel demand \"rose significantly in India (+14.4%)\" with 2025 world steel growth \"b",
+   "why_now": "Critical minerals mission / MMDR-2025 (exploration+processing openings)",
+   "state_landings": [
+    "Odisha (metals downstream parks, 50% infra to Rs 25cr)",
+    "Chhattisgarh (core-sector stack)",
+    "Jharkhand JIIPP"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "COLGATE PALMOLIVE CO",
+   "ticker": "CL",
+   "country": "United States",
+   "sector": "White Goods & Electricals",
+   "tier": "MEDIUM",
+   "target_score": 84.2,
+   "evidence": "The Pet Nutrition segment has major manufacturing and warehousing facilities in Indiana, Kansas, Kentucky, Ohio and Oklahoma.",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "LEVI STRAUSS & CO",
+   "ticker": "LEVI",
+   "country": "United States",
+   "sector": "Textiles & Apparel",
+   "tier": "MEDIUM",
+   "target_score": 71.5,
+   "evidence": "In addition to the above, we operate finance shared service centers in Eugene, Oregon and Bangalore, India.",
+   "why_now": "Technical textiles mission (open)",
+   "state_landings": [
+    "TN Textile 2025-26 + MMF scheme",
+    "Gujarat Textile 2024",
+    "Maharashtra Textile 2023-28"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "BORGWARNER INC",
+   "ticker": "BWA",
+   "country": "United States",
+   "sector": "Auto, EV & Components",
+   "tier": "MEDIUM",
+   "target_score": 63.0,
+   "evidence": "The Company operates manufacturing facilities serving customers in Europe, the Americas and Asia and is an original equipment supplier to nearly every major automotive OEM in the world.",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  }
+ ],
+ "china_pn3_watchlist": [
+  {
+   "company": "BYD Company Limited",
+   "ticker": "SEHK:1211 (also SZSE:002594; CSV lists 1211)",
+   "country": "China",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "BYD India registered 2007 in Chennai with an electronics manufacturing plant; India listed among BYD's 30+ industrial-park countries alongside US, Brazil, Hungary",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Luxshare Precision Industry Co., Ltd.",
+   "ticker": "SZSE:002475",
+   "country": "China",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "AR-level footprint statement: manufacturing bases in 'China, India, and Vietnam' (~420,000 employees globally)",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Hangzhou Hikvision Digital Technology Co., Ltd.",
+   "ticker": "SZSE:002415",
+   "country": "China",
+   "sector": "Electronics & Semiconductors",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Prama Hikvision India Pvt Ltd (est. 2009, Mumbai) \u2014 Indian-majority JV, the archetypal PN3-compatible structure: manufacturing done under an Indian partner's majority",
+   "why_now": "ECMS (open -- Rs 40,000cr outlay, FCFS)",
+   "state_landings": [
+    "UP (ECMS top-up = equal to central)",
+    "Assam (+40% of ISM capex)",
+    "TN (Semiconductor 2024 + Mission 2030)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Haier Smart Home Co., Ltd.",
+   "ticker": "SHSE:600690",
+   "country": "China",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "AR 2024 (English, smart-home.haier.com): South Asia revenue RMB 11.53bn, +21.05% YoY; 'Indian market... revenue growing by 30%... revenue grew over 30% to USD 1 billion for the first time' in Haier's 20th anniversary yea",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Midea Group Co., Ltd.",
+   "ticker": "SZSE:000333",
+   "country": "China",
+   "sector": "White Goods & Electricals",
+   "tier": "HIGH",
+   "target_score": 135,
+   "evidence": "Committed >Rs 13.5bn (~$190m) to the Midea Science & Technology Park near Pune (~270,000 sqm; capacity 500k each refrigerators/washers/purifiers/heaters, 1.5m residential ACs, 250k commercial ACs, 4.5m compressors; 2,000",
+   "why_now": "PLI White Goods; BEE/star-rating demand levers",
+   "state_landings": [
+    "Standard state stacks (UP/Gujarat/TN capital+SGST menus)"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "SAIC Motor Corporation Limited",
+   "ticker": "SHSE:600104",
+   "country": "China",
+   "sector": "Auto, EV & Components",
+   "tier": "HIGH",
+   "target_score": 115,
+   "evidence": "MG Motor India (Halol, Gujarat plant) restructured 2023 into JSW MG Motor India JV \u2014 JSW took 35% at ~$1.2bn valuation, the flagship PN3-era 'Indianization' of a Chinese OEM",
+   "why_now": "PM E-DRIVE; PLI-Auto / PLI-ACC",
+   "state_landings": [
+    "TN EV 2023 (20% battery capital subsidy)",
+    "MP EV 2025",
+    "UP EV 2022 + upevsubsidy portal"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Wanhua Chemical Group Co., Ltd.",
+   "ticker": "SHSE:600309",
+   "country": "China",
+   "sector": "Chemicals & Plastics",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Company profile/AR materials list 'over ten branches across Europe, the Middle East, America, Japan, Russia, and India' \u2014 India is an explicitly named overseas branch geography (Wanhua Chemical India Pvt Ltd, Mumbai sale",
+   "why_now": "TDB Chemical CFP (open)",
+   "state_landings": [
+    "Gujarat (chemicals thrust)",
+    "Odisha IPR (priority sector)",
+    "Rajasthan RIPS"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "COSCO SHIPPING Holdings Co., Ltd.",
+   "ticker": "SEHK:1919 (also SHSE:601919; CSV lists 1919)",
+   "country": "China",
+   "sector": "Shipbuilding & Marine",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "COSCO/OOCL liner networks call Indian ports (Nhava Sheva, Mundra, Chennai) as routine commercial operations; OOCL India and COSCO Shipping Lines India agency entities long predate PN3 \u2014 presence is service-based, needing",
+   "why_now": "SBFAS 2.0; Maritime Development Fund",
+   "state_landings": [
+    "Gujarat (shipping-container thrust + scrapping)",
+    "AP/TN coastal packages"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  },
+  {
+   "company": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd.",
+   "ticker": "SZSE:300760",
+   "country": "China",
+   "sector": "Medical Devices",
+   "tier": "MEDIUM",
+   "target_score": 105,
+   "evidence": "Earnings-call/AR materials: 'developing countries experienced growth exceeding 30%' \u2014 the company's fastest-growing segment, with India its largest developing-market healthcare opportunity",
+   "why_now": "TDB Medical Devices CFP (open)",
+   "state_landings": [
+    "Telangana LS 2026-30",
+    "TN (structured packages)",
+    "HP medical-device park"
+   ],
+   "roles_to_approach": [
+    "CFO",
+    "Head of Corporate Development / M&A",
+    "VP Strategy / New Markets",
+    "India Country Head (if exists)",
+    "Head of Government Affairs"
+   ]
+  }
+ ]
+}

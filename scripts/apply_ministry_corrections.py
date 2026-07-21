@@ -52,6 +52,10 @@ MINISTRY = {
         "named as a brand in a MeitY/PIB backgrounder -- but DISPROOF: MeitY's own list of the 27 approved "
         "IT-hardware PLI 2.0 companies does NOT include Lenovo, so the widely-reported 'Lenovo approved "
         "under PLI 2.0' claim is unsupported by the ministry's own document"),
+    "schaeffler": ("MINISTRY_NAMED",
+        "named as 'Schaeffler India Limited' in Annexure-I of Lok Sabha UQ1445 (Ministry of Heavy "
+        "Industries, 9-Dec-2025) listing all 82 approved PLI-Auto applicants -- tabled in Parliament, "
+        "invisible to a PIB-headline match"),
     "cae": ("QUIET_INVESTOR",
         "WEAK/PARTIAL only -- the sole government-hosted trace is AAI's NFTI page linking to CAE Global "
         "Academy URLs; not a naming in a ministry publication, so the below-radar label stands"),

@@ -42,7 +42,7 @@ The pattern is narrow: semiconductors, defence, and marquee PM-attended ribbon-c
 
 The 41 below-radar names with the strongest stated intent were checked against dated news. Absence from PIB headlines turns out to have four different causes — only one of them is an opportunity.
 
-### Quiet investors — the outreach list (10)
+### Quiet investors — the outreach list (9)
 
 Dated, sourced India activity in the last three years and **no government publicity found at all**: not a PIB headline, not a minister at the ribbon-cutting, not a state-government announcement. These are companies committing capital to India that the government is not currently courting.
 
@@ -51,12 +51,6 @@ Dated, sourced India activity in the last three years and **no government public
 - 2026-03-17: [ANDRITZ secures major order from Tata Power for 1,000 MW Bhivpuri Pumped Storage Project in India](https://www.andritz.com/newsroom-en/hydro/2026-03-17-tata-power-group) — Low three-digit million EUR range
 - 2022-09: [ANDRITZ to supply equipment for Gandhi Sagar pumped storage project in India](https://www.renewableenergyworld.com/energy-storage/pumped-storage/andritz-to-supply-equipment-for-gandhi-sagar-pumped-storage-project-in-india/) — 1,440 MW, expandable to 1,680 MW
 - *Strongly active and genuinely unpublicised — two separate low-three-digit-EUR-million pumped-storage orders in six weeks (Tata Power Bhivpuri, Torrent Saidongar-1) plus a seven-project India pipeline, all announced only through Andritz's own hydro newsroom and*
-
-**Schaeffler AG** (Germany, Auto, EV & Components)
-- 2025-05-28: [Schaeffler India Opens Fifth Manufacturing Plant in Tamil Nadu to Boost Powertrain Production](https://www.autocarpro.in/news/schaeffler-india-opens-fifth-manufacturing-plant-in-tamil-nadu-to-boost-powertrain-production-126648) — INR 1,700 crore invested 2022-2024, against an original INR 1,500 crore commitment
-- 2026-05-27: [How Schaeffler India is pumping in EUR 500 million over the next five years to boost capacity and increase loc](https://www.businesstoday.in/magazine/deep-dive/story/how-schaeffler-india-is-pumping-in-eu500-million-over-the-next-five-years-to-boost-capacity-and-increase-localisation-533647-2026-05-27) — EUR 500 million over five years
-- 2026-02: [Schaeffler India to Raise Capex Above INR 5 Billion in 2026 as Plant Utilisation Crosses 85 Percent](https://machinist.in/2026/02/schaeffler-india-to-raise-capex-above-inr-5-billion-in-2026-as-plant-utilisation-crosses-85-percent/) — INR 5 billion+ 2026 capex; INR 4,500 crore by 2030
-- *One of the clearest below-radar heavyweights — a fifth Indian plant opened May 2025 with no official present, INR 1,700 crore already spent 2022-24, and a EUR 500m / INR 4,500 crore forward programme visible only through trade press and stock-exchange filings.*
 
 **Ericsson** (Sweden)
 - 2025-06-26: [Ericsson strengthens R&D in India - to commence ASIC development in Bengaluru](https://www.ericsson.com/en/press-releases/2/2025/6/ericsson-strengthens-rd-in-india--to-commence-asic-development-in-bengaluru) — 150+ new positions (no India capex figure; Ericsson spends ~USD 5 billion/year on R&D globally)
@@ -241,7 +235,7 @@ The annual report expresses India or APAC interest, but no dated India activity 
 
 ## Then we checked ministry publications — and a third of the list was wrong
 
-PIB headlines are the wrong instrument for this question. Of 12 quiet investors checked against ministry publications, 8 were found named and their labels corrected. The channels that name companies are annexure PDFs, long directories, regulator orders and monthly summaries -- none of which put a company name in a title, so a title-indexed register structurally cannot see them.
+PIB headlines are the wrong instrument for this question. Of 12 quiet investors checked against ministry publications, 9 were found named and their labels corrected. The channels that name companies are annexure PDFs, long directories, regulator orders and monthly summaries -- none of which put a company name in a title, so a title-indexed register structurally cannot see them.
 
 **Channels that actually name companies** (none of which title-index them): PLI beneficiary annexures (DPIIT/MeitY/MoFPI); DSIR Directory of Recognised In-house R&D Units; MNRE ALMM approved-manufacturer lists; CERC / regulator orders; Ministry monthly summaries (e.g. MoPSW); Coffee Board / commodity-board registers.
 
@@ -261,6 +255,23 @@ PIB headlines are the wrong instrument for this question. Of 12 quiet investors 
 - **Siam Cement Group (SCG)** — searched, not found -- absent centrally; the Kheda (Kapadvanj) AAC plant inauguration was a Gujarat state event
 - **MediaTek** — searched, not found -- structurally ineligible for the Design Linked Incentive, which is scoped to domestic startups/MSMEs/academia -- absence is by scheme design, not neglect
 - **Arcelik** — searched, not found -- AFFIRMATIVELY DISPROVED, not merely unconfirmed: absent from all 42 White Goods PLI beneficiaries, the FDI table and the CoE referral table. Trap recorded -- JV parent Voltas Limited IS a separate beneficiary at Sl. 1
+
+## And then Parliament — visibility depends on which ministry owns your sector
+
+This explains the visibility pattern precisely. A foreign investor's visibility in Indian government records is determined less by what it invests than by WHICH MINISTRY owns its sector. Electronics and auto investors are named in tabled annexures; defence suppliers and any company arriving via the FDI-approval route are structurally unnameable. Elbit's surviving invisibility is therefore not an oversight -- it is what MoD disclosure looks like for every foreign OEM.
+
+**Ministries that name foreign companies in tabled answers:**
+
+- **MeitY** — publishes full named annexures. LS UQ2061 (11-Feb-2026) names all 10 approved semiconductor projects WITH foreign technology partners and rupee investment: Micron Rs 22,516cr; Tata Electronics Rs 91,526cr 'in technology partnership with PSMC, Taiwan'; CG Power Rs 7,584cr JV with Renesas Electronics America and STARS Microelectroni ([source](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/187/AU2061_qKiMKz.pdf?source=lsapps))
+- **Ministry of Heavy Industries** — publishes full named applicant lists. LS UQ1445 (9-Dec-2025) Annexure-I lists all 82 approved PLI-Auto applicants, including Schaeffler India, Valeo India, Denso Ten Uno Minda, Bosch, BASF Catalysts, Mitsubishi Electric Automotive, Aisin, Mahle Anand, Musashi, Nidec, Yazaki, Vitesco, HL Mando, Garrett Motion, Hella, Daicel, Dana, Cummin ([source](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/186/AU1445_zbkDQD.pdf?source=lsapps))
+- **Civil Aviation** — names facilities and operators. LS UQ6 (29-Jan-2026) names the Safran Aircraft Engine Services India (SAESI) Hyderabad MRO, designed to service up to 300 LEAP engines annually ([source](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/187/AU6_gu2zZ1.pdf?source=lsapps))
+
+**Ministries that do not:**
+
+- **DPIIT** — publishes Press Note 3 policy text but NEVER applicant names or approval/rejection counts. Every PN3 answer retrieved is identical boilerplate (LS US Q3554 17-Dec-2024, Q4129 25-Mar-2025, Q2786 10-Mar-2026). Asked directly for investing-company names, DPIIT replied that company-wise data 'is not maintained by DPIIT' and supplied only a sector-wise annexure (40 FDI projects, USD 3.03bn) -- LS UQ4027, 25-Mar-2025 ([source](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/184/AU4027_gBdfmS.pdf?source=lsapps)) *Exception:* LS Starred Q307 (17-Dec-2024, Piyush Goyal) names Roadget Business Pte Limited ('Shein') and its Reliance Retail technology agreement -- the only PN3 answer found that names a company
+- **Ministry of Defence** — aggregates only -- essentially never names a foreign OEM. ~300 Defence answers (2023-2026) grepped for Safran, Rolls-Royce, GE, Thales, Rafael, Elbit, Dassault, Kongsberg, Fincantieri, Navantia, Thyssenkrupp, Lockheed, Saab, MBDA, Rosoboronexport: FOUR hits total. Offset answers give aggregate dollars only (USD 13.21bn contracted, USD 6.42bn claims, USD 1.84bn due) with zero vendor names despite ([source](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/1711/AU2823.pdf?source=lsapps))
+
+*Corpus: ~4,300 Lok Sabha answer PDFs harvested for 17th+18th LS, 2023-2026, then full-text grepped. Rajya Sabha: ZERO retrieved -- eparlib.sansad.in refused connection, pqars.nic.in and rsdoc.nic.in unreachable from this machine, integration.rajyasabha.digital returns 401. Every finding below is Lok Sabha only and must be read with that gap stated.*
 
 ## How to use this
 

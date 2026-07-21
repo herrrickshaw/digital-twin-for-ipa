@@ -41,9 +41,9 @@
   }
  ],
  "counts": {
-  "QUIET_INVESTOR": 10,
+  "QUIET_INVESTOR": 9,
+  "MINISTRY_NAMED": 6,
   "MINISTRY_NAMED_BRAND_ONLY": 1,
-  "MINISTRY_NAMED": 5,
   "MINISTRY_NAMED_SUBSIDIARY_ONLY": 1,
   "SUBSUMED_IN_PARTNER": 2,
   "STATE_PUBLICISED": 5,
@@ -99,7 +99,7 @@
    "india_intent": "HIGH",
    "pib_visibility": "BELOW_RADAR",
    "pib_investment_hits_3y": 0,
-   "verdict": "QUIET_INVESTOR",
+   "verdict": "MINISTRY_NAMED",
    "verdict_basis": "One of the clearest below-radar heavyweights \u2014 a fifth Indian plant opened May 2025 with no official present, INR 1,700 crore already spent 2022-24, and a EUR 500m / INR 4,500 crore forward programme visible only through trade press and stock-exchange filings.",
    "activity_type": "expansion",
    "india_news": [
@@ -129,7 +129,9 @@
     }
    ],
    "govt_visibility_note": "No government official identified at the Shoolagiri inauguration \u2014 the Autocar Professional account lists only Schaeffler executives. Tamil Nadu routinely publicises industrial MoUs, so the absence of a state presence here is itself notable. Much of the disclosure runs through Schaeffler India's listed-company reporting (BSE/NSE) rather than any government channel.",
-   "summary": "One of the clearest below-radar heavyweights \u2014 a fifth Indian plant opened May 2025 with no official present, INR 1,700 crore already spent 2022-24, and a EUR 500m / INR 4,500 crore forward programme visible only through trade press and stock-exchange filings."
+   "summary": "One of the clearest below-radar heavyweights \u2014 a fifth Indian plant opened May 2025 with no official present, INR 1,700 crore already spent 2022-24, and a EUR 500m / INR 4,500 crore forward programme visible only through trade press and stock-exchange filings.",
+   "pib_verdict_before_ministry_check": "QUIET_INVESTOR",
+   "ministry_basis": "named as 'Schaeffler India Limited' in Annexure-I of Lok Sabha UQ1445 (Ministry of Heavy Industries, 9-Dec-2025) listing all 82 approved PLI-Auto applicants -- tabled in Parliament, invisible to a PIB-headline match"
   },
   {
    "company": "Ericsson",
@@ -1345,7 +1347,7 @@
    "Ministry monthly summaries (e.g. MoPSW)",
    "Coffee Board / commodity-board registers"
   ],
-  "headline_finding": "PIB headlines are the wrong instrument for this question. Of 12 quiet investors checked against ministry publications, 8 were found named and their labels corrected. The channels that name companies are annexure PDFs, long directories, regulator orders and monthly summaries -- none of which put a company name in a title, so a title-indexed register structurally cannot see them.",
+  "headline_finding": "PIB headlines are the wrong instrument for this question. Of 12 quiet investors checked against ministry publications, 9 were found named and their labels corrected. The channels that name companies are annexure PDFs, long directories, regulator orders and monthly summaries -- none of which put a company name in a title, so a title-indexed register structurally cannot see them.",
   "two_systemic_blind_spots": [
    "RENAMED ENTITIES: CLP -> Apraava (2022) erases every post-rename government record from a parent-name match",
    "SUBSIDIARY ALIASES: Indus Coffee, WEG Industries (India), Voltbek, Panasonic India -- the government names the Indian entity, never the foreign parent"
@@ -1355,6 +1357,10 @@
    "Arcelik/Voltbek is NOT among the 42 White Goods PLI beneficiaries; JV parent Voltas Limited is (Sl. 11) -- a false-positive trap"
   ],
   "corrected": [
+   {
+    "company": "Schaeffler AG",
+    "to": "MINISTRY_NAMED"
+   },
    {
     "company": "Lenovo Group",
     "to": "MINISTRY_NAMED_BRAND_ONLY"

@@ -1,0 +1,43 @@
+{
+ "layer": "parliament_disclosure_behaviour",
+ "built": "2026-07-21",
+ "question": "When do Indian ministries name foreign companies in documents tabled in Parliament?",
+ "corpus": "~4,300 Lok Sabha answer PDFs harvested for 17th+18th LS, 2023-2026, then full-text grepped. Rajya Sabha: ZERO retrieved -- eparlib.sansad.in refused connection, pqars.nic.in and rsdoc.nic.in unreachable from this machine, integration.rajyasabha.digital returns 401. Every finding below is Lok Sabha only and must be read with that gap stated.",
+ "method_note": "The documented URL pattern annex/<session>/AU<qno>.pdf works only for the 17th LS. 18th-LS files carry a random 6-char suffix (AU2061_qKiMKz.pdf), so probing fails. The index is an undocumented unauthenticated JSON API found in the Next.js chunks of sansad.in/ls/questions/questions-and-answers: https://sansad.in/api_ls/question/qetFilteredQuestionsAns?loksabhaNo=18&ministryCode=<code>&keyWord=<kw>&pageNo=1&pageSize=200&locale=en returning quesNo, subjects, ministry, date and the full suffixed PDF URL. Ministry codes: DEFENCE=18, COMMERCE & INDUSTRY=20, FINANCE=39, ELECTRONICS & IT=63, HEAVY INDUSTRIES=70. keyWord matches the SUBJECT line only, not the answer body.",
+ "ministries_that_name_foreign_companies": [
+  {
+   "ministry": "MeitY",
+   "behaviour": "publishes full named annexures",
+   "example": "LS UQ2061 (11-Feb-2026) names all 10 approved semiconductor projects WITH foreign technology partners and rupee investment: Micron Rs 22,516cr; Tata Electronics Rs 91,526cr 'in technology partnership with PSMC, Taiwan'; CG Power Rs 7,584cr JV with Renesas Electronics America and STARS Microelectronic Thailand; HCL-Foxconn Rs 3,706cr tech from Hon Hai Taiwan; ASIP Rs 480cr with APACT South Korea",
+   "url": "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/187/AU2061_qKiMKz.pdf?source=lsapps"
+  },
+  {
+   "ministry": "Ministry of Heavy Industries",
+   "behaviour": "publishes full named applicant lists",
+   "example": "LS UQ1445 (9-Dec-2025) Annexure-I lists all 82 approved PLI-Auto applicants, including Schaeffler India, Valeo India, Denso Ten Uno Minda, Bosch, BASF Catalysts, Mitsubishi Electric Automotive, Aisin, Mahle Anand, Musashi, Nidec, Yazaki, Vitesco, HL Mando, Garrett Motion, Hella, Daicel, Dana, Cummins, Aptiv, Toyota Industries Engine, Kia, Hyundai, Suzuki Motor Gujarat. Outlay Rs 25,938cr; Rs 1,350.83cr disbursed to five applicants as on 30-11-2025",
+   "url": "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/186/AU1445_zbkDQD.pdf?source=lsapps"
+  },
+  {
+   "ministry": "Civil Aviation",
+   "behaviour": "names facilities and operators",
+   "example": "LS UQ6 (29-Jan-2026) names the Safran Aircraft Engine Services India (SAESI) Hyderabad MRO, designed to service up to 300 LEAP engines annually",
+   "url": "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/187/AU6_gu2zZ1.pdf?source=lsapps"
+  }
+ ],
+ "ministries_that_do_not": [
+  {
+   "ministry": "DPIIT",
+   "behaviour": "publishes Press Note 3 policy text but NEVER applicant names or approval/rejection counts",
+   "evidence": "Every PN3 answer retrieved is identical boilerplate (LS US Q3554 17-Dec-2024, Q4129 25-Mar-2025, Q2786 10-Mar-2026). Asked directly for investing-company names, DPIIT replied that company-wise data 'is not maintained by DPIIT' and supplied only a sector-wise annexure (40 FDI projects, USD 3.03bn) -- LS UQ4027, 25-Mar-2025",
+   "url": "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/184/AU4027_gBdfmS.pdf?source=lsapps",
+   "exception": "LS Starred Q307 (17-Dec-2024, Piyush Goyal) names Roadget Business Pte Limited ('Shein') and its Reliance Retail technology agreement -- the only PN3 answer found that names a company"
+  },
+  {
+   "ministry": "Ministry of Defence",
+   "behaviour": "aggregates only -- essentially never names a foreign OEM",
+   "evidence": "~300 Defence answers (2023-2026) grepped for Safran, Rolls-Royce, GE, Thales, Rafael, Elbit, Dassault, Kongsberg, Fincantieri, Navantia, Thyssenkrupp, Lockheed, Saab, MBDA, Rosoboronexport: FOUR hits total. Offset answers give aggregate dollars only (USD 13.21bn contracted, USD 6.42bn claims, USD 1.84bn due) with zero vendor names despite the question asking for lapsed obligations by vendor (LS UQ2823, 17-Mar-2023). The C-295 contract with Airbus Defence and Space SA / Tata consortium (LS UQ319, 3-Feb-2023) is the sole substantive exception across three years",
+   "url": "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/1711/AU2823.pdf?source=lsapps"
+  }
+ ],
+ "implication": "This explains the visibility pattern precisely. A foreign investor's visibility in Indian government records is determined less by what it invests than by WHICH MINISTRY owns its sector. Electronics and auto investors are named in tabled annexures; defence suppliers and any company arriving via the FDI-approval route are structurally unnameable. Elbit's surviving invisibility is therefore not an oversight -- it is what MoD disclosure looks like for every foreign OEM."
+}

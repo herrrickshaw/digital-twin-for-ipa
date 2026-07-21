@@ -151,6 +151,23 @@ def main():
             L.append(f"- **{s}** — {row.get('ministry_check','')[:240]}")
         L += [""]
 
+    pl_path = os.path.join(ROOT, "layers/23_parliament_disclosure.json")
+    if os.path.exists(pl_path):
+        pl = json.load(open(pl_path))
+        L += ["## And then Parliament — visibility depends on which ministry owns your sector", "",
+              pl["implication"], "",
+              "**Ministries that name foreign companies in tabled answers:**", ""]
+        for m in pl["ministries_that_name_foreign_companies"]:
+            L.append(f"- **{m['ministry']}** — {m['behaviour']}. {m['example'][:300]} "
+                     f"([source]({m['url']}))")
+        L += ["", "**Ministries that do not:**", ""]
+        for m in pl["ministries_that_do_not"]:
+            line = f"- **{m['ministry']}** — {m['behaviour']}. {m['evidence'][:340]} ([source]({m['url']}))"
+            if m.get("exception"):
+                line += f" *Exception:* {m['exception'][:200]}"
+            L.append(line)
+        L += ["", f"*Corpus: {pl['corpus']}*", ""]
+
     L += ["## How to use this", "",
           "The **quiet investors** are the actionable list: they are spending money in India now, and no arm "
           "of government is visibly engaging them. The **state-publicised** names show which states are "

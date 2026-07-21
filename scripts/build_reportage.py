@@ -100,7 +100,7 @@ SCHEMES = [
  (r"credit guarantee scheme for startups|\bCGSS\b", "CGSS (startups)", "DPIIT"),
  (r"\bECLGS\b|emergency credit line", "ECLGS", "Finance"),
  (r"BHIM|UPI.{0,25}incentive", "UPI incentive scheme", "MeitY"),
- (r"\bSHAKTI\b.{0,30}coal|coal.{0,30}\bSHAKTI\b", "SHAKTI coal allocation", "Coal"),
+ (r"\bSHAKTI\b.{0,60}(coal|koyala)|(coal|koyala).{0,60}\bSHAKTI\b", "SHAKTI coal allocation", "Coal"),
  (r"\bADEETIE\b|energy.?efficien.{0,30}MSME", "ADEETIE (EE interest subsidy)", "Power/BEE"),
  (r"\bSPMEPCI\b|electric passenger car", "SPMEPCI (EV import-duty scheme)", "Heavy Industries"),
  (r"diamond imprest", "Diamond Imprest Authorisation", "Commerce"),
@@ -109,6 +109,28 @@ SCHEMES = [
  (r"skill india programme", "Skill India Programme (incl. PM-NAPS)", "MSDE"),
 ]
 COMP = [(re.compile(p, re.I), s, m) for p, s, m in SCHEMES]
+# PLI sector split: refine the generic "PLI (family)" label using title sector cues
+PLI_SECTORS = [
+ (re.compile(r"auto|automobile", re.I), "PLI — Auto & Components"),
+ (re.compile(r"white goods|air condition|\bLED\b", re.I), "PLI — White Goods"),
+ (re.compile(r"drone", re.I), "PLI — Drones"),
+ (re.compile(r"textile|MMF|man.?made", re.I), "PLI — Textiles"),
+ (re.compile(r"pharma|drug|medical device|API|KSM", re.I), "PLI — Pharma/MedDev"),
+ (re.compile(r"food", re.I), "PLI — Food Processing"),
+ (re.compile(r"steel", re.I), "PLI — Specialty Steel"),
+ (re.compile(r"telecom", re.I), "PLI — Telecom"),
+ (re.compile(r"IT hardware|laptop|server", re.I), "PLI — IT Hardware"),
+ (re.compile(r"solar|module", re.I), "PLI — Solar Modules"),
+ (re.compile(r"electronics|mobile|smartphone", re.I), "PLI — Electronics/LSEM"),
+ (re.compile(r"battery|advanced chemistry|\bACC\b", re.I), "PLI — ACC Battery"),
+]
+def refine_pli(label, title):
+    if label != "PLI (family)":
+        return label
+    for rx, sub in PLI_SECTORS:
+        if rx.search(title or ""):
+            return sub
+    return "PLI (general)"
 # generic incentive-language filter for line-ministry releases
 GENERIC = re.compile(r"cabinet approv|incentive|subsid|scheme launch|\bVGF\b|outlay|crore package", re.I)
 
@@ -129,6 +151,7 @@ def main():
         is_cab = ministry.startswith("Cabinet")
         q = quarter_of(date)
         if hits:
+            hits = [(refine_pli(s, title), m) for s, m in hits]
             by_q[q]["mapped"].append((date, prid, ministry, title, hits[:2]))
         elif is_cab and GENERIC.search(title or ""):
             by_q[q]["cabinet_other"].append((date, prid, ministry, title))

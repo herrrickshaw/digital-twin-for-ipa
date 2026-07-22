@@ -30,6 +30,7 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 18 | `layers/18_state_monitor.json` | **State incentive monitor** — 15 states' status + funds evidence from public records (disbursals vs approvals vs MoUs; the arrears divide: TG/AP/PB/J&K vs MP/RJ; transparency divide: RJ/GJ publish, MH/KA don't) |
 | 16 | `layers/16_leads.json` | **Leads generation** — **263 leads across 26 countries**: 147 yfinance-verified-profitable US/India firms (US leads carry SEC 10-K India/APAC mention-mining with YoY trend) + 116 annual-report deep-dive leads from 19 more countries (JP/KR/CN/UK/AU + DACH/NL, France/South-EU/Nordics, TW/HK/SG, CA/BR/ZA/Saudi/Israel) with quoted evidence, yfinance tickers, and per-region policy context (PN3, TEPA, SHANTI, ECTA); view: [docs/LEADS.md](docs/LEADS.md) |
 | 25 | `layers/25_land_incentive_linkages.json` | **Land availability × open incentives (cross-repo linkage)** — joins the twin's scheme monitor with industrial-land data from sibling repos: the two operational facts an investor needs — WHERE developed land is vacant (IILB 37-state, 125,602 vacant plots) and WHICH windows are open right now (10 open central incentives). Built by `scripts/build_layer25_linkages.py` |
+| 26 | `layers/26_project_pipeline.json` | **Investment-project pipeline — IIG / NIP + PM Gati Shakti** — the actual government-listed projects an investor can enter, from the [India Investment Grid](https://www.indiainvestmentgrid.gov.in) (public window onto the National Infrastructure Pipeline, the set PM Gati Shakti coordinates): **12,385 NIP opportunities across 42 sectors** + flagship projects (live), each sector mapped to its twin incentive lane. Built by `scripts/build_layer26_projects.py` |
 
 ## Leads generation (layer 16)
 
@@ -52,6 +53,8 @@ land data live from the policy repo).
 
 **The linked insight**: a company eligible for a sector-agnostic open central incentive can site in the land-rich states without a land constraint — but the pending IEM pipeline is metals/chemicals-heavy, so heavy-industry siting still faces the land deficit quantified in the policy repo's supply/demand scenarios.
 
+**Project pipeline** (layer 26, from [India Investment Grid](https://www.indiainvestmentgrid.gov.in) / NIP — the same pipeline **PM Gati Shakti** coordinates): **12,385 NIP opportunities across 42 sectors** — Roads & Highways 2,306 ($314bn), Healthcare 1,153, Waste & Water 1,020 ($76bn), Real Estate 950, Railways 850, Education 858, Electricity Generation 650, Electronic Manufacturing 567. Each sector is mapped to its twin incentive lane (Electronic Manufacturing → Semicon/ISM 2.0/ECMS; Roads/Railways → Gati Shakti; Food Processing → PLI-FPI/AIF …), and flagship projects (Western DFC $15.6bn, Ganga Expressway $4.6bn, Jal Jeevan Mission $34.8bn) are pulled live from IIG's `rawData` endpoint. Gati Shakti's own GIS master-plan portal is login-gated (state/ministry SSO), so IIG is the machine-readable public surface for the same project set. **Together layers 25 + 26 answer WHERE (land) + WHAT INCENTIVE + WHICH PROJECT** for a siting decision.
+
 | Related repo | Feeds the twin | Into layer |
 |---|---|---|
 | [india-trade-sector-policy-recommendations](https://github.com/herrrickshaw/india-trade-sector-policy-recommendations) | Industrial land availability + IEM demand match + supply/demand scenarios | 25, 05 |
@@ -59,6 +62,8 @@ land data live from the policy repo).
 | [india-trade-tracker](https://github.com/herrrickshaw/india-trade-tracker) | DGFT EIDB trade flows — import-heavy = substitution targets | 16, 06 |
 | [focus-sector-investor-map](https://github.com/herrrickshaw/focus-sector-investor-map) | Global company pools per incentivized sector | 06, 07 |
 | [discom-debt-and-revenue-models](https://github.com/herrrickshaw/discom-debt-and-revenue-models) | State DISCOM health — power-cost context for siting under RDSS | 17 |
+
+**External government pipelines linked** (layer 26): [India Investment Grid](https://www.indiainvestmentgrid.gov.in) (NIP, 12,385 projects — public), **PM Gati Shakti** (same NIP pipeline; GIS portal login-gated), and IIG's own linked **Industrial Information System** (= the IILB land bank already used in layer 25) and **Project Monitoring Group** — confirming land, projects and incentives are one system.
 
 ## Auto-update scripts
 

@@ -1,0 +1,340 @@
+{
+ "layer": 26,
+ "title": "Investment-project pipeline — IIG / NIP + PM Gati Shakti",
+ "built": "2026-07-22",
+ "purpose": "Link the twin's incentive catalogue to the actual government-listed project pipeline investors can enter, from the India Investment Grid (public window onto the National Infrastructure Pipeline / PM Gati Shakti).",
+ "source": {
+  "portal": "India Investment Grid (indiaindustriallandbank sibling; DPIIT / Invest India, run by TCS)",
+  "url": "https://www.indiainvestmentgrid.gov.in",
+  "pipeline": "National Infrastructure Pipeline (NIP) — the project set PM Gati Shakti coordinates",
+  "access": {
+   "sector_aggregates": "d3 chart on /analytics/india-overview (scraped to 26_iig_sector_seed.json; sector id = IIG filter key)",
+   "flagship_projects": "GET /opportunities/nip-projects?rawData=true&page=N (HTML fragment, parsed live)",
+   "gati_shakti_portal": "pmgatishakti.gov.in / GIS master plan = login-gated (state/ministry SSO), 404/timeout to anon — IIG is the public surface for the same pipeline"
+  }
+ },
+ "pipeline_totals": {
+  "sectors": 42,
+  "total_nip_opportunities": 12385,
+  "headline_sector_values_usd_bn": {
+   "Roads & Highways": 314.21,
+   "Waste & Water": 76.36,
+   "Healthcare": 33.0
+  }
+ },
+ "sectors": [
+  {
+   "name": "Roads & Highways",
+   "opportunities": 2306,
+   "iig_filter_id": 107,
+   "twin_incentive_lane": "PM Gati Shakti / NIP (MoRTH); Bharatmala"
+  },
+  {
+   "name": "Healthcare",
+   "opportunities": 1153,
+   "iig_filter_id": 113,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Waste & Water",
+   "opportunities": 1020,
+   "iig_filter_id": 18,
+   "twin_incentive_lane": "Jal Jeevan Mission, AMRUT (MoHUA/Jal Shakti)"
+  },
+  {
+   "name": "Real Estate",
+   "opportunities": 950,
+   "iig_filter_id": 9,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Education",
+   "opportunities": 858,
+   "iig_filter_id": 31,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Railways",
+   "opportunities": 850,
+   "iig_filter_id": 108,
+   "twin_incentive_lane": "PM Gati Shakti / NIP (Railways); Dedicated Freight Corridors"
+  },
+  {
+   "name": "Electricity Generation",
+   "opportunities": 650,
+   "iig_filter_id": 3,
+   "twin_incentive_lane": "NGHM SIGHT, RE bids (SECI)"
+  },
+  {
+   "name": "Water Resources",
+   "opportunities": 632,
+   "iig_filter_id": 112,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Electronic Manufacturing",
+   "opportunities": 567,
+   "iig_filter_id": 34,
+   "twin_incentive_lane": "Semicon/ISM 2.0, ECMS, IT Hardware PLI"
+  },
+  {
+   "name": "Food Processing & Agriculture",
+   "opportunities": 400,
+   "iig_filter_id": 1,
+   "twin_incentive_lane": "PLI-FPI, Agriculture Infrastructure Fund"
+  },
+  {
+   "name": "Transmission & Distribution",
+   "opportunities": 390,
+   "iig_filter_id": 102,
+   "twin_incentive_lane": "RDSS"
+  },
+  {
+   "name": "Oil & Gas",
+   "opportunities": 288,
+   "iig_filter_id": 12,
+   "twin_incentive_lane": "MoPNG city-gas / refinery incentives"
+  },
+  {
+   "name": "Tourism, Hospitality & Wellness",
+   "opportunities": 267,
+   "iig_filter_id": 8,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Urban Public Transport",
+   "opportunities": 216,
+   "iig_filter_id": 111,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Retail & E-commerce",
+   "opportunities": 196,
+   "iig_filter_id": 20,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Aviation & Aviation Infrastructure",
+   "opportunities": 148,
+   "iig_filter_id": 110,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Coal",
+   "opportunities": 145,
+   "iig_filter_id": 123,
+   "twin_incentive_lane": "Coal gasification incentives"
+  },
+  {
+   "name": "BFSI",
+   "opportunities": 128,
+   "iig_filter_id": 27,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Inland Waterways",
+   "opportunities": 128,
+   "iig_filter_id": 10,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "IT/ITES",
+   "opportunities": 126,
+   "iig_filter_id": 15,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Energy Storage",
+   "opportunities": 115,
+   "iig_filter_id": 103,
+   "twin_incentive_lane": "PLI-ACC batteries"
+  },
+  {
+   "name": "Shipping",
+   "opportunities": 114,
+   "iig_filter_id": 109,
+   "twin_incentive_lane": "Shipbuilding package (SBFAS 2.0)"
+  },
+  {
+   "name": "Automotive",
+   "opportunities": 107,
+   "iig_filter_id": 4,
+   "twin_incentive_lane": "PLI-Auto & Auto Components, PM E-DRIVE"
+  },
+  {
+   "name": "Sports",
+   "opportunities": 96,
+   "iig_filter_id": 114,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Pharma, Biotech & Lifesciences",
+   "opportunities": 94,
+   "iig_filter_id": 23,
+   "twin_incentive_lane": "PLI-Pharma, Bulk Drug Parks"
+  },
+  {
+   "name": "Telecommunication",
+   "opportunities": 84,
+   "iig_filter_id": 30,
+   "twin_incentive_lane": "BharatNet, PLI-Telecom"
+  },
+  {
+   "name": "Logistics Infrastructure",
+   "opportunities": 73,
+   "iig_filter_id": 7,
+   "twin_incentive_lane": "PM Gati Shakti National Logistics Policy"
+  },
+  {
+   "name": "Media",
+   "opportunities": 70,
+   "iig_filter_id": 28,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Steel",
+   "opportunities": 40,
+   "iig_filter_id": 104,
+   "twin_incentive_lane": "PLI-Specialty Steel"
+  },
+  {
+   "name": "Gems and Jewellery",
+   "opportunities": 36,
+   "iig_filter_id": 26,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Food Processing",
+   "opportunities": 31,
+   "iig_filter_id": 116,
+   "twin_incentive_lane": "PLI-FPI, AIF"
+  },
+  {
+   "name": "Construction",
+   "opportunities": 28,
+   "iig_filter_id": 115,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Metals & Mining",
+   "opportunities": 24,
+   "iig_filter_id": 122,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Chemicals",
+   "opportunities": 12,
+   "iig_filter_id": 121,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Utility and Resources Pipelines",
+   "opportunities": 11,
+   "iig_filter_id": 106,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Defence",
+   "opportunities": 10,
+   "iig_filter_id": 14,
+   "twin_incentive_lane": "Defence corridors, iDEX"
+  },
+  {
+   "name": "Textiles",
+   "opportunities": 10,
+   "iig_filter_id": 118,
+   "twin_incentive_lane": "PLI-Textiles, PM MITRA parks"
+  },
+  {
+   "name": "Fisheries and Aquaculture",
+   "opportunities": 4,
+   "iig_filter_id": 101,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Leather",
+   "opportunities": 3,
+   "iig_filter_id": 117,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Textiles & Apparel",
+   "opportunities": 3,
+   "iig_filter_id": 119,
+   "twin_incentive_lane": "PLI-Textiles, PM MITRA parks"
+  },
+  {
+   "name": "Consumer Goods",
+   "opportunities": 2,
+   "iig_filter_id": 124,
+   "twin_incentive_lane": null
+  },
+  {
+   "name": "Machinery & Equipment",
+   "opportunities": 0,
+   "iig_filter_id": 120,
+   "twin_incentive_lane": null
+  }
+ ],
+ "flagship_projects": [
+  {
+   "project_id": "700001",
+   "name": "Pradhan Mantri Gram Sadak Yojana Project",
+   "value_usd_bn": 46.9,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/700001"
+  },
+  {
+   "project_id": "703243",
+   "name": "Nagpur- Mumbai Super Communication Expressway Upgradation Project",
+   "value_usd_bn": 6.96,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/703243"
+  },
+  {
+   "project_id": "703214",
+   "name": "Ganga Expressway Road Construction Project",
+   "value_usd_bn": 4.56,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/703214"
+  },
+  {
+   "project_id": "703058",
+   "name": "Jal Jeevan Mission Implementation Project",
+   "value_usd_bn": 34.83,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/703058"
+  },
+  {
+   "project_id": "703782",
+   "name": "Waste Water Management Project",
+   "value_usd_bn": 1.26,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/703782"
+  },
+  {
+   "project_id": "703781",
+   "name": "Piped Water Supply Infrastructure Project",
+   "value_usd_bn": 0.943,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/703781"
+  },
+  {
+   "project_id": "617380",
+   "name": "Quadrupling of Wardha Balharshah 135KM on Delhi Chennai High Density Network HDN Route",
+   "value_usd_bn": 0.2799,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/617380"
+  },
+  {
+   "project_id": "705237",
+   "name": "Western Dedicated Freight Corridor",
+   "value_usd_bn": 15.59,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/705237"
+  },
+  {
+   "project_id": "705255",
+   "name": "Manufacturing of Passenger Coach Project",
+   "value_usd_bn": 15.3,
+   "url": "https://www.indiainvestmentgrid.gov.in/opportunities/nip-project/705255"
+  }
+ ],
+ "linkage": {
+  "to_layer_25": "Projects need land (layer 25 IILB vacant land) and open incentives (layer 25 scheme monitor) — together layers 25+26 give WHERE + WHAT-INCENTIVE + WHICH-PROJECT for a siting decision.",
+  "to_layer_02_17": "twin_incentive_lane maps each IIG sector to the central instrument(s) that fund projects in it.",
+  "cross_repo": "IIG's own footer links the Industrial Information System (= IILB land bank used in layer 25) and the Project Monitoring Group — land, projects and incentives are one system."
+ }
+}

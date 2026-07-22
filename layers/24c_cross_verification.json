@@ -53,7 +53,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "showcase page + cement report; Rs 10,255 cr expansion covered"
   },
   {
    "company": "Shree Cement",
@@ -83,7 +85,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "showcase page + Feb-2026 infographic"
   },
   {
    "company": "Tata Steel",
@@ -119,7 +123,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "showcase page"
   },
   {
    "company": "ArcelorMittal Nippon Steel",
@@ -166,7 +172,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "steel report/news: Kendrapada 12 MT plan"
   },
   {
    "company": "JSW Steel",
@@ -208,7 +216,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "showcase page; JSW-POSCO JV covered"
   },
   {
    "company": "Hindalco",
@@ -238,7 +248,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "showcase page"
   },
   {
    "company": "Rungta Sons",
@@ -272,7 +284,9 @@
    "state_govt_announcement": true,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "passing mention only (2020 mining-lease news)"
   },
   {
    "company": "Superform Chemistries",
@@ -294,7 +308,8 @@
    "state_govt_announcement": true,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": false
   },
   {
    "company": "JK Lakshmi Cement",
@@ -322,7 +337,9 @@
    "state_govt_announcement": true,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE AA; Stable (LT, Rs 2,770.47 cr) / CARE A1+ (ST, Rs 1,300 cr), reaffirmed"
+   "rating": "CARE AA; Stable (LT, Rs 2,770.47 cr) / CARE A1+ (ST, Rs 1,300 cr), reaffirmed",
+   "ibef": true,
+   "ibef_context": "passing mention only (2015 news)"
   },
   {
    "company": "Ambuja (Cements+Concrete N.)",
@@ -364,7 +381,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "none found -- entity itself unrated (100% subsidiary of Ambuja Cements Ltd, which is CARE AAA/A1+ per CARE PR of Oct-2025 and CRISIL AAA/Stable/A1+)"
+   "rating": "none found -- entity itself unrated (100% subsidiary of Ambuja Cements Ltd, which is CARE AAA/A1+ per CARE PR of Oct-2025 and CRISIL AAA/Stable/A1+)",
+   "ibef": null
   },
   {
    "company": "Bharat Rasayan",
@@ -385,7 +403,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE AA-; Stable (LT) / CARE A1+ (ST and CP), reaffirmed; approach revised standalone-to-consolidated with Nissan Bharat Rasayan JV"
+   "rating": "CARE AA-; Stable (LT) / CARE A1+ (ST and CP), reaffirmed; approach revised standalone-to-consolidated with Nissan Bharat Rasayan JV",
+   "ibef": false
   },
   {
    "company": "Matrix Pharmacorp",
@@ -410,7 +429,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CRISIL: AA-/Stable (NCDs aggregating Rs 2,500 cr, reaffirmed)"
+   "rating": "CRISIL: AA-/Stable (NCDs aggregating Rs 2,500 cr, reaffirmed)",
+   "ibef": false
   },
   {
    "company": "Rexxon Speciality",
@@ -430,7 +450,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": false
   },
   {
    "company": "Hemanjali Polymers",
@@ -450,7 +471,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": false
   },
   {
    "company": "Reliance BP Mobility (Jio-bp)",
@@ -476,7 +498,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE AAA; Stable (LT bank facilities Rs 1,055 cr) / with LT/ST facilities also rated"
+   "rating": "CARE AAA; Stable (LT bank facilities Rs 1,055 cr) / with LT/ST facilities also rated",
+   "ibef": false
   },
   {
    "company": "Nayara Energy",
@@ -510,7 +533,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE AA- (Rating Watch with Negative Implications) on LT facilities Rs 11,453.71 cr and NCDs Rs 256.84 cr / CARE A1+ (RWN) on ST Rs 14,350 cr -- placed on watch after US sanctions on Rosneft/Lukoil effective 21-Nov-2025"
+   "rating": "CARE AA- (Rating Watch with Negative Implications) on LT facilities Rs 11,453.71 cr and NCDs Rs 256.84 cr / CARE A1+ (RWN) on ST Rs 14,350 cr -- placed on watch after US sanctions on Rosneft/Lukoil effective 21-Nov-2025",
+   "ibef": true,
+   "ibef_context": "news: Rosneft's Nayara retail expansion"
   },
   {
    "company": "HPCL-Mittal (HMEL)",
@@ -548,7 +573,9 @@
    "state_govt_announcement": true,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": true,
+   "ibef_context": "sector-report PDFs only, no feature"
   },
   {
    "company": "KPI Green Energy",
@@ -568,7 +595,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "ICRA: A (Positive) / A2+ (bank lines); Provisional [ICRA]AA+(CE) (Stable) on Rs 700 cr NCDs (GuarantCo-backed)"
+   "rating": "ICRA: A (Positive) / A2+ (bank lines); Provisional [ICRA]AA+(CE) (Stable) on Rs 700 cr NCDs (GuarantCo-backed)",
+   "ibef": true,
+   "ibef_context": "renewables page: KPI-Inox Solar 2.5 GW MoU"
   },
   {
    "company": "Kansai Nerolac",
@@ -590,7 +619,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CRISIL: AAA/Stable (2025-05-27)"
+   "rating": "CRISIL: AAA/Stable (2025-05-27)",
+   "ibef": true,
+   "ibef_context": "contact-directory PDF only, no editorial"
   },
   {
    "company": "Jindal Cement",
@@ -618,7 +649,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE (CareEdge): A-; Stable / A2+ (2026-04-08; Rs 2,169.78 cr LT facilities)"
+   "rating": "CARE (CareEdge): A-; Stable / A2+ (2026-04-08; Rs 2,169.78 cr LT facilities)",
+   "ibef": null
   },
   {
    "company": "Sufalam Metals",
@@ -644,7 +676,8 @@
    "state_govt_announcement": true,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": null
   },
   {
    "company": "Shakambhari Ispat",
@@ -666,7 +699,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "Acuite: A-/Stable, A2+ (2025-03-27, upgraded from BBB+, Rs 1,720.66 cr facilities)"
+   "rating": "Acuite: A-/Stable, A2+ (2025-03-27, upgraded from BBB+, Rs 1,720.66 cr facilities)",
+   "ibef": false
   },
   {
    "company": "IMFA",
@@ -692,7 +726,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": false,
-   "rating": null
+   "rating": null,
+   "ibef": null
   },
   {
    "company": "Nuvoco Vistas",
@@ -718,7 +753,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CRISIL: AA / AA- Stable, A1+ (watch removed, rationale 14-Jan-2026)"
+   "rating": "CRISIL: AA / AA- Stable, A1+ (watch removed, rationale 14-Jan-2026)",
+   "ibef": true,
+   "ibef_context": "news mention (Nirma/Emami acquisition)"
   },
   {
    "company": "Allied Blenders",
@@ -739,7 +776,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "India Ratings: IND A / Positive (upgraded from A-, FY26)"
+   "rating": "India Ratings: IND A / Positive (upgraded from A-, FY26)",
+   "ibef": false
   },
   {
    "company": "TruAlt Bioenergy",
@@ -759,7 +797,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "Acuite: BBB / Stable (Jun 2024, Rs 874 cr facilities); no CARE/CRISIL rationale found"
+   "rating": "Acuite: BBB / Stable (Jun 2024, Rs 874 cr facilities); no CARE/CRISIL rationale found",
+   "ibef": false
   },
   {
    "company": "IOL Chemicals",
@@ -785,7 +824,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE: A+ (LT) / A1+ (ST), reaffirmed Jul-2025"
+   "rating": "CARE: A+ (LT) / A1+ (ST), reaffirmed Jul-2025",
+   "ibef": false
   },
   {
    "company": "Orchid Pharma",
@@ -805,7 +845,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": "PLI BENEFICIARY -- approved 2023 under KSM/API PLI for 7-ACA (not Penicillin-G)",
    "credit_rating_public": true,
-   "rating": "CARE: A- (RWD) through 2025; DOWNGRADED to BBB+/Stable Apr-2026"
+   "rating": "CARE: A- (RWD) through 2025; DOWNGRADED to BBB+/Stable Apr-2026",
+   "ibef": false
   },
   {
    "company": "Anthem Biosciences",
@@ -825,7 +866,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "ICRA: reaffirmed, amount enhanced, outlook Positive (2025-06-20)"
+   "rating": "ICRA: reaffirmed, amount enhanced, outlook Positive (2025-06-20)",
+   "ibef": false,
+   "ibef_context": "absent even for its Rs 3,395 cr IPO"
   },
   {
    "company": "Piramal Pharma",
@@ -851,7 +894,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE: AA/Stable (upgraded, Jul-2025)"
+   "rating": "CARE: AA/Stable (upgraded, Jul-2025)",
+   "ibef": true,
+   "ibef_context": "pharma sector reports"
   },
   {
    "company": "Aarti Pharmalabs",
@@ -878,7 +923,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": "group co Aarti Industries/Speciality was KSM-PLI beneficiary, not this entity",
    "credit_rating_public": true,
-   "rating": "CRISIL: AA-/Stable (upgraded from A+, 2025-07-17)"
+   "rating": "CRISIL: AA-/Stable (upgraded from A+, 2025-07-17)",
+   "ibef": false
   },
   {
    "company": "Aarti Drugs",
@@ -899,7 +945,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": "group entities in KSM-PLI lists, not Aarti Drugs itself",
    "credit_rating_public": true,
-   "rating": "ICRA reaffirmed (Jan-2025); CRISIL outstanding (Oct-2024)"
+   "rating": "ICRA reaffirmed (Jan-2025); CRISIL outstanding (Oct-2024)",
+   "ibef": false
   },
   {
    "company": "Lanxess",
@@ -924,7 +971,9 @@
    "state_govt_announcement": true,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "unrated (parent-funded, no India-arm rationale)"
+   "rating": "unrated (parent-funded, no India-arm rationale)",
+   "ibef": true,
+   "ibef_context": "news: LANXESS-HPCL lubricants MoU"
   },
   {
    "company": "SRF",
@@ -950,7 +999,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CRISIL: AA+/Stable/A1+ (May-2025); Ind-Ra AA+ affirmed"
+   "rating": "CRISIL: AA+/Stable/A1+ (May-2025); Ind-Ra AA+ affirmed",
+   "ibef": true,
+   "ibef_context": "chemicals sustainability blog + sector reports"
   },
   {
    "company": "Pernod Ricard",
@@ -970,7 +1021,9 @@
    "state_govt_announcement": true,
    "pli_ebp_register": "not EBP (potable malt spirit); benefits Maharashtra mega-project incentives + UK-India CETA scotch dynamics",
    "credit_rating_public": true,
-   "rating": "unrated in India (funded by Pernod Ricard SA, international IG)"
+   "rating": "unrated in India (funded by Pernod Ricard SA, international IG)",
+   "ibef": false,
+   "ibef_context": "absent despite #2 spirits player"
   },
   {
    "company": "HS Hyosung",
@@ -990,7 +1043,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": "MMF = core textiles-PLI category; participation not confirmed",
    "credit_rating_public": true,
-   "rating": "unrated in India (Korean-parent-funded)"
+   "rating": "unrated in India (Korean-parent-funded)",
+   "ibef": false,
+   "ibef_context": "absent even for the $100M AURIC spandex FDI story"
   },
   {
    "company": "Keyaan Distilleries",
@@ -1010,7 +1065,8 @@
    "state_govt_announcement": true,
    "pli_ebp_register": "EBP participant -- 100% OMC offtake under blending programme",
    "credit_rating_public": true,
-   "rating": "CARE: BBB+ (CE); Stable on Rs 400 cr (2025-07-30; standalone BB+)"
+   "rating": "CARE: BBB+ (CE); Stable on Rs 400 cr (2025-07-30; standalone BB+)",
+   "ibef": false
   },
   {
    "company": "Kamakhya Biofuels",
@@ -1030,7 +1086,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": "EBP participant -- GoI-selected with long-term OMC offtake",
    "credit_rating_public": true,
-   "rating": "CRISIL: BBB+/Stable (2025-11-25)"
+   "rating": "CRISIL: BBB+/Stable (2025-11-25)",
+   "ibef": false
   },
   {
    "company": "Grasim",
@@ -1062,7 +1119,9 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "India Ratings: IND AAA/Stable"
+   "rating": "India Ratings: IND AAA/Stable",
+   "ibef": true,
+   "ibef_context": "news + state/manufacturing reports"
   },
   {
    "company": "Sigachi",
@@ -1088,7 +1147,8 @@
    "state_govt_announcement": false,
    "pli_ebp_register": null,
    "credit_rating_public": true,
-   "rating": "CARE: BBB (DOWNGRADED from BBB+, 2026-02-24; earlier A- -> BBB+ negative watch post-accident)"
+   "rating": "CARE: BBB (DOWNGRADED from BBB+, 2026-02-24; earlier A- -> BBB+ negative watch post-accident)",
+   "ibef": false
   },
   {
    "company": "Virupaksha Organics",
@@ -1109,7 +1169,45 @@
    "state_govt_announcement": false,
    "pli_ebp_register": "not confirmed among Telangana's 13 approved PLI bulk-drug projects",
    "credit_rating_public": true,
-   "rating": "India Ratings: IND A-/Stable (upgraded from BBB+)"
+   "rating": "India Ratings: IND A-/Stable (upgraded from BBB+)",
+   "ibef": false
   }
- ]
+ ],
+ "ibef_check": {
+  "run": "2026-07-22",
+  "source": "site:ibef.org sweeps (IBEF = Commerce-Ministry trust; quasi-official promotion channel)",
+  "themes": [
+   {
+    "theme": "Specialty chemicals / China import-substitution",
+    "ibef_covers": true,
+    "stance": "Strong match: cites Crisil's specialty-chem global share doubling to 6% by 2026, explicitly on import substitution + China+1",
+    "url": "https://www.ibef.org/news/india-s-share-in-global-specialty-chemicals-market-to-double-in-5-years-crisil"
+   },
+   {
+    "theme": "Bulk drugs / API-KSM PLI",
+    "ibef_covers": true,
+    "stance": "Extensive: republishes DoP PLI approvals (Rs 6,940 cr outlay, 46 applications) framed as reducing China dependence -- names scheme totals, NOT the individual builders",
+    "url": "https://www.ibef.org/news/approvals-accorded-under-production-linked-incentive-pli-scheme-for-promotion-of-domestic-manufacturing-of-critical-key-starting-materials-ksms-drug-intermediates-and-active-pharmaceutical-ingredients-apis"
+   },
+   {
+    "theme": "Ethanol Blending Programme",
+    "ibef_covers": true,
+    "stance": "Celebratory: E20 five years early, Rs 99,000 cr forex saved -- yet none of the quiet distillery builders are named",
+    "url": "https://www.ibef.org/news/india-achieves-20-ethanol-blending-target-five-years-ahead-of-schedule-indian-sugar-bio-energy-manufacturers-association-isma"
+   },
+   {
+    "theme": "MMF / textiles PLI",
+    "ibef_covers": true,
+    "stance": "Covered (Rs 10,683 cr PLI, +75% MMF exports by 2030) -- but Hyosung, the largest foreign MMF investor, is absent from IBEF's index",
+    "url": "https://www.ibef.org/news/manmade-fibre-textiles-exports-to-rise-75-by-2030-textile-industry"
+   }
+  ],
+  "verdict": "IBEF coverage correlates with LISTING STATUS and announcement volume, not clearance-register activity: listed majors get showcase pages; ~20 of 43 checked names have zero IBEF footprint, including marquee FDI (Hyosung, Pernod Ricard) and ALL quiet builders. All four policy THEMES are actively promoted with the exact import-substitution/PLI framing -- IBEF validates the macro thesis while systematically missing the specific companies executing it. The clearance register is a differentiated, EARLIER signal than the quasi-official promotion channel.",
+  "unchecked": [
+   "Ambuja (Cements+Concrete N.)",
+   "Jindal Cement",
+   "Sufalam Metals",
+   "IMFA"
+  ]
+ }
 }

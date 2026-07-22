@@ -405,6 +405,10 @@ def render_policy_annex():
             return f'<td class="cv {cls}">{v}</td>' if v else '<td class="cv n">—</td>'
         nv = r.get("news_verdict") or ""
         nvc = {"ANNOUNCED":"y","PARTIALLY_VISIBLE":"p","QUIET":"q"}.get(nv,"n")
+        ib = r.get("ibef")   # True / False / None(=not checked)
+        ibcell = ('<td class="cv y">✓</td>' if ib is True
+                  else '<td class="cv n">—</td>' if ib is False
+                  else '<td class="cv" style="opacity:.3">·</td>')
         rows.append(
             f'<tr><td class="cn">{_h.escape(r["company"])}</td>'
             + cell(ec) + cell(fc)
@@ -413,6 +417,7 @@ def render_policy_annex():
             + cell("✓" if r.get("state_govt_announcement") else None)
             + cell("✓" if r.get("pli_ebp_register") else None)
             + cell("✓" if r.get("credit_rating_public") else None)
+            + ibcell
             + f'<td class="cv {nvc}">{nv.replace("_"," ").title() or "—"}</td></tr>')
     return f"""
 <section id="policy-annex" style="max-width:1100px;margin:40px auto 20px;padding:0 20px;">
@@ -432,7 +437,22 @@ via TruAlt), plus SRF's Odisha filings fronting the ₹10,000 cr pledge.</p>
 <p><b>4. Cross-verification: no name rests on one source.</b> All 41 headline companies ground-truth in the
 raw PARIVESH registers; only 17 have <i>ever</i> appeared in a PIB headline — the registers see ~2.4× more
 of these investors than PIB headlines do. IEM Part-B company data is held for only two sample months, so
-absence there is weak evidence.</p></div>
+absence there is weak evidence.</p>
+<p><b>5. Rating darkness is a screening signal.</b> Withdrawn or issuer-not-cooperating credit ratings
+cluster around exactly the companies expanding quietly — Farmson (CARE withdrawn 2023, world's largest
+paracetamol maker), RSL/RSLD (CARE withdrawn 2025 after disclosing SEBI/IT/ED promoter litigations),
+Bodal (CRISIL withdrawn), D&nbsp;R&nbsp;Coats and Matangi (non-cooperating, Matangi the same quarter it
+filed ECs), Sandhya (non-cooperating). Announcement darkness and rating darkness travel together:
+a live clearance filing plus a dead rating is itself a below-radar-expansion screen — and where the
+last rationale exists, it often carries the only adverse disclosures (litigations, guarantees) no
+other public source records.</p>
+<p><b>6. IBEF promotes the themes, misses the executors.</b> The Commerce-Ministry trust's coverage actively
+champions all four policy narratives — specialty-chem import substitution, API/KSM PLI, E20 ethanol, MMF PLI —
+with the exact framing this analysis uses. But its company coverage tracks <i>listing status</i>, not
+clearance activity: 20 of 37 checked names have zero IBEF footprint, including marquee FDI stories (Hyosung's
+$100M spandex plant, Pernod Ricard's ₹1,785 cr distillery) and every quiet builder. The quasi-official
+promotion channel validates the macro thesis while missing the specific companies executing it — the
+clearance register is the earlier, more complete signal.</p></div>
 <style>
 #policy-annex table{{border-collapse:collapse;width:100%;font-size:.78rem}}
 #policy-annex th{{font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;text-align:left;padding:5px 7px;border-bottom:1px solid var(--rule,#ccc);opacity:.7}}
@@ -444,7 +464,7 @@ absence there is weak evidence.</p></div>
 </style>
 <div class="scroll"><table>
 <thead><tr><th>Company</th><th>EC register<br>(all-time filings)</th><th>Forest reg.</th><th>PIB headlines<br>(2017-26)</th>
-<th>IEM Part-B<br>(2-mo sample)</th><th>State-govt<br>announcement</th><th>PLI / EBP<br>register</th><th>Public credit<br>rating</th><th>News verdict</th></tr></thead>
+<th>IEM Part-B<br>(2-mo sample)</th><th>State-govt<br>announcement</th><th>PLI / EBP<br>register</th><th>Public credit<br>rating</th><th>IBEF<br>coverage</th><th>News verdict</th></tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div>
 <p style="font-size:.72rem;opacity:.65;max-width:86ch;">EC/Forest counts are ground-truthed from the raw PARIVESH
 registers (all years, statuses, activities) and are deliberately broader than the 2025-26 live-manufacturing

@@ -321,7 +321,7 @@ def write_html(by_q, total):
         parts.append("</section>")
     tpl = open(os.path.join(ROOT, "docs/_reportage_template.html")).read()
     html_out = tpl.replace("__ROWS__", "\n".join(parts)).replace("__STATES__", render_states()).replace("__TOTAL__", str(total)).replace(
-        "__NQ__", str(len(by_q))).replace("__GEN__", datetime.date.today().isoformat())
+        "__NQ__", str(len(by_q))).replace("__GEN__", datetime.date.today().isoformat()).replace("__POLICY__", render_policy_annex())
     path = os.path.join(ROOT, "docs/reportage.html")
     open(path, "w").write(html_out)
     print(f"reportage html: {sum(len(v['mapped']) for v in by_q.values())} rows pre-rendered -> {path}")
@@ -374,11 +374,84 @@ def write_html_ministry(by_q, total):
         parts.append("</section>")
     tpl = open(os.path.join(ROOT, "docs/_reportage_ministry_template.html")).read()
     html_out = tpl.replace("__ROWS__", "\n".join(parts)).replace("__STATES__", render_states()).replace("__TOTAL__", str(total)).replace(
-        "__NQ__", str(len(by_min))).replace("__GEN__", datetime.date.today().isoformat())
+        "__NQ__", str(len(by_min))).replace("__GEN__", datetime.date.today().isoformat()).replace("__POLICY__", render_policy_annex())
     path = os.path.join(ROOT, "docs/reportage_ministry.html")
     open(path, "w").write(html_out)
     print(f"reportage ministry html: {sum(len(v) for v in by_min.values())} central rows + {len(strows)} state rows "
           f"across {len(by_min)} ministries -> {path}")
+
+
+
+
+def render_policy_annex():
+    """Annex: clearance-register policy findings + the source cross-verification
+    matrix (layer 24c). Injected into both reportage variants via __POLICY__.
+
+    The point of the matrix: no committed company name rests on a single source.
+    EC/FC counts are ground-truthed direct from the raw PARIVESH registers and
+    are deliberately BROADER (all years/statuses) than the 2025-26 lead subset."""
+    import html as _h
+    import json, os
+    p = os.path.join(ROOT, "layers/24c_cross_verification.json")
+    if not os.path.exists(p):
+        return ""
+    d = json.load(open(p))
+    rows = []
+    for r in sorted(d["companies"], key=lambda r: -( (r.get("ec_register") or {}).get("filings",0) + (r.get("fc_register") or {}).get("filings",0) )):
+        ec = (r.get("ec_register") or {}).get("filings")
+        fc = (r.get("fc_register") or {}).get("filings")
+        pib = (r.get("pib_headlines") or {}).get("headlines")
+        def cell(v, cls="y"):
+            return f'<td class="cv {cls}">{v}</td>' if v else '<td class="cv n">—</td>'
+        nv = r.get("news_verdict") or ""
+        nvc = {"ANNOUNCED":"y","PARTIALLY_VISIBLE":"p","QUIET":"q"}.get(nv,"n")
+        rows.append(
+            f'<tr><td class="cn">{_h.escape(r["company"])}</td>'
+            + cell(ec) + cell(fc)
+            + cell(pib)
+            + cell("✓" if r.get("iem_partB_sample") else None)
+            + cell("✓" if r.get("state_govt_announcement") else None)
+            + cell("✓" if r.get("pli_ebp_register") else None)
+            + cell("✓" if r.get("credit_rating_public") else None)
+            + f'<td class="cv {nvc}">{nv.replace("_"," ").title() or "—"}</td></tr>')
+    return f"""
+<section id="policy-annex" style="max-width:1100px;margin:40px auto 20px;padding:0 20px;">
+<h2 style="font-family:Georgia,serif;font-weight:500;">Annex — what the clearance registers add (policy findings)</h2>
+<div style="font-size:.92rem;max-width:80ch;line-height:1.55;">
+<p><b>1. Half of India's live industrial EC pipeline is chemicals.</b> Of 1,384 live corporate industrial
+filers beyond the verified leads, 51% file under synthetic-organic-chemicals — the China import-substitution
+story is already the dominant physical activity in the clearance register, mostly self-funded and mostly
+unannounced.</p>
+<p><b>2. The API localisation wave is running outside PLI.</b> The only confirmed KSM/API-PLI beneficiary
+in the 98 verified leads (Orchid Pharma, ₹600 cr 7-ACA) carries the cohort's worst execution profile
+(land delays, downgrade), while IOL, Farmson, Anthem, Aarti, Piramal and Virupaksha localise the same
+China-dependent chains self-funded. Land assembly, not incentive size, is the binding constraint.</p>
+<p><b>3. Verified foreign capex is visible in the registers before the press.</b> Lanxess (DE), Pernod
+Ricard (FR, ₹1,785 cr Nagpur), HS Hyosung (KR, ~₹3,000 cr cumulative), Kansai Nerolac (JP), Sumitomo (JP,
+via TruAlt), plus SRF's Odisha filings fronting the ₹10,000 cr pledge.</p>
+<p><b>4. Cross-verification: no name rests on one source.</b> All 41 headline companies ground-truth in the
+raw PARIVESH registers; only 17 have <i>ever</i> appeared in a PIB headline — the registers see ~2.4× more
+of these investors than PIB headlines do. IEM Part-B company data is held for only two sample months, so
+absence there is weak evidence.</p></div>
+<style>
+#policy-annex table{{border-collapse:collapse;width:100%;font-size:.78rem}}
+#policy-annex th{{font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;text-align:left;padding:5px 7px;border-bottom:1px solid var(--rule,#ccc);opacity:.7}}
+#policy-annex td{{padding:4px 7px;border-bottom:1px solid var(--rule,#e3e3dc)}}
+#policy-annex td.cn{{white-space:nowrap;font-weight:600}}
+#policy-annex td.cv{{text-align:center;font-variant-numeric:tabular-nums}}
+#policy-annex td.cv.n{{opacity:.35}} #policy-annex td.cv.y{{color:#2f7d4f}} #policy-annex td.cv.p{{color:#8a5a12}} #policy-annex td.cv.q{{color:#a5402c;font-weight:600}}
+#policy-annex .scroll{{overflow-x:auto}}
+</style>
+<div class="scroll"><table>
+<thead><tr><th>Company</th><th>EC register<br>(all-time filings)</th><th>Forest reg.</th><th>PIB headlines<br>(2017-26)</th>
+<th>IEM Part-B<br>(2-mo sample)</th><th>State-govt<br>announcement</th><th>PLI / EBP<br>register</th><th>Public credit<br>rating</th><th>News verdict</th></tr></thead>
+<tbody>{''.join(rows)}</tbody></table></div>
+<p style="font-size:.72rem;opacity:.65;max-width:86ch;">EC/Forest counts are ground-truthed from the raw PARIVESH
+registers (all years, statuses, activities) and are deliberately broader than the 2025-26 live-manufacturing
+subset used for lead scoring. PIB is a title-only index — annexure PDFs are a known blind spot. "Quiet" = live
+clearance filings with zero press. Sources &amp; data: layers/24_clearance_leads.json · 24b_pool_policy_triage.json ·
+24c_cross_verification.json. Generated {datetime.date.today().isoformat()}.</p>
+</section>"""
 
 
 if __name__ == "__main__":

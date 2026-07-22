@@ -1,0 +1,1115 @@
+{
+ "layer": "24c",
+ "name": "company_cross_verification",
+ "built": "2026-07-22",
+ "purpose": "Cross-verification of every committed lead company against every register we hold, so no name rests on a single source. EC/FC counts here are GROUND-TRUTHED direct from the raw PARIVESH registers (all years, all statuses, all activities) -- deliberately broader than the 2025-26 live-manufacturing subset used for lead scoring, so the two numbers differ by design.",
+ "coverage_notes": [
+  "EC/FC/CRZ: full raw-register regex match on nameOfUserAgency (fetched 2026-07-22)",
+  "PIB: 122,334-headline title index, 2017-2026 -- headline-level only, annexure PDFs not indexed (known blind spot)",
+  "IEM Part-B: company-level data held for ONLY two sample months (Mar-2024, Jul-2024) -- a narrow window; absence here is weak evidence",
+  "State-govt announcement: derived from verified news evidence (MoU/CM event/foundation/GO markers) in layer 24",
+  "PLI/EBP: scheme registers as surfaced in verification (Orchid = confirmed KSM-PLI beneficiary; Kamakhya/Keyaan = EBP offtake)",
+  "twin_layers: presence in any of the 30 other twin data layers (leads, visibility, PIB-vis, ministry catalog)"
+ ],
+ "headline": "ALL 41 committed names ground-truth in the raw clearance registers -- zero fabricated. Only 17/41 have EVER appeared in a PIB headline, re-confirming that title-indexed PIB is structurally blind to most real investment activity; the clearance registers see ~2.4x more of these investors than PIB headlines do.",
+ "companies": [
+  {
+   "company": "UltraTech Cement",
+   "ec_register": {
+    "filings": 147,
+    "states": {
+     "Rajasthan": 36,
+     "Madhya Pradesh": 32,
+     "Karnataka": 12
+    },
+    "latest": "2026-06-11"
+   },
+   "fc_register": {
+    "filings": 16,
+    "states": {
+     "Madhya Pradesh": 7,
+     "Maharashtra": 3,
+     "Uttar Pradesh": 2
+    },
+    "latest": "2026-07-02"
+   },
+   "crz_register": {
+    "filings": 1,
+    "states": {
+     "Tamil Nadu": 1
+    },
+    "latest": "2024-08-14"
+   },
+   "pib_headlines": {
+    "headlines": 3,
+    "latest": "2026-07-17",
+    "latest_title": "Accelerating Workers\u2019 Welfare: Chief Labour Commissioner (Central) Machinery Steps in to E"
+   },
+   "iem_partB_sample": true,
+   "twin_layers": [
+    "13"
+   ],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Shree Cement",
+   "ec_register": {
+    "filings": 52,
+    "states": {
+     "Rajasthan": 12,
+     "Karnataka": 7,
+     "Gujarat": 7
+    },
+    "latest": "2026-06-29"
+   },
+   "fc_register": {
+    "filings": 9,
+    "states": {
+     "Gujarat": 4,
+     "Maharashtra": 2,
+     "Chhattisgarh": 1
+    },
+    "latest": "2026-04-15"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Tata Steel",
+   "ec_register": {
+    "filings": 69,
+    "states": {
+     "Odisha": 35,
+     "Jharkhand": 22,
+     "Maharashtra": 5
+    },
+    "latest": "2026-07-21"
+   },
+   "fc_register": {
+    "filings": 39,
+    "states": {
+     "Odisha": 28,
+     "Jharkhand": 11
+    },
+    "latest": "2026-07-03"
+   },
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 3,
+    "latest": "2026-01-20",
+    "latest_title": "CCI approves acquisition of 50.01% equity share capital of Thriveni Pellets Pvt Ltd by Tat"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [
+    "16",
+    "19"
+   ],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "ArcelorMittal Nippon Steel",
+   "ec_register": {
+    "filings": 41,
+    "states": {
+     "Odisha": 19,
+     "Andhra Pradesh": 9,
+     "Gujarat": 8
+    },
+    "latest": "2026-07-13"
+   },
+   "fc_register": {
+    "filings": 13,
+    "states": {
+     "Odisha": 7,
+     "Chhattisgarh": 4,
+     "Andhra Pradesh": 2
+    },
+    "latest": "2026-06-04"
+   },
+   "crz_register": {
+    "filings": 3,
+    "states": {
+     "Gujarat": 2,
+     "Odisha": 1
+    },
+    "latest": "2026-01-24"
+   },
+   "pib_headlines": {
+    "headlines": 6,
+    "latest": "2026-07-07",
+    "latest_title": "Jindal, ArcelorMittal, Apollo Med-Skills among partners who come forward to Anchor \u20b9 1,237"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [
+    "06",
+    "07",
+    "16",
+    "19",
+    "21"
+   ],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "JSW Steel",
+   "ec_register": {
+    "filings": 104,
+    "states": {
+     "Karnataka": 55,
+     "Maharashtra": 13,
+     "Jharkhand": 8
+    },
+    "latest": "2026-07-03"
+   },
+   "fc_register": {
+    "filings": 62,
+    "states": {
+     "Karnataka": 38,
+     "Andhra Pradesh": 9,
+     "Odisha": 6
+    },
+    "latest": "2026-07-20"
+   },
+   "crz_register": {
+    "filings": 1,
+    "states": {
+     "Maharashtra": 1
+    },
+    "latest": "2025-01-20"
+   },
+   "pib_headlines": {
+    "headlines": 3,
+    "latest": "2026-01-25",
+    "latest_title": "From Waste to Wealth: CSIR-CRRI and JSW Steel, Salem Partner to Build Steel Slag Roads in "
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [
+    "16"
+   ],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Hindalco",
+   "ec_register": {
+    "filings": 28,
+    "states": {
+     "Gujarat": 10,
+     "Odisha": 7,
+     "Jharkhand": 3
+    },
+    "latest": "2026-06-25"
+   },
+   "fc_register": {
+    "filings": 12,
+    "states": {
+     "Gujarat": 4,
+     "Odisha": 3,
+     "Uttar Pradesh": 3
+    },
+    "latest": "2026-07-03"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Rungta Sons",
+   "ec_register": {
+    "filings": 58,
+    "states": {
+     "Odisha": 34,
+     "Chhattisgarh": 11,
+     "Jharkhand": 8
+    },
+    "latest": "2026-07-03"
+   },
+   "fc_register": {
+    "filings": 30,
+    "states": {
+     "Odisha": 15,
+     "Jharkhand": 11,
+     "Chhattisgarh": 3
+    },
+    "latest": "2026-07-15"
+   },
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 2,
+    "latest": "2025-07-15",
+    "latest_title": "CCI approves proposed combination involving acquisition of 100% shareholding in SMC Power "
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": true,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Superform Chemistries",
+   "ec_register": {
+    "filings": 19,
+    "states": {
+     "Gujarat": 15,
+     "Odisha": 2,
+     "West Bengal": 1
+    },
+    "latest": "2026-05-26"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": true,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "JK Lakshmi Cement",
+   "ec_register": {
+    "filings": 31,
+    "states": {
+     "Rajasthan": 12,
+     "Chhattisgarh": 6,
+     "Gujarat": 4
+    },
+    "latest": "2026-07-17"
+   },
+   "fc_register": {
+    "filings": 1,
+    "states": {
+     "Rajasthan": 1
+    },
+    "latest": "2025-09-23"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": true,
+   "twin_layers": [],
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "state_govt_announcement": true,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE AA; Stable (LT, Rs 2,770.47 cr) / CARE A1+ (ST, Rs 1,300 cr), reaffirmed"
+  },
+  {
+   "company": "Ambuja (Cements+Concrete N.)",
+   "ec_register": {
+    "filings": 121,
+    "states": {
+     "Rajasthan": 29,
+     "Gujarat": 23,
+     "West Bengal": 14
+    },
+    "latest": "2026-07-22"
+   },
+   "fc_register": {
+    "filings": 10,
+    "states": {
+     "Gujarat": 3,
+     "Maharashtra": 2,
+     "Punjab": 2
+    },
+    "latest": "2026-07-17"
+   },
+   "crz_register": {
+    "filings": 2,
+    "states": {
+     "West Bengal": 2
+    },
+    "latest": "2026-04-07"
+   },
+   "pib_headlines": {
+    "headlines": 3,
+    "latest": "2025-11-28",
+    "latest_title": "VOC Port receives the first Clinker vessel in line with the MoU with Ambuja Cement Limited"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [
+    "18"
+   ],
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "none found -- entity itself unrated (100% subsidiary of Ambuja Cements Ltd, which is CARE AAA/A1+ per CARE PR of Oct-2025 and CRISIL AAA/Stable/A1+)"
+  },
+  {
+   "company": "Bharat Rasayan",
+   "ec_register": {
+    "filings": 16,
+    "states": {
+     "Gujarat": 12,
+     "Haryana": 4
+    },
+    "latest": "2026-07-17"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE AA-; Stable (LT) / CARE A1+ (ST and CP), reaffirmed; approach revised standalone-to-consolidated with Nissan Bharat Rasayan JV"
+  },
+  {
+   "company": "Matrix Pharmacorp",
+   "ec_register": {
+    "filings": 5,
+    "states": {
+     "Telangana": 3,
+     "Andhra Pradesh": 2
+    },
+    "latest": "2025-10-06"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2024-02-13",
+    "latest_title": "CCI approves acquisition of 100% of the equity shares of Tianish Laboratories Private Limi"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CRISIL: AA-/Stable (NCDs aggregating Rs 2,500 cr, reaffirmed)"
+  },
+  {
+   "company": "Rexxon Speciality",
+   "ec_register": {
+    "filings": 4,
+    "states": {
+     "Gujarat": 4
+    },
+    "latest": "2026-04-20"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "QUIET",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Hemanjali Polymers",
+   "ec_register": {
+    "filings": 4,
+    "states": {
+     "Maharashtra": 4
+    },
+    "latest": "2026-03-10"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "QUIET",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Reliance BP Mobility (Jio-bp)",
+   "ec_register": null,
+   "fc_register": {
+    "filings": 135,
+    "states": {
+     "Uttar Pradesh": 61,
+     "Haryana": 38,
+     "Punjab": 19
+    },
+    "latest": "2026-07-20"
+   },
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2020-04-30",
+    "latest_title": "CCI approves BP Global proposed 49% acquisition of Reliance BP Mobility Limited (RBPML)"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE AAA; Stable (LT bank facilities Rs 1,055 cr) / with LT/ST facilities also rated"
+  },
+  {
+   "company": "Nayara Energy",
+   "ec_register": {
+    "filings": 8,
+    "states": {
+     "Andhra Pradesh": 4,
+     "Madhya Pradesh": 2,
+     "Gujarat": 2
+    },
+    "latest": "2025-05-29"
+   },
+   "fc_register": {
+    "filings": 52,
+    "states": {
+     "Uttar Pradesh": 18,
+     "Punjab": 13,
+     "Haryana": 13
+    },
+    "latest": "2026-06-23"
+   },
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2023-09-11",
+    "latest_title": "NTPC Green Energy Limited to collaborate with Nayara Energy for Green Hydrogen Production"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE AA- (Rating Watch with Negative Implications) on LT facilities Rs 11,453.71 cr and NCDs Rs 256.84 cr / CARE A1+ (RWN) on ST Rs 14,350 cr -- placed on watch after US sanctions on Rosneft/Lukoil effective 21-Nov-2025"
+  },
+  {
+   "company": "HPCL-Mittal (HMEL)",
+   "ec_register": {
+    "filings": 7,
+    "states": {
+     "Punjab": 7
+    },
+    "latest": "2026-03-19"
+   },
+   "fc_register": {
+    "filings": 18,
+    "states": {
+     "Uttar Pradesh": 10,
+     "Haryana": 6,
+     "Punjab": 2
+    },
+    "latest": "2026-07-08"
+   },
+   "crz_register": {
+    "filings": 1,
+    "states": {
+     "Gujarat": 1
+    },
+    "latest": "2023-11-28"
+   },
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2023-05-19",
+    "latest_title": "NTPC Green Energy Ltd. (NGEL) and HPCL Mittal Energy Ltd. (HMEL) sign MoU; HMEL to source "
+   },
+   "iem_partB_sample": true,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": true,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "KPI Green Energy",
+   "ec_register": null,
+   "fc_register": {
+    "filings": 36,
+    "states": {
+     "Gujarat": 36
+    },
+    "latest": "2026-07-08"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "ICRA: A (Positive) / A2+ (bank lines); Provisional [ICRA]AA+(CE) (Stable) on Rs 700 cr NCDs (GuarantCo-backed)"
+  },
+  {
+   "company": "Kansai Nerolac",
+   "ec_register": {
+    "filings": 4,
+    "states": {
+     "Tamil Nadu": 2,
+     "Gujarat": 1,
+     "Punjab": 1
+    },
+    "latest": "2026-07-20"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CRISIL: AAA/Stable (2025-05-27)"
+  },
+  {
+   "company": "Jindal Cement",
+   "ec_register": {
+    "filings": 6,
+    "states": {
+     "Chhattisgarh": 3,
+     "Odisha": 2,
+     "Haryana": 1
+    },
+    "latest": "2026-07-16"
+   },
+   "fc_register": {
+    "filings": 2,
+    "states": {
+     "Chhattisgarh": 2
+    },
+    "latest": "2026-05-12"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE (CareEdge): A-; Stable / A2+ (2026-04-08; Rs 2,169.78 cr LT facilities)"
+  },
+  {
+   "company": "Sufalam Metals",
+   "ec_register": {
+    "filings": 8,
+    "states": {
+     "Maharashtra": 8
+    },
+    "latest": "2026-07-18"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 5,
+    "latest": "2025-04-29",
+    "latest_title": "SUFALAM 2025: Highlights India's Vision to Emerge as a Global Food Basket"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [
+    "19"
+   ],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": true,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Shakambhari Ispat",
+   "ec_register": {
+    "filings": 12,
+    "states": {
+     "West Bengal": 8,
+     "Rajasthan": 2,
+     "Maharashtra": 2
+    },
+    "latest": "2026-07-16"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "Acuite: A-/Stable, A2+ (2025-03-27, upgraded from BBB+, Rs 1,720.66 cr facilities)"
+  },
+  {
+   "company": "IMFA",
+   "ec_register": {
+    "filings": 9,
+    "states": {
+     "Odisha": 9
+    },
+    "latest": "2026-07-14"
+   },
+   "fc_register": {
+    "filings": 1,
+    "states": {
+     "Odisha": 1
+    },
+    "latest": "2024-08-05"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": null,
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": false,
+   "rating": null
+  },
+  {
+   "company": "Nuvoco Vistas",
+   "ec_register": {
+    "filings": 20,
+    "states": {
+     "Rajasthan": 12,
+     "Chhattisgarh": 5,
+     "Jharkhand": 2
+    },
+    "latest": "2026-07-13"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2020-05-21",
+    "latest_title": "CCI approves acquisition of Emami Cement Limited by Nuvoco Vistas Corporation Limited"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CRISIL: AA / AA- Stable, A1+ (watch removed, rationale 14-Jan-2026)"
+  },
+  {
+   "company": "Allied Blenders",
+   "ec_register": {
+    "filings": 4,
+    "states": {
+     "Telangana": 3,
+     "Uttar Pradesh": 1
+    },
+    "latest": "2026-07-06"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "India Ratings: IND A / Positive (upgraded from A-, FY26)"
+  },
+  {
+   "company": "TruAlt Bioenergy",
+   "ec_register": {
+    "filings": 12,
+    "states": {
+     "Karnataka": 12
+    },
+    "latest": "2026-07-16"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": true,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "Acuite: BBB / Stable (Jun 2024, Rs 874 cr facilities); no CARE/CRISIL rationale found"
+  },
+  {
+   "company": "IOL Chemicals",
+   "ec_register": {
+    "filings": 6,
+    "states": {
+     "Punjab": 6
+    },
+    "latest": "2026-05-05"
+   },
+   "fc_register": {
+    "filings": 3,
+    "states": {
+     "Punjab": 3
+    },
+    "latest": "2025-07-27"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE: A+ (LT) / A1+ (ST), reaffirmed Jul-2025"
+  },
+  {
+   "company": "Orchid Pharma",
+   "ec_register": {
+    "filings": 3,
+    "states": {
+     "Tamil Nadu": 3
+    },
+    "latest": "2026-06-23"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": "PLI BENEFICIARY -- approved 2023 under KSM/API PLI for 7-ACA (not Penicillin-G)",
+   "credit_rating_public": true,
+   "rating": "CARE: A- (RWD) through 2025; DOWNGRADED to BBB+/Stable Apr-2026"
+  },
+  {
+   "company": "Anthem Biosciences",
+   "ec_register": {
+    "filings": 4,
+    "states": {
+     "Karnataka": 4
+    },
+    "latest": "2026-06-29"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "ICRA: reaffirmed, amount enhanced, outlook Positive (2025-06-20)"
+  },
+  {
+   "company": "Piramal Pharma",
+   "ec_register": {
+    "filings": 12,
+    "states": {
+     "Maharashtra": 5,
+     "Telangana": 4,
+     "Gujarat": 3
+    },
+    "latest": "2026-05-30"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 2,
+    "latest": "2020-09-12",
+    "latest_title": "CCI approves proposed combination involving acquisition of 20% of the issued and paid-up e"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE: AA/Stable (upgraded, Jul-2025)"
+  },
+  {
+   "company": "Aarti Pharmalabs",
+   "ec_register": {
+    "filings": 6,
+    "states": {
+     "Maharashtra": 5,
+     "Gujarat": 1
+    },
+    "latest": "2026-06-20"
+   },
+   "fc_register": {
+    "filings": 1,
+    "states": {
+     "Gujarat": 1
+    },
+    "latest": "2024-11-26"
+   },
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": "group co Aarti Industries/Speciality was KSM-PLI beneficiary, not this entity",
+   "credit_rating_public": true,
+   "rating": "CRISIL: AA-/Stable (upgraded from A+, 2025-07-17)"
+  },
+  {
+   "company": "Aarti Drugs",
+   "ec_register": {
+    "filings": 8,
+    "states": {
+     "Gujarat": 4,
+     "Maharashtra": 4
+    },
+    "latest": "2026-04-10"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": "group entities in KSM-PLI lists, not Aarti Drugs itself",
+   "credit_rating_public": true,
+   "rating": "ICRA reaffirmed (Jan-2025); CRISIL outstanding (Oct-2024)"
+  },
+  {
+   "company": "Lanxess",
+   "ec_register": {
+    "filings": 5,
+    "states": {
+     "Gujarat": 4,
+     "Madhya Pradesh": 1
+    },
+    "latest": "2026-05-25"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2023-02-13",
+    "latest_title": "CCI approves consolidation of HPM Business of LANXESS AG and DEM Business of Koninkiljke D"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": true,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "unrated (parent-funded, no India-arm rationale)"
+  },
+  {
+   "company": "SRF",
+   "ec_register": {
+    "filings": 13,
+    "states": {
+     "Gujarat": 5,
+     "Tamil Nadu": 4,
+     "Odisha": 2
+    },
+    "latest": "2026-07-08"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2022-04-18",
+    "latest_title": "CCI approves acquisition of minority stake of BDR Pharmaceuticals International Private Li"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CRISIL: AA+/Stable/A1+ (May-2025); Ind-Ra AA+ affirmed"
+  },
+  {
+   "company": "Pernod Ricard",
+   "ec_register": {
+    "filings": 5,
+    "states": {
+     "Maharashtra": 5
+    },
+    "latest": "2026-01-15"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": true,
+   "pli_ebp_register": "not EBP (potable malt spirit); benefits Maharashtra mega-project incentives + UK-India CETA scotch dynamics",
+   "credit_rating_public": true,
+   "rating": "unrated in India (funded by Pernod Ricard SA, international IG)"
+  },
+  {
+   "company": "HS Hyosung",
+   "ec_register": {
+    "filings": 2,
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest": "2026-03-02"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": "MMF = core textiles-PLI category; participation not confirmed",
+   "credit_rating_public": true,
+   "rating": "unrated in India (Korean-parent-funded)"
+  },
+  {
+   "company": "Keyaan Distilleries",
+   "ec_register": {
+    "filings": 4,
+    "states": {
+     "Uttar Pradesh": 4
+    },
+    "latest": "2026-06-18"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": true,
+   "pli_ebp_register": "EBP participant -- 100% OMC offtake under blending programme",
+   "credit_rating_public": true,
+   "rating": "CARE: BBB+ (CE); Stable on Rs 400 cr (2025-07-30; standalone BB+)"
+  },
+  {
+   "company": "Kamakhya Biofuels",
+   "ec_register": {
+    "filings": 5,
+    "states": {
+     "Assam": 5
+    },
+    "latest": "2026-04-10"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": "EBP participant -- GoI-selected with long-term OMC offtake",
+   "credit_rating_public": true,
+   "rating": "CRISIL: BBB+/Stable (2025-11-25)"
+  },
+  {
+   "company": "Grasim",
+   "ec_register": {
+    "filings": 11,
+    "states": {
+     "Gujarat": 4,
+     "Karnataka": 2,
+     "Uttar Pradesh": 2
+    },
+    "latest": "2026-07-09"
+   },
+   "fc_register": null,
+   "crz_register": {
+    "filings": 1,
+    "states": {
+     "Odisha": 1
+    },
+    "latest": "2023-03-14"
+   },
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2017-10-05",
+    "latest_title": "CCI issues order against Grasim Industries Limited, Aditya Birla Chemicals (India) Ltd. an"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "India Ratings: IND AAA/Stable"
+  },
+  {
+   "company": "Sigachi",
+   "ec_register": {
+    "filings": 6,
+    "states": {
+     "Andhra Pradesh": 3,
+     "Gujarat": 2,
+     "Telangana": 1
+    },
+    "latest": "2026-02-19"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": {
+    "headlines": 1,
+    "latest": "2026-03-27",
+    "latest_title": "Pharmaceutical Exports Post-Sigachi Industrial Accident"
+   },
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": null,
+   "credit_rating_public": true,
+   "rating": "CARE: BBB (DOWNGRADED from BBB+, 2026-02-24; earlier A- -> BBB+ negative watch post-accident)"
+  },
+  {
+   "company": "Virupaksha Organics",
+   "ec_register": {
+    "filings": 11,
+    "states": {
+     "Telangana": 6,
+     "Karnataka": 5
+    },
+    "latest": "2026-06-09"
+   },
+   "fc_register": null,
+   "crz_register": null,
+   "pib_headlines": null,
+   "iem_partB_sample": false,
+   "twin_layers": [],
+   "news_verdict": "ANNOUNCED",
+   "state_govt_announcement": false,
+   "pli_ebp_register": "not confirmed among Telangana's 13 approved PLI bulk-drug projects",
+   "credit_rating_public": true,
+   "rating": "India Ratings: IND A-/Stable (upgraded from BBB+)"
+  }
+ ]
+}

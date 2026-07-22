@@ -1,0 +1,634 @@
+{
+ "layer": 24,
+ "name": "clearance_register_leads",
+ "built": "2026-07-22",
+ "method": "PARIVESH EC/FC registers (2025-26 filings, live statuses, manufacturing activities, corporate proponents only, deduped against layer 16's 321 leads) -> public-news sweep -> visibility verdict. A clearance filing is stronger evidence of intent than an announcement: fees paid, EIA filed, site on record.",
+ "why_quiet_matters": "QUIET = verified investment intent with NO public announcement -- the same below-radar category the PIB-visibility work found most valuable for investment-promotion targeting.",
+ "verdict_counts": {
+  "ANNOUNCED": 16,
+  "PARTIALLY_VISIBLE": 11,
+  "QUIET": 2
+ },
+ "leads": [
+  {
+   "company": "Ultratech Cement Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 23,
+    "activities": {
+     "cement": 23
+    },
+    "states": {
+     "Rajasthan": 3,
+     "Uttar Pradesh": 2,
+     "West Bengal": 1,
+     "Bihar": 1,
+     "Karnataka": 2,
+     "Haryana": 2,
+     "Madhya Pradesh": 4,
+     "Gujarat": 1,
+     "Odisha": 3,
+     "Telangana": 1,
+     "Tamil Nadu": 1,
+     "Andhra Pradesh": 1,
+     "Punjab": 1
+    },
+    "latest_filing": "2026-05-07",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Oct 2025: Rs 10,255 cr to add 22.8 MTPA (to 240.76 MTPA); Q3 FY26 commissioned 1.2 MTPA at Nathdwara, Rajasthan; quarterly capex ~Rs 2,357 cr.",
+   "match_with_filings": "Strong -- Rajasthan commissioning + multi-state program aligns with 23 multi-state cement EC filings.",
+   "best_source_url": "https://www.ultratechcement.com/corporate/media/press-releases/financial-results-q3fy26",
+   "announced_capex_rs_cr": 10255
+  },
+  {
+   "company": "Ambuja Concrete North Private Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 13,
+    "activities": {
+     "cement": 13
+    },
+    "states": {
+     "Maharashtra": 2,
+     "Assam": 2,
+     "Gujarat": 4,
+     "Madhya Pradesh": 2,
+     "Uttar Pradesh": 1,
+     "Jammu And Kashmir": 1,
+     "Haryana": 1
+    },
+    "latest_filing": "2026-06-30",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Entity publicly known only for Rs 1,600 cr 6 MTPA Nawada, Bihar grinding unit; parent Ambuja's broader capex public, but NO Maharashtra project under this entity in news.",
+   "match_with_filings": "STATE MISMATCH -- filings are Maharashtra cement; all news is Bihar/parent-level. The Maharashtra pipeline is not publicly visible.",
+   "best_source_url": "https://www.adani.com/newsroom/media-releases/ambuja-cements-crosses-100-mtpa-capacity",
+   "announced_capex_rs_cr": 1600
+  },
+  {
+   "company": "Jk Lakshmi Cement Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 11,
+    "activities": {
+     "cement": 11
+    },
+    "states": {
+     "West Bengal": 2,
+     "Bihar": 1,
+     "Rajasthan": 3,
+     "Uttar Pradesh": 2,
+     "Assam": 2,
+     "Chhattisgarh": 1
+    },
+    "latest_filing": "2026-07-17",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Rs 3,000 cr expansion announced across Chhattisgarh/UP/Bihar/Jharkhand; ~$203M Chhattisgarh MoU Nov 2025; 30 MTPA by FY30 target -- but no West Bengal plant in any news.",
+   "match_with_filings": "Partial -- eastern push is public but the WEST BENGAL location of its 11 EC filings (latest 2026-07) is absent from news; WB looks like the unannounced next leg.",
+   "best_source_url": "https://www.businessworld.in/article/jk-lakshmi-cement-fy26-profit-jumps-52-unveils-rs-3-000-cr-expansion-plan-607714",
+   "announced_capex_rs_cr": 3000
+  },
+  {
+   "company": "Reliance Industries Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 10,
+    "activities": {
+     "petrochemical complex": 7,
+     "synthetic organic chemicals": 1,
+     "mineral beneficiation": 1,
+     "metallurgy": 1
+    },
+    "states": {
+     "Gujarat": 6,
+     "Maharashtra": 4
+    },
+    "latest_filing": "2025-11-21",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Apr 2025: ~Rs 1.5 trillion split ~Rs 75,000 cr each into new energy and petrochemical expansion centered on Jamnagar, Gujarat; 2,000 acres at Kandla for green hydrogen.",
+   "match_with_filings": "Strong -- Gujarat petrochemical-complex EC filings align with announced Jamnagar petrochemical expansion.",
+   "best_source_url": "https://www.business-standard.com/companies/news/ril-to-invest-rs-1-5-trillion-in-new-energy-petrochemical-expansion-125042700198_1.html",
+   "announced_capex_rs_cr": 75000
+  },
+  {
+   "company": "Viyash Scientific Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 10,
+    "activities": {
+     "synthetic organic chemicals": 10
+    },
+    "states": {
+     "Maharashtra": 2,
+     "Telangana": 8
+    },
+    "latest_filing": "2026-05-26",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "SeQuent-Viyash merger (2025), $1B revenue target by 2032, stated intent to increase capacities -- but no specific plant, project or capex announced.",
+   "match_with_filings": "Weak -- general growth intent public; the specific Maharashtra/Telangana API expansions in its 10 EC filings are entirely absent from news.",
+   "best_source_url": "https://www.whalesbook.com/news/English/other/Viyash-Scientific-Targets-dollar1-Billion-Revenue-By-2032-What-Investors-Should-Know/6a43bf81fb97bcde4ce70e8a"
+  },
+  {
+   "company": "Shree Cement Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 8,
+    "activities": {
+     "cement": 8
+    },
+    "states": {
+     "Meghalaya": 3,
+     "Maharashtra": 2,
+     "Tamil Nadu": 1,
+     "Andhra Pradesh": 1,
+     "Gujarat": 1
+    },
+    "latest_filing": "2026-04-10",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "4 Apr 2026 board approved new integrated plant at Daistong, East Jaintia Hills, MEGHALAYA -- 0.95 MTPA clinker / 0.99 MTPA cement, ~Rs 1,800 cr, complete Q4 FY28.",
+   "match_with_filings": "EXACT match -- Meghalaya filings latest 2026-04 line up precisely with the April 2026 board approval.",
+   "best_source_url": "https://indiancementreview.com/2026/04/shree-cement-approves-rs-1800-crore-meghalaya-plant/",
+   "announced_capex_rs_cr": 1800
+  },
+  {
+   "company": "Rungta Sons Private Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 7,
+    "activities": {
+     "mineral beneficiation": 2,
+     "metallurgy": 5
+    },
+    "states": {
+     "Odisha": 3,
+     "West Bengal": 1,
+     "Chhattisgarh": 1,
+     "Jharkhand": 2
+    },
+    "latest_filing": "2026-07-03",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Jun 2026: Odisha approved Rs 7,837 cr to triple integrated steel capacity to ~2.85 MnT; separate Dhenkanal expansion 3.55->7.53 MTPA pegged Rs 11,001 cr; Danieli mills ordered.",
+   "match_with_filings": "Strong -- Odisha metallurgy/beneficiation filings correspond to Kamanda + Dhenkanal expansions.",
+   "best_source_url": "https://www.bigmint.co/insights/detail/rungta-mines-to-expand-steel-plant-capacity-to-2-85-mnt-159672",
+   "announced_capex_rs_cr": 7837
+  },
+  {
+   "company": "Dorf-Ketal Chemicals India Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 6,
+    "activities": {
+     "synthetic organic chemicals": 6
+    },
+    "states": {
+     "Gujarat": 5,
+     "Maharashtra": 1
+    },
+    "latest_filing": "2026-02-19",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "~$580M IPO filing (Rs 1,500 cr fresh) and world's largest organic titanate plant at Mundra public -- but no announced capex or new Gujarat expansion for 2025-26.",
+   "match_with_filings": "Partial -- Gujarat footprint public but the specific expansions behind 6 EC filings (latest 2026-02) not covered.",
+   "best_source_url": "https://www.business-standard.com/markets/ipo/dorf-ketal-chemicals-india-files-for-580-million-ipo-claim-draft-papers-125012401609_1.html"
+  },
+  {
+   "company": "J K Cement Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 6,
+    "activities": {
+     "cement": 6
+    },
+    "states": {
+     "Punjab": 1,
+     "Madhya Pradesh": 1,
+     "Odisha": 1,
+     "Rajasthan": 2,
+     "Haryana": 1
+    },
+    "latest_filing": "2026-04-09",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Board cleared Rs 4,805 cr 7 MTPA expansion: 4 MTPA clinker + 3 MTPA grinding at Jaisalmer, Rajasthan + two 2 MTPA split grinding units (Rajasthan, Punjab).",
+   "match_with_filings": "Strong -- the Punjab grinding unit corresponds directly to the Punjab cement filings (latest 2026-04).",
+   "best_source_url": "https://www.globalcement.com/news/19765-jk-cement-approves-7mt-yr-expansion-in-rajasthan-and-punjab",
+   "announced_capex_rs_cr": 4805
+  },
+  {
+   "company": "Tata Steel Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 6,
+    "activities": {
+     "metallurgy": 6
+    },
+    "states": {
+     "Odisha": 4,
+     "Jharkhand": 2
+    },
+    "latest_filing": "2026-07-21",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Completed Rs 27,000 cr Phase II Kalinganagar (Odisha) May 2025 (3->8 MTPA); stated scope to double Kalinganagar to 16 MTPA; Rs 15,000 cr FY26 capex, Rs 11,000 cr for India.",
+   "match_with_filings": "Strong -- Odisha metallurgy filings (latest 2026-07) align with next-phase Kalinganagar growth.",
+   "best_source_url": "https://www.business-standard.com/companies/news/tata-steel-completes-5mt-kalinganagar-expansion-capacity-crosses-26mt-125052201360_1.html",
+   "announced_capex_rs_cr": 27000
+  },
+  {
+   "company": "Orissa Metallurgical Industry Private Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "metallurgy": 4,
+     "cement": 1
+    },
+    "states": {
+     "West Bengal": 5
+    },
+    "latest_filing": "2025-09-03",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "No mainstream press announcement found. Only regulatory-derived trackers (Global Energy Monitor wiki, WBPCB filing PDFs) document the Kharagpur (West Medinipur, WB) expansion to ~1.8-2.0 MTPA integrated steel plant; GEM notes expansion underway as of Jan 2025 with no completion updates as of Oct 2025. No capex figure in any news outlet.",
+   "match_with_filings": "The documented Kharagpur/Shyamraipur West Bengal steel expansion matches the metallurgy EC filings, but visibility comes only from clearance-document trackers, not news media.",
+   "best_source_url": "https://www.gem.wiki/Orissa_Metaliks_Kharagpur_Steel_Plant"
+  },
+  {
+   "company": "Matrix Pharmacorp Private Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "synthetic organic chemicals": 5
+    },
+    "states": {
+     "Telangana": 3,
+     "Andhra Pradesh": 2
+    },
+    "latest_filing": "2025-10-06",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Company expansion news exists but for Andhra Pradesh, not Telangana: inaugurated a new HPAPI oncology facility (Unit-8) in Vizag in March 2026 and has raised ~$175M total funding. Revenue Rs 4,420 cr FY25. No news of the Telangana (Sangareddy/Pashamylaram) API expansion in the EC filings.",
+   "match_with_filings": "News covers Vizag CDMO/oncology expansion, not the Telangana synthetic-organic-chemicals/API projects in the clearance filings -- state does not match.",
+   "best_source_url": "https://pharmasource.global/content/news/cdmo-news/matrix-pharma-corp-inaugurates-oncology-manufacturing-facility-in-vizag/"
+  },
+  {
+   "company": "A-One Steels India Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "metallurgy": 5
+    },
+    "states": {
+     "Karnataka": 3,
+     "Andhra Pradesh": 2
+    },
+    "latest_filing": "2025-12-31",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 650 crore IPO (Rs 600 cr fresh + Rs 50 cr OFS) opened April 2025 explicitly to fund expansion of manufacturing facilities (five of six plants in Karnataka: Gauribidanur, Bellary, Koppal, Chikkantapur) and debt reduction; includes a 10 MW WHRB power plant and stainless steel expansion on a 14.97 lakh MTPA base.",
+   "match_with_filings": "IPO-funded Karnataka steel capacity expansion matches the Karnataka metallurgy EC filings in state and activity.",
+   "best_source_url": "https://www.5paisa.com/news/a-one-steels-india-plans-rs650-crore-ipo-for-expansion-and-debt-reduction",
+   "announced_capex_rs_cr": 650
+  },
+  {
+   "company": "ArcelorMittal Nippon Steel India (AM/NS)",
+   "clearance_evidence": {
+    "filings_2025_26": 9,
+    "activities": {
+     "metallurgy": 2,
+     "mineral beneficiation": 3
+    },
+    "states": {
+     "Gujarat": 1,
+     "Chhattisgarh": 2,
+     "Odisha": 1,
+     "Andhra Pradesh": 3
+    },
+    "latest_filing": "2026-03-20",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Heavily publicized ~Rs 60,000 crore ($7.7B programme incl. $5.1B upstream) Hazira, Gujarat expansion from 9 to 15 MTPA targeted by 2026, with auto-steel CGL/CGAL lines operational 2025 and long-term roadmap to 25-26 MTPA by 2030.",
+   "match_with_filings": "Directly matches the Gujarat metallurgy + mineral beneficiation EC filings (Hazira integrated steel plant expansion, incl. a June 2026 EC-tracked Hazira expansion item).",
+   "best_source_url": "https://corporate.arcelormittal.com/media/press-releases/arcelormittal-holds-investor-day-in-india",
+   "announced_capex_rs_cr": 60000
+  },
+  {
+   "company": "Superform Chemistries Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "synthetic organic chemicals": 2,
+     "pesticides": 3
+    },
+    "states": {
+     "Odisha": 2,
+     "West Bengal": 1,
+     "Maharashtra": 1,
+     "Gujarat": 1
+    },
+    "latest_filing": "2026-05-26",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 4,001 crore specialty chemicals manufacturing project at Tata Steel's Gopalpur Industrial Park, Odisha; foundation stone laid by Odisha CM in June 2025 as part of Rs 20,500 cr of projects. Superform (formerly UPL Specialty Chemicals) positioned in Odisha's Rs 2 lakh cr chemical investment push.",
+   "match_with_filings": "Gopalpur, Odisha specialty chemicals project matches the Odisha chemicals+pesticides EC filings in state and activity.",
+   "best_source_url": "https://indiawhispers.com/2025/06/05/odisha-cm-lays-stones-for-five-major-projects-of-rs-20500-crore-at-tata-steels-gopalpur-industrial-park/",
+   "announced_capex_rs_cr": 4001
+  },
+  {
+   "company": "Jsw Steel Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "mineral beneficiation": 1,
+     "metallurgy": 4
+    },
+    "states": {
+     "Karnataka": 3,
+     "Tamil Nadu": 1,
+     "Maharashtra": 1
+    },
+    "latest_filing": "2026-05-28",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Board approved fresh capex of over Rs 33,000 crore for Vijayanagar (Karnataka) Phase-2 expansion from 15 to 26 MTPA (commissioning by ~FY30); company-wide FY26 capex plan of Rs 20,000 crore flags Vijayanagar as a flagship project alongside Dolvi Phase-III.",
+   "match_with_filings": "Vijayanagar Karnataka steel expansion directly matches the Karnataka metallurgy EC filings.",
+   "best_source_url": "https://www.biltraxmedia.com/jsw-steel-approves-fresh-capex-of-over-33000-inr-crore-for-vijayanagar-expansion/",
+   "announced_capex_rs_cr": 33000
+  },
+  {
+   "company": "Hindalco Industries Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "metallurgy": 5
+    },
+    "states": {
+     "Gujarat": 2,
+     "Odisha": 2,
+     "Madhya Pradesh": 1
+    },
+    "latest_filing": "2026-06-25",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 45,000 crore (~$5.2B) expansion announced March 2025 across aluminium/copper/specialty alumina within a $10B five-year plan; Gujarat-specific pieces include a 300,000-tonne Dahej copper smelter expansion (to be world's largest outside China) and a ~Rs 2,400 crore e-waste/copper recycling plant at Dahej.",
+   "match_with_filings": "State matches (Gujarat/Dahej) and metallurgy matches, though Hindalco's publicized Gujarat projects are copper-focused while the filings are tagged aluminium/metallurgy -- likely the same Dahej complex.",
+   "best_source_url": "https://www.business-standard.com/companies/news/hindalco-to-invest-10-billion-indian-copper-smelter-to-be-worlds-largest-125082101359_1.html",
+   "announced_capex_rs_cr": 45000
+  },
+  {
+   "company": "The Ramco Cements Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "cement": 3,
+     "mineral beneficiation": 2
+    },
+    "states": {
+     "Tamil Nadu": 3,
+     "Andhra Pradesh": 2
+    },
+    "latest_filing": "2026-07-16",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "February 2026 exchange filing and press coverage of a Rs 1,403 crore capacity expansion across AP and TN units -- Ariyalur (TN) plant capacity raised to 5.5 MTPA, Rs 1,250 cr for Kalavatala (AP), Rs 153 cr for a 10 MW WHRS at Ramasamy Raja Nagar (TN); part of a growth strategy targeting Rs 16,000 cr revenue.",
+   "match_with_filings": "Tamil Nadu cement capacity and WHRS expansions match the TN cement + mineral beneficiation EC filings.",
+   "best_source_url": "https://media.biltrax.com/ramco-cements-proposes-inr-1403-crore-capacity-expansion-at-ap-tn-units/",
+   "announced_capex_rs_cr": 1403
+  },
+  {
+   "company": "Bharat Rasayan Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 5,
+    "activities": {
+     "pesticides": 5
+    },
+    "states": {
+     "Gujarat": 3,
+     "Haryana": 2
+    },
+    "latest_filing": "2026-07-17",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "News exists on the Nissan Bharat Rasayan JV building a new Ryzonic rice-herbicide facility in India (operations from FY2028) and a ~Rs 220 crore phase-1 capex for a 25,000-ton plant, but no press specifically announces Bharat Rasayan Ltd's own Gujarat pesticide expansions behind the 2026 EC filings.",
+   "match_with_filings": "Activity (pesticides/agrochemicals) and likely geography (Dahej, Gujarat) are consistent, but the news is about the JV entity rather than the parent's own EC-filed projects.",
+   "best_source_url": "https://www.chemicalweekly.com/latestnews/nissan-chemical-bharat-rasayan-jv-setting-up-new-herbicide-facility/2394",
+   "announced_capex_rs_cr": 220
+  },
+  {
+   "company": "Coromandel International Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "chemical fertilizer": 3,
+     "pesticides": 1
+    },
+    "states": {
+     "Andhra Pradesh": 2,
+     "Karnataka": 1,
+     "Gujarat": 1
+    },
+    "latest_filing": "2025-06-24",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 800 crore approved for a new NPK granulation train at Kakinada (AP, +7.5 lakh tons to 30 lakh TPA) plus a fungicide multi-product plant at Ankleshwar (Gujarat); separately ~Rs 1,000 crore for 650 TPD phosphoric acid and 2,000 TPD sulphuric acid plants, and AP govt granted a 45% subsidy on a Rs 1,539 crore Kakinada investment (GO dated Feb 2025).",
+   "match_with_filings": "Multi-state fertilizer/chemicals expansions (AP fertilizer, Gujarat crop-protection) match the multi-state fertilizer/chemicals EC filings.",
+   "best_source_url": "https://www.businessupturn.com/business/corporates/coromandel-international-secures-rs-1539-crore-investment-subsidy-from-andhra-pradesh-government-for-fertilizer-plant-expansion/",
+   "announced_capex_rs_cr": 1800
+  },
+  {
+   "company": "Acutaas Chemicals Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Gujarat": 4
+    },
+    "latest_filing": "2025-10-15",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Identity: NOT a spin-off -- Ami Organics RENAMED to Acutaas Chemicals May 2025 (same NSE entity), pivoting to battery/semiconductor chemicals. Rs 1,000+ cr capex FY23-FY30; ~Rs 220 cr battery-chemicals plant at Jhagadia (Gujarat) Ph-1 inaugurated Jan 2026; ~Rs 200 cr Korea semiconductor JV.",
+   "match_with_filings": "The 4 specialty-chem filings align with the Gujarat battery-chemicals buildout at Jhagadia.",
+   "best_source_url": "https://www.whalesbook.com/corporate-news/English/chemicals/Acutaas-Chemicals-Plans-indian-rupee1000-Cr-Capex-Targets-indian-rupee1339-Cr-Revenue-by-FY26/6a081f94e125a601ebe326fb",
+   "announced_capex_rs_cr": 1000
+  },
+  {
+   "company": "Deepak Nitrite Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Telangana": 4
+    },
+    "latest_filing": "2025-11-25",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Heavy public capex (~Rs 3,500 cr + subsidiary phenol/IPA plants) but Gujarat/Dahej-centric. The TELANGANA expansion (Jeedimetla Unit-I, ~Rs 20 cr) surfaces only in the EC document itself.",
+   "match_with_filings": "The 4 Telangana filings = a small Hyderabad unit expansion essentially invisible in national news.",
+   "best_source_url": "https://www.tgnns.com/news/deepak-nitrite-q4-results-2025-and-fundamental-analysis/2025/05/28",
+   "announced_capex_rs_cr": 3500
+  },
+  {
+   "company": "Godrej Industries Ltd",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Gujarat": 3,
+     "Maharashtra": 1
+    },
+    "latest_filing": "2025-12-16",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Jul 2025: Rs 750+ cr chemicals expansion -- doubling fatty alcohol (+35,000 TPA), erucic acid, glycerine, tripling fermentation -- targeting $1B chemicals business by 2030.",
+   "match_with_filings": "The 4 chemicals filings (latest Dec 2025) map directly onto the announced multi-product expansion.",
+   "best_source_url": "https://www.business-standard.com/companies/news/godrej-industries-to-invest-750-cr-on-capacity-expansion-of-chemicals-biz-125070300294_1.html",
+   "announced_capex_rs_cr": 750
+  },
+  {
+   "company": "Hemanjali Polymers Private Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Maharashtra": 4
+    },
+    "latest_filing": "2026-03-10",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "NO investment/expansion news at all. 1999-incorporated Mumbai company, ~48 employees, plant at Boisar, Maharashtra; specialty chemicals for textiles/coatings/leather; FY25 net sales +21%, assets +37% -- quiet growth.",
+   "match_with_filings": "The 4 polymer EC filings (latest Mar 2026) have ZERO public counterpart -- a genuinely below-radar expansion, likely Boisar.",
+   "best_source_url": "https://tracxn.com/d/legal-entities/india/hemanjali-polymers-private-limited/__VQRLDPZ6uR6Ljku_Iaw1RLgr6ygodQQ33ERBIL14RLU"
+  },
+  {
+   "company": "Rexxon Speciality Chemical Llp",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Gujarat": 4
+    },
+    "latest_filing": "2026-04-20",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No news whatsoever. LLP incorporated 24 Jan 2025 at Rajkot (Gondal), Gujarat, Rs 1 lakh capital, 10 partners. A brand-new entity filing 4 ECs within ~15 months = a greenfield plant built entirely off the news radar.",
+   "match_with_filings": "The 4 specialty-chem filings (latest Apr 2026) are the ONLY public evidence this newly-formed Gujarat LLP is building anything.",
+   "best_source_url": "https://tracxn.com/d/legal-entities/india/rexxon-speciality-chemical-llp/__g8PoVHhOsbm_hpe1qJ3de6J_Ru5y8BnJzbgbPikgJ08"
+  },
+  {
+   "company": "Reliance Bp Mobility Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 58,
+    "activities": {
+     "FC": 58
+    },
+    "states": {
+     "Haryana": 24,
+     "Bihar": 13,
+     "Uttar Pradesh": 19,
+     "Uttarakhand": 1,
+     "Punjab": 1
+    },
+    "latest_filing": "2026-07-20",
+    "register": "FC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Retail push well covered (2,000-2,500 stations, ~4% petrol/6%+ diesel private share, 5,000+ EV charge points, 30,000 chargers by 2030) but NO coverage of the specific Haryana/multi-state land acquisitions; no rupee figure for the rollout.",
+   "match_with_filings": "The 58 forest-clearance land diversions (latest Jul 2026, Haryana-heavy) quantify a rollout whose granular geography and pace are invisible in public announcements.",
+   "best_source_url": "https://www.whalesbook.com/news/English/energy/Jio-BP-Escalates-India-Fuel-War-With-New-Tech/697a40f698511879499c26e4"
+  },
+  {
+   "company": "Kpi Green Energy Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 20,
+    "activities": {
+     "FC": 20
+    },
+    "states": {
+     "Gujarat": 20
+    },
+    "latest_filing": "2026-07-08",
+    "register": "FC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Gujarat project flow heavily publicized (92.15 MWp GUVNL hybrid commissioned early, Rs 272 cr NaBFID financing, 10 GW by 2030) but news is at project/PPA level -- the 20 forest-land diversions are not reported as such.",
+   "match_with_filings": "The 20 Gujarat FC filings are consistent with the announced hybrid pipeline but no announcement names the land parcels.",
+   "best_source_url": "https://www.business-standard.com/markets/capital-market-news/kpi-green-energy-commences-power-supply-from-92-15-mwp-ipp-hybrid-power-project-126010200879_1.html",
+   "announced_capex_rs_cr": 272
+  },
+  {
+   "company": "Nayara Energy Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 20,
+    "activities": {
+     "FC": 20
+    },
+    "states": {
+     "Punjab": 20
+    },
+    "latest_filing": "2026-06-08",
+    "register": "FC register"
+   },
+   "note": "Rosneft-backed",
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "National retail expansion public -- crossed 7,000 pumps (Jun 2026), 500+ outlets in 18 months (~1/day), India's largest private fuel retailer, ~400 more planned -- but nothing Punjab-specific and no capex figure.",
+   "match_with_filings": "The 20 Punjab FC filings are the state-level footprint of a nationally-announced but geographically undisclosed rollout.",
+   "best_source_url": "https://www.business-standard.com/companies/news/nayara-energy-crosses-7-000-petrol-pumps-in-india-expands-retail-network-126062200570_1.html"
+  },
+  {
+   "company": "Hpcl Mittal Energy Limited",
+   "clearance_evidence": {
+    "filings_2025_26": 14,
+    "activities": {
+     "FC": 14
+    },
+    "states": {
+     "Uttar Pradesh": 14
+    },
+    "latest_filing": "2026-07-08",
+    "register": "FC register"
+   },
+   "note": "Mittal Energy JV",
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "L.N. Mittal at Progressive Punjab Investors Summit (Dec 2025): Rs 2,600 cr at Guru Gobind Singh Refinery, Bathinda -- polypropylene downstream + fine/specialty chemicals -- plus fuel-retail entry with 500 outlets nationally.",
+   "match_with_filings": "The 14 Punjab+UP FC filings match both the Bathinda expansion and land for the 500-outlet retail rollout.",
+   "best_source_url": "https://www.business-standard.com/companies/news/hmel-invest-rs-2600-crore-bathinda-refinery-polypropylene-fine-chemicals-125122301126_1.html",
+   "announced_capex_rs_cr": 2600
+  }
+ ],
+ "unmatched_in_news_sweep": [],
+ "candidate_pool": {
+  "ec_corporate_filers_2025_26": 1445,
+  "after_dedup_vs_layer16": 1723,
+  "note": "shortlist is the TOP of a 1,445-company pool of live corporate industrial filers -- the pool file (scratchpad ec_lead_candidates.json) supports deeper batches"
+ }
+}

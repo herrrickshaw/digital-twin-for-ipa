@@ -1598,7 +1598,7 @@
     "rationale_capex_disclosure": "Upgrade on sustained improvement despite capex mode; CDMO block potential revenue Rs 250-300 cr",
     "care_check": {
      "care_rates_it": false,
-     "delta_vs_other_agency": "CARE does not rate. DISCREPANCY FLAGGED: CRISIL's own page shows A+/Positive on LT bank facilities vs the AA- (upgraded Jul-2025) captured earlier -- unreconciled, one read is stale; verify before citing a level"
+     "delta_vs_other_agency": "RESOLVED 2026-07-22: fetched CRISIL's rationale directly -- the rating action line reads 'Crisil AA-/Stable (Upgraded from Crisil A+/Positive)', Rs 700 cr facilities, 17-Jul-2025. Both earlier reads were of the SAME document; the A+/Positive was the PRIOR level pre-upgrade. Current rating: CRISIL AA-/Stable. No discrepancy exists."
     }
    }
   },

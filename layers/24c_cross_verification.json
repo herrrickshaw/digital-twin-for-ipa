@@ -382,7 +382,8 @@
    "pli_ebp_register": null,
    "credit_rating_public": true,
    "rating": "none found -- entity itself unrated (100% subsidiary of Ambuja Cements Ltd, which is CARE AAA/A1+ per CARE PR of Oct-2025 and CRISIL AAA/Stable/A1+)",
-   "ibef": null
+   "ibef": true,
+   "ibef_context": "dedicated showcase page (parent Ambuja Cements; Marwar unit, Rs 6,000 cr RE capex covered) -- subsidiary Ambuja Concrete North NOT separately covered"
   },
   {
    "company": "Bharat Rasayan",
@@ -650,7 +651,7 @@
    "pli_ebp_register": null,
    "credit_rating_public": true,
    "rating": "CARE (CareEdge): A-; Stable / A2+ (2026-04-08; Rs 2,169.78 cr LT facilities)",
-   "ibef": null
+   "ibef": false
   },
   {
    "company": "Sufalam Metals",
@@ -677,7 +678,7 @@
    "pli_ebp_register": null,
    "credit_rating_public": false,
    "rating": null,
-   "ibef": null
+   "ibef": false
   },
   {
    "company": "Shakambhari Ispat",
@@ -727,7 +728,7 @@
    "pli_ebp_register": null,
    "credit_rating_public": false,
    "rating": null,
-   "ibef": null
+   "ibef": false
   },
   {
    "company": "Nuvoco Vistas",
@@ -1203,11 +1204,7 @@
    }
   ],
   "verdict": "IBEF coverage correlates with LISTING STATUS and announcement volume, not clearance-register activity: listed majors get showcase pages; ~20 of 43 checked names have zero IBEF footprint, including marquee FDI (Hyosung, Pernod Ricard) and ALL quiet builders. All four policy THEMES are actively promoted with the exact import-substitution/PLI framing -- IBEF validates the macro thesis while systematically missing the specific companies executing it. The clearance register is a differentiated, EARLIER signal than the quasi-official promotion channel.",
-  "unchecked": [
-   "Ambuja (Cements+Concrete N.)",
-   "Jindal Cement",
-   "Sufalam Metals",
-   "IMFA"
-  ]
+  "unchecked": [],
+  "completion_note": "Second pass 2026-07-22 closed the 4 previously-unchecked names: Ambuja present (parent showcase; RMC subsidiary not separately covered), Jindal Cement / Sufalam / IMFA absent. Sweep now covers all 41 matrix companies: 18 present / 23 absent."
  }
 }

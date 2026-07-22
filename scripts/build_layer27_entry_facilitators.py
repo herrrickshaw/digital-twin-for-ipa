@@ -28,8 +28,30 @@ UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 Chrome/126.0 Safari/537.36"}
 
 # type: agency = national trade/invest promotion body; chamber = bilateral
-# chamber of commerce in India; innovation = science/innovation outpost.
+# chamber of commerce in India; innovation = science/innovation outpost;
+# apex_india = Indian apex industry association (host-country counterpart that
+# runs events, sector councils and co-hosts with the foreign bodies).
 FACILITATORS = [
+    {"country": "India", "body": "FICCI (Federation of Indian Chambers of "
+     "Commerce & Industry)", "type": "apex_india", "url": "https://ficci.in/",
+     "events_url": "https://ficci.in/event",
+     "note": "Oldest/largest apex chamber; sector & bilateral business councils, "
+             "MoUs with foreign chambers, India's flagship investment summits."},
+    {"country": "India", "body": "CII (Confederation of Indian Industry)",
+     "type": "apex_india", "url": "https://www.cii.in/",
+     "events_url": "https://www.cii.in/Events.aspx",
+     "note": "Runs Partnership Summit + most India<>country CEO forums and "
+             "inbound/outbound business delegations."},
+    {"country": "India", "body": "NASSCOM (National Association of Software & "
+     "Service Companies)", "type": "apex_india", "url": "https://nasscom.in/",
+     "events_url": "https://nasscom.in/events",
+     "note": "IT/BPM/tech apex body; the entry counterpart for tech & GCC "
+             "(global capability centre) investors."},
+    {"country": "India", "body": "ASSOCHAM (Associated Chambers of Commerce & "
+     "Industry of India)", "type": "apex_india", "url": "https://www.assocham.org/",
+     "events_url": "https://www.assocham.org/events.php",
+     "note": "Apex chamber; sector conclaves + state investor roadshows "
+             "(e.g. Invest in Odisha, Investor Connect)."},
     {"country": "Germany", "body": "Germany Trade & Invest (GTAI)",
      "type": "agency", "url": "https://www.gtai.de/",
      "events_url": "https://www.gtai.de/en/meta/events"},
@@ -145,7 +167,9 @@ def build():
                      "with_events_page": sum(1 for r in rows if r.get("events_url"))},
         "types": {"agency": "national trade/investment-promotion body",
                   "chamber": "bilateral chamber of commerce operating in India",
-                  "innovation": "science/innovation/startup bridge"},
+                  "innovation": "science/innovation/startup bridge",
+                  "apex_india": "Indian apex industry association (host-country "
+                                "counterpart running events + sector councils)"},
         "facilitators": rows,
         "linkage": {
             "to_layer_04": "These bodies are the real-world on-ramp for the "
@@ -156,6 +180,13 @@ def build():
             "to_layer_16": "Lead outreach (layer 16) can route through the "
                            "relevant country's chamber/agency event calendar "
                            "rather than cold contact.",
+            "india_apex_bodies": "FICCI/CII/NASSCOM/ASSOCHAM are the host-country "
+                                 "counterparts — they co-host the foreign "
+                                 "chambers' delegations and run India's flagship "
+                                 "investment summits (CII Partnership Summit, "
+                                 "state investor roadshows), so a foreign entrant "
+                                 "meets both its home chamber and the Indian apex "
+                                 "body at the same events.",
         },
         "caveat": "Directory of official bodies; verify each event's specifics "
                   "on the linked site. last_status is a build-time liveness "

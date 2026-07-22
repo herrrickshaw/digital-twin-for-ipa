@@ -41,6 +41,13 @@ def main():
         if os.path.exists(p):
             for r in json.load(open(p)):
                 news[norm(r["company"])] = r
+    # CARE Ratings enrichment (rationales disclose capex/site/funding that never
+    # reaches the press -- run for the QUIET + PARTIALLY_VISIBLE leads)
+    care = {}
+    cp = os.path.join(SCRATCH, "care_ratings.json")
+    if os.path.exists(cp):
+        for r in json.load(open(cp)):
+            care[norm(r["company"])] = r
 
     leads, unmatched = [], []
     for s in short:
@@ -72,6 +79,21 @@ def main():
         else:
             rec["news_verdict"] = "UNCHECKED"
             unmatched.append(s["company"])
+        c = care.get(norm(s["company"]))
+        if c is None:
+            for k, v in care.items():
+                if k[:12] in norm(s["company"]) or norm(s["company"])[:12] in k:
+                    c = v
+                    break
+        if c:
+            rec["credit_rating"] = {
+                "rated_by_care": c.get("rated_by_care"),
+                "rating": c.get("rating"),
+                "rating_date": c.get("rating_date"),
+                "rationale_capex_disclosure": c.get("rationale_capex_disclosure"),
+                "rationale_url": c.get("rationale_url"),
+                "adds_beyond_news": c.get("adds_beyond_news"),
+            }
         leads.append(rec)
 
     counts = {}
@@ -83,8 +105,16 @@ def main():
         "built": datetime.date.today().isoformat(),
         "method": ("PARIVESH EC/FC registers (2025-26 filings, live statuses, manufacturing "
                    "activities, corporate proponents only, deduped against layer 16's 321 leads) "
-                   "-> public-news sweep -> visibility verdict. A clearance filing is stronger "
-                   "evidence of intent than an announcement: fees paid, EIA filed, site on record."),
+                   "-> public-news sweep -> visibility verdict -> CREDIT-RATING enrichment "
+                   "(CARE Ratings first, CRISIL/ICRA/India Ratings where CARE does not rate). "
+                   "A clearance filing is stronger evidence of intent than an announcement: fees "
+                   "paid, EIA filed, site on record. Rating rationales are the third channel: for "
+                   "unlisted/quiet companies they are often the ONLY document quantifying the "
+                   "capex, site and funding mix behind the filings."),
+        "sources": ["PARIVESH 2.0 EC register (majorClearanceType=1) + FC register (=2)",
+                    "public news (3-agent WebSearch sweep, 2025-26)",
+                    "CARE Ratings rationales (careratings.com) -- CRISIL/ICRA/India Ratings "
+                    "used where CARE does not rate the entity, flagged as such"],
         "why_quiet_matters": ("QUIET = verified investment intent with NO public announcement -- "
                               "the same below-radar category the PIB-visibility work found most "
                               "valuable for investment-promotion targeting."),

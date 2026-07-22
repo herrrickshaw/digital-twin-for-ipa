@@ -2,7 +2,12 @@
  "layer": 24,
  "name": "clearance_register_leads",
  "built": "2026-07-22",
- "method": "PARIVESH EC/FC registers (2025-26 filings, live statuses, manufacturing activities, corporate proponents only, deduped against layer 16's 321 leads) -> public-news sweep -> visibility verdict. A clearance filing is stronger evidence of intent than an announcement: fees paid, EIA filed, site on record.",
+ "method": "PARIVESH EC/FC registers (2025-26 filings, live statuses, manufacturing activities, corporate proponents only, deduped against layer 16's 321 leads) -> public-news sweep -> visibility verdict -> CREDIT-RATING enrichment (CARE Ratings first, CRISIL/ICRA/India Ratings where CARE does not rate). A clearance filing is stronger evidence of intent than an announcement: fees paid, EIA filed, site on record. Rating rationales are the third channel: for unlisted/quiet companies they are often the ONLY document quantifying the capex, site and funding mix behind the filings.",
+ "sources": [
+  "PARIVESH 2.0 EC register (majorClearanceType=1) + FC register (=2)",
+  "public news (3-agent WebSearch sweep, 2025-26)",
+  "CARE Ratings rationales (careratings.com) -- CRISIL/ICRA/India Ratings used where CARE does not rate the entity, flagged as such"
+ ],
  "why_quiet_matters": "QUIET = verified investment intent with NO public announcement -- the same below-radar category the PIB-visibility work found most valuable for investment-promotion targeting.",
  "verdict_counts": {
   "ANNOUNCED": 16,
@@ -64,7 +69,15 @@
    "news_summary": "Entity publicly known only for Rs 1,600 cr 6 MTPA Nawada, Bihar grinding unit; parent Ambuja's broader capex public, but NO Maharashtra project under this entity in news.",
    "match_with_filings": "STATE MISMATCH -- filings are Maharashtra cement; all news is Bihar/parent-level. The Maharashtra pipeline is not publicly visible.",
    "best_source_url": "https://www.adani.com/newsroom/media-releases/ambuja-cements-crosses-100-mtpa-capacity",
-   "announced_capex_rs_cr": 1600
+   "announced_capex_rs_cr": 1600,
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "none found -- entity itself unrated (100% subsidiary of Ambuja Cements Ltd, which is CARE AAA/A1+ per CARE PR of Oct-2025 and CRISIL AAA/Stable/A1+)",
+    "rating_date": null,
+    "rationale_capex_disclosure": "none found for the subsidiary -- incorporated 14-Sep-2023 in Gujarat as Adani/Ambuja's RMC arm; parent-level rationales discuss Ambuja Cements' cement capex but give no capex breakout for Ambuja Concrete North or its Maharashtra ready-mix plants",
+    "rationale_url": "https://www.careratings.com/upload/CompanyFiles/PR/202510121013_Ambuja_Cements_Limited.pdf",
+    "adds_beyond_news": "nothing new on the 13 Maharashtra EC filings -- the subsidiary borrows no debt in its own name so no rationale exists; only parent disclosures cover it, and they don't itemize the RMC rollout"
+   }
   },
   {
    "company": "Jk Lakshmi Cement Limited",
@@ -88,7 +101,15 @@
    "news_summary": "Rs 3,000 cr expansion announced across Chhattisgarh/UP/Bihar/Jharkhand; ~$203M Chhattisgarh MoU Nov 2025; 30 MTPA by FY30 target -- but no West Bengal plant in any news.",
    "match_with_filings": "Partial -- eastern push is public but the WEST BENGAL location of its 11 EC filings (latest 2026-07) is absent from news; WB looks like the unannounced next leg.",
    "best_source_url": "https://www.businessworld.in/article/jk-lakshmi-cement-fy26-profit-jumps-52-unveils-rs-3-000-cr-expansion-plan-607714",
-   "announced_capex_rs_cr": 3000
+   "announced_capex_rs_cr": 3000,
+   "credit_rating": {
+    "rated_by_care": true,
+    "rating": "CARE AA; Stable (LT, Rs 2,770.47 cr) / CARE A1+ (ST, Rs 1,300 cr), reaffirmed",
+    "rating_date": "2025-08",
+    "rationale_capex_disclosure": "~Rs 3,000 cr capex over next three years (~Rs 2,000 cr debt + internal accruals) to go from 16.5 to 22.45 MTPA between FY26-FY28, targeting 30 MTPA by FY30. Components: Surat split grinding unit +1.35 MTPA in H1FY26; Durg expansion +4.6 MTPA (2.3 MTPA clinker line + FOUR grinding units of 4.6 MTPA total) at Rs 2,500 cr by Mar-2028; ACPL (Agrani Cement, 85% stake for Rs 325.11 cr) clinkerisation 1.0 MTPA + grinding 1.5 MTPA 'currently awaiting necessary clearances', with Assam limestone reserves ~335 MT via Trivikram Consortium; net debt/PBILDT to stay ~2.0-2.5x",
+    "rationale_url": "https://www.careratings.com/upload/CompanyFiles/PR/202508120811_JK_Lakshmi_Cement_Limited.pdf",
+    "adds_beyond_news": "The rationale's four unnamed-location grinding units under the Durg expansion plus the ACPL project explicitly 'awaiting clearances' are the likely counterpart of the 11 West Bengal EC filings -- giving a Rs 2,500 cr project cost and Mar-2028 deadline news never tied to WB"
+   }
   },
   {
    "company": "Reliance Industries Limited",
@@ -130,7 +151,15 @@
    "news_verdict": "PARTIALLY_VISIBLE",
    "news_summary": "SeQuent-Viyash merger (2025), $1B revenue target by 2032, stated intent to increase capacities -- but no specific plant, project or capex announced.",
    "match_with_filings": "Weak -- general growth intent public; the specific Maharashtra/Telangana API expansions in its 10 EC filings are entirely absent from news.",
-   "best_source_url": "https://www.whalesbook.com/news/English/other/Viyash-Scientific-Targets-dollar1-Billion-Revenue-By-2032-What-Investors-Should-Know/6a43bf81fb97bcde4ce70e8a"
+   "best_source_url": "https://www.whalesbook.com/news/English/other/Viyash-Scientific-Targets-dollar1-Billion-Revenue-By-2032-What-Investors-Should-Know/6a43bf81fb97bcde4ce70e8a",
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "ICRA: AA- (Stable), assigned (Rs 185 cr fund-based working capital facilities)",
+    "rating_date": "2026-04",
+    "rationale_capex_disclosure": "Explicitly states the company 'is not expected to incur any significant expansion capex over the next 3-4 years and will undertake capex in the range of Rs. 100-150 crore per annum'; FY2027 planned capex ~Rs 100-150 cr; cash and liquid investments Rs 276.1 cr (Dec-2025); Total Debt/OPBDITA improved to 0.9x post the Nov-2025 merger of Viyash Lifesciences into Sequent Scientific (renamed Viyash Scientific); Carlyle Group majority shareholder; 9M FY26 operating margin 18.9%",
+    "rationale_url": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=142544",
+    "adds_beyond_news": "Reveals a direct contradiction worth flagging: management told ICRA there is no significant expansion capex for 3-4 years, yet the company has 10 live EC filings -- either the filings are within the modest Rs 100-150 cr/yr budget or plans post-date the April-2026 rating"
+   }
   },
   {
    "company": "Shree Cement Limited",
@@ -195,7 +224,15 @@
    "news_verdict": "PARTIALLY_VISIBLE",
    "news_summary": "~$580M IPO filing (Rs 1,500 cr fresh) and world's largest organic titanate plant at Mundra public -- but no announced capex or new Gujarat expansion for 2025-26.",
    "match_with_filings": "Partial -- Gujarat footprint public but the specific expansions behind 6 EC filings (latest 2026-02) not covered.",
-   "best_source_url": "https://www.business-standard.com/markets/ipo/dorf-ketal-chemicals-india-files-for-580-million-ipo-claim-draft-papers-125012401609_1.html"
+   "best_source_url": "https://www.business-standard.com/markets/ipo/dorf-ketal-chemicals-india-files-for-580-million-ipo-claim-draft-papers-125012401609_1.html",
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "CRISIL: AA/Stable / A1+ (reaffirmed; bank facilities enhanced to Rs 1,741.6 cr)",
+    "rating_date": "2025-08",
+    "rationale_capex_disclosure": "No specific expansion projects disclosed; maintenance capex estimated at Rs 150-200 crore annually from FY2026; Impact Fluid Solutions (US) acquisition was fully debt-funded, pushing net debt to Rs 2,995 cr (Mar-2025); SEBI approved DRHP June 2025 and ~Rs 1,500 cr of IPO proceeds earmarked for debt retirement and general corporate purposes; operations at Mundra and Dahej (Gujarat), Maharashtra, Brazil, USA",
+    "rationale_url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/Dorf_KetalChemicalsIndiaLimited_August%2008_%202025_RR_375889.html",
+    "adds_beyond_news": "Adds the Rs 2,995 cr net debt figure, the Rs 1,500 cr IPO-proceeds-to-debt plan, and confirms no big organic capex is budgeted -- so the 6 Gujarat EC filings likely represent post-IPO growth projects not yet in the rating case"
+   }
   },
   {
    "company": "J K Cement Limited",
@@ -257,7 +294,15 @@
    "news_verdict": "PARTIALLY_VISIBLE",
    "news_summary": "No mainstream press announcement found. Only regulatory-derived trackers (Global Energy Monitor wiki, WBPCB filing PDFs) document the Kharagpur (West Medinipur, WB) expansion to ~1.8-2.0 MTPA integrated steel plant; GEM notes expansion underway as of Jan 2025 with no completion updates as of Oct 2025. No capex figure in any news outlet.",
    "match_with_filings": "The documented Kharagpur/Shyamraipur West Bengal steel expansion matches the metallurgy EC filings, but visibility comes only from clearance-document trackers, not news media.",
-   "best_source_url": "https://www.gem.wiki/Orissa_Metaliks_Kharagpur_Steel_Plant"
+   "best_source_url": "https://www.gem.wiki/Orissa_Metaliks_Kharagpur_Steel_Plant",
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "CRISIL: AA/Stable (long-term, upgraded from AA-/Positive) / A1+ (short-term)",
+    "rating_date": "2025-04",
+    "rationale_capex_disclosure": "Rashmi Group consolidated capex of ~Rs 8,000-10,000 crore over FY2026-28, funded primarily through internal accrual (annual cash accrual expected over Rs 5,000 cr/fiscal, limited external debt). Manufacturing at Kharagpur and Jamuria, West Bengal; group capacities >32 million tonnes as of Jan-2025; Rashmi Green Hydrogen Steel's 600,000 MTPA ductile iron pipe unit to start April 2025; consolidated revenue Rs 28,550 cr FY24, ~Rs 33,000 cr expected FY25",
+    "rationale_url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/OrissaMetallurgicalIndustryPrivateLimited_April%2004_%202025_RR_366313.html",
+    "adds_beyond_news": "Quantifies the group-level war chest behind the Kharagpur ~2 MTPA expansion -- Rs 8,000-10,000 cr FY26-28 funded largely by internal accruals -- which no clearance tracker or news source discloses"
+   }
   },
   {
    "company": "Matrix Pharmacorp Private Limited",
@@ -276,7 +321,15 @@
    "news_verdict": "PARTIALLY_VISIBLE",
    "news_summary": "Company expansion news exists but for Andhra Pradesh, not Telangana: inaugurated a new HPAPI oncology facility (Unit-8) in Vizag in March 2026 and has raised ~$175M total funding. Revenue Rs 4,420 cr FY25. No news of the Telangana (Sangareddy/Pashamylaram) API expansion in the EC filings.",
    "match_with_filings": "News covers Vizag CDMO/oncology expansion, not the Telangana synthetic-organic-chemicals/API projects in the clearance filings -- state does not match.",
-   "best_source_url": "https://pharmasource.global/content/news/cdmo-news/matrix-pharma-corp-inaugurates-oncology-manufacturing-facility-in-vizag/"
+   "best_source_url": "https://pharmasource.global/content/news/cdmo-news/matrix-pharma-corp-inaugurates-oncology-manufacturing-facility-in-vizag/",
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "CRISIL: AA-/Stable (NCDs aggregating Rs 2,500 cr, reaffirmed)",
+    "rating_date": "2025-04",
+    "rationale_capex_disclosure": "Moderate annual capex plan of ~Rs 200 crore with 'no major capex plan' anticipated; acquisition (Viatris API business) funding mix disclosed: Rs 1,965 cr NCDs in four tranches + Rs 830 cr CCDs + Rs 955 cr equity + Rs 230-240 cr additional equity for working capital. Separately, ICRA (Nov-2025) notes Rs 86 cr invested in CCDs Aug-Oct 2025 with Rs 50 cr more by Jan-2026 toward acquiring a stake in Hydra Active Pharma Sciences. No plant-level Telangana/Vizag project detail in the rationale",
+    "rationale_url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/MatrixPharmacorpPrivateLimited_April%2009_%202025_RR_365384.html",
+    "adds_beyond_news": "Adds the ~Rs 200 cr/yr capex budget, the full Rs 2,500 cr acquisition debt structure, and an unreported Rs 136 cr Hydra Active Pharma stake purchase -- the Telangana API EC filings sit inside that Rs 200 cr/yr envelope, not a separately announced project"
+   }
   },
   {
    "company": "A-One Steels India Limited",
@@ -426,7 +479,15 @@
    "news_summary": "News exists on the Nissan Bharat Rasayan JV building a new Ryzonic rice-herbicide facility in India (operations from FY2028) and a ~Rs 220 crore phase-1 capex for a 25,000-ton plant, but no press specifically announces Bharat Rasayan Ltd's own Gujarat pesticide expansions behind the 2026 EC filings.",
    "match_with_filings": "Activity (pesticides/agrochemicals) and likely geography (Dahej, Gujarat) are consistent, but the news is about the JV entity rather than the parent's own EC-filed projects.",
    "best_source_url": "https://www.chemicalweekly.com/latestnews/nissan-chemical-bharat-rasayan-jv-setting-up-new-herbicide-facility/2394",
-   "announced_capex_rs_cr": 220
+   "announced_capex_rs_cr": 220,
+   "credit_rating": {
+    "rated_by_care": true,
+    "rating": "CARE AA-; Stable (LT) / CARE A1+ (ST and CP), reaffirmed; approach revised standalone-to-consolidated with Nissan Bharat Rasayan JV",
+    "rating_date": "2024-12",
+    "rationale_capex_disclosure": "States BRL 'does not have major capex plans except routine capex and refurbishment for Rs 60-70 crore annually'; restatement of Block D of Dahej plant completed Feb-2024 and at full capacity; units at Mokhra, Haryana (5,000 MTPA) and Dahej, Gujarat (29,300 MTPA); Nissan Bharat Rasayan JV (30:70 with Nissan Chemical) income Rs 272.49 cr FY24, PAT margin 19%; zero long-term debt, gearing 0.08x, net worth Rs 987.8 cr, and 'sufficient gearing headroom to raise additional debt for its capex needs'",
+    "rationale_url": "https://www.careratings.com/upload/CompanyFiles/PR/202412121234_Bharat_Rasayan_Limited.pdf",
+    "adds_beyond_news": "Shows the 5 Gujarat pesticide EC filings are NOT in the rating case (only Rs 60-70 cr/yr routine capex disclosed as of Dec-2024) -- signalling an undisclosed new expansion the debt-free balance sheet (0.08x gearing) can easily fund"
+   }
   },
   {
    "company": "Coromandel International Limited",
@@ -486,7 +547,15 @@
    "news_summary": "Heavy public capex (~Rs 3,500 cr + subsidiary phenol/IPA plants) but Gujarat/Dahej-centric. The TELANGANA expansion (Jeedimetla Unit-I, ~Rs 20 cr) surfaces only in the EC document itself.",
    "match_with_filings": "The 4 Telangana filings = a small Hyderabad unit expansion essentially invisible in national news.",
    "best_source_url": "https://www.tgnns.com/news/deepak-nitrite-q4-results-2025-and-fundamental-analysis/2025/05/28",
-   "announced_capex_rs_cr": 3500
+   "announced_capex_rs_cr": 3500,
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "ICRA: AA (Stable) / A1+, reaffirmed with outlook revised to Stable from Positive",
+    "rating_date": "2025-08",
+    "rationale_capex_disclosure": "Group capex of Rs 11,000-11,500 crore over FY2026-FY2028: 165 KTPA polycarbonate resin (plant bought from Trinseo for $52.5M, relocating from Stade, Germany), 300 KTPA phenol, 185 KTPA acetone, 100 KTPA IPA, plus BPA backward integration in advanced finalisation; separate Rs 2,400 cr modular capex under Deepak Chem Tech (up from Rs 2,016 cr) commissioning through FY2026; debt-funded, cash generation from FY2029; manufacturing sites listed as Nandesari and Dahej (Gujarat), Taloja and Roha (Maharashtra) and Hyderabad (Telangana)",
+    "rationale_url": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=136958",
+    "adds_beyond_news": "Confirms Hyderabad/Telangana is an existing DNL site but the Jeedimetla EC-filed expansions are NOT itemized in the Rs 11,000+ cr program -- they sit outside the headline capex narrative, consistent with their national invisibility"
+   }
   },
   {
    "company": "Godrej Industries Ltd",
@@ -524,7 +593,15 @@
    "news_verdict": "QUIET",
    "news_summary": "NO investment/expansion news at all. 1999-incorporated Mumbai company, ~48 employees, plant at Boisar, Maharashtra; specialty chemicals for textiles/coatings/leather; FY25 net sales +21%, assets +37% -- quiet growth.",
    "match_with_filings": "The 4 polymer EC filings (latest Mar 2026) have ZERO public counterpart -- a genuinely below-radar expansion, likely Boisar.",
-   "best_source_url": "https://tracxn.com/d/legal-entities/india/hemanjali-polymers-private-limited/__VQRLDPZ6uR6Ljku_Iaw1RLgr6ygodQQ33ERBIL14RLU"
+   "best_source_url": "https://tracxn.com/d/legal-entities/india/hemanjali-polymers-private-limited/__VQRLDPZ6uR6Ljku_Iaw1RLgr6ygodQQ33ERBIL14RLU",
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "none found",
+    "rating_date": null,
+    "rationale_capex_disclosure": "none found -- no rating rationale from any agency; company registries show a 1999-incorporated Mumbai company with a Tarapur MIDC (Boisar) unit and FY25 revenue of ~Rs 56.7 cr",
+    "rationale_url": null,
+    "adds_beyond_news": "nothing new from ratings, but the FY25 revenue figure (~Rs 57 cr) from registry data implies the 4 EC filings represent a very large expansion relative to current scale"
+   }
   },
   {
    "company": "Rexxon Speciality Chemical Llp",
@@ -542,7 +619,15 @@
    "news_verdict": "QUIET",
    "news_summary": "No news whatsoever. LLP incorporated 24 Jan 2025 at Rajkot (Gondal), Gujarat, Rs 1 lakh capital, 10 partners. A brand-new entity filing 4 ECs within ~15 months = a greenfield plant built entirely off the news radar.",
    "match_with_filings": "The 4 specialty-chem filings (latest Apr 2026) are the ONLY public evidence this newly-formed Gujarat LLP is building anything.",
-   "best_source_url": "https://tracxn.com/d/legal-entities/india/rexxon-speciality-chemical-llp/__g8PoVHhOsbm_hpe1qJ3de6J_Ru5y8BnJzbgbPikgJ08"
+   "best_source_url": "https://tracxn.com/d/legal-entities/india/rexxon-speciality-chemical-llp/__g8PoVHhOsbm_hpe1qJ3de6J_Ru5y8BnJzbgbPikgJ08",
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "none found",
+    "rating_date": null,
+    "rationale_capex_disclosure": "none found -- no CARE/CRISIL/ICRA/India Ratings rationale exists; only MCA registration profiles (LLPIN ACL-5717, incorporated 24-Jan-2025, Rajkot) surface in searches",
+    "rationale_url": null,
+    "adds_beyond_news": "nothing new -- the LLP is unrated and has zero financial disclosure anywhere; the 4 EC filings remain the only public evidence of its plans"
+   }
   },
   {
    "company": "Reliance Bp Mobility Limited",
@@ -564,7 +649,15 @@
    "news_verdict": "PARTIALLY_VISIBLE",
    "news_summary": "Retail push well covered (2,000-2,500 stations, ~4% petrol/6%+ diesel private share, 5,000+ EV charge points, 30,000 chargers by 2030) but NO coverage of the specific Haryana/multi-state land acquisitions; no rupee figure for the rollout.",
    "match_with_filings": "The 58 forest-clearance land diversions (latest Jul 2026, Haryana-heavy) quantify a rollout whose granular geography and pace are invisible in public announcements.",
-   "best_source_url": "https://www.whalesbook.com/news/English/energy/Jio-BP-Escalates-India-Fuel-War-With-New-Tech/697a40f698511879499c26e4"
+   "best_source_url": "https://www.whalesbook.com/news/English/energy/Jio-BP-Escalates-India-Fuel-War-With-New-Tech/697a40f698511879499c26e4",
+   "credit_rating": {
+    "rated_by_care": true,
+    "rating": "CARE AAA; Stable (LT bank facilities Rs 1,055 cr) / with LT/ST facilities also rated",
+    "rating_date": "2025-01",
+    "rationale_capex_disclosure": "No total capex figure, but funding trail disclosed: term debt of Rs 500 cr availed FY23 plus Rs 400 cr in H1FY24 to fund capex during adverse conditions; 7MFY25 capex funded entirely from internal accruals; network grown from ~1,400 outlets (at transfer from RIL) to ~1,850 as of 31-Oct-2024, with plans to expand fuel retail, EV fixed charging + battery swapping across Metro/Tier-I/Tier-II in phases, CNG/Bio-CNG stations, convenience stores and forecourt QSRs",
+    "rationale_url": "https://www.careratings.com/upload/CompanyFiles/PR/202501130152_Reliance_BP_Mobility_Limited.pdf",
+    "adds_beyond_news": "Adds the only public capex financing data for the 58 forest-clearance fuel-station rollout -- Rs 900 cr of historical capex term debt, now self-funded from accruals, and the 1,850-outlet count as of Oct-2024"
+   }
   },
   {
    "company": "Kpi Green Energy Limited",
@@ -583,7 +676,15 @@
    "news_summary": "Gujarat project flow heavily publicized (92.15 MWp GUVNL hybrid commissioned early, Rs 272 cr NaBFID financing, 10 GW by 2030) but news is at project/PPA level -- the 20 forest-land diversions are not reported as such.",
    "match_with_filings": "The 20 Gujarat FC filings are consistent with the announced hybrid pipeline but no announcement names the land parcels.",
    "best_source_url": "https://www.business-standard.com/markets/capital-market-news/kpi-green-energy-commences-power-supply-from-92-15-mwp-ipp-hybrid-power-project-126010200879_1.html",
-   "announced_capex_rs_cr": 272
+   "announced_capex_rs_cr": 272,
+   "credit_rating": {
+    "rated_by_care": false,
+    "rating": "ICRA: A (Positive) / A2+ (bank lines); Provisional [ICRA]AA+(CE) (Stable) on Rs 700 cr NCDs (GuarantCo-backed)",
+    "rating_date": "2025-08",
+    "rationale_capex_disclosure": "Capex of ~Rs 4,100 crore for ~0.9 GW under-development utility-scale IPP projects, ~75% debt-funded; cost estimate raised by ~Rs 700 cr due to DC upsizing; projects: 250-MW (275 MWdc) GUVNL solar at Rs 2.65/unit and 370-MW (658 MW installed) GUVNL hybrid at Rs 3.24/unit; 200-MWac Khavda solar + 50-MW Bharuch hybrid installed Mar-2025 (commissioning pending); Rs 1,000 cr QIP Aug-2024 + Rs 500 cr equity at Sun Drops fund the equity portion; entire operational capacity in Gujarat (Bharuch, Bhavnagar, Khavda)",
+    "rationale_url": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=137115",
+    "adds_beyond_news": "Dwarfs the known Rs 272 cr NaBFID facility -- the rationale sizes the full Gujarat pipeline behind the 20 forest clearances at ~Rs 4,100 cr, 75% debt, with tariffs, counterparty and RoW/land availability flagged as the key execution risk"
+   }
   },
   {
    "company": "Nayara Energy Limited",
@@ -602,7 +703,15 @@
    "news_verdict": "PARTIALLY_VISIBLE",
    "news_summary": "National retail expansion public -- crossed 7,000 pumps (Jun 2026), 500+ outlets in 18 months (~1/day), India's largest private fuel retailer, ~400 more planned -- but nothing Punjab-specific and no capex figure.",
    "match_with_filings": "The 20 Punjab FC filings are the state-level footprint of a nationally-announced but geographically undisclosed rollout.",
-   "best_source_url": "https://www.business-standard.com/companies/news/nayara-energy-crosses-7-000-petrol-pumps-in-india-expands-retail-network-126062200570_1.html"
+   "best_source_url": "https://www.business-standard.com/companies/news/nayara-energy-crosses-7-000-petrol-pumps-in-india-expands-retail-network-126062200570_1.html",
+   "credit_rating": {
+    "rated_by_care": true,
+    "rating": "CARE AA- (Rating Watch with Negative Implications) on LT facilities Rs 11,453.71 cr and NCDs Rs 256.84 cr / CARE A1+ (RWN) on ST Rs 14,350 cr -- placed on watch after US sanctions on Rosneft/Lukoil effective 21-Nov-2025",
+    "rating_date": "2025-10",
+    "rationale_capex_disclosure": "6,700+ operational retail outlets as of 30-Jun-2025, run primarily on dealer-owned-dealer-operated (DODO) model 'resulting in minimal capital requirement for its retail outlet expansion plan'; plans additional rail-fed fuel depots (existing at Wardha, Maharashtra and Pali, Rajasthan) to cut dependence on PSU OMCs; 450 KTPA polypropylene plant commissioned July-2024 at ~75% utilisation; routine capex partly debt-funded; net-debt gearing 0.12x (Jun-2025); any large debt-funded expansion is a stated rating monitorable",
+    "rationale_url": "https://www.careratings.com/upload/CompanyFiles/PR/202510131001_Nayara_Energy_Limited.pdf",
+    "adds_beyond_news": "Explains why no capex figure exists for the 7,000-pump network: the DODO model makes Nayara's own outlay minimal -- plus adds the sanctions-driven RWN status and the unreported depot-buildout plan behind the Punjab forest clearances"
+   }
   },
   {
    "company": "Hpcl Mittal Energy Limited",

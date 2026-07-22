@@ -1,0 +1,54 @@
+{
+ "layer": 32,
+ "name": "company_db",
+ "built": "2026-07-23",
+ "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
+ "db_path": "data/companies.db",
+ "counts": {
+  "companies": 1785,
+  "in_more_than_one_layer": 1508,
+  "by_role": {
+   "alias_check": 18,
+   "clearance_lead": 98,
+   "foreign_lead": 321,
+   "pairing_prospective": 7,
+   "pairing_verified": 12,
+   "pool_policy": 1371,
+   "pool_visibility": 1331,
+   "shortlist_target": 136
+  },
+  "india_entities": 1429,
+  "credit_rated": 82,
+  "by_country_top10": {
+   "India": 1500,
+   "United States": 75,
+   "?": 36,
+   "United Kingdom": 12,
+   "South Korea": 12,
+   "Japan": 12,
+   "China": 12,
+   "Australia": 11,
+   "Taiwan": 9,
+   "Turkey": 7
+  }
+ },
+ "schema": {
+  "companies": "canonical identity (name, name_norm, country, sector, ticker, is_india_entity)",
+  "company_sources": "provenance — (layer, role, as_of, payload verbatim JSON)",
+  "credit_ratings": "layer-24 rating channel (agency, rating, capex disclosure, rationale URL, care_check)",
+  "clearance_activity": "PARIVESH footprint (filings, states, activity, policy program, visibility verdict)",
+  "lead_scores": "scores from 16/16ts",
+  "company_card": "VIEW — one row per company joining all of the above"
+ },
+ "identity_rule": "dedup key = lowercased name with legal suffixes stripped (Ltd/Pvt/GmbH/Inc/...) + country; overlaps across layers merge, same-name different-country stay separate",
+ "sources": [
+  "16_leads",
+  "16_target_shortlist",
+  "24_clearance_leads",
+  "24b_pool_policy_triage",
+  "24e_pool_visibility_sweep",
+  "21_indian_entity_alias_check",
+  "07_investor_pairings"
+ ],
+ "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id"
+}

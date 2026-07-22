@@ -1595,7 +1595,11 @@
    "note": "Aarti demerged pharma arm; CDMO guided +40-50%/yr -- China+1 positioning",
    "credit_rating": {
     "rating": "CRISIL: AA-/Stable (upgraded from A+, 2025-07-17)",
-    "rationale_capex_disclosure": "Upgrade on sustained improvement despite capex mode; CDMO block potential revenue Rs 250-300 cr"
+    "rationale_capex_disclosure": "Upgrade on sustained improvement despite capex mode; CDMO block potential revenue Rs 250-300 cr",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate. DISCREPANCY FLAGGED: CRISIL's own page shows A+/Positive on LT bank facilities vs the AA- (upgraded Jul-2025) captured earlier -- unreconciled, one read is stale; verify before citing a level"
+    }
    }
   },
   {
@@ -1620,7 +1624,11 @@
    "note": "CRDMO with fermentation niche; management publicly frames expansion as China cost-arbitrage alternative -- strongest import-substitution narrative in cohort",
    "credit_rating": {
     "rating": "ICRA: reaffirmed, amount enhanced, outlook Positive (2025-06-20)",
-    "rationale_capex_disclosure": "Rs 150 cr + Rs 550 cr completing H1 FY26, ~Rs 1,000 cr Unit-IV planned; net cash Rs 622.8 cr"
+    "rationale_capex_disclosure": "Rs 150 cr + Rs 550 cr completing H1 FY26, ~Rs 1,000 cr Unit-IV planned; net cash Rs 622.8 cr",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; ICRA (Positive, FY2025) sole agency view"
+    }
    }
   },
   {
@@ -1696,7 +1704,15 @@
    "note": "Private Vadodara; PAP integration is direct China import-substitution (India historically imported nearly all PAP from China)",
    "credit_rating": {
     "rating": "CARE rated (sister Farmson Pharmaceutical Gujarat, 2023 PR); no current rationale for this entity",
-    "rationale_capex_disclosure": "2023: leading API presence, vertical integration, robust capital structure; nothing expansion-specific"
+    "rationale_capex_disclosure": "2023: leading API presence, vertical integration, robust capital structure; nothing expansion-specific",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CORRECTION to our earlier framing: CARE's final rationale shows Jhagadia PAP as an EXISTING FY21 facility, not a new build -- the 2025-26 EC filings are expansion on an established integration; and since withdrawal NO agency discloses the current capex",
+     "care_rating": "CARE A; Stable / A1 on sister Farmson Pharmaceutical Gujarat -- WITHDRAWN",
+     "care_date": "2023-08",
+     "highlights": "Withdrawal PR: largest paracetamol capacity in India (40,800 MTPA, two Vadodara units) + PAP unit at Jhagadia -- described as EXISTING (acquired from promoter firm JNP via slump sale FY21). FY23 TOI Rs 2,172.6 cr, PBILDT 35.1%, gearing <0.10x, zero net debt since FY20, FY22 interest cover 246x. Constraints: single-product concentration, crude-linked RM, unhedged forex",
+     "url": "https://www.careratings.com/upload/CompanyFiles/PR/202308130853_Farmson_Pharmaceutical_Gujarat_Private_Limited.pdf"
+    }
    }
   },
   {
@@ -1720,7 +1736,11 @@
    "note": "Semi-synthetic penicillin sits squarely in the China-dependent fermentation chain (Pen-G/6-APA imports) -- EC filings are the only visibility",
    "credit_rating": {
     "rating": "unrated",
-    "rationale_capex_disclosure": "none found"
+    "rationale_capex_disclosure": "none found",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; remains unrated by ANY agency -- EC register still the only visibility"
+    }
    }
   },
   {
@@ -1746,7 +1766,15 @@
    "note": "Listed; salicylic acid + anti-diabetic intermediates = China-sourced chains being localized",
    "credit_rating": {
     "rating": "ICRA reaffirmed (Jan-2025); CRISIL outstanding (Oct-2024)",
-    "rationale_capex_disclosure": "Rs 220-230 cr FY25 + Rs 150-160 cr FY26 for two greenfields + debottlenecking; ramp-up a monitorable"
+    "rationale_capex_disclosure": "Rs 220-230 cr FY25 + Rs 150-160 cr FY26 for two greenfields + debottlenecking; ramp-up a monitorable",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE exited Mar-2021 at A+ -- one notch above current CRISIL/ICRA but 5 years stale; no contradiction",
+     "care_rating": "CARE A+; Stable / A1+ -- reaffirmed and WITHDRAWN at company request",
+     "care_date": "2021-03",
+     "highlights": "At exit: 11 plants (9 Tarapur, 2 Sarigam), 80+ products, exports ~104 countries; gearing 0.52x",
+     "url": "https://www.careratings.com/upload/CompanyFiles/PR/09032021080455_Aarti_Drugs_Limited.pdf"
+    }
    }
   },
   {
@@ -1794,7 +1822,11 @@
    "note": "Dasaldhan group (est. 1991). ICRA 'no capex' vs fresh filings = genuine information gap",
    "credit_rating": {
     "rating": "unrated (sister Dasaldhan Chemicals rated ICRA, 2026-01-23)",
-    "rationale_capex_disclosure": "ICRA on sister co: group has NO long-term debt and 'no major debt-funded capacity expansion plans' -- vs 2 fresh EC filings: internally funded, unannounced"
+    "rationale_capex_disclosure": "ICRA on sister co: group has NO long-term debt and 'no major debt-funded capacity expansion plans' -- vs 2 fresh EC filings: internally funded, unannounced",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate either Dasaldhan entity; ICRA on Chemicals is sole coverage"
+    }
    }
   },
   {
@@ -1869,7 +1901,11 @@
    "note": "GERMANY-LINKED CAPEX CONFIRMED: 100% Lanxess AG subsidiary; the 4 May-2026 filings likely front-run the next phase. Specialty-chem localization = direct import-substitution play",
    "credit_rating": {
     "rating": "unrated (parent-funded, no India-arm rationale)",
-    "rationale_capex_disclosure": "none found (capex via press, not rating docs)"
+    "rationale_capex_disclosure": "none found (capex via press, not rating docs)",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; Lanxess appears on careratings.com only as customer/competitor reference in other companies' rationales"
+    }
    }
   },
   {
@@ -1895,7 +1931,11 @@
    "note": "Hyderabad API house going public; filings align with Unit-1/Unit-5 + Rs 450 cr pipeline. Core API-KSM import-substitution exposure",
    "credit_rating": {
     "rating": "India Ratings: IND A-/Stable (upgraded from BBB+)",
-    "rationale_capex_disclosure": "Rs 312.4 cr capex FY21-25; ongoing Unit-1/Unit-5 Rs 150 cr; contemplating further Rs 450 cr"
+    "rationale_capex_disclosure": "Rs 312.4 cr capex FY21-25; ongoing Unit-1/Unit-5 Rs 150 cr; contemplating further Rs 450 cr",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; India Ratings sole coverage"
+    }
    }
   },
   {
@@ -1921,7 +1961,13 @@
    "note": "The PARIVESH pesticide filings are the LEADING INDICATOR of the agrochemical leg of the Rs 10,000 cr Odisha pledge. Fluorine agrochem intermediates = flagship China-substitution category",
    "credit_rating": {
     "rating": "CRISIL: AA+/Stable/A1+ (May-2025); Ind-Ra AA+ affirmed",
-    "rationale_capex_disclosure": "FY26 capex guidance Rs 2,200-2,300 cr incl. Odisha 300-acre land; internal accruals + debt"
+    "rationale_capex_disclosure": "FY26 capex guidance Rs 2,200-2,300 cr incl. Odisha 300-acre land; internal accruals + debt",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "No direct CARE opinion on SRF Ltd; subsidiary rating consistent with CRISIL AA+ parent view",
+     "highlights": "CARE rates subsidiary SRF Altech (Dec-2022): Rs 425 cr aluminium-foil project in MP (21,000 MTPA), Rs 400 cr term loan, rating leans on parent SRF support",
+     "url": "https://www.careratings.com/upload/CompanyFiles/PR/02122022073244_SRF_Altech_Limited.pdf"
+    }
    }
   },
   {
@@ -1994,7 +2040,11 @@
    "note": "Appears converted to 'Jayshree Aromatics Limited' (2026) -- possible pre-listing restructuring. The ~19x capacity jump with zero press/rating visibility is the largest disclosure gap in this set",
    "credit_rating": {
     "rating": "Brickwork: Issuer Not Cooperating (2021-01-25)",
-    "rationale_capex_disclosure": "none current (2021 note describes ~20,000 sq m site, chlorine-chemistry advantage)"
+    "rationale_capex_disclosure": "none current (2021 note describes ~20,000 sq m site, chlorine-chemistry advantage)",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; only Brickwork Jan-2021 INC exists -- disclosure darkness confirmed from a second angle"
+    }
    }
   },
   {
@@ -2067,7 +2117,11 @@
    "note": "Listed niche animal-health API exporter (45+ countries, 5 of top-10 global animal-health clients)",
    "credit_rating": {
     "rating": "ICRA: BBB+/A2 Stable (reaffirmed Feb-Mar 2026)",
-    "rationale_capex_disclosure": "Total Tarapur Rs 200-210 cr, debt+accruals; gearing 0.3x, DSCR 7.2x"
+    "rationale_capex_disclosure": "Total Tarapur Rs 200-210 cr, debt+accruals; gearing 0.3x, DSCR 7.2x",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; ICRA BBB+ + CRISIL BBB+ are the live views"
+    }
    }
   },
   {
@@ -2143,7 +2197,11 @@
    "note": "Rare NE-India ethanol asset on AIDCL land -- plugs into NE industrial incentive framework",
    "credit_rating": {
     "rating": "CRISIL: BBB+/Stable (2025-11-25)",
-    "rationale_capex_disclosure": "Project ~Rs 371 cr; LTOA with OMCs; rice-mill/FCI proximity cited"
+    "rationale_capex_disclosure": "Project ~Rs 371 cr; LTOA with OMCs; rice-mill/FCI proximity cited",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; CRISIL BBB+ (Nov-2025) + Infomerics stand"
+    }
    }
   },
   {
@@ -2348,7 +2406,13 @@
    "note": "State-courted but unrated, thin footprint -- execution unproven",
    "credit_rating": {
     "rating": "unrated",
-    "rationale_capex_disclosure": "none (no rating exists)"
+    "rationale_capex_disclosure": "none (no rating exists)",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "MATERIAL ADVERSE COLOR absent everywhere else: SEBI/IT/ED litigations against the promoter group + withdrawn BB+ parent rating -- a much weaker group picture than RSLD's bare 'unrated' status suggests. Re-grades the RSLD lead to HIGH-RISK despite the CM invitation letter",
+     "highlights": "No direct CARE rating, but CARE rated parent RSL Distilleries: BB+; Stable / A4+ reaffirmed AND WITHDRAWN 08-Aug-2025 at company request. Mar-2022 PR disclosed Rs 120 cr RSL guarantee for RSLD's IREDA borrowings (130 KLPD plant, Rs 200 cr, operational Jan-2023, ~90% utilization). 2025 PR flags: margins down on broken-rice cost (~88% of cost); GROUP/PROMOTER LITIGATIONS -- SEBI, IT department, ED -- and guarantee exposure to group entities",
+     "url": "https://www.careratings.com/upload/CompanyFiles/PR/202508120842_RSL_Distilleries_Private_Limited.pdf"
+    }
    }
   },
   {
@@ -2374,7 +2438,13 @@
    "note": "FRENCH parent confirmed -- strongest-sponsored name on this list; 700-800 direct jobs, barley sourcing program",
    "credit_rating": {
     "rating": "unrated in India (funded by Pernod Ricard SA, international IG)",
-    "rationale_capex_disclosure": "Capex via company/state announcements: Rs 1,785 cr Nagpur"
+    "rationale_capex_disclosure": "Capex via company/state announcements: Rs 1,785 cr Nagpur",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "Indirect signal of strong counterparty standing, not a rating",
+     "highlights": "Appears as anchor counterparty in CARE's rating of job-work bottler B V S Distilleries (Jun-2024) -- the Pernod offtake agreement treated as a credit STRENGTH",
+     "url": "https://www.careratings.com/upload/CompanyFiles/PR/202406120656_B_V_S_Distilleries_Private_limited.pdf"
+    }
    }
   },
   {
@@ -2449,7 +2519,11 @@
    "note": "Investment-grade group doing EBP capex through a new unrated SPV -- classic pattern; EC ahead of any announcement",
    "credit_rating": {
     "rating": "CRISIL: BBB+/Stable, A2 on group flagship Gwalior Alcobrew (Sep-2023); Bapuna Spirits unrated",
-    "rationale_capex_disclosure": "2023 rationale assumed NO debt-funded capex -- current EC-stage projects outside the rated perimeter"
+    "rationale_capex_disclosure": "2023 rationale assumed NO debt-funded capex -- current EC-stage projects outside the rated perimeter",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate any Bapuna group entity; CRISIL BBB+ (Gwalior Alcobrew) sole view"
+    }
    }
   },
   {
@@ -2475,7 +2549,11 @@
    "note": "KOREA-linked confirmed: world #1 spandex + PET tyre cord; two Maharashtra sites; cumulative India ~Rs 3,000 cr",
    "credit_rating": {
     "rating": "unrated in India (Korean-parent-funded)",
-    "rationale_capex_disclosure": "none in rating docs; capex via parent announcements"
+    "rationale_capex_disclosure": "none in rating docs; capex via parent announcements",
+    "care_check": {
+     "care_rates_it": false,
+     "delta_vs_other_agency": "CARE does not rate; India Ratings has a bank-loan rating on Hyosung T&D India (sister)"
+    }
    }
   },
   {

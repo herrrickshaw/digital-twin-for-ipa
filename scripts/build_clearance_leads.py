@@ -179,6 +179,26 @@ def main():
                 unmatched.append(s["company"])
             leads.append(rec)
 
+    # ---- CARE-specific pass on the tier-3 policy targets that lacked confirmed
+    # CARE coverage. "CARE does not rate" is recorded -- it tells us which
+    # verification channel is authoritative per name.
+    cp3 = os.path.join(SCRATCH, "care_tier3.json")
+    if os.path.exists(cp3):
+        c3 = {norm(r["company"]): r for r in json.load(open(cp3))}
+        for r in leads:
+            c = c3.get(norm(r["company"]))
+            if c is None:
+                for k, v in c3.items():
+                    if k[:12] in norm(r["company"]) or norm(r["company"])[:12] in k:
+                        c = v
+                        break
+            if c:
+                cc = {"care_rates_it": c["care_rates_it"], "delta_vs_other_agency": c.get("delta")}
+                for f in ("care_rating", "care_date", "highlights", "url"):
+                    if c.get(f):
+                        cc[f] = c[f]
+                r.setdefault("credit_rating", {})["care_check"] = cc
+
     counts = {}
     for r in leads:
         counts[r["news_verdict"]] = counts.get(r["news_verdict"], 0) + 1

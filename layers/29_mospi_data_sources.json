@@ -1,0 +1,283 @@
+{
+ "layer": 29,
+ "title": "MoSPI macro-statistics data sources (connector)",
+ "built": "2026-07-22",
+ "purpose": "The official India macro/statistics backdrop the twin lacked — 25 MoSPI datasets, each tagged for investment relevance and linked to the twin layer it informs.",
+ "source": {
+  "authority": "Ministry of Statistics & Programme Implementation (MoSPI)",
+  "portal": "https://esankhyiki.mospi.gov.in",
+  "api_base": "https://api.mospi.gov.in/api/esankhyiki/",
+  "swagger": "https://esankhyiki.mospi.gov.in/EC/swagger-ui/index.html",
+  "access_routes": [
+   "Official API: api.mospi.gov.in/api/<dataset>/... with dataset-specific params (see swagger); viz at /viz/<dataset>.",
+   "MoSPI MCP connector (session tool): list_datasets -> get_indicators -> get_metadata -> get_data. Filter codes are arbitrary and per-dataset; take them from get_metadata."
+  ],
+  "quirks": [
+   "RBI forex series lags ~13 months — prefer rbi.org.in WSSView scrape for current reserves.",
+   "WPI/IIP prints with large jumps need cross-check vs press release.",
+   "NAS getNasIndicatorList intermittently 500s (bundled fallback)."
+  ]
+ },
+ "counts": {
+  "datasets": 25,
+  "core_relevance": 6,
+  "sector_relevance": 6,
+  "context_relevance": 13
+ },
+ "data_sources": [
+  {
+   "dataset": "NAS",
+   "name": "National Accounts Statistics",
+   "coverage": "GDP, GVA, growth, savings, capital formation, trade — 22 annual + 11 quarterly macro aggregates",
+   "relevance": "core",
+   "twin_link": "Decade report card (L05) macro backdrop; GDP growth frames the pipeline",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nas",
+   "flagship_indicators": [
+    "Gross Value Added",
+    "Gross Domestic Product",
+    "GDP Growth Rate",
+    "GVA Growth Rate",
+    "Gross Fixed Capital Formation",
+    "Private Final Consumption Expenditure",
+    "Gross National Income",
+    "Gross Saving",
+    "Export of Goods and Services",
+    "Import of Goods and Services"
+   ]
+  },
+  {
+   "dataset": "CPI",
+   "name": "Consumer Price Index",
+   "coverage": "Retail inflation, 600+ items, base 2024; state + all-India",
+   "relevance": "core",
+   "twin_link": "Cost-of-living context for siting; food/fuel inflation feeds AIF/FPI relevance",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/cpi",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "WPI",
+   "name": "Wholesale Price Index",
+   "coverage": "Producer/wholesale inflation, 1000+ items, 5 levels",
+   "relevance": "core",
+   "twin_link": "Input-cost signal for manufacturing sectors (L26)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/wpi",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "IIP",
+   "name": "Index of Industrial Production",
+   "coverage": "Industrial output — manufacturing, mining, electricity; use-based classes",
+   "relevance": "core",
+   "twin_link": "Electronic Mfg & manufacturing sector momentum (L26); pairs with ASI",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/iip",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "PLFS",
+   "name": "Periodic Labour Force Survey",
+   "coverage": "Jobs, unemployment, wages, LFPR/WPR; annual/quarterly/monthly",
+   "relevance": "core",
+   "twin_link": "Labour-codes watchlist (L28); talent/wage context for siting",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/plfs",
+   "flagship_indicators": [
+    "LFPR — Labour Force Participation Rate",
+    "WPR — Worker Population Ratio",
+    "UR — Unemployment Rate",
+    "Avg regular wage/salary earnings",
+    "Avg casual-labour daily earnings",
+    "Avg self-employment earnings"
+   ]
+  },
+  {
+   "dataset": "RBI",
+   "name": "RBI Statistics",
+   "coverage": "Foreign trade by country/commodity, BoP, forex reserves, exchange rates (155 currencies), external debt",
+   "relevance": "core",
+   "twin_link": "External-sector context; complements india-trade-tracker EIDB flows",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/rbi",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "ASI",
+   "name": "Annual Survey of Industries",
+   "coverage": "Factory-sector financials — capital, wages, GVA, fuel, profitability by NIC",
+   "relevance": "sector",
+   "twin_link": "Factory economics behind manufacturing incentives (L17/26)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/asi",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "MNRE",
+   "name": "Renewable Energy (MNRE)",
+   "coverage": "State-wise monthly installed RE capacity (MW): solar/wind/hydro/bio, rooftop, KUSUM",
+   "relevance": "sector",
+   "twin_link": "NGHM SIGHT & RE incentives (L17/25); Electricity Generation pipeline (L26)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/mnre",
+   "flagship_indicators": [
+    "Solar Power (MW)",
+    "Wind Power (MW)",
+    "Hydro Power (MW)",
+    "Bio Power (MW)",
+    "Total Renewable Power (MW)"
+   ]
+  },
+  {
+   "dataset": "ENERGY",
+   "name": "Energy Statistics",
+   "coverage": "Energy balance — supply/consumption by commodity & sector (KToE/PJ)",
+   "relevance": "sector",
+   "twin_link": "Energy-cost & fuel-mix context for Oil&Gas/Power sectors (L26)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/energy",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "EC",
+   "name": "Economic Census",
+   "coverage": "District-wise establishment & worker counts (EC4-6)",
+   "relevance": "sector",
+   "twin_link": "Where enterprises already cluster — siting demand signal",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/ec",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "ASUSE",
+   "name": "Annual Survey of Unincorporated Enterprises",
+   "coverage": "Informal/MSME sector — counts, GVA, digital adoption, registration",
+   "relevance": "sector",
+   "twin_link": "MSME base behind ease-of-business reforms (L28)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/asuse",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "HCES",
+   "name": "Household Consumption Expenditure Survey",
+   "coverage": "MPCE, food/non-food, Gini inequality across 12 fractiles",
+   "relevance": "context",
+   "twin_link": "Demand-side consumption context (Consumer Goods/Retail sectors)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/hces",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "AISHE",
+   "name": "All India Survey on Higher Education",
+   "coverage": "Universities, colleges, enrolment, GER, PTR",
+   "relevance": "context",
+   "twin_link": "Talent-pool depth for tech/GCC entrants",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/aishe",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "UDISE",
+   "name": "UDISE+ (School Education)",
+   "coverage": "46 indicators — schools, enrolment, dropout, teachers, infrastructure",
+   "relevance": "context",
+   "twin_link": "Education-sector NIP projects (L26); human-capital base",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/udise",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "NFHS",
+   "name": "National Family Health Survey",
+   "coverage": "Health & demographics — fertility, mortality, nutrition, NCDs",
+   "relevance": "context",
+   "twin_link": "Healthcare-sector demand (L26 1,153 opportunities)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nfhs",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "GENDER",
+   "name": "Gender Statistics",
+   "coverage": "147 indicators — health, education, labour, leadership, crime",
+   "relevance": "context",
+   "twin_link": "Workforce-diversity & ESG context",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/gender",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "ENVSTATS",
+   "name": "Environment Statistics",
+   "coverage": "124 indicators — climate, water, forests, pollution, waste, disasters",
+   "relevance": "context",
+   "twin_link": "ESG/climate-risk screening for siting",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/envstats",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "CPIALRL",
+   "name": "CPI Agricultural/Rural Labourers",
+   "coverage": "Rural inflation for AL/RL worker categories",
+   "relevance": "context",
+   "twin_link": "Rural cost-of-living (agri sectors)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/cpialrl",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "TUS",
+   "name": "Time Use Survey",
+   "coverage": "Time allocation — paid/unpaid/care work by group",
+   "relevance": "context",
+   "twin_link": "Care-economy & informal-labour context",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/tus",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "NSS77",
+   "name": "NSS 77th — Land, Livestock & AIDIS",
+   "coverage": "Agri households, land ownership, farm income, household debt/assets",
+   "relevance": "sector",
+   "twin_link": "Agri-sector & rural-asset base (FPI/AIF)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nss77",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "NSS78",
+   "name": "NSS 78th — Living Conditions",
+   "coverage": "Water, sanitation, digital connectivity, migration, assets",
+   "relevance": "context",
+   "twin_link": "Infrastructure-gap context",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nss78",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "NSS79",
+   "name": "NSS 79th — CAMS + AYUSH",
+   "coverage": "Education, health expenditure, digital literacy, financial inclusion",
+   "relevance": "context",
+   "twin_link": "Digital-readiness & health-spend context",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nss79",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "NSS75E",
+   "name": "NSS 75th — Education",
+   "coverage": "Literacy, attainment, GAR/NAR, education expenditure",
+   "relevance": "context",
+   "twin_link": "Human-capital detail",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nss75e",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "NSS76",
+   "name": "NSS 76th — Disability + Housing/Water",
+   "coverage": "Disability prevalence; drinking water, housing quality, sanitation",
+   "relevance": "context",
+   "twin_link": "Social-infrastructure base",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nss76",
+   "flagship_indicators": null
+  },
+  {
+   "dataset": "NSS80",
+   "name": "NSS 80th — Telecom + Education",
+   "coverage": "Mobile/internet usage, digital literacy, e-commerce, school expenditure",
+   "relevance": "context",
+   "twin_link": "Digital-economy adoption (Telecom/IT sectors)",
+   "viz_url": "https://esankhyiki.mospi.gov.in/viz/nss80",
+   "flagship_indicators": null
+  }
+ ],
+ "linkage": {
+  "macro_backdrop": "NAS/CPI/WPI/IIP/PLFS/RBI give the growth, inflation, industry, jobs and external-sector context that frames every incentive/land/project decision in layers 05/17/25/26.",
+  "sector_specific": "ASI, MNRE, ENERGY, EC, ASUSE map to specific twin sectors (factory economics, renewable capacity, establishment clusters, MSME base).",
+  "cross_repo": "RBI trade series complements india-trade-tracker EIDB flows; CPI/WPI complement agri-commodity-tracker."
+ }
+}

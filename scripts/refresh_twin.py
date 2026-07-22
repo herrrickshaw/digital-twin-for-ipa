@@ -160,7 +160,7 @@ def cmd_watchlist():
     """Rebuild the live/dynamic cross-repo & watchlist layers (25-28)."""
     for s in ("build_layer25_linkages.py", "build_layer26_projects.py",
               "build_layer27_entry_facilitators.py",
-              "build_layer28_policy_watchlist.py"):
+              "build_layer28_policy_watchlist.py", "mospi_connector.py"):
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, "scripts", s)],
                            check=True)

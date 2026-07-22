@@ -33,6 +33,7 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 26 | `layers/26_project_pipeline.json` | **Investment-project pipeline — IIG / NIP + PM Gati Shakti** — the actual government-listed projects an investor can enter, from the [India Investment Grid](https://www.indiainvestmentgrid.gov.in) (public window onto the National Infrastructure Pipeline, the set PM Gati Shakti coordinates): **12,385 NIP opportunities across 42 sectors** + flagship projects (live), each sector mapped to its twin incentive lane. Built by `scripts/build_layer26_projects.py` |
 | 27 | `layers/27_entry_facilitators.json` | **Market-entry facilitators in India** — the trade-promotion agencies & bilateral chambers that host events and B2B matchmaking to bring foreign firms into India, plus the **Indian apex industry bodies** (FICCI, CII, NASSCOM, ASSOCHAM) that co-host them (**31 bodies, 21 countries**): GTAI + Indo-German Chamber (AHK/IGCC), Swissnex + S-GE, UKIBC, JETRO, KOTRA, Business France + IFCCI, ITA/ICE, USIBC + AMCHAM, EBTC and more. 11 verified events calendars; URLs liveness-checked on build. Built by `scripts/build_layer27_entry_facilitators.py` |
 | 28 | `layers/28_policy_watchlist.json` | **Policy watchlist — policies in discussion / in the pipeline** — the forward-looking counterpart to layer 17: NEW policy drafted, tabled or debated but not yet in force. **962 PRS bills** (live), **33 active investment-relevant bills (2024+)** mapped to twin sectors — Income Tax Bill 2025, Securities Markets Code, IBC & Banking amendments, Draft Electricity Amendment 2025, Nuclear Energy Bill, Indian Ports/Shipping bills, Jan Vishwas, labour codes — plus Drishti IAS policy editorials. Sources: PRS + Drishti IAS (live), Lok Sabha (API), 🔴 Rajya Sabha blocked. Built by `scripts/build_layer28_policy_watchlist.py` |
+| 29 | `layers/29_mospi_data_sources.json` | **MoSPI macro-statistics connector** — the official India macro/statistics backdrop the twin lacked: **25 MoSPI datasets** (6 core macro · 6 sector · 13 context), each tagged for investment relevance and linked to the twin layer it informs — NAS (GDP), CPI/WPI (inflation), IIP (industrial output), PLFS (jobs), RBI (external sector), MNRE (renewable capacity), ASI, EC. Documents the official API (`api.mospi.gov.in`) + eSankhyiki portal + MCP-connector 4-step workflow. Built by `scripts/mospi_connector.py` |
 
 ## Leads generation (layer 16)
 
@@ -80,6 +81,16 @@ Where the incentive catalogue and scheme monitor capture policy *in force*, laye
 - **Parliament**: Lok Sabha bills page + the undocumented LS Q&A API (needs query params). 🔴 **Rajya Sabha** sources are blocked from this machine — recorded as data, not skipped.
 
 When a watchlist bill is enacted it graduates into the scheme monitor (layer 17) / incentive catalogue; bills like Jan Vishwas and the Securities Markets Code directly reshape the decade report card's ease-of-doing-business lane (layer 05).
+
+## MoSPI macro-statistics connector (layer 29)
+
+The incentive/land/project layers describe the *offer*; layer 29 adds the *macro backdrop* — the official India statistics that frame whether the offer lands. It catalogues the **25 datasets available via [MoSPI](https://esankhyiki.mospi.gov.in)** (Ministry of Statistics & Programme Implementation), each tagged for investment relevance and linked to the twin layer it informs:
+
+- **6 core macro** — NAS (GDP, growth, capital formation), CPI & WPI (retail/wholesale inflation), IIP (industrial output), PLFS (jobs, wages, unemployment), RBI (foreign trade, BoP, forex, exchange rates).
+- **6 sector** — ASI (factory financials), MNRE (state-wise renewable capacity), ENERGY, EC (establishment clusters), ASUSE (MSME base), NSS77 (agri households).
+- **13 context** — HCES consumption, AISHE/UDISE education, NFHS health, GENDER, ENVSTATS, and the NSS rounds.
+
+**Access** is documented two ways: the official API (`api.mospi.gov.in/api/esankhyiki/`, per-dataset endpoints + [swagger](https://esankhyiki.mospi.gov.in/EC/swagger-ui/index.html), viz at `/viz/<dataset>`) and the MoSPI MCP connector's 4-step workflow (`list_datasets → get_indicators → get_metadata → get_data`; filter codes are arbitrary and must come from `get_metadata`). Known data quirks are recorded in-layer — 🔴 the RBI forex series lags ~13 months (use the `rbi.org.in` WSSView scrape instead), and WPI/IIP prints with large jumps need a cross-check.
 
 ## Auto-update scripts
 

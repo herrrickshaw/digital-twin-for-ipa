@@ -29,12 +29,36 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 17 | `layers/17_scheme_monitor.json` | **Scheme performance monitor** — per-scheme schema mapped to the owning ministry: funds allocated/disbursed, utilization, applicants, window, **arrears**, refresh source (15 central schemes seeded) |
 | 18 | `layers/18_state_monitor.json` | **State incentive monitor** — 15 states' status + funds evidence from public records (disbursals vs approvals vs MoUs; the arrears divide: TG/AP/PB/J&K vs MP/RJ; transparency divide: RJ/GJ publish, MH/KA don't) |
 | 16 | `layers/16_leads.json` | **Leads generation** — **263 leads across 26 countries**: 147 yfinance-verified-profitable US/India firms (US leads carry SEC 10-K India/APAC mention-mining with YoY trend) + 116 annual-report deep-dive leads from 19 more countries (JP/KR/CN/UK/AU + DACH/NL, France/South-EU/Nordics, TW/HK/SG, CA/BR/ZA/Saudi/Israel) with quoted evidence, yfinance tickers, and per-region policy context (PN3, TEPA, SHANTI, ECTA); view: [docs/LEADS.md](docs/LEADS.md) |
+| 25 | `layers/25_land_incentive_linkages.json` | **Land availability × open incentives (cross-repo linkage)** — joins the twin's scheme monitor with industrial-land data from sibling repos: the two operational facts an investor needs — WHERE developed land is vacant (IILB 37-state, 125,602 vacant plots) and WHICH windows are open right now (10 open central incentives). Built by `scripts/build_layer25_linkages.py` |
 
 ## Leads generation (layer 16)
 
 `scripts/build_leads.py` crosses the market layer's **verified-profitable** screen (margin>0 AND ROE>0, from the 19,795-company catalog) with the twin's curated lane map — which central instruments are open per sector, and which states pay top-ups. Score = profitability (40) + expansion signal (25) + open central lane (25) + state top-up available (10).
 
 Each lead carries its central lanes with live statuses (e.g. E-DRIVE closing 31-Jul, Make-II EOIs in August), state landing options, and a **contact-enrichment block** naming the roles to pull (CFO, Corp Dev, India country head, Govt Affairs) via **Lusha or Apollo** — enrichment is a separate deliberate step, no personal data is collected by the script (the Apollo MCP connector works once authenticated in claude.ai settings; Lusha has no connector, use its export).
+
+## Land availability × open incentives + related repositories (layer 25)
+
+The earlier layers catalogue *what incentives exist*; layer 25 adds the two
+operational facts an investor actually acts on — **where developed industrial
+land is vacant** and **which windows are open right now** — and wires the twin
+to the sibling repos those facts come from. Rebuild any time with
+`python3 scripts/build_layer25_linkages.py` (reads layer 17 locally, pulls the
+land data live from the policy repo).
+
+**Land availability** (from [india-trade-sector-policy-recommendations](https://github.com/herrrickshaw/india-trade-sector-policy-recommendations), IILB 2026-07): 37 states, 4,240 parks, **125,602 vacant developed-park plots**. Top vacant-land states — Maharashtra (19,659 Ha), Tamil Nadu (16,487), Andhra Pradesh (13,303), Gujarat (12,605), Rajasthan (11,541), Haryana (8,292). The central IILB counts *developed-park* vacant land only; larger undeveloped state banks are reachable via the machine-readable state portals layer 25 lists (Odisha IDCO ArcGIS, UPSIDA, APIIC, TGIIC, RIICO, SIPCOT).
+
+**Currently-open incentives** (from layer 17, PIB-daily refreshed): **10 open** central windows — Semicon/ISM 2.0, ECMS (FCFS), IT Hardware 2.0, NGHM SIGHT, Agriculture Infrastructure Fund, BharatNet, ELI, UCF, RDI, Coal gasification; **1 closing soon** (PM E-DRIVE e-2W claims 31-Jul-2026); **UNNATI closed-oversubscribed**.
+
+**The linked insight**: a company eligible for a sector-agnostic open central incentive can site in the land-rich states without a land constraint — but the pending IEM pipeline is metals/chemicals-heavy, so heavy-industry siting still faces the land deficit quantified in the policy repo's supply/demand scenarios.
+
+| Related repo | Feeds the twin | Into layer |
+|---|---|---|
+| [india-trade-sector-policy-recommendations](https://github.com/herrrickshaw/india-trade-sector-policy-recommendations) | Industrial land availability + IEM demand match + supply/demand scenarios | 25, 05 |
+| [agri-commodity-tracker](https://github.com/herrrickshaw/agri-commodity-tracker) | FCI depot/storage footprint (478 depots) — agri-logistics behind FPI/AIF incentives | 02, 17 |
+| [india-trade-tracker](https://github.com/herrrickshaw/india-trade-tracker) | DGFT EIDB trade flows — import-heavy = substitution targets | 16, 06 |
+| [focus-sector-investor-map](https://github.com/herrrickshaw/focus-sector-investor-map) | Global company pools per incentivized sector | 06, 07 |
+| [discom-debt-and-revenue-models](https://github.com/herrrickshaw/discom-debt-and-revenue-models) | State DISCOM health — power-cost context for siting under RDSS | 17 |
 
 ## Auto-update scripts
 

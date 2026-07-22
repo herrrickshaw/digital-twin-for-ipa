@@ -1,0 +1,304 @@
+{
+ "layer": 25,
+ "title": "Land availability + currently-open incentives (cross-repo linkage)",
+ "built": "2026-07-22",
+ "purpose": "Give an investor the two operational facts the earlier layers implied but never joined: WHERE developed industrial land is actually vacant, and WHICH incentive windows are open right now — plus the repos each fact is sourced from.",
+ "related_repositories": [
+  {
+   "repo": "india-trade-sector-policy-recommendations",
+   "provides": "Industrial land availability (IILB vacant developed-park land, 37 states) + pending-IEM demand match + supply/demand scenarios",
+   "links_to_layer": "25 (this), 05 decade report card",
+   "direction": "data-in"
+  },
+  {
+   "repo": "agri-commodity-tracker",
+   "provides": "FCI depot / storage footprint (478 depots, 5 zones) — physical agri-logistics infrastructure behind Food Processing & AIF incentives",
+   "links_to_layer": "02 catalog (FPI), 17 scheme monitor (AIF)",
+   "direction": "data-in"
+  },
+  {
+   "repo": "india-trade-tracker",
+   "provides": "DGFT EIDB chapter-wise export/import flows — reveals which incentivized sectors are import-heavy (substitution targets) vs export-strong",
+   "links_to_layer": "16 target shortlist (China PN3 substitution), 06 investor map",
+   "direction": "data-in"
+  },
+  {
+   "repo": "focus-sector-investor-map",
+   "provides": "Global company pools per incentivized sector",
+   "links_to_layer": "06 investor map, 07 pairings",
+   "direction": "sibling"
+  },
+  {
+   "repo": "discom-debt-and-revenue-models",
+   "provides": "State DISCOM financial health — power-cost/reliability context for siting decisions under RDSS",
+   "links_to_layer": "17 scheme monitor (RDSS)",
+   "direction": "data-in"
+  },
+  {
+   "repo": "india-trade-data-analysis",
+   "provides": "Descriptive trade baselines feeding sector prioritisation",
+   "links_to_layer": "05, 06",
+   "direction": "sibling"
+  }
+ ],
+ "land_availability": {
+  "source_repo": "india-trade-sector-policy-recommendations",
+  "source_dataset": "data/iilb_industrial_land_2026-07-22.json",
+  "coverage": "37 states/UTs, 4,240 parks, 125,602 vacant plots (Rajasthan plot count capped at 55,000; parks/area unaffected)",
+  "definition": "available_area = vacant developed-park land in Ha. API returns VACANT plots only -- this is the available-supply measure by construction.",
+  "top_states_by_vacant_developed_land": [
+   {
+    "state": "MAHARASHTRA",
+    "available_vacant_ha": 19659.33,
+    "parks": 338
+   },
+   {
+    "state": "TAMIL NADU",
+    "available_vacant_ha": 16487.11,
+    "parks": 362
+   },
+   {
+    "state": "ANDHRA PRADESH",
+    "available_vacant_ha": 13302.69,
+    "parks": 574
+   },
+   {
+    "state": "GUJARAT",
+    "available_vacant_ha": 12605.05,
+    "parks": 284
+   },
+   {
+    "state": "RAJASTHAN",
+    "available_vacant_ha": 11540.68,
+    "parks": 417
+   },
+   {
+    "state": "HARYANA",
+    "available_vacant_ha": 8292.32,
+    "parks": 51
+   },
+   {
+    "state": "KARNATAKA",
+    "available_vacant_ha": 5503.88,
+    "parks": 433
+   },
+   {
+    "state": "CHHATTISGARH",
+    "available_vacant_ha": 2640.02,
+    "parks": 71
+   },
+   {
+    "state": "ODISHA",
+    "available_vacant_ha": 2089.02,
+    "parks": 128
+   },
+   {
+    "state": "MADHYA PRADESH",
+    "available_vacant_ha": 2017.17,
+    "parks": 100
+   },
+   {
+    "state": "UTTAR PRADESH",
+    "available_vacant_ha": 1941.79,
+    "parks": 313
+   },
+   {
+    "state": "DELHI",
+    "available_vacant_ha": 975.19,
+    "parks": 68
+   },
+   {
+    "state": "TELANGANA",
+    "available_vacant_ha": 944.4,
+    "parks": 198
+   },
+   {
+    "state": "JHARKHAND",
+    "available_vacant_ha": 861.8,
+    "parks": 160
+   },
+   {
+    "state": "ASSAM",
+    "available_vacant_ha": 666.43,
+    "parks": 61
+   }
+  ],
+  "state_landbank_portals_for_undeveloped_land": {
+   "Odisha": "gis.investodisha.gov.in ArcGIS REST (open, per-parcel geometry)",
+   "Uttar Pradesh": "eservices.onlineupsida.com PropertyHub (all plots + price)",
+   "Andhra Pradesh": "kpi.apiic.in VacantPlots.jsp (zone→park→plot)",
+   "Telangana": "tgiic.telangana.gov.in/PMVacantPlots",
+   "Rajasthan": "riico.rajasthan.gov.in/undevelopedland.aspx",
+   "Tamil Nadu": "sipcotweb.tn.gov.in (genuine site; sipcot.com/.in are parked)",
+   "West Bengal": "silpasathi.wb.gov.in (login/PDF-gated)"
+  },
+  "caveat": "Central IILB counts VACANT developed-park land only; states hold larger undeveloped banks (portals listed). Per-parcel geometry only from Odisha ArcGIS."
+ },
+ "open_incentives": {
+  "as_of": "2026-07-22",
+  "source_layer": "17_scheme_monitor.json (PIB daily + PRS refreshed)",
+  "open_or_closing_count": 11,
+  "windows": [
+   {
+    "scheme": "PLI -- LSEM (closed) -> MPMS",
+    "ministry": "MeitY",
+    "tier": "central",
+    "status": "PENDING/OTHER",
+    "window": "MPMS approved 15-Jul-2026; application window pending notification",
+    "funds_allocated": "MPMS Rs 62,500cr (FY27-FY31)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "PLI -- IT Hardware 2.0",
+    "ministry": "MeitY",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "operational",
+    "funds_allocated": "within MeitY PLI head (FY27 PLI BE cut 78% to Rs 1,527cr)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "Semicon / ISM 2.0",
+    "ministry": "MeitY",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "open",
+    "funds_allocated": "ISM-1 Rs 76,000cr; Semicon 2.0 Rs 1.27L cr approved 15-Jul-2026 (FY27 operational allocation Rs 1,000cr)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "ECMS",
+    "ministry": "MeitY",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "open (FCFS)",
+    "funds_allocated": "Rs 22,919cr (Mar-2025) -> Rs 40,000cr (Budget FY27); FY27 BE Rs 1,500cr",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "NGHM SIGHT",
+    "ministry": "MNRE",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "tranches ongoing via SECI",
+    "funds_allocated": "Rs 17,490cr of Rs 19,744cr mission; FY27 mission allocation Rs 600cr (+100%)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "PM E-DRIVE",
+    "ministry": "Heavy Industries",
+    "tier": "central",
+    "status": "CLOSING-SOON",
+    "window": "e-2W claims close 31-Jul-2026; e-3W to 31-Mar-2028; L5 closed 26-Dec-2025",
+    "funds_allocated": "Rs 10,900cr (fund-limited, to 31-Mar-2028)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "Agriculture Infrastructure Fund",
+    "ministry": "Agriculture & Farmers Welfare",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "open (rolling to FY33)",
+    "funds_allocated": "Rs 1L cr facility; FY27 BE Rs 910cr (subvention outgo)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "UNNATI 2024",
+    "ministry": "DPIIT",
+    "tier": "central",
+    "status": "CLOSED",
+    "window": "CLOSED-OVERSUBSCRIBED (stopped before 31-Mar-2026); disposal due 30-Sep-2026",
+    "funds_allocated": "Rs 10,037cr (FY25-FY34)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "RDSS",
+    "ministry": "Power",
+    "tier": "central",
+    "status": "PENDING/OTHER",
+    "window": "final year",
+    "funds_allocated": "Rs 3.04L cr (FY22-FY26); FY27 BE Rs 18,000cr",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "BharatNet",
+    "ministry": "DoT",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "ongoing",
+    "funds_allocated": "FY27 BE Rs 20,000cr (+264% over RE)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "Shipbuilding package (SBFAS 2.0/MDF/SbDS)",
+    "ministry": "Ports, Shipping & Waterways",
+    "tier": "central",
+    "status": "PENDING/OTHER",
+    "window": "SBFAS to 31-Mar-2036",
+    "funds_allocated": "Rs 69,725cr total = SBFAS 24,736 + MDF 25,000 (incl. IIF 5,000) + SbDS 19,989",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "ELI",
+    "ministry": "Labour & Employment / EPFO",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "open (EPFO-administered)",
+    "funds_allocated": "Rs 99,446cr (Aug-2025 to Jul-2027)",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "UCF",
+    "ministry": "MoHUA",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "operational guidelines 16-Apr-2026",
+    "funds_allocated": "Rs 1L cr central assistance (FY26-FY31); FY26 Rs 10,000cr",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "RDI Scheme",
+    "ministry": "DST / ANRF",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "open (via fund managers)",
+    "funds_allocated": "Rs 1L cr corpus (50y interest-free to ANRF SPF); FY26 Rs 20,000cr",
+    "last_verified": "2026-07-20"
+   },
+   {
+    "scheme": "Coal gasification incentives",
+    "ministry": "Coal",
+    "tier": "central",
+    "status": "OPEN",
+    "window": "Round-1 2026 open",
+    "funds_allocated": "Rs 8,500cr (2024 scheme; percentage formula DISPUTED between sources -- official PDF is arbiter) + Rs 37,500cr surface-gasification (2026)",
+    "last_verified": "2026-07-20"
+   }
+  ]
+ },
+ "linked_insight": {
+  "statement": "A company eligible for a sector-agnostic open central incentive (Semicon/ISM 2.0, ECMS, ELI, RDI, AIF) can site in the land-rich states without a land constraint; heavy-industry pipelines face the deficit flagged in india-trade-sector-policy-recommendations's supply/demand scenarios.",
+  "land_rich_states": [
+   "Maharashtra",
+   "Tamil Nadu",
+   "Andhra Pradesh",
+   "Gujarat",
+   "Rajasthan",
+   "Haryana"
+  ],
+  "open_central_windows": [
+   "PLI -- IT Hardware 2.0",
+   "Semicon / ISM 2.0",
+   "ECMS",
+   "NGHM SIGHT",
+   "PM E-DRIVE",
+   "Agriculture Infrastructure Fund",
+   "BharatNet",
+   "ELI",
+   "UCF",
+   "RDI Scheme",
+   "Coal gasification incentives"
+  ],
+  "cross_ref": "See india-trade-sector-policy-recommendations land_supply_demand_scenarios for the land-intensity swing factor."
+ }
+}

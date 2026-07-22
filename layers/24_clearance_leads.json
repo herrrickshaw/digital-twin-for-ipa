@@ -10,9 +10,9 @@
  ],
  "why_quiet_matters": "QUIET = verified investment intent with NO public announcement -- the same below-radar category the PIB-visibility work found most valuable for investment-promotion targeting.",
  "verdict_counts": {
-  "ANNOUNCED": 27,
-  "PARTIALLY_VISIBLE": 17,
-  "QUIET": 14
+  "ANNOUNCED": 48,
+  "PARTIALLY_VISIBLE": 28,
+  "QUIET": 22
  },
  "recommendations": {
   "A_immediate_outreach_quiet_verified": {
@@ -54,6 +54,35 @@
    "IMFA: ferro-alloys major building a Rs 160 cr grain-ethanol plant on surplus land -- heavy industry monetising land banks via ethanol is a pattern to watch",
    "Shree Cement Meghalaya: board approval and EC filings in the SAME month -- clearance registers track board decisions in near-real-time"
   ],
+  "F_policy_aligned_targets_tier3": {
+   "why": "Tier 3 = the policy-weighted top-40 of the remaining pool (full triage in layer 24b). Targets grouped by the policy instrument they validate.",
+   "api_ksm_pli_china_substitution": [
+    "Orchid Pharma -- the ONLY confirmed KSM/API-PLI beneficiary found (Rs 600 cr 7-ACA, J&K): but land delays + Apr-2026 downgrade = the scheme's flagship is its biggest execution risk; needs hand-holding, not celebration",
+    "IOL Chemicals (Rs 1,220 cr Barnala) + Farmson (PAP at Jhagadia) -- paracetamol chain localisation happening WITHOUT PLI participation surfacing: the market is doing the scheme's job",
+    "Anthem Biosciences (~Rs 1,700 cr, explicitly pitched as China alternative), Aarti Pharmalabs (Rs 450 cr CDMO), Piramal (Rs 890 cr/yr), Virupaksha (Rs 740 cr IPO), Aarti Drugs -- the China+1 CDMO/API buildout is broad and self-funded",
+    "Sharika Life Science (QUIET; semi-synthetic penicillin -- the most China-dependent fermentation chain) -- exactly the profile KSM-PLI was built for, invisible to it"
+   ],
+   "import_substitution_chemicals": [
+    "Lanxess (GERMANY, Rs 750 cr cumulative Jhagadia, more signalled) and SRF (Odisha Rs 2,300 cr of a Rs 10,000 cr pledge -- the pesticide filings are the agrochem leg's leading indicator)",
+    "Indo Amines -- expansion explicitly framed by the company as import-reduction",
+    "Jayshree Aromatics -- ~19x capacity jump visible ONLY in EC documents; largest disclosure gap found",
+    "WBCIL -- Kolkata API maker expanding in Dahej (the WB-named-Gujarat-filing mystery)"
+   ],
+   "ethanol_blending_programme": [
+    "Keyaan (Rs 1,200 cr Gorakhpur, 300->500 KLPD path), Kamakhya (Assam Rs 371 cr, NE's rare EBP asset), RSLD (Chhattisgarh Rs 200 cr, paddy-surplus play), Bannari Amman (AA-, self-funded E20 expansion), Bapuna (IG group building through unrated SPV)",
+    "CAUTION on activity tags: Mowa + Mahunza are Maharashtra MAHUA heritage-liquor ventures, NOT fuel ethanol -- 'distillery' filings need feedstock disambiguation"
+   ],
+   "textiles_mmf_pli": [
+    "HS Hyosung (KOREA -- world #1 spandex + tyre cord; ~Rs 3,000 cr cumulative, two Maharashtra sites) and Grasim (Gujarat filings = the quiet Vilayat leg, distinct from the announced Rs 3,094 cr Karnataka lyocell)"
+   ],
+   "risk_flags": [
+    "Sigachi: two-notch post-accident downgrade; AP filing is diversification, not recovery",
+    "Matangi: went ISSUER-NOT-COOPERATING the same quarter it filed pesticide ECs",
+    "Atharv Intertrade: B+ credit attempting a 7.5x distillery scale-up",
+    "Shiva Pharmachem: accident + Negative outlook + OFS-only IPO (no fresh capex money)"
+   ],
+   "policy_reading": "Two systemic findings: (1) the paracetamol/API localisation wave is largely happening OUTSIDE the PLI frame -- self-funded balance sheets, not scheme money, are driving China-substitution; (2) the one confirmed PLI flagship (Orchid 7-ACA) carries the worst execution profile in the cohort -- scheme administrators should treat land assembly, not incentive size, as the binding constraint."
+  },
   "E_process": [
    "Wire refresh_ec.py + this pipeline into the quarterly reportage cycle -- July-2026 filings were visible here months before any press",
    "Join the 1,445-company pool against DPIIT IEM proponents to measure who files both",
@@ -1492,6 +1521,1010 @@
    "credit_rating": {
     "rating": "unrated",
     "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Iol Chemicals And Pharmaceuticals Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Punjab": 4
+    },
+    "latest_filing": "2026-05-05",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 1,220 cr greenfield chemical+API+formulations complex at Badbar, Barnala (860 TPD, 33 MW cogen); Rs 155 cr backward-integrated paracetamol unit (to 10,800 MTPA); ethyl acetate to 120,000 MTPA (Mar-2026).",
+   "best_source_url": "https://www.illustrateddailynews.com/india/iol-chemicals-pharmaceuticals-to-invest-1220-crore-in-barnala-expansion-845629",
+   "announced_capex_rs_cr": 1220,
+   "note": "Listed. World-scale ibuprofen; paracetamol backward integration = direct China import-substitution (PAP chain); stock +136% since Apr-2026",
+   "credit_rating": {
+    "rating": "CARE: A+ (LT) / A1+ (ST), reaffirmed Jul-2025",
+    "rationale_capex_disclosure": "Ibuprofen global leadership w/ backward integration; paracetamol expansion completed; USFDA/NMPA approvals"
+   }
+  },
+  {
+   "company": "Haleos Labs Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Telangana": 4
+    },
+    "latest_filing": "2026-05-07",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "= SMS Lifesciences RENAMED Haleos Labs (Aug-2025). New API line at Kazipally, Sangareddy operational H2 FY26; USFDA VAI + ANVISA cleared. No capex amount public.",
+   "best_source_url": "https://www.marketscreener.com/news/sms-lifesciences-india-limited-has-changed-its-name-to-haleos-labs-limited-ce7c50d8da8bf127",
+   "note": "SMS group Hyderabad API cluster; another RENAME trap caught (SMS Lifesciences -> Haleos)",
+   "credit_rating": {
+    "rating": "unrated under either name",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Aarti Pharmalabs Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Maharashtra": 4
+    },
+    "latest_filing": "2026-06-20",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 450 cr 80-acre greenfield CDMO site at Atali, Gujarat -- Ph-1 commissioned 2025 (Rs 300 cr capitalized); capex ~Rs 400 cr/yr FY26-27 (Xanthine to 9,600 TPA, CDMO block, API brownfield).",
+   "best_source_url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/AartiPharmalabsLtd_July%2017_%202025_RR_371857.html",
+   "announced_capex_rs_cr": 450,
+   "pli_status": "group co Aarti Industries/Speciality was KSM-PLI beneficiary, not this entity",
+   "note": "Aarti demerged pharma arm; CDMO guided +40-50%/yr -- China+1 positioning",
+   "credit_rating": {
+    "rating": "CRISIL: AA-/Stable (upgraded from A+, 2025-07-17)",
+    "rationale_capex_disclosure": "Upgrade on sustained improvement despite capex mode; CDMO block potential revenue Rs 250-300 cr"
+   }
+  },
+  {
+   "company": "Anthem Biosciences Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Karnataka": 4
+    },
+    "latest_filing": "2026-06-29",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Post-IPO (Jul-2025, ~$3.4bn valuation, pitched as China alternative): Rs 150 cr Unit-II + Rs 550 cr Neoanthem Unit-III (H1 FY26), ~Rs 1,000 cr Unit-IV Harohalli (FY28), Unit-V Hosur planned; fermentation to 182 KL.",
+   "best_source_url": "https://anthembio.com/wp-content/uploads/2026/03/Credit-Rating-FY-2025.pdf",
+   "announced_capex_rs_cr": 1700,
+   "note": "CRDMO with fermentation niche; management publicly frames expansion as China cost-arbitrage alternative -- strongest import-substitution narrative in cohort",
+   "credit_rating": {
+    "rating": "ICRA: reaffirmed, amount enhanced, outlook Positive (2025-06-20)",
+    "rationale_capex_disclosure": "Rs 150 cr + Rs 550 cr completing H1 FY26, ~Rs 1,000 cr Unit-IV planned; net cash Rs 622.8 cr"
+   }
+  },
+  {
+   "company": "Piramal Pharma Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Gujarat": 3
+    },
+    "latest_filing": "2026-02-28",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "FY26 capex Rs 890 cr incl. US$90mn CDMO investment; Dahej expanded, Digwal production started Apr-2025; ~$85mn/yr CDMO program.",
+   "best_source_url": "https://www.careratings.com/upload/CompanyFiles/PR/202507140759_Piramal_Pharma_Limited.pdf",
+   "announced_capex_rs_cr": 890,
+   "note": "Piramal CDMO; Gujarat filings align with Dahej/SEZ adds; global CDMO base = China+1 exposure",
+   "credit_rating": {
+    "rating": "CARE: AA/Stable (upgraded, Jul-2025)",
+    "rationale_capex_disclosure": "Stable FY25 profile; ~Rs 501 cr unencumbered cash despite higher net debt from capex"
+   }
+  },
+  {
+   "company": "Orchid Pharma Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Tamil Nadu": 3
+    },
+    "latest_filing": "2026-06-23",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 596-600 cr PLI-backed greenfield 7-ACA plant at Kathua, J&K -- import substitution for a China-dominated cephalosporin intermediate; mechanical completion Dec-2026 target but land-acquisition delays (only Rs 80 cr spent by Feb-2025). TN filings cover the Alathur antibiotics base.",
+   "best_source_url": "https://www.careratings.com/upload/CompanyFiles/PR/202503140343_Orchid_Pharma_Limited.pdf",
+   "announced_capex_rs_cr": 600,
+   "pli_status": "PLI BENEFICIARY -- approved 2023 under KSM/API PLI for 7-ACA (not Penicillin-G)",
+   "note": "Purest PLI/import-substitution play in cohort but highest execution risk: land delays + Apr-2026 downgrade; cephalosporin chain fully China-dependent today",
+   "credit_rating": {
+    "rating": "CARE: A- (RWD) through 2025; DOWNGRADED to BBB+/Stable Apr-2026",
+    "rationale_capex_disclosure": "Rs 596 cr funding: Rs 90 cr QIP + Rs 59 cr accruals + ~Rs 447 cr debt; delays flagged"
+   }
+  },
+  {
+   "company": "Farmson Basic Drugs Private Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Gujarat": 3
+    },
+    "latest_filing": "2026-07-03",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "World's largest paracetamol producer (~23% global); company materials show Units 4-5 + a para-aminophenol (PAP) plant at Jhagadia for end-to-end integration -- no press capex figure for the 2025-26 expansion.",
+   "best_source_url": "https://www.farmson.com/blogs/end-to-end-integration-in-paracetamol-production-a-farmson-basic-drugs-milestone/",
+   "pli_status": "not surfaced (PAP is the classic KSM-PLI target product; participation unconfirmed)",
+   "note": "Private Vadodara; PAP integration is direct China import-substitution (India historically imported nearly all PAP from China)",
+   "credit_rating": {
+    "rating": "CARE rated (sister Farmson Pharmaceutical Gujarat, 2023 PR); no current rationale for this entity",
+    "rationale_capex_disclosure": "2023: leading API presence, vertical integration, robust capital structure; nothing expansion-specific"
+   }
+  },
+  {
+   "company": "Sharika Life Science Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "synthetic organic chemicals": 2
+    },
+    "states": {
+     "Rajasthan": 2
+    },
+    "latest_filing": "2026-01-15",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No public news. EC documents show 480 TPA bulk-drug blocks at RIICO Behror (Alwar), Rajasthan; semi-synthetic penicillin APIs since 2008.",
+   "best_source_url": "https://environmentclearance.nic.in/writereaddata/modification/previousTOR/15102018VMRK8H9Tfinalform-I&PFR.pdf",
+   "note": "Semi-synthetic penicillin sits squarely in the China-dependent fermentation chain (Pen-G/6-APA imports) -- EC filings are the only visibility",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Aarti Drugs Ltd",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "synthetic organic chemicals": 2
+    },
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest_filing": "2026-01-20",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "FY26 capex guidance Rs 150-200 cr (after ~Rs 220-230 cr FY25): greenfield salicylic acid at Tarapur, greenfield Sayakha in trial production (anti-diabetic API backward integration), amine plant.",
+   "best_source_url": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=132778",
+   "announced_capex_rs_cr": 200,
+   "pli_status": "group entities in KSM-PLI lists, not Aarti Drugs itself",
+   "note": "Listed; salicylic acid + anti-diabetic intermediates = China-sourced chains being localized",
+   "credit_rating": {
+    "rating": "ICRA reaffirmed (Jan-2025); CRISIL outstanding (Oct-2024)",
+    "rationale_capex_disclosure": "Rs 220-230 cr FY25 + Rs 150-160 cr FY26 for two greenfields + debottlenecking; ramp-up a monitorable"
+   }
+  },
+  {
+   "company": "Shiva Pharmachem Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "synthetic organic chemicals": 2
+    },
+    "states": {
+     "Gujarat": 2
+    },
+    "latest_filing": "2026-02-19",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Rs 900 cr IPO DRHP filed -- but entirely offer-for-sale (no fresh capex). Two plants (Luna, Dahej; 28,360 MTPA) + Hungary subsidiary; MPP-4 capex underway; Dahej down ~1 month after Aug-2025 accident.",
+   "best_source_url": "https://www.careratings.com/upload/CompanyFiles/PR/202510121042_Shiva_Pharmachem_Limited.pdf",
+   "note": "Pre-IPO Vadodara acid-chlorides supplier, 81% exports; accident + Negative outlook = execution flags",
+   "credit_rating": {
+    "rating": "CARE: outlook revised to NEGATIVE (2025-10-07)",
+    "rationale_capex_disclosure": "MPP-4 capex noted; FY25 TOI +11%, exports 81%; Negative on SPL Europe losses + pricing pressure"
+   }
+  },
+  {
+   "company": "Dasaldhan Pharmachem Private Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "synthetic organic chemicals": 2
+    },
+    "states": {
+     "Gujarat": 2
+    },
+    "latest_filing": "2026-03-11",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No public news; incorporated Nov-2020 Ahmedabad, ~Rs 12.5 lakh revenue FY25 -- the ECs are a greenfield build not yet publicized.",
+   "best_source_url": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=140455",
+   "note": "Dasaldhan group (est. 1991). ICRA 'no capex' vs fresh filings = genuine information gap",
+   "credit_rating": {
+    "rating": "unrated (sister Dasaldhan Chemicals rated ICRA, 2026-01-23)",
+    "rationale_capex_disclosure": "ICRA on sister co: group has NO long-term debt and 'no major debt-funded capacity expansion plans' -- vs 2 fresh EC filings: internally funded, unannounced"
+   }
+  },
+  {
+   "company": "Intexso Biochem Private Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API PLI (pharma-named filer)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "synthetic organic chemicals": 2
+    },
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest_filing": "2026-03-25",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No expansion news. Est. 2009, Palghar/Dombivli; textile/leather/denim-washing chemicals; ~Rs 73.5 cr revenue FY24.",
+   "best_source_url": "https://tracxn.com/d/companies/intexso-biochem/__UA7YsANmKx2AMGFQWNiAaIMg1p8Ag71fFMdRZVgZ1eA",
+   "note": "Textile-processing chemicals = classic China-import-substitution category; no public announcement of the EC-filed expansion",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "West Bengal Chemical Industries Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Gujarat": 2,
+     "West Bengal": 2
+    },
+    "latest_filing": "2026-05-21",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Multi-year Dahej build via WBCIL (Dahej) Ltd: API capacity ~1,500 MT -> 6,000 MT/yr target. FY25 revenue ~Rs 73.5 cr +31.8%, profit +125%; no dated capex announcement.",
+   "best_source_url": "https://www.thecompanycheck.com/company/wbcil-dahej-limited/U24100GJ2020PLC114211",
+   "pli_status": "not surfaced (150+ APIs incl. chelates/liposomal; top-MSME patent filer 2024; no PLI selection surfaced)",
+   "note": "Kolkata 1988 API maker expanding in Dahej -- explains the WB-named company filing in Gujarat. Strong API/KSM import-substitution fit",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Lanxess India Private Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Gujarat": 4
+    },
+    "latest_filing": "2026-05-25",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Inaugurated Rs 150 cr lubricant-additives plant at Jhagadia, Gujarat (Apr-2026); cumulative Jhagadia investment Rs 750 cr across four BUs; management signaled further Indian expansion + IOCL MoU + 2025 Thane application-tech centre.",
+   "best_source_url": "https://www.indianchemicalnews.com/chemical/lanxess-opens-rs-150-crore-new-lubricant-additives-plant-in-india-30184",
+   "announced_capex_rs_cr": 150,
+   "note": "GERMANY-LINKED CAPEX CONFIRMED: 100% Lanxess AG subsidiary; the 4 May-2026 filings likely front-run the next phase. Specialty-chem localization = direct import-substitution play",
+   "credit_rating": {
+    "rating": "unrated (parent-funded, no India-arm rationale)",
+    "rationale_capex_disclosure": "none found (capex via press, not rating docs)"
+   }
+  },
+  {
+   "company": "Virupaksha Organics Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Telangana": 4
+    },
+    "latest_filing": "2026-06-09",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 740 cr IPO (SEBI approval Feb-2026): Rs 360 cr expansion capex, Rs 195 cr debt repayment; 6 plants (4 Hyderabad, 2 Humnabad), 23 APIs + 31 intermediates, planned new AP unit.",
+   "best_source_url": "https://www.indiaratings.co.in/pressrelease/61640",
+   "announced_capex_rs_cr": 360,
+   "pli_status": "not confirmed among Telangana's 13 approved PLI bulk-drug projects",
+   "note": "Hyderabad API house going public; filings align with Unit-1/Unit-5 + Rs 450 cr pipeline. Core API-KSM import-substitution exposure",
+   "credit_rating": {
+    "rating": "India Ratings: IND A-/Stable (upgraded from BBB+)",
+    "rationale_capex_disclosure": "Rs 312.4 cr capex FY21-25; ongoing Unit-1/Unit-5 Rs 150 cr; contemplating further Rs 450 cr"
+   }
+  },
+  {
+   "company": "Srf Limited",
+   "tier": 3,
+   "policy_program": "Agrochem technicals China import-substitution + export push",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "pesticides": 4
+    },
+    "states": {
+     "Odisha": 2,
+     "Tamil Nadu": 2
+    },
+    "latest_filing": "2026-07-08",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "~Rs 2,300 cr Odisha plant (20,000 t HFO + 30,000 t AHF, target Feb-2028) within a ~Rs 10,000 cr Odisha commitment on 300 acres 'to cater to the entire chemicals business' -- consistent with 4 pesticide filings in a state NEW to SRF. Parallel Dahej agrochem capex (Rs 239 cr commissioned + Rs 250 cr approved).",
+   "best_source_url": "https://www.devdiscourse.com/article/business/3897448-srf-ltd-announces-major-expansion-with-rs-2300-crore-investment-in-odisha-plant",
+   "announced_capex_rs_cr": 2300,
+   "note": "The PARIVESH pesticide filings are the LEADING INDICATOR of the agrochemical leg of the Rs 10,000 cr Odisha pledge. Fluorine agrochem intermediates = flagship China-substitution category",
+   "credit_rating": {
+    "rating": "CRISIL: AA+/Stable/A1+ (May-2025); Ind-Ra AA+ affirmed",
+    "rationale_capex_disclosure": "FY26 capex guidance Rs 2,200-2,300 cr incl. Odisha 300-acre land; internal accruals + debt"
+   }
+  },
+  {
+   "company": "Indo Amines Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Maharashtra": 4
+    },
+    "latest_filing": "2026-07-11",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Feb-2025: ~Rs 60 cr specialty-chemicals facility lifting capacity 3,000->4,000 MT, explicitly aimed at 'gradually reducing reliance on imports'; scouting agrochem/pharma-API acquisition.",
+   "best_source_url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/IndoAminesLimited_April%2016_%202025_RR_365046.html",
+   "announced_capex_rs_cr": 60,
+   "note": "Listed Dombivli amines maker; company itself frames the expansion as import-substitution",
+   "credit_rating": {
+    "rating": "CRISIL: A-/Stable/A2+ (upgraded from BBB+, 2025-04-16)",
+    "rationale_capex_disclosure": "Gearing 0.88x, interest coverage ~5.4x; no large debt-funded capex flagged"
+   }
+  },
+  {
+   "company": "D R Coats Ink And Resins Pvt Ltd",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 4,
+    "activities": {
+     "synthetic organic chemicals": 4
+    },
+    "states": {
+     "Maharashtra": 4
+    },
+    "latest_filing": "2026-07-21",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "No press; EC documents show expansion at Addl. Mahad MIDC (Plot L-30, Raigad); grown organically 140 t -> ~35,000 t/yr synthetic resins for coatings/inks/adhesives.",
+   "best_source_url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/D_R_Coats_Ink_and_Resins_Private_Limited_March_23_2018_RR.html",
+   "note": "Family-owned resins maker; expansion visible only through environmental filings; rating darkness is itself a data point",
+   "credit_rating": {
+    "rating": "CRISIL: Issuer Not Cooperating (last full rationale 2018)",
+    "rationale_capex_disclosure": "none found (non-cooperation = no current disclosure)"
+   }
+  },
+  {
+   "company": "Jayshree Aromatics Private Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Gujarat": 3
+    },
+    "latest_filing": "2026-01-07",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "No press, but its own EC documentation reveals a VERY large Ankleshwar expansion: 441.2 MT/month -> proposed 8,362 MT/month (~19x).",
+   "best_source_url": "https://www.brickworkratings.com/Admin/PressRelease/Jayshree-Aromatics-25Jan2021%20.pdf",
+   "note": "Appears converted to 'Jayshree Aromatics Limited' (2026) -- possible pre-listing restructuring. The ~19x capacity jump with zero press/rating visibility is the largest disclosure gap in this set",
+   "credit_rating": {
+    "rating": "Brickwork: Issuer Not Cooperating (2021-01-25)",
+    "rationale_capex_disclosure": "none current (2021 note describes ~20,000 sq m site, chlorine-chemistry advantage)"
+   }
+  },
+  {
+   "company": "New Alliance Fine Chem Private Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Maharashtra": 3
+    },
+    "latest_filing": "2026-01-28",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No expansion news. Mumbai (1986); basic organics, pharma micronutrients/mineral salts; Rs 50-100 cr FY25.",
+   "best_source_url": "https://www.thecompanycheck.com/company/new-alliance-fine-chem-private-limited/U24100MH1986PTC040229",
+   "note": "Pharma-grade mineral salts (API-adjacent); 3 Jan-2026 filings with no public echo",
+   "credit_rating": {
+    "rating": "unrated (claims 'CRISIL accredited' on trade profiles; no rationale exists)",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Mp Dyechem Industries Pvt. Ltd",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Madhya Pradesh": 3
+    },
+    "latest_filing": "2026-02-07",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No 2025-26 news. Resolves to M.P. Dye Chem / MPD Industries, Sanwer Road, Indore -- oleochemicals/fatty acids/biodiesel; last visible milestone 2012.",
+   "best_source_url": "http://mpdyechem.com/history/",
+   "note": "Small private Indore group; 3 Feb-2026 filings have no public footprint -- pre-announcement lead",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Ngl Fine Chem Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Maharashtra": 3
+    },
+    "latest_filing": "2026-02-07",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 200-210 cr greenfield veterinary-API expansion at Tarapur, 70-75% complete Feb-2026, commissioning FY27; US vet-market growth.",
+   "best_source_url": "https://www.indianchemicalnews.com/chemical/ngl-fine-chem-planning-rs-160-crore-greenfield-expansion-at-tarapur-22971",
+   "announced_capex_rs_cr": 210,
+   "note": "Listed niche animal-health API exporter (45+ countries, 5 of top-10 global animal-health clients)",
+   "credit_rating": {
+    "rating": "ICRA: BBB+/A2 Stable (reaffirmed Feb-Mar 2026)",
+    "rationale_capex_disclosure": "Total Tarapur Rs 200-210 cr, debt+accruals; gearing 0.3x, DSCR 7.2x"
+   }
+  },
+  {
+   "company": "Sigachi Industries Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Andhra Pradesh": 3
+    },
+    "latest_filing": "2026-02-19",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "New Bulk Drugs & Specialty Chemicals facility at Orvakal, Kurnool, AP (25.09 acres, ToR approved Jul-2025) -- a NEW greenfield API diversification, NOT relocation of the Pashamylaram plant destroyed in the Jun-2025 explosion (~46 dead). Also 12,000 MTPA MCC+CCS at Dahej SEZ; Rs 493 cr rebuild/expansion over 2-3 yrs.",
+   "best_source_url": "https://www.careratings.com/upload/CompanyFiles/PR/202602140245_Sigachi_Industries_Limited.pdf",
+   "announced_capex_rs_cr": 493,
+   "note": "Two-notch cumulative post-accident downgrade = credit red flag; AP filings = post-accident diversification into APIs",
+   "credit_rating": {
+    "rating": "CARE: BBB (DOWNGRADED from BBB+, 2026-02-24; earlier A- -> BBB+ negative watch post-accident)",
+    "rationale_capex_disclosure": "Rs 493 cr total plan; CCS Rs 90 cr with Rs 32.3 cr in FDs; liquidity pressure + rising leverage flagged"
+   }
+  },
+  {
+   "company": "Bodal Chemicals Limited",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Gujarat": 2,
+     "Uttar Pradesh": 1
+    },
+    "latest_filing": "2026-03-17",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Commissioned sulphuric acid plant at Saykha FY25 + benzene-downstream specialty project; FY25 revenue +24.3%, FCF positive. No announcement matching the Mar-2026 filings.",
+   "best_source_url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/BodalChemicalsLimited_January%2030,%202021_RR.html",
+   "note": "Listed; dyes/intermediates = classic China import-substitution; no live rating limits verification -- filings may signal next leg beyond Saykha",
+   "credit_rating": {
+    "rating": "unrated currently (CRISIL WITHDREW at company request Jan-2021)",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Kamakhya Biofuels Pvt. Ltd",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "distillery": 3
+    },
+    "states": {
+     "Assam": 3
+    },
+    "latest_filing": "2026-04-10",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 371 cr greenfield 250 KLPD grain ethanol + 6 MW cogen at AIDCL Sipajhar, Darrang, ASSAM -- commissioned Feb-2025; the PARIVESH filing is the 300 KLPD uprate. LTOA with OMCs for 5.61 cr litres/yr under EBP.",
+   "best_source_url": "https://infomericstorage.blob.core.windows.net/uploads/pr_kamakhya_biofuels_11mar25_491db631a7.pdf",
+   "announced_capex_rs_cr": 371,
+   "pli_status": "EBP participant -- GoI-selected with long-term OMC offtake",
+   "note": "Rare NE-India ethanol asset on AIDCL land -- plugs into NE industrial incentive framework",
+   "credit_rating": {
+    "rating": "CRISIL: BBB+/Stable (2025-11-25)",
+    "rationale_capex_disclosure": "Project ~Rs 371 cr; LTOA with OMCs; rice-mill/FCI proximity cited"
+   }
+  },
+  {
+   "company": "Rushap Industries",
+   "tier": 3,
+   "policy_program": "Bulk-drug/API+KSM PLI & China chemicals import-substitution (PN2 lever)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "synthetic organic chemicals": 3
+    },
+    "states": {
+     "Gujarat": 3
+    },
+    "latest_filing": "2026-04-24",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No news. Closest entity Rushap Pharmachem Pvt Ltd, GIDC Ankleshwar -- 2011-incorporated, Rs 1 lakh paid-up.",
+   "best_source_url": "https://www.zaubacorp.com/RUSHAP-PHARMACHEM-PRIVATE-LIMITED-U24230GJ2011PTC066298",
+   "note": "Zero public footprint for the Apr-2026 filings; pre-announcement greenfield in the Ankleshwar belt (identity to confirm)",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Benzo Chem Industries Private Limited",
+   "tier": 3,
+   "policy_program": "Agrochem technicals China import-substitution + export push",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "pesticides": 3
+    },
+    "states": {
+     "Gujarat": 2,
+     "Maharashtra": 1
+    },
+    "latest_filing": "2026-04-28",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Mohatta Group pesticide/pharma-intermediates maker (1987), five plants incl. Dahej SEZ-II; EC documents show expansion to 600 MT/month at Dahej; no press or capex figure.",
+   "best_source_url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/BenzoChemIndustriesPrivateLimited_September_29_2025_RR_378383.html",
+   "note": "Export-oriented (100% EOU Malkapur); agrochem intermediates = China+1; Negative outlook + quiet expansion",
+   "credit_rating": {
+    "rating": "CRISIL: A/Negative/A1 (2025-09-29 -- Negative on weak FY25 recovery)",
+    "rationale_capex_disclosure": "Healthy profile, low gearing; no capex amount disclosed"
+   }
+  },
+  {
+   "company": "Grasim Industries Limited",
+   "tier": 3,
+   "policy_program": "Textiles MMF PLI",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "manmade fibre": 3
+    },
+    "states": {
+     "Gujarat": 1,
+     "Karnataka": 1,
+     "Maharashtra": 1
+    },
+    "latest_filing": "2026-05-06",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Board approved Rs 3,094 cr Phase-II Lyocell (110K TPA, 2028/2030) in Jul-2026 -- but at Harihar, KARNATAKA. The Gujarat MMF filings (May-2026) map to the Vilayat, Bharuch specialty-fibre complex (modal/micro-modal) -- not separately press-released.",
+   "best_source_url": "https://www.indiaratings.co.in/pressrelease/i4q4xmd77owpcj5hvjkzrwnf",
+   "announced_capex_rs_cr": 3094,
+   "pli_status": "MMF is the core PLI-for-textiles category; Grasim not surfaced as named awardee",
+   "note": "Aditya Birla flagship, AAA. Gujarat filing = early signal of the next Vilayat VSF/specialty-fibre leg, distinct from the announced Karnataka lyocell",
+   "credit_rating": {
+    "rating": "India Ratings: IND AAA/Stable",
+    "rationale_capex_disclosure": "~Rs 3,094 cr lyocell capex over 2-4 years in VSF segment; maintenance capex elsewhere"
+   }
+  },
+  {
+   "company": "Bannari Amman Sugars Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "distillery": 3
+    },
+    "states": {
+     "Tamil Nadu": 1,
+     "Karnataka": 2
+    },
+    "latest_filing": "2026-05-26",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Plan to expand distillery 150 -> 200 KLPD for E20 demand (group 217.5 KLPD across TN+KA); FY26 net profit +41% to Rs 147.9 cr.",
+   "best_source_url": "https://www.careratings.com/upload/CompanyFiles/PR/202501140154_Bannari_Amman_Sugars_Limited.pdf",
+   "pli_status": "EBP-linked -- expansion explicitly targeted at 20% blending",
+   "note": "Listed South-India sugar major; AA- balance sheet = low funding risk on the May-2026 TN filing",
+   "credit_rating": {
+    "rating": "CARE: AA-; Stable / A1+ (2025-01-08)",
+    "rationale_capex_disclosure": "Gearing 0.09x, term loan prepaid, 'no major debt-funded capex in medium term' -- TN distillery expansion internal-accrual funded"
+   }
+  },
+  {
+   "company": "Keyaan Distilleries Private Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "distillery": 3
+    },
+    "states": {
+     "Uttar Pradesh": 3
+    },
+    "latest_filing": "2026-06-18",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 1,200 cr 300 KLPD grain ethanol at GIDA, Gorakhpur, UP (Praj-engineered), commissioned Apr-2025, inaugurated by CM; scalable to 500 KLPD -- which the Jun-2026 filings likely cover.",
+   "best_source_url": "https://www.careratings.com/upload/CompanyFiles/PR/202507130751_Keyaan_Distilleries_Private_Limited.pdf",
+   "announced_capex_rs_cr": 1200,
+   "pli_status": "EBP participant -- 100% OMC offtake under blending programme",
+   "note": "Gorakhpur Singh family (Shreyas rice group); credit is guarantee-backed (standalone BB+); UP grain-ethanol + SAF optionality; EC = 300->500 KLPD path",
+   "credit_rating": {
+    "rating": "CARE: BBB+ (CE); Stable on Rs 400 cr (2025-07-30; standalone BB+)",
+    "rationale_capex_disclosure": "Completed ahead of schedule, no cost overrun; 100% tripartite OMC offtake; guarantee from Shreyas Sortex (Rs 2,325 cr rice miller)"
+   }
+  },
+  {
+   "company": "Atharv Intertrade Private Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 3,
+    "activities": {
+     "distillery": 3
+    },
+    "states": {
+     "Maharashtra": 3
+    },
+    "latest_filing": "2026-06-18",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Daulat Sugar Factory, Halkarni (Kolhapur): sugar 4,900->10,000 TCD, distillery 40->300 KLPD multi-feed + 35 MW cogen; MPCB public-hearing summary Jan-2026. Website markets the pivot from sugar trading to integrated sugar-ethanol.",
+   "best_source_url": "https://mpcb.gov.in/en/node/7227",
+   "pli_status": "EBP-linked (multi-feed distillery) but no explicit OMC allotment surfaced",
+   "note": "B+-rated sugar trader attempting a 7.5x distillery scale-up -- high policy leverage, HIGH credit risk",
+   "credit_rating": {
+    "rating": "CARE: B+; Stable (Aug-2024)",
+    "rationale_capex_disclosure": "Weak capital structure, weak coverage, stretched liquidity; no capex figure for the 300 KLPD expansion"
+   }
+  },
+  {
+   "company": "Mowa Distilleries Private Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "distillery": 2
+    },
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest_filing": "2026-01-07",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Regulatory trail only: MPCB summary (Oct-2025) for a 3 KLPD MAHUA-flower heritage-liquor unit ~1.6 km from Bhimashankar eco-sensitive zone; incorporated Apr-2024.",
+   "best_source_url": "https://mpcb.gov.in/sites/default/files/public_hearing/exe_summary/2025-10/Executive_Summary_Mowa[1][1]%20Copy.pdf",
+   "pli_status": "NOT EBP -- rides Maharashtra's 2023 mahua heritage-liquor policy",
+   "note": "Activity-tag caution: 'distillery' filing is a tiny heritage-liquor venture, not fuel ethanol",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Rsld Biofuels Private Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "distillery": 2
+    },
+    "states": {
+     "Chhattisgarh": 2
+    },
+    "latest_filing": "2026-01-08",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "Rs 200 cr grain-ethanol plant in Chhattisgarh (Nov-2025); Invitation-to-Invest letter from CM; grain-feedstock approval under DFPD interest-subvention track.",
+   "best_source_url": "https://www.chinimandi.com/chhattisgarh-rsld-biofuels-pvt-ltd-to-invest-rs-200-crore-for-ethanol-plant/",
+   "announced_capex_rs_cr": 200,
+   "pli_status": "EBP track -- grain ethanol for OMC supply; Chhattisgarh pushes surplus-paddy-to-ethanol",
+   "note": "State-courted but unrated, thin footprint -- execution unproven",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none (no rating exists)"
+   }
+  },
+  {
+   "company": "Pernod Ricard India Private Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "distillery": 2
+    },
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest_filing": "2026-01-15",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "The 2026 filings map to Butibori (Nagpur): ASIA'S LARGEST malt distillery + maturation, ~Rs 1,785 cr (EUR 200M) over 10 years, 60,000 L/day; MoU Feb-2024, groundbreaking Oct-2024; 2026 filings = expansion/amendment stage. Separately sold Imperial Blue to Tilaknagar (EUR 412.6M) to refocus premium.",
+   "best_source_url": "https://www.pernod-ricard.com/en/locations/india/media/pernod-ricard-india-advances-landmark-investment-groundbreaking-asia-s",
+   "announced_capex_rs_cr": 1785,
+   "pli_status": "not EBP (potable malt spirit); benefits Maharashtra mega-project incentives + UK-India CETA scotch dynamics",
+   "note": "FRENCH parent confirmed -- strongest-sponsored name on this list; 700-800 direct jobs, barley sourcing program",
+   "credit_rating": {
+    "rating": "unrated in India (funded by Pernod Ricard SA, international IG)",
+    "rationale_capex_disclosure": "Capex via company/state announcements: Rs 1,785 cr Nagpur"
+   }
+  },
+  {
+   "company": "Arbuda Agrochemicals Private Limited",
+   "tier": 3,
+   "policy_program": "Agrochem technicals China import-substitution + export push",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "pesticides": 2
+    },
+    "states": {
+     "Gujarat": 2
+    },
+    "latest_filing": "2026-01-19",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "NSE Emerge SME IPO filed (55 lakh fresh + 9 lakh OFS); FY25 revenue Rs 75.2 cr +21%, PAT +45%. IPO objects: new Aluminium Phosphide line at Talod GIDC (~Rs 11.7 cr), debt repayment, brand spend.",
+   "best_source_url": "https://www.angelone.in/news/ipos/arbuda-agrochemicals-ipo-issue-of-64-lakh-shares-and-strong-fy25-financial-growth",
+   "announced_capex_rs_cr": 12,
+   "pli_status": "not surfaced (AlP fits China import-substitution; no scheme cited)",
+   "note": "Household/public-health pesticides, 203 CIB&RC registrations; SME-IPO lead",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "Capex in IPO documents (figures inconsistently reported lakh vs crore -- verify in DRHP)"
+   }
+  },
+  {
+   "company": "Navjivan Polyfab Private Limited",
+   "tier": 3,
+   "policy_program": "Agrochem technicals China import-substitution + export push",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "pesticides": 2
+    },
+    "states": {
+     "Gujarat": 2
+    },
+    "latest_filing": "2026-01-20",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "No news. IDENTITY CHECK: PP woven sacks/packaging maker at Ankleshwar (~3,000 MT/yr), NOT a pesticide maker -- the 'pesticides' activity tag = a new agrochem unit not yet visible, or misclassification.",
+   "best_source_url": "https://www.bloomberg.com/profile/company/1637364D:IN",
+   "note": "Name/activity mismatch recorded -- treat as unverified; possible diversification into agrochem formulations",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Bapuna Spirits Private Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "distillery": 2
+    },
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest_filing": "2026-01-20",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Entity (inc. 2022) has no press; group-level: Nagpur Bapuna Group is among India's largest grain ENA distillers, group proposed 225->500 KLD at Gwalior (MP). The Maharashtra filings = a parallel new-build under the fresh SPV, unannounced.",
+   "best_source_url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/BapunaAlcobrewPrivateLimited_September%2018,%202023_RR_326418.html",
+   "pli_status": "EBP-linked at group level",
+   "note": "Investment-grade group doing EBP capex through a new unrated SPV -- classic pattern; EC ahead of any announcement",
+   "credit_rating": {
+    "rating": "CRISIL: BBB+/Stable, A2 on group flagship Gwalior Alcobrew (Sep-2023); Bapuna Spirits unrated",
+    "rationale_capex_disclosure": "2023 rationale assumed NO debt-funded capex -- current EC-stage projects outside the rated perimeter"
+   }
+  },
+  {
+   "company": "Hs Hyosung India Private Limited",
+   "tier": 3,
+   "policy_program": "Textiles MMF PLI",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "manmade fibre": 2
+    },
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest_filing": "2026-03-02",
+    "register": "EC register"
+   },
+   "news_verdict": "ANNOUNCED",
+   "news_summary": "KOREAN capex on two fronts: AURIC (Aurangabad) spandex complex (~$100M/Rs 3,000 cr cumulative commitment, 18,000 tpa creora, expanding) + HS Hyosung Advanced Materials' $30M polyester tyre-cord plant at Nagpur (2027 target). Mar-2026 MMF filings align with this wave.",
+   "best_source_url": "https://www.tyre-trends.com/materials/hs-hyosung-invests-30-million-to-build-new-tyre-cord-plant-in-india",
+   "announced_capex_rs_cr": 250,
+   "pli_status": "MMF = core textiles-PLI category; participation not confirmed",
+   "note": "KOREA-linked confirmed: world #1 spandex + PET tyre cord; two Maharashtra sites; cumulative India ~Rs 3,000 cr",
+   "credit_rating": {
+    "rating": "unrated in India (Korean-parent-funded)",
+    "rationale_capex_disclosure": "none in rating docs; capex via parent announcements"
+   }
+  },
+  {
+   "company": "Mahunza Winery Private Limited",
+   "tier": 3,
+   "policy_program": "Ethanol Blending Programme E20 (interest subvention, grain ethanol)",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "distillery": 2
+    },
+    "states": {
+     "Maharashtra": 2
+    },
+    "latest_filing": "2026-03-04",
+    "register": "EC register"
+   },
+   "news_verdict": "QUIET",
+   "news_summary": "Nothing found -- no news, web presence, or indexed documents. Name pattern suggests another mahua heritage-liquor venture under Maharashtra's policy, unverified.",
+   "best_source_url": null,
+   "pli_status": "likely heritage-liquor policy, not EBP",
+   "note": "Complete public silence; watch MPCB public-hearing summaries for the identity reveal",
+   "credit_rating": {
+    "rating": "unrated",
+    "rationale_capex_disclosure": "none found"
+   }
+  },
+  {
+   "company": "Matangi Industries Llp",
+   "tier": 3,
+   "policy_program": "Agrochem technicals China import-substitution + export push",
+   "clearance_evidence": {
+    "filings_2025_26": 2,
+    "activities": {
+     "pesticides": 2
+    },
+    "states": {
+     "Gujarat": 2
+    },
+    "latest_filing": "2026-03-09",
+    "register": "EC register"
+   },
+   "news_verdict": "PARTIALLY_VISIBLE",
+   "news_summary": "Established dye-intermediates/specialty maker (1993, Vatva; ~69,000 tpa, exports 40+ countries, ~$24M revenue). No announcement matching the 2026 pesticide filings -- visible only in the register.",
+   "best_source_url": "https://www.careratings.com/upload/CompanyFiles/PR/202603130303_Matangi_Industries_LLP.pdf",
+   "note": "RED-AMBER flag: BBB entity going non-cooperating as it files pesticide-unit ECs -- possible rating-shopping ahead of debt-funded capex",
+   "credit_rating": {
+    "rating": "CARE: BBB; Stable / A3+ -- ISSUER NOT COOPERATING (Mar-2026; prior full review Jan-2025)",
+    "rationale_capex_disclosure": "No capex figure; firm stopped cooperating with CARE the SAME QUARTER the EC filings landed"
    }
   }
  ],

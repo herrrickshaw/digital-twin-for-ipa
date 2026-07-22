@@ -137,6 +137,48 @@ def main():
                 unmatched.append(s["company"])
             leads.append(rec)
 
+    # ---- tier 3: POLICY-ALIGNED slice of the remaining ~1,384 pool. The whole
+    # remainder was triaged locally against live policy programs (see
+    # layers/24b_pool_policy_triage.json); agents verified the top-40 slice.
+    t3p = os.path.join(SCRATCH, "tier3_shortlist.json")
+    if os.path.exists(t3p):
+        t3v = {}
+        for f in ("tier3_verify1.json", "tier3_verify2.json", "tier3_verify3.json", "tier3_verify4.json"):
+            p = os.path.join(SCRATCH, f)
+            if os.path.exists(p):
+                for r in json.load(open(p)):
+                    t3v[norm(r["company"])] = r
+        for s in json.load(open(t3p)):
+            v = t3v.get(norm(s["company"]))
+            if v is None:
+                for k, vv in t3v.items():
+                    if k[:12] in norm(s["company"]) or norm(s["company"])[:12] in k:
+                        v = vv
+                        break
+            rec = {"company": s["company"], "tier": 3,
+                   "policy_program": s.get("policy_program"),
+                   "clearance_evidence": {"filings_2025_26": s["filings"],
+                                          "activities": {s.get("activity"): s["filings"]},
+                                          "states": s.get("states", {}),
+                                          "latest_filing": s["latest"],
+                                          "register": "EC register"}}
+            if v:
+                rec["news_verdict"] = v.get("verdict")
+                rec["news_summary"] = v.get("news_summary")
+                rec["best_source_url"] = v.get("best_source_url")
+                if v.get("announced_capex_rs_cr"):
+                    rec["announced_capex_rs_cr"] = v["announced_capex_rs_cr"]
+                if v.get("pli_status") and v["pli_status"] != "not surfaced":
+                    rec["pli_status"] = v["pli_status"]
+                if v.get("note"):
+                    rec["note"] = v["note"]
+                rec["credit_rating"] = {"rating": v.get("rating"),
+                                        "rationale_capex_disclosure": v.get("rationale_capex_disclosure")}
+            else:
+                rec["news_verdict"] = "UNCHECKED"
+                unmatched.append(s["company"])
+            leads.append(rec)
+
     counts = {}
     for r in leads:
         counts[r["news_verdict"]] = counts.get(r["news_verdict"], 0) + 1
@@ -218,6 +260,50 @@ def main():
                 "Shree Cement Meghalaya: board approval and EC filings in the SAME month -- clearance "
                 "registers track board decisions in near-real-time",
             ],
+            "F_policy_aligned_targets_tier3": {
+                "why": ("Tier 3 = the policy-weighted top-40 of the remaining pool (full triage in layer "
+                        "24b). Targets grouped by the policy instrument they validate."),
+                "api_ksm_pli_china_substitution": [
+                    "Orchid Pharma -- the ONLY confirmed KSM/API-PLI beneficiary found (Rs 600 cr 7-ACA, "
+                    "J&K): but land delays + Apr-2026 downgrade = the scheme's flagship is its biggest "
+                    "execution risk; needs hand-holding, not celebration",
+                    "IOL Chemicals (Rs 1,220 cr Barnala) + Farmson (PAP at Jhagadia) -- paracetamol chain "
+                    "localisation happening WITHOUT PLI participation surfacing: the market is doing the "
+                    "scheme's job",
+                    "Anthem Biosciences (~Rs 1,700 cr, explicitly pitched as China alternative), Aarti "
+                    "Pharmalabs (Rs 450 cr CDMO), Piramal (Rs 890 cr/yr), Virupaksha (Rs 740 cr IPO), "
+                    "Aarti Drugs -- the China+1 CDMO/API buildout is broad and self-funded",
+                    "Sharika Life Science (QUIET; semi-synthetic penicillin -- the most China-dependent "
+                    "fermentation chain) -- exactly the profile KSM-PLI was built for, invisible to it"],
+                "import_substitution_chemicals": [
+                    "Lanxess (GERMANY, Rs 750 cr cumulative Jhagadia, more signalled) and SRF (Odisha "
+                    "Rs 2,300 cr of a Rs 10,000 cr pledge -- the pesticide filings are the agrochem leg's "
+                    "leading indicator)",
+                    "Indo Amines -- expansion explicitly framed by the company as import-reduction",
+                    "Jayshree Aromatics -- ~19x capacity jump visible ONLY in EC documents; largest "
+                    "disclosure gap found",
+                    "WBCIL -- Kolkata API maker expanding in Dahej (the WB-named-Gujarat-filing mystery)"],
+                "ethanol_blending_programme": [
+                    "Keyaan (Rs 1,200 cr Gorakhpur, 300->500 KLPD path), Kamakhya (Assam Rs 371 cr, NE's "
+                    "rare EBP asset), RSLD (Chhattisgarh Rs 200 cr, paddy-surplus play), Bannari Amman "
+                    "(AA-, self-funded E20 expansion), Bapuna (IG group building through unrated SPV)",
+                    "CAUTION on activity tags: Mowa + Mahunza are Maharashtra MAHUA heritage-liquor "
+                    "ventures, NOT fuel ethanol -- 'distillery' filings need feedstock disambiguation"],
+                "textiles_mmf_pli": [
+                    "HS Hyosung (KOREA -- world #1 spandex + tyre cord; ~Rs 3,000 cr cumulative, two "
+                    "Maharashtra sites) and Grasim (Gujarat filings = the quiet Vilayat leg, distinct from "
+                    "the announced Rs 3,094 cr Karnataka lyocell)"],
+                "risk_flags": [
+                    "Sigachi: two-notch post-accident downgrade; AP filing is diversification, not recovery",
+                    "Matangi: went ISSUER-NOT-COOPERATING the same quarter it filed pesticide ECs",
+                    "Atharv Intertrade: B+ credit attempting a 7.5x distillery scale-up",
+                    "Shiva Pharmachem: accident + Negative outlook + OFS-only IPO (no fresh capex money)"],
+                "policy_reading": ("Two systemic findings: (1) the paracetamol/API localisation wave is "
+                                   "largely happening OUTSIDE the PLI frame -- self-funded balance sheets, "
+                                   "not scheme money, are driving China-substitution; (2) the one confirmed "
+                                   "PLI flagship (Orchid 7-ACA) carries the worst execution profile in the "
+                                   "cohort -- scheme administrators should treat land assembly, not "
+                                   "incentive size, as the binding constraint.")},
             "E_process": [
                 "Wire refresh_ec.py + this pipeline into the quarterly reportage cycle -- July-2026 "
                 "filings were visible here months before any press",

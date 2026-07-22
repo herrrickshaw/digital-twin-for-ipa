@@ -1,0 +1,254 @@
+{
+ "layer": 30,
+ "title": "Trade-deficit & import-substitution map",
+ "built": "2026-07-22",
+ "purpose": "Link the twin's incentives to India's trade deficit: which large import chapters an incentive actually addresses (opportunity) versus where the deficit is uncovered (policy gap) or not substitutable by industrial policy.",
+ "source": {
+  "repo": "india-trade-sector-policy-recommendations",
+  "url": "https://github.com/herrrickshaw/india-trade-sector-policy-recommendations",
+  "datasets": [
+   "data/import_dependency_policy_gap_analysis_2026-07-18.json",
+   "data/country_trade_deficit_and_policy_history_2026-07-18.json"
+  ],
+  "origin": "TRADESTAT / DGCI&S HS-chapter trade, 2018-19→2025-26"
+ },
+ "trade_deficit_clauses": [
+  "A large/growing import chapter is an import-substitution opportunity ONLY where a policy lever is sized to it; otherwise it is a policy GAP, not an opportunity.",
+  "Process-trade chapters (gems & jewellery) are trade-facilitation cases, not PLI substitution targets.",
+  "Structural imports (crude oil, edible oils, fertilisers) are not fully substitutable by manufacturing policy — the lever is efficiency / alternative feedstock.",
+  "The bilateral deficit is concentrated (China ~ -$112bn); Press Note 3 screening + the target shortlist (layer 16) route substitution demand toward specific source countries."
+ ],
+ "import_dependency_matrix": [
+  {
+   "hs_chapter": "27",
+   "sector": "Mineral fuels & oils",
+   "import_usd_bn": 203.4,
+   "import_note": "$203.4bn (26.2%)",
+   "growth": "+21.2%",
+   "policy_coverage": "partial",
+   "twin_incentive_lane": "Coal gasification + NGHM SIGHT (partial — no crude-oil substitution)",
+   "substitution_type": "structural (crude/energy)",
+   "gap_note": "Coal/lignite gasification scheme, CCUS funding, and battery/solar PLI are all real but none is a crude-oil-substitution policy sized to the largest single import chapter."
+  },
+  {
+   "hs_chapter": "71",
+   "sector": "Pearls, gems & jewellery",
+   "import_usd_bn": 109.4,
+   "import_note": "$109.4bn",
+   "growth": "+69.1%",
+   "policy_coverage": "na",
+   "twin_incentive_lane": null,
+   "substitution_type": "process-trade (import-to-re-export)",
+   "gap_note": "Process-trade sector (import rough stones/gold, re-export cut & polished) -- trade facilitation is the relevant lever, not import substitution."
+  },
+  {
+   "hs_chapter": "85",
+   "sector": "Electrical machinery",
+   "import_usd_bn": 104.9,
+   "import_note": "$104.9bn",
+   "growth": "+101.5%",
+   "policy_coverage": "strong",
+   "twin_incentive_lane": "Semicon/ISM 2.0 + ECMS + PLI IT Hardware (strong coverage)",
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "Semiconductor Mission 2.0 (Rs 76,000cr, 10 projects) plus the bulk of 836 PLI applications (electronics, mobile, telecom, IT hardware, white goods) sit directly on this chapter."
+  },
+  {
+   "hs_chapter": "84",
+   "sector": "Machinery, mechanical appliances",
+   "import_usd_bn": 74.0,
+   "import_note": "$74.0bn",
+   "growth": "+68.8%",
+   "policy_coverage": "partial",
+   "twin_incentive_lane": "PLI capital goods (partial)",
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "Plug-and-Play Industrial Development scheme and legacy cluster revival help general manufacturing infra, but no capital-goods-specific incentive."
+  },
+  {
+   "hs_chapter": "29",
+   "sector": "Organic chemicals",
+   "import_usd_bn": 25.4,
+   "import_note": "$25.4bn",
+   "growth": "+13.5%",
+   "policy_coverage": "partial",
+   "twin_incentive_lane": "PLI bulk drugs / chemicals (partial)",
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "Biopharma Shakti and the PLI bulk-drugs/API track cover the pharma-intermediate subset, not broad petrochemical imports."
+  },
+  {
+   "hs_chapter": "39",
+   "sector": "Plastics",
+   "import_usd_bn": 22.2,
+   "import_note": "$22.2bn",
+   "growth": "+45.8%",
+   "policy_coverage": "gap",
+   "twin_incentive_lane": null,
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "No scheme identified in the six-month window, adjacent or otherwise."
+  },
+  {
+   "hs_chapter": "15",
+   "sector": "Animal/veg fats & oils",
+   "import_usd_bn": 19.8,
+   "import_note": "$19.8bn",
+   "growth": "+97.9%",
+   "policy_coverage": "gap",
+   "twin_incentive_lane": null,
+   "substitution_type": "structural (edible-oil deficit)",
+   "gap_note": "NMEO-Oilseeds (Rs 10,103cr, Cabinet-approved, targets 72% self-sufficiency by 2030-31) is real but did not surface in the six-month recap -- a visibility gap, not a scheme gap."
+  },
+  {
+   "hs_chapter": "72",
+   "sector": "Iron & steel",
+   "import_usd_bn": 15.8,
+   "import_note": "$15.8bn",
+   "growth": "+25.2%",
+   "policy_coverage": "partial",
+   "twin_incentive_lane": "PLI Specialty Steel (partial)",
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "Specialty Steel PLI 1.2 (85 MoUs, Rs 11,887cr, signed early 2026) is real but also absent from the six-month recap."
+  },
+  {
+   "hs_chapter": "90",
+   "sector": "Optical/medical instruments",
+   "import_usd_bn": 15.4,
+   "import_note": "$15.4bn",
+   "growth": "+59.6%",
+   "policy_coverage": "partial",
+   "twin_incentive_lane": "PLI medical devices (partial)",
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "PLI medical devices exists among the 14 sectors; Regional Medical Hubs address inbound medical tourism, not domestic device manufacturing."
+  },
+  {
+   "hs_chapter": "31",
+   "sector": "Fertilisers",
+   "import_usd_bn": 14.6,
+   "import_note": "$14.6bn",
+   "growth": "+118.9% (fastest)",
+   "policy_coverage": "gap",
+   "twin_incentive_lane": null,
+   "substitution_type": "structural (fertiliser feedstock)",
+   "gap_note": "Only demand-side subsidy rate-setting in the window -- but NIPU-2026 (urea capacity, Cabinet-approved 15 Jul 2026) landed 3 days before this analysis. DAP remains supply-diversification, not substitution (86% rock-phosphate import dependence)."
+  },
+  {
+   "hs_chapter": "28",
+   "sector": "Inorganic chemicals",
+   "import_usd_bn": 14.2,
+   "import_note": "$14.2bn",
+   "growth": "+86.0%",
+   "policy_coverage": "gap",
+   "twin_incentive_lane": null,
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "No dedicated scheme identified; partially adjacent to phosphoric/sulphuric acid capacity under the fertiliser subsidy scheme."
+  },
+  {
+   "hs_chapter": "88",
+   "sector": "Aircraft & spacecraft",
+   "import_usd_bn": 13.8,
+   "import_note": "$13.8bn",
+   "growth": "+80.9%",
+   "policy_coverage": "gap",
+   "twin_incentive_lane": null,
+   "substitution_type": "manufacturing-substitutable",
+   "gap_note": "Seaplane VGF and Madurai's international-airport designation are aviation-market infrastructure, not aircraft-manufacturing incentives."
+  }
+ ],
+ "policy_gaps": [
+  {
+   "hs": "84",
+   "sector": "Machinery, mechanical appliances",
+   "import_usd_bn": 74.0,
+   "coverage": "partial",
+   "note": "Plug-and-Play Industrial Development scheme and legacy cluster revival help general manufacturing infra, but no capital-goods-specific incentive."
+  },
+  {
+   "hs": "29",
+   "sector": "Organic chemicals",
+   "import_usd_bn": 25.4,
+   "coverage": "partial",
+   "note": "Biopharma Shakti and the PLI bulk-drugs/API track cover the pharma-intermediate subset, not broad petrochemical imports."
+  },
+  {
+   "hs": "39",
+   "sector": "Plastics",
+   "import_usd_bn": 22.2,
+   "coverage": "gap",
+   "note": "No scheme identified in the six-month window, adjacent or otherwise."
+  },
+  {
+   "hs": "72",
+   "sector": "Iron & steel",
+   "import_usd_bn": 15.8,
+   "coverage": "partial",
+   "note": "Specialty Steel PLI 1.2 (85 MoUs, Rs 11,887cr, signed early 2026) is real but also absent from the six-month recap."
+  },
+  {
+   "hs": "90",
+   "sector": "Optical/medical instruments",
+   "import_usd_bn": 15.4,
+   "coverage": "partial",
+   "note": "PLI medical devices exists among the 14 sectors; Regional Medical Hubs address inbound medical tourism, not domestic device manufacturing."
+  },
+  {
+   "hs": "28",
+   "sector": "Inorganic chemicals",
+   "import_usd_bn": 14.2,
+   "coverage": "gap",
+   "note": "No dedicated scheme identified; partially adjacent to phosphoric/sulphuric acid capacity under the fertiliser subsidy scheme."
+  },
+  {
+   "hs": "88",
+   "sector": "Aircraft & spacecraft",
+   "import_usd_bn": 13.8,
+   "coverage": "gap",
+   "note": "Seaplane VGF and Madurai's international-airport designation are aviation-market infrastructure, not aircraft-manufacturing incentives."
+  }
+ ],
+ "top_deficit_countries": [
+  {
+   "country": "China",
+   "code": "CN",
+   "balance_usd_bn": -112.2
+  },
+  {
+   "country": "Russia",
+   "code": "RU",
+   "balance_usd_bn": -50.9
+  },
+  {
+   "country": "UAE",
+   "code": "AE",
+   "balance_usd_bn": -26.5
+  },
+  {
+   "country": "Switzerland",
+   "code": "CH",
+   "balance_usd_bn": -23.1
+  },
+  {
+   "country": "Iraq",
+   "code": "IQ",
+   "balance_usd_bn": -21.6
+  },
+  {
+   "country": "Saudi Arabia",
+   "code": "SA",
+   "balance_usd_bn": -20.5
+  },
+  {
+   "country": "Indonesia",
+   "code": "ID",
+   "balance_usd_bn": -15.8
+  },
+  {
+   "country": "Japan",
+   "code": "JP",
+   "balance_usd_bn": -15.4
+  }
+ ],
+ "linkage": {
+  "to_layer_16": "Import-substitution demand + China PN3 screening feed the target shortlist's substitution watchlist.",
+  "to_layer_17_25": "Deficit chapters with strong coverage (electronics HS85) map to open incentives; gap chapters flag where the incentive catalogue is silent.",
+  "to_layer_26": "Substitutable-deficit sectors are where NIP/PLI capacity projects have the clearest demand rationale.",
+  "cross_repo": "Full sector×country strategy, PLI-coverage scorecard and FDI pitch live in india-trade-sector-policy-recommendations."
+ }
+}

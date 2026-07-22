@@ -34,6 +34,7 @@ Every layer is a JSON file. Every claim is tagged with how it was verified (`ver
 | 27 | `layers/27_entry_facilitators.json` | **Market-entry facilitators in India** — the trade-promotion agencies & bilateral chambers that host events and B2B matchmaking to bring foreign firms into India, plus the **Indian apex industry bodies** (FICCI, CII, NASSCOM, ASSOCHAM) that co-host them (**31 bodies, 21 countries**): GTAI + Indo-German Chamber (AHK/IGCC), Swissnex + S-GE, UKIBC, JETRO, KOTRA, Business France + IFCCI, ITA/ICE, USIBC + AMCHAM, EBTC and more. 11 verified events calendars; URLs liveness-checked on build. Built by `scripts/build_layer27_entry_facilitators.py` |
 | 28 | `layers/28_policy_watchlist.json` | **Policy watchlist — policies in discussion / in the pipeline** — the forward-looking counterpart to layer 17: NEW policy drafted, tabled or debated but not yet in force. **962 PRS bills** (live), **33 active investment-relevant bills (2024+)** mapped to twin sectors — Income Tax Bill 2025, Securities Markets Code, IBC & Banking amendments, Draft Electricity Amendment 2025, Nuclear Energy Bill, Indian Ports/Shipping bills, Jan Vishwas, labour codes — plus Drishti IAS policy editorials. Sources: PRS + Drishti IAS (live), Lok Sabha (API), 🔴 Rajya Sabha blocked. Built by `scripts/build_layer28_policy_watchlist.py` |
 | 29 | `layers/29_mospi_data_sources.json` | **MoSPI macro-statistics connector** — the official India macro/statistics backdrop the twin lacked: **25 MoSPI datasets** (6 core macro · 6 sector · 13 context), each tagged for investment relevance and linked to the twin layer it informs — NAS (GDP), CPI/WPI (inflation), IIP (industrial output), PLFS (jobs), RBI (external sector), MNRE (renewable capacity), ASI, EC. Documents the official API (`api.mospi.gov.in`) + eSankhyiki portal + MCP-connector 4-step workflow. Built by `scripts/mospi_connector.py` |
+| 30 | `layers/30_trade_deficit_map.json` | **Trade-deficit & import-substitution map** — links incentives to India's trade deficit: which large import chapters an open incentive actually addresses vs where the deficit is a **policy gap**. From [india-trade-sector-policy-recommendations](https://github.com/herrrickshaw/india-trade-sector-policy-recommendations) — 12 import chapters (Mineral fuels $203bn, Electrical machinery $105bn…), **7 substitutable gaps** (Machinery $74bn, Chemicals, Plastics, Steel, Aircraft), and the concentrated bilateral deficit (China −$112bn). Built by `scripts/build_layer30_trade_deficit.py` |
 
 ## Leads generation (layer 16)
 
@@ -60,7 +61,7 @@ land data live from the policy repo).
 
 | Related repo | Feeds the twin | Into layer |
 |---|---|---|
-| [india-trade-sector-policy-recommendations](https://github.com/herrrickshaw/india-trade-sector-policy-recommendations) | Industrial land availability + IEM demand match + supply/demand scenarios | 25, 05 |
+| [india-trade-sector-policy-recommendations](https://github.com/herrrickshaw/india-trade-sector-policy-recommendations) | Industrial land availability + IEM demand match + supply/demand scenarios; **import-dependency / trade-deficit → policy-gap analysis, sector×country PLI-coverage scorecard, FDI pitch** | 25, 30, 16, 05 |
 | [agri-commodity-tracker](https://github.com/herrrickshaw/agri-commodity-tracker) | FCI depot/storage footprint (478 depots) — agri-logistics behind FPI/AIF incentives | 02, 17 |
 | [india-trade-tracker](https://github.com/herrrickshaw/india-trade-tracker) | DGFT EIDB trade flows — import-heavy = substitution targets | 16, 06 |
 | [focus-sector-investor-map](https://github.com/herrrickshaw/focus-sector-investor-map) | Global company pools per incentivized sector | 06, 07 |
@@ -91,6 +92,17 @@ The incentive/land/project layers describe the *offer*; layer 29 adds the *macro
 - **13 context** — HCES consumption, AISHE/UDISE education, NFHS health, GENDER, ENVSTATS, and the NSS rounds.
 
 **Access** is documented two ways: the official API (`api.mospi.gov.in/api/esankhyiki/`, per-dataset endpoints + [swagger](https://esankhyiki.mospi.gov.in/EC/swagger-ui/index.html), viz at `/viz/<dataset>`) and the MoSPI MCP connector's 4-step workflow (`list_datasets → get_indicators → get_metadata → get_data`; filter codes are arbitrary and must come from `get_metadata`). Known data quirks are recorded in-layer — 🔴 the RBI forex series lags ~13 months (use the `rbi.org.in` WSSView scrape instead), and WPI/IIP prints with large jumps need a cross-check.
+
+## Trade-deficit & import-substitution map (layer 30)
+
+Incentives don't exist in a vacuum — most PLI-type schemes are, at bottom, an *import-substitution* bet. Layer 30 makes that explicit, joining the twin's incentive lanes with the import-dependency / policy-gap analysis in [india-trade-sector-policy-recommendations](https://github.com/herrrickshaw/india-trade-sector-policy-recommendations) (HS-chapter trade from TRADESTAT/DGCI&S). It encodes four **trade-deficit clauses**:
+
+1. A large or fast-growing import chapter is an investment opportunity **only where a policy lever is sized to it** — otherwise it's a policy *gap*, not an opportunity.
+2. **Process-trade** chapters (gems & jewellery, $109bn) are trade-facilitation cases, not substitution targets.
+3. **Structural imports** (crude oil $203bn, edible oils, fertilisers) aren't substitutable by manufacturing policy — the lever is efficiency / alternative feedstock.
+4. The bilateral deficit is concentrated (**China −$112bn**, Russia −$51bn); Press Note 3 screening + the target shortlist (layer 16) route substitution demand toward specific source countries.
+
+The payoff is the **gap list** — substitutable deficit chapters the incentive catalogue only partially covers or misses entirely: Machinery ($74bn), Organic & Inorganic Chemicals ($40bn combined), Plastics ($22bn), Iron & Steel ($16bn), Optical/medical instruments ($15bn), Aircraft ($14bn). Electronics (HS85, $105bn) is the one large deficit with *strong* coverage (Semicon/ISM 2.0 + ECMS). The full sector×country strategy, PLI-coverage scorecard and FDI pitch deck live in the linked repo.
 
 ## Auto-update scripts
 

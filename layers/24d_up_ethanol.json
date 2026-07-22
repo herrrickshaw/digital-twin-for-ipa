@@ -1,0 +1,682 @@
+{
+ "layer": "24d",
+ "name": "up_ethanol_register_x_news",
+ "built": "2026-07-22",
+ "register_aggregates": {
+  "up_5g_proposals_total": 101,
+  "live": 86,
+  "unique_companies": 47,
+  "note": "UP distillery 5(g) proposals in the PARIVESH EC register (all years); live = granted + in-process"
+ },
+ "up_context": "UP is India's No.1 ethanol state: ~236-250 crore litres/yr capacity of India's ~1,990 crore litres (Nov-2025); output up from 42.7 crore litres (2016-17) to 187.8 crore litres (ESY 2025-26 through Jan); ~74 operational distilleries; ~50 crore litres of capacity ADDED in 2025 alone. The wave is grain-based (maize/broken rice) on DFPD interest subvention, layered on the west-UP molasses belt; Gorakhpur GIDA is the emerging grain-ethanol cluster.",
+ "companies": [
+  {
+   "company": "Bajaj Hindusthan Sugar",
+   "district": "Pilibhit (+14 UP mills)",
+   "capacity": "570 KLD new multi-feed (+350 KLPD granted Dec-24); group >1,200 KLPD",
+   "feedstock": "multi-feed",
+   "capex_rs_cr": 703,
+   "status": "announced",
+   "note": "7 register filings; E20 cited as driver",
+   "url": "https://projectxindia.com/2025/02/15/bajaj-hindusthan-sugar-distillery-project-in-pilibhit/"
+  },
+  {
+   "company": "Dalmia Bharat Sugar",
+   "district": "Sitapur/Shahjahanpur",
+   "capacity": "Rs 400 cr grain distillery + two 100-KL units; group 950 KLPD",
+   "feedstock": "grain + molasses",
+   "capex_rs_cr": 400,
+   "status": "under construction",
+   "note": "100 KLPD in CWIP mid-2025",
+   "url": "https://www.indianchemicalnews.com/general/board-of-dalmia-bharat-sugar-approves-setting-up-of-rs-400-crore-grain-based-distillery-17020"
+  },
+  {
+   "company": "Keyaan Distilleries (Unit-II)",
+   "district": "Gorakhpur GIDA",
+   "capacity": "2nd 300 KLD grain unit + 7.5 MW (Unit-I: Rs 1,200 cr, 300 KLPD, CM-inaugurated Apr-25)",
+   "feedstock": "grain",
+   "capex_rs_cr": null,
+   "status": "announced",
+   "note": "Unit-II = the Mar/Jun-2026 filings; no capex disclosed yet",
+   "url": "https://www.indianchemicalnews.com/energy/up-cm-yogi-adityanath-inaugurates-300-klpd-grain-based-distillery-of-keyaan-distilleries-in-gorakhpur-25763"
+  },
+  {
+   "company": "Karimganj Biofuels (Rana Sugars)",
+   "district": "Moradabad -- SITE CONFIRMED",
+   "capacity": "300 KLPD operating -> 400 KLPD proposed",
+   "feedstock": "broken rice/maize/molasses",
+   "capex_rs_cr": null,
+   "status": "commissioned + expanding",
+   "note": "UP-vs-Assam discrepancy RESOLVED: Moradabad",
+   "url": "https://infomericstorage.blob.core.windows.net/uploads/Pr_Karimganj_Biofuels_4july25_83c6e6cc70.pdf"
+  },
+  {
+   "company": "TQN Retails",
+   "district": "Shahjahanpur",
+   "capacity": "160 KLPD grain + 5 MW",
+   "feedstock": "grain",
+   "capex_rs_cr": 224,
+   "status": "announced",
+   "note": "'Retails' name, real ethanol plant -- identity verified",
+   "url": "https://projxnews.com/blog/up-gets-a-shot-in-the-arm-tqn-retails-announces-rs224-crore-ethanol-project?type=section_4"
+  },
+  {
+   "company": "Wave Industries + Wave Distilleries",
+   "district": "Amroha / Aligarh",
+   "capacity": "Dhanaura 150->250 KLPD + 91 KLPD 2G biorefinery; Aligarh 120+60 KLPD",
+   "feedstock": "B-heavy molasses/grain/2G",
+   "capex_rs_cr": 150,
+   "status": "under construction",
+   "note": "PM JI-VAN approval Jun-2026 for the 2G unit",
+   "url": "https://www.thewavegroup.com/bio-ethanol.php"
+  },
+  {
+   "company": "Avadh Sugar & Energy",
+   "district": "Sitapur (Hargaon)",
+   "capacity": "240->325 KLPD done; Nov-25 EC for further",
+   "feedstock": "molasses/cane syrup",
+   "capex_rs_cr": 135,
+   "status": "commissioned + expanding",
+   "note": "Nov-2025 EC-backed leg not yet in press",
+   "url": "https://www.icicidirect.com/research/equity/avadh-sugar-and-energy-ltd/5681"
+  },
+  {
+   "company": "Allied Blenders and Distillers",
+   "district": "Moradabad",
+   "capacity": "idle distillery acquired Rs 70 cr + Rs 40 cr upgrade + bottling",
+   "feedstock": "molasses (ENA captive)",
+   "capex_rs_cr": 110,
+   "status": "announced",
+   "note": "Board approval 16-Jan-2026; matches Jul-2026 filing",
+   "url": "https://www.business-standard.com/markets/capital-market-news/allied-blenders-distillers-board-approves-acquisition-and-upgradation-of-non-operational-distillery-in-up-126011600860_1.html"
+  },
+  {
+   "company": "Uttam Sugar Mills",
+   "district": "Barkatpur/Khaikheri/Shermau",
+   "capacity": "300 KLPD; expansion to Mar-2027",
+   "feedstock": "molasses",
+   "capex_rs_cr": 110,
+   "status": "under construction",
+   "note": "explicitly E20-tied",
+   "url": "https://www.chinimandi.com/uttam-sugar-mills-fy26-revenue-rises-19-to-rs-2202-crore-board-recommends-dividend/"
+  },
+  {
+   "company": "Modi Illva + Modi Industries",
+   "district": "Ghaziabad (Modinagar)",
+   "capacity": "molasses 18->30 KLPD + 2 KLPD malt",
+   "feedstock": "molasses/malt/grain",
+   "capex_rs_cr": 100,
+   "status": "under construction",
+   "note": "POTABLE spirits (Rockford single malt), not EBP",
+   "url": "https://newsonprojects.com/news/modi-illva-invests-100-crore-in-malt-distillery-paving-way-for-single-malt-launch"
+  },
+  {
+   "company": "Shri Gang Industries",
+   "district": "Hardoi (Sandila)",
+   "capacity": "+125 KLPD ethanol/ENA (2nd plant)",
+   "feedstock": "grain",
+   "capex_rs_cr": 39,
+   "status": "announced",
+   "note": "Diageo tie-up; Rs 39 cr phased FY27-28",
+   "url": "https://scanx.trade/stock-market-news/companies/shri-gang-industries-files-q4-fy26-investor-presentation-highlights-diageo-tie-up-and-strong-growth-metrics/40117254"
+  },
+  {
+   "company": "Crystal Balaji Industries",
+   "district": "Muzaffarnagar",
+   "capacity": "200 KLPD running; +300 KLPD DFPD-approved; new 200 KLD filing",
+   "feedstock": "grain",
+   "capex_rs_cr": null,
+   "status": "commissioned + quiet new filing",
+   "note": "Jan-2026 filing has no press",
+   "url": "https://www.chinimandi.com/crystal-balaji-industries-setting-up-a-200-klpd-grain-based-ethanol-unit/"
+  },
+  {
+   "company": "Alcobulls",
+   "district": "Muzaffarnagar",
+   "capacity": "120 KLPD grain + 3 MW",
+   "feedstock": "grain",
+   "capex_rs_cr": null,
+   "status": "QUIET",
+   "note": "no press since 2023; 2024 grant + Jun-2026 filing uncovered",
+   "url": "https://www.chinimandi.com/uttar-pradesh-alcobulls-plans-to-set-up-grain-based-ethanol-plant/"
+  },
+  {
+   "company": "Shreyas Distilleries & Energy",
+   "district": "Gorakhpur",
+   "capacity": "undisclosed",
+   "feedstock": "grain (rice-mill integrated)",
+   "capex_rs_cr": null,
+   "status": "QUIET",
+   "note": "Shreyas Group (Sortex rice); distinct from Keyaan, same GIDA cluster",
+   "url": "https://www.shreyasgrp.com/about-us"
+  },
+  {
+   "company": "Maa Sheetla Ventures",
+   "district": "Pilibhit",
+   "capacity": "200 KLD grain + 4.5 MW",
+   "feedstock": "grain",
+   "capex_rs_cr": null,
+   "status": "announced",
+   "note": "tracker coverage only",
+   "url": "https://projectxindia.com/2025/12/04/ethanol-distillery-project-at-pilibhit/"
+  }
+ ],
+ "register_detail": [
+  {
+   "company": "KARIMGANJ BIOFUELS PRIVATE LIMITED",
+   "project": "Expansion of Existing 300 KLPD B-Heavy Molasses/ Cane Juice/ Grain Based Distillery to 600",
+   "date": "2026-07-17",
+   "status": "in_process"
+  },
+  {
+   "company": "TQN RETAILS PRIVATE LIMITED",
+   "project": "Greenfield Project of Grain Based Distillery Plant of 160 KLPD along with Co-generation Po",
+   "date": "2026-07-08",
+   "status": "in_process"
+  },
+  {
+   "company": "devesh giri",
+   "project": "Expansion of existing 200 KLPD Grain Based Distillery Unit to 300  KLPD Ethanol / 100KLPD ",
+   "date": "2026-07-07",
+   "status": "in_process"
+  },
+  {
+   "company": "ALLIED BLENDERS AND DISTILLERS LIMITED",
+   "project": "Expansion of Existing Molasses Based Distillery Plant from 40 KLD To 60 KLD along with 2.5",
+   "date": "2026-07-06",
+   "status": "in_process"
+  },
+  {
+   "company": "KEYAAN DISTILLERIES PRIVATE LIMITED",
+   "project": "M/S KEYAAN DISTILLERIES PRIVATE LIMITED UNIT-II",
+   "date": "2026-06-18",
+   "status": "in_process"
+  },
+  {
+   "company": "shreyas distilleries & energy private limited",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED ETHANOL DISTILLERY CAPACITY \u2013 750 KLD AND MALT BASED",
+   "date": "2026-06-18",
+   "status": "in_process"
+  },
+  {
+   "company": "devesh giri",
+   "project": "EXPANSION OF EXISTING 200 KLPD GRAIN BASED DISTILLERY UNIT TO 400KLPD DITILLERY UNIT ",
+   "date": "2026-06-09",
+   "status": "in_process"
+  },
+  {
+   "company": "ALCOBULLS LIMITED",
+   "project": "Proposed 120 KLPD Grain Based Ethanol Distillery Plant located at Khasra No-449, 450, 451,",
+   "date": "2026-06-08",
+   "status": "in_process"
+  },
+  {
+   "company": "ALLIANZ DISTILLERY LIMITED",
+   "project": "Amendment in EC of Grain based Ethanol Distillery capacity 100 KLD along with Co-gen power",
+   "date": "2026-04-27",
+   "status": "in_process"
+  },
+  {
+   "company": "Woodpecker greenagri nutrients private limited",
+   "project": "Proposed 180 KLPD Molasses/Grain based Distillery along with 20 KLPD Malt Spirit Plant and",
+   "date": "2026-04-21",
+   "status": "granted"
+  },
+  {
+   "company": "KEYAAN DISTILLERIES PRIVATE LIMITED",
+   "project": "M/S KEYAAN DISTILLERIES PRIVATE LIMITED UNIT-II",
+   "date": "2026-03-12",
+   "status": "granted"
+  },
+  {
+   "company": "CRYSTAL BALAJI INDUSTRIES PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF NEW 200 KLD GRAIN BASED DISTILLERY PLANT (RS/ENA/ETHANOL) UNDER CATEGORY ",
+   "date": "2026-01-13",
+   "status": "in_process"
+  },
+  {
+   "company": "MODI ILLVA INDIA PRIVATE LIMITED",
+   "project": "Terms of Reference (TOR) application for Establishment of 12 KLD Malt Spirit Plant at Vill",
+   "date": "2025-12-03",
+   "status": "granted"
+  },
+  {
+   "company": "AVADH SUGAR & ENERGY LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED CANE JUICE SYRUP/B OR C HEAVY MOLASSES/ GRAIN BASED DISTILLERY H",
+   "date": "2025-11-29",
+   "status": "granted"
+  },
+  {
+   "company": "NAMAMIGANGA Developers PRIVATE LIMITED",
+   "project": "Proposed distillery unit of capacity 100 KLD (Grain Based) along with 3.3 MW Co-gen power ",
+   "date": "2025-11-05",
+   "status": "granted"
+  },
+  {
+   "company": "INDOSPIRIT BEVERAGES PRIVATE LIMITED",
+   "project": "Establishment of 12 KLD Malt distillation, 1.5 KLD GIN distillation, 3.0 KLD RUM distillat",
+   "date": "2025-10-04",
+   "status": "in_process"
+  },
+  {
+   "company": "SHRI GANG INDUSTRIES AND ALLIED PRODUCTS LIMITED",
+   "project": "Proposed expansion of existing Distillery (Grain Based) from 66 KLD to 100 KLD and Additio",
+   "date": "2025-10-03",
+   "status": "granted"
+  },
+  {
+   "company": "M/S MAA SHEETLA VENTURES LIMITED",
+   "project": "PROPOSED ESTABLISHMENT OF GRAIN BASED ETHANOL DSTILLERY OF CAPACITY 200 KLD ALONG WITH CO ",
+   "date": "2025-09-20",
+   "status": "granted"
+  },
+  {
+   "company": "shreyas distilleries & energy private limited",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED ETHANOL DISTILLERY CAPACITY \u2013 750 KLD AND MALT BASED",
+   "date": "2025-09-20",
+   "status": "granted"
+  },
+  {
+   "company": "YTT INDUSTRIES PRIVATE LIMITED",
+   "project": "Expansion of Grain Based Distillery Plant from 160 KLD to 260 KLD along with increasing ca",
+   "date": "2025-09-19",
+   "status": "granted"
+  },
+  {
+   "company": "KEYAAN DISTILLERIES PRIVATE LIMITED",
+   "project": "M/S KEYAAN DISTILLERIES PRIVATE LIMITED UNIT-II",
+   "date": "2025-09-08",
+   "status": "granted"
+  },
+  {
+   "company": "Rajshree Fine CHemical industries india private limited",
+   "project": "Proposal for establishment of Grain based distillery plant of capacity - 500 KLD along wit",
+   "date": "2025-08-10",
+   "status": "granted"
+  },
+  {
+   "company": "ANITA DISTILLERY PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 200 KLD ALONG WITH CO GEN POWE",
+   "date": "2025-04-25",
+   "status": "granted"
+  },
+  {
+   "company": "KARIMGANJ BIOFUELS PRIVATE LIMITED",
+   "project": "Expansion of Existing 300 KLPD B-Heavy Molasses/ Cane Juice/ Grain Based Distillery to 600",
+   "date": "2025-03-13",
+   "status": "granted"
+  },
+  {
+   "company": "WAVE DISTILLERIES AND BREWERIES LIMITED",
+   "project": "Wave Distilleries & Breweries Ltd. ",
+   "date": "2025-01-29",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "Proposed 690 KLPD B-heavy Molasses/Cane Syrup/Grain based Distillery along with 15 MW Co-g",
+   "date": "2025-01-03",
+   "status": "granted"
+  },
+  {
+   "company": "UTTAM SUGAR MILLS LIMITED",
+   "project": "Establishment of Distillery having capacity 300 KLD (Cane Juice Syrup/ C or B - Heavy Mola",
+   "date": "2024-12-09",
+   "status": "granted"
+  },
+  {
+   "company": "NAMAMIGANGA Developers PRIVATE LIMITED",
+   "project": "Proposed distillery unit of capacity 100 KLD (Grain Based) along with 3.3 MW Co-gen power ",
+   "date": "2024-11-14",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "ESTABLISHMENT OF NEW CANE JUICE SYRUP / GRAINS / B or C-HEAVY MOLASSES BASED DISTILLERY HA",
+   "date": "2024-11-05",
+   "status": "granted"
+  },
+  {
+   "company": "KSI INDUSTRIES PRIVATE LIMITED",
+   "project": "Environment Clearance for proposed establishment of 80 KLPD Capacity Grain based Distiller",
+   "date": "2024-10-01",
+   "status": "granted"
+  },
+  {
+   "company": "BAS BHARETH AGROCHEMICAL SOLUTIONS PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 150 KLD ALONG WITH 4.65 MW CO ",
+   "date": "2024-08-31",
+   "status": "granted"
+  },
+  {
+   "company": "ANITA DISTILLERY PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 200 KLD ALONG WITH CO GEN POWE",
+   "date": "2024-08-30",
+   "status": "granted"
+  },
+  {
+   "company": "Rajshree Fine CHemical industries india private limited",
+   "project": "Proposal for establishment of Grain based distillery plant of capacity - 500 KLD along wit",
+   "date": "2024-08-28",
+   "status": "granted"
+  },
+  {
+   "company": "MODI ILLVA INDIA PRIVATE LIMITED",
+   "project": "Terms of Reference (TOR) application for Establishment of 12 KLD Malt Spirit Plant at Vill",
+   "date": "2024-08-24",
+   "status": "granted"
+  },
+  {
+   "company": "MODI INDUSTRIES LIMITED",
+   "project": "Environment Clearance for Expansion of 32 KLD to 100 KLD Grain Based Distillery including ",
+   "date": "2024-08-24",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "ESTABLISHMENT OF CANE JUICE SYRUP / GRAINS / B-HEAVY MOLASSES OR  C HEAVY MOLASSES  BASED ",
+   "date": "2024-08-05",
+   "status": "granted"
+  },
+  {
+   "company": "ALCOBULLS LIMITED",
+   "project": "Proposed 120 KLPD Grain Based Ethanol Distillery Plant located at Khasra No-449, 450, 451,",
+   "date": "2024-07-29",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "Expansion of existing distillery unit capacity from 200 KLD to 840 KLD by Installation of ",
+   "date": "2024-07-26",
+   "status": "granted"
+  },
+  {
+   "company": "M/S MAA SHEETLA VENTURES LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 200 KLD ALONG WITH CO GEN POWE",
+   "date": "2024-07-20",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "Expansion of existing distillery unit capacity from 100 KLD to 500 KLD (Based on Cane Suga",
+   "date": "2024-07-19",
+   "status": "granted"
+  },
+  {
+   "company": "FOREVER DISTILLERY PRIVATE LIMITED",
+   "project": "EXPANSION OF EXISTING DISTILLERY FROM 100 KLD (MOLASSES/ CANE JUICE SYRUP/GRAIN BASED) TO ",
+   "date": "2024-07-19",
+   "status": "granted"
+  },
+  {
+   "company": "WAVE INDUSTRIES PRIVATE LIMITED",
+   "project": "Expansion of existing distillery from 140 KLD (B Heavy Molasses/ Cane Juice Syrup) To 250 ",
+   "date": "2024-07-04",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "Proposed 690 KLPD B-heavy Molasses/Cane Syrup/Grain based Distillery along with 15 MW Co-g",
+   "date": "2024-05-03",
+   "status": "granted"
+  },
+  {
+   "company": "SHRI GANG INDUSTRIES AND ALLIED PRODUCTS LIMITED",
+   "project": "EXPANSION OF EXISTING 55 KLD DISTILLERY TO 66 KLD GRAIN BASED DISTILLERY PLANT ALONG WITH ",
+   "date": "2024-04-27",
+   "status": "granted"
+  },
+  {
+   "company": "SHRI GANG INDUSTRIES AND ALLIED PRODUCTS LIMITED",
+   "project": "EXPANSION OF EXISTING 55 KLD DISTILLERY TO 66 KLD GRAIN BASED DISTILLERY PLANT ALONG WITH ",
+   "date": "2024-04-26",
+   "status": "in_process"
+  },
+  {
+   "company": "MODI ILLVA INDIA PRIVATE LIMITED",
+   "project": "Terms of Reference (TOR) application for Establishment of 12 KLD Malt Spirit Plant at Vill",
+   "date": "2024-04-18",
+   "status": "granted"
+  },
+  {
+   "company": "MODI INDUSTRIES LIMITED",
+   "project": "Environment Clearance for Expansion of 32 KLD to 100 KLD Grain Based Distillery including ",
+   "date": "2024-03-16",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "Expansion of Distillery from 160 KLPD C-heavy molasses/ 200 KLPD (B-heavy Molasses/Sugar S",
+   "date": "2024-03-05",
+   "status": "granted"
+  },
+  {
+   "company": "AVADH SUGAR & ENERGY LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED CANE JUICE SYRUP/B OR C HEAVY MOLASSES/ GRAIN BASED DISTILLERY H",
+   "date": "2024-02-17",
+   "status": "granted"
+  },
+  {
+   "company": "PULKIT NARANG",
+   "project": "Environmental Clearance for proposed Establishment of 100 KLPD Capacity Grain based Distil",
+   "date": "2024-02-05",
+   "status": "granted"
+  },
+  {
+   "company": "WAVE DISTILLERIES AND BREWERIES LIMITED",
+   "project": "Wave Distilleries and Breweries Limited ",
+   "date": "2024-01-27",
+   "status": "granted"
+  },
+  {
+   "company": "FOREVER DISTILLERY PRIVATE LIMITED",
+   "project": "EXPANSION OF EXISTING DISTILLERY FROM 100 KLD (MOLASSES/ CANE JUICE SYRUP/GRAIN BASED) TO ",
+   "date": "2024-01-16",
+   "status": "granted"
+  },
+  {
+   "company": "DALMIA BHARAT SUGAR AND INDUSTRIES LIMITED",
+   "project": "Proposed 500 KLPD Grain based Ethanol plant along with 10 MW Co-generation power plant und",
+   "date": "2024-01-15",
+   "status": "granted"
+  },
+  {
+   "company": "DALMIA BHARAT SUGAR AND INDUSTRIES LIMITED",
+   "project": "Proposed 300 KLPD Grain based Ethanol plant along with 10 MW Co-generation power plant und",
+   "date": "2024-01-15",
+   "status": "granted"
+  },
+  {
+   "company": "DALMIA BHARAT SUGAR AND INDUSTRIES LIMITED",
+   "project": "Expansion of Molasses based distillery from 110 KLPD to 360 KLPD Multi Feed Distillery alo",
+   "date": "2024-01-10",
+   "status": "granted"
+  },
+  {
+   "company": "DALMIA BHARAT SUGAR AND INDUSTRIES LIMITED",
+   "project": "Proposed 300 KLPD Multi-feed Distillery along with 10 MW Co-generation Power Plant and 100",
+   "date": "2023-12-16",
+   "status": "granted"
+  },
+  {
+   "company": "UNI ETHANOL BIO GREEN ENERGY PRIVATE LIMITED",
+   "project": "Grain Based Distillery Plant of 125 KLD along with Co-generation Power Plant of 3.5 MW\u201d lo",
+   "date": "2023-12-07",
+   "status": "granted"
+  },
+  {
+   "company": "GLYCO ARUNA PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 60 KLD ALONG WITH CO GEN POWER",
+   "date": "2023-11-30",
+   "status": "granted"
+  },
+  {
+   "company": "AARTI DISTILLERIES PRIVATE LIMITED",
+   "project": "M/s Aarti Distilleries Private Limited is proposing an expansion of the distillery capacit",
+   "date": "2023-11-16",
+   "status": "granted"
+  },
+  {
+   "company": "ZUARI ENVIEN BIOENERGY PRIVATE LIMITED",
+   "project": "Proposed 200 KLPD Grain based Ethanol Plant & 4.9 MW Cogeneration Power Plant under Ethano",
+   "date": "2023-11-04",
+   "status": "granted"
+  },
+  {
+   "company": "GLOBUS SPIRITS LIMITED",
+   "project": "Proposed 300 KLPD (2x150 KLPD) Grain/Molasses/Cane juice based distillery, 15 KLPD Malt Sp",
+   "date": "2023-10-20",
+   "status": "granted"
+  },
+  {
+   "company": "SHREE VINOD INDUSTRIES AND CHEMICALS PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 60 KLD ALONG WITH CO GEN POWER",
+   "date": "2023-09-27",
+   "status": "granted"
+  },
+  {
+   "company": "TRIVENI ENGINEERING & INDUSTRIES LIMITED",
+   "project": "EXPANSION OF DISTILLERY FROM 200 KLD (B-HEAVY MOLASSES)  TO 450 KLD THROUGH ADDITION OF 25",
+   "date": "2023-09-21",
+   "status": "granted"
+  },
+  {
+   "company": "U P STATE SUGAR CORPORATION LTD",
+   "project": "Proposed Molasses / B Heavy Molasses based Distillery capacity \u2013 60 KLD along with Co - ge",
+   "date": "2023-09-12",
+   "status": "granted"
+  },
+  {
+   "company": "PULKIT NARANG",
+   "project": "Environmental Clearance for proposed Establishment of 100 KLPD Capacity Grain based Distil",
+   "date": "2023-08-08",
+   "status": "in_process"
+  },
+  {
+   "company": "ALCOBULLS LIMITED",
+   "project": "Proposed 120 KLPD Grain Based Ethanol Distillery Plant located at Khasra No-449, 450, 451,",
+   "date": "2023-08-07",
+   "status": "granted"
+  },
+  {
+   "company": "UTTAM SUGAR MILLS LIMITED",
+   "project": "Establishment of Distillery having capacity 300 KLD (Cane Juice Syrup/ C or B - Heavy Mola",
+   "date": "2023-07-22",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "Expansion of Distillery from 200 KLPD (B-heavy Molasses/Sugar Syrup) to 630 KLPD (B-heavy ",
+   "date": "2023-07-19",
+   "status": "granted"
+  },
+  {
+   "company": "DALMIA BHARAT SUGAR AND INDUSTRIES LIMITED",
+   "project": "Proposed 300 KLPD Grain based Ethanol plant along with 10 MW Co-generation power plant und",
+   "date": "2023-06-08",
+   "status": "granted"
+  },
+  {
+   "company": "TRIVENI ENGINEERING AND INDUSTRIES LTD",
+   "project": "ESTABLISHMENT OF C or B HEAVY MOLASSES / CANE JUICE SYRUP/ GRAIN BASED DISTILLERY HAVING C",
+   "date": "2023-06-06",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "ESTABLISHMENT OF NEW CANE JUICE SYRUP / GRAINS / B or C-HEAVY MOLASSES BASED DISTILLERY HA",
+   "date": "2023-04-28",
+   "status": "granted"
+  },
+  {
+   "company": "MODI ILLVA INDIA PRIVATE LIMITED",
+   "project": "Terms of Reference (TOR) application for Establishment of 12 KLD Malt Spirit Plant at Vill",
+   "date": "2023-04-26",
+   "status": "granted"
+  },
+  {
+   "company": "M/S GHAZIABAD ORGANICS LIMITED (UNIT-II)",
+   "project": "Expansion [65 KLD grain based ethanol] of Existing Distillery Unit at 9th Km, Modinagar-Ha",
+   "date": "2023-04-24",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "ESTABLISHMENT OF NEW SUGAR SYRUP / GRAIN / B or C-HEAVY MOLASSES DISTILLERY HAVING CAPACIT",
+   "date": "2023-04-24",
+   "status": "granted"
+  },
+  {
+   "company": "GLYCO ARUNA PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 60 KLD ALONG WITH CO GEN POWER",
+   "date": "2023-04-15",
+   "status": "granted"
+  },
+  {
+   "company": "RCP DISTILLERIES (INDIA) PRIVATE LIMITED",
+   "project": "Expansion of proposed Grain Based Ethanol Distillery Capacity from 50 KLD To 80 KLD along ",
+   "date": "2023-04-13",
+   "status": "granted"
+  },
+  {
+   "company": "AJUDHIA BIOFUELS PRIVATE LIMITED",
+   "project": "Proposed 500 KLPD Grain based Ethanol Plant along with 7.5 MW Cogeneration Power Plant at ",
+   "date": "2023-04-11",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "ESTABLISHMENT OF CANE JUICE SYRUP / GRAINS / B-HEAVY MOLASSES OR C HEAVY MOLASSES  BASED D",
+   "date": "2023-04-04",
+   "status": "granted"
+  },
+  {
+   "company": "BAJAJ HINDUSTHAN SUGAR LIMITED",
+   "project": "ESTABLISHMENT OF CANE JUICE SYRUP / GRAINS / B-HEAVY MOLASSES OR  C HEAVY MOLASSES  BASED ",
+   "date": "2023-03-27",
+   "status": "granted"
+  },
+  {
+   "company": "M/S MAA SHEETLA VENTURES LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 200 KLD ALONG WITH CO GEN POWE",
+   "date": "2023-03-27",
+   "status": "granted"
+  },
+  {
+   "company": "YTT INDUSTRIES PRIVATE LIMITED",
+   "project": "Greenfield project of Grain Based Distillery of 160 KLD along with 4.5 MW Co-generation po",
+   "date": "2023-03-23",
+   "status": "granted"
+  },
+  {
+   "company": "SUPERIOR BIOFUELS PRIVATE LIMITED",
+   "project": "Proposed 300 KLPD Cane Juice/ Sugar Syrup/ Grain Based Distillery Plant & 6.0 MW Co-Genera",
+   "date": "2023-03-22",
+   "status": "granted"
+  },
+  {
+   "company": "TQN RETAILS PRIVATE LIMITED",
+   "project": "Greenfield Project of Grain Based Distillery Plant of 160 KLPD along with Co-generation Po",
+   "date": "2023-03-14",
+   "status": "granted"
+  },
+  {
+   "company": "DALMIA BHARAT SUGAR AND INDUSTRIES LIMITED",
+   "project": "Proposed 500 KLPD Grain based Ethanol plant along with 10 MW Co-generation power plant und",
+   "date": "2023-03-06",
+   "status": "granted"
+  },
+  {
+   "company": "SHREE VINOD INDUSTRIES AND CHEMICALS PRIVATE LIMITED",
+   "project": "ESTABLISHMENT OF PROPOSED GRAIN BASED DISTILLERY CAPACITY \u2013 60 KLD ALONG WITH CO GEN POWER",
+   "date": "2023-02-22",
+   "status": "granted"
+  },
+  {
+   "company": "M/S PASUPATI ACRYLON LTD.",
+   "project": "Greenfield Project of 300 KLD Grain Based Ethanol Plant along with 6 MW Co-generation Powe",
+   "date": "2023-02-11",
+   "status": "granted"
+  }
+ ]
+}

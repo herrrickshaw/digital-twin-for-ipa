@@ -471,7 +471,46 @@ registers (all years, statuses, activities) and are deliberately broader than th
 subset used for lead scoring. PIB is a title-only index — annexure PDFs are a known blind spot. "Quiet" = live
 clearance filings with zero press. Sources &amp; data: layers/24_clearance_leads.json · 24b_pool_policy_triage.json ·
 24c_cross_verification.json. Generated {datetime.date.today().isoformat()}.</p>
+{render_up_ethanol()}
 </section>"""
+
+
+
+
+def render_up_ethanol():
+    """Case study injected under the policy annex: UP ethanol, register x news
+    (layer 24d). UP is the EBP's #1 state -- the table shows every significant
+    live 5(g) filer with its news-verified project detail."""
+    import html as _h
+    import json, os
+    p = os.path.join(ROOT, "layers/24d_up_ethanol.json")
+    if not os.path.exists(p):
+        return ""
+    d = json.load(open(p))
+    ra = d["register_aggregates"]
+    rows = "".join(
+        f'<tr><td class="cn">{_h.escape(r["company"])}</td>'
+        f'<td>{_h.escape(r["district"])}</td>'
+        f'<td>{_h.escape(r["capacity"])}</td>'
+        f'<td>{_h.escape(r["feedstock"])}</td>'
+        f'<td class="cv">{("&#8377;" + format(round(r["capex_rs_cr"]), ",") + " cr") if r["capex_rs_cr"] else "—"}</td>'
+        f'<td class="cv {"q" if "QUIET" in r["status"] else "y"}">{_h.escape(r["status"])}</td>'
+        f'<td style="font-size:.72rem;opacity:.8">{_h.escape(r["note"])}</td></tr>'
+        for r in d["companies"])
+    return f"""
+<h3 style="font-family:Georgia,serif;font-weight:500;margin-top:30px;">Case study — Uttar Pradesh ethanol: the register × the news</h3>
+<div style="font-size:.9rem;max-width:82ch;line-height:1.5;">
+<p>{_h.escape(d["up_context"])}</p>
+<p>The PARIVESH register holds <b>{ra["up_5g_proposals_total"]} UP distillery (5(g)) proposals</b> —
+<b>{ra["live"]} live</b> across <b>{ra["unique_companies"]} companies</b>. The {len(d["companies"])} most
+significant, register-verified and news-checked:</p></div>
+<div class="scroll"><table>
+<thead><tr><th>Company</th><th>District</th><th>Capacity / project</th><th>Feedstock</th><th>Capex</th><th>Status</th><th>Note</th></tr></thead>
+<tbody>{rows}</tbody></table></div>
+<p style="font-size:.72rem;opacity:.65;max-width:86ch;">Register side = PARIVESH EC 5(g) filings (all years; live = granted
++ in-process). News side = 2024-26 sweep. Notables: Karimganj's UP-vs-Assam location discrepancy resolved (Moradabad);
+TQN "Retails" verified as a genuine &#8377;224 cr ethanol proponent; Modi Illva is potable malt, not EBP — feedstock
+disambiguation applied. Data: layers/24d_up_ethanol.json.</p>"""
 
 
 if __name__ == "__main__":

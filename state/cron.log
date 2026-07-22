@@ -20,3 +20,7 @@ unnati: http=200, registration_stopped=True -> /Users/umashankar/digital-twin-fo
 nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-07-20.json
 rbi: latest WSS issue = Jul 20, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-07-20.json
 send_twin_alert: sent '[digital-twin] 1 change(s) detected 2026-07-20' to umashankartd1991@gmail.com
+  2026-07-21   53 releases
+indexed 53 release rows 2026-07-21 → 2026-07-21
+  2026-07-22  118 releases
+indexed 118 release rows 2026-07-22 → 2026-07-22

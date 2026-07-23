@@ -76,8 +76,8 @@ Dorf-Ketal U24100GJ1992PLC102619, German Green U27100GJ2008PLC054437):
 - **Dorf-Ketal: fresh issue ₹15,000 mn = EXACTLY the ₹1,500 cr the CARE rationale
   said would repay debt** — rating-channel prediction verified to the rupee; plus a
   ₹35,000 mn OFS (promoter monetization alongside).
-- **German Green Steel (DARK filer): ₹450 lakh-cr… ₹45,000 lakh (₹450 cr) fresh +
-  ₹100 cr OFS** — mostly new money: the dark expansion is being market-funded.
+- **German Green Steel (DARK filer): ₹45,000 lakh (₹450 cr) fresh + ₹100 cr OFS**
+  — mostly new money: the dark expansion is being market-funded.
 - **Anthem Biosciences: OFS-only (₹33,950 mn, no fresh issue)** — a promoter exit,
   NOT company funding; its clearance-evidenced capex is internally funded.
 - Fresh-issue-led (funding their expansions): Virupaksha ₹740 cr, A-One Steels

@@ -56,8 +56,12 @@ STOP_TOKENS = {"india", "indian", "national", "the", "new", "bharat", "shree",
 # which counts as strong. Reviewed-and-REJECTED, keep weak: RELIANCE, INC.
 # (US steel distributor, all 14 rows are Indian Reliance groups) and Venture
 # Corporation (every row matches the phrase 'joint venture').
-# Add a name here ONLY after eyeballing its rows in ii_company_matches.
-REVIEWED_WEAK_OK = {"airbus", "pegatron", "astrazeneca", "panasonic", "vertiv"}
+# Third pass (news channel, 2026-07-23): Sandisk — Yahoo Finance stock piece,
+# genuine. This allowlist is SHARED with collect_company_news.py.
+# Add a name here ONLY after eyeballing its rows in ii_company_matches /
+# news_company_matches.
+REVIEWED_WEAK_OK = {"airbus", "pegatron", "astrazeneca", "panasonic", "vertiv",
+                    "sandisk"}
 
 SUFFIXES = re.compile(
     r"\b(private|pvt|limited|ltd|llp|llc|inc|incorporated|corp|corporation|plc|"
@@ -243,7 +247,8 @@ def main():
                         "Rs 176 cr Chennai GITC, Pegatron Chennai 5G plant, "
                         "Airbus H125 order + Bengaluru GCC lease, Panasonic "
                         "(Life Solutions India subsidiary, Andheri land), "
-                        "Vertiv Pune services centre",
+                        "Vertiv Pune services centre; news channel: Sandisk "
+                        "(Yahoo Finance stock piece)",
             "reviewed_and_rejected": ["RELIANCE, INC. (US namesake — rows are "
                                       "Indian Reliance groups)",
                                       "Venture Corporation (matches the phrase "

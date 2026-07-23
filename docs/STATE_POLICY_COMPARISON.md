@@ -9,6 +9,8 @@ new sweep.*
 
 ---
 
+> **Workbook companion:** the same analysis in spreadsheet form (18 sheets: state stackup, category × state matrix, sector verticals, 13 per-sector detail sheets) is summarized in [POLICY_COMPARISON_WORKBOOK.md](POLICY_COMPARISON_WORKBOOK.md).
+
 ## 1. The common architecture
 
 Nearly every industrial state runs the same two-tier design:

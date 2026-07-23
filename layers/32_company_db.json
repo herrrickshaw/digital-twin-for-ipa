@@ -297,5 +297,12 @@
    }
   ],
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
+ },
+ "cin_extraction": {
+  "ran": "2026-07-23",
+  "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
+  "records": [],
+  "errors": [],
+  "mca_status": "mca.gov.in 403 (re-tested 2026-07-23); zaubacorp 403; thecompanycheck/falconebiz reachable but unofficial"
  }
 }

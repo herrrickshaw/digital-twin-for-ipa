@@ -69,6 +69,21 @@ below are strong-tier). Run 2026-07-23:*
 | Shanti Gold International | Layer-16 lead | — | Filed 2025-01-22 |
 | Shreeji Shipping Global | Layer-16 lead | — | Filed 2025-01-30 |
 
+**CIN + issue structure** (`scripts/extract_cin_from_drhp.py` — MCA is 403-blocked,
+so the prospectus is the authoritative CIN source; all 12 extracted, e.g.
+Dorf-Ketal U24100GJ1992PLC102619, German Green U27100GJ2008PLC054437):
+
+- **Dorf-Ketal: fresh issue ₹15,000 mn = EXACTLY the ₹1,500 cr the CARE rationale
+  said would repay debt** — rating-channel prediction verified to the rupee; plus a
+  ₹35,000 mn OFS (promoter monetization alongside).
+- **German Green Steel (DARK filer): ₹450 lakh-cr… ₹45,000 lakh (₹450 cr) fresh +
+  ₹100 cr OFS** — mostly new money: the dark expansion is being market-funded.
+- **Anthem Biosciences: OFS-only (₹33,950 mn, no fresh issue)** — a promoter exit,
+  NOT company funding; its clearance-evidenced capex is internally funded.
+- Fresh-issue-led (funding their expansions): Virupaksha ₹740 cr, A-One Steels
+  ₹600 cr, Supreet ₹499 cr, Renny ₹300 cr + ₹100 cr OFS, Sky Alloys ₹100 cr.
+- CIN state codes confirm the clearance geography (GJ/CT/RJ/PB/TG/KA/MH).
+
 **Read**: 12 previously-analysed companies are in the SEBI listing pipeline. The
 pattern to watch — EC-filer-pool companies (6 of 12) using the primary market to fund
 the very expansions their clearance filings evidence; the DRHP prospectus then

@@ -243,6 +243,29 @@ def main():
                 skipped.append(f"newsapi quiet {name}: {type(e).__name__}")
     con.commit()
 
+    # ---- durable archive: companies.db is DELETED+rebuilt weekly by
+    # build_company_db.py, so articles are also appended (url-deduped) to the
+    # repo's append-only state/ snapshot dir, which the cron auto-commits.
+    arch = os.path.join(ROOT, "state", "news_articles.jsonl")
+    os.makedirs(os.path.dirname(arch), exist_ok=True)
+    seen_urls = set()
+    if os.path.exists(arch):
+        with open(arch) as f:
+            for line in f:
+                try:
+                    seen_urls.add(json.loads(line).get("url"))
+                except json.JSONDecodeError:
+                    pass
+    with open(arch, "a") as f:
+        for row in cur.execute("SELECT source,query,title,description,url,"
+                               "published,sentiment,fetched FROM news_articles"
+                               " WHERE fetched=?", (today,)):
+            rec = dict(zip(("source", "query", "title", "description", "url",
+                            "published", "sentiment", "fetched"), row))
+            if rec["url"] and rec["url"] not in seen_urls:
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                seen_urls.add(rec["url"])
+
     # ---- 4) tiered matching over collected articles --------------------------
     cur.execute("""SELECT c.company_id, c.name,
                           (SELECT visibility_verdict FROM clearance_activity a

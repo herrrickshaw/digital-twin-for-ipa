@@ -157,11 +157,13 @@ def cmd_catalogue():
 
 
 def cmd_watchlist():
-    """Rebuild the live/dynamic cross-repo & watchlist layers (25-28)."""
+    """Rebuild the live/dynamic cross-repo & watchlist layers (25-32)."""
     for s in ("build_layer25_linkages.py", "build_layer26_projects.py",
               "build_layer27_entry_facilitators.py",
               "build_layer28_policy_watchlist.py", "mospi_connector.py",
-              "build_layer30_trade_deficit.py"):
+              "build_layer30_trade_deficit.py",
+              "build_layer31_ipa_sources.py",   # live WAIPA member scrape + liveness sweep
+              "build_company_db.py"):           # layer 32 rebuild from refreshed layers
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, "scripts", s)],
                            check=True)

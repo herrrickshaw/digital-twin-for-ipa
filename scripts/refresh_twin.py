@@ -165,7 +165,8 @@ def cmd_watchlist():
               "build_layer31_ipa_sources.py",   # live WAIPA member scrape + liveness sweep
               "build_company_db.py",            # layer 32 rebuild from refreshed layers
               "enrich_company_db_ii_tickers.py",   # II announcement-ticker validation
-              "collect_company_news.py"):        # external stock/FDI news channel
+              "collect_company_news.py",         # external stock/FDI news channel
+              "check_sebi_public_issues.py"):    # SEBI DRHP/RHP listing-pipeline check
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, "scripts", s)],
                            check=True)

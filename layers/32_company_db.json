@@ -174,5 +174,128 @@
   "exception_news_hits": [],
   "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
+ },
+ "sebi_public_issues": {
+  "ran": "2026-07-23",
+  "since": "2025-01-01",
+  "pages_fetched": 16,
+  "filings_in_window": 378,
+  "new_rows": 400,
+  "match_rows": 14,
+  "companies_moving_to_market": [
+   {
+    "company": "Sky Alloys And Power Limited",
+    "visibility": "NOTABLE",
+    "quality": "strong",
+    "filed": "2026-06-25",
+    "filing": "Sky Alloys and Power Limited- DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jun-2026/sky-alloys-and-power-limited-drhp_102415.html"
+   },
+   {
+    "company": "Renny Strips Limited",
+    "visibility": "VISIBLE",
+    "quality": "strong",
+    "filed": "2025-12-19",
+    "filing": "Renny Strips Limited",
+    "url": "https://www.sebi.gov.in/filings/public-issues/dec-2025/renny-strips-limited_98494.html"
+   },
+   {
+    "company": "Sky Alloys And Power Limited",
+    "visibility": "NOTABLE",
+    "quality": "strong",
+    "filed": "2025-10-09",
+    "filing": "SKY ALLOYS AND POWER LIMITED",
+    "url": "https://www.sebi.gov.in/filings/public-issues/oct-2025/sky-alloys-and-power-limited_97189.html"
+   },
+   {
+    "company": "Virupaksha Organics Limited",
+    "visibility": "ANNOUNCED",
+    "quality": "strong",
+    "filed": "2025-10-08",
+    "filing": "Virupaksha Organics Limited - DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/oct-2025/virupaksha-organics-limited-drhp_97120.html"
+   },
+   {
+    "company": "Supreet Chemicals Limited",
+    "visibility": "VISIBLE",
+    "quality": "strong",
+    "filed": "2025-09-05",
+    "filing": "Supreet Chemicals Limited - DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/sep-2025/supreet-chemicals-limited-drhp_96737.html"
+   },
+   {
+    "company": "German Green Steel And Power Limited",
+    "visibility": "DARK",
+    "quality": "strong",
+    "filed": "2025-07-08",
+    "filing": "GERMAN GREEN STEEL AND POWER LIMITED",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jul-2025/german-green-steel-and-power-limited_95113.html"
+   },
+   {
+    "company": "A-One Steels India Limited",
+    "visibility": "ANNOUNCED",
+    "quality": "strong",
+    "filed": "2025-04-24",
+    "filing": "A-One Steels India Limited - Addendum to DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/apr-2025/a-one-steels-india-limited-addendum-to-drhp_93595.html"
+   },
+   {
+    "company": "Jajoo Rashmi Refractories Limited",
+    "visibility": "NOTABLE",
+    "quality": "strong",
+    "filed": "2025-04-22",
+    "filing": "Jajoo Rashmi Refractories Limited - Addendum to DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/apr-2025/jajoo-rashmi-refractories-limited-addendum-to-drhp_93531.html"
+   },
+   {
+    "company": "Advance Agrolife Private Limited",
+    "visibility": "NOTABLE",
+    "quality": "strong",
+    "filed": "2025-04-02",
+    "filing": "Advance Agrolife Limited",
+    "url": "https://www.sebi.gov.in/filings/public-issues/apr-2025/advance-agrolife-limited_93250.html"
+   },
+   {
+    "company": "SHREEJI SHIPPING GLOBAL L",
+    "visibility": null,
+    "quality": "strong",
+    "filed": "2025-01-30",
+    "filing": "SHREEJI SHIPPING GLOBAL LIMITED",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jan-2025/shreeji-shipping-global-limited_91371.html"
+   },
+   {
+    "company": "Dorf-Ketal Chemicals India Limited",
+    "visibility": "PARTIALLY_VISIBLE",
+    "quality": "strong",
+    "filed": "2025-01-27",
+    "filing": "Dorf-Ketal Chemicals India Limited",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jan-2025/dorf-ketal-chemicals-india-limited_91200.html"
+   },
+   {
+    "company": "SHANTI GOLD INTERNATION L",
+    "visibility": null,
+    "quality": "strong",
+    "filed": "2025-01-22",
+    "filing": "Shanti Gold International Limited",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jan-2025/shanti-gold-international-limited_91075.html"
+   },
+   {
+    "company": "A-One Steels India Limited",
+    "visibility": "ANNOUNCED",
+    "quality": "strong",
+    "filed": "2025-01-10",
+    "filing": "A One Steels India Limited",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jan-2025/a-one-steels-india-limited_90677.html"
+   },
+   {
+    "company": "Anthem Biosciences Limited",
+    "visibility": "ANNOUNCED",
+    "quality": "strong",
+    "filed": "2025-01-06",
+    "filing": "ANTHEM BIOSCIENCES LIMITED",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jan-2025/anthem-biosciences-limited_90546.html"
+   }
+  ],
+  "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  }
 }

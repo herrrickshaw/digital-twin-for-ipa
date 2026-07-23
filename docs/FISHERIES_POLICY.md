@@ -159,12 +159,18 @@ use `?page_id=` URLs; the **exporter registry is scrapeable** at the
 - **Foreign lead**: Charoen Pokphand Foods (Thailand, layer 16) — world-scale
   shrimp-feed player with India aquaculture operations; the FIDF feed-mill lane
   is its natural instrument.
-- **Gap recorded as data**: the EC/FC clearance pool (layers 24b/24e) contains
-  **no seafood-processing filers** — the earlier "marine" hits were
-  pigment/aero false positives. Either the sector expands below the EC
-  threshold, or through state single-window routes the register doesn't
-  capture. Worth a dedicated PARIVESH re-query with fisheries-specific
-  activity terms.
+- **Gap RESOLVED (re-query 2026-07-23)**: the zero is **structural, not a
+  query artifact**. The EIA-2006 schedule's 46 EC activities contain no
+  fisheries/aquaculture/seafood category (verified via
+  `parivesh_api/activity/action/getAll`), and a name-term sweep of all 6,448
+  central EC proposals Jan-2025→Jul-2026 (open MIS API
+  `admin_api/dashboard/getProposals`) found **zero** fish/seafood/shrimp/
+  hatchery/mariculture hits — the only "harbour" matches are container-berth
+  projects. Seafood processing is regulated via **state PCB consent (CTE/CTO)
+  + CAA registration**, not central EC — so the clearance-register channel is
+  simply BLIND to this sector, and state-consent registers would be the
+  equivalent signal source. (`scripts/parivesh_fisheries_requery.py`;
+  SEIAA/state-authority rows not exposed by this endpoint — noted.)
 - **Access map for future sessions**: working — pmmsy.dof.gov.in, fidf.in,
   nfdp.dof.gov.in, mpeda.gov.in (`?page_id=` form), e-mpeda.nic.in registry;
   blocked from this machine — nfdb.gov.in (timeout), pmmkssy.dof.gov.in

@@ -76,7 +76,53 @@
    "Processing: FIDF funded 18 plant expansions Rs 345.89 cr; MPEDA TDSVMP Rs 118.10 cr to 89 units; PM-MKSSY grants for quality systems",
    "Cold chain: routed through FIDF/PMMSY, NOT the Agriculture Infrastructure Fund (AIF is agri-produce; fisheries has its own fund)"
   ],
-  "db_linkage": "Foreign lead: Charoen Pokphand Foods (Thailand, layer 16) — world-scale shrimp-feed player with India aquaculture ops = the FIDF feed-mill lane's natural user. No EC-filer seafood processors in the clearance pool (the 'marine' hits are pigment/aero false positives) — a gap worth watching"
+  "db_linkage": "Foreign lead: Charoen Pokphand Foods (Thailand, layer 16) — world-scale shrimp-feed player with India aquaculture ops = the FIDF feed-mill lane's natural user. No EC-filer seafood processors in the clearance pool (the 'marine' hits are pigment/aero false positives) — a gap worth watching",
+  "requery_2026_07": {
+   "ran": "2026-07-23",
+   "window": "2025-01-01..2026-07-23",
+   "rows_scanned": 6448,
+   "route": "OPEN public MIS dashboard API admin_api/dashboard/getProposals (ledger/globalSearch are 401); activity taxonomy via parivesh_api/activity/action/getAll",
+   "structural_finding": "EIA-2006 schedule (46 EC activities) has NO fisheries/aquaculture/seafood category — seafood processing sits under state-PCB consent + CAA, not central EC. The layer-24 zero is STRUCTURAL, not a query gap.",
+   "name_term_hits": [],
+   "fishing_harbour_hits_7e": [
+    {
+     "project": "Amendment in existing CRZ and Environmental Clearance for Change in the Product Mix (Removal of Caping for Individual Ca",
+     "activity": "Ports, harbors, breakwaters, dredging",
+     "state": "ANDHRA PRADESH",
+     "proposal_no": "IA/AP/INFRA1/538469/2025",
+     "status": "Received",
+     "authority": "central",
+     "investment_cost": 44955.0
+    },
+    {
+     "project": "CONSTRUCTION OF TWO OFFSHORE CONTAINER BERTHS AND DEVELOPMENT OF CONTAINER TERMINAL ON BOT BASIS IN MUMBAI HARBOUR",
+     "activity": "Ports, harbors, breakwaters, dredging",
+     "state": "MAHARASHTRA",
+     "proposal_no": "IA/MH/INFRA1/581750/2026",
+     "status": "Received",
+     "authority": "central",
+     "investment_cost": 129000.0
+    },
+    {
+     "project": "Amendment in existing CRZ and Environmental Clearance for Change in the Product Mix (Removal of Caping for Individual Ca",
+     "activity": "Ports, harbors, breakwaters, dredging",
+     "state": "ANDHRA PRADESH",
+     "proposal_no": "IA/AP/INFRA1/538469/2025",
+     "status": "Granted",
+     "authority": "central",
+     "investment_cost": 44955.0
+    },
+    {
+     "project": "CONSTRUCTION OF TWO OFFSHORE CONTAINER BERTHS AND DEVELOPMENT OF CONTAINER TERMINAL ON BOT BASIS IN MUMBAI HARBOUR",
+     "activity": "Ports, harbors, breakwaters, dredging",
+     "state": "MAHARASHTRA",
+     "proposal_no": "IA/MH/INFRA1/581750/2026",
+     "status": "Granted",
+     "authority": "central",
+     "investment_cost": 129000.0
+    }
+   ]
+  }
  },
  "excise_bottling": {
   "what": "State-excise fee stack on distilleries/bottlers — the cost side of the twin's E20 ethanol cohort (14+ EC-filing distilleries) and alco-bev leads",

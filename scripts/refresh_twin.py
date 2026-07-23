@@ -163,7 +163,8 @@ def cmd_watchlist():
               "build_layer28_policy_watchlist.py", "mospi_connector.py",
               "build_layer30_trade_deficit.py",
               "build_layer31_ipa_sources.py",   # live WAIPA member scrape + liveness sweep
-              "build_company_db.py"):           # layer 32 rebuild from refreshed layers
+              "build_company_db.py",            # layer 32 rebuild from refreshed layers
+              "enrich_company_db_ii_tickers.py"):  # II announcement-ticker validation
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, "scripts", s)],
                            check=True)

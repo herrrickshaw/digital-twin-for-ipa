@@ -1,7 +1,7 @@
 {
  "layer": 25,
  "title": "Land availability + currently-open incentives (cross-repo linkage)",
- "built": "2026-07-22",
+ "built": "2026-07-23",
  "purpose": "Give an investor the two operational facts the earlier layers implied but never joined: WHERE developed industrial land is actually vacant, and WHICH incentive windows are open right now — plus the repos each fact is sourced from.",
  "related_repositories": [
   {
@@ -135,7 +135,7 @@
   "caveat": "Central IILB counts VACANT developed-park land only; states hold larger undeveloped banks (portals listed). Per-parcel geometry only from Odisha ArcGIS."
  },
  "open_incentives": {
-  "as_of": "2026-07-22",
+  "as_of": "2026-07-23",
   "source_layer": "17_scheme_monitor.json (PIB daily + PRS refreshed)",
   "open_or_closing_count": 11,
   "windows": [

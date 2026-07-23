@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-07-22",
+ "built": "2026-07-23",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9417,11 +9417,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/recognising-ecocide-under-international-law"
   },
   {
-   "slug": "reforming-corporate-sector-for-global-competitiveness",
-   "topic": "Reforming Corporate Sector for Global Competitiveness",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-corporate-sector-for-global-competitiveness"
-  },
-  {
    "slug": "reforming-indias-food-safety-ecosystem",
    "topic": "Reforming Indias Food Safety Ecosystem",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-food-safety-ecosystem"
@@ -9455,6 +9450,11 @@
    "slug": "unlocking-indias-land-potential",
    "topic": "Unlocking Indias Land Potential",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/unlocking-indias-land-potential"
+  },
+  {
+   "slug": "unlocking-indias-space-economy-through-private-sector",
+   "topic": "Unlocking Indias Space Economy Through Private Sector",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/unlocking-indias-space-economy-through-private-sector"
   },
   {
    "slug": "unlocking-indias-tourism-potential",

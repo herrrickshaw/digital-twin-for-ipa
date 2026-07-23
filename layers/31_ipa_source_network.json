@@ -555,7 +555,7 @@
     "country": "Kuwait",
     "organization": "Kuwait Direct Investment Promotion Authority (KDIPA)",
     "website": "https://www.kdipa.gov.kw/",
-    "website_status": 200
+    "website_status": 503
    },
    {
     "country": "Lebanon",
@@ -1435,7 +1435,7 @@
   "https://www.businessfrance.fr/en/home": 200,
   "https://www.trade.gov/selectusa": 200,
   "https://investinholland.com": 200,
-  "https://www.enterprisesg.gov.sg": 200,
+  "https://www.enterprisesg.gov.sg": 403,
   "https://www.edb.gov.sg": 200,
   "https://www.investhk.gov.hk": 200,
   "https://investtaiwan.nat.gov.tw": "ERR:URLError",

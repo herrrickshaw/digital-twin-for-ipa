@@ -156,5 +156,22 @@
    "ii_company_matches"
   ],
   "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
+ },
+ "news_collection": {
+  "ran": "2026-07-23",
+  "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
+  "api_calls_used": 39,
+  "calls_by_source": {
+   "newsapi": 26,
+   "newsdata": 2,
+   "marketaux": 10,
+   "alphavantage": 1
+  },
+  "articles_total": 104,
+  "new_articles": 104,
+  "match_rows_added": 12,
+  "exception_news_hits": [],
+  "sources_skipped_or_errors": [],
+  "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  }
 }

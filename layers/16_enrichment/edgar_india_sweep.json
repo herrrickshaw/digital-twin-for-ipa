@@ -1,0 +1,968 @@
+{
+ "layer": "edgar_india_sweep",
+ "built": "2026-07-23",
+ "method": "EDGAR FTS exact-phrase sweep, forms 10-K,20-F; cumulative, deduped on accession; consumed by shortlist rebuild",
+ "filings": [
+  {
+   "adsh": "0000950103-26-010820",
+   "company": "ICICI BANK LTD  (IBN)  (CIK 0001103838)",
+   "form": "20-F",
+   "file_date": "2026-07-20",
+   "phrases": [
+    "invest in India",
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001213900-26-078693",
+   "company": "Zoomcar Holdings, Inc.  (ZCAR, ZCARW)  (CIK 0001854275)",
+   "form": "10-K",
+   "file_date": "2026-07-16",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001213900-26-078029",
+   "company": "Zoomcar Holdings, Inc.  (ZCAR, ZCARW)  (CIK 0001854275)",
+   "form": "10-K",
+   "file_date": "2026-07-14",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001628280-26-047095",
+   "company": "MITSUBISHI UFJ FINANCIAL GROUP INC  (MUFG, MBFJF)  (CIK 0000067088)",
+   "form": "20-F",
+   "file_date": "2026-07-06",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001493152-26-031069",
+   "company": "Roadzen Inc.  (RDZN, RDZNW)  (CIK 0001868640)",
+   "form": "10-K",
+   "file_date": "2026-06-29",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001554855-26-001437",
+   "company": "SIFY TECHNOLOGIES LTD  (SIFY)  (CIK 0001094324)",
+   "form": "20-F",
+   "file_date": "2026-06-26",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001437749-26-020545",
+   "company": "Alternus Clean Energy, Inc.  (CIK 0001883984)",
+   "form": "10-K",
+   "file_date": "2026-06-15",
+   "phrases": [
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001193125-26-260688",
+   "company": "GRAHAM CORP  (GHM)  (CIK 0000716314)",
+   "form": "10-K",
+   "file_date": "2026-06-08",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001193125-26-253514",
+   "company": "WIPRO LTD  (WIT)  (CIK 0001123799)",
+   "form": "20-F",
+   "file_date": "2026-06-02",
+   "phrases": [
+    "invest in India",
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001437749-26-018576",
+   "company": "Loop Industries, Inc.  (LOOP)  (CIK 0001504678)",
+   "form": "10-K",
+   "file_date": "2026-05-27",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001554855-26-000848",
+   "company": "TRINITY BIOTECH PLC  (TRIB)  (CIK 0000888721)",
+   "form": "20-F",
+   "file_date": "2026-04-30",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001493152-26-014158",
+   "company": "Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415)",
+   "form": "10-K",
+   "file_date": "2026-03-31",
+   "phrases": [
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0002065337-26-000016",
+   "company": "Carlyle Private Equity Partners Fund, L.P.  (CIK 0002065337)",
+   "form": "10-K",
+   "file_date": "2026-03-30",
+   "phrases": [
+    "invest in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0001437749-26-010126",
+   "company": "REVIVA PHARMACEUTICALS HOLDINGS, INC.  (RVPH)  (CIK 0001742927)",
+   "form": "10-K",
+   "file_date": "2026-03-30",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001292814-26-001844",
+   "company": "Vale S.A.  (VALE)  (CIK 0000917851)",
+   "form": "20-F",
+   "file_date": "2026-03-27",
+   "phrases": [
+    "expansion in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-26-021754",
+   "company": "Brookfield Private Equity Fund LP  (CIK 0002074065)",
+   "form": "10-K",
+   "file_date": "2026-03-27",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0002044820-26-000009",
+   "company": "VistaOne, L.P.  (CIK 0002044820)",
+   "form": "10-K",
+   "file_date": "2026-03-20",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0001213900-26-029500",
+   "company": "Vyome Holdings, Inc  (HIND)  (CIK 0001427570)",
+   "form": "10-K",
+   "file_date": "2026-03-18",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001193125-26-106084",
+   "company": "Blackstone Private Equity Strategies Fund L.P.  (CIK 0001930054)",
+   "form": "10-K",
+   "file_date": "2026-03-13",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0001636422-26-000035",
+   "company": "Health Catalyst, Inc.  (HCAT)  (CIK 0001636422)",
+   "form": "10-K",
+   "file_date": "2026-03-12",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001437749-26-007797",
+   "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+   "form": "10-K",
+   "file_date": "2026-03-11",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001193125-26-096453",
+   "company": "Blackstone Infrastructure Strategies L.P.  (CIK 0002030772)",
+   "form": "10-K",
+   "file_date": "2026-03-06",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0001131399-26-000004",
+   "company": "GSK plc  (GSK, GLAXF)  (CIK 0001131399)",
+   "form": "20-F",
+   "file_date": "2026-03-06",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001178913-26-000732",
+   "company": "Caesarstone Ltd.  (CSTE)  (CIK 0001504379)",
+   "form": "20-F",
+   "file_date": "2026-03-04",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001274494-26-000021",
+   "company": "FIRST SOLAR, INC.  (FSLR)  (CIK 0001274494)",
+   "form": "10-K",
+   "file_date": "2026-02-24",
+   "phrases": [
+    "manufacturing facility in India",
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001280058-26-000006",
+   "company": "BLACKBAUD INC  (BLKB)  (CIK 0001280058)",
+   "form": "10-K",
+   "file_date": "2026-02-18",
+   "phrases": [
+    "expansion in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-26-005939",
+   "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+   "form": "10-K",
+   "file_date": "2026-02-06",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001193125-26-029707",
+   "company": "Warburg Pincus Access Fund, L.P.  (CIK 0002082826)",
+   "form": "10-K",
+   "file_date": "2026-01-29",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0001213900-25-076810",
+   "company": "Lytus Technologies Holdings PTV. Ltd.  (LYTHF)  (CIK 0001816319)",
+   "form": "20-F",
+   "file_date": "2025-08-14",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001641172-25-022759",
+   "company": "SRIVARU Holding Ltd  (SVUHF, SVUWF)  (CIK 0001973368)",
+   "form": "20-F",
+   "file_date": "2025-08-08",
+   "phrases": [
+    "investment in India",
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001641172-25-021717",
+   "company": "Yatra Online, Inc.  (YTRA)  (CIK 0001516899)",
+   "form": "20-F",
+   "file_date": "2025-07-31",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950170-25-099896",
+   "company": "ReNew Energy Global plc  (RNW, RNWWW)  (CIK 0001848763)",
+   "form": "20-F",
+   "file_date": "2025-07-30",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950103-25-009269",
+   "company": "ICICI BANK LTD  (IBN)  (CIK 0001103838)",
+   "form": "20-F",
+   "file_date": "2025-07-25",
+   "phrases": [
+    "invest in India",
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001193125-25-158722",
+   "company": "HDFC BANK LTD  (HDB)  (CIK 0001144967)",
+   "form": "20-F",
+   "file_date": "2025-07-14",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001213900-25-059675",
+   "company": "Zoomcar Holdings, Inc.  (ZCAR, ZCARW)  (CIK 0001854275)",
+   "form": "10-K",
+   "file_date": "2025-06-30",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001641172-25-016647",
+   "company": "Roadzen Inc.  (RDZN, RDZNW)  (CIK 0001868640)",
+   "form": "10-K",
+   "file_date": "2025-06-26",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950170-25-086539",
+   "company": "MakeMyTrip Ltd  (MMYT)  (CIK 0001495153)",
+   "form": "20-F",
+   "file_date": "2025-06-16",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001575872-25-000398",
+   "company": "SIFY TECHNOLOGIES LTD  (SIFY)  (CIK 0001094324)",
+   "form": "20-F",
+   "file_date": "2025-06-09",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950170-25-083450",
+   "company": "GRAHAM CORP  (GHM)  (CIK 0000716314)",
+   "form": "10-K",
+   "file_date": "2025-06-09",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001213900-25-052242",
+   "company": "Alternus Clean Energy, Inc.  (ALCE, ACLEW)  (CIK 0001883984)",
+   "form": "10-K",
+   "file_date": "2025-06-06",
+   "phrases": [
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001654954-25-006337",
+   "company": "Loop Industries, Inc.  (LOOP)  (CIK 0001504678)",
+   "form": "10-K",
+   "file_date": "2025-05-30",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001654954-25-006256",
+   "company": "Loop Industries, Inc.  (LOOP)  (CIK 0001504678)",
+   "form": "10-K",
+   "file_date": "2025-05-29",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0000950170-25-076303",
+   "company": "WIPRO LTD  (WIT)  (CIK 0001123799)",
+   "form": "20-F",
+   "file_date": "2025-05-22",
+   "phrases": [
+    "invest in India",
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950170-25-045726",
+   "company": "Equillium, Inc.  (EQ)  (CIK 0001746466)",
+   "form": "10-K",
+   "file_date": "2025-03-27",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001641172-25-000932",
+   "company": "Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415)",
+   "form": "10-K",
+   "file_date": "2025-03-27",
+   "phrases": [
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001104659-25-027944",
+   "company": "RENTOKIL INITIAL PLC /FI  (RTO, RKLIF)  (CIK 0000930157)",
+   "form": "20-F",
+   "file_date": "2025-03-26",
+   "phrases": [
+    "expansion in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0000950170-25-044778",
+   "company": "Metsera, Inc.  (MTSR)  (CIK 0002040807)",
+   "form": "10-K",
+   "file_date": "2025-03-26",
+   "phrases": [
+    "new facility in India",
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001193125-25-054797",
+   "company": "Blackstone Private Equity Strategies Fund L.P.  (CIK 0001930054)",
+   "form": "10-K",
+   "file_date": "2025-03-14",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0000217410-25-000015",
+   "company": "UNILEVER PLC  (UL, UNLYF)  (CIK 0000217410)",
+   "form": "20-F",
+   "file_date": "2025-03-13",
+   "phrases": [
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001437749-25-007218",
+   "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+   "form": "10-K",
+   "file_date": "2025-03-12",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001193125-25-049864",
+   "company": "Blackstone Infrastructure Strategies L.P.  (CIK 0002030772)",
+   "form": "10-K",
+   "file_date": "2025-03-07",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0001070750-25-000071",
+   "company": "HOST HOTELS & RESORTS, INC.  (HST)  (CIK 0001070750)",
+   "form": "10-K",
+   "file_date": "2025-02-26",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001274494-25-000010",
+   "company": "FIRST SOLAR, INC.  (FSLR)  (CIK 0001274494)",
+   "form": "10-K",
+   "file_date": "2025-02-25",
+   "phrases": [
+    "manufacturing facility in India",
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001535929-25-000017",
+   "company": "Voya Financial, Inc.  (VOYA, VOYA-PB)  (CIK 0001535929)",
+   "form": "10-K",
+   "file_date": "2025-02-21",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0000950170-25-024274",
+   "company": "TPI COMPOSITES, INC  (TPIC)  (CIK 0001455684)",
+   "form": "10-K",
+   "file_date": "2025-02-20",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001463101-25-000024",
+   "company": "Enphase Energy, Inc.  (ENPH)  (CIK 0001463101)",
+   "form": "10-K",
+   "file_date": "2025-02-10",
+   "phrases": [
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001413329-25-000013",
+   "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+   "form": "10-K",
+   "file_date": "2025-02-06",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001213900-24-069682",
+   "company": "Lytus Technologies Holdings PTV. Ltd.  (LYT)  (CIK 0001816319)",
+   "form": "20-F",
+   "file_date": "2024-08-15",
+   "phrases": [
+    "expansion in India",
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950103-24-011297",
+   "company": "ICICI BANK LTD  (IBN)  (CIK 0001103838)",
+   "form": "20-F",
+   "file_date": "2024-07-31",
+   "phrases": [
+    "invest in India",
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001493152-24-029794",
+   "company": "Yatra Online, Inc.  (YTRA)  (CIK 0001516899)",
+   "form": "20-F",
+   "file_date": "2024-07-31",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001193125-24-187406",
+   "company": "HDFC BANK LTD  (HDB)  (CIK 0001144967)",
+   "form": "20-F",
+   "file_date": "2024-07-29",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001493152-24-028749",
+   "company": "SRIVARU Holding Ltd  (SVMH, SVMHW)  (CIK 0001973368)",
+   "form": "20-F",
+   "file_date": "2024-07-23",
+   "phrases": [
+    "investment in India",
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001493152-24-028413",
+   "company": "SRIVARU Holding Ltd  (SVMH, SVMHW)  (CIK 0001973368)",
+   "form": "20-F",
+   "file_date": "2024-07-19",
+   "phrases": [
+    "investment in India",
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001213900-24-061273",
+   "company": "Zoomcar Holdings, Inc.  (ZCAR, ZCARW)  (CIK 0001854275)",
+   "form": "10-K",
+   "file_date": "2024-07-15",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001213900-24-060948",
+   "company": "Zoomcar Holdings, Inc.  (ZCAR, ZCARW)  (CIK 0001854275)",
+   "form": "10-K",
+   "file_date": "2024-07-12",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950170-24-080082",
+   "company": "MakeMyTrip Ltd  (MMYT)  (CIK 0001495153)",
+   "form": "20-F",
+   "file_date": "2024-07-02",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950170-24-079647",
+   "company": "Roadzen Inc.  (RDZN, RDZNW)  (CIK 0001868640)",
+   "form": "10-K",
+   "file_date": "2024-07-01",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0000950170-24-070222",
+   "company": "GRAHAM CORP  (GHM)  (CIK 0000716314)",
+   "form": "10-K",
+   "file_date": "2024-06-07",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001654954-24-007029",
+   "company": "Loop Industries, Inc.  (LOOP)  (CIK 0001504678)",
+   "form": "10-K",
+   "file_date": "2024-05-29",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0000950170-24-063468",
+   "company": "WIPRO LTD  (WIT)  (CIK 0001123799)",
+   "form": "20-F",
+   "file_date": "2024-05-22",
+   "phrases": [
+    "invest in India",
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001575872-24-000494",
+   "company": "SIFY TECHNOLOGIES LTD  (SIFY)  (CIK 0001094324)",
+   "form": "20-F",
+   "file_date": "2024-05-07",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001193125-24-119642",
+   "company": "TDCX Inc.  (CIK 0001803112)",
+   "form": "20-F",
+   "file_date": "2024-04-29",
+   "phrases": [
+    "expansion in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001654954-24-004465",
+   "company": "LAKELAND INDUSTRIES INC  (LAKE)  (CIK 0000798081)",
+   "form": "10-K",
+   "file_date": "2024-04-11",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001174947-24-000443",
+   "company": "Azure Power Global Ltd  (AZREF)  (CIK 0001633438)",
+   "form": "20-F",
+   "file_date": "2024-03-28",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0000950170-24-035919",
+   "company": "Equillium, Inc.  (EQ)  (CIK 0001746466)",
+   "form": "10-K",
+   "file_date": "2024-03-25",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001193125-24-069114",
+   "company": "Blackstone Private Equity Strategies Fund L.P.  (CIK 0001930054)",
+   "form": "10-K",
+   "file_date": "2024-03-15",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "pe_fund"
+  },
+  {
+   "adsh": "0001493152-24-009955",
+   "company": "Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415)",
+   "form": "10-K",
+   "file_date": "2024-03-14",
+   "phrases": [
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001437749-24-007539",
+   "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+   "form": "10-K",
+   "file_date": "2024-03-13",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-24-007971",
+   "company": "GRID DYNAMICS HOLDINGS, INC.  (GDYN)  (CIK 0001743725)",
+   "form": "10-K",
+   "file_date": "2024-02-29",
+   "phrases": [
+    "expansion in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001070750-24-000081",
+   "company": "HOST HOTELS & RESORTS, INC.  (HST)  (CIK 0001070750)",
+   "form": "10-K",
+   "file_date": "2024-02-28",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001274494-24-000004",
+   "company": "FIRST SOLAR, INC.  (FSLR)  (CIK 0001274494)",
+   "form": "10-K",
+   "file_date": "2024-02-27",
+   "phrases": [
+    "manufacturing facility in India",
+    "manufacturing in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001535929-24-000035",
+   "company": "Voya Financial, Inc.  (VOYA, VOYA-PB)  (CIK 0001535929)",
+   "form": "10-K",
+   "file_date": "2024-02-23",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001527166-24-000019",
+   "company": "Carlyle Group Inc.  (CG, CGABL)  (CIK 0001527166)",
+   "form": "10-K",
+   "file_date": "2024-02-22",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001413329-24-000013",
+   "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+   "form": "10-K",
+   "file_date": "2024-02-08",
+   "phrases": [
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  }
+ ]
+}

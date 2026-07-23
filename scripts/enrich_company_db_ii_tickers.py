@@ -48,6 +48,13 @@ STOP_TOKENS = {"india", "indian", "national", "the", "new", "bharat", "shree",
                "haryana", "bihar", "assam", "odisha", "telangana", "rajasthan",
                "bengal", "delhi", "mumbai", "chennai", "hindustan"}
 
+# Single-word company names whose weak matches were HUMAN-REVIEWED and
+# promoted (user review 2026-07-23: AstraZeneca Rs 176 cr Chennai GITC,
+# Pegatron Chennai 5G plant, Airbus H125 order + Bengaluru GCC lease — all
+# rows genuine). These match as 'reviewed-promoted', which counts as strong.
+# Add a name here ONLY after eyeballing its rows in ii_company_matches.
+REVIEWED_WEAK_OK = {"airbus", "pegatron", "astrazeneca"}
+
 SUFFIXES = re.compile(
     r"\b(private|pvt|limited|ltd|llp|llc|inc|incorporated|corp|corporation|plc|"
     r"co|company|gmbh|ag|sa|nv|bv|ab|as|asa|oyj|spa|kk|pte|sdn bhd|holdings?)\b\.?",
@@ -110,7 +117,8 @@ def match_fragments(name_norm):
         if len(two) >= 6 and toks[0] not in STOP_TOKENS:
             frags.append((two, "strong"))            # first two tokens
     elif len(toks) == 1 and len(toks[0]) >= 6 and toks[0] not in STOP_TOKENS:
-        frags.append((toks[0], "weak"))              # single-word company name
+        quality = "reviewed-promoted" if toks[0] in REVIEWED_WEAK_OK else "weak"
+        frags.append((toks[0], quality))             # single-word company name
     return frags
 
 
@@ -185,7 +193,7 @@ def main():
           JOIN companies c USING (company_id)
           JOIN ii_announcements a USING (ann_id)
          WHERE m.company_visibility IN ('QUIET','PARTIALLY_VISIBLE')
-           AND m.match_quality = 'strong'
+           AND m.match_quality IN ('strong','reviewed-promoted')
     """).fetchall()
     challenged = [
         {"company": r[0], "verdict_on_record": r[1], "matched_fragment": r[2],
@@ -225,6 +233,12 @@ def main():
         "match_rows": n_matches,
         "exception_verdicts_challenged": challenged,
         "weak_matches_for_review": weak_for_review,
+        "reviewed_promotions": {
+            "names": sorted(REVIEWED_WEAK_OK),
+            "reviewed": "2026-07-23 (user): all rows eyeballed genuine — "
+                        "AstraZeneca Rs 176 cr Chennai GITC, Pegatron Chennai "
+                        "5G plant, Airbus H125 order + Bengaluru GCC lease",
+        },
         "tables": ["ii_announcements", "ii_company_matches"],
         "caveat": ("ticker items are undated in the DOM and rotate — treat a "
                    "match as 'announced at some point recently', not a dated "

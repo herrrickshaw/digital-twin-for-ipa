@@ -77,16 +77,6 @@
     "announcement": "Panasonic Life Solutions India acquires 1.6 acres in Mumbai’s Andheri for INR 160 Cr"
    },
    {
-    "company": "AstraZeneca PLC",
-    "fragment": "astrazeneca",
-    "announcement": "AstraZeneca announces Rs 176 crore investment to expand Global Innovation & Technology Centre in Chennai"
-   },
-   {
-    "company": "Pegatron Corporation",
-    "fragment": "pegatron",
-    "announcement": "iPhone-maker Pegatron setting up new plant in Chennai for 5G equipment eyes local, export markets"
-   },
-   {
     "company": "Vertiv Holdings Co",
     "fragment": "vertiv",
     "announcement": "American multinational, Vertiv expands integrated business services centre in Pune"
@@ -155,18 +145,16 @@
     "company": "Venture Corporation",
     "fragment": "venture",
     "announcement": "Indian Rare Earth Limited (IREL) and Kazakh company to form joint venture to harness India's titanium potential"
-   },
-   {
-    "company": "Airbus",
-    "fragment": "airbus",
-    "announcement": "Himalayan Heli Services orders 2 Airbus H125 helicopters"
-   },
-   {
-    "company": "Airbus",
-    "fragment": "airbus",
-    "announcement": "Global aerospace and defence industry major, Airbus, leases 650,000 sq ft office in Bengaluru for 10 years to set up a GCC"
    }
   ],
+  "reviewed_promotions": {
+   "names": [
+    "airbus",
+    "astrazeneca",
+    "pegatron"
+   ],
+   "reviewed": "2026-07-23 (user): all rows eyeballed genuine — AstraZeneca Rs 176 cr Chennai GITC, Pegatron Chennai 5G plant, Airbus H125 order + Bengaluru GCC lease"
+  },
   "tables": [
    "ii_announcements",
    "ii_company_matches"

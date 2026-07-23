@@ -72,16 +72,6 @@
   ],
   "weak_matches_for_review": [
    {
-    "company": "Panasonic Holdings Corporation",
-    "fragment": "panasonic",
-    "announcement": "Panasonic Life Solutions India acquires 1.6 acres in Mumbai’s Andheri for INR 160 Cr"
-   },
-   {
-    "company": "Vertiv Holdings Co",
-    "fragment": "vertiv",
-    "announcement": "American multinational, Vertiv expands integrated business services centre in Pune"
-   },
-   {
     "company": "RELIANCE, INC.",
     "fragment": "reliance",
     "announcement": "Reliance Industries, Vedanta and the Adani group commit to invest INR 1.5 lakh Cr in Assam"
@@ -151,9 +141,15 @@
    "names": [
     "airbus",
     "astrazeneca",
-    "pegatron"
+    "panasonic",
+    "pegatron",
+    "vertiv"
    ],
-   "reviewed": "2026-07-23 (user): all rows eyeballed genuine — AstraZeneca Rs 176 cr Chennai GITC, Pegatron Chennai 5G plant, Airbus H125 order + Bengaluru GCC lease"
+   "reviewed": "2026-07-23: all rows eyeballed genuine — AstraZeneca Rs 176 cr Chennai GITC, Pegatron Chennai 5G plant, Airbus H125 order + Bengaluru GCC lease, Panasonic (Life Solutions India subsidiary, Andheri land), Vertiv Pune services centre",
+   "reviewed_and_rejected": [
+    "RELIANCE, INC. (US namesake — rows are Indian Reliance groups)",
+    "Venture Corporation (matches the phrase 'joint venture')"
+   ]
   },
   "tables": [
    "ii_announcements",

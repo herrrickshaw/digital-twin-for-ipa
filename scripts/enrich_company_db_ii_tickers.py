@@ -49,11 +49,15 @@ STOP_TOKENS = {"india", "indian", "national", "the", "new", "bharat", "shree",
                "bengal", "delhi", "mumbai", "chennai", "hindustan"}
 
 # Single-word company names whose weak matches were HUMAN-REVIEWED and
-# promoted (user review 2026-07-23: AstraZeneca Rs 176 cr Chennai GITC,
-# Pegatron Chennai 5G plant, Airbus H125 order + Bengaluru GCC lease — all
-# rows genuine). These match as 'reviewed-promoted', which counts as strong.
+# promoted (reviews 2026-07-23: AstraZeneca Rs 176 cr Chennai GITC, Pegatron
+# Chennai 5G plant, Airbus H125 order + Bengaluru GCC lease; second pass:
+# Panasonic — Life Solutions India Andheri land buy is a Holdings subsidiary,
+# Vertiv — Pune services-centre expansion). These match as 'reviewed-promoted',
+# which counts as strong. Reviewed-and-REJECTED, keep weak: RELIANCE, INC.
+# (US steel distributor, all 14 rows are Indian Reliance groups) and Venture
+# Corporation (every row matches the phrase 'joint venture').
 # Add a name here ONLY after eyeballing its rows in ii_company_matches.
-REVIEWED_WEAK_OK = {"airbus", "pegatron", "astrazeneca"}
+REVIEWED_WEAK_OK = {"airbus", "pegatron", "astrazeneca", "panasonic", "vertiv"}
 
 SUFFIXES = re.compile(
     r"\b(private|pvt|limited|ltd|llp|llc|inc|incorporated|corp|corporation|plc|"
@@ -235,9 +239,15 @@ def main():
         "weak_matches_for_review": weak_for_review,
         "reviewed_promotions": {
             "names": sorted(REVIEWED_WEAK_OK),
-            "reviewed": "2026-07-23 (user): all rows eyeballed genuine — "
-                        "AstraZeneca Rs 176 cr Chennai GITC, Pegatron Chennai "
-                        "5G plant, Airbus H125 order + Bengaluru GCC lease",
+            "reviewed": "2026-07-23: all rows eyeballed genuine — AstraZeneca "
+                        "Rs 176 cr Chennai GITC, Pegatron Chennai 5G plant, "
+                        "Airbus H125 order + Bengaluru GCC lease, Panasonic "
+                        "(Life Solutions India subsidiary, Andheri land), "
+                        "Vertiv Pune services centre",
+            "reviewed_and_rejected": ["RELIANCE, INC. (US namesake — rows are "
+                                      "Indian Reliance groups)",
+                                      "Venture Corporation (matches the phrase "
+                                      "'joint venture')"],
         },
         "tables": ["ii_announcements", "ii_company_matches"],
         "caveat": ("ticker items are undated in the DOM and rotate — treat a "

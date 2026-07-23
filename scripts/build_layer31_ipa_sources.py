@@ -256,6 +256,77 @@ INDIA_TOP_FDI_SOURCES = {
     "Australia": None,  # value = WAIPA directory spelling, None = not a member
 }
 
+# CIN-equivalents abroad — corporate-registry access per jurisdiction, for
+# enriching the twin's foreign leads (semiconductor/EV/pharma/GCC pools span
+# US/JP/KR/TW/UK/DE/FR/CH/SG). Statuses probed live 2026-07-23 from this
+# machine. India context: MCA is 403-blocked — CIN comes from SEBI
+# prospectuses (scripts/extract_cin_from_drhp.py).
+CORPORATE_REGISTRIES = [
+    {"jurisdiction": "GLOBAL", "id_type": "LEI", "registry": "GLEIF",
+     "endpoint": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]=<name>",
+     "access": "OPEN — no key, JSON:API, 200 verified",
+     "notes": "best first stop for any cross-border entity; carries parent/child links"},
+    {"jurisdiction": "United States", "id_type": "CIK", "registry": "SEC EDGAR",
+     "endpoint": "https://data.sec.gov/submissions/CIK##########.json",
+     "access": ("OPEN — but REQUIRES a declared User-Agent with contact email; "
+                "generic browser UA gets 403 (verified both ways 2026-07-23)"),
+     "notes": "full filing history per CIK; efts.sec.gov full-text search also 200"},
+    {"jurisdiction": "South Korea", "id_type": "corp_code (8-digit DART)",
+     "registry": "DART / opendart.fss.or.kr",
+     "endpoint": "https://opendart.fss.or.kr/api/company.json?crtfc_key=<key>&corp_code=<code>",
+     "access": ("KEYED — DART_KEY in ~/.config/market-secrets works (Samsung test "
+                "status 000=OK); corpCode.xml zip = the full code registry"),
+     "notes": "company.json returns registered address, CEO, business-registration no."},
+    {"jurisdiction": "Switzerland", "id_type": "UID (CHE-...)", "registry": "Zefix",
+     "endpoint": ("POST https://www.zefix.ch/ZefixREST/api/v1/firm/search.json "
+                  "{'name': <name>, 'activeOnly': true}"),
+     "access": "OPEN — POST JSON (plain GET returns 400), 200 verified",
+     "notes": "returns UID + CH-id + legal seat"},
+    {"jurisdiction": "Taiwan", "id_type": "統一編號 (Unified Business No.)",
+     "registry": "GCIS (data.gcis.nat.gov.tw)",
+     "endpoint": "https://data.gcis.nat.gov.tw/od/data/api/<dataset-guid>?$format=json",
+     "access": "OPEN — OData-style, 200 verified",
+     "notes": "company basic-data datasets per GUID"},
+    {"jurisdiction": "France", "id_type": "SIREN/SIRET",
+     "registry": "recherche-entreprises.api.gouv.fr",
+     "endpoint": "https://recherche-entreprises.api.gouv.fr/search?q=<name>",
+     "access": "OPEN — no key, 200 verified",
+     "notes": "official; easier than the token-gated INSEE Sirene API"},
+    {"jurisdiction": "Singapore", "id_type": "UEN", "registry": "ACRA via data.gov.sg",
+     "endpoint": "https://data.gov.sg/api/action/datastore_search?resource_id=<acra-dataset>",
+     "access": "OPEN — datastore API 200 verified (per-dataset resource ids)",
+     "notes": "UEN is the CIN-equivalent"},
+    {"jurisdiction": "United Kingdom", "id_type": "CRN (company number)",
+     "registry": "Companies House API",
+     "endpoint": "https://api.company-information.service.gov.uk/search/companies?q=<name>",
+     "access": ("REACHABLE, 401 without key — FREE API key on registration "
+                "(not yet registered from this machine)"),
+     "notes": "full filings + officers + PSC once keyed"},
+    {"jurisdiction": "Japan", "id_type": "法人番号 (Corporate Number)",
+     "registry": "NTA hōjin-bangō / gBizINFO",
+     "endpoint": ("api.houjin-bangou.nta.go.jp (needs application ID); "
+                  "info.gbiz.go.jp/hojin/v1/ (needs token)"),
+     "access": ("NEEDS FREE CREDENTIALS — NTA 404 without app id, gBizINFO 500 "
+                "without token"),
+     "notes": "monthly full CSV dumps on the NTA site need no key"},
+    {"jurisdiction": "Germany", "id_type": "HRB/HRA",
+     "registry": "Handelsregister / offenesregister.de",
+     "endpoint": "https://db.offenesregister.de",
+     "access": ("🔴 offenesregister mirror DEAD (000); official handelsregister.de "
+                "is search-only, no API"),
+     "notes": "North Data / OpenCorporates are the practical (commercial) routes"},
+    {"jurisdiction": "GLOBAL (aggregator)", "id_type": "various",
+     "registry": "OpenCorporates",
+     "endpoint": "https://api.opencorporates.com/v0.4/companies/search",
+     "access": "401 — API now key-gated even for search (no key on machine)",
+     "notes": "was the free fallback; no longer"},
+    {"jurisdiction": "India (context)", "id_type": "CIN", "registry": "MCA21",
+     "endpoint": "https://www.mca.gov.in",
+     "access": "🔴 403 from this machine (re-tested 2026-07-23); zaubacorp also 403",
+     "notes": ("CIN extracted from SEBI prospectuses instead — "
+               "scripts/extract_cin_from_drhp.py, 12/12 pipeline companies done")},
+]
+
 # NITI Aayog / NDAP — verified 2026-07-23 (live API tests from this machine).
 NITI_NDAP = {
     "ndap": {
@@ -452,6 +523,7 @@ def main():
         "india_top_fdi_source_coverage": fdi_coverage,
         "invest_india": INVEST_INDIA,
         "niti_ndap": NITI_NDAP,
+        "corporate_registries": CORPORATE_REGISTRIES,
         "url_liveness": checked,
         "feeds": {
             "layer_32_company_db": [

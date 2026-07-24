@@ -66,11 +66,26 @@ whose **land is the residual value**, tied up in multi-forum litigation.
 - **Status**: live liquidation; verify current auction status before acting
   (indiankanoon.org/doc/110197805).
 
-## 4. Real registers (routes named — not yet ingested)
+## 4. The register — IBBI liquidation auction notices (LIVE)
 
+The one machine-readable per-asset stressed-asset feed in India, now ingested.
+`scripts/register_ibbi_liquidation.py` scrapes the server-rendered table (no
+auth, `?page=N`, 20 rows/page, ~481 pages to inception) into a durable parquet
+(`data/registers/ibbi_liquidation.parquet`) + the `ibbi_auction_notices` DB
+table, and cross-matches corporate-debtor names against the twin's companies
+(shared tiered matcher). Manual/on-demand (duckdb → run with `/usr/bin/python3`):
+`--all` for the full history, `--pages N` to top up recent notices.
+
+Structured fields per notice: **corporate debtor · auction date · reserve
+price (₹) · nature of assets · EMD deadline · insolvency professional · notice
+PDF**. This turns the aggregate "IBC liquidation 1,436 ongoing" pool of §2 into
+named, priced, dated assets. See the `register` block in
+`layers/34_stressed_assets.json` for the top-by-reserve-price list, asset-type
+mix, and any twin-company matches.
+
+### Other registers (routes named — reference)
 | Register | URL | Twin status |
 |---|---|---|
-| **IBBI liquidation auction notices** | ibbi.gov.in/liquidation-auction-notices/lists | **the feed to add next** — structured per-asset notices |
 | NLMC | nlmc.dpe.gov.in | reference |
 | SARFAESI / ARC | auctiontiger.in · bankeauctions.com · narcl.co.in | reference |
 | State resumed plots | GIDC · UPSIDA · MIDC MILAAP · RIICO | overlaps layer-25 IILB data |

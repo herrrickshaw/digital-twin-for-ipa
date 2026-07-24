@@ -373,5 +373,808 @@
   "No single official 'total acres in IBC liquidation' statistic exists (IBBI reports process counts, not acreage) — see land caveats.",
   "Dunlop facts are from a due-diligence workbook; verify the live auction status before acting (17-Mar-2026 judgment is the latest)."
  ],
- "next": "wire the IBBI liquidation-auction-notice list (ibbi.gov.in/liquidation-auction-notices/lists) as a real machine-readable stressed-asset feed — the one register that publishes structured per-asset notices"
+ "next": "wire the IBBI liquidation-auction-notice list (ibbi.gov.in/liquidation-auction-notices/lists) as a real machine-readable stressed-asset feed — the one register that publishes structured per-asset notices",
+ "register": {
+  "ran": "2026-07-24",
+  "source": "IBBI liquidation auction notices (ibbi.gov.in/liquidation-auction-notices/lists)",
+  "access": "server-rendered table, no auth; ?page=N (20 rows/page, ~481 pages to inception); durable parquet at data/registers/ibbi_liquidation.parquet",
+  "total_notices": 9531,
+  "scraped_this_run": 9528,
+  "fields": [
+   "an_type",
+   "notice_date",
+   "corporate_debtor",
+   "auction_date",
+   "insolvency_professional",
+   "reserve_price_inr",
+   "nature_of_assets",
+   "emd_last_date",
+   "notice_pdf"
+  ],
+  "top_by_reserve_price": [
+   {
+    "corporate_debtor": "LIQQQQQQQQQQQQQQQQQQQ",
+    "reserve_price_inr": 900000000000,
+    "nature_of_assets": "zxc",
+    "auction_date": "09-11-2024"
+   },
+   {
+    "corporate_debtor": "Bharati Defence and Infrastructure Limited",
+    "reserve_price_inr": 39800000000,
+    "nature_of_assets": "Shipyards at various... Shipyards at various locations consisting of semi-constructed vessels, shipbuilding equipment and machineries, including stores and materials.",
+    "auction_date": "26-10-2021"
+   },
+   {
+    "corporate_debtor": "IND-BARATH THERMAL POWER LIMITED",
+    "reserve_price_inr": 15495098778,
+    "nature_of_assets": "BLOCK – I The ent... BLOCK – I The entire balance sheet consisting of assets and liabilities of the Corporate Debtor being sold as going concern under Regulation 32 (e) of IBBI (Liquidation Process) Regulations, 2016 BLOCK – II 1. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu 2. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu 3. Land (approx. 129.73 acres) parcel located at Hankon Village, Karwar, Karnataka 4. Securities and Financial Assets BLOCK – III 1. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu 2. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu 3. Securities and Financial Assets BLOCK – IV 1. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu 2. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu BLOCK -V 1.Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu & Plant & 2. Machinery located at the plant premises i.e. at Tuticorin Tamil Nadu. BLOCK – VI Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu. BLOCK – VII Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu. BLOCK-VIII Land (approx. 311.72 acres) located at Tuticorin, Tamil nadu. BLOCK – IX Land (approx. 129.73 acres) parcel located at Hankon Village, Karwar, Karnataka BLOCK – X Securities and Financial Assets",
+    "auction_date": "12-10-2023"
+   },
+   {
+    "corporate_debtor": "ATHENA CHHATTISGARH POWER LIMITED",
+    "reserve_price_inr": 15030800000,
+    "nature_of_assets": "Sale of corporate de... Sale of corporate debtor as a going concern in its totality (Under Regulation 32(e) of Liquidation Regulations)",
+    "auction_date": "22-12-2021"
+   },
+   {
+    "corporate_debtor": "IND-BARATH THERMAL POWER LIMITED",
+    "reserve_price_inr": 13945588899,
+    "nature_of_assets": "BLOCK – I The en... BLOCK – I The entire balance sheet consisting of assets and liabilities of the Corporate Debtor being sold as going concern under Regulation 32 (e) of IBBI (Liquidation Process) Regulations, 2016 BLOCK – II 1. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu 2. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu 3. Land (approx. 129.73 acres) parcel located at Hankon Village, Karwar, Karnataka 4. Securities and Financial Assets BLOCK – III 1. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu 2. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu 3. Securities and Financial Assets BLOCK – IV 1. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu 2. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu BLOCK -V 1.Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu & Plant & 2. Machinery located at the plant premises i.e. at Tuticorin Tamil Nadu. BLOCK – VI Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu. BLOCK – VII Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu. BLOCK-VIII Land (approx. 311.72 acres) located at Tuticorin, Tamil nadu. BLOCK – IX Land (approx. 129.73 acres) parcel located at Hankon Village, Karwar, Karnataka BLOCK – X Securities and Financial Assets",
+    "auction_date": "22-12-2023"
+   },
+   {
+    "corporate_debtor": "IND-BARATH THERMAL POWER LIMITED",
+    "reserve_price_inr": 13803979734,
+    "nature_of_assets": "BLOCK – I The en... BLOCK – I The entire balance sheet consisting of assets and liabilities of the Corporate Debtor being sold as going concern under Regulation 32 (e) of IBBI (Liquidation Process) Regulations, 2016 BLOCK – II 1. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu 2. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu 3. Securities and Financial Assets such as Trade Receivables and other current assets BLOCK – III 1. Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu 2. Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu BLOCK – IV Plant & Machinery located at the plant premises i.e., at Tuticorin, Tamil Nadu (Maximum time of six months from the issuance of Sale Certificate is permitted to the Successful Bidder for removal/lifting of plant & machinery) BLOCK – V Land (approx. 311.72 acres)** & Buildings located at plant premises i.e., at Tuticorin, Tamil Nadu BLOCK – VI Land (approx. 129.73 acres) parcel located at Karwar, Hankon Village, Karnataka BLOCK – VII Securities and Financial Assets such as Trade Receivables and other current assets",
+    "auction_date": "18-08-2023"
+   },
+   {
+    "corporate_debtor": "ADVANTAGE OVERSEAS PRIVATE LIMITED",
+    "reserve_price_inr": 12747140000,
+    "nature_of_assets": "Assignment of Not Re... Assignment of Not Readily Realisable Assets",
+    "auction_date": "07-04-2026"
+   },
+   {
+    "corporate_debtor": "K.S. Oils Limited",
+    "reserve_price_inr": 11600782220,
+    "nature_of_assets": "Regulation 37A read ... Regulation 37A read with the Regulation 44A of IBBI (Liquidation Process) Regulations, 2016 for assignment/transfer of the Not Readily Realisable Assets (NRRA) as per the sale notice consisting of 5 Blocks from Block A to Block E",
+    "auction_date": "17-03-2025"
+   },
+   {
+    "corporate_debtor": "ATHENA CHHATTISGARH POWER LIMITED",
+    "reserve_price_inr": 11273100000,
+    "nature_of_assets": "Sale of corporate de... Sale of corporate debtor as a going concern in its totality (Under Regulation 32(e) of Liquidation Regulations)",
+    "auction_date": "07-01-2022"
+   },
+   {
+    "corporate_debtor": "IVRCL LIMITED",
+    "reserve_price_inr": 11025700000,
+    "nature_of_assets": "Category A - Sale of... Category A - Sale of Corporate Debtor as a Going Concern Originally Auction Notice published on 27.04.2026 and the Addendum to the Notice published on 16.05.2026. Now the last date of Documents & EMD submission is 09.06.2026. Auction is on 11.06.2026.",
+    "auction_date": "11-06-2026"
+   },
+   {
+    "corporate_debtor": "Punj Lloyd Limited",
+    "reserve_price_inr": 10610000000,
+    "nature_of_assets": "Sale of the Company ... Sale of the Company on a going concern basis",
+    "auction_date": "28-08-2023"
+   },
+   {
+    "corporate_debtor": "Punj Lloyd Limited",
+    "reserve_price_inr": 10610000000,
+    "nature_of_assets": "Sale of the Company ... Sale of the Company on a going concern basis.",
+    "auction_date": "10-07-2023"
+   },
+   {
+    "corporate_debtor": "K.S. Oils Limited",
+    "reserve_price_inr": 10440704100,
+    "nature_of_assets": "Regulation 37A read ... Regulation 37A read with the Regulation 44A of IBBI (Liquidation Process) Regulations, 2016 for assignment/transfer of the Not Readily Realisable Assets (NRRA) as per the sale notice consisting of 5 Blocks from Block A to Block E",
+    "auction_date": "08-05-2025"
+   },
+   {
+    "corporate_debtor": "ATHENA CHHATTISGARH POWER LIMITED",
+    "reserve_price_inr": 10145800000,
+    "nature_of_assets": "Sale of corporate de... Sale of corporate debtor as a going concern in its totality (Under Regulation 32(e) of Liquidation Regulations)",
+    "auction_date": "24-01-2022"
+   },
+   {
+    "corporate_debtor": "Punj Lloyd Limited",
+    "reserve_price_inr": 9550000000,
+    "nature_of_assets": "Sale of Company as a... Sale of Company as a whole (excluding certain assets as provided in the Asset Sale Process Memorandum)",
+    "auction_date": "13-10-2023"
+   }
+  ],
+  "asset_type_mix": {
+   "Land and Building": 157,
+   "Land": 120,
+   "Land & Building": 93,
+   "Plant & Machinery": 82,
+   "Plant and Machinery": 65,
+   "Land & Building and ... Land & Building and Plant & Machinery": 52,
+   "Inventory": 34,
+   "Open Plot": 32,
+   "Office premise along... Office premise along with Plant & Machinery including Furniture and Fixtures": 27,
+   "The Liquidator in Co... The Liquidator in Consultation with the Committee members has proposed to sale, the assets of the Corporate Debtor.": 24,
+   "RESIDENTIAL FLAT": 23,
+   "NRRA": 21
+  },
+  "twin_company_matches": [
+   {
+    "company": "Sterling Biotech Limited",
+    "corporate_debtor": "Sterling Biotech Limited",
+    "reserve_price_inr": 5484600000,
+    "nature_of_assets": "Corporate Debtor as ... Corporate Debtor as a whole, on a going concern basis.",
+    "auction_date": "10-01-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Sterling Biotech Limited",
+    "corporate_debtor": "Sterling Biotech Limited",
+    "reserve_price_inr": 5484600000,
+    "nature_of_assets": "Corporate Debtor as... Corporate Debtor as a whole, on a going concern basis.",
+    "auction_date": "17-12-2021",
+    "quality": "strong"
+   },
+   {
+    "company": "Sterling Biotech Limited",
+    "corporate_debtor": "Sterling Biotech Limited",
+    "reserve_price_inr": 5484600000,
+    "nature_of_assets": "Corporate Debtor as ... Corporate Debtor as a whole, on a going concern basis.",
+    "auction_date": "10-12-2021",
+    "quality": "strong"
+   },
+   {
+    "company": "Varrsana Ispat Limited",
+    "corporate_debtor": "VARRSANA ISPAT LTD",
+    "reserve_price_inr": 3500000000,
+    "nature_of_assets": "All the assets of th... All the assets of the Corporate Debtor on a going concern basis as per Regulation 32A of IBBI (Liquidation Process) Regulations, 2016",
+    "auction_date": "29-08-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Varrsana Ispat Limited",
+    "corporate_debtor": "VARRSANA ISPAT LTD",
+    "reserve_price_inr": 3150000000,
+    "nature_of_assets": "All the assets of th... All the assets of the Corporate Debtor on a going concern basis as per Regulation 32A of IBBI (Liquidation Process) Regulations, 2016",
+    "auction_date": "17-03-2023",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 288000000,
+    "nature_of_assets": "Sale of Corporate De... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets.",
+    "auction_date": "23-11-2021",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 288000000,
+    "nature_of_assets": "Sale of Corporate De... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets.",
+    "auction_date": "27-10-2021",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 274000000,
+    "nature_of_assets": "Sale of Corporate De... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets.",
+    "auction_date": "20-12-2021",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 274000000,
+    "nature_of_assets": "Sale of Corporate De... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets",
+    "auction_date": "02-03-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 274000000,
+    "nature_of_assets": "Sale of Corporate De... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets.",
+    "auction_date": "27-01-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 274000000,
+    "nature_of_assets": "Sale of Corporate De... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets.",
+    "auction_date": "12-01-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 246600000,
+    "nature_of_assets": "Sale of Corporate D... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets",
+    "auction_date": "21-03-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 222000000,
+    "nature_of_assets": "Sale of Corporate De... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets.",
+    "auction_date": "14-04-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Divine Vidyut Limited",
+    "corporate_debtor": "Divine Vidyut Limited",
+    "reserve_price_inr": 222000000,
+    "nature_of_assets": "Sale of Corporate D... Sale of Corporate Debtor as a Going Concern along with all assets including Land & Building, Plant & Machinery and Securities & Financial Assets.",
+    "auction_date": "20-04-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 127609703,
+    "nature_of_assets": "Block No. Asset Desc... Block No. Asset Description A Building Construction and Civil Structures including the Plant and Non-plant Buildings of permanent character situated at Block no. 47 to 50, Revenue Survey No. 27/1/ A to D, Village Tena, Taluka Oplad, Surat, Gujarat-395005 B Plant & Machinery, Office Equipment’s, Furniture & Fixture 17.46 MW gas-based power plant, Two Gas Generators, Gas Compressors Fire Fighting Equipment’s, Power Backup equipment’s, Cooling Towers and circulating water systems, Overhead lines, Switchgears, and Transformer amongst others C Securities or Financial Assets Loans and Advances, Trade Receivables and Other Current Assets. D All the assets included in Block A,B,C above The sale of Blocks A, B and C individually will be undertaken only if sale of Block D does not succeed. Further, the sale of Block A individually shall be undertaken only if sale of Block B succeeds.",
+    "auction_date": "29-04-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 95707278,
+    "nature_of_assets": "Building,Plant and M... Building,Plant and Machinery and Financial Assets",
+    "auction_date": "30-05-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 95707278,
+    "nature_of_assets": "Building, Plant and ... Building, Plant and Machinery and Financial Assets",
+    "auction_date": "09-06-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 90921913,
+    "nature_of_assets": "Building, Plant and ... Building, Plant and Machinery and Financial Assets",
+    "auction_date": "05-07-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 90810000,
+    "nature_of_assets": "1. 2. Coal Stock l... 1. 2. Coal Stock lying at Krishnapatnam Port, AP (Excess quantity will be valued at per ton basis)",
+    "auction_date": "05-04-2025",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 90810000,
+    "nature_of_assets": "ADVANCES/RECEIVABLES",
+    "auction_date": "26-10-2023",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 90810000,
+    "nature_of_assets": "Advance/Receivable",
+    "auction_date": "16-05-2023",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 90810000,
+    "nature_of_assets": "Receivables against ... Receivables against Investment/Advance",
+    "auction_date": "28-04-2023",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 90810000,
+    "nature_of_assets": "ADVANCE/RECEIVABLES",
+    "auction_date": "31-05-2023",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 86375818,
+    "nature_of_assets": "Building, Plant & M... Building, Plant & Machinery, Office Equipment’s, Furniture & Fixture and Securities or Financial Assets",
+    "auction_date": "23-08-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 86375818,
+    "nature_of_assets": "Building, Plant & Ma... Building, Plant & Machinery, Office Equipment’s, Furniture & Fixture and Securities or Financial Assets",
+    "auction_date": "16-08-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 82057027,
+    "nature_of_assets": "Building, Plant & Ma... Building, Plant & Machinery, Office Equipment, Furniture & Fixture and Securities or Financial Assets",
+    "auction_date": "10-10-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 81730000,
+    "nature_of_assets": "Capital W.I.P. - MSM... Capital W.I.P. - MSMC Ltd. (Receivable against investment/advance)",
+    "auction_date": "02-05-2025",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 77954174,
+    "nature_of_assets": "A Building Construct... A Building Construction and Civil Structures including the Plant and Non-plant Buildings of permanent character situated at Block no. 47 to 50, Revenue Survey No. 27/1/ A to D, Village Tena, Taluka Oplad, Surat, Gujarat-395005 (excluding land) B Plant & Machinery, Office Equipment’s, Furniture & Fixture 17.46 MW gas-based power plant, Two Gas Generators, Gas Compressors Fire Fighting Equipment’s, Power Backup equipment’s, Cooling Towers and circulating water systems, Overhead lines, Switchgears, and Transformer amongst others C Securities or Financial Assets Loans and Advances, Trade Receivables and Other Current Assets. D All the assets included in Block A,B,C above",
+    "auction_date": "15-12-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 77954174,
+    "nature_of_assets": "Building (Excluding ... Building (Excluding Land), Plant & Machinery, Office Equipment’s, Furniture & Fixture and Securities or Financial Assets Construction and Civil Structures including the Plant and Non-plant Buildings of permanent character situated at Block no. 47 to 50, Revenue Survey No. 27/1/ A to D, Village Tena, Taluka Oplad, Surat, Gujarat-395005 (excluding land) 17.46 MW gas-based power plant, Two Gas Generators, Gas Compressors Fire Fighting Equipment’s, Power Backup equipment’s, Cooling Towers and circulating water systems, Overhead lines, Switchgears, and Transformer amongst others Loans and Advances, Trade Receivables and Other Current Assets.",
+    "auction_date": "14-11-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Power Generation & Distributors Private Limited",
+    "reserve_price_inr": 77954174,
+    "nature_of_assets": "Building Plant & Ma... Building Plant & Machinery, Office Equipment’s, Furniture & Fixture Securities or Financial Assets",
+    "auction_date": "05-12-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 73558000,
+    "nature_of_assets": "Capital W.I.P. - MSM... Capital W.I.P. - MSMC Ltd. (Receivable against investment/advance)",
+    "auction_date": "02-06-2025",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 66558624,
+    "nature_of_assets": "Immovable Properties",
+    "auction_date": "09-11-2021",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 66203000,
+    "nature_of_assets": "Capital W.I.P. - MSM... Capital W.I.P. - MSMC Ltd. (Receivable against investment/advance)",
+    "auction_date": "23-06-2025",
+    "quality": "strong"
+   },
+   {
+    "company": "COAL INDIA LTD",
+    "corporate_debtor": "Gupta Coal India Private Limited",
+    "reserve_price_inr": 59600000,
+    "nature_of_assets": "CAPITAL W.I.P. - MSM... CAPITAL W.I.P. - MSMC LTD",
+    "auction_date": "07-07-2025",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 37610005,
+    "nature_of_assets": "Immovable Commercial... Immovable Commercial Property",
+    "auction_date": "21-01-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Sps Steels Rolling Mills Limited",
+    "corporate_debtor": "SPS STEELS LIMITED",
+    "reserve_price_inr": 12500000,
+    "nature_of_assets": "Land, receivables & ... Land, receivables & short tern loans & advances",
+    "auction_date": "08-11-2021",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 11525110,
+    "nature_of_assets": "GIDC Land for Engine... GIDC Land for Engineering Purpose",
+    "auction_date": "23-02-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 10372599,
+    "nature_of_assets": "GIDC Land",
+    "auction_date": "15-03-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 9335340,
+    "nature_of_assets": "Land",
+    "auction_date": "28-03-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 6834360,
+    "nature_of_assets": "GIDC Land",
+    "auction_date": "18-07-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 6150924,
+    "nature_of_assets": "Land Parcel, Dahej",
+    "auction_date": "19-08-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 5843378,
+    "nature_of_assets": "Land",
+    "auction_date": "20-09-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 787545,
+    "nature_of_assets": "Vehicles and Furnitu... Vehicles and Furniture",
+    "auction_date": "22-09-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 356650,
+    "nature_of_assets": "Office furniture, eq... Office furniture, equipments",
+    "auction_date": "28-11-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Royal Crown Laminates Private Limited",
+    "corporate_debtor": "ROYAL CROWN PROJECTS PRIVATE LIMITED",
+    "reserve_price_inr": 300000,
+    "nature_of_assets": "Securities and Finan... Securities and Financial Assets (SFA)",
+    "auction_date": "14-11-2024",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "SIDDHI VINAYAK POLYMER PVT. LTD.",
+    "reserve_price_inr": 215000,
+    "nature_of_assets": "Plant and Machinery",
+    "auction_date": "21-02-2024",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "SIDDHI VINAYAK POLYMER PVT. LTD.",
+    "reserve_price_inr": 193500,
+    "nature_of_assets": "Plant & Machinery",
+    "auction_date": "26-03-2024",
+    "quality": "strong"
+   },
+   {
+    "company": "Royal Wood Industries",
+    "corporate_debtor": "Royal Wood Pvt. Ltd",
+    "reserve_price_inr": 0,
+    "nature_of_assets": "Current Assets (Trad... Current Assets (Trade Receivables)",
+    "auction_date": "29-01-2022",
+    "quality": "strong"
+   },
+   {
+    "company": "Siddhi Vinayak Paper Mills Private Limited",
+    "corporate_debtor": "Siddhi Vinayak Logistic Limited",
+    "reserve_price_inr": 0,
+    "nature_of_assets": "Not Readily Realisab... Not Readily Realisable Assets - NRRA",
+    "auction_date": "21-12-2022",
+    "quality": "strong"
+   }
+  ],
+  "tables": [
+   "ibbi_auction_notices",
+   "ibbi_company_matches"
+  ]
+ },
+ "state_resolution": {
+  "ran": "2026-07-24",
+  "total_notices": 9531,
+  "state_coverage": {
+   "resolved": 1041,
+   "from_asset_text": 1018,
+   "from_pdf_top": 23,
+   "unknown": 8490,
+   "note": "state is NOT a register field — parsed from the property address in nature_of_assets (~10 pct of rows) + PDF-address for the top-60 by reserve price. ~89 pct remain state_unknown; full coverage needs parsing all 9531 notice PDFs."
+  },
+  "state_wise": [
+   {
+    "state": "Maharashtra",
+    "notices": 131,
+    "friction_low": 27,
+    "friction_medium": 43,
+    "friction_high": 61,
+    "low_friction_pct": 21,
+    "median_reserve_inr": 102000000
+   },
+   {
+    "state": "Karnataka",
+    "notices": 116,
+    "friction_low": 35,
+    "friction_medium": 71,
+    "friction_high": 10,
+    "low_friction_pct": 30,
+    "median_reserve_inr": 22098223
+   },
+   {
+    "state": "Delhi",
+    "notices": 90,
+    "friction_low": 5,
+    "friction_medium": 37,
+    "friction_high": 48,
+    "low_friction_pct": 6,
+    "median_reserve_inr": 54732200
+   },
+   {
+    "state": "Telangana",
+    "notices": 86,
+    "friction_low": 4,
+    "friction_medium": 11,
+    "friction_high": 71,
+    "low_friction_pct": 5,
+    "median_reserve_inr": 429300000
+   },
+   {
+    "state": "Tamil Nadu",
+    "notices": 84,
+    "friction_low": 18,
+    "friction_medium": 28,
+    "friction_high": 38,
+    "low_friction_pct": 21,
+    "median_reserve_inr": 44175000
+   },
+   {
+    "state": "Punjab",
+    "notices": 62,
+    "friction_low": 19,
+    "friction_medium": 21,
+    "friction_high": 22,
+    "low_friction_pct": 31,
+    "median_reserve_inr": 42250000
+   },
+   {
+    "state": "Gujarat",
+    "notices": 61,
+    "friction_low": 17,
+    "friction_medium": 16,
+    "friction_high": 28,
+    "low_friction_pct": 28,
+    "median_reserve_inr": 42700000
+   },
+   {
+    "state": "West Bengal",
+    "notices": 56,
+    "friction_low": 7,
+    "friction_medium": 21,
+    "friction_high": 28,
+    "low_friction_pct": 12,
+    "median_reserve_inr": 46000000
+   },
+   {
+    "state": "Kerala",
+    "notices": 40,
+    "friction_low": 1,
+    "friction_medium": 27,
+    "friction_high": 12,
+    "low_friction_pct": 2,
+    "median_reserve_inr": 12600000
+   },
+   {
+    "state": "Andhra Pradesh",
+    "notices": 39,
+    "friction_low": 4,
+    "friction_medium": 15,
+    "friction_high": 20,
+    "low_friction_pct": 10,
+    "median_reserve_inr": 107929000
+   },
+   {
+    "state": "Odisha",
+    "notices": 34,
+    "friction_low": 10,
+    "friction_medium": 15,
+    "friction_high": 9,
+    "low_friction_pct": 29,
+    "median_reserve_inr": 3721898
+   },
+   {
+    "state": "Chhattisgarh",
+    "notices": 34,
+    "friction_low": 0,
+    "friction_medium": 1,
+    "friction_high": 33,
+    "low_friction_pct": 0,
+    "median_reserve_inr": 1170000000
+   },
+   {
+    "state": "Madhya Pradesh",
+    "notices": 31,
+    "friction_low": 13,
+    "friction_medium": 4,
+    "friction_high": 14,
+    "low_friction_pct": 42,
+    "median_reserve_inr": 24077771
+   },
+   {
+    "state": "Jharkhand",
+    "notices": 31,
+    "friction_low": 3,
+    "friction_medium": 1,
+    "friction_high": 27,
+    "low_friction_pct": 10,
+    "median_reserve_inr": 852500000
+   },
+   {
+    "state": "Rajasthan",
+    "notices": 29,
+    "friction_low": 14,
+    "friction_medium": 10,
+    "friction_high": 5,
+    "low_friction_pct": 48,
+    "median_reserve_inr": 16275000
+   },
+   {
+    "state": "Haryana",
+    "notices": 23,
+    "friction_low": 0,
+    "friction_medium": 15,
+    "friction_high": 8,
+    "low_friction_pct": 0,
+    "median_reserve_inr": 585000000
+   },
+   {
+    "state": "Uttar Pradesh",
+    "notices": 14,
+    "friction_low": 0,
+    "friction_medium": 3,
+    "friction_high": 11,
+    "low_friction_pct": 0,
+    "median_reserve_inr": 265000000
+   },
+   {
+    "state": "Chandigarh",
+    "notices": 13,
+    "friction_low": 2,
+    "friction_medium": 11,
+    "friction_high": 0,
+    "low_friction_pct": 15,
+    "median_reserve_inr": 810000000
+   },
+   {
+    "state": "Himachal Pradesh",
+    "notices": 12,
+    "friction_low": 2,
+    "friction_medium": 0,
+    "friction_high": 10,
+    "low_friction_pct": 17,
+    "median_reserve_inr": 29000000
+   },
+   {
+    "state": "Sikkim",
+    "notices": 11,
+    "friction_low": 1,
+    "friction_medium": 0,
+    "friction_high": 10,
+    "low_friction_pct": 9,
+    "median_reserve_inr": 48600000
+   },
+   {
+    "state": "Puducherry",
+    "notices": 11,
+    "friction_low": 2,
+    "friction_medium": 4,
+    "friction_high": 5,
+    "low_friction_pct": 18,
+    "median_reserve_inr": 135000000
+   },
+   {
+    "state": "Bihar",
+    "notices": 7,
+    "friction_low": 5,
+    "friction_medium": 1,
+    "friction_high": 1,
+    "low_friction_pct": 71,
+    "median_reserve_inr": 11537000
+   },
+   {
+    "state": "Assam",
+    "notices": 6,
+    "friction_low": 1,
+    "friction_medium": 1,
+    "friction_high": 4,
+    "low_friction_pct": 17,
+    "median_reserve_inr": 25686568
+   },
+   {
+    "state": "Goa",
+    "notices": 6,
+    "friction_low": 1,
+    "friction_medium": 4,
+    "friction_high": 1,
+    "low_friction_pct": 17,
+    "median_reserve_inr": 67912500
+   },
+   {
+    "state": "Mizoram",
+    "notices": 4,
+    "friction_low": 0,
+    "friction_medium": 4,
+    "friction_high": 0,
+    "low_friction_pct": 0,
+    "median_reserve_inr": 15666409
+   },
+   {
+    "state": "Tripura",
+    "notices": 4,
+    "friction_low": 0,
+    "friction_medium": 4,
+    "friction_high": 0,
+    "low_friction_pct": 0,
+    "median_reserve_inr": 11438536
+   },
+   {
+    "state": "Uttarakhand",
+    "notices": 3,
+    "friction_low": 0,
+    "friction_medium": 1,
+    "friction_high": 2,
+    "low_friction_pct": 0,
+    "median_reserve_inr": 1483383
+   },
+   {
+    "state": "Nagaland",
+    "notices": 2,
+    "friction_low": 2,
+    "friction_medium": 0,
+    "friction_high": 0,
+    "low_friction_pct": 100,
+    "median_reserve_inr": 39042000
+   },
+   {
+    "state": "Jammu & Kashmir",
+    "notices": 1,
+    "friction_low": 0,
+    "friction_medium": 0,
+    "friction_high": 1,
+    "low_friction_pct": 0,
+    "median_reserve_inr": null
+   }
+  ],
+  "friction_method": "RULE-BASED proxy (low/medium/high) — NOT a probability of a court outcome, NOT legal advice. Signals: asset liquidity + re-auction/stuck (repeat notices or falling reserve) + ticket size. Lower friction ~= faster, cleaner realisation.",
+  "friction_overall": {
+   "medium": 3278,
+   "high": 4665,
+   "low": 1588
+  },
+  "friction_reading": "low ~17 pct of notices — single-lot land/flat, fresh notice, small ticket: quickest to clear. high — going-concern/composite, re-auctioned or >Rs100cr: expect multi-forum drag (the Dunlop pattern)."
+ }
 }

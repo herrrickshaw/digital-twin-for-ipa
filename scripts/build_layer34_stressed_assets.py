@@ -240,11 +240,20 @@ def main():
             "Dunlop facts are from a due-diligence workbook; verify the live "
             "auction status before acting (17-Mar-2026 judgment is the latest).",
         ],
-        "next": ("wire the IBBI liquidation-auction-notice list "
-                 "(ibbi.gov.in/liquidation-auction-notices/lists) as a real "
-                 "machine-readable stressed-asset feed — the one register that "
-                 "publishes structured per-asset notices"),
+        "next": ("register now LIVE — scripts/register_ibbi_liquidation.py "
+                 "populates the `register` block from IBBI liquidation auction "
+                 "notices (data/registers/ibbi_liquidation.parquet)"),
     }
+    # preserve the `register` block written by register_ibbi_liquidation.py —
+    # this rebuild must not wipe it (it runs in the weekly chain; the register
+    # collector is manual/on-demand)
+    if os.path.exists(OUT):
+        try:
+            prev = json.load(open(OUT))
+            if "register" in prev:
+                layer["register"] = prev["register"]
+        except (json.JSONDecodeError, OSError):
+            pass
     with open(OUT, "w") as f:
         json.dump(layer, f, indent=1, ensure_ascii=False)
     print(f"company distress flags: {len(company_flags)} -> {dict(by_flag)}")

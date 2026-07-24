@@ -169,7 +169,8 @@ def cmd_watchlist():
               "collect_company_news.py",         # external stock/FDI news channel
               "check_sebi_public_issues.py",     # SEBI DRHP/RHP listing-pipeline check
               "extract_cin_from_drhp.py",        # CIN + issue structure from prospectuses
-              "build_layer33_policy_finance.py"):  # fisheries/excise/duties/exim (LOC links re-scraped)
+              "build_layer33_policy_finance.py",   # fisheries/excise/duties/exim (LOC links re-scraped)
+              "build_layer34_stressed_assets.py"):  # stressed-asset view + land pools + Dunlop case
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, "scripts", s)],
                            check=True)

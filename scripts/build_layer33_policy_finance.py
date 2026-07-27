@@ -319,14 +319,25 @@ CBG_GOBARDHAN = {
         "conductivity_max": "4.0 dSm-1",
         "heavy_metals_mg_per_kg": {"As": 10, "Cd": 5, "Cr": 50, "Cu": 300,
                                    "Hg": 0.15, "Pb": 50, "Zn": 1000, "Ni": "(not on sheet)"},
+        "confirmation_status": "NOT CONFIRMED against the primary FCO gazette",
         "source_caveat": ("from a GeM government LFOM specification sheet (dated "
-                          "2023-05) — PRE-DATES the Feb/Mar-2025 Schedule VIII "
-                          "amendment, so confirm against the 27-Mar-2025 gazette "
-                          "before citing as final; 🔴 its Cr (50) and Cu (300) "
-                          "appear TRANSPOSED vs the FOM table (Cr 300 / Cu 50) and "
-                          "Pb is 50 vs FOM's 100 — flagged, not reconciled. The "
-                          "liquid-specific values (90-97 pct moisture, C:N <20, "
-                          "pH 6.5-8.0) are the meaningful differentiators"),
+                          "2023-05) — PRE-DATES Schedule VIII. Attempted to confirm "
+                          "against the primary 27-Mar-2025 gazette 2026-07-24 and "
+                          "COULD NOT from this machine: secondary news reproduces "
+                          "the FOM numbers but not LFOM; the two legalitysimplified "
+                          "amendment pages 403-blocked; the egazette S.O. PDF "
+                          "returns unreadable binary; the FAI/slideshare 'organic "
+                          "manures' doc covers Schedule IV not VIII. 🔴 Cr (50) / "
+                          "Cu (300) appear TRANSPOSED vs the FOM table (Cr 300 / "
+                          "Cu 50) and Pb 50 vs FOM 100 — UNRESOLVED. Liquid-"
+                          "specific values (90-97 pct moisture, C:N <20, pH 6.5-8.0) "
+                          "are the reliable differentiators regardless."),
+        "date_note": ("two instruments surfaced: the FOM/LFOM spec notification "
+                      "dated 27-Mar-2025 AND a formal 'Twelfth Amendment Order 2025' "
+                      "effective 3-Dec-2025 that amends sampling/analysis procedures "
+                      "— confirm which numbers are current against the primary "
+                      "gazette; egazette.gov.in / agricoop.gov.in are the sources "
+                      "to try from an unblocked network"),
     },
     "bulk_sale_notifications": [
         {"no": "I", "date": "2023-11-14", "note": "27 plants (exact) — first cohort; incl. HPCL, Indian Potash, Verbio India"},

@@ -1,7 +1,7 @@
 {
  "layer": 32,
  "name": "company_db",
- "built": "2026-07-23",
+ "built": "2026-07-27",
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
@@ -51,115 +51,8 @@
   "07_investor_pairings"
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
- "ii_ticker_validation": {
-  "ran": "2026-07-23",
-  "what": "Invest India sector-page LATEST-UPDATES tickers scraped as an announcement channel and matched (conservatively, fragments kept for review) against the company DB; QUIET/PARTIALLY_VISIBLE clearance leads that the national IPA itself announces are flagged as challenged verdicts",
-  "sector_pages_scraped": 41,
-  "fetch_errors": [],
-  "announcements": 439,
-  "companies_matched": 41,
-  "match_rows": 80,
-  "exception_verdicts_challenged": [
-   {
-    "company": "Nayara Energy Limited",
-    "verdict_on_record": "PARTIALLY_VISIBLE",
-    "matched_fragment": "nayara energy",
-    "sector_page": "oil-and-gas",
-    "announcement": "Nayara Energy, India's largest private fuel retailer, plans to add 400 petrol pumps this year to expand its retail network",
-    "source_url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/nayara-energy-to-expand-retail-network-by-adding-a-fuel-station-per-day/articleshow/116958993.cms",
-    "implication": "verdict CHALLENGED — the national IPA itself surfaces this company; re-examine before citing the quiet verdict (displayed correction, verdict not overwritten)"
-   }
-  ],
-  "weak_matches_for_review": [
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "Reliance Industries, Vedanta and the Adani group commit to invest INR 1.5 lakh Cr in Assam"
-   },
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "Reliance Defence and US-based CMI eyes India's ₹20,000-cr defence MRO market with new JV"
-   },
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "Reliance Industries plans a massive ecosystem in Navi Mumbai, including data centres and logistics"
-   },
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "Reliance Retail plans to invest Rs. 40,000 crores in food parks"
-   },
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "Indian multinational conglomerate, Reliance plans to invest an additional INR 50,000 Cr in Bengal by 2030"
-   },
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "JioStar, the joint venture formed by Reliance Industries, Disney, and Bodhi Tree, to expand sports bouquet with new channel launches ahead of IPL"
-   },
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "Anil Ambani-led Reliance Power Ltd to invest INR 10,000 Cr in Andhra solar projects"
-   },
-   {
-    "company": "RELIANCE, INC.",
-    "fragment": "reliance",
-    "announcement": "Mukesh Ambani-owned Reliance Industries, to build the world's largest data centre in Jamnagar"
-   },
-   {
-    "company": "Venture Corporation",
-    "fragment": "venture",
-    "announcement": "Auto components major Motherson forms a joint venture with Japan's Sanko for sustainable packaging solutions"
-   },
-   {
-    "company": "Venture Corporation",
-    "fragment": "venture",
-    "announcement": "JioStar, the joint venture formed by Reliance Industries, Disney, and Bodhi Tree, to expand sports bouquet with new channel launches ahead of IPL"
-   },
-   {
-    "company": "Venture Corporation",
-    "fragment": "venture",
-    "announcement": "Natural gas distribution major, Swan Energy and Singapore’s AG&P Terminals & Logistics plan a joint venture for supplying liquefied natural gas in India"
-   },
-   {
-    "company": "Venture Corporation",
-    "fragment": "venture",
-    "announcement": "Electronics contract manufacturer Dixon Technologies and Vivo form a joint venture to manufacture smartphones in India"
-   },
-   {
-    "company": "Venture Corporation",
-    "fragment": "venture",
-    "announcement": "Indian Rare Earth Limited (IREL) and Kazakh company to form joint venture to harness India's titanium potential"
-   }
-  ],
-  "reviewed_promotions": {
-   "names": [
-    "airbus",
-    "astrazeneca",
-    "panasonic",
-    "pegatron",
-    "sandisk",
-    "vertiv"
-   ],
-   "reviewed": "2026-07-23: all rows eyeballed genuine — AstraZeneca Rs 176 cr Chennai GITC, Pegatron Chennai 5G plant, Airbus H125 order + Bengaluru GCC lease, Panasonic (Life Solutions India subsidiary, Andheri land), Vertiv Pune services centre; news channel: Sandisk (Yahoo Finance stock piece)",
-   "reviewed_and_rejected": [
-    "RELIANCE, INC. (US namesake — rows are Indian Reliance groups)",
-    "Venture Corporation (matches the phrase 'joint venture')"
-   ]
-  },
-  "tables": [
-   "ii_announcements",
-   "ii_company_matches"
-  ],
-  "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
- },
  "news_collection": {
-  "ran": "2026-07-23",
+  "ran": "2026-07-27",
   "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
   "api_calls_used": 39,
   "calls_by_source": {
@@ -168,15 +61,15 @@
    "marketaux": 10,
    "alphavantage": 1
   },
-  "articles_total": 104,
-  "new_articles": 104,
-  "match_rows_added": 10,
+  "articles_total": 109,
+  "new_articles": 109,
+  "match_rows_added": 8,
   "exception_news_hits": [],
   "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  },
  "sebi_public_issues": {
-  "ran": "2026-07-23",
+  "ran": "2026-07-27",
   "since": "2025-01-01",
   "pages_fetched": 16,
   "filings_in_window": 378,
@@ -299,7 +192,7 @@
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  },
  "cin_extraction": {
-  "ran": "2026-07-23",
+  "ran": "2026-07-27",
   "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
   "records": [],
   "errors": [],

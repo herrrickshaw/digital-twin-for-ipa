@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-07-23",
+ "built": "2026-07-27",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -29,9 +29,9 @@
   }
  },
  "counts": {
-  "prs_bills_total": 962,
+  "prs_bills_total": 963,
   "investment_relevant": 168,
-  "recent_2024plus": 63,
+  "recent_2024plus": 64,
   "active_watchlist": 33,
   "drishti_editorials": 24
  },
@@ -7705,6 +7705,14 @@
    "url": "https://prsindia.org/billtrack/the-prevention-of-corruption-amendment-bill-2013"
   },
   {
+   "slug": "the-prevention-of-insults-to-national-honour-amendment-bill-2026",
+   "title": "Prevention of Insults to National Honour Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-prevention-of-insults-to-national-honour-amendment-bill-2026"
+  },
+  {
    "slug": "the-prevention-of-money-laundering-amendment-bill-2008",
    "title": "Prevention of Money Laundering Amendment Bill 2008",
    "year": 2008,
@@ -9352,14 +9360,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ai-revolution-in-indian-enterprises"
   },
   {
+   "slug": "blueprint-for-indias-climate-adaptation",
+   "topic": "Blueprint for Indias Climate Adaptation",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/blueprint-for-indias-climate-adaptation"
+  },
+  {
    "slug": "charting-a-new-course-in-india-indonesia-relations",
    "topic": "Charting A New Course in India Indonesia Relations",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/charting-a-new-course-in-india-indonesia-relations"
-  },
-  {
-   "slug": "charting-indias-global-shipbuilding-roadmap",
-   "topic": "Charting Indias Global Shipbuilding Roadmap",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/charting-indias-global-shipbuilding-roadmap"
   },
   {
    "slug": "combating-indias-corruption-crisis",
@@ -9372,9 +9380,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/deepening-the-india-japan-strategic-partnership"
   },
   {
-   "slug": "digitising-india-s-agriculture",
-   "topic": "Digitising India S Agriculture",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/digitising-india-s-agriculture"
+   "slug": "forging-indias-sovereign-ai-path",
+   "topic": "Forging Indias Sovereign Ai Path",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/forging-indias-sovereign-ai-path"
   },
   {
    "slug": "global-footprint-of-indian-diaspora",
@@ -9422,6 +9430,11 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-food-safety-ecosystem"
   },
   {
+   "slug": "regulation-of-temples-in-india",
+   "topic": "Regulation of Temples in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/regulation-of-temples-in-india"
+  },
+  {
    "slug": "reimagining-indias-cooperative-sector-for-the-21st-century",
    "topic": "Reimagining Indias Cooperative Sector for 21st Century",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-indias-cooperative-sector-for-the-21st-century"
@@ -9440,11 +9453,6 @@
    "slug": "sustainable-urban-development-roadmap",
    "topic": "Sustainable Urban Development Roadmap",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/sustainable-urban-development-roadmap"
-  },
-  {
-   "slug": "transforming-indias-msme-ecosystem",
-   "topic": "Transforming Indias Msme Ecosystem",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-indias-msme-ecosystem"
   },
   {
    "slug": "unlocking-indias-land-potential",

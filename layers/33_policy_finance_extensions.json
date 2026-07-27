@@ -2,7 +2,7 @@
  "layer": 33,
  "name": "policy_finance_extensions",
  "built": "2026-07-27",
- "what": "Fisheries incentive stack, state-excise bottling-fee economics, import/export duty posture, and India Exim Bank — four analysis blocks with per-claim sources, HTTP-verified access routes, and explicit layer-32 company linkages. Research sweep 2026-07-23.",
+ "what": "Fisheries incentive stack, state-excise bottling-fee economics, import/export duty posture, India Exim Bank, and the CBG/GOBARdhan FCO fertiliser route — analysis blocks with per-claim sources, HTTP-verified access routes, and explicit layer-32 company linkages. Research sweeps 2026-07-23/24.",
  "fisheries": {
   "what": "Central fisheries incentive stack + export machinery — the twin's catalog had PMMSY name-checks only; this is the funded picture",
   "pmmsy": {
@@ -169,15 +169,131 @@
   "financials_fy26": "loan book Rs 2,07,779 cr (+11.9%), PAT Rs 4,273 cr (+31.7%), GNPA 0.57%, net NPA 0.01%, CRAR 26.39%",
   "db_linkage": "(a) EOU 20%-export test = screen for export-oriented clearance leads; (b) LOC xlsx = 'engineered exports' series for layer 30; (c) eprocure.eximbankindia.in = early signal of Indian EPC winners on LOC projects; (d) weak inbound-FDI signal by design (outbound instruments)"
  },
+ "cbg_gobardhan_fertiliser": {
+  "what": "CBG plants selling fertiliser — the FCO route that lets Compressed Bio-Gas / GOBARdhan plants sell their fermented digestate as a notified fertiliser, a second revenue leg for the CBG/biofuel business model (FOM is ~20 pct of a CBG plant's feedstock throughput). Researched 2026-07-24 against the primary gazette.",
+  "regulator": "Department of Agriculture & Farmers Welfare (DA&FW) under the Fertiliser (Inorganic, Organic or Mixed) Control Order, 1985 (FCO) — NOT the Ministry of Chemicals & Fertilizers",
+  "two_moves": {
+   "1_create_category": "Schedule VIII 'Organic Carbon Enhancer' introduced 17-Feb-2025; full FOM (solid) + LFOM (liquid) specs notified 27-Mar-2025 (the 12th amendment to FCO 1985)",
+   "2_authorise_bulk_sale": "under sub-clause (c) of clause 22 of the FCO, serial 'Bulk Sale Notifications' name specific plants and authorise them to sell FOM/LFOM in BULK directly to farmers for 3 years — bypassing the normal fertiliser-dealer licensing chain"
+  },
+  "why_it_was_needed": "CBG digestate/bio-slurry could not be sold as fertiliser before: FOM kept failing the old 5 pct minimum NPK and the 4mm sieve at 70 pct moisture. Schedule VIII reframes it around SOIL CARBON not NPK — NPK floor dropped to 1.2 pct, organic carbon min 14 pct. Critics (Down To Earth/CSE) note this also relaxes the organic-manure quality norm.",
+  "fom_spec_schedule_viii": {
+   "total_NPK_min": "1.2 pct (N+P2O5+K2O; down from the old 5 pct)",
+   "total_organic_carbon_min": "14 pct",
+   "moisture_max": "30-70 pct",
+   "c_to_n_ratio_max": 30,
+   "sieve": "min 90 pct material through sieve",
+   "pH": "6.5-8.4",
+   "pathogens": "NIL",
+   "heavy_metals_mg_per_kg": {
+    "As": 10,
+    "Cd": 5,
+    "Cr": 300,
+    "Cu": 50,
+    "Hg": 0.15,
+    "Ni": 50,
+    "Pb": 100,
+    "Zn": 1000
+   },
+   "source": "FCO Schedule VIII, as reproduced in a FACT procurement tender; LFOM liquid-spec numbers differ and are in the same gazette — NOT re-extracted here"
+  },
+  "bulk_sale_notifications": [
+   {
+    "no": "I",
+    "date": "2023-11-14"
+   },
+   {
+    "no": "II",
+    "date": "2024-03-15"
+   },
+   {
+    "no": "III",
+    "date": "2024-09-02"
+   },
+   {
+    "no": "IV",
+    "date": "2025-03-06"
+   },
+   {
+    "no": "V",
+    "date": "2025-07-08",
+    "note": "17 plants, 6 states, Reliance group = 8"
+   },
+   {
+    "no": "VI",
+    "date": "2025-12-16"
+   },
+   {
+    "no": "VII",
+    "date": "2026-02-25",
+    "note": "13 plants incl. RIL Indore+Bhopal, Adani Total Energies, Carbon Masters x4"
+   }
+  ],
+  "authorised_plants": {
+   "note": "rolling 3-yr authorisations; each notification adds a fresh batch. V + VII fully parsed from the gazette below; I-IV/VI not individually extracted.",
+   "V_2025_07_08": [
+    "Atmos AJS Fuels Pvt Ltd",
+    "Reliance Industries Ltd — Barabanki CBG (UP)",
+    "DCM Shriram Ltd — Ajbapur CBG (UP)",
+    "Degna Bioenergy Pvt Ltd (Hapur, UP)",
+    "Reliance Chemicals & Materials Ltd — Hoshiarpur CBG (Punjab)",
+    "Reliance Bioenergy Ltd — Jhajjar CBG (Haryana)",
+    "Reliance New Solar Energy Ltd — Jamnagar CBG (Gujarat)",
+    "Kota Development Authority (Rajasthan)",
+    "Lakhimpur Kheri RNG Pvt Ltd (UP)",
+    "Reliance Bioenergy Ltd — Nagpur CBG (Maharashtra)",
+    "Reliance Bioenergy Ltd — Panipat CBG (Haryana)",
+    "Patiala RNG Pvt Ltd (Punjab)",
+    "Reliance Industries Ltd — Prayagraj CBG (UP)",
+    "Sangrur RNG Pvt Ltd (Punjab)",
+    "Transtech Punjab CBG LLP (Fatehabad, Haryana)",
+    "Reliance Chemicals & Materials Ltd — Vadodara CBG (Gujarat)",
+    "XEMX Projects Pvt Ltd (Maharashtra)"
+   ],
+   "VII_2026_02_25": [
+    "Prayagraj RNG Pvt Ltd (UP)",
+    "Kakadiya Green Energy Pvt Ltd (Bhavnagar, Gujarat)",
+    "AnandMangal Infradevelopers Pvt Ltd (Meerut, UP)",
+    "Shree Jee Bioenergy (Haridwar, Uttarakhand)",
+    "Reliance Industries Ltd — Indore CBG (MP)",
+    "Reliance Industries Ltd — Bhopal CBG (MP)",
+    "Adani Total Energies Biomass Ltd (Mathura, UP)",
+    "VINP Distilleries and Sugars Pvt Ltd (Haveri, Karnataka)",
+    "Enlighten Biofuels and Bio Fertilizers Pvt Ltd (Najafgarh, Delhi)",
+    "Carbon Masters India Pvt Ltd — Mattikere, Bengaluru",
+    "Carbon Masters India Pvt Ltd — Kalidasa Rd, Bengaluru",
+    "Carbon Masters India Pvt Ltd — Domlur, Bengaluru",
+    "Carbon Masters India Pvt Ltd — Jaya Nagar, Bengaluru"
+   ],
+   "dominance": "the majors clear the compliance bar: Reliance group = 8 of 17 in V (Bioenergy/Chemicals&Materials/New Solar Energy + RIL) + 2 in VII; Adani Total Energies enters in VII"
+  },
+  "mda_economics": {
+   "what": "Market Development Assistance — makes the FCO authorisation profitable, not just legal",
+   "rate": "Rs 1,500 per metric tonne for FOM / LFOM / PROM from biogas/CBG plants",
+   "allocation": "Rs 1,451.84 crore",
+   "portal": "iFMS (Integrated Fertilizer Management System) registration",
+   "plants_registered": "120 CBG/biogas plants on iFMS (as of 4-Mar-2026)",
+   "sales_trajectory": "56,058 MT (FY24) -> 3.36 lakh MT (FY25) -> 16.72 lakh MT (FY26 to 28-Feb) — ~30x in two years"
+  },
+  "gobardhan": "Galvanizing Organic Bio-Agro Resources Dhan — the 'waste to wealth' umbrella tying CBG energy to the fertiliser story; circulars on the EIL-run portal gobardhan.eil.co.in/important-circular; unified registration via Dept of Drinking Water & Sanitation",
+  "db_linkage": "connects to the twin's E20 ethanol / biofuel EC-filer cohort (layer 32/33) — VINP Distilleries & Sugars is on the FOM bulk-sale list AND is a distillery; the FCO fertiliser leg + MDA subsidy materially improve CBG/biofuel project economics, the flip side of the Lalta-Prasad state-fee RISK on the same cohort",
+  "sources": [
+   "gazette VII S.O.1018(E) 25-Feb-2026 (primary, clause 22(c) FCO)",
+   "gobardhan.eil.co.in/important-circular (bulk-sale I-VII)",
+   "FACT tender (Schedule VIII FOM spec table)",
+   "IBEF/NewsOnAir (MDA Rs 1,500/MT, 120 plants), Down To Earth/CSE (critique)"
+  ]
+ },
  "url_liveness": {
-  "https://pmmsy.dof.gov.in/": "ERR:URLError",
+  "https://pmmsy.dof.gov.in/": 200,
   "https://fidf.in/home/": 200,
   "https://mpeda.gov.in/?page_id=438": 200,
   "https://excise.rajasthan.gov.in/": 200,
   "https://excise.up.gov.in/": 200,
   "https://www.eximbankindia.in/lines-of-credit": 200,
   "https://wits.worldbank.org/": 200,
-  "https://foservices.icegate.gov.in/cip/": 200
+  "https://foservices.icegate.gov.in/cip/": 200,
+  "https://gobardhan.eil.co.in/important-circular": 200
  },
  "refresh_guidance": {
   "annual_feb_mar": "state excise policies (UP/MP/Punjab) + Union Budget duty changes",

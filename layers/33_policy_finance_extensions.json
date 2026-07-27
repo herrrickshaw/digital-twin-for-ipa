@@ -195,7 +195,26 @@
     "Pb": 100,
     "Zn": 1000
    },
-   "source": "FCO Schedule VIII, as reproduced in a FACT procurement tender; LFOM liquid-spec numbers differ and are in the same gazette — NOT re-extracted here"
+   "source": "FCO Schedule VIII, as reproduced in a FACT procurement tender"
+  },
+  "lfom_spec_liquid": {
+   "moisture": "90-97 pct (liquid — the key FOM-vs-LFOM differentiator)",
+   "total_organic_carbon_min": "14 pct (on dry basis)",
+   "total_NPK_min": "1.2 pct (N+P2O5+K2O, on dry basis)",
+   "c_to_n_ratio_max": "< 20 (tighter than FOM's <= 30)",
+   "pH": "6.5-8.0",
+   "conductivity_max": "4.0 dSm-1",
+   "heavy_metals_mg_per_kg": {
+    "As": 10,
+    "Cd": 5,
+    "Cr": 50,
+    "Cu": 300,
+    "Hg": 0.15,
+    "Pb": 50,
+    "Zn": 1000,
+    "Ni": "(not on sheet)"
+   },
+   "source_caveat": "from a GeM government LFOM specification sheet (dated 2023-05) — PRE-DATES the Feb/Mar-2025 Schedule VIII amendment, so confirm against the 27-Mar-2025 gazette before citing as final; 🔴 its Cr (50) and Cu (300) appear TRANSPOSED vs the FOM table (Cr 300 / Cu 50) and Pb is 50 vs FOM's 100 — flagged, not reconciled. The liquid-specific values (90-97 pct moisture, C:N <20, pH 6.5-8.0) are the meaningful differentiators"
   },
   "bulk_sale_notifications": [
    {

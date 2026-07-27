@@ -313,19 +313,20 @@ CBG_GOBARDHAN = {
                    "NOT re-extracted here"),
     },
     "bulk_sale_notifications": [
-        {"no": "I", "date": "2023-11-14", "note": "~27 plants — first cohort; incl. HPCL, Indian Potash, Verbio India"},
-        {"no": "II", "date": "2024-03-15", "note": "~10-14 plants; incl. Mahindra Waste-to-Energy, Banas Dairy"},
-        {"no": "III", "date": "2024-09-02", "note": "~19-21 plants"},
-        {"no": "IV", "date": "2025-03-06", "note": "~7 plants — PSU/co-op heavy: GAIL India, NDDB Mrida, Baramati Agro"},
+        {"no": "I", "date": "2023-11-14", "note": "27 plants (exact) — first cohort; incl. HPCL, Indian Potash, Verbio India"},
+        {"no": "II", "date": "2024-03-15", "note": "14 plants (exact); incl. Mahindra Waste-to-Energy, Banas Dairy, Gaulok Dham Seva Samiti"},
+        {"no": "III", "date": "2024-09-02", "note": "21 plants (exact)"},
+        {"no": "IV", "date": "2025-03-06", "note": "7 plants (exact) — PSU/co-op heavy: GAIL India, NDDB Mrida, Baramati Agro"},
         {"no": "V", "date": "2025-07-08", "note": "17 plants, 6 states, Reliance group = 8"},
-        {"no": "VI", "date": "2025-12-16"},
+        {"no": "VI", "date": "2025-12-16", "note": "20 plants (exact); incl. Adani Total Energies (Barsana), Reliance Nagothane+Kota"},
         {"no": "VII", "date": "2026-02-25", "note": "13 plants incl. RIL Indore+Bhopal, Adani Total Energies, Carbon Masters x4"},
     ],
     "authorised_plants": {
         "note": ("rolling 3-yr authorisations; each notification adds a fresh "
-                 "batch. All I-VII parsed from the gazette PDFs; counts are "
-                 "approximate where the bilingual (Hindi/English) layout wraps "
-                 "names — confidently-read English names listed per notification."),
+                 "batch. EXACT counts (serial-run verified from the gazette PDFs): "
+                 "I=27, II=14, III=21, IV=7, V=17, VI=20, VII=13 = 119 total. "
+                 "English names listed per notification (a few Hindi-column-"
+                 "only names summarised where the bilingual layout wraps)."),
         "I_2023_11_14": [   # first/largest cohort (~27 plants)
             "Vyzag Bio Energy Fuels Pvt Ltd (Visakhapatnam, AP)",
             "Akshar Biotech Pvt Ltd (Surat, Gujarat)", "Bleach Energy (Anand, Gujarat)",
@@ -383,6 +384,8 @@ CBG_GOBARDHAN = {
             "Reliance Industries Ltd — Kota CBG (Rajasthan)",
             "DEVNICS LLP (Hisar, Haryana)", "Sayaji Bio Energy LLP (Gujarat)",
             "Satish Sugars Ltd (Karnataka)",
+            "Sevozone Energies and Fertilizers (Essapur)",
+            "Sri Krishna Balram Seva Trust (Bassi, Jaipur, Rajasthan)",
         ],
         "V_2025_07_08": [
             "Atmos AJS Fuels Pvt Ltd", "Reliance Industries Ltd — Barabanki CBG (UP)",
@@ -420,8 +423,8 @@ CBG_GOBARDHAN = {
                       "Adani Total Energies (Barsana VI, Mathura VII); PSUs/majors "
                       "HPCL + Indian Potash + Verbio (I), Mahindra + Banas Dairy "
                       "(II), GAIL India + NDDB Mrida + Baramati Agro (IV); "
-                      "Carbon Masters x4 Bengaluru (VII). ~90+ plant-authorisations "
-                      "total across I-VII"),
+                      "Carbon Masters x4 Bengaluru (VII). 119 plant-authorisations "
+                      "total across I-VII (27/14/21/7/17/20/13)"),
     },
     "mda_economics": {
         "what": ("Market Development Assistance — makes the FCO authorisation "

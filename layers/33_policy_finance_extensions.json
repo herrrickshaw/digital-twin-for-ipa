@@ -176,48 +176,49 @@
    "1_create_category": "Schedule VIII 'Organic Carbon Enhancer' introduced 17-Feb-2025; full FOM (solid) + LFOM (liquid) specs notified 27-Mar-2025 (the 12th amendment to FCO 1985)",
    "2_authorise_bulk_sale": "under sub-clause (c) of clause 22 of the FCO, serial 'Bulk Sale Notifications' name specific plants and authorise them to sell FOM/LFOM in BULK directly to farmers for 3 years — bypassing the normal fertiliser-dealer licensing chain"
   },
-  "why_it_was_needed": "CBG digestate/bio-slurry could not be sold as fertiliser before: FOM kept failing the old 5 pct minimum NPK and the 4mm sieve at 70 pct moisture. Schedule VIII reframes it around SOIL CARBON not NPK — NPK floor dropped to 1.2 pct, organic carbon min 14 pct. Critics (Down To Earth/CSE) note this also relaxes the organic-manure quality norm.",
+  "why_it_was_needed": "CBG digestate/bio-slurry could not be sold as fertiliser before: FOM kept failing the old 5 pct minimum NPK and the 4mm sieve at 70 pct moisture. Schedule VIII reframes it around SOIL CARBON — the new 'Organic Carbon Enhancer' category DROPS NPK and C:N entirely and is defined on organic-carbon + heavy-metals only. Critics (Down To Earth/CSE) note this relaxes the organic-manure quality norm.",
+  "spec_confirmed_primary_gazette": "CG-DL-E-29032025-262118 — 'Fertiliser (Inorganic, Organic or Mixed) (Control) (THIRD) Amendment Order, 2025', issued 27-Mar-2025, publ 29-Mar-2025, Part II Sec 3(ii), Schedule VIII Part A; pulled from egazette.gov.in/WriteReadData/2025/262118.pdf on 2026-07-24 (browser-driven ASP.NET search -> direct PDF URL). NOT the '12th amendment' that secondary sources called it — it is the 3rd Amendment of 2025.",
   "fom_spec_schedule_viii": {
-   "total_NPK_min": "1.2 pct (N+P2O5+K2O; down from the old 5 pct)",
-   "total_organic_carbon_min": "14 pct",
-   "moisture_max": "30-70 pct",
-   "c_to_n_ratio_max": 30,
-   "sieve": "min 90 pct material through sieve",
-   "pH": "6.5-8.4",
-   "pathogens": "NIL",
-   "heavy_metals_mg_per_kg": {
-    "As": 10,
-    "Cd": 5,
-    "Cr": 300,
-    "Cu": 50,
-    "Hg": 0.15,
-    "Ni": 50,
-    "Pb": 100,
-    "Zn": 1000
-   },
-   "source": "FCO Schedule VIII, as reproduced in a FACT procurement tender"
-  },
-  "lfom_spec_liquid": {
-   "moisture": "90-97 pct (liquid — the key FOM-vs-LFOM differentiator)",
-   "total_organic_carbon_min": "14 pct (on dry basis)",
-   "total_NPK_min": "1.2 pct (N+P2O5+K2O, on dry basis)",
-   "c_to_n_ratio_max": "< 20 (tighter than FOM's <= 30)",
-   "pH": "6.5-8.0",
-   "conductivity_max": "4.0 dSm-1",
-   "heavy_metals_mg_per_kg": {
+   "moisture_max_pct": "30-70",
+   "organic_carbon_min_pct": "12-14",
+   "pH": "6.0-8.4",
+   "electrical_conductivity_max": "4.0 (dSm-1)",
+   "pathogens": "Nil",
+   "heavy_metals_mg_per_kg_max": {
     "As": 10,
     "Cd": 5,
     "Cr": 50,
     "Cu": 300,
     "Hg": 0.15,
-    "Pb": 50,
-    "Zn": 1000,
-    "Ni": "(not on sheet)"
+    "Ni": 50,
+    "Pb": 100,
+    "Zn": 1000
    },
-   "confirmation_status": "NOT CONFIRMED against the primary FCO gazette",
-   "source_caveat": "from a GeM government LFOM specification sheet (dated 2023-05) — PRE-DATES Schedule VIII. Attempted to confirm against the primary 27-Mar-2025 gazette 2026-07-24 and COULD NOT from this machine: secondary news reproduces the FOM numbers but not LFOM; the two legalitysimplified amendment pages 403-blocked; the egazette S.O. PDF returns unreadable binary; the FAI/slideshare 'organic manures' doc covers Schedule IV not VIII. 🔴 Cr (50) / Cu (300) appear TRANSPOSED vs the FOM table (Cr 300 / Cu 50) and Pb 50 vs FOM 100 — UNRESOLVED. Liquid-specific values (90-97 pct moisture, C:N <20, pH 6.5-8.0) are the reliable differentiators regardless.",
-   "date_note": "two instruments surfaced: the FOM/LFOM spec notification dated 27-Mar-2025 AND a formal 'Twelfth Amendment Order 2025' effective 3-Dec-2025 that amends sampling/analysis procedures — confirm which numbers are current against the primary gazette; egazette.gov.in / agricoop.gov.in are the sources to try from an unblocked network"
+   "no_NPK_or_CN": "Schedule VIII FOM has NO NPK minimum, NO C:N ratio, NO sieve requirement — defined on carbon + heavy metals only",
+   "correction": "🔴 SUPERSEDES the earlier FACT-tender numbers in this block (which had NPK 1.2 pct / C:N <=30 / sieve / TOC flat-14 / Cr 300 / Cu 50 / pH 6.5-8.4) — those were a DIFFERENT/older FOM standard, not Schedule VIII. Gazette-correct: carbon 12-14 pct, pH 6.0-8.4, Cr 50 / Cu 300, no NPK/C:N/sieve"
   },
+  "lfom_spec_schedule_viii": {
+   "moisture_liquid_max_pct": "90-97",
+   "organic_carbon_min_pct_by_weight": "1.5",
+   "pH": "6.0-8.4",
+   "electrical_conductivity_max": "4.0 (dSm-1)",
+   "pathogens": "Nil (infectious)",
+   "heavy_metals_mg_per_kg_max": {
+    "As": 10,
+    "Cd": 5,
+    "Cr": 50,
+    "Cu": 300,
+    "Hg": 0.15,
+    "Ni": 50,
+    "Pb": 100,
+    "Zn": 1000
+   },
+   "analysis_note": "gazette Part C: LFOM parameters estimated on DRY-WEIGHT basis — oven-dry 1000 ml at 105C before analysis",
+   "confirmation_status": "✅ CONFIRMED against primary gazette CG-DL-E-29032025-262118 (2026-07-24)",
+   "correction": "🔴 SUPERSEDES the earlier GeM-2023 numbers (TOC 14 pct 'dry basis', C:N <20, Pb 50). Gazette-correct LFOM: organic carbon 1.5 pct BY WEIGHT (liquid), pH 6.0-8.4, same heavy metals as FOM incl. Pb 100; NO NPK/C:N. The Cr/Cu 'transpose' flag is RESOLVED — both FOM and LFOM are Cr 50 / Cu 300; the old FACT-tender FOM table was the wrong one",
+   "amendment_naming": "the operative instrument is the 3rd Amendment Order 2025 (27-Mar-2025); secondary sources mis-labelled it the '12th amendment' and referenced a later 3-Dec-2025 amendment on sampling/analysis — the SPEC numbers above are from the 27-Mar-2025 primary gazette"
+  },
+  "egazette_access": "🔑 egazette.gov.in is a session-token ASP.NET site (curl-hostile: SearchMenu.aspx 302s to error without the session cookie). Route that WORKS: browser-drive the home page's Search postback (__doPostBack('sgzt','')) -> 'Search by Ministry' (btnMinistry) -> set ddlMinistry=5 (Agri & Farmers Welfare) + ddlmonth + ddlyear -> ImgSubmitDetails; each result's download button hits the DIRECT PDF at egazette.gov.in/WriteReadData/<year>/<gid-numeric>.pdf (no session needed for the PDF itself)",
   "bulk_sale_notifications": [
    {
     "no": "I",

@@ -183,6 +183,6 @@
  },
  "ii_ticker_validation": {
   "last_refresh_attempt": "2026-07-27",
-  "refresh_status": "SKIPPED — www.investindia.gov.in returned 403 (IP block since ~2026-07-27); retained prior matches. static.investindia.gov.in still works; retry from an unblocked network or via the static CDN / browser pane"
+  "refresh_status": "SKIPPED — www.investindia.gov.in returned 403 (IP block since ~2026-07-27). No fresh ticker matches this run; build_company_db had already reset the layer so this block carries status only. Will repopulate when access restores (static.investindia.gov.in still 200s; retry from an unblocked network or the browser pane)"
  }
 }

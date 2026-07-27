@@ -167,10 +167,12 @@ def main():
         prev = layer.get("ii_ticker_validation", {})
         prev["last_refresh_attempt"] = date.today().isoformat()
         prev["refresh_status"] = ("SKIPPED — www.investindia.gov.in returned 403 "
-                                  "(IP block since ~2026-07-27); retained prior "
-                                  "matches. static.investindia.gov.in still works; "
-                                  "retry from an unblocked network or via the "
-                                  "static CDN / browser pane")
+                                  "(IP block since ~2026-07-27). No fresh ticker "
+                                  "matches this run; build_company_db had already "
+                                  "reset the layer so this block carries status "
+                                  "only. Will repopulate when access restores "
+                                  "(static.investindia.gov.in still 200s; retry "
+                                  "from an unblocked network or the browser pane)")
         layer["ii_ticker_validation"] = prev
         with open(LAYER, "w") as f:
             json.dump(layer, f, indent=1, ensure_ascii=False)

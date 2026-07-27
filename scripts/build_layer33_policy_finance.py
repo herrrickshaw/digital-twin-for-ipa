@@ -313,16 +313,77 @@ CBG_GOBARDHAN = {
                    "NOT re-extracted here"),
     },
     "bulk_sale_notifications": [
-        {"no": "I", "date": "2023-11-14"}, {"no": "II", "date": "2024-03-15"},
-        {"no": "III", "date": "2024-09-02"}, {"no": "IV", "date": "2025-03-06"},
+        {"no": "I", "date": "2023-11-14", "note": "~27 plants — first cohort; incl. HPCL, Indian Potash, Verbio India"},
+        {"no": "II", "date": "2024-03-15", "note": "~10-14 plants; incl. Mahindra Waste-to-Energy, Banas Dairy"},
+        {"no": "III", "date": "2024-09-02", "note": "~19-21 plants"},
+        {"no": "IV", "date": "2025-03-06", "note": "~7 plants — PSU/co-op heavy: GAIL India, NDDB Mrida, Baramati Agro"},
         {"no": "V", "date": "2025-07-08", "note": "17 plants, 6 states, Reliance group = 8"},
         {"no": "VI", "date": "2025-12-16"},
         {"no": "VII", "date": "2026-02-25", "note": "13 plants incl. RIL Indore+Bhopal, Adani Total Energies, Carbon Masters x4"},
     ],
     "authorised_plants": {
         "note": ("rolling 3-yr authorisations; each notification adds a fresh "
-                 "batch. V + VII fully parsed from the gazette below; I-IV/VI "
-                 "not individually extracted."),
+                 "batch. All I-VII parsed from the gazette PDFs; counts are "
+                 "approximate where the bilingual (Hindi/English) layout wraps "
+                 "names — confidently-read English names listed per notification."),
+        "I_2023_11_14": [   # first/largest cohort (~27 plants)
+            "Vyzag Bio Energy Fuels Pvt Ltd (Visakhapatnam, AP)",
+            "Akshar Biotech Pvt Ltd (Surat, Gujarat)", "Bleach Energy (Anand, Gujarat)",
+            "Green Earth Biogas Pvt Ltd", "Govardhannathji Energies LLP",
+            "Spectrum Renewable Energy Pvt Ltd (multiple sites)",
+            "Leafiniti Bioenergy Pvt Ltd (Bagalkot, Karnataka)",
+            "Hycons Bioenergy Pvt Ltd (Bengaluru)", "Indore Clean Energy Pvt Ltd",
+            "Clarus Bioenergy Pvt Ltd (Sangli, MH)",
+            "Noble Exchange Environment Solutions Pune LLP",
+            "United Bioenergy Pvt Ltd", "T R Mega Foods and Beverages LLP",
+            "Verbio India Pvt Ltd", "Energim Sustainable Solutions Cuddalore Pvt Ltd",
+            "IAV Biogas Pvt Ltd", "IOT Biogas Pvt Ltd (Namakkal, TN)",
+            "SLR Energy", "Solika Energy Pvt Ltd (Mahabubnagar, Telangana)",
+            "Indian Potash Ltd (Muzaffarnagar, UP)",
+            "Hindustan Petroleum Corporation Ltd (HPCL, Budaun, UP)",
+            "Biospark Energy", "Anarobic Energy Pvt Ltd",
+        ],
+        "II_2024_03_15": [   # ~10-14 plants
+            "ARC Bio Fuel Pvt Ltd (Barnala, Punjab)", "Farm Gas Pvt Ltd",
+            "Transtech Green Power Pvt Ltd",
+            "Mahindra Waste to Energy Solutions Ltd (multiple sites: Aurangabad, Udaipur, Adoni)",
+            "Banaskantha District Co-op Milk Producers' Union Ltd (Banas Dairy)",
+            "Spark Bio Gas Pvt Ltd", "Bio CNG - Madhavaram",
+            "Circle CBG India Pvt Ltd",
+        ],
+        "III_2024_09_02": [   # ~19-21 plants
+            "Girvar and Sons Bio Energy Pvt Ltd (Muzaffarnagar, UP)",
+            "Lakhimpur Kheri RNG Pvt Ltd (UP)", "Sainsons Paper Industries Pvt Ltd",
+            "Spark Bio Gas Pvt Ltd", "SPS Bio-Chem — Yamunanagar (Haryana)",
+            "Phoenix India Compressed Bio Gas (Birbhum, WB)",
+            "Envirocare CBG Pvt Ltd (Jabalpur, MP)",
+            "Sustainable Impacts Biogas Plant (KIADB, Karnataka)",
+            "Bio-Fuels Complex CBG (Gola, UP)",
+            "SampurnAgri Ventures Pvt Ltd (Fazilka, Punjab)",
+            "Carbon Circle Pvt Ltd (UP)", "LR Energy Karnal Pvt Ltd (Haryana)",
+        ],
+        "IV_2025_03_06": [   # ~7 plants — PSU/co-op heavy
+            "NDDB Mrida Ltd (Chandauli, UP)",
+            "Gayathri Innovative Energies Pvt Ltd (East Godavari, AP)",
+            "GAIL (India) Ltd (Ranchi, Jharkhand)",
+            "Baramati Agro Ltd (Pune, MH)",
+            "Natural Sugar and Allied Industries Ltd (Dharashiv, MH)",
+            "NKJ Biofuel Pvt Ltd (Kabirdham, Chhattisgarh)",
+            "WI Green Ventures LLP (Amroha, UP)",
+            "LR Energy Vrindavan Pvt Ltd (corrigendum)",
+        ],
+        "VI_2025_12_16": [   # ~18-20 plants
+            "Barsana Biogas Project — Adani Total Energies Biomass Ltd (UP)",
+            "KDM Business Network Ltd", "Lathar Green Energy Pvt Ltd (Shahjahanpur, UP)",
+            "MEPL Bio-Energy LLP (Batala, Punjab)",
+            "Pilm Biotech Pvt Ltd (Bhavnagar, Gujarat)",
+            "Paliwal Bio Energy Pvt Ltd (MP)",
+            "Transtech Green Energy Pvt Ltd (Jalore, Rajasthan)",
+            "Reliance Industries Ltd — Nagothane CBG (MH)",
+            "Reliance Industries Ltd — Kota CBG (Rajasthan)",
+            "DEVNICS LLP (Hisar, Haryana)", "Sayaji Bio Energy LLP (Gujarat)",
+            "Satish Sugars Ltd (Karnataka)",
+        ],
         "V_2025_07_08": [
             "Atmos AJS Fuels Pvt Ltd", "Reliance Industries Ltd — Barabanki CBG (UP)",
             "DCM Shriram Ltd — Ajbapur CBG (UP)", "Degna Bioenergy Pvt Ltd (Hapur, UP)",
@@ -354,9 +415,13 @@ CBG_GOBARDHAN = {
             "Carbon Masters India Pvt Ltd — Domlur, Bengaluru",
             "Carbon Masters India Pvt Ltd — Jaya Nagar, Bengaluru",
         ],
-        "dominance": ("the majors clear the compliance bar: Reliance group = 8 of "
-                      "17 in V (Bioenergy/Chemicals&Materials/New Solar Energy + "
-                      "RIL) + 2 in VII; Adani Total Energies enters in VII"),
+        "dominance": ("the majors clear the compliance bar across the series: Reliance "
+                      "group = 8 of 17 in V + 2 in VII + 2 in VI (Nagothane/Kota); "
+                      "Adani Total Energies (Barsana VI, Mathura VII); PSUs/majors "
+                      "HPCL + Indian Potash + Verbio (I), Mahindra + Banas Dairy "
+                      "(II), GAIL India + NDDB Mrida + Baramati Agro (IV); "
+                      "Carbon Masters x4 Bengaluru (VII). ~90+ plant-authorisations "
+                      "total across I-VII"),
     },
     "mda_economics": {
         "what": ("Market Development Assistance — makes the FCO authorisation "

@@ -153,7 +153,31 @@ def main():
         """
     )
 
-    urls = sector_urls()
+    # Invest India (www.investindia.gov.in) began IP-blocking with a hard 403
+    # "Access Restricted" page ~2026-07-27. Degrade gracefully (access failure
+    # as data, twin convention) rather than crash the weekly cron — preserve
+    # the last good ii_ticker_validation block and exit clean.
+    try:
+        urls = sector_urls()
+    except Exception as e:
+        urls = []
+        print(f"sector_urls FAILED: {type(e).__name__}: {str(e)[:80]}")
+    if not urls:
+        layer = json.load(open(LAYER))
+        prev = layer.get("ii_ticker_validation", {})
+        prev["last_refresh_attempt"] = date.today().isoformat()
+        prev["refresh_status"] = ("SKIPPED — www.investindia.gov.in returned 403 "
+                                  "(IP block since ~2026-07-27); retained prior "
+                                  "matches. static.investindia.gov.in still works; "
+                                  "retry from an unblocked network or via the "
+                                  "static CDN / browser pane")
+        layer["ii_ticker_validation"] = prev
+        with open(LAYER, "w") as f:
+            json.dump(layer, f, indent=1, ensure_ascii=False)
+        con.commit()
+        con.close()
+        print("Invest India blocked (403) — kept prior ticker matches, exiting clean")
+        return
     print(f"{len(urls)} sector pages")
     with ThreadPoolExecutor(max_workers=8) as ex:
         pages = dict(zip(urls, ex.map(scrape_ticker, urls)))

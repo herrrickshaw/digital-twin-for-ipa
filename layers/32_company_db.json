@@ -51,23 +51,6 @@
   "07_investor_pairings"
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
- "news_collection": {
-  "ran": "2026-07-27",
-  "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
-  "api_calls_used": 39,
-  "calls_by_source": {
-   "newsapi": 26,
-   "newsdata": 2,
-   "marketaux": 10,
-   "alphavantage": 1
-  },
-  "articles_total": 109,
-  "new_articles": 109,
-  "match_rows_added": 8,
-  "exception_news_hits": [],
-  "sources_skipped_or_errors": [],
-  "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
- },
  "sebi_public_issues": {
   "ran": "2026-07-27",
   "since": "2025-01-01",
@@ -197,5 +180,9 @@
   "records": [],
   "errors": [],
   "mca_status": "mca.gov.in 403 (re-tested 2026-07-23); zaubacorp 403; thecompanycheck/falconebiz reachable but unofficial"
+ },
+ "ii_ticker_validation": {
+  "last_refresh_attempt": "2026-07-27",
+  "refresh_status": "SKIPPED — www.investindia.gov.in returned 403 (IP block since ~2026-07-27); retained prior matches. static.investindia.gov.in still works; retry from an unblocked network or via the static CDN / browser pane"
  }
 }

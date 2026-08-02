@@ -1,8 +1,8 @@
 # Quarterly Reportage — key announcements × scheme × ministry
 
-*Generated 2026-07-22 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
+*Generated 2026-08-02 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
 
-## 2026Q3 — 54 scheme-mapped announcements
+## 2026Q3 — 123 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -36,15 +36,20 @@
 | 2026-07-15 | **India Semiconductor Mission / Semicon** | Ministry of Electronics & IT | Cabinet approves Semicon 2.0 - Government delivers on its commitment for a long-term policy support to Semiconductors in | [2284796](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284796) |
 | 2026-07-15 | **MPMS (LSEM successor)** | Ministry of Electronics & IT | Cabinet approves Mobile Phone Manufacturing Scheme (MPMS) | [2284792](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284792) |
 | 2026-07-15 | **PLI-ACC** | Ministry of Heavy Industries | The Ministry of Heavy Industries invites bids through Global Tender for the selection of beneficiaries to set up giga-sc | [2284916](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284916) |
-| … | | | *24 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *93 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
-<details><summary>Other Cabinet/CCEA approvals this quarter (5)</summary>
+<details><summary>Other Cabinet/CCEA approvals this quarter (10)</summary>
 
 - 2026-07-01 · Cabinet approves the construction of 4/6 lane Access-Controlled Kanpur-Kabrai section of NH-34 in Uttar Pradesh on BOT (Toll) Mode · [2279819](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279819)
 - 2026-07-01 · Cabinet approves Construction of 6 Lane Road Tunnel For NH-148AE connecting Dwarka Expressway (NH 248 BB) with Nelson Mandela Marg · [2279818](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279818)
 - 2026-07-15 · Cabinet approves two multitracking projects covering Four Districts across Odisha and Jharkhand, increasing the existing network o · [2284807](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284807)
 - 2026-07-15 · Cabinet approves development of 6 lane Greenfield Elevated Corridor & Ramps/Loops & Foot Over Bridge between National Highway-19 a · [2284783](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284783)
 - 2026-07-15 · Cabinet approves development of 6/4 lane Elevated Corridor along Varuna River Bank & its Ramps/Loops in Uttar Pradesh on Hybrid An · [2284781](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284781)
+- 2026-07-25 · Cabinet approves one multitracking project covering three Districts across Karnataka and Andhra Pradesh, increasing the existing n · [2288858](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2288858)
+- 2026-08-01 · Cabinet approves 'Samudra Manthan' (National Offshore Exploration Scheme) with an outlay of Rs.84,084 crore · [2292445](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292445)
+- 2026-08-01 · Cabinet approves revamped Khelo India Scheme and enhanced Assistance to National Sports Federations (ANSFs) · [2292439](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292439)
+- 2026-08-01 · Cabinet approves continuation of the PM-KISAN Scheme from 2026-27 to 2030-31 with a Financial Outlay of Rs.3.15 lakh crore · [2292437](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292437)
+- 2026-08-01 · Cabinet approves 'Pradhan Mantri Surya Sarovar Yojana (PM-SSY)' for Development of Floating Solar Photovoltaic Projects with Energ · [2292433](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292433)
 
 </details>
 

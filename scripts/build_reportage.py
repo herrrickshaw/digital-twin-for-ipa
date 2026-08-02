@@ -295,11 +295,32 @@ def write_html_states():
                 chips = "".join(f'<span class="chip">{_h.escape(s)}</span>' for s in hits)
                 link = (f'<a href="{url}" target="_blank" rel="noopener">{_h.escape(title[:170])}</a>'
                         if (url or "").startswith("http") else _h.escape(title[:170]))
-                body.append(f'<li><span class="d">{date}</span> <span class="m">{_h.escape(st)}</span>{chips}<br>{link}</li>')
+                body.append(f'<li data-st="{_h.escape(st, quote=True)}"><span class="d">{date}</span> '
+                            f'<span class="m">{_h.escape(st)}</span>{chips}<br>{link}</li>')
             parts.append(f'<details {"open" if key != "projects" and len(items) <= 40 else ""}>'
                          f'<summary><b>{label}</b> <span class="cnt">{len(items)}</span></summary>'
                          f'<ul>{"".join(body)}</ul></details>')
         parts.append("</section>")
+    all_states = sorted({STATE_NAMES.get(s, s) for (s,) in
+                         sqlite3.connect(STATE_DB).execute("select distinct state from state_news")})
+    filter_bar = ('<div class="fbar"><button class="fbtn active" data-f="">All states</button>'
+                  + "".join(f'<button class="fbtn" data-f="{_h.escape(s, quote=True)}">{_h.escape(s)}</button>'
+                            for s in all_states) + "</div>")
+    filter_js = """<script>
+document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.fbtn').forEach(function(x){x.classList.remove('active')});
+  b.classList.add('active');var f=b.getAttribute('data-f');
+  document.querySelectorAll('li[data-st]').forEach(function(li){
+    li.style.display=(!f||li.getAttribute('data-st')===f)?'':'none';});
+  document.querySelectorAll('details').forEach(function(d){
+    var vis=d.querySelectorAll('li[data-st]').length===0?null:
+      Array.prototype.some.call(d.querySelectorAll('li[data-st]'),function(li){return li.style.display!=='none'});
+    if(vis!==null){d.style.display=vis?'':'none';if(f&&vis)d.open=true;}});
+  document.querySelectorAll('section').forEach(function(s){
+    var ds=s.querySelectorAll('details');if(!ds.length)return;
+    s.style.display=Array.prototype.some.call(ds,function(d){return d.style.display!=='none'})?'':'none';});
+});});
+</script>"""
     today = datetime.date.today().isoformat()
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -322,17 +343,21 @@ li {{ padding:7px 0; border-top:1px solid var(--bd); }}
 .m {{ color:var(--mut); font-size:.85em; }}
 a {{ color:var(--acc); text-decoration:none; }} a:hover {{ text-decoration:underline; }}
 .note {{ color:var(--mut); font-size:.82em; margin-top:34px; border-top:1px solid var(--bd); padding-top:12px; }}
+.fbar {{ display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 6px; position:sticky; top:0; background:var(--bg); padding:10px 0; z-index:5; }}
+.fbtn {{ background:var(--card); color:var(--fg); border:1px solid var(--bd); border-radius:16px; padding:4px 14px; font-size:.85em; cursor:pointer; }}
+.fbtn.active {{ background:var(--acc); color:#fff; border-color:var(--acc); }}
 </style></head><body><div class="wrap">
 <h1>State Reportage — investment, projects &amp; regulation by quarter</h1>
 <div class="sub">State-government wire ({n_total:,} releases in the register) filtered to investment/MoU news,
 new-project events and key state regulations; classified on machine-translated titles. Archive depth is
 source-limited: Maharashtra from 2019Q3, Madhya Pradesh from 2020Q2; UP/Gujarat/Karnataka latest-only.
 Built {today} by scripts/build_reportage.py.</div>
+{filter_bar}
 {"".join(parts)}
 <div class="note">Register: data/registers/state_news.sqlite (collect_state_news.py daily +
 backfill_state_news.py archives). Classification and scheme chips are keyword-based on machine
 translations — an index into the wire, not a substitute for reading the release.</div>
-</div></body></html>"""
+</div>{filter_js}</body></html>"""
     path = os.path.join(ROOT, "docs/reportage_states.html")
     open(path, "w").write(page)
     print(f"reportage states html: {counted} classified rows across {len(by_q)} quarters -> {path}")
@@ -384,7 +409,8 @@ def write_html_latest(rows, register_total=0, days=30):
         chip = "".join(f'<span class="chip">{_h.escape(s)}</span>' for s in r["schemes"])
         link = (f'<a href="{r["url"]}" target="_blank" rel="noopener">{_h.escape(r["title"][:160])}</a>'
                 if r["url"].startswith("http") else _h.escape(r["title"][:160]))
-        st_parts.append(f'<li><span class="d">{r["date"]}</span> <span class="m">{_h.escape(r["state"])}'
+        st_parts.append(f'<li data-st="{_h.escape(r["state"], quote=True)}"><span class="d">{r["date"]}</span> '
+                        f'<span class="m">{_h.escape(r["state"])}'
                         f'{" · " + _h.escape(r["category"]) if r["category"] else ""}</span> {chip}<br>{link}</li>')
     n_states = len({r["state"] for r in states})
     dmin = min((r[0] for r in recent), default=cutoff)
@@ -415,6 +441,9 @@ li {{ padding:7px 0; border-top:1px solid var(--bd); }}
 a {{ color:var(--acc); text-decoration:none; }} a:hover {{ text-decoration:underline; }}
 h2 {{ font-size:1.1em; margin:30px 0 8px; }}
 .note {{ color:var(--mut); font-size:.82em; margin-top:34px; border-top:1px solid var(--bd); padding-top:12px; }}
+.fbar {{ display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 6px; }}
+.fbtn {{ background:var(--card); color:var(--fg); border:1px solid var(--bd); border-radius:16px; padding:4px 14px; font-size:.85em; cursor:pointer; }}
+.fbtn.active {{ background:var(--acc); color:#fff; border-color:var(--acc); }}
 </style></head><body><div class="wrap">
 <h1>Reportage — Latest Updates</h1>
 <div class="sub">Key announcements {dmin} → {dmax}: central PIB register ({register_total:,} releases, refreshed daily)
@@ -430,12 +459,22 @@ h2 {{ font-size:1.1em; margin:30px 0 8px; }}
 <h2>Cabinet / CCEA — not matched to a scheme keyword</h2>
 <details><summary><b>Cabinet approvals &amp; decisions</b> <span class="cnt">{len(cab_only)}</span></summary><ul>{cab_html}</ul></details>
 <h2>State wire</h2>
+<div class="fbar"><button class="fbtn active" data-f="">All states</button>{"".join(
+    f'<button class="fbtn" data-f="{_h.escape(s, quote=True)}">{_h.escape(s)}</button>'
+    for s in sorted({r["state"] for r in states}))}</div>
 <details open><summary><b>State government releases with scheme / investment-policy signal</b> <span class="cnt">{len(st_parts)}</span></summary><ul>{"".join(st_parts)}</ul></details>
 <div class="note">Generated by scripts/build_reportage.py (write_html_latest). Keyword mapping is an index into the
 registers, not a substitute for reading the release — every central row links its PRID on pib.gov.in; state rows
 deep-link the source site. State wire register: data/registers/state_news.sqlite, refreshed by
 scripts/collect_state_news.py.</div>
-</div></body></html>"""
+</div><script>
+document.querySelectorAll('.fbtn').forEach(function(b){{b.addEventListener('click',function(){{
+  document.querySelectorAll('.fbtn').forEach(function(x){{x.classList.remove('active')}});
+  b.classList.add('active');var f=b.getAttribute('data-f');
+  document.querySelectorAll('li[data-st]').forEach(function(li){{
+    li.style.display=(!f||li.getAttribute('data-st')===f)?'':'none';}});
+}});}});
+</script></body></html>"""
     path = os.path.join(ROOT, "docs/reportage_latest.html")
     open(path, "w").write(page)
     print(f"reportage latest html: {len(recent)} central rows, {len(states)} state-wire rows ({days}d window) -> {path}")

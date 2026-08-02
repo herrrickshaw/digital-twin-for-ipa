@@ -27,7 +27,7 @@ Sources (extensible via SOURCES; two modes):
 Usage:  python3 scripts/collect_state_news.py [--days 14] [--state MP] [--no-translate]
 Rerun daily (idempotent -- INSERT OR IGNORE on (state, newsid)).
 """
-import argparse, datetime, html as _html, http.cookiejar, json, os, re, sqlite3, sys, time, urllib.parse, urllib.request
+import argparse, datetime, html as _html, http.cookiejar, json, os, re, sqlite3, ssl, sys, time, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data/registers/state_news.sqlite")
@@ -39,8 +39,21 @@ def _get(url, timeout=45, opener=None, data=None, headers=None):
     hdrs.update(headers or {})
     req = urllib.request.Request(url, data=data, headers=hdrs)
     op = opener.open if opener else urllib.request.urlopen
-    with op(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+    try:
+        with op(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", "replace")
+    except urllib.error.URLError as e:
+        # several Indian govt sites serve incomplete cert chains that curl's CA
+        # bundle tolerates but Python rejects -- retry unverified (public,
+        # read-only data; no credentials ever sent on these requests)
+        if not isinstance(getattr(e, "reason", None), ssl.SSLCertVerificationError):
+            raise
+        print(f"warning: broken cert chain, retrying unverified: {url.split('/')[2]}", file=sys.stderr)
+        ctx = ssl._create_unverified_context()
+        if opener:
+            raise  # cookie-carrying openers keep strict TLS
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
+            return r.read().decode("utf-8", "replace")
 
 
 def _get_json(url, **kw):
@@ -230,22 +243,214 @@ def fetch_ka():
     return rows
 
 
+# ---------------------------------------------------------------- GA (latest)
+def fetch_goa():
+    """Goa: dip.goa.gov.in is stock WordPress -- REST API, mixed English/Marathi."""
+    rows = []
+    for page in (1, 2):
+        url = ("https://dip.goa.gov.in/wp-json/wp/v2/posts?"
+               + urllib.parse.urlencode({"per_page": 100, "page": page, "_fields": "id,date,link,title"}))
+        try:
+            posts = _get_json(url)
+        except Exception as e:
+            print(f"GA page {page}: FETCH FAILED ({e})", file=sys.stderr)
+            break
+        for x in posts:
+            title = re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", "", x["title"]["rendered"]))).strip()
+            if title:
+                rows.append({"newsid": str(x["id"]), "date": (x.get("date") or "")[:10],
+                             "title": title, "category": "DIP wire", "keywords": "",
+                             "url": x.get("link") or ""})
+        if len(posts) < 100:
+            break
+        time.sleep(0.4)
+    return rows
+
+
+# ---------------------------------------------------------------- RJ (latest)
+def fetch_rajasthan(page_size=100):
+    """Rajasthan: DIPR's Angular portal is backed by an open POST JSON API
+    (73k+ dated releases). No title field -- derive one from the Description
+    HTML body (Hindi). Detail links aren't stable; prefer the row's PDF."""
+    body = json.dumps({"PageSize": page_size, "Page": 1, "OrderBy": "PressreleaseDate",
+                       "OrderByAsc": 0, "IsBase64File": False, "DepartmentCode": 0}).encode()
+    d = json.loads(_get("https://dipr.rajasthan.gov.in/webapi/PublicPortal/DepartmentWebsite/GetDIPRPressReleaseByFilter",
+                        data=body, headers={"Content-Type": "application/json"}))
+    rows = []
+    for x in (d.get("Data") or {}).get("Data", []):
+        text = re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", " ", x.get("Description") or ""))).strip()
+        if not text:
+            continue
+        url = x.get("PDFUrl") or "https://dipr.rajasthan.gov.in/pages/press-release-list/0"
+        rows.append({"newsid": str(x.get("Id")), "date": (x.get("PressreleaseDate") or "")[:10],
+                     "title": text[:200], "category": (x.get("DepartmentTitle") or "DIPR wire").strip(),
+                     "keywords": (x.get("KeyWords") or "")[:200], "url": url})
+    return rows
+
+
+# ---------------------------------------------------------------- PB (latest)
+_PB_ITEM = re.compile(
+    r'href="(/en/press-releases/[^"]+)"><p>([^<]{10,250})</p></a>.*?icofont-ui-calendar"></i>([A-Za-z]+ \d{1,2}, 20\d\d)', re.S)
+
+
+def fetch_punjab():
+    """Punjab: ipr.punjab.gov.in English HQ press list, server-rendered HTML."""
+    h = _get("https://ipr.punjab.gov.in/en/press-releases/hq-press-releases/", timeout=60)
+    rows, seen = [], set()
+    for m in _PB_ITEM.finditer(h):
+        path, title, ds = m.groups()
+        try:
+            date = datetime.datetime.strptime(ds, "%B %d, %Y").date().isoformat()
+        except ValueError:
+            continue
+        slug = path.rstrip("/").rsplit("/", 1)[-1][:120]
+        if slug in seen:
+            continue
+        seen.add(slug)
+        rows.append({"newsid": slug, "date": date, "title": re.sub(r"[*\s]+", " ", title).strip(),
+                     "category": "HQ press", "keywords": "",
+                     "url": "https://ipr.punjab.gov.in" + path})
+    return rows
+
+
+# ---------------------------------------------------------------- MZ (latest)
+_MZ_ITEM = re.compile(
+    r'<a href="(/post/[^"]+)"[^>]*title="([^"]{10,250})".*?Dated:\s*(\d{1,2})<sup>[a-z]{2}</sup>\s+([A-Za-z]{3})\s+(\d{2})\b', re.S)
+
+
+def fetch_mizoram():
+    """Mizoram: DIPR English press-release category, server-rendered HTML."""
+    rows = []
+    for page in (1, 2):
+        h = _get(f"https://dipr.mizoram.gov.in/category/english-press-releases?page={page}", timeout=45)
+        for m in _MZ_ITEM.finditer(h):
+            path, title, dd, mon, yy = m.groups()
+            mth = _UP_MONTHS.get(mon.title())
+            if not mth:
+                continue
+            date = f"20{yy}-{mth:02d}-{int(dd):02d}"
+            rows.append({"newsid": path.rsplit("/", 1)[-1][:120], "date": date,
+                         "title": _html.unescape(title).strip(), "category": "DIPR English",
+                         "keywords": "", "url": "https://dipr.mizoram.gov.in" + path})
+        time.sleep(0.4)
+    return rows
+
+
+# ---------------------------------------------------------------- NL (latest)
+_NL_ITEM = re.compile(
+    r'<h2 class="entry-title[^"]*">\s*<a href="(/[^"]+)"[^>]*>([^<]{10,250})</a>\s*</h2>.*?<time datetime="([A-Za-z]{3} \d{1,2} 20\d\d)"', re.S)
+
+
+def fetch_nagaland():
+    """Nagaland: IPR /naga-news Drupal view, server-rendered, 6 items/page."""
+    rows = []
+    for page in range(4):  # 0-based; 4 pages = 24 newest items
+        h = _get(f"https://ipr.nagaland.gov.in/naga-news?page={page}", timeout=45)
+        for m in _NL_ITEM.finditer(h):
+            path, title, ds = m.groups()
+            try:
+                date = datetime.datetime.strptime(ds, "%b %d %Y").date().isoformat()
+            except ValueError:
+                continue
+            rows.append({"newsid": path.strip("/")[:120], "date": date,
+                         "title": _html.unescape(title).strip().title() if title.isupper() else _html.unescape(title).strip(),
+                         "category": "Naga News", "keywords": "",
+                         "url": "https://ipr.nagaland.gov.in" + path})
+        time.sleep(0.4)
+    return rows
+
+
+# ---------------------------------------------------------------- SK (latest)
+_SK_ITEM = re.compile(
+    r'<h2 class="text-lg font-semibold">([^<]{5,250})</h2>\s*<p[^>]*>Published on:\s*(\d{1,2} [A-Za-z]{3} 20\d\d)</p>.*?href="(/press_releases/[^"]+)"', re.S)
+
+
+def fetch_sikkim():
+    """Sikkim: IPR ASP.NET Core press list; dedupe on the PDF GUID (slugs repeat)."""
+    rows, seen = [], set()
+    for page in (1, 2, 3):
+        h = _get(f"https://ipr.sikkim.gov.in/Home/PressReleasesList?page={page}", timeout=45)
+        for m in _SK_ITEM.finditer(h):
+            title, ds, pdf = m.groups()
+            guid = pdf.split("/")[-1].split("_")[0][:60]
+            if guid in seen:
+                continue
+            seen.add(guid)
+            try:
+                date = datetime.datetime.strptime(ds, "%d %b %Y").date().isoformat()
+            except ValueError:
+                continue
+            rows.append({"newsid": guid, "date": date, "title": _html.unescape(title).strip(),
+                         "category": "IPR", "keywords": "",
+                         "url": "https://ipr.sikkim.gov.in" + urllib.parse.quote(pdf)})
+        time.sleep(0.4)
+    return rows
+
+
+# ---------------------------------------------------------------- CH (latest)
+_CH_ROW = re.compile(
+    r'<tr>\s*<td>\d+</td>\s*<td><a href="(https://chandigarh\.gov\.in/cadmin//uploads/[^"]+)"[^>]*>\s*([^<]{5,250})</a></td>\s*<td>([^<]*)</td>\s*<td>\s*(\d{2}/\d{2}/20\d\d)', re.S)
+
+
+def fetch_chandigarh():
+    """Chandigarh UT: /public-notice press table, all rows in one response."""
+    h = _get("https://chandigarh.gov.in/public-notice", timeout=45)
+    rows = []
+    for m in _CH_ROW.finditer(h):
+        pdf, title, dept, ds = m.groups()
+        d, mth, y = ds.split("/")
+        rows.append({"newsid": pdf.rsplit("/", 1)[-1].split(".")[0][:80],
+                     "date": f"{y}-{mth}-{d}", "title": re.sub(r"\s+", " ", _html.unescape(title)).strip(),
+                     "category": re.sub(r"\s+", " ", dept).strip() or "Administration",
+                     "keywords": "", "url": pdf})
+    return rows
+
+
+# ---------------------------------------------------------------- DD (latest)
+_DD_ROW = re.compile(
+    r'<td role="rowheader"[^>]*>([^<]{5,250})</td>\s*<td>\s*(\d{2}/\d{2}/20\d\d)</td>.*?href="(https://cdnbbsr\.s3waas\.gov\.in/[^"]+)"', re.S)
+
+
+def fetch_dnh_dd():
+    """Dadra NH & Daman Diu UT: latest-updates document category (S3WaaS table)."""
+    rows = []
+    for page in ("", "page/2/"):
+        h = _get(f"https://ddd.gov.in/document-category/latest-updates/{page}", timeout=45)
+        for m in _DD_ROW.finditer(h):
+            title, ds, pdf = m.groups()
+            d, mth, y = ds.split("/")
+            rows.append({"newsid": pdf.rsplit("/", 1)[-1].split(".")[0][:80],
+                         "date": f"{y}-{mth}-{d}", "title": re.sub(r"\s+", " ", _html.unescape(title)).strip(),
+                         "category": "Latest updates", "keywords": "", "url": pdf})
+        time.sleep(0.4)
+    return rows
+
+
 SOURCES = {
     "MP": {"state": "Madhya Pradesh", "mode": "daily", "fetch": fetch_mp},
     "UP": {"state": "Uttar Pradesh", "mode": "latest", "fetch": fetch_up},
     "GJ": {"state": "Gujarat", "mode": "latest", "fetch": fetch_gujarat},
     "MH": {"state": "Maharashtra", "mode": "latest", "fetch": fetch_mh},
     "KA": {"state": "Karnataka", "mode": "latest", "fetch": fetch_ka},
-    # Candidate next states (probed 2026-08-02, see docs/STATE_SOURCES.md):
-    # RJ dipr.rajasthan.gov.in, TS ipr.telangana.gov.in, AS dipr.assam.gov.in,
-    # WB wb.gov.in/press-release.aspx
+    "GA": {"state": "Goa", "mode": "latest", "fetch": fetch_goa},
+    "RJ": {"state": "Rajasthan", "mode": "latest", "fetch": fetch_rajasthan},
+    "PB": {"state": "Punjab", "mode": "latest", "fetch": fetch_punjab},
+    "MZ": {"state": "Mizoram", "mode": "latest", "fetch": fetch_mizoram},
+    "NL": {"state": "Nagaland", "mode": "latest", "fetch": fetch_nagaland},
+    "SK": {"state": "Sikkim", "mode": "latest", "fetch": fetch_sikkim},
+    "CH": {"state": "Chandigarh", "mode": "latest", "fetch": fetch_chandigarh},
+    "DD": {"state": "DNH & Daman-Diu", "mode": "latest", "fetch": fetch_dnh_dd},
+    # Dead ends (probed 2026-08-02, see docs/STATE_SOURCES.md): CG WAF-blocks
+    # curl; OD archive stale since 2023; WB page stale + North-Bengal-only;
+    # UK stale since mid-2025.
 }
 
 
 def ensure_db():
     os.makedirs(os.path.dirname(DB), exist_ok=True)
-    con = sqlite3.connect(DB)
+    con = sqlite3.connect(DB, timeout=60)
     con.execute("pragma journal_mode=DELETE")
+    con.execute("pragma busy_timeout=60000")  # collector + signal pass may overlap
     con.execute("""create table if not exists state_news(
         state text not null, newsid text not null, date text not null,
         title text not null, category text, keywords text, url text,

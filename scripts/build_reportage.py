@@ -137,7 +137,9 @@ GENERIC = re.compile(r"cabinet approv|incentive|subsid|scheme launch|\bVGF\b|out
 # state news register built by scripts/collect_state_news.py (mpinfo.org etc.)
 STATE_DB = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/registers/state_news.sqlite")
 STATE_NAMES = {"MP": "Madhya Pradesh", "UP": "Uttar Pradesh", "GJ": "Gujarat",
-               "MH": "Maharashtra", "KA": "Karnataka"}
+               "MH": "Maharashtra", "KA": "Karnataka", "GA": "Goa", "RJ": "Rajasthan",
+               "PB": "Punjab", "MZ": "Mizoram", "NL": "Nagaland", "SK": "Sikkim",
+               "CH": "Chandigarh", "DD": "DNH & Daman-Diu"}
 # state-side signal terms: industrial/investment policy language that the central
 # scheme map won't catch but matters for an IPA watching state governments
 STATE_SIGNAL = re.compile(

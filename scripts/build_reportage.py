@@ -134,6 +134,36 @@ def refine_pli(label, title):
 # generic incentive-language filter for line-ministry releases
 GENERIC = re.compile(r"cabinet approv|incentive|subsid|scheme launch|\bVGF\b|outlay|crore package", re.I)
 
+# state news register built by scripts/collect_state_news.py (mpinfo.org etc.)
+STATE_DB = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/registers/state_news.sqlite")
+STATE_NAMES = {"MP": "Madhya Pradesh"}
+# state-side signal terms: industrial/investment policy language that the central
+# scheme map won't catch but matters for an IPA watching state governments
+STATE_SIGNAL = re.compile(
+    r"invest|industrial|industry|incentive|subsid|policy|\bMoU\b|crore|manufactur|"
+    r"semiconductor|solar|renewable|logistics|park\b|\bIT\b|startup|employment.{0,20}(package|scheme)|"
+    r"global investors|summit", re.I)
+
+
+def state_wire(days=30):
+    """Recent state-government releases from the state_news register, scheme-mapped
+    where the central keyword map hits, otherwise kept if they carry investment/
+    industrial-policy signal language. Returns newest-first row dicts."""
+    if not os.path.exists(STATE_DB):
+        return []
+    cutoff = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
+    scon = sqlite3.connect(STATE_DB)
+    out = []
+    for state, date, title, category, url in scon.execute(
+            "select state, date, title, category, url from state_news where date >= ? order by date desc", (cutoff,)):
+        hits = [refine_pli(s, title) for rx, s, m in COMP if rx.search(title or "")]
+        if not hits and not STATE_SIGNAL.search(title or ""):
+            continue
+        out.append({"state": STATE_NAMES.get(state, state), "date": date, "title": title,
+                    "category": category or "", "url": url or "", "schemes": hits[:2]})
+    scon.close()
+    return out
+
 
 def quarter_of(datestr):
     y, mth = int(datestr[:4]), int(datestr[5:7])
@@ -192,6 +222,110 @@ def main():
     print(f"reportage: {total} scheme-mapped announcements across {len(by_q)} quarters -> {out}")
     write_html(by_q, total)
     write_html_ministry(by_q, total)
+    write_html_latest(rows, register_total=len(rows))
+
+
+def write_html_latest(rows, register_total=0, days=30):
+    """Emit docs/reportage_latest.html -- self-contained latest-updates page:
+    central PIB scheme-mapped + Cabinet items from the last `days` days, grouped
+    by scheme, plus the state wire (collect_state_news.py register)."""
+    import html as _h
+    from collections import Counter
+    cutoff = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
+    recent, cab_only = [], []
+    for prid, date, ministry, title in rows:
+        if (date or "") < cutoff:
+            continue
+        hits = [refine_pli(s, title) for rx, s, m in COMP if rx.search(title or "")]
+        ministry = ministry or "(unattributed)"
+        if hits:
+            recent.append((date, prid, ministry, title, hits[:2]))
+        elif ministry.startswith("Cabinet") and GENERIC.search(title or ""):
+            cab_only.append((date, prid, ministry, title))
+    recent.sort(reverse=True)
+    cab_only.sort(reverse=True)
+    by_scheme = defaultdict(list)
+    for r in recent:
+        for s in r[4]:
+            by_scheme[s].append(r)
+    states = state_wire(days)
+
+    def li(date, ministry, title, url, label):
+        return (f'<li><span class="d">{date}</span> <span class="m">{_h.escape(ministry)}</span><br>'
+                f'<a href="{url}" target="_blank" rel="noopener">{_h.escape((title or "")[:160])}</a></li>')
+
+    sections = []
+    for s, items in sorted(by_scheme.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+        seen, uniq = set(), []
+        for it in items:
+            if it[1] not in seen:
+                seen.add(it[1]); uniq.append(it)
+        body = "".join(li(d, m, t, f"https://www.pib.gov.in/PressReleasePage.aspx?PRID={p}", s)
+                       for d, p, m, t, _hits in uniq)
+        sections.append(f'<details {"open" if len(uniq) >= 4 else ""}><summary><b>{_h.escape(s)}</b> '
+                        f'<span class="cnt">{len(uniq)}</span></summary><ul>{body}</ul></details>')
+    cab_html = "".join(li(d, m, t, f"https://www.pib.gov.in/PressReleasePage.aspx?PRID={p}", "")
+                       for d, p, m, t in cab_only)
+    st_parts = []
+    for r in states:
+        chip = "".join(f'<span class="chip">{_h.escape(s)}</span>' for s in r["schemes"])
+        link = (f'<a href="{r["url"]}" target="_blank" rel="noopener">{_h.escape(r["title"][:160])}</a>'
+                if r["url"].startswith("http") else _h.escape(r["title"][:160]))
+        st_parts.append(f'<li><span class="d">{r["date"]}</span> <span class="m">{_h.escape(r["state"])}'
+                        f'{" · " + _h.escape(r["category"]) if r["category"] else ""}</span> {chip}<br>{link}</li>')
+    n_states = len({r["state"] for r in states})
+    dmin = min((r[0] for r in recent), default=cutoff)
+    dmax = max((r[0] for r in recent), default=cutoff)
+    today = datetime.date.today().isoformat()
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reportage — Latest Updates ({dmin} → {dmax})</title>
+<style>
+:root {{ --bg:#fff; --fg:#1a1a1a; --mut:#666; --card:#f6f6f4; --acc:#0b5cad; --bd:#e2e2de; }}
+@media (prefers-color-scheme: dark) {{ :root {{ --bg:#14151a; --fg:#e8e8e8; --mut:#9a9a9a; --card:#1e2027; --acc:#6ab0f3; --bd:#2c2e36; }} }}
+body {{ margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--fg); }}
+.wrap {{ max-width:880px; margin:0 auto; padding:32px 20px 60px; }}
+h1 {{ font-size:1.5em; margin:0 0 4px; }}
+.sub {{ color:var(--mut); font-size:.9em; margin-bottom:20px; }}
+.stats {{ display:flex; gap:12px; flex-wrap:wrap; margin:18px 0 26px; }}
+.stat {{ background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:10px 18px; }}
+.stat b {{ font-size:1.4em; display:block; }}
+.stat span {{ color:var(--mut); font-size:.82em; }}
+details {{ background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:10px 16px; margin:10px 0; }}
+summary {{ cursor:pointer; }}
+.cnt {{ background:var(--acc); color:#fff; border-radius:10px; padding:1px 9px; font-size:.78em; margin-left:6px; }}
+.chip {{ background:var(--acc); color:#fff; border-radius:8px; padding:0 8px; font-size:.72em; margin-left:6px; }}
+ul {{ list-style:none; padding:6px 0 2px; margin:0; }}
+li {{ padding:7px 0; border-top:1px solid var(--bd); }}
+.d {{ font-variant-numeric:tabular-nums; color:var(--mut); font-size:.85em; margin-right:8px; }}
+.m {{ color:var(--mut); font-size:.85em; }}
+a {{ color:var(--acc); text-decoration:none; }} a:hover {{ text-decoration:underline; }}
+h2 {{ font-size:1.1em; margin:30px 0 8px; }}
+.note {{ color:var(--mut); font-size:.82em; margin-top:34px; border-top:1px solid var(--bd); padding-top:12px; }}
+</style></head><body><div class="wrap">
+<h1>Reportage — Latest Updates</h1>
+<div class="sub">Key announcements {dmin} → {dmax}: central PIB register ({register_total:,} releases, refreshed daily)
++ state wire (mpinfo.org &amp;c. via <code>collect_state_news.py</code>). Built {today}.</div>
+<div class="stats">
+<div class="stat"><b>{len({r[1] for r in recent})}</b><span>central announcements</span></div>
+<div class="stat"><b>{len(by_scheme)}</b><span>schemes touched</span></div>
+<div class="stat"><b>{len(states)}</b><span>state-wire items ({n_states} state{"s" if n_states != 1 else ""})</span></div>
+<div class="stat"><b>{len(cab_only)}</b><span>unmapped Cabinet/CCEA</span></div>
+</div>
+<h2>Central — by scheme</h2>
+{"".join(sections)}
+<h2>Cabinet / CCEA — not matched to a scheme keyword</h2>
+<details><summary><b>Cabinet approvals &amp; decisions</b> <span class="cnt">{len(cab_only)}</span></summary><ul>{cab_html}</ul></details>
+<h2>State wire</h2>
+<details open><summary><b>State government releases with scheme / investment-policy signal</b> <span class="cnt">{len(st_parts)}</span></summary><ul>{"".join(st_parts)}</ul></details>
+<div class="note">Generated by scripts/build_reportage.py (write_html_latest). Keyword mapping is an index into the
+registers, not a substitute for reading the release — every central row links its PRID on pib.gov.in; state rows
+deep-link the source site. State wire register: data/registers/state_news.sqlite, refreshed by
+scripts/collect_state_news.py.</div>
+</div></body></html>"""
+    path = os.path.join(ROOT, "docs/reportage_latest.html")
+    open(path, "w").write(page)
+    print(f"reportage latest html: {len(recent)} central rows, {len(states)} state-wire rows ({days}d window) -> {path}")
 
 
 MONTHS={m:i+1 for i,m in enumerate(["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"])}

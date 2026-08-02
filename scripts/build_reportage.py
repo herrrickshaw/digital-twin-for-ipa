@@ -226,6 +226,114 @@ def main():
     write_html(by_q, total)
     write_html_ministry(by_q, total)
     write_html_latest(rows, register_total=len(rows))
+    write_html_states()
+
+
+# quarterly state-view buckets (classified on the English title)
+STATE_BUCKETS = [
+    ("investment", "Investment & MoUs",
+     re.compile(r"invest|\bMoU\b|memorandum of understanding|crore.{0,50}(invest|project|industr|plant|unit)|"
+                r"(plant|factory|unit|facility|data cent|semiconductor|gigafactory).{0,40}(set up|established|approved|"
+                r"proposed|coming|to come)|industrial park|investors summit|global investors|incentive|subsid|"
+                r"employment package|capital expenditure", re.I)),
+    ("projects", "New projects & inaugurations",
+     re.compile(r"inaugurat|foundation stone|bhoomi ?pujan|bhumi ?pujan|lokarpan|dedicat.{0,20}(nation|state|public)|"
+                r"commission(ed|ing)|flag(ged)? off|launch(ed|es)?\b.{0,40}(project|scheme|plant|corridor|park|"
+                r"expressway|metro|airport|port)|groundbreaking", re.I)),
+    ("regulation", "Policy & regulation",
+     re.compile(r"policy|\bact\b|\bbill\b|ordinance|amendment|regulation|\brules\b|notification|"
+                r"cabinet.{0,30}(approv|decid|clear)|मंत्रि|single window|ease of doing|\bGR\b|"
+                r"guidelines|framework|exemption|stamp duty|land allot", re.I)),
+]
+
+
+def classify_state_row(title):
+    for key, label, rx in STATE_BUCKETS:
+        if rx.search(title or ""):
+            return key
+    return None
+
+
+def write_html_states():
+    """Emit docs/reportage_states.html -- quarterly state-wire view matching the
+    PIB reportage cadence: investment/MoUs, new projects, key state regulations.
+    Reads the whole state_news register (backfilled by backfill_state_news.py);
+    rows classify on the machine-translated English title."""
+    import html as _h
+    if not os.path.exists(STATE_DB):
+        print("state register missing -- skipping states html")
+        return
+    scon = sqlite3.connect(STATE_DB)
+    cols = [r[1] for r in scon.execute("pragma table_info(state_news)")]
+    tcol = "coalesce(title_en, title)" if "title_en" in cols else "title"
+    n_total = scon.execute("select count(*) from state_news").fetchone()[0]
+    by_q = defaultdict(lambda: defaultdict(list))
+    counted = 0
+    for state, date, title, url in scon.execute(
+            f"select state, date, {tcol}, url from state_news where date >= '2017-01-01' order by date desc"):
+        hits = [refine_pli(s, title) for rx, s, m in COMP if rx.search(title or "")]
+        bucket = classify_state_row(title)
+        if not bucket and not hits:
+            continue
+        counted += 1
+        by_q[quarter_of(date)][bucket or "investment"].append(
+            (date, STATE_NAMES.get(state, state), title, url, hits[:2]))
+    scon.close()
+    parts = []
+    for q in sorted(by_q, reverse=True):
+        buckets = by_q[q]
+        nq = sum(len(v) for v in buckets.values())
+        parts.append(f'<section><h2>{q} <span class="cnt">{nq}</span></h2>')
+        for key, label, _rx in STATE_BUCKETS:
+            items = buckets.get(key, [])
+            if not items:
+                continue
+            body = []
+            for date, st, title, url, hits in items:
+                chips = "".join(f'<span class="chip">{_h.escape(s)}</span>' for s in hits)
+                link = (f'<a href="{url}" target="_blank" rel="noopener">{_h.escape(title[:170])}</a>'
+                        if (url or "").startswith("http") else _h.escape(title[:170]))
+                body.append(f'<li><span class="d">{date}</span> <span class="m">{_h.escape(st)}</span>{chips}<br>{link}</li>')
+            parts.append(f'<details {"open" if key != "projects" and len(items) <= 40 else ""}>'
+                         f'<summary><b>{label}</b> <span class="cnt">{len(items)}</span></summary>'
+                         f'<ul>{"".join(body)}</ul></details>')
+        parts.append("</section>")
+    today = datetime.date.today().isoformat()
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>State Reportage — quarterly investment, projects &amp; regulation</title>
+<style>
+:root {{ --bg:#fff; --fg:#1a1a1a; --mut:#666; --card:#f6f6f4; --acc:#0b5cad; --bd:#e2e2de; }}
+@media (prefers-color-scheme: dark) {{ :root {{ --bg:#14151a; --fg:#e8e8e8; --mut:#9a9a9a; --card:#1e2027; --acc:#6ab0f3; --bd:#2c2e36; }} }}
+body {{ margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--fg); }}
+.wrap {{ max-width:880px; margin:0 auto; padding:32px 20px 60px; }}
+h1 {{ font-size:1.5em; margin:0 0 4px; }}
+h2 {{ font-size:1.15em; margin:30px 0 8px; }}
+.sub {{ color:var(--mut); font-size:.9em; margin-bottom:20px; }}
+details {{ background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:10px 16px; margin:10px 0; }}
+summary {{ cursor:pointer; }}
+.cnt {{ background:var(--acc); color:#fff; border-radius:10px; padding:1px 9px; font-size:.78em; margin-left:6px; }}
+.chip {{ background:var(--acc); color:#fff; border-radius:8px; padding:0 8px; font-size:.72em; margin-left:6px; }}
+ul {{ list-style:none; padding:6px 0 2px; margin:0; }}
+li {{ padding:7px 0; border-top:1px solid var(--bd); }}
+.d {{ font-variant-numeric:tabular-nums; color:var(--mut); font-size:.85em; margin-right:8px; }}
+.m {{ color:var(--mut); font-size:.85em; }}
+a {{ color:var(--acc); text-decoration:none; }} a:hover {{ text-decoration:underline; }}
+.note {{ color:var(--mut); font-size:.82em; margin-top:34px; border-top:1px solid var(--bd); padding-top:12px; }}
+</style></head><body><div class="wrap">
+<h1>State Reportage — investment, projects &amp; regulation by quarter</h1>
+<div class="sub">State-government wire ({n_total:,} releases in the register) filtered to investment/MoU news,
+new-project events and key state regulations; classified on machine-translated titles. Archive depth is
+source-limited: Maharashtra from 2019Q3, Madhya Pradesh from 2020Q2; UP/Gujarat/Karnataka latest-only.
+Built {today} by scripts/build_reportage.py.</div>
+{"".join(parts)}
+<div class="note">Register: data/registers/state_news.sqlite (collect_state_news.py daily +
+backfill_state_news.py archives). Classification and scheme chips are keyword-based on machine
+translations — an index into the wire, not a substitute for reading the release.</div>
+</div></body></html>"""
+    path = os.path.join(ROOT, "docs/reportage_states.html")
+    open(path, "w").write(page)
+    print(f"reportage states html: {counted} classified rows across {len(by_q)} quarters -> {path}")
 
 
 def write_html_latest(rows, register_total=0, days=30):

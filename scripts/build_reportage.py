@@ -136,7 +136,7 @@ GENERIC = re.compile(r"cabinet approv|incentive|subsid|scheme launch|\bVGF\b|out
 
 # state news register built by scripts/collect_state_news.py (mpinfo.org etc.)
 STATE_DB = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/registers/state_news.sqlite")
-STATE_NAMES = {"MP": "Madhya Pradesh"}
+STATE_NAMES = {"MP": "Madhya Pradesh", "UP": "Uttar Pradesh", "GJ": "Gujarat"}
 # state-side signal terms: industrial/investment policy language that the central
 # scheme map won't catch but matters for an IPA watching state governments
 STATE_SIGNAL = re.compile(
@@ -153,9 +153,11 @@ def state_wire(days=30):
         return []
     cutoff = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
     scon = sqlite3.connect(STATE_DB)
+    cols = [r[1] for r in scon.execute("pragma table_info(state_news)")]
+    tcol = "coalesce(title_en, title)" if "title_en" in cols else "title"
     out = []
     for state, date, title, category, url in scon.execute(
-            "select state, date, title, category, url from state_news where date >= ? order by date desc", (cutoff,)):
+            f"select state, date, {tcol}, category, url from state_news where date >= ? order by date desc", (cutoff,)):
         hits = [refine_pli(s, title) for rx, s, m in COMP if rx.search(title or "")]
         if not hits and not STATE_SIGNAL.search(title or ""):
             continue

@@ -179,12 +179,64 @@ def fetch_gujarat():
     return list(by_press.values())
 
 
+# ---------------------------------------------------------------- MH (latest)
+def fetch_mh():
+    """Maharashtra: DGIPR's mahasamvad.in wire is stock WordPress -- the REST API
+    returns the full Marathi feed with real publish dates."""
+    rows = []
+    for page in (1, 2):  # 2 x 100 newest posts covers well over a month
+        url = ("https://mahasamvad.in/wp-json/wp/v2/posts?"
+               + urllib.parse.urlencode({"per_page": 100, "page": page, "_fields": "id,date,link,title,categories"}))
+        try:
+            posts = _get_json(url)
+        except Exception as e:
+            print(f"MH page {page}: FETCH FAILED ({e})", file=sys.stderr)
+            break
+        for x in posts:
+            title = re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", "", x["title"]["rendered"]))).strip()
+            if not title:
+                continue
+            rows.append({"newsid": str(x["id"]), "date": (x.get("date") or "")[:10],
+                         "title": title, "category": "DGIPR wire", "keywords": "",
+                         "url": x.get("link") or f"https://mahasamvad.in/{x['id']}/"})
+        if len(posts) < 100:
+            break
+        time.sleep(0.5)
+    return rows
+
+
+# ---------------------------------------------------------------- KA (latest)
+_KA_ITEM = re.compile(r'href="(https://cm\.karnataka\.gov\.in/(\d+)/([^"]+)/(?:kn|en))"')
+
+
+def fetch_ka():
+    """Karnataka: DIPR's sites are static PDF shelves, but cm.karnataka.gov.in's
+    homepage lists the CM office wire -- sequential item ids with English slugs.
+    Item pages carry no publish date, so new items are stamped with collection
+    date (the homepage only surfaces recent releases)."""
+    h = _get("https://cm.karnataka.gov.in/", timeout=60)
+    today = datetime.date.today().isoformat()
+    rows, seen = [], set()
+    for m in _KA_ITEM.finditer(h):
+        iid, slug = m.group(2), m.group(3)
+        # skip nav/static pages (about-cm, contact-us, download, ...) -- the wire
+        # ids are high and slugs are long sentence-like headlines
+        if iid in seen or int(iid) < 400 or len(slug) < 25:
+            continue
+        seen.add(iid)
+        title = re.sub(r"\s+", " ", urllib.parse.unquote(slug).replace("-", " ")).strip().capitalize()
+        rows.append({"newsid": iid, "date": today, "title": title, "category": "CM office",
+                     "keywords": "", "url": m.group(1)})
+    return rows
+
+
 SOURCES = {
     "MP": {"state": "Madhya Pradesh", "mode": "daily", "fetch": fetch_mp},
     "UP": {"state": "Uttar Pradesh", "mode": "latest", "fetch": fetch_up},
     "GJ": {"state": "Gujarat", "mode": "latest", "fetch": fetch_gujarat},
+    "MH": {"state": "Maharashtra", "mode": "latest", "fetch": fetch_mh},
+    "KA": {"state": "Karnataka", "mode": "latest", "fetch": fetch_ka},
     # Candidate next states (probed 2026-08-02, see docs/STATE_SOURCES.md):
-    # MH mahasamvad.in / dgipr.maharashtra.gov.in, KA karnatakavarthe.org,
     # RJ dipr.rajasthan.gov.in, TS ipr.telangana.gov.in, AS dipr.assam.gov.in,
     # WB wb.gov.in/press-release.aspx
 }

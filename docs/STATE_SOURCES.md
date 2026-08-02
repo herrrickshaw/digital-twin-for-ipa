@@ -11,13 +11,13 @@ time so the central scheme-keyword map in `build_reportage.py` can read them.
 | MP | Madhya Pradesh | [mpinfo.org](https://www.mpinfo.org/Home/TodaysNews) | open GET JSON (`/HomePageWebservice.asmx/Todaynews`) | English subset + full Hindi wire | day-addressable (MM/DD/YYYY); newsid de-obfuscated by −0x80/char |
 | UP | Uttar Pradesh | [information.up.gov.in](https://information.up.gov.in/cm_press_release_details.aspx) | plain HTML tables (CM + departmental) | Hindi | latest ~30 rows each; PDF per release; site is slow (60–90 s) |
 | GJ | Gujarat | [gujaratinformation.gujarat.gov.in](https://gujaratinformation.gujarat.gov.in/Department-Releases) | POST JSON (`/BindDepartmentPressRealese`), antiforgery token + cookie | English + Gujarati (merged on pressId) | latest 15/language; full release text in `pressDesc` |
+| MH | Maharashtra | [mahasamvad.in](https://mahasamvad.in/) (DGIPR wire) | stock WordPress REST (`/wp-json/wp/v2/posts`) | Marathi | real publish dates; 200 newest posts per run |
+| KA | Karnataka | [cm.karnataka.gov.in](https://cm.karnataka.gov.in/) (CM office wire) | homepage scrape — sequential item ids, English slugs | English slugs (+ some Kannada) | item pages carry NO publish date → new items stamped with collection date; DIPR sites are static PDF shelves, karnatakavarthe.org is an empty shell (1 post since 2021) |
 
 ## Probed, reachable — candidates for the next batch
 
 | State | Site | Status | First look |
 |---|---|---|---|
-| Maharashtra | [mahasamvad.in](https://mahasamvad.in/) (DGIPR wire) / [dgipr.maharashtra.gov.in](https://dgipr.maharashtra.gov.in/) | 200 | mahasamvad is the actual release wire (Marathi) |
-| Karnataka | [karnatakavarthe.org](https://karnatakavarthe.org/) (DIPR) | 200 | WordPress — likely has `/wp-json` (see ministry-site memory: try `/cms/wp-json`) |
 | Rajasthan | [dipr.rajasthan.gov.in](https://dipr.rajasthan.gov.in/) | 200 | press-note section; Hindi |
 | Telangana | [ipr.telangana.gov.in](https://ipr.telangana.gov.in/) | 200 | English + Telugu releases |
 | Assam | [dipr.assam.gov.in](https://dipr.assam.gov.in/) | 200 | standard Assam govt CMS |

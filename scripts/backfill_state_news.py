@@ -19,8 +19,8 @@ resume after an interruption.
 import argparse, datetime, os, re, sqlite3, sys, time, urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from collect_state_news import (DB, ensure_db, fetch_mp, translate_en, _is_english,
-                                _get_json)
+from collect_state_news import (DB, ensure_db, fetch_mp, fetch_rajasthan,
+                                translate_en, _is_english, _get_json)
 
 MP_START = datetime.date(2020, 3, 1)
 MH_OLDEST = "2019-09-18"
@@ -111,6 +111,44 @@ def backfill_mh(con):
         time.sleep(0.4)
 
 
+def backfill_rj(con):
+    """Rajasthan: page the full DIPR archive (73k+ rows, date desc, ~200/page).
+    ~1 GB transfer total; only date+derived-title+PDF link are kept."""
+    done = {r[0] for r in con.execute("select chunk from backfill_log where state='RJ'")}
+    now = datetime.datetime.now().isoformat(timespec="seconds")
+    page, empty = 1, 0
+    while empty < 2:
+        chunk = f"page-{page}"
+        if chunk in done:
+            page += 1
+            continue
+        try:
+            rows = fetch_rajasthan(page_size=200, page=page)
+        except Exception as e:
+            print(f"RJ page {page}: FETCH FAILED ({e}) -- will retry on next run", file=sys.stderr)
+            time.sleep(5)
+            continue
+        if not rows:
+            empty += 1
+            page += 1
+            continue
+        empty = 0
+        with con:
+            for r in rows:
+                con.execute(
+                    "insert or ignore into state_news(state,newsid,date,title,title_en,category,keywords,url,fetched_at)"
+                    " values('RJ',?,?,?,?,?,?,?,?)",
+                    (r["newsid"], r["date"], r["title"],
+                     r["title"] if _is_english(r["title"]) else None,
+                     r["category"], r["keywords"], r["url"], now))
+            con.execute("insert or ignore into backfill_log(state,chunk,fetched_at,n) values('RJ',?,?,?)",
+                        (chunk, now, len(rows)))
+        if page % 25 == 0:
+            print(f"RJ progress: page {page} ({rows[-1]['date']})", flush=True)
+        page += 1
+        time.sleep(0.6)
+
+
 def translate_signal(con, limit=None, batch=100):
     """Translate only rows whose native title carries signal language.
 
@@ -168,6 +206,7 @@ def main():
         return
     backfill_mh(con)
     backfill_mp(con)
+    backfill_rj(con)
     print("archives collected; now run:  python3 scripts/backfill_state_news.py --translate-signal")
 
 

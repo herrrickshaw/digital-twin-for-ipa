@@ -268,11 +268,12 @@ def fetch_goa():
 
 
 # ---------------------------------------------------------------- RJ (latest)
-def fetch_rajasthan(page_size=100):
+def fetch_rajasthan(page_size=100, page=1):
     """Rajasthan: DIPR's Angular portal is backed by an open POST JSON API
     (73k+ dated releases). No title field -- derive one from the Description
-    HTML body (Hindi). Detail links aren't stable; prefer the row's PDF."""
-    body = json.dumps({"PageSize": page_size, "Page": 1, "OrderBy": "PressreleaseDate",
+    HTML body (Hindi). Detail links aren't stable; prefer the row's PDF.
+    Paged (date desc) -- backfill_state_news.py walks the full archive."""
+    body = json.dumps({"PageSize": page_size, "Page": page, "OrderBy": "PressreleaseDate",
                        "OrderByAsc": 0, "IsBase64File": False, "DepartmentCode": 0}).encode()
     d = json.loads(_get("https://dipr.rajasthan.gov.in/webapi/PublicPortal/DepartmentWebsite/GetDIPRPressReleaseByFilter",
                         data=body, headers={"Content-Type": "application/json"}))

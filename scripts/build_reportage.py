@@ -139,7 +139,8 @@ STATE_DB = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__
 STATE_NAMES = {"MP": "Madhya Pradesh", "UP": "Uttar Pradesh", "GJ": "Gujarat",
                "MH": "Maharashtra", "KA": "Karnataka", "GA": "Goa", "RJ": "Rajasthan",
                "PB": "Punjab", "MZ": "Mizoram", "NL": "Nagaland", "SK": "Sikkim",
-               "CH": "Chandigarh", "DD": "DNH & Daman-Diu"}
+               "CH": "Chandigarh", "DD": "DNH & Daman-Diu", "KL": "Kerala",
+               "TS": "Telangana", "AS": "Assam", "AP": "Andhra Pradesh"}
 # state-side signal terms: industrial/investment policy language that the central
 # scheme map won't catch but matters for an IPA watching state governments
 STATE_SIGNAL = re.compile(

@@ -8,7 +8,7 @@ capped signal pass in the daily cron) so the central scheme-keyword map can read
 Daily cron (07:40, after the 07:17 PIB refresh): collect → capped signal-translation
 resume → `build_reportage.py` rebuild.
 
-## Integrated (16)
+## Integrated (17)
 
 | Code | State | Source | Access | Language | Notes |
 |---|---|---|---|---|---|
@@ -28,12 +28,13 @@ resume → `build_reportage.py` rebuild.
 | KL | Kerala | [prd.kerala.gov.in](https://prd.kerala.gov.in/ml/pressrelease?tid=All&field_date_value=&page=0) | Drupal views HTML | Malayalam | ISO dates in `<time>`; bare ?page=N ignored without full filter query; occasional future-dated typo rows |
 | TS | Telangana | [telangana.gov.in press RSS](https://www.telangana.gov.in/category/news/press-releases/feed/) | RSS 2.0 | Telugu + English | ipr.telangana.gov.in is static + stale (Jan 2026); portal wp-json auth-blocked, RSS live |
 | AS | Assam | [dipr.assam.gov.in/portlets/press-release](https://dipr.assam.gov.in/portlets/press-release) | HTML table | English titles, EN/AS file pairs | curated ~14-row list, no date column — dates regex-extracted from titles, else stamped at collection |
+| AP | Andhra Pradesh | [ap.gov.in](https://www.ap.gov.in/) state portal (**not** ipr.ap.gov.in — see below) | open GET JSON (`/api/api/ApNewsLatestAnnouncements` + `/api/api/ApNewsAnnouncements`) | English | no auth; two feeds merged — curated announcements + news-clipping wire; base URL found via the portal's unminified Angular bundle (`environment.apiURL`) |
 
 ## Probed in depth — not integrated
 
 | State/UT | Site | Why not | Revisit trigger |
 |---|---|---|---|
-| Andhra Pradesh | [ipr.ap.gov.in](https://ipr.ap.gov.in/) | live JSON API but every call needs an RSA+AES-256-GCM+HMAC handshake (pubkey bootstrap `EWrvidWPWkaz2p6acWVHh8ISw9giKsLmqOe785rjzpE=` → `POST /iprapinew/api/_open/masters`, type 130 = per-day items, Telugu). Verified working, but needs the `cryptography` package — out of scope for the stdlib-only collector | add a venv-based AP sidecar if AP coverage becomes a priority |
+| Andhra Pradesh (IPR site) | [ipr.ap.gov.in](https://ipr.ap.gov.in/) | separate site from ap.gov.in (above); its `_open/masters` API requires a fresh RSA+AES-256-GCM+HMAC-signed request per call — a deliberate anti-automation gate (short-lived JWTs, per-request key exchange), not an open API. Declined on principle, functionally equivalent to defeating bot-detection regardless of the underlying data being public. **AP coverage now comes from the ap.gov.in state portal instead (integrated above)** — this entry is closed, not a TODO | none — do not revisit; use the state-portal feed |
 | Chhattisgarh | [dprcg.gov.in](https://dprcg.gov.in/) | WordPress, but WAF serves empty 200s to curl/urllib | retry from browser automation or an IN IP |
 | Odisha | [odisha.gov.in/en/news/archive-news](https://odisha.gov.in/en/news/archive-news) | archive stale since Sep 2023; live wire published elsewhere | find the DPR/CMO subdomain |
 | West Bengal | [wb.gov.in/press-release.aspx](https://wb.gov.in/press-release.aspx) | ~9 rows, stale (Oct 2025), North-Bengal-flood-specific, no titles | find the real WB press host |

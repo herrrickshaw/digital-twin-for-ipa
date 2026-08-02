@@ -501,8 +501,36 @@ def fetch_assam():
     return rows
 
 
+# ---------------------------------------------------------------- AP (latest)
+def fetch_ap():
+    """Andhra Pradesh: the official state portal (ap.gov.in, plain Angular REST
+    API at /api/api/) publishes both curated announcements and a news-clipping
+    wire, no auth. NOTE: ipr.ap.gov.in (a *different* AP site) gates its API
+    behind an RSA+AES-GCM+HMAC request-signing scheme that is a deliberate
+    anti-automation mechanism -- deliberately NOT implemented here; this
+    fetcher uses the legitimate open endpoint instead."""
+    rows = []
+    for endpoint, category in (("ApNewsLatestAnnouncements", "News wire"),
+                               ("ApNewsAnnouncements", "Announcements")):
+        try:
+            d = _get_json(f"https://www.ap.gov.in/api/api/{endpoint}", timeout=30)
+        except Exception as e:
+            print(f"AP {endpoint}: FETCH FAILED ({e})", file=sys.stderr)
+            continue
+        for x in d.get("dataList") or []:
+            title = re.sub(r"\s+", " ", x.get("title") or "").strip()
+            date = (x.get("from") or "")[:10]
+            if not title or not date:
+                continue
+            url = x.get("url") or x.get("imageBase64") or "https://www.ap.gov.in/"
+            rows.append({"newsid": f"{endpoint}-{x.get('id')}", "date": date,
+                         "title": title, "category": category, "keywords": "", "url": url})
+    return rows
+
+
 SOURCES = {
     "MP": {"state": "Madhya Pradesh", "mode": "daily", "fetch": fetch_mp},
+    "AP": {"state": "Andhra Pradesh", "mode": "latest", "fetch": fetch_ap},
     "UP": {"state": "Uttar Pradesh", "mode": "latest", "fetch": fetch_up},
     "GJ": {"state": "Gujarat", "mode": "latest", "fetch": fetch_gujarat},
     "MH": {"state": "Maharashtra", "mode": "latest", "fetch": fetch_mh},

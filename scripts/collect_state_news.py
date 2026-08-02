@@ -427,6 +427,80 @@ def fetch_dnh_dd():
     return rows
 
 
+# ---------------------------------------------------------------- KL (latest)
+_KL_ITEM = re.compile(
+    r'<time datetime="(20\d\d-\d\d-\d\d)T[^"]*"[^>]*>.*?<div class="post-title">\s*<a href="([^"]+)"[^>]*>([^<]{5,300})</a>', re.S)
+
+
+def fetch_kerala():
+    """Kerala: PRD Drupal press-release view (Malayalam titles). Bare ?page=N is
+    ignored unless the full exposed-filter query string is present."""
+    rows = []
+    for page in range(3):
+        h = _get(f"https://prd.kerala.gov.in/ml/pressrelease?tid=All&field_date_value=&page={page}", timeout=45)
+        for m in _KL_ITEM.finditer(h):
+            date, path, title = m.groups()
+            path = path.replace("/index.php", "")
+            nid = path.rstrip("/").rsplit("/", 1)[-1][:60]
+            rows.append({"newsid": nid, "date": date, "title": _html.unescape(title).strip(),
+                         "category": "PRD", "keywords": "",
+                         "url": "https://prd.kerala.gov.in" + path})
+        time.sleep(0.4)
+    return rows
+
+
+# ---------------------------------------------------------------- TS (latest)
+_TS_RSS = re.compile(r"<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<pubDate>(.*?)</pubDate>", re.S)
+
+
+def fetch_telangana():
+    """Telangana: ipr.telangana.gov.in is a stale static site; the live wire is
+    the state portal's WordPress RSS (REST API is auth-blocked)."""
+    h = _get("https://www.telangana.gov.in/category/news/press-releases/feed/", timeout=45)
+    rows = []
+    for m in _TS_RSS.finditer(h):
+        title, link, pd = (re.sub(r"<!\[CDATA\[|\]\]>", "", g).strip() for g in m.groups())
+        try:
+            date = datetime.datetime.strptime(pd[:16].strip(), "%a, %d %b %Y").date().isoformat()
+        except ValueError:
+            m2 = re.search(r"/(20\d\d)/(\d\d)/", link)
+            date = f"{m2.group(1)}-{m2.group(2)}-01" if m2 else datetime.date.today().isoformat()
+        nid = re.sub(r"[^a-z0-9%-]", "", urllib.parse.urlparse(link).path.rstrip("/").rsplit("/", 1)[-1].lower())[:110]
+        if title and nid:
+            rows.append({"newsid": nid, "date": date, "title": _html.unescape(title),
+                         "category": "State portal", "keywords": "", "url": link})
+    return rows
+
+
+# ---------------------------------------------------------------- AS (latest)
+_AS_ROW = re.compile(r'<tr><td>(.*?)</td><td>.*?</td><td><a class="file-default" href="([^"]+)"', re.S)
+
+
+def fetch_assam():
+    """Assam: DIPR's curated current list (~14 rows, no date column -- dates are
+    regex-extracted from the title text in whatever format the operator used)."""
+    h = _get("https://dipr.assam.gov.in/portlets/press-release", timeout=45)
+    rows = []
+    for m in _AS_ROW.finditer(h):
+        title = re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", "", m.group(1)))).strip()
+        url = m.group(2)
+        dm = (re.search(r"\b(\d{1,2})[/.](\d{1,2})[/.](20\d\d|\d\d)\b", title)
+              or re.search(r"\b(\d{1,2})\s+([A-Za-z]+),?\s+(20\d\d)\b", title))
+        date = None
+        if dm:
+            a, b, y = dm.groups()
+            y = int(y) + (2000 if int(y) < 100 else 0)
+            mth = int(b) if b.isdigit() else _UP_MONTHS.get(b[:3].title())
+            if mth and 1 <= mth <= 12:
+                date = f"{y:04d}-{mth:02d}-{min(int(a), 31):02d}"
+        if not title:
+            continue
+        rows.append({"newsid": url.rsplit("/", 1)[-1][:120],
+                     "date": date or datetime.date.today().isoformat(),
+                     "title": title, "category": "DIPR", "keywords": "", "url": url})
+    return rows
+
+
 SOURCES = {
     "MP": {"state": "Madhya Pradesh", "mode": "daily", "fetch": fetch_mp},
     "UP": {"state": "Uttar Pradesh", "mode": "latest", "fetch": fetch_up},
@@ -441,9 +515,14 @@ SOURCES = {
     "SK": {"state": "Sikkim", "mode": "latest", "fetch": fetch_sikkim},
     "CH": {"state": "Chandigarh", "mode": "latest", "fetch": fetch_chandigarh},
     "DD": {"state": "DNH & Daman-Diu", "mode": "latest", "fetch": fetch_dnh_dd},
+    "KL": {"state": "Kerala", "mode": "latest", "fetch": fetch_kerala},
+    "TS": {"state": "Telangana", "mode": "latest", "fetch": fetch_telangana},
+    "AS": {"state": "Assam", "mode": "latest", "fetch": fetch_assam},
     # Dead ends (probed 2026-08-02, see docs/STATE_SOURCES.md): CG WAF-blocks
     # curl; OD archive stale since 2023; WB page stale + North-Bengal-only;
-    # UK stale since mid-2025.
+    # UK stale since mid-2025; AP ipr.ap.gov.in needs an RSA+AES-GCM+HMAC
+    # handshake (protocol documented in STATE_SOURCES.md — needs `cryptography`,
+    # deliberately out of scope for this stdlib-only collector).
 }
 
 

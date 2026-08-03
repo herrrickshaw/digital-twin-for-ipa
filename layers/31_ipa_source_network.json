@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-07-27",
+ "built": "2026-08-03",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -225,7 +225,7 @@
     "country": "Bosnia and Herzegovina",
     "organization": "Foreign Investment Promotion Agency of Bosnia-Herzegovina (FIPA)",
     "website": "http://www.fipa.gov.ba/Default.aspx?langTag=en-US&template_id=123&pageIndex=1",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Botswana",
@@ -237,7 +237,7 @@
     "country": "Brazil",
     "organization": "Brazilian Trade and Investment Promotion Agency (Apex-Brasil)",
     "website": "https://portal.apexbrasil.com.br/",
-    "website_status": 200
+    "website_status": 302
    },
    {
     "country": "Brazil",
@@ -285,7 +285,7 @@
     "country": "China, People Republic of",
     "organization": "Investment Promotion Agency of the Ministry of Commerce of P. R. China (CIPA)",
     "website": "http://english.mofcom.gov.cn/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": 200
    },
    {
     "country": "China, People Republic of",
@@ -339,7 +339,7 @@
     "country": "Cuba",
     "organization": "ProCuba\r\n\r\n\r\n\r\n",
     "website": "http://www.procuba.cu/en",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": 200
    },
    {
     "country": "Curaçao",
@@ -387,7 +387,7 @@
     "country": "El Salvador",
     "organization": "Export and Investment Promotion Agency of El Salvador (PROESA)\r\n\r\n\r\n\r\n",
     "website": "http://www.proesa.gob.sv/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Eswatini",
@@ -465,7 +465,7 @@
     "country": "India",
     "organization": "Invest India",
     "website": "http://investindia.gov.in/",
-    "website_status": 403
+    "website_status": 200
    },
    {
     "country": "India",
@@ -507,7 +507,7 @@
     "country": "Italy",
     "organization": "Invest in Tuscany\r\n",
     "website": "https://www.investintuscany.com/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Japan",
@@ -675,7 +675,7 @@
     "country": "Nigeria",
     "organization": "Nigerian Investment Promotion Commission (NIPC)",
     "website": "https://nipc.gov.ng/",
-    "website_status": 200
+    "website_status": 500
    },
    {
     "country": "Nigeria",
@@ -699,7 +699,7 @@
     "country": "Pakistan",
     "organization": "Board of Investment (BOI)",
     "website": "https://invest.gov.pk/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Pakistan",
@@ -711,7 +711,7 @@
     "country": "Palestine National Authority",
     "organization": "Palestinian Investment Promotion Agency (PIPA)",
     "website": "http://www.pipa.ps/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Panama",
@@ -747,7 +747,7 @@
     "country": "Portugal",
     "organization": "Invest Porto (Porto City Council)",
     "website": "https://investporto.pt/en/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Qatar",
@@ -771,7 +771,7 @@
     "country": "Russian Federation",
     "organization": "Tatarstan Investment Development Agency (TIDA)",
     "website": "http://tida.tatarstan.ru/eng/index.htm",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Samoa",
@@ -855,7 +855,7 @@
     "country": "Spain",
     "organization": "Invest in Biscay",
     "website": "http://www.investinbiscay.com/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": 200
    },
    {
     "country": "St. Kitts and Nevis",
@@ -879,7 +879,7 @@
     "country": "Tanzania, United Republic of",
     "organization": "Tanzania Investment Centre (TIC)",
     "website": "http://www.tic.go.tz/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Tanzania, United Republic of",
@@ -1523,8 +1523,8 @@
  "url_liveness": {
   "https://waipa.org/wp-content/uploads/memberstable-16.html": 200,
   "https://waipa.org/members/": 200,
-  "https://investmentpolicy.unctad.org": 200,
-  "https://www.investindia.gov.in/sitemap.xml": 403,
+  "https://investmentpolicy.unctad.org": 503,
+  "https://www.investindia.gov.in/sitemap.xml": 200,
   "https://static.investindia.gov.in/s3fs-public/2025-01/fdi_policy_consolidated.pdf": 200,
   "https://www.jetro.go.jp/en/": 200,
   "https://www.kotra.or.kr/english/index.do": 200,

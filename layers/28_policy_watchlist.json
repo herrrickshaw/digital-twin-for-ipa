@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-07-27",
+ "built": "2026-08-03",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -29,9 +29,9 @@
   }
  },
  "counts": {
-  "prs_bills_total": 963,
+  "prs_bills_total": 966,
   "investment_relevant": 168,
-  "recent_2024plus": 64,
+  "recent_2024plus": 67,
   "active_watchlist": 33,
   "drishti_editorials": 24
  },
@@ -6401,6 +6401,14 @@
    "url": "https://prsindia.org/billtrack/the-micro-small-and-medium-enterprises-development-amendment-bill-2018"
   },
   {
+   "slug": "the-micro-small-and-medium-enterprises-development-amendment-bill-2026",
+   "title": "Micro Small and Medium Enterprises Development Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-micro-small-and-medium-enterprises-development-amendment-bill-2026"
+  },
+  {
    "slug": "the-mineral-laws-amendment-bill-2020",
    "title": "Mineral Laws Amendment Bill 2020",
    "year": 2020,
@@ -7873,6 +7881,14 @@
    "url": "https://prsindia.org/billtrack/the-provisions-of-the-municipalities-extension-to-the-scheduled-areas-bill-2001"
   },
   {
+   "slug": "the-public-examinations-prevention-of-unfair-means-amendment-bill-2026",
+   "title": "Public Examinations Prevention of Unfair Means Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-public-examinations-prevention-of-unfair-means-amendment-bill-2026"
+  },
+  {
    "slug": "the-public-examinations-prevention-of-unfair-means-bill-2024",
    "title": "Public Examinations Prevention of Unfair Means Bill 2024",
    "year": 2024,
@@ -8127,6 +8143,14 @@
    "investment_lane": null,
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/the-registration-of-births-and-deaths-amendment-bill-2023"
+  },
+  {
+   "slug": "the-registration-of-births-and-deaths-amendment-bill-2026",
+   "title": "Registration of Births and Deaths Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-registration-of-births-and-deaths-amendment-bill-2026"
   },
   {
    "slug": "the-registration-of-marriage-of-non-resident-indian-bill-2019",
@@ -9375,9 +9399,19 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/combating-indias-corruption-crisis"
   },
   {
-   "slug": "deepening-the-india-japan-strategic-partnership",
-   "topic": "Deepening India Japan Strategic Partnership",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/deepening-the-india-japan-strategic-partnership"
+   "slug": "enhancing-effectiveness-of-fast-track-courts",
+   "topic": "Enhancing Effectiveness of Fast Track Courts",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/enhancing-effectiveness-of-fast-track-courts"
+  },
+  {
+   "slug": "evaluating-indias-employment-scenario",
+   "topic": "Evaluating Indias Employment Scenario",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/evaluating-indias-employment-scenario"
+  },
+  {
+   "slug": "fcra-evolution-and-national-security",
+   "topic": "Fcra Evolution and National Security",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/fcra-evolution-and-national-security"
   },
   {
    "slug": "forging-indias-sovereign-ai-path",
@@ -9385,24 +9419,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/forging-indias-sovereign-ai-path"
   },
   {
-   "slug": "global-footprint-of-indian-diaspora",
-   "topic": "Global Footprint of Indian Diaspora",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/global-footprint-of-indian-diaspora"
-  },
-  {
    "slug": "implementing-one-nation-one-election",
    "topic": "Implementing One Nation One Election",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/implementing-one-nation-one-election"
   },
   {
-   "slug": "indias-blueprint-for-ai-regulation",
-   "topic": "Indias Blueprint for Ai Regulation",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-blueprint-for-ai-regulation"
-  },
-  {
-   "slug": "indias-quick-commerce-boom",
-   "topic": "Indias Quick Commerce Boom",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-quick-commerce-boom"
+   "slug": "indias-counter-to-global-shocks",
+   "topic": "Indias Counter to Global Shocks",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-counter-to-global-shocks"
   },
   {
    "slug": "indias-strategy-against-drug-abuse",
@@ -9430,19 +9454,24 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-food-safety-ecosystem"
   },
   {
+   "slug": "reforming-indias-police-system",
+   "topic": "Reforming Indias Police System",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-police-system"
+  },
+  {
    "slug": "regulation-of-temples-in-india",
    "topic": "Regulation of Temples in India",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/regulation-of-temples-in-india"
   },
   {
+   "slug": "reimagining-cooperative-federalism-for-inclusive-national-development",
+   "topic": "Reimagining Cooperative Federalism for Inclusive National Development",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-cooperative-federalism-for-inclusive-national-development"
+  },
+  {
    "slug": "reimagining-indias-cooperative-sector-for-the-21st-century",
    "topic": "Reimagining Indias Cooperative Sector for 21st Century",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-indias-cooperative-sector-for-the-21st-century"
-  },
-  {
-   "slug": "resetting-india-china-ties",
-   "topic": "Resetting India China Ties",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/resetting-india-china-ties"
   },
   {
    "slug": "roadmap-for-a-resilient-indian-mineral-economy",
@@ -9468,11 +9497,6 @@
    "slug": "unlocking-indias-tourism-potential",
    "topic": "Unlocking Indias Tourism Potential",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/unlocking-indias-tourism-potential"
-  },
-  {
-   "slug": "urban-flooding-in-india-causes-consequences-and-solutions",
-   "topic": "Urban Flooding in India Causes Consequences and Solutions",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/urban-flooding-in-india-causes-consequences-and-solutions"
   }
  ],
  "linkage": {

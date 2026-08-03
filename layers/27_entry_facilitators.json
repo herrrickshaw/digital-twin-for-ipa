@@ -1,7 +1,7 @@
 {
  "layer": 27,
  "title": "Foreign market-entry facilitators in India (trade-promotion agencies & bilateral chambers)",
- "built": "2026-07-27",
+ "built": "2026-08-03",
  "purpose": "The demand-side counterpart to the incentive catalogue: the country-wise bodies that host events and B2B matchmaking to bring foreign companies into India. Where a firm eyeing an Indian incentive (layers 02/17), project (layer 26) or site (layer 25) goes for introductions and delegations.",
  "coverage": {
   "bodies": 31,
@@ -23,7 +23,7 @@
    "url": "https://ficci.in/",
    "events_url": "https://ficci.in/event",
    "note": "Oldest/largest apex chamber; sector & bilateral business councils, MoUs with foreign chambers, India's flagship investment summits.",
-   "last_status": 403,
+   "last_status": 200,
    "live": true
   },
   {

@@ -1,7 +1,7 @@
 {
  "layer": 33,
  "name": "policy_finance_extensions",
- "built": "2026-07-27",
+ "built": "2026-08-03",
  "what": "Fisheries incentive stack, state-excise bottling-fee economics, import/export duty posture, India Exim Bank, and the CBG/GOBARdhan FCO fertiliser route — analysis blocks with per-claim sources, HTTP-verified access routes, and explicit layer-32 company linkages. Research sweeps 2026-07-23/24.",
  "fisheries": {
   "what": "Central fisheries incentive stack + export machinery — the twin's catalog had PMMSY name-checks only; this is the funded picture",
@@ -387,7 +387,7 @@
   ]
  },
  "url_liveness": {
-  "https://pmmsy.dof.gov.in/": 200,
+  "https://pmmsy.dof.gov.in/": "ERR:URLError",
   "https://fidf.in/home/": 200,
   "https://mpeda.gov.in/?page_id=438": 200,
   "https://excise.rajasthan.gov.in/": 200,

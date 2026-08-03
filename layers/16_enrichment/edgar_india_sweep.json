@@ -1,8 +1,44 @@
 {
  "layer": "edgar_india_sweep",
- "built": "2026-07-27",
+ "built": "2026-08-03",
  "method": "EDGAR FTS exact-phrase sweep, forms 10-K,20-F; cumulative, deduped on accession; consumed by shortlist rebuild",
  "filings": [
+  {
+   "adsh": "0001493152-26-035684",
+   "company": "Yatra Online, Inc.  (YTRA)  (CIK 0001516899)",
+   "form": "20-F",
+   "file_date": "2026-07-31",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001193125-26-322004",
+   "company": "HDFC BANK LTD  (HDB)  (CIK 0001144967)",
+   "form": "20-F",
+   "file_date": "2026-07-29",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
+  {
+   "adsh": "0001193125-26-318134",
+   "company": "MakeMyTrip Ltd  (MMYT)  (CIK 0001495153)",
+   "form": "20-F",
+   "file_date": "2026-07-27",
+   "phrases": [
+    "investment in India",
+    "investments in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "india_domiciled"
+  },
   {
    "adsh": "0000950103-26-010820",
    "company": "ICICI BANK LTD  (IBN)  (CIK 0001103838)",

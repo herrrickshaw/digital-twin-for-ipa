@@ -48,6 +48,20 @@ KEYWORDS = [
  "research development and innovation", "agriculture infrastructure fund",
 ]
 
+# Second-pass keywords added 2026-08-04 after the scrutiny cross-reference showed
+# the first list had no subject term for several announced schemes (DevINE, eBus,
+# iDEX, e-Shram, white goods, ...). Already merged into the LS cache; kept here so
+# the Rajya Sabha harvester (build_rs_pq_registry.py) uses the identical set.
+KEYWORDS_SUPPLEMENTARY = [
+ "eBus", "e-Bus", "DevINE", "NESIDS", "UNNATI", "iDEX", "ADITI", "Shram", "IndiaAI",
+ "BioE3", "Namami Gange", "Jan Vishwas", "scrapping", "Gati Shakti", "SHAKTI", "ECLGS",
+ "emergency credit", "white goods", "air conditioner", "telecom manufacturing",
+ "dhan-dhaanya", "pulses mission", "gokul", "dairy development", "manufacturing mission",
+ "nuclear energy", "small modular", "defence corridor", "defence indigenisation",
+ "skill india", "urban challenge", "EPR", "extended producer", "diamond", "BHAVYA",
+ "credit guarantee", "LED light", "aviation turbine", "price stabilisation",
+]
+
 
 def fetch(lok, kw, page, size=200):
     q = urllib.parse.urlencode({"loksabhaNo": lok, "keyWord": kw,

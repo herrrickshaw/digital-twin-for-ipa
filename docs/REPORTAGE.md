@@ -1,12 +1,11 @@
 # Quarterly Reportage — key announcements × scheme × ministry
 
-*Generated 2026-08-02 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
+*Generated 2026-08-04 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
 
-## 2026Q3 — 123 scheme-mapped announcements
+## 2026Q3 — 125 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
-| 2026-07-01 | **Agriculture Infrastructure Fund** | Competition Commission of India | CCI approves the proposed combination involving acquisition of certain shareholding in Nippon Life India AIF Management  | [2279988](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279988) |
 | 2026-07-02 | **FAME / PM E-DRIVE** | Ministry of Environment, Forest and Climate Change | Union Environment Minister presides over ASSOCHAM’s National Conference on ‘Electric Mobility: Building India an Electri | [2280234](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2280234) |
 | 2026-07-02 | **NGHM / SIGHT** | Ministry of New and Renewable Energy | India Advances Global Green Hydrogen Leadership under National Green Hydrogen Mission | [2280506](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2280506) |
 | 2026-07-03 | **BHAVYA industrial parks** | Ministry of Commerce & Industry | Union Minister of Commerce and Industry Shri Piyush Goyal Asks States to Fully Utilise BHAVYA Scheme and Accord Highest  | [2280927](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2280927) |
@@ -36,7 +35,8 @@
 | 2026-07-15 | **India Semiconductor Mission / Semicon** | Ministry of Electronics & IT | Cabinet approves Semicon 2.0 - Government delivers on its commitment for a long-term policy support to Semiconductors in | [2284796](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284796) |
 | 2026-07-15 | **MPMS (LSEM successor)** | Ministry of Electronics & IT | Cabinet approves Mobile Phone Manufacturing Scheme (MPMS) | [2284792](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284792) |
 | 2026-07-15 | **PLI-ACC** | Ministry of Heavy Industries | The Ministry of Heavy Industries invites bids through Global Tender for the selection of beneficiaries to set up giga-sc | [2284916](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284916) |
-| … | | | *93 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| 2026-07-15 | **SATAT / CBG** | Ministry of Home Affairs | In the presence of Union Home Minister and Minister of Cooperation Shri Amit Shah, MCD and NDDB signs MoU for establishm | [2284949](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284949) |
+| … | | | *95 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (10)</summary>
 
@@ -53,7 +53,7 @@
 
 </details>
 
-## 2026Q2 — 138 scheme-mapped announcements
+## 2026Q2 — 137 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@
 | 2026-04-07 | **Rare Earth Magnet scheme** | Ministry of Heavy Industries | Pre-bid conference organised by Ministry of Heavy Industries (MHI) for prospective bidders under ‘Scheme to Promote Manu | [2249728](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2249728) |
 | 2026-04-07 | **Nuclear opening / BSR / SHANTI** | PIB Backgrounder | A New Chapter in India's Nuclear Journey | [2249783](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2249783) |
 | 2026-04-08 | **NBS fertilizer subsidy** | Cabinet | Cabinet approves Nutrient Based Subsidy (NBS) rates for Kharif Season, 2026 (from 01.04.2026 to 30.09.2026) on Phosphati | [2250032](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2250032) |
-| … | | | *108 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *107 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (26)</summary>
 
@@ -167,7 +167,7 @@
 
 </details>
 
-## 2025Q4 — 222 scheme-mapped announcements
+## 2025Q4 — 218 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -201,7 +201,7 @@
 | 2025-10-18 | **Defence corridors / indigenisation** | Ministry of Defence | Aatmanirbhar Bharat: Raksha Mantri and UP Chief Minister flag-off first batch of BrahMos missiles manufactured at BrahMo | [2180675](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2180675) |
 | 2025-10-18 | **IndiaAI Mission (subsidized compute)** | Ministry of Electronics & IT | IndiaAI and WHO Partner to Spotlight Real-World AI Health Breakthroughs; Call for Submission of Abstracts highlighting i | [2180713](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2180713) |
 | 2025-10-21 | **UDAN / RCS (VGF)** | Ministry of Civil Aviation | MoCA celebrates 9th UDAN Anniversary | [2181310](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2181310) |
-| … | | | *192 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *188 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (18)</summary>
 
@@ -224,7 +224,7 @@
 
 </details>
 
-## 2025Q3 — 219 scheme-mapped announcements
+## 2025Q3 — 215 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -234,7 +234,6 @@
 | 2025-07-01 | **ELI** | Ministry of Labour & Employment | Cabinet Approves Employment Linked Incentive (ELI) Scheme | [2141129](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2141129) |
 | 2025-07-02 | **PMMSY** | Ministry of Fisheries, Animal Husbandry & Dairying | Government of India considering ₹100-crore proposal for an Integrated Aqua Park in J&K under PMMSY Phase-II : Shri Rajiv | [2141664](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2141664) |
 | 2025-07-08 | **Agriculture Infrastructure Fund** | Competition Commission of India | Commission approves the acquisition of a certain stake in SmartShift Logistics Solutions Private Limited (Target) jointl | [2143209](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2143209) |
-| 2025-07-11 | **PM MITRA / textiles PLI** | Ministry of Communications | DoT Rolls Out Sanchar Mitra Scheme Nationwide to Empower Youth as Digital Ambassadors | [2144019](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2144019) |
 | 2025-07-11 | **India Semiconductor Mission / Semicon** | Ministry of Electronics & IT | Semicon India 2025 with First-Ever Global Pavilions, Country Roundtables, Skilling Initiatives, and Design Startup Pavil | [2143965](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2143965) |
 | 2025-07-11 | **NGHM / SIGHT; PM Surya Ghar** | Ministry of New and Renewable Energy | Secretary, MNRE held meeting with Chief Secretary, Odisha to discuss progress on National Green Hydrogen Mission and PM  | [2144067](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2144067) |
 | 2025-07-14 | **ELI** | Ministry of Labour & Employment | Union Minister Dr. Mansukh Mandaviya Chairs High Level Meeting of State Labour and Industry Ministers on Employment Link | [2144673](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2144673) |
@@ -258,7 +257,8 @@
 | 2025-07-22 | **FAME / PM E-DRIVE** | Ministry of Heavy Industries | PM e-DRIVE SCHEME | [2147040](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2147040) |
 | 2025-07-22 | **FAME / PM E-DRIVE** | Ministry of Heavy Industries | NEMMP AND FAME SCHEME | [2147039](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2147039) |
 | 2025-07-22 | **PM MITRA / textiles PLI** | Ministry of Textiles | FIREFIGHTING SUITS UNDER THE NATIONAL TECHNICAL TEXTILES MISSION (NTTM) | [2146760](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2146760) |
-| … | | | *189 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| 2025-07-23 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | PARLIAMENT QUESTION: NUCLEAR POWER GENERATION | [2147286](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2147286) |
+| … | | | *185 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (24)</summary>
 
@@ -338,7 +338,7 @@
 
 </details>
 
-## 2025Q1 — 209 scheme-mapped announcements
+## 2025Q1 — 208 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -372,7 +372,7 @@
 | 2025-01-21 | **Diamond Imprest Authorisation** | Ministry of Commerce & Industry | Department of Commerce introduces Diamond Imprest Authorization Scheme to boost global competitiveness of diamond sector | [2094862](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2094862) |
 | 2025-01-21 | **IndiaAI Mission (subsidized compute)** | Ministry of Electronics & IT | IndiaAI shortlists 20 top teams for CyberGuard Hackathon, representing leading universities and tech firms | [2094900](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2094900) |
 | 2025-01-22 | **UPI incentive scheme** | Ministry of Law and Justice | "Hamara Samvidhan Hamara Swabhiman" in Prayagraj | [2094983](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2094983) |
-| … | | | *179 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *178 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (11)</summary>
 
@@ -390,7 +390,7 @@
 
 </details>
 
-## 2024Q4 — 134 scheme-mapped announcements
+## 2024Q4 — 132 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -424,7 +424,7 @@
 | 2024-10-21 | **NGHM / SIGHT** | Prime Minister's Office | Green Hydrogen Fuel Cell Bus is a part of our efforts to boost sustainability and contribute to a greener future for the | [2066824](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2066824) |
 | 2024-10-21 | **UDAN / RCS (VGF)** | Prime Minister's Office | Prime Minister Shri Narendra Modi commemorates UDAN's 8th anniversary | [2066617](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2066617) |
 | 2024-10-21 | **UDAN / RCS (VGF)** | Ministry of Civil Aviation | Sh. Ram Mohan Naidu takes part in celebration to mark 08 glorious years of UDAN | [2066780](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2066780) |
-| … | | | *104 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *102 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (25)</summary>
 
@@ -447,7 +447,7 @@
 
 </details>
 
-## 2024Q3 — 171 scheme-mapped announcements
+## 2024Q3 — 170 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -481,7 +481,7 @@
 | 2024-07-23 | **ELI** | Ministry of Labour & Employment | GOVERNMENT TO IMPLEMENT 3 SCHEMES FOR ‘EMPLOYMENT LINKED INCENTIVE’ AS PART OF THE PRIME MINISTER’S PACKAGE | [2036327](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2036327) |
 | 2024-07-24 | **PLI — Electronics/LSEM** | Ministry of Electronics & IT | Cumulative investment of ₹ 8,282 crore by 32 companies under PLI Scheme for Large Scale Electronics Manufacturing | [2036448](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2036448) |
 | 2024-07-24 | **NGHM / SIGHT** | Ministry of New and Renewable Energy | NATIONAL GREEN HYDROGEN MISSION (NGHM) | [2039091](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2039091) |
-| … | | | *141 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *140 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (24)</summary>
 
@@ -504,7 +504,7 @@
 
 </details>
 
-## 2024Q2 — 37 scheme-mapped announcements
+## 2024Q2 — 36 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -519,7 +519,6 @@
 | 2024-04-28 | **National Critical Mineral Mission** | Ministry of Mines | Mines Ministry to Hold Two-day Critical Minerals Summit from Tomorrow | [2019026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2019026) |
 | 2024-04-29 | **National Critical Mineral Mission** | Ministry of Mines | Mines Ministry Inks MoU with Shakti Sustainable Energy Foundation for Providing Knowledge Support in the Field of Critic | [2019100](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2019100) |
 | 2024-04-30 | **National Critical Mineral Mission** | Ministry of Mines | Critical Minerals Summit Concludes on a note of Strategic Collaboration and Policy Insights to Advance India’s Critical  | [2019185](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2019185) |
-| 2024-05-07 | **India Semiconductor Mission / Semicon** | Ministry of Mines | Mines Ministry to organize One-Day Workshop on State Mining Index in collaboration with IIT-ISM, Dhanbad | [2019855](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2019855) |
 | 2024-05-08 | **Shipbuilding package** | Ministry of Defence | Indian Coast Guard inks MoU with private sector for indigenous marine grade steel to enhance indigenous content in shipb | [2019923](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2019923) |
 | 2024-05-09 | **PM MITRA / textiles PLI** | Ministry of Textiles | India’s Technical Textiles market has huge potential backed by a significant growth rate of 10%: Textiles Secretary | [2020101](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020101) |
 | 2024-05-10 | **NGHM / SIGHT** | Ministry of New and Renewable Energy | Government organizes workshop on Quality Control in Green Hydrogen; deliberations held on Quality Standards, Testing Inf | [2020288](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020288) |
@@ -538,7 +537,8 @@
 | 2024-06-20 | **NPDD / Rashtriya Gokul Mission** | Ministry of Fisheries, Animal Husbandry & Dairying | Department of Animal Husbandry and Dairying signed an agreement with the National Dairy Development Board for execution  | [2027125](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2027125) |
 | 2024-06-21 | **Namami Gange (HAM)** | Ministry of Jal Shakti | ‘Namami Gange’ Celebrates International Day of Yoga on Yamuna Bank in Delhi and Ganga Ghats in Ganga Basin | [2027758](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2027758) |
 | 2024-06-22 | **NGHM / SIGHT** | Ministry of New and Renewable Energy | Government enhances allocation for Fertilizer Sector under SIGHT Programme of the National Green Hydrogen Mission (NGHM) | [2027858](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2027858) |
-| … | | | *7 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| 2024-06-24 | **Coal gasification incentives** | Ministry of Coal | Ministry of Coal initiates India’s First Ever Pilot project for Underground Coal Gasification in Jharkhand | [2028176](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2028176) |
+| … | | | *6 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (4)</summary>
 
@@ -549,7 +549,7 @@
 
 </details>
 
-## 2024Q1 — 132 scheme-mapped announcements
+## 2024Q1 — 131 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -583,7 +583,7 @@
 | 2024-01-24 | **PM Vishwakarma** | Ministry of Micro,Small & Medium Enterprises | PM Vishwakarma beneficiaries invited as “special guests” to witness the Republic Day Parade, 2024 at Kartavya Path | [1999280](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1999280) |
 | 2024-01-24 | **NGHM / SIGHT** | Ministry of New and Renewable Energy | Power and New & Renewable Energy Minister meets industry, discusses pathways to accelerate use of green hydrogen in iron | [1999256](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1999256) |
 | 2024-01-25 | **PMMSY** | Ministry of Fisheries, Animal Husbandry & Dairying | Department of Fisheries has extended invitation to 250 beneficiaries of the Pradhan Mantri Matsya Sampada Yojana (PMMSY) | [1999521](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1999521) |
-| … | | | *102 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *101 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (37)</summary>
 
@@ -606,7 +606,7 @@
 
 </details>
 
-## 2023Q4 — 124 scheme-mapped announcements
+## 2023Q4 — 122 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -640,7 +640,7 @@
 | 2023-11-06 | **PM Vishwakarma** | Ministry of Skill Development and Entrepreneurship | Launch of Training of Master Trainers & Assessors Program under the PM Vishwakarma Yojana | [1975124](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1975124) |
 | 2023-11-14 | **National Critical Mineral Mission** | Ministry of Mines | Mines Ministry is in the Process of Auctioning 20 Critical Mineral Blocks : Secretary VL Kantha Rao | [1976940](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1976940) |
 | 2023-11-16 | **PM MITRA / textiles PLI** | Ministry of Defence | INDIA - SRI LANKA JOINT EXERCISE MITRA SHAKTI – 2023 COMMENCED TODAY | [1977339](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1977339) |
-| … | | | *94 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *92 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (27)</summary>
 
@@ -773,14 +773,13 @@
 
 </details>
 
-## 2023Q1 — 187 scheme-mapped announcements
+## 2023Q1 — 186 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
 | 2023-01-02 | **FAME / PM E-DRIVE** | Ministry of Heavy Industries | 50 Electric Buses launched in Delhi with support under FAME India Phase II scheme of the Ministry of Heavy Industries | [1888061](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1888061) |
 | 2023-01-03 | **NGHM / SIGHT** | Ministry of Power | NTPC starts India’s first green hydrogen blending operation in PNG network | [1888334](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1888334) |
 | 2023-01-04 | **NGHM / SIGHT** | Cabinet | Cabinet approves National Green Hydrogen Mission | [1888545](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1888545) |
-| 2023-01-04 | **India Semiconductor Mission / Semicon** | Ministry of Mines | Hindustan Copper Ltd Signs MoU with IIT (ISM), Dhanbad for Technical Collaboration | [1888479](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1888479) |
 | 2023-01-04 | **NGHM / SIGHT** | Ministry of New and Renewable Energy | Cabinet approves National Green Hydrogen Mission | [1888547](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1888547) |
 | 2023-01-05 | **Pharma/medical-devices incentives** | Ministry of Chemicals and Fertilizers | Pharmaceuticals & Medical Devices Bureau of India launches Jan Aushadhi Chyawanprash Special | [1888966](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1888966) |
 | 2023-01-05 | **NGHM / SIGHT** | Ministry of New and Renewable Energy | Union Minister of Power and NRE, Shri R.K Singh interacts with stakeholders regarding National Green Hydrogen Mission | [1888972](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1888972) |
@@ -807,7 +806,8 @@
 | 2023-02-02 | **UDAN / RCS (VGF)** | Ministry of Civil Aviation | 459 routes involving 72 airports including nine heliports and two water aerodromes are operationalised under UDAN | [1895741](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1895741) |
 | 2023-02-02 | **Jal Jeevan Mission** | Ministry of Jal Shakti | TAP WATER CONNECTIONS UNDER JAL JEEVAN MISSION | [1895728](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1895728) |
 | 2023-02-02 | **Jal Jeevan Mission** | Ministry of Jal Shakti | TARGETS UNDER JAL JEEVAN MISSION | [1895727](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1895727) |
-| … | | | *157 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| 2023-02-02 | **Gig-worker coverage (PM-JAY/e-Shram)** | Ministry of Labour & Employment | e-SHRAM Portal registration facility available at over 4 lakh CSC centres across the country | [1895849](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1895849) |
+| … | | | *156 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (19)</summary>
 
@@ -880,7 +880,7 @@
 
 </details>
 
-## 2022Q3 — 123 scheme-mapped announcements
+## 2022Q3 — 122 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -914,7 +914,7 @@
 | 2022-07-21 | **PMAY (U/G)** | Ministry of Housing & Urban Affairs | Extension of PMAY-Urban Mission upto March 2024 is under consideration | [1843427](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1843427) |
 | 2022-07-21 | **Jal Jeevan Mission** | Ministry of Jal Shakti | Over 34% rural households provided with tap water connections under JJM in last 35 months | [1843387](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1843387) |
 | 2022-07-21 | **Namami Gange (HAM)** | Ministry of Jal Shakti | Namami Gange Programme | [1843386](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1843386) |
-| … | | | *93 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *92 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (21)</summary>
 
@@ -994,7 +994,7 @@
 
 </details>
 
-## 2022Q1 — 143 scheme-mapped announcements
+## 2022Q1 — 141 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -1028,7 +1028,7 @@
 | 2022-02-04 | **FAME / PM E-DRIVE** | Ministry of Heavy Industries | Ministry of Heavy Industries supports 2,31,257 Electric Vehicles under Phase-II of FAME India Scheme till 1st February,  | [1795444](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1795444) |
 | 2022-02-04 | **Jal Jeevan Mission** | Ministry of Jal Shakti | Tap Water Supply Provided To 1.1 Crore Homes In Aspirational Districts In 28 Months Under Jal Jeevan Mission | [1795552](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1795552) |
 | 2022-02-07 | **UDAN / RCS (VGF)** | Ministry of Civil Aviation | 86.05 lakhs passengers have travelled under RCS- UDAN flights till 09.01.2022 | [1796156](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1796156) |
-| … | | | *113 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *111 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (22)</summary>
 
@@ -1393,7 +1393,7 @@
 
 </details>
 
-## 2020Q2 — 88 scheme-mapped announcements
+## 2020Q2 — 87 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -1427,7 +1427,7 @@
 | 2020-04-30 | **UDAN / RCS (VGF)** | Ministry of Civil Aviation | 415 flights operated under Lifeline Udan to support India’s fight against Covid-19 | [1619655](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1619655) |
 | 2020-05-02 | **UDAN / RCS (VGF)** | Ministry of Civil Aviation | 422 flights operated under Lifeline Udan to deliver essential medical cargo to people across the country | [1620368](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1620368) |
 | 2020-05-03 | **UDAN / RCS (VGF)** | Ministry of Civil Aviation | 430 flights operated under Lifeline Udan | [1620621](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1620621) |
-| … | | | *58 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *57 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (18)</summary>
 
@@ -1507,14 +1507,13 @@
 
 </details>
 
-## 2019Q4 — 59 scheme-mapped announcements
+## 2019Q4 — 58 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
 | 2019-10-03 | **Pharma/medical-devices incentives** | Ministry of Health and Family Welfare | Designation of National Health Systems Resource Centre (NHSRC) as a WHO Collaborating Centre for Priority Medical Device | [1587085](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1587085) |
 | 2019-10-09 | **NIDHI (DST startups)** | Cabinet | Cabinet approves relaxation of Aadhaar seeding of data of the beneficiaries under Pradhan Mantri KisanSamman Nidhi (PM-K | [1587491](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1587491) |
 | 2019-10-09 | **NIDHI (DST startups)** | Ministry of Agriculture & Farmers Welfare | Cabinet approves relaxation of Aadhaar seeding of data of the beneficiaries under Pradhan Mantri KisanSamman Nidhi (PM-K | [1587492](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1587492) |
-| 2019-10-16 | **PM MITRA / textiles PLI** | Ministry of Health and Family Welfare | Dr Harsh Vardhan launches Food Safety Mitra (FSM) scheme for strengthening and scaling up ‘Eat Right India’ movement; | [1588275](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1588275) |
 | 2019-10-18 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | Dr Jitendra Singh inaugurates 11th Nuclear Energy Conclave | [1588454](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1588454) |
 | 2019-10-22 | **Shipbuilding package** | Ministry of Petroleum & Natural Gas | Shri Dharmendra Pradhan today reviewed oil and gas projects being undertaken in the Russian far-east; also visited the s | [1588741](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1588741) |
 | 2019-10-30 | **FAME / PM E-DRIVE** | Competition Commission of India | CCI approves the acquisition of shareholding in ANI Technologies Private Limited (ANI) and Ola Electric Mobility Private | [1589640](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1589640) |
@@ -1541,7 +1540,8 @@
 | 2019-11-28 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | Cyber Attacks on Indian Nuclear Power Plants | [1594020](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1594020) |
 | 2019-11-29 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | Dr Jitendra Singh calls for wider applications of nuclear technology in everyday life | [1594303](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1594303) |
 | 2019-11-29 | **Pharma/medical-devices incentives** | Ministry of Health and Family Welfare | Regulatory Framework for Medical Devices | [1594174](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1594174) |
-| … | | | *29 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| 2019-11-29 | **PM MITRA / textiles PLI** | Ministry of Textiles | Integrated Textile Parks | [1594200](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1594200) |
+| … | | | *28 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (74)</summary>
 
@@ -1878,7 +1878,7 @@
 
 </details>
 
-## 2018Q1 — 51 scheme-mapped announcements
+## 2018Q1 — 45 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -1903,16 +1903,16 @@
 | 2018-02-28 | **PMAY (U/G)** | Ministry of Housing & Urban Affairs | 1,28,509 Affordable houses sanctioned for urban poor under PMAY(urban) | [1522457](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1522457) |
 | 2018-03-05 | **Namami Gange (HAM)** | Ministry of Water Resources, River Development and Ganga Rejuvenation | Installation of STPs under Namami Gange Programme | [1522560](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1522560) |
 | 2018-03-06 | **PMKSY** | Ministry of Food Processing Industries | Pradhan MantriKisan SAMPADA Yojana expected to benefit 20 lakh farmers and generate 5,30,500 employments by the year 201 | [1522696](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1522696) |
-| 2018-03-12 | **UNNATI 2024 (ex NEIDS)** | Ministry of Ports, Shipping and Waterways | Implementation of UNNATI Project | [1523780](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1523780) |
 | 2018-03-12 | **SASCI tourism challenge-mode** | Ministry of Tourism | Iconic Tourist Spots | [1523871](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1523871) |
 | 2018-03-14 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | Nuclear Cooperation with Canada | [1524404](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524404) |
-| 2018-03-14 | **UNNATI 2024 (ex NEIDS)** | Ministry of Agriculture & Farmers Welfare | Union Agriculture Minister Shri Radha Mohan Singh addresses Curtain Raiser Press Conference for Krishi Unnati Mela being | [1524317](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524317) |
 | 2018-03-15 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | Accidents in Nuclear Power Plants | [1524610](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524610) |
 | 2018-03-15 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | Proposal for Nuclear Power Plants in States | [1524608](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524608) |
 | 2018-03-15 | **PM-KUSUM** | Ministry of New and Renewable Energy | KUSUM Scheme – harnessing solar power for rural India | [1524553](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524553) |
-| 2018-03-16 | **UNNATI 2024 (ex NEIDS)** | Prime Minister's Office | Prime Minister Narendra Modi to address farmers at 'Krishi Unnati Mela' at IARI on March 17 | [1524746](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524746) |
-| 2018-03-16 | **UNNATI 2024 (ex NEIDS)** | Ministry of Agriculture & Farmers Welfare | Important information on agricultural research is the main attraction of Krishi Unnati Mela 2018: Shri Radha Mohan Singh | [1524924](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524924) |
-| … | | | *21 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| 2018-03-16 | **Defence corridors / indigenisation** | Ministry of Defence | RM initiates development of tamil nadu defence corridor at defence industry meet | [1524832](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524832) |
+| 2018-03-16 | **NIDHI (DST startups)** | Ministry of Health and Family Welfare | Rashtriya Arogya Nidhi | [1524808](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524808) |
+| 2018-03-16 | **Pharma/medical-devices incentives** | Ministry of Health and Family Welfare | Regulatory Body for Medical Devices | [1524801](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1524801) |
+| 2018-03-21 | **NIP/NIPU urea investment policy** | Cabinet Committee on Economic Affairs (CCEA) | Cabinet approves Revision of Energy Norms under New Urea Policy | [1525696](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1525696) |
+| … | | | *15 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (92)</summary>
 
@@ -1992,7 +1992,7 @@
 
 </details>
 
-## 2017Q3 — 33 scheme-mapped announcements
+## 2017Q3 — 32 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -2026,7 +2026,7 @@
 | 2017-09-17 | **PM Vishwakarma** | Ministry of Labour & Employment | Shri Santosh Kumar Gangwar gives away Vishwakarma Rashtriya Puraskar & National Safety Awards (performance year 2015) | [1503094](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1503094) |
 | 2017-09-19 | **PM Vishwakarma** | Ministry of Education | 1st AICTE-ECI Chhatra Vishwakarma Awards -2017 | [1503371](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1503371) |
 | 2017-09-21 | **Nuclear opening / BSR / SHANTI** | Department of Atomic Energy | Canadian delegation discusses uranium and nuclear energy collaboration with Dr Jitendra Singh | [1503636](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1503636) |
-| … | | | *3 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *2 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (60)</summary>
 

@@ -109,6 +109,34 @@ SCHEMES = [
  (r"skill india programme", "Skill India Programme (incl. PM-NAPS)", "MSDE"),
 ]
 COMP = [(re.compile(p, re.I), s, m) for p, s, m in SCHEMES]
+
+# Keyword vetoes: same token, different programme. A scheme match is dropped when the
+# title also matches the veto below. These are the acronym collisions the register
+# actually contains -- IIT (ISM) Dhanbad is a mining school, not the semiconductor
+# mission; Sanchar/Paryatan/Nyaya/Monument Mitra are unrelated to PM MITRA textile
+# parks; "AIF" in a CCI combination order is an Alternative Investment Fund, not the
+# Agriculture Infrastructure Fund; Krishi Unnati Mela (and the judoka Unnati Sharma)
+# are not UNNATI 2024. Verified against the full register 4-Aug-2026: 4,066 -> 4,034 rows.
+EXCLUDE = {
+ "India Semiconductor Mission / Semicon": r"IIT\s*[(\-]?\s*ISM|\bISM\b[\s,)]*Dhanbad",
+ "PM MITRA / textiles PLI": r"(sanchar|nyaya|monument|paryatan|sahakar|food safety|swachh|vidyut)\s*mitra",
+ "Agriculture Infrastructure Fund": r"alternative investment fund|\bAIF\b\s*(scheme|management)|CCI approves",
+ "UNNATI 2024 (ex NEIDS)": r"krishi unnati|\bUnnati\s+[A-Z][a-z]+",
+}
+EXC = {k: re.compile(v, re.I) for k, v in EXCLUDE.items()}
+
+def _vetoed(label, title):
+    rx = EXC.get(label)
+    return bool(rx and rx.search(title or ""))
+
+def scheme_hits(title, with_ministry=False):
+    """Scheme labels for a title, minus acronym-collision false positives."""
+    if with_ministry:
+        return [(s, m) for rx, s, m in COMP
+                if rx.search(title or "") and not _vetoed(s, title)]
+    return [refine_pli(s, title) for rx, s, m in COMP
+            if rx.search(title or "") and not _vetoed(s, title)]
+
 # PLI sector split: refine the generic "PLI (family)" label using title sector cues
 PLI_SECTORS = [
  (re.compile(r"auto|automobile", re.I), "PLI — Auto & Components"),
@@ -162,7 +190,7 @@ def state_wire(days=30):
     out = []
     for state, date, title, category, url in scon.execute(
             f"select state, date, {tcol}, category, url from state_news where date >= ? order by date desc", (cutoff,)):
-        hits = [refine_pli(s, title) for rx, s, m in COMP if rx.search(title or "")]
+        hits = scheme_hits(title)
         if not hits and not STATE_SIGNAL.search(title or ""):
             continue
         out.append({"state": STATE_NAMES.get(state, state), "date": date, "title": title,
@@ -182,7 +210,7 @@ def main():
         "SELECT id, date, ministry, title FROM pib_items ORDER BY date").fetchall()
     by_q = defaultdict(lambda: {"mapped": [], "cabinet_other": [], "dropped": 0})
     for prid, date, ministry, title in rows:
-        hits = [(s, m) for rx, s, m in COMP if rx.search(title or "")]
+        hits = scheme_hits(title, with_ministry=True)
         ministry = ministry or "(unattributed)"
         is_cab = ministry.startswith("Cabinet")
         q = quarter_of(date)
@@ -274,7 +302,7 @@ def write_html_states():
     counted = 0
     for state, date, title, url in scon.execute(
             f"select state, date, {tcol}, url from state_news where date >= '2017-01-01' order by date desc"):
-        hits = [refine_pli(s, title) for rx, s, m in COMP if rx.search(title or "")]
+        hits = scheme_hits(title)
         bucket = classify_state_row(title)
         if not bucket and not hits:
             continue
@@ -375,7 +403,7 @@ def write_html_latest(rows, register_total=0, days=30):
     for prid, date, ministry, title in rows:
         if (date or "") < cutoff:
             continue
-        hits = [refine_pli(s, title) for rx, s, m in COMP if rx.search(title or "")]
+        hits = scheme_hits(title)
         ministry = ministry or "(unattributed)"
         if hits:
             recent.append((date, prid, ministry, title, hits[:2]))

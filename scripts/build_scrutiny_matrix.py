@@ -86,11 +86,11 @@ def main():
     ta = sum(r["pib_n"] for r in rows)
 
     def table(rws, cols):
-        out = ["| Scheme | PIB anns | Last ann. | LS Qs | RS Qs | ★ | First Q | Last Q |",
-               "|---|---:|---|---:|---:|---:|---|---|"]
+        out = ["| Scheme | First ann. | PIB anns | Last ann. | LS Qs | RS Qs | ★ | First Q | Last Q |",
+               "|---|---|---:|---|---:|---:|---:|---|---|"]
         for r in rws:
             star = (r["ls_star"] + r["rs_star"]) or ""
-            out.append(f"| {r['s']} | {r['pib_n']} | {r['pib_last']} | "
+            out.append(f"| {r['s']} | {r['pib_first']} | {r['pib_n']} | {r['pib_last']} | "
                        f"{r['ls_n'] or ''} | {r['rs_n'] or ''} | {star} | "
                        f"{r['first_q'] if r['first_q']!='9999' else ''} | {r['last_q']} |")
         return "\n".join(out)
@@ -147,6 +147,8 @@ Question capture is by **subject line only** in both houses: a question whose
 subject names no scheme is not counted even if its answer discusses one. Zero
 captured questions is therefore an upper bound on neglect, not proof of it. PIB
 counts include progress releases and Parliament-answer summaries, not only launches.
+"First ann." is the scheme's first appearance in the register (floor: January 2017),
+so pre-2017 schemes show their first register mention, not their launch.
 Thresholds (>= {ACTIVE_MIN_Q} questions, {RECENT_DAYS}-day recency) are stated, tunable
 constants, not findings.
 """

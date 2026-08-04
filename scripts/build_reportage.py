@@ -119,7 +119,7 @@ COMP = [(re.compile(p, re.I), s, m) for p, s, m in SCHEMES]
 # are not UNNATI 2024. Verified against the full register 4-Aug-2026: 4,066 -> 4,034 rows.
 EXCLUDE = {
  "India Semiconductor Mission / Semicon": r"IIT\s*[(\-]?\s*ISM|\bISM\b[\s,)]*Dhanbad",
- "PM MITRA / textiles PLI": r"(sanchar|nyaya|monument|paryatan|sahakar|food safety|swachh|vidyut)\s*mitra",
+ "PM MITRA / textiles PLI": r"(sanchar|nyaya|monument|paryatan|sahakar|food safety|swachh|vidyut|van|krishi|kisan|vigyan)\s*mitra",
  "Agriculture Infrastructure Fund": r"alternative investment fund|\bAIF\b\s*(scheme|management)|CCI approves",
  "UNNATI 2024 (ex NEIDS)": r"krishi unnati|\bUnnati\s+[A-Z][a-z]+",
 }

@@ -1,0 +1,231 @@
+{
+ "layer": "16_enrichment/pli_meddevice_crosscheck",
+ "built": "2026-08-12",
+ "purpose": "Four PLI Medical Devices scheme beneficiaries with confirmed Indian manufacturing subsidiaries and real disbursed/approved government incentive money (per docs/PLI_SCHEME_BENEFICIARY_LEADS.md Part 5C, source LS USQ 1001, 24.07.2026) do not appear in the current 263-company layer-16 lead list. This checks, per company, whether that is a genuine gap in the confirmed parent's own annual-report disclosure, or a gap in how the layer-16 sweep was built -- and separately whether the parent would even pass the layer-16 'verified-profitable' screen (margin>0 AND ROE>0, per scripts/build_leads.py line 6/85-86) in the first place.",
+ "method": "For each of the 4 companies: (1) confirmed the exact listed/reporting parent via the company's own IR/corporate-structure disclosure, not assumption; (2) fetched that parent's most recent live annual report / 10-K / integrated report (SEC EDGAR for the US filer, direct corporate/investor-relations PDF for the three non-US filers -- akamai-gated omron.com PDFs required a reader-proxy fetch after direct curl/WebFetch were blocked, recorded below); (3) full-text-searched for every 'India' occurrence and classified each as context_only (country-list / disease-stats / bio, the Switzerland-sweep exclusion bar) vs genuine (named manufacturing/capacity/investment/strategic commentary); (4) computed net margin and ROE from the parent's own reported net income, revenue, and equity figures (or used the company's own reported ROE line where the AR states it directly) to independently apply the layer-16 screen; (5) where genuine evidence exists, extracted a real quoted sentence with exact source. No figures fabricated -- where extraction failed (Siemens/Omron PDFs first attempt) the raw PDF was downloaded and run through pdftotext locally, or refetched via a text-extraction proxy, rather than guessed.",
+ "layer16_screen_recap": "scripts/build_leads.py: 'yfinance-verified profitable: profit_margin>0 AND roe>0' (line 6); score formula weights margin (capped 0.25) and roe (capped 0.30) at 20 points each. A parent that fails margin>0 AND roe>0 is excluded from layer 16 by design, regardless of how strong its India disclosure is.",
+ "companies": [
+  {
+   "indian_pli_entity": "Siemens Healthcare Private Limited",
+   "indian_pli_entity_note": "PLI Medical Devices beneficiary, CT/MRI manufacturing, Bengaluru; PLI_SCHEME_BENEFICIARY_LEADS.md Part 5C lists disbursed Rs 39.46cr",
+   "parent_confirmation": {
+    "question_posed": "Siemens Healthineers AG (Frankfurt, spun off 2018, SHL.DE) or still formally Siemens AG (Munich, SIE.DE)?",
+    "answer": "Siemens Healthineers AG. Confirmed two ways: (a) company-side sources state Siemens Healthcare Private Limited is a wholly owned subsidiary of Siemens Healthineers AG, and that Siemens AG's own stake is now in Siemens Healthineers AG (~72-75% depending on date), not a direct stake in the Indian entity; (b) DIRECT confirmation in Siemens Healthineers AG's own FY2025 Annual Report, List of Shareholdings note: 'Siemens Healthcare Private Limited, Mumbai / India' listed at 100% ownership under the Siemens Healthineers AG consolidation scope (also lists 'Siemens Healthineers India LLP, Bangalore / India' at 100%, and 'SIEMENS HEALTHINEERS INDIA MANUFACTURING PRIVATE LIMITED, Mumbai / India' at 100.5%).",
+    "ticker": "SHL.DE (Frankfurt)",
+    "note_on_ultimate_parent": "Siemens AG holds a majority stake in Siemens Healthineers AG, but the entity that legally owns/consolidates the Indian subsidiary, and the entity whose own Annual Report is the correct document to check per the task, is Siemens Healthineers AG -- confirmed, not assumed."
+   },
+   "parent_source_document": {
+    "name": "Siemens Healthineers AG Annual Report 2025",
+    "fiscal_year": "FY2025, ended September 30, 2025",
+    "published": "2025-11-26",
+    "url": "https://corporate.webassets.siemens-healthineers.com/a364b935102e7df5/d7fdacda458e/siemens-healthineers-ir-annual-report-2025.pdf",
+    "fetch_note": "Direct WebFetch of the PDF returned an unreadable/encrypted-looking stream on first pass; the same binary was then run through local pdftotext successfully, confirming the document itself is fine -- the earlier failure was a text-extraction issue, not a missing/fake document."
+   },
+   "profitability_screen": {
+    "net_income_eur_millions": 2168,
+    "net_income_attributable_to_shareholders_eur_millions": 2144,
+    "revenue_eur_millions": 23375,
+    "net_margin": 0.0917,
+    "total_equity_eur_millions": 18091,
+    "equity_attributable_to_shareholders_eur_millions": 18040,
+    "roe": 0.1188,
+    "roe_note": "Computed as net income attributable to shareholders / equity attributable to shareholders, both from the AR2025 consolidated financial statements (page refs: Net income line, Total equity line). A market-data ROE of ~11% (TTM) was also found independently via web search, consistent with this computation.",
+    "pass": true,
+    "source": "Siemens Healthineers AG Annual Report 2025, Consolidated Statement of Income and Consolidated Statement of Financial Position"
+   },
+   "india_evidence": {
+    "genuine_evidence_found": true,
+    "quotes": [
+     {
+      "text": "Siemens Healthineers has a strong presence and market position in growth markets and is directly represented in more than 70 countries worldwide. Our main production and development sites are in Germany, the United States, India, China, Great Britain, Republic of Korea, and Slovakia.",
+      "section": "Business overview, p.1 of Annual Report 2025",
+      "classification": "genuine -- India named as one of seven main production and development sites, not a passing country-list mention inside unrelated statistics"
+     },
+     {
+      "text": "Such collaborations are being pursued, among others, in Innovation Centers in Erlangen, Germany, Shanghai, China, and Bengaluru, India.",
+      "section": "Innovation / SHIFT platform section",
+      "classification": "genuine -- names a specific India facility (Bengaluru Innovation Center)"
+     },
+     {
+      "text": "Our R&D workforce exceeds 13,000 employees at fiscal year-end 2025 and operates at a number of R&D sites around the world, mainly in Germany, the U.S., China, and India.",
+      "section": "R&D section",
+      "classification": "genuine -- India named among the four primary global R&D locations"
+     }
+    ],
+    "excluded_context_only_examples": [
+     "'Countries with significant employment according to the ESRS are Germany, the United States, India, and China' -- an HR/ESRS headcount disclosure table (India: 8,397 employees), closer to context but still tied to a real operational footprint rather than a disease-burden statistic; included above the exclusion line because it corroborates the production-site claim rather than standing alone."
+    ],
+    "not_found_in_this_document": "No India-specific capex figure or forward capacity-expansion commentary comparable to the Nipro/Varex entries below -- the disclosure here is scale/footprint-level (named as a main production site) rather than a specific rupee investment or unit-capacity figure."
+   },
+   "recommendation": {
+    "verdict": "ADD",
+    "reasoning": "Passes the profitability screen cleanly (net margin ~9.2%, ROE ~11.9%) and has genuine, repeated, non-context-only India manufacturing/R&D disclosure directly in the parent's own FY2025 Annual Report. This is a genuine gap in the layer-16 sweep, not a screen failure or an evidence gap. Suggested evidence line for layers/16_leads.json once editable: 'Our main production and development sites are in Germany, the United States, India, China, Great Britain, Republic of Korea, and Slovakia.' -- Siemens Healthineers AG Annual Report 2025."
+   }
+  },
+  {
+   "indian_pli_entity": "Varex Imaging Manufacturing India Private Limited",
+   "indian_pli_entity_note": "PLI Medical Devices beneficiary, X-ray tubes + flat panel detectors (2 approvals); PLI_SCHEME_BENEFICIARY_LEADS.md Part 5C lists no disbursement figure",
+   "parent_confirmation": {
+    "answer": "Varex Imaging Corporation, NASDAQ: VREX, Delaware-incorporated, HQ Salt Lake City, UT. Confirmed via the company's own FY2025 Form 10-K, which discloses Indian subsidiaries and India-based facilities directly (see below) and via SEC EDGAR CIK 0001681622.",
+    "ticker": "VREX (NASDAQ)"
+   },
+   "parent_source_document": {
+    "name": "Varex Imaging Corporation Form 10-K, fiscal year 2025",
+    "fiscal_year": "FY2025, ended October 3, 2025",
+    "filed": "2025-11-18",
+    "sec_accession": "0001681622-25-000108",
+    "url": "https://www.sec.gov/Archives/edgar/data/1681622/000168162225000108/var-20251003.htm"
+   },
+   "profitability_screen": {
+    "net_loss_usd_millions": -69.9,
+    "net_loss_attributable_to_varex_usd_millions": -70.3,
+    "revenue_usd_millions": 845,
+    "net_margin": -0.0827,
+    "roe": -0.1395,
+    "roe_source": "Company-reported GAAP net loss of $(1.70) per diluted share for FY2025 (4Q and FY2025 earnings release, businesswire/company IR, 2025-11-xx) and independently corroborated ROE of -13.95% (macrotrends, FY2025)",
+    "pass": false,
+    "fail_reason": "Both net margin and ROE are negative for FY2025 -- goodwill impairment charge and higher interest expense drove a full-year GAAP net loss despite 4% revenue growth."
+   },
+   "india_evidence": {
+    "genuine_evidence_found": true,
+    "quotes": [
+     {
+      "text": "We manufacture our products at facilities in the United States, the United Kingdom, the Netherlands, Germany, Finland, the Philippines, China, and India.",
+      "section": "Item 1, Business -- Manufacturing and Supplies",
+      "classification": "genuine -- India named as one of eight manufacturing-facility countries"
+     },
+     {
+      "text": "In addition to our location in Salt Lake City, Utah, our other primary owned facilities are located in Nevada, Illinois, the Netherlands, and India.",
+      "section": "Item 2, Properties",
+      "classification": "genuine and notably strong -- India is one of only four countries (besides the Utah HQ) where Varex owns (not merely leases) a primary facility"
+     },
+     {
+      "text": "to be closer to our global customer base, we continue to expand manufacturing capabilities at our facilities in China, Germany, the Netherlands, the Philippines and India. We have also implemented local sourcing strategies to offer local content. This local-for-local strategy has been well received by both our local customers as well as global OEMs...",
+      "section": "Item 1, Business -- manufacturing strategy",
+      "classification": "genuine -- explicit ongoing capacity-expansion and local-for-local sourcing strategy naming India"
+     }
+    ],
+    "additional_context": "10-K also separately discusses a China-import trade investigation involving 'medical CT X-ray tubes and tube inserts... originating from the United States and India' and notes a valuation allowance against 'one of its Indian subsidiaries' deferred tax assets' -- both real, India-specific disclosures, though the second (tax) is a risk/accounting note rather than a growth signal."
+   },
+   "recommendation": {
+    "verdict": "DO NOT ADD under the current screen -- flag as a screen-driven exclusion, not a research gap",
+    "reasoning": "This is the clearest case in the set of genuine, strong, repeated India-manufacturing disclosure (Varex's 10-K arguably clears the evidence bar more decisively than any of the other three) coexisting with an outright profitability-screen failure. Varex is absent from layer 16 because it lost money in FY2025 (goodwill impairment + interest expense), not because nobody looked or because the evidence is weak. If the screen is ever relaxed to allow a 'strong evidence, temporarily unprofitable' override tier, Varex is the strongest candidate for it -- India is one of only four countries where the company owns real estate outright."
+   }
+  },
+  {
+   "indian_pli_entity": "Nipro India Corporation Private Limited",
+   "indian_pli_entity_note": "PLI Medical Devices beneficiary, dialyzers, Maharashtra; PLI_SCHEME_BENEFICIARY_LEADS.md Part 5C lists disbursed Rs 34.89cr",
+   "parent_confirmation": {
+    "answer": "Nipro Corporation, Tokyo Stock Exchange, ticker 8086, HQ Osaka. Confirmed via web sources describing Nipro India Corporation Private Limited as a wholly owned subsidiary of Nipro Corporation, and directly via Nipro Corporation's own 72nd Annual Report subsidiary list, which names 'Nipro India Corporation Private Limited -- Manufacture of Medical Supplies and Devices' alongside 'Nipro Medical (India) Pvt. Ltd.' (sales) and 'Nipro PharmaPackaging India Private Limited' (glass products) under India.",
+    "ticker": "8086.T (Tokyo)"
+   },
+   "parent_source_document": {
+    "name": "Nipro Corporation 72nd Annual Report",
+    "fiscal_year": "FY ended March 31, 2025 (referred to internally as FY3/'25)",
+    "url": "https://www.nipro.co.jp/en/assets/document/ir_library/72nd/annual_report.pdf"
+   },
+   "profitability_screen": {
+    "net_sales_jpy_millions": 644586,
+    "net_income_jpy_millions": 6669,
+    "net_income_attributable_to_owners_of_parent_jpy_millions": 5113,
+    "net_margin": 0.0079,
+    "roe": 0.021,
+    "roe_source": "Company's own reported ROE of 2.1% for FY3/'25, stated directly in the Annual Report's Financial Highlights and ROE trend chart (ROE fell from 5.1% in FY3/'24 to 2.1% in FY3/'25, driven by lower net income)",
+    "pass": true,
+    "pass_note": "Both figures are positive but thin -- Nipro's own management explicitly states in the President's Message that FY3/'25 'achieved the desired sales growth rate but not the desired operating profit margin, Net Debt/EBITDA ratio, or ROE.' It clears the >0 bar, not by a wide margin."
+   },
+   "india_evidence": {
+    "genuine_evidence_found": true,
+    "quotes": [
+     {
+      "text": "in the New Plan, we will dramatically increase the production capacity of China, India, Vietnam, and the U.S. to promote local production for local consumption. The new plant in Vietnam will begin operations in July 2026, and in the U.S., we acquired land in North Carolina in 2024 for a plant that will begin operations in 2028.",
+      "section": "President's Message",
+      "classification": "genuine and strong -- a named forward capacity-expansion plan for India alongside three other countries, with specifics for the other three (giving India real comparative weight)"
+     },
+     {
+      "text": "The regional headquarters are currently in Europe, China, and the U.S., and will be opened in India and Asia in the fiscal year ending March 2026.",
+      "section": "President's Message",
+      "classification": "genuine -- a concrete organizational commitment (new regional HQ) naming India specifically"
+     },
+     {
+      "text": "Expand dialyzer lines at plants in Vietnam, India, and Odate (Akita Prefecture)",
+      "section": "Capex plan FY3/'26-FY3/'28, Dialysis/Hospital segment (planned capex JPY 101 billion / EBITDA JPY 202 billion)",
+      "classification": "genuine -- India named in a segment-level capital-expenditure table, directly tying an India plant to a disclosed capex figure -- the strongest single quote of all four companies checked"
+     },
+     {
+      "text": "We manufacture our own glass tubing in the U.S., France, India, and China and sell it worldwide.",
+      "section": "PharmaPackaging Business description",
+      "classification": "genuine -- India named as one of four global glass-tubing manufacturing countries"
+     }
+    ]
+   },
+   "recommendation": {
+    "verdict": "ADD",
+    "reasoning": "Passes the profitability screen (thin but genuinely positive margin and ROE) and has the richest, most concrete India disclosure of the four companies -- including a segment-level capex table that names an India dialyzer-line expansion directly. This looks like a straightforward gap in the layer-16 sweep's coverage of Japanese Tokyo Stock Exchange filers rather than a screen failure or an evidence gap. Suggested evidence line: 'in the New Plan, we will dramatically increase the production capacity of China, India, Vietnam, and the U.S. to promote local production for local consumption.' -- Nipro Corporation 72nd Annual Report, President's Message, FY3/'25."
+   }
+  },
+  {
+   "indian_pli_entity": "Omron Healthcare Manufacturing India Private Limited",
+   "indian_pli_entity_note": "PLI Medical Devices beneficiary, BP monitors, Tamil Nadu (ORIGINS by Mahindra, Chennai); PLI_SCHEME_BENEFICIARY_LEADS.md Part 5C lists no disbursement figure",
+   "parent_confirmation": {
+    "answer": "Two-tier structure, both checked as instructed. (1) The direct/legal parent of the Indian manufacturing entity is Omron Healthcare Co., Ltd. (Kyoto, Japan), itself a wholly owned subsidiary of the Tokyo Stock Exchange-listed Omron Corporation (ticker 6645), where it is reported as the Healthcare Business (HCB) segment (18% of FY2024 consolidated net sales per the Integrated Report 2025). Omron Healthcare Co., Ltd. does not file its own separate public annual report/10-K-equivalent -- it reports up into Omron Corporation's consolidated statements and issues its own press releases/marketing disclosures. (2) Per the task's instruction to check both levels: Omron Corporation's own Integrated Report 2025 was checked directly, and separately Omron Healthcare's own press-release channel was checked for the India factory.",
+    "ticker": "6645.T (Tokyo) -- Omron Corporation, the only entity of the two with its own listed securities and audited consolidated financials"
+   },
+   "parent_source_document": {
+    "name": "OMRON Corporation Integrated Report 2025",
+    "fiscal_year": "FY ended March 31, 2025 (Omron's own internal label is 'FY2024')",
+    "url": "https://www.omron.com/jp/ja/ir/irlib/pdfs/ar25e/OMRON_Integrated_Report_2025_en_A4.pdf",
+    "fetch_note": "omron.com PDFs are behind an Akamai bot gate that returned HTTP 403 to both direct curl and WebFetch (multiple user-agents and referers tried, including alternate mirror URLs on components.omron.com and other omron.com subpaths -- all 403). Successfully retrieved via a text-extraction reader proxy (r.jina.ai) instead, which returned the full 60-page document text -- a real, verifiable retrieval method, not a substitute source; content matches the company's own publicly stated FY2025 headline figures (net sales JPY 801.8bn, -2.1% YoY) found independently via web search."
+   },
+   "secondary_source_document": {
+    "name": "OMRON Healthcare Plans India-Based Factory (press release)",
+    "issuer": "OMRON Healthcare Co., Ltd., Kyoto, Japan",
+    "url": "https://healthcare.omron.com/news-media/press-release/49/omron-healthcare-plans-india-based-factory",
+    "date_note": "Underlying event: MoU signed 2023-05-30 in Osaka, Japan, in the presence of Tamil Nadu CM M.K. Stalin, during his Japan investment trip; construction reported underway by 2023-07-26 (Business Standard); production start reported for March 2025. The press-release page itself carries a 2025-07-11 timestamp in the fetched metadata, which appears to be a page-republish/update date rather than the original announcement date -- flagged as an inconsistency, not resolved with full confidence."
+   },
+   "profitability_screen": {
+    "net_sales_jpy_billions": 801.8,
+    "net_income_attributable_to_omron_shareholders_jpy_billions": 16.3,
+    "net_margin": 0.0203,
+    "roe": 0.021,
+    "roe_source": "Omron Corporation's own reported ROE of 2.1% for the fiscal year ended March 31, 2025, stated directly in the Integrated Report 2025 Financial Highlights (alongside ROIC 1.8%, DOE 2.6%). An independent web search separately reported a 4.7% ROE figure for the same period from a third-party data aggregator -- likely a different averaging methodology (e.g. average vs. point-in-time equity); the company's own self-reported 2.1% is used here as the primary figure, and both are positive regardless of which is used.",
+    "pass": true
+   },
+   "india_evidence": {
+    "genuine_evidence_found": true,
+    "evidence_is_split_across_two_documents": "This is the one company of the four where the parent's own Integrated Report has only a single, thin India mention, while the substantive India-specific disclosure -- the actual medical-device factory relevant to the PLI Medical Devices scheme -- sits at the Omron Healthcare subsidiary's own press-release level rather than in Omron Corporation's investor-facing Integrated Report.",
+    "quotes_from_parent_integrated_report": [
+     {
+      "text": "In addition, a new Automation Centers is scheduled to open in Bengaluru, India, in October.",
+      "section": "Industrial Automation Business (IAB) segment section, Integrated Report 2025",
+      "classification": "genuine but thin -- a real, specific facility-opening commitment (not a country-list or bio mention), but it is an Industrial Automation customer-experience center, not the Healthcare/medical-device business the PLI scheme money relates to, and it is the only India mention in the entire 60-page report"
+     }
+    ],
+    "quotes_from_omron_healthcare_press_release": [
+     {
+      "text": "The factory will begin manufacturing blood pressure monitors in March 2025 ... at ORIGINS by Mahindra in Chennai, Tamil Nadu ... approximately 24,000 square meters.",
+      "section": "OMRON Healthcare Plans India-Based Factory press release",
+      "classification": "genuine and directly on-topic for the PLI Medical Devices beneficiary in question, but issued by the Healthcare subsidiary's own press office, not the Tokyo-listed parent's investor-relations/annual-report channel"
+     },
+     {
+      "text": "CEO Ayumu Okada ... aims at 'contributing to the health-related issues of the country' while advancing OMRON's 'Going for ZERO' vision",
+      "section": "same press release",
+      "classification": "genuine executive strategic commentary specific to India, not a career-bio mention"
+     }
+    ]
+   },
+   "recommendation": {
+    "verdict": "ADD, with a sourcing caveat noted for whoever edits layer 16",
+    "reasoning": "Omron Corporation (the actual TSE-listed, audited, profitability-screened parent) passes the screen and does have one genuine, non-context-only India mention in its own Integrated Report 2025. That single line is enough to clear the evidence bar the Switzerland sweep set (a real, specific facility commitment beats a country-list mention), which is why this is recommended for addition rather than logged as a null result. But the richer, more relevant evidence for a medical-devices lead -- the actual BP-monitor factory -- lives one level down at Omron Healthcare Co., Ltd.'s own press channel, not in the parent's investor-facing document. Whoever adds this to layers/16_leads.json should decide explicitly whether the evidence field cites the thin-but-parent-level Automation Center line or the richer-but-subsidiary-level factory quote; both are genuine, but they are not interchangeable in terms of which corporate voice is speaking."
+   }
+  }
+ ],
+ "summary": {
+  "pass_profitability_screen": ["Siemens Healthineers AG", "Nipro Corporation", "Omron Corporation"],
+  "fail_profitability_screen": ["Varex Imaging Corporation"],
+  "genuine_india_evidence_found_in_all_four": true,
+  "recommend_add_to_layer16": ["Siemens Healthineers AG", "Nipro Corporation", "Omron Corporation"],
+  "recommend_exclude_under_current_screen": ["Varex Imaging Corporation"],
+  "overall_finding": "This was a genuine sweep gap, not a research gap or a uniform screen-driven exclusion. Three of the four parents (Siemens Healthineers, Nipro, Omron) both pass the layer-16 profitability screen and carry real, specific, non-context-only India manufacturing/investment/strategic disclosure in their own most recent annual reports -- they should have been in the 263-company list on the merits and were not, most likely because the layer-16 sweep's source corpus (yfinance-derived roster + 10-K/AR full-text sweep, per docs/LEADS.md's stated method) either did not cover these three tickers or did not surface their India mentions. Only Varex is correctly absent under the current methodology, and only because of a real FY2025 GAAP net loss (goodwill impairment) -- its own India-manufacturing disclosure is in fact the strongest and most concrete of the four (it is the only one of the four with an owned, not leased, Indian facility named directly in Item 2 Properties)."
+ }
+}

@@ -1,0 +1,1539 @@
+{
+ "layer": "16_enrichment/electronics_semiconductors_sector_expansion",
+ "built": "2026-08-12",
+ "batch": "Batch 2 of the sector-by-sector focus_sector_global_catalog.csv rebuild (Batch 1 = Medical Devices, separate file, not touched here).",
+ "scope": {
+  "focus_sector": "Electronics & Semiconductors",
+  "catalog_total_tagged": 3449,
+  "already_verified_before_this_run": 16,
+  "unswept_target_this_run": 3433,
+  "source_catalog": "focus-sector-investor-map/data/focus_sector_global_catalog.csv",
+  "stage1_script": "focus-sector-investor-map/scripts/enrich_electronics_semiconductors_unswept.py",
+  "stage1_output": "focus-sector-investor-map/data/electronics_semiconductors_unswept_enriched.csv",
+  "isolation_note": "New standalone script/output files only -- does not touch shortlist_for_enrichment.csv, shortlist_enriched.csv, focus_sector_companies_final.csv/.json, layers/16_leads.json, docs/LEADS.md, docs/TARGET_LEADS.md, or scripts/build_leads.py (all separate, pre-existing uncommitted work in both repos, confirmed via git status before starting)."
+ },
+ "stage1_financial_screen": {
+  "method": "Real yfinance .info calls (profitMargins, returnOnEquity, revenueGrowth) for all 3,433 unswept rows. Two-tier ticker construction: (1) Market column populated -> reuse enrich_profitability.py's SUFFIX dict; (2) Market blank (318 of 3,433 rows) -> derive suffix from Exchange column instead, verified live against real yfinance calls this session (not copied from Batch 1's guesses -- several exchange codes behave differently for this sector, see exchange_coverage_notes below). PROFITABLE = profit_margin>0 AND roe>0. Checkpointed to disk every 40 rows; full run took ~96 minutes for 3,433 real API calls with rate-limit backoff on 429s.",
+  "profitable": 1338,
+  "not_profitable": 699,
+  "unverified_total": 1396,
+  "unverified_no_ticker_built": 8,
+  "unverified_ticker_built_no_yfinance_data": 1388,
+  "expansion_signal_count_within_profitable": 791,
+  "exchange_coverage_notes": {
+   "resolved_fine_despite_being_flagged_obscure_upfront": [
+    "OB (Oslo Bors, .OL)",
+    "IBSE (Istanbul, .IS)",
+    "BVB (Bucharest, .RO)",
+    "RISE (Nasdaq Riga, .RG)",
+    "BUSE (Budapest, .BD)",
+    "HOSE/HNX (Vietnam, .VN, though thin financial-data coverage)",
+    "Catalist (Singapore, .SI)"
+   ],
+   "confirmed_genuinely_unresolvable_via_yfinance": [
+    "BUL (Bulgaria)",
+    "DSE (Dhaka)",
+    "ZGSE (Zagreb)",
+    "NGSE (Nigeria)",
+    "KASE (this catalog's single Pakistan-domiciled row)",
+    "BVMT (Tunis)"
+   ],
+   "safety_note": "BUL bare-ticker lookups were tested and rejected: a bare 'SLYG' ticker resolved to an unrelated US-listed State Street ETF, not the actual Bulgarian company -- so BUL rows were left UNVERIFIED rather than risk attributing fabricated financial data to the wrong entity."
+  }
+ },
+ "stage2_india_disclosure_mining": {
+  "method": "Stage 2 targets the PROFITABLE subset prioritized by Turnover_USD (largest first), per instructions. Critical, explicitly-verified finding: Turnover_USD is populated for only 121 of the 1,338 PROFITABLE rows in this catalog -- 114 United States rows and 7 India rows; every other country's PROFITABLE rows (China 533, Taiwan 261, Japan 178, etc.) have a null Turnover_USD in the source catalog. This is a genuine, pre-existing data-coverage gap in focus_sector_global_catalog.csv, not something introduced by this script -- it is NOT that US companies are objectively larger, it is that the catalog only has turnover data for US and India names in this sector. Given that, the full turnover-ranked cohort with real data (114 US + 7 India = 121) was checked in its entirety rather than an arbitrary 60-80 cut, since it is a natural, complete, non-arbitrary population bounded by real data availability. The 7 India-domiciled rows were checked separately and excluded from the 'foreign investment into India' tally (self-description, not inbound FDI, per this repo's existing scripts/build_edgar_india_sweep.py::classify() convention). For each of the 114 US companies: real SEC EDGAR full-text search (efts.sec.gov), scoped per-company by CIK (resolved via SEC's official company_tickers.json, fetched live), forms=10-K, query \"India\". Most recent primary-document hit's actual filing text was fetched from sec.gov and real-text-searched for sentences containing 'India'; those sentences are the genuine quotes below -- nothing paraphrased or invented. Classification bar (genuine vs context_only) follows the same standard established in layers/16_enrichment/switzerland_india_sweep.json: a bare country-list mention with no India-specific operational detail, a personnel bio, or a generic risk-factor/tax-jurisdiction list = context_only; a named facility, real revenue/employee figures, an M&A/JV transaction, an explicit expansion or relocation decision, or a divestment/closure = genuine, tiered as market_entry_or_investment / business_activity / exit_or_divestment.",
+  "companies_with_turnover_data_total": 121,
+  "us_companies_checked": 114,
+  "india_domiciled_checked_separately": 7,
+  "cik_not_found_in_sec_map": 7,
+  "genuine_india_signal_found": 71,
+  "market_entry_or_investment_count": 13,
+  "business_activity_count": 54,
+  "exit_or_divestment_count": 4,
+  "excluded_context_only_count": 15,
+  "extraction_failed_count": 4,
+  "no_india_mention_in_latest_10k_count": 24,
+  "stale_filing_note": "file_date and stale_filing (true if the found filing predates 2022) are reported per-entry -- several genuine hits come from filings several years old (e.g. DIOD 2005, TRT 2007, APH 2016, CGNX 2016) where the FTS index shows no more-recent 10-K mentioning India at all; treat those as historical findings, not current-state signals.",
+  "coverage_disclaimer": "121 of 121 companies with real Turnover_USD data were checked -- 100% coverage of the only population for which the source catalog's ranking column is populated. Companies from China/Taiwan/Japan/etc. that pass the Stage 1 profitability screen were NOT checked in Stage 2 because there is no real turnover figure in the catalog to rank them by; ranking them would require fabricating a size proxy not present in the source data, which was avoided."
+ },
+ "country_breakdown": {
+  "United States": {
+   "checked": 114,
+   "genuine_india_signal": 71,
+   "context_only": 15,
+   "no_mention": 24,
+   "extraction_failed": 4,
+   "no_cik": 0
+  },
+  "India": {
+   "checked": 7,
+   "genuine_india_signal": 0,
+   "context_only": 0,
+   "no_mention": 0,
+   "extraction_failed": 0,
+   "no_cik": 7
+  }
+ },
+ "market_entry_or_investment": [
+  {
+   "ticker": "SMCI",
+   "company": "Super Micro Computer, Inc. (NasdaqGS:SMCI)",
+   "turnover_usd": 2073011701.0,
+   "form": "10-K",
+   "file_date": "2025-08-28",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536525000027/smci-20250630.htm",
+   "sample_quotes": [
+    "We intend to expand our international sales efforts, especially into Asia, and we are expanding our business operations in Europe and Asia, particularly in Taiwan, Malaysia, the Netherlands, Japan, Mexico and India."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "CIEN",
+   "company": "Ciena Corporation (NYSE:CIEN)",
+   "turnover_usd": 1766820275.0,
+   "form": "10-K",
+   "file_date": "2025-12-12",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/936395/000162828025056698/cien-20251101.htm",
+   "sample_quotes": [
+    "(iii) Europe, Middle East and Africa (\u201cEMEA\u201d); and (iv) Asia Pacific, Japan and India (\u201cAPAC\u201d).",
+    "Our largest facilities are our research and development centers located in Ottawa, Canada and Gurgaon, India.",
+    "We lease two office buildings in Gurgaon, India consisting of a rentable area of approximately 282,000 square feet, which expire in our fiscal 2026.",
+    "In April 2025, we entered into a lease agreement for up to ten years for two new office buildings located in Gurgaon, India, consisting of a rentable area of approximately 177,000 square feet and expected to be occupied in the first half of our fiscal 2026.",
+    "Europe, Middle East and Africa (\u201cEMEA\u201d); and Asia Pacific, Japan and India (\u201cAPAC\u201d)."
+   ],
+   "tier": "market_entry_or_investment",
+   "note": "Real estate expansion: leased two new Gurgaon office buildings (177,000 sq ft) in April 2025, occupancy expected H1 FY2026, on top of an existing 282,000 sq ft Gurgaon R&D campus."
+  },
+  {
+   "ticker": "FSLR",
+   "company": "First Solar, Inc. (NasdaqGS:FSLR)",
+   "turnover_usd": 640807859.0,
+   "form": "10-K",
+   "file_date": "2026-02-24",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000021/fslr-20251231.htm",
+   "sample_quotes": [
+    "Our global manufacturing footprint includes facilities in the United States, Malaysia, Vietnam, and India.",
+    "During 2023, we commenced production of our Series 7 TM (\u201cSeries 7\u201d) modules at our third manufacturing facility in Ohio and our first manufacturing facility in India, which combine our thin film CdTe technology with a larger form factor and an innovative steel back rail mounting structure that reduces module installation time.",
+    "India represents the third largest global market for PV solar energy with an installed solar generation capacity of approximately 132 GW.",
+    "In addition to these factors, our CdTe solar technology is well suited for the India market given its hot and humid climate conditions.",
+    "As a result of such market opportunities and renewable targets, we recently expanded production of Series 7 modules at our first manufacturing facility in India, bringing our total installed nameplate production capacity in the country to 3.2 GW."
+   ],
+   "tier": "market_entry_or_investment",
+   "note": "Strongest signal in the set: named India as a live manufacturing site (Series 7 modules), 3.2GW installed nameplate capacity, and India as its 3rd-largest global PV end-market."
+  },
+  {
+   "ticker": "ONDS",
+   "company": "Ondas Holdings Inc. (NasdaqCM:ONDS)",
+   "turnover_usd": 562259735.0,
+   "form": "10-K",
+   "file_date": "2026-03-30",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1646188/000121390026035981/ea0282911-10k_ondas.htm",
+   "sample_quotes": [
+    "To maximize this opportunity, our geographic focus is decisively anchored in Tier 1 countries\u2014specifically North America, the UK, Germany, Poland, India, Japan, the UAE, and Singapore\u2014whose respective regions aggregate to over $5.5 billion in combined C-UAS and UGV spending for 2025 alone."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "MKSI",
+   "company": "MKS Inc. (NasdaqGS:MKSI)",
+   "turnover_usd": 388580832.0,
+   "form": "10-K",
+   "file_date": "2026-02-24",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1049502/000119312526066820/mksi-20251231.htm",
+   "sample_quotes": [
+    "Our manufacturing facilities are located in Austria, Brazil, Canada, China, France, Germany, India, Israel, Italy, Japan, Malaysia, Mexico, Romania, Singapore, Slovenia, South Korea, Taiwan and the United States.",
+    "We have sites in 37 countries, with 33% of our employees located in the Asia-Pacific region, 34% located in Europe, the Middle East and India and 33% located in the Americas.",
+    "For example, the patent prosecution and enforcement systems within China and India, where we have a significant customer base and manufacturing presence, are comparatively less robust and may favor locally headquartered companies over foreign entities, potentially limiting our ability to enforce our IP rights there.",
+    "In addition, we have relocated certain segments of other functions to, or initiated certain segments of other functions in, centralized locations, including relocating certain procurement activity to Mexico and Romania, relocating certain IT and research and development activity to India, relocating certain administrative finance, payroll, software and IT activity to Poland, and continuing certain engineering activity in India.",
+    "There is significant competition for personnel in the technology and sciences 21 marketplace, particularly in certain geographies where we are located, including the Boston, Massachusetts area, Orange County and the San Francisco Bay area of California, Berlin, Germany, Gurgaon, India, Tokyo, Japan, Penang, Malaysia, Bangkok, Thailand, and Singapore."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "SANM",
+   "company": "Sanmina Corporation (NasdaqGS:SANM)",
+   "turnover_usd": 210167727.0,
+   "form": "10-K",
+   "file_date": "2025-11-13",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/897723/000089772325000042/sanm-20250927.htm",
+   "sample_quotes": [
+    "We operate in countries that have experienced labor unrest, political instability or conflict and strife in the past, including China, India, Israel, Malaysia, Mexico and Thailand, and we have experienced work stoppages and similar disruptions at our plants in these countries.",
+    "The success of our India joint venture is also subject to a number of risks and uncertainties, including adverse changes in the key markets the joint venture targets and the risks described above under the caption \u201cWe are subject to risks arising from our international operations\u201d.",
+    "Any of these risks could cause our strategic transactions, including the ZT Systems acquisition and our India joint venture, not to be as profitable or accretive as expected or planned.",
+    "Our primary sources of liquidity as of September 27, 2025 consisted of (1) cash and cash equivalents of $926 million (an aggregate of $215 million of our cash is held by Sanmina SCI India Private Limited (\u201cSIPL\u201d) and Sanmina SCI Technology India Private Limited, our existing Indian manufacturing entity, which is designated to fund its operations use);",
+    "In 2023, the Company entered into a joint venture transaction pursuant to which RSBVL acquired 50.1 % of the outstanding shares of Sanmina SCI India Private Limited (\u201cSIPL\u201d), the Company\u2019s existing Indian manufacturing entity for $ 216 million of cash."
+   ],
+   "tier": "market_entry_or_investment",
+   "note": "2023 JV: RSBVL acquired 50.1% of Sanmina SCI India Private Limited for $216M cash -- Sanmina retains 49.9% and continues Indian manufacturing operations."
+  },
+  {
+   "ticker": "ALGM",
+   "company": "Allegro MicroSystems, Inc. (NasdaqGS:ALGM)",
+   "turnover_usd": 145694127.0,
+   "form": "10-K",
+   "file_date": "2026-05-21",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/866291/000119312526233537/algm-20260327.htm",
+   "sample_quotes": [
+    "Additionally, we expect to continue to strategically invest in expanding our operations in China, Europe, Japan and India in order to directly manage and service our customers in these markets, which could result in increases in our total net sales, cost of goods sold and operating expenses."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "CGNX",
+   "company": "Cognex Corporation (NasdaqGS:CGNX)",
+   "turnover_usd": 125177916.0,
+   "form": "10-K",
+   "file_date": "2016-02-10",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/851205/000085120516000027/cgnx-20151231x10xk.htm",
+   "sample_quotes": [
+    "This investment includes opening sales offices in emerging markets, such as China, India, Brazil, and Eastern Europe, where we believe many manufacturers can benefit from incorporating machine vision into their production processes, and developing strategic alliances with other leading providers of factory automation products.",
+    "In recent years, we have expanded our sales force in emerging markets, such as China, India, Brazil, and Eastern Europe, where we believe many manufacturers can benefit from incorporating machine vision into their production processes.",
+    "We intend to continue to expand our sales and operations outside of the United States and expand our presence in international emerging markets, such as our expansion into China, India, Brazil, and Eastern Europe."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "MIR",
+   "company": "Mirion Technologies, Inc. (NYSE:MIR)",
+   "turnover_usd": 71917298.0,
+   "form": "10-K",
+   "file_date": "2026-02-19",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1809987/000162828026009869/mir-20251231.htm",
+   "sample_quotes": [
+    "For example, in India, a market we currently serve through local partners, we intend to leverage our relationships with leading reactor design firms to capitalize on the opening of the nuclear end market to U.S. and European firms."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "VPG",
+   "company": "Vishay Precision Group, Inc. (NYSE:VPG)",
+   "turnover_usd": 68404474.0,
+   "form": "10-K",
+   "file_date": "2026-02-27",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1487952/000143774926005982/vpg20251231_10k.htm",
+   "sample_quotes": [
+    "Since becoming an independent company, we have made several acquisitions that have added to our strong, diverse, global manufacturing, sales and distribution network, which includes facilities in Canada, People's Republic of China, France, Germany, India, Israel, Japan, Sweden, Republic of China (Taiwan), the United Kingdom, and the United States.",
+    "We also seek to achieve significant production cost savings through the transfer, expansion, and construction of manufacturing operations in countries such as India, Japan, and Israel, where we can benefit from improved efficiencies or available tax and other government-sponsored incentives.",
+    "In the past several years, we incurred restructuring expense related to closing and downsizing of facilities as part of the manufacturing transitions of our load cell products to facilities in India, which marked key milestones in our ongoing strategic initiatives to align and consolidate our manufacturing footprint.",
+    "Manufacturing Operations Our principal manufacturing facilities are located in Israel, the United States, Canada, India, Germany, and Japan.",
+    "A number of countries in which we manufacture or do business in are identified in the report as being on the Priority Watch List, such as China and India, or the Watch List, such as Canada and Mexico."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "DBD",
+   "company": "Diebold Nixdorf, Incorporated (NYSE:DBD)",
+   "turnover_usd": 22795519.0,
+   "form": "10-K",
+   "file_date": "2026-02-12",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/28823/000002882326000008/dbd-20251231.htm",
+   "sample_quotes": [
+    "For the Banking segment, key growth initiatives are centered on enhancing Branch Automation Solutions and leveraging market-relevant, fit-for-purpose solutions for growth in India and other emerging markets.",
+    "In addition, certain of our products are manufactured in China and India."
+   ],
+   "tier": "market_entry_or_investment"
+  },
+  {
+   "ticker": "RBBN",
+   "company": "Ribbon Communications Inc. (NasdaqGS:RBBN)",
+   "turnover_usd": 2278661.0,
+   "form": "10-K",
+   "file_date": "2026-02-26",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1708055/000170805526000012/rbbn-20251231x10k.htm",
+   "sample_quotes": [
+    "India\u2019s BharatNet project aims to connect 250,000 village councils with fiber, and the USA\u2019s $42 billion BEAD fund prioritizes rural broadband in unserved regions.",
+    "For example, following border clashes with China, India has enacted bans on the import of some goods manufactured in China and separately will require certain products be manufactured in India.",
+    "These requirements include our products that are currently manufactured outside of India and, as a result, we are working to identify local manufacturing for such products.",
+    "While we are developing plans to relocate our manufacturing sites, 27 \u200b the timing required for relocation could impact our ability to sell such products or timely deliver the products and could result in lower or lost sales in India.",
+    "We have R&D offices in various global locations, including the United States, Canada, India and Israel."
+   ],
+   "tier": "market_entry_or_investment",
+   "note": "India local-content mandate is driving Ribbon to relocate manufacturing into India; $4.4M IP Optical revenue growth explicitly attributed to India sales."
+  },
+  {
+   "ticker": "AATC",
+   "company": "Autoscope Technologies Corporation (OTCPK:AATC)",
+   "turnover_usd": 20166.0,
+   "form": "10-K",
+   "file_date": "2022-03-22",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/943034/000089710122000298/aatc-20211231.htm",
+   "sample_quotes": [
+    "ISS Image Sensing Systems Canada Limited (ISS Canada) in Canada; and Autoscope Technologies India Private Limited (Autoscope India) in India.",
+    "In the second quarter of 2021, the Company began the process of forming a subsidiary in Chennai, India.",
+    "Autoscope Technologies India Private Limited (\"Autoscope India\") was legally formed on October 14, 2021.",
+    "Autoscope India's operations will solely focus on research and development. 46 14 ."
+   ],
+   "tier": "market_entry_or_investment",
+   "note": "New R&D subsidiary (Autoscope Technologies India Private Limited) legally formed in Chennai, Oct 14 2021."
+  }
+ ],
+ "business_activity": [
+  {
+   "ticker": "AMAT",
+   "company": "Applied Materials, Inc. (NasdaqGS:AMAT)",
+   "turnover_usd": 6026877423.0,
+   "form": "10-K",
+   "file_date": "2025-12-12",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/6951/000162828025056742/amat-20251026.htm",
+   "sample_quotes": [
+    "Our product development and engineering, and process support are performed primarily in the United States, India and Israel."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "QCOM",
+   "company": "QUALCOMM Incorporated (NasdaqGS:QCOM)",
+   "turnover_usd": 4637265519.0,
+   "form": "10-K",
+   "file_date": "2025-11-05",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
+   "sample_quotes": [
+    "Our patents have broad coverage in many countries, including Brazil, China, India, Japan, South Korea, Taiwan, the United States and countries in Europe (including European patents with unitary effect).",
+    "College of Engineering in India and an M.B.A from the University of Maryland.",
+    "In the United States, Europe (including the United Kingdom), India, China and elsewhere, there is continued discussion regarding potential patent law changes, and there is current and potential future litigation regarding patents, the outcomes of which could be detrimental to our licensing business.",
+    "We own and lease properties around the world for use as sales and administrative offices and research and development centers, primarily in the United States, India and China, and we also operate owned and leased manufacturing facilities in Singapore, Germany and China."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "LRCX",
+   "company": "Lam Research Corporation (NasdaqGS:LRCX)",
+   "turnover_usd": 4476540856.0,
+   "form": "10-K",
+   "file_date": "2026-08-07",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628.htm",
+   "sample_quotes": [
+    "We maintain ongoing service relationships with our customers and have an extensive network of service engineers in place throughout the United States (\u201cU.S.\u201d), China, Europe, India, Japan, Korea, Southeast Asia, and Taiwan.",
+    "Bengaluru, India;",
+    "In addition, we lease or own properties for our service, technical support, and sales personnel throughout the United States, China, Europe, India, Japan, Korea, Southeast Asia, and Taiwan and lease or own manufacturing and warehouse facilities located in California, Ohio, Oregon, Austria, Korea, Malaysia, and Taiwan."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "KLAC",
+   "company": "KLA Corporation (NasdaqGS:KLAC)",
+   "turnover_usd": 3154480105.0,
+   "form": "10-K",
+   "file_date": "2026-08-06",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm",
+   "sample_quotes": [
+    "Our primary R&D centers are located in the U.S., United Kingdom (\u201cU.K.\u201d), India, China, Singapore and Israel.",
+    "Our principal R&D activities are conducted in the U.S., U.K., India, China, Singapore and Israel."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "CSCO",
+   "company": "Cisco Systems, Inc. (NasdaqGS:CSCO)",
+   "turnover_usd": 2954008299.0,
+   "form": "10-K",
+   "file_date": "2025-09-03",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/csco-20250726.htm",
+   "sample_quotes": [
+    "Other significant sites (in addition to the two non-U.S. headquarters locations) are located in Australia, Belgium, Canada, China, Germany, India, Israel, Norway, Poland, and the United Kingdom.",
+    "From a country perspective, product revenue increased in Japan, Australia, India, and China by 7%, 11%, 11%, and 10% respectively . 37 Table of Contents CISCO SYSTEMS, INC."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "TXN",
+   "company": "Texas Instruments Incorporated (NasdaqGS:TXN)",
+   "turnover_usd": 2697146647.0,
+   "form": "10-K",
+   "file_date": "2026-02-06",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000059/txn-20251231.htm",
+   "sample_quotes": [
+    "dded ProcessingNorth Texas (Dallas, Richardson and Sherman)XXLehi, UtahXXSouth Portland, MaineXTucson, ArizonaXSanta Clara, California *XHouston, TexasXChengdu, China **XXShanghai, China *XXFreising, GermanyXXBangalore, India **XXAizu, JapanXXMiho, JapanXXKuala Lumpur, Malaysia **XXMelaka, Malaysia **XAguascalientes, Mexico *XBaguio, Philippines **XXPampanga (Clark), Philippines **XXTaipei, Taiwan **XX*Leased.** Portions of the facilities"
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "GLW",
+   "company": "Corning Incorporated (NYSE:GLW)",
+   "turnover_usd": 2626050682.0,
+   "form": "10-K",
+   "file_date": "2026-02-12",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000124/glw-20251231.htm",
+   "sample_quotes": [
+    "Our optical fiber manufacturing facilities are in North Carolina, China, India and Poland.",
+    "In 2009, he became general manager and regional director of China and India, Corning Environmental Technologies."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "COHR",
+   "company": "Coherent Corp. (NYSE:COHR)",
+   "turnover_usd": 2260769636.0,
+   "form": "10-K",
+   "file_date": "2024-08-16",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/820318/000082031824000016/iivi-20240630.htm",
+   "sample_quotes": [
+    "Our U.S. production and R&D operations are located in California, Colorado, Connecticut, Delaware, Florida, Illinois, Massachusetts, Michigan, Mississippi, New Jersey, New York, Ohio, Oregon, Pennsylvania, and Texas, and our non-U.S. production and R&D operations are based in Australia, China, Finland, Germany, India, Malaysia, the Philippines, Singapore, South Korea, Spain, Sweden, Switzerland, Thailand, the United Kingdom, and Vietnam."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ADI",
+   "company": "Analog Devices, Inc. (NasdaqGS:ADI)",
+   "turnover_usd": 2036690548.0,
+   "form": "10-K",
+   "file_date": "2025-11-25",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/6281/000000628125000153/adi-20251101.htm",
+   "sample_quotes": [
+    "(fiscal year) Renewals Bangalore, India Engineering and administrative offices 175,000 sq. ft. 2027 1, five-yr. period Durham, NC Testing, engineering, and administrative offices 156,000 sq. ft. 2035 2, five-yr. periods (1) Leases on the land used for this owned facility expire in 2054 through 2057."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ALAB",
+   "company": "Astera Labs, Inc. (NasdaqGS:ALAB)",
+   "turnover_usd": 2016256281.0,
+   "form": "10-K",
+   "file_date": "2026-02-20",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/alab-20251231.htm",
+   "sample_quotes": [
+    "We invest heavily in a global team of highly skilled engineers, with dedicated research and development offices in United States, Canada, Germany, India, Israel, Singapore, and Vietnam.",
+    "Changes in current laws or regulations applicable to us or the imposition of new laws and regulations in the United States or other jurisdictions in which we do business, such as Canada, China, Germany, India, Israel, Singapore, Taiwan and Vietnam, could materially and adversely affect our business, financial condition, and results of operations.",
+    "We also lease additional facilities in Irvine and Texas in United States, Canada, Germany, India, Singapore, and Vietnam for research and development, in China and Taiwan for local customer support and sales, and in Israel for research and development and local customer support."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "TER",
+   "company": "Teradyne, Inc. (NasdaqGS:TER)",
+   "turnover_usd": 1600961179.0,
+   "form": "10-K",
+   "file_date": "2026-02-19",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/97210/000119312526059002/ter-ex21_1.htm",
+   "sample_quotes": [
+    "Peoples Republic of China 100 %* Teradyne Robotics A/S ( successor to merger between Universal Robots A/S and Mobile Industrial Robots A/S ) Denmark 100 %* Universal Robots (India) Pte.",
+    "India 100 %* Universal Robots (Shanghai) Co."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "HPE",
+   "company": "Hewlett Packard Enterprise Company (NYSE:HPE)",
+   "turnover_usd": 1498366932.0,
+   "form": "10-K",
+   "file_date": "2025-12-18",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559025000130/hpe-20251031.htm",
+   "sample_quotes": [
+    "The manufacture of product components, the final assembly of our products and other critical operations are concentrated in certain geographic locations, including the United States, Puerto Rico, Vietnam, Thailand, Costa Rica, Brazil, Czech Republic, Malaysia, Mexico, China, Taiwan, India, South Korea, Saudi Arabia, and Singapore.",
+    "Certain sites located in the United States, Middle East, China, and India experience exposure to extreme heat and water stress, which could potentially strain our operational continuity and also jeopardize the health and well-being of our employees, both of which may consequently impact our operations.",
+    "Since a significant portion of our hardware revenues come from international sales, any changes to current environmental legal requirements may increase our cost of doing business internationally and impact our hardware revenues from the EU, U.S., China, India and/or other countries proposing or adopting similar environmental legal requirements.",
+    "India Directorate of Revenue Intelligence Proceedings .",
+    "On April 30 and May 10, 2010, the India Directorate of Revenue Intelligence (the \u201cDRI\u201d) issued notices to Hewlett-Packard India Sales Private Ltd (\u201cHP India\u201d), a subsidiary of HP Inc., seven HP India employees and one former HP India employee alleging that HP India underpaid customs duties while importing products and spare parts into India and seeking to recover an aggregate of approximately $ 370 million, plus penalties."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "MPWR",
+   "company": "Monolithic Power Systems, Inc. (NasdaqGS:MPWR)",
+   "turnover_usd": 1433335004.0,
+   "form": "10-K",
+   "file_date": "2024-02-29",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1280452/000143774924006133/mpwr20231231_10k.htm",
+   "sample_quotes": [
+    "We have over 3,500 employees worldwide, with locations in Asia (primarily in China, India, Japan, Singapore, South Korea and Taiwan), Europe (primarily in France, Germany, Hungary, Italy, Portugal, Spain, Switzerland and the United Kingdom) and the United States.",
+    "Customers, Sales and Marketing We have sales offices in China, India, Japan, Singapore, South Korea, Taiwan, the United States and throughout Europe."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "APH",
+   "company": "Amphenol Corporation (NYSE:APH)",
+   "turnover_usd": 1426755594.0,
+   "form": "10-K",
+   "file_date": "2016-02-19",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465916098503/a15-23486_110k.htm",
+   "sample_quotes": [
+    "The Company has lower cost manufacturing and assembly facilities in China, Macedonia, Malaysia, Mexico, India, Indonesia, Eastern Europe and North Africa to serve regional and world markets."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ON",
+   "company": "ON Semiconductor Corporation (NasdaqGS:ON)",
+   "turnover_usd": 1387849767.0,
+   "form": "10-K",
+   "file_date": "2026-02-09",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000006/on-20251231.htm",
+   "sample_quotes": [
+    "We also have foreign design operations in Belgium, Canada, China, the Czech Republic, Germany, India, Ireland, Israel, Italy, Japan, South Korea, the Philippines, Romania, Singapore, the Slovak Republic, Slovenia, Switzerland, Taiwan and the United Kingdom.",
+    "Additionally, we own and lease research and development facilities located in Belgium, Canada, China, the Czech Republic, Germany, India, Ireland, Israel, Italy, Japan, the Philippines, Singapore, South Korea, Romania, the Slovak Republic, Slovenia, Switzerland, Taiwan, the United Kingdom and the United States."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ANET",
+   "company": "Arista Networks, Inc. (NYSE:ANET)",
+   "turnover_usd": 1360602040.0,
+   "form": "10-K",
+   "file_date": "2026-02-17",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+   "sample_quotes": [
+    "Among other emerging laws relating to privacy and data protection globally, India has released its Digital Personal Data Protection Act 2023, and India\u2019s Ministry of Electronics and Information Technology released finalized Draft Digital Personal Data Protection Rules on November 13, 2025, addressing various matters under this law, but the full scope of the implementation remains subject to some uncertainty.",
+    "We maintain an employee and operational presence in India, and this act may require us to modify our policies and practices and incur increased costs in our efforts to comply.",
+    "In addition, we lease office spaces for data centers, operations, sales personnel and research and development in locations throughout the U.S. and various international locations, including Ireland, Canada, India, and Australia."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ENTG",
+   "company": "Entegris, Inc. (NasdaqGS:ENTG)",
+   "turnover_usd": 544422143.0,
+   "form": "10-K",
+   "file_date": "2026-02-11",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1101302/000110130226000012/entg-12312025xex211.htm",
+   "sample_quotes": [
+    "Delaware Entegris India private Ltd.",
+    "India Entegris International Holdings II B.V."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "JBL",
+   "company": "Jabil Inc. (NYSE:JBL)",
+   "turnover_usd": 541929191.0,
+   "form": "10-K",
+   "file_date": "2023-10-20",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/898293/000119312523259599/d533726d10k.htm",
+   "sample_quotes": [
+    "We conduct our operations in facilities that are located worldwide, including but not limited to China, India, Malaysia, Mexico, Singapore, and the United States."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "NTAP",
+   "company": "NetApp, Inc. (NasdaqGS:NTAP)",
+   "turnover_usd": 508168696.0,
+   "form": "10-K",
+   "file_date": "2026-06-05",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1002047/000119312526259683/ntap-20260424.htm",
+   "sample_quotes": [
+    "We seek to optimize the energy efficiency of our buildings, labs, and data centers; and we have increased our use of renewable energy, especially at our facilities in Bangalore, India (95% of the total energy consumed is renewable);",
+    "We have a global product take-back program and an e-waste scheme to comply with the EU directive on Waste Electrical and Electronic Equipment (WEEE), and Extended Producer Responsibility (EPR) regulations in India, Singapore and California."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "VSH",
+   "company": "Vishay Intertechnology, Inc. (NYSE:VSH)",
+   "turnover_usd": 478316147.0,
+   "form": "10-K",
+   "file_date": "2026-02-13",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/103730/000010373026000019/form10k.htm",
+   "sample_quotes": [
+    "To optimize production efficiencies, we have whenever practicable established manufacturing facilities in countries, such as India, Israel, Malaysia, Mexico, the People\u2019s Republic of China, and the Philippines, where we can benefit from lower labor costs.",
+    "In Asia, our main manufacturing facilities are located in the People\u2019s Republic of China, the Republic of China (Taiwan), India, and Malaysia.",
+    "Reflecting our global business, many leadership positions are dispersed throughout the world. 13 Employees by location are summarized as follows: United States 2,100 People\u2019s Republic of China 6,900 Germany 2,300 Israel 2,000 Taiwan 1,900 Czech Republic 1,200 India 1,200 Other Europe 2,000 Other Americas 1,300 Other Asia 1,700 Total 22,600 Many of our employees outside the United States are members of workers councils or unions or otherwise subject to collective bargaining agreements.",
+    "Historically, our primary labor cost controlling strategy was to transfer manufacturing operations to countries with lower production costs, such as the Dominican Republic, India, Malaysia, Mexico, the People\u2019s Republic of China, and the Philippines.",
+    "The tax returns of significant non-U.S. subsidiaries currently under examination are located in the following jurisdictions: Israel (2021), China (2022 through 2024), India (2004 through 2023), and Philippines (2020 through 2022)."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "KEYS",
+   "company": "Keysight Technologies, Inc. (NYSE:KEYS)",
+   "turnover_usd": 461218254.0,
+   "form": "10-K",
+   "file_date": "2025-12-17",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm",
+   "sample_quotes": [
+    "Our most significant technology development centers are in the United States (California, Colorado, and Texas), Singapore, India, Germany, Malaysia, Romania, China, Japan, Spain, United Kingdom, and France.",
+    "We centralize most of our accounting processes at two locations: India and Malaysia.",
+    "These facilities are primarily located in the following countries: United States, Malaysia, Japan, China, Germany, India, United Kingdom, Taiwan, Spain, Korea, Singapore, Romania, and France."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "TTMI",
+   "company": "TTM Technologies, Inc. (NasdaqGS:TTMI)",
+   "turnover_usd": 415346612.0,
+   "form": "10-K",
+   "file_date": "2026-02-17",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1116942/000119312526051976/ttmi-ex21_1.htm",
+   "sample_quotes": [
+    "Name of Subsidiary State/Country of Incorporation TTM Technologies (Asia Pacific) Limited Hong Kong TTM Technologies Cayman Limited Cayman Islands TTM Technologies International Limited Cayman Islands Meadville Aspocomp (BVI) Holdings Limited British Virgin Islands Asia Rich Enterprises Limited British Virgin Islands Aspocomp Electronics India Private Limited India TTM Technologies China Limited Hong Kong OPC Manufacturing Limited Hong Kong TTM Technologies Trading (Guangzhou) Co., Ltd."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "RMBS",
+   "company": "Rambus Inc. (NasdaqGS:RMBS)",
+   "turnover_usd": 405735122.0,
+   "form": "10-K",
+   "file_date": "2026-02-18",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/917273/000119312526057101/rmbs-20251231.htm",
+   "sample_quotes": [
+    "Human Capital Resources As of December 31, 2025, we had 791 employees, of which approximately 47% were in the United States and 53% in other global regions, including but not limited to Bulgaria, Canada, China, Finland, France, India, the Netherlands, South Korea and Taiwan.",
+    "We currently have international business, business development and design operations in Bulgaria, Canada, China, Finland, France, India, the Netherlands, South Korea and Taiwan.",
+    "Our business operations depend on our ability to maintain and protect our facilities, computer systems and personnel, which are primarily located in the San Francisco Bay Area in the United States, Bulgaria, Canada, France, India, the Netherlands, South Korea and Taiwan.",
+    "We also lease approximately 89,000 square feet of office space in India, which includes administrative, research and development and service personnel.",
+    "Our overseas operations consist primarily of international business operations in France, the Netherlands and the United Kingdom, design centers in Bulgaria, Canada, India and Finland, business development and operations activities in South Korea and Taiwan and business development activities in China."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "SITM",
+   "company": "SiTime Corporation (NasdaqGM:SITM)",
+   "turnover_usd": 360945413.0,
+   "form": "10-K",
+   "file_date": "2026-02-11",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1451809/000145180926000012/sitm-20251231.htm",
+   "sample_quotes": [
+    "We have assembled a core team of experienced engineers and systems designers who conduct research and development activities in the United States, the Netherlands, Malaysia, Finland, Japan, Taiwan, Ukraine, and India.",
+    "As of December 31, 2025, we had 441 full-time equivalent employees located in locations including the United States, France, Malaysia, the Netherlands, Taiwan, Japan, Finland, Ukraine, Germany, South Korea, India, and Singapore, including 239 in research and development, 162 in sales, general, and administrative, and 40 in operations.",
+    "In addition, we conduct research and development activities in locations including the United States, Japan, the Netherlands, Taiwan, Ukraine, Finland, and India.",
+    "We also conduct marketing and administrative functions in the United States, Japan, the Netherlands, China, Taiwan, Malaysia, Ukraine, and India.",
+    "Certain of our employees are located primarily in Finland, India, Japan, Malaysia, the Netherlands, Taiwan, and Ukraine."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ENPH",
+   "company": "Enphase Energy, Inc. (NasdaqGM:ENPH)",
+   "turnover_usd": 328619001.0,
+   "form": "10-K",
+   "file_date": "2026-02-17",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1463101/000146310126000013/enph-20251231.htm",
+   "sample_quotes": [
+    "These microinverters are offered for residential and small commercial applications in North America and for grid-tied applications in South Africa, Mexico, Brazil, India, Thailand, the Philippines, France, Spain, Switzerland, Poland, Colombia, Panama, Costa Rica, Vietnam, Malaysia, Australia and 13 Caribbean countries.",
+    "Our IQ Battery 5P is available for customers in the United States, Australia, New Zealand, Puerto Rico, Mexico, Canada, the United Kingdom, Italy, France, the Netherlands, Luxembourg, Belgium, Romania and India.",
+    "We currently ship our IQ Battery 5P with FlexPhase\u2122 technology, an all-in-one AC-coupled system that delivers reliable backup power and supports both single-phase and three-phase applications, to customers in Germany, Austria, Switzerland, Luxembourg, Poland, Spain, Portugal, France, the Netherlands, Belgium, Sweden, Denmark, Greece, Croatia, Slovenia, Slovakia, Latvia, Lithuania, Estonia, Romania, Australia, New Zealand and India.",
+    "Solargraf is offered in the United States, Canada, Brazil, Germany, Austria, the Netherlands, France, Australia, Japan and India.",
+    "Customers and Sales We currently offer solutions targeting the residential and commercial markets in the United States, Canada, Mexico, Puerto Rico, Europe, Australia, New Zealand, India, Thailand, Central America, the Caribbean and certain Asian countries."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "AEIS",
+   "company": "Advanced Energy Industries, Inc. (NasdaqGS:AEIS)",
+   "turnover_usd": 277148699.0,
+   "form": "10-K",
+   "file_date": "2024-02-20",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/927003/000092700324000003/aeis-20231231x10k.htm",
+   "sample_quotes": [
+    "Our sales operations are primarily located in China, Germany, Hong Kong, India, Ireland, Israel, Japan, South Korea, Philippines, Singapore, Taiwan, the United Kingdom, and United States. 6 Table of Contents In addition to a direct sales force, we have independent sales representatives, channel partners and distributors that support our selling efforts."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "LSCC",
+   "company": "Lattice Semiconductor Corporation (NasdaqGS:LSCC)",
+   "turnover_usd": 259309905.0,
+   "form": "10-K",
+   "file_date": "2026-02-13",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/855658/000143774926004100/lscc20260103_10k.htm",
+   "sample_quotes": [
+    "Pune, India; and Penang, Malaysia.",
+    "Our international operations include foreign sales offices to support our international customers and distributors, which account for the majority of our revenue, and operational and research and development sites in China, the Philippines, Malaysia, India, and other Asian locations.",
+    "In Pune, India, we lease 42,728 square feet through March 2029 for research and development."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "PENG",
+   "company": "Penguin Solutions, Inc. (NasdaqGS:PENG)",
+   "turnover_usd": 201327378.0,
+   "form": "10-K",
+   "file_date": "2025-10-21",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1616533/000161653325000061/peng-20250829.htm",
+   "sample_quotes": [
+    "Bangalore, India;",
+    "In addition, a significant portion of our product design and manufacturing is performed at our facilities in Malaysia and China, and a significant amount of our product design activities are performed in Taiwan and India."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "TDY",
+   "company": "Teledyne Technologies Incorporated (NYSE:TDY)",
+   "turnover_usd": 186175509.0,
+   "form": "10-K",
+   "file_date": "2026-02-20",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000017/tdy-20251228.htm",
+   "sample_quotes": [
+    "Many countries, including China, India and Saudi Arabia, have bolstered laws or regulations requiring the use of local suppliers, personnel and in-country manufacturing, which has had a negative impact on Teledyne\u2019s revenues of instrumentation, commercial aerospace, marine and digital imaging products, as we currently have limited manufacturing operations in these countries."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "TRMB",
+   "company": "Trimble Inc. (NasdaqGS:TRMB)",
+   "turnover_usd": 162463063.0,
+   "form": "10-K",
+   "file_date": "2026-02-25",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000015/trmb-20260102.htm",
+   "sample_quotes": [
+    "Our global operations include major research, development, manufacturing, and logistics operations in the United States, the Netherlands, India, Germany, the United Kingdom, New Zealand, Finland, Canada, and Sweden.",
+    "Other countries have developed regional GNSS systems, such as India\u2019s NavIC and Japan's QZSS, 18 Table of Contents which we support in some products."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "QRVO",
+   "company": "Qorvo, Inc. (NasdaqGS:QRVO)",
+   "turnover_usd": 132166308.0,
+   "form": "10-K",
+   "file_date": "2017-05-23",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1604778/000160477817000031/qorvo2017040110-k.htm",
+   "sample_quotes": [
+    "Helsinki, Finland, Bangalore, India;"
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "POWI",
+   "company": "Power Integrations, Inc. (NasdaqGS:POWI)",
+   "turnover_usd": 87182800.0,
+   "form": "10-K",
+   "file_date": "2026-02-06",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/833640/000083364026000037/powi-20251231x10k.htm",
+   "sample_quotes": [
+    "In 2022 India\u2019s Bureau of Energy Efficiency implemented new labeling standards for ceiling fans in an effort to drive adoption of BLDC motors in place of less efficient induction motors.",
+    "We have sales offices in the United States, United Kingdom, Germany, Italy, India, China, Japan, South Korea, the Philippines, Canada, Singapore and Taiwan.",
+    "We also hold trademarks in the U.S. and various other geographies including Bangladesh, Brazil, China, the EU, Hong Kong, India, Japan, Korea, Russia, Switzerland, Taiwan, Turkey, and the United Kingdom.",
+    "Jain held various managerial positions at Infineon Technologies Japan in the industrial module and bi-polar devices business; earlier roles included business development and technical sales in India and Japan focusing on the Asia-Pacific, Europe and South Africa markets. \u200b Item 1A."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "UI",
+   "company": "Ubiquiti Inc. (NYSE:UI)",
+   "turnover_usd": 67076647.0,
+   "form": "10-K",
+   "file_date": "2025-08-22",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1511737/000151173725000053/ubnt-20250630.htm",
+   "sample_quotes": [
+    "We have operations in China, the Czech Republic, Lithuania, Poland, Latvia, Ukraine, India, Taiwan, Vietnam and elsewhere, with our operations in Taiwan and Vietnam, in particular, increasingly important to our overall business.",
+    "For our research and development and business development and support personnel, we have leased offices in Taiwan, Lithuania, Latvia, Poland, India, Ukraine, the Czech Republic, the Netherlands and elsewhere, including various locations within China and the United States of America."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "BDC",
+   "company": "Belden Inc. (NYSE:BDC)",
+   "turnover_usd": 65452896.0,
+   "form": "10-K",
+   "file_date": "2026-02-17",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000009/bdc-20251231.htm",
+   "sample_quotes": [
+    "International Operations In addition to manufacturing facilities in the United States (U.S.), we have manufacturing and other operating facilities in Canada, China, India, Mexico, and Tunisia, as well as various countries in Europe .",
+    "As of December 31, 2025, our global team members totaled approximately 8,000 employees of which 26% are in the United States, 3% in Canada, 10% in China, 4% in India, 25% in Mexico, and 30% in the EMEA region.",
+    "Once again, we are recognized as a Great Place to Work\u00ae in various global locations, including Belgium, Canada, China, Denmark, France, Germany, Hong Kong, Hungary, India, Italy, Malaysia, Mexico, Saudi Arabia, Singapore, Spain, Switzerland, Tunisia, United Arab Emirates, United Kingdom, and United States \u2013 a testament of Belden\u2019s commitment to our employees.",
+    "He made key contributions towards establishing and growing Belden throughout the Asia Pacific region, including setting up manufacturing in China and India.",
+    "Chand holds a BA in Economics from Loyola College, Chennai, India, an MBA from XLRI Jamshedpur, India, and a Doctorate of Business Administration from the City University of Hong Kong."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "EXTR",
+   "company": "Extreme Networks, Inc. (NasdaqGS:EXTR)",
+   "turnover_usd": 60691073.0,
+   "form": "10-K",
+   "file_date": "2025-08-18",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1078271/000095017025109742/extr-20250630.htm",
+   "sample_quotes": [
+    "Hangzhou, China; and Bangalore and Chennai, India.",
+    "These employees were located worldwide, with 43.1% located in the United States, 8.9% in other locations in the Americas, 31.6% in the Asia Pacific region (\u201cAPAC\u201d), which includes India, and 16.4% in the regions of Europe, Middle East and Africa (\u201cEMEA\u201d).",
+    "To foster an inclusive environment, we support several employee-led employee resource groups, including Abilities Alliance (employees with disabilities), API (Asian Pacific Islanders), APEX (Aspiring Professionals @ Extreme), Black @ Extreme (Black/African American), LaRaza (Hispanic), Maitri (employees in India), Parents at Extreme Networks, Pride Alliance (LGBTQ+), Veterans Council, and Women in Networking.",
+    "Bangalore, India;",
+    "Outside the United States, we also lease facilities in other geographic locations for research and development, sales and service personnel and administration, including other cities in the Americas, EMEA and APAC, such as Bangalore, India;"
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "OSIS",
+   "company": "OSI Systems, Inc. (NasdaqGS:OSIS)",
+   "turnover_usd": 55561304.0,
+   "form": "10-K",
+   "file_date": "2025-08-25",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1039065/000141057825001887/osis-20250630x10k.htm",
+   "sample_quotes": [
+    "Research and Development Our security and inspection systems and software are primarily designed at our facilities in the United States and in the United Kingdom, Australia, Germany, Singapore, and India.",
+    "We design and manufacture optoelectronic devices, and we provide electronics manufacturing services primarily in our facilities in the United States and internationally in the United Kingdom, Canada, India, Indonesia, Malaysia, and Mexico.",
+    "Our healthcare products are primarily designed at our facilities in the United States, the United Kingdom and India.",
+    "We currently manufacture our optoelectronic devices and provide electronics manufacturing services domestically in California and New Jersey, and internationally in Canada, Mexico, India, Indonesia, Malaysia, and the United Kingdom.",
+    "Most of our high-volume, labor-intensive manufacturing activities are performed at our facilities in Mexico, India, Indonesia and Malaysia."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "DIOD",
+   "company": "Diodes Incorporated (NasdaqGS:DIOD)",
+   "turnover_usd": 54259016.0,
+   "form": "10-K",
+   "file_date": "2005-03-16",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/29002/000114420405007853/v014426_10k.htm",
+   "sample_quotes": [
+    "The balance of the imports is primarily from Germany, Japan, India, the Philippines, and Korea.",
+    "In addition, we maintain facilities or contracts with entities in the Philippines, Taiwan, Germany, Japan, England, India, Korea, and China, among others."
+   ],
+   "tier": "business_activity",
+   "note": "Most recent 10-K mentioning India on file via EDGAR FTS is from 2005 -- current filings evidently no longer describe India-specific detail; flagged stale, not a current signal."
+  },
+  {
+   "ticker": "ROG",
+   "company": "Rogers Corporation (NYSE:ROG)",
+   "turnover_usd": 48183164.0,
+   "form": "10-K",
+   "file_date": "2021-02-19",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/84748/000008474821000021/rog-20201231.htm",
+   "sample_quotes": [
+    "cting our intellectual property;\u2022compliance with foreign employment regulations, as well as work stoppages and labor and union disputes.The foregoing risks may be particularly acute in emerging markets such as China and India, where our operations are subject to greater uncertainty due to increased volatility associated with the developing nature of the economic, legal and governmental systems of these countries, changes in bilateral and mul"
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ITRI",
+   "company": "Itron, Inc. (NasdaqGS:ITRI)",
+   "turnover_usd": 47979446.0,
+   "form": "10-K",
+   "file_date": "2026-02-17",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/780571/000078057126000033/itri-20251231.htm",
+   "sample_quotes": [
+    "We sponsor both funded and unfunded defined benefit pension plans for our international employees, primarily in Germany, France, India, and Indonesia.",
+    "Defined Benefit Pension Plans We sponsor both funded and unfunded defined benefit pension plans for our international employees, primarily in Germany, France, India, and Indonesia.",
+    "Note 8: Defined Benefit Pension Plans We sponsor both funded and unfunded defined benefit pension plans offering death and disability, retirement, and special termination benefits for certain of our international employees, primarily in Germany, France, India, and Indonesia.",
+    "Income taxes paid, net of refunds received, consisted of the following: Year Ended December 31, In thousands 2025 2024 2023 Federal $ 29,000 $ 42,224 $ 28,440 State and local 8,595 9,250 17,519 Foreign United Kingdom 4,858 * * India 3,288 * * Germany * 12,753 * Indonesia * 4,342 * All other foreign 10,575 11,603 8,591 Income taxes paid, net of refunds $ 56,316 $ 80,172 $ 54,550 *These jurisdictions did not exceed the 5% threshold for disclosure in this year."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "PDFS",
+   "company": "PDF Solutions, Inc. (NasdaqGS:PDFS)",
+   "turnover_usd": 44598711.0,
+   "form": "10-K",
+   "file_date": "2019-03-08",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1120914/000143774919004374/pdfs20181231_10k.htm",
+   "sample_quotes": [
+    "For example, in 2018, we engaged Abrolex in China, Recynergy in Taiwan, Tessolve in India and Southeast Asia."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "IPGP",
+   "company": "IPG Photonics Corporation (NasdaqGS:IPGP)",
+   "turnover_usd": 43440808.0,
+   "form": "10-K",
+   "file_date": "2026-02-23",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1111928/000111192826000040/ipgp-20251231.htm",
+   "sample_quotes": [
+    "Historically, we also exported and imported a limited number of components and products in Russia and Belarus with entities we operated in those regions, and our subsidiary in India imports a limited number of medical devices from our former Russian subsidiary pursuant to an agreement entered into in connection with the disposition of such subsidiary in 2024."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "KN",
+   "company": "Knowles Corporation (NYSE:KN)",
+   "turnover_usd": 41342889.0,
+   "form": "10-K",
+   "file_date": "2026-02-09",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1587523/000158752326000005/kn-20251231.htm",
+   "sample_quotes": [
+    "The Company conducts business in multiple foreign, non-U.S. jurisdictions including Malaysia, China, Philippines, India, and the United Kingdom; tax years are typically subject to examination for three to ten years.",
+    "We are currently under audit by local tax authorities in Malaysia and India for tax years 2018-2024 and fiscal year 2023, respectively."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "CALX",
+   "company": "Calix, Inc. (NYSE:CALX)",
+   "turnover_usd": 39986179.0,
+   "form": "10-K",
+   "file_date": "2026-02-20",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1406666/000140666626000005/calx-20251231.htm",
+   "sample_quotes": [
+    "Bangalore, India;",
+    "Human Capital We employed 1,921 employees globally as of December 31, 2025 with 1,046 employees located in the U.S. and 875 outside of the U.S., primarily in Canada, China and India.",
+    "We are subject to business and operational risks associated with our international operations, including our global supply-chain operations, and our international offices located in Nanjing, China and Bangalore, India as well as dependence upon our international sales operations.",
+    "In addition, we are exposed to risk arising from our dependence upon third-party development contractors in India.",
+    "In addition to our headquarters site, we lease additional office space in China, India and the U.S."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "NTCT",
+   "company": "NetScout Systems, Inc. (NasdaqGS:NTCT)",
+   "turnover_usd": 25504447.0,
+   "form": "10-K",
+   "file_date": "2026-05-14",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1078075/000107807526000050/ntct-20260331.htm",
+   "sample_quotes": [
+    "As of March 31, 2026, we leased 18 facilities in 10 countries of approximately 600,000 square feet of office and warehousing space and other related facilities, primarily in the United States, Europe and India."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "CTS",
+   "company": "CTS Corporation (NYSE:CTS)",
+   "turnover_usd": 22276233.0,
+   "form": "10-K",
+   "file_date": "2021-02-25",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/26058/000156459021008853/cts-10k_20201231.htm",
+   "sample_quotes": [
+    "Manufacturing Facilities Square Footage Owned/Leased Albuquerque, New Mexico 114,525 Leased Boise, Idaho 15,000 Leased Calamba, Philippines 14,800 Leased Fairfield, New Jersey 9,100 Leased Haryana, India 19,400 Leased Hopkinton, Massachusetts 32,000 Owned Juarez, Mexico 114,600 Leased Kaohsiung, Taiwan 75,900 Owned (1) Kvistgaard, Denmark 30,680 Leased Lisle, Illinois 31,000 Leased Matamoros, Mex"
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "NSSC",
+   "company": "Napco Security Technologies, Inc. (NasdaqGS:NSSC)",
+   "turnover_usd": 17532937.0,
+   "form": "10-K",
+   "file_date": "2025-08-25",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/69633/000155837025011750/nssc-20250630x10k.htm",
+   "sample_quotes": [
+    "We believe that our ability to provide timely and effective technical support and services to our U.S. customers from our U.S. facility in Amityville is an advantage over other companies in the security industry that have moved customer service functions overseas to countries such as India and Philippines.",
+    "We primarily source our manufacturing materials from Asia, including Taiwan, India and China, with additional sourcing from other producers throughout the world.",
+    "We primarily source our manufacturing materials from Asia, including Taiwan, India and China, with additional sourcing from other producers throughout the world."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ARLO",
+   "company": "Arlo Technologies, Inc. (NYSE:ARLO)",
+   "turnover_usd": 13517817.0,
+   "form": "10-K",
+   "file_date": "2026-02-27",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1736946/000173694626000031/arlo-20251231.htm",
+   "sample_quotes": [
+    "Workforce Composition and Strategic Talent Our Workforce As of December 31, 2025, we employed approximately 376 full-time employees, of which 64% were based in the United States, and 36% were based in other global regions, such as Canada, Australia, Taiwan, India, and Ireland."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "MPTI",
+   "company": "M-tron Industries, Inc. (NYSEAM:MPTI)",
+   "turnover_usd": 11646653.0,
+   "form": "10-K",
+   "file_date": "2026-03-26",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1902314/000143774926009844/mpti20251231_10k.htm",
+   "sample_quotes": [
+    "Yankton, South Dakota; and Noida, India.",
+    "Mtron's production facility in India operates under a Manufacturing License Agreement (\"MLA\") issued by the United States Department of State.",
+    "The following table summarizes our employees by employment type and geographic location: Full-Time Part-Time Contractors Total United States: Orlando, Florida 196 15 3 214 Yankton, South Dakota 31 5 1 37 Total United States 227 20 4 251 International: Hong Kong 3 \u2014 \u2014 3 Noida, India 9 \u2014 152 161 Total International 12 \u2014 152 164 Total 239 20 156 415 None of the Company's employees are represented by a labor union and the Company considers its relationships with employees to be good.",
+    "We have office and manufacturing space in Noida, India, and a sales office in Hong Kong.",
+    "Given our manufacturing operations in India and sales office in Hong Kong, any expansion of tariffs to additional countries or retaliatory measures by foreign governments could directly impact our cost structure and competitive position."
+   ],
+   "tier": "business_activity",
+   "note": "Concrete Noida, UP facility: 13,000 sq ft, 161 India-based staff (mostly contractors), operating under a US State Department Manufacturing License Agreement."
+  },
+  {
+   "ticker": "IMMR",
+   "company": "Immersion Corporation (NasdaqGS:IMMR)",
+   "turnover_usd": 3730172.0,
+   "form": "10-K",
+   "file_date": "2026-07-24",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1058811/000119312526316089/immr-20260430.htm",
+   "sample_quotes": [
+    "Barnes & Noble Education Segment Facilities Barnes & Noble Education leases various office space in New Jersey, Missouri, and India and leases warehouse space in Missouri.",
+    "Xiaomi Group On or about March 3, 2023, the Company initiated patent infringement lawsuits against several companies of the Xiaomi\u2011Group in Germany, France and India (the \u201cXiaomi Litigation\u201d).",
+    "Immersion filed complaints against Xiaomi\u2011Group companies and their agents in the D\u00fcsseldorf Regional Court in Germany, the Tribunal judiciaire de Paris (Paris First Instance Civil Court) in France, and the High Court of Delhi, at New Delhi, in India."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "AVNW",
+   "company": "Aviat Networks, Inc. (NasdaqGS:AVNW)",
+   "turnover_usd": 2897970.0,
+   "form": "10-K",
+   "file_date": "2025-09-10",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1377789/000137778925000068/avnw-20250627.htm",
+   "sample_quotes": [
+    "We maintain a presence in a number of other countries, some of which are based in customer locations and include, but not limited to, Canada, Mexico, Kenya, India, Saudi Arabia, Indonesia, Australia, New Zealand, and Singapore.",
+    "In March 2016, an enforcement action by the Indian Department of Revenue, Ministry of Finance was brought against Aviat\u2019s subsidiary Aviat Networks (India) Private Limited (\u201cAviat India\u201d) relating to the non-realization of intercompany receivables and non-payment of intercompany payables, which originated from 1999 to 2012, within the time frames dictated by the Indian regulations under the Foreign Exchange Management Act.",
+    "In November 2017, the Indian Department of Revenue, Ministry of Finance also initiated a similar action against Telsima Communications Private Limited (\u201cTelsima India\u201d), a subsidiary of the Company, relating to the non-realization of intercompany receivables and non-payment of intercompany payables which originated from the period prior to our acquisition of Telsima India in February 2009.",
+    "In September 2019, the directors of Aviat India appeared before the Ministry of Finance Enforcement Directorate."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "SOTK",
+   "company": "Sono-Tek Corporation (NasdaqCM:SOTK)",
+   "turnover_usd": 197283.0,
+   "form": "10-K",
+   "file_date": "2024-05-23",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/806172/000117152024000208/eps11317_sotk.htm",
+   "sample_quotes": [
+    "While robust sales from the clean energy sector were shown from India, South Korea and Singapore, China sales continue a downward trajectory amidst the uncertain economic landscape prevailing in the region."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "LGL",
+   "company": "The LGL Group, Inc. (NYSEAM:LGL)",
+   "turnover_usd": 148000.0,
+   "form": "10-K",
+   "file_date": "2026-03-30",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/61004/000143774926010362/lglg20251231_10k.htm",
+   "sample_quotes": [
+    "Domestic and Foreign Revenues Significant foreign revenues from operations ( 10% or more of foreign sales) were as follows: Year Ended December 31, 2025 2024 Spain $ 220 $ 334 United Kingdom 147 18 Japan 93 8 Netherlands 90 60 India 64 193 Australia 42 171 All other foreign countries 241 178 Total foreign revenues $ 897 $ 962 Total domestic revenues $ 1,556 $ 1,264 The Company allocates its foreign revenue based on the customer\u2019s ship-to location. 55 Table of Contents The LGL Group, Inc."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "ACFN",
+   "company": "Acorn Energy, Inc. (NasdaqCM:ACFN)",
+   "turnover_usd": 119099.0,
+   "form": "10-K",
+   "file_date": "2026-03-05",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/880984/000149315226008937/form10-k.htm",
+   "sample_quotes": [
+    "Mohr\u2019s stewardship that UE Systems has grown from a national brand to an international company with offices in Toronto, Mexico City, Hong Kong, India and the Netherlands, and developed a list of loyal customers, including those in the Fortune 500."
+   ],
+   "tier": "business_activity"
+  },
+  {
+   "ticker": "IEHC",
+   "company": "IEH Corporation (OTCPK:IEHC)",
+   "turnover_usd": 31015.0,
+   "form": "10-K",
+   "file_date": "2019-07-12",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/50292/000117494719000885/e5195-10k.htm",
+   "sample_quotes": [
+    "The Company sells its products directly and through regional representatives located in all regions of the United States, Canada, Israel, India, various Pacific Rim countries, South Korea and the European Union (EU)."
+   ],
+   "tier": "business_activity"
+  }
+ ],
+ "exit_or_divestment": [
+  {
+   "ticker": "NOVT",
+   "company": "Novanta Inc. (NasdaqGS:NOVT)",
+   "turnover_usd": 86936473.0,
+   "form": "10-K",
+   "file_date": "2020-02-26",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1076930/000156459020006601/novt-10k_20191231.htm",
+   "sample_quotes": [
+    "In June 2015, the Company divested its 50% owned joint venture in India, Excel Laser Technology Private Limited, for net cash proceeds of $0.2 million."
+   ],
+   "tier": "exit_or_divestment",
+   "note": "2015 divestment of a 50%-owned India JV (Excel Laser Technology Pvt Ltd) for $0.2M -- disclosed in a 2020 filing describing a historical event."
+  },
+  {
+   "ticker": "DGII",
+   "company": "Digi International Inc. (NasdaqGS:DGII)",
+   "turnover_usd": 21291710.0,
+   "form": "10-K",
+   "file_date": "2017-11-22",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/854775/000085477517000020/dgii-fy2017930x10k.htm",
+   "sample_quotes": [
+    "The payments associated with these charges were completed in the third quarter of fiscal 2016. 2015 Restructuring On January 22, 2015, we announced the closure of our India location."
+   ],
+   "tier": "exit_or_divestment",
+   "note": "Closed its India location as part of a 2015 restructuring (disclosed retrospectively in a 2017 filing)."
+  },
+  {
+   "ticker": "KE",
+   "company": "Kimball Electronics, Inc. (NasdaqGS:KE)",
+   "turnover_usd": 4027339.0,
+   "form": "10-K",
+   "file_date": "2025-08-22",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1606757/000160675725000027/ke-20250630.htm",
+   "sample_quotes": [
+    "Previously, the Company had operations in Japan, India, and Vietnam as part of the GES business unit, that was divested in July of 2024."
+   ],
+   "tier": "exit_or_divestment",
+   "note": "Divested its GES business unit (which included India operations) in July 2024."
+  },
+  {
+   "ticker": "CODA",
+   "company": "Coda Octopus Group, Inc. (NasdaqCM:CODA)",
+   "turnover_usd": 1455336.0,
+   "form": "10-K",
+   "file_date": "2026-01-29",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1334325/000149315226004135/form10-k.htm",
+   "sample_quotes": [
+    "Coda Octopus Group, Inc., is organized under the laws of the State of Delaware as a holding company that conducts its business through its subsidiaries, several of which are organized under the laws of foreign jurisdictions, including England, Scotland, Denmark, Australia and India.",
+    "PAL markets its products through its internal sales team, its website and a network of non-exclusive agents in Japan, China, India and Korea.",
+    "Notes to the Consolidated Financial Statements October 31, 2025 and 2024 Foreign Currency Translation The Company\u2019s operations are split between the United States, United Kingdom, Denmark, Australia and India with the latter operations being dormant.",
+    "The Company\u2019s tax jurisdictions are the USA, UK, Denmark, India, and Australia (our India and Australian operations are currently dormant).",
+    "Finally, the Company is obligated to provide pension funding according to the laws in which it operates including in both Denmark, Australia and India."
+   ],
+   "tier": "exit_or_divestment",
+   "note": "India subsidiary operations explicitly described as 'currently dormant' -- inactive, not a live investment signal."
+  }
+ ],
+ "excluded_context_only": [
+  {
+   "ticker": "FLEX",
+   "company": "Flex Ltd. (NasdaqGS:FLEX)",
+   "turnover_usd": 937784044.0,
+   "form": "10-K",
+   "file_date": "2026-05-20",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm",
+   "sample_quotes": [
+    "Some countries in which we operate, such as Brazil, Hungary, India, Malaysia, Mexico, and Poland, have experienced periods of economic volatility, high inflation, currency devaluations, or limited availability of foreign exchange, and governmental authorities in some jurisdictions exercise significant influence over economic activity."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "MTSI",
+   "company": "MACOM Technology Solutions Holdings, Inc. (NasdaqGS:MTSI)",
+   "turnover_usd": 635710240.0,
+   "form": "10-K",
+   "file_date": "2020-11-18",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1493594/000149359420000063/mtsi-20201002.htm",
+   "sample_quotes": [
+    "10 $272,951 China192,989 132,329 159,763 Asia Pacific, excluding China (1)84,997 80,136 79,581 Other Countries (2)34,577 47,733 58,103 Total$530,037 $499,708 $570,398 (1)Asia Pacific represents Taiwan, Japan, Singapore, India, Thailand, South Korea, Australia, Malaysia, New Zealand and the Philippines.(2)No country or region represented greater than 10% of our total revenue as of the dates presented, other than the United States, China and t"
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "SWKS",
+   "company": "Skyworks Solutions, Inc. (NasdaqGS:SWKS)",
+   "turnover_usd": 394221449.0,
+   "form": "10-K",
+   "file_date": "2025-11-07",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/4127/000000412725000085/swks-20251003.htm",
+   "sample_quotes": [
+    "economic, political, and supply chain instability related to the uncertainty regarding the relationships among the United States, China, Taiwan, Russia, Mexico, Israel, other Middle Eastern countries, Japan, Singapore, India, Canada and other foreign countries, and the international community at large, as well as related to armed conflicts, such as the conflict between Russia and Ukraine and the conflicts in Israel and the Middle Eastern re"
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "ONTO",
+   "company": "Onto Innovation Inc. (NYSE:ONTO)",
+   "turnover_usd": 372736938.0,
+   "form": "10-K",
+   "file_date": "2019-02-25",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/704532/000156459019004083/nano-ex1024_246.htm",
+   "sample_quotes": [
+    ", consult with, render services for, be employed in an executive, managerial or administrative capacity by, or in any manner engage in, any business or entity competing with the Businesses, within North America, Europe, India, China and Japan, Korea, Singapore and Taiwan and (b) until the date that is five (5) years following the Closing Date, such Seller shall not, directly or indirectly, own any interest in, manage, control, participate in"
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "ZBRA",
+   "company": "Zebra Technologies Corporation (NasdaqGS:ZBRA)",
+   "turnover_usd": 230943561.0,
+   "form": "10-K",
+   "file_date": "2025-02-13",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/877212/000087721225000027/zbra-20241231.htm",
+   "sample_quotes": [
+    "Some locations where business is conducted, primarily in Europe, China, and India, are subject to labor laws that differ significantly from those in the U.S."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "FFIV",
+   "company": "F5, Inc. (NasdaqGS:FFIV)",
+   "turnover_usd": 213442951.0,
+   "form": "10-K",
+   "file_date": "2025-11-25",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1048695/000104869525000157/ffiv-20250930.htm",
+   "sample_quotes": [
+    "Major jurisdictions where there are wholly owned subsidiaries of F5, Inc. which require income tax filings include the United Kingdom, Singapore, Israel, and India.",
+    "The earliest periods open for review by local taxing authorities are fiscal years 2024 for the United Kingdom, 2019 for Singapore, 2019 for Israel, and 2019 for India.",
+    "The Company is currently under audit by the Internal Revenue Service for fiscal year 2019, by various states for fiscal years 2018 through 2021, and by various foreign jurisdictions including India for fiscal years 2019 to 2024, Israel for fiscal years 2019 to 2023, Saudi Arabia for fiscal years 2015 to 2021, and Singapore for fiscal years 2019 to 2023. 9."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "PLAB",
+   "company": "Photronics, Inc. (NasdaqGS:PLAB)",
+   "turnover_usd": 53595922.0,
+   "form": "10-K",
+   "file_date": "2018-12-21",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/810136/000114036118045611/s002591x1_ex10-24.htm",
+   "sample_quotes": [
+    "(iii) if to JPMorgan in its capacity as an Issuing Bank, to it at JPMorgan Chase Bank N.A., Sarjapur Outer Ring Rd, Vathur Hobli, Floor 04, Bangalore, 560 087, India, Attention Ajay Prabhu (Telecopy No."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "VNT",
+   "company": "Vontier Corporation (NYSE:VNT)",
+   "turnover_usd": 50133136.0,
+   "form": "10-K",
+   "file_date": "2026-02-12",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1786842/000162828026007648/vnt-20251231.htm",
+   "sample_quotes": [
+    "Germany * ( 5.0 ) * India 5.4 4.9 * Italy 8.5 * * Other 16.6 14.3 14.1 State and local 13.2 18.9 20.2 Total cash paid, net of refunds received $ 125.8 $ 93.5 $ 126.0 * The amount of income taxes paid during the year does not meet the 5% disaggregation threshold."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "CXT",
+   "company": "Crane NXT, Co. (NYSE:CXT)",
+   "turnover_usd": 42286817.0,
+   "form": "10-K",
+   "file_date": "2023-03-01",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/25445/000162828023005873/cr-20221231.htm",
+   "sample_quotes": [
+    "Executive Vice President and Chief Operating Officer from 2011 to 2013. 59 2004 Alejandro Alcala Executive Vice President Executive Vice President, Aerospace and Electronics since February 2023, Senior Vice President through 2023, Process Flow Technologies and operations in China, India and the Middle East & Africa since March 2020."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "BHE",
+   "company": "Benchmark Electronics, Inc. (NYSE:BHE)",
+   "turnover_usd": 38617928.0,
+   "form": "10-K",
+   "file_date": "2024-02-27",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/863436/000095017024020565/bhe-20231231.htm",
+   "sample_quotes": [
+    "For example, in October 2021, Benchmark appointed Ramesh Gopalakrishnan to fill a vacant board position who is a native of India and brings diverse perspectives and thought leadership to the Board based on his significant global operational and strategy experience at several multinational companies."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "NVEC",
+   "company": "NVE Corporation (NasdaqCM:NVEC)",
+   "turnover_usd": 21174848.0,
+   "form": "10-K",
+   "file_date": "2024-05-01",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/724910/000137647424000214/nvec-20240331.htm",
+   "sample_quotes": [
+    "Foreign sales are a significant portion of our revenue and we rely on suppliers in China, India, Malaysia, Taiwan, Thailand, and other foreign countries."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "TRT",
+   "company": "Trio-Tech International (NYSEAM:TRT)",
+   "turnover_usd": 9151796.0,
+   "form": "10-K",
+   "file_date": "2007-09-17",
+   "stale_filing": true,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/732026/000095013407020033/a33657e10vk.htm",
+   "sample_quotes": [
+    "During fiscal 2007, our Singapore distribution operation participated in the Componex India Fair and demonstrated our range of connectors, infrared and resistive touch-screen panels Revenue from distribution activities represented approximately 4%, 7% and 12% of net sales for the years ended June 30, 2007, 2006 and 2005, respectively."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "ASYS",
+   "company": "Amtech Systems, Inc. (NasdaqGS:ASYS)",
+   "turnover_usd": 8410224.0,
+   "form": "10-K",
+   "file_date": "2025-12-10",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/720500/000119312525314147/asys-20250930.htm",
+   "sample_quotes": [
+    "Our business and results of operations could be negatively affected by periodic local or international economic downturns, trade balance issues and political, social and military instability in countries such as China, Russia, India, South Korea, Taiwan, Ukraine and possibly elsewhere."
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "NLST",
+   "company": "Netlist, Inc. (OTCPK:NLST)",
+   "turnover_usd": 3943903.0,
+   "form": "10-K",
+   "file_date": "2026-03-19",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926032152/nlst-20251227x10k.htm",
+   "sample_quotes": [
+    "overnance expertise qualifies him to serve as a member of our Board.\u200b90 Table of ContentsJun Cho has served as a member of the Board since June 2025 and most recently served as Vice President and General Counsel for the India Asia Pacific Region for Stellantis NV from April 1998 to June 2023, where he led initiatives in technology licensing, product distribution, M&A transactions and joint ventures, from Beijing, Shanghai and Auburn Hills. P"
+   ],
+   "tier": "context_only"
+  },
+  {
+   "ticker": "ELSE",
+   "company": "Electro-Sensors, Inc. (NasdaqCM:ELSE)",
+   "turnover_usd": 27245.0,
+   "form": "10-K",
+   "file_date": "2026-03-30",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/351789/000155485526000455/else-20251231.htm",
+   "sample_quotes": [
+    "Canada, Mexico, Brazil, Chile, United Kingdom, Egypt, India, Australia, China, the Republic of Korea, Vietnam, Malaysia, Philippines, Thailand, and Singapore."
+   ],
+   "tier": "context_only"
+  }
+ ],
+ "extraction_failed": [
+  {
+   "ticker": "WDC",
+   "company": "Western Digital Corporation (NasdaqGS:WDC)",
+   "turnover_usd": 4635209626.0,
+   "form": "10-K",
+   "file_date": "2025-08-14",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000038/wdc-20250627.htm",
+   "sample_quotes": [],
+   "tier": "extraction_failed",
+   "reason": "EDGAR full-text-search registered a real 'India' hit in this company's 10-K, but the fetched filing document text did not yield an extractable sentence (likely XBRL/viewer-fragment artifact in the primary document URL) -- not fabricated, left as a genuine gap."
+  },
+  {
+   "ticker": "MCHP",
+   "company": "Microchip Technology Incorporated (NasdaqGS:MCHP)",
+   "turnover_usd": 1125103659.0,
+   "form": "10-K",
+   "file_date": "2026-05-21",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000016/mchp-20260331.htm",
+   "sample_quotes": [],
+   "tier": "extraction_failed",
+   "reason": "EDGAR full-text-search registered a real 'India' hit in this company's 10-K, but the fetched filing document text did not yield an extractable sentence (likely XBRL/viewer-fragment artifact in the primary document URL) -- not fabricated, left as a genuine gap."
+  },
+  {
+   "ticker": "MSI",
+   "company": "Motorola Solutions, Inc. (NYSE:MSI)",
+   "turnover_usd": 442451582.0,
+   "form": "10-K",
+   "file_date": "2026-02-12",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000010/msi-20251231.htm",
+   "sample_quotes": [],
+   "tier": "extraction_failed",
+   "reason": "EDGAR full-text-search registered a real 'India' hit in this company's 10-K, but the fetched filing document text did not yield an extractable sentence (likely XBRL/viewer-fragment artifact in the primary document URL) -- not fabricated, left as a genuine gap."
+  },
+  {
+   "ticker": "CRUS",
+   "company": "Cirrus Logic, Inc. (NasdaqGS:CRUS)",
+   "turnover_usd": 87530087.0,
+   "form": "10-K",
+   "file_date": "2026-05-21",
+   "stale_filing": false,
+   "filing_url": "https://www.sec.gov/Archives/edgar/data/772406/000077240626000018/crus-20260328.htm",
+   "sample_quotes": [],
+   "tier": "extraction_failed",
+   "reason": "EDGAR full-text-search registered a real 'India' hit in this company's 10-K, but the fetched filing document text did not yield an extractable sentence (likely XBRL/viewer-fragment artifact in the primary document URL) -- not fabricated, left as a genuine gap."
+  }
+ ],
+ "no_india_mention_found": [
+  {
+   "ticker": "LITE",
+   "company": "Lumentum Holdings Inc. (NasdaqGS:LITE)",
+   "turnover_usd": 5377550489.0
+  },
+  {
+   "ticker": "AXTI",
+   "company": "AXT, Inc. (NasdaqGS:AXTI)",
+   "turnover_usd": 995664137.0
+  },
+  {
+   "ticker": "AMKR",
+   "company": "Amkor Technology, Inc. (NasdaqGS:AMKR)",
+   "turnover_usd": 479939142.0
+  },
+  {
+   "ticker": "GFS",
+   "company": "GlobalFoundries Inc. (NasdaqGS:GFS)",
+   "turnover_usd": 279172375.0
+  },
+  {
+   "ticker": "Q",
+   "company": "Qnity Electronics, Inc. (NYSE:Q)",
+   "turnover_usd": 268219061.0
+  },
+  {
+   "ticker": "FORM",
+   "company": "FormFactor, Inc. (NasdaqGS:FORM)",
+   "turnover_usd": 186410920.0
+  },
+  {
+   "ticker": "ACMR",
+   "company": "ACM Research, Inc. (NasdaqGM:ACMR)",
+   "turnover_usd": 151239240.0
+  },
+  {
+   "ticker": "VECO",
+   "company": "Veeco Instruments Inc. (NasdaqGS:VECO)",
+   "turnover_usd": 103628109.0
+  },
+  {
+   "ticker": "ACLS",
+   "company": "Axcelis Technologies, Inc. (NasdaqGS:ACLS)",
+   "turnover_usd": 102862241.0
+  },
+  {
+   "ticker": "PLXS",
+   "company": "Plexus Corp. (NasdaqGS:PLXS)",
+   "turnover_usd": 91323937.0
+  },
+  {
+   "ticker": "OLED",
+   "company": "Universal Display Corporation (NasdaqGS:OLED)",
+   "turnover_usd": 60334696.0
+  },
+  {
+   "ticker": "BMI",
+   "company": "Badger Meter, Inc. (NYSE:BMI)",
+   "turnover_usd": 60271964.0
+  },
+  {
+   "ticker": "KOPN",
+   "company": "Kopin Corporation (NasdaqCM:KOPN)",
+   "turnover_usd": 33698965.0
+  },
+  {
+   "ticker": "SONO",
+   "company": "Sonos, Inc. (NasdaqGS:SONO)",
+   "turnover_usd": 28370620.0
+  },
+  {
+   "ticker": "SKYT",
+   "company": "SkyWater Technology, Inc. (NasdaqCM:SKYT)",
+   "turnover_usd": 25745185.0
+  },
+  {
+   "ticker": "CRSR",
+   "company": "Corsair Gaming, Inc. (NasdaqGS:CRSR)",
+   "turnover_usd": 20752374.0
+  },
+  {
+   "ticker": "OCC",
+   "company": "Optical Cable Corporation (NasdaqGM:OCC)",
+   "turnover_usd": 10231150.0
+  },
+  {
+   "ticker": "DAKT",
+   "company": "Daktronics, Inc. (NasdaqGS:DAKT)",
+   "turnover_usd": 7746477.0
+  },
+  {
+   "ticker": "RFIL",
+   "company": "RF Industries, Ltd. (NasdaqGM:RFIL)",
+   "turnover_usd": 4572602.0
+  },
+  {
+   "ticker": "INTT",
+   "company": "inTEST Corporation (NYSEAM:INTT)",
+   "turnover_usd": 4192200.0
+  },
+  {
+   "ticker": "BKTI",
+   "company": "BK Technologies Corporation (NYSEAM:BKTI)",
+   "turnover_usd": 3604154.0
+  },
+  {
+   "ticker": "NSYS",
+   "company": "Nortech Systems Incorporated (NasdaqCM:NSYS)",
+   "turnover_usd": 397909.0
+  },
+  {
+   "ticker": "SODI",
+   "company": "Solitron Devices, Inc. (OTCPK:SODI)",
+   "turnover_usd": 48800.0
+  },
+  {
+   "ticker": "SCIA",
+   "company": "SCI Engineered Materials, Inc. (OTCPK:SCIA)",
+   "turnover_usd": 34225.0
+  }
+ ],
+ "india_domiciled_excluded_from_fdi_tally": [
+  {
+   "ticker": "RISHABH",
+   "company": "Rishabh Instruments Limited (NSEI:RISHABH)",
+   "note": "India-domiciled NSE-listed company -- not SEC-registered (no CIK); this is self-description, not inbound foreign investment into India, per repo convention (see scripts/build_edgar_india_sweep.py::classify)."
+  },
+  {
+   "ticker": "SAATVIKGL",
+   "company": "Saatvik Green Energy Limited (NSEI:SAATVIKGL)",
+   "note": "India-domiciled NSE-listed company -- not SEC-registered (no CIK); this is self-description, not inbound foreign investment into India, per repo convention (see scripts/build_edgar_india_sweep.py::classify)."
+  },
+  {
+   "ticker": "SOLEX",
+   "company": "Solex Energy Limited (NSEI:SOLEX)",
+   "note": "India-domiciled NSE-listed company -- not SEC-registered (no CIK); this is self-description, not inbound foreign investment into India, per repo convention (see scripts/build_edgar_india_sweep.py::classify)."
+  },
+  {
+   "ticker": "TVSELECT",
+   "company": "TVS Electronics Limited (NSEI:TVSELECT)",
+   "note": "India-domiciled NSE-listed company -- not SEC-registered (no CIK); this is self-description, not inbound foreign investment into India, per repo convention (see scripts/build_edgar_india_sweep.py::classify)."
+  },
+  {
+   "ticker": "WEL",
+   "company": "Wonder Electricals Limited (NSEI:WEL)",
+   "note": "India-domiciled NSE-listed company -- not SEC-registered (no CIK); this is self-description, not inbound foreign investment into India, per repo convention (see scripts/build_edgar_india_sweep.py::classify)."
+  },
+  {
+   "ticker": "ASMS",
+   "company": "Bartronics India Limited (NSEI:ASMS)",
+   "note": "India-domiciled NSE-listed company -- not SEC-registered (no CIK); this is self-description, not inbound foreign investment into India, per repo convention (see scripts/build_edgar_india_sweep.py::classify)."
+  },
+  {
+   "ticker": "NITIRAJ",
+   "company": "Nitiraj Engineers Limited (NSEI:NITIRAJ)",
+   "note": "India-domiciled NSE-listed company -- not SEC-registered (no CIK); this is self-description, not inbound foreign investment into India, per repo convention (see scripts/build_edgar_india_sweep.py::classify)."
+  }
+ ]
+}

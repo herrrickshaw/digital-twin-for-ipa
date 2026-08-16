@@ -1,8 +1,8 @@
 # Quarterly Reportage — key announcements × scheme × ministry
 
-*Generated 2026-08-04 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
+*Generated 2026-08-16 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
 
-## 2026Q3 — 125 scheme-mapped announcements
+## 2026Q3 — 172 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -36,7 +36,7 @@
 | 2026-07-15 | **MPMS (LSEM successor)** | Ministry of Electronics & IT | Cabinet approves Mobile Phone Manufacturing Scheme (MPMS) | [2284792](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284792) |
 | 2026-07-15 | **PLI-ACC** | Ministry of Heavy Industries | The Ministry of Heavy Industries invites bids through Global Tender for the selection of beneficiaries to set up giga-sc | [2284916](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284916) |
 | 2026-07-15 | **SATAT / CBG** | Ministry of Home Affairs | In the presence of Union Home Minister and Minister of Cooperation Shri Amit Shah, MCD and NDDB signs MoU for establishm | [2284949](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284949) |
-| … | | | *95 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *142 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
 <details><summary>Other Cabinet/CCEA approvals this quarter (10)</summary>
 

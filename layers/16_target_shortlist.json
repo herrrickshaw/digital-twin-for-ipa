@@ -1,6 +1,6 @@
 {
  "layer": "target_shortlist",
- "built": "2026-07-21",
+ "built": "2026-08-09",
  "method": "foreign leads only; targeting score = lead_score + verified India-intent bonus (annual-report level or 10-K mention weight); China separated under Press Note 3",
  "source": "layers/16_leads.json",
  "count": 136,

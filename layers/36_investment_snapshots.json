@@ -1,0 +1,176 @@
+{
+ "layer": 36,
+ "name": "investment_snapshots",
+ "built": "2026-08-09",
+ "what": "Curated (not live-fetched) point-in-time investment-announcement snapshots: the one state investor-summit MOU list that's actually structured (UPGIS 2023) and the one fDi Intelligence free-content asset that's actually scrapable (The fDi Report 2025, fetched off-domain to respect fdiintelligence.com's own robots.txt block on AI crawlers). Feeds new company names into layer 16/32.",
+ "upgis_2023": {
+  "summit": "UP Global Investors Summit 2023 (UPGIS)",
+  "snapshot_date": "2023-02-11",
+  "source_url": "https://www.iiaonline.in/Uploads/ImportantUpdates/upgis-2023-investment-figures-as-on-11-02-2023-13-02-2023.pdf",
+  "source_note": "Mirrored via an industry association (IIA) -- content is an official government summary; not hosted directly on invest.up.gov.in. Format: PDF with real tables (Top-10/12 Investment Intents, sector-wise top-20, region-wise, 75-district annexure -- district level only past the top ~12).",
+  "total_mous": 19058,
+  "companies": [
+   {
+    "company": "Tauschen International Ltd",
+    "country": "Hong Kong SAR",
+    "mous": 16,
+    "sectors": "MRO, Manufacturing, Electronics, Textile, EV",
+    "investment_inr_cr": 189849.4,
+    "estimated_jobs": 62494
+   },
+   {
+    "company": "RG Strategies Group",
+    "country": "India",
+    "mous": 7,
+    "sectors": "Renewable Energy, EV",
+    "investment_inr_cr": 173031.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "Imperia Innovation Investment / Austin Consulting Group",
+    "country": "United States",
+    "mous": 2,
+    "sectors": "Education, Infrastructure",
+    "investment_inr_cr": 105000.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "Causis Group",
+    "country": null,
+    "mous": 1,
+    "sectors": "EV",
+    "investment_inr_cr": 100000.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "Reliance Industries Ltd",
+    "country": "India",
+    "mous": null,
+    "sectors": "Telecom Infra, MRO",
+    "investment_inr_cr": 75000.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "ABC Cleantech Pvt Ltd",
+    "country": "India",
+    "mous": null,
+    "sectors": "Renewable Energy (Mirzapur)",
+    "investment_inr_cr": 50000.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "NTPC Ltd",
+    "country": "India",
+    "mous": 4,
+    "sectors": "Renewable Energy",
+    "investment_inr_cr": 42280.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "Unicorn Energy",
+    "country": "Germany",
+    "mous": 2,
+    "sectors": "Renewable Energy",
+    "investment_inr_cr": 41500.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "GMR Group",
+    "country": "India",
+    "mous": null,
+    "sectors": null,
+    "investment_inr_cr": 40000.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "Aditya Birla Group",
+    "country": "India",
+    "mous": null,
+    "sectors": null,
+    "investment_inr_cr": 25000.0,
+    "estimated_jobs": null
+   },
+   {
+    "company": "Hinduja Group",
+    "country": "India",
+    "mous": null,
+    "sectors": null,
+    "investment_inr_cr": 25000.0,
+    "estimated_jobs": null
+   }
+  ],
+  "foreign_companies_only": [
+   "Tauschen International Ltd",
+   "Imperia Innovation Investment / Austin Consulting Group",
+   "Unicorn Energy"
+  ]
+ },
+ "fdi_report_2025": {
+  "publisher": "fDi Intelligence (Financial Times) / fDi Markets",
+  "title": "The fDi Report 2025",
+  "source_url": "https://fdiinsights-publications.s3.eu-west-1.amazonaws.com/publications/5000067/documents/The_fDi_Report_2025.pdf",
+  "landing_page": "https://ftlocations.com/knowledge-hub/report/fdi-report-2025",
+  "source_note": "Fetched via the S3/ftlocations.com mirror ONLY -- fdiintelligence.com's own robots.txt disallows AI crawlers site-wide (anthropic-ai, Claude-Web, ClaudeBot explicitly named), so this project will not fetch that domain directly. The PDF is the vendor's own freely-distributed publication; next year's edition will have a different publication-ID URL -- find and re-curate manually, once a year.",
+  "india_aggregate": {
+   "fdi_2024_usd_bn": 108.6,
+   "yoy_change_pct": 28,
+   "project_count": 1017,
+   "rank_apac": 1,
+   "rank_global": 2,
+   "note": "#2 globally after the US; #1 globally for job creation"
+  },
+  "named_projects": [
+   {
+    "company": "ArcelorMittal Nippon Steel India (AM/NS India)",
+    "parent_countries": [
+     "Luxembourg (ArcelorMittal)",
+     "Japan (Nippon Steel)"
+    ],
+    "investment_usd_bn": 1.6,
+    "location": "Rajayyapeta / Nakkapalli Cluster, Andhra Pradesh",
+    "sector": "Steel",
+    "estimated_jobs": 20000
+   },
+   {
+    "company": "Powerchip Technology + Tata Electronics",
+    "parent_countries": [
+     "Taiwan",
+     "India"
+    ],
+    "investment_usd_bn": 11.0,
+    "location": "Dholera, Gujarat",
+    "sector": "Semiconductors (12-inch wafer fab)",
+    "estimated_jobs": null,
+    "note": "\"Made in India\" compliant"
+   }
+  ],
+  "unctad_wir_cross_check": "UNCTAD's World Investment Report ultimately sources its greenfield-FDI annex tables from fDi Markets, but publishes AGGREGATE only (source/destination country x sector), no company-level annex -- fDi Intelligence's own reporting is the only company-level route."
+ },
+ "access_hazards": [
+  {
+   "target": "vibrantgujarat.com",
+   "issue": "403 to curl/WebFetch (WAF/bot-detection); loads fine in a real browser",
+   "implication": "any future scrape needs headless-browser fetch, not plain HTTP"
+  },
+  {
+   "target": "upgis2023.in",
+   "issue": "DEAD -- now a repurposed/parked spam domain",
+   "implication": "do not link to it; use the iiaonline.in PDF mirror instead"
+  },
+  {
+   "target": "invest.up.gov.in/gbc2024/",
+   "issue": "403 \"Forbidden: Access is denied\" (path-specific WAF)",
+   "implication": "sibling paths on the same host (upgis-2023/, ground-breaking-ceremony-4-0/) return 200"
+  },
+  {
+   "target": "investkarnataka.co.in",
+   "issue": "reachable but no consolidated MOU table",
+   "implication": "\"Recent Developments\" is per-company press-release PDFs only, high-effort to aggregate"
+  }
+ ],
+ "sources_investigated_not_built": {
+  "vibrant_gujarat": "No consolidated MOU table exists at all; only press aggregates (41,299 projects / Rs 26.33 lakh cr at VGGS 2024) and scattered per-company news mentions. Would need RTI or per-article scraping -- not attempted.",
+  "invest_karnataka": "No consolidated MOU table; per-company press-release PDFs only. Not attempted."
+ },
+ "refresh_cadence": "MANUAL, ANNUAL -- neither source is a live/recurring feed; re-curate by hand once a year"
+}

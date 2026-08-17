@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-08-03",
+ "built": "2026-08-17",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -29,10 +29,10 @@
   }
  },
  "counts": {
-  "prs_bills_total": 966,
-  "investment_relevant": 168,
-  "recent_2024plus": 67,
-  "active_watchlist": 33,
+  "prs_bills_total": 972,
+  "investment_relevant": 170,
+  "recent_2024plus": 73,
+  "active_watchlist": 35,
   "drishti_editorials": 24
  },
  "active_watchlist": [
@@ -77,12 +77,28 @@
    "url": "https://prsindia.org/billtrack/the-industrial-relations-code-amendment-bill-2026"
   },
   {
+   "slug": "the-mines-and-minerals-development-and-regulation-amendment-bill-2026",
+   "title": "Mines and Minerals Development and Regulation Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": "Metals & Mining",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-mines-and-minerals-development-and-regulation-amendment-bill-2026"
+  },
+  {
    "slug": "the-income-tax-amendment-ordinance-2026",
    "title": "Income Tax Amendment Ordinance 2026",
    "year": 2026,
    "investment_lane": "Taxation",
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/the-income-tax-amendment-ordinance-2026"
+  },
+  {
+   "slug": "the-taxation-and-other-laws-amendment-bill-2026",
+   "title": "Taxation and Other Laws Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": "Taxation",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-taxation-and-other-laws-amendment-bill-2026"
   },
   {
    "slug": "the-protection-of-interests-in-aircraft-objects-bill-2025",
@@ -349,6 +365,22 @@
    "investment_lane": "Ease of business (decriminalisation)",
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/the-jan-vishwas-amendment-of-provisions-bill-2026"
+  },
+  {
+   "slug": "the-mines-and-minerals-development-and-regulation-amendment-bill-2026",
+   "title": "Mines and Minerals Development and Regulation Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": "Metals & Mining",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-mines-and-minerals-development-and-regulation-amendment-bill-2026"
+  },
+  {
+   "slug": "the-taxation-and-other-laws-amendment-bill-2026",
+   "title": "Taxation and Other Laws Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": "Taxation",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-taxation-and-other-laws-amendment-bill-2026"
   },
   {
    "slug": "the-central-excise-amendment-bill-2025",
@@ -5449,6 +5481,14 @@
    "url": "https://prsindia.org/billtrack/the-indian-ports-bill-2025"
   },
   {
+   "slug": "the-indian-statistical-institute-bill-2026",
+   "title": "Indian Statistical Institute Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-indian-statistical-institute-bill-2026"
+  },
+  {
    "slug": "the-indian-telegraph-amendment-bill-2006",
    "title": "Indian Telegraph Amendment Bill 2006",
    "year": 2006,
@@ -6049,6 +6089,14 @@
    "url": "https://prsindia.org/billtrack/the-juvenile-justice-care-and-protection-of-children-bill-2014"
   },
   {
+   "slug": "the-kerala-alteration-of-name-bill-2026",
+   "title": "Kerala Alteration of Name Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-kerala-alteration-of-name-bill-2026"
+  },
+  {
    "slug": "the-labour-laws-exemption-from-furnishing-returns-and-maintaining-registers-by-certain-establishments-amendment-and-miscellaneous-provisions-bill-2005",
    "title": "Labour Laws Exemption From Furnishing Returns and Maintaining Registers By Certain Establishments Amendment and Miscellaneous Provisions Bill 2005",
    "year": 2005,
@@ -6481,6 +6529,14 @@
    "url": "https://prsindia.org/billtrack/the-mines-and-minerals-development-and-regulation-amendment-bill-2025"
   },
   {
+   "slug": "the-mines-and-minerals-development-and-regulation-amendment-bill-2026",
+   "title": "Mines and Minerals Development and Regulation Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": "Metals & Mining",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-mines-and-minerals-development-and-regulation-amendment-bill-2026"
+  },
+  {
    "slug": "the-mines-and-minerals-development-and-regulation-amendment-ordinance-2015",
    "title": "Mines and Minerals Development and Regulation Amendment Ordinance 2015",
    "year": 2015,
@@ -6823,6 +6879,14 @@
    "investment_lane": null,
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/the-national-co-operative-development-corporation-amendment-bill-2012"
+  },
+  {
+   "slug": "the-national-co-operative-development-corporation-amendment-bill-2026",
+   "title": "National Co Operative Development Corporation Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-national-co-operative-development-corporation-amendment-bill-2026"
   },
   {
    "slug": "the-national-commission-for-allied-and-healthcare-professions-bill-2020",
@@ -8937,6 +9001,14 @@
    "url": "https://prsindia.org/billtrack/the-tamil-nadu-legislative-council-repeal-bill-2012"
   },
   {
+   "slug": "the-taxation-and-other-laws-amendment-bill-2026",
+   "title": "Taxation and Other Laws Amendment Bill 2026",
+   "year": 2026,
+   "investment_lane": "Taxation",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-taxation-and-other-laws-amendment-bill-2026"
+  },
+  {
    "slug": "the-taxation-and-other-laws-relaxation-and-amendment-of-certain-provisions-bill-2020",
    "title": "Taxation and Other Laws Relaxation and Amendment of Certain Provisions Bill 2020",
    "year": 2020,
@@ -9135,6 +9207,14 @@
    "investment_lane": null,
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/the-tribunals-reforms-bill-2021"
+  },
+  {
+   "slug": "the-tribunals-reforms-bill-2026",
+   "title": "Tribunals Reforms Bill 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-tribunals-reforms-bill-2026"
   },
   {
    "slug": "the-tribunals-reforms-rationalisation-and-conditions-of-service-bill-2021",
@@ -9379,9 +9459,14 @@
  ],
  "policy_debate_editorials": [
   {
-   "slug": "ai-revolution-in-indian-enterprises",
-   "topic": "Ai Revolution in Indian Enterprises",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ai-revolution-in-indian-enterprises"
+   "slug": "16th-finance-commission-and-the-future-of-indian-federalism",
+   "topic": "16th Finance Commission and Future of Indian Federalism",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/16th-finance-commission-and-the-future-of-indian-federalism"
+  },
+  {
+   "slug": "balancing-food-fuel-and-nutrition-security-in-india",
+   "topic": "Balancing Food Fuel and Nutrition Security in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/balancing-food-fuel-and-nutrition-security-in-india"
   },
   {
    "slug": "blueprint-for-indias-climate-adaptation",
@@ -9389,14 +9474,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/blueprint-for-indias-climate-adaptation"
   },
   {
-   "slug": "charting-a-new-course-in-india-indonesia-relations",
-   "topic": "Charting A New Course in India Indonesia Relations",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/charting-a-new-course-in-india-indonesia-relations"
-  },
-  {
-   "slug": "combating-indias-corruption-crisis",
-   "topic": "Combating Indias Corruption Crisis",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/combating-indias-corruption-crisis"
+   "slug": "commonwealth-games-2026-and-future-of-sports-in-india",
+   "topic": "Commonwealth Games 2026 and Future of Sports in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/commonwealth-games-2026-and-future-of-sports-in-india"
   },
   {
    "slug": "enhancing-effectiveness-of-fast-track-courts",
@@ -9419,9 +9499,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/forging-indias-sovereign-ai-path"
   },
   {
-   "slug": "implementing-one-nation-one-election",
-   "topic": "Implementing One Nation One Election",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/implementing-one-nation-one-election"
+   "slug": "future-roadmap-for-indias-iron-steel-industry",
+   "topic": "Future Roadmap for Indias Iron Steel Industry",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/future-roadmap-for-indias-iron-steel-industry"
+  },
+  {
+   "slug": "gen-z-and-the-new-features-of-indian-politics",
+   "topic": "Gen Z and New Features of Indian Politics",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/gen-z-and-the-new-features-of-indian-politics"
   },
   {
    "slug": "indias-counter-to-global-shocks",
@@ -9434,24 +9519,34 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-strategy-against-drug-abuse"
   },
   {
-   "slug": "insulating-indias-macroeconomy-from-erratic-monsoon",
-   "topic": "Insulating Indias Macroeconomy From Erratic Monsoon",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/insulating-indias-macroeconomy-from-erratic-monsoon"
+   "slug": "j-k-integration-from-article-370-to-statehood-debate",
+   "topic": "J K Integration From Article 370 to Statehood Debate",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/j-k-integration-from-article-370-to-statehood-debate"
+  },
+  {
+   "slug": "jain-philosophy-for-modern-problems",
+   "topic": "Jain Philosophy for Modern Problems",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/jain-philosophy-for-modern-problems"
+  },
+  {
+   "slug": "mecca-joint-defence-agreement-and-its-implications-for-india",
+   "topic": "Mecca Joint Defence Agreement and Its Implications for India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/mecca-joint-defence-agreement-and-its-implications-for-india"
+  },
+  {
+   "slug": "modernising-indias-handloom-sector",
+   "topic": "Modernising Indias Handloom Sector",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/modernising-indias-handloom-sector"
+  },
+  {
+   "slug": "natural-farming-indias-path-to-resilient-agriculture",
+   "topic": "Natural Farming Indias Path to Resilient Agriculture",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/natural-farming-indias-path-to-resilient-agriculture"
   },
   {
    "slug": "pressure-groups-in-india",
    "topic": "Pressure Groups in India",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/pressure-groups-in-india"
-  },
-  {
-   "slug": "recognising-ecocide-under-international-law",
-   "topic": "Recognising Ecocide Under International Law",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/recognising-ecocide-under-international-law"
-  },
-  {
-   "slug": "reforming-indias-food-safety-ecosystem",
-   "topic": "Reforming Indias Food Safety Ecosystem",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-food-safety-ecosystem"
   },
   {
    "slug": "reforming-indias-police-system",
@@ -9469,14 +9564,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-cooperative-federalism-for-inclusive-national-development"
   },
   {
-   "slug": "reimagining-indias-cooperative-sector-for-the-21st-century",
-   "topic": "Reimagining Indias Cooperative Sector for 21st Century",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-indias-cooperative-sector-for-the-21st-century"
-  },
-  {
-   "slug": "roadmap-for-a-resilient-indian-mineral-economy",
-   "topic": "Roadmap for A Resilient Indian Mineral Economy",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/roadmap-for-a-resilient-indian-mineral-economy"
+   "slug": "sustainability-of-data-centres",
+   "topic": "Sustainability of Data Centres",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/sustainability-of-data-centres"
   },
   {
    "slug": "sustainable-urban-development-roadmap",
@@ -9484,19 +9574,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/sustainable-urban-development-roadmap"
   },
   {
-   "slug": "unlocking-indias-land-potential",
-   "topic": "Unlocking Indias Land Potential",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/unlocking-indias-land-potential"
-  },
-  {
    "slug": "unlocking-indias-space-economy-through-private-sector",
    "topic": "Unlocking Indias Space Economy Through Private Sector",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/unlocking-indias-space-economy-through-private-sector"
-  },
-  {
-   "slug": "unlocking-indias-tourism-potential",
-   "topic": "Unlocking Indias Tourism Potential",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/unlocking-indias-tourism-potential"
   }
  ],
  "linkage": {

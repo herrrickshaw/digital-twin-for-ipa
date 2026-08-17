@@ -1,7 +1,7 @@
 {
  "layer": 34,
  "name": "stressed_assets",
- "built": "2026-08-03",
+ "built": "2026-08-17",
  "what": "Consolidated stressed/distressed-asset view across three previously-scattered sources: (1) company-level credit-rating distress flags from the layer-32 DB (stressed_assets VIEW), (2) national distressed-LAND supply channels + named liquidation assets (sibling policy-recs repo), (3) the Dunlop India litigation case map (worked single-asset example). Real registers (IBBI/NLMC/SARFAESI) named with routes, not yet ingested.",
  "company_distress_flags": {
   "note": "materialized as the `stressed_assets` view in companies.db; these are RATING/LITIGATION signals, NOT a formal NPA/IBC classification",

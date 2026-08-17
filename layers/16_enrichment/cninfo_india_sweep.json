@@ -1,0 +1,698 @@
+{
+ "layer": "16_enrichment/cninfo_india_sweep",
+ "built": "2026-08-09",
+ "method": "cninfo.com.cn full-text search (keyless, real API, confirmed live -- NOT exact-phrase, tokenized/fuzzy, so every hit is title-filtered for genuine 印度 mentions excluding the 印度尼西亚/Indonesia substring collision). Title-only filter -- body text (PDF) not downloaded/verified in this v1.",
+ "china_pn3_note": "Press Note 3 (2020) requires government approval for land-border-country FDI; AMENDED 10-Mar-2026 (Cabinet, PIB PRID=2237806; gazetted as Press Note 2 of 2026 ~15-Mar-2026) -- <=10% non-controlling stakes now automatic-route, and 5 manufacturing sectors (capital goods, electronic capital goods, electronic components, polysilicon, ingot-wafer) get a 60-day government-route fast-track if majority control stays Indian. These hits are controlling wholly-owned-subsidiary establishments (设立子公司), outside both relaxed lanes -- watch-list placement stands, matching build_target_leads.py's existing china_pn3_watchlist convention. Full policy detail: layers/16_leads.json china_pn3_policy_update.",
+ "excluded_indonesia_false_positives": 56,
+ "count": 86,
+ "china_pn3_watchlist": [
+  {
+   "company": "博杰股份",
+   "sec_code": "002975",
+   "title": "关于与关联自然人共同投资设立印度子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2023-06-17/1217087634.PDF",
+   "announcement_time": 1686931200000
+  },
+  {
+   "company": "瑞玛精密",
+   "sec_code": "002976",
+   "title": "关于设立全信科技（印度）有限公司暨对外投资的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2023-02-15/1215864141.PDF",
+   "announcement_time": 1676390400000
+  },
+  {
+   "company": "科捷智能",
+   "sec_code": "688455",
+   "title": "关于对外投资设立印度全资子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2022-10-28/1214937348.PDF",
+   "announcement_time": 1666886400000
+  },
+  {
+   "company": "安琪酵母",
+   "sec_code": "600298",
+   "title": "安琪酵母股份有限公司关于在印度设立公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2022-05-26/1213498316.PDF",
+   "announcement_time": 1653494400000
+  },
+  {
+   "company": "鸣志电器",
+   "sec_code": "603728",
+   "title": "关于公司在印度投资设立控股子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-01-14/1207245908.PDF",
+   "announcement_time": 1578931200000
+  },
+  {
+   "company": "恒立液压",
+   "sec_code": "601100",
+   "title": "关于拟投资设立印度子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-09-12/1206918124.PDF",
+   "announcement_time": 1568217600000
+  },
+  {
+   "company": "深天马Ａ",
+   "sec_code": "000050",
+   "title": "关于投资设立印度子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-06-22/1206380001.PDF",
+   "announcement_time": 1561132800000
+  },
+  {
+   "company": "欧菲科技",
+   "sec_code": "002456",
+   "title": "关于拟在印度设立全资子公司的自愿性信息披露公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-03-27/1205941246.PDF",
+   "announcement_time": 1553616000000
+  },
+  {
+   "company": "联创电子",
+   "sec_code": "002036",
+   "title": "关于拟投资设立印度联创电子有限公司（暂定名）暨实施年产3000万片触控显示一体化产品产业化项目的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-02-27/1205852509.PDF",
+   "announcement_time": 1551196800000
+  },
+  {
+   "company": "美盈森",
+   "sec_code": "002303",
+   "title": "关于对外投资设立印度子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-02-02/1205822144.PDF",
+   "announcement_time": 1549036800000
+  },
+  {
+   "company": "泰禾光电",
+   "sec_code": "603656",
+   "title": "关于拟在印度投资设立控股子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-12-11/1205660901.PDF",
+   "announcement_time": 1544457600000
+  },
+  {
+   "company": "基蛋生物",
+   "sec_code": "603387",
+   "title": "关于公司在印度投资设立控股子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-10-26/1205536737.PDF",
+   "announcement_time": 1540483200000
+  },
+  {
+   "company": "思源电气",
+   "sec_code": "002028",
+   "title": "关于计划在印度设立高压开关工厂的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-06-23/1205086136.PDF",
+   "announcement_time": 1529683200000
+  },
+  {
+   "company": "先导智能",
+   "sec_code": "300450",
+   "title": "关于设立印度全资子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-06-15/1205061188.PDF",
+   "announcement_time": 1528992000000
+  },
+  {
+   "company": "云海金属",
+   "sec_code": "002182",
+   "title": "关于在印度投资建设年产100万件压铸件及配套镁合金回收项目并设立印度子公司",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-04-24/1204696349.PDF",
+   "announcement_time": 1524499200000
+  },
+  {
+   "company": "科士达",
+   "sec_code": "002518",
+   "title": "关于在印度设立全资孙公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-01-24/1204357314.PDF",
+   "announcement_time": 1516723200000
+  },
+  {
+   "company": "道明光学",
+   "sec_code": "002632",
+   "title": "关于拟设立印度子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2017-10-11/1204024408.PDF",
+   "announcement_time": 1507651200000
+  },
+  {
+   "company": "中国巨石",
+   "sec_code": "600176",
+   "title": "关于公司在印度设立子公司并新建年产10万吨无碱玻璃纤维池窑拉丝生产线项目的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2017-08-18/1203808674.PDF",
+   "announcement_time": 1502985600000
+  },
+  {
+   "company": "清新环境",
+   "sec_code": "002573",
+   "title": "关于在印度设立全资子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2017-08-11/1203785818.PDF",
+   "announcement_time": 1502380800000
+  },
+  {
+   "company": "通光线缆",
+   "sec_code": "300265",
+   "title": "关于全资子公司在印度设立合资公司的进展公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-12-29/1202969036.PDF",
+   "announcement_time": 1482940800000
+  },
+  {
+   "company": "网宿科技",
+   "sec_code": "300017",
+   "title": "关于设立印度子公司的进展公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-08-09/1202551180.PDF",
+   "announcement_time": 1470733794000
+  },
+  {
+   "company": "通光线缆",
+   "sec_code": "300265",
+   "title": "关于全资子公司对外投资暨在印度设立合资公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-06-07/1202359949.PDF",
+   "announcement_time": 1465271131000
+  },
+  {
+   "company": "网宿科技",
+   "sec_code": "300017",
+   "title": "关于子公司香港网宿及香港申嘉使用募集资金及自有资金设立印度全资子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-05-10/1202315995.PDF",
+   "announcement_time": 1462880173000
+  },
+  {
+   "company": "网宿科技",
+   "sec_code": "300017",
+   "title": "国泰君安证券股份有限公司关于公司子公司香港网宿及香港申嘉使用募集资金及自有资金设立印度全资子公司的核查意见",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-05-10/1202315991.PDF",
+   "announcement_time": 1462880173000
+  },
+  {
+   "company": "泰格医药",
+   "sec_code": "300347",
+   "title": "关于设立印度子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-02-17/1201983630.PDF",
+   "announcement_time": 1455680493000
+  },
+  {
+   "company": "神州泰岳",
+   "sec_code": "300002",
+   "title": "关于与印度Reliance公司共同设立合资公司开展海外融合通信业务的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2015-02-03/1200602698.PDF",
+   "announcement_time": 1422892800000
+  },
+  {
+   "company": "海润光伏",
+   "sec_code": "600401",
+   "title": "关于对外投资设立印度有限公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2014-07-31/1200090081.PDF",
+   "announcement_time": 1406736000000
+  },
+  {
+   "company": "中工国际",
+   "sec_code": "002051",
+   "title": "关于设立中工国际基建（印度）有限公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2014-04-03/63780090.PDF",
+   "announcement_time": 1396454400000
+  },
+  {
+   "company": "吴通通讯",
+   "sec_code": "300292",
+   "title": "关于在印度投资设立全资子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2013-11-21/63287002.PDF",
+   "announcement_time": 1384963200000
+  },
+  {
+   "company": "兴蓉投资",
+   "sec_code": "000598",
+   "title": "关于终止在印度设立合资公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2013-10-16/63158581.PDF",
+   "announcement_time": 1381852800000
+  },
+  {
+   "company": "兴蓉投资",
+   "sec_code": "000598",
+   "title": "关于在印度设立合资公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2013-03-15/62215043.PDF",
+   "announcement_time": 1363276800000
+  },
+  {
+   "company": "兄弟科技",
+   "sec_code": "002562",
+   "title": "关于在印度投资设立全资子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2013-01-04/61975578.PDF",
+   "announcement_time": 1357228800000
+  },
+  {
+   "company": "万丰奥威",
+   "sec_code": "002085",
+   "title": "关于浙江万丰摩轮有限公司在印度设立全资子公司并投资年产300万件摩托车铝轮毂项目的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2012-12-19/61927736.PDF",
+   "announcement_time": 1355888442000
+  },
+  {
+   "company": "中天科技",
+   "sec_code": "600522",
+   "title": "关于中天科技印度有限公司设立进展情况的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2012-05-22/61027857.PDF",
+   "announcement_time": 1337639700000
+  },
+  {
+   "company": "汇川技术",
+   "sec_code": "300124",
+   "title": "关于香港全资子公司在印度设立独资公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2012-03-30/60771524.PDF",
+   "announcement_time": 1333098240000
+  },
+  {
+   "company": "福田汽车",
+   "sec_code": "600166",
+   "title": "关于设立福田汽车印度制造有限公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2011-10-12/60046186.PDF",
+   "announcement_time": 1318372500000
+  },
+  {
+   "company": "春兴精工",
+   "sec_code": "002547",
+   "title": "关于在印度设立子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2011-09-16/59962602.PDF",
+   "announcement_time": 1316125800000
+  },
+  {
+   "company": "杭锅股份",
+   "sec_code": "002534",
+   "title": "关于在印度投资设立子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2011-08-04/59767576.PDF",
+   "announcement_time": 1312410600000
+  },
+  {
+   "company": "福田汽车",
+   "sec_code": "600166",
+   "title": "关于设立印度销售子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2011-04-22/59314052.PDF",
+   "announcement_time": 1303425180000
+  },
+  {
+   "company": "晨光生物",
+   "sec_code": "300138",
+   "title": "关于使用部分“其他与主营业务相关的运营资金项目”的资金在印度设立全资子公司的公告",
+   "matched_phrase": "印度设立",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2010-11-12/58658515.PDF",
+   "announcement_time": 1289548260000
+  },
+  {
+   "company": "国药现代",
+   "sec_code": "600420",
+   "title": "关于全资子公司原料药获得印度注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2026-05-12/1225290567.PDF",
+   "announcement_time": 1778515200000
+  },
+  {
+   "company": "兄弟科技",
+   "sec_code": "002562",
+   "title": "关于全资子公司取得原料药印度注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2026-05-08/1225281846.PDF",
+   "announcement_time": 1778169600000
+  },
+  {
+   "company": "北陆药业",
+   "sec_code": "300016",
+   "title": "关于控股子公司碘克沙醇原料药取得印度注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2025-07-22/1224236258.PDF",
+   "announcement_time": 1753113600000
+  },
+  {
+   "company": "远达环保",
+   "sec_code": "600292",
+   "title": "远达环保关于公司控股子公司工程公司印度Mundra（蒙德拉）项目计提应收款项减值准备的议案",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2024-12-31/1222183130.PDF",
+   "announcement_time": 1735574400000
+  },
+  {
+   "company": "诺德股份",
+   "sec_code": "600110",
+   "title": "诺德新材料股份有限公司关于全资子公司收到印度Exide Energy Solutions Limited定点信的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2024-09-11/1221190144.PDF",
+   "announcement_time": 1725984000000
+  },
+  {
+   "company": "恩捷股份",
+   "sec_code": "002812",
+   "title": "关于控股子公司收到印度Exide Energy Solutions Limited定点信的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2024-09-07/1221161172.PDF",
+   "announcement_time": 1725638400000
+  },
+  {
+   "company": "兄弟科技",
+   "sec_code": "002562",
+   "title": "关于全资子公司取得原料药印度注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2024-03-29/1219448133.PDF",
+   "announcement_time": 1711641600000
+  },
+  {
+   "company": "永太科技",
+   "sec_code": "002326",
+   "title": "关于子公司获得印度药品注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2023-04-01/1216298348.PDF",
+   "announcement_time": 1680278400000
+  },
+  {
+   "company": "北陆药业",
+   "sec_code": "300016",
+   "title": "关于控股子公司原料药取得印度注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2023-03-06/1216054046.PDF",
+   "announcement_time": 1678092753000
+  },
+  {
+   "company": "兄弟科技",
+   "sec_code": "002562",
+   "title": "关于全资子公司原料药取得印度注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2023-02-14/1215857325.PDF",
+   "announcement_time": 1676304000000
+  },
+  {
+   "company": "云海金属",
+   "sec_code": "002182",
+   "title": "关于拟注销印度子公司的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2022-10-28/1214934327.PDF",
+   "announcement_time": 1666886400000
+  },
+  {
+   "company": "国药现代",
+   "sec_code": "600420",
+   "title": "关于全资子公司原料药获得印度进口许可的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2022-02-25/1212452149.PDF",
+   "announcement_time": 1645718400000
+  },
+  {
+   "company": "华大基因",
+   "sec_code": "300676",
+   "title": "关于全资子公司无创产前基因检测相关产品获得印度进口许可证的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2021-10-29/1211423606.PDF",
+   "announcement_time": 1635436800000
+  },
+  {
+   "company": "澄天伟业",
+   "sec_code": "300689",
+   "title": "关于境外（印度）全资子公司全面复工复产的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-08-10/1208148844.PDF",
+   "announcement_time": 1597060073000
+  },
+  {
+   "company": "拓邦股份",
+   "sec_code": "002139",
+   "title": "关于对印度子公司增加投资的进展公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-07-03/1207995555.PDF",
+   "announcement_time": 1593705600000
+  },
+  {
+   "company": "海康威视",
+   "sec_code": "002415",
+   "title": "关于控股子公司帕拉玛海康威视印度有限责任公司2020年开展外汇套期保值交易的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-04-08/1207461502.PDF",
+   "announcement_time": 1586275200000
+  },
+  {
+   "company": "英飞特",
+   "sec_code": "300582",
+   "title": "关于向印度子公司增加投资的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-04-07/1207458988.PDF",
+   "announcement_time": 1586188800000
+  },
+  {
+   "company": "拓邦股份",
+   "sec_code": "002139",
+   "title": "关于对印度子公司增加投资的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-03-31/1207429891.PDF",
+   "announcement_time": 1585584000000
+  },
+  {
+   "company": "澄天伟业",
+   "sec_code": "300689",
+   "title": "关于疫情对境外（印度）全资子公司影响及应对措施的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-03-27/1207418706.PDF",
+   "announcement_time": 1585310959000
+  },
+  {
+   "company": "德创环保",
+   "sec_code": "603177",
+   "title": "关于完成对印度子公司增资的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-12-31/1207209745.PDF",
+   "announcement_time": 1577721600000
+  },
+  {
+   "company": "远达环保",
+   "sec_code": "600292",
+   "title": "关于公司控股子公司远达工程成立远达环保印度公司的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-12-31/1207207107.PDF",
+   "announcement_time": 1577721600000
+  },
+  {
+   "company": "深天马Ａ",
+   "sec_code": "000050",
+   "title": "关于印度子公司取得注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-10-09/1206966337.PDF",
+   "announcement_time": 1570550400000
+  },
+  {
+   "company": "奥特佳",
+   "sec_code": "002239",
+   "title": "关于子公司成为大众汽车印度公司供应商的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-09-07/1206906695.PDF",
+   "announcement_time": 1567785600000
+  },
+  {
+   "company": "德创环保",
+   "sec_code": "603177",
+   "title": "关于对印度子公司增资的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-08-08/1206503736.PDF",
+   "announcement_time": 1565193600000
+  },
+  {
+   "company": "今创集团",
+   "sec_code": "603680",
+   "title": "独立董事关于为控股子公司金鸿运电子印度有限公司提供担保暨关联交易的事前认可意见",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-06-21/1206374721.PDF",
+   "announcement_time": 1561046400000
+  },
+  {
+   "company": "泰禾光电",
+   "sec_code": "603656",
+   "title": "关于印度子公司取得注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-05-15/1206265983.PDF",
+   "announcement_time": 1557849600000
+  },
+  {
+   "company": "欣旺达",
+   "sec_code": "300207",
+   "title": "关于向全资子公司香港欣威及下属公司印度欣旺达增资的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-03-27/1205941620.PDF",
+   "announcement_time": 1553616000000
+  },
+  {
+   "company": "云海金属",
+   "sec_code": "002182",
+   "title": "关于印度子公司取得注册证书的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-10-11/1205490854.PDF",
+   "announcement_time": 1539187200000
+  },
+  {
+   "company": "合力泰",
+   "sec_code": "002217",
+   "title": "关于公司全资子公司江西合力泰与印度安得拉邦政府签订备忘录的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2018-08-09/1205268956.PDF",
+   "announcement_time": 1533744000000
+  },
+  {
+   "company": "海润光伏",
+   "sec_code": "600401",
+   "title": "关于全资子公司与AzurePower合作开发建设印度118MW光伏电站暨签署产品销售协议的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2017-04-26/1203387620.PDF",
+   "announcement_time": 1493136000000
+  },
+  {
+   "company": "特变电工",
+   "sec_code": "600089",
+   "title": "公司控股子公司特变电工沈阳变压器集团有限公司为其全资子公司特变电工能源（印度）有限公司提供履约担保的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2017-03-09/1203142165.PDF",
+   "announcement_time": 1488988800000
+  },
+  {
+   "company": "晨光生物",
+   "sec_code": "300138",
+   "title": "关于向印度提取物子公司增资的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2017-01-16/1203020143.PDF",
+   "announcement_time": 1484568005000
+  },
+  {
+   "company": "金信诺",
+   "sec_code": "300252",
+   "title": "关于向全资子公司金信诺科技（印度）有限责任公司增加投资的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-08-03/1202535462.PDF",
+   "announcement_time": 1470225747000
+  },
+  {
+   "company": "海润光伏",
+   "sec_code": "600401",
+   "title": "关于全资子公司与印度ReNewSolarPowerPrivateLimited合作开发建设印度172MW光伏电站的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-07-16/1202478233.PDF",
+   "announcement_time": 1468598400000
+  },
+  {
+   "company": "海润光伏",
+   "sec_code": "600401",
+   "title": "关于全资子公司与印度ReNewSolarPowerPrivateLimited合作开发建设印度58MW光伏电站的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-07-16/1202478228.PDF",
+   "announcement_time": 1468598400000
+  },
+  {
+   "company": "中工国际",
+   "sec_code": "002051",
+   "title": "关于继续为控股子公司中工国际基建（印度）有限公司提供担保的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-03-22/1202064687.PDF",
+   "announcement_time": 1458576000000
+  },
+  {
+   "company": "黄海机械",
+   "sec_code": "002680",
+   "title": "关于子公司冻干人用狂犬病疫苗（Vero细胞）获得印度药品注册证的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-02-18/1201983743.PDF",
+   "announcement_time": 1455724800000
+  },
+  {
+   "company": "拓邦股份",
+   "sec_code": "002139",
+   "title": "关于完成印度全资子公司注册登记的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2015-12-15/1201832897.PDF",
+   "announcement_time": 1450108800000
+  },
+  {
+   "company": "特变电工",
+   "sec_code": "600089",
+   "title": "为全资子公司沈阳变压器集团有限公司的全资子公司能源（印度）有限公司提供担保的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2015-10-28/1201732419.PDF",
+   "announcement_time": 1445961600000
+  },
+  {
+   "company": "*ST海润",
+   "sec_code": "600401",
+   "title": "关于全资子公司与印度ReNewSolarPowerPrivateLimited合作开发建设印度72MW光伏电站的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2015-07-01/1201220193.PDF",
+   "announcement_time": 1435680000000
+  },
+  {
+   "company": "中工国际",
+   "sec_code": "002051",
+   "title": "关于为控股子公司中工国际基建（印度）有限公司提供担保的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2015-04-29/1200934119.PDF",
+   "announcement_time": 1430236800000
+  },
+  {
+   "company": "特变电工",
+   "sec_code": "600089",
+   "title": "全资子公司特变电工沈阳变压器集团有限公司为其全资子公司能源（印度）有限公司担保的公告",
+   "matched_phrase": "印度子公司",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2014-09-30/1200275177.PDF",
+   "announcement_time": 1412006400000
+  },
+  {
+   "company": "弘信电子",
+   "sec_code": "300657",
+   "title": "关于在印度投资的进展公告",
+   "matched_phrase": "在印度投资",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2020-04-03/1207458450.PDF",
+   "announcement_time": 1585914426000
+  },
+  {
+   "company": "弘信电子",
+   "sec_code": "300657",
+   "title": "关于拟在印度投资的自愿性信息披露公告",
+   "matched_phrase": "在印度投资",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2019-09-10/1206914546.PDF",
+   "announcement_time": 1568113632000
+  },
+  {
+   "company": "亨通光电",
+   "sec_code": "600487",
+   "title": "关于拟在印度投资建设光纤光缆厂的公告",
+   "matched_phrase": "在印度投资",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2017-12-05/1204193015.PDF",
+   "announcement_time": 1512403200000
+  },
+  {
+   "company": "徐工机械",
+   "sec_code": "000425",
+   "title": "关于实施印度工程机械生产制造基地投资项目的公告",
+   "matched_phrase": "印度基地",
+   "pdf_url": "http://static.cninfo.com.cn/finalpage/2016-06-14/1202367029.PDF",
+   "announcement_time": 1465833600000
+  }
+ ]
+}

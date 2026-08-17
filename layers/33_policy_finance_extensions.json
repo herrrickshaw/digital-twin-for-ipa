@@ -1,7 +1,7 @@
 {
  "layer": 33,
  "name": "policy_finance_extensions",
- "built": "2026-08-03",
+ "built": "2026-08-17",
  "what": "Fisheries incentive stack, state-excise bottling-fee economics, import/export duty posture, India Exim Bank, and the CBG/GOBARdhan FCO fertiliser route — analysis blocks with per-claim sources, HTTP-verified access routes, and explicit layer-32 company linkages. Research sweeps 2026-07-23/24.",
  "fisheries": {
   "what": "Central fisheries incentive stack + export machinery — the twin's catalog had PMMSY name-checks only; this is the funded picture",
@@ -153,9 +153,9 @@
   "loc_xlsx": {
    "note": "THE machine-readable asset: three quarterly .xlsx files (GOI LOC Statistics 298 rows ~USD 25.49bn/61 countries; Operative LOCs 238 project-level rows; Pipeline). Direct curl, no auth. Parse from the ENGLISH header row (row 6 — row 5 is Hindi); watch INR-denominated text rows (Seychelles INR 1,250 cr); FILTER OUT Purpose ~ FITL/Restructuring (Ghana/Zambia/SL debt treatments, not new money)",
    "current_links_scraped_on_build": [
-    "https://www.eximbankindia.in/sites/default/files/2026-07/GOILOC%20Statistics_30.06.2026.xlsx",
-    "https://www.eximbankindia.in/sites/default/files/2026-07/Operative%20LOCs_30.06.2026.xlsx",
-    "https://www.eximbankindia.in/sites/default/files/2026-07/Pipeline%20LOCs_30.06.2026_0.xlsx"
+    "https://www.eximbankindia.in/sites/default/files/2026-08/GOILOC%20Statistics_31.07.2026.xlsx",
+    "https://www.eximbankindia.in/sites/default/files/2026-08/Operative%20LOCs_31.07.2026.xlsx",
+    "https://www.eximbankindia.in/sites/default/files/2026-08/Pipeline%20LOCs_31.07.2026.xlsx"
    ],
    "official_cumulative": "307 LOCs, USD 27.25bn, 63 countries (FY26 results)"
   },

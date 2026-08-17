@@ -1,0 +1,732 @@
+{
+ "layer": "16_enrichment/esef_xbrl_india_sweep",
+ "built": "2026-08-09",
+ "method": "filings.xbrl.org (3rd-party ESEF/UKSEF aggregator, keyless, live) -> download report_url XHTML -> local regex sweep for INTENT_PHRASES (English only -- non-English-only annual reports may be missed, recorded as a scope limit, not silently)",
+ "count": 80,
+ "results": [
+  {
+   "fxo_id": "213800H2PQMIF3OVZY47-2022-03-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-03-31",
+   "report_url": "/213800H2PQMIF3OVZY47/2022-03-31/ESEF/GB/0/213800H2PQMIF3OVZY47-2022-03-31/reports/213800H2PQMIF3OVZY47-2022-03-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "5493003DJ1G01IMQ7S28-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/5493003DJ1G01IMQ7S28/2022-12-31/ESEF/GB/0/5493003DJ1G01IMQ7S28-2022-12-31-en/reports/5493003DJ1G01IMQ7S28-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "2138007JN9NUWKKTS790-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/2138007JN9NUWKKTS790/2022-12-31/ESEF/GB/0/2138007JN9NUWKKTS790-2022-12-31/reports/2138007JN9NUWKKTS790-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300L5FZ06J1914B44-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/549300L5FZ06J1914B44/2022-12-31/ESEF/GB/0/549300L5FZ06J1914B44-2022-12-31/reports/549300L5FZ06J1914B44-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800MELPBPHIR1PO04-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/213800MELPBPHIR1PO04/2022-12-31/ESEF/GB/0/213800MELPBPHIR1PO04-2022-12-31/reports/213800MELPBPHIR1PO04-2022-12-31.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800SL9HJUQ5BGPX17-2023-01-01-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2023-01-01",
+   "report_url": "/213800SL9HJUQ5BGPX17/2023-01-01/ESEF/GB/0/213800SL9HJUQ5BGPX17-2023-01-01/reports/213800SL9HJUQ5BGPX17-2023-01-01-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800AJ3TY3OJCQQC53-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/213800AJ3TY3OJCQQC53/2022-12-31/ESEF/GB/0/213800AJ3TY3OJCQQC53-2022-12-31/reports/213800AJ3TY3OJCQQC53-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800H5873O9TC3XT22-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/213800H5873O9TC3XT22/2022-12-31/ESEF/GB/0/213800H5873O9TC3XT22-2022-12-31/reports/213800H5873O9TC3XT22-2022-12-31-T01.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800OR6IIJPG98AG39-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/213800OR6IIJPG98AG39/2022-12-31/ESEF/GB/0/213800OR6IIJPG98AG39-2022-12-31/reports/213800OR6IIJPG98AG39-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "2138003QHTNX34CN9V93-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/2138003QHTNX34CN9V93/2022-12-31/ESEF/GB/0/2138003QHTNX34CN9V93-2022-12-31/reports/2138003QHTNX34CN9V93-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "54930038LU8RDPFFVJ57-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/54930038LU8RDPFFVJ57/2022-12-31/ESEF/GB/0/54930038LU8RDPFFVJ57-2022-12-31/reports/54930038LU8RDPFFVJ57-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "2138005WK87G7DQRQI62-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/2138005WK87G7DQRQI62/2022-12-31/ESEF/GB/0/2138005WK87G7DQRQI62-2022-12-31/reports/2138005WK87G7DQRQI62-2022-12-31-T01.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "MP6I5ZYZBEU3UXPYFY54-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/MP6I5ZYZBEU3UXPYFY54/2022-12-31/ESEF/GB/0/MP6I5ZYZBEU3UXPYFY54-2022-12-31/reports/MP6I5ZYZBEU3UXPYFY54-2022-12-31-T01.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "MLU0ZO3ML4LN2LL2TL39-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/MLU0ZO3ML4LN2LL2TL39/2022-12-31/ESEF/GB/0/MLU0ZO3ML4LN2LL2TL39-2022-12-31/reports/MLU0ZO3ML4LN2LL2TL39-2022-12-31-T01.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "21380042L8XBX2MYNI64-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/21380042L8XBX2MYNI64/2022-12-31/ESEF/GB/0/21380042L8XBX2MYNI64-2022-12-31/reports/21380042L8XBX2MYNI64-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "21380072EMKFDZSTLD28-2021-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2021-12-31",
+   "report_url": null,
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09",
+   "skipped": "no report_url (package-only filing, not fetched in v1)"
+  },
+  {
+   "fxo_id": "213800TBL26T6GO88M13-2021-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2021-12-31",
+   "report_url": null,
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09",
+   "skipped": "no report_url (package-only filing, not fetched in v1)"
+  },
+  {
+   "fxo_id": "2549005ZC5RXAOO7FH41-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/2549005ZC5RXAOO7FH41/2022-12-31/ESEF/GB/0/2549005ZC5RXAOO7FH41-2022-12-31/reports/2549005ZC5RXAOO7FH41-2022-12-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800IBT39XQ9C4CP71-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/213800IBT39XQ9C4CP71/2022-12-31/ESEF/GB/0/213800IBT39XQ9C4CP71-2022-12-31/reports/213800IBT39XQ9C4CP71-2022-12-31-T01.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800MY9U5MEDG21D89-2022-12-31-ESEF-GB-0",
+   "country": "GB",
+   "period_end": "2022-12-31",
+   "report_url": "/213800MY9U5MEDG21D89/2022-12-31/ESEF/GB/0/213800MY9U5MEDG21D89-2022-12-31/reports/213800MY9U5MEDG21D89-2022-12-31-T01.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300HGBVWX4FC44K67-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/549300HGBVWX4FC44K67/2022-12-31/ESEF/FR/0/549300HGBVWX4FC44K67-2022-12-31-fr/reports/549300HGBVWX4FC44K67-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "9695004ANBJMIMZEYY03-2022-10-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-10-31",
+   "report_url": "/9695004ANBJMIMZEYY03/2022-10-31/ESEF/FR/0/9695004ANBJMIMZEYY03-2022-10-31-fr/reports/9695004ANBJMIMZEYY03-2022-10-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "52990006IVXY7GCSSR39-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/52990006IVXY7GCSSR39/2022-12-31/ESEF/FR/0/sartoriusstedimbiotech/reports/sartoriusstedimbiotech.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500XPWN2DMZQA5X73-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500XPWN2DMZQA5X73/2022-12-31/ESEF/FR/0/gnft-2022-12-31-fr/reports/gnft-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500QZC2Q0TK11NV07-2021-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2021-12-31",
+   "report_url": "/969500QZC2Q0TK11NV07/2021-12-31/ESEF/FR/0/969500QZC2Q0TK11NV07-2021-12-31-fr/reports/969500QZC2Q0TK11NV07-2021-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500P8M3W2XX376054-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500P8M3W2XX376054/2022-12-31/ESEF/FR/0/covivio-2022-12-31-fr/reports/covivio-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500B0S40FTUVKD182-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500B0S40FTUVKD182/2022-12-31/ESEF/FR/0/969500B0S40FTUVKD182-2022-12-31AR/reports/969500B0S40FTUVKD182-2022-12-31AR.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500KMUQ2B6CBAF162-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500KMUQ2B6CBAF162/2022-12-31/ESEF/FR/0/969500KMUQ2B6CBAF162-2022-12-31AR/reports/969500KMUQ2B6CBAF162-2022-12-31AR.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300NK4AB8OUEX1F54-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/549300NK4AB8OUEX1F54/2022-12-31/ESEF/FR/0/549300NK4AB8OUEX1F54-2022-12-31-en/reports/549300NK4AB8OUEX1F54-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500BY8TEU16U3SJ94-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500BY8TEU16U3SJ94/2022-12-31/ESEF/FR/0/tikehau-2022-12-31-fr/reports/tikehau-2022-12-31-fr.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "F5WCUMTUM4RKZ1MAIE39-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/F5WCUMTUM4RKZ1MAIE39/2022-12-31/ESEF/FR/0/axa-2022-12-31-fr/reports/axa-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500Y4IJGHJE2MTJ13-2021-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2021-12-31",
+   "report_url": "/969500Y4IJGHJE2MTJ13/2021-12-31/ESEF/FR/0/hermes-2021-12-31-fr/reports/hermes-2021-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500E35QZFDE7TVG55-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500E35QZFDE7TVG55/2022-12-31/ESEF/FR/0/PO-2022-12-31-FR/reports/po-2022-12-31-fr.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500N2QX5LGFFZ0I67-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500N2QX5LGFFZ0I67/2022-12-31/ESEF/FR/0/coviviohotels-2022-12-31-fr/reports/coviviohotels-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500OQXKE5WDM9M994-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500OQXKE5WDM9M994/2022-12-31/ESEF/FR/0/969500OQXKE5WDM9M994-2022-12-31AR/reports/969500OQXKE5WDM9M994-2022-12-31AR.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300K4W3A5ITOPTK67-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/549300K4W3A5ITOPTK67/2022-12-31/ESEF/FR/0/quadient-2022-01-31-fr/reports/quadient-2022-01-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500EQZGSVHQZQE212-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500EQZGSVHQZQE212/2022-12-31/ESEF/FR/0/969500EQZGSVHQZQE212-2022-12-31-fr/reports/969500EQZGSVHQZQE212-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300B8P6MUJ1YWTS08-2021-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2021-12-31",
+   "report_url": "/549300B8P6MUJ1YWTS08/2021-12-31/ESEF/FR/0/carrefour-2021-12-31-fr/reports/carrefour-2021-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500QKVPV2H8UXM738-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500QKVPV2H8UXM738/2022-12-31/ESEF/FR/0/cnpassurances-2022-12-31-fr/reports/cnpassurances-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "969500JJ71T2DIPDVV84-2022-12-31-ESEF-FR-0",
+   "country": "FR",
+   "period_end": "2022-12-31",
+   "report_url": "/969500JJ71T2DIPDVV84/2022-12-31/ESEF/FR/0/nexity-2022-12-31-fr/reports/nexity-2022-12-31-fr.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "8156001A772766DCAA71-2023-01-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2023-01-31",
+   "report_url": "/8156001A772766DCAA71/2023-01-31/ESEF/IT/0/8156001A772766DCAA71-2023-01-31-IT/reports/8156001A772766DCAA71-2023-01-31-IT.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "81560052ACB913425086-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/81560052ACB913425086/2022-12-31/ESEF/IT/0/81560052ACB913425086-2022-12-31-it/reports/81560052ACB913425086-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "8156000B22320A2F5365-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/8156000B22320A2F5365/2022-12-31/ESEF/IT/0/8156000B22320A2F5365-2022-12-31-it/reports/8156000B22320A2F5365-2022-12-31-it.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "815600F231566A38BC43-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/815600F231566A38BC43/2022-12-31/ESEF/IT/0/815600F231566A38BC43-2022-12-31-it/reports/815600F231566A38BC43-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "8156005D6ADE56371580-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/8156005D6ADE56371580/2022-12-31/ESEF/IT/0/8156005D6ADE56371580-2022-12-31-it/reports/8156005D6ADE56371580-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "815600B52696027B9056-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/815600B52696027B9056/2022-12-31/ESEF/IT/0/815600B52696027B9056-2022-12-31-it/reports/815600B52696027B9056-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "J4CP7MHCXR8DAQMKIL78-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/J4CP7MHCXR8DAQMKIL78/2022-12-31/ESEF/IT/0/J4CP7MHCXR8DAQMKIL78-2022-12-31-it/reports/J4CP7MHCXR8DAQMKIL78-2022-12-31-it.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "81560026FB4FD48C6110-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/81560026FB4FD48C6110/2022-12-31/ESEF/IT/0/81560026FB4FD48C6110-2022-12-31-it/reports/81560026FB4FD48C6110-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "815600D2F3EFE8C1F084-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/815600D2F3EFE8C1F084/2022-12-31/ESEF/IT/0/netweekspa-2022-12-31-it/reports/netweekspa-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "8156008B5A6D3D9AF935-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/8156008B5A6D3D9AF935/2022-12-31/ESEF/IT/0/8156008B5A6D3D9AF935-2022-12-31-it/reports/8156008B5A6D3D9AF935-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "815600FE9E92D9D6C309-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/815600FE9E92D9D6C309/2022-12-31/ESEF/IT/0/815600FE9E92D9D6C309-2022-12-31-it/reports/815600FE9E92D9D6C309-2022-12-31-it.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "81560096A9AEBBBD4B25-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/81560096A9AEBBBD4B25/2022-12-31/ESEF/IT/0/81560096A9AEBBBD4B25-2022-12-31-it/reports/81560096A9AEBBBD4B25-2022-12-31-it.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "815600354DEDBD0BA991-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/815600354DEDBD0BA991/2022-12-31/ESEF/IT/0/815600354DEDBD0BA991-2022-12-31-en/reports/815600354DEDBD0BA991-2022-12-31-en.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "815600354DEDBD0BA991-2022-12-31-ESEF-IT-1",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/815600354DEDBD0BA991/2022-12-31/ESEF/IT/1/815600354DEDBD0BA991-2022-12-31-it/reports/815600354DEDBD0BA991-2022-12-31-it.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "81560013EACB40B52D17-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/81560013EACB40B52D17/2022-12-31/ESEF/IT/0/81560013EACB40B52D17-2022-12-31-en/reports/81560013EACB40B52D17-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "WOCMU6HCI0OJWNPRZS33-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/WOCMU6HCI0OJWNPRZS33/2022-12-31/ESEF/IT/0/WOCMU6HCI0OJWNPRZS33-2022-12-31-en/reports/WOCMU6HCI0OJWNPRZS33-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300PHV8MBDHWB8X12-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/549300PHV8MBDHWB8X12/2022-12-31/ESEF/IT/0/Saipem_2022/reports/Saipem.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "815600C52EB6EBC14590-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/815600C52EB6EBC14590/2022-12-31/ESEF/IT/0/815600C52EB6EBC14590-2022-12-31-it/reports/815600C52EB6EBC14590-2022-12-31-it.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "5493000P70CQRQG8SN85-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/5493000P70CQRQG8SN85/2022-12-31/ESEF/IT/0/5493000P70CQRQG8SN85-2022-12-31-en/reports/5493000P70CQRQG8SN85-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "8156002878BDF0EE4348-2022-12-31-ESEF-IT-0",
+   "country": "IT",
+   "period_end": "2022-12-31",
+   "report_url": "/8156002878BDF0EE4348/2022-12-31/ESEF/IT/0/8156002878BDF0EE4348-2022-12-31/reports/8156002878BDF0EE4348-2022-12-31.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300072P3J1X8NZO35-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/549300072P3J1X8NZO35/2022-12-31/ESEF/NL/0/sig-2022-12-31-en/reports/sig-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500I77C30W2LZZJ03-2021-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2021-12-31",
+   "report_url": null,
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09",
+   "skipped": "no report_url (package-only filing, not fetched in v1)"
+  },
+  {
+   "fxo_id": "7245009C5FZE6G9ODQ71-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/7245009C5FZE6G9ODQ71/2022-12-31/ESEF/NL/0/7245009C5FZE6G9ODQ71-2022-12-31-en/reports/7245009C5FZE6G9ODQ71-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500DP8SZN3NBQKC44-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/724500DP8SZN3NBQKC44/2022-12-31/ESEF/NL/0/724500DP8SZN3NBQKC44-2022-12-31-en/reports/724500DP8SZN3NBQKC44-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500BGF3XIKX9EST18-2022-12-31-ESEF-NL-1",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/724500BGF3XIKX9EST18/2022-12-31/ESEF/NL/1/724500BGF3XIKX9EST18-2022-12-31-nl/reports/724500BGF3XIKX9EST18-2022-12-31-nl.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300EDRLDFOSBD1G50-2022-12-31-ESEF-NL-1",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/549300EDRLDFOSBD1G50/2022-12-31/ESEF/NL/1/549300EDRLDFOSBD1G50-2022-12-31-en/reports/549300EDRLDFOSBD1G50-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500G36285VC273D97-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/724500G36285VC273D97/2022-12-31/ESEF/NL/0/724500G36285VC273D97-2022-12-31-en/reports/724500G36285VC273D97-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500J0ITXIWK2CJX62-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/724500J0ITXIWK2CJX62/2022-12-31/ESEF/NL/0/724500J0ITXIWK2CJX62-2022-12-31/reports/724500J0ITXIWK2CJX62-2022-12-31-T01.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "7245003GZ2696Y0W1X57-2023-03-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2023-03-31",
+   "report_url": "/7245003GZ2696Y0W1X57/2023-03-31/ESEF/NL/0/7245003GZ2696Y0W1X57-2023-03-31-en/reports/7245003GZ2696Y0W1X57-2023-03-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "213800CNEIDZBL17KU22-2023-03-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2023-03-31",
+   "report_url": "/213800CNEIDZBL17KU22/2023-03-31/ESEF/NL/0/213800CNEIDZBL17KU22-2023-03-31/reports/213800CNEIDZBL17KU22-2023-03-31-T01.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500GJBUL3D9TW9Y18-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/724500GJBUL3D9TW9Y18/2022-12-31/ESEF/NL/0/724500GJBUL3D9TW9Y18-2022-12-31-en/reports/724500GJBUL3D9TW9Y18-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500J0BPD5CLHCK040-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/724500J0BPD5CLHCK040/2022-12-31/ESEF/NL/0/724500J0BPD5CLHCK040-2022-12-31-en/reports/724500J0BPD5CLHCK040-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "7245000V8JJ8CE1L8G60-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/7245000V8JJ8CE1L8G60/2022-12-31/ESEF/NL/0/fast-2022-12-31-en/reports/fast-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "5493000O3IE3DNOY3R07-2022-12-31-ESEF-NL-1",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/5493000O3IE3DNOY3R07/2022-12-31/ESEF/NL/1/HAL-2022-12-31/reports/HAL-2022-12-31.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "549300LTH67W4GWMRF57-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/549300LTH67W4GWMRF57/2022-12-31/ESEF/NL/0/ccep-2022-12-31-en/reports/ccep-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500IS1M4H9S4SDD39-2023-09-30-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2023-09-30",
+   "report_url": "/724500IS1M4H9S4SDD39/2023-09-30/ESEF/NL/0/724500IS1M4H9S4SDD39-2023-09-30/reports/724500IS1M4H9S4SDD39-2023-09-30.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "635400Z5LQ5F9OLVT688-2023-03-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2023-03-31",
+   "report_url": "/635400Z5LQ5F9OLVT688/2023-03-31/ESEF/NL/0/635400Z5LQ5F9OLVT688-2023-03-31-en/reports/635400Z5LQ5F9OLVT688-2023-03-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "7245009QH646WM76PR25-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/7245009QH646WM76PR25/2022-12-31/ESEF/NL/0/7245009QH646WM76PR25-2022-12-31-en/reports/7245009QH646WM76PR25-2022-12-31-en.html",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "724500HDW6IWR9J5YT90-2022-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2022-12-31",
+   "report_url": "/724500HDW6IWR9J5YT90/2022-12-31/ESEF/NL/0/alf-2022-12-31-en/reports/alf-2022-12-31-en.xhtml",
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09"
+  },
+  {
+   "fxo_id": "21380092Z2CWL9KOOM34-2021-12-31-ESEF-NL-0",
+   "country": "NL",
+   "period_end": "2021-12-31",
+   "report_url": null,
+   "hits": [],
+   "entity": null,
+   "swept": "2026-08-09",
+   "skipped": "no report_url (package-only filing, not fetched in v1)"
+  }
+ ]
+}

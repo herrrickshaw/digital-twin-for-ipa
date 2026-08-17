@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-08-03",
+ "built": "2026-08-17",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -177,7 +177,7 @@
     "country": "Angola",
     "organization": "Agency for Private Investment and Export Promotion (AIPEX)",
     "website": "https://www.aipex.gov.ao/PortalAIPEX/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Armenia",
@@ -237,7 +237,7 @@
     "country": "Brazil",
     "organization": "Brazilian Trade and Investment Promotion Agency (Apex-Brasil)",
     "website": "https://portal.apexbrasil.com.br/",
-    "website_status": 302
+    "website_status": 200
    },
    {
     "country": "Brazil",
@@ -375,7 +375,7 @@
     "country": "Egypt, Arab Rep.",
     "organization": "General Authority for Investment & Free Zones (GAFI)",
     "website": "https://gafi.gov.eg/English/Pages/default.aspx",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Egypt, Arab Rep.",
@@ -507,7 +507,7 @@
     "country": "Italy",
     "organization": "Invest in Tuscany\r\n",
     "website": "https://www.investintuscany.com/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Japan",
@@ -531,7 +531,7 @@
     "country": "Kenya",
     "organization": "KenInvest",
     "website": "http://www.invest.go.ke/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Kiribati",
@@ -567,7 +567,7 @@
     "country": "Lesotho",
     "organization": "Lesotho National Development Corporation (LNDC)\r\n\r\n\r\n\r\n",
     "website": "http://www.lndc.org.ls/",
-    "website_status": 200
+    "website_status": 523
    },
    {
     "country": "Liberia",
@@ -675,7 +675,7 @@
     "country": "Nigeria",
     "organization": "Nigerian Investment Promotion Commission (NIPC)",
     "website": "https://nipc.gov.ng/",
-    "website_status": 500
+    "website_status": 200
    },
    {
     "country": "Nigeria",
@@ -765,7 +765,7 @@
     "country": "Russian Federation",
     "organization": "Fund RC-Investments",
     "website": "https://roscongress-invest.com/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Russian Federation",
@@ -885,7 +885,7 @@
     "country": "Tanzania, United Republic of",
     "organization": "Zanzibar Investment Promotion Authority",
     "website": "https://www.zanzibarinvest.org/index.php/en/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Togo",
@@ -1523,7 +1523,7 @@
  "url_liveness": {
   "https://waipa.org/wp-content/uploads/memberstable-16.html": 200,
   "https://waipa.org/members/": 200,
-  "https://investmentpolicy.unctad.org": 503,
+  "https://investmentpolicy.unctad.org": 403,
   "https://www.investindia.gov.in/sitemap.xml": 200,
   "https://static.investindia.gov.in/s3fs-public/2025-01/fdi_policy_consolidated.pdf": 200,
   "https://www.jetro.go.jp/en/": 200,

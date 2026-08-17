@@ -1,0 +1,460 @@
+{
+ "layer": 35,
+ "name": "capital_cost_arbitrage_lens",
+ "built": "2026-08-09",
+ "what": "Prioritizes which foreign markets to build NEW company-discovery sweeps for (layers 36+), using policy-rate gap vs India as one signal alongside existing twin coverage. Source: the author's own cross-border debt-issuance research, repurposed here for a different question (equity/capex expansion propensity, not bond arbitrage) -- see 'analysis_scope_note'.",
+ "source_post": {
+  "title": "Raising Green Debt Globally: The REC EuroYen Playbook, the CBI Stamp, and Every Avenue an Indian Issuer Actually Has",
+  "url": "https://masaladeutsch.blogspot.com/2026/08/raising-green-debt-globally-rec-euroyen.html",
+  "section": "5a-i. Cheaper than India, on paper — and why most of it is unreachable",
+  "published": "2026-08-03"
+ },
+ "india_policy_rate": {
+  "rate_pct": 5.25,
+  "instrument": "RBI repo rate",
+  "as_of": "2026-08 (blog snapshot; repo rate moves on MPC cadence -- re-verify against rbi.org.in before citing in anything dated later)"
+ },
+ "analysis_scope_note": "The source post's core finding -- 'covered interest parity means the currency with the lower policy rate carries the more expensive hedge, and the two very nearly cancel' -- applies to a cross-border BOND investor who must hedge back to a reference currency for a like-for-like yield comparison. It does not mechanically transfer to a multinational funding real capex in India from a foreign parent's balance sheet: FDI returns are equity-like and ordinarily left unhedged (translation risk is routine MNC practice), so the parent's cheaper domestic cost of capital survives as a genuine, if partial, driver of hurdle rates and expansion appetite. Treated here as ONE prioritization signal, not a scored certainty -- deep_capital_market is a market-depth proxy carried verbatim from the source post's bond-market context, and correlates with (but does not prove) an FDI-relevant developed economy.",
+ "rate_table": [
+  {
+   "economy": "Switzerland",
+   "policy_rate_pct": 0.0,
+   "gap_vs_india_pts": 5.25,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 3,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Japan",
+   "policy_rate_pct": 1.0,
+   "gap_vs_india_pts": 4.25,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 12,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Thailand",
+   "policy_rate_pct": 1.0,
+   "gap_vs_india_pts": 4.25,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 5,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Sweden",
+   "policy_rate_pct": 1.75,
+   "gap_vs_india_pts": 3.5,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Denmark",
+   "policy_rate_pct": 1.85,
+   "gap_vs_india_pts": 3.4,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Canada",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 5,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Morocco",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 0,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Germany",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 7,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "France",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 6,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Netherlands",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 3,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Italy",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 4,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "South Korea",
+   "policy_rate_pct": 2.5,
+   "gap_vs_india_pts": 2.75,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 12,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "New Zealand",
+   "policy_rate_pct": 2.5,
+   "gap_vs_india_pts": 2.75,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 3,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Malaysia",
+   "policy_rate_pct": 2.75,
+   "gap_vs_india_pts": 2.5,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "China",
+   "policy_rate_pct": 3.0,
+   "gap_vs_india_pts": 2.25,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 12,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Kuwait",
+   "policy_rate_pct": 3.5,
+   "gap_vs_india_pts": 1.75,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 0,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "United States",
+   "policy_rate_pct": 3.62,
+   "gap_vs_india_pts": 1.63,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 75,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Czechia",
+   "policy_rate_pct": 3.75,
+   "gap_vs_india_pts": 1.5,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 0,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "United Kingdom",
+   "policy_rate_pct": 3.75,
+   "gap_vs_india_pts": 1.5,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 12,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Israel",
+   "policy_rate_pct": 3.75,
+   "gap_vs_india_pts": 1.5,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Poland",
+   "policy_rate_pct": 3.75,
+   "gap_vs_india_pts": 1.5,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 1,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Hong Kong",
+   "policy_rate_pct": 4.0,
+   "gap_vs_india_pts": 1.25,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 3,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "North Macedonia",
+   "policy_rate_pct": 4.25,
+   "gap_vs_india_pts": 1.0,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 0,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Norway",
+   "policy_rate_pct": 4.25,
+   "gap_vs_india_pts": 1.0,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Peru",
+   "policy_rate_pct": 4.25,
+   "gap_vs_india_pts": 1.0,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 0,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Saudi Arabia",
+   "policy_rate_pct": 4.25,
+   "gap_vs_india_pts": 1.0,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Australia",
+   "policy_rate_pct": 4.35,
+   "gap_vs_india_pts": 0.9,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 11,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Chile",
+   "policy_rate_pct": 4.5,
+   "gap_vs_india_pts": 0.75,
+   "deep_capital_market": false,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  }
+ ],
+ "excluded_shallow_markets": [
+  "Thailand",
+  "Morocco",
+  "New Zealand",
+  "Malaysia",
+  "Kuwait",
+  "Czechia",
+  "Israel",
+  "Poland",
+  "North Macedonia",
+  "Peru",
+  "Saudi Arabia",
+  "Chile"
+ ],
+ "sweep_priority": [
+  {
+   "economy": "Switzerland",
+   "policy_rate_pct": 0.0,
+   "gap_vs_india_pts": 5.25,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 3,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Sweden",
+   "policy_rate_pct": 1.75,
+   "gap_vs_india_pts": 3.5,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Denmark",
+   "policy_rate_pct": 1.85,
+   "gap_vs_india_pts": 3.4,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Netherlands",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 3,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Italy",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 4,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Canada",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 5,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "France",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 6,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Germany",
+   "policy_rate_pct": 2.25,
+   "gap_vs_india_pts": 3.0,
+   "deep_capital_market": true,
+   "note": "Euro area member",
+   "twin_lead_coverage": 7,
+   "coverage_flag": "MODERATE",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "China",
+   "policy_rate_pct": 3.0,
+   "gap_vs_india_pts": 2.25,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 12,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "United Kingdom",
+   "policy_rate_pct": 3.75,
+   "gap_vs_india_pts": 1.5,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 12,
+   "coverage_flag": "COVERED",
+   "ipa_source_catalogued": false
+  },
+  {
+   "economy": "Hong Kong",
+   "policy_rate_pct": 4.0,
+   "gap_vs_india_pts": 1.25,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 3,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": true
+  },
+  {
+   "economy": "Norway",
+   "policy_rate_pct": 4.25,
+   "gap_vs_india_pts": 1.0,
+   "deep_capital_market": true,
+   "note": null,
+   "twin_lead_coverage": 2,
+   "coverage_flag": "THIN",
+   "ipa_source_catalogued": false
+  }
+ ],
+ "feeds": {
+  "layer_36_non_us_filing_sweeps": [
+   "Switzerland",
+   "Sweden",
+   "Denmark",
+   "Netherlands",
+   "Italy",
+   "Canada",
+   "France",
+   "Germany",
+   "China",
+   "United Kingdom",
+   "Hong Kong",
+   "Norway"
+  ],
+  "layer_31_ipa_source_network_gaps": [
+   "Switzerland",
+   "Denmark",
+   "Italy",
+   "China",
+   "United Kingdom",
+   "Norway"
+  ]
+ }
+}

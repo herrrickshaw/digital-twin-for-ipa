@@ -1,0 +1,93 @@
+{
+ "layer": "16_enrichment/country_fdi_news_sweep",
+ "built": "2026-08-09",
+ "method": "NewsAPI boolean query per priority country (from layer 35 sweep_priority), matched against each country REAL stock-market roster using WORD-BOUNDARY strong/weak fragment matching (fixed 2026-08-09 after a substring false-positive: apostrophe-splitting produced an orphaned s token that matched inside \"people SAID\" -- see script docstring)",
+ "calls_used": 12,
+ "countries": {
+  "Switzerland": {
+   "economy": "Switzerland",
+   "roster_source": "CH.csv",
+   "roster_size": 192,
+   "matches": [],
+   "articles_fetched": 0
+  },
+  "Sweden": {
+   "economy": "Sweden",
+   "roster_source": "SE.csv",
+   "roster_size": 564,
+   "matches": [],
+   "articles_fetched": 2
+  },
+  "Denmark": {
+   "economy": "Denmark",
+   "roster_source": "DK.csv",
+   "roster_size": 104,
+   "matches": [],
+   "articles_fetched": 0
+  },
+  "Canada": {
+   "economy": "Canada",
+   "roster_source": "CA.csv",
+   "roster_size": 2091,
+   "matches": [],
+   "articles_fetched": 5
+  },
+  "Germany": {
+   "economy": "Germany",
+   "roster_source": "DE.csv",
+   "roster_size": 449,
+   "matches": [],
+   "articles_fetched": 6
+  },
+  "China": {
+   "economy": "China",
+   "roster_source": "CN.csv",
+   "roster_size": 2895,
+   "matches": [],
+   "articles_fetched": 36
+  },
+  "United Kingdom": {
+   "economy": "United Kingdom",
+   "roster_source": "UK.csv",
+   "roster_size": 854,
+   "matches": [],
+   "articles_fetched": 3
+  },
+  "Hong Kong": {
+   "economy": "Hong Kong",
+   "roster_source": "HK.csv",
+   "roster_size": 2793,
+   "matches": [],
+   "articles_fetched": 6
+  },
+  "Netherlands": {
+   "economy": "Netherlands",
+   "roster_source": "EU.csv",
+   "roster_size": 25,
+   "matches": [],
+   "articles_fetched": 2
+  },
+  "Italy": {
+   "economy": "Italy",
+   "roster_source": "EU.csv",
+   "roster_size": 40,
+   "matches": [],
+   "articles_fetched": 4
+  },
+  "France": {
+   "economy": "France",
+   "roster_source": "EU.csv",
+   "roster_size": 39,
+   "matches": [],
+   "articles_fetched": 5
+  },
+  "Norway": {
+   "economy": "Norway",
+   "roster_source": "EU.csv",
+   "roster_size": 24,
+   "matches": [],
+   "articles_fetched": 0
+  }
+ },
+ "new_leads_strong_match": []
+}

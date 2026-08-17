@@ -1,0 +1,1434 @@
+{
+ "layer": "16_enrichment/oslo_newsweb_india_sweep",
+ "built": "2026-08-09",
+ "method": "Oslo Bors NewsWeb API, server-side title search for 'India', 2015-2026, no auth. overflow=False (no truncation). Classified locally into market_entry_or_investment / business_activity / exit_or_divestment -- API narrows by keyword, this script narrows by intent.",
+ "total_india_titles": 158,
+ "market_entry_or_investment": [
+  {
+   "issuer": "Observe Medical ASA",
+   "issuer_sign": "OBSRV",
+   "title": "Observe Medical are pleased to announce our entry into the Indian market - with its more than 1,4 billion inhabitants this represents a strategic move aligned with global healthcare growth trends",
+   "published": "2026-02-11T09:30:15.210Z",
+   "tier": "market_entry_or_investment",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 665391
+  },
+  {
+   "issuer": "Orkla ASA",
+   "issuer_sign": "ORK",
+   "title": "Orkla ASA: Initial Public Offering of Orkla India Limited completed",
+   "published": "2025-11-06T06:00:04.943Z",
+   "tier": "market_entry_or_investment",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 658867
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics supports Evolute’s Aadhaar L1 Certification for Indian market expansion  ",
+   "published": "2025-09-29T13:00:00.000Z",
+   "tier": "market_entry_or_investment",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 656363
+  },
+  {
+   "issuer": "Cambi ASA",
+   "issuer_sign": "CAMBI",
+   "title": "Cambi enters India with a landmark contract in Mumbai",
+   "published": "2025-01-06T11:12:41.192Z",
+   "tier": "market_entry_or_investment",
+   "category": "INSIDE INFORMATION",
+   "message_id": 635983
+  },
+  {
+   "issuer": "Cool Company Ltd.",
+   "issuer_sign": "CLCO",
+   "title": "CoolCo Enters Into a Long-Term Charter with GAIL (India) Limited for Newbuild LNG Carrier",
+   "published": "2024-05-16T12:30:00.000Z",
+   "tier": "market_entry_or_investment",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 619088
+  },
+  {
+   "issuer": "TECO 2030 ASA",
+   "issuer_sign": "TECO",
+   "title": "TECO 2030 raises NOK 43 million and enters into a binding term sheet to partner with Advait Infratech Limited in India",
+   "published": "2024-04-16T06:45:04.520Z",
+   "tier": "market_entry_or_investment",
+   "category": "INSIDE INFORMATION",
+   "message_id": 615862
+  },
+  {
+   "issuer": "HydrogenPro ASA",
+   "issuer_sign": "HYPRO",
+   "title": "HydrogenPro signs MoU with L&T for Manufacturing Hydrogen Electrolysers in India",
+   "published": "2022-01-27T07:35:48.202Z",
+   "tier": "market_entry_or_investment",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 552057
+  },
+  {
+   "issuer": "BW LPG Limited",
+   "issuer_sign": "BWLPG",
+   "title": "Maas Capital Enters Into Agreement To Acquire Minority Stake In BW LPG India",
+   "published": "2021-12-22T08:01:31.168Z",
+   "tier": "market_entry_or_investment",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 550117
+  },
+  {
+   "issuer": "Scatec ASA",
+   "issuer_sign": "SCATC",
+   "title": "Scatec enters the Indian market by signing agreement for a 900 MW solar power plant",
+   "published": "2021-06-03T06:42:31.371Z",
+   "tier": "market_entry_or_investment",
+   "category": "INSIDE INFORMATION",
+   "message_id": 534980
+  }
+ ],
+ "business_activity": [
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics secures an additional order of  NEXT Basalt, FAP20 sensors from existing OEM in India",
+   "published": "2026-06-30T13:50:15.733Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 677383
+  },
+  {
+   "issuer": "Cambi ASA",
+   "issuer_sign": "CAMBI",
+   "title": "Cambi signs contract for THP delivery at Malad wastewater treatment plant in Mumbai, India",
+   "published": "2026-04-07T13:29:28.765Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 670071
+  },
+  {
+   "issuer": "Observe Medical ASA",
+   "issuer_sign": "OBSRV",
+   "title": "Observe Medical - Strengthens strategic position in India through an exclusive distribution agreement",
+   "published": "2026-03-25T13:38:51.634Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 669305
+  },
+  {
+   "issuer": "Orkla ASA",
+   "issuer_sign": "ORK",
+   "title": "Orkla ASA: Update on listing process for Orkla India",
+   "published": "2025-10-24T06:00:04.954Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 657878
+  },
+  {
+   "issuer": "Orkla ASA",
+   "issuer_sign": "ORK",
+   "title": "Postponement of third quarter 2025 results due to process in India",
+   "published": "2025-10-17T06:00:04.113Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 657379
+  },
+  {
+   "issuer": "IDEX Biometrics ASA",
+   "issuer_sign": "IDEX",
+   "title": "IDEX Biometrics, Hitachi Payment Services, and Airtel Payments Bank Launch India's First RuPay Biometric Payment Card at Global Fintech Fest",
+   "published": "2025-10-10T06:15:55.399Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 656965
+  },
+  {
+   "issuer": "IDEX Biometrics ASA",
+   "issuer_sign": "IDEX",
+   "title": "Reserve Bank of India approves biometric payment authentication technology",
+   "published": "2025-09-26T06:15:47.391Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 656205
+  },
+  {
+   "issuer": "Shearwater GeoServices AS",
+   "issuer_sign": "SWG",
+   "title": "Shearwater awarded large streamer contract in India",
+   "published": "2025-09-22T05:30:02.998Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 655840
+  },
+  {
+   "issuer": "Cyviz AS",
+   "issuer_sign": "CYVIZ",
+   "title": "Cyviz inngår kontrakt med ONGC i India",
+   "published": "2025-09-11T09:00:05.093Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 655115
+  },
+  {
+   "issuer": "Cyviz AS",
+   "issuer_sign": "CYVIZ",
+   "title": "Cyviz Secures Significant Contract with ONGC in India",
+   "published": "2025-09-11T09:00:04.558Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 655114
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT receives first large-scale production order from Indian OEM for new FAP 30 sensor",
+   "published": "2025-08-20T06:00:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 653318
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded Three-Year Contract in India with ONGC",
+   "published": "2025-07-02T11:59:42.620Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 650573
+  },
+  {
+   "issuer": "Orkla ASA",
+   "issuer_sign": "ORK",
+   "title": "Orkla ASA: Update on Orkla India   Filing of Draft Red Herring Prospectus with SEBI",
+   "published": "2025-06-11T05:30:01.995Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 648819
+  },
+  {
+   "issuer": "Kongsberg Automotive ASA",
+   "issuer_sign": "KOA",
+   "title": "Kongsberg Automotive strengthens its presence in India by relocating its operations to a state-of-the-art plant",
+   "published": "2025-04-16T05:00:10.790Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 643915
+  },
+  {
+   "issuer": "BW LPG Limited",
+   "issuer_sign": "BWLPG",
+   "title": "BW LPG signs MOA to sell two VLGCs to BW LPG India",
+   "published": "2025-03-31T05:00:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 642583
+  },
+  {
+   "issuer": "Voim ASA",
+   "issuer_sign": "VOIM",
+   "title": "EMGS Receives Contract Related to Previously Announced Letter of Award for Survey in India ",
+   "published": "2025-03-24T17:00:00.481Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 642103
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Excels in Indian Testing – Strengthening Market Position",
+   "published": "2025-03-06T07:30:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 640539
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT confirms new bank design win in India ",
+   "published": "2025-02-18T13:00:00.000Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 639072
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Adds New Partner in India – Signs Multi-Year MoU ",
+   "published": "2025-01-20T12:00:00.000Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 636788
+  },
+  {
+   "issuer": "Voim ASA",
+   "issuer_sign": "VOIM",
+   "title": "EMGS receives Letter of Award for Survey in India ",
+   "published": "2025-01-15T11:50:00.474Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 636536
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics’ Indian Partner to receive L1 certificate",
+   "published": "2024-12-04T12:00:00.000Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 633815
+  },
+  {
+   "issuer": "Voim ASA",
+   "issuer_sign": "VOIM",
+   "title": "EMGS awarded Contract for Survey in India ",
+   "published": "2024-11-22T12:47:00.383Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 632986
+  },
+  {
+   "issuer": "TGS ASA",
+   "issuer_sign": "TGS",
+   "title": "TGS Awarded Major 3D Streamer Contract by ONGC offshore India ",
+   "published": "2024-11-20T07:00:29.369Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 632701
+  },
+  {
+   "issuer": "Dolphin Drilling AS",
+   "issuer_sign": "DDRIL",
+   "title": "Dolphin Drilling's Blackford Dolphin Commences Long-Term Contract with Oil India Limited",
+   "published": "2024-11-11T09:28:02.403Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 631814
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Secures 6 MNOK Purchase Order for Indian Market",
+   "published": "2024-09-23T09:00:00.000Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 628308
+  },
+  {
+   "issuer": "IDEX Biometrics ASA",
+   "issuer_sign": "IDEX",
+   "title": "IDEX Biometrics introduces biometric payment cards in India",
+   "published": "2024-08-28T07:00:00.500Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 626413
+  },
+  {
+   "issuer": "Western Bulk Chartering AS",
+   "issuer_sign": "WEST",
+   "title": "Western Bulk appoints new Head of Indian Ocean",
+   "published": "2024-06-13T09:07:07.523Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 621356
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "6 MNOK purchase order for Indian market",
+   "published": "2024-03-26T16:00:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 614689
+  },
+  {
+   "issuer": "Dolphin Drilling AS",
+   "issuer_sign": "DDRIL",
+   "title": "Blackford Dolphin Secures Drilling Contract from Oil India Ltd",
+   "published": "2024-03-15T12:38:02.896Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 613600
+  },
+  {
+   "issuer": "Argeo ASA",
+   "issuer_sign": "ARGEO",
+   "title": "Argeo AS: NOK 154 million contract with India’s National Centre for Polar and Ocean Research (NCPOR) formally signed",
+   "published": "2024-02-08T07:00:00.000Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 610166
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics strengthens its Indian presence  and receives new NOK 12 million volume order",
+   "published": "2023-12-22T07:30:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 607478
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Received payment in Norwegian tax case regarding India guarantees",
+   "published": "2023-12-01T07:30:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 605487
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Mottatt tilbakebetaling fra norske skattemyndigheter i India-saken",
+   "published": "2023-12-01T07:30:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 605486
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT receives initial NOK 1.5 million volume order from Indian OEM",
+   "published": "2023-11-24T12:00:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 604912
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Telenor wins India tax case in final court decision",
+   "published": "2023-11-15T15:06:52.803Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 604096
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Telenor vinner skattesak om India-garantier",
+   "published": "2023-11-15T15:06:52.801Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 604095
+  },
+  {
+   "issuer": "Argeo ASA",
+   "issuer_sign": "ARGEO",
+   "title": "Argeo AS: Argeo awarded NOK 154 million contract with India’s National Centre for Polar and Ocean Research (NCPOR)",
+   "published": "2023-11-13T07:00:00.000Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 603735
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "New NEXT design-win with additional OEM in India",
+   "published": "2023-10-31T12:00:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 602626
+  },
+  {
+   "issuer": "Ocean Sun AS",
+   "issuer_sign": "OSUN",
+   "title": "Ocean Sun: MoU BETWEEN SGEL, INDIA & OCEAN SUN, NORWAY",
+   "published": "2023-10-30T07:53:40.546Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 602500
+  },
+  {
+   "issuer": "Dolphin Drilling AS",
+   "issuer_sign": "DDRIL",
+   "title": "Dolphin Drilling AS: Letter of Award from Oil India Limited",
+   "published": "2023-10-19T11:03:24.259Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 601673
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT receives NOK 15 million order  and signs new customer agreement in India",
+   "published": "2023-09-20T06:30:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 599856
+  },
+  {
+   "issuer": "IDEX Biometrics ASA",
+   "issuer_sign": "IDEX",
+   "title": "IDEX Biometrics and KL HI-TECH to launch biometric payment cards in India",
+   "published": "2023-09-18T06:53:00.247Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 599624
+  },
+  {
+   "issuer": "Dolphin Drilling AS",
+   "issuer_sign": "DDRIL",
+   "title": "Dolphin Drilling AS: Announced as lowest bidder for drilling contract in India",
+   "published": "2023-09-14T11:30:48.758Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 599412
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "The government appeals ruling from the Court of Appeal in tax case regarding India guarantees to the Supreme Court",
+   "published": "2023-09-07T12:00:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 598970
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Staten anker dom fra lagmannsretten i skattesak om India-garantier til Høyesterett",
+   "published": "2023-09-07T12:00:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 598969
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT partner ACPL  received Aadhaar L1 certification in India",
+   "published": "2023-09-06T06:45:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 598813
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics signs MoU with additional OEM partner in India",
+   "published": "2023-04-27T11:59:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 588807
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "USD 1 million shipment request from India based OEM",
+   "published": "2023-02-21T07:30:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 583055
+  },
+  {
+   "issuer": "Nordic Technology Group AS",
+   "issuer_sign": "NTG",
+   "title": "Hammertech received Purchase Order from Oil India",
+   "published": "2023-01-25T15:18:57.600Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 580738
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2023-01-09T06:23:36.494Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 579777
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contracts in India with ONGC",
+   "published": "2022-12-22T12:30:31.041Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 579045
+  },
+  {
+   "issuer": "IDEX Biometrics ASA",
+   "issuer_sign": "IDEX",
+   "title": "IDEX Biometrics and M-Tech to scale Biometric Payment Cards in India",
+   "published": "2022-11-30T07:00:00.370Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 577007
+  },
+  {
+   "issuer": "Elliptic Laboratories ASA",
+   "issuer_sign": "ELABS",
+   "title": "Elliptic Labs Launches with Xiaomi on New Smartphone Redmi 11SE for India Market",
+   "published": "2022-09-01T05:00:02.279Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 570272
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "USD 2.2 million total order from India based OEM secured",
+   "published": "2022-08-12T09:30:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 568467
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2022-07-28T13:31:43.744Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 567609
+  },
+  {
+   "issuer": "Elliptic Laboratories ASA",
+   "issuer_sign": "ELABS",
+   "title": "Elliptic Labs Announces Xiaomi Poco F4 5G Smartphone for India Market",
+   "published": "2022-06-24T05:06:02.104Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 565707
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2022-05-20T04:50:38.350Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 562789
+  },
+  {
+   "issuer": "NEL ASA",
+   "issuer_sign": "NEL",
+   "title": "Nel ASA: Receives purchase order for an alkaline electrolyser system from an undisclosed Indian customer",
+   "published": "2022-05-05T05:30:11.839Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 561176
+  },
+  {
+   "issuer": "Elopak ASA",
+   "issuer_sign": "ELO",
+   "title": "Elopak ASA: Elopak Announce Joint Venture ‘GLS Elopak’ in India",
+   "published": "2022-04-28T06:11:30.567Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 560353
+  },
+  {
+   "issuer": "Elopak ASA",
+   "issuer_sign": "ELO",
+   "title": "Elopak ASA: Elopak etablerer joint venture-selskapet «GLS Elopak» i India",
+   "published": "2022-04-28T06:11:29.789Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 560352
+  },
+  {
+   "issuer": "Aker Horizons ASA",
+   "issuer_sign": "AKH",
+   "title": "Aker Horizons and Statkraft Partnering to Explore Green Hydrogen and Ammonia Opportunities in India and Brazil",
+   "published": "2022-04-26T05:25:05.405Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 559957
+  },
+  {
+   "issuer": "Aker Clean Hydrogen AS",
+   "issuer_sign": "ACH",
+   "title": "Aker Horizons and Statkraft Partnering to Explore Green Hydrogen and Ammonia Opportunities in India and Brazil",
+   "published": "2022-04-26T05:25:05.343Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 559956
+  },
+  {
+   "issuer": "Elopak ASA",
+   "issuer_sign": "ELO",
+   "title": "Elopak ASA: Elopak is in the final stages of negotiating a Joint Venture agreement in India",
+   "published": "2022-04-25T13:52:34.026Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 559931
+  },
+  {
+   "issuer": "Zwipe AS",
+   "issuer_sign": "ZWIPE",
+   "title": "sKarn RoboticS selects Zwipe to strengthen its WeCript Ecosystem for India and global markets with Biometric Cards",
+   "published": "2022-02-21T07:45:15.673Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 554406
+  },
+  {
+   "issuer": "Hexagon Purus ASA",
+   "issuer_sign": "HPUR",
+   "title": "Correction: Hexagon Purus receives inaugural orders for hydrogen cylinders from Reliance Industries Limited in India",
+   "published": "2022-02-14T15:25:00.397Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 553701
+  },
+  {
+   "issuer": "Hexagon Composites ASA",
+   "issuer_sign": "HEX",
+   "title": "Correction: Hexagon Purus receives inaugural orders for hydrogen cylinders from Reliance Industries Limited in India",
+   "published": "2022-02-14T15:25:00.382Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 553700
+  },
+  {
+   "issuer": "Hexagon Purus ASA",
+   "issuer_sign": "HPUR",
+   "title": "Hexagon Purus receives inaugural orders for hydrogen cylinders from Reliance Industries Limited in India",
+   "published": "2022-02-14T06:00:00.643Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 553578
+  },
+  {
+   "issuer": "Hexagon Composites ASA",
+   "issuer_sign": "HEX",
+   "title": "Hexagon Purus receives inaugural orders for hydrogen cylinders from Reliance Industries Limited in India",
+   "published": "2022-02-14T06:00:00.503Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 553577
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics signs partnership with Indian OEM and receives USD 2.2 million purchase order",
+   "published": "2022-02-02T09:38:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 552462
+  },
+  {
+   "issuer": "Inin Group AS",
+   "issuer_sign": "ININ",
+   "title": "Elop AS: Simplifai signs major Indian BFSI-client",
+   "published": "2022-02-02T08:49:00.523Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 552458
+  },
+  {
+   "issuer": "Zwipe AS",
+   "issuer_sign": "ZWIPE",
+   "title": "Zwipe, Easy Pay and KL HI-TECH to pilot Biometric Payment Cards in India",
+   "published": "2021-12-27T07:15:15.670Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 550374
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2021-11-23T14:49:40.113Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 547624
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2021-09-20T05:16:02.883Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 542707
+  },
+  {
+   "issuer": "Inin Group AS",
+   "issuer_sign": "ININ",
+   "title": "Elop AS: Simplifai wins automation contract with India’s second largest stockbroker",
+   "published": "2021-09-06T07:06:41.850Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 541669
+  },
+  {
+   "issuer": "Play Magnus AS",
+   "issuer_sign": "PMG",
+   "title": "Play Magnus Group (PMG) - Play Magnus Group and Mobile Premier League Forge Exclusive Partnership to Launch MPL Indian Chess Tour",
+   "published": "2021-08-30T10:00:03.396Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 541123
+  },
+  {
+   "issuer": "Aker Solutions ASA",
+   "issuer_sign": "AKSO",
+   "title": "Aker Solutions Awarded FEED Contract for LNG Terminal in India",
+   "published": "2021-07-05T06:00:10.644Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 537507
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics receives additional sensor order for fintech device in India",
+   "published": "2021-06-10T11:29:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 535518
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2021-05-05T06:01:10.650Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 532183
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "New design-win for NEXT in India",
+   "published": "2021-04-28T06:40:00.000Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 531372
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2021-04-23T05:50:17.690Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 530953
+  },
+  {
+   "issuer": "Zwipe AS",
+   "issuer_sign": "ZWIPE",
+   "title": "Zwipe Establishes Regional Presence in the Middle East & North Africa Region and in India",
+   "published": "2021-04-12T07:30:07.770Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 529993
+  },
+  {
+   "issuer": "Zwipe AS",
+   "issuer_sign": "ZWIPE",
+   "title": "Zwipe and KL HI-TECH to bring next generation payment cards to India - Correction",
+   "published": "2021-04-06T09:16:04.762Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 529574
+  },
+  {
+   "issuer": "Zwipe AS",
+   "issuer_sign": "ZWIPE",
+   "title": "Zwipe and KL HI-TECH to bring next generation payment cards to India",
+   "published": "2021-04-06T08:30:03.211Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 529568
+  },
+  {
+   "issuer": "Orkla ASA",
+   "issuer_sign": "ORK",
+   "title": "Orkla has completed a substantial acquisition in Indian spices and food product",
+   "published": "2021-03-31T12:31:46.195Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 529486
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics receives order for 20,000 sensors for payment devices in India",
+   "published": "2021-02-10T07:45:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 524282
+  },
+  {
+   "issuer": "Höegh Evi Ltd.",
+   "issuer_sign": "HLNG",
+   "title": "Höegh LNG : Update on the H-Energy/HLNG FSRU LNG import terminal in Jaigarh, India",
+   "published": "2021-02-01T11:52:57.995Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 523550
+  },
+  {
+   "issuer": "Inin Group AS",
+   "issuer_sign": "ININ",
+   "title": "Elop AS: Wins first contract in India",
+   "published": "2021-01-27T12:07:01.860Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 523231
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics signs Letter of Intent (LOI) in India and receives initial Purchase Order for payment devices",
+   "published": "2021-01-26T07:40:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 523143
+  },
+  {
+   "issuer": "Medistim ASA",
+   "issuer_sign": "MEDI",
+   "title": "Medistim partners with LivaNova as their new distributor for India",
+   "published": "2021-01-05T07:35:29.643Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 522033
+  },
+  {
+   "issuer": "GC Rieber Shipping ASA",
+   "issuer_sign": "RISH",
+   "title": "GC Rieber Shipping: Shearwater GeoServices awarded Western Offshore India 3D contract by ONGC",
+   "published": "2020-12-21T06:30:09.429Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 521301
+  },
+  {
+   "issuer": "Hofseth BioCare ASA",
+   "issuer_sign": "HBC",
+   "title": "Hofseth Biocare ASA: HBC and DKSH announce a Pan-Asian exclusive collaboration for distribution of HBC branded products including across China, India, Japan & Korea",
+   "published": "2020-12-08T06:00:00.382Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 519904
+  },
+  {
+   "issuer": "GC Rieber Shipping ASA",
+   "issuer_sign": "RISH",
+   "title": "GC Rieber Shipping: Shearwater GeoServices awarded Bay of Bengal 3D survey for Reliance in India",
+   "published": "2020-12-07T06:30:06.750Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 519793
+  },
+  {
+   "issuer": "Oncoinvent ASA",
+   "issuer_sign": "ONCIN",
+   "title": "BerGenBio bekrefter første pasient rekruttert i fase-II studie av bemcentinib som en potensiell behandling av COVID-19 pasienter i India",
+   "published": "2020-11-24T08:50:02.519Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 518804
+  },
+  {
+   "issuer": "Oncoinvent ASA",
+   "issuer_sign": "ONCIN",
+   "title": "BERGENBIO CONFIRMS FIRST PATIENT ENROLLED IN PHASE II TRIAL ASSESSING BEMCENTINIB AS A POTENTIAL TREATMENT FOR COVID-19 IN INDIA",
+   "published": "2020-11-24T08:50:02.456Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 518803
+  },
+  {
+   "issuer": "Höegh Evi Ltd.",
+   "issuer_sign": "HLNG",
+   "title": "Höegh LNG : Binding commitment to supply FSRU to H-Energy in India",
+   "published": "2020-11-19T08:11:31.577Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 518434
+  },
+  {
+   "issuer": "Induct AS",
+   "issuer_sign": "INDCT",
+   "title": "Lead India gjennomførte verdens lengste webinar",
+   "published": "2020-10-19T06:00:17.780Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 515693
+  },
+  {
+   "issuer": "Oncoinvent ASA",
+   "issuer_sign": "ONCIN",
+   "title": "BerGenBio får regulatorisk godkjenning til å starte fase II forsøk av bemcentinib for COVID-19 i India",
+   "published": "2020-09-30T19:47:05.277Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 514648
+  },
+  {
+   "issuer": "Oncoinvent ASA",
+   "issuer_sign": "ONCIN",
+   "title": "BerGenBio receIves regulatory approval to commence phase II trial of bemcentinib for COVID-19 in India",
+   "published": "2020-09-30T19:46:05.902Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 514647
+  },
+  {
+   "issuer": "Induct AS",
+   "issuer_sign": "INDCT",
+   "title": "Induct to facilitate Lead India webinar on the 2 [nd ]October",
+   "published": "2020-09-18T06:40:12.604Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 513915
+  },
+  {
+   "issuer": "Induct AS",
+   "issuer_sign": "INDCT",
+   "title": "Lead India chose the Induct platform",
+   "published": "2020-09-11T06:31:13.727Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 513351
+  },
+  {
+   "issuer": "Orkla ASA",
+   "issuer_sign": "ORK",
+   "title": "Orkla ASA: Orkla dobler omsetningen i India",
+   "published": "2020-09-04T08:55:27.901Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 512920
+  },
+  {
+   "issuer": "Orkla ASA",
+   "issuer_sign": "ORK",
+   "title": "Orkla ASA: Orkla expands in India",
+   "published": "2020-09-04T08:55:27.854Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 512919
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives Order for  Government Program in India",
+   "published": "2020-06-22T08:30:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 508439
+  },
+  {
+   "issuer": "Aqua Bio Technology ASA",
+   "issuer_sign": "ABTEC",
+   "title": "ABT receives green light in India",
+   "published": "2020-06-10T09:14:36.750Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 507514
+  },
+  {
+   "issuer": "Aqua Bio Technology ASA",
+   "issuer_sign": "ABTEC",
+   "title": "ABT får grønt lys i India",
+   "published": "2020-06-10T09:14:36.733Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 507513
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives initial Purchase Order  from India business partner",
+   "published": "2020-04-22T07:00:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 501445
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives additional Order related to Government Program in India",
+   "published": "2020-03-20T07:55:00.000Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 499040
+  },
+  {
+   "issuer": "GC Rieber Shipping ASA",
+   "issuer_sign": "RISH",
+   "title": "GC Rieber Shipping: Shearwater GeoServices secures back-to-back work with 3D survey for Reliance in India",
+   "published": "2020-01-28T07:00:17.870Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 494056
+  },
+  {
+   "issuer": "GC Rieber Shipping ASA",
+   "issuer_sign": "RISH",
+   "title": "GC Rieber Shipping: Shearwater GeoServices awarded Western Offshore India 3D campaign by ONGC",
+   "published": "2020-01-22T07:00:15.017Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 493745
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives Major Order for Government Program in India",
+   "published": "2020-01-17T09:28:07.940Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 493518
+  },
+  {
+   "issuer": "Nekkar ASA",
+   "issuer_sign": "NKR",
+   "title": "Nekkar ASA (previous TTS Group ASA): Wins MNOK 125 contract for Syncrolift® shiplift to India",
+   "published": "2019-12-20T08:58:17.627Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 492316
+  },
+  {
+   "issuer": "GC Rieber Shipping ASA",
+   "issuer_sign": "RISH",
+   "title": "GC Rieber Shipping: Shearwater GeoServices awarded Eastern Offshore India campaign by ONGC",
+   "published": "2019-12-17T07:00:06.487Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 491873
+  },
+  {
+   "issuer": "Oceanteam ASA",
+   "issuer_sign": "OTS",
+   "title": "CSV Southern Ocean secures new contract for works in India",
+   "published": "2019-11-27T08:23:05.753Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 490301
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2019-10-09T13:12:11.270Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 486774
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded Two New Contracts in India with ONGC",
+   "published": "2019-07-31T11:16:32.663Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 482042
+  },
+  {
+   "issuer": "Aqua Bio Technology ASA",
+   "issuer_sign": "ABTEC",
+   "title": "ABT inngår distribusjonsavtale for India og Hong Kong",
+   "published": "2019-06-14T13:31:00.930Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 479476
+  },
+  {
+   "issuer": "Aqua Bio Technology ASA",
+   "issuer_sign": "ABTEC",
+   "title": "ABT announces distribution agreement for India and Hong Kong",
+   "published": "2019-06-14T13:31:00.097Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 479475
+  },
+  {
+   "issuer": "Fjord Defence Group ASA",
+   "issuer_sign": "DFENS",
+   "title": "Axxis Geo Solutions completes successful OBN survey offshore India",
+   "published": "2019-06-07T06:35:41.167Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 478990
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Supplies Certified Fingerprint Readers for Another e-Governance Project in India",
+   "published": "2019-03-04T06:00:14.487Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 471131
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives Further Orders for Aadhaar Enabled Applications in India",
+   "published": "2019-02-19T06:00:05.643Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 469946
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics and M-Tech Join Forces on Biometric Smart Card Deployment in India",
+   "published": "2019-02-11T06:00:04.597Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 469138
+  },
+  {
+   "issuer": "Shelf Drilling, Ltd.",
+   "issuer_sign": "SHLF",
+   "title": "Shelf Drilling Awarded New Contract in India with ONGC",
+   "published": "2019-01-23T15:27:19.980Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 467946
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives New Order for Fingerprint Sensors to be Integrated into Point-of-Sale Terminals for India Market",
+   "published": "2018-11-01T06:50:13.943Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 462538
+  },
+  {
+   "issuer": "Oceanteam ASA",
+   "issuer_sign": "OTS",
+   "title": "CSV Southern Ocean secures new contract with McDermott for works in India",
+   "published": "2018-09-26T15:33:56.503Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 460262
+  },
+  {
+   "issuer": "Nekkar ASA",
+   "issuer_sign": "NKR",
+   "title": "TTS Group ASA: 180 MNOK Syncrolift ® contract for India",
+   "published": "2018-09-17T08:46:35.050Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 459534
+  },
+  {
+   "issuer": "Sea1 Offshore Inc.",
+   "issuer_sign": "SEA1",
+   "title": "Successful Outcome of Litigation Proceedings in Brazil and India",
+   "published": "2018-09-13T11:26:12.020Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 459292
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives First Orders for Government Certified Fingerprint Readers in India",
+   "published": "2018-08-06T06:45:06.517Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 456552
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics Receives Key Hardware Certification  for India's Aadhaar Government ID Program - Initial Revenues Expected in 4Q 2018",
+   "published": "2018-06-05T06:01:03.060Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 452925
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Telenor fullfører salg av India-virksomheten  ",
+   "published": "2018-05-14T13:44:29.837Z",
+   "tier": "business_activity",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 451325
+  },
+  {
+   "issuer": "Yara International ASA",
+   "issuer_sign": "YAR",
+   "title": "Completion of Yara's acquisition of Tata Chemicals' urea business in India",
+   "published": "2018-01-12T07:14:45.813Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 442294
+  },
+  {
+   "issuer": "Yara International ASA",
+   "issuer_sign": "YAR",
+   "title": "Yara sluttfører oppkjøpet av Tata Chemicals urea-virksomhet i India",
+   "published": "2018-01-12T07:14:45.707Z",
+   "tier": "business_activity",
+   "category": "ADDITIONAL REGULATED INFORMATION REQUIRED TO BE DISCLOSED UNDER THE LAWS OF A MEMBER STATE",
+   "message_id": 442293
+  },
+  {
+   "issuer": "Unified Messaging Systems ASA",
+   "issuer_sign": "UMS",
+   "title": "Strategically important UMS project in Indian state",
+   "published": "2017-09-25T12:30:29.703Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 435387
+  },
+  {
+   "issuer": "BW LPG Limited",
+   "issuer_sign": "BWLPG",
+   "title": "BW LPG: Establishment of Joint Venture in India ",
+   "published": "2017-07-28T17:43:49.713Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 431889
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Bharti Airtel to take ownership of Telenor's operations in India",
+   "published": "2017-02-23T03:15:01.330Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 420871
+  },
+  {
+   "issuer": "Unified Messaging Systems ASA",
+   "issuer_sign": "UMS",
+   "title": "Unified Messaging Systems ASA - Contract awarded in India",
+   "published": "2017-01-16T07:57:47.363Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 417962
+  },
+  {
+   "issuer": "Yara International ASA",
+   "issuer_sign": "YAR",
+   "title": "Yara kjøper Tata Chemicals urea-virksomhet i India for 400 millioner USD",
+   "published": "2016-08-10T06:10:32.933Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 406900
+  },
+  {
+   "issuer": "Yara International ASA",
+   "issuer_sign": "YAR",
+   "title": "Yara acquires Tata Chemicals' urea business in India for USD 400 million",
+   "published": "2016-08-10T06:10:32.793Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 406899
+  },
+  {
+   "issuer": "Hexagon Composites ASA",
+   "issuer_sign": "HEX",
+   "title": "Hexagon Composites announces joint venture agreement with Siddha Gas Technik in India",
+   "published": "2016-05-26T08:02:09.410Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 402868
+  },
+  {
+   "issuer": "Dolphin Group ASA",
+   "issuer_sign": "DOLP",
+   "title": "Dolphin accept Letter of Award for major 3D seismic contracts in India",
+   "published": "2015-11-06T08:06:22.607Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 388813
+  },
+  {
+   "issuer": "Voim ASA",
+   "issuer_sign": "VOIM",
+   "title": "EMGS - Letter of Award in India",
+   "published": "2015-11-05T13:15:59.580Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 388739
+  },
+  {
+   "issuer": "Dolphin Group ASA",
+   "issuer_sign": "DOLP",
+   "title": "Dolphin preferred contractor for a 3D seismic project offshore India",
+   "published": "2015-10-15T13:12:23.337Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 387173
+  },
+  {
+   "issuer": "Voim ASA",
+   "issuer_sign": "VOIM",
+   "title": "EMGS signs agreement with Directorate General of Hydrocarbons in India",
+   "published": "2015-09-24T11:50:34.260Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 386006
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT Biometrics signs market leading distributor AqTronics Technologies in India",
+   "published": "2015-06-02T13:46:36.877Z",
+   "tier": "business_activity",
+   "category": "INSIDE INFORMATION",
+   "message_id": 379504
+  }
+ ],
+ "exit_or_divestment": [
+  {
+   "issuer": "BW LPG Limited",
+   "issuer_sign": "BWLPG",
+   "title": "BW LPG exits investment in Confidence Petroleum India following sale of 8.50% equity stake",
+   "published": "2026-06-03T06:00:05.405Z",
+   "tier": "exit_or_divestment",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 675243
+  },
+  {
+   "issuer": "BW LPG Limited",
+   "issuer_sign": "BWLPG",
+   "title": "BW LPG Limited ceases investment in LPG onshore import terminal project in India",
+   "published": "2025-05-20T05:05:00.000Z",
+   "tier": "exit_or_divestment",
+   "category": "INSIDE INFORMATION",
+   "message_id": 646867
+  },
+  {
+   "issuer": "Mutares SE & CO KGaA",
+   "issuer_sign": "MTRS",
+   "title": "Promising start to the year: Mutares increases net income of the Holding in the first quarter of 2024 thanks to successful exit - expansion into the growth market India initiated",
+   "published": "2024-05-07T05:31:24.594Z",
+   "tier": "exit_or_divestment",
+   "category": "HALF YEAR FINANCIAL REPORT",
+   "message_id": 617859
+  },
+  {
+   "issuer": "NEXT Biometrics Group ASA",
+   "issuer_sign": "NEXT",
+   "title": "NEXT adding yet another design win with its Indian partner ACPL completing the first third party sale of its L1 certified module",
+   "published": "2024-03-13T14:30:00.000Z",
+   "tier": "exit_or_divestment",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 613342
+  },
+  {
+   "issuer": "BW LPG Limited",
+   "issuer_sign": "BWLPG",
+   "title": "Sale of four VLGCs to BW LPG India and in advanced discussions with an investor to acquire a minority stake in BW LPG India",
+   "published": "2021-12-08T07:07:57.708Z",
+   "tier": "exit_or_divestment",
+   "category": "INSIDE INFORMATION",
+   "message_id": 548718
+  },
+  {
+   "issuer": "Telenor ASA",
+   "issuer_sign": "TEL",
+   "title": "Telenor completes India exit",
+   "published": "2018-05-14T13:44:29.970Z",
+   "tier": "exit_or_divestment",
+   "category": "NON-REGULATORY PRESS RELEASES",
+   "message_id": 451326
+  }
+ ]
+}

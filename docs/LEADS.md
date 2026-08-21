@@ -1,10 +1,16 @@
 # Leads — profitable firms × open government lanes
 
-*Generated 2026-07-22 from `layers/16_leads.json` (321 leads, 7 markets) by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
+*Generated 2026-08-09 from `layers/16_leads.json` (321 leads, 7 markets) by `scripts/build_leads.py --render` — do not hand-edit. Contact enrichment (Lusha/Apollo) is a separate step; no personal data here.*
 
 > **China / Press Note 3**: Press Note 3 (April 2020) requires prior Government of India approval for any FDI from land-border countries, and approvals for Chinese proposals are rare and slow. This reshapes what 'India investment interest' can look like for Chinese corporates: (1) outright greenfield/JV proposals get rejected — BYD-Megha's $1bn EV plant (2023) is the canonical case; (2) incumbents 'Indianize' — SAIC diluted MG Motor India to JSW (49%→39% and falling), Haier sold 49% of Haier India to Bharti/Warburg for ~$2bn (Dec 2025, cleared by Beijing) explicitly to escape PN3 friction; (3) Indian-majority JV fronts c…
 
 > **⚠ Policy update — Press Note 2 of 2026 (2026-03-15)**: <=10% non-controlling land-border ownership -> automatic route, beneficial-ownership test, ~60-day processing. Still gated: controlling stakes, greenfield, board-control JVs still need government approval. Source: RS Unstarred Q3877, 27-03-2026; verified India Briefing, Vistra, Chandhiok & Mahajan, Esplora Legal (Mar-2026). This makes the China cohort **conditionally relaxed, not flatly blocked** — passive minority stakes are now automatic-route.
+
+> **Primary source confirmed**: PIB PRID=2237806, 'Cabinet approves changes in guidelines on investments from countries sharing land border with India', Posted On: 10 MAR 2026 7:17PM by PIB Delhi -- https://www.pib.gov.in/PressReleasePage.aspx?PRID=2237806 -- fetched and verified 2026-08-09
+
+> **Timeline**: Cabinet approval 10-Mar-2026 (this PIB release) -> Press Note 2 of 2026 gazetted ~15-Mar-2026 (DPIIT, implements the Cabinet decision) -> RS Unstarred Q3877 27-Mar-2026 (parliamentary confirmation). All three dates are consistent, not conflicting.
+
+> **Second lane (60-day fast-track, government route)**: A SEPARATE fast-track (not the <=10% automatic route): proposals in capital goods / electronic capital goods / electronic components / polysilicon / ingot-wafer manufacturing get a binding 60-day GOVERNMENT-route decision timeline, but ONLY if majority shareholding + control stay with resident Indian citizens/entities at all times -- an Indian-controlled-JV fast-track, not a relaxation of the controlling-stake bar. CoS under the Cabinet Secretary may revise the specified-sector list.
 
 ## Electronics & Semiconductors (41 leads)
 

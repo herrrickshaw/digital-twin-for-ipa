@@ -1,0 +1,227 @@
+{
+ "layer": "edgar_8k_sweep",
+ "built": "2026-08-21",
+ "method": "EDGAR FTS exact-phrase sweep, forms 8-K (material-event filings, fresher than annual reports); cumulative, deduped on accession",
+ "filings": [
+  {
+   "adsh": "0001140361-26-032025",
+   "company": "NU SKIN ENTERPRISES, INC.  (NUS)  (CIK 0001021561)",
+   "form": "8-K",
+   "file_date": "2026-08-10",
+   "phrases": [
+    "India expansion"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001437749-26-026101",
+   "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+   "form": "8-K",
+   "file_date": "2026-08-06",
+   "phrases": [
+    "joint venture in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001213900-26-084282",
+   "company": "Bluerock Acquisition Corp.  (BLRK, BLRKU, BLRKW)  (CIK 0002081532)",
+   "form": "8-K",
+   "file_date": "2026-08-03",
+   "phrases": [
+    "subsidiary in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0000099780-26-000117",
+   "company": "TRINITY INDUSTRIES INC  (TRN)  (CIK 0000099780)",
+   "form": "8-K",
+   "file_date": "2026-07-30",
+   "phrases": [
+    "joint venture in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-26-049107",
+   "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+   "form": "8-K",
+   "file_date": "2026-07-22",
+   "phrases": [
+    "investments in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001210708-26-000065",
+   "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+   "form": "8-K",
+   "file_date": "2026-06-01",
+   "phrases": [
+    "expansion in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001493152-26-023059",
+   "company": "Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415)",
+   "form": "8-K",
+   "file_date": "2026-05-14",
+   "phrases": [
+    "manufacturing facility in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001437749-26-015366",
+   "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+   "form": "8-K",
+   "file_date": "2026-05-07",
+   "phrases": [
+    "joint venture in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001104659-26-049612",
+   "company": "Coronado Global Resources Inc.  (CODQL)  (CIK 0001770561)",
+   "form": "8-K",
+   "file_date": "2026-04-28",
+   "phrases": [
+    "expansion in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001731122-26-000605",
+   "company": "VisionWave Holdings, Inc.  (VWAV, VWAVW)  (CIK 0002038439)",
+   "form": "8-K",
+   "file_date": "2026-04-23",
+   "phrases": [
+    "expansion in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-26-026385",
+   "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+   "form": "8-K",
+   "file_date": "2026-04-22",
+   "phrases": [
+    "investments in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001808834-26-000057",
+   "company": "PROG Holdings, Inc.  (PRG)  (CIK 0001808834)",
+   "form": "8-K",
+   "file_date": "2026-04-07",
+   "phrases": [
+    "subsidiary in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001493152-26-014129",
+   "company": "Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415)",
+   "form": "8-K",
+   "file_date": "2026-03-31",
+   "phrases": [
+    "joint venture in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001210708-26-000048",
+   "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+   "form": "8-K",
+   "file_date": "2026-03-30",
+   "phrases": [
+    "expansion in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001829126-26-002837",
+   "company": "Aeries Technology, Inc.  (AERT, AERTW)  (CIK 0001853044)",
+   "form": "8-K",
+   "file_date": "2026-03-30",
+   "phrases": [
+    "subsidiary in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001437749-26-007775",
+   "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+   "form": "8-K",
+   "file_date": "2026-03-11",
+   "phrases": [
+    "joint venture in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001855747-26-000011",
+   "company": "Blend Labs, Inc.  (BLND)  (CIK 0001855747)",
+   "form": "8-K",
+   "file_date": "2026-03-10",
+   "phrases": [
+    "subsidiary in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001731122-26-000319",
+   "company": "VisionWave Holdings, Inc.  (VWAV, VWAVW)  (CIK 0002038439)",
+   "form": "8-K",
+   "file_date": "2026-02-27",
+   "phrases": [
+    "joint venture in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-26-009024",
+   "company": "Figma, Inc.  (FIG)  (CIK 0001579878)",
+   "form": "8-K",
+   "file_date": "2026-02-18",
+   "phrases": [
+    "invest in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-26-005932",
+   "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+   "form": "8-K",
+   "file_date": "2026-02-06",
+   "phrases": [
+    "investments in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001210708-26-000013",
+   "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+   "form": "8-K",
+   "file_date": "2026-02-03",
+   "phrases": [
+    "expansion in India"
+   ],
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001210708-26-000009",
+   "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+   "form": "8-K",
+   "file_date": "2026-01-21",
+   "phrases": [
+    "expansion in India"
+   ],
+   "segment": "foreign_operator"
+  }
+ ]
+}

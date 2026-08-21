@@ -12,8 +12,10 @@ Targeting score = lead_score (profitability/expansion/open-lane, 0-100)
     US 10-K: min(india_mentions,20)*1.5, +5 if mentions trending up YoY
              tier HIGH if >=8 mentions (or >=5 and rising), MEDIUM if >=4
 
-China leads are listed separately: Press Note 3 (2020) routes ALL their FDI through
-government approval, so they are watch-list counterparties, not outreach targets.
+China leads are listed separately: Press Note 3 (2020, amended by Press Note 2 of 2026 --
+see layers/16_leads.json china_pn3_policy_update) still gates controlling-stake/greenfield
+Chinese FDI through government approval, so they remain watch-list counterparties, not
+outreach targets -- only <=10% passive minority stakes cleared to automatic route in 2026.
 
 Interest levels reflect what each company's own latest report says about India --
 absence of India language (e.g. TSMC: zero) is recorded, not imputed.
@@ -102,7 +104,7 @@ def main():
         L.append(f"| {r['target_score']} | {r['company'][:38]} | {r['country']} | {r['sector'][:28]} | "
                  f"{r['why_now'][:70].replace('|','/')} |")
     L += ["", "## China — Press Note 3 watch-list (not outreach targets)", "",
-          "> " + src.get("china_pn3_note", "")[:500], ""]
+          "> " + src.get("china_pn3_note", "").replace(" ‖ ", "\n\n> **‖** ") + "", ""]
     for r in pn3:
         L.append(f"- **{r['company']}** ({r['sector']}, score {r['target_score']}) — {r['evidence'][:160]}")
     open(os.path.join(ROOT, "docs/TARGET_LEADS.md"), "w").write("\n".join(L) + "\n")

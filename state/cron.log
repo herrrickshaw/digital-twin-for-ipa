@@ -709,3 +709,85 @@ nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-08-17.js
 CHANGE rbi WSS: Aug 01, 2026 -> Aug 15, 2026
 rbi: latest WSS issue = Aug 15, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-08-17.json
 send_twin_alert: no credentials available (env or plist) -- not sent
+fatal: could not read Username for 'https://github.com': Device not configured
+  2026-08-18   42 releases
+indexed 42 release rows 2026-08-18 → 2026-08-18
+TS: FETCH FAILED (<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>)
+MP (Madhya Pradesh): fetched 476, 34 new (24 machine-translated) -> 63698 total in register
+AP (Andhra Pradesh): fetched 104, 1 new (0 machine-translated) -> 104 total in register
+UP (Uttar Pradesh): fetched 60, 0 new (0 machine-translated) -> 190 total in register
+GJ (Gujarat): fetched 23, 12 new (6 machine-translated) -> 147 total in register
+MH (Maharashtra): fetched 200, 29 new (29 machine-translated) -> 26165 total in register
+KA (Karnataka): fetched 91, 0 new (0 machine-translated) -> 91 total in register
+GA (Goa): fetched 200, 0 new (0 machine-translated) -> 320 total in register
+RJ (Rajasthan): fetched 100, 69 new (69 machine-translated) -> 74079 total in register
+PB (Punjab): fetched 21, 1 new (1 machine-translated) -> 33 total in register
+MZ (Mizoram): fetched 50, 3 new (1 machine-translated) -> 83 total in register
+NL (Nagaland): fetched 23, 0 new (0 machine-translated) -> 106 total in register
+SK (Sikkim): fetched 30, 6 new (0 machine-translated) -> 74 total in register
+CH (Chandigarh): fetched 18, 0 new (0 machine-translated) -> 18 total in register
+DD (DNH & Daman-Diu): fetched 24, 5 new (0 machine-translated) -> 40 total in register
+KL (Kerala): fetched 27, 27 new (27 machine-translated) -> 205 total in register
+TS (Telangana): fetched 0, 0 new (0 machine-translated) -> 10 total in register
+AS (Assam): fetched 14, 0 new (0 machine-translated) -> 13 total in register
+signal pass: 0 translated, 0 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4085 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4085 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4085 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 140 central rows, 543 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 14746 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+  2026-08-19   34 releases
+indexed 34 release rows 2026-08-19 → 2026-08-19
+KL: FETCH FAILED (<urlopen error timed out>)
+TS: FETCH FAILED (<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>)
+MP (Madhya Pradesh): fetched 488, 40 new (34 machine-translated) -> 63738 total in register
+AP (Andhra Pradesh): fetched 104, 0 new (0 machine-translated) -> 104 total in register
+UP (Uttar Pradesh): fetched 60, 28 new (28 machine-translated) -> 218 total in register
+GJ (Gujarat): fetched 22, 5 new (3 machine-translated) -> 152 total in register
+MH (Maharashtra): fetched 200, 31 new (31 machine-translated) -> 26196 total in register
+KA (Karnataka): fetched 94, 3 new (0 machine-translated) -> 94 total in register
+GA (Goa): fetched 200, 0 new (0 machine-translated) -> 320 total in register
+RJ (Rajasthan): fetched 100, 78 new (77 machine-translated) -> 74157 total in register
+PB (Punjab): fetched 21, 0 new (0 machine-translated) -> 33 total in register
+MZ (Mizoram): fetched 50, 1 new (0 machine-translated) -> 84 total in register
+NL (Nagaland): fetched 23, 0 new (0 machine-translated) -> 106 total in register
+SK (Sikkim): fetched 30, 2 new (0 machine-translated) -> 76 total in register
+CH (Chandigarh): fetched 19, 1 new (0 machine-translated) -> 19 total in register
+DD (DNH & Daman-Diu): fetched 24, 0 new (0 machine-translated) -> 40 total in register
+KL (Kerala): fetched 0, 0 new (0 machine-translated) -> 205 total in register
+TS (Telangana): fetched 0, 0 new (0 machine-translated) -> 10 total in register
+AS (Assam): fetched 14, 0 new (0 machine-translated) -> 13 total in register
+signal pass: 0 translated, 0 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4088 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4088 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4088 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 143 central rows, 572 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 14778 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+  2026-08-20   51 releases
+  2026-08-21    0 releases
+indexed 51 release rows 2026-08-20 → 2026-08-21
+KL: FETCH FAILED (The read operation timed out)
+TS: FETCH FAILED (<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>)
+MP (Madhya Pradesh): fetched 464, 61 new (50 machine-translated) -> 63799 total in register
+AP (Andhra Pradesh): fetched 105, 1 new (0 machine-translated) -> 105 total in register
+UP (Uttar Pradesh): fetched 60, 22 new (22 machine-translated) -> 240 total in register
+GJ (Gujarat): fetched 30, 17 new (16 machine-translated) -> 169 total in register
+MH (Maharashtra): fetched 200, 74 new (74 machine-translated) -> 26270 total in register
+KA (Karnataka): fetched 99, 5 new (0 machine-translated) -> 99 total in register
+GA (Goa): fetched 200, 0 new (0 machine-translated) -> 320 total in register
+RJ (Rajasthan): fetched 100, 100 new (98 machine-translated) -> 74257 total in register
+PB (Punjab): fetched 17, 1 new (1 machine-translated) -> 34 total in register
+MZ (Mizoram): fetched 50, 6 new (2 machine-translated) -> 90 total in register
+NL (Nagaland): fetched 23, 8 new (0 machine-translated) -> 114 total in register
+SK (Sikkim): fetched 30, 2 new (0 machine-translated) -> 78 total in register
+CH (Chandigarh): fetched 19, 0 new (0 machine-translated) -> 19 total in register
+DD (DNH & Daman-Diu): fetched 24, 6 new (0 machine-translated) -> 46 total in register
+KL (Kerala): fetched 0, 0 new (0 machine-translated) -> 205 total in register
+TS (Telangana): fetched 0, 0 new (0 machine-translated) -> 10 total in register
+AS (Assam): fetched 14, 0 new (0 machine-translated) -> 13 total in register
+signal pass: 0 translated, 0 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4090 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4090 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4090 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 139 central rows, 563 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 14804 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html

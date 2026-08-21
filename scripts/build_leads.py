@@ -21,7 +21,6 @@ the Apollo MCP connector needs claude.ai auth, Lusha has no connector). No perso
 data is collected by this script.
 """
 import json, os, datetime
-import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.expanduser("~/focus-sector-investor-map/data/focus_sector_companies_final.csv")
@@ -76,6 +75,8 @@ ENRICH_ROLES = ["CFO", "Head of Corporate Development / M&A", "VP Strategy / New
 
 
 def build():
+    import pandas as pd  # deferred: render() doesn't need it, and this machine's
+                          # system python3 currently has a broken numpy install
     df = pd.read_csv(SRC)
     leads = []
     for _, r in df.iterrows():
@@ -142,6 +143,12 @@ def render():
                   f"Still gated: {u['still_gated']}. Source: {u['primary_source'].split(', http')[0]}; "
                   f"verified {u['verified']}. This makes the China cohort **conditionally relaxed, not "
                   "flatly blocked** — passive minority stakes are now automatic-route.", ""]
+        if u.get("cabinet_approval_source"):
+            lines += [f"> **Primary source confirmed**: {u['cabinet_approval_source']}", ""]
+        if u.get("timeline_reconstructed"):
+            lines += [f"> **Timeline**: {u['timeline_reconstructed']}", ""]
+        if u.get("confirmed_second_lane"):
+            lines += [f"> **Second lane (60-day fast-track, government route)**: {u['confirmed_second_lane']}", ""]
     by = collections.defaultdict(list)
     for l in leads: by[l["sector"]].append(l)
     for sector, sec in sorted(by.items(), key=lambda kv: -max(x["lead_score"] for x in kv[1])):

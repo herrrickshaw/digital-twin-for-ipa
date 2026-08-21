@@ -1,19 +1,20 @@
 {
  "layer": 37,
  "name": "global_sweep_targets",
- "built": "2026-08-09",
+ "built": "2026-08-21",
  "what": "Consolidated target list from the 2026-08 filing-sweep expansion (DART/cninfo/Oslo NewsWeb/EDINET/ESEF) -- companies with offices or announced India interest, cross-checked against the twin's existing leads/company DB.",
  "sources_covered": [
-  "DART (Korea, partial -- full sweep running unbounded in background)",
+  "DART (Korea, COMPLETE -- full KOSPI+KOSDAQ sweep, 6,096 filings)",
   "Oslo Bors NewsWeb (Norway, complete, 2015-2026)",
-  "EDINET (Japan, partial -- 60-filing test)",
+  "EDINET (Japan, partial -- 430 filings, 30-day window)",
   "cninfo (China, PN3 watch-list only)",
-  "ESEF xbrl.org (UK/FR/IT/NL) -- 0 hits in 80-filing test, excluded"
+  "ESEF xbrl.org (UK/FR/IT/NL) -- near-complete, ~1,200 filings",
+  "EDGAR 8-K (US, COMPLETE -- 22 filings, 2026 YTD, material-event filings fresher than annual reports)"
  ],
- "note": "Counts will grow as the DART full sweep and larger EDINET/ESEF runs complete -- this is a snapshot, not a final count.",
+ "note": "Snapshot, not final -- textile-specific and sector-primary news re-sweeps were tried and found low-yield/low-precision respectively (see layers/38_textile_sector_targets.json and session notes); re-run this script once it completes for the full count.",
  "tier1_controlling_establishment": {
-  "count": 65,
-  "new_to_twin": 65,
+  "count": 110,
+  "new_to_twin": 109,
   "all": [
    {
     "company": "SJG세종",
@@ -534,12 +535,372 @@
     "source": "Oslo Bors NewsWeb",
     "signal": "Scatec enters the Indian market by signing agreement for a 900 MW solar power plant",
     "new_to_twin": true
+   },
+   {
+    "company": "Feintool International Holding AG",
+    "country": "Switzerland",
+    "ticker": "FTON",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "Market environment in Europe remains challenging – Break-even threshold reduced – Feintool demonstrates financial strength and reliability",
+    "new_to_twin": true
+   },
+   {
+    "company": "WISeKey International Holding AG",
+    "country": "Switzerland",
+    "ticker": "WIHN",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "WISeKey Announces 9M 2025 Preliminary Revenue and Key Financial Metrics",
+    "new_to_twin": true
+   },
+   {
+    "company": "Partners Group AG",
+    "country": "Switzerland",
+    "ticker": "PGHN",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "Partners Group delivers double-digit growth in 2025, in demanding market environment",
+    "new_to_twin": true
+   },
+   {
+    "company": "CPH Group AG",
+    "country": "Switzerland",
+    "ticker": "CPHN",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "The 2025 business year: Strategic decisions in a challenging environment",
+    "new_to_twin": true
+   },
+   {
+    "company": "Feintool International Holding AG",
+    "country": "Switzerland",
+    "ticker": "FTON",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "Annual Results 2025: clear second half improvement, restructuring measures show first results",
+    "new_to_twin": true
+   },
+   {
+    "company": "WISeKey International Holding AG",
+    "country": "Switzerland",
+    "ticker": "WIHN",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "WISeKey Reports FY 2025 Preliminary Financial Results",
+    "new_to_twin": true
+   },
+   {
+    "company": "ABB Ltd",
+    "country": "Switzerland",
+    "ticker": "ABBN",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "Q1 2026 results",
+    "new_to_twin": false
+   },
+   {
+    "company": "Mikron Holding AG",
+    "country": "Switzerland",
+    "ticker": "MIKN",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "Mikron reports net sales of CHF 180.5 million for the first half of 2026",
+    "new_to_twin": true
+   },
+   {
+    "company": "Avolta AG",
+    "country": "Switzerland",
+    "ticker": "AVOL",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "Avolta enters Kolkata Airport, growing duty-free presence in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Swiss Re AG",
+    "country": "Switzerland",
+    "ticker": "SREN",
+    "source": "SIX Equity Issuer News (2026-08-12 session)",
+    "signal": "Swiss Re Corporate Solutions announces exclusive partnerships in India and Mexico",
+    "new_to_twin": true
+   },
+   {
+    "company": "Super Micro Computer, Inc. (NasdaqGS:SMCI)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Ciena Corporation (NYSE:CIEN)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "First Solar, Inc. (NasdaqGS:FSLR)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Ondas Holdings Inc. (NasdaqCM:ONDS)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "MKS Inc. (NasdaqGS:MKSI)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Sanmina Corporation (NasdaqGS:SANM)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Allegro MicroSystems, Inc. (NasdaqGS:ALGM)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Cognex Corporation (NasdaqGS:CGNX)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Mirion Technologies, Inc. (NYSE:MIR)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Vishay Precision Group, Inc. (NYSE:VPG)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Diebold Nixdorf, Incorporated (NYSE:DBD)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Ribbon Communications Inc. (NasdaqGS:RBBN)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "Autoscope Technologies Corporation (OTCPK:AATC)",
+    "country": "United States",
+    "ticker": null,
+    "source": "Sector expansion: Electronics & Semiconductors (2026-08-12 session, SEC 10-K mining)",
+    "signal": "confirmed India market-entry/investment disclosure",
+    "new_to_twin": true
+   },
+   {
+    "company": "NU SKIN ENTERPRISES, INC.  (NUS)  (CIK 0001021561)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-08-10 -- India expansion",
+    "new_to_twin": true
+   },
+   {
+    "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-08-06 -- joint venture in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Bluerock Acquisition Corp.  (BLRK, BLRKU, BLRKW)  (CIK 0002081532)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-08-03 -- subsidiary in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "TRINITY INDUSTRIES INC  (TRN)  (CIK 0000099780)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-07-30 -- joint venture in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-07-22 -- investments in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-06-01 -- expansion in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-05-14 -- manufacturing facility in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-05-07 -- joint venture in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Coronado Global Resources Inc.  (CODQL)  (CIK 0001770561)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-04-28 -- expansion in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "VisionWave Holdings, Inc.  (VWAV, VWAVW)  (CIK 0002038439)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-04-23 -- expansion in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-04-22 -- investments in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "PROG Holdings, Inc.  (PRG)  (CIK 0001808834)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-04-07 -- subsidiary in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-03-31 -- joint venture in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-03-30 -- expansion in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Aeries Technology, Inc.  (AERT, AERTW)  (CIK 0001853044)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-03-30 -- subsidiary in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "ALPHA PRO TECH LTD  (APT)  (CIK 0000884269)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-03-11 -- joint venture in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Blend Labs, Inc.  (BLND)  (CIK 0001855747)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-03-10 -- subsidiary in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "VisionWave Holdings, Inc.  (VWAV, VWAVW)  (CIK 0002038439)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-02-27 -- joint venture in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Figma, Inc.  (FIG)  (CIK 0001579878)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-02-18 -- invest in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Philip Morris International Inc.  (PM)  (CIK 0001413329)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-02-06 -- investments in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-02-03 -- expansion in India",
+    "new_to_twin": true
+   },
+   {
+    "company": "Star Equity Holdings, Inc.  (STRR, STRRP)  (CIK 0001210708)",
+    "country": "United States (8-K filer)",
+    "ticker": null,
+    "source": "EDGAR 8-K",
+    "signal": "2026-01-21 -- expansion in India",
+    "new_to_twin": true
    }
   ]
  },
  "tier2_market_presence": {
-  "count": 83,
-  "new_to_twin": 83,
+  "count": 91,
+  "new_to_twin": 90,
   "all": [
    {
     "company": "케이티",
@@ -1203,6 +1564,70 @@
     "ticker": null,
     "source": "EDINET",
     "signal": "ウイスキー「響」「山崎」「ＴＯＫＩ」や、インド市場向けウイスキー 「オークスミス」などが、",
+    "new_to_twin": true
+   },
+   {
+    "company": "株式会社荏原製作所",
+    "country": "Japan",
+    "ticker": "63610",
+    "source": "EDINET",
+    "signal": "ited（以下、KEPL）より、当社及びインド子会社２社（Ebara Machinery I",
+    "new_to_twin": true
+   },
+   {
+    "company": "株式会社ＣＡＣ　Ｈｏｌｄｉｎｇｓ",
+    "country": "Japan",
+    "ticker": "47250",
+    "source": "EDINET",
+    "signal": "16.4％増）となりました。＜海外IT＞インド子会社を中心とした堅調な伸長により、売上高は7",
+    "new_to_twin": true
+   },
+   {
+    "company": "HALEON PLC",
+    "country": "United Kingdom",
+    "ticker": "549300PSB3WWEODCUP19",
+    "source": "ESEF (xbrl.org)",
+    "signal": "Healthcare Limited (GSK&#8217;s listed subsidiary in India); (iii) GlaxoSmithKline Bangladesh; (iii",
+    "new_to_twin": true
+   },
+   {
+    "company": "PRYSMIAN S.P.A.",
+    "country": "Italy",
+    "ticker": "529900X0H1IO3RS1A464",
+    "source": "ESEF (xbrl.org)",
+    "signal": "or the OAPIL plant in Oman, the Chiplun plant in India and the former reporting boundary of EHC and",
+    "new_to_twin": true
+   },
+   {
+    "company": "Koninklijke Philips N.V.",
+    "country": "Netherlands",
+    "ticker": "H1FJE8H61JGM1JSGM897",
+    "source": "ESEF (xbrl.org)",
+    "signal": "ffective processes, mitigated by a site expansion in India. Personal Health recorded a 4% increase.",
+    "new_to_twin": false
+   },
+   {
+    "company": "Technip Energies N.V.",
+    "country": "Netherlands",
+    "ticker": "724500FLODI49NSCIP70",
+    "source": "ESEF (xbrl.org)",
+    "signal": "plant and Naraya Energy’s polypropylene plant in India, which employ the most up-to-date technologie",
+    "new_to_twin": true
+   },
+   {
+    "company": "RHI Magnesita N.V.",
+    "country": "Netherlands",
+    "ticker": "724500UWG6A61XNA3Y36",
+    "source": "ESEF (xbrl.org)",
+    "signal": "19vaccinesto residents near our Bhiwadi plant in India to providingdisasterreliefto ﬂood-hitcommunit",
+    "new_to_twin": true
+   },
+   {
+    "company": "Prosus N.V.",
+    "country": "Netherlands",
+    "ticker": "635400Z5LQ5F9OLVT688",
+    "source": "ESEF (xbrl.org)",
+    "signal": "e the acquisition of the In dian rupe e investment in IndiaI deas .com Limited (BillDe sk). The sett",
     "new_to_twin": true
    }
   ]

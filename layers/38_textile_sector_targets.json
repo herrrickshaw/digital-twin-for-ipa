@@ -1,0 +1,177 @@
+{
+ "layer": 38,
+ "name": "textile_sector_targets",
+ "built": "2026-08-21",
+ "what": "Textiles & Apparel sector filter of the twin's target lists, plus a live textile-specific re-sweep of the 2026-08 discovery sources. Triggered by a user-supplied academic reference on automotive textile composites (Mobiltech/technical-textile niche), which has no company data itself but scopes the search.",
+ "static_leads_by_confidence": {
+  "real_evidence": [
+   {
+    "company": "ASICS Corporation",
+    "country": "Japan",
+    "ticker": "TSE:7936",
+    "lead_score": 90,
+    "confidence": "real_evidence",
+    "evidence": "\"I believe that we can achieve further brand penetration in Greater China, and that Southeast Asia and India will continue to be growth drivers.\" (Integrated Report 2024, top management message)"
+   }
+  ],
+  "weak_or_bare_mention": [
+   {
+    "company": "RALPH LAUREN CORP",
+    "country": "United States",
+    "ticker": "RL",
+    "lead_score": 100.3,
+    "confidence": "weak_mention",
+    "evidence": "hat the participating institutions will be unable to fulfill their obligations to provide financing in accordance with the terms of the Global Credit Facility and the Pan-Asia Borrowing Facilities in the event of our election to draw additional funds"
+   },
+   {
+    "company": "TAPESTRY, INC.",
+    "country": "United States",
+    "ticker": "TPR",
+    "lead_score": 97.0,
+    "confidence": "weak_mention",
+    "evidence": ""
+   },
+   {
+    "company": "STEVEN MADDEN, LTD.",
+    "country": "United States",
+    "ticker": "SHOO",
+    "lead_score": 73.6,
+    "confidence": "weak",
+    "evidence": "n or operate any foreign manufacturing facilities; rather, we use agents and our own sourcing offices to source our products from independently owned manufacturers in China, Cambodia, Vietnam, Mexico, Brazil, India, Bangladesh, Italy, and various oth"
+   },
+   {
+    "company": "LEVI STRAUSS & CO",
+    "country": "United States",
+    "ticker": "LEVI",
+    "lead_score": 64.0,
+    "confidence": "weak_mention",
+    "evidence": ""
+   }
+  ],
+  "india_domestic": [
+   {
+    "company": "PAGE INDUSTRIES LTD",
+    "country": "India",
+    "ticker": "PAGEIND",
+    "lead_score": 91.6,
+    "confidence": "domestic",
+    "evidence": ""
+   },
+   {
+    "company": "SHANTI GOLD INTERNATION L",
+    "country": "India",
+    "ticker": "SHANTIGOLD",
+    "lead_score": 85.6,
+    "confidence": "domestic",
+    "evidence": ""
+   },
+   {
+    "company": "KPR MILL LTD.",
+    "country": "India",
+    "ticker": "KPRMILL",
+    "lead_score": 81.2,
+    "confidence": "domestic",
+    "evidence": ""
+   },
+   {
+    "company": "PEARL GLOBAL IND LIMITED",
+    "country": "India",
+    "ticker": "PGIL",
+    "lead_score": 78.4,
+    "confidence": "domestic",
+    "evidence": ""
+   },
+   {
+    "company": "NITIN SPINNERS LIMITED",
+    "country": "India",
+    "ticker": "NITINSPIN",
+    "lead_score": 72.9,
+    "confidence": "domestic",
+    "evidence": ""
+   },
+   {
+    "company": "SPORTKING INDIA LIMITED",
+    "country": "India",
+    "ticker": "SPORTKING",
+    "lead_score": 71.4,
+    "confidence": "domestic",
+    "evidence": ""
+   },
+   {
+    "company": "GOKALDAS EXPORTS LTD.",
+    "country": "India",
+    "ticker": "GOKEX",
+    "lead_score": 65.2,
+    "confidence": "domestic",
+    "evidence": ""
+   },
+   {
+    "company": "LUX INDUSTRIES LIMITED",
+    "country": "India",
+    "ticker": "LUXIND",
+    "lead_score": 41.8,
+    "confidence": "domestic",
+    "evidence": ""
+   }
+  ],
+  "no_evidence": [
+   {
+    "company": "Kontoor Brands, Inc.",
+    "country": "United States",
+    "ticker": "KTB",
+    "lead_score": 88.0,
+    "confidence": "no_evidence",
+    "evidence": ""
+   },
+   {
+    "company": "DECKERS OUTDOOR CORP",
+    "country": "United States",
+    "ticker": "DECK",
+    "lead_score": 72.7,
+    "confidence": "no_evidence",
+    "evidence": ""
+   },
+   {
+    "company": "V F CORP",
+    "country": "United States",
+    "ticker": "VFC",
+    "lead_score": 58.1,
+    "confidence": "no_evidence",
+    "evidence": ""
+   }
+  ]
+ },
+ "live_resweep_negative_results": {
+  "cninfo_china": {
+   "phrases_tried": [
+    "印度纺织",
+    "印度面料",
+    "印度化纤",
+    "印度服装厂",
+    "印度产业用纺织品"
+   ],
+   "hits": 0,
+   "control_query": "印度设立 -> 58 hits (endpoint confirmed working)"
+  },
+  "oslo_norway": {
+   "phrase_tried": "textile",
+   "hits": 1,
+   "note": "Circa Group AS -- textile RECYCLING announcement, not India-related, excluded"
+  }
+ },
+ "korea_textile_sweep": {
+  "status": "complete -- 0 hits (2026-08-21)",
+  "phrases": [
+   "인도 섬유",
+   "인도 원단",
+   "인도 의류",
+   "인도 방적",
+   "인도 직물",
+   "인도 니트"
+  ],
+  "filings_checked": 400,
+  "filings_in_range": 2834,
+  "hits": []
+ },
+ "technical_textile_context": "PM MITRA parks + Technical textiles mission (open central lane, per build_leads.py LANES) is the twin's existing policy hook for the automotive/Mobiltech textile-composite niche the reference PDF describes -- no specific company match found yet in this niche."
+}

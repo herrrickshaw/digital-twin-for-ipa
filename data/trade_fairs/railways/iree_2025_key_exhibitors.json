@@ -1,0 +1,2252 @@
+[
+  {
+    "company": "2ISYS CO., LTD.",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "East Asia (Co., Ltd. style)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "2iSYS delivers automated inspection and defect diagnosis systems for railways using AI, IoT, and machine vision. Its AI-based maintenance predicts conditions, detects anomalies, forecasts failures, and optimizes maintenance timing.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "3M INDIA LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "3M India offers a range of sustainable solutions to enhance passenger safety and comfort such as interior and exterior finishes, sun control and safety films, paint protection films, matting solutions, anti-corrosion products and signage components.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "A.PAUL SOFTWARE SYSTEMS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "Design and manufacture of Passenger Information & Announcement Systems (PAPIS), Railway-grade CCTV/VSS, FogPASS devices, OBCMS, Smart Coach solutions, GPS/Wagon trackers, and IoT-based AI/ML predictive-maintenance and railway safety systems.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "A.RAWIE GMBH + CO. KG",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany (GmbH); Germany (KG)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "Rawie develops and manufactures friction and fixed buffer stops for mainline, metro, and tram systems worldwide. Each solution is custom-engineered for dynamic track safety, ensuring reliable protection in diverse rail environments.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AARGEE EQUIPMENTS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "Wireless LTE/5G/UHF routers, wireless EDGE gateway devices, MVB/CAN interfaces, SIL- controllers, intelligent PID, 03",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AB CONNECTORS LTD (A SUBSIDIARY OF TT ELECTRONICS PLC)",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Sweden (AB); UK (PLC)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "Halogen Free MIL-C-5015, VG95234, MIL-C-26482 Circular connectors for Rolling Stock Multipole connector for Data Transmission and Communications Power Connectors (Up to 1000 A) Cable harness solution for Railway HMI for Rolling Stoc",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ABBOTT DIAGNOSTICS MEDICAL PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "Abbott Toxicology is a global provider of point of care drug and alcohol testing solutions, offering services for workplace safety, criminal justice, government programs, and healthcare. It specializes in forensic-quality laboratory testing.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ABITO KREATION",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "Threadlockers, Retainers, Epoxies, Instant Bonders, Silicanes",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ACCURATE METROLOGY AND AUTOMATION COMPANY",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "3",
+    "description": "Automatic Measuring Stations for axles, wheelsets, and brake discs, Ultrasonic & Eddy Current Testing Systems for solid and hollow shafts, wheel rims, and underfloor inspection, Track Geometry & Rail Crack Detection Systems, Custom Gauging Instrument",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ACCURATE SALES AND SERVICES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "1 3D CNC CMM for measuring Traction Motors 2 Horizontal CNC Dual Arm Type CMM for measuring bogie frames 3 Auto gauging for checking wheel set parameters & axle measurement 4 CTRB Refurbishment cell 5 Third Party Inspection 6 Turnkey Projects",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ACUMEN RAIL PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "BODAN\u00c2\u00ae tis a modular level crossing system made of polymer concrete. The frameless slabs are laid between the rails like a bridge and transfer the traffic loads from the road via the rail sleeper grid into the ballast bed. Life is more than 35 years.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ADINATH INDUSTRIES",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "25kV Composite Railway Insulators for 1050mm CD / 1600mm CD for Railways/ DFCCIL/Metro Rails/OHE/Projects CGRSP/GRSP Rubber Pads for Railway Track Fastening System,ERC-MK-III & MK-V,SGCI Inserts for BG/Wider Sleepers Rubber to Metal Bonded Components A LANKAR CABLE INDUSTRIES Digital Linear Heat Sen",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ALLIED ELECTRONICS CORPORATION",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "USA-style (Corporation)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "Allied MG connectors are quick-coupling connectors, designed for use in harsh environments involving high vibration, frequent coupling/decoupling, and shock. Type MG is best suited for Mass transit (Rail), Infantry Combat Vehicles, Automation Etc",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ALLTRONIX (BANGALORE)",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "Industries We Serve Industrial Communication Railways and metro Factory Automation Material Handling Machine Tools Renewable Energy Transportation Defence Power & E-Mobility",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AMER NSM INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "Our product range consists of Welding Generators, Alternators, Lighting towers, Alternators, D. C. Motors, Actuators and Drivers for the DC Motors, Battery Motorized Trolley.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ANAMET EUROPE",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "name contains \"EUROPE\"",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "conduits and fittings , cable glands , rail connectors",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AND HITECH INDUSTRIES LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "4",
+    "description": "Braking & suspension products like brake discs, brake pads, brake failure indicators, air suspension systems, and dampers for LHB & Vande Bharat - Energy-efficient HVAC (through sister concern Sphere Thermal) - Automatic Doors for coaches, etc.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "APAR INDUSTRIES LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "APAR'\u2122s Harness & Locomotive Division makes wiring harnesses, railway cables, earthing kits, elastomeric & e-beam cables, and accessories like connectors, conduits, and terminations for reliable locomotive and rolling stock performance.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "APOLLO HEAT EXCHANGERS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Traction Transformers and Convertor Cooling Systems Traction Transformer Tanks Liquid Cold Plate",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ARIHANT PANEL FITTINGS PRIVATED LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Quarter turn Locks Compression Locks & Latches Handle Locks Rod Control Locks Electronic Locks Canopy Locks Hinges & Door-Stay Handles Sealing Profiles Sleeving Systems Wiring Accessories DC Fans & Filters Panel Fasteners 9 Fold Sections Locking Acce",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ARMACELL INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Armacell focuses on insulation materials for technical equipment, high-performance foams for acoustic and lightweight applications, recycled PET products, next-generation aerogel technology and passive fire protection systems.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ARORA TECHNOLOGIES (P) LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "We design & manufacture NDT Products & Accessories like MPI Machines, MPT/LPT Chemicals, LED UV Lamps, UV Meter, Gauss Meter, Yokes, Film Viewers etc. Additionally, we represent leading global companies for advanced solutions and automation system. 05",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ARORA TRADING CO. (RAJAT ARORA) (ATLAS COPCO) ARTECHE",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Our dedicated range of Railway Relays is designed to fulfil the most demanding requirements in the Railway industry including safety critical & SIL 4 applications with reliability, durability and standardization (for Rolling Stocks & Signalling).",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ASHUTOSH RUBBER PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Rubber Spring, Lower Rubber Washer, Railway Rubber Pads, O Rings, Gaskets, Washers, Silicon Rubber Parts, Coupling, Mounting, Bellows, Bush, Grommet, Diaphragm, Buffer, Oil Seal, Rubber to Metal Bonded Parts, Silent Block Bush, Shock Absorber.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ASIAN PAINTS PPG PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Protective Coatings Powder Coating Road Marking Railway Coating System Defense Coating System",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ASKA EQUIPMENTS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Portable lighting solutions for Raiwlays Anti corrosive Fire extinguishers for coaches Fire & safety solutions for Railway workshops, sheds & depots . Rescue products for ART, ARMV's All products are BIS & RDSO approved",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ASKAR MICRONS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "5",
+    "description": "Askar Microns was born to give standard and customized CNC Machines - CNC Turning Center, CNC Milling Machine, CNC VMC Machines, CNC Axle Turning Machines, Vertical Turning Lathe Machines",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ASPHIRE SYSTEM OPC PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "Optical Emission Spectrometer, Metal Analyzer for Ferrous, Aluminum, Copper, Lead Tin Zinc etc. and its accessories like sample polishing machine, wire adopter to analyze small sample, cu mold,",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ASSOCIATION OF INDIA TELOGICA LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "40",
+    "description": "Service Data acquisition Vibration tests Bogie TRELLEBORG INDIA PRIVATE LIMITED OTDR \u2022 Fusion Splicer \u2022 Cable Fault Locator frame EN13749 Seat design and validation, UIC (Division : Anti-vibration Solutions) \u2022 Cable Route Tracer \u2022 Fibre Optic Test 556, SBR CFD NVH lighting and signaling Airspring As",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ASTRAL LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "Astral offers epoxy systems, sealants, tapes, thread lockers, flange sealants, specialty bonding solutions, primers, PU surfacers, corrosion-resistant paints, and topcoats in PU, alkyd, enamels, intumescent coatings and HR chemistries.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ATANDRA ENERGY PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "Servo Stabilisers, Online UPS, Isolation Transformers, Test & Measurement",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AUTO STEEL AND RUBBER INDUSTRIES PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "Bellow, Diaphragm, O-Ring, Washer, Valve Head Brake Pipe Accelerator, Gasket, Reservoir Mounting Plate Bonded, Valve Finished, V-Shutter, Grommets, V-Insert, Sealing Ring, Plunger Assy, rubber to metal bonded parts, Break Seals A.V. Mountings, Buffer",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AVADH RAIL INFRA LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "Rubber to metal bonded Components, Sheet metal fabrication items, Inter car Gangways, etc, Overhead electrical 06",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AVALON TECHNOLOGIES LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "\u2022 Printed Circuit Board Assembly (PCBA) \u2022 Cable Assembly & Wire Harnessing \u2022 Sheet Metals Fabrication \u2022 Plastic Injection Molding \u2022 Magnetics & Transformers \u2022 System Integration & Testing \u2022 Electro- Mechanical Integration",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AVIGIRI URETHANE AND RUBBER INDUSTRIES PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "Single Shore Gaskets, Dual Shore Gaskets, Metal Inserted Gaskets, Corded Gaskets, Perforated/Pre-cut/ Notched Gaskets, Punched Gaskets, Colour Coded Gaskets, Sponge Gaskets, Silicon Gaskets, Fire Retardant Gaskets, and Peroxide Cured Gaskets.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "AXIS SOLUTIONS LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "Delivers advanced automation, control & integration solutions for railways & infrastructure. Expertise in process automation, networking, safety systems & turnkey project execution for reliable, efficient operations.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "B P REFCOOL",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "6",
+    "description": "B P Refcool manufactures advanced cooling systems, Clariant Antifrogen\u00ae N 30% coolant, Whisper eco-friendly solutions, and leak locator technology, ensuring reliable, efficient, and sustainable performance for railway applications.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BAC PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "Structural Steel Fabrication C Erection, (Railway, Metro, Bridges, Industrial Plants), PEB (Pre-Engineered Buildings), Piping C Pipe Rack Structures, Civil C Finishing Works, Electrical, CCI C Ventilation Works, Surface Protection: Painting, Coating.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BALAJI ENGINEERING LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "Manufacturer of high-quality gas springs catering to diverse sectors, including automotive, furniture hardware, and industrial applications.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BANARAS LOCOMOTIVE WORKS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "1 Manufacturing of Electric locomotives: WAP7 & WAG9H 2 Manufacturing of Diesel locomotives: WDP4D, WDG4D, etc. 3 Manufacturing of Requirement based locomotive for Export and Non railway customers 4 Manufacturing of DG sets. 5 Supply of Spare",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BAPL ROTOTECH PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "Products focus for BAPL Rototech Pvt Ltd are Fuel tank DEF Tank Filler Pipe Exterior Parts Airflow management Engine components",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BARSYL (BALAJI RAIL ROAD SYSTEMS PVT. LTD.)",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "Rail and Metro Feasibility Studies, Infrastructure and Station Planning, Detailed Design of Railway Systems, Rolling Stock and Systems Engineering, Procurement and Construction Management, Urban Mass Transit O&M Advisory and Planning. 07",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BAUMER INDIA PVT",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "Safe and reliable sensors for speed measurement and odometry Sensors for wheel slide protection systems Sensors in converters, transformers and for traction control Level detection in waste and fresh-water tanks & vacuum toilets Cameras for catenary BBM HEAVY MACHINERY PVT.TD. 1 Single cylinder whee",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BEICO INDISTRIES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "Beico Industries Pvt. Ltd. is an Indian manufacturer based in Mumbai, specializing in electrical insulating composites and enamelled copper wires since its incorporation in 1980. The company supplies its high-quality products to leading electrical equipment manufacturers and has state-of-the-art fac",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BELDEN",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "7",
+    "description": "Connected trains, tracks and stations deliver operational efficiencies and seamless rider experiences. Let Belden future-proof your mass transit network from design, installation and maintenance, to enable modern, interoperable rail communication.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BEMCO HYDRAULICS LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "Hydraulic Re-Railing Equipment Wheel Skate Trolley Hydraulic Wheel Press",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BEML LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "BEML specializes in rolling stock like metro coaches, LHB coaches, high-speed trains, EMUs, and DEMUs. It also manufactures mining equipment, defence vehicles, aerospace modules, engines, and maritime gear, supporting diverse industrial and defence s",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BENDER INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "Insulation monitoring devices, Insulation fault location systems, Residual / Leakage current monitors, Residual / Leakage current location systems for Signaling and Coaches. Portable Insulation Monitor with fault locator kit for Railway.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BERTOLOTTI INDIA PRIVATE\u00c2 LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "Synchronized Mobile & Pit jacks, Sanding System (Fixed & Mobile), Bogie & Axle Drop Systems, Bogie & Wheelset Turntables, Working Platforms (Mobile & Fixed), Bogie Dismounting Press, Traversers, AGV Systems, Retractable Overhead Catenary System, etc. BESCO LIMITED (FOUNDRY DIVISION) Besco Limited (F",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BHAVIK ENTERPRISE",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "Silicone Rubber, Fluoroelastomer, HNBR, Fluorosilicone Rubber, Silicone Fluid 350cst, 08",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BHILAI ENGINEERING CORPN LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "Connect with us to explore strategic partnership in Rail Equipment manufacturing. Our unmatched capabilities include: \u2022 Cast, Fabricated & Hybrid Bogie Frames \u2022 AAR Coupler Sub-Systems \u2022 Extra-Large Fabrications \u2022 Comprehensive Range of Cast & Fa",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BHIMRAJKA M\u00c3\u201eDER COATINGS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "We manufacture high performance industrial paints, coatings & composite materials for demanding industries specially like Railways where our products are passing EN-45545.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BHORUKA FABCONS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "Gangways, Anticlimber, Fixed Glass window, Window frame, Bottom step - Loco pilot usage, Ladder storage box, IC door, Plug and Slide door, Door Pillar, Under seat covers, Sidewall, E loco window, Door Threshold, Tread plate, Snack table, Luggage rack",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BLOWTECH AIR DEVICES PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "8",
+    "description": "The company enjoys being a market leader in two difference segments of the HVAC industry. One segment caters to the OEM business where we are the front runners in the design, development & manufacture of blowers & housings for the packaged/ ductable split AC units/ FCU for all the leading air-condit",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BMC METALCAST PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "\u2022 Narrow Jaw Adaptor \u2022 Wide Jaw Adaptor \u2022 Axle End Cap \u2022 Fitted Backing Ring \u2022 Centering Disc \u2022 Top Plate \u2022 Bottom Plate",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BONY POLYMERS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "1) Rubber Molded Components and Rubber to Metal Bonded Components 2) Air Brake Hose Assembly, L&K Type Composition Brake Blocks 3) Plastic Molded Parts 4) Door Automation Systems 5) Electrical & Electronic Parts 6) Retro-fitment of Automatic Doors",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BRADY COMPANY INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "Customized labels and tags, Performance Die-Cuts, Industrial Barcode and Sign Printers, Signs and Pipe Marking, Wire identification, Audit services- Training Turn Key Solutions, LOTO, VLOP, Arc Flash, RFID, Safety Solutions, Sorbents 09",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "BRAHMAND ENGINEERS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "We Offered Products like Inventory Management System, Biometric System,VMC CNC Tool Trolley,Drawer Trolley,Assembly Table & Work Benches,ESD Workstation,FBO Bin Storage & Perfo Panel,Maintainace Trolley,Material Handling Trolley,Storage Cabinet,etc.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BRAITHWAITE & CO. LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "\u2022 Core business is manufacturing of New wagon \u2022 Repair/ROH/POH of wagon \u2022 O & M of Rly workshop \u2022 Container manufacturing \u2022 Bogie & Foundry items \u2022 Bridge fabrication \u2022 Civil infrastructure \u2022 Crane manufacturing & AMC \u2022 Renewable Energy \u2022 Welding Training",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "BRASS COPPER & ALLOY (I) LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "\u2022 Copper, aluminium & bimetallic cable lugs & connectors. \u2022 Brass Cable Gland Kits & other brass & gunmetal components. \u2022 Designing & SITC of Earthing & Lightning Protection Systems. \u2022 Exothermic Welding Systems. \u2022 Crimping Tools. \u2022 OHE Fittings.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CEJN PRODUCTS INDIA PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "CEJN manufactures quick connect couplings, hoses, hose reels, hydraulic pumps, and fluid guns, offering customized solutions with focus on safety, performance, and reliability across industries.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CENTRAL ORGANISATION FOR RAILWAY ELECTRIFICATION",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "9",
+    "description": "The Central Organisation for Railway Electrification (CORE) is responsible for planning, designing, and executing railway electrification projects across India, along with developing vendors for the supply of various items used in these projects.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CENTRE FOR RAILWAY INFORMATION SYSTEMS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "Ticketing & Passengers, Freight Services,Train Operations Asset Management,Asset Management,Human Resource & Accounting,Procurement & Automation Softwares",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CG POWER AND INDUSTRIAL SOLUTIONS LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "Rolling Stock: Complete Traction Electrics for Rolling Stock, Traction Converter, Auxiliary Converter, Rolling Stock & Traction Transformer, Transformer, TCMS, Traction Motors, Traction Alternators, Switch Gear, Electrical Panels, Shell.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CHITTARANJAN LOCOMOTIVE WORKS (CLW) / CHITTARANJAN / INDIAN RAILWAYS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "CLW will showcase pictorial display of locomotives & features and some important electric locomotive equipment.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CII- SOHRABJI GREEN BUSINESS CENTRE",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "Advisory in energy efficiency, green buildings (IGBC), renewable energy, GreenCo & GreenPro ratings, waste management, cleaner production, and sustainable business practices.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "COMATRELECO AG",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany/Switzerland/Austria (AG)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "Our core competencies are Industrial, Time, and Monitoring Relays as well as Contactors. Manufactured with advanced solid-state or proven electro-mechanical designs, we provide high-quality production, customized solutions, and expert techn. support. 10",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "COMPETENT FORGING LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "Service - Forging, Heat treatment, Machining, Assembly Product - Tempting Tool, Chiesel, Anti Roll Bar, Chain, Fish Plates, Draw Bar Assembly, Collar, Shocker Parts, Coupler Parts, Squeezing Cylinder",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CONNECTWELL INDUSTRIES PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "Connectwell delivers innovative electrical interconnection and control solutions, from DIN Rail Terminal Blocks to advanced power systems. With global certifications, we offer relays, control solutions, and custom products tailored to evolving custom",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CONTINENTAL)CONTITECH INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "We develop and produce multi-material, eco-friendly, safe and convenient solutions. Our offerings are used off-road, on rails and roads, in the air, under and above ground, in industrial environments and for the food and furniture industries.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CORPORATION LIMITED",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "USA-style (Corporation)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "26",
+    "description": "Railway Overhead Electrical Construction & motors, motors, frequency inverters, enclosures, subracks, and front panels for Hydraulic Tools 4. Equipment for components, fabricated assemblies and sub Ethernet Switch, Power Supply, M12 Connector, infrastructure manufacturing of video security products.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CP PLUS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "Smart IoT cloud cameras, network & HD-analog cameras, DVRs/NVRs, mobile & body-worn cams, thermal screening, AI video analytics, access control, video doorbells, storage & racks, health monitoring, and more customized solutions.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CRESCENDO WORLDWIDE PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "10",
+    "description": "We offer following services: Outsourcing, Technological collaborations, Joint ventures, Merger and Acquisition, Contract manufacturing, Dealer/Distributor Establishment.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "CROUZET",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "Crouzet Manufactures below for Railway Sector 1. BLDC motors with built-in drive 2. Brushed DC motors/PMDC Motor 3. Hermetically sealed relays 4. Planetary and worm-geared motors 5. Limit switches micro-switches 6. Programmable Logic Controllers",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "D K STEELS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "High Performance Rail Pads-Elastic EPDM rail pads can be manufactured for different needs, ranging from metros and tramways through to high-speed traffic. Mass Spring Systems-The conical stud mats are used to provide efficient vibration Ballast Mat",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "D S AUTO",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "Tubular Parts, Exhaust Pipe, EGR Pipe, Engine Pipes, Tail Pipe, Suction Pipe, Fabricated Pipe Assemblies, Low and High-pressure Hoses & Stainless-steel tubes with stainless steel double ferrule fittings for Indian Railways.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DANFOSS INDUSTRIES PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "Compressors Controls Condensing Units Heat exchangers Sensors and transmitters Burner components Hydronic and electric floor heating Valves",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DARSHANA INDUSTRIES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "Handles, Knobs, Handwheels, Leveling Base, Locks & Latches, Three Point Locks, Canopy Locks, Hinges, Conveyor Accessories, Flexible Mountings, Support Arm Systems, Aluminium Sections & its Accessories, Gaskets, Drag Chains, Cable Ties, Toggle Clamps. 11",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DAULATRAM ENGINEERING SERVICES LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "AC/DC Traction Motors, Resistors, Air Conditioners, Pantographs, Electric Vechile, Toilets",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DELLNER INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "Dellner designs and manufactures Couplers, Gangways, Front Hatches, Dampers, and crash energy management systems. Dellner Service provides maintenance and support solutions for rail operators.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DESMECH PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "Lavatory doors, Entrance door, automatic PRM door, Swing door, sliding door, Bust type window, Seats & Chair, AC diffusers",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DIRAK INDIA PANEL FITTINGS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "1 Quarter-Turn 2 Gaskets 3 Swinghandle 4 Latches 5 Handles",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DNG TECHNOLOGIES PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "State-of-the-art Fire Testing Equipment engineered for accuracy and precision, helping industries in construction, manufacturing, and research assess fire resistance, ensure compliance, and make confident safety decisions.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DNV",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "11",
+    "description": "Certification of global standards such as IRIS, ISO 9001, ISO 19443, ISO 14001, ISO 50001, ISO/IEC 27001 ISA of signalling &",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DUAGON INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "MVB/ETH-Comm. Cards/Gateways for Traction/TCMS, I/O's & Control and Monitor train sub-systems, Rail compliant Computers (Box/DIN/19 inch) for Onboard/Wayside Applications & Signaling, AUX systems for applications like PAPIS/ Entertainment Systems etc.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "DYNALOG INDIA LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "Our portfolio includes Industrial Ethernet Switches, Communication Gateways, Embedded Computers, HMI & Panel PCs, Industrial 4G/5G Modems, Routers, and integrated Cybersecurity solutions for IT and OT.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "E+E ELEKTRONIK INDIA PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "The product portfolio includes devices for the precise measurement of humidity, dew point, moisture in oil, CO2, air velocity, flow, pressure and temperature.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "EAST COAST RAILWAY",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "This zone offering both passenger and good services. Total 241.51 millon tonnesof frieghts with frieght earning of 24794 crs during year 2024-25.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ECM EXPO & CONFERENCE MANAGEMENT GMBH",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany (GmbH)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "FR\u00c3\u201eNKISCHE Industrial Pipes offers FIPSYSTEMS\u00ae cable protection solutions that safeguard cables and data lines from 12",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ELEGAR KERPEN KABEL INDIA PVT. LTD (FORMERLY LEONI CABLE SOLUTIONS (INDIA) PVT. LTD)",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "13",
+    "description": "Single core cable Screened Multicore cable Unscreened Multicore cable UIC Cable UIC Cable Hybrid Cable 9 & 11 Core",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "ELEKTROLITES POWER PVT LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "13",
+    "description": "25kV Single Pole Load Break Switch 25kV Double Pole Load Break Switch 36kV to 48kV Class-3 Polymer Surge Arrester/LA 42kV to 216kV Class-4 Polymer Surge Arrester/LA 42kV to 198kV Class-3 Porcelain Surge Arrester Smartgrid Solutions & Application",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ELESA AND GANTER INDIA PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "13",
+    "description": "Operating elements, Clamping knobs, Clamping levers, U-handles, Fixed, revolving, fold-away handles, Control elements, Rotary controls, Indexing elements, Machine elements, Joints, Levelling elements, Hinges, Latches, Hook, toggle and power clamps",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ELESA AND GANTER INDIA PVT LTD FLUCON COMPONENTS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "14",
+    "description": "Yards, Cement Plants and steel industries. Operating elements, Clamping knobs, This facility specializes in the production of Clamping levers, U-handles, Fixed, revolving, EXPONIQ ENGINEERING SERVICES industrial products, focusing primarily on fold-away handles, Control elements, Rotary PVT. LTD. el",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "ELGI ELECTRIC AND FLUID CONTROLS LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "14",
+    "description": "\u2022 Reverse Engineering \u2022 3D Printing",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ELGI ELECTRIC AND INDUSTRIES LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "13",
+    "description": "Point Machines for Railways DC Motors for Railways Three phase AC Motors 0.12 kW to 30 KW Motors for Textile Machinery",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ELMEX ELECTRIC PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "13",
+    "description": "Terminal Blocks and Its Accessories Solar Connectors Interface Modules Slim Relay Low Voltage Current Transformers",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "EMERSON PROCESS MANAGEMENT INDIA PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "13",
+    "description": "Klauke \u00e2\u20ac\u201c Power Utilities, Railways, OEM & Panel Builders, Renewable Energy and 13",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "EPHYMESS GMBH",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany (GmbH)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "14,15",
+    "description": "Cable Hybrid Cable 9 & 11 Core of our railway customers, and can be used to Robust temperature, oil level and speed protect wire harnesses and cable sensors monitor traction motors, gearboxes, ELEKTROLITES POWER PVT LTD. assemblies in several areas of a railway car. bearings, control cabinets and ba",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "EPHYMESS GMBH LIMITED",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany (GmbH)",
+    "occurrences_in_pdf": 3,
+    "pdf_pages": "16,17,18",
+    "description": "Cable Hybrid Cable 9 & 11 Core of our railway customers, and can be used to detection and firefighting solutions for rolling innovative solutions that power industries Robust temperature, oil level and speed FRONTIER SPRINGS LIMITED protect wire harnesses and cable stock. With over 25,000 systems wo",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "FINE AUTOMOTIVE AND INDUSTRIAL",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "14",
+    "description": "Double Pole Load Break Switch 36kV to operation. Modular designs add flexibility,",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "FOGTEC BRANDSCHUTZ GMBH",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany (GmbH)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "14",
+    "description": "Connectors Interface Modules Slim Relay 1 Torque Sealants / FOGTEC Low Voltage Current Transformers Schraubensicherungslack Rail Systems delivers tailored fire detection EMERSON PROCESS MANAGEMENT 2 Threadlockers - B222, B243, B270, B577 (smoke, heat, aspirating, gas, HMI) and INDIA PVT LTD 3 TAGGR ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "FRONTIER SPRINGS LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "14",
+    "description": "stock. With over 25,000 systems worldwide, High Tensile Studs High Tensile Bolts & Nuts worldwide. Our legacy is built on precision Industrial Lubricants solutions ramps acquisition and field testing companies all over the world. pole bars, and Custom metro pole bars training for safe, precise indus",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "GALA PRECISION ENGINEERING JIANGSU RAILTECO EQUIPMENT",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "15",
+    "description": "Instrumentation products, delivering Coatings, Phosphating, Plants & Engineering driver assistance systems train front-end Moving source beamforming Cabin comfort rolling and recycling company. Hindalco\u2019s Honeycomb Panels. 2. Standard pole bars, fasteners. Service offerings include tool MEMU train s",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "HOFFMANN QUALITY TOOLS INDIA PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "28",
+    "description": "- Machining Tools -Clamping Tools - Measuring Instruments -Power Tools - Workstation Storage Units -Tool trolleys - Tool24",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "HOLLAND",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "28",
+    "description": "From track measurement devices and automated welding equipment to rail trains and rail car prepping services, we design, manufacture, operate, and maintain our equipment, allowing us to be the most efficient and the most innovative in the industry. KAYNES TECHNOLOGY INDIA LIMITED KHUSHI COMMUNICATIO",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "HONEYCOMB INTERNATIONAL INC. HUGEHIPPO TECHNOLOGIES LLP",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "USA (Inc.)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "19,29",
+    "description": "1. Aluminium Honeycomb Panels, Nomex 1. PA Subsystem 2.Passenger Information Honeycomb Panels, Stainless Steel Display System 3. Video Entertainment Honeycomb Panels, and Customized Systems 4. CCTV Subsystem Honeycomb Panels. 2. Standard pole bars, Reinforced pole bars, Corrosion-resistant HYDAC IND",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "HONEYCOMB INTERNATIONAL INC. HUGEHIPPO TECHNOLOGIES LLP HYTORC TOOLS INDIA PVT LTD INDIAN RAILWAYS / MODERN COACH FACTORY, RAEBAREL PVT LTD",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "USA (Inc.)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "20,30",
+    "description": "1. Aluminium Honeycomb Panels, Nomex 1. PA Subsystem 2.Passenger Information HYTORC manufactures hydraulic, Honeycomb Panels, Stainless Steel Display System 3. Video Entertainment pneumatic, and battery torque wrenches, LHB Coaches (Smart, Humsafar, Tejas, Honeycomb Panels, and Customized Systems 4.",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "HORIZON INDUSTRIAL PRODUCTS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "19,29",
+    "description": "plates,Electronic sensors,Strip/pipe/cable clamps,hydraulic cylinders, Sheet metal stamping pressed components Filters,Valves,QDC,Plate Heat / assemblies, Stamping press tools and Dies Exchangers,Hydraulic Power (esp. Progressive), Jigs / Fixtures / Panel Pack,accumulator,air breather,manifold. Chec",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "HP VALVES & FITTINGS INDIA HYDROPACK (INDIA) PVT.LTD PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "19,29",
+    "description": "Hydropack manufactures Bogie Test Stand, HOFFMANN QUALITY TOOLS Tube & Pipe Fittings, Valves such as Static Bogie Load Testing Machine, Mobile INDIA PVT LTD Manifold/Needle/Ball/NRV/PRV/Globe/Gat Lifting Jacks, CTRB Pullers, Double Ended e Valves, High Pressure Fittings & Valves, - Machining Tools -",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "HP VALVES & FITTINGS INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "20,30",
+    "description": "HYDROPACK (INDIA) PVT.LTD 45545-2 IMO Recognised Fire Testing Fire INRAIL TRANSPORTATION PRIVATE and Smoke Testing Facility LIMITED Hydropack manufactures Bogie Test Stand, HOFFMANN QUALITY TOOLS Tube & Pipe Fittings, Valves such as Static Bogie Load Testing Machine, Mobile Communication Gateways, H",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "HUBER+SUHNER",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "19,29",
+    "description": "CNC above-floor & under-floor wheel lathes, HOLLAND HUBER+SUHNER delivers Vertical turning & boring machines, From track measurement devices and high-performance connectivity solutions Automated coach wash plants, automated welding equipment to rail trains with RF, fiber optic, and low frequency Syn",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ILME S.P.A",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Italy (SpA)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "19,29",
+    "description": "modules. Passenger Information Systems, includes EOT Crane, Gantry Crane, Hsfg High Tensile Fasteners -anchor Bolts, Heavy duty industrial connections, Plug & CCTV and Infotainment Systems. Telematics ITW INDIA PRIVATE LIMITED Semi-Gantry Crane, Flexi-Crane, Sleeper Screws, T-head Bolts, Hex sockets",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "INDO ELECTRICALS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "20,30",
+    "description": "Sheet metal stamping pressed components Filters,Valves,QDC,Plate Heat Grommets with Connector,Split cable entry / assemblies, Stamping press tools and Dies Exchangers,Hydraulic Power glands with grommets,Integrated Fire Heavy Duty Multipole Electrical Connectors (esp. Progressive), Jigs / Fixtures /",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "INDUSTRIES LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "14",
+    "description": "As a single source for high perfromance Point Machines for Railways DC Motors for FABRIMECH ENGINEERS PVT LTD connectors for Rail & Metro, we offer double Railways Three phase AC Motors 0.12 kW to and single ferrule connectors, Across Frame Aluminium Gangway, SS Reservoirs, 30 KW Motors for Textile ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "INSTAMOD AIRPIPE PRIVATE LIMITED KAMLESH METAL & ALLOY",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "19,29",
+    "description": "Platform Screen Doors. Services include applications including metal sign assembly. project development, localization, Compressed air pipeline and fittings. Hardox 400/450/500/600 HI ACE. H Tuf, operator-focused design, and sustainable JAINAM SEATS Strenx 700/900/960//1100 Steel Plate mobility consu",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ITT CORPORATION INDIA PVT LTD",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "USA-style (Corporation)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "20,30",
+    "description": "JSTI TRANSFORMERS PVT. LTD. Connectors. Mino 7/8\" Circular Connectors. Products: Shock Absorbers / Dampers for M12 Power Connectors L/S/K/T Code. Traction Transformers CAMC for Traction Rolling stock, Dampers for Locomotives, M23/M40 Servo Connectors. Security & Transformers LHB Coaches, Vande Bhara",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "JIANGSU RAILTECO EQUIPMENT",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 17,
+    "pdf_pages": "12,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "description": "Honeycomb Panels. 2. Standard pole bars, fasteners. Service offerings include tool MEMU train sets. Export of 100 loco hauled EDILON)(SEDRA INDIA PRIVATE LIMITED I SAT NETWORK ENGINEERS PVT LTD CO., LTD. Reinforced pole bars, Corrosion-resistant HYDAC INDIA PVT. LTD. rental, calibration, site suppor",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "JINDAL STAINLESS LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "21,31",
+    "description": "Checkers, Car jacks, Bathroom Radiators, Membrane Plate without connector,Strain passenger coaches and locomotives. Two Wheeler Seats / saddles, Metal HYDRODYNE TEIKOKU (INDIA) PVT LTD Relief EN 62444, EMC Shield Clamp INDUS TECHPRO (ATLAS COPCO) Slabs, Blooms, Hot Rolled (HR) Coils, Cold fabricatio",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "K2 CRANES & COMPONENTS PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "20,30",
+    "description": "Performance Line Dampers, Endurance Line Dampers, Technology line Dampers. Our comprehensive range of products KAY PEE INDUSTRIES includes EOT Crane, Gantry Crane, Hsfg High Tensile Fasteners -anchor Bolts, ITW INDIA PRIVATE LIMITED Semi-Gantry Crane, Flexi-Crane, Sleeper Screws, T-head Bolts, Hex U",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KAMLESH METAL & ALLOY",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "20,30",
+    "description": "applications including metal sign assembly. Hardox 400/450/500/600 HI ACE. H Tuf, JAINAM SEATS Strenx 700/900/960//1100 Steel Plate SSAB Sweden Make Manufacturer and exporter of Loco Pilot seats for off road vechiles for Indian railway,",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KAPTRONICS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "21,31",
+    "description": "The Dynamic Braking Grid is designed on the basis of the horse power of the locomotive",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KARO COILS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 4,
+    "pdf_pages": "20,21,30,31",
+    "description": "27.5KV 2Pole Circuit Breaker 25kA Railteco is principally engaged in the design, At Karo we specialise in manufacturing of 2500Amps 27.5KV 2Pole Load Break production, maintenance, sales and service Cold Coiled Springs 0.4 to 17 mm Wire Switch 1.6kA 2000Amps of railway equipment products, which Diam",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KATARIA SALES PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "21,31",
+    "description": "3D Scanner, 3D Printer, Spectrometer and associated accessories",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KATLAX ENTERPRISES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 6,
+    "pdf_pages": "19,20,21,29,30,31",
+    "description": "COMMERCE (Precision strips,Coin Blanks,Razor Pneumatic Products IGNITO LABS PRIVATE LIMITED Blades,Long Products (Rebars & Wire Rods), M12 Sensor Actuator Cables, M12 A,D & X Indo-German Trade Promotion Business Coded Field Wire able Crimp & Push-in Type NABL Accredited vide certificate number TC Ad",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KAY PEE INDUSTRIES",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "21,31",
+    "description": "Hsfg High Tensile Fasteners -anchor Bolts, Sleeper Screws, T-head Bolts, Hex Bolts,nuts, Nyloc Nuts,studs, Csk Screws, Dti Washers, Square & Spring Washers, Hinges, Bushes Etc In Bzp, Yzp, Phosphating, Hdg, Trivalent, Geomat, Dacromat Finishes; Forgings & Infrastructure Components",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KAYNES TECHNOLOGY INDIA LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "12,22",
+    "description": "1 Hardware and Embedded Design Services 2 Electronics Manufacturing Services (EMS) 3 Box Build/ Integration 4 Cable Harness 5 Mould Design and Injection moulding 6 Sheet Metal 7 Bare PCB 8 OSAT 9 Repair Services",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KAYNES TECHNOLOGY INDIA LIMITED KHUSHI COMMUNICATIONS PRIVATE KNORR-BREMSE INDIA PRIVATE LIMITED LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 10,
+    "pdf_pages": "13,14,15,16,17,18,19,20,21,23",
+    "description": "1 Hardware and Embedded Design Supply, Maintenance and Customer service Services We are a technology-driven solutions of Air Supply Systems, Braking Systems, 2 Electronics Manufacturing Services provider specializing in Timing & TBUs, Disc Brake Systems, Brake Disc, (EMS) Synchronization, Test & Mea",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "KEETRONICS INDIA PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 17,
+    "pdf_pages": "12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28",
+    "description": "leading manufacturers of Advance Input Devices like Membrane Keyboards, Rugged Keyboards, Rugged Displays Capacitive Keyboards ,Long Travel keyboards and Touch Screen with Optical bonding and UI/UX service ,Touchmatik Smart Touch switches in Pune Ma",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KERNEX MICROSYSTEMS (INDIA) LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "12,22",
+    "description": "Kernex Microsystems Design & Manufactures Advanced Railway Safety Systems including Kavach TCAS, CTC, Moving-Block Kavach, Smart Yard solutions, Digital Twin, SCADA, ESS Testing, Embedded Solutions, Turnkey Automation, contract Manufacturing& service",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KHARAUJHA ENGINEERING LLP",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "12,22",
+    "description": "1. Rocker Arm Assy:Injector & Exhaust, 2. Roller Assy 3. Race Inner 4. Pin Cam follower 5. Screw Adjusting 6. Button Valve Bridge 7. Spring Button 8. Exhaust Valve Bridge 9. Lash Adjuster 10. Retainer Bearing 11. Counter Weight LB Front/Rear 12. Lock Spring Seat",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KHUSHI COMMUNICATIONS PRIVATE KNORR-BREMSE INDIA PRIVATE LIMITED LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "Supply, Maintenance and Customer service We are a technology-driven solutions of Air Supply Systems, Braking Systems, provider specializing in Timing & TBUs, Disc Brake Systems, Brake Disc, Synchronization, Test & Measurement, ASCE, Shock Absorbers, Wiper Equipment, Remote Fiber Testing & Monitoring",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "KINECO LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "Kineco's IRIS certified railway business specialises in design, development, manufacture and installation of rail coach interior and exterior product solutions namely interior panelling, sanitary modules, vacuum toilet systems, seating, front ends.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KINET RAILWAY SOLUTION LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "12",
+    "description": "Vande Bharat Train",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KINET RAILWAY SOLUTION LIMITED PHOOLTAS TRANSRAIL LIMITED PRECISION INDUSTRIAL SYSTEMS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "22",
+    "description": "Stanchions Brackets ( Crome) Document / Hooters, Ringers Sirens Illuminated Push CoilSpring Washer / Security fasteners. Bus We innovative quality products and make our",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KISWOK INDUSTRIES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 10,
+    "pdf_pages": "12,13,14,15,16,17,18,19,20,21",
+    "description": "Railway castings, Automobile castings, Industrial Castings, Municipal castings, Agricultural castings, Off-Highway.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KLOVER TEL PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 12,
+    "pdf_pages": "12,13,14,15,16,17,18,19,20,21,23,24",
+    "description": "Control & diagnostics platforms for effective train control and fleetwide monitoring. DPWCS, RMS, etc. High-accuracy weighing & balancing systems that improve safety, asset life and operational efficiency. In-motion static & portable weigh bridges.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "KNIPEX TOOLS INDIA PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 12,
+    "pdf_pages": "12,13,14,15,16,17,18,19,20,21,23,24",
+    "description": "Tools for electrical, mechanical, and industrial applications- covering cutting, crimping, screwdriving, clamping, and torque wrenches. Intercable leads with hydraulic crimping and cutting solutions ensuring safe, durable, and efficient performance.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "LINQHAUL INDIA PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "24,25",
+    "description": "2 Electronics Manufacturing Services provider specializing in Timing & TBUs, Disc Brake Systems, Brake Disc, Seamless Stainless Tubes & Pipes, End (EMS) Synchronization, Test & Measurement, ASCE, Shock Absorbers, Wiper Equipment, Fittings (Brake Beams, Struts, Housings, Supply Chain Automation Railw",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "LINQHAUL INDIA PVT LTD MIPALLOY PRIVATE LIMITED PANDROL RAHEE TECHNOLOGIES PREMNATH ENGINEERING WORKS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "23",
+    "description": "Seamless Stainless Tubes & Pipes, End Hinges, Handles, Door Stay, Gasket, in form of Billet, Ingot, Mother Shell, Tubes & LiDAR/FLS, Traffic & Transportation, annually in 3100+ variants, catering to Testing System, Phased Array Ultrasonic Rugged Data-Acquisition System brake boxes, emergency bridge ",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "LINQHAUL INDIA PVT LTD MIPALLOY PRIVATE LIMITED PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 3,
+    "pdf_pages": "26,27,28",
+    "description": "2 Electronics Manufacturing Services provider specializing in Timing & TBUs, Disc Brake Systems, Brake Disc, Seamless Stainless Tubes & Pipes, End Hinges, Handles, Door Stay, Gasket, in form of Billet, Ingot, Mother Shell, Tubes & LiDAR/FLS, Traffic & Transportation, (EMS) Synchronization, Test & Me",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "MATERIALS CO., LTD. ASSOCIATION OF INDIA",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "East Asia (Co., Ltd. style)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "39",
+    "description": "Services. We also provides OEM solutions",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "MIPALLOY PRIVATE LIMITED PANDROL RAHEE TECHNOLOGIES PREMNATH ENGINEERING WORKS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "24,25",
+    "description": "Hinges, Handles, Door Stay, Gasket, in form of Billet, Ingot, Mother Shell, Tubes & LiDAR/FLS, Traffic & Transportation, annually in 3100+ variants, catering to Testing System, Phased Array Ultrasonic Rugged Data-Acquisition System brake boxes, emergency bridge covers, Facility, Aluminum Castings, F",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "MITECH BUS DOOR SYSTEMS CORPORATION LIMITED",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "USA-style (Corporation)",
+    "occurrences_in_pdf": 3,
+    "pdf_pages": "23,24,25",
+    "description": "Cable glands, Connectors, Conduits, Cable 200,000 articles made from materials such performance, reliability, and global standards Meters, Infrared Thermometers, Insulation Mtekpro Technologies offers complete Railway Overhead Electrical Construction & motors, motors, frequency inverters, enclosures",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "MM AUTO INDUSTRIES PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "25",
+    "description": "brands of the world. offers books, models, and memorabilia to \u00e2\u20ac\u00a2 MVCC \u00e2\u20ac\u00a2 Pressure Tight Cables \u00e2\u20ac\u00a2 & simulations Reflectors (P) LIMITED industry-leading brands, including Vehicles, Inspection Cars Service: New POLYCAB INDIA LIMITED 2. Wedge: SK-77579, WD-04017, WD- 13012, Equipment, Small Track Ma",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "NATIONAL RAIL MUSEUM",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "26",
+    "description": "Fire Survival Cable \u00e2\u20ac\u00a2 Shipbuilding and Boltight hydraulic tensioners and Expander Crash/impact Testing. DigitalTrains\u00e2\u201e\u00a2: Magazine Pouch Ac Louvers And Consoles We stock an extensive range of Grinding, Flash Butt Welding Machines, 4 / 8 in Stainless Steel/Aluminium WD-85079-S/2, WD-97049-S/3, Foll",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "NIRMAL WIRES PRIVATE LIMITED PIONEER NUTS & BOLTS PVT LTD PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "26",
+    "description": "Engineered for watertightness, fire Hydraulic Re-railing equipment, Wheel locomotive overhauling, maintenance and IGBT heat sinks Cyclonic air filters room solutions, Modular Operation",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "ORGANISATION",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "22",
+    "description": "Euro Balise Cable Screened Signaling cable Fire alarm cable systems Public address Research & Development of New & systems Earthing cable Improved Designs/Technology.Testing & recommending authority for Statutory REBS LUBRICATION INDIA PVT LTDQ Clearances (including Metro System).Quality Assurance &",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PACKET LOGICS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "39",
+    "description": "rings), washers, precision shims, and sheet Testing and Measuring Equipment metal stampings/assemblies. Custom-built components as per drawings for automotive, PALFINGER INDIA PRIVATE LIMITED agri, railways and industrial OEMs. Railways Cranes, Mobile Bridge Inspection Unit, Loader Cranes - Knuckle ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PACOLINE INDUSTRIES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "39",
+    "description": "Relays Solid State Relays Gpssr Relays Locomotive & Metro Rear View Mirror Roller Power Relays Magnetic Security Contacts Blinds & Sun Visiors Metro Grab Handles Diode Oring Unit Peizo Electric Buzzers Stanchions Brackets ( Crome) Document / Hooters, Ringers Sirens Illuminated Push Manual Holders To",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PANDROL RAHEE TECHNOLOGIES PREMNATH ENGINEERING WORKS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 11,
+    "pdf_pages": "22,26,27,28,32,33,34,35,36,37,38",
+    "description": "provider specializing in Timing & TBUs, Disc Brake Systems, Brake Disc, Facility, Aluminum Castings, Fully assembled including fastening systems, RHEDA & Coach Interiors and Track applications. BACKLASH GEARBOXES. Bogie Suspension, Draft Gears, Air Dryers, Synchronization, Test & Measurement, ASCE, ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PANDROL RAHEE TECHNOLOGIES PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 6,
+    "pdf_pages": "29,30,31,39,40,41",
+    "description": "2 Electronics Manufacturing Services provider specializing in Timing & TBUs, Disc Brake Systems, Brake Disc, Facility, Aluminum Castings, Fully assembled (EMS) Synchronization, Test & Measurement, ASCE, Shock Absorbers, Wiper Equipment, products 3 Box Build/ Integration Remote Fiber Testing & Monito",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PARAMOUNT INDUSTRIES",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 6,
+    "pdf_pages": "29,30,31,39,40,41",
+    "description": "manufacture and installation of rail coach Construction 5. Customized Products KEETRONICS INDIA PVT LTD Paramount Industries :- Electromechanical interior and exterior product solutions Relays Relay Boards Plug In Relays Auto leading manufacturers of Advance Input namely interior panelling, sanitary",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PARAMOUNT INDUSTRIES PROJECTIONS STRATEGY LLP",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 11,
+    "pdf_pages": "22,26,27,28,32,33,34,35,36,37,38",
+    "description": "manufacture and installation of rail coach Construction 5. Customized Products assemblies. Expertise in processes like Heavy Duty Connector, M12 Cables, M12 PRAMA R&D Centre in Mumbai drives the Paramount Industries :- Electromechanical interior and exterior product solutions Deep draw components of",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PEI-GENESIS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 15,
+    "pdf_pages": "22,26,27,28,29,32,33,34,35,36,37,38,39,40,41",
+    "description": "Vande Bharat Train Manual Holders Tool Box First Aid Box Button Products: New Track Construction, Rail Bars in Copper. Machined & Sheet Metal Parts 1. Centre Pivot Assembly (Top & Bottom): business stand out from the crowd. Magazine Pouch Ac Louvers And Consoles We stock an extensive range of Grindi",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PERFECT GEARS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "40",
+    "description": "PALFINGER INDIA PRIVATE LIMITED agri, railways and industrial OEMs. 1. Vande Bharat Chair car Seating Solutions Gears (Spur, Helical, Bevel, Worm 2. Vande Bharat Sleeper Seat & berth Railways Cranes, Mobile Bridge Inspection Unit, Loader Cranes - Knuckle Boom cranes PATIALA LOCOMOTIVE WORKS EMU/METR",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PERFECT MACHINING CENTRE",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "40",
+    "description": "Recycling Cranes manufacture DETC. PLW also offers",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PHOOLTAS TRANSRAIL LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "40",
+    "description": "Stanchions Brackets ( Crome) Document / Hooters, Ringers Sirens Illuminated Push",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PHOOLTAS TRANSRAIL LIMITED PRECISION INDUSTRIAL SYSTEMS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 12,
+    "pdf_pages": "27,28,29,32,33,34,35,36,37,38,39,41",
+    "description": "The original Nord Lock Wedge Locking Side buffers, Buffer stops, Wheel stops, Stanchions Brackets ( Crome) Document / Hooters, Ringers Sirens Illuminated Push CoilSpring Washer / Security fasteners. Bus We innovative quality products and make our",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PINNACLE INDUSTRIES LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "40",
+    "description": "components as per drawings for automotive,",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PIONEER NUTS & BOLTS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "40",
+    "description": "locomotive overhauling, maintenance and IGBT heat sinks Cyclonic air filters PANCHSHEEL FASTENERS supplies crictical spare parts for Indian Product Range Bolts Hex bolts (M6, M64, We manufacture fasteners conforming to Railways. 1/4\", 2.5\") Heavy hex bolts Hex cap screws Structural bolts Foundation ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PIONEER NUTS & BOLTS PVT LTD PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 13,
+    "pdf_pages": "22,27,28,29,32,33,34,35,36,37,38,39,41",
+    "description": "KNIPEX TOOLS INDIA PVT LTD locomotive overhauling, maintenance and IGBT heat sinks Cyclonic air filters room solutions, Modular Operation",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "PRECISION INDUSTRIAL SYSTEMS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "30,40",
+    "description": "CoilSpring Washer / Security fasteners. Bus We innovative quality products and make our Bars in Copper. Machined & Sheet Metal Parts 1. Centre Pivot Assembly (Top & Bottom): business stand out from the crowd. in Stainless Steel/Aluminium WD-85079-S/2, WD-97049-S/3, Following are some of the distingu",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PREMIER POLYFILM LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "29,39",
+    "description": "EMU/METRO/LOCOMOTIVE Gearboxes Solutions 3. EMU Stainless Steel Seats 4. Shafts Rubber to Metal Bonded bushes Amrit Bharat Seat & berth Solutions 5. LHB POLYVANTIS (F&S SALES INDIA PVC FLOORING Vinyl Coated Upholstery PYROTECH WORKSPACE SOLUTIONS Geared Couplings. Coach Seat & berth Solutions 6. Met",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PREMIER POLYFILM LTD PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "30,40",
+    "description": "POLYVANTIS (F&S SALES INDIA PVC FLOORING Vinyl Coated Upholstery PYROTECH WORKSPACE SOLUTIONS PRIVATE LIMITED) cloth Fleet Graphics Film for interior & PVT LTD exterior application As per RDSO/ICF We design and manufacture ergonomic POWERTEC POWER SUPPLIES INDIA specifications control room consoles,",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "PREMIER SEALS INDIA PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 16,
+    "pdf_pages": "22,26,27,28,29,30,32,33,34,35,36,37,38,39,40,41",
+    "description": "Tools for electrical, mechanical, and PANCHSHEEL FASTENERS supplies crictical spare parts for Indian Product Range Bolts Hex bolts (M6, M64, Powertec Supplies offers rugged AC-DC & Theaters, and advanced industrial flooring. industrial applications- covering cutting, We manufacture fasteners conform",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PREMNATH ENGINEERING WORKS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 6,
+    "pdf_pages": "29,30,31,39,40,41",
+    "description": "including fastening systems, RHEDA & Coach Interiors and Track applications. BACKLASH GEARBOXES. Bogie Suspension, Draft Gears, Air Dryers, booted blocks, USP, and precast drains. Our products include Densified Wood, Glass Filters, Onboard Water Coolers, installation & 1. Rail Cum Road Vehicle for d",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PRIVATE LIMITED PARAMOUNT INDUSTRIES PROJECTIONS STRATEGY LLP",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 3,
+    "pdf_pages": "23,24,25",
+    "description": "markers. as stainless steel, high tensile steel, and compliance. Testers to Calibrators, Oscilloscopes, electrical testing & measurement solutions, National High-Speed Rail Corporation Maintenance 2. Skyjack Inc, Canada & providing optimal drives solutions to our on-board, indoor, and outdoor applic",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "PROJECTIONS STRATEGY LLP",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 6,
+    "pdf_pages": "29,30,31,39,40,41",
+    "description": "assemblies. Expertise in processes like Heavy Duty Connector, M12 Cables, M12 PRAMA R&D Centre in Mumbai drives the Deep draw components of CS and SS upto Push-Pull Connector, DC-DC Convertor, POLO INDIA technology innovation to catch up with the Marketing and Advertising Research and 8mm, spot weld",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PUJARA ENGINEERS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 4,
+    "pdf_pages": "30,31,40,41",
+    "description": "Rivet Nuts / RIRPLOCK / Wedge lock / Double",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PVT LTD RAMCO STEELS PVT LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "22",
+    "description": "Slack Adjuster - 750 , 600 & 600J Brake We manufacture and export anti-vibration Cylinder - 305 mm & 355 mm Air Brake (rubber-to-metal) parts like Inner Metal, Components, Auxiliary Reservoir - Mild Steel Outer Metal, Scheibe, Bolzen, Reaction Link, & Stainless Steel ( ASI 304), Dampers, Load Kern, ",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "PVT. LTD. THERMO CABLES LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "39,40",
+    "description": "Driving Simulator, Battery Operated Rail cum railway equipment i.e. Temping machine, coming Trams in Stuttgart or Hanover. Road Shunter, Diesel Operated Rail cum FBW, NTC, DGS, Clip applicator, Bobyn Tesio Cooling Systems India Pvt. Ltd Tesio Cables & Wires - Instrumentation, Power & Road Shunting V",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "PYROTECH TECHNOLOGIES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "31,41",
+    "description": "We Are Manufacturer Of Pressure Transmitter , Process Control Instrument , Led Light , Fire Alarm System . Cctv",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PYROTECH WORKSPACE SOLUTIONS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "31,41",
+    "description": "We design and manufacture ergonomic control room consoles, complete control room solutions, Modular Operation Theaters, and advanced industrial flooring. Services include design-to-build execution, project consultancy, and global turnkey solutions.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "PYROTEK",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "22,32",
+    "description": "Complete range of internationally certified and customer proven soundproofing and thermal insulation materials & solutions, engineered for improved efficiency and comfort in rail carriages, locomotives, infrastructure hubs, tunnels, and more.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "R&S INTERNATIONAL HOLDING AG",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany/Switzerland/Austria (AG)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "22,32",
+    "description": "The portfolio include oil distribution (up to 10 MVA), cast resin (up to 25 MVA) and power transformer (up to 120 MVA).and we supply to Utilities, Renwable projects and Applications (e.g. Railwway, Data Center, Harbor electrification)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "R&S INTERNATIONAL HOLDING AG PVT LTD",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "Germany/Switzerland/Austria (AG)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "34",
+    "description": "mobility, airports, ports, ropeways,",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "R&S INTERNATIONAL HOLDING AG PVT LTD RAMCO STEELS PVT LTD.",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "Germany/Switzerland/Austria (AG)",
+    "occurrences_in_pdf": 10,
+    "pdf_pages": "23,24,25,26,27,28,29,30,31,33",
+    "description": "The portfolio include oil distribution (up to 10 Slack Adjuster - 750 , 600 & 600J Brake MVA), cast resin (up to 25 MVA) and power We manufacture and export anti-vibration Cylinder - 305 mm & 355 mm Air Brake transformer (up to 120 MVA).and we supply (rubber-to-metal) parts like Inner Metal, Compone",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "RADIATORS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "14",
+    "description": "48kV Class-3 Polymer Surge Arrester/LA durability and reliability. 42kV to 216kV Class-4 Polymer Surge Radiators, oil coolers, intercoolers, custom Arrester/LA 42kV to 198kV Class-3 EUROSTAR ENGINEERING PVT LTD heat exchangers for railways, Genset, Porcelain Surge Arrester Smartgrid construction, mi",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RAIL COACH FACTORY, KAPURTHALA",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "22,32",
+    "description": "Mock up of latest developed designs of rolling stock along with models of new development in coach manufacturing . Besides, the product range, production capabilities and achievements of RCF will be displayed through miniature models and backlit artwork display.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RAIL COACH FACTORY, KAPURTHALA RATUSARIA INDUSTRIES PRIVATE RUPKALA ENGINEERS PVT LTD LIMITED",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "name contains \"USA\"",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "34",
+    "description": "RENMAKCH is successfully Manufacturing Mock up of latest developed designs of Mobile Lifting Jacks, Bogie Turn Tables, RIVER ENGINEERING PVT LTD Specialized in manufacturing Metro Gears rolling stock along with models of new Light Weight Rails Wagon Parts Rail Track Multi-Purpose Workstations, Batte",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "RAIL VIKAS NIGAM LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "22,32",
+    "description": "(i) Undertaking project development and execution of works on fast track basis. (ii) Creating Project specific SPVs for projects. (iii) Recently Govt. asked RVNL to expand in all types of infrastructure and also not limited to India.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RAIL VIKAS NIGAM LIMITED ORGANISATION",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 11,
+    "pdf_pages": "23,24,25,26,27,28,29,30,31,33,34",
+    "description": "Euro Balise Cable Screened Signaling cable (i) Undertaking project development and Fire alarm cable systems Public address Research & Development of New & execution of works on fast track basis. systems Earthing cable Improved Designs/Technology.Testing & (ii) Creating Project specific SPVs for reco",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RAIL WHEEL FACTORY",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 13,
+    "pdf_pages": "22,23,24,25,26,27,28,29,30,31,32,33,34",
+    "description": "RWF manufacturers various Wheels, Axles and Wheelsets for use in Loco, Freight and Passenger applications. Cast wheels ranges from 725mm to 1100mm in diameter and",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "Rail Wheel Plant, Bela",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 16,
+    "pdf_pages": "22,23,24,25,26,27,28,29,30,31,33,34,35,36,37,38",
+    "description": "variable frequency drives, and custom power Manufacturing of wheels for Indian Railways supplies. Compliant with EN50155, by Casting Process. Four types of wheels are EN61373, and EN45545 (HL-2/HL-3) being manufactured. (i) Box N Wheel (ii) Bgc Wheel (iii) Blc Wheel (iv) Emu Wheel REMSONS EDGE TECHN",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RAMCO STEELS PVT LTD. RR KABEL LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "34",
+    "description": "The portfolio include oil distribution (up to 10 Slack Adjuster - 750 , 600 & 600J Brake institutional buildings, inland waterways, etc. MVA), cast resin (up to 25 MVA) and power We manufacture and export anti-vibration Cylinder - 305 mm & 355 mm Air Brake Spread across multiple business verticals t",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "RENMAKCH INDIA PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "34",
+    "description": "hoses.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RENMAKCH INDIA PVT. LTD. RAIL COACH FACTORY, KAPURTHALA RATUSARIA INDUSTRIES PRIVATE LIMITED",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "name contains \"USA\"",
+    "occurrences_in_pdf": 10,
+    "pdf_pages": "23,24,25,26,27,28,29,30,31,33",
+    "description": "RENMAKCH is successfully Manufacturing Mock up of latest developed designs of Mobile Lifting Jacks, Bogie Turn Tables, rolling stock along with models of new Light Weight Rails Wagon Parts Rail Track Multi-Purpose Workstations, Battery development in coach manufacturing . Parts Metal Liner Bars Stee",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "RENMAKCH INDIA PVT. LTD. RATUSARIA INDUSTRIES PRIVATE LIMITED",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "name contains \"USA\"",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "22",
+    "description": "RENMAKCH is successfully Manufacturing Mobile Lifting Jacks, Bogie Turn Tables, Light Weight Rails Wagon Parts Rail Track Multi-Purpose Workstations, Battery Parts Metal Liner Bars Steel Sleepers Operated Rail Cum Road Shunters, Bogie Testing Machines and other equipment RAVICAB CABLES PRIVATE LIMIT",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "RESEARCH DESIGNS & STANDARDS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 12,
+    "pdf_pages": "22,23,24,25,26,27,28,29,30,31,33,34",
+    "description": "Cable Quad Cable Quad Cable 1.4 Balise &",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RESEARCH DESIGNS & STANDARDS SAINT-GOBAIN INDIA",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "35",
+    "description": "Cable Quad Cable Quad Cable 1.4 Balise & Panels,AMC Business. Railways Management Systems, Railways RAIL VIKAS NIGAM LIMITED ORGANISATION Epoxy's, Resin, Fire Plug-ins, Locomotive Euro Balise Cable Screened Signaling cable Construction, Upgrading, Maintenance and In India Saint-Gobain is present in ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RESEARCH DESIGNS & STANDARDS SAINT-GOBAIN INDIA SENSEDGE TRANSPORTATION",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "36",
+    "description": "Cable Quad Cable Quad Cable 1.4 Balise & Panels,AMC Business. Railways Management Systems, Railways construction sites Radio remote control RAIL VIKAS NIGAM LIMITED ORGANISATION Epoxy's, Resin, Fire Plug-ins, Locomotive SYSTEMS AND SOLUTIONS Euro Balise Cable Screened Signaling cable Construction, U",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RESISTOFLEX DYNAMICS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 12,
+    "pdf_pages": "22,23,24,25,26,27,28,29,30,31,33,34",
+    "description": "Flange, Centralized, Oil-Air, and Chain Lubrication Systems backed by global WE offer a comprehensive range of products expertise and local support. for RAILWAYS including: Air Spring Systems Vibration & Seismic Isolation Automatic Sliding Doors Inter Coach Gangways We continue to bring reliability ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "RESISTOFLEX DYNAMICS PVT LTD PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "35,36",
+    "description": "Flange, Centralized, Oil-Air, and Chain Circuit Breaker Panel, Outdoor Railway RAIL WHEEL FACTORY Doors, Windows, Driver Cabins, Foot Rest, Lubrication Systems backed by global WE offer a comprehensive range of products ROTARY ELECTRONICS PVT LTD Vacuum Circuit Breaker, Intelligent Doors and Toilet ",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "SAMTEL AVIONICS LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 6,
+    "pdf_pages": "33,34,35,36,37,38",
+    "description": "RITES LTD sanding, exhaust cutout, compressor sectors. We offer Ni-Cd, Li-ion, and primary Heaters, Mounting Services & Bearing and structural performance. Supported by Visulizaton systems as well as related services. Transformer monitoring and testing Recorders (NVRs), Video Management reliability ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SANMAR MATRIX METALS LTD. INDUSTRIES",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "37",
+    "description": "transformer (up to 120 MVA).and we supply (rubber-to-metal) parts like Inner Metal, Components, Auxiliary Reservoir - Mild Steel RITM TPTA JSC including wires & cables, fans, lighting, Traction Motor, Auxiliary motor, Compressor high-speed trains and metro systems. knowledgeable technical support at",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SANMAR MATRIX METALS LTD. INDUSTRIES PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "38",
+    "description": "transformer (up to 120 MVA).and we supply (rubber-to-metal) parts like Inner Metal, Components, Auxiliary Reservoir - Mild Steel RITM TPTA JSC including wires & cables, fans, lighting, Traction Motor, Auxiliary motor, Compressor high-speed trains and metro systems. knowledgeable technical support at",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "SANMAR MATRIX METALS LTD. LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "35,36",
+    "description": "transformer (up to 120 MVA).and we supply (rubber-to-metal) parts like Inner Metal, Components, Auxiliary Reservoir - Mild Steel RITM TPTA JSC including wires & cables, fans, lighting, Traction Motor, Auxiliary motor, Compressor to Utilities, Renwable projects and Outer Metal, Scheibe, Bolzen, React",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SARIA INDUSTRIES CORPORATION",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "USA-style (Corporation)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "35,36",
+    "description": "rolling stock along with models of new Light Weight Rails Wagon Parts Rail Track Multi-Purpose Workstations, Battery for B23 (Alstom), Traction Gears, Pinions, AC precision-critical components, including: All Tap Changer,DI-DU Relays,Maximum Railway Carriage Fans, Automatic Doors, development in coa",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SARIA INDUSTRIES CORPORATION SI-KA-TEC GMBH ENGINEERING",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany (GmbH); USA-style (Corporation)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "37",
+    "description": "rolling stock along with models of new Light Weight Rails Wagon Parts Rail Track Multi-Purpose Workstations, Battery for B23 (Alstom), Traction Gears, Pinions, AC precision-critical components, including: All Contact Strips, Grounding Systems, gateways, wheel slide protection. Tap Changer,DI-DU Rela",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SARIA INDUSTRIES CORPORATION SI-KA-TEC GMBH ENGINEERING SOURIAU INDIA PRIVATE LIMITED SPRAYTAC ENGINEERING",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "Germany (GmbH); USA-style (Corporation)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "38",
+    "description": "rolling stock along with models of new Light Weight Rails Wagon Parts Rail Track Multi-Purpose Workstations, Battery for B23 (Alstom), Traction Gears, Pinions, AC precision-critical components, including: All Contact Strips, Grounding Systems, gateways, wheel slide protection. Tap Changer,DI-DU Rela",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "SHALIMAR RUBBER & PLASTIC",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "37",
+    "description": "MVA), cast resin (up to 25 MVA) and power We manufacture and export anti-vibration Cylinder - 305 mm & 355 mm Air Brake Spread across multiple business verticals Powered/Non powered Bogie, AC/DC corrugation andwheel damper systems for HL2/3 certified systems, alongside Display applications, Customiz",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SHALIMAR RUBBER & PLASTIC SPNJIT ENGINEERING SOLUTIONS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "38",
+    "description": "MVA), cast resin (up to 25 MVA) and power We manufacture and export anti-vibration Cylinder - 305 mm & 355 mm Air Brake Spread across multiple business verticals Powered/Non powered Bogie, AC/DC corrugation andwheel damper systems for HL2/3 certified systems, alongside Display applications, Customiz",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SUGATSUNE KOGYO INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "39,40",
+    "description": "comfort in rail carriages, locomotives, by Casting Process. Four types of wheels are EN61373, and EN45545 (HL-2/HL-3) infrastructure hubs, tunnels, and more. being manufactured. (i) Box N Wheel (ii) Bgc STAUBLI TEC SYSTEMS INDIA PVT LTD Wheel (iii) Blc Wheel (iv) Emu Wheel REMSONS EDGE TECHNOLOGIES ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SUGATSUNE KOGYO INDIA TECHNOMECH INTERNATIONAL",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "33",
+    "description": "loading/unloading, horn, shunting, motor batteries, along with engineering support, Samtel\u2019s Railways product portfolio includes Refurbishment. our global technical expertise and supply. solutions, Cable termination and Software (VMS), Face Recognition Software solutions for diverse industries world",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SUGATSUNE KOGYO INDIA TECHNOMECH INTERNATIONAL PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 11,
+    "pdf_pages": "32,34,35,36,37,38,41,42,43,44,45",
+    "description": "by Casting Process. Four types of wheels are EN61373, and EN45545 (HL-2/HL-3) solutions for diverse industries worldwide. electrical, signaling & telecom equipment to TRAFAG CONTROLS INDIA PRIVATE being manufactured. (i) Box N Wheel (ii) Bgc STAUBLI TEC SYSTEMS INDIA PVT LTD SWITZERLAND GLOBAL ENTER",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "SWASTIK OVERSEAS TESIO COOLING SYSTEMS INDIA",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "39",
+    "description": "We are here for rent out / sale TPL owned S-Bahn Bern, DBs new ICE-L Interior or the",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TECHNOMECH INTERNATIONAL",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "39,40",
+    "description": "solutions for diverse industries worldwide. electrical, signaling & telecom equipment to TRAFAG CONTROLS INDIA PRIVATE SWITZERLAND GLOBAL ENTERPRISE 1.Automation Products 2. Pneumatic avoid major break-down. LIMITED SURLON DUREL SPRINGS PVT LTD Prodcuts 3. Sensors & Switches 4. Quick Switzerland Glo",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TECON TECHNOLOGIES LLP",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "39,40",
+    "description": "polymer spring assembly. 5. Polymer Spring helps innovative foreign companies on their products for the global Automotive sector, Faiveley Transport, CG Global, CLW & DLW. for draft gear. 6. Spring of the coupling way to settling in Switzerland. EAO Switches find a varied use across a (as an OEM & a",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TELOGICA LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "39",
+    "description": "Aluminum Honeycomb Core , Aramid for RFID tags & inlays, high-frequency Service Data acquisition Vibration tests Bogie TRELLEBORG INDIA PRIVATE LIMITED Honeycomb Core , Honeycomb Composite magnetic components, electro-mechanicals OTDR \u2022 Fusion Splicer \u2022 Cable Fault Locator frame EN13749 Seat design ",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TEMPSENS INSTRUMENTS (I) PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "39,40",
+    "description": "HQi is the first high-tech enterprise in China SiC converters, IPMSM motors, auxiliary transformers and converters.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TESIO COOLING SYSTEMS INDIA",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "40",
+    "description": "S-Bahn Bern, DBs new ICE-L Interior or the",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "THEETA ELECTRICALS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "39,40",
+    "description": "which can provide product technology, systems, seating & interiors, sleeper berths, Thermocouples, RTDs, Thermowells, system integration, operation service and driver seats, Honeycomb Partitions, flooring, Pyrometers, Thermal Imagers, Cables & Heating elements for refrigeration, cold TRICON AG techn",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TIMES FIBREFILL PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "41",
+    "description": "1) Fire Barrier Cloth for seats and berths as per EN45545-2 2) Thermal and acoustic Insulation 3) Acoustic Partition panels",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TRAFAG CONTROLS INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "41",
+    "description": "We are supplying our Pressure Transmitters, Pressure switches & temperature switches to Delhi metro, Medha Servo Drives, ABB, Faiveley Transport, CG Global, CLW & DLW. Our Pressure Transmitters are already used in Vande Bharat trains since inception.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TRANSMISSION DRIVE AND MOTION CONTROLS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "41",
+    "description": "Rotor Shafts, plate cam, support drive, etc.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TRANSPORTATION SYSTEMS PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "43,44",
+    "description": "Door Opening systems. Range of Pneumatic SAME AS ABOVE End-to-end System Integration of Electronic Cylinders, Electric Actuators, Pneumatic Interlocking, Train Traffic Monitoring System, Valves & Solenoid valves, Air Treatment Units",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TRELLEBORG INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "41",
+    "description": "(Division : Anti-vibration Solutions) Airspring Assemblies, Primary Conical Spring, and Rubber to Metal Bonded Parts for Primary and Secondary Suspension. Traction Rods and Auxiliary products for transformers and converters.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TRICON AG",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany/Switzerland/Austria (AG)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "41",
+    "description": "We offer all services around design in the public transport sector. Latest examples of our work are the vehicle designs for the repeatedly award-winning Doha Metro, S-Bahn Bern, DBs new ICE-L Interior or the coming Trams in Stuttgart or Hanover.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TRINITY TOUCH PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "41",
+    "description": "Trinity Touch manufactures specialized Railway Solutions including halogen-free wiring ducts, flexible conduits, enclosures, cable glands, plugs & sockets, and",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TVM SIGNALLING AND",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "43,44",
+    "description": "VANDHANA INTERNATIONAL PVT LTD Precision control in Train Wagon Coupling &",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TVM SIGNALLING AND TRANSPORTATION SYSTEMS PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "32,42",
+    "description": "End-to-end System Integration of Electronic Interlocking, Train Traffic Monitoring System, Centralized Traffic Control & Metro AFC-SLE, in addition to design, development, manufacturing & commissioning of RDPMS, RTR-DMS & Metro AFC Gates",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "TVM SIGNALLING AND VANDHANA INTERNATIONAL PVT LTD TRANSPORTATION SYSTEMS PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 10,
+    "pdf_pages": "33,34,35,36,37,38,39,40,41,45",
+    "description": "SAME AS ABOVE End-to-end System Integration of Electronic Interlocking, Train Traffic Monitoring System,",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "ULTRA CORPOTECH PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "32,42",
+    "description": "Services and Capabilities - Precision Machining \u2022 Heavy Fabrication and Welding \u2022 Heat Treatment \u2022 Robotic Welding and Machining \u2022 Shot blasting, spray painting, CED coating, zinc plating, powder coating, hot-dip galvanizing & glass beading",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ULTRA CORPOTECH PVT LTD VARDHMAN INDUSTRIAL FASTNERS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 10,
+    "pdf_pages": "33,34,35,36,37,38,39,40,41,45",
+    "description": "Services and Capabilities - Precision We are leading manufacturers of Raw Machining \u2022 Heavy Fabrication and Welding material, Forging, Fasteners & Heavy Studs & \u2022 Heat Treatment \u2022 Robotic Welding and Nuts Machining \u2022 Shot blasting, spray painting, CED coating, zinc plating, powder coating, VAS SPECT",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "UNIFIED ELECTRO TECH PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 4,
+    "pdf_pages": "32,42,43,44",
+    "description": "DC/DC Converter, Timing And Clock Devices, Antenna, Connectors, Pressure Sensor, Vibration Sensor, Temp Sensor,speed Sensor, Switches, Emi/emcfilters, Fuses, Relay, Contactors,dc Fan,thermal Solution, Memory, Led, Diode, Capacitor, Inductor, Resistor",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "UNITED TYREKRAFTS PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 14,
+    "pdf_pages": "32,33,34,35,36,37,38,39,40,41,42,43,44,45",
+    "description": "Quick Connect Couplings, Screw Couplings, High Pressure and Flow couplings, Multi-couplings, Cooling and Refrigeration Couplings, Skid Blocks, Ball valves, Check valves, Pressure Relief Valves, Direction Control Valves, Pressure Test Points, Manifold",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VANDHANA INTERNATINAL PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "32,42",
+    "description": "SAME AS ABOVE",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VANDHANA INTERNATIONAL PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 18,
+    "pdf_pages": "32,33,34,35,36,37,38,39,40,41,42,43,44,45",
+    "description": "SAME AS ABOVE",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VARDHMAN INDUSTRIAL FASTNERS",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "32,42",
+    "description": "We are leading manufacturers of Raw material, Forging, Fasteners & Heavy Studs & Nuts",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VAS SPECTROMETERS PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "36,45",
+    "description": "hot-dip galvanizing & glass beading",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VAS SPECTROMETERS PVT LTD VEERA TECHNO TREC PVT LTD",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "32,42",
+    "description": "Fabricated Curved Switches , Switch Expansion Joints 1:20 , 60 Kg Curved Fan Shaped Switches, 1:10, 52 Kg Diamond crossing with movable switches ,Glued Insulated Rail Joints Certification Thick Web Switch Certification, erc, railway Track Fittings",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "VEERA TECHNO TREC PVT LTD UNIFIED ELECTRO TECH PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 10,
+    "pdf_pages": "33,34,35,36,37,38,39,40,41,45",
+    "description": "Fabricated Curved Switches , Switch Expansion Joints 1:20 , 60 Kg Curved Fan DC/DC Converter, Timing And Clock Shaped Switches, 1:10, 52 Kg Diamond Devices, Antenna, Connectors, Pressure crossing with movable switches ,Glued Sensor, Vibration Sensor, Temp Insulated Rail Joints Certification Thick We",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "VENUS SAFETY & HEALTH PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 4,
+    "pdf_pages": "32,36,42,45",
+    "description": "Venus primarily operate in 3 Segments: 1. Industrial Safety: Specialist in Neck-up PPE thru 150+ distributors across India. 2. Medical and Health: Supplier of N95 approved Respirator for State, Central Govt & Hospitals 3. Air Filtration: Filters HVAC",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VESTA AUTOMATION INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "manual research (see description)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "Railways - Pantograph Movement Control, Precision control in Train Wagon Coupling & Door Opening systems. Range of Pneumatic Cylinders, Electric Actuators, Pneumatic Valves & Solenoid valves, Air Treatment Units and Precision Pressure control system.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VINAYAK OIL INDUSTRIES",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "manual research (see description)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "Railway Oil, Railway Greases, Industrial oils, Engine Oils, Gear Oils, Hydraulic Oils, Automotive Greases, Industrial Greases & Specialized Greases",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VOESTALPINE VAE VKN INDIA PVT. LTD.",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "description notes Austrian parent",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "voestalpine Railway Systems is the global market leader for railway infrastructure system solutions. Global track technology company and full-range supplier of fully integrated railway solutions. (Austrian parent group)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "VOSSLOH INDIA",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "description notes German parent/HQ",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "Rail Fastenings, Turnouts for High Speed, Semi-high Speed, Conventional and Heavy Haul tracks; laying technology (Slab, Pre-cast, Embedded, Ballasted); High Speed Rail Grinding; Compact Milling of Rails & Switch Monitoring. (German parent: Vossloh AG)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "WABTEC CORPORATION (WIIPL)",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "USA-style (Corporation); description notes US parent",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "Diesel Electric Locomotives, Brakes, Couplers, Pantographs, HVAC, Relays, digital solutions, rubber components, wagon products. (US parent: Wabtec Corporation; India entity WIIPL)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "WAGNER RAIL GMBH",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany (GmbH); description notes German parent/HQ",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "False alarm-proof fire detection systems, water mist fire-fighting systems for passenger areas, gas/aerosol extinguishing systems for technical areas. (German company)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "WAGO PRIVATE LIMITED",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "description notes German parent/HQ",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "SMPS, Interface & Relay Modules, CTVT, Signal Conditioners, Ground Resistance Signaling Module, Rail-Mount Terminal Block Systems, I/O Systems, PLC/RTU/IPC, Ethernet Switches. (German parent: WAGO Kontakttechnik)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "WELLTEK",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "manual research (see description)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "Data Loggers for Trains and Sub-stations; Current, Voltage, Linear displacement, Strain Gauge, Accelerometer, Pressure Sensor measurement; IoT Solution for Rolling Stock.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "WESTERMO INDIA PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43",
+    "description": "Westermo offers Wireless solutions, Robust on-board switches, and Secure Trackside switches. The products are specially developed for railway and metro environments, built to withstand harsh conditions and exceeding EN 50155 and EN 50121-4 standards",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "WESTERN RAILWAY",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "manual research (see description)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "Indian Railways zonal division. Passenger services: long-distance express, mail, and superfast trains (Rajdhani, Shatabdi, Duronto, Vande Bharat) connecting Mumbai, Ahmedabad and other cities. (Govt of India / Ministry of Railways zone, not a private exhibitor company)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "WISKA INDIA PVT LTD",
+    "origin_flag": "FOREIGN-PARENT (India subsidiary/JV)",
+    "flag_basis": "description notes German parent/HQ",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "Cable Glands, Junction Boxes, Conduits, Maritime Lighting, CCTV Systems, Installation Material for industry, shipbuilding and railways; EMC and explosion-proof solutions. (German parent: WISKA)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "XTRA PRECISION SCREWS PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "manual research (see description)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "High Tensile Fasteners",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "YATINIDHI CONSULTANCY PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "manual research (see description)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "FLS, DPR, Supervision, Consultancy Services, Survey, Etc.",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ZEPHIR RAIL EQUIPMENT PVT. LTD WELSPUN BAPL PRIVATE LIMITED",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43",
+    "description": "Interior & Exterior Trims Functional & Emission Fluid & Energy Storage Composites",
+    "possible_merge_artifact": true
+  },
+  {
+    "company": "ZEPHIR RAIL EQUIPMENT PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "manual research (see description)",
+    "occurrences_in_pdf": 1,
+    "pdf_pages": "43-44 (manually recovered - parser missed this page region)",
+    "description": "(Description not captured in source PDF for this entry.)",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ZF FRIEDRICHSHAFEN AG",
+    "origin_flag": "FOREIGN",
+    "flag_basis": "Germany/Switzerland/Austria (AG)",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "43,44",
+    "description": "system for fire fighting in the passenger area, Rajdhani Express, Shatabdi Express, and gas or aerosol extinguishing systems for Duronto, Vande Bharat, and others, The company is one of the world\u2019s protecting technical areas. connecting major cities like Mumbai, technology leaders in the area of dri",
+    "possible_merge_artifact": false
+  },
+  {
+    "company": "ZIEHL-ABEGG INDIA PVT. LTD.",
+    "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)",
+    "flag_basis": "",
+    "occurrences_in_pdf": 2,
+    "pdf_pages": "43,44",
+    "description": "Systems, Installation & pluggable Maritime Lighting, CCTV Systems, and connectors, I/O Systems, PLC / RTU / IPC, Installation Material for industry, shipbuilding, From Pune facility, ZIEHL-ABEGG offers a Ethernet Switches, Software, and railways, offering EMC, explosion-proof, high-performance Fans ",
+    "possible_merge_artifact": false
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "source_url": "https://www.railtransexpo.com/p/participants-2025.html",
+  "page_title_on_site": "Key Partners and Exhibitors 2025",
+  "caveat": "railtransexpo.com has no dated 'participants-2026' page as of the research date (2026-08-22); this 'participants-2025' page is the most recent named partner/exhibitor list the site publishes. It is unclear whether it was refreshed for the 6th edition (Jul 2026) or is carried over from the 5th edition (2025). Treat edition-year attribution as unconfirmed.",
+  "event_scale_reported": {
+    "edition": "6th (per site event-recap articles, held 3-4 July 2026, Bharat Mandapam, New Delhi)",
+    "exhibitors_reported": "~250 exhibitors (per site copy for the 7th-edition overview page, describing 'previous editions')",
+    "countries_represented_6th_edition": ["India", "Germany", "United States", "United Kingdom", "Austria", "Saudi Arabia"],
+    "daily_footfall_reported": "3,000-5,000/day (per press-style recap article)",
+    "organizer": "Urban Infra Communication Pvt. Ltd. (CIN U92140DL2022PTC392284), New Delhi",
+    "note": "No independently-audited attendance/exhibitor certificate (e.g. UFI) was found; figures are self-reported by the organizer's own site copy."
+  },
+  "named_partners_exhibitors": [
+    {"name": "Jindal Stainless", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "Shyam Steel", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "DB Engineering & Consulting (DB E.C.O.)", "origin_flag": "FOREIGN (Germany - Deutsche Bahn subsidiary)"},
+    {"name": "Jakson Green", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "Western Carriers", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "Jupiter Wagons", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "Rail Chamber (Chamber of Railway Industries)", "origin_flag": "Indian trade body, not a company"},
+    {"name": "NHEV (New Horizon Electric Vehicles)", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "Ease of Doing Business Division", "origin_flag": "Govt/institutional, not a company"},
+    {"name": "CPOS India", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "Viksit Bharat Sankalp", "origin_flag": "Govt of India initiative, not a company"},
+    {"name": "GSV (Gati Shakti Vishwavidyalaya)", "origin_flag": "Indian govt university, not a company"},
+    {"name": "Natural Energy News", "origin_flag": "Media partner, not exhibitor"},
+    {"name": "Siemens", "origin_flag": "FOREIGN (Germany, via Indian subsidiary Siemens Ltd)"},
+    {"name": "RailTel", "origin_flag": "LIKELY INDIAN-DOMESTIC (Indian PSU)"},
+    {"name": "NHLML (National Highways Logistics Management Ltd)", "origin_flag": "Indian PSU"},
+    {"name": "MxV Rail", "origin_flag": "FOREIGN (USA - formerly TTCI, subsidiary of Association of American Railroads)"},
+    {"name": "Kalpataru Projects International", "origin_flag": "LIKELY INDIAN-DOMESTIC"},
+    {"name": "JICA (Japan International Cooperation Agency)", "origin_flag": "FOREIGN (Japan - govt agency, not a company)"},
+    {"name": "IRISET", "origin_flag": "Indian Railways training institute"},
+    {"name": "HMRTC (Haryana Mass Rapid Transit Corporation)", "origin_flag": "Indian state PSU"},
+    {"name": "Hindustan Copper Limited", "origin_flag": "LIKELY INDIAN-DOMESTIC (Indian PSU)"},
+    {"name": "Enginizz", "origin_flag": "LIKELY INDIAN-DOMESTIC (unconfirmed)"},
+    {"name": "DFCCIL (Dedicated Freight Corridor Corporation of India)", "origin_flag": "Indian PSU"},
+    {"name": "CRIS (Centre for Railway Information Systems)", "origin_flag": "Indian Railways PSU"},
+    {"name": "BHEL (Bharat Heavy Electricals Limited)", "origin_flag": "LIKELY INDIAN-DOMESTIC (Indian PSU)"},
+    {"name": "Alstom", "origin_flag": "FOREIGN (France, via Indian subsidiary)"},
+    {"name": "The World Bank", "origin_flag": "FOREIGN (multilateral institution, not a company)"},
+    {"name": "Tata Projects", "origin_flag": "LIKELY INDIAN-DOMESTIC"}
+  ],
+  "additional_media_partners": [
+    "Urban Transport News", "Metro Rail Today", "Cargo Insights"
+  ]
+}

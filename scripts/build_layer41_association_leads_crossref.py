@@ -137,6 +137,40 @@ def load_raw_sources():
                     out.append({"company": name, "country": None})
         rows["India ITME 2022 (international exhibitors)"] = out
 
+    # -- Railways sector: durable repo data (data/trade_fairs/railways/), not
+    # ephemeral scratch -- these survive to future sessions.
+    p = os.path.join(ROOT, "data", "trade_fairs", "railways", "innotrans_2026_exhibitors.csv")
+    if os.path.exists(p):
+        with open(p) as f:
+            rows["InnoTrans 2026 (all exhibitors)"] = [
+                {"company": r["company"], "country": r["country"]} for r in csv.DictReader(f)]
+
+    p = os.path.join(ROOT, "data", "trade_fairs", "railways", "iree_2025_key_exhibitors.json")
+    if os.path.exists(p):
+        entries = json.load(open(p))
+        # foreign/foreign-parent only, excluding rows flagged as likely parser
+        # merge-artifacts (two company names concatenated) -- see that file's
+        # README for the full origin_flag heuristic and its caveats
+        rows["IREE 2025 (foreign / foreign-parent, clean subset)"] = [
+            {"company": e["company"], "country": None} for e in entries
+            if e.get("origin_flag", "").startswith("FOREIGN") and not e.get("possible_merge_artifact")]
+
+    # -- Messe Frankfurt / Messe Düsseldorf: durable repo data, "name" column
+    MESSE_FILES = [
+        ("Light + Building 2026 (Messe Frankfurt)", "messe_frankfurt", "lightbuilding_exhibitors.csv"),
+        ("ISH 2027 (Messe Frankfurt)", "messe_frankfurt", "ish_exhibitors.csv"),
+        ("Heimtextil 2027 (Messe Frankfurt)", "messe_frankfurt", "heimtextil_exhibitors.csv"),
+        ("interpack 2026 (Messe Düsseldorf)", "messe_duesseldorf", "interpack_exhibitors.csv"),
+        ("EuroShop 2026 (Messe Düsseldorf)", "messe_duesseldorf", "euroshop_exhibitors.csv"),
+        ("wire & Tube Düsseldorf 2026 (Messe Düsseldorf)", "messe_duesseldorf", "wire_dusseldorf_exhibitors.csv"),
+    ]
+    for label, subdir, fname in MESSE_FILES:
+        p = os.path.join(ROOT, "data", "trade_fairs", subdir, fname)
+        if os.path.exists(p):
+            with open(p) as f:
+                rows[label] = [{"company": r["name"], "country": r.get("country_label")}
+                               for r in csv.DictReader(f) if r.get("name")]
+
     return rows
 
 

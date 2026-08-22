@@ -1085,9 +1085,9 @@
     "total_exhibitors": 3082,
     "note": "5 segments: Railway Technology, Railway Infrastructure, Public Transport, Interiors, Tunnel Construction; occupies all 42 Berlin Exhibition Grounds halls"
    },
-   "value": "HIGHEST of the global railway sources -- LIVE-VERIFIED 2026-08-22 by direct browser session: real company+address+hall/stand+segment+description per exhibitor, NO LOGIN required to browse (login only gates the separate 'Participants'/networking feature). Confirmed real sample: Knorr-Bremse, ABB Ltd. (Switzerland), 3M Deutschland, Aarsleff Rail A/S (Denmark), 4AI Systems (Australia). Backend is NOT a simple REST API (initial curl attempts hit a CloudFront/S3 SPA shell returning the same HTML for every path, and the app appears to route data through blob: URLs) -- full 3,082-company extraction needs a dedicated scroll-pagination session, not a one-shot fetch.",
+   "value": "HIGHEST of the global railway sources -- FULL EXTRACTION COMPLETE 2026-08-22, all 3,082 exhibitors, no sampling, no gaps (verified against the API's own `count` field, no duplicate IDs). Method: the site is a Corussoft 'EventGuide' white-label platform (confirmed via JS bundle analysis) -- passive network-request observation showed only static assets, so the real data call was caught by MONKEY-PATCHING window.fetch inside the live page and triggering a UI search. True backend: POST https://live.messebackend.aws.corussoft.de/webservice/search (form-urlencoded, short-lived anonymous beConnectionToken JWT, reusable via curl once captured -- no AWS SigV4 needed). Paginated with filterlist=entity_orga&order=lexic&numresultrows=75&startresultrow=N. 61 countries: Germany 1,039, China 241, France 217, Italy 215, Switzerland 143, INDIA 92, USA 50. Data: data/trade_fairs/railways/innotrans_2026_exhibitors.csv (company, country, city, postcode, hall, stand, segment, description, id). 🔑 This Corussoft platform pattern may be reused by OTHER Messe Berlin / white-label-hosted fairs -- worth checking for other events on the same platform before assuming each new fair needs its own bespoke scrape.",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "biennial; dedicated follow-up session for full pagination"
+   "recheck_recommended": "biennial; re-run the same fetch-patch method for the next edition"
   },
   {
    "name": "IREE (International Railway Equipment Exhibition)",
@@ -1096,11 +1096,13 @@
    "last_edition": {
     "year": 2025,
     "location": "Bharat Mandapam, Delhi",
-    "note": "16th edition, CII + Ministry of Railways, Asia's largest rail-sector event"
+    "exhibitor_list_url": "https://www.ireeindia.com/pdf/2025/exhibition-form/IREE-Exhibitors-List.pdf",
+    "total_exhibitors": 250,
+    "note": "16th edition, CII + Ministry of Railways, Asia's largest rail-sector event; PDF's internal title is 'KEY EXHIBITORS' -- a submitted-profile directory, not necessarily literally all 450+ exhibitors the event claims"
    },
-   "value": "HIGH potential -- dedicated exhibitor-list PDF confirmed to exist (IREE-Exhibitors-List.pdf on ireeindia.com) but not yet downloaded/parsed",
+   "value": "HIGH -- 250 entries extracted (font-weight-aware PDF parsing), 34 flagged foreign/foreign-parent by a legal-suffix + description heuristic (27 without parser-merge artifacts). Genuine finds in the clean subset: Wabtec Corporation (WIIPL, US rail giant), ZF Friedrichshafen AG, Vossloh India (German parent), Voestalpine VAE VKN India (Austrian parent), AB Connectors Ltd (TT Electronics plc subsidiary -- also independently seen in the VDA Group III roster). 🔴 Some 'clean' rows are still parser artifacts despite the flag (e.g. 'Corporation Limited' alone, two names concatenated in a couple of rows) -- spot-check before treating any single row as ground truth. Data: data/trade_fairs/railways/iree_2025_key_exhibitors.json.",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "download and parse the exhibitor PDF"
+   "recheck_recommended": "annual, re-parse against the next edition's PDF"
   },
   {
    "name": "RailTrans Expo",
@@ -1111,9 +1113,9 @@
     "location": "Bharat Mandapam, Delhi",
     "note": "6th edition, Jul 2026"
    },
-   "value": "MEDIUM, unconfirmed -- dedicated event site exists, exhibitor-list page not yet checked",
+   "value": "LOW -- confirmed genuine gap, not under-researched: no exhibitor-list PDF or structured export exists. Only a 'Key Partners and Exhibitors 2025' page with ~29 headline sponsors (Siemens, Alstom, DB Engineering, MxV Rail, JICA, Jindal Stainless, BHEL). Organizer is a private events company (Urban Infra Communication Pvt. Ltd.), not CII/Ministry-run like IREE; self-reported ~250 exhibitors/6 countries/3-5k daily footfall are UNAUDITED claims, not independently verified.",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "check railtransexpo.com for a list page"
+   "recheck_recommended": "low priority until a real roster surfaces"
   },
   {
    "name": "Light + Building",
@@ -1121,11 +1123,13 @@
    "scope": "Global (Frankfurt)",
    "last_edition": {
     "year": 2026,
-    "note": "lighting, electrical engineering, building/home automation; biennial"
+    "note": "lighting, electrical engineering, building/home automation; biennial",
+    "exhibitor_list_url": "https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search?findEventVariable=LIGHTBUILDING",
+    "total_exhibitors": "1884 (full roster pulled)"
    },
-   "value": "CANDIDATE, not yet deep-dived -- Messe Frankfurt exhibitor search tools exist for all its shows",
+   "value": "HIGH -- deep-dived 2026-08-22, full 1884-exhibitor roster pulled via the shared Messe Frankfurt exhibitor-service API (same platform as Automechanika). Top countries China 497, Germany 411, Italy 150. Data: data/trade_fairs/messe_frankfurt/lightbuilding_exhibitors.csv",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "deep-dive follow-up"
+   "recheck_recommended": "biennial"
   },
   {
    "name": "ISH",
@@ -1133,11 +1137,13 @@
    "scope": "Global (Frankfurt)",
    "last_edition": {
     "year": 2027,
-    "note": "HVAC, water, heating, sanitation/building technology; biennial"
+    "note": "HVAC, water, heating, sanitation/building technology; biennial",
+    "exhibitor_list_url": "https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search?findEventVariable=ISH",
+    "total_exhibitors": "2127 (full roster pulled)"
    },
-   "value": "CANDIDATE, not yet deep-dived",
+   "value": "HIGH -- deep-dived 2026-08-22, full 2127-exhibitor roster pulled. Top countries Germany 579, Italy 345, China 247, India 31. Data: data/trade_fairs/messe_frankfurt/ish_exhibitors.csv",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "deep-dive follow-up"
+   "recheck_recommended": "biennial"
   },
   {
    "name": "Heimtextil",
@@ -1145,11 +1151,13 @@
    "scope": "Global (Frankfurt)",
    "last_edition": {
     "year": 2027,
-    "note": "home & contract textiles -- distinct from ITMA's machinery focus; annual"
+    "note": "home & contract textiles -- distinct from ITMA's machinery focus; annual",
+    "exhibitor_list_url": "https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search?findEventVariable=HEIMTEXTIL",
+    "total_exhibitors": "1182 (full roster pulled)"
    },
-   "value": "CANDIDATE -- extends layer 39's textile coverage into home/contract textiles specifically",
+   "value": "HIGH -- deep-dived 2026-08-22, full 1182-exhibitor roster pulled. India is the #1 exhibiting country (304 of 1182, 25.7%) -- strongest India signal of any fair checked this session. Data: data/trade_fairs/messe_frankfurt/heimtextil_exhibitors.csv",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "deep-dive follow-up"
+   "recheck_recommended": "biennial"
   },
   {
    "name": "interpack",
@@ -1157,11 +1165,13 @@
    "scope": "Global (Düsseldorf)",
    "last_edition": {
     "year": 2026,
-    "note": "packaging processes & machinery; every 3 years"
+    "note": "packaging processes & machinery; every 3 years",
+    "exhibitor_list_url": "https://www.interpack.com/vis-api/vis/v1/en/directory/<a-z|other>",
+    "total_exhibitors": "3085 (full roster pulled)"
    },
-   "value": "CANDIDATE, flagged as a genuine sector gap by the scouting agent",
+   "value": "HIGH -- deep-dived 2026-08-22, full 3085-exhibitor roster pulled via the Messe Duesseldorf DIMEDIS 'vis' A-Z directory API. Top countries Germany 609, China 451, Italy 436, India 111. Data: data/trade_fairs/messe_duesseldorf/interpack_exhibitors.csv",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "deep-dive follow-up"
+   "recheck_recommended": "biennial"
   },
   {
    "name": "EuroShop",
@@ -1169,11 +1179,13 @@
    "scope": "Global (Düsseldorf)",
    "last_edition": {
     "year": 2026,
-    "note": "retail technology, store design/fit-out; every 3 years"
+    "note": "retail technology, store design/fit-out; every 3 years",
+    "exhibitor_list_url": "https://www.euroshop-tradefair.com/vis-api/vis/v1/en/directory/<a-z|other>",
+    "total_exhibitors": "2014 (full roster pulled)"
    },
-   "value": "CANDIDATE, not yet deep-dived",
+   "value": "MEDIUM -- deep-dived 2026-08-22, full 2014-exhibitor roster pulled. Top countries Germany 586, China 244, Italy 177; India only 8 (weak signal, retail tech/store fit-out not an India strength area yet). Data: data/trade_fairs/messe_duesseldorf/euroshop_exhibitors.csv",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "deep-dive follow-up"
+   "recheck_recommended": "biennial"
   },
   {
    "name": "wire & Tube Düsseldorf",
@@ -1181,11 +1193,13 @@
    "scope": "Global (Düsseldorf)",
    "last_edition": {
     "year": 2026,
-    "note": "wire, cable, tube & pipe manufacturing -- finished-goods, distinct from GIFA/METEC's raw-material focus; biennial"
+    "note": "wire, cable, tube & pipe manufacturing -- finished-goods, distinct from GIFA/METEC's raw-material focus; biennial",
+    "exhibitor_list_url": "https://www.wire-tradefair.com/vis-api/vis/v1/en/directory/<a-z|other> (tube-tradefair.com shares an IDENTICAL dataset -- co-located sister fairs, one combined roster)",
+    "total_exhibitors": "2743 (full roster pulled; wire+Tube combined, not additive)"
    },
-   "value": "CANDIDATE -- extends existing Steel & Metals coverage downstream",
+   "value": "HIGH -- deep-dived 2026-08-22, full 2743-exhibitor combined roster pulled. Top countries China 679, Germany 519, Italy 367, India 167 (#5). Data: data/trade_fairs/messe_duesseldorf/wire_dusseldorf_exhibitors.csv",
    "last_verified": "2026-08-22",
-   "recheck_recommended": "deep-dive follow-up"
+   "recheck_recommended": "biennial"
   },
   {
    "name": "drupa",
@@ -1224,7 +1238,32 @@
    "value": "CANDIDATE -- exhibitor/partner lists published per edition, not yet pulled",
    "last_verified": "2026-08-22",
    "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "Messe Frankfurt -- unified cross-show India pull",
+   "sector": "Cross-sector platform note",
+   "scope": "Global (all Messe Frankfurt shows)",
+   "last_edition": {
+    "year": 2026,
+    "exhibitor_list_url": "api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search (no findEventVariable filter = searches ALL shows at once, hitsTotal 49,665)",
+    "note": "public apikey baked into the site's own JS bundle, reusable via plain curl/urllib once captured from one live browser session"
+   },
+   "value": "🔑 PLATFORM-LEVEL FINDING, not a single event: omitting the event filter on Messe Frankfurt's shared exhibitor-service API searches its ENTIRE global show portfolio in one query. A country-filtered India-only pull returned 3,114 India-HQ'd exhibitors spanning 40+ Messe Frankfurt shows worldwide (ACMA Automechanika New Delhi, Ambiente, Paperworld Mumbai/Delhi, Media Expo, and more) -- a single call surfaces India engagement across the WHOLE Messe Frankfurt portfolio at once, not just the individually-named fairs in this registry. Also confirmed live but not yet pulled: Ambiente (findEventVariable=AMBIENTE) and Techtextil (=TECHTEXTIL); Formnext did not respond to plain fetch, a genuine gap not a fabrication. Data: data/trade_fairs/messe_frankfurt/ (india-wide pull saved separately, see that dir's README).",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "re-run the India-only pull periodically; cheap (one API call) high-value refresh"
+  },
+  {
+   "name": "Messe Düsseldorf -- shared DIMEDIS 'vis' platform note",
+   "sector": "Cross-sector platform note",
+   "scope": "Global (multiple Düsseldorf shows)",
+   "last_edition": {
+    "year": 2026,
+    "note": "one shared backend across Düsseldorf-hosted fairs, confirmed by a cross-domain test: hitting interpack.com's server while setting the X-Vis-Domain header to k-online.com returned K Fair's own data -- the domain is just a routing key, not a separate backend"
+   },
+   "value": "🔑 PLATFORM-LEVEL FINDING: the same '<domain>/vis-api/vis/v1/en/directory/<a-z|other>' API (already used for K Fair and GIFA/METEC) powers interpack, EuroShop, and wire/Tube Düsseldorf, confirmed. Same platform also live (not yet pulled) for **boot**, **drupa**, **glasstec**, **A+A**, **Caravan Salon** -- any Messe Düsseldorf fair is now a near-zero-marginal-cost pull once the domain is known, same pagination pattern each time.",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "pull the remaining known-live fairs (boot, drupa, glasstec, A+A) as cheap follow-ups"
   }
  ],
- "coverage_note": "Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 52 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass."
+ "coverage_note": "Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 54 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass."
 }

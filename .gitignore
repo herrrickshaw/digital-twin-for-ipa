@@ -1,2 +1,4 @@
 scripts/__pycache__/
 data/registers/state_news.sqlite
+.DS_Store
+graphify-out/

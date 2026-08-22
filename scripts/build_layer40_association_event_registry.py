@@ -1,0 +1,627 @@
+#!/usr/bin/env python3
+"""Layer 40 — association + trade-fair event registry, for ONGOING MONITORING.
+
+Different purpose from layer 39 (a one-time textile-sector membership
+snapshot): this is a durable SourceRoute-style registry (same convention as
+layer 15's portal directory: URL + access method + liveness, not raw data)
+that says WHERE to re-check for updated member/exhibitor lists, and WHEN
+(next event edition), so a future refresh knows what to re-fetch rather than
+starting research from zero. Two linked record types:
+
+  - `associations`: one row per trade body -- sector, country scope, member
+    directory URL + access method (public HTML / PDF / JS-search / paywalled
+    / login-gated), member count, which events its members are known to
+    exhibit at.
+  - `events`: one row per trade fair -- sector, frequency, last known
+    edition (with exhibitor-list URL if found), next edition if known,
+    which associations' members were cross-validated as exhibitors.
+
+The India-fair-exhibitor-list pattern (proven on India ITME 2022: 148
+international exhibitors, directly cross-validating Swiss/German/Italian/
+Japanese association membership) is the highest-value discovery type in
+this registry -- an exhibitor list is a REVEALED PREFERENCE signal (a
+company paid to be physically present in the Indian market), stronger than
+a bare association-membership record.
+
+Usage: python3 scripts/build_layer40_association_event_registry.py
+Output: layers/40_association_event_registry.json + docs/ASSOCIATION_EVENT_REGISTRY.md
+"""
+import datetime as dt
+import json
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_JSON = os.path.join(ROOT, "layers", "40_association_event_registry.json")
+OUT_DOC = os.path.join(ROOT, "docs", "ASSOCIATION_EVENT_REGISTRY.md")
+
+# ---------------------------------------------------------------------------
+# ASSOCIATIONS -- sector, scope, access method, linked events
+# ---------------------------------------------------------------------------
+ASSOCIATIONS = [
+    {"name": "Swiss Textile Machinery Association", "sector": "Textiles & Apparel", "scope": "Switzerland",
+     "url": "https://swisstextilemachinery.ch", "member_directory": "swisstextilemachinery.ch/members",
+     "access_method": "public HTML (full) + downloadable PDF (2023, 2025 editions -- richer: address/email/competence)",
+     "pdf_urls": ["https://www.swisstextilemachinery.ch/uploads/files/Swissmem-STM-Members_2025-1.pdf",
+                  "https://www.swisstextilemachinery.ch/uploads/files/Swissmem-Members_Leporello_2023.pdf"],
+     "member_count": 42, "linked_events": ["India ITME", "ITMA", "ITMA Asia+CITME"],
+     "last_verified": "2026-08-22", "recheck_recommended": "annual, or before each India ITME cycle (biennial)"},
+    {"name": "CEMATEX", "sector": "Textiles & Apparel", "scope": "Europe (federation of 9 national bodies)",
+     "url": "https://cematex.com", "member_directory": "cematex.com/our-members",
+     "access_method": "public HTML, federation-level only (9 national associations, not companies)",
+     "member_count": 9, "linked_events": ["ITMA", "ITMA Asia+CITME"],
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "ITMF", "sector": "Textiles & Apparel", "scope": "Global (40+ countries)",
+     "url": "https://itmf.org", "member_directory": "itmf.org/membership/members + /associate-members",
+     "access_method": "public HTML partial (national members 19/40+) + full (associate members 19) "
+                      "+ login-gated (corporate members); directory PDF path returns HTTP 504, dead",
+     "member_count": None, "linked_events": [],
+     "note": "India represented via 3 associate bodies: CAI, CITI, Texprocil -- no national-member seat",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual (also publishes ITMSS annual shipment stats)"},
+    {"name": "VDMA Textile Machinery", "sector": "Textiles & Apparel", "scope": "Germany (+ AT/FR/NL/IT/PT/CH/SE ~13%)",
+     "url": "https://vdma.eu/en/textile-machinery", "member_directory": "vdma.eu/en/members-textile-machinery",
+     "access_method": "public but JS-rendered A-Z search UI, not scrapable via plain fetch; no PDF found",
+     "member_count": 140, "linked_events": ["ITMA", "India ITME"],
+     "note": "Runs own India offices: Bangalore, Kolkata, New Delhi/Noida, Mumbai",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual; needs browser automation for full scrape"},
+    {"name": "ACIMIT", "sector": "Textiles & Apparel", "scope": "Italy",
+     "url": "https://acimit.it", "member_directory": "acimit.it/en/acimit-members/product-search/",
+     "access_method": "public HTML (full, 185 members, segment+city tagged); General Directory PDF "
+                      "exists but Issuu-viewer-gated, no raw .pdf URL found (editions 2014/15/17/20/2023)",
+     "member_count": 185, "linked_events": ["ITMA", "India ITME"],
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "UKFT (UK Fashion & Textile Association)", "sector": "Textiles & Apparel", "scope": "United Kingdom",
+     "url": "https://ukft.org", "member_directory": "ukft.org/who-we-are/about-us/members",
+     "access_method": "public HTML (500 of claimed 2,500+ members, many unlisted by request); "
+                      "member area PDFs are quarterly newsletters only, no directory PDF",
+     "member_count": 500, "linked_events": [],
+     "note": "Member-paywalled India market guide exists (tied to UK-India CETA, force 15-Jul-2026)",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "The Textile Institute", "sector": "Textiles & Apparel", "scope": "Global (14 countries)",
+     "url": "https://textileinstitute.org", "member_directory": "textileinstitute.org/my-ti/members-directory/",
+     "access_method": "public HTML searchable DB, no PDF", "member_count": 50, "linked_events": [],
+     "note": "5 of 50 corporate members are Indian (Gherzi, NITRA, SITRA, RmKV Silks, ITTA)",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "BTMA (British Textile Machinery Association)", "sector": "Textiles & Apparel", "scope": "United Kingdom",
+     "url": "https://btma.org.uk", "member_directory": "btma.org.uk/our-members/",
+     "access_method": "public HTML (full, 49 members); ITMA-2023 exhibitor-subset PDF also found "
+                      "(btma.org.uk/wp-content/uploads/btma-itma-2023-brochure.pdf, ~31 members)",
+     "member_count": 49, "linked_events": ["ITMA"],
+     "last_verified": "2026-08-22", "recheck_recommended": "annual, or before each ITMA cycle"},
+    {"name": "JTMA (Japan Textile Machinery Association)", "sector": "Textiles & Apparel", "scope": "Japan",
+     "url": "http://www.jtma.or.jp", "member_directory": "jtma.or.jp/member/",
+     "access_method": "UNRELIABLE -- site returned ECONNREFUSED during research; only secondary-"
+                      "sourced (Wikipedia + search snippets), 5 names live-corroborated via search",
+     "member_count": None, "linked_events": ["India ITME"],
+     "last_verified": "2026-08-22", "recheck_recommended": "retry direct fetch; low confidence until then"},
+    {"name": "CNTAC (China National Textile and Apparel Council)", "sector": "Textiles & Apparel", "scope": "China",
+     "url": "cntac.org.cn", "member_directory": "N/A -- 42-unit federation of sub-associations/institutes/universities, not a company directory",
+     "access_method": "partial council-roster PDF retrieved directly (~115 of likely 200+ entries)",
+     "member_count": None, "linked_events": ["ITMA Asia+CITME"],
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority -- structurally not a company roster"},
+    {"name": "KOFOTI (Korea Federation of Textile Industries)", "sector": "Textiles & Apparel", "scope": "Korea",
+     "url": "kofoti.or.kr", "member_directory": "NONE FOUND",
+     "access_method": "no public member directory; affiliated portal koreatextile.org claims ~4,000 "
+                      "manufacturers by category but no extractable company names",
+     "member_count": None, "linked_events": [],
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority until a real directory surfaces"},
+
+    # -- Electronics & Semiconductors / White Goods --------------------------
+    {"name": "SEMI", "sector": "Electronics & Semiconductors", "scope": "Global",
+     "url": "https://www.semi.org", "member_directory": "semi.org/en/resources/member-directory",
+     "access_method": "structure confirmed (~3,000 members, country/segment filterable) but "
+                      "Cloudflare-blocked (403 on direct fetch/curl) -- needs live browser",
+     "member_count": 3000, "linked_events": ["SEMICON India", "SEMICON West", "electronica"],
+     "last_verified": "2026-08-22", "recheck_recommended": "retry with live browser session"},
+    {"name": "IPC / Global Electronics Association", "sector": "Electronics & Semiconductors", "scope": "Global",
+     "url": "https://www.electronics.org", "member_directory": "electronics.org/member-directory",
+     "access_method": "public HTML, no login, country-filterable, verified live",
+     "member_count": None, "linked_events": [],
+     "note": "Country facet counts confirmed real: India 739, China 1317, US 7685, Germany 640, "
+            "UK 644, Taiwan 332, France 335, Japan 275, Singapore 182, South Korea 120",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "CECED Europe / APPLiA (Home Appliance Europe)", "sector": "White Goods & Electricals", "scope": "Europe",
+     "url": "https://appliaeurope.eu", "member_directory": "ceced.eu / appliaeurope.eu members page",
+     "access_method": "direct fetch blocked (403); member list reconstructed via search-engine "
+                      "summaries only, NOT raw-scraped -- spot-verify before formal use",
+     "member_count": None, "linked_events": ["ELECRAMA"],
+     "note": "Sample: Arçelik, Ariston Thermo, BSH, Candy, Daikin, De'Longhi, Electrolux, Gorenje, "
+            "LG, Liebherr, Miele, Panasonic, Philips, Samsung, SEB, Vestel, Vorwerk, Whirlpool",
+     "last_verified": "2026-08-22", "recheck_recommended": "verify raw on ceced.eu/appliaeurope.eu directly"},
+    {"name": "AHAM (Association of Home Appliance Manufacturers)", "sector": "White Goods & Electricals", "scope": "United States",
+     "url": "https://www.aham.org", "member_directory": "aham.org membership page",
+     "access_method": "direct fetch blocked; only a partial Canada-council fragment surfaced "
+                      "(Alticor, BISSELL, Blueair, Brown Stove Works, BSH, Panasonic Canada, "
+                      "Samsung Canada) -- LOW CONFIDENCE, needs authenticated pull",
+     "member_count": 150, "linked_events": [],
+     "last_verified": "2026-08-22", "recheck_recommended": "needs direct authenticated pull from aham.org"},
+    {"name": "CEAMA (Consumer Electronics and Appliances Manufacturers Association)", "sector": "White Goods & Electricals", "scope": "India",
+     "url": "https://ceama.in", "member_directory": "NONE ACCESSIBLE",
+     "access_method": "403 on both WebFetch and curl -- no member data obtained",
+     "member_count": None, "linked_events": ["ELECRAMA"],
+     "note": "India's own white-goods association -- the one clean gap in this sector, worth a "
+            "manual visit or Wayback snapshot",
+     "last_verified": "2026-08-22", "recheck_recommended": "manual browser visit or Wayback Machine"},
+
+    # -- Auto, EV & Components ------------------------------------------------
+    {"name": "VDA (Verband der Automobilindustrie)", "sector": "Auto, EV & Components", "scope": "Germany",
+     "url": "https://www.vda.de", "member_directory": "vda.de/en/members/manufacturer-group-{I,II,III}",
+     "access_method": "public HTML, live site, fully scraped across 3 tiers",
+     "member_count": 567, "linked_events": ["IAA Mobility", "Automechanika Frankfurt", "Auto Expo Components"],
+     "note": ("Group I (21 OEMs): Audi, BMW, Daimler Truck, Porsche, Ford-Werke, IVECO Deutschland, "
+             "MAN Truck & Bus, Mercedes-Benz AG/Group, Opel, Stellantis Germany, TRATON, Volkswagen. "
+             "Group II (62 trailer/body/bus): Daimler Buses, Schmitz Cargobull, Goldhofer, Kässbohrer, "
+             "Erwin Hymer Group. Group III (484 parts suppliers, largest verified roster in this "
+             "registry): Robert Bosch, Continental, ZF Friedrichshafen, Schaeffler, Valeo, Magna "
+             "(Germany), MAHLE, Denso Automotive Deutschland, Aptiv Services Deutschland, Autoliv."),
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "JAMA (Japan Automobile Manufacturers Association)", "sector": "Auto, EV & Components", "scope": "Japan",
+     "url": "https://www.jama.or.jp", "member_directory": "jama.or.jp/english/links/member-manufacuturers.html",
+     "access_method": "public HTML, FULL list, verified", "member_count": 14, "linked_events": ["Auto Expo Components"],
+     "note": ("Complete: Daihatsu, Hino Motors, Honda, Isuzu, Kawasaki Motors, Mazda, Mitsubishi "
+             "Motors, Mitsubishi Fuso Truck & Bus, Nissan, Subaru, Suzuki, Toyota, UD Trucks, "
+             "Yamaha Motor. OEM-only, no component-tier members. (GM Japan = former member.)"),
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "CLEPA (European Association of Automotive Suppliers)", "sector": "Auto, EV & Components", "scope": "Europe",
+     "url": "https://clepa.eu", "member_directory": "clepa.eu/flipbooks/membercatalogue/ (JS flipbook, not fetchable headlessly)",
+     "access_method": "partial (~30 of 116 corporate members confirmed via search) -- full roster "
+                      "needs a live-browser session against the flipbook",
+     "member_count": 116, "linked_events": ["IAA Mobility", "Automechanika Frankfurt"],
+     "note": ("~3,000 companies represented via 116 corporate + 12 national association + 19 "
+             "associate members. Confirmed corporate sample: Bosch, Continental, Valeo, ZF, Magna, "
+             "Schaeffler, Aptiv, Denso, Aisin, Lear, Marelli, Forvia, Brembo, SKF, Knorr-Bremse, "
+             "Tenneco, Veoneer, Nexteer, BACC, Hengst, HL Mando, Horse, Murata; associate: OXA, "
+             "Mobileye, Alcoa Wheels."),
+     "last_verified": "2026-08-22", "recheck_recommended": "live-browser pull of the flipbook for the full 116"},
+    {"name": "ACMA (Automotive Component Manufacturers Association of India)", "sector": "Auto, EV & Components", "scope": "India",
+     "url": "https://www.acma.in", "member_directory": "N/A -- 750+ Indian manufacturer members only, no foreign roster",
+     "access_method": "confirmed structurally: ACMA holds MOUs (not memberships) with counterpart "
+                      "bodies in 27 countries incl. VDA/CLEPA/MEMA/JAMA -- use as context, not a target list",
+     "member_count": 750, "linked_events": ["Auto Expo Components", "ACMA Automechanika New Delhi"],
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority -- structurally not a foreign-company source"},
+
+    # -- Pharma & Bulk Drugs / Medical Devices --------------------------------
+    {"name": "EFPIA (European Federation of Pharmaceutical Industries and Associations)", "sector": "Pharma & Bulk Drugs", "scope": "Europe",
+     "url": "https://efpia.eu", "member_directory": "efpia.eu/about-us/membership/",
+     "access_method": "public HTML, FULL list, verified", "member_count": 47, "linked_events": ["CPHI Worldwide"],
+     "note": ("35 full corporate: AbbVie, Almirall, Amgen, Astellas, AstraZeneca, Bayer, Biogen, "
+             "Boehringer Ingelheim, BMS, Chiesi, CSL Behring, CSL Vifor, Daiichi Sankyo, Gilead, "
+             "Grünenthal, GSK, Ipsen, J&J, LEO Pharma, Eli Lilly, Lundbeck, Menarini, Merck KGaA, "
+             "MSD, Novartis, Novo Nordisk, Otsuka, Pfizer, Pierre Fabre, Roche, Sanofi, Servier, "
+             "Takeda, Teva, UCB; 4 affiliate + 8 SME members; 18 national assoc. full + 17 affiliate."),
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "PhRMA", "sector": "Pharma & Bulk Drugs", "scope": "United States",
+     "url": "https://phrma.org", "member_directory": "phrma.org/membership (JS-rendered)",
+     "access_method": "reconciled from Wikipedia/Ballotpedia citing PhRMA's own disclosures (June "
+                      "2025), not raw-scraped",
+     "member_count": 31, "linked_events": ["CPHI Worldwide"],
+     "note": ("Alkermes, Amgen, Astellas, AstraZeneca (rejoined 2025), Bayer, Biogen, BioMarin, "
+             "Boehringer Ingelheim, BMS, CSL Behring, Daiichi Sankyo, Eisai, Eli Lilly, EMD Serono, "
+             "Genentech, Genmab, Gilead, GSK, Incyte, Ipsen, J&J, Lundbeck, Merck & Co., Neurocrine, "
+             "Novartis, Novo Nordisk, Otsuka, Pfizer, Sage Therapeutics, Sanofi, Takeda, UCB. "
+             "AbbVie and Teva have EXITED in recent years -- verify current before assuming membership."),
+     "last_verified": "2026-08-22", "recheck_recommended": "verify raw on phrma.org/membership"},
+    {"name": "MedTech Europe", "sector": "Medical Devices", "scope": "Europe",
+     "url": "https://www.medtecheurope.org", "member_directory": "medtecheurope.org/about-us/members/",
+     "access_method": "confirmed real, JS-filterable, didn't fully unroll via fetch",
+     "member_count": 300, "linked_events": ["MEDICA", "Medical Fair India"],
+     "note": "Sample: Abbott, Alcon, Ambu, Boston Scientific, J&J, Medtronic, Philips, Roche, "
+            "Siemens Healthineers, Smith & Nephew, Stryker; ~40 national medtech associations also listed",
+     "last_verified": "2026-08-22", "recheck_recommended": "needs live browser to unroll full filter"},
+    {"name": "AdvaMed", "sector": "Medical Devices", "scope": "United States",
+     "url": "https://www.advamed.org", "member_directory": "advamed.org/membership-join/membership-directory/",
+     "access_method": "confirmed real, 1,000+ companies, partial extraction (60+)",
+     "member_count": 1000, "linked_events": ["MEDICA", "Medical Fair India"],
+     "note": "Sample: Abbott, Boston Scientific, J&J MedTech, Medtronic, Stryker, Zimmer Biomet, "
+            "GE HealthCare, Siemens Healthineers, Canon Medical, Bio-Rad, bioMérieux, Hologic, "
+            "Intuitive Surgical, DexCom, Insulet, Tandem Diabetes; sub-divisions AdvaMedDx, AdvaMed Accel",
+     "last_verified": "2026-08-22", "recheck_recommended": "live browser for full 1,000+"},
+
+    # -- Green Energy & Fuels / Chemicals & Plastics --------------------------
+    {"name": "WindEurope", "sector": "Green Energy & Fuels", "scope": "Europe (35+ countries)",
+     "url": "https://windeurope.org", "member_directory": "windeurope.org/membership/meet-our-members",
+     "access_method": "official archival PDF found (Aug 2024 snapshot, 40 pages) -- only letters "
+                      "A-D (page 1 of 4) extracted; trivial to complete",
+     "pdf_url": "https://cms.influencemap.net/site/data/001/589/WindEurope_members_Aug2024-.pdf",
+     "member_count": 600, "linked_events": ["WindEnergy Hamburg", "Intersolar Europe"],
+     "note": ("24 Leading Members: Acciona, EDF Renouvelables, EDP, Enel Green Power, Enercon, "
+             "Engie, Equinor, ERG, GE Vernova, Hitachi Energy, Iberdrola, Nordex, Ørsted, Repsol, "
+             "RES, RWE, Shell, Siemens Energy, TPI, Vattenfall, Vestas, ZF Wind Power. A-D sample: "
+             "ABB, ArcelorMittal, Arup, Axpo, BASF Renewable Energy, BayWa r.e., BP, Brookfield "
+             "Renewable, Cadeler, Covestro Deutschland, Dassault Systèmes, DEME Offshore."),
+     "last_verified": "2026-08-22", "recheck_recommended": "complete E-Z pages from the same PDF"},
+    {"name": "SolarPower Europe", "sector": "Green Energy & Fuels", "scope": "Europe",
+     "url": "https://solarpowereurope.org", "member_directory": "solarpowereurope.org/membership/meet-our-members (JS, empty on fetch)",
+     "access_method": "THIRD-PARTY MIRROR ONLY (aalep.eu lobbying-transparency snapshot) -- "
+                      "directional, not primary-sourced, verify before formal use",
+     "member_count": 210, "linked_events": ["Intersolar Europe"],
+     "note": "Sample: APESF, APREN, APPA, BSW Germany, Holland Solar, Swissolar, UNEF Spain; "
+            "corporates ABB, Amazon, E.ON, Enel, Google, Huawei, Siemens, Tesla",
+     "last_verified": "2026-08-22", "recheck_recommended": "verify against live site or browser-driven filter pull"},
+    {"name": "Cefic (European Chemical Industry Council)", "sector": "Chemicals & Plastics", "scope": "Europe (+ global affiliates)",
+     "url": "https://cefic.org", "member_directory": "cefic.org (ACOM corporate members list not fully retrieved)",
+     "access_method": "TWO full official PDFs obtained (Partner Companies, Associated Companies); "
+                      "main ACOM corporate-member list (hundreds of EU producers) not retrieved",
+     "member_count": 670, "linked_events": ["ACHEMA", "K Fair", "ChemTECH World Expo"],
+     "note": ("Partner Companies (60, full): Avient, KBR, Linde Engineering, Lummus Technology, "
+             "Schneider Electric, Outotec, Group Roullier, VTG. Associated Companies (23, full, "
+             "non-European producers): includes TWO India-HQ'd firms -- Gujarat Fluorochemicals "
+             "and Jubilant Pharmaceuticals -- plus Petronas, Equate Petrochemicals, Saudi Kayan, "
+             "OCP, Methanex, Daicel/Asahi Kasei/Adeka/Tayca, Lomon Billions."),
+     "last_verified": "2026-08-22", "recheck_recommended": "pull the ACOM corporate list via the Scribd mirror referenced on cefic.org"},
+    {"name": "Austmine (Australia's mining equipment, technology & services industry association)",
+     "sector": "Specialty Steel & Metals", "scope": "Australia",
+     "url": "https://www.austmine.com.au", "member_directory": "austmine.com.au/members (not yet scraped)",
+     "access_method": "identified as the organiser of Australia's national delegation to IMME 2024 "
+                      "Kolkata (10 exhibitors, largest non-India contingent) -- member directory itself not yet checked",
+     "member_count": None, "linked_events": ["IMME"],
+     "note": ("Australia was IMME 2024's largest non-India delegation (10 of 268 exhibitors), led "
+             "by Austmine -- a real, concrete India-engagement signal for the Australian mining-"
+             "tech sector specifically. The full 10-company Australian exhibitor list is inside "
+             "the IMME 2024 event record below; Austmine's own member roster (likely larger, "
+             "Australia-wide) has not yet been pulled -- follow-up candidate."),
+     "last_verified": "2026-08-22", "recheck_recommended": "pull austmine.com.au/members directly; cross-check against the IMME 2024 Australia delegation"},
+
+    # -- Aerospace & Defence / Specialty Steel & Metals -----------------------
+    {"name": "ASD Europe (AeroSpace and Defence Industries Association of Europe)", "sector": "Aerospace & Defence", "scope": "Europe (22 countries)",
+     "url": "https://www.asd-europe.org", "member_directory": "asd-europe.org/about-asd/all-our-members/",
+     "access_method": "public HTML, FULL list, verified", "member_count": 51, "linked_events": ["Aero India", "DefExpo"],
+     "note": ("28 direct company members: Airbus, Antonov, Avio Aero, BAE Systems, Czechoslovak "
+             "Group, Dassault Aviation, Diehl, EME, Fincantieri, GKN Aerospace, Hensoldt, Indra, "
+             "KNDS, Kongsberg, Leonardo, Liebherr, MBDA, Naval Group, Navantia, Patria, PGZ, "
+             "Rolls-Royce, Saab, Safran, Sopra Steria, Terma, Thales, WB Group. 23 national "
+             "associations (BDLI/BDSV Germany, GIFAS France, AIAD Italy, TEDAE Spain, ADS Group "
+             "UK...) representing 4,000+ companies in aggregate."),
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "worldsteel (World Steel Association)", "sector": "Specialty Steel & Metals", "scope": "Global",
+     "url": "https://worldsteel.org", "member_directory": "worldsteel.org/about-us/membership/",
+     "access_method": "public HTML, FULL list, verified", "member_count": 133, "linked_events": ["GIFA/METEC"],
+     "note": ("89 regular (raw-steel-producer) members incl. ArcelorMittal, Nippon Steel, POSCO, "
+             "Tata Steel, JSW Steel, SAIL, China Baowu, Nucor, US Steel, Cleveland-Cliffs, Gerdau, "
+             "thyssenkrupp Steel Europe, voestalpine, JFE Steel, Hyundai Steel, Jindal Steel & "
+             "Power (JSPL), Sunflag Iron & Steel, Saarloha Advanced Materials. 44 affiliated "
+             "national associations incl. AISI (US), CISA (China), EUROFER, JISF (Japan), KOSA "
+             "(Korea), Indian Steel Association, Joint Plant Committee (India), UK Steel."),
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+
+    # -- Mining / Oil & Gas ----------------------------------------------------
+    {"name": "ICMM (International Council on Mining and Metals)", "sector": "Specialty Steel & Metals", "scope": "Global",
+     "url": "https://www.icmm.com", "member_directory": "icmm.com/en-gb/our-story/our-members",
+     "access_method": "public HTML, FULL list (403 to WebFetch, worked via curl+browser UA)",
+     "member_count": 69, "linked_events": ["IMME", "MINExpo"],
+     "note": ("26 company members: African Rainbow Minerals, Alcoa, Anglo American, AngloGold "
+             "Ashanti, Antofagasta, Barrick, BHP, Boliden, Codelco, Freeport-McMoRan, Glencore, "
+             "Gold Fields, Hindustan Zinc, Hydro, Ma'aden, Minera San Cristóbal, Minsur, MMG, "
+             "Newmont, Orano, Rio Tinto, Sibanye-Stillwater, South32, Sumitomo Metal Mining, Teck, "
+             "Vale. ~43 association members (AusIMM, IBRAM, MCA, National Mining Association)."),
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "IPIECA", "sector": "Oil & Gas (not yet a twin focus sector)", "scope": "Global",
+     "url": "https://www.ipieca.org", "member_directory": "ipieca.org/about/membership",
+     "access_method": "public HTML, FULL corporate list, verified via WebFetch",
+     "member_count": 39, "linked_events": ["ADIPEC", "OTC", "India Energy Week"],
+     "note": ("ADNOC, Aker BP, Aramco, BP, Chevron, CNOOC, ConocoPhillips, Ecopetrol, ENEOS, Eni, "
+             "EOG Resources, Equinor, ExxonMobil, Harbour Energy, INPEX, Murphy Oil, OMV, Oxy, "
+             "Petrobras, PETRONAS, PTTEP, QatarEnergy, Repsol, Shell, Sonangol, Suncor, "
+             "TotalEnergies, Woodside; associate: Baker Hughes, Halliburton, SLB; ~35 assoc. members."),
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "IOGP (International Association of Oil & Gas Producers)", "sector": "Oil & Gas (not yet a twin focus sector)", "scope": "Global",
+     "url": "https://www.iogp.org", "member_directory": "iogp.org/members/",
+     "access_method": "public HTML, partial (no downloadable PDF)", "member_count": 90,
+     "linked_events": ["ADIPEC", "OTC"],
+     "note": "Sample: Addax Petroleum, ADNOC, Aker BP, Aramco, BP, Chevron, CNOOC, ConocoPhillips, "
+            "Eni, Equinor, ExxonMobil, Shell, TotalEnergies, Woodside; service firms Baker Hughes, "
+            "Halliburton, SLB, Subsea7, TechnipFMC",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+]
+
+# ---------------------------------------------------------------------------
+# EVENTS -- trade fairs, exhibitor-list access, cross-validation value
+# ---------------------------------------------------------------------------
+EVENTS = [
+    {"name": "India ITME", "sector": "Textiles & Apparel", "scope": "India (the sector's flagship India-domestic fair)",
+     "frequency": "biennial", "last_edition": {"year": 2022, "location": "Greater Noida",
+     "exhibitor_list_url": "https://corporate.india-itme.com/gttes2025/PDF/Past-Event-INDIA-ITME-2022-Exhibitor-List.pdf",
+     "total_exhibitors": "1,800+", "international_exhibitors": 148},
+     "next_edition": {"year": 2026, "dates": "Dec 4-9, 2026", "location": "Greater Noida"},
+     "cross_validated_association_members": ["Swiss Textile Machinery Association (~20 of 42 confirmed exhibiting 2026)",
+                                              "ACIMIT (Lonati, Santoni, Reggiani Macchine seen in 2022 list)",
+                                              "VDMA-adjacent (Trützschler, Lindauer Dornier, Mayer & Cie seen in 2022 list)",
+                                              "JTMA-adjacent (Murata Machinery, Tsudakoma, TMT Machinery seen in 2022 list)"],
+     "value": "HIGHEST -- revealed-preference signal (paid to physically exhibit in India), independently verified against 4 separate national association rosters",
+     "last_verified": "2026-08-22", "recheck_recommended": "before/after each biennial edition (next: Dec 2026)"},
+    {"name": "ITMA", "sector": "Textiles & Apparel", "scope": "Global (run by CEMATEX, rotates European cities)",
+     "frequency": "every 4 years", "last_edition": {"year": 2023, "location": "Milan",
+     "exhibitor_list_url": "itma.com/exhibitor-list -- now 404, only a logistics pre-arrival-guide PDF found, NOT an exhibitor catalog"},
+     "next_edition": {"year": 2027, "note": "per CEMATEX's normal 4-year cadence, not independently confirmed"},
+     "cross_validated_association_members": ["BTMA (ITMA-2023 exhibitor brochure, ~31 of 49 UK members)"],
+     "value": "MEDIUM -- exhibitor catalog is now an interactive online platform, not a downloadable PDF; only a partial (BTMA-subset) PDF found",
+     "last_verified": "2026-08-22", "recheck_recommended": "check itma.com ahead of the 2027 edition for a catalog format change"},
+    {"name": "ITMA Asia+CITME", "sector": "Textiles & Apparel", "scope": "Asia (CEMATEX + China's CTMA/CCPIT TEX co-owned)",
+     "frequency": "irregular (last: Singapore 2025)", "last_edition": {"year": 2025, "location": "Singapore",
+     "note": "India was the largest non-Europe/non-China exhibitor group (87 exhibitors) and topped overseas-visitor rankings"},
+     "next_edition": None, "cross_validated_association_members": [],
+     "value": "MEDIUM -- strong India-engagement STATISTIC published by CEMATEX, but no exhibitor-list PDF found in this pass",
+     "last_verified": "2026-08-22", "recheck_recommended": "search itmaasia.com for a catalog closer to the next edition"},
+
+    # -- India-domestic gold-find exhibitor catalogs --------------------------
+    {"name": "SEMICON India", "sector": "Electronics & Semiconductors", "scope": "India",
+     "frequency": "annual", "last_edition": {"year": 2025,
+     "exhibitor_list_url": "https://expo.semi.org/india2025/public/exhibitors.aspx?ID=31493",
+     "total_exhibitors": 351},
+     "value": "HIGHEST -- 351 verified real exhibitors incl. ASML, Applied Materials, Lam Research, "
+             "KLA-Tencor, Tokyo Electron, Micron, Synopsys, Cadence, plus co-exhibiting national "
+             "bodies (KOTRA, Japan India Business Bureau, SPETA Singapore)",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "ELECRAMA", "sector": "White Goods & Electricals", "scope": "India",
+     "frequency": "~3-yearly (IEEMA-run)", "last_edition": {"year": 2023,
+     "exhibitor_list_url": "https://elecrama.com/wp-content/uploads/2023/02/ELECRAMA-2023-Exhibitor-List-with-Products-1-2.xlsx",
+     "total_exhibitors": 929},
+     "value": "HIGH -- real downloadable XLSX, 929 rows w/ hall/stall + product category; confirmed "
+             "Canada, Germany, Italy, France national pavilions inside the data",
+     "last_verified": "2026-08-22", "recheck_recommended": "next ~3-yearly edition"},
+    {"name": "Medical Fair India", "sector": "Medical Devices", "scope": "India",
+     "frequency": "annual", "last_edition": {"year": 2024,
+     "exhibitor_list_url": "https://www.medicalfair-india.com/PDF/Exhibitor-List_MFI-2024.pdf",
+     "total_exhibitors": 364, "international_exhibitors": 40},
+     "value": "HIGHEST -- direct ITME-pattern match, country-tagged, real intl names (Germany, "
+             "China, Korea, Taiwan, Italy, Malaysia, UK, Turkey, Australia, HK, Singapore, "
+             "Thailand, Vietnam)",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual (2026 edition page already live)"},
+    {"name": "IPHEX India", "sector": "Pharma & Bulk Drugs", "scope": "India",
+     "frequency": "annual (Pharmexcil-run)", "last_edition": {"year": 2026,
+     "note": "outbound-facing (Indian exporters showing to foreign buyers), not foreign companies entering India"},
+     "value": "LOW -- structurally the wrong direction for this project's use case, deprioritized vs Medical Fair India",
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority"},
+    {"name": "CPHI India", "sector": "Pharma & Bulk Drugs", "scope": "India",
+     "frequency": "annual", "last_edition": {"year": 2024, "note": "~2,000 exhibitors reported (PMEC India component)"},
+     "value": "MEDIUM-HIGH potential, LOW accessed -- real exhibitor portal exists "
+             "(exhibitors.cphi.com/cpin24/ etc.) but gated behind free buyer-account signup + JS-rendered",
+     "last_verified": "2026-08-22", "recheck_recommended": "worth a buyer-account signup follow-up"},
+    {"name": "ChemTECH World Expo", "sector": "Chemicals & Plastics", "scope": "India",
+     "frequency": "annual (Jasubhai Media/Chemtech Foundation)", "last_edition": {"year": 2024,
+     "exhibitor_list_url": "https://jasubhaimedia.com/cloud/chemtech-2024/chemtech-2024-exhibitors-list.pdf",
+     "total_exhibitors": "750+", "note": "39+ countries represented"},
+     "value": "HIGHEST -- full complete PDF, real intl names across Germany, China, Czechia, "
+             "Sweden, Singapore, Thailand, Iran, Russia, US",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "REI Expo (Renewable Energy India Expo)", "sector": "Green Energy & Fuels", "scope": "India",
+     "frequency": "annual (Informa Markets)", "last_edition": {"year": 2024,
+     "total_exhibitors": "800+", "note": "51,921 trade visitors; UK was Country Partner 2024"},
+     "value": "MEDIUM -- real scale confirmed but exhibitor index is a dynamic directory, not a "
+             "downloadable PDF (a Scribd 'Show Directory 2024' 357-page doc exists but wasn't extractable)",
+     "last_verified": "2026-08-22", "recheck_recommended": "browser-based pull of the exhibitor-list-index or the Scribd doc"},
+    {"name": "The smarter E India / Intersolar India", "sector": "Green Energy & Fuels", "scope": "India",
+     "frequency": "annual", "last_edition": {"year": 2024, "location": "Gandhinagar, Gujarat",
+     "note": "~500+ exhibitors, predominantly India-based with a China cluster"},
+     "value": "MEDIUM -- confirms a real India edition exists; exhibitor list is a filterable web "
+             "app, not a static catalog, so no clean company-by-country pull yet",
+     "last_verified": "2026-08-22", "recheck_recommended": "browser-based pull of thesmartere.in/exhibitor-list"},
+    {"name": "Plastindia", "sector": "Chemicals & Plastics", "scope": "India",
+     "frequency": "~5-yearly (Plastindia Foundation)", "last_edition": {"year": 2023,
+     "total_exhibitors": "1,800+", "note": "45 countries represented"},
+     "value": "LOW-MEDIUM -- scale confirmed + real regional-agent structure (Messe Düsseldorf for "
+             "Europe/Americas, Adsale for China/HK) but no exhibitor NAMES obtained (e-directory "
+             "DNS-dead, mirrors blocked)",
+     "last_verified": "2026-08-22", "recheck_recommended": "browser session against plastindiaexhibition.plastindia.org"},
+    {"name": "Auto Expo — The Components Show", "sector": "Auto, EV & Components", "scope": "India",
+     "frequency": "biennial (ACMA/CII/SIAM)", "last_edition": {"year": 2023,
+     "exhibitor_list_url": "http://web.archive.org/web/20240801200908/http://autoexpo.in/components-show/images/exhibitor-list/list-of-exhibitors23.pdf",
+     "total_exhibitors": "350+ India, ~60 foreign", "note": "live domain dead, recovered via Wayback"},
+     "cross_validated_association_members": ["VDA (German pavilion incl. Mahle Holding India, Freudenberg-NOK)",
+                                             "JAMA-adjacent (Japan pavilion incl. Sumida Corp, Teijin)"],
+     "value": "HIGHEST -- 7 national pavilions (Japan, Korea, Germany, UK, Chinese Taipei, Poland, "
+             "France) with real named companies, direct India-market-entry signal",
+     "last_verified": "2026-08-22", "recheck_recommended": "next biennial edition"},
+    {"name": "ACMA Automechanika New Delhi", "sector": "Auto, EV & Components", "scope": "India",
+     "frequency": "annual/biennial (ACMA + Messe Frankfurt)", "last_edition": {"year": 2026,
+     "total_exhibitors": "870+", "note": "20 countries; 2026 edition largest yet"},
+     "value": "MEDIUM -- press-release names only (AutoTuner, GMB, Kamoi Kakoshi, Horse Powertrain "
+             "Solutions) confirmed; full exhibitor directory is JS-search-gated, no PDF found",
+     "last_verified": "2026-08-22", "recheck_recommended": "live-browser session against the exhibitor-search widget"},
+    {"name": "Aero India", "sector": "Aerospace & Defence", "scope": "India",
+     "frequency": "biennial", "last_edition": {"year": 2019,
+     "exhibitor_list_url": "http://web.archive.org/web/20200928033301/https://aeroindia.gov.in/assets/pdf/AeroIndia2019_ExhibitorslistForeign.pdf",
+     "total_exhibitors": 403, "international_exhibitors": 165, "note": "2025 edition's PDF exists but is an unparseable CorelDRAW export"},
+     "value": "HIGHEST -- complete, country-tagged, real (dated 2019, structural reference): "
+             "Airbus, Dassault, MBDA, Safran, Thales, Boeing, Lockheed Martin, Raytheon, GE "
+             "Aviation, Elbit Systems, IAI, Rafael, BAE Systems, Rolls-Royce, Rosoboronexport, "
+             "United Aircraft Corp, Sukhoi, Saab",
+     "last_verified": "2026-08-22", "recheck_recommended": "next edition -- verify PDF format before assuming parseable"},
+    {"name": "DefExpo India", "sector": "Aerospace & Defence", "scope": "India",
+     "frequency": "biennial", "last_edition": {"year": 2022, "location": "Gandhinagar",
+     "note": "STRUCTURALLY restricted to Indian companies as primary exhibitors -- foreign OEMs "
+            "could only appear via Indian subsidiaries/JVs"},
+     "value": "LOW by design, not a research gap -- 2020 (Lucknow) edition's 700+-exhibitor "
+             "directory recovered via Wayback shows the pre-restriction pattern (Airbus, BAE "
+             "Systems, Boeing, Dassault, Elbit, Embraer, Russian state shipbuilders) as a structural reference",
+     "last_verified": "2026-08-22", "recheck_recommended": "check whether the Indian-only restriction persists at the next edition"},
+    {"name": "India Maritime Week / INMEX SMM India", "sector": "Shipbuilding & Marine", "scope": "India",
+     "frequency": "annual (IMW) / biennial (INMEX)", "last_edition": {"year": 2025,
+     "total_exhibitors": "500+", "note": "85 countries represented at IMW 2025"},
+     "value": "MEDIUM -- real named participants from press coverage (Maersk, DP World, Wärtsilä, "
+             "Royal IHC, DNV) + ~26 INMEX SMM India exhibitor names from the site's logo gallery; "
+             "no full directory PDF found, IMW registration is login-gated",
+     "last_verified": "2026-08-22", "recheck_recommended": "browser session closer to next edition"},
+    {"name": "AAHAR", "sector": "Food Processing", "scope": "India",
+     "frequency": "annual (ITPO)", "last_edition": {"year": 2024,
+     "exhibitor_list_url": "http://web.archive.org/web/20250419202637/https://indiatradefair.com/aahardelhi/uploads/pdfs/AAHAR%202024%20HALLWISE%20LIST%20OF%20PARTICIPANTS.pdf",
+     "international_exhibitors": 139, "note": "live site (indiatradefair.com) retired Dec 2025, recovered via Wayback"},
+     "value": "HIGHEST -- complete Hall 1 foreign-participation list: Kikkoman India, Lactalis, "
+             "bioMérieux, Savencia, Kerry Ingredients India, plus multiple Italian specialty-food "
+             "makers and national trade bodies (JETRO, Australian Trade & Investment Commission, "
+             "British High Commission)",
+     "last_verified": "2026-08-22", "recheck_recommended": "check itpo.gov.in for the successor listing"},
+    {"name": "IMME (International Mining & Machinery Exhibition)", "sector": "Specialty Steel & Metals", "scope": "India",
+     "frequency": "~4-yearly (CII-run, Kolkata)", "last_edition": {"year": 2024, "location": "Kolkata",
+     "exhibitor_list_url": "https://immeindia.in/listofexhibitors.php", "total_exhibitors": 268,
+     "note": "13 countries: India 235, Australia 10, Czech Republic 8, UK 4, Germany 2, plus 1 "
+            "each US/Norway/Finland/Brazil/Russia/China/S.Korea/S.Africa/Poland"},
+     "cross_validated_association_members": ["Austmine (led the 10-company Australian delegation, "
+                                             "the largest non-India contingent)"],
+     "value": "HIGHEST -- full HTML table scraped, real country tags per company; Australia's "
+             "delegation is a clean, concrete India-mining-sector engagement signal",
+     "last_verified": "2026-08-22", "recheck_recommended": "next ~4-yearly edition"},
+
+    # -- Global flagship events (non-India editions) --------------------------
+    {"name": "IAA Mobility", "sector": "Auto, EV & Components", "scope": "Global (Munich)",
+     "last_edition": {"year": 2025, "exhibitor_list_url": "https://exhibitors.iaa-mobility.com/exhibitordirectory/2025/start/"},
+     "value": "HIGH -- live scrapable HTML, country-tagged, paginated (15-60/page); Mercedes-Benz, "
+             "BMW, Audi, BYD, plus a large international startup hall",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "Automechanika Frankfurt", "sector": "Auto, EV & Components", "scope": "Global (Frankfurt)",
+     "last_edition": {"year": 2026, "exhibitor_list_url": "https://automechanika.messefrankfurt.com/frankfurt/en/exhibitor-search.html?country=<ISO3>",
+     "total_exhibitors": "137 pages"},
+     "value": "HIGH -- live, scrapable, COUNTRY-FILTERABLE via URL param (?country=IND returned 160 "
+             "real Indian exhibitors as proof of concept) -- same technique usable for any country",
+     "last_verified": "2026-08-22", "recheck_recommended": "biennial"},
+    {"name": "CPHI Worldwide (CPHI Milan)", "sector": "Pharma & Bulk Drugs", "scope": "Global (Milan)",
+     "last_edition": {"year": 2026, "exhibitor_list_url": "https://exhibitors.cphi.com/cpww26/",
+     "total_exhibitors": 2909, "note": "80-country filter confirmed working"},
+     "value": "HIGHEST -- live, scrapable, explicitly country-tagged per exhibitor with booth "
+             "number; India, Poland, Greece, Singapore, Italy, Denmark, Korea, China, US all sampled real",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "MEDICA", "sector": "Medical Devices", "scope": "Global (Düsseldorf)",
+     "last_edition": {"year": 2026, "exhibitor_list_url": "https://www.medica-tradefair.com/vis/v1/en/search",
+     "total_exhibitors": 3020, "note": "country breakdown: Germany 607, China 428, US 239, Italy 222, Turkey 163"},
+     "value": "HIGH -- live scrapable (needed a real browser, WebFetch alone returned blank), "
+             "country-level index confirmed, per-company country tag needs one more extraction step",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "Arab Health / World Health Expo Dubai", "sector": "Medical Devices", "scope": "Global (Dubai)",
+     "last_edition": {"year": 2026, "note": "official current-edition list did not render usable data"},
+     "value": "GAP -- confirmed empty in live browser, not a fetch-tool artifact; third-party "
+             "substitutes (exhibitor-catalogue.com, 10times.com) lack reliable per-company country tags",
+     "last_verified": "2026-08-22", "recheck_recommended": "retry closer to the event, or check the exhibitor-catalogue.com 2025 edition"},
+    {"name": "ACHEMA", "sector": "Chemicals & Plastics", "scope": "Global (Frankfurt)",
+     "last_edition": {"year": 2026, "exhibitor_list_url": "https://www.achema.de/en/search", "total_exhibitors": 1692},
+     "value": "HIGH -- live scrapable via browser (JS-blocked to plain fetch), ISO-code country tag per exhibitor",
+     "last_verified": "2026-08-22", "recheck_recommended": "every 3 years (normal ACHEMA cadence)"},
+    {"name": "K Fair", "sector": "Chemicals & Plastics", "scope": "Global (Düsseldorf)",
+     "last_edition": {"year": 2025, "exhibitor_list_url": "https://www.k-online.com/vis/v1/en/directory/a",
+     "total_exhibitors": 3259, "note": "66 countries; A-Z paginated directory (Messe Düsseldorf 'vis/v1' platform, shared with GIFA/METEC)"},
+     "value": "HIGH -- live scrapable via browser, city+country per exhibitor; sample includes "
+             "Aawadkrupa Plastomech (India)",
+     "last_verified": "2026-08-22", "recheck_recommended": "every 3 years (normal K cadence)"},
+    {"name": "Intersolar Europe / The smarter E Europe", "sector": "Green Energy & Fuels", "scope": "Global (Munich)",
+     "last_edition": {"year": 2026, "exhibitor_list_url": "https://www.intersolar.de/ausstellerliste", "total_exhibitors": "2,600+"},
+     "value": "HIGH -- live scrapable via browser, hall/booth + sub-exhibition + country per row; "
+             "sample includes Adani Solar (India)",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "WindEnergy Hamburg", "sector": "Green Energy & Fuels", "scope": "Global (Hamburg)",
+     "last_edition": {"year": 2024, "note": "page explicitly states 'list under construction' for the next (Sept 2026) edition; 2024 data taken down, no Wayback capture either"},
+     "value": "GAP, confirmed genuine -- same organiser (Hamburg Messe) as SMM Hamburg, same pattern",
+     "last_verified": "2026-08-22", "recheck_recommended": "closer to Sept 2026 edition; NEUREUTER FAIR MEDIA is organiser's only sanctioned 3rd-party list source, others flagged as scams by organiser"},
+    {"name": "Farnborough International Airshow", "sector": "Aerospace & Defence", "scope": "Global (UK)",
+     "last_edition": {"year": 2024, "exhibitor_list_url": "https://www.farnboroughairshow.com/the-show/exhibitor-listing/?page=N",
+     "total_exhibitors": 1292},
+     "value": "HIGHEST -- server-rendered HTML, plain-fetchable (no browser needed), company+stand+"
+             "country per row across ~65 pages; sample includes Aero Fasteners (India)",
+     "last_verified": "2026-08-22", "recheck_recommended": "biennial (alternates with Paris Air Show)"},
+    {"name": "GIFA/METEC (Bright World of Metals)", "sector": "Specialty Steel & Metals", "scope": "Global (Düsseldorf)",
+     "last_edition": {"year": 2023, "exhibitor_list_url": "https://www.gifa.com/vis/v1/en/directory/a",
+     "note": "shared database across GIFA/METEC/THERMPROCESS/NEWCAST"},
+     "value": "HIGH -- live scrapable via browser, city+country per exhibitor incl. AIST (US), "
+             "ABIFA (Brazil), dense China refractory/metallurgy cluster",
+     "last_verified": "2026-08-22", "recheck_recommended": "every 4 years (normal GIFA cadence)"},
+    {"name": "SMM Hamburg", "sector": "Shipbuilding & Marine", "scope": "Global (Hamburg)",
+     "last_edition": {"year": 2024, "note": "next (Sept 2026) edition directory shows dates only, zero exhibitor entries; 2024 data gone, Wayback captures from Apr 2026 also empty"},
+     "value": "GAP, confirmed genuine -- only a product-category taxonomy PDF exists, not a roster",
+     "last_verified": "2026-08-22", "recheck_recommended": "closer to Sept 2026 edition"},
+    {"name": "SEMICON West", "sector": "Electronics & Semiconductors", "scope": "Global (US)",
+     "last_edition": {"year": 2023, "exhibitor_list_url": "https://web.archive.org/web/20250118204001/https://expo.semi.org/west2023/Public/exhibitors.aspx?ID=26835",
+     "note": "live site deactivates past editions post-show; recovered via Wayback"},
+     "value": "HIGH -- real archived alphabetical list w/ national pavilions (Korea, Silicon "
+             "Saxony/Germany, MATRADE/Malaysia); ASML, KLA, Lam Research, TEL, Veeco, Advantest",
+     "last_verified": "2026-08-22", "recheck_recommended": "check Wayback for each subsequent annual edition post-show"},
+    {"name": "electronica", "sector": "Electronics & Semiconductors", "scope": "Global (Munich)",
+     "last_edition": {"year": 2026, "exhibitor_list_url": "https://exhibitors.electronica.de/exhibitor-portal/2026/list-of-exhibitors/",
+     "note": "official downloadable XLSX also exists"},
+     "value": "HIGHEST of the global electronics events -- server-rendered HTML table, company+city"
+             "+country+booth for every exhibitor, AND a direct XLSX export button",
+     "last_verified": "2026-08-22", "recheck_recommended": "biennial"},
+    {"name": "CES", "sector": "Electronics & Semiconductors", "scope": "Global (Las Vegas)",
+     "last_edition": {"year": 2026, "note": "MapYourShow-platform JSON API confirmed working via archive, supports country filtering, but needs scripted pagination (thousands of exhibitors); no dedicated semiconductor category exists at CES"},
+     "value": "MEDIUM, effort-heavy -- technically retrievable, needs a live-browser scripted pull, not a one-shot fetch",
+     "last_verified": "2026-08-22", "recheck_recommended": "live-browser session with pagination script if pursued"},
+    {"name": "MINExpo INTERNATIONAL", "sector": "Specialty Steel & Metals", "scope": "Global (Las Vegas)",
+     "last_edition": {"year": 2024, "note": "MapYourShow gallery link now redirects to homepage, expired; next edition Sept 2028"},
+     "value": "GAP -- no public exhibitor list currently live",
+     "last_verified": "2026-08-22", "recheck_recommended": "closer to Sept 2028 edition"},
+    {"name": "bauma", "sector": "Specialty Steel & Metals", "scope": "Global (Munich)",
+     "last_edition": {"year": 2025, "note": "exhibitors.bauma.de confirmed real, Elasticsearch-backed, has a PDF-export API endpoint, but landing page returns no static data"},
+     "value": "GAP for now, but access pattern CONFIRMED VIABLE (same Messe München style as electronica/IAA Mobility) -- needs a follow-up session driving the actual search/AJAX calls",
+     "last_verified": "2026-08-22", "recheck_recommended": "dedicated follow-up session to drive the AJAX search"},
+    {"name": "OTC (Offshore Technology Conference)", "sector": "Oil & Gas (not yet a twin focus sector)", "scope": "Global (Houston)",
+     "last_edition": {"year": 2026, "exhibitor_list_url": "https://otc2026.smallworldlabs.com/exhibitors",
+     "total_exhibitors": "1,100+"},
+     "value": "MEDIUM-HIGH, PARTIALLY harvested -- real static-rendered directory, ~50 names sampled "
+             "with some country tags (Nigeria, Brazil, India); fully paginated, not exhaustively pulled",
+     "last_verified": "2026-08-22", "recheck_recommended": "complete the pagination pull if this sector becomes a twin focus"},
+    {"name": "ADIPEC", "sector": "Oil & Gas (not yet a twin focus sector)", "scope": "Global (Abu Dhabi)",
+     "last_edition": {"year": 2022, "note": "official site is marketing-only (2,250+ exhibitors, no names); real sample only via a third-party PDF mirror (pdfcoffee.com), unverified provenance"},
+     "value": "MEDIUM, LOW-CONFIDENCE source -- ADNOC, bp, Chevron, ExxonMobil, Shell, TotalEnergies, "
+             "Baker Hughes, Halliburton, Siemens Energy all sampled but from an unofficial mirror",
+     "last_verified": "2026-08-22", "recheck_recommended": "find the official current-year exhibitor list directly"},
+    {"name": "IMARC (International Mining and Resources Conference, Sydney)", "sector": "Specialty Steel & Metals", "scope": "Global (Sydney)",
+     "last_edition": {"year": 2025, "note": "JS-rendered, 600+ exhibitors claimed but only a small unverifiable sample surfaced"},
+     "value": "GAP, LOW-CONFIDENCE -- not a clean pull",
+     "last_verified": "2026-08-22", "recheck_recommended": "live-browser session"},
+    {"name": "India Energy Week", "sector": "Oil & Gas (not yet a twin focus sector)", "scope": "India",
+     "last_edition": {"year": 2024, "location": "Goa", "note": "real exhibitor PDF exists on Scribd (name+stand+country of origin confirmed present) but preview-blocked from full extraction"},
+     "value": "MEDIUM potential, LOW accessed -- needs direct Scribd download/login",
+     "last_verified": "2026-08-22", "recheck_recommended": "manual Scribd download follow-up"},
+]
+
+
+def main():
+    layer = {
+        "layer": 40, "name": "association_event_registry", "built": dt.date.today().isoformat(),
+        "what": ("Durable monitoring registry (SourceRoute-style, matching layer 15's portal "
+                "directory convention) of trade associations and their linked events -- WHERE to "
+                "re-check for updated member/exhibitor lists and WHEN, not a full data snapshot "
+                "itself (layer 39 holds the actual Textiles membership data this registry points "
+                "to; other sectors' full company lists live in each research pass's own scratch "
+                "files, referenced here by URL/count/sample rather than re-embedded in full)."),
+        "associations": ASSOCIATIONS, "events": EVENTS,
+        "coverage_note": ("Extended 2026-08-22 across all twin focus sectors: Electronics & "
+                          "Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma "
+                          "& Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & "
+                          "Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & "
+                          "Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal "
+                          "twin focus sectors, added per explicit request). "
+                          f"{len(ASSOCIATIONS)} associations, {len(EVENTS)} events tracked. "
+                          "Highest-value pattern confirmed repeatedly: an India-domestic trade "
+                          "fair's exhibitor list is a stronger signal than bare association "
+                          "membership (revealed preference -- paid to physically exhibit in India) "
+                          "-- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH "
+                          "World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all "
+                          "produced real country-tagged rosters this pass."),
+    }
+    with open(OUT_JSON, "w") as f:
+        json.dump(layer, f, indent=1, ensure_ascii=False)
+
+    L = ["# Association + event registry — for ongoing monitoring", "",
+         f"*Generated {layer['built']} by `scripts/build_layer40_association_event_registry.py`. "
+         "Durable registry (URL + access method + recheck cadence), not a data snapshot -- see "
+         "`docs/TEXTILE_ASSOCIATIONS.md` (layer 39) for the actual textile membership data this "
+         "registry points to.*", "",
+         "## Associations", "",
+         "| Association | Sector | Scope | Members | Access | Linked events | Recheck |",
+         "|---|---|---|---|---|---|---|"]
+    for a in ASSOCIATIONS:
+        L.append(f"| {a['name']} | {a['sector']} | {a['scope']} | {a['member_count'] or '—'} | "
+                 f"{a['access_method'][:60]} | {', '.join(a['linked_events']) or '—'} | "
+                 f"{a['recheck_recommended']} |")
+    L += ["", "## Events", "", "| Event | Sector | Frequency | Last edition | Next edition | Value |",
+          "|---|---|---|---|---|---|"]
+    for e in EVENTS:
+        last = f"{e['last_edition'].get('year')} ({e['last_edition'].get('location', '?')})" if e.get("last_edition") else "—"
+        nxt = f"{e['next_edition'].get('year')} {e['next_edition'].get('dates', '')}" if e.get("next_edition") else "TBD"
+        L.append(f"| {e['name']} | {e['sector']} | {e.get('frequency', '—')} | {last} | {nxt} | {e['value'][:70]} |")
+    L += ["", "## Coverage note", "", layer["coverage_note"], ""]
+    with open(OUT_DOC, "w") as f:
+        f.write("\n".join(L) + "\n")
+
+    print(f"associations: {len(ASSOCIATIONS)} | events: {len(EVENTS)} -> {OUT_JSON} + {OUT_DOC}")
+
+
+if __name__ == "__main__":
+    main()

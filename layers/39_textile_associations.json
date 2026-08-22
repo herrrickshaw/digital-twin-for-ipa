@@ -1,0 +1,508 @@
+{
+ "layer": 39,
+ "name": "textile_associations",
+ "built": "2026-08-22",
+ "what": "Global textile trade association membership map -- a structurally different discovery channel from the twin's filing/news sweeps (layer 38's textile-specific re-sweep of DART/cninfo/Oslo found almost nothing; association rosters list companies by industry membership directly, sidestepping the need for India-intent language). Cross-referencing these names against India activity is the natural next step, not done in this pass.",
+ "associations": {
+  "swiss_textile_machinery": {
+   "name": "Swiss Textile Machinery Association",
+   "url": "https://swisstextilemachinery.ch",
+   "parent": "Swissmem",
+   "member_count": 42,
+   "coverage": "FULL, fully verified",
+   "india_signal": "~20 members (~half) confirmed exhibiting at India ITME 2026 (Dec 4-9, Greater Noida) -- association's own description: 'the most important meeting point for the Indian textile industry in 2026'",
+   "members": [
+    {
+     "company": "AGM Jactex AG",
+     "segment": "Weaving",
+     "location": "Neuhausen am Rheinfall, SH"
+    },
+    {
+     "company": "AUTEFA Solutions Switzerland AG",
+     "segment": "Nonwoven, Finishing",
+     "location": "Frauenfeld, TG"
+    },
+    {
+     "company": "Becatron AG",
+     "segment": "Dyeing",
+     "location": "Müllheim Dorf, TG"
+    },
+    {
+     "company": "Benninger AG",
+     "segment": "Finishing, Dyeing",
+     "location": "Uzwil, SG"
+    },
+    {
+     "company": "bluesign technologies ag",
+     "segment": "Spinning, Winding, Nonwoven, Weaving, Knitting, Finishing, Printing, Embroidery, Quality control",
+     "location": "Baar, ZG"
+    },
+    {
+     "company": "Bräcker AG",
+     "segment": "Spinning",
+     "location": "Pfäffikon, ZH"
+    },
+    {
+     "company": "ConVacc AG (Steinemann CVS)",
+     "segment": "Spinning, Winding, Nonwoven, Weaving, Knitting",
+     "location": "Flawil, SG"
+    },
+    {
+     "company": "Crealet AG",
+     "segment": "Weaving",
+     "location": "Wald, ZH"
+    },
+    {
+     "company": "Drop Chemicals SA",
+     "segment": "Weaving, Printing",
+     "location": "Stabio, TI"
+    },
+    {
+     "company": "G. Hunziker Ltd.",
+     "segment": "Weaving",
+     "location": "Eschenbach, SG"
+    },
+    {
+     "company": "Graf + Cie AG",
+     "segment": "Spinning, Nonwoven",
+     "location": "Rapperswil, SG"
+    },
+    {
+     "company": "Grob Willy Ltd.",
+     "segment": "Weaving",
+     "location": "Eschenbach, SG"
+    },
+    {
+     "company": "Hannecard GmbH",
+     "segment": "Spinning, Winding, Weaving, Finishing, Printing, Quality control",
+     "location": "Rüti, ZH"
+    },
+    {
+     "company": "Heberlein Technology AG",
+     "segment": "Spinning, Winding",
+     "location": "Wattwil, SG"
+    },
+    {
+     "company": "Ing. A. Maurer SA",
+     "segment": "Spinning, Winding, Nonwoven",
+     "location": "Ittigen, BE"
+    },
+    {
+     "company": "Itema Group",
+     "segment": "Weaving",
+     "location": "Colzate (Bergamo), Italy -- NOT Swiss-domiciled despite Swiss association membership"
+    },
+    {
+     "company": "Jakob Müller AG",
+     "segment": "Weaving, Knitting, Finishing, Printing",
+     "location": "Frick, AG"
+    },
+    {
+     "company": "KARL MAYER Textilmaschinen AG",
+     "segment": "Weaving",
+     "location": "Oberbüren, SG"
+    },
+    {
+     "company": "LÄSSER AG",
+     "segment": "Embroidery",
+     "location": "Diepoldsau, SG"
+    },
+    {
+     "company": "Loepfe Brothers Ltd.",
+     "segment": "Spinning, Winding, Quality control",
+     "location": "Wetzikon, ZH"
+    },
+    {
+     "company": "Luwa Air Engineering AG",
+     "segment": "Spinning, Winding, Nonwoven, Weaving, Knitting, Finishing",
+     "location": "Uster, ZH"
+    },
+    {
+     "company": "Maag Brothers Machine Works Ltd.",
+     "segment": "Printing, Quality control",
+     "location": "Küsnacht, ZH"
+    },
+    {
+     "company": "Mathis AG",
+     "segment": "Finishing, Dyeing",
+     "location": "Oberhasli, ZH"
+    },
+    {
+     "company": "Norsel Textilmaschinen AG",
+     "segment": "Finishing, Printing",
+     "location": "Kreuzlingen, TG"
+    },
+    {
+     "company": "Perfecta Schmid (c/o Triopan AG)",
+     "segment": "Embroidery",
+     "location": "Steinach, SG"
+    },
+    {
+     "company": "POLYTEX AG",
+     "segment": "Finishing",
+     "location": "Schönenwerd, SO"
+    },
+    {
+     "company": "Prolim engineering GmbH",
+     "segment": "Winding, Weaving, Finishing, Printing",
+     "location": "Erlenbach, ZH"
+    },
+    {
+     "company": "RETECH Aktiengesellschaft",
+     "segment": "Spinning, Quality control",
+     "location": "Meisterschwanden, AG"
+    },
+    {
+     "company": "Rieter Ltd",
+     "segment": "Spinning, Winding",
+     "location": "Winterthur, ZH"
+    },
+    {
+     "company": "Rotorcraft AG",
+     "segment": "Spinning",
+     "location": "Altstätten, SG"
+    },
+    {
+     "company": "Rüti Textil",
+     "segment": "Weaving",
+     "location": "Rüti, ZH"
+    },
+    {
+     "company": "SANTEX RIMAR AG",
+     "segment": "Finishing",
+     "location": "Tobel, TG"
+    },
+    {
+     "company": "Saurer Intelligent Technology AG",
+     "segment": "Spinning",
+     "location": "Arbon, TG"
+    },
+    {
+     "company": "Sedo Engineering SA",
+     "segment": "Dyeing",
+     "location": "Riddes, VS"
+    },
+    {
+     "company": "SSM Schärer Schweiter Mettler AG",
+     "segment": "Spinning, Winding",
+     "location": "Wädenswil, ZH"
+    },
+    {
+     "company": "Stäubli AG",
+     "segment": "Weaving",
+     "location": "Pfäffikon, SZ"
+    },
+    {
+     "company": "STEIGER PARTICIPATIONS SA",
+     "segment": "Knitting",
+     "location": "Vionnaz, VS"
+    },
+    {
+     "company": "Swinsol AG",
+     "segment": "Spinning, Quality control",
+     "location": "Au, SG"
+    },
+    {
+     "company": "Uster Technologies AG",
+     "segment": "Spinning, Winding, Nonwoven, Weaving, Knitting, Finishing, Quality control",
+     "location": "Uster, ZH"
+    },
+    {
+     "company": "Vito Noto Industrial Design",
+     "segment": null,
+     "location": "Cadro-Lugano, TI"
+    },
+    {
+     "company": "Xetma Vollenweider AG",
+     "segment": "Finishing",
+     "location": "Wädenswil, ZH"
+    },
+    {
+     "company": "ZETA DATATEC GmbH",
+     "segment": "Nonwoven, Weaving, Knitting, Finishing, Embroidery, Quality control",
+     "location": "Neuhausen, SH"
+    }
+   ]
+  },
+  "cematex": {
+   "name": "CEMATEX",
+   "url": "https://cematex.com",
+   "what": "Federation of 9 national European textile machinery associations; runs ITMA",
+   "member_count": 9,
+   "coverage": "FULL",
+   "india_signal": "Co-owns ITMA ASIA+CITME; 2025 Singapore edition -- India was the largest non-Europe/non-China exhibitor group (87 exhibitors) and topped overseas-visitor rankings, ahead of South Korea, Bangladesh, Indonesia, Iran",
+   "members": [
+    {
+     "association": "ACIMIT",
+     "country": "Italy",
+     "url": "acimit.it"
+    },
+    {
+     "association": "AMEC-AMTEX",
+     "country": "Spain",
+     "url": "amec.es"
+    },
+    {
+     "association": "BTMA",
+     "country": "United Kingdom",
+     "url": "btma.org.uk"
+    },
+    {
+     "association": "GTM",
+     "country": "Netherlands",
+     "url": "group-gtm.nl"
+    },
+    {
+     "association": "Swissmem / Swiss Textile Machinery",
+     "country": "Switzerland",
+     "url": "swisstextilemachinery.ch"
+    },
+    {
+     "association": "SYMATEX",
+     "country": "Belgium",
+     "url": "symatex.be"
+    },
+    {
+     "association": "TMAS",
+     "country": "Sweden",
+     "url": "tmas.se"
+    },
+    {
+     "association": "UCMTF",
+     "country": "France",
+     "url": "ucmtf.fr"
+    },
+    {
+     "association": "VDMA Textile Machinery",
+     "country": "Germany",
+     "url": "vdma.eu/en/textile-machinery"
+    }
+   ]
+  },
+  "itmf": {
+   "name": "ITMF (International Textile Manufacturers Federation)",
+   "url": "https://itmf.org",
+   "coverage": "partial -- national members 19/40+, associate members FULL (19), corporate members login-gated",
+   "india_representation": "India has NO national Member Association seat -- represented via THREE separate Associate Members: Cotton Association of India (CAI), Confederation of Indian Textile Industry (CITI), Cotton Textiles Export Promotion Council (Texprocil)",
+   "india_stats": "ITMSS (annual shipment survey, since 1974) -- India top investor in rapier/projectile looms (+21% deliveries YoY); 2nd for electronic flat knitting machines (4.1K units); 19% of global long-staple spindle deliveries; also a top demand market for short-staple spindles/open-end rotors",
+   "national_members_partial": [
+    "Argentina (FITA)",
+    "Austria (VTI)",
+    "Azerbaijan (ATA)",
+    "Belgium (FEDUSTRIA)",
+    "Brazil (ABIT)",
+    "China (CNTAC)",
+    "Egypt (ECAHT)",
+    "France (UIT)",
+    "Germany (IVGT)",
+    "Italy (Fondazione del Tessile Italiano)",
+    "Japan (JSA)",
+    "Korea Rep. (KOFOTI)",
+    "Morocco (AMITH)",
+    "Portugal (ATP)",
+    "Spain (Fundación Textil Algodonera)",
+    "Switzerland (Swiss Textiles)",
+    "Tajikistan (Tajcottex)",
+    "Türkiye (TTEA)",
+    "Uzbekistan (Uztextileprom)"
+   ],
+   "associate_members_full": [
+    "Chinese Taipei (TTF)",
+    "Egypt (ECA)",
+    "Germany (Bremer Cotton Exchange, VDMA Textile Machinery)",
+    "India (Cotton Association of India / CAI)",
+    "India (Confederation of Indian Textile Industry / CITI)",
+    "India (Cotton Textiles Export Promotion Council / Texprocil)",
+    "Indonesia (API)",
+    "Italy (ACIMIT)",
+    "Korea Rep. (SWAK)",
+    "Spain (amec amtex)",
+    "Sweden (TMAS)",
+    "Switzerland (Swiss Textile Machinery)",
+    "UK (BTMA)",
+    "UK (ICA)",
+    "USA (Cotton Council International)",
+    "USA (Cotton Incorporated)",
+    "USA (National Cotton Council of America)",
+    "USA (SUPIMA)"
+   ]
+  },
+  "vdma_textile_machinery": {
+   "name": "VDMA Textile Machinery (Germany)",
+   "url": "https://vdma.eu/en/textile-machinery",
+   "member_count_claimed": 140,
+   "coverage": "partial sample only -- JS-search directory, not fully scraped",
+   "india_signal": "VDMA runs its OWN India offices (Bangalore, Kolkata, New Delhi/Noida, Mumbai) explicitly to bridge German/Indian industry. Export value: EUR 255M+ (2017), EUR 228M Jan-Aug 2022 vs EUR 170M Jan-Aug 2023 (a real YoY decline).",
+   "sample_members": [
+    "Ahlbrandt System GmbH (Lauterbach, DE)",
+    "ANDRITZ Diatec S.R.L. (Pescara, IT)",
+    "ANDRITZ Fabrics and Rolls GmbH (Gloggnitz AT / Reutlingen DE)",
+    "ANDRITZ France S.A.S. (Le Bourget du Lac, FR)",
+    "ANDRITZ Küsters GmbH (Krefeld, DE)",
+    "ANDRITZ LAROCHE SAS (Cours, FR)",
+    "Bachmann electronic GmbH (Feldkirch, AT)",
+    "Baldwin Europe Consolidated B.V. (Amsterdam, NL)",
+    "Baldwin Jimek AB (Arlöv, SE)"
+   ]
+  },
+  "acimit": {
+   "name": "ACIMIT (Association of Italian Textile Machinery Manufacturers)",
+   "url": "https://acimit.it",
+   "member_count": 185,
+   "coverage": "full list exists (scouting transcript); representative sample re-embedded here",
+   "india_signal": "None found on ACIMIT's own public pages in this pass -- not confirmed absent, just not surfaced",
+   "sample_members": [
+    "Itema (Colzate, BG) -- Spinning/Circular Economy",
+    "Santoni (Brescia) -- Spinning/Circular Economy",
+    "Savio (Pordenone) -- Spinning/Circular Economy",
+    "Lonati (Brescia)",
+    "Marzoli (Palazzolo s/Oglio, BS)",
+    "Reggiani Macchine (Comun Nuovo, BG) -- Printing/Circular Economy",
+    "Biancalani (Prato)",
+    "Comatex (Ghisalba, BG)",
+    "Durst (Bressanone, BZ) -- Printing",
+    "Staubli Italia (Carate Brianza, MB) -- Weaving"
+   ]
+  },
+  "ukft": {
+   "name": "UKFT (UK Fashion & Textile Association)",
+   "url": "https://ukft.org",
+   "member_page": "ukft.org/who-we-are/about-us/members",
+   "member_count_listed": 500,
+   "member_count_claimed": "2,500+ (many unlisted by member request)",
+   "coverage": "FULL 500-name list captured -- published as a separate artifact, not re-embedded here",
+   "artifact_url": "https://claude.ai/code/artifact/0e13b6c5-698e-46d4-a736-89c4cfe8b17e",
+   "india_signal": "Active India programme tied to UK-India CETA (enters force 15-Jul-2026): a MEMBER-PAYWALLED 'Guide to the Indian Market for Fashion & Textiles' (cites India as a $350bn market by 2030) + a CETA rules-of-origin guide + trade-mission/webinar activity. Guide contents not accessible -- membership-gated."
+  },
+  "textile_institute": {
+   "name": "The Textile Institute (chartered professional body)",
+   "url": "https://textileinstitute.org",
+   "member_count": 50,
+   "countries": 14,
+   "coverage": "FULL (corporate members only, not individual/CText/FTI members)",
+   "note": "Skews universities and testing/certification bodies, not a trade roster -- 28/50 UK-based",
+   "india_members": [
+    "Gherzi Consulting Engineers (Mumbai)",
+    "NITRA (Ghaziabad)",
+    "SITRA (Coimbatore)",
+    "RmKV Silks (Tirunelveli)",
+    "Indian Technical Textile Association"
+   ]
+  },
+  "btma": {
+   "name": "BTMA (British Textile Machinery Association)",
+   "url": "https://btma.org.uk",
+   "what": "UK's textile-machinery/processing-equipment trade association (dyeing/finishing automation, yarn handling, lab testing, lubricants)",
+   "member_count": 49,
+   "coverage": "FULL, each with one-line specialization",
+   "india_signal": "None found",
+   "sample_members": [
+    "Strayfield -- RF drying systems",
+    "James Heal -- textile testing instruments"
+   ]
+  },
+  "jtma": {
+   "name": "Japan Textile Machinery Association (JTMA)",
+   "url": "http://www.jtma.or.jp",
+   "coverage": "LOW CONFIDENCE -- primary site unreachable (ECONNREFUSED) during research; reconstructed from Japanese Wikipedia + search-engine snippets, not primary-verified",
+   "india_signal": "None on JTMA's own site. Third-party trade press (Kohan Textile Journal, not JTMA) states India+Pakistan+Indonesia+Bangladesh together import ~15% of Japan's textile machinery exports.",
+   "corroborated_live_members": [
+    "Organ Needle",
+    "Tsudakoma Kogyo",
+    "Toyota Industries",
+    "Murata Machinery",
+    "Yamada Dobby"
+   ],
+   "secondary_sourced_only": [
+    "Toyoda Sangyo",
+    "Nankai Industrial",
+    "Happy Japan",
+    "Toyota Tsusho",
+    "Marubeni Techno-System",
+    "Itochu Systemics"
+   ]
+  },
+  "cntac": {
+   "name": "China National Textile and Apparel Council (CNTAC)",
+   "url": "cntac.org.cn",
+   "what": "NOT a company directory -- a 42-unit federation of sub-associations, research institutes, and universities, semi-governmental (Ministry of Civil Affairs oversight)",
+   "coverage": "partial council roster retrieved directly (5th Council, ~115 of likely 200+ entries)",
+   "india_signal": "None -- English subdomain (english.ctei.cn) unreachable; international focus is Turkey/Cambodia/US, not India",
+   "companies_in_partial_roster": [
+    "Xtep China",
+    "Jiangsu Lianfa Textile",
+    "Shenzhou International/Ningbo Shenzhou Knitting",
+    "Xinfengming Group",
+    "Lu Thai Textile",
+    "Hengtian Heavy Industry (machinery)",
+    "Wuyang Textile Machinery"
+   ]
+  },
+  "kofoti": {
+   "name": "Korea Federation of Textile Industries (KOFOTI)",
+   "url": "kofoti.or.kr",
+   "coverage": "NO public member-company directory found",
+   "note": "Affiliated portal koreatextile.org claims ~4,000 Korean textile/apparel manufacturers by category, but returned no extractable company names -- not listed here rather than guessed",
+   "india_signal": "None found"
+  },
+  "india_itme_2022_exhibitors": {
+   "name": "India ITME 2022 exhibitor list (bonus find, not a trade-association member list)",
+   "url": "https://corporate.india-itme.com/gttes2025/PDF/Past-Event-INDIA-ITME-2022-Exhibitor-List.pdf",
+   "what": "India's own biennial textile machinery trade fair -- exhibitor catalog PDF, 1,800+ entries, NATIONAL vs INTERNATIONAL flagged per exhibitor, with chapter/category + hall/stall. 148 unique INTERNATIONAL (non-Indian) exhibitors extracted.",
+   "cross_validation": "Directly confirms this twin's other association-membership findings: Swiss Textile Machinery Assoc. members Heberlein AG, Jakob Mueller AG, Loepfe Brothers, Rotorcraft AG, Saurer (3 entities), Sedo Engineering, Uster Technologies, Xetma Vollenweider, Itema all exhibited in 2022 -- proving the 'India ITME 2026' signal found for the Swiss association isn't a one-off, the pattern already existed in 2022. Also present: German VDMA-adjacent names (Truetzschler Group, Lindauer Dornier, Mayer & Cie), Italian ACIMIT-adjacent names (Lonati, Santoni, Reggiani Macchine), Japanese JTMA-adjacent names (Murata Machinery, Tsudakoma, TMT Machinery).",
+   "international_exhibitors_sample": [
+    "Heberlein AG",
+    "Jakob Mueller AG",
+    "Loepfe Brothers Ltd",
+    "Rotorcraft AG",
+    "Saurer (Changzhou) Textile Machinery / Saurer Fibrevision / Saurer Spinning Solutions",
+    "Sedo Engineering SA",
+    "Uster Technologies AG",
+    "Xetma Vollenweider GmbH",
+    "Itema S.p.A",
+    "Santex Rimar Group",
+    "Swinsol AG",
+    "Truetzschler Group SE",
+    "Lindauer Dornier GmbH",
+    "Mayer & Cie. GmbH & Co. KG",
+    "Lonati SpA",
+    "Santoni S.p.A.",
+    "Reggiani Macchine SpA",
+    "Murata Machinery Ltd",
+    "Tsudakoma Corp",
+    "TMT Machinery",
+    "Brazzoli Srl",
+    "Comez International Srl",
+    "Lafer SpA",
+    "Lawer S.p.A",
+    "Loptex Srl",
+    "Bianco S.p.A.",
+    "Corino Macchine SpA",
+    "Ferraro SpA",
+    "Vandewiele-Savio India Private Limited",
+    "Picanol India"
+   ],
+   "note": "148 total international exhibitors found; full list in the PDF, sample above are the ones cross-matching this layer's other association rosters or otherwise notable."
+  }
+ },
+ "pdf_archive_search": {
+  "done": "2026-08-22",
+  "confirmed_pdfs": [
+   "Swiss Textile Machinery Assoc. 2025 member directory (swisstextilemachinery.ch, full name/address/email/segment/competence per member -- richer than the live web scrape)",
+   "Swiss Textile Machinery Assoc. 2023 edition (same structure, prior year)",
+   "BTMA ITMA-2023 exhibitor brochure (~31-member subset, not the full roster)",
+   "India ITME 2022 exhibitor catalog (1,800+ entries, 148 international)"
+  ],
+  "not_found_as_pdf": [
+   "ITMF (directory PDF path returns 504, dead)",
+   "VDMA Textile Machinery (web database only)",
+   "UKFT (only quarterly newsletters, no directory PDF)",
+   "CEMATEX, UCMTF, TMAS, The Textile Institute, JTMA, CNTAC, KOFOTI"
+  ],
+  "gated_not_raw_pdf": [
+   "ACIMIT General Directory (Issuu flipbook viewer, editions 2014/2015/2017/2020/2023 found, no direct .pdf URL)"
+  ]
+ },
+ "total_companies_mapped": 826,
+ "strongest_india_signal": "Swiss Textile Machinery Association: ~20 of 42 members (~half) confirmed exhibiting at India ITME 2026"
+}

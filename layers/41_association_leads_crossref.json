@@ -1,0 +1,3026 @@
+{
+ "layer": 41,
+ "name": "association_leads_crossref",
+ "built": "2026-08-22",
+ "what": "Cross-references layer 39/40's association/exhibitor rosters against the twin's existing leads (layer 16, 263+ companies) and company DB (layer 32, 1,785+ companies) using the shared strong/weak fragment matcher -- flags companies NOT already tracked. Word-boundary matched, not a guess.",
+ "known_company_count": 1769,
+ "total_new_flagged": 733,
+ "sources": {
+  "Aero India 2019 (foreign exhibitors)": {
+   "total_entries": 160,
+   "unique": 156,
+   "new_to_twin": 110,
+   "flagged": [
+    {
+     "company": "VOESTALPINE HIGH PERFORMANCE METALS INDIA PVT LTD",
+     "country": "Austria"
+    },
+    {
+     "company": "JSC \"558 AIRCRAFT REPAIR PLANT\"",
+     "country": "Belarus"
+    },
+    {
+     "company": "MAGELLAN AEROSPACE",
+     "country": "Canada"
+    },
+    {
+     "company": "AGENTURA CZECH TRADE",
+     "country": "Czech Republic"
+    },
+    {
+     "company": "AARJAY INTERNATIONAL PVT LTD",
+     "country": "France"
+    },
+    {
+     "company": "ABC GROUP",
+     "country": "France"
+    },
+    {
+     "company": "AEROCAMPUS AQUITAINE",
+     "country": "France"
+    },
+    {
+     "company": "AEROMETALS AND ALLOYS - ACNIS GROUP",
+     "country": "France"
+    },
+    {
+     "company": "AIR LIQUIDE",
+     "country": "France"
+    },
+    {
+     "company": "ASB GROUP",
+     "country": "France"
+    },
+    {
+     "company": "AUBERT & DUVAL",
+     "country": "France"
+    },
+    {
+     "company": "AXON CABLE",
+     "country": "France"
+    },
+    {
+     "company": "DASSAULT SYSTEMES",
+     "country": "France"
+    },
+    {
+     "company": "DRAKA FILECA",
+     "country": "France"
+    },
+    {
+     "company": "FIRST SWITCHTECH",
+     "country": "France"
+    },
+    {
+     "company": "FRENCH AIR FORCE",
+     "country": "France"
+    },
+    {
+     "company": "GACHES CHIMIE",
+     "country": "France"
+    },
+    {
+     "company": "INTERFACE CONCEPT",
+     "country": "France"
+    },
+    {
+     "company": "LIEBHERR-AEROSPACE & TRANSPORTATION SAS",
+     "country": "France"
+    },
+    {
+     "company": "MACH AERO",
+     "country": "France"
+    },
+    {
+     "company": "NICOMATIC INDIA ELECTRONICS PVT LTD",
+     "country": "France"
+    },
+    {
+     "company": "NOVAE AEROSPACE",
+     "country": "France"
+    },
+    {
+     "company": "PARIS SAINT DENIS AERO",
+     "country": "France"
+    },
+    {
+     "company": "PINETTE EMIDECAU INDUSTRIES - PEI",
+     "country": "France"
+    },
+    {
+     "company": "RAFALE INTERNATIONAL",
+     "country": "France"
+    },
+    {
+     "company": "SONOVISION AETOS",
+     "country": "France"
+    },
+    {
+     "company": "SOPRA STERIA",
+     "country": "France"
+    },
+    {
+     "company": "STAUBLI FAVERGES SCA",
+     "country": "France"
+    },
+    {
+     "company": "WEARE GROUP",
+     "country": "France"
+    },
+    {
+     "company": "ZODIAC DATA SYSTEMS",
+     "country": "France"
+    },
+    {
+     "company": "ELKAY ELECTROMECH INDIA PVT. LTD.",
+     "country": "Germany"
+    },
+    {
+     "company": "ROHDE & SCHWARZ",
+     "country": "Germany"
+    },
+    {
+     "company": "CONTROP PRECISION TECHNOLOGIES LTD",
+     "country": "Israel"
+    },
+    {
+     "company": "DEFSYS SOLUTIONS PRIVATE LIMITED",
+     "country": "Israel"
+    },
+    {
+     "company": "ISRAEL AEROSPACE INDUSTRIES LTD. (IAI)",
+     "country": "Israel"
+    },
+    {
+     "company": "NIR OR ISRAEL LTD.",
+     "country": "Israel"
+    },
+    {
+     "company": "ORBIT COMMUNICATION SYSTEMS LTD",
+     "country": "Israel"
+    },
+    {
+     "company": "RAFAEL ADVANCED DEFENSE SYSTEMS LTD",
+     "country": "Israel"
+    },
+    {
+     "company": "SIBAT ISRAEL MINISTRY OF DEFENCE",
+     "country": "Israel"
+    },
+    {
+     "company": "ELETTRONICA ASTER S.P.A",
+     "country": "Italy"
+    },
+    {
+     "company": "LOGIC S.P.A.",
+     "country": "Italy"
+    },
+    {
+     "company": "MP FILTRI INDIA PRIVATE LIMITED",
+     "country": "Italy"
+    },
+    {
+     "company": "NAGMAN INSTRUMENTS AND D MARCHIORI",
+     "country": "Italy"
+    },
+    {
+     "company": "MITUTOYO SOUTH ASIA PVT LTD",
+     "country": "Japan"
+    },
+    {
+     "company": "«ALMAZ-ANTEY» CORP.",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "BERIEV AIRCRAFT COMPANY (BERIEV)",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "BETA AIR JSC",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "ELECTROSTAL METALLURGICAL PLANT. JSC",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "ILYUSHIN AVIATION COMPLEX (ILYUSHIN)",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "IRKUT CORPORATION (IRKUT)",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "JSC \"RUSSIAN HELICOPTERS\"",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "MIG RUSSIAN AIRCRAFT CORPORATION",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "RAMENSKOYE DESIGN COMPANY (RDC JSC)",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "RC MODULE",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "ROSOBORONEXPORT JSC",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "RUBIN AVIATION CORPORATION",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "RUSSIAN AVIATION CO LTD",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "RUSSIAN HELICOPTERS",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "SHVABE JSC",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "SUKHOI AVIATION HOLDING COMPANY (SUKHOI)",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "SUKHOI CIVIL AIRCRAFT",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "UNITED AIRCRAFT CORPORATION",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "UNITED ENGINE CORPORATION",
+     "country": "Russian Federation"
+    },
+    {
+     "company": "HYPERCOAT ENTEPRISES PTE LTD",
+     "country": "Singapore"
+    },
+    {
+     "company": "REUTECH COMMUNICATIONS",
+     "country": "South Africa"
+    },
+    {
+     "company": "SME EXPORTS PTY LTD",
+     "country": "South Africa"
+    },
+    {
+     "company": "ACUTRONIC GROUP - ACUTRONIC SWITZERLAND LTD.",
+     "country": "Switzerland"
+    },
+    {
+     "company": "HONEYWELL INTERNATIONAL SARL",
+     "country": "Switzerland"
+    },
+    {
+     "company": "MUNCHUR MACHINES PVT LTD",
+     "country": "Switzerland"
+    },
+    {
+     "company": "MOTOR SICH, JSC",
+     "country": "Ukraine"
+    },
+    {
+     "company": "SFTE SPETSTECHNOEXPORT",
+     "country": "Ukraine"
+    },
+    {
+     "company": "NAFFCO FZCO",
+     "country": "United Arab Emirates"
+    },
+    {
+     "company": "PPG AEROSPACE",
+     "country": "United Arab Emirates"
+    },
+    {
+     "company": "ADS GROUP LTD",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "AERO METALS ALLIANCE",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "COLLINS AEROPACE",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "CRANFIELD UNIVERSITY",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "GARDNER AEROSPACE",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "SHERBORNE SENSORS",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "SMITHS INTERCONNECT",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "STRONGFIELD TECHNOLOGIES LTD.",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "TECHTEST LTD (HR SMITH GROUP)",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "WELSH GOVERNMENT",
+     "country": "United Kingdom"
+    },
+    {
+     "company": "AERO PRECISION",
+     "country": "United States"
+    },
+    {
+     "company": "AEROSPACE INDUSTRIES ASSOCIATION",
+     "country": "United States"
+    },
+    {
+     "company": "AMI METALS INC",
+     "country": "United States"
+    },
+    {
+     "company": "AVTRON AEROSPACE AND TESTEK",
+     "country": "United States"
+    },
+    {
+     "company": "COLLINS AEROSPACE",
+     "country": "United States"
+    },
+    {
+     "company": "DEFENSE SECURITY COOPERATION AGENCY",
+     "country": "United States"
+    },
+    {
+     "company": "FUTURE METALS LLC",
+     "country": "United States"
+    },
+    {
+     "company": "GE AVIATION",
+     "country": "United States"
+    },
+    {
+     "company": "GENERAL ATOMICS & AFFILIATED COMPANIES",
+     "country": "United States"
+    },
+    {
+     "company": "HARTZELL PROPELLER",
+     "country": "United States"
+    },
+    {
+     "company": "HI-TECH IMPORT EXPORT CORPORATION",
+     "country": "United States"
+    },
+    {
+     "company": "KALLMAN WORLDWIDE, INC.",
+     "country": "United States"
+    },
+    {
+     "company": "LAVERSAB INDIA",
+     "country": "United States"
+    },
+    {
+     "company": "LOCKHEED MARTIN AERONAUTICS",
+     "country": "United States"
+    },
+    {
+     "company": "LOCKHEED MARTIN CORPORATION",
+     "country": "United States"
+    },
+    {
+     "company": "LOCKHEED MARTIN GLOBAL INC",
+     "country": "United States"
+    },
+    {
+     "company": "LOCKHEED MARTIN INDIA PRIVATE LIMITED",
+     "country": "United States"
+    },
+    {
+     "company": "LOCKHEED MARTIN INTERNATIONAL",
+     "country": "United States"
+    },
+    {
+     "company": "LOCKHEED MARTIN MISSILES AND FIRE CONTROL",
+     "country": "United States"
+    },
+    {
+     "company": "LOCKHEED MARTIN ROTARY AND MISSION SYSTEMS",
+     "country": "United States"
+    },
+    {
+     "company": "MAVEN ENGINEERING CORPORATION",
+     "country": "United States"
+    },
+    {
+     "company": "MENLOPARK TECHNOLOGIES PRIVATE LIMITED",
+     "country": "United States"
+    },
+    {
+     "company": "RAY-Q INTERCONNECTION TECHNOLOGIES INDIA PVT LTD",
+     "country": "United States"
+    },
+    {
+     "company": "SIRIUS TECHNOLOGIES",
+     "country": "United States"
+    },
+    {
+     "company": "TAILWIND AEROSPACE SOLUTIONS, INC",
+     "country": "United States"
+    },
+    {
+     "company": "TW METALS, LLC.",
+     "country": "United States"
+    },
+    {
+     "company": "WESCO AIRCRAFT",
+     "country": "United States"
+    }
+   ]
+  },
+  "SEMICON India 2025": {
+   "total_entries": 351,
+   "unique": 351,
+   "new_to_twin": 298,
+   "flagged": [
+    {
+     "company": "3M INDIA LIMITED",
+     "country": null
+    },
+    {
+     "company": "Accurate Sales and Services Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Accurex Solutions Pvt. Ltd",
+     "country": null
+    },
+    {
+     "company": "Addverb Technologies",
+     "country": null
+    },
+    {
+     "company": "ADVANCED SYSTEM IN PACKAGE TECHNOLOGIES",
+     "country": null
+    },
+    {
+     "company": "Advantec Materials India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Advantest (Singapore) Pte. Ltd.",
+     "country": null
+    },
+    {
+     "company": "AGARAM INDUSTRIES",
+     "country": null
+    },
+    {
+     "company": "AGC Asia Pacific (India) Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "AGILENT TECHNOLOGIES",
+     "country": null
+    },
+    {
+     "company": "Air Liquide India Speciality Gases Private Limited",
+     "country": null
+    },
+    {
+     "company": "Airmep Sales Corp.",
+     "country": null
+    },
+    {
+     "company": "Akribis Systems India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "ALIGNED TEST PTE LTD",
+     "country": null
+    },
+    {
+     "company": "AMD India Private Limited",
+     "country": null
+    },
+    {
+     "company": "AMS worldwide private limited",
+     "country": null
+    },
+    {
+     "company": "Apex Precision Mechatronix Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "APP SYSTEMS SERVICES PTE LTD",
+     "country": null
+    },
+    {
+     "company": "Aquatech Systems (Asia) Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "ASAHI DIAMOND INDUSTRIAL INDIA PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "ASM HHV ENGINEERING PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "ASM Technologies LTD",
+     "country": null
+    },
+    {
+     "company": "ASML Singapore Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "ASMPT Singapore",
+     "country": null
+    },
+    {
+     "company": "Assam Industrial Development Corporation Limited (Government of Assam)",
+     "country": null
+    },
+    {
+     "company": "Ausdia Software India Private Limited",
+     "country": null
+    },
+    {
+     "company": "AVANT GARDE CLEANROOM &amp; ENGG. SOLUTIONS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "AZELIS (INDIA) PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Bergen Systems Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Besi Singapore Pte. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Bharat Semitech Pvt LTd",
+     "country": null
+    },
+    {
+     "company": "BNR Global",
+     "country": null
+    },
+    {
+     "company": "Brain Domain Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "Bronkhorst Instrumentation India PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "Bruker India Scientific Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Bry-Air (Asia) Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Cadence Design Systems",
+     "country": null
+    },
+    {
+     "company": "Camfil India Private Limited",
+     "country": null
+    },
+    {
+     "company": "Canon Singapore Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "Carl Zeiss India (Bangalore) Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Carten Controls Ltd.",
+     "country": null
+    },
+    {
+     "company": "CCD Technical Solutions Pvt Limited",
+     "country": null
+    },
+    {
+     "company": "CDIL Semiconductors Private Limited",
+     "country": null
+    },
+    {
+     "company": "Centre for Nano Science &amp; Engineering (IISc)",
+     "country": null
+    },
+    {
+     "company": "Centre for Semiconductor Technologies (SemiX) IIT Bombay",
+     "country": null
+    },
+    {
+     "company": "CG SEMI PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "CHIME POLYMERS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "Chukoh Chemical Industries Limited",
+     "country": null
+    },
+    {
+     "company": "Cir-Q-Tech Tako Technologies Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "CleanTech Services India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "CN Water Systems Private Limited",
+     "country": null
+    },
+    {
+     "company": "COGNITIVE DESIGN TECHNOLOGY PVT LTD",
+     "country": null
+    },
+    {
+     "company": "Contec Critical Solutions Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "CP SYSTEM CO, LTD.",
+     "country": null
+    },
+    {
+     "company": "CRYO H&amp;I CO.,LTD.",
+     "country": null
+    },
+    {
+     "company": "Cryogenic Specialty Manufacturing Sdn. Bhd.",
+     "country": null
+    },
+    {
+     "company": "D&amp;X Co., Ltd",
+     "country": null
+    },
+    {
+     "company": "DAIICHI JITSUGYO INDIA PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "Daikin Chemical Southeast Asia Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "DDE ULTRA HIGH PURITY PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "DDP SPECIALITY PRODUCTS INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "DHL Supply Chain India",
+     "country": null
+    },
+    {
+     "company": "Disco Hi-Tec (Singapore) Pte Ltd.",
+     "country": null
+    },
+    {
+     "company": "Dockweiler India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "DOSHAHEEN SOLUTIONS PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Dou Yee Enterprises (S) Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "DR Laser Singapore Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "DYNA Filters Private Limited",
+     "country": null
+    },
+    {
+     "company": "Ebara Technologies, Inc.",
+     "country": null
+    },
+    {
+     "company": "EBM-PAPST INDIA PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "Edgetech Scientific Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Edwards India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Einnosys Technologies",
+     "country": null
+    },
+    {
+     "company": "El Camino Technologies Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Elesa and Ganter India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Eltech Engineers Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Emerson T&amp;M (NI)",
+     "country": null
+    },
+    {
+     "company": "EO Technics Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "Esmo Asia Pte. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Eurotherm India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "EV Group",
+     "country": null
+    },
+    {
+     "company": "Fabtech Technologies Cleanrooms Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Fluro Engineering Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Four-C-Tron",
+     "country": null
+    },
+    {
+     "company": "FUJIFILM India Pvt. Ltd",
+     "country": null
+    },
+    {
+     "company": "Gallium Nitride Ecosystem Enabling Centre and Incubator (GEECI)",
+     "country": null
+    },
+    {
+     "company": "GAMP SERVICES PVT LTD",
+     "country": null
+    },
+    {
+     "company": "Gastron Asia Pacific Pte. Ltd",
+     "country": null
+    },
+    {
+     "company": "GenTech International Trading Co., Limited",
+     "country": null
+    },
+    {
+     "company": "Georg Fischer Piping Systems India",
+     "country": null
+    },
+    {
+     "company": "Global Marketing Services",
+     "country": null
+    },
+    {
+     "company": "Global Now  Pte. Ltd.",
+     "country": null
+    },
+    {
+     "company": "GLOBETEK INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "GMP Technical Solutions Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Grauer and Weil (India) Limited",
+     "country": null
+    },
+    {
+     "company": "Grindwell Norton Ltd.",
+     "country": null
+    },
+    {
+     "company": "GRUNDFOS PUMPS INDIA PVT LTD",
+     "country": null
+    },
+    {
+     "company": "Guidance Tamil Nadu",
+     "country": null
+    },
+    {
+     "company": "Gujarat State Electronics Mission",
+     "country": null
+    },
+    {
+     "company": "Hae Kwang Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "HANBELL VACUUM TECHNOLOGY CO., LTD",
+     "country": null
+    },
+    {
+     "company": "Haryana State Industrial &amp; Infrastructure Development Corporation Ltd",
+     "country": null
+    },
+    {
+     "company": "HCP Technologies Private Limited",
+     "country": null
+    },
+    {
+     "company": "Hegzaflon Global pvt ltd",
+     "country": null
+    },
+    {
+     "company": "Heraeus Materials Singapore Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "HIBEX SINGAPORE PTE LTD",
+     "country": null
+    },
+    {
+     "company": "HIGGS BOSON SYSTEMS PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Highness Microelectronics  Ltd",
+     "country": null
+    },
+    {
+     "company": "HIGHSTAR TECHNOLOOGY PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Hightec Systems Corporation",
+     "country": null
+    },
+    {
+     "company": "HIIG Trinity (Anhui) Technology Co., LTD.",
+     "country": null
+    },
+    {
+     "company": "Hitachi High-Tech",
+     "country": null
+    },
+    {
+     "company": "HMC Sales &amp; Service Pte Ltd.",
+     "country": null
+    },
+    {
+     "company": "Honeywell International Inc.",
+     "country": null
+    },
+    {
+     "company": "HORIBA India",
+     "country": null
+    },
+    {
+     "company": "HTL Aircon Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "HTL COMPANY INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Ihara Science Corp.",
+     "country": null
+    },
+    {
+     "company": "iHUB DivyaSampark",
+     "country": null
+    },
+    {
+     "company": "IIT Madras Research Park",
+     "country": null
+    },
+    {
+     "company": "INABATA&amp;Co.,Ltd.",
+     "country": null
+    },
+    {
+     "company": "InCore Semiconductors Private Limited",
+     "country": null
+    },
+    {
+     "company": "India Electronics &amp; Semiconductor Association",
+     "country": null
+    },
+    {
+     "company": "India Semiconductor Mission",
+     "country": null
+    },
+    {
+     "company": "INDO FRENCH HIGH TECH EQUIPMENTS",
+     "country": null
+    },
+    {
+     "company": "Innatera Nanosystems India Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "INOX Air Products Private Limited",
+     "country": null
+    },
+    {
+     "company": "Integrated Cleanroom Technologies Pvt. Ltd.,",
+     "country": null
+    },
+    {
+     "company": "INTERNATIONAL FACILITY ENGINEERING PTE. LTD.,",
+     "country": null
+    },
+    {
+     "company": "International Green Technology Japan",
+     "country": null
+    },
+    {
+     "company": "Intertec Sales Corp.",
+     "country": null
+    },
+    {
+     "company": "INVENTEC Performance Chemicals SEA. Sdn. Bhd",
+     "country": null
+    },
+    {
+     "company": "Ion Exchange (India) Ltd.",
+     "country": null
+    },
+    {
+     "company": "izmo microsystems private limited",
+     "country": null
+    },
+    {
+     "company": "Jagdamba Enterprise",
+     "country": null
+    },
+    {
+     "company": "Japan India Business Bureau (NPO)",
+     "country": null
+    },
+    {
+     "company": "JEOL INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "JET America Inc.",
+     "country": null
+    },
+    {
+     "company": "Jipal Hi-Tech",
+     "country": null
+    },
+    {
+     "company": "JLK Technology Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "JMJ Korea Co., Ltd",
+     "country": null
+    },
+    {
+     "company": "June Enterprises Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Karnataka Innovation and Technology Society, Government of Karnataka",
+     "country": null
+    },
+    {
+     "company": "Kaynes Semicon Private Limited",
+     "country": null
+    },
+    {
+     "company": "KEYSIGHT TECHNOLOGIES INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "KITZ SCT CORPORATION",
+     "country": null
+    },
+    {
+     "company": "KLA-Tencor SW India Pvt. Ltd.,",
+     "country": null
+    },
+    {
+     "company": "Kloud Klick",
+     "country": null
+    },
+    {
+     "company": "Koh Young Technology Inc.",
+     "country": null
+    },
+    {
+     "company": "KOTRA (Korea Trade-Investment Promotion Agency)",
+     "country": null
+    },
+    {
+     "company": "Kuehne + Nagel India",
+     "country": null
+    },
+    {
+     "company": "Kulicke &amp; Soffa Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "Kurin Tech Private Limited",
+     "country": null
+    },
+    {
+     "company": "Kyoritsu Electric India Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Labindia Instruments Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Lalwala Industries",
+     "country": null
+    },
+    {
+     "company": "Lapmaster Wolters India Private Limited",
+     "country": null
+    },
+    {
+     "company": "Linde India",
+     "country": null
+    },
+    {
+     "company": "Lindstrom Services (I) Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Lintec Advanced Technologies (Singapore) Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "Lucid Imaging Private Limited",
+     "country": null
+    },
+    {
+     "company": "MacDermid Alpha Electronics Solutions India Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Machine House (India) Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Maharashtra Industrial Development Corporation",
+     "country": null
+    },
+    {
+     "company": "Malvern Panalytical",
+     "country": null
+    },
+    {
+     "company": "MASCOT SYSTEMS PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Maven Silicon",
+     "country": null
+    },
+    {
+     "company": "Maxell Asia, Ltd",
+     "country": null
+    },
+    {
+     "company": "MAXIM SMT TECHNOLOGIES PVT LTD",
+     "country": null
+    },
+    {
+     "company": "MayAir Singapore Pte. Ltd.",
+     "country": null
+    },
+    {
+     "company": "MDX3D INDIA LLP",
+     "country": null
+    },
+    {
+     "company": "Mel Systems and Services Limited",
+     "country": null
+    },
+    {
+     "company": "Membrane Group India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Meukron Technologies Private Limited",
+     "country": null
+    },
+    {
+     "company": "Micro Engineering Inc.",
+     "country": null
+    },
+    {
+     "company": "MICRO IMAGE",
+     "country": null
+    },
+    {
+     "company": "Micron Semiconductor Technology India Pvt. Ltd",
+     "country": null
+    },
+    {
+     "company": "Mihama India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Mindgrove Technologies",
+     "country": null
+    },
+    {
+     "company": "Mitsui Chemicals,Inc.",
+     "country": null
+    },
+    {
+     "company": "Mitutoyo South Asia Private Limited",
+     "country": null
+    },
+    {
+     "company": "MK Electron Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "Morimura Brothers Trading India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Murugappa Water Technology and Solutions Private Limited",
+     "country": null
+    },
+    {
+     "company": "Nagase India pvt ltd",
+     "country": null
+    },
+    {
+     "company": "Nano Clean Technologies",
+     "country": null
+    },
+    {
+     "company": "NCFlexE IIT KANPUR",
+     "country": null
+    },
+    {
+     "company": "Neuvent Semiconductor Technologies OPC Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "NEXTGEN HITECH SEMICONDUCTOR PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "NHK Spring Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "NIPPON EXPRESS （SOUTH ASIA &amp; OCEANIA） PTE. LTD.",
+     "country": null
+    },
+    {
+     "company": "Nippon Fusso India Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "NIPPON THOMPSON CO., LTD.",
+     "country": null
+    },
+    {
+     "company": "Nitta Corporation India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Nitto Denko India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "NITTO KOHKI India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "NMTronics India Pvt. Limited",
+     "country": null
+    },
+    {
+     "company": "NSW Automation Sdn Bhd",
+     "country": null
+    },
+    {
+     "company": "OKAMOTO INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "OKAYA &amp; CO. INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Onto Innovation",
+     "country": null
+    },
+    {
+     "company": "ORBIT AND SKYLINE INDIA PVT LTD",
+     "country": null
+    },
+    {
+     "company": "ORBITALUM (ITW India Private Ltd.)",
+     "country": null
+    },
+    {
+     "company": "ORISSA COMPUTER APPLICATION CENTRE",
+     "country": null
+    },
+    {
+     "company": "Oxford Instruments INDIA Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Park Systems India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "PCI Autotronics Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Pentamaster Instrumentation Sdn Bhd.",
+     "country": null
+    },
+    {
+     "company": "Pfeiffer Vacuum (India) Private Limited",
+     "country": null
+    },
+    {
+     "company": "PI (Physik Instrumente) Singapore LLP",
+     "country": null
+    },
+    {
+     "company": "Picotech Solutions Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "pixxel integrated support pvt.ltd",
+     "country": null
+    },
+    {
+     "company": "POLYMATECH ELECTRONICS LIMITED",
+     "country": null
+    },
+    {
+     "company": "Pophen Technology India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Possehl Electronics (M) Sdn Bhd.",
+     "country": null
+    },
+    {
+     "company": "Power Cube Semi",
+     "country": null
+    },
+    {
+     "company": "Praj HiPurity Systems Ltd",
+     "country": null
+    },
+    {
+     "company": "Prama Instruments Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Precision Products Marketing Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Precitec 3D Metrology",
+     "country": null
+    },
+    {
+     "company": "PS Solutions &amp; Services Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "PTD Cleantech Solutions Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "PTW Asia Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "PURITECH NOIDA PVT LTD",
+     "country": null
+    },
+    {
+     "company": "PVA TePla AG",
+     "country": null
+    },
+    {
+     "company": "Quantum Design India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Quest Global Engineering Services Private Limited",
+     "country": null
+    },
+    {
+     "company": "RAAD SYSTEMS PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Raana Semiconductors Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "RAHUL FERROMET &amp; ENGINEERING PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "RIKEN KEIKI Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "RIR Power Electronics Limited",
+     "country": null
+    },
+    {
+     "company": "ROKKO Systems Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "RRP ELECTRONICS LTD",
+     "country": null
+    },
+    {
+     "company": "Sahasra Semiconductor Private Limited",
+     "country": null
+    },
+    {
+     "company": "SAM PRODUCTS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "SAM Technologies",
+     "country": null
+    },
+    {
+     "company": "Sangir Plastics Private Limited",
+     "country": null
+    },
+    {
+     "company": "Sawant Process Solutions Private Limited",
+     "country": null
+    },
+    {
+     "company": "SB TECH Corporation",
+     "country": null
+    },
+    {
+     "company": "Scientific Research Instruments Company Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "SCREEN SPE Singapore Pte. Ltd.",
+     "country": null
+    },
+    {
+     "company": "SHAVO TECHNOLOGIES PVT LTD",
+     "country": null
+    },
+    {
+     "company": "Shilpa Medicare Limited",
+     "country": null
+    },
+    {
+     "company": "SignOff Semiconductors",
+     "country": null
+    },
+    {
+     "company": "SIMCO Global Technology &amp; Systems Ltd.",
+     "country": null
+    },
+    {
+     "company": "Singapore Precision Engineering and Technology Association (SPETA)",
+     "country": null
+    },
+    {
+     "company": "SL Metals Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "SmartSoC Solutions",
+     "country": null
+    },
+    {
+     "company": "SMC Corporation (India) Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Smiths Interconnect, a Molex company",
+     "country": null
+    },
+    {
+     "company": "Society for Information Display",
+     "country": null
+    },
+    {
+     "company": "Sojitz India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Soliton Technologies Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Specmax Technologies Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "STERIMED KOCHI PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Stratus Automation Sdn Bhd",
+     "country": null
+    },
+    {
+     "company": "SUCHI SEMICON PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Sumitomo Bakelite Singapore Pte. Ltd.",
+     "country": null
+    },
+    {
+     "company": "SUMITOMO CHEMICAL",
+     "country": null
+    },
+    {
+     "company": "SYMPHONY ENGINEERING SDN BHD",
+     "country": null
+    },
+    {
+     "company": "TAG PIPE EQUIPMENT (INDIA) PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "Taiyo Nippon Sanso India Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "Tanaka Kikinzoku (India) Private Limited",
+     "country": null
+    },
+    {
+     "company": "Tata Electronics Pvt.Ltd",
+     "country": null
+    },
+    {
+     "company": "TEAM D ENGINEERING PVT LTD",
+     "country": null
+    },
+    {
+     "company": "Techsol Engineers",
+     "country": null
+    },
+    {
+     "company": "Tesscorn NanoScience Inc",
+     "country": null
+    },
+    {
+     "company": "Tessolve Semiconductor Private Limited",
+     "country": null
+    },
+    {
+     "company": "Thermo Electric Company INC",
+     "country": null
+    },
+    {
+     "company": "Thermo Fisher Scientific",
+     "country": null
+    },
+    {
+     "company": "THK India Private Limited",
+     "country": null
+    },
+    {
+     "company": "TMEIC Industrial Systems India Private Limited",
+     "country": null
+    },
+    {
+     "company": "Toho international Inc.",
+     "country": null
+    },
+    {
+     "company": "Toho Koki Seisakusho Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "TOKYO OHKA KOGYO CO., LTD.",
+     "country": null
+    },
+    {
+     "company": "TOKYO SEIMITSU CO., LTD.",
+     "country": null
+    },
+    {
+     "company": "Toshi Automation Solutions Limited",
+     "country": null
+    },
+    {
+     "company": "TPST SERVICES PRIVATE LTD",
+     "country": null
+    },
+    {
+     "company": "Transport Corporation Of India Limited",
+     "country": null
+    },
+    {
+     "company": "Trojan Technologies",
+     "country": null
+    },
+    {
+     "company": "Turboserv Engineering",
+     "country": null
+    },
+    {
+     "company": "UHP Technologies Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "ULVAC Singapore Pte Ltd India Branch",
+     "country": null
+    },
+    {
+     "company": "UNICORN ENTERPRISE",
+     "country": null
+    },
+    {
+     "company": "UNIMARK HI-TECH SOLUTIONS LLP",
+     "country": null
+    },
+    {
+     "company": "UNIVERSAL ORBITAL SYSTEMS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "Uttar Pradesh Electronics Corporation Limited",
+     "country": null
+    },
+    {
+     "company": "Varada Tech Solutions Pvt. Ltd.",
+     "country": null
+    },
+    {
+     "company": "VAT Singapore Pte Ltd",
+     "country": null
+    },
+    {
+     "company": "Vayusodh Applied Systems and Technologies LLP",
+     "country": null
+    },
+    {
+     "company": "VEECO Asia PTE LTD.",
+     "country": null
+    },
+    {
+     "company": "Waaree Clean Energy Services",
+     "country": null
+    },
+    {
+     "company": "Xylem Water Solutions India Pvt Ltd",
+     "country": null
+    },
+    {
+     "company": "Yamaha Robotics Co., Ltd.",
+     "country": null
+    },
+    {
+     "company": "Yamazen Machinery &amp; Tools India Private Limited",
+     "country": null
+    },
+    {
+     "company": "Yield Engineering Systems, Inc.",
+     "country": null
+    },
+    {
+     "company": "Zara Tech",
+     "country": null
+    }
+   ]
+  },
+  "AAHAR 2024 (Hall 1, foreign participation)": {
+   "total_entries": 139,
+   "unique": 139,
+   "new_to_twin": 126,
+   "flagged": [
+    {
+     "company": "ACE INTERNATIONAL LLP",
+     "country": null
+    },
+    {
+     "company": "AMERICAN PECAN COUNCIL",
+     "country": null
+    },
+    {
+     "company": "AMIN PADIDAR CO.",
+     "country": null
+    },
+    {
+     "company": "ASHA TRAEXIM PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "ASHOKASHA EXIM PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "AUSSEE OATS INDIA LTD.",
+     "country": null
+    },
+    {
+     "company": "AUSTRAL FISHERIES PTY LTD",
+     "country": null
+    },
+    {
+     "company": "AUSTRALIAN FINE FOOD",
+     "country": null
+    },
+    {
+     "company": "AUSTRALIAN QUALITY HONEY",
+     "country": null
+    },
+    {
+     "company": "BAJORIA FOODS PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "BIOMÉRIEUX",
+     "country": null
+    },
+    {
+     "company": "BMS ENTERPRISES",
+     "country": null
+    },
+    {
+     "company": "BRILL INTERNATIONAL",
+     "country": null
+    },
+    {
+     "company": "BURAK TARIM ÜRÜNLERİ TİC. LTD. ŞTİ.",
+     "country": null
+    },
+    {
+     "company": "CAFFE` BUONGIORNO 1950",
+     "country": null
+    },
+    {
+     "company": "CAFFE` MONFORTE S.R.L.",
+     "country": null
+    },
+    {
+     "company": "CALIFORNIA WALNUT COMMISSION",
+     "country": null
+    },
+    {
+     "company": "CAMPO D'ORO S.R.L.",
+     "country": null
+    },
+    {
+     "company": "CANDOR FOODS",
+     "country": null
+    },
+    {
+     "company": "CARAMEL VENTURES",
+     "country": null
+    },
+    {
+     "company": "CONCORD INTERNATIONAL",
+     "country": null
+    },
+    {
+     "company": "COOLMES COMMERCIAL KITCHEN EQUIPMENT MFG. CO.,LTD. 1G-26",
+     "country": null
+    },
+    {
+     "company": "COSMO FINE FOODS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "CRANBERRY MARKETING COMMITTEE",
+     "country": null
+    },
+    {
+     "company": "D.A.R. SRL",
+     "country": null
+    },
+    {
+     "company": "DAMATI FOODS PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "DARSHAN FOODS, PVT LTD",
+     "country": null
+    },
+    {
+     "company": "DC JOHAR & SONS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "DELTA NUTRITIVES PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "DRYFRUITVALA FOOD INDUSTRY PVT LTD",
+     "country": null
+    },
+    {
+     "company": "DUGAR OVERSEAS PVT.",
+     "country": null
+    },
+    {
+     "company": "DYNAMIC MIXER",
+     "country": null
+    },
+    {
+     "company": "EDENVALE BEVERAGES (JMB BEVERAGES PTY LTD)",
+     "country": null
+    },
+    {
+     "company": "EMPIRE FOODS",
+     "country": null
+    },
+    {
+     "company": "EPICURE VIMBRI FOODS (P) LTD.",
+     "country": null
+    },
+    {
+     "company": "EURO FOODS PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "FAB FLAVOURS & FRAGRANCES PVT LTD",
+     "country": null
+    },
+    {
+     "company": "FARIDI IMPEX PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "FAUNUS RESOURCE (VICTORIA) PTY LTD",
+     "country": null
+    },
+    {
+     "company": "FLETCHER INTERNATIONAL EXPORTS PTY LTD",
+     "country": null
+    },
+    {
+     "company": "FORTUNE GOURMET SPECIALITIES PVT LTD.",
+     "country": null
+    },
+    {
+     "company": "FROSTY BOY",
+     "country": null
+    },
+    {
+     "company": "GERALDTON FISHERMEN’S CO-OPERATIVE (BROLOS)",
+     "country": null
+    },
+    {
+     "company": "GOOD SEOUL FOODS",
+     "country": null
+    },
+    {
+     "company": "GRAINCORP FOODS AUSTRALIA PTY LTD",
+     "country": null
+    },
+    {
+     "company": "GUSTORA FOODS PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "HALCYON FOOD AND BEVERAGES PVT LTD",
+     "country": null
+    },
+    {
+     "company": "HAPPILO INTERNATIONAL PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "INVESTMENT NSW",
+     "country": null
+    },
+    {
+     "company": "ISTANBUL EXPORTERS' ASSOCIATION (ISTANBUL HAZELNUT",
+     "country": null
+    },
+    {
+     "company": "ISTORE DIRECT TRADING PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "ITA – ITALIAN TRADE COMMISION",
+     "country": null
+    },
+    {
+     "company": "ITALMOPA – PURE FLOUR FROM EUROPE",
+     "country": null
+    },
+    {
+     "company": "JAPAN EXTERNAL TRADE ORGANIZATION",
+     "country": null
+    },
+    {
+     "company": "JHANDEWALAS FOODS LIMITED",
+     "country": null
+    },
+    {
+     "company": "JIVA PRODUCTS",
+     "country": null
+    },
+    {
+     "company": "JIVO WELLNESS PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "KAILIAN FOODS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "KANSOM AUSTRALIA PTY LTD",
+     "country": null
+    },
+    {
+     "company": "KAP CONES PVT LTD (KAP GROUP)",
+     "country": null
+    },
+    {
+     "company": "KAPRIKA CONFECTIONARY PVT LTD",
+     "country": null
+    },
+    {
+     "company": "KBB NUTS PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "KERRY INGREDIENTS INDIA PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "KIKKOMAN INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "KRAVOUR FOODS PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "LCOMPS AND IMPEX PVT LTD",
+     "country": null
+    },
+    {
+     "company": "LIGUORI PASTIFICIO DAL 1820 S.P.A.",
+     "country": null
+    },
+    {
+     "company": "MANDALA TRADING PTY LTD",
+     "country": null
+    },
+    {
+     "company": "MANISHA INTERNATIONAL PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "MARUHA NICHIRO CORPORATION",
+     "country": null
+    },
+    {
+     "company": "MASTEROL FOODS PTY LTD",
+     "country": null
+    },
+    {
+     "company": "MCCAIN FOODS INDIA PVT LTD",
+     "country": null
+    },
+    {
+     "company": "MOTEK SUGARCRAFT (I) PVT.LTD.",
+     "country": null
+    },
+    {
+     "company": "MRG NUTS PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "MRK FOODS PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "NATURESMITH FOODS LLP",
+     "country": null
+    },
+    {
+     "company": "NOOR NISHAN PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "NOVUS ORGANICS PTY LTD",
+     "country": null
+    },
+    {
+     "company": "OAT MILK GOODNESS",
+     "country": null
+    },
+    {
+     "company": "OI POMODORO DA INDUSTRIA BACINO CENTRO SUD ITALIA",
+     "country": null
+    },
+    {
+     "company": "PABREJA IMPEX",
+     "country": null
+    },
+    {
+     "company": "PRANAV FOODS INDUSTRY",
+     "country": null
+    },
+    {
+     "company": "PROV FOODS PVT LTD",
+     "country": null
+    },
+    {
+     "company": "R R INTERNATIONAL",
+     "country": null
+    },
+    {
+     "company": "R R UNIVERSAL PVT LTD",
+     "country": null
+    },
+    {
+     "company": "R.P. GOURMET FOODS PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "RAMA VISION LIMITED",
+     "country": null
+    },
+    {
+     "company": "RAVIDA' AZIENDA AGRICOLA S.R.L.",
+     "country": null
+    },
+    {
+     "company": "RAYANSSH IMPEX",
+     "country": null
+    },
+    {
+     "company": "REGENCY GLOBAL INGREDIENT LLP",
+     "country": null
+    },
+    {
+     "company": "REGENTA M FOODS",
+     "country": null
+    },
+    {
+     "company": "RICH VALLEY DRYFRUIT PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "ROLLER GRILL INTERNATIONAL",
+     "country": null
+    },
+    {
+     "company": "ROYAL IMPORT & EXPORT",
+     "country": null
+    },
+    {
+     "company": "RUCHI INTERNATIONAL",
+     "country": null
+    },
+    {
+     "company": "RUSTICHELLA D'ABRUZZO SPA",
+     "country": null
+    },
+    {
+     "company": "RYAN MEAT COMPANY PTY LTD",
+     "country": null
+    },
+    {
+     "company": "SAKSHAM IMPEX PVT. LTD.",
+     "country": null
+    },
+    {
+     "company": "SANITARIUM ( LIFEHEALTHS FOODS)",
+     "country": null
+    },
+    {
+     "company": "SAVENCIA FROMAGE & DAIRY INDIA PVT LTD",
+     "country": null
+    },
+    {
+     "company": "SEAFOOD INDUSTRY AUSTRALIA",
+     "country": null
+    },
+    {
+     "company": "SHREEJI SALES",
+     "country": null
+    },
+    {
+     "company": "SK ASSOCIATES",
+     "country": null
+    },
+    {
+     "company": "SMAYAN IMPEX INDIA",
+     "country": null
+    },
+    {
+     "company": "SOURCE WELLNESS",
+     "country": null
+    },
+    {
+     "company": "SRI RODA FOODS",
+     "country": null
+    },
+    {
+     "company": "SSERENEE INTERNATIONAL",
+     "country": null
+    },
+    {
+     "company": "STAR OVERSEAS",
+     "country": null
+    },
+    {
+     "company": "STEHR GROUP",
+     "country": null
+    },
+    {
+     "company": "SUMMERFRUIT AUSTRALIA LTD",
+     "country": null
+    },
+    {
+     "company": "SUMUKHAM ENTERPRISE LLP",
+     "country": null
+    },
+    {
+     "company": "SUNBEAM MERCHANTILE VENTURES PVT LTD",
+     "country": null
+    },
+    {
+     "company": "SUPERCHARGED FOOD",
+     "country": null
+    },
+    {
+     "company": "SUPREME ENTERPRISE",
+     "country": null
+    },
+    {
+     "company": "SURESH KUMAR & CO. (IMPEX) PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "SUSHI AND MORE INDIA PVT LTD",
+     "country": null
+    },
+    {
+     "company": "TAZE AY (DATLY SHERBET)",
+     "country": null
+    },
+    {
+     "company": "THE 77 BANK, LTD.& ODAGIRI SHOJI CO., LTD. (CO-EXHIBITION) 1G-13-B",
+     "country": null
+    },
+    {
+     "company": "THE CONNOISSEURS",
+     "country": null
+    },
+    {
+     "company": "TONG GARDEN FOOD PRODUCTS (I) PVT LTD",
+     "country": null
+    },
+    {
+     "company": "TRUFFLEAT SRL",
+     "country": null
+    },
+    {
+     "company": "U.S. DEPARTMENT OF AGRICULTURE - OFFICE OF",
+     "country": null
+    },
+    {
+     "company": "UNIBOURNE SPECIALITIES LLP",
+     "country": null
+    },
+    {
+     "company": "VEEKAY FOODS",
+     "country": null
+    },
+    {
+     "company": "VISHAAL NATURAL FOOD PRODUCTS LLP",
+     "country": null
+    },
+    {
+     "company": "VKC NUTS PVT LTD",
+     "country": null
+    }
+   ]
+  },
+  "India ITME 2022 (international exhibitors)": {
+   "total_entries": 149,
+   "unique": 148,
+   "new_to_twin": 136,
+   "flagged": [
+    {
+     "company": "A.T.E. ENTERPRISES PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "ACE MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "ALEETEX(CHINA)TECHNOLOGY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "ASOCIACION MULTISECTORIAL DE EMPRESAS - AMEC",
+     "country": null
+    },
+    {
+     "company": "ATLAS SINKER & NEEDLE",
+     "country": null
+    },
+    {
+     "company": "BALDWIN JIMEK AB",
+     "country": null
+    },
+    {
+     "company": "BALKAN TEKSTIL MAKINA A.S.",
+     "country": null
+    },
+    {
+     "company": "BANGLADESH TEXTILE JOURNAL",
+     "country": null
+    },
+    {
+     "company": "BARIS YEDEK PARCA TIC. VE SAN. LTD. STI.",
+     "country": null
+    },
+    {
+     "company": "BEAUJADY TRADING CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "BEIJING CHONGLEE MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "BENEKS TAAH. MUH. MUM. MAK. SAN. VE TIC. LTD. STI.",
+     "country": null
+    },
+    {
+     "company": "BIANCO S.P.A.",
+     "country": null
+    },
+    {
+     "company": "BMK BIRLIK MAKINA KALIP SAN. VE TIC.LTD.STI.",
+     "country": null
+    },
+    {
+     "company": "BRAZZOLI SRL",
+     "country": null
+    },
+    {
+     "company": "CALLEBAUT DE BLICQUY",
+     "country": null
+    },
+    {
+     "company": "CANLAR MEKATRONIK SAN. VE TIC A.S.",
+     "country": null
+    },
+    {
+     "company": "CHANGZHOU JINERL CARPET MACHINE PARTS CO., LTD",
+     "country": null
+    },
+    {
+     "company": "CHANGZHOU UBER TEXTILE CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "CHINA TEXMATECH CO., LTD",
+     "country": null
+    },
+    {
+     "company": "COMEZ INTERNATIONAL S.R.L.",
+     "country": null
+    },
+    {
+     "company": "COPOWER TECHNOLOGY CO. LTD.",
+     "country": null
+    },
+    {
+     "company": "CORINO MACCHINE SPA",
+     "country": null
+    },
+    {
+     "company": "COTTON EGYPT ASSOCIATION",
+     "country": null
+    },
+    {
+     "company": "DAELIM STARLET CO.,LTD.",
+     "country": null
+    },
+    {
+     "company": "DANITECH ENGINEERING AND SOLUTIONS SRL",
+     "country": null
+    },
+    {
+     "company": "DATACOLOR ASIA PACIFIC (HK) LIMITED",
+     "country": null
+    },
+    {
+     "company": "DENT INSTRUMENTATION LTD",
+     "country": null
+    },
+    {
+     "company": "DILO SYSTEMS GMBH",
+     "country": null
+    },
+    {
+     "company": "EHWHA GLOTECH CO., LTD",
+     "country": null
+    },
+    {
+     "company": "ELIAR ELEKTRONIK SAN. A.S.",
+     "country": null
+    },
+    {
+     "company": "ELTEKSMAK ELK.ELT.MAK.SAN.TIC.LTD.STI.",
+     "country": null
+    },
+    {
+     "company": "EMTEC ELECTRONIC GMBH",
+     "country": null
+    },
+    {
+     "company": "ENES MAKINE EDN.SAN.TIC.LTD.STI",
+     "country": null
+    },
+    {
+     "company": "FOSHAN SANSHUI YINGJIE PRECISION MACHINERY CO LTD",
+     "country": null
+    },
+    {
+     "company": "FUKAHAMA MACHINERY CO., LTD",
+     "country": null
+    },
+    {
+     "company": "FUTAI MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "GERON CARDING CLOTHING (JIANGSU)CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "GUALCHIERI E GUALCHIERI & C. SRL",
+     "country": null
+    },
+    {
+     "company": "HIWIN TECHNOLOGIES CORP.",
+     "country": null
+    },
+    {
+     "company": "HONGSAM DIGITAL SCIENCE&TECHNOLOGY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "HUAI'AN TIANMA TEXTILE MACHINERY CO., LTD.",
+     "country": null
+    },
+    {
+     "company": "HUAI'AN TIANMA TEXTILE MACHINERYCO.,LTD",
+     "country": null
+    },
+    {
+     "company": "ITALIAN TEXSTYLE",
+     "country": null
+    },
+    {
+     "company": "ITEMA S.P.A",
+     "country": null
+    },
+    {
+     "company": "J. SCHLENTER PRODUCTION GMBH",
+     "country": null
+    },
+    {
+     "company": "JAKOB MUELLER AG",
+     "country": null
+    },
+    {
+     "company": "JEANOLOGIA S.L.",
+     "country": null
+    },
+    {
+     "company": "JIANG SU HAIDA TEXTILE MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "JIANGSU YINGYANG NONWOVEN MACHINERY CO LTD",
+     "country": null
+    },
+    {
+     "company": "JIANGYIN MEJART COLORT FIBERCO.,LTD",
+     "country": null
+    },
+    {
+     "company": "KAVURLAR MAKINA SAN VE TIC A.S",
+     "country": null
+    },
+    {
+     "company": "KERN LIEBERS KNITTING PARTS",
+     "country": null
+    },
+    {
+     "company": "KINEX BEARINGS, A.S.",
+     "country": null
+    },
+    {
+     "company": "KUIL MACHINERY INDUSTRY CO.,LTD.",
+     "country": null
+    },
+    {
+     "company": "KUNTAI MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "LAWER S.P.A",
+     "country": null
+    },
+    {
+     "company": "LEEWHA SRC. LTD.",
+     "country": null
+    },
+    {
+     "company": "LENZING INSTRUMENTS GMBH & CO. KG",
+     "country": null
+    },
+    {
+     "company": "LEUZE ELECTRONIC GMBH + CO. KG",
+     "country": null
+    },
+    {
+     "company": "LIANYUNGANG RUNIAN INDUSTRIAL CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "LINDAUER DORNIER GMBH",
+     "country": null
+    },
+    {
+     "company": "LOEPFE BROTHERS LTD",
+     "country": null
+    },
+    {
+     "company": "LOGIC ART AUTOMATION CO. LTD.",
+     "country": null
+    },
+    {
+     "company": "LONGKOU SUNNY MOULDING CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "LOPTEX SRL",
+     "country": null
+    },
+    {
+     "company": "LORIS BELLINI SRL",
+     "country": null
+    },
+    {
+     "company": "LUBRICANT CONSULT GMBH",
+     "country": null
+    },
+    {
+     "company": "MACHINERY EXPORTERS' ASSOCIATION",
+     "country": null
+    },
+    {
+     "company": "MARIO CROSTA SRL",
+     "country": null
+    },
+    {
+     "company": "MARKETO SERVICES",
+     "country": null
+    },
+    {
+     "company": "MAYER & CIE. GMBH & CO. KG",
+     "country": null
+    },
+    {
+     "company": "MENGZHOU HELI TEXTILE ELECTRICAL APPLIANCE CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "MESDAN S.P.A.",
+     "country": null
+    },
+    {
+     "company": "METSA MAKINE VE METAL SAN. TIC. LTD. STI.",
+     "country": null
+    },
+    {
+     "company": "MHMS MECHATRONIC SOLUTIONS GMBH & CO. KG",
+     "country": null
+    },
+    {
+     "company": "MURATA MACHINERY, LTD.",
+     "country": null
+    },
+    {
+     "company": "NEUENHAUSER MASCHINENBAU GMBH",
+     "country": null
+    },
+    {
+     "company": "NIUPAI TEXTILE MACHINERY CO.,LTD JIANGSU,CHINA",
+     "country": null
+    },
+    {
+     "company": "ODESI TEKSTIL BILGISAYAR MAKINA INSAAT SAN. TIC. LTD. STI.",
+     "country": null
+    },
+    {
+     "company": "PENTEK TEXTILE MACHINERY SRL",
+     "country": null
+    },
+    {
+     "company": "PICANOL INDIA",
+     "country": null
+    },
+    {
+     "company": "POLYTEX CHEMICAL ENGINEERING CO., LTD.",
+     "country": null
+    },
+    {
+     "company": "PRAPTI TEXCO",
+     "country": null
+    },
+    {
+     "company": "PROSINO S.R.L.",
+     "country": null
+    },
+    {
+     "company": "PROSMH MAKINA PAZARLAMA SAN. VE TIC. A.S.",
+     "country": null
+    },
+    {
+     "company": "PUM INTERNATIONAL LIMITED",
+     "country": null
+    },
+    {
+     "company": "QINGDAO KERUN BIO-TECHNOLOGY CO. LTD",
+     "country": null
+    },
+    {
+     "company": "QINGDAO ORIENT TIANCHANG IMPORT&EXPORT CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "RAUSCHERT HEINERSDORF-PRESSIG GMBH",
+     "country": null
+    },
+    {
+     "company": "REGGIANI MACCHINE SPA",
+     "country": null
+    },
+    {
+     "company": "REIFENHÄUSER ENKA TECNICA GMBH",
+     "country": null
+    },
+    {
+     "company": "RIGAMONTI E PEREGO E C. SRL",
+     "country": null
+    },
+    {
+     "company": "SAIL NONWOVEN MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "SANDO TECH, INC.",
+     "country": null
+    },
+    {
+     "company": "SANTEX RIMAR GROUP",
+     "country": null
+    },
+    {
+     "company": "SANTONI S.P.A.",
+     "country": null
+    },
+    {
+     "company": "SAURER (CHANGZHOU) TEXTILE MACHINERY CO. LTD",
+     "country": null
+    },
+    {
+     "company": "SAURER FIBREVISION LTD",
+     "country": null
+    },
+    {
+     "company": "SAURER SPINNING SOLUTIONS GMBH & CO KG",
+     "country": null
+    },
+    {
+     "company": "SAURER SPINNING SOLUTIONS GMBH & CO. KG",
+     "country": null
+    },
+    {
+     "company": "SEDO ENGINEERING SA",
+     "country": null
+    },
+    {
+     "company": "SEDO TREEPOINT GMBH",
+     "country": null
+    },
+    {
+     "company": "SERTEKS TEKSTIL MAKINALARI SAN. LTD. STI.",
+     "country": null
+    },
+    {
+     "company": "SETEX SCHERMULY TEXTILE COMPUTER GMBH",
+     "country": null
+    },
+    {
+     "company": "SHANDONG RIFA TEXTILE MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "SHENGLEI(SUZHOU)TRANSMISSION MATERIAL CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "STAEDTLER+UHL KG",
+     "country": null
+    },
+    {
+     "company": "SUNTECH INDUSTRIAL(INTERNATIONAL)LIMITED",
+     "country": null
+    },
+    {
+     "company": "TEXTECHNO HERBERT STEIN GMBH & CO. KG",
+     "country": null
+    },
+    {
+     "company": "TEXTILE-FUTURE.COM",
+     "country": null
+    },
+    {
+     "company": "THE PERMASHRINK COMPANY",
+     "country": null
+    },
+    {
+     "company": "TMART CORGHI TEXTILE MACHINERY (SHANGHAI) LTD",
+     "country": null
+    },
+    {
+     "company": "TMT MACHINERY",
+     "country": null
+    },
+    {
+     "company": "TOMSIC SRL",
+     "country": null
+    },
+    {
+     "company": "TRUETZSCHLER GROUP SE",
+     "country": null
+    },
+    {
+     "company": "USTER TECHNOLOGIES AG",
+     "country": null
+    },
+    {
+     "company": "VALVAN BALING SYSTEMS NV",
+     "country": null
+    },
+    {
+     "company": "VANDEWIELE-BEJIMAC SA",
+     "country": null
+    },
+    {
+     "company": "VANDEWIELE-SAVIO INDIA PRIVATE LIMITED",
+     "country": null
+    },
+    {
+     "company": "WEITMANN & KONRAD GMBH & CO. KG",
+     "country": null
+    },
+    {
+     "company": "WIRA INSTRUMENTATION LTD",
+     "country": null
+    },
+    {
+     "company": "XETMA VOLLENWEIDER GMBH",
+     "country": null
+    },
+    {
+     "company": "XIAMEN RAPID PRECION MACHINERY CO.,LD",
+     "country": null
+    },
+    {
+     "company": "YANTAI XINGYANG ELECTRONICS CO. LTD.",
+     "country": null
+    },
+    {
+     "company": "YEMAN INDUSTRIES (HOLDINGS) LTD",
+     "country": null
+    },
+    {
+     "company": "YIWU AURORA MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "YUKSELIS YAYINCILIK LTD. STI.",
+     "country": null
+    },
+    {
+     "company": "ZENTEX SRL",
+     "country": null
+    },
+    {
+     "company": "ZHANGJIAGANG GANGYING INDUSTRY",
+     "country": null
+    },
+    {
+     "company": "ZHEJIANG KAICHENG INTELLIGENT MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "ZHEJIANG HAIYING TEXTILE MACHINERY CO., LTD.",
+     "country": null
+    },
+    {
+     "company": "ZHEJIANG HONGXIN TECHNOLOGY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "ZHEJIANG LIANKE MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "ZHEJIANG WANSHIFA TEXTILE MACHINERY CO.,LTD",
+     "country": null
+    },
+    {
+     "company": "ZHEJIANG YUFENG MACHINERY CO.,LTD",
+     "country": null
+    }
+   ]
+  },
+  "[curated] JAMA": {
+   "total_entries": 14,
+   "unique": 14,
+   "new_to_twin": 12,
+   "flagged": [
+    {
+     "company": "Daihatsu Motor",
+     "country": null
+    },
+    {
+     "company": "Hino Motors",
+     "country": null
+    },
+    {
+     "company": "Honda Motor",
+     "country": null
+    },
+    {
+     "company": "Isuzu Motors",
+     "country": null
+    },
+    {
+     "company": "Kawasaki Motors",
+     "country": null
+    },
+    {
+     "company": "Mazda Motor",
+     "country": null
+    },
+    {
+     "company": "Mitsubishi Motors",
+     "country": null
+    },
+    {
+     "company": "Mitsubishi Fuso Truck & Bus",
+     "country": null
+    },
+    {
+     "company": "Nissan Motor",
+     "country": null
+    },
+    {
+     "company": "Toyota Motor",
+     "country": null
+    },
+    {
+     "company": "UD Trucks",
+     "country": null
+    },
+    {
+     "company": "Yamaha Motor",
+     "country": null
+    }
+   ]
+  },
+  "[curated] ASD Europe": {
+   "total_entries": 28,
+   "unique": 28,
+   "new_to_twin": 6,
+   "flagged": [
+    {
+     "company": "Avio Aero",
+     "country": null
+    },
+    {
+     "company": "Czechoslovak Group",
+     "country": null
+    },
+    {
+     "company": "GKN Aerospace",
+     "country": null
+    },
+    {
+     "company": "Naval Group",
+     "country": null
+    },
+    {
+     "company": "Sopra Steria",
+     "country": null
+    },
+    {
+     "company": "WB Group",
+     "country": null
+    }
+   ]
+  },
+  "[curated] EFPIA": {
+   "total_entries": 47,
+   "unique": 47,
+   "new_to_twin": 11,
+   "flagged": [
+    {
+     "company": "Boehringer Ingelheim",
+     "country": null
+    },
+    {
+     "company": "CSL Behring",
+     "country": null
+    },
+    {
+     "company": "CSL Vifor",
+     "country": null
+    },
+    {
+     "company": "Daiichi Sankyo",
+     "country": null
+    },
+    {
+     "company": "Grünenthal",
+     "country": null
+    },
+    {
+     "company": "Johnson & Johnson",
+     "country": null
+    },
+    {
+     "company": "LEO Pharma",
+     "country": null
+    },
+    {
+     "company": "Pierre Fabre",
+     "country": null
+    },
+    {
+     "company": "Stallergenes Greer",
+     "country": null
+    },
+    {
+     "company": "AC Immune",
+     "country": null
+    },
+    {
+     "company": "Enyo Pharma",
+     "country": null
+    }
+   ]
+  },
+  "[curated] ICMM": {
+   "total_entries": 26,
+   "unique": 26,
+   "new_to_twin": 8,
+   "flagged": [
+    {
+     "company": "African Rainbow Minerals",
+     "country": null
+    },
+    {
+     "company": "Anglo American",
+     "country": null
+    },
+    {
+     "company": "AngloGold Ashanti",
+     "country": null
+    },
+    {
+     "company": "Antofagasta Minerals",
+     "country": null
+    },
+    {
+     "company": "Gold Fields",
+     "country": null
+    },
+    {
+     "company": "Minera San Cristóbal",
+     "country": null
+    },
+    {
+     "company": "Sibanye-Stillwater",
+     "country": null
+    },
+    {
+     "company": "Sumitomo Metal Mining",
+     "country": null
+    }
+   ]
+  },
+  "[curated] IPIECA": {
+   "total_entries": 31,
+   "unique": 31,
+   "new_to_twin": 5,
+   "flagged": [
+    {
+     "company": "Aker BP",
+     "country": null
+    },
+    {
+     "company": "Harbour Energy",
+     "country": null
+    },
+    {
+     "company": "Murphy Oil",
+     "country": null
+    },
+    {
+     "company": "Occidental Petroleum",
+     "country": null
+    },
+    {
+     "company": "Baker Hughes",
+     "country": null
+    }
+   ]
+  },
+  "[curated] Cefic Associated Companies": {
+   "total_entries": 12,
+   "unique": 12,
+   "new_to_twin": 4,
+   "flagged": [
+    {
+     "company": "Jubilant Pharmaceuticals",
+     "country": null
+    },
+    {
+     "company": "Equate Petrochemicals",
+     "country": null
+    },
+    {
+     "company": "Saudi Kayan",
+     "country": null
+    },
+    {
+     "company": "Lomon Billions",
+     "country": null
+    }
+   ]
+  },
+  "[curated] worldsteel (sample)": {
+   "total_entries": 18,
+   "unique": 18,
+   "new_to_twin": 8,
+   "flagged": [
+    {
+     "company": "China Baowu Steel Group",
+     "country": null
+    },
+    {
+     "company": "United States Steel",
+     "country": null
+    },
+    {
+     "company": "Cleveland-Cliffs",
+     "country": null
+    },
+    {
+     "company": "thyssenkrupp Steel Europe",
+     "country": null
+    },
+    {
+     "company": "JFE Steel",
+     "country": null
+    },
+    {
+     "company": "Hyundai Steel",
+     "country": null
+    },
+    {
+     "company": "Sunflag Iron & Steel",
+     "country": null
+    },
+    {
+     "company": "Saarloha Advanced Materials",
+     "country": null
+    }
+   ]
+  },
+  "[curated] VDA Group I (OEMs)": {
+   "total_entries": 13,
+   "unique": 13,
+   "new_to_twin": 9,
+   "flagged": [
+    {
+     "company": "Bayerische Motoren Werke",
+     "country": null
+    },
+    {
+     "company": "Daimler Truck",
+     "country": null
+    },
+    {
+     "company": "Dr. Ing. h.c. F. Porsche",
+     "country": null
+    },
+    {
+     "company": "Ford-Werke",
+     "country": null
+    },
+    {
+     "company": "IVECO Deutschland",
+     "country": null
+    },
+    {
+     "company": "MAN Truck & Bus",
+     "country": null
+    },
+    {
+     "company": "Mercedes-Benz",
+     "country": null
+    },
+    {
+     "company": "Opel Automobile",
+     "country": null
+    },
+    {
+     "company": "Stellantis Germany",
+     "country": null
+    }
+   ]
+  }
+ }
+}

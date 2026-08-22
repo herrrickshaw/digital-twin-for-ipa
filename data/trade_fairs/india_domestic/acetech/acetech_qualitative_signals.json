@@ -1,0 +1,75 @@
+{
+  "record_type": "NOT_AN_EXHIBITOR_ROSTER",
+  "note": "No public, downloadable, or parseable exhibitor/participant list was found for ACETECH (any city or edition) as of the access date below. This file captures only the lower-confidence qualitative signals that were independently verified while researching. Do NOT treat any entry here as a confirmed exhibiting company. See README.md in this same directory for full method and caveats.",
+  "fair": "ACETECH",
+  "accessed_date": "2026-08-22",
+  "edition_covered": {
+    "city": "Mumbai",
+    "venue": "Bombay Exhibition Centre (NESCO), Goregaon, Mumbai",
+    "dates": "6-9 Nov 2025",
+    "edition_number": 19,
+    "status": "most recent completed Mumbai edition as of access date (next Mumbai edition scheduled 19-22 Nov 2026)",
+    "source_urls": [
+      "https://topinteriorsindia.com/acetech-2025-mumbai/",
+      "https://www.exhibitionshowcase.com/15-years-of-acetech-now-all-set-for-its-mumbai-edition/",
+      "https://acetechexpo.com/"
+    ]
+  },
+  "organizer": {
+    "confirmed_name": "ABEC Exhibitions & Conferences Pvt. Ltd.",
+    "source_urls": [
+      "https://acetechexpo.com/overview/",
+      "https://10times.com/et-acetech-mumbai"
+    ],
+    "task_brief_named_organizer_not_substantiated": "ThreeSixty Marketing Services",
+    "legacy_branding_unverified": {
+      "brand_name": "ET ACETECH / The Economic Times Acetech",
+      "domain": "etacetech.com",
+      "status": "domain failed DNS resolution from this environment (plain and www) at access time; branding seen only in search-engine result titles, not independently fetched"
+    }
+  },
+  "domain_correction": {
+    "task_brief_named": "acetechindia.com",
+    "finding": "unrelated Delhi-based software company (Acetech Information Systems, AI app development), not the trade fair",
+    "correct_official_domain": "acetechexpo.com"
+  },
+  "self_reported_cumulative_stats": {
+    "source_url": "https://acetechexpo.com/",
+    "accessed_date": "2026-08-22",
+    "exhibitors": "4,095+",
+    "visitors": "864,914+",
+    "brands_on_display": "5,500+",
+    "total_exhibition_area_sqft": "2,500,000+",
+    "caveat": "figures are presented on the homepage without a per-city/per-edition date attribution; read as an organizer-wide cumulative/marketing figure, not specific to Mumbai 2025. The same 4,095 exhibitor figure independently appears on the unrelated third-party 10times.com listing page, consistent with a reused fixed marketing number."
+  },
+  "international_supporting_trade_chambers": {
+    "source_url": "https://acetechexpo.com/supported-by/",
+    "tab": "International",
+    "accessed_date": "2026-08-22",
+    "method": "tab content requires a UI click to render (not present at initial page load); logo images carry no alt text, so each was downloaded individually and visually identified",
+    "caveat": "this is a list of supporting/partner trade institutions shown on the organizer's site generally, not a list of exhibiting companies, and is not dated or attributed to the Mumbai 2025 edition specifically",
+    "chambers": [
+      {"name": "IACC - Indo-American Chamber of Commerce", "country_relation": "USA"},
+      {"name": "Indo-Australian Chamber of Commerce", "country_relation": "Australia"},
+      {"name": "KOTRA - Korea Trade-Investment Promotion Agency", "country_relation": "South Korea"},
+      {"name": "India China Chamber of Commerce & Industry", "country_relation": "China"},
+      {"name": "New Zealand (silver-fern logo; full issuing org name not legible from image)", "country_relation": "New Zealand"},
+      {"name": "EU India Chambers", "country_relation": "European Union"},
+      {"name": "The Indo-Italian Chamber of Commerce and Industry", "country_relation": "Italy"},
+      {"name": "IFCCI - Indo-French Chamber of Commerce & Industry", "country_relation": "France"},
+      {"name": "Indo-Arab Chamber of Commerce & Industries", "country_relation": "Arab League countries"},
+      {"name": "Singapore Indian Chamber of Commerce & Industry", "country_relation": "Singapore"},
+      {"name": "Indo-Spanish Chamber of Technology", "country_relation": "Spain"}
+    ]
+  },
+  "checked_and_rejected_candidate": {
+    "name": "Italia Group",
+    "claim_source": "LinkedIn post by Italia Group referencing a 'Palladio' mosaic showcase at ACETECH Mumbai 2025",
+    "claim_source_url": "https://www.linkedin.com/posts/italia-group_at-acetech-mumbai-2025-our-palladio-showcase-activity-7403008206186102784-n5bZ",
+    "verification": "Italia Group is headquartered in Gujarat, India (founded 1990); entered a 2000 joint venture with Trend Group of Italy for glass-mosaic manufacturing",
+    "verification_source_url": "https://italiagroup.in/about",
+    "conclusion": "Indian-domestic company with a foreign (Italian) JV partner, not a foreign-headquartered exhibitor. Would be flagged FOREIGN-PARENT (India subsidiary/JV) at most under this repo's flag_basis convention, never a bare FOREIGN flag.",
+    "included_in_foreign_exhibitor_count": false
+  },
+  "total_verified_foreign_headquartered_exhibitors": 0
+}

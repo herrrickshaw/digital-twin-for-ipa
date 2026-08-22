@@ -669,16 +669,152 @@ EVENTS = [
              "data/trade_fairs/messe_duesseldorf/wire_dusseldorf_exhibitors.csv",
      "last_verified": "2026-08-22", "recheck_recommended": "biennial"},
     {"name": "drupa", "sector": "Printing (not yet a twin focus sector)", "scope": "Global (Düsseldorf)",
-     "last_edition": {"year": 2028, "note": "printing/print technology; every 4 years, next edition 2028"},
-     "value": "LOW priority near-term -- next edition is 2028", "last_verified": "2026-08-22", "recheck_recommended": "revisit closer to 2028"},
+     "last_edition": {"year": 2028, "note": "printing/print technology; every 4 years, next edition 2028; the vis-platform "
+     "site still serves a live directory for the 2024/prior cycle in the meantime",
+     "exhibitor_list_url": "https://www.drupa.com/vis-api/vis/v1/en/directory/<a-z|other>",
+     "total_exhibitors": "1725 (full roster pulled)"},
+     "value": "MEDIUM -- deep-dived 2026-08-22, full 1725-exhibitor roster pulled despite the 2028 gap "
+             "(the vis platform serves the current live directory year-round, not just around the show "
+             "dates). Top countries Germany 453, China 414, Italy 149, India 70 (#4). Data: "
+             "data/trade_fairs/messe_duesseldorf/drupa_exhibitors.csv",
+     "last_verified": "2026-08-22", "recheck_recommended": "next live edition 2028; directory can be re-pulled anytime before then"},
+    {"name": "boot", "sector": "Marine & Watersports (not yet a twin focus sector)", "scope": "Global (Düsseldorf)",
+     "last_edition": {"year": 2027, "note": "boats, watersports, diving; annual",
+     "exhibitor_list_url": "https://www.boot.com/vis-api/vis/v1/en/directory/<a-z|other>",
+     "total_exhibitors": "1773 (full roster pulled)"},
+     "value": "LOW -- deep-dived 2026-08-22, full 1773-exhibitor roster pulled. Top countries Germany "
+             "744, Italy 136, Netherlands 119; India only 1 (essentially no signal -- watersports/boat "
+             "manufacturing is not an India-relevant sector for this twin).",
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority, weak India signal"},
+    {"name": "glasstec", "sector": "Construction & Building Materials (not yet a twin focus sector)", "scope": "Global (Düsseldorf)",
+     "last_edition": {"year": 2026, "note": "glass industry/technology; biennial",
+     "exhibitor_list_url": "https://www.glasstec.de/vis-api/vis/v1/en/directory/<a-z|other>",
+     "total_exhibitors": "1158 (full roster pulled)"},
+     "value": "MEDIUM -- deep-dived 2026-08-22, full 1158-exhibitor roster pulled. Top countries China "
+             "366, Germany 253, Italy 144; India 13 (modest, not a standout).",
+     "last_verified": "2026-08-22", "recheck_recommended": "biennial"},
+    {"name": "A+A", "sector": "Occupational Safety & PPE (not yet a twin focus sector)", "scope": "Global (Düsseldorf)",
+     "last_edition": {"year": 2027, "note": "occupational safety, PPE, health at work; biennial",
+     "exhibitor_list_url": "https://www.aplusa-online.com/vis-api/vis/v1/en/directory/<a-z|other> "
+     "(live domain is .com, not the commonly-guessed .de)",
+     "total_exhibitors": "2514 (full roster pulled)"},
+     "value": "MEDIUM -- deep-dived 2026-08-22, full 2514-exhibitor roster pulled. Top countries China "
+             "642, Germany 566, Italy 150; India 61 (moderate signal in a genuinely new sector for "
+             "this twin -- PPE/industrial-safety manufacturing).",
+     "last_verified": "2026-08-22", "recheck_recommended": "biennial"},
+    {"name": "Caravan Salon", "sector": "Automotive & Auto Components", "scope": "Global (Düsseldorf)",
+     "last_edition": {"year": 2026, "note": "caravans, motorhomes, camping; annual",
+     "exhibitor_list_url": "https://www.caravan-salon.com/vis-api/vis/v1/en/directory/<a-z|other> "
+     "(live domain is .com, not the commonly-guessed .de)",
+     "total_exhibitors": "1008 (full roster pulled)"},
+     "value": "GAP CONFIRMED, not fabricated -- deep-dived 2026-08-22, full 1008-exhibitor roster "
+             "pulled cleanly (all 27 buckets, no sampling), yet India's count is a genuine ZERO. Top "
+             "countries Germany 629, Italy 72, Netherlands 56. Real negative finding: India has no "
+             "visible presence in caravan/motorhome/camping manufacturing at this fair.",
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority given the confirmed-zero signal"},
+    {"name": "Ambiente", "sector": "Consumer Goods & Retail (not yet a twin focus sector)", "scope": "Global (Frankfurt)",
+     "last_edition": {"year": 2027, "note": "consumer goods, home & household, gifts; annual",
+     "exhibitor_list_url": "https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search?findEventVariable=AMBIENTE",
+     "total_exhibitors": "3655 (full roster pulled)"},
+     "value": "HIGH -- deep-dived 2026-08-22, full 3655-exhibitor roster pulled. India is the #1 "
+             "exhibiting country (515 of 3655, 14.1%), ahead of China (372) and Germany (367) -- the "
+             "second India-top-country standout this session alongside Heimtextil, and by far the "
+             "largest fair (by exhibitor count) where that's true. Data: "
+             "data/trade_fairs/messe_frankfurt/ambiente_exhibitors.csv",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual"},
+    {"name": "Techtextil", "sector": "Textiles & Apparel", "scope": "Global (Frankfurt)",
+     "last_edition": {"year": 2027, "note": "technical textiles & nonwovens -- distinct from Heimtextil's "
+     "home/contract-textile focus; biennial",
+     "exhibitor_list_url": "https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search?findEventVariable=TECHTEXTIL",
+     "total_exhibitors": "1474 (full roster pulled)"},
+     "value": "MEDIUM -- deep-dived 2026-08-22, full 1474-exhibitor roster pulled. Top countries "
+             "Germany 340, China 176, Italy 172, France 94, Türkiye 69; India 63 (#6, present but "
+             "not a standout the way it is at Heimtextil/Ambiente). Data: "
+             "data/trade_fairs/messe_frankfurt/techtextil_exhibitors.csv",
+     "last_verified": "2026-08-22", "recheck_recommended": "biennial"},
+
+    # -- India-domestic events, deep-dived 2026-08-22 (Delhi/Mumbai gap-scan follow-up) ---------
     {"name": "India International Jewellery Show (IIJS)", "sector": "Jewellery & Gems (not yet a twin focus sector)", "scope": "India (Mumbai)",
-     "last_edition": {"year": 2026, "location": "Jio World Convention Centre, Mumbai", "note": "GJEPC-run, annual"},
-     "value": "CANDIDATE -- GJEPC publishes exhibitor directories, not yet pulled",
-     "last_verified": "2026-08-22", "recheck_recommended": "deep-dive follow-up"},
+     "last_edition": {"year": 2026, "location": "JWCC + Nesco, Mumbai", "dates": "Aug 5-10, 2026",
+     "note": "IIJS Bharat -- Premiere, 42nd edition; GJEPC-run, 3 editions/year (Signature/Premiere/Tritiya), "
+            "Premiere is the largest",
+     "exhibitor_list_url": "https://gjepc.org/iijs-premiere/exhibitor-list.php", "total_exhibitors": 2163},
+     "value": "HIGH -- deep-dived 2026-08-22. GJEPC serves the full 2,163-exhibitor table server-side in "
+             "plain HTML (no PDF, no gate). 76 exhibitors (3.5%) flagged FOREIGN via GJEPC's own "
+             "'International Machinery/Jewellery/Loose' section field: Italy 24, Thailand 13, Hong Kong "
+             "11, UAE 10, Turkey 5, Japan 4, China 2, plus one each US/Netherlands/Singapore/Germany/"
+             "Switzerland. Every row (including the 2,087 default-domestic ones) carries an explicit "
+             "flag_basis field. Data: data/trade_fairs/india_domestic/iijs/iijs_participants.csv",
+     "last_verified": "2026-08-22", "recheck_recommended": "re-pull each edition; cheap (one page fetch)"},
     {"name": "India Mobile Congress (IMC)", "sector": "Telecom (distinct from Electronics & Semiconductors)", "scope": "India (Delhi)",
-     "last_edition": {"year": 2026, "location": "Bharat Mandapam", "note": "DoT + COAI, annual"},
-     "value": "CANDIDATE -- exhibitor/partner lists published per edition, not yet pulled",
-     "last_verified": "2026-08-22", "recheck_recommended": "deep-dive follow-up"},
+     "last_edition": {"year": 2025, "location": "Yashobhoomi Convention & Expo Centre, Dwarka, New Delhi",
+     "dates": "Oct 8-11, 2025", "note": "9th edition; DoT + COAI; organizer-claimed 400+ exhibitors/"
+            "150+ countries (self-reported, unaudited); official domain is indiamobilecongress.com, "
+            "NOT imc.org.in"},
+     "value": "GAP CONFIRMED, not fabricated -- deep-dived 2026-08-22. The organizer's own exhibitor "
+             "directory is a lead-gen form gate (requires submitting name/email/phone before showing "
+             "any data) -- correctly not filled in or bypassed. No public roster exists. Lower-confidence "
+             "fallback delivered instead: 9 named companies from verifiable press/organizer sources -- "
+             "FOREIGN: Nokia, Ericsson, Qualcomm, Quectel, Skylo, IPification (lower-confidence); "
+             "FOREIGN-PARENT: Samsung (via its India subsidiary); plus named country delegations "
+             "(Japan, Canada, UK, Russia, Ireland, Austria) and a Japan/GSMA pavilion. Data: "
+             "data/trade_fairs/india_domestic/india_mobile_congress/",
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority until the org opens a public directory"},
+    {"name": "ACETECH", "sector": "Construction & Building Materials (not yet a twin focus sector)", "scope": "India (Mumbai/Delhi/Bengaluru)",
+     "last_edition": {"year": 2025, "location": "Bombay Exhibition Centre (NESCO), Mumbai", "dates": "Nov 6-9, 2025",
+     "note": "19th Mumbai edition (flagship city); organizer is ABEC Exhibitions & Conferences Pvt. Ltd., "
+            "NOT 'ThreeSixty Marketing Services' as originally assumed -- correct live domain is "
+            "acetechexpo.com, NOT acetechindia.com (that domain belongs to an unrelated software company)"},
+     "value": "GAP CONFIRMED, not fabricated -- deep-dived 2026-08-22, genuinely no public exhibitor/"
+             "participant roster exists anywhere checked (18-page site sitemap, 10times.com, ExpoFP, "
+             "Scribd). Verified foreign exhibitor count: 0. Only qualitative signals found: 11 "
+             "international trade chambers listed as 'supported by' (not exhibitors), and one "
+             "candidate company correctly REJECTED after verification (an India-HQ'd firm with an old "
+             "Italian JV, not foreign-HQ'd -- kept as a worked example of avoiding name-similarity "
+             "false positives). Data: data/trade_fairs/india_domestic/acetech/",
+     "last_verified": "2026-08-22", "recheck_recommended": "low priority until a real roster surfaces"},
+    {"name": "Convergence India", "sector": "Telecom (distinct from Electronics & Semiconductors)", "scope": "India (Delhi)",
+     "last_edition": {"year": 2026, "location": "Bharat Mandapam, New Delhi", "dates": "Mar 23-25, 2026",
+     "note": "33rd edition; organized by Exhibitions India Group + ITPO, co-located with Smart Future "
+            "Cities India/Satcom India/Broadcast India/India IoT Expo",
+     "exhibitor_list_url": "https://www.convergenceindia.org/exhibitors-and-participants-convergence-india.aspx",
+     "total_exhibitors": 1021},
+     "value": "HIGH -- deep-dived 2026-08-22. Unlike most India-domestic B2B shows, the official site "
+             "exposes a genuine structured exhibitor directory with a real Country field per row (JS "
+             "widget, no public API -- driven live across 43 pages, cross-verified against the site's "
+             "own '1,021 of 1,021' counter). 149 foreign (14.6%) across 22 countries: China 46, Russia "
+             "24 (Moscow government pavilion), Taiwan 24 (TAITRA pavilion), US 15, New Zealand 13. "
+             "Data: data/trade_fairs/india_domestic/convergence_india/ (full roster + foreign-only subset)",
+     "last_verified": "2026-08-22", "recheck_recommended": "re-pull each edition via the same live-browser widget method"},
+    {"name": "Cement Expo", "sector": "Construction & Building Materials (not yet a twin focus sector)", "scope": "India (multi-city)",
+     "last_edition": {"year": 2023, "location": "Manekshaw Centre, New Delhi", "dates": "Dec 15, 2023",
+     "note": "14th edition; organizer ASAPP Info Global Services (publisher of Indian Cement Review); "
+            "official domain cementexpo.in; 15th (2025) and 16th (Dec 2026, Greater Noida) editions "
+            "exist but only the 14th has a recoverable exhibitor list"},
+     "value": "MEDIUM, PARTIAL -- deep-dived 2026-08-22. No live exhibitor-directory page exists on the "
+             "official site (logo walls only, no addresses/countries). A genuine booth-numbered "
+             "exhibitor+partner table for the 14th edition was recovered from the official downloadable "
+             "brochure PDF's 'GLIMPSES OF THE PAST' section: 63 companies -- 2 FOREIGN (name states the "
+             "country directly: Pentol Germany, MIDES Industriais Brazil), 17 FOREIGN-PARENT "
+             "(India subsidiary of an independently-verified foreign parent -- AMETEK, Testo, IKA, ABB, "
+             "Horiba, Loesche, Evonik, Flender, and others), 44 likely domestic (unconfirmed). Data: "
+             "data/trade_fairs/india_domestic/cement_expo/",
+     "last_verified": "2026-08-22", "recheck_recommended": "check whether the 15th/16th edition brochures add a fresher list"},
+    {"name": "India International Trade Fair (IITF)", "sector": "Cross-sector (general trade fair, not sector-specific)", "scope": "India (Delhi)",
+     "last_edition": {"year": 2025, "location": "Bharat Mandapam, New Delhi", "dates": "Nov 14-27, 2025",
+     "note": "44th edition; ITPO-organized; mixed B2B/B2C with a formal partner-country/foreign-pavilion "
+            "structure, distinct in character from the sector-specific B2B shows elsewhere in this registry",
+     "exhibitor_list_url": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"},
+     "value": "HIGH, two-layer finding -- deep-dived 2026-08-22. COUNTRY-level (primary source, PIB press "
+             "release): 11 countries in the International Pavilion -- China, Thailand, UAE, Malaysia, "
+             "Sweden, Turkey, Iran, South Korea, Egypt, Lebanon, Tunisia -- plus the Tibetan Chamber of "
+             "Commerce named separately. COMPANY-level (primary source, ITPO's own 503-row official "
+             "exhibitor PDF): 24 rows carry an explicit ITPO-annotated ' - <Country>' suffix, all "
+             "confined to the Hall 1 Ground Floor International Pavilion section -- Korea 10, Iran 3, "
+             "UAE 2, Thailand 2, one each China/Egypt/Lebanon/Sweden/Tunisia/Turkey/Tibet. Honest gap: "
+             "Malaysia is named at country level but has zero matching company rows in the PDF -- "
+             "flagged, not hidden. Data: data/trade_fairs/india_domestic/iitf/",
+     "last_verified": "2026-08-22", "recheck_recommended": "annual, re-pull the PIB release + ITPO PDF each edition"},
     {"name": "Messe Frankfurt -- unified cross-show India pull", "sector": "Cross-sector platform note", "scope": "Global (all Messe Frankfurt shows)",
      "last_edition": {"year": 2026,
      "exhibitor_list_url": "api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search (no findEventVariable filter = searches ALL shows at once, hitsTotal 49,665)",
@@ -689,9 +825,9 @@ EVENTS = [
                "spanning 40+ Messe Frankfurt shows worldwide (ACMA Automechanika New Delhi, Ambiente, "
                "Paperworld Mumbai/Delhi, Media Expo, and more) -- a single call surfaces India "
                "engagement across the WHOLE Messe Frankfurt portfolio at once, not just the "
-               "individually-named fairs in this registry. Also confirmed live but not yet pulled: "
-               "Ambiente (findEventVariable=AMBIENTE) and Techtextil (=TECHTEXTIL); Formnext did not "
-               "respond to plain fetch, a genuine gap not a fabrication. Data: "
+               "individually-named fairs in this registry. Ambiente and Techtextil (both confirmed "
+               "live here) were subsequently deep-dived in full -- see their own entries above. "
+               "Formnext did not respond to plain fetch, a genuine gap not a fabrication. Data: "
                "data/trade_fairs/messe_frankfurt/ (india-wide pull saved separately, see that dir's README)."),
      "last_verified": "2026-08-22", "recheck_recommended": "re-run the India-only pull periodically; cheap (one API call) high-value refresh"},
     {"name": "Messe Düsseldorf -- shared DIMEDIS 'vis' platform note", "sector": "Cross-sector platform note", "scope": "Global (multiple Düsseldorf shows)",
@@ -701,10 +837,12 @@ EVENTS = [
             "returned K Fair's own data -- the domain is just a routing key, not a separate backend"},
      "value": ("🔑 PLATFORM-LEVEL FINDING: the same '<domain>/vis-api/vis/v1/en/directory/<a-z|other>' "
                "API (already used for K Fair and GIFA/METEC) powers interpack, EuroShop, and wire/"
-               "Tube Düsseldorf, confirmed. Same platform also live (not yet pulled) for **boot**, "
-               "**drupa**, **glasstec**, **A+A**, **Caravan Salon** -- any Messe Düsseldorf fair is "
-               "now a near-zero-marginal-cost pull once the domain is known, same pagination pattern each time."),
-     "last_verified": "2026-08-22", "recheck_recommended": "pull the remaining known-live fairs (boot, drupa, glasstec, A+A) as cheap follow-ups"},
+               "Tube Düsseldorf, confirmed. Same platform subsequently confirmed AND fully pulled for "
+               "**boot**, **drupa**, **glasstec**, **A+A**, **Caravan Salon** too -- see their own "
+               "entries above (two, A+A and Caravan Salon, turned out to live on .com not the "
+               "commonly-guessed .de). Any Messe Düsseldorf fair is a near-zero-marginal-cost pull "
+               "once the domain is confirmed, same pagination pattern each time."),
+     "last_verified": "2026-08-22", "recheck_recommended": "check for any remaining un-pulled Messe Düsseldorf fairs on this platform"},
 ]
 
 

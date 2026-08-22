@@ -27,6 +27,8 @@ FAIRS = {
     "lightbuilding": "LIGHTBUILDING",
     "ish": "ISH",
     "heimtextil": "HEIMTEXTIL",
+    "ambiente": "AMBIENTE",
+    "techtextil": "TECHTEXTIL",
 }
 
 PAGE_SIZE = 200

@@ -1,0 +1,82 @@
+{
+  "event": "India Mobile Congress (IMC) 2025 — 9th edition",
+  "dates": "2025-10-08 to 2025-10-11",
+  "venue": "Yashobhoomi (India International Convention & Expo Centre), Dwarka, New Delhi",
+  "organizers": "Department of Telecommunications (DoT) + Cellular Operators Association of India (COAI)",
+  "dataset_type": "LOWER-CONFIDENCE FALLBACK — named-company mentions from press coverage, NOT a full exhibitor roster",
+  "note": "No public, downloadable, or parseable exhibitor list exists for IMC 2025. The official directory at indiamobilecongress.com/resources/exhibitor-directory is gated behind a lead-generation form (requires submitting name/email/phone/organisation before any data is shown) and was not accessed. Every entry below is a company independently named in verifiable press/organizer coverage, not extracted from a roster.",
+  "participants": [
+    {
+      "name": "Nokia",
+      "country_origin": "Finland",
+      "flag_basis": "FOREIGN — globally known HQ (Espoo, Finland). Confirmed as a Platinum Partner exhibitor at IMC 2025, booth B4, Hall 1, Yashobhoomi, per Nokia's own event page.",
+      "category_segment": "Telecom network equipment vendor",
+      "source_url": "https://www.nokia.com/events/india-mobile-world-congress/",
+      "source_type": "primary (company's own event page)"
+    },
+    {
+      "name": "Ericsson",
+      "country_origin": "Sweden",
+      "flag_basis": "FOREIGN — globally known HQ (Stockholm, Sweden). Named as a prominent exhibitor in secondary press coverage of IMC 2025; not independently confirmed via Ericsson's own site.",
+      "category_segment": "Telecom network equipment vendor",
+      "source_url": "https://exhibitionglobe.com/india-mobile-congress-2025-commences-at-yashobhoomi-spotlighting-global-innovation-and-connectivity/",
+      "source_type": "secondary (trade-press aggregator)"
+    },
+    {
+      "name": "Qualcomm",
+      "country_origin": "United States",
+      "flag_basis": "FOREIGN — globally known HQ (San Diego, California, USA). Named as a prominent exhibitor in secondary press coverage of IMC 2025.",
+      "category_segment": "Semiconductor / chipset vendor",
+      "source_url": "https://exhibitionglobe.com/india-mobile-congress-2025-commences-at-yashobhoomi-spotlighting-global-innovation-and-connectivity/",
+      "source_type": "secondary (trade-press aggregator)"
+    },
+    {
+      "name": "Quectel (Quectel Wireless Solutions)",
+      "country_origin": "China",
+      "flag_basis": "FOREIGN — globally known HQ (Shanghai, China). Named as a prominent exhibitor in secondary press coverage of IMC 2025.",
+      "category_segment": "IoT / cellular module vendor",
+      "source_url": "https://exhibitionglobe.com/india-mobile-congress-2025-commences-at-yashobhoomi-spotlighting-global-innovation-and-connectivity/",
+      "source_type": "secondary (trade-press aggregator)"
+    },
+    {
+      "name": "Samsung",
+      "country_origin": "South Korea",
+      "flag_basis": "FOREIGN-PARENT (India subsidiary) — Samsung Electronics HQ is Suwon, South Korea. Exhibited via the Samsung India entity ('AI for All' vision, five demo zones) per Samsung's own India newsroom.",
+      "category_segment": "Consumer electronics / AI / networks",
+      "source_url": "https://news.samsung.com/in/samsung-leads-indias-ai-revolution-at-india-mobile-congress-2025-with-ai-for-all-vision",
+      "source_type": "primary (company's own India newsroom)"
+    },
+    {
+      "name": "Skylo",
+      "country_origin": "United States",
+      "flag_basis": "FOREIGN — HQ Mountain View, California, USA (also has an India office, per Skylo's own site, but corporate HQ is US). Demoed direct-to-device satellite/IoT solutions via a technical demo pod inside the GSMA Pavilion, per press coverage.",
+      "category_segment": "Satellite IoT / direct-to-device connectivity",
+      "source_url": "https://www.gsma.com/about-us/regions/asia-pacific/gsma_events/gsma-india-mobile-congress/",
+      "source_type": "secondary (GSMA event page + press coverage)"
+    },
+    {
+      "name": "IPification",
+      "country_origin": "Hong Kong",
+      "flag_basis": "FOREIGN — HQ Hong Kong (part of Benefit Vantage Limited, per third-party company-profile sources: PitchBook, CB Insights). Demoed a mobile-authentication solution via a technical demo pod inside the GSMA Pavilion, per press coverage. Country flag is lower-confidence — based on aggregator company profiles, not the company's own site.",
+      "category_segment": "Mobile identity / authentication",
+      "source_url": "https://www.gsma.com/about-us/regions/asia-pacific/gsma_events/gsma-india-mobile-congress/",
+      "source_type": "secondary (GSMA event page + third-party company-profile sources)"
+    },
+    {
+      "name": "Reliance Jio",
+      "country_origin": "India",
+      "flag_basis": "DOMESTIC — India-headquartered (Reliance Industries subsidiary). Listed here only for context; named alongside the foreign vendors above in the same press coverage.",
+      "category_segment": "Telecom operator",
+      "source_url": "https://exhibitionglobe.com/india-mobile-congress-2025-commences-at-yashobhoomi-spotlighting-global-innovation-and-connectivity/",
+      "source_type": "secondary (trade-press aggregator)"
+    },
+    {
+      "name": "Bharti Airtel",
+      "country_origin": "India",
+      "flag_basis": "DOMESTIC — India-headquartered. Listed here only for context; named alongside the foreign vendors above in the same press coverage.",
+      "category_segment": "Telecom operator",
+      "source_url": "https://exhibitionglobe.com/india-mobile-congress-2025-commences-at-yashobhoomi-spotlighting-global-innovation-and-connectivity/",
+      "source_type": "secondary (trade-press aggregator)"
+    }
+  ]
+}

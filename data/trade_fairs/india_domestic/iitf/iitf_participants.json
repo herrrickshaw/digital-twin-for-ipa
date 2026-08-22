@@ -1,0 +1,409 @@
+{
+  "event": "India International Trade Fair (IITF)",
+  "organizer": "India Trade Promotion Organisation (ITPO), Ministry of Commerce & Industry, Government of India",
+  "edition": "44th",
+  "year": 2025,
+  "dates": "14-27 November 2025",
+  "venue": "Bharat Mandapam (Pragati Maidan), New Delhi",
+  "theme": "Ek Bharat Shreshtha Bharat",
+  "partner_states_2025": [
+    "Bihar",
+    "Maharashtra",
+    "Rajasthan",
+    "Uttar Pradesh"
+  ],
+  "focus_state_2025": "Jharkhand",
+  "partner_country_2025": null,
+  "partner_country_note": "No 'Partner Country' was named for IITF 2025 in any source checked (PIB release, ITPO site, press coverage). IITF's partner-country slot appears to not have been filled this edition, or if filled was not stated in the sources checked -- do not assume one exists; this field is left null rather than guessed.",
+  "states_uts_participating": 31,
+  "total_participants_claimed_organizer": "3,500+ (India and abroad; ITPO Chairman & MD's stated figure, organizer-reported, not independently audited)",
+  "total_exhibitor_rows_in_official_pdf": 503,
+  "accessed_date": "2026-08-22",
+  "country_level_participation": {
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+    "source_type": "primary (PIB, Government of India)",
+    "quote": "Eleven countries—China, Thailand, UAE, Malaysia, Sweden, Turkey, Iran, South Korea, Egypt, Lebanon, the Republic of Tunisia, and the Tibetan Chamber of Commerce—are participating in the International Pavilion.",
+    "countries": [
+      {
+        "country": "China",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "Thailand",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "UAE",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "Malaysia",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": false,
+        "note": "Named by PIB as an International Pavilion participant, but no company-level exhibitor row carrying a 'Malaysia' country suffix was found anywhere in the 503-row official ITPO exhibitor PDF. Malaysia's presence could not be corroborated at company level from this source; either its participation was via an official desk/stand not itemized by exhibitor name, the PDF listing is itself incomplete for this country, or the country suffix was omitted for that entry."
+      },
+      {
+        "country": "Sweden",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "Turkey",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "Iran",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "South Korea",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "Egypt",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "Lebanon",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      },
+      {
+        "country": "Republic of Tunisia",
+        "source": "PIB press release PRID=2190245 (ITPO Chairman & MD's inaugural remarks, quoted)",
+        "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+        "company_level_exhibitor_rows_found": true,
+        "note": null
+      }
+    ],
+    "additional_named_participant_not_a_country": {
+      "name": "Tibetan Chamber of Commerce",
+      "source": "PIB press release PRID=2190245",
+      "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190245&reg=48&lang=2",
+      "company_level_exhibitor_rows_found": true,
+      "note": "PIB's own sentence groups this with the 'eleven countries' but it is a trade chamber, not a state Government of India recognizes as a country. Kept as a separate, clearly-labeled entry rather than folded into the country count."
+    }
+  },
+  "company_level_exhibitors": {
+    "source_url": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf",
+    "source_type": "primary (ITPO official exhibitor list PDF)",
+    "coverage_note": "Company-level foreign flagging was only possible for the subset of exhibitors whose names in the official PDF carry an explicit ' - <Country>' suffix. This pattern is used exclusively in the Hall 1 Ground Floor section (the International Pavilion). No other hall/section in the 503-row document uses this convention, and no separate structured 'foreign exhibitors' table exists in the PDF -- company-level foreign identification elsewhere in the fair is not possible from this source.",
+    "count": 24,
+    "records": [
+      {
+        "s_no_in_source": 45,
+        "name": "AINGA CO.,LTD",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "IG-07-A",
+        "email": "ainga2024@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 47,
+        "name": "AL RAWDAH GENERAL TRADING L.L.C.",
+        "country_origin": "UAE",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - UAE\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-04-B,C,1G-08-A,E,F",
+        "email": "aadil301281@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 48,
+        "name": "AZRA SIAM (THAILAND) LIMITED PARTNERSHIP",
+        "country_origin": "Thailand",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Thailand\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-08-B",
+        "email": "azrathailand@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 50,
+        "name": "BIOSAL",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-L",
+        "email": "jiayou2009@esint.kr",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 51,
+        "name": "CLEARCHANG CO.,LTD",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-E",
+        "email": "ctw3387@naver.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 53,
+        "name": "DORNA SEYD MAKRAN",
+        "country_origin": "Iran",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Iran\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-09-G,H,I,J,K",
+        "email": "arsalandaliry1983@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 55,
+        "name": "HANSAMKORA CO.,LTD.",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-C",
+        "email": "hansam@hansam.org",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 56,
+        "name": "HOMEEDITIONMYUNGJIN CO., LTD.",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-D",
+        "email": "export_en@homemj.co.kr",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 57,
+        "name": "IDEAVILL CO. LTD.",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-B",
+        "email": "ideavill@naver.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 58,
+        "name": "IKSAN JEWELRY CHAIN CO., LTD.",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-K",
+        "email": "iksanc15@naver.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 59,
+        "name": "KOREA NEW TECH CO., LTD.",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-I",
+        "email": "dhoon824@aromasense.co.kr",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 60,
+        "name": "MASHHAD CLOTHING SELLERS GUILD UNION",
+        "country_origin": "Iran",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Iran\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-H,1G-08-D",
+        "email": "raikagolaradco@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 61,
+        "name": "MAXSUN CO., LTD",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-F",
+        "email": "kisad1002@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 62,
+        "name": "MILANO BAZAAR",
+        "country_origin": "Egypt",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Egypt\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-02-A",
+        "email": "melano.bazar@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 64,
+        "name": "MUHAMMAD SAJID TRADING LLC",
+        "country_origin": "UAE",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - UAE\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-09-A,B,C",
+        "email": "faizankhan@live.in",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 65,
+        "name": "NADEEM ENTERPRISES LTD",
+        "country_origin": "China",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - China\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-02-C,D,E",
+        "email": "nadeement24@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 66,
+        "name": "OFFGRID",
+        "country_origin": "Korea",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Korea\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-J",
+        "email": "wool@onyoucompany.co.kr",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 67,
+        "name": "PREMIER RIDER AB",
+        "country_origin": "Sweden",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Sweden\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-04-E",
+        "email": "inderpal@premier-rider.se",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 68,
+        "name": "SARJAN TRADE UNION",
+        "country_origin": "Iran",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Iran\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-07-G",
+        "email": "ariyanmohm@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 69,
+        "name": "THAI SMES EXPORTER ASSOCIATION",
+        "country_origin": "Thailand",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Thailand\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-02-B",
+        "email": "anong_thaisilk@hotmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 70,
+        "name": "THE EMBASSY OF LEBANON",
+        "country_origin": "Lebanon",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Lebanon\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-04-D",
+        "email": "info@embassyoflebanon.in",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 71,
+        "name": "THE EMBASSY OF THE REPUBLIC OF TUNISIA",
+        "country_origin": "Tunisia",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Tunisia\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-08-G,H,I",
+        "email": "tunisiaembassy@tunis.co.in",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 72,
+        "name": "TIBETAN CHAMBER OF COMMERCE",
+        "country_origin": "Tibet",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Tibet\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section. Note: 'Tibet' is not a country India recognizes diplomatically (Government of India treats Tibet as part of China); this row is a chamber of commerce, not a national pavilion in the usual sense -- kept distinct from the sovereign-country rows below.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-09-D,E,1G-08-C",
+        "email": "tibetanchamberc@gmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      },
+      {
+        "s_no_in_source": 73,
+        "name": "TILLO HEDIYELIK ESYA SANAYI",
+        "country_origin": "Turkey",
+        "flag": "FOREIGN",
+        "flag_basis": "Exhibitor name in the official ITPO \"IITF 2025 - Hallwise List of Exhibitors\" PDF carries an explicit \" - Turkey\" country suffix (ITPO's own annotation, not inferred), and the entry sits in the Hall 1 Ground Floor block that is the fair's International Pavilion section.",
+        "category_segment": "International Pavilion (Hall 1 Ground Floor)",
+        "hall": "1 GF",
+        "stall_no": "1G-02-FGH",
+        "email": "tillohediyelik@hotmail.com",
+        "source": "https://www.itpo.gov.in/assets/images/iitf-pdf/IITF%202025%20-%20LIST%20OF%20EXHIBITORS.pdf"
+      }
+    ]
+  }
+}

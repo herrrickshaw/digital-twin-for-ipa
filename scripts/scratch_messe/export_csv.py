@@ -9,6 +9,8 @@ MF_FAIRS = {  # Messe Frankfurt (exhibitor-service API schema)
     "lightbuilding": ("Light + Building", "messe_frankfurt"),
     "ish": ("ISH", "messe_frankfurt"),
     "heimtextil": ("Heimtextil", "messe_frankfurt"),
+    "ambiente": ("Ambiente", "messe_frankfurt"),
+    "techtextil": ("Techtextil", "messe_frankfurt"),
 }
 
 MD_FAIRS = {  # Messe Duesseldorf (vis/v1 API schema)

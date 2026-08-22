@@ -155,21 +155,73 @@ def load_raw_sources():
             {"company": e["company"], "country": None} for e in entries
             if e.get("origin_flag", "").startswith("FOREIGN") and not e.get("possible_merge_artifact")]
 
-    # -- Messe Frankfurt / Messe Düsseldorf: durable repo data, "name" column
+    # -- Messe Frankfurt / Messe Düsseldorf: durable repo data, "name" column.
+    # MF files carry a "country_label" column; Düsseldorf (vis-platform) files
+    # carry "country" instead -- using the wrong key silently yields None, so
+    # each entry below is tagged with which column its file actually has.
     MESSE_FILES = [
-        ("Light + Building 2026 (Messe Frankfurt)", "messe_frankfurt", "lightbuilding_exhibitors.csv"),
-        ("ISH 2027 (Messe Frankfurt)", "messe_frankfurt", "ish_exhibitors.csv"),
-        ("Heimtextil 2027 (Messe Frankfurt)", "messe_frankfurt", "heimtextil_exhibitors.csv"),
-        ("interpack 2026 (Messe Düsseldorf)", "messe_duesseldorf", "interpack_exhibitors.csv"),
-        ("EuroShop 2026 (Messe Düsseldorf)", "messe_duesseldorf", "euroshop_exhibitors.csv"),
-        ("wire & Tube Düsseldorf 2026 (Messe Düsseldorf)", "messe_duesseldorf", "wire_dusseldorf_exhibitors.csv"),
+        ("Light + Building 2026 (Messe Frankfurt)", "messe_frankfurt", "lightbuilding_exhibitors.csv", "country_label"),
+        ("ISH 2027 (Messe Frankfurt)", "messe_frankfurt", "ish_exhibitors.csv", "country_label"),
+        ("Heimtextil 2027 (Messe Frankfurt)", "messe_frankfurt", "heimtextil_exhibitors.csv", "country_label"),
+        ("Ambiente 2027 (Messe Frankfurt)", "messe_frankfurt", "ambiente_exhibitors.csv", "country_label"),
+        ("Techtextil 2027 (Messe Frankfurt)", "messe_frankfurt", "techtextil_exhibitors.csv", "country_label"),
+        ("interpack 2026 (Messe Düsseldorf)", "messe_duesseldorf", "interpack_exhibitors.csv", "country"),
+        ("EuroShop 2026 (Messe Düsseldorf)", "messe_duesseldorf", "euroshop_exhibitors.csv", "country"),
+        ("wire & Tube Düsseldorf 2026 (Messe Düsseldorf)", "messe_duesseldorf", "wire_dusseldorf_exhibitors.csv", "country"),
+        ("boot 2027 (Messe Düsseldorf)", "messe_duesseldorf", "boot_exhibitors.csv", "country"),
+        ("drupa (Messe Düsseldorf)", "messe_duesseldorf", "drupa_exhibitors.csv", "country"),
+        ("glasstec 2026 (Messe Düsseldorf)", "messe_duesseldorf", "glasstec_exhibitors.csv", "country"),
+        ("A+A 2027 (Messe Düsseldorf)", "messe_duesseldorf", "a_a_exhibitors.csv", "country"),
+        ("Caravan Salon 2026 (Messe Düsseldorf)", "messe_duesseldorf", "caravan_salon_exhibitors.csv", "country"),
     ]
-    for label, subdir, fname in MESSE_FILES:
+    for label, subdir, fname, country_col in MESSE_FILES:
         p = os.path.join(ROOT, "data", "trade_fairs", subdir, fname)
         if os.path.exists(p):
             with open(p) as f:
-                rows[label] = [{"company": r["name"], "country": r.get("country_label")}
+                rows[label] = [{"company": r["name"], "country": r.get(country_col)}
                                for r in csv.DictReader(f) if r.get("name")]
+
+    # -- India-domestic events, deep-dived 2026-08-22 (Delhi/Mumbai gap-scan follow-up).
+    # ACETECH is deliberately excluded here: it produced a verified-zero roster
+    # (see layer 40), not a company list -- nothing to cross-reference.
+
+    p = os.path.join(ROOT, "data", "trade_fairs", "india_domestic", "iijs", "iijs_participants.json")
+    if os.path.exists(p):
+        entries = json.load(open(p))
+        rows["IIJS Bharat 2026 (foreign-flagged subset)"] = [
+            {"company": e["name"], "country": e.get("country_or_origin")}
+            for e in entries if e.get("origin_flag") == "FOREIGN"]
+
+    p = os.path.join(ROOT, "data", "trade_fairs", "india_domestic", "convergence_india",
+                      "convergence_india_participants_foreign_only.json")
+    if os.path.exists(p):
+        entries = json.load(open(p))
+        entries = entries.get("participants", entries) if isinstance(entries, dict) else entries
+        rows["Convergence India 2026 (foreign-flagged subset)"] = [
+            {"company": e["name"], "country": e.get("country_origin")} for e in entries]
+
+    p = os.path.join(ROOT, "data", "trade_fairs", "india_domestic", "iitf", "iitf_participants.json")
+    if os.path.exists(p):
+        d = json.load(open(p))
+        cle = d.get("company_level_exhibitors", {})
+        rows["IITF 2025 (International Pavilion, company-level)"] = [
+            {"company": e["name"], "country": e.get("country_origin")}
+            for e in cle.get("records", [])]
+
+    p = os.path.join(ROOT, "data", "trade_fairs", "india_domestic", "cement_expo", "cement_expo_participants.json")
+    if os.path.exists(p):
+        d = json.load(open(p))
+        rows["Cement Expo 2023 (foreign / foreign-parent)"] = [
+            {"company": e["name"], "country": None} for e in d.get("participants", [])
+            if str(e.get("origin_flag", "")).startswith(("FOREIGN",))]
+
+    p = os.path.join(ROOT, "data", "trade_fairs", "india_domestic", "india_mobile_congress",
+                      "india_mobile_congress_participants.json")
+    if os.path.exists(p):
+        d = json.load(open(p))
+        rows["India Mobile Congress 2025 (named foreign companies, lower-confidence)"] = [
+            {"company": e["name"], "country": e.get("country_origin")}
+            for e in d.get("participants", []) if str(e.get("flag_basis", "")).startswith("FOREIGN")]
 
     return rows
 

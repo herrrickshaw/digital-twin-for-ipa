@@ -79,3 +79,25 @@ All company names, cities, countries in the CSV/JSON files are exactly as return
 live API on 2026-08-22 — nothing fabricated or inferred. Spot-checked samples (Indian
 exhibitors at Heimtextil/interpack, European exhibitors at ISH/EuroShop) read as real,
 plausible companies for their sector and geography.
+
+## Ambiente + Techtextil (deep-dived, pulled 2026-08-22)
+
+Follow-up pull of the two fairs flagged above as "confirmed on the platform, not yet
+deep-dived." Both `API_EVENT_ID`s were live-verified directly against the search endpoint
+(not guessed): a `pageSize=5` probe returned real, plausible exhibitor names and countries
+for each before the full paginated pull ran. Same method as the three fairs above —
+`scripts/scratch_messe/mf_exhibitor_pull.py`, full roster paged to completion
+(`pageSize=200`, looped until `hitsTotal` reached, ~0.4s between requests), no sampling.
+
+| Fair | API_EVENT_ID | Total exhibitors | India-HQ'd exhibitors | Top countries | File |
+|---|---|---|---|---|---|
+| Ambiente | `AMBIENTE` | 3,655 | **515 (13.9%, top country)** | India 515, China 372, Germany 367, Italy 310, Hong Kong 227 | `ambiente_exhibitors.csv`/`.json` |
+| Techtextil | `TECHTEXTIL` | 1,474 | 63 (4.3%) | Germany 340, China 176, Italy 172, France 94, Türkiye 69 | `techtextil_exhibitors.csv`/`.json` |
+
+Ambiente is a second standout for this project alongside Heimtextil: India is its single
+largest exhibiting country by count (ahead of China and Germany), a strong revealed-preference
+signal for consumer goods / home & gifts outreach. Techtextil's India presence is smaller and
+mid-table (6th), more typical of the other general-industrial fairs checked.
+
+CSV columns: `name, country_iso3, country_label, city, email, homepage, rewriteId` (same
+schema as the other Messe Frankfurt files in this folder).

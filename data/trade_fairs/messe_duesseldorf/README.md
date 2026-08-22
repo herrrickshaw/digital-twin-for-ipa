@@ -77,3 +77,37 @@ All company names, countries, cities in the CSV/JSON files are exactly as return
 live API on 2026-08-22 -- nothing fabricated or inferred. Spot-checked Indian exhibitors at
 interpack (e.g. ACG Pam Pharma Technologies, Ajit Industries, AUM Paper Products) read as
 real, plausible Indian packaging-sector companies.
+
+## Second pass (2026-08-22): boot, drupa, glasstec, A+A, Caravan Salon deep-dived
+
+Follow-up to the "confirmed on same platform, not deep-dived" list above. For each fair, the
+live official domain was re-verified (WebSearch + direct fetch, not assumed from the prior
+pass's list) and `directory/meta` was hit live before pulling. All five returned HTTP 200 with
+filled buckets on the DIMEDIS vis platform -- same shared backend as interpack/EuroShop/wire/Tube.
+Full rosters pulled via `scripts/scratch_messe/duesseldorf_vis_pull5.py` (same fetch pattern as
+`duesseldorf_vis_pull.py`, extended to write CSV directly alongside JSON), paging all 27 letter
+buckets to completion, no sampling.
+
+| Fair | Domain used (live-verified) | Total exhibitors | Top countries | India-linked | File |
+|---|---|---|---|---|---|
+| boot Duesseldorf (watersports & boats) | `www.boot.com` | 1,773 | Germany 744, Italy 136, Netherlands 119, France 97, Indonesia 49 | 1 | `boot_exhibitors.csv`/`.json` |
+| drupa (print technology) | `www.drupa.com` | 1,725 | Germany 453, China 414, Italy 149, **India 70**, UK 65 | 70 | `drupa_exhibitors.csv`/`.json` |
+| glasstec (glass industry) | `www.glasstec.de` | 1,158 | China 366, Germany 253, Italy 144, Türkiye 48, UK 41 | 13 | `glasstec_exhibitors.csv`/`.json` |
+| A+A (occupational safety & health) | `www.aplusa-online.com` | 2,514 | China 642, Germany 566, Italy 150, France 97, UK 83 | 61 | `a_a_exhibitors.csv`/`.json` |
+| Caravan Salon (motorhomes/caravans/camping) | `www.caravan-salon.com` | 1,008 | Germany 629, Italy 72, Netherlands 56, Austria 31, France 26 | 0 | `caravan_salon_exhibitors.csv`/`.json` |
+
+Notes:
+- India-linked counts are exact matches on `country == "India"` in the pulled data, not an
+  estimate -- straightforward to compute since the API returns a clean country string per
+  exhibitor.
+- **Caravan Salon has zero India-linked exhibitors** in this pull -- an honest negative
+  finding, not a pull failure (1,008 total exhibitors were returned successfully; India is
+  simply absent from the country distribution for this fair, consistent with caravans/RVs
+  being a low-India-relevance sector so far).
+- boot Duesseldorf has only 1 India-linked exhibitor despite 1,773 total -- consistent with
+  watersports/marine being a low-India-export-relevance sector relative to industrial fairs
+  like drupa/A+A/glasstec.
+- Same CSV schema as the first pass: `name, country, city, location, exh, exhSeoId`.
+- Domain re-verification for A+A and Caravan Salon specifically checked against the task's
+  suggested `.de` guesses -- both are wrong; the real, live, WebSearch-confirmed official
+  domains are `aplusa-online.com` and `caravan-salon.com` (`.com`, not `.de`).

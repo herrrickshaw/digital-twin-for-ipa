@@ -93,13 +93,23 @@
 | interpack | Chemicals & Plastics | — | 2026 (?) | TBD | HIGH -- deep-dived 2026-08-22, full 3085-exhibitor roster pulled via t |
 | EuroShop | Retail Technology (not yet a twin focus sector) | — | 2026 (?) | TBD | MEDIUM -- deep-dived 2026-08-22, full 2014-exhibitor roster pulled. To |
 | wire & Tube Düsseldorf | Specialty Steel & Metals | — | 2026 (?) | TBD | HIGH -- deep-dived 2026-08-22, full 2743-exhibitor combined roster pul |
-| drupa | Printing (not yet a twin focus sector) | — | 2028 (?) | TBD | LOW priority near-term -- next edition is 2028 |
-| India International Jewellery Show (IIJS) | Jewellery & Gems (not yet a twin focus sector) | — | 2026 (Jio World Convention Centre, Mumbai) | TBD | CANDIDATE -- GJEPC publishes exhibitor directories, not yet pulled |
-| India Mobile Congress (IMC) | Telecom (distinct from Electronics & Semiconductors) | — | 2026 (Bharat Mandapam) | TBD | CANDIDATE -- exhibitor/partner lists published per edition, not yet pu |
+| drupa | Printing (not yet a twin focus sector) | — | 2028 (?) | TBD | MEDIUM -- deep-dived 2026-08-22, full 1725-exhibitor roster pulled des |
+| boot | Marine & Watersports (not yet a twin focus sector) | — | 2027 (?) | TBD | LOW -- deep-dived 2026-08-22, full 1773-exhibitor roster pulled. Top c |
+| glasstec | Construction & Building Materials (not yet a twin focus sector) | — | 2026 (?) | TBD | MEDIUM -- deep-dived 2026-08-22, full 1158-exhibitor roster pulled. To |
+| A+A | Occupational Safety & PPE (not yet a twin focus sector) | — | 2027 (?) | TBD | MEDIUM -- deep-dived 2026-08-22, full 2514-exhibitor roster pulled. To |
+| Caravan Salon | Automotive & Auto Components | — | 2026 (?) | TBD | GAP CONFIRMED, not fabricated -- deep-dived 2026-08-22, full 1008-exhi |
+| Ambiente | Consumer Goods & Retail (not yet a twin focus sector) | — | 2027 (?) | TBD | HIGH -- deep-dived 2026-08-22, full 3655-exhibitor roster pulled. Indi |
+| Techtextil | Textiles & Apparel | — | 2027 (?) | TBD | MEDIUM -- deep-dived 2026-08-22, full 1474-exhibitor roster pulled. To |
+| India International Jewellery Show (IIJS) | Jewellery & Gems (not yet a twin focus sector) | — | 2026 (JWCC + Nesco, Mumbai) | TBD | HIGH -- deep-dived 2026-08-22. GJEPC serves the full 2,163-exhibitor t |
+| India Mobile Congress (IMC) | Telecom (distinct from Electronics & Semiconductors) | — | 2025 (Yashobhoomi Convention & Expo Centre, Dwarka, New Delhi) | TBD | GAP CONFIRMED, not fabricated -- deep-dived 2026-08-22. The organizer' |
+| ACETECH | Construction & Building Materials (not yet a twin focus sector) | — | 2025 (Bombay Exhibition Centre (NESCO), Mumbai) | TBD | GAP CONFIRMED, not fabricated -- deep-dived 2026-08-22, genuinely no p |
+| Convergence India | Telecom (distinct from Electronics & Semiconductors) | — | 2026 (Bharat Mandapam, New Delhi) | TBD | HIGH -- deep-dived 2026-08-22. Unlike most India-domestic B2B shows, t |
+| Cement Expo | Construction & Building Materials (not yet a twin focus sector) | — | 2023 (Manekshaw Centre, New Delhi) | TBD | MEDIUM, PARTIAL -- deep-dived 2026-08-22. No live exhibitor-directory  |
+| India International Trade Fair (IITF) | Cross-sector (general trade fair, not sector-specific) | — | 2025 (Bharat Mandapam, New Delhi) | TBD | HIGH, two-layer finding -- deep-dived 2026-08-22. COUNTRY-level (prima |
 | Messe Frankfurt -- unified cross-show India pull | Cross-sector platform note | — | 2026 (?) | TBD | 🔑 PLATFORM-LEVEL FINDING, not a single event: omitting the event filte |
 | Messe Düsseldorf -- shared DIMEDIS 'vis' platform note | Cross-sector platform note | — | 2026 (?) | TBD | 🔑 PLATFORM-LEVEL FINDING: the same '<domain>/vis-api/vis/v1/en/directo |
 
 ## Coverage note
 
-Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 54 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass.
+Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 64 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass.
 

@@ -84,8 +84,20 @@
 | ADIPEC | Oil & Gas (not yet a twin focus sector) | — | 2022 (?) | TBD | MEDIUM, LOW-CONFIDENCE source -- ADNOC, bp, Chevron, ExxonMobil, Shell |
 | IMARC (International Mining and Resources Conference, Sydney) | Specialty Steel & Metals | — | 2025 (?) | TBD | GAP, LOW-CONFIDENCE -- not a clean pull |
 | India Energy Week | Oil & Gas (not yet a twin focus sector) | — | 2024 (Goa) | TBD | MEDIUM potential, LOW accessed -- needs direct Scribd download/login |
+| InnoTrans | Railways & Rail Transport (not yet a twin focus sector) | — | 2026 (Berlin) | TBD | HIGHEST of the global railway sources -- LIVE-VERIFIED 2026-08-22 by d |
+| IREE (International Railway Equipment Exhibition) | Railways & Rail Transport (not yet a twin focus sector) | — | 2025 (Bharat Mandapam, Delhi) | TBD | HIGH potential -- dedicated exhibitor-list PDF confirmed to exist (IRE |
+| RailTrans Expo | Railways & Rail Transport (not yet a twin focus sector) | — | 2026 (Bharat Mandapam, Delhi) | TBD | MEDIUM, unconfirmed -- dedicated event site exists, exhibitor-list pag |
+| Light + Building | Construction & Building Materials (not yet a twin focus sector) | — | 2026 (?) | TBD | CANDIDATE, not yet deep-dived -- Messe Frankfurt exhibitor search tool |
+| ISH | Construction & Building Materials (not yet a twin focus sector) | — | 2027 (?) | TBD | CANDIDATE, not yet deep-dived |
+| Heimtextil | Textiles & Apparel | — | 2027 (?) | TBD | CANDIDATE -- extends layer 39's textile coverage into home/contract te |
+| interpack | Chemicals & Plastics | — | 2026 (?) | TBD | CANDIDATE, flagged as a genuine sector gap by the scouting agent |
+| EuroShop | Retail Technology (not yet a twin focus sector) | — | 2026 (?) | TBD | CANDIDATE, not yet deep-dived |
+| wire & Tube Düsseldorf | Specialty Steel & Metals | — | 2026 (?) | TBD | CANDIDATE -- extends existing Steel & Metals coverage downstream |
+| drupa | Printing (not yet a twin focus sector) | — | 2028 (?) | TBD | LOW priority near-term -- next edition is 2028 |
+| India International Jewellery Show (IIJS) | Jewellery & Gems (not yet a twin focus sector) | — | 2026 (Jio World Convention Centre, Mumbai) | TBD | CANDIDATE -- GJEPC publishes exhibitor directories, not yet pulled |
+| India Mobile Congress (IMC) | Telecom (distinct from Electronics & Semiconductors) | — | 2026 (Bharat Mandapam) | TBD | CANDIDATE -- exhibitor/partner lists published per edition, not yet pu |
 
 ## Coverage note
 
-Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 40 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass.
+Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 52 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass.
 

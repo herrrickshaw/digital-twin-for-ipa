@@ -1072,7 +1072,159 @@
    "value": "MEDIUM potential, LOW accessed -- needs direct Scribd download/login",
    "last_verified": "2026-08-22",
    "recheck_recommended": "manual Scribd download follow-up"
+  },
+  {
+   "name": "InnoTrans",
+   "sector": "Railways & Rail Transport (not yet a twin focus sector)",
+   "scope": "Global (Berlin)",
+   "last_edition": {
+    "year": 2026,
+    "location": "Berlin",
+    "dates": "Sep 22-25, 2026",
+    "exhibitor_list_url": "https://plus.innotrans.de/showfloor/organizations",
+    "total_exhibitors": 3082,
+    "note": "5 segments: Railway Technology, Railway Infrastructure, Public Transport, Interiors, Tunnel Construction; occupies all 42 Berlin Exhibition Grounds halls"
+   },
+   "value": "HIGHEST of the global railway sources -- LIVE-VERIFIED 2026-08-22 by direct browser session: real company+address+hall/stand+segment+description per exhibitor, NO LOGIN required to browse (login only gates the separate 'Participants'/networking feature). Confirmed real sample: Knorr-Bremse, ABB Ltd. (Switzerland), 3M Deutschland, Aarsleff Rail A/S (Denmark), 4AI Systems (Australia). Backend is NOT a simple REST API (initial curl attempts hit a CloudFront/S3 SPA shell returning the same HTML for every path, and the app appears to route data through blob: URLs) -- full 3,082-company extraction needs a dedicated scroll-pagination session, not a one-shot fetch.",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "biennial; dedicated follow-up session for full pagination"
+  },
+  {
+   "name": "IREE (International Railway Equipment Exhibition)",
+   "sector": "Railways & Rail Transport (not yet a twin focus sector)",
+   "scope": "India",
+   "last_edition": {
+    "year": 2025,
+    "location": "Bharat Mandapam, Delhi",
+    "note": "16th edition, CII + Ministry of Railways, Asia's largest rail-sector event"
+   },
+   "value": "HIGH potential -- dedicated exhibitor-list PDF confirmed to exist (IREE-Exhibitors-List.pdf on ireeindia.com) but not yet downloaded/parsed",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "download and parse the exhibitor PDF"
+  },
+  {
+   "name": "RailTrans Expo",
+   "sector": "Railways & Rail Transport (not yet a twin focus sector)",
+   "scope": "India",
+   "last_edition": {
+    "year": 2026,
+    "location": "Bharat Mandapam, Delhi",
+    "note": "6th edition, Jul 2026"
+   },
+   "value": "MEDIUM, unconfirmed -- dedicated event site exists, exhibitor-list page not yet checked",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "check railtransexpo.com for a list page"
+  },
+  {
+   "name": "Light + Building",
+   "sector": "Construction & Building Materials (not yet a twin focus sector)",
+   "scope": "Global (Frankfurt)",
+   "last_edition": {
+    "year": 2026,
+    "note": "lighting, electrical engineering, building/home automation; biennial"
+   },
+   "value": "CANDIDATE, not yet deep-dived -- Messe Frankfurt exhibitor search tools exist for all its shows",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "ISH",
+   "sector": "Construction & Building Materials (not yet a twin focus sector)",
+   "scope": "Global (Frankfurt)",
+   "last_edition": {
+    "year": 2027,
+    "note": "HVAC, water, heating, sanitation/building technology; biennial"
+   },
+   "value": "CANDIDATE, not yet deep-dived",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "Heimtextil",
+   "sector": "Textiles & Apparel",
+   "scope": "Global (Frankfurt)",
+   "last_edition": {
+    "year": 2027,
+    "note": "home & contract textiles -- distinct from ITMA's machinery focus; annual"
+   },
+   "value": "CANDIDATE -- extends layer 39's textile coverage into home/contract textiles specifically",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "interpack",
+   "sector": "Chemicals & Plastics",
+   "scope": "Global (Düsseldorf)",
+   "last_edition": {
+    "year": 2026,
+    "note": "packaging processes & machinery; every 3 years"
+   },
+   "value": "CANDIDATE, flagged as a genuine sector gap by the scouting agent",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "EuroShop",
+   "sector": "Retail Technology (not yet a twin focus sector)",
+   "scope": "Global (Düsseldorf)",
+   "last_edition": {
+    "year": 2026,
+    "note": "retail technology, store design/fit-out; every 3 years"
+   },
+   "value": "CANDIDATE, not yet deep-dived",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "wire & Tube Düsseldorf",
+   "sector": "Specialty Steel & Metals",
+   "scope": "Global (Düsseldorf)",
+   "last_edition": {
+    "year": 2026,
+    "note": "wire, cable, tube & pipe manufacturing -- finished-goods, distinct from GIFA/METEC's raw-material focus; biennial"
+   },
+   "value": "CANDIDATE -- extends existing Steel & Metals coverage downstream",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "drupa",
+   "sector": "Printing (not yet a twin focus sector)",
+   "scope": "Global (Düsseldorf)",
+   "last_edition": {
+    "year": 2028,
+    "note": "printing/print technology; every 4 years, next edition 2028"
+   },
+   "value": "LOW priority near-term -- next edition is 2028",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "revisit closer to 2028"
+  },
+  {
+   "name": "India International Jewellery Show (IIJS)",
+   "sector": "Jewellery & Gems (not yet a twin focus sector)",
+   "scope": "India (Mumbai)",
+   "last_edition": {
+    "year": 2026,
+    "location": "Jio World Convention Centre, Mumbai",
+    "note": "GJEPC-run, annual"
+   },
+   "value": "CANDIDATE -- GJEPC publishes exhibitor directories, not yet pulled",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
+  },
+  {
+   "name": "India Mobile Congress (IMC)",
+   "sector": "Telecom (distinct from Electronics & Semiconductors)",
+   "scope": "India (Delhi)",
+   "last_edition": {
+    "year": 2026,
+    "location": "Bharat Mandapam",
+    "note": "DoT + COAI, annual"
+   },
+   "value": "CANDIDATE -- exhibitor/partner lists published per edition, not yet pulled",
+   "last_verified": "2026-08-22",
+   "recheck_recommended": "deep-dive follow-up"
   }
  ],
- "coverage_note": "Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 40 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass."
+ "coverage_note": "Extended 2026-08-22 across all twin focus sectors: Electronics & Semiconductors, White Goods & Electricals, Auto/EV & Components, Pharma & Bulk Drugs, Medical Devices, Green Energy & Fuels, Chemicals & Plastics, Aerospace & Defence, Specialty Steel & Metals, Shipbuilding & Marine, Food Processing -- plus Mining and Oil & Gas (not yet formal twin focus sectors, added per explicit request). 33 associations, 52 events tracked. Highest-value pattern confirmed repeatedly: an India-domestic trade fair's exhibitor list is a stronger signal than bare association membership (revealed preference -- paid to physically exhibit in India) -- India ITME, SEMICON India, ELECRAMA, Medical Fair India, ChemTECH World Expo, Auto Expo Components, Aero India, AAHAR, and IMME all produced real country-tagged rosters this pass."
 }

@@ -1,0 +1,125 @@
+{
+  "sector": "Food Processing (packaged food, dairy, beverages, agri-processing)",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across multiple query angles (foreign food-processing/FMCG India investment, dairy JVs, packaged-food expansion, brewery/beverage capex, company-specific follow-ups), followed by WebFetch to open and read each candidate article/press release directly before inclusion. Every finding below was verified by reading at least one substantive source (not a search snippet); several were cross-checked against a second source. Non-Indian-HQ companies only; companies already long-established in India with no new signal in the window were excluded. Session's WebSearch quota was exhausted after ~19 queries (a session-wide cap, not sector-specific), which cut off planned follow-ups on General Mills, Cargill, Bel Group, and a fresh Mondelez check -- these were left as open leads rather than fabricated.",
+  "findings": [
+    {
+      "company": "Carlsberg India (Carlsberg A/S)",
+      "country_of_headquarters": "Denmark",
+      "signal": "Signed MoU with India's Ministry of Food Processing Industries at World Food India 2025 committing Rs 1,250 crore over three projects: a Rs 500 crore greenfield brewery in Ahilyanagar, Maharashtra; a Rs 400 crore brownfield expansion at its Hooghly, West Bengal facility; and a Rs 350 crore expansion at its Mysuru, Karnataka brewery. India Managing Director Nilesh Patel: 'Our investments in Maharashtra, West Bengal, and Karnataka underline our long-term commitment to India's future.'",
+      "source_url": "https://www.outlookbusiness.com/corporate/carlsberg-commits-to-invest-1250-cr-in-food-processing-sector",
+      "date": "2025-09-29",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Anheuser-Busch InBev (AB InBev)",
+      "country_of_headquarters": "Belgium",
+      "signal": "Announced (at WEF Davos) a USD 250 million investment over 2-3 years to strengthen its India beverage operations, including a new brewery in Unnao, Uttar Pradesh worth INR 1,000 crore (~USD 121 million) under an MoU with the UP state government; India's Minister of Food Processing Industries Chirag Paswan cited it as evidence of 'India's appeal as a global manufacturing hub.'",
+      "source_url": "https://www.inside.beer/news/detail/india-ab-inbev-announces-usd-121-million-brewery-project",
+      "date": "2025-01-22",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "PepsiCo",
+      "country_of_headquarters": "United States",
+      "signal": "Committed Rs 5,700 crore of investment in India from 2025 to 2030 for capacity expansion across three manufacturing facilities: a concentrates plant in Madhya Pradesh, a Northeast-serving plant in Assam, and a new snacks-business expansion (land purchased) in Tamil Nadu. PepsiCo India & South Asia CEO Jagrut Kotecha: 'We are committed, and as a result, from 2025 to 2030, we have committed almost Rs 5,700 crore of investments.'",
+      "source_url": "https://www.outlookbusiness.com/corporate/pepsico-commits-5700-cr-to-india-bets-big-on-snacks",
+      "date": "2026-05-20",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Nestle India (Nestle S.A.)",
+      "country_of_headquarters": "Switzerland",
+      "signal": "Signed MoU with India's Ministry of Food Processing Industries at World Food India 2025 to fast-track a Rs 5,000 crore expansion over 2-3 years: a new (10th) greenfield manufacturing facility in Odisha plus capacity expansion at existing sites, including new confectionery/prepared-dishes/cooking-aids capabilities at its Sanand, Gujarat plant. Nestle India Chairman Manish Tiwary confirmed the partnership will 'generate direct and indirect employment opportunities.'",
+      "source_url": "https://agronfoodprocessing.com/nestle-india-govt-ink-pact-to-fast-track-%E2%82%B95000-crore-food-sector-expansion/",
+      "date": "2025-10-03",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "United Breweries Ltd (Heineken N.V.)",
+      "country_of_headquarters": "Netherlands (Heineken is majority/controlling shareholder of UBL since 2021)",
+      "signal": "Registered the industrial-land lease in Unnao, Uttar Pradesh for a new INR 750 crore (~USD 90 million) greenfield brewery with planned capacity of 1.0-2.0 million hectoliters, to produce mainstream and premium brands including Heineken; operations targeted for Q2 FY27.",
+      "source_url": "https://www.inside.beer/news/detail/india-ubl-secures-land-for-major-new-brewery",
+      "date": "2025-11-22",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Barry Callebaut AG",
+      "country_of_headquarters": "Switzerland",
+      "signal": "Inaugurated its third India chocolate manufacturing facility, a 20,000 sq. m. greenfield plant in Neemrana (Ghiloth industrial area), Rajasthan, part of over INR 500 crore (CHF 50 million) invested in India over the preceding five years; the company states India is now Barry Callebaut's largest chocolate-producing market in the AMEA region. AMEA President Vamsi Mohan Thati and India MD Dhruva Jyoti Sanyal quoted at the inauguration.",
+      "source_url": "https://www.prnewswire.com/apac/news-releases/barry-callebaut-inaugurates-third-chocolate-factory-in-neemrana-india-302517233.html",
+      "date": "2025-07-30",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Danone (via Danone-Nutricia India)",
+      "country_of_headquarters": "France",
+      "signal": "Committed US$40.41 million (~Rs 356 crore) in Punjab: upgrading its specialist-nutrition production unit in Lalru, launching a new innovation hub for specialized nutrition products, and a three-year farmer-development program (with BAIF Development Research Foundation) to train over 5,000 smallholder dairy farmers in modern milk-production practices.",
+      "source_url": "https://dairybusinessmea.com/2025/10/18/danone-nutricia-commits-us40-41m-to-boost-dairy-innovation-in-india/",
+      "date": "2025-10-18",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "search_queries_tried": [
+    "foreign food processing company India investment plant 2026",
+    "dairy company India joint venture foreign investor 2025 2026",
+    "packaged food company India expansion plant announcement 2025",
+    "World Food India 2025 MoU foreign company investment list",
+    "Lactalis India new plant investment 2025",
+    "PepsiCo India new plant investment announcement 2025 2026",
+    "Mondelez India new factory investment 2025",
+    "Carlsberg India investment brewery 2025 2026",
+    "AB InBev India brewery investment 2025 2026",
+    "Olam Food Ingredients India investment plant 2025",
+    "\"Carlsberg\" India Rs 1250 crore brewery Ahilyanagar OR Hooghly OR Mysuru",
+    "Nestle India MoU World Food India 2025 investment amount",
+    "Ferrero India new factory investment 2025 2026",
+    "FrieslandCampina India investment 2025 2026",
+    "Suntory India beverages investment plant 2025",
+    "Heineken United Breweries India investment new brewery 2025 2026",
+    "Danone India investment plant 2025 2026",
+    "Barry Callebaut India chocolate factory investment 2025",
+    "Kerry Group India facility investment 2025",
+    "Mondelez India investment 2025 PLI new plant announcement (blocked -- session WebSearch quota exhausted)",
+    "General Mills India investment plant 2025 2026 (blocked -- session WebSearch quota exhausted)",
+    "Cargill India investment facility 2025 2026 (blocked -- session WebSearch quota exhausted)",
+    "Bel Group India Laughing Cow cheese factory investment 2025 (blocked -- session WebSearch quota exhausted)"
+  ],
+  "negative_notes": [
+    {
+      "company": "Suntory Holdings",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "Established a dedicated India subsidiary (Suntory India Pvt Ltd) in mid-2024, predating the sweep window, with a stated long-term target of $1bn India revenue by 2030. However, per CEO Takeshi Niinami's own comments, the company is still 'seeking a local manufacturing partner in India' -- no committed capex figure, plant location, or firm manufacturing investment has been announced. Excluded as too vague/not yet a concrete investment signal, not because the lead is false."
+    },
+    {
+      "company": "Kerry Group",
+      "country_of_headquarters": "Ireland",
+      "reason_excluded": "Search results for 'Kerry Group India facility investment 2025' resurfaced coverage of a EUR 20 million Tumkur, Karnataka facility -- but on reading the sources, that opening was from 2019, not 2025. This is exactly the kind of stale-news false positive the project has been burned by before; no genuine 2025-2026 India investment by Kerry Group was found."
+    },
+    {
+      "company": "Mondelez International",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "The widely-cited Rs 4,000 crore India investment (including a Rs 1,600 crore Sri City, Andhra Pradesh chocolate-plant expansion) was originally announced in 2023 with a 2026 completion horizon. Could not find or verify a genuinely new 2025-2026 announcement distinct from that pre-window commitment before the session's WebSearch quota was exhausted. Excluded rather than reported as 'new' activity."
+    },
+    {
+      "company": "Olam Food Ingredients (Olam Group)",
+      "country_of_headquarters": "Singapore",
+      "reason_excluded": "A secondary summary source stated Olam Food Ingredients signed an MoU at World Food India 2025 for 'diversified projects, from setting up food parks to modernizing supply chains,' but no primary article or press release giving India-specific investment figures or concrete project details could be located and read directly. Excluded per the no-fabrication rule rather than reported on an unverified secondary mention."
+    },
+    {
+      "company": "FrieslandCampina",
+      "country_of_headquarters": "Netherlands",
+      "reason_excluded": "No current direct dairy manufacturing presence in India was found, and no 2025-2026 India investment announcement surfaced in searches; older sources (2014) explicitly note the company had no direct India dairy operations at that time."
+    },
+    {
+      "company": "Ferrero Group",
+      "country_of_headquarters": "Luxembourg (Ferrero International); founding family Italian",
+      "reason_excluded": "Global capex figures (~EUR 1.1bn in FY2024/25) and general references to an 'active M&A pipeline focused on regional players in India and Southeast Asia' were found, but no specific new India factory, expansion, or investment announcement for 2025-2026 could be verified beyond the pre-existing Baramati, Maharashtra facility."
+    },
+    {
+      "company": "Coca-Cola bottlers in India (\"The Coca-Cola System in India\")",
+      "country_of_headquarters": "Mixed / unclear",
+      "reason_excluded": "Reported to have collectively pledged Rs 25,760 crore (~$2.96bn) at World Food India 2025 -- a large figure -- but the specific bottling entities (e.g. Hindustan Coca-Cola Beverages, Moon Beverages, SLMG Beverages) are India-domiciled joint operating companies, and within the research budget it could not be confirmed whether The Coca-Cola Company (Atlanta, US) itself, versus an India-headquartered bottler/franchisee, is the entity actually committing the capital. Excluded to avoid misattributing an Indian-headquartered bottler's investment as foreign."
+    }
+  ]
+}

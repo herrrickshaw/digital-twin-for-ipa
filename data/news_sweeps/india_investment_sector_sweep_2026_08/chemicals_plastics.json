@@ -1,0 +1,116 @@
+{
+  "sector": "Chemicals & Plastics (specialty chemicals, petrochemicals, plastics/polymer manufacturing)",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across multiple query angles (specialty chemicals India investment, foreign chemical company India plant announcements, petrochemical JVs, polymer manufacturing expansion, named-company follow-ups for major global chemicals players), followed by WebFetch to open and read each candidate article/press release directly before inclusion. Every finding below was verified by opening at least one substantive source (not a search snippet alone). Non-Indian-HQ companies only. This session's shared WebSearch quota (200 calls) was exhausted partway through this sweep, which capped a few planned follow-up queries (Henkel/Mapei, Indorama Ventures' own India plans, Toyoda Gosei date confirmation via search) -- those were completed instead via targeted WebFetch re-reads of already-found sources where possible.",
+  "findings": [
+    {
+      "company": "Sekisui Chemical Co., Ltd.",
+      "country_of_headquarters": "Japan",
+      "signal": "Investing approximately $3 million in a new manufacturing facility at Chakan, near Pune, Maharashtra -- the company's sixth plant in India -- to produce injection-molded plastic parts for the Indian automotive market, with operations targeted to commence by January 2026.",
+      "source_url": "https://autotechinsight.spglobal.com/news/5282589/sekisui-chemical-invests-in-new-manufacturing-facility-to-produce-injection-molded-parts-in-india",
+      "date": "2025-06-26",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Indorama Resources Ltd. (via 50:50 JV \"Valor Petrochemicals Ltd.\" with Adani Petrochemicals)",
+      "country_of_headquarters": "Thailand",
+      "signal": "Formed Valor Petrochemicals Ltd, a 50:50 joint venture with Adani Petrochemicals Ltd, to build refining, petrochemical and chemical operations in India centered on PVC production; proposed investment of roughly US$4 billion (Rs 37,900 crore), including a 2-million-tonne/year PVC plant at Mundra, Gujarat -- intended to be India's largest PVC manufacturing facility, with first-phase commercial production targeted by December 2026. JV launched January 2025.",
+      "source_url": "https://www.polymerupdate.com/Blogs/Details/1360988/All",
+      "date": "2025-01",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "LANXESS AG",
+      "country_of_headquarters": "Germany",
+      "signal": "Opened a new Rs 150 crore specialty lubricant-additives blending plant at its multi-business-unit site in Jhagadia, Gujarat -- described as LANXESS's 13th lubricant-additives production site globally -- bringing cumulative investment at the Jhagadia site to Rs 750 crore (the site also makes ion exchange resins, biocides, and rubber/release agents).",
+      "source_url": "https://www.indianchemicalnews.com/chemical/lanxess-opens-rs-150-crore-new-lubricant-additives-plant-in-india-30184",
+      "date": "2026-04-27",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Wacker Chemie AG",
+      "country_of_headquarters": "Germany",
+      "signal": "Commissioned a new 15,000-square-meter silicone emulsions production complex at its existing Panagarh (West Bengal) site, producing GMP-certified silicones for cosmetics and personal-care manufacturers; created about 60 new jobs. Investment amount not disclosed in source.",
+      "source_url": "https://www.indianchemicalnews.com/chemical/wacker-fires-up-new-silicone-plant-in-india-29803",
+      "date": "2026-03",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "BASF SE",
+      "country_of_headquarters": "Germany",
+      "signal": "Announced (via its own press release) it is adding a new dispersions production line at its Mangalore, Karnataka facility to meet growing India demand for architectural paints, construction chemicals, and paper/packaging applications; expected operational around 2027. Investment amount and capacity figures not disclosed.",
+      "source_url": "https://www.basf.com/in/en/media/news-releases/asia-pacific/2026/02/apac-26-14",
+      "date": "2026-02-13",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "dsm-firmenich",
+      "country_of_headquarters": "Switzerland/Netherlands (dual-headquartered, Euronext Amsterdam listed)",
+      "signal": "Unveiled roughly EUR 70 million in India plant investments via its own press release: an expanded seasoning plant in Thuravoor, Kerala (EtO-free seasonings, ~150 new jobs, operational from October 2025) and a new 56,000 sqm greenfield Taste manufacturing facility in Vadodara district, Gujarat (~200+ new jobs, targeted operational Q4 2027). Note: this is specialty ingredients/flavor-and-taste manufacturing, which sits at the specialty-chemicals/ingredients boundary rather than core petrochemicals or plastics -- flagged for the twin's sector-fit judgment.",
+      "source_url": "https://www.dsm-firmenich.com/en/businesses/taste-texture-health/news-events/press-releases/dsm-firmenich-unveils-major-plant-investments-emphasizing-commitment-to-shaping-the-future-of-flavor-in-india.html",
+      "date": "2025-08-26",
+      "confidence": "HIGH"
+    }
+  ],
+  "search_queries_tried": [
+    "specialty chemicals company India investment plant 2026 announcement",
+    "foreign chemical company India new plant 2025 investment",
+    "BASF India investment expansion 2025 2026",
+    "petrochemical India joint venture foreign investor 2025 2026",
+    "polymer manufacturing India expansion foreign company plant 2025",
+    "Lanxess OR Evonik OR Covestro OR Wacker OR Clariant India new plant investment 2025 2026",
+    "Sumitomo Chemical OR Mitsubishi Chemical OR Shin-Etsu OR Toray India investment plant 2025 2026",
+    "\"BASF\" Mangalore dispersions India 2025 investment",
+    "Solvay OR Arkema OR Huntsman OR INEOS India new investment plant 2025 2026",
+    "LG Chem OR Lotte Chemical OR Formosa Plastics India investment plant announcement 2025 2026",
+    "Saudi Aramco OR SABIC OR ADNOC India petrochemical investment refinery 2025 2026",
+    "DSM-Firmenich OR Asahi Kasei OR Mitsui Chemicals India investment 2025 2026",
+    "Dow Chemical OR ExxonMobil Chemical OR Eastman Chemical India new investment 2025 2026",
+    "Celanese OR AkzoNobel OR PPG Industries OR Sika India new plant investment 2025 2026",
+    "Toyoda Gosei Karnataka India plant announcement date 2025 (blocked -- session WebSearch quota exhausted; resolved via WebFetch re-read of already-found source instead)",
+    "Henkel OR Mapei India new plant investment 2025 2026 (blocked -- session WebSearch quota exhausted)",
+    "Indorama Ventures India investment new plant 2025 2026 (blocked -- session WebSearch quota exhausted)"
+  ],
+  "negative_notes": [
+    {
+      "company": "Nayara Energy (majority owned by Rosneft, Russia)",
+      "country_of_headquarters": "India (company itself is India-headquartered, in Mumbai)",
+      "reason_excluded": "Widely reported Rs 68,000 crore ethane cracker investment at the Vadinar refinery is real and recent, but the announcing entity, Nayara Energy, is headquartered in India, not abroad -- Rosneft is a minority/majority shareholder in an India-domiciled company, not a foreign company entering India. Excluded per the task's 'no Indian-HQ companies' rule."
+    },
+    {
+      "company": "Vinmar Petrochemicals (Vinmar Group)",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "The only source found for the IPCL-Vinmar MMA/PMMA joint venture (Rs 316 crore, Gandhar complex) is a Business Standard page whose article-ID pattern (...197091701052) is consistent with a 1990s archive piece rather than a 2025-2026 announcement; could not confirm this falls inside the ~18-month sweep window, so excluded as unverifiable recency despite surfacing in a 2025/2026-targeted search."
+    },
+    {
+      "company": "PPG Industries",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "An 'over US$10 million fresh investment in India' (AsianPPG electrocoat JV expansion, Sriperumbudur) surfaced in search results aimed at 2025-2026, but WebFetch confirmed the article is dated March 19, 2012. Excluded as stale/not recent -- a clear instance of a search snippet's apparent recency being misleading until the source was actually opened."
+    },
+    {
+      "company": "Celanese Corporation",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "Coverage describes Celanese closing its Ulsan, South Korea plant and redirecting existing production volumes to its already-established Nanjing/Shenzhen (China) and Silvassa (India) facilities as part of a cost-optimization 'Grow & Fortify' strategy. This is a reallocation of existing production to an existing India site, not a new capital investment, capacity expansion, or new-plant commitment -- no capex figure or expansion scope given. Excluded as not a substantive new-investment signal."
+    },
+    {
+      "company": "Mitsui Chemicals, Inc.",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "Trade press describes Mitsui Chemicals as 'evaluating' setting up local production bases in India for Tafmer polyolefin elastomers and EPDM in response to the Make in India campaign. This is exploratory/under-evaluation language, not a committed investment, plant opening, JV, or stated firm intent -- excluded per the task's bar against speculative/uncommitted leads."
+    },
+    {
+      "company": "Toyoda Gosei Co., Ltd.",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "Genuine and well-documented investment (JPY 2.05 billion / ~US$14.5 million) in a new Karnataka plant making safety-systems and interior automotive components (plastics/rubber-adjacent manufacturing, production targeted for 2026, ~580 jobs by 2027) -- but WebFetch confirmed the source article is dated September 19, 2024, which falls outside the ~18-month (since early 2025) window for this sweep. Excluded on recency grounds only, not veracity."
+    },
+    {
+      "company": "Saudi Aramco / ADNOC (Ratnagiri Refinery & Petrochemicals Complex consortium)",
+      "country_of_headquarters": "Saudi Arabia / United Arab Emirates",
+      "reason_excluded": "The ~US$44 billion Ratnagiri mega-refinery-and-petrochemicals project (with IOCL/BPCL/HPCL) was originally announced in 2018 and has a long public record of stalls, land-acquisition setbacks, and site relocation. No source found in this sweep confirms a fresh financial close, construction start, or renewed formal commitment specifically within the 2025-2026 window -- excluded as an unresolved multi-year saga rather than a fresh, concrete recent commitment, consistent with this project's caution against vague macro/ongoing-story leads."
+    },
+    {
+      "company": "Solvay, Arkema, Huntsman, INEOS, LG Chem, Lotte Chemical, Formosa Plastics, Dow Chemical, ExxonMobil Chemical, Eastman Chemical, AkzoNobel, Sika -- India-specific investment check",
+      "country_of_headquarters": "Belgium / France / United States / United Kingdom / South Korea (x2) / Taiwan / United States / United States / United States / Netherlands / Switzerland",
+      "reason_excluded": "Each was searched specifically for a 2025-2026 India investment announcement; none produced substantive India-specific new-investment coverage in this sweep. Where a real recent investment by these companies did surface, it was located elsewhere (Arkema's ~US$20 million transparent-polyamide unit investment is in Singapore; AkzoNobel's EUR 32 million bisphenol-free-coatings plant investment is in Vilafranca, Spain) -- neither is an India investment. Recorded here as leads checked and not found, not as affirmatively ruled-out false positives."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "sector": "Auto, EV & Components (automobiles, EVs, auto components, ACC batteries)",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across multiple query angles (foreign automaker India investment/plant announcements, EV company India plants, auto-components JVs, ACC/battery manufacturing, and company-specific follow-ups), followed by WebFetch to open and read each candidate article/press release directly before inclusion. Every finding below was verified by opening at least one substantive source (not a search snippet) and confirming the specific company is genuinely discussed as committing capital/capacity/operations to India. Non-Indian-HQ companies only; companies with long-established India operations were only included where the specific finding is a genuinely new/recent (post-early-2025) investment signal, not old news re-surfaced. Session's WebSearch quota was exhausted after ~15 queries; remaining verification relied on WebFetch against URLs already surfaced (e.g. following up on LG Energy Solution/Panasonic/BYD/Mercedes-Benz/Continental leads), which somewhat capped additional discovery angles (e.g. Yamaha, Suzuki two-wheelers, Isuzu, Volvo Group, Stellantis, Nissan standalone, Škoda-VW fresh capex beyond the already-covered Kushaq production start were queued but not separately run).",
+  "findings": [
+    {
+      "company": "Toyota Motor Corporation (via Toyota Kirloskar Motor)",
+      "country_of_headquarters": "Japan",
+      "signal": "Committed roughly $1.9 billion (300 billion yen) to build three new vehicle assembly plants in Maharashtra (Bidkin Industrial Area), tripling Toyota's India production capacity to about one million units/year and making India Toyota's fourth-largest global manufacturing hub; explicitly positioned as an export base for hybrids/PHEVs to the Middle East, Africa and South Asia. First reported by Nikkei Asia, corroborated by Toyota Kirloskar Motor's own confirmation per Business Standard's headline; initial operations targeted for 2029.",
+      "source_url": "https://www.autoblog.com/news/toyota-is-betting-1-9-billion-on-india-to-power-its-next-growth-surge",
+      "date": "2026-05-12",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Horse Powertrain (Renault-Geely joint venture, backed by Saudi Aramco)",
+      "country_of_headquarters": "France (Renault) / China (Geely), JV entity co-owned with Saudi Arabia's Aramco",
+      "signal": "Submitted a formal application, pending Indian government approval, to invest approximately $370 million into Renault's Chennai manufacturing facility to retrofit it for local production of strong-hybrid powertrains and engines for future Renault and Nissan models sold in India -- one of the largest China-linked manufacturing investments under review in years, and among the first tested under India's March 2026 revised rules for investment from neighboring-country-linked entities.",
+      "source_url": "https://www.just-auto.com/news/india-370m-horse-powertrain-investment/",
+      "date": "2026-06-26",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "VinFast Auto (Vingroup)",
+      "country_of_headquarters": "Vietnam",
+      "signal": "Announced a $500 million second-phase expansion of its Thoothukudi, Tamil Nadu EV plant -- enlarging the campus to roughly 900 acres with the Tamil Nadu government allocating ~500 adjacent acres -- to add dedicated production lines for electric buses and electric two-wheelers, scaling annual capacity from 50,000 to 150,000 units; part of VinFast's broader phased ~$2 billion (Rs 16,000 crore) India commitment.",
+      "source_url": "https://www.outlookbusiness.com/amp/story/start-up/news/vinfast-commits-500-mn-to-expand-tamil-nadu-plant-targets-150k-capacity-for-evs-e-scooters",
+      "date": "2025-12-05",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "TS Tech Co., Ltd.",
+      "country_of_headquarters": "Japan",
+      "signal": "Board resolved (27 Mar 2025) and signed (3 Apr 2025) a 50:50 joint-venture agreement with India's Krishna Group to form Krishna TS Tech Auto Pvt. Ltd., headquartered in Gurgaon, to jointly develop and produce automotive seats/interior components for the Indian market, combining TS Tech's technology with Krishna Group's position as a major seat supplier to Maruti Suzuki.",
+      "source_url": "https://www.marklines.com/en/news/324572",
+      "date": "2025-04-07",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Hayashi Telempu Corporation",
+      "country_of_headquarters": "Japan",
+      "signal": "Formed a 50:50 joint venture, NDR Hayashi Automotive India Private Limited, with listed Indian auto-parts maker NDR Auto Components (incorporated 10 Oct 2025, Rs 200 crore authorized/subscribed capital, NDR investing Rs 100 crore for its 50% stake) to manufacture automotive interior components -- ambient lighting systems, carpets, dashboard inner parts, rear shades and tonneau covers -- for OEMs in India and export markets.",
+      "source_url": "https://www.autocarpro.in/news/ndr-auto-components-incorporates-joint-venture-with-hayashi-telempu-for-auto-parts-manufacturing-129216",
+      "date": "2025-10-13",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Kia Corporation",
+      "country_of_headquarters": "South Korea",
+      "signal": "Combined Rs 8,000 crore investment underpinning Kia's second India manufacturing facility (300-acre site in Anantapur, Andhra Pradesh), adding 300,000 units/year of capacity alongside the existing Penukonda plant (600,000 units/year combined), including a dedicated EV production line on Kia's E-GMP platform and battery-pack assembly, to build India's first locally-produced Kia EV (compact SUV, launching late 2026); roughly 40% of output earmarked for export to the Middle East, Africa, Latin America and ASEAN.",
+      "source_url": "https://www.nxcar.in/blog/category/news/kia-india-launches-sixth-manufacturing-plant-eyes-export-hub-status-1768657322296-13",
+      "date": "2026-01-17",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Robert Bosch GmbH (Bosch Ltd India)",
+      "country_of_headquarters": "Germany",
+      "signal": "Formed a 50:50 joint venture with India's TSF Group (Brakes India and Wheels India), registered office in Chennai, to develop and manufacture advanced electronically-controlled air systems (air compression, processing and suspension) for commercial vehicles -- described by Bosch leadership as expansion into new 'white space' segments as part of a shift from selling individual components to offering the full commercial-vehicle mobility tech stack in India; operations targeted to be fully functional by end of 2026.",
+      "source_url": "https://www.autocarpro.in/feature/boschs-india-recast-132757",
+      "date": "2026-05-23",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "ZF Friedrichshafen AG (via ZF Commercial Vehicle Control Systems India / ZF MIPL)",
+      "country_of_headquarters": "Germany",
+      "signal": "ZF's Indian subsidiary ZF MIPL received a sanctioned Rs 300 crore capital investment (via non-cumulative optionally convertible redeemable preference shares) earmarked for capex, working capital and loan repayment, disclosed alongside ZF Commercial Vehicle Control Systems India's FY26 results (Rs 517 crore profit after tax).",
+      "source_url": "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/ZF-India-Approves-51-Bonus-indian-rupee300-Cr-Investment-After-indian-rupee517-Cr-Profit/6a048a239444064ed0584305",
+      "date": "2026-05-13",
+      "confidence": "LOW"
+    }
+  ],
+  "search_queries_tried": [
+    "foreign automaker India investment plant announcement 2026",
+    "EV company India plant investment announcement 2025 2026",
+    "auto components company India joint venture foreign investor 2025",
+    "ACC battery cell manufacturing India foreign company investment 2025",
+    "Toyota $1.9 billion Maharashtra India plant investment 2026 announcement",
+    "Toyoda Gosei Karnataka India new manufacturing plant investment",
+    "Horse Powertrain Renault Geely India Chennai investment approval",
+    "VinFast India Thoothukudi expansion investment 2026",
+    "TS Tech Krishna Group India joint venture April 2025",
+    "NDR Auto Components Hayashi Telempu joint venture India October 2025",
+    "Continental OR Bosch OR ZF India new plant investment 2025 2026",
+    "BYD India investment plant 2025 2026",
+    "Kia India new investment expansion plant 2025 2026",
+    "Panasonic OR LG Energy Solution OR CATL India battery plant investment 2025",
+    "Suzuki Motor Corporation India additional investment 2025 2026",
+    "Mercedes-Benz OR BMW India new investment plant expansion 2025 2026",
+    "Toyoda Gosei Harohalli Karnataka plant 2025 production start update",
+    "BYD denies Hyderabad plant India \"untrue\" statement (search budget exhausted before this ran; addressed via WebFetch on an already-surfaced URL instead)"
+  ],
+  "negative_notes": [
+    {
+      "company": "BYD",
+      "country_of_headquarters": "China",
+      "reason_excluded": "Widely reported ~Rs 85,000 crore (~$10bn) Hyderabad EV-and-battery plant plan with local partner Megha Engineering and Infrastructures Ltd (MEIL), 500 acres, 600,000 units/year by 2032. Read the underlying article directly: as of the March 2025 reporting, the piece is explicitly sourced to 'a report by ETV Bharat' describing 'advanced discussions' and Telangana government site proposals, with 'no statement from BYD confirming or denying' and no finalized agreement. Separately, other coverage from around the same period has BYD calling investment reports 'untrue.' A prior related $1bn BYD-MEIL proposal was rejected by the Indian government in 2023 on national-security grounds. Excluded as unconfirmed/rumored rather than a substantiated company commitment."
+    },
+    {
+      "company": "LG Energy Solution",
+      "country_of_headquarters": "South Korea",
+      "reason_excluded": "Reported discussions with JSW Energy on a >$1.5 billion, 10 GWh battery joint venture, and LGES itself is reportedly evaluating a ~100-acre site near Chennai among Tamil Nadu/Telangana/Andhra Pradesh options. Read directly: as of the January 2025 article, LGES's own statement is only that it is 'exploring various potential business options and monitoring' the market, with the piece's own assessment that both LGES and Panasonic are in 'preliminary investigation stages, with no confirmed facility establishment dates or finalized locations.' Excluded as exploratory/unconfirmed, not a committed investment yet, though worth re-checking in a future sweep given the scale.",
+      "note": "same source also covered Panasonic Energy's parallel, equally-unconfirmed India site evaluation (Telangana/Tamil Nadu/Maharashtra/Karnataka) -- excluded for the same reason."
+    },
+    {
+      "company": "Toyoda Gosei Co., Ltd.",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "Genuine, real investment (~¥2.05 billion / $14.5M) in a new Harohalli, Karnataka plant for airbags/steering-wheel safety systems and interior/exterior parts (console boxes etc.), production slated to start 2026, ~580 jobs by 2027 -- confirmed via the company's own announcement summarized in trade press. Excluded from findings only on timing: the announcement date is 19 September 2024, which falls outside the task's ~18-month (since early 2025) freshness window. No subsequent 2025/2026 update was found beyond the original announcement, so it was left out rather than force-fit into the window."
+    },
+    {
+      "company": "Mercedes-Benz",
+      "country_of_headquarters": "Germany",
+      "reason_excluded": "The specific, quotable INR 3,000 crore Maharashtra investment figure traces to a Maharashtra Industries Minister statement reported 21 May 2024 -- outside the freshness window. More recent (2026) India coverage of Mercedes-Benz discusses 12 new model launches, dealership expansion, and a vaguer 'Rs 200 crore' plant scale-up at Chakan/Pune, but no article found in this pass gives a fresh, specific, dated capital commitment comparable in substance to the other findings here. Left out for insufficient fresh substantiation rather than falseness; worth re-checking with a dedicated Mercedes-Benz India investment query in a future sweep."
+    },
+    {
+      "company": "Continental AG",
+      "country_of_headquarters": "Germany",
+      "reason_excluded": "Searched specifically for new Continental India plant/investment news in the 2025-2026 window; no substantive dedicated article surfaced (search results returned only Bosch and ZF stories). Not included for lack of any verifiable new finding, not because a lead was found and rejected."
+    },
+    {
+      "company": "Kia Corporation (proposed additional Anantapur production line)",
+      "country_of_headquarters": "South Korea",
+      "reason_excluded": "A separate, newer report (15 Aug 2026) describes Kia 'studying' a further ~200,000-unit/year production line at the same Anantapur plant already covered in the findings above. Read directly: the article states this is 'at an early stage, and a final investment decision has yet to be taken.' Excluded as too preliminary to count as a committed signal, distinct from the already-committed Rs 8,000 crore Anantapur plant investment included as a finding."
+    }
+  ]
+}

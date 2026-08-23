@@ -1,0 +1,143 @@
+{
+  "sector": "Medical Devices",
+  "swept_date": "2026-08-23",
+  "method": "Manual, article-by-article sweep -- NOT a bulk keyword NewsAPI sweep (a prior pass using that method produced false positives, e.g. matching an unrelated Micron press release and a macro India-GDP article that happened to co-mention a small-cap name, and was discarded entirely rather than merged into the twin). This pass used WebSearch and Google News RSS (news.google.com/rss/search) for discovery across ~15 query angles (medical devices, diagnostics, imaging, implants, JV, YEIDA/AMTZ medical device parks, named-company checks), then WebFetch (direct, or via Bing News/r.jina.ai reader proxy when a publisher blocked WebFetch directly, e.g. thehindu.com, thehindubusinessline.com, hindustantimes.com, health.economictimes.indiatimes.com, newindianexpress.com) to open and read the actual article text for every candidate before deciding to include or exclude it. Every finding below reflects a genuinely opened and read source, not a search-result snippet. Session WebSearch quota was exhausted partway through (200/200 calls used across the session); remaining discovery after that point relied on Google News RSS + Bing News fetched via WebFetch, which worked as an effective substitute.",
+  "findings": [
+    {
+      "company": "Sysmex Corporation",
+      "country": "Japan",
+      "signal": "New integrated manufacturing base at Sanand II Industrial Estate, Gujarat began full-scale operations in April 2025, producing both diagnostic reagents and the XQ-320 Automated Hematology Analyzer instrument for the Indian market under 'Make in India' -- Sysmex's second-largest overseas instrument production base after China. Investment stated as approx. JPY 3 billion; facility is 18,100 sqm site / 10,600 sqm floor space.",
+      "source_url": "https://www.sysmex-ap.com/sysmex-groups-new-manufacturing-base-in-india-begins-full-scale-operations-and-launches-make-in-india-products/",
+      "date": "2025-04-17",
+      "confidence": "HIGH",
+      "confidence_reason": "Company's own press release (Sysmex Asia Pacific), read directly via WebFetch; specific investment figure, location, product, and capacity detail given."
+    },
+    {
+      "company": "Align Technology, Inc.",
+      "country": "USA",
+      "signal": "Plans a Rs. 1,800 crore manufacturing facility in Hyderabad, Telangana -- explicitly described as the company's first manufacturing site in India (fourth globally), to produce Invisalign clear-aligner parts (~10 lakh unique parts/day) via 3D printing; operations targeted for 2027, 300+ direct jobs projected. Announcement includes a quote from Telangana IT/Industries Minister Duddilla Sridhar Babu.",
+      "source_url": "https://www.pharmabiz.com/NewsDetails.aspx?aid=186060&sid=2",
+      "date": "2026-05-21",
+      "confidence": "MEDIUM",
+      "confidence_reason": "Solid trade press (Pharmabiz) with specific investment figure, location, and a named-official quote, read directly via WebFetch; corroborated by a matching Hindu Business Line headline (article page itself was blocked to WebFetch, so not counted as a separate read)."
+    },
+    {
+      "company": "Lubrizol Corporation",
+      "country": "USA",
+      "signal": "Inaugurated (with Indian partner Polyhose) an ISO 13485-certified medical tubing facility in Chennai, Tamil Nadu -- a Rs. 200 crore project producing precision-extruded medical tubing (polyamides, nylon, Pebax, TPU, etc.) for neurovascular and cardiovascular devices, aimed at India and export markets; reported as increasing Lubrizol's local medical-tubing volume five-fold and operational by 2026.",
+      "source_url": "https://www.pharmabiz.com/NewsDetails.aspx?aid=186653&sid=2",
+      "date": "2026-06-20",
+      "confidence": "MEDIUM",
+      "confidence_reason": "Trade press (Pharmabiz) article read directly via WebFetch describing an actual inaugurated facility with product/investment specifics; corroborated by independent Business Line/Times of India/Economic Times headlines found via Google News RSS and Bing News (not separately opened, used only as corroboration, not as the basis for inclusion)."
+    },
+    {
+      "company": "OIC International (The Orthopaedic Implant Company)",
+      "country": "USA",
+      "signal": "Entered a trilateral partnership with India's Medi-Mold and France's AddUp (Fives Group) to launch India's first advanced metal-3D-printing hub for patient-specific orthopaedic implants (trauma, spine, hip) at the Andhra Pradesh MedTech Zone (AMTZ), Visakhapatnam. Medi-Mold committed INR 100 crore toward the facility, including OIC International's India-entry/setup costs -- i.e. this is OIC's mechanism for entering Indian operations.",
+      "source_url": "https://www.einpresswire.com/article/837458478/oic-intl-medi-mold-and-fives-addup-forge-alliance-for-india-s-first-advanced-3d-printing-hub-for-orthopedic-implants",
+      "date": "2025-08-07",
+      "confidence": "MEDIUM",
+      "confidence_reason": "Official press release distributed via EIN Presswire on behalf of 'The Orthopaedic Implant Company' with named company contact, read directly via WebFetch; deal described as 'expected to be concluded in the next few weeks' at time of release (i.e. still finalizing), and no independent confirmation of closing was found."
+    },
+    {
+      "company": "AddUp (Fives Group subsidiary)",
+      "country": "France",
+      "signal": "Technology partner in the same OIC International / Medi-Mold orthopaedic-implant JV above -- supplying its metal Laser Beam Powder Bed Fusion (PBF-LB) additive-manufacturing machine (FormUp range) to the new AMTZ Visakhapatnam facility that will mass-produce 3D-printed orthopaedic implants for India and export.",
+      "source_url": "https://www.einpresswire.com/article/837458478/oic-intl-medi-mold-and-fives-addup-forge-alliance-for-india-s-first-advanced-3d-printing-hub-for-orthopedic-implants",
+      "date": "2025-08-07",
+      "confidence": "MEDIUM",
+      "confidence_reason": "Same official press release as above, read directly via WebFetch; AddUp's role is technology/equipment supply rather than direct capital commitment, so confidence is capped at MEDIUM pending independent confirmation of the deal closing."
+    },
+    {
+      "company": "Create Medic Co., Ltd.",
+      "country": "Japan",
+      "signal": "50-year-old, Tokyo Stock Exchange-listed silicone-catheter manufacturer established its first India office in Chennai, with an explicitly stated (though undated/unfunded-in-the-article) plan to build a manufacturing facility in Chennai to serve India, neighbouring countries, and Africa; also plans expansion to Delhi and Mumbai.",
+      "source_url": "https://www.thehindu.com/news/cities/chennai/japans-create-medic-enters-india-via-chennai-plans-manufacturing-unit/article70865422.ece",
+      "date": "2026-04-15",
+      "confidence": "MEDIUM",
+      "confidence_reason": "The Hindu article read in full via an r.jina.ai reader proxy (direct WebFetch to thehindu.com was blocked) -- confirmed real, substantive coverage, not a snippet. Corroborated by 4 additional independent outlets (DT Next, Business Line, New Indian Express, Times of India) via Google News RSS headlines. Confidence held at MEDIUM rather than HIGH because the manufacturing facility itself is a stated future plan with no timeline or investment figure yet -- the confirmed action to date is the Chennai office."
+    }
+  ],
+  "search_queries_tried": [
+    "medical device company India investment plant 2026",
+    "foreign diagnostics manufacturer India plant announcement 2025",
+    "medical devices India JV foreign investor joint venture 2025 2026",
+    "imaging equipment India expansion foreign company Siemens Healthineers Philips GE 2025",
+    "Medtronic India manufacturing investment 2025 2026 announcement",
+    "Becton Dickinson BD India plant investment 2025",
+    "\"medical device\" India new facility 2025 investment crore announcement -Sysmex -Siemens",
+    "Siemens Healthineers Bengaluru campus investment 2025 press release India",
+    "OIC International Medi Mold AddUp orthopaedic implant AMTZ Visakhapatnam",
+    "AddUp India orthopedic implant press release 2025 (WebSearch quota exhausted before this ran; continued via Google News RSS/Bing News instead)",
+    "Google News RSS: medical device India investment plant",
+    "Google News RSS: diagnostics company India facility investment 2026",
+    "Google News RSS: Mindray OR Roche Diagnostics OR Abbott OR Hologic OR Qiagen India plant investment",
+    "Google News RSS: implant manufacturing India foreign company investment 2026",
+    "Google News RSS: GE Healthcare OR Fujifilm OR B Braun OR Olympus India investment plant 2025",
+    "Google News RSS: YEIDA medical device park foreign company 2025 2026",
+    "Google News RSS: hearing aid OR dental equipment OR ventilator India foreign company investment plant 2025 2026",
+    "Google News RSS: \"Krish Biomedicals\"",
+    "Google News RSS: \"Create Medic\" India",
+    "Google News RSS: cardiac stent OR catheter OR surgical instrument India foreign investment plant 2025 2026",
+    "Google News RSS: \"B. Braun\" OR \"Terumo\" OR \"Boston Scientific\" OR \"Baxter\" India plant OR investment 2025 2026",
+    "Bing News: Boston Scientific India manufacturing investment 2025",
+    "Bing News: Terumo India manufacturing plant investment 2025",
+    "Bing News: Align Technology Hyderabad plant crore",
+    "Bing News: Lubrizol Polyhose medical tubing Chennai",
+    "Bing News: GE Healthcare Philips Panacea Noida Medical Devices Park",
+    "Bing News: YEIDA Medical Excellence Japan MoU",
+    "Bing News: Create Medic silicone catheter Chennai manufacturing"
+  ],
+  "negative_notes": [
+    {
+      "candidate": "GE HealthCare (USA) and Philips (Netherlands) -- Noida Medical Devices Park",
+      "why_excluded": "Times of India (19 Nov 2025) reports both companies merely 'expressed interest' / 'evinced interest' in the 350-acre Sector 28 park and are 'likely to send teams for on-ground assessments soon' -- no plot allocated, no investment figure, no signed agreement. This is exploratory interest, not a committed investment, so it does not meet the bar for inclusion.",
+      "source_checked": "https://timesofindia.indiatimes.com/city/noida/ge-healthcare-philips-panacea-keen-to-set-up-units-at-noida-medical-devices-park/articleshow/125418931.cms"
+    },
+    {
+      "candidate": "Medical Excellence Japan (MEJ) MoU with YEIDA",
+      "why_excluded": "This is a memorandum between YEIDA and MEJ, a Japanese government-linked medical-industry trade-promotion organization -- not an investing company. Follow-up coverage (Swarajya, 22 Oct 2025) confirms no specific Japanese medical device manufacturer was named or committed at the time of the MoU; a delegation of 'top Japanese medical device makers' was only planned to tour the park afterward. Exactly the kind of organization-level/associational mention this sweep is meant to exclude rather than mistake for a company commitment.",
+      "source_checked": "https://swarajyamag.com/infrastructure/noida-to-get-japanese-medical-device-manufacturing-cluster-near-airport"
+    },
+    {
+      "candidate": "Omron -- Tamil Nadu medical device factory",
+      "why_excluded": "Announcement dated 31 May 2023, well before the ~18-month (since early 2025) window for this sweep; represents an existing/older commitment, not new activity.",
+      "source_checked": "India Briefing, via Google News RSS headline"
+    },
+    {
+      "candidate": "Siemens Healthineers -- Bengaluru MRI facility inauguration and EUR 160M innovation-hub campus",
+      "why_excluded": "MRI facility inauguration press release dated 18 April 2023; the EUR 160M innovation-hub investment was originally announced October 2020. Both predate the sweep's ~18-month window and represent already-established operations, not new 2025/2026 activity.",
+      "source_checked": "https://www.siemens-healthineers.com/en-in/press-room/press-releases/inauguration-of-mri-facility-bengaluru (read directly via WebFetch)"
+    },
+    {
+      "candidate": "Wipro GE Healthcare -- $959M India investment",
+      "why_excluded": "Reported by Medical Device Network on 27 March 2024, before the sweep's since-early-2025 window; also Wipro GE is an existing long-standing India JV rather than a new entrant.",
+      "source_checked": "Medical Device Network headline via Google News RSS"
+    },
+    {
+      "candidate": "Merck Group -- Peenya (Bengaluru) facility expansion",
+      "why_excluded": "9 April 2026 headline describes expanded filtration manufacturing for life-sciences/biopharma processing equipment, not a medical device, diagnostics, or imaging product -- out of this sector's scope.",
+      "source_checked": "BioPharma APAC headline via Google News RSS"
+    },
+    {
+      "candidate": "Haleon -- ~INR 2,000 crore first India manufacturing facility",
+      "why_excluded": "9 June 2026 announcement is for consumer healthcare/OTC products (e.g. Sensodyne, Panadol, Centrum-type portfolio), not medical devices -- out of this sector's scope despite superficially resembling a strong 'India investment' hit.",
+      "source_checked": "The Malaysian Reserve / IndiaMedToday / BioSpectrum India headlines via Google News RSS"
+    },
+    {
+      "candidate": "Krish Biomedicals -- first unit at YEIDA Medical Device Park (deep-freezer manufacturer)",
+      "why_excluded": "18-23 Sept 2025 coverage describes a deep-freezer maker opening India's first operational unit at the park; company name and product description give no indication of foreign headquarters, and nothing in the available headlines suggests it is anything other than an Indian-headquartered manufacturer -- excluded per the India-HQ exclusion rule pending any contrary evidence.",
+      "source_checked": "Digital Health News / tennews.in / Times of India headlines via Google News RSS"
+    },
+    {
+      "candidate": "Terumo India -- Terufusion Advanced Infusion Systems launch",
+      "why_excluded": "26 Aug 2025 item is a product launch/distribution announcement for an existing Terumo India entity, not a new capital investment, plant, or expansion commitment -- doesn't meet the bar for an 'investment signal.'",
+      "source_checked": "eHealth Magazine headline via Google News RSS"
+    },
+    {
+      "candidate": "Eli Lilly -- $1B+ India investment",
+      "why_excluded": "6 Oct 2025 Reuters item is a pharmaceutical (drug) manufacturing expansion, not medical devices -- out of this sector's scope.",
+      "source_checked": "Reuters headline via Google News RSS"
+    }
+  ]
+}

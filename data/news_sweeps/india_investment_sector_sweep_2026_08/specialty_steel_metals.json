@@ -1,0 +1,88 @@
+{
+  "sector": "Specialty Steel & Metals",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across ~20 queries (specialty/alloy steel, non-ferrous metals, PLI specialty steel scheme, CRGO/electrical steel, superalloys/titanium, metal processing/machinery, and company-specific follow-ups on POSCO, JFE, Nippon Steel, ArcelorMittal, Kobe Steel, Sandvik, voestalpine, Outokumpu, Vallourec, Tenaris, Kennametal, BlueScope, Norsk Hydro, Constellium, Mitsubishi Materials). Every finding below was opened and read via WebFetch (company/official press releases where available, otherwise established trade press) before being recorded. Candidates that only appeared in search snippets, were exploratory/non-binding statements, or turned out to be the reverse direction (foreign company exiting/divesting India operations) were excluded from findings and logged in negative_notes instead.",
+  "findings": [
+    {
+      "company": "POSCO",
+      "country_hq": "South Korea",
+      "signal": "Signed a joint venture agreement (50:50) with JSW Steel to build a greenfield 6 MTPA blast-furnace-based integrated steel plant (ironmaking through cold rolling/galvanizing) in Odisha; targeting completion by 2031 after a 48-month construction period. Builds on an October 2024 MoU and July 2025 Heads of Agreement.",
+      "source_url": "https://newsroom.posco.com/en/posco-to-build-integrated-steel-mill-in-india-via-joint-venture-securing-a-strategic-bold-move-for-future-competitiveness/",
+      "date": "2026-04-23",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "JFE Steel Corporation",
+      "country_hq": "Japan",
+      "signal": "Agreed to invest INR 157.5 billion (~JPY 270 billion) for a 50% stake in a new 50:50 joint venture with JSW Steel that will take over the Bhushan Power & Steel integrated steelworks in Sambalpur, Odisha (currently 4.5 MTPA of coils/sheets/bars/wire rods), with plans to expand capacity to 10 MTPA by 2030 and eventually 15 MTPA.",
+      "source_url": "https://www.jfe-steel.co.jp/en/release/2025/12/251203.html",
+      "date": "2025-12-03",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "JFE Steel Corporation",
+      "country_hq": "Japan",
+      "signal": "Committed (with 50:50 JV partner JSW Steel) approximately JPY 120 billion (JPY 99bn capex + JPY 21bn working capital; ~JPY 290bn total commitment including prior investment) to expand electrical/CRGO steel capacity at JSW JFE Electrical Steel Private Limited (Vijayanagar, Karnataka, doubling to 100,000 tpy by 2027) and JSW JFE Electrical Steel Nashik Private Limited (Nashik, Maharashtra, fivefold increase to 250,000 tpy by 2028-2030), explicitly to become the No.1 electrical steel supplier in India. The Nashik facility was formed via JFE/JSW's January 2025 acquisition of thyssenkrupp Electrical Steel India's plant there.",
+      "source_url": "https://www.jfe-steel.co.jp/en/release/2025/08/250804.html",
+      "date": "2025-08-04",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Nippon Steel Corporation (with joint-venture partner ArcelorMittal)",
+      "country_hq": "Japan (JV partner ArcelorMittal is HQ'd in Luxembourg)",
+      "signal": "Through their 60:40 (ArcelorMittal:Nippon Steel) joint venture AM/NS India, acquired ~890 hectares in Rajayyapeta, Anakapalli district, Andhra Pradesh for a new greenfield integrated steel mill (initially sized ~7 MTPA); broke ground on March 24, 2026 for a first phase costing Rs 70,000 crore / 8.2 MTPA (total project Rs 1,35,000 crore scaling to 18 MTPA), with commissioning targeted by December 2028. ArcelorMittal Chairman Lakshmi Mittal and CEO Aditya Mittal attended in person; PM Modi participated virtually.",
+      "source_url": "https://www.nipponsteel.com/en/news/20250328_100.html",
+      "date": "2025-03-28",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ArcelorMittal",
+      "country_hq": "Luxembourg",
+      "signal": "Announced three new renewable-energy projects in India (solar/wind/battery storage at Amaravati, Bikaner and Bachau) totalling ~US$900 million (Rs 8,145 crore) to supply captive power to its AM/NS India joint-venture operations, aiming to meet 35% of Hazira's electricity needs by 2028 and cut ~4 million tonnes of CO2 annually.",
+      "source_url": "https://www.ibef.org/news/arcelormittal-unveils-three-green-energy-projects-in-india-with-us-900-million-investment",
+      "date": "2025-12-23",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "POSCO and Hyundai Steel",
+      "country_hq": "South Korea",
+      "signal": "Both companies have publicly expressed willingness to jointly build a special/alloy steel plant (3-5 MTPA, automotive-grade special steel) with India's state-owned RINL on ~3,000 hectares near NMDC's Chhattisgarh raw-material sources. As of the source article this was early-stage discussion only -- no investment figure, financing structure, or start date has been disclosed, and the article notes similar past proposals stalled over weather and raw-material supply-chain issues.",
+      "source_url": "https://www.yieh.com/en/News/posco-hyundai-steel-seek-to-build-special-steel-plants-in-india-jointly/106170",
+      "date": "2025",
+      "confidence": "LOW"
+    }
+  ],
+  "search_queries_tried": [
+    "specialty steel company India investment 2026 plant announcement",
+    "foreign steel company India plant joint venture 2025",
+    "PLI specialty steel scheme foreign investor India 2025 2026",
+    "alloy steel India joint venture foreign company announcement",
+    "Nippon Steel India investment 2025 2026",
+    "Sandvik OR voestalpine OR Outokumpu India investment plant 2025",
+    "titanium alloy specialty metals foreign company India investment 2025",
+    "ArcelorMittal India investment expansion 2025 2026",
+    "stainless steel foreign company India new plant investment 2025 2026",
+    "copper smelter OR aluminium OR zinc foreign investment India 2025 2026 plant",
+    "Hyundai Steel OR POSCO OR JFE special steel India downstream investment 2025",
+    "ArcelorMittal renewable energy India investment press release corporate.arcelormittal.com",
+    "\"AM/NS India\" Andhra Pradesh groundbreaking Nippon Steel ArcelorMittal press release",
+    "Thyssenkrupp OR Kobe Steel OR Sumitomo Metal India investment plant 2025 2026",
+    "Norsk Hydro OR Constellium OR Novelis OR Mitsubishi Materials India investment 2025",
+    "BlueScope India investment expansion 2025 2026",
+    "super alloy nickel alloy foreign company India investment 2025 defense aerospace",
+    "CRGO electrical steel foreign company India investment 2025 2026",
+    "Sandvik India new facility investment 2025 2026 announcement",
+    "Vallourec OR Tenaris seamless pipe India investment 2025",
+    "Kennametal OR precision metal forging foreign company India new plant 2025"
+  ],
+  "negative_notes": [
+    "voestalpine (Austria) -- CEO/company statements (Feb 2026) describe India as a priority growth market for railway infrastructure, storage systems, and aviation, and mention interest in a pipes/profiles production site, but no location, capacity, investment figure, or timeline has been announced. Purely exploratory language, not a commitment -- excluded from findings.",
+    "thyssenkrupp -- the opposite of an inbound-investment signal: thyssenkrupp DIVESTED its Electrical Steel India business (Nashik facility) to a JSW/JFE joint venture for Rs 4,051 crore, completed January 2025. Correctly attributed to JFE Steel (Japan) as the acquirer/investor in the findings above, not to thyssenkrupp.",
+    "BlueScope (Australia) -- also the opposite direction: BlueScope EXITED India on 31 December 2025 by selling its 50% stake in the Tata BlueScope Steel JV to Tata Steel (now renamed Tata Steel Colors), booking a $57M gain. Not an investment signal.",
+    "Sandvik (Sweden) -- expanding a Pune 'innovation hub' (software/R&D for CAD/CAM brands Cimatron, Mastercam, SigmaNEST; operational early 2026), but this is a digital-manufacturing R&D/software site, not a specialty-steel or metals manufacturing/processing investment -- judged off-sector and excluded.",
+    "Kennametal (US) -- Bengaluru metal-cutting inserts manufacturing facility inauguration found in coverage, but all located sourcing points to 2022-2024, outside the ~18-month window (since early 2025) -- excluded as stale.",
+    "Vallourec (France) and Tenaris (Luxembourg/Argentina) -- both are named as global players in seamless/stainless steel pipe market reports referencing India, but no concrete India investment, plant, or JV announcement from either company could be found in this sweep -- checked and ruled out for lack of evidence, not proof of absence.",
+    "Vedanta Copper's ~$2 billion MoU with Saudi Arabia for overseas copper projects is Vedanta (an Indian company) investing abroad, i.e. the reverse of this sector sweep's mandate (foreign-into-India) -- not included.",
+    "Kobe Steel (Japan) -- confirmed real ~JPY 3 billion investment (press release 2025-06-27) to expand Kobelco Industrial Machinery India (KIMI) for tire/rubber machinery and non-standard compressors, plus a new Chennai capability center (Jan 2025). Excluded from findings because KIMI's output is industrial machinery, not specialty steel or non-ferrous metal product/processing -- judged outside this sector's scope despite Kobe Steel's broader identity as a steelmaker."
+  ]
+}

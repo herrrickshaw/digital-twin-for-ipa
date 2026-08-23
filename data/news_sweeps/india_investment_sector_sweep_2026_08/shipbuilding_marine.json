@@ -1,0 +1,92 @@
+{
+  "sector": "Shipbuilding & Marine",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across angles (foreign shipbuilder India investment, marine equipment manufacturer India plant, shipyard JV foreign investor, maritime cluster foreign company, plus company-specific follow-ups on named foreign shipbuilders/marine-tech firms). Every finding below was independently opened and read via WebFetch (or corroborated by direct WebFetch of the company's or a primary trade-press/press-release page) before inclusion — no finding is based on a search-snippet alone. Web search quota was exhausted partway through the sweep (Kongsberg and ST Engineering/Keppel queries returned no results because of this), so this is a thorough single pass rather than an exhaustive one; see negative_notes.",
+  "findings": [
+    {
+      "company": "HD Korea Shipbuilding & Offshore Engineering (HD Hyundai / HD KSOE)",
+      "country": "South Korea",
+      "signal": "In final-stage talks with state-run Cochin Shipyard Limited for a 50:50, ~$500 million joint-venture Block Fabrication Facility (steel hull sections) on 80 acres near CSL's Kochi yard, with ~120,000 MT/year capacity (vs CSL's current 20,000 MT) and ~2,000 direct jobs; a CSL team was to visit South Korea in late Feb 2026 to finalize terms, with signing expected H2 2026. Would reportedly be the first direct investment by a global shipbuilding major into an Indian state-run yard.",
+      "source_url": "https://www.theweek.in/news/maritime/2026/02/25/cochin-shipyard-hd-hyundai-group-advance-talks-for-dollar500-million-shipbuilding-joint-venture-in-kochi-why-it-matters.html",
+      "date": "2026-02-25",
+      "confidence": "MEDIUM",
+      "notes": "Deal is at advanced-talks stage, not yet signed as of the article date — explicit stated intent with concrete figures (amount, structure, capacity, jobs) from solid trade press, but not yet a completed transaction."
+    },
+    {
+      "company": "Drydocks World (DP World)",
+      "country": "United Arab Emirates (Dubai)",
+      "signal": "Signed a formal Agreement of Heads of Terms with Cochin Shipyard Limited to jointly develop India's first dedicated ship-repair cluster at the International Ship Repair Facility (ISRF) in Kochi, Kerala, combining Drydocks World's international vessel-repair/conversion/offshore-EPC expertise with CSL's local capability, exchanged in the presence of India's Shipping Minister and DP World's Group Chairman.",
+      "source_url": "https://www.dpworld.com/en/news/india/drydocks-world-cochin-shipyard-enter-agreement-to-enhance-india-first-ship-repair-cluster-in-kerala",
+      "date": "2025-10-29",
+      "confidence": "HIGH",
+      "notes": "Confirmed directly on DP World's own corporate press release page. No specific financial figure disclosed in the release itself."
+    },
+    {
+      "company": "Damen Shipyards Group",
+      "country": "Netherlands",
+      "signal": "Signed an MoU with India's Square Port Shipyard (250 km south of Mumbai) for Damen Technical Cooperation to help develop the yard so it can build a range of Damen-designed vessels for the Indian/regional market — Damen's stated third such tie-up in the Indian subcontinent (alongside a prior MoU with Yeoman Marine Services to build Damen ASD tugs at Yeoman's Ratnagiri yard, where Damen supplies design/engineering/supply-chain know-how and Yeoman builds).",
+      "source_url": "https://www.offshore-energy.biz/damen-strengthens-india-ties-amid-countrys-maritime-revamp/",
+      "date": "2025-04-08",
+      "confidence": "HIGH",
+      "notes": "Corroborated by seatrade-maritime.com and maritimegateway.com coverage of the same Square Port and Yeoman Marine MoUs. These are technology/design-transfer partnerships (Damen is not itself building a wholly-owned plant), but constitute genuine, dated, substantive investment-adjacent commitments by a foreign shipbuilder into Indian yards."
+    },
+    {
+      "company": "Samsung Heavy Industries",
+      "country": "South Korea",
+      "signal": "Signed a shipbuilding and marine business cooperation agreement with Swan Defense and Heavy Industries (SDHI, Gujarat — India's largest shipyard by capacity) covering new ship design, procurement and production management, explicitly framed by Samsung Heavy as securing a 'production bridgehead in India.'",
+      "source_url": "https://maritime-executive.com/article/samsung-heavy-industries-partners-with-india-s-swan-as-it-builds-network",
+      "date": "2025-09-29",
+      "confidence": "MEDIUM",
+      "notes": "Corroborated by The Korea Herald and The Investor (Korean trade press). Article does not specify a dollar figure or whether the arrangement is a binding investment/equity JV versus a cooperation MoU."
+    },
+    {
+      "company": "TKMS (Thyssenkrupp Marine Systems)",
+      "country": "Germany",
+      "signal": "An Inter-Governmental Agreement was signed during German Chancellor Friedrich Merz's visit to India (12–13 Jan 2026) covering the ~€8 billion Project-75(I) program: six AIP-equipped submarines (customized Type 214 derivative) to be built at Mazagon Dock Shipbuilders in Mumbai, with TKMS committing to full technology transfer, local manufacturing know-how, personnel training and long-term technical support, indigenous content rising to 60%. Commercial contract signature (pending Cabinet Committee on Security approval) was, as of the article date, expected around mid-2026.",
+      "source_url": "https://defencestandard.com/p75i-submarine-deal-germany-india-aip-technology-transfer-leverage/",
+      "date": "2026-04-28",
+      "confidence": "MEDIUM",
+      "notes": "The government-to-government IGA itself is a real, dated, signed commitment; the underlying commercial/industrial contract with Mazagon Dock was still pending finalization as of the source date. Corroborated by idrw.org and marineforum.online coverage of the same IGA."
+    }
+  ],
+  "search_queries_tried": [
+    "shipbuilding company India investment 2026 announcement",
+    "foreign marine equipment manufacturer India plant announcement 2025",
+    "shipyard India joint venture foreign investor 2025 2026",
+    "maritime cluster India expansion foreign company shipbuilding",
+    "Drydocks World Cochin Shipyard ship repair cluster Kochi announcement date",
+    "Fincantieri India shipbuilding investment 2025",
+    "Fincantieri India Cochin Shipyard 2025 2026 agreement submarine",
+    "Wärtsilä India marine investment plant 2025",
+    "Damen Shipyards India investment 2025 2026",
+    "Thyssenkrupp Marine Systems India submarine P75I investment",
+    "Damen Yeoman Marine India tugs Ratnagiri agreement",
+    "TKMS India intergovernmental agreement January 2026 submarine signed",
+    "Naval Group India investment shipbuilding 2025",
+    "Samsung Heavy Industries OR Hanwha Ocean India shipbuilding investment 2025",
+    "Kongsberg India marine investment 2025 2026 (no results — session web-search quota exhausted)",
+    "\"ST Engineering\" OR \"Keppel\" India shipyard investment 2025 (no results — session web-search quota exhausted)"
+  ],
+  "negative_notes": [
+    {
+      "company": "Fincantieri",
+      "country": "Italy",
+      "why_excluded": "Its cooperation MoU with Cochin Shipyard dates to October 2020 — well outside the ~18-month window — and 2025-26 coverage is either aspirational CEO commentary about India as a 'long-term partner' with no new concrete commitment, or a December 2025 contract by its WASS Submarine Systems subsidiary to supply Black Shark Advanced heavyweight torpedoes to the Indian Navy (>€200m). The torpedo deal is a straightforward export/supply contract, not evidence of Fincantieri investing in or operating facilities in India, so it was left out of findings."
+    },
+    {
+      "company": "Naval Group",
+      "country": "France",
+      "why_excluded": "Continues long-standing 'Make in India' technology-transfer work tied to the Scorpene submarine program at Mazagon Dock, but this is an established, years-old relationship with no new 2025-26 investment/expansion announcement found in this sweep — does not meet the 'new or recently announced' bar."
+    },
+    {
+      "company": "Damen – Goa Shipyard Ltd electric-tug agreement",
+      "country": "Netherlands",
+      "why_excluded": "One source referenced Damen entering an agreement to build electric tugs at Goa Shipyard Ltd 'in April last year' relative to a 2025 article, i.e. April 2024 — outside the ~18-month (since early 2025) window, so excluded even though Damen itself (via the Square Port and Yeoman Marine deals) is included above for its 2025 activity."
+    },
+    {
+      "company": "Kongsberg, ST Engineering, Keppel and other Nordic/Singaporean marine-tech and shipyard players",
+      "country": "Norway / Singapore",
+      "why_excluded": "Flagged as plausible candidates worth checking (Nordic/Scandinavian and Singaporean firms are repeatedly cited in Indian maritime-cluster coverage as likely future partners) but the session's web-search quota was exhausted before these queries could return results. Not ruled out — simply unresearched in this pass; a follow-up sweep should prioritize these."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "sector": "Textiles & Apparel (technical textiles, apparel manufacturing, textile machinery)",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across multiple query angles (foreign textile/apparel manufacturer India plant announcements, technical textiles JVs, textile machinery expansions, and company-specific follow-ups), followed by WebFetch to open and read each candidate article/press release directly before inclusion. This sweep deliberately excludes ASICS Corporation, Ralph Lauren, and Steven Madden -- all already assessed in the prior layer-38 deep-dive (scripts/build_textile_sector_targets.py) -- and looked only for genuinely new companies/signals. The session's WebSearch quota was exhausted after ~15 queries (a shared session-wide cap, not specific to this sector), which capped further discovery angles (Sri Lankan/Chinese/Korean/Taiwanese apparel majors such as Shenzhou International, MAS Holdings, Brandix, Youngone, Eclat Textile, TAL Apparel were queued as follow-ups but the searches for them could not be run). Remaining verification relied on WebFetch against company newsrooms and trade-press URLs already known or surfaced (Toray, Freudenberg, Groz-Beckert, Teijin, Kordsa, MAS Holdings, fibre2fashion, just-style, indiantextilemagazine, apparelresources), which yielded no further India-specific findings beyond what discovery search had already surfaced.",
+  "findings": [
+    {
+      "company": "Epic Group",
+      "country_of_headquarters": "Hong Kong SAR, China",
+      "signal": "Formed a 50:50 joint venture, SPECTRA, with India's Creative Group (MoU signed 9 Jan 2025, formalized via shareholder agreement and announced 5 Jun 2025) to build what is described as India's largest sustainable denim-and-bottoms manufacturing facility -- initial investment of $15 million, targeting Rs 500 crore (~$60M) turnover, 700,000 units/month capacity, powered by renewable energy, creating 3,000 jobs initially (scaling toward 10,000+). Epic Group -- a Hong Kong-headquartered apparel manufacturer with existing facilities in Bangladesh, Vietnam and Sri Lanka but none previously in India -- is the foreign co-founder; Creative Group is the pre-existing Indian (Mumbai-headquartered) partner. Facts (investment figure, dates, capacity, job numbers) are consistent and specific across every independent trade-press source checked.",
+      "source_url": "https://www.indiantextilemagazine.in/epic-group-and-creative-group-join-forces-to-launch-spectra-a-game-changing-apparel-venture-in-india/",
+      "date": "2025-06-05",
+      "confidence": "HIGH"
+    }
+  ],
+  "search_queries_tried": [
+    "textile company India investment plant 2026 announcement",
+    "foreign apparel manufacturer India new plant 2025 2026",
+    "technical textiles India joint venture foreign investor 2025",
+    "textile machinery company India expansion foreign 2025 2026",
+    "RE&UP textile recycling India investment Rs 4800 crore",
+    "Epic Group Creative Group Spectra apparel India joint venture",
+    "Lenzing India investment plant 2025 2026",
+    "Indorama India textile investment 2025 2026",
+    "Indorama Ventures Nagpur India investment 2025 D K Agarwal \"strategic high-growth market\"",
+    "RE&UP company headquarters Netherlands textile recycling India",
+    "\"Epic Group\" headquarters Hong Kong OR Sri Lanka apparel manufacturer",
+    "RE&UP India Bharat Tex 2026 press release investment recycling facility",
+    "PIB Bharat Tex 2026 investment commitments list companies MoU textiles ministry press release",
+    "reup.com official website textile recycling",
+    "Creative Group India apparel headquarters Bangalore textiles chairman Vijay Agarwal",
+    "Shenzhou International India garment factory investment 2025 (blocked -- session WebSearch quota exhausted before this ran)",
+    "\"RE&UP\" OR \"SANKO\" India recycling facility investment official statement quote Bharat Tex (blocked -- quota exhausted)"
+  ],
+  "negative_notes": [
+    {
+      "company": "RE&UP (Recycling Technologies)",
+      "country_of_headquarters": "Netherlands (Eindhoven), built on Turkey-based SANKO Holding's textile heritage",
+      "reason_excluded": "About eight Indian news-aggregator sites (bizzbuzz, newkerala, prokerala, thehansindia, etvbharat, punjabkesari, ommcomnews, tennews) repeat a single one-line claim that RE&UP 'announced an investment of Rs 4,800 crore in India' at Bharat Tex 2026 (14-17 Jul 2026), but every one of them is a near-identical rewrite of the same wire item with zero added detail -- no location, no facility description, no executive quote. RE&UP's own official newsroom (reandup.com/the-latest/), checked through its most recent post (Jul 2026), lists six items in that window (B Corp certification, Fiber Club launch, Global Fashion Summit, Techtextil 2026, a Madewell partnership, EU waste regulation) and contains no mention of India, an India investment, or Bharat Tex at all. This is exactly the single-secondary-source/uncorroborated pattern this project's prior sweeps were burned by; excluded pending a primary source (RE&UP press release, SEC/company filing, or a substantive named-location article)."
+    },
+    {
+      "company": "Indorama Ventures PCL (via Indo Rama Synthetics India / Nagpur plant)",
+      "country_of_headquarters": "Thailand",
+      "reason_excluded": "Genuine, well-documented ~$82M (INR 6bn) Nagpur PET-resin and specialty-yarn capacity expansion, with a direct quote from Indorama's CEO of Combined PET/IOD/Fibers calling India 'a strategic high-growth market.' Excluded purely on timing: the underlying press release and every outlet covering it (knittingindustry, plasticsnews, petnology, fibre2fashion, indiantextilemagazine) date the announcement to 25 May 2021 -- well outside the ~18-month (since early 2025) freshness window -- even though it continued to surface in 2025/2026-dated search snippets. No separate, newer (2025/2026) Indorama India capex announcement was found in this pass."
+    },
+    {
+      "company": "Teijin Limited",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "Only India-relevant 2025/2026 news item found on Teijin's own newsroom is a 13 Nov 2025 'strategic alliance' with BioVaram on regenerative medicine products and implantable medical devices in Japan and India -- a healthcare/medtech signal, not textiles/technical-textiles. Excluded as out of sector scope; no separate Teijin technical-textiles (aramid/carbon fiber) India investment found."
+    },
+    {
+      "company": "Kordsa (Sabanci Holding)",
+      "country_of_headquarters": "Turkey",
+      "reason_excluded": "Checked Kordsa's own media/news page directly (technical textiles / tire-cord reinforcement is squarely in this sector). Kordsa's own site lists its operating countries as Turkey, Brazil, Indonesia, Thailand, Italy and the USA -- India is not among them, and no India-specific announcement was found."
+    },
+    {
+      "company": "Toray Industries",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "Checked Toray's global newsroom directly; the visible recent items (pickleball tech, fashion partnerships, aviation materials, water treatment, sponsorships) contain no 2025/2026 India-specific investment, plant, or JV announcement."
+    },
+    {
+      "company": "Groz-Beckert KG / Freudenberg Group / MAS Holdings",
+      "country_of_headquarters": "Germany / Germany / Sri Lanka",
+      "reason_excluded": "Attempted direct WebFetch against each company's newsroom (relevant given Groz-Beckert = textile machinery/needles, Freudenberg = nonwovens/technical textiles, MAS Holdings = major Sri Lankan apparel manufacturer with a track record of India expansion interest). Groz-Beckert's news hub returned only navigation chrome with no article content reachable; Freudenberg's and MAS Holdings' newsroom URLs 404'd. No findings either way -- this is an access gap, not a checked-and-ruled-out lead, and is flagged for a future pass with working URLs or search-budget headroom."
+    },
+    {
+      "company": "General trade-press sweep (fibre2fashion, just-style, indiantextilemagazine, apparelresources India manufacturing-news sections)",
+      "country_of_headquarters": "n/a -- publication-level check",
+      "reason_excluded": "Fetched each outlet's manufacturing/India news listing page directly looking for any additional foreign-company India investment headline beyond the Spectra JV. None found in the visible listings (mostly domestic-Indian-company coverage: Laxmipati Apparels, Krishna Lamicoat, Filatex India, regional Tirupur/Odisha/Maharashtra growth stories) or, for just-style, non-India stories (Sri Lanka, Bangladesh-Netherlands, UK-Pakistan, UAE items)."
+    }
+  ]
+}

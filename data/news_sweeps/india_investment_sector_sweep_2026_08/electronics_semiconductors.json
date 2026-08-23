@@ -1,0 +1,146 @@
+{
+  "sector": "Electronics & Semiconductors (chips, semiconductor fabs/ATMP/OSAT, PCB/EMS, consumer/industrial electronics manufacturing)",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch used for discovery across multiple angles (semiconductor fab/ATMP/OSAT announcements, PLI/ECMS foreign participants, PCB/EMS investment, company-specific follow-ups for known chip-equipment/design/packaging multinationals). Every company listed under 'findings' was verified by opening and reading the actual source article or official press release via WebFetch (not from search-result snippets alone); several candidate URLs returned HTTP 403 and were substituted with an alternate readable source reporting the same event, or (for one entry) re-fetched through a text-extraction proxy after a direct fetch was paywalled. Candidates that could not be confirmed via a direct WebFetch read of a substantive, on-topic, in-window article, or that turned out to be pre-window, exploratory/non-committal, or actually India-headquartered, were excluded and logged under negative_notes instead of being reported as findings. WebSearch quota was exhausted partway through the pass (shared session budget), so some planned follow-up searches (e.g. STMicroelectronics India-specific news, a broader PCB/EMS sweep) could not be completed; noted in negative_notes/search_queries_tried where relevant.",
+  "findings": [
+    {
+      "company": "Micron Technology",
+      "country_of_headquarters": "United States",
+      "signal": "PM Modi inaugurated Micron's Semiconductor Assembly, Test and Packaging (ATMP) facility in Sanand, Gujarat on 28 Feb 2026, with commercial production and the first Made-in-India memory shipments (to Dell) beginning immediately; part of Micron's ~$2.75bn total India ATMP investment, completed just 900 days after the June 2023 MOU.",
+      "source_url": "https://thenewsmill.com/2026/03/sanand-emerges-as-indias-semiconductor-industry-gateway-with-micron-plant/",
+      "date": "2026-02-28",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Foxconn (Hon Hai Technology Group)",
+      "country_of_headquarters": "Taiwan",
+      "signal": "Foundation-laying ceremony (12 Feb 2026, attended by UP CM Yogi Adityanath and Union IT Minister Ashwini Vaishnaw) for the HCL-Foxconn JV's ₹3,706 crore compound-semiconductor and sensor ATMP/OSAT facility in Greater Noida (YEIDA), operating as Vamasundari Investments Pvt Ltd, following the government's May 2025 approval of the JV; ~20,000 wafers/month, display driver chips, ~3,700 direct jobs projected.",
+      "source_url": "https://ssfglobal.in/industry_action/foxconn-deepens-india-bet-with-%E2%82%B93706-crore-semiconductor-unit-in-greater-noida/",
+      "date": "2026-02-12",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "ASML Holding",
+      "country_of_headquarters": "Netherlands",
+      "signal": "Signed a strategic partnership with Tata Electronics (16 May 2026, coinciding with PM Modi's Netherlands visit) to supply its lithography tool suite and technical expertise to establish and ramp up Tata's planned 300mm semiconductor fab in Dholera, Gujarat, plus cooperation on local talent development and supply-chain resilience — a technology/operations commitment rather than direct capex by ASML itself.",
+      "source_url": "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership",
+      "date": "2026-05-16",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "country_of_headquarters": "Netherlands",
+      "signal": "Reported to be in advanced talks with YEIDA to acquire land in Greater Noida's Semiconductor Park for a second India R&D hub focused on next-gen automotive chips (incl. 5nm), part of its plan (announced Sept 2024) to more than double India R&D spend past $1bn and double its India headcount from 3,000 to 6,000+ within five years.",
+      "source_url": "https://www.varindia.com/news/nxp-plans-second-r-d-hub-in-greater-noida-as-part-of-1b-india-expansion",
+      "date": "2025-05-26",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Renesas Electronics Corporation",
+      "country_of_headquarters": "Japan",
+      "signal": "Joint-venture partner (~6.8% equity) alongside CG Power and Stars Microelectronics in CG Semi; the G1 OSAT pilot line in Sanand, Gujarat (₹7,600 crore combined G1+G2 investment) began commercial operations on 28 Aug 2025, with Renesas providing advanced semiconductor packaging technology and expertise to the facility.",
+      "source_url": "https://www.businesstoday.in/tech-today/news/story/cg-semi-launches-indias-first-osat-facility-sanand-7600-crore-investment-491522-2025-08-28",
+      "date": "2025-08-28",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Stars Microelectronics",
+      "country_of_headquarters": "Thailand",
+      "signal": "Joint-venture partner (~0.9% equity) in CG Semi's Sanand OSAT facility (G1 line commenced operations 28 Aug 2025), contributing legacy-package technology plus training and workforce enablement to the plant per the companies' own JV announcement.",
+      "source_url": "https://www.renesas.com/en/about/newsroom/cg-power-and-industrial-solutions-limited-renesas-and-stars-microelectronics-jointly-build",
+      "date": "2025-08-28",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Infineon Technologies",
+      "country_of_headquarters": "Germany",
+      "signal": "Signed a lease and began construction (15 Oct 2025) on a new 630,000 sq ft Bengaluru campus (\"SILANE\"), consolidating its two existing Bengaluru sites, including 170,000 sq ft of semiconductor R&D labs, to house 4,500 employees (up from ~2,500) by 2030; operations expected autumn 2026.",
+      "source_url": "https://www.prnewswire.com/in/news-releases/infineon-reinforces-its-position-as-key-innovation-hub-in-india-with-a-new-state-of-the-art-facility-in-bengaluru-302584551.html",
+      "date": "2025-10-15",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Corning Incorporated",
+      "country_of_headquarters": "United States",
+      "signal": "Inaugurated (5 Dec 2025) a ₹1,000 crore mobile cover-glass (Gorilla Glass) finishing facility in Chennai through its JV Bharat Innovative Glass Technologies (BIG Tech) with Optiemus Infracom, targeting 30 million pieces of cover-glass capacity in phase 1 for smartphone brands including Apple, Samsung, Google Pixel and OnePlus.",
+      "source_url": "https://www.business-standard.com/companies/news/companies-news-gorilla-glass-maker-cornings-rs-1-000-crore-chennai-unit-on-track-125120501083_1.html",
+      "date": "2025-12-05",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Samsung Electronics",
+      "country_of_headquarters": "South Korea",
+      "signal": "Held a completion ceremony (12 Dec 2025) for a new HVAC/data-center-cooling production line at its FläktGroup subsidiary's plant in Pune, Maharashtra — Samsung's first production expansion in India since its ~$1.8bn (2.5 trillion won) November 2024 acquisition of Germany's FläktGroup; plant to produce air handling units, fan wall units and CRAHs for the AI/data-center cooling market, up to 6,500 units/year at full capacity.",
+      "source_url": "https://en.sedaily.com/finance/2026/08/13/samsungs-flaktgroup-opens-first-plant-in-india-for-ai-data",
+      "date": "2025-12-12",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "search_queries_tried": [
+    "semiconductor fab India investment announcement 2026",
+    "foreign company India ATMP plant announcement 2025 2026",
+    "electronics manufacturing India PLI foreign investor 2025 2026 plant",
+    "PCB manufacturing plant India foreign company investment 2025",
+    "Foxconn India semiconductor investment 2025 2026 new plant",
+    "NXP Semiconductors India investment R&D announcement 2025",
+    "Renesas CG Power India OSAT plant Sanand 2025",
+    "Applied Materials India investment 2025 2026 semiconductor equipment",
+    "Samsung Electronics India new plant investment 2025 2026 electronics manufacturing",
+    "STMicroelectronics India investment 2025 2026",
+    "Infineon India investment plant 2025 2026",
+    "Tata Electronics ASML agreement India fab May 2026",
+    "Micron Technology Sanand ATMP plant inauguration February 2026 article",
+    "Vedanta Foxconn semiconductor India split 2025 update PSMC Tata partnership",
+    "Kaynes Semicon OSAT plant Sanand inauguration March 2026 foreign partner",
+    "Corning glass India investment 2025 2026 plant",
+    "Texas Instruments India investment 2025 2026 new facility",
+    "onsemi India investment 2025 2026 OR Qualcomm India manufacturing 2025",
+    "\"Applied Materials\" Chennai Taramani manufacturing unit India 2025 announcement",
+    "MeitY approves three semiconductor fab investments $30 billion July 2026 (session WebSearch budget exhausted before results returned)"
+  ],
+  "negative_notes": [
+    {
+      "company": "Powerchip Semiconductor Manufacturing Corporation (PSMC)",
+      "country_of_headquarters": "Taiwan",
+      "reason_excluded": "PSMC's Fab-IP technology-transfer agreement with Tata Electronics for the Dholera 300mm fab (design/construction support, technology licensing, engineering support, no direct PSMC capex) was completed and announced 26 Sep 2024 — pre-dates the ~18-month sweep window. The same Dholera fab's in-window, foreign-company news (ASML's May 2026 lithography partnership) is reported above instead."
+    },
+    {
+      "company": "Applied Materials",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "Coverage of a planned Chennai (Taramani) AI-enabled technology Center of Excellence, with a possible follow-on manufacturing unit, dates to Sept 2024 and was explicitly described in the source read (knnindia.co.in) as exploratory/planning stage, contingent on future SPECS incentive terms — 'not yet confirmed.' No fresh 2025-2026 confirmation of a firm plant commitment was found on this pass; the official Applied Materials and OEM Update press pages describing the plan could not be opened (HTTP 403)."
+    },
+    {
+      "company": "Kaynes Semicon",
+      "reason_excluded": "OSAT plant in Sanand (inaugurated 31 Mar 2026, ~₹33 crore/$347.9M investment) is built by Kaynes Technology, an Indian-headquartered company — excluded per sector-sweep rules on foreign HQ only. Its initial output supplies US-based Alpha and Omega Semiconductor as a customer, which is a supply relationship, not a foreign investment in India."
+    },
+    {
+      "company": "Vedanta (Vedanta-Foxconn original JV)",
+      "reason_excluded": "The original $19.5bn Vedanta-Foxconn semiconductor JV was dissolved by mutual agreement in June 2023 when Foxconn withdrew. Vedanta's own planned display-fab unit has, per the most recent reporting found, still not received government approval, and no new foreign partner/investor for it was confirmed in this pass — so no genuine new foreign-company commitment to report here."
+    },
+    {
+      "company": "Texas Instruments",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "A new semiconductor R&D lab (IC design labs, reliability lab) was opened in Bengaluru, marking TI's 40th year in India (crnasia.com, itvoice.in), but the readable coverage gave no specific opening date or investment figure and was framed mainly as commemorating TI's long-standing existing India operations rather than describing a new, dated, quantified commitment. Excluded for insufficient specificity; worth a re-check pass if a dated/quantified article surfaces."
+    },
+    {
+      "company": "Qualcomm",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "Search surfaced only general statistics (India-based engineers ~20% of world semiconductor designers; 2nm chip tape-outs designed at Qualcomm's India centres but fabricated at TSMC Taiwan) — no discrete new India investment, plant, or expansion announcement was found this pass."
+    },
+    {
+      "company": "onsemi",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "No India-specific 2025-2026 investment, plant, or expansion news surfaced; search returned only onsemi's generic global investor-relations pages."
+    },
+    {
+      "company": "STMicroelectronics",
+      "country_of_headquarters": "Switzerland (dual-listed France/Italy origin)",
+      "reason_excluded": "Search returned only global manufacturing-footprint-reshaping news (Crolles fab in France, cost-base resizing) with no India-specific investment or facility announcement found. A dedicated follow-up search could not be completed before the session's WebSearch budget was exhausted."
+    },
+    {
+      "company": "Korea Circuit Co. Ltd. / Amber Korea Circuit JV; IL JIN Electronics",
+      "country_of_headquarters": "South Korea",
+      "reason_excluded": "Search snippets referenced an Oct 2024 Amber Enterprises-Korea Circuit 50:50 PCB JV (Amber Korea Circuit Pvt Ltd) and a Nov 2025 IL JIN Electronics India (Amber Enterprises subsidiary) stake acquisition in Shogini Technoarts, but no candidate article was actually opened and read via WebFetch to confirm details, so per this sweep's rules neither is reported as a finding. The Oct 2024 JV also predates the sweep window. Flagged as an unconfirmed lead for a future pass, particularly the Nov 2025 IL JIN/Shogini item which would fall inside the window if verified."
+    }
+  ]
+}

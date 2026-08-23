@@ -1,0 +1,65 @@
+{
+ "built": "2026-08-22",
+ "what": "Cross-references the Ambiente + Techtextil exhibitor rosters against the twin's known Electronics & Semiconductors universe (companies.db sector tags + the filing-derived electronics_semiconductors_sector_expansion.json). Direct matches use the same word-boundary fragment matcher as layer 41. Keyword signals are a separate, lower-confidence pass over UNMATCHED exhibitor names -- not a claim those companies are actually electronics/semiconductor firms, just a worth-a-look list.",
+ "known_electronics_company_count": 120,
+ "results": {
+  "Ambiente 2027": {
+   "total_exhibitors": 3655,
+   "direct_match_count": 0,
+   "direct_matches": [],
+   "keyword_signal_count": 4,
+   "keyword_signals_sample": [
+    {
+     "exhibitor": "Ark (HK) Electronic Clock Co., Ltd.",
+     "country": "Hong Kong",
+     "matched_term": "Electronic"
+    },
+    {
+     "exhibitor": "Eastime (H.K.) Electronic Limited",
+     "country": "Hong Kong",
+     "matched_term": "Electronic"
+    },
+    {
+     "exhibitor": "NUC Electronics Europe GmbH",
+     "country": "Germany",
+     "matched_term": "Electronics"
+    },
+    {
+     "exhibitor": "Truly Electronics Manufacturing Ltd.",
+     "country": "Hong Kong",
+     "matched_term": "Electronics"
+    }
+   ],
+   "keyword_signals_truncated": 0
+  },
+  "Techtextil 2027": {
+   "total_exhibitors": 1474,
+   "direct_match_count": 0,
+   "direct_matches": [],
+   "keyword_signal_count": 4,
+   "keyword_signals_sample": [
+    {
+     "exhibitor": "emtec Electronic GmbH",
+     "country": "Germany",
+     "matched_term": "Electronic"
+    },
+    {
+     "exhibitor": "HALO-electronic Gesellschaft m.b.H.",
+     "country": "Austria",
+     "matched_term": "electronic"
+    },
+    {
+     "exhibitor": "Interlink Electronics Inc.",
+     "country": "United States",
+     "matched_term": "Electronics"
+    },
+    {
+     "exhibitor": "L.G.L. Electronics S.p.A.",
+     "country": "Italy",
+     "matched_term": "Electronics"
+    }
+   ],
+   "keyword_signals_truncated": 0
+  }
+ }
+}

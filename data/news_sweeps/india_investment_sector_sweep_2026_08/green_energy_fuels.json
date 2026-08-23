@@ -1,0 +1,141 @@
+{
+  "sector": "Green Energy & Fuels (solar manufacturing, green hydrogen, EV batteries/ACC, biofuels/ethanol, wind)",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across multiple query angles (green hydrogen India investment, foreign solar manufacturer India plant, EV battery/ACC India JV foreign investor, biofuels India expansion, wind turbine manufacturer India investment), followed by named-company follow-up WebSearches, followed by WebFetch to open and read each candidate article/press release directly before inclusion. This session's shared WebSearch quota (200 calls) was exhausted partway through the sweep; remaining discovery for the back half of the sweep was done via WebFetch against Bing News/Search result pages (read as regular web pages, not via a search API) plus direct company/press-release/aggregator fetches. Every finding below was verified by opening and reading at least one substantive source -- nothing was included on a search snippet alone. Non-Indian-HQ companies only.",
+  "findings": [
+    {
+      "company": "Envision Energy (Envision Energy India)",
+      "country_of_headquarters": "China",
+      "signal": "Broke ground on a new Rs 500 crore (~US$60 million) wind turbine blade manufacturing facility at Kalyangadh, Ahmedabad district, Gujarat -- Envision's third manufacturing site in India -- with 2 GW/year capacity (up to 1,500 blades annually) for its 3.3 MW and 5 MW turbine platforms, bringing Envision's cumulative India capital commitment to Rs 1,000 crore since entering the country in 2016.",
+      "source_url": "https://www.indiainfoline.com/news/companies/envision-energy-expands-in-india-with-500-crore-blade-manufacturing-plant-in-gujarat",
+      "date": "2025-09-26",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "TPG Inc. (TPG-led investor consortium, with MAVCO Investments and Prashant Jain)",
+      "country_of_headquarters": "United States",
+      "signal": "Agreed to acquire a 90% majority stake in Siemens Gamesa's onshore wind business in India and Sri Lanka -- including two Indian manufacturing plants and roughly 1,000 employees -- forming a new TPG-controlled company that will keep making and servicing wind turbines under a long-term Siemens Gamesa technology-licensing agreement; Siemens Gamesa retains 10%. This is a foreign private-equity firm becoming the new majority owner/capital backer of an existing India wind-manufacturing platform. Exact transaction value not disclosed.",
+      "source_url": "https://www.siemens-energy.com/global/en/home/press-releases/siemens-gamesa-to-divest-a-majority-stake-of-its-indian-wind-bus.html",
+      "date": "2025-03-26",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "LG Energy Solution",
+      "country_of_headquarters": "South Korea",
+      "signal": "In discussions with JSW Energy for a 50:50 joint venture to build a 10 GWh battery gigafactory in India (batteries for EVs and energy storage), with LGES contributing cell technology/equipment and JSW financing/hosting the plant; investment pegged at over US$1.5 billion. A non-binding agreement was signed, the deal was expected to close around March/April 2025 with production targeted by end-2026, and by January 2025 LGES was reportedly scouting a ~100-acre site near Chennai (Manallur) alongside Tamil Nadu/Telangana/Andhra Pradesh options. As of the most recent reporting found in this sweep, the venture was still described as non-binding/in the pipeline rather than a signed, finalized JV -- flagged accordingly.",
+      "source_url": "https://theprint.in/india/exclusive-lg-energy-solution-indias-jsw-discuss-1-5-billion-battery-venture-sources-say/2407117/",
+      "date": "2024-12-17",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Aemetis, Inc. (via India subsidiary Universal Biofuels)",
+      "country_of_headquarters": "United States (Cupertino, California)",
+      "signal": "Expanded production capacity at its Kakinada (Andhra Pradesh) biodiesel plant to approximately 80 million gallons per year using a proprietary enzymatic process (also yielding refined glycerin as a co-product); is exploring diversification into dairy biogas, ethanol, and sustainable aviation fuel at additional India locations; and is preparing a potential minority-stake IPO of Universal Biofuels on an Indian stock exchange, subject to market conditions. Reported alongside a $17 million biodiesel delivery allocation to India's state-owned Oil Marketing Companies.",
+      "source_url": "https://www.stocktitan.net/news/AMTX/aemetis-india-subsidiary-begins-biodiesel-deliveries-under-17-3aucu31un6z6.html",
+      "date": "2026-08-04",
+      "confidence": "HIGH"
+    }
+  ],
+  "search_queries_tried": [
+    "green hydrogen company India investment plant 2026",
+    "foreign solar manufacturer India plant announcement 2025",
+    "EV battery ACC India joint venture foreign investor 2025",
+    "biofuels ethanol India expansion foreign company investment 2025",
+    "wind turbine manufacturer India investment foreign company 2025",
+    "TotalEnergies Adani green hydrogen India 2025 investment",
+    "First Solar Tamil Nadu plant PLI 2025 announcement date",
+    "AEPPL Toshiba Denso Suzuki battery plant Gujarat second phase investment 2025",
+    "Aemetis Universal Biofuels India biodiesel plant expansion 2025",
+    "Envision Energy India wind turbine investment 500 crore 2025",
+    "CATL India battery investment 2025 2026",
+    "LG Energy Solution India battery plant 2025",
+    "Fortescue India green hydrogen investment 2025",
+    "Masdar India renewable energy investment 2025 2026",
+    "ACWA Power India green hydrogen investment 2025",
+    "JinkoSolar India manufacturing plant investment 2025",
+    "Vestas India wind investment plant 2025",
+    "Panasonic India EV battery plant investment 2025",
+    "Siemens Gamesa TPG India wind divestment 2025",
+    "\"LG Energy Solution\" JSW India battery plant deal signed 2025",
+    "Hanwha Qcells India solar investment 2025",
+    "Shell BP renewable energy India green hydrogen investment 2025",
+    "LG Energy Solution JSW India battery venture update 2026 signed agreement (blocked -- session WebSearch quota exhausted; resolved via Bing News WebFetch instead)",
+    "thyssenkrupp nucera India electrolyzer investment 2025 (blocked -- session WebSearch quota exhausted)",
+    "John Cockerill India electrolyzer manufacturing plant 2025 (blocked -- session WebSearch quota exhausted)",
+    "Trina Solar India manufacturing plant investment 2025 (blocked -- session WebSearch quota exhausted)",
+    "foreign company India green hydrogen electrolyzer manufacturing plant investment 2025 announcement (blocked -- session WebSearch quota exhausted)",
+    "[Bing News WebFetch] Masdar India renewable solar investment deal 2025 2026",
+    "[Bing News WebFetch] Sembcorp India green energy investment 2025 2026",
+    "[Bing News WebFetch] Actis India renewable energy investment 2025 2026",
+    "[Bing News WebFetch] Vestas Chennai factory nacelle hub India 2025 investment",
+    "[Bing News WebFetch] Orsted RWE offshore wind India investment 2025 2026",
+    "[Bing News WebFetch] green ammonia India foreign company investment MoU 2025 2026",
+    "[Bing News WebFetch] solar cell wafer manufacturer India foreign JV investment 2025 2026",
+    "[Bing News WebFetch] German OR Japanese OR Korean company India green hydrogen plant investment 2026",
+    "[Bing News WebFetch] Adani TotalEnergies green hydrogen 2026 investment milestone",
+    "[Bing News WebFetch] AEPPL Suzuki Toshiba Denso battery plant Gujarat 2026 completion",
+    "[Bing News WebFetch] Panasonic Energy India battery production high-capacity"
+  ],
+  "negative_notes": [
+    {
+      "company": "TotalEnergies SE (via 25% stake in Adani New Industries Ltd / ANIL)",
+      "country_of_headquarters": "France",
+      "reason_excluded": "The headline $50 billion green hydrogen ecosystem partnership and $5 billion electrolyzer/urea first phase are real, but the deal was announced in June 2022, well outside this sweep's ~18-month window, and is already a widely known existing commitment rather than new activity. Checked for a fresher 2025-2026 milestone instead: the only recent-window development found was TotalEnergies reducing (not increasing) its Adani Green Energy shareholding via a block deal (~Rs 2,778 crore raised, reported ~February 2026) -- a partial divestment signal, the opposite of a fresh investment -- so no qualifying new finding was recorded for this company."
+    },
+    {
+      "company": "AEPPL (Automotive Electronics Power Pvt Ltd -- JV of Suzuki Motor, Toshiba, and Denso)",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "The Rs 3,715 crore (~US$520 million) second-phase lithium-ion battery investment at Hansalpur, Gujarat is real but the MoU and investment plan date to January 2020, targeting completion by 2025 -- outside this sweep's ~18-month discovery window and not a fresh announcement. A related August 2025 event (PM Modi flagging off Suzuki's e-Vitara electric vehicle for export from the Gujarat complex) concerns vehicle production/export, not a new AEPPL battery-plant investment specifically, so it does not substitute as a qualifying fresh finding. No independent 2025/2026 press confirming a new or expanded AEPPL commitment was found."
+    },
+    {
+      "company": "Panasonic Energy Co., Ltd. (proposed JV with IndianOil Corporation)",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "As of the most detailed dated reporting found (January 20, 2025), Panasonic Energy was still 'evaluating' four candidate states (Telangana, Tamil Nadu, Maharashtra, Karnataka) for a cylindrical lithium-ion battery plant, with LGES's own public statement noting 'no specific plans for India at present' at a similar stage for a separate JV -- exploratory/site-evaluation language, not a committed investment or signed JV. A more recent headline ('Panasonic Energy prepares for high-capacity EV battery production', WION, dated approx. August 2026) surfaced in search snippets, but the source page returned HTTP 403 on repeated WebFetch attempts and no alternate outlet carrying the full story could be opened -- per this sweep's rule against including anything not actually read, it was left out rather than reported from a snippet."
+    },
+    {
+      "company": "First Solar, Inc.",
+      "country_of_headquarters": "United States",
+      "reason_excluded": "First Solar's 3.3 GW fully-vertically-integrated Tamil Nadu facility is a genuine, large foreign investment, but its inauguration was in January 2024 -- outside the ~18-month window. A subsequent 'awarded PLI financial incentives' development was referenced in search summaries, but the two candidate primary sources (a TipRanks/Fly wire item and a BusinessWire release) returned HTTP 403 / timed out on every WebFetch attempt, and no substitute source with a confirmed, readable date could be located -- excluded for lack of a verifiable, readable, dated source, not for lack of underlying substance."
+    },
+    {
+      "company": "Hanwha Q CELLS",
+      "country_of_headquarters": "South Korea",
+      "reason_excluded": "Search results surfaced a module-supply-and-JV-project agreement with ReNew Power, but the underlying press-release URL pattern is consistent with a much older (pre-2020) release, and no distinct 2025-2026 India investment announcement was found for Hanwha Q CELLS in this sweep -- excluded as unverifiable within the recency window."
+    },
+    {
+      "company": "Vestas Wind Systems A/S",
+      "country_of_headquarters": "Denmark",
+      "reason_excluded": "A Chennai nacelle-and-hub assembly factory surfaced repeatedly in search results framed as recent India expansion. WebFetch of the primary windfair.net article confirmed a publication date of July 12, 2019 -- well outside the sweep window -- despite the page's display date showing the current date (a caching/template artifact). Excluded on verified-recency grounds."
+    },
+    {
+      "company": "Sembcorp Industries / Sembcorp Green Infra (Temasek-backed)",
+      "country_of_headquarters": "Singapore",
+      "reason_excluded": "Reported (~August 2026) to be preparing to file for a ~US$500 million IPO of its existing India renewable-energy arm. This is a capital-markets listing of an already-established India business (Sembcorp has operated in Indian renewables for years), not a new investment, plant, or JV commitment -- doesn't fit the brief's investment-signal criteria, so excluded."
+    },
+    {
+      "company": "Actis LLP (via BluPine Energy)",
+      "country_of_headquarters": "United Kingdom",
+      "reason_excluded": "Reported (~July 2026) to be running a sale process for its Indian renewable-energy platform BluPine Energy (seeking valuations above $2 billion). This is Actis exiting/divesting an India platform it built starting in 2022, the opposite of a fresh investment signal -- excluded."
+    },
+    {
+      "company": "Uniper SE",
+      "country_of_headquarters": "Germany",
+      "reason_excluded": "Reported (~January 2026) agreement with India's AM Green for supply of up to 500,000 tonnes/year of green ammonia by 2028. In this deal Uniper is the offtaker/buyer of ammonia produced in India for export to Europe, not a company committing capital or operations into India -- direction is reversed from the sector brief's criteria, so excluded."
+    },
+    {
+      "company": "ACWA Power (via MoU with Larsen & Toubro)",
+      "country_of_headquarters": "Saudi Arabia",
+      "reason_excluded": "The ACWA Power news found in this sweep concerns L&T's renewables division providing EPC/engineering scope for ACWA's own green hydrogen hub at Yanbu, Saudi Arabia -- an Indian company doing outbound work abroad, not ACWA investing in India. No India-specific ACWA Power investment was found -- excluded."
+    },
+    {
+      "company": "Fortescue (Fortescue Future Industries / FFI, via framework agreement with JSW Future Energy Limited)",
+      "country_of_headquarters": "Australia",
+      "reason_excluded": "The India framework agreement to explore green hydrogen/green steel/green ammonia opportunities dates to July 2021 and uses scoping/exploration language rather than a committed investment. Fortescue has also been retreating from hydrogen commitments globally through 2025 (cancelling Arizona and Gladstone projects), and no fresh 2025-2026 India-specific investment, MoU update, or project sanction was found in this sweep -- excluded as stale and, if anything, a company pulling back from hydrogen rather than committing further."
+    },
+    {
+      "company": "Masdar (Abu Dhabi Future Energy Company), via Masdar-TotalEnergies US$2.2 billion Asia renewables JV",
+      "country_of_headquarters": "United Arab Emirates",
+      "reason_excluded": "The Masdar-TotalEnergies joint venture (reported ~April 2026) is framed as a pan-Asia renewables platform that names India only as one of several possible future markets (alongside Southeast Asia and others), with no India-specific project, site, capacity, or capital figure identified in coverage found -- excluded pending a country-specific announcement rather than a regional mandate."
+    }
+  ]
+}

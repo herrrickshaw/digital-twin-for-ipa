@@ -1,0 +1,87 @@
+{
+  "sector": "Pharma & Bulk Drugs (pharmaceuticals, APIs/bulk drugs, biologics manufacturing)",
+  "swept_date": "2026-08-23",
+  "method": "WebSearch for discovery across multiple query angles (foreign pharma India investment, API/bulk drug manufacturer plant announcements, biologics manufacturing expansion, pharma JVs), followed by WebFetch to open and read each candidate source directly before inclusion. Every finding below was verified by opening at least one substantive article/press release (not a search snippet). Non-Indian-HQ companies only. Session's WebSearch quota was exhausted partway through (after ~15 queries), which capped further discovery angles (Otsuka/Takeda/Teva/Viatris, GSK vaccines, Merck/Pfizer/Roche, Bulk Drug Park foreign tenants were queued but not run) rather than any change in method or standards.",
+  "findings": [
+    {
+      "company": "Eli Lilly and Company",
+      "country_of_headquarters": "United States",
+      "signal": "Announced a $1 billion+ multi-year investment to build a new contract-manufacturing oversight and quality hub in Hyderabad, expanding capacity for diabetes, obesity, Alzheimer's, cancer, and autoimmune medicines; follows Lilly's August 2025 opening of a Global Capability Centre in the same city. Stated by Patrik Jonsson, President of Lilly International, in a company statement.",
+      "source_url": "https://www.europeanpharmaceuticalreview.com/news/lilly-outlines-1bn-india-manufacturing-expansion/266972.article",
+      "date": "2025-10-08",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Krka, d.d., Novo mesto",
+      "country_of_headquarters": "Slovenia",
+      "signal": "Foreign JV partner (51% stake, Laurus Labs 49%) in Krka Pharma Pvt. Ltd., Hyderabad; approved fresh capital tranches during the sweep window to fund a new finished-dosage/biopharmaceutical manufacturing facility in Genome Valley -- Rs 833 crore (Laurus) + Rs 867 crore (Krka) approved by Laurus Labs' board on 6 March 2025 for land/facility setup, followed by a further EUR 9.8m (Laurus) + EUR 10.2m (Krka) tranche approved 30 April 2026 for the manufacturing facility capex, maintaining the 51:49 ratio.",
+      "source_url": "https://www.business-standard.com/markets/capital-market-news/board-of-laurus-labs-approves-investment-of-rs-83-30-cr-in-krka-pharma-125030601108_1.html",
+      "date": "2025-03-06",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Recipharm AB",
+      "country_of_headquarters": "Sweden",
+      "signal": "Inaugurated new parenteral development and sterility laboratories at its Bengaluru Center of Excellence, expanding sterile/injectable (solutions, suspensions, lyophilized powder) formulation-development and testing capabilities as part of a broader strategic investment in its India site.",
+      "source_url": "https://www.genengnews.com/topics/bioprocessing/recipharm-opens-parenteral-development-and-sterility-labs-in-india/",
+      "date": "2025-10-15",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "search_queries_tried": [
+    "pharma company India investment plant 2026 announcement",
+    "foreign API manufacturer India plant announcement bulk drugs 2025",
+    "biologics manufacturing India expansion foreign company 2025 2026",
+    "pharma India joint venture foreign investor API 2025",
+    "Eli Lilly press release Hyderabad Telangana manufacturing investment",
+    "CDMO India investment 2025 foreign company new facility pharma",
+    "\"India\" pharma API plant foreign direct investment announcement August 2025 OR September 2025 OR October 2025",
+    "Novonesis Maharashtra investment 3000 crore India",
+    "Eli Lilly newsroom Hyderabad manufacturing investment press release",
+    "Laurus Labs Krka additional investment board approval date 2025",
+    "AstraZeneca Bayer Boehringer Ingelheim India new investment plant 2025",
+    "Lonza Catalent Recipharm Piramal India investment foreign partner 2025",
+    "Novo Nordisk India investment plant 2025 2026",
+    "Sandoz Novartis Fresenius Kabi India new manufacturing facility 2025",
+    "Samsung Biologics WuXi Biologics India expansion investment",
+    "Sanofi $437 million Hyderabad investment pre-filled syringes lyophilized oncology",
+    "KRKA Laurus Labs joint venture Genome Valley Hyderabad investment increase December 2025",
+    "Recipharm Bengaluru Center of Excellence sterile product development lab expansion",
+    "Otsuka Takeda Teva Viatris India new investment plant 2025 2026 (blocked -- session WebSearch quota exhausted)",
+    "GSK vaccines India manufacturing investment 2025 (blocked -- session WebSearch quota exhausted)",
+    "Merck MSD Pfizer Roche India investment plant 2025 2026 announcement (blocked -- session WebSearch quota exhausted)",
+    "foreign pharma company India Bulk Drug Park investment 2025 Andhra Pradesh Himachal Gujarat (blocked -- session WebSearch quota exhausted)"
+  ],
+  "negative_notes": [
+    {
+      "company": "Sanofi",
+      "country_of_headquarters": "France",
+      "reason_excluded": "The widely-reported $437m/EUR400m Hyderabad investment (announced 17 Jul 2024, so also outside the ~18-month window) is explicitly for a Global Capacity Centre -- a digital/business-operations and workforce hub (target headcount 1,000 -> 2,600) -- not a manufacturing, API/bulk-drug, or biologics plant. Confirmed via Fierce Pharma coverage: the GCC will 'grow the site's digital team and utilize artificial intelligence tools' for 'value accretive activities', with no manufacturing scope described. Excluded as sector-mismatch (not a manufacturing/bulk-drug investment) and as stale (pre-dates the sweep window)."
+    },
+    {
+      "company": "Novonesis",
+      "country_of_headquarters": "Denmark",
+      "reason_excluded": "Real, recent (2025-26) INR 2,500-3,000 crore Maharashtra (Patalganga) investment commitment, but Novonesis is an industrial-biotech/enzymes company (formed from the Novozymes/Chr. Hansen merger) supplying enzymes, yeast and biological inputs for biofuels, food, agriculture, and household-care industries -- not a pharmaceutical, API/bulk-drug, or biologics manufacturer. Excluded as sector-mismatch, not a data-quality problem with the finding itself."
+    },
+    {
+      "company": "Novartis India (stake sale to ChrysCapital-led consortium)",
+      "country_of_headquarters": "Switzerland (Novartis); acquiring consortium is India-based (ChrysCapital)",
+      "reason_excluded": "This is Novartis divesting a controlling (70.68%) stake in its existing Indian listed subsidiary to a domestic private-equity-led consortium (completed 29 Jul 2026) -- an ownership change of a decades-old India entity, not new foreign capital or capacity entering India. Does not represent a fresh investment signal for the twin."
+    },
+    {
+      "company": "Samsung Biologics (via proposed PolyPeptide Group acquisition)",
+      "country_of_headquarters": "South Korea (Samsung Biologics); PolyPeptide is Swiss-headquartered",
+      "reason_excluded": "Coverage of Samsung Biologics' ~$1.8bn acquisition offer for PolyPeptide Group mentions PolyPeptide already operates a cGMP facility in India among five countries, but no source found describes this as a new India-specific investment, expansion, or commitment -- it is a global corporate acquisition where the India facility is incidental, pre-existing infrastructure. Left out for lack of a substantive India-specific investment signal, not ruled out as false."
+    },
+    {
+      "company": "Toyoda Gosei",
+      "country_of_headquarters": "Japan",
+      "reason_excluded": "Surfaced in a broad search for 'pharma company India investment plant 2026' but is an automotive components manufacturer building a plant in Karnataka -- entirely outside the pharma/bulk-drugs sector. Sector-mismatch false positive from the search, excluded per the project's known keyword-search-noise problem."
+    },
+    {
+      "company": "Macsen Labs (Udaipur API facility expansion)",
+      "country_of_headquarters": "India",
+      "reason_excluded": "Genuine new API facility construction (RIICO Industrial Area, Gudli, Udaipur, ~5x current capacity, started early 2025) but Macsen Labs is an Indian-headquartered company, which the task explicitly excludes (companies already headquartered in India)."
+    }
+  ]
+}

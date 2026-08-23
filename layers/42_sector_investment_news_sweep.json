@@ -1,0 +1,1228 @@
+{
+ "layer": 42,
+ "name": "sector_investment_news_sweep",
+ "built": "2026-08-23",
+ "what": "12-sector India-investment news sweep (one subagent per the twin's core PLI-derived sectors), replacing the earlier NewsAPI-based sweeps that were proven unreliable at scale. Every finding here was verified by opening and reading the actual source article/press release, not a search snippet. new_to_twin flags companies not already in layer 16 leads or the company DB, via the same word-boundary fragment matcher used in layers 37/41.",
+ "known_company_count": 1769,
+ "total_findings": 74,
+ "total_new_to_twin": 43,
+ "confidence_breakdown": {
+  "HIGH": 33,
+  "MEDIUM": 39,
+  "LOW": 2
+ },
+ "sectors": {
+  "Aerospace & Defence (aircraft/components, defence manufacturing, MRO)": {
+   "source_file": "aerospace_defence.json",
+   "total_findings": 13,
+   "new_to_twin": 8,
+   "findings": [
+    {
+     "company": "Safran Electronics & Defense",
+     "country_of_headquarters": "France",
+     "signal": "Signed a Joint Venture Cooperation Agreement with Bharat Electronics Limited (BEL) on 24 Nov 2025 to incorporate a 50:50 India joint venture that will localise manufacturing, supply and maintenance of the HAMMER precision-guided air-to-ground weapon system for the Indian Air Force and Navy, targeting ~60% indigenisation over time.",
+     "source_url": "https://ddnews.gov.in/en/bel-and-frances-safran-to-jointly-manufacture-hammer-precision-guided-weapon-in-india/",
+     "date": "2025-11-24",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Safran",
+     "country_of_headquarters": "France",
+     "signal": "Inaugurated the world's largest LEAP engine (CFM International) maintenance, repair and overhaul centre in Hyderabad, a EUR 200 million-plus investment, to reduce overseas MRO dependence for Indian carriers (IndiGo, Air India) and serve civil and military programmes; company stated it plans to triple annual revenue from Indian operations by decade end.",
+     "source_url": "https://aviationa2z.com/index.php/2025/11/28/safran-opens-largest-engine-mro-in-world-in-india/",
+     "date": "2025-11-28",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Saab AB",
+     "country_of_headquarters": "Sweden",
+     "signal": "First defence-sector project in India approved under the 100% FDI route: Saab's plant in Jhajjar, Haryana will manufacture the Carl-Gustaf shoulder-fired weapon system (Saab's first Carl-Gustaf plant outside Sweden) for Indian forces and export, with manufacturing due to begin once the industrial licence is granted -- confirmed on record by Mats Palmberg, Saab's Chairman and Managing Director in India.",
+     "source_url": "https://www.tribuneindia.com/news/india/swedish-firms-jhajjar-plant-to-begin-weapon-production-early-next-year",
+     "date": "2025-02-07",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "GE Aerospace",
+     "country_of_headquarters": "United States",
+     "signal": "Announced a fresh Rs 100 crore investment in its Pune manufacturing facility (welding technologies, inspection equipment, precision tooling), bringing total investment at the site to Rs 510 crore over three years; the facility produces components for GE90/GEnx/GE9X and CFM LEAP commercial engines and works with 300+ local suppliers.",
+     "source_url": "https://www.indiandefensenews.in/2026/05/ge-aerospace-announces-100-crore.html",
+     "date": "2026-05-19",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Lockheed Martin",
+     "country_of_headquarters": "United States",
+     "signal": "Developing a new Defence Maintenance, Repair and Overhaul facility in Bangalore jointly with Tata Advanced Systems, scheduled to be operational in early 2027, alongside a proposal to the Indian Air Force to establish a C-130J Super Hercules final assembly line in India -- what would be Lockheed's first such line outside the US.",
+     "source_url": "https://www.indiandefensenews.in/2026/02/lockheed-martin-accelerates-india-as.html",
+     "date": "2026-02",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "RTX Corporation / Collins Aerospace",
+     "country_of_headquarters": "United States",
+     "signal": "Opened the Collins India Operations Center, a new 26-acre 'Factory of the Future' manufacturing site at KIADB Aerospace Park, Bengaluru, initially producing seats, lighting and cargo systems, temperature sensors, communication/navigation systems, water solutions and evacuation slides; expected to host 2,200+ employees by 2026.",
+     "source_url": "https://www.rtx.com/news/news-center/2025/11/11/rtxs-collins-aerospace-unveils-new-manufacturing-site-in-bengaluru",
+     "date": "2025-11-11",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Shield AI",
+     "country_of_headquarters": "United States",
+     "signal": "Entered a long-term licensing and technology-transfer partnership with JSW Defence for a USD 90 million unmanned-aerial-systems manufacturing facility at EMC Maheshwaram, Hyderabad, to produce Shield AI's V-BAT Group 3 drone for the Indian armed forces and export; foundation stone laid 2 Dec 2025, manufacturing targeted for Q4 2026.",
+     "source_url": "https://www.jsw.in/newsroom/press-releases/jsw-defence-commences-construction-of-next-gen-uas-facility-in-hyderabad/",
+     "date": "2025-12-02",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Israel Aerospace Industries (IAI)",
+     "country_of_headquarters": "Israel",
+     "signal": "Disclosed plans to invest Rs 3,000 crore in India's defence sector for military-systems manufacturing, with Haryana shortlisted as one of seven potential sites nationally (no location finalised yet); disclosed by IAI's India-arm chief of staff during a meeting with Haryana's Chief Minister.",
+     "source_url": "https://swarajyamag.com/news-brief/israels-defence-giant-iai-eyes-haryana-for-rs-3000-crore-push-state-shortlisted-among-7-sites-nationally",
+     "date": "2026-04-22",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Israel Aerospace Industries (IAI)",
+     "country_of_headquarters": "Israel",
+     "signal": "Launched ELTX, a joint venture with India's DCX Systems Limited, to develop and localise production and maintenance of high-end airborne radars and ground-based defence systems in India, as part of deepening Israel-India defence-technology transfer.",
+     "source_url": "https://avitrader.com/2025/04/22/iai-and-dcx-systems-launch-eltx-joint-venture/",
+     "date": "2025-04-22",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Dassault Aviation",
+     "country_of_headquarters": "France",
+     "signal": "Signed four Production Transfer Agreements with Tata Advanced Systems Limited to manufacture Rafale fighter-jet fuselage sections (lateral shells, rear/central/front sections) at a new plant in Hyderabad -- the first-ever Rafale fuselage production outside France -- with production starting FY2028 at up to two complete fuselages per month.",
+     "source_url": "https://www.dassault-aviation.com/en/group/press/press-kits/dassault-aviation-partners-with-tata-advanced-systems-to-manufacture-rafale-fighter-aircraft-fuselage-for-india-and-other-global-markets/",
+     "date": "2025-06-05",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Embraer",
+     "country_of_headquarters": "Brazil",
+     "signal": "Established a fully-owned Indian subsidiary with a corporate office in AeroCity, New Delhi, to build out teams across defence, commercial aviation, business aviation, services & support and urban air mobility, calling India 'a key market'; follows a Feb 2024 MoU with Mahindra Defence on the C-390 medium transport aircraft.",
+     "source_url": "https://www.embraer.com/media-center/en/?mediatype=NEWS&detail=19648",
+     "date": "2025-05-30",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Rheinmetall AG",
+     "country_of_headquarters": "Germany",
+     "signal": "Struck a strategic partnership with India's Reliance Defence for large-scale ammunition manufacturing (up to 200,000 artillery shells, 10,000 tons of explosives, 2,000 tons of propellants annually) at a new Reliance-built plant in the Watad industrial area, Maharashtra; on-record CEO quote calling it 'a strong commitment to partner with India.'",
+     "source_url": "https://thedefensepost.com/2025/05/23/india-germany-ammo-production/",
+     "date": "2025-05-23",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Airbus (Airbus Defence and Space)",
+     "country_of_headquarters": "Netherlands (Airbus SE, registered HQ; primary operations France/Germany)",
+     "signal": "First domestically-assembled C-295 military transport aircraft rolled out (months ahead of schedule) from the Tata Advanced Systems-Airbus final assembly line in Vadodara -- the first time a private-sector facility has produced a military aircraft in India; 40 of the 56-aircraft IAF order will be built at Vadodara through 2031, with 85%+ structural/final assembly done locally.",
+     "source_url": "https://www.indiandefensenews.in/2026/05/tata-advanced-systems-rolls-out-first.html",
+     "date": "2026-05",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "AxisCades Aerospace & Technologies",
+     "country_of_headquarters": "India",
+     "reason_excluded": "Real and large (Rs 6,000 crore, Devanahalli, Karnataka) announced integrated aerospace/defence/semiconductor hub, but AxisCades is headquartered in Bengaluru, India -- excluded per the task's instruction to cover only non-India-headquartered companies."
+    },
+    {
+     "company": "Diehl Defence",
+     "country_of_headquarters": "Germany",
+     "reason_excluded": "A WebSearch snippet (Business Standard) described Diehl partnering with Reliance Defence to produce terminally guided munitions at the same Watad/Ratnagiri site as the verified Rheinmetall deal (~Rs 5,000 crore over five years). The Business Standard article returned HTTP 403 on WebFetch and no alternate primary source could be located and opened before the session's search quota ran out, so this lead could not be independently read and verified. Left out per this sweep's rule that every finding must be backed by an article actually opened via WebFetch -- worth re-checking in a future pass."
+    },
+    {
+     "company": "Kalyani Rafael Advanced Systems (Rafael Advanced Defense Systems, Israel)",
+     "country_of_headquarters": "Israel",
+     "reason_excluded": "Genuine, substantial JV (Kalyani Strategic Systems + Rafael) manufacturing Spike anti-tank missiles in Hyderabad, but the facility was inaugurated in 2017. No new 2025-2026 investment, expansion, or capacity announcement for this JV was found in this sweep -- excluded as stale/pre-existing rather than new activity, per the task's instruction not to re-report long-standing operations without fresh news."
+    },
+    {
+     "company": "Elbit Systems",
+     "country_of_headquarters": "Israel",
+     "reason_excluded": "Existing Hermes 450/900 drone supply relationship with India (in IAF service for years) surfaced repeatedly, plus an unrelated Jan 2026 item about Elbit buying out Thales' stake in the UAV Tactical Systems JV that does not appear to be India-specific. No substantive NEW 2025-2026 India investment, plant, or JV announcement for Elbit was found before the session's WebSearch quota was exhausted -- flagged as an angle worth a follow-up sweep rather than confirmed absent."
+    },
+    {
+     "company": "Bell / Textron",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "The only substantive 'Bell helicopter plant in India' article found (IBEF) is dated 16 March 2016 and describes an exploratory feasibility study targeting 2018-19 operation -- a decade-old, apparently unrealized plan. No 2025-2026 confirmation or update was found; excluded as stale, not a current signal."
+    },
+    {
+     "company": "Boeing",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "Boeing's India coverage in the window is broad relationship/vision language (largest foreign OEM sourcing from India at $1.25bn/year, ~$100m historical pilot-training investment, a Liquid Robotics-Sagar Defence Engineering MoU on autonomous surface vessels) rather than one specific, dated, dollar-figured NEW capital commitment that could be independently opened and verified via WebFetch within the research budget available. Excluded from findings for lack of a single crisp, verified investment signal -- not because Boeing lacks India activity, but because nothing surfaced met this sweep's bar for a substantive, individually-verified announcement."
+    }
+   ],
+   "method": "WebSearch for discovery across multiple query angles (foreign aerospace/defence India investment, plant announcements, JVs, MRO expansions, company-specific follow-ups), followed by WebFetch to open and read each candidate source directly before inclusion. Every finding below was verified by opening at least one substantive article/press release via WebFetch (not a search snippet alone); where the primary company press release could not be fetched (blocked/403), a trade-press article quoting the company directly was used instead and is noted. Non-Indian-HQ companies only. Session's WebSearch quota was exhausted after ~19 queries, which capped a few further discovery angles (Elbit Systems recency check, additional confirmation attempt for a Diehl Defence lead) rather than any change in method or standards -- those items are recorded honestly in negative_notes rather than included on an unverified basis."
+  },
+  "Auto, EV & Components (automobiles, EVs, auto components, ACC batteries)": {
+   "source_file": "auto_ev_components.json",
+   "total_findings": 8,
+   "new_to_twin": 7,
+   "findings": [
+    {
+     "company": "Toyota Motor Corporation (via Toyota Kirloskar Motor)",
+     "country_of_headquarters": "Japan",
+     "signal": "Committed roughly $1.9 billion (300 billion yen) to build three new vehicle assembly plants in Maharashtra (Bidkin Industrial Area), tripling Toyota's India production capacity to about one million units/year and making India Toyota's fourth-largest global manufacturing hub; explicitly positioned as an export base for hybrids/PHEVs to the Middle East, Africa and South Asia. First reported by Nikkei Asia, corroborated by Toyota Kirloskar Motor's own confirmation per Business Standard's headline; initial operations targeted for 2029.",
+     "source_url": "https://www.autoblog.com/news/toyota-is-betting-1-9-billion-on-india-to-power-its-next-growth-surge",
+     "date": "2026-05-12",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Horse Powertrain (Renault-Geely joint venture, backed by Saudi Aramco)",
+     "country_of_headquarters": "France (Renault) / China (Geely), JV entity co-owned with Saudi Arabia's Aramco",
+     "signal": "Submitted a formal application, pending Indian government approval, to invest approximately $370 million into Renault's Chennai manufacturing facility to retrofit it for local production of strong-hybrid powertrains and engines for future Renault and Nissan models sold in India -- one of the largest China-linked manufacturing investments under review in years, and among the first tested under India's March 2026 revised rules for investment from neighboring-country-linked entities.",
+     "source_url": "https://www.just-auto.com/news/india-370m-horse-powertrain-investment/",
+     "date": "2026-06-26",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "VinFast Auto (Vingroup)",
+     "country_of_headquarters": "Vietnam",
+     "signal": "Announced a $500 million second-phase expansion of its Thoothukudi, Tamil Nadu EV plant -- enlarging the campus to roughly 900 acres with the Tamil Nadu government allocating ~500 adjacent acres -- to add dedicated production lines for electric buses and electric two-wheelers, scaling annual capacity from 50,000 to 150,000 units; part of VinFast's broader phased ~$2 billion (Rs 16,000 crore) India commitment.",
+     "source_url": "https://www.outlookbusiness.com/amp/story/start-up/news/vinfast-commits-500-mn-to-expand-tamil-nadu-plant-targets-150k-capacity-for-evs-e-scooters",
+     "date": "2025-12-05",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "TS Tech Co., Ltd.",
+     "country_of_headquarters": "Japan",
+     "signal": "Board resolved (27 Mar 2025) and signed (3 Apr 2025) a 50:50 joint-venture agreement with India's Krishna Group to form Krishna TS Tech Auto Pvt. Ltd., headquartered in Gurgaon, to jointly develop and produce automotive seats/interior components for the Indian market, combining TS Tech's technology with Krishna Group's position as a major seat supplier to Maruti Suzuki.",
+     "source_url": "https://www.marklines.com/en/news/324572",
+     "date": "2025-04-07",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Hayashi Telempu Corporation",
+     "country_of_headquarters": "Japan",
+     "signal": "Formed a 50:50 joint venture, NDR Hayashi Automotive India Private Limited, with listed Indian auto-parts maker NDR Auto Components (incorporated 10 Oct 2025, Rs 200 crore authorized/subscribed capital, NDR investing Rs 100 crore for its 50% stake) to manufacture automotive interior components -- ambient lighting systems, carpets, dashboard inner parts, rear shades and tonneau covers -- for OEMs in India and export markets.",
+     "source_url": "https://www.autocarpro.in/news/ndr-auto-components-incorporates-joint-venture-with-hayashi-telempu-for-auto-parts-manufacturing-129216",
+     "date": "2025-10-13",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Kia Corporation",
+     "country_of_headquarters": "South Korea",
+     "signal": "Combined Rs 8,000 crore investment underpinning Kia's second India manufacturing facility (300-acre site in Anantapur, Andhra Pradesh), adding 300,000 units/year of capacity alongside the existing Penukonda plant (600,000 units/year combined), including a dedicated EV production line on Kia's E-GMP platform and battery-pack assembly, to build India's first locally-produced Kia EV (compact SUV, launching late 2026); roughly 40% of output earmarked for export to the Middle East, Africa, Latin America and ASEAN.",
+     "source_url": "https://www.nxcar.in/blog/category/news/kia-india-launches-sixth-manufacturing-plant-eyes-export-hub-status-1768657322296-13",
+     "date": "2026-01-17",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Robert Bosch GmbH (Bosch Ltd India)",
+     "country_of_headquarters": "Germany",
+     "signal": "Formed a 50:50 joint venture with India's TSF Group (Brakes India and Wheels India), registered office in Chennai, to develop and manufacture advanced electronically-controlled air systems (air compression, processing and suspension) for commercial vehicles -- described by Bosch leadership as expansion into new 'white space' segments as part of a shift from selling individual components to offering the full commercial-vehicle mobility tech stack in India; operations targeted to be fully functional by end of 2026.",
+     "source_url": "https://www.autocarpro.in/feature/boschs-india-recast-132757",
+     "date": "2026-05-23",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "ZF Friedrichshafen AG (via ZF Commercial Vehicle Control Systems India / ZF MIPL)",
+     "country_of_headquarters": "Germany",
+     "signal": "ZF's Indian subsidiary ZF MIPL received a sanctioned Rs 300 crore capital investment (via non-cumulative optionally convertible redeemable preference shares) earmarked for capex, working capital and loan repayment, disclosed alongside ZF Commercial Vehicle Control Systems India's FY26 results (Rs 517 crore profit after tax).",
+     "source_url": "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/ZF-India-Approves-51-Bonus-indian-rupee300-Cr-Investment-After-indian-rupee517-Cr-Profit/6a048a239444064ed0584305",
+     "date": "2026-05-13",
+     "confidence": "LOW",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "BYD",
+     "country_of_headquarters": "China",
+     "reason_excluded": "Widely reported ~Rs 85,000 crore (~$10bn) Hyderabad EV-and-battery plant plan with local partner Megha Engineering and Infrastructures Ltd (MEIL), 500 acres, 600,000 units/year by 2032. Read the underlying article directly: as of the March 2025 reporting, the piece is explicitly sourced to 'a report by ETV Bharat' describing 'advanced discussions' and Telangana government site proposals, with 'no statement from BYD confirming or denying' and no finalized agreement. Separately, other coverage from around the same period has BYD calling investment reports 'untrue.' A prior related $1bn BYD-MEIL proposal was rejected by the Indian government in 2023 on national-security grounds. Excluded as unconfirmed/rumored rather than a substantiated company commitment."
+    },
+    {
+     "company": "LG Energy Solution",
+     "country_of_headquarters": "South Korea",
+     "reason_excluded": "Reported discussions with JSW Energy on a >$1.5 billion, 10 GWh battery joint venture, and LGES itself is reportedly evaluating a ~100-acre site near Chennai among Tamil Nadu/Telangana/Andhra Pradesh options. Read directly: as of the January 2025 article, LGES's own statement is only that it is 'exploring various potential business options and monitoring' the market, with the piece's own assessment that both LGES and Panasonic are in 'preliminary investigation stages, with no confirmed facility establishment dates or finalized locations.' Excluded as exploratory/unconfirmed, not a committed investment yet, though worth re-checking in a future sweep given the scale.",
+     "note": "same source also covered Panasonic Energy's parallel, equally-unconfirmed India site evaluation (Telangana/Tamil Nadu/Maharashtra/Karnataka) -- excluded for the same reason."
+    },
+    {
+     "company": "Toyoda Gosei Co., Ltd.",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "Genuine, real investment (~¥2.05 billion / $14.5M) in a new Harohalli, Karnataka plant for airbags/steering-wheel safety systems and interior/exterior parts (console boxes etc.), production slated to start 2026, ~580 jobs by 2027 -- confirmed via the company's own announcement summarized in trade press. Excluded from findings only on timing: the announcement date is 19 September 2024, which falls outside the task's ~18-month (since early 2025) freshness window. No subsequent 2025/2026 update was found beyond the original announcement, so it was left out rather than force-fit into the window."
+    },
+    {
+     "company": "Mercedes-Benz",
+     "country_of_headquarters": "Germany",
+     "reason_excluded": "The specific, quotable INR 3,000 crore Maharashtra investment figure traces to a Maharashtra Industries Minister statement reported 21 May 2024 -- outside the freshness window. More recent (2026) India coverage of Mercedes-Benz discusses 12 new model launches, dealership expansion, and a vaguer 'Rs 200 crore' plant scale-up at Chakan/Pune, but no article found in this pass gives a fresh, specific, dated capital commitment comparable in substance to the other findings here. Left out for insufficient fresh substantiation rather than falseness; worth re-checking with a dedicated Mercedes-Benz India investment query in a future sweep."
+    },
+    {
+     "company": "Continental AG",
+     "country_of_headquarters": "Germany",
+     "reason_excluded": "Searched specifically for new Continental India plant/investment news in the 2025-2026 window; no substantive dedicated article surfaced (search results returned only Bosch and ZF stories). Not included for lack of any verifiable new finding, not because a lead was found and rejected."
+    },
+    {
+     "company": "Kia Corporation (proposed additional Anantapur production line)",
+     "country_of_headquarters": "South Korea",
+     "reason_excluded": "A separate, newer report (15 Aug 2026) describes Kia 'studying' a further ~200,000-unit/year production line at the same Anantapur plant already covered in the findings above. Read directly: the article states this is 'at an early stage, and a final investment decision has yet to be taken.' Excluded as too preliminary to count as a committed signal, distinct from the already-committed Rs 8,000 crore Anantapur plant investment included as a finding."
+    }
+   ],
+   "method": "WebSearch for discovery across multiple query angles (foreign automaker India investment/plant announcements, EV company India plants, auto-components JVs, ACC/battery manufacturing, and company-specific follow-ups), followed by WebFetch to open and read each candidate article/press release directly before inclusion. Every finding below was verified by opening at least one substantive source (not a search snippet) and confirming the specific company is genuinely discussed as committing capital/capacity/operations to India. Non-Indian-HQ companies only; companies with long-established India operations were only included where the specific finding is a genuinely new/recent (post-early-2025) investment signal, not old news re-surfaced. Session's WebSearch quota was exhausted after ~15 queries; remaining verification relied on WebFetch against URLs already surfaced (e.g. following up on LG Energy Solution/Panasonic/BYD/Mercedes-Benz/Continental leads), which somewhat capped additional discovery angles (e.g. Yamaha, Suzuki two-wheelers, Isuzu, Volvo Group, Stellantis, Nissan standalone, Škoda-VW fresh capex beyond the already-covered Kushaq production start were queued but not separately run)."
+  },
+  "Chemicals & Plastics (specialty chemicals, petrochemicals, plastics/polymer manufacturing)": {
+   "source_file": "chemicals_plastics.json",
+   "total_findings": 6,
+   "new_to_twin": 4,
+   "findings": [
+    {
+     "company": "Sekisui Chemical Co., Ltd.",
+     "country_of_headquarters": "Japan",
+     "signal": "Investing approximately $3 million in a new manufacturing facility at Chakan, near Pune, Maharashtra -- the company's sixth plant in India -- to produce injection-molded plastic parts for the Indian automotive market, with operations targeted to commence by January 2026.",
+     "source_url": "https://autotechinsight.spglobal.com/news/5282589/sekisui-chemical-invests-in-new-manufacturing-facility-to-produce-injection-molded-parts-in-india",
+     "date": "2025-06-26",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Indorama Resources Ltd. (via 50:50 JV \"Valor Petrochemicals Ltd.\" with Adani Petrochemicals)",
+     "country_of_headquarters": "Thailand",
+     "signal": "Formed Valor Petrochemicals Ltd, a 50:50 joint venture with Adani Petrochemicals Ltd, to build refining, petrochemical and chemical operations in India centered on PVC production; proposed investment of roughly US$4 billion (Rs 37,900 crore), including a 2-million-tonne/year PVC plant at Mundra, Gujarat -- intended to be India's largest PVC manufacturing facility, with first-phase commercial production targeted by December 2026. JV launched January 2025.",
+     "source_url": "https://www.polymerupdate.com/Blogs/Details/1360988/All",
+     "date": "2025-01",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "LANXESS AG",
+     "country_of_headquarters": "Germany",
+     "signal": "Opened a new Rs 150 crore specialty lubricant-additives blending plant at its multi-business-unit site in Jhagadia, Gujarat -- described as LANXESS's 13th lubricant-additives production site globally -- bringing cumulative investment at the Jhagadia site to Rs 750 crore (the site also makes ion exchange resins, biocides, and rubber/release agents).",
+     "source_url": "https://www.indianchemicalnews.com/chemical/lanxess-opens-rs-150-crore-new-lubricant-additives-plant-in-india-30184",
+     "date": "2026-04-27",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Wacker Chemie AG",
+     "country_of_headquarters": "Germany",
+     "signal": "Commissioned a new 15,000-square-meter silicone emulsions production complex at its existing Panagarh (West Bengal) site, producing GMP-certified silicones for cosmetics and personal-care manufacturers; created about 60 new jobs. Investment amount not disclosed in source.",
+     "source_url": "https://www.indianchemicalnews.com/chemical/wacker-fires-up-new-silicone-plant-in-india-29803",
+     "date": "2026-03",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "BASF SE",
+     "country_of_headquarters": "Germany",
+     "signal": "Announced (via its own press release) it is adding a new dispersions production line at its Mangalore, Karnataka facility to meet growing India demand for architectural paints, construction chemicals, and paper/packaging applications; expected operational around 2027. Investment amount and capacity figures not disclosed.",
+     "source_url": "https://www.basf.com/in/en/media/news-releases/asia-pacific/2026/02/apac-26-14",
+     "date": "2026-02-13",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "dsm-firmenich",
+     "country_of_headquarters": "Switzerland/Netherlands (dual-headquartered, Euronext Amsterdam listed)",
+     "signal": "Unveiled roughly EUR 70 million in India plant investments via its own press release: an expanded seasoning plant in Thuravoor, Kerala (EtO-free seasonings, ~150 new jobs, operational from October 2025) and a new 56,000 sqm greenfield Taste manufacturing facility in Vadodara district, Gujarat (~200+ new jobs, targeted operational Q4 2027). Note: this is specialty ingredients/flavor-and-taste manufacturing, which sits at the specialty-chemicals/ingredients boundary rather than core petrochemicals or plastics -- flagged for the twin's sector-fit judgment.",
+     "source_url": "https://www.dsm-firmenich.com/en/businesses/taste-texture-health/news-events/press-releases/dsm-firmenich-unveils-major-plant-investments-emphasizing-commitment-to-shaping-the-future-of-flavor-in-india.html",
+     "date": "2025-08-26",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "Nayara Energy (majority owned by Rosneft, Russia)",
+     "country_of_headquarters": "India (company itself is India-headquartered, in Mumbai)",
+     "reason_excluded": "Widely reported Rs 68,000 crore ethane cracker investment at the Vadinar refinery is real and recent, but the announcing entity, Nayara Energy, is headquartered in India, not abroad -- Rosneft is a minority/majority shareholder in an India-domiciled company, not a foreign company entering India. Excluded per the task's 'no Indian-HQ companies' rule."
+    },
+    {
+     "company": "Vinmar Petrochemicals (Vinmar Group)",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "The only source found for the IPCL-Vinmar MMA/PMMA joint venture (Rs 316 crore, Gandhar complex) is a Business Standard page whose article-ID pattern (...197091701052) is consistent with a 1990s archive piece rather than a 2025-2026 announcement; could not confirm this falls inside the ~18-month sweep window, so excluded as unverifiable recency despite surfacing in a 2025/2026-targeted search."
+    },
+    {
+     "company": "PPG Industries",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "An 'over US$10 million fresh investment in India' (AsianPPG electrocoat JV expansion, Sriperumbudur) surfaced in search results aimed at 2025-2026, but WebFetch confirmed the article is dated March 19, 2012. Excluded as stale/not recent -- a clear instance of a search snippet's apparent recency being misleading until the source was actually opened."
+    },
+    {
+     "company": "Celanese Corporation",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "Coverage describes Celanese closing its Ulsan, South Korea plant and redirecting existing production volumes to its already-established Nanjing/Shenzhen (China) and Silvassa (India) facilities as part of a cost-optimization 'Grow & Fortify' strategy. This is a reallocation of existing production to an existing India site, not a new capital investment, capacity expansion, or new-plant commitment -- no capex figure or expansion scope given. Excluded as not a substantive new-investment signal."
+    },
+    {
+     "company": "Mitsui Chemicals, Inc.",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "Trade press describes Mitsui Chemicals as 'evaluating' setting up local production bases in India for Tafmer polyolefin elastomers and EPDM in response to the Make in India campaign. This is exploratory/under-evaluation language, not a committed investment, plant opening, JV, or stated firm intent -- excluded per the task's bar against speculative/uncommitted leads."
+    },
+    {
+     "company": "Toyoda Gosei Co., Ltd.",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "Genuine and well-documented investment (JPY 2.05 billion / ~US$14.5 million) in a new Karnataka plant making safety-systems and interior automotive components (plastics/rubber-adjacent manufacturing, production targeted for 2026, ~580 jobs by 2027) -- but WebFetch confirmed the source article is dated September 19, 2024, which falls outside the ~18-month (since early 2025) window for this sweep. Excluded on recency grounds only, not veracity."
+    },
+    {
+     "company": "Saudi Aramco / ADNOC (Ratnagiri Refinery & Petrochemicals Complex consortium)",
+     "country_of_headquarters": "Saudi Arabia / United Arab Emirates",
+     "reason_excluded": "The ~US$44 billion Ratnagiri mega-refinery-and-petrochemicals project (with IOCL/BPCL/HPCL) was originally announced in 2018 and has a long public record of stalls, land-acquisition setbacks, and site relocation. No source found in this sweep confirms a fresh financial close, construction start, or renewed formal commitment specifically within the 2025-2026 window -- excluded as an unresolved multi-year saga rather than a fresh, concrete recent commitment, consistent with this project's caution against vague macro/ongoing-story leads."
+    },
+    {
+     "company": "Solvay, Arkema, Huntsman, INEOS, LG Chem, Lotte Chemical, Formosa Plastics, Dow Chemical, ExxonMobil Chemical, Eastman Chemical, AkzoNobel, Sika -- India-specific investment check",
+     "country_of_headquarters": "Belgium / France / United States / United Kingdom / South Korea (x2) / Taiwan / United States / United States / United States / Netherlands / Switzerland",
+     "reason_excluded": "Each was searched specifically for a 2025-2026 India investment announcement; none produced substantive India-specific new-investment coverage in this sweep. Where a real recent investment by these companies did surface, it was located elsewhere (Arkema's ~US$20 million transparent-polyamide unit investment is in Singapore; AkzoNobel's EUR 32 million bisphenol-free-coatings plant investment is in Vilafranca, Spain) -- neither is an India investment. Recorded here as leads checked and not found, not as affirmatively ruled-out false positives."
+    }
+   ],
+   "method": "WebSearch for discovery across multiple query angles (specialty chemicals India investment, foreign chemical company India plant announcements, petrochemical JVs, polymer manufacturing expansion, named-company follow-ups for major global chemicals players), followed by WebFetch to open and read each candidate article/press release directly before inclusion. Every finding below was verified by opening at least one substantive source (not a search snippet alone). Non-Indian-HQ companies only. This session's shared WebSearch quota (200 calls) was exhausted partway through this sweep, which capped a few planned follow-up queries (Henkel/Mapei, Indorama Ventures' own India plans, Toyoda Gosei date confirmation via search) -- those were completed instead via targeted WebFetch re-reads of already-found sources where possible."
+  },
+  "Electronics & Semiconductors (chips, semiconductor fabs/ATMP/OSAT, PCB/EMS, consumer/industrial electronics manufacturing)": {
+   "source_file": "electronics_semiconductors.json",
+   "total_findings": 9,
+   "new_to_twin": 1,
+   "findings": [
+    {
+     "company": "Micron Technology",
+     "country_of_headquarters": "United States",
+     "signal": "PM Modi inaugurated Micron's Semiconductor Assembly, Test and Packaging (ATMP) facility in Sanand, Gujarat on 28 Feb 2026, with commercial production and the first Made-in-India memory shipments (to Dell) beginning immediately; part of Micron's ~$2.75bn total India ATMP investment, completed just 900 days after the June 2023 MOU.",
+     "source_url": "https://thenewsmill.com/2026/03/sanand-emerges-as-indias-semiconductor-industry-gateway-with-micron-plant/",
+     "date": "2026-02-28",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Foxconn (Hon Hai Technology Group)",
+     "country_of_headquarters": "Taiwan",
+     "signal": "Foundation-laying ceremony (12 Feb 2026, attended by UP CM Yogi Adityanath and Union IT Minister Ashwini Vaishnaw) for the HCL-Foxconn JV's ₹3,706 crore compound-semiconductor and sensor ATMP/OSAT facility in Greater Noida (YEIDA), operating as Vamasundari Investments Pvt Ltd, following the government's May 2025 approval of the JV; ~20,000 wafers/month, display driver chips, ~3,700 direct jobs projected.",
+     "source_url": "https://ssfglobal.in/industry_action/foxconn-deepens-india-bet-with-%E2%82%B93706-crore-semiconductor-unit-in-greater-noida/",
+     "date": "2026-02-12",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "ASML Holding",
+     "country_of_headquarters": "Netherlands",
+     "signal": "Signed a strategic partnership with Tata Electronics (16 May 2026, coinciding with PM Modi's Netherlands visit) to supply its lithography tool suite and technical expertise to establish and ramp up Tata's planned 300mm semiconductor fab in Dholera, Gujarat, plus cooperation on local talent development and supply-chain resilience — a technology/operations commitment rather than direct capex by ASML itself.",
+     "source_url": "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership",
+     "date": "2026-05-16",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "NXP Semiconductors",
+     "country_of_headquarters": "Netherlands",
+     "signal": "Reported to be in advanced talks with YEIDA to acquire land in Greater Noida's Semiconductor Park for a second India R&D hub focused on next-gen automotive chips (incl. 5nm), part of its plan (announced Sept 2024) to more than double India R&D spend past $1bn and double its India headcount from 3,000 to 6,000+ within five years.",
+     "source_url": "https://www.varindia.com/news/nxp-plans-second-r-d-hub-in-greater-noida-as-part-of-1b-india-expansion",
+     "date": "2025-05-26",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Renesas Electronics Corporation",
+     "country_of_headquarters": "Japan",
+     "signal": "Joint-venture partner (~6.8% equity) alongside CG Power and Stars Microelectronics in CG Semi; the G1 OSAT pilot line in Sanand, Gujarat (₹7,600 crore combined G1+G2 investment) began commercial operations on 28 Aug 2025, with Renesas providing advanced semiconductor packaging technology and expertise to the facility.",
+     "source_url": "https://www.businesstoday.in/tech-today/news/story/cg-semi-launches-indias-first-osat-facility-sanand-7600-crore-investment-491522-2025-08-28",
+     "date": "2025-08-28",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Stars Microelectronics",
+     "country_of_headquarters": "Thailand",
+     "signal": "Joint-venture partner (~0.9% equity) in CG Semi's Sanand OSAT facility (G1 line commenced operations 28 Aug 2025), contributing legacy-package technology plus training and workforce enablement to the plant per the companies' own JV announcement.",
+     "source_url": "https://www.renesas.com/en/about/newsroom/cg-power-and-industrial-solutions-limited-renesas-and-stars-microelectronics-jointly-build",
+     "date": "2025-08-28",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Infineon Technologies",
+     "country_of_headquarters": "Germany",
+     "signal": "Signed a lease and began construction (15 Oct 2025) on a new 630,000 sq ft Bengaluru campus (\"SILANE\"), consolidating its two existing Bengaluru sites, including 170,000 sq ft of semiconductor R&D labs, to house 4,500 employees (up from ~2,500) by 2030; operations expected autumn 2026.",
+     "source_url": "https://www.prnewswire.com/in/news-releases/infineon-reinforces-its-position-as-key-innovation-hub-in-india-with-a-new-state-of-the-art-facility-in-bengaluru-302584551.html",
+     "date": "2025-10-15",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Corning Incorporated",
+     "country_of_headquarters": "United States",
+     "signal": "Inaugurated (5 Dec 2025) a ₹1,000 crore mobile cover-glass (Gorilla Glass) finishing facility in Chennai through its JV Bharat Innovative Glass Technologies (BIG Tech) with Optiemus Infracom, targeting 30 million pieces of cover-glass capacity in phase 1 for smartphone brands including Apple, Samsung, Google Pixel and OnePlus.",
+     "source_url": "https://www.business-standard.com/companies/news/companies-news-gorilla-glass-maker-cornings-rs-1-000-crore-chennai-unit-on-track-125120501083_1.html",
+     "date": "2025-12-05",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Samsung Electronics",
+     "country_of_headquarters": "South Korea",
+     "signal": "Held a completion ceremony (12 Dec 2025) for a new HVAC/data-center-cooling production line at its FläktGroup subsidiary's plant in Pune, Maharashtra — Samsung's first production expansion in India since its ~$1.8bn (2.5 trillion won) November 2024 acquisition of Germany's FläktGroup; plant to produce air handling units, fan wall units and CRAHs for the AI/data-center cooling market, up to 6,500 units/year at full capacity.",
+     "source_url": "https://en.sedaily.com/finance/2026/08/13/samsungs-flaktgroup-opens-first-plant-in-india-for-ai-data",
+     "date": "2025-12-12",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "Powerchip Semiconductor Manufacturing Corporation (PSMC)",
+     "country_of_headquarters": "Taiwan",
+     "reason_excluded": "PSMC's Fab-IP technology-transfer agreement with Tata Electronics for the Dholera 300mm fab (design/construction support, technology licensing, engineering support, no direct PSMC capex) was completed and announced 26 Sep 2024 — pre-dates the ~18-month sweep window. The same Dholera fab's in-window, foreign-company news (ASML's May 2026 lithography partnership) is reported above instead."
+    },
+    {
+     "company": "Applied Materials",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "Coverage of a planned Chennai (Taramani) AI-enabled technology Center of Excellence, with a possible follow-on manufacturing unit, dates to Sept 2024 and was explicitly described in the source read (knnindia.co.in) as exploratory/planning stage, contingent on future SPECS incentive terms — 'not yet confirmed.' No fresh 2025-2026 confirmation of a firm plant commitment was found on this pass; the official Applied Materials and OEM Update press pages describing the plan could not be opened (HTTP 403)."
+    },
+    {
+     "company": "Kaynes Semicon",
+     "reason_excluded": "OSAT plant in Sanand (inaugurated 31 Mar 2026, ~₹33 crore/$347.9M investment) is built by Kaynes Technology, an Indian-headquartered company — excluded per sector-sweep rules on foreign HQ only. Its initial output supplies US-based Alpha and Omega Semiconductor as a customer, which is a supply relationship, not a foreign investment in India."
+    },
+    {
+     "company": "Vedanta (Vedanta-Foxconn original JV)",
+     "reason_excluded": "The original $19.5bn Vedanta-Foxconn semiconductor JV was dissolved by mutual agreement in June 2023 when Foxconn withdrew. Vedanta's own planned display-fab unit has, per the most recent reporting found, still not received government approval, and no new foreign partner/investor for it was confirmed in this pass — so no genuine new foreign-company commitment to report here."
+    },
+    {
+     "company": "Texas Instruments",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "A new semiconductor R&D lab (IC design labs, reliability lab) was opened in Bengaluru, marking TI's 40th year in India (crnasia.com, itvoice.in), but the readable coverage gave no specific opening date or investment figure and was framed mainly as commemorating TI's long-standing existing India operations rather than describing a new, dated, quantified commitment. Excluded for insufficient specificity; worth a re-check pass if a dated/quantified article surfaces."
+    },
+    {
+     "company": "Qualcomm",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "Search surfaced only general statistics (India-based engineers ~20% of world semiconductor designers; 2nm chip tape-outs designed at Qualcomm's India centres but fabricated at TSMC Taiwan) — no discrete new India investment, plant, or expansion announcement was found this pass."
+    },
+    {
+     "company": "onsemi",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "No India-specific 2025-2026 investment, plant, or expansion news surfaced; search returned only onsemi's generic global investor-relations pages."
+    },
+    {
+     "company": "STMicroelectronics",
+     "country_of_headquarters": "Switzerland (dual-listed France/Italy origin)",
+     "reason_excluded": "Search returned only global manufacturing-footprint-reshaping news (Crolles fab in France, cost-base resizing) with no India-specific investment or facility announcement found. A dedicated follow-up search could not be completed before the session's WebSearch budget was exhausted."
+    },
+    {
+     "company": "Korea Circuit Co. Ltd. / Amber Korea Circuit JV; IL JIN Electronics",
+     "country_of_headquarters": "South Korea",
+     "reason_excluded": "Search snippets referenced an Oct 2024 Amber Enterprises-Korea Circuit 50:50 PCB JV (Amber Korea Circuit Pvt Ltd) and a Nov 2025 IL JIN Electronics India (Amber Enterprises subsidiary) stake acquisition in Shogini Technoarts, but no candidate article was actually opened and read via WebFetch to confirm details, so per this sweep's rules neither is reported as a finding. The Oct 2024 JV also predates the sweep window. Flagged as an unconfirmed lead for a future pass, particularly the Nov 2025 IL JIN/Shogini item which would fall inside the window if verified."
+    }
+   ],
+   "method": "WebSearch used for discovery across multiple angles (semiconductor fab/ATMP/OSAT announcements, PLI/ECMS foreign participants, PCB/EMS investment, company-specific follow-ups for known chip-equipment/design/packaging multinationals). Every company listed under 'findings' was verified by opening and reading the actual source article or official press release via WebFetch (not from search-result snippets alone); several candidate URLs returned HTTP 403 and were substituted with an alternate readable source reporting the same event, or (for one entry) re-fetched through a text-extraction proxy after a direct fetch was paywalled. Candidates that could not be confirmed via a direct WebFetch read of a substantive, on-topic, in-window article, or that turned out to be pre-window, exploratory/non-committal, or actually India-headquartered, were excluded and logged under negative_notes instead of being reported as findings. WebSearch quota was exhausted partway through the pass (shared session budget), so some planned follow-up searches (e.g. STMicroelectronics India-specific news, a broader PCB/EMS sweep) could not be completed; noted in negative_notes/search_queries_tried where relevant."
+  },
+  "Food Processing (packaged food, dairy, beverages, agri-processing)": {
+   "source_file": "food_processing.json",
+   "total_findings": 7,
+   "new_to_twin": 6,
+   "findings": [
+    {
+     "company": "Carlsberg India (Carlsberg A/S)",
+     "country_of_headquarters": "Denmark",
+     "signal": "Signed MoU with India's Ministry of Food Processing Industries at World Food India 2025 committing Rs 1,250 crore over three projects: a Rs 500 crore greenfield brewery in Ahilyanagar, Maharashtra; a Rs 400 crore brownfield expansion at its Hooghly, West Bengal facility; and a Rs 350 crore expansion at its Mysuru, Karnataka brewery. India Managing Director Nilesh Patel: 'Our investments in Maharashtra, West Bengal, and Karnataka underline our long-term commitment to India's future.'",
+     "source_url": "https://www.outlookbusiness.com/corporate/carlsberg-commits-to-invest-1250-cr-in-food-processing-sector",
+     "date": "2025-09-29",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Anheuser-Busch InBev (AB InBev)",
+     "country_of_headquarters": "Belgium",
+     "signal": "Announced (at WEF Davos) a USD 250 million investment over 2-3 years to strengthen its India beverage operations, including a new brewery in Unnao, Uttar Pradesh worth INR 1,000 crore (~USD 121 million) under an MoU with the UP state government; India's Minister of Food Processing Industries Chirag Paswan cited it as evidence of 'India's appeal as a global manufacturing hub.'",
+     "source_url": "https://www.inside.beer/news/detail/india-ab-inbev-announces-usd-121-million-brewery-project",
+     "date": "2025-01-22",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "PepsiCo",
+     "country_of_headquarters": "United States",
+     "signal": "Committed Rs 5,700 crore of investment in India from 2025 to 2030 for capacity expansion across three manufacturing facilities: a concentrates plant in Madhya Pradesh, a Northeast-serving plant in Assam, and a new snacks-business expansion (land purchased) in Tamil Nadu. PepsiCo India & South Asia CEO Jagrut Kotecha: 'We are committed, and as a result, from 2025 to 2030, we have committed almost Rs 5,700 crore of investments.'",
+     "source_url": "https://www.outlookbusiness.com/corporate/pepsico-commits-5700-cr-to-india-bets-big-on-snacks",
+     "date": "2026-05-20",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Nestle India (Nestle S.A.)",
+     "country_of_headquarters": "Switzerland",
+     "signal": "Signed MoU with India's Ministry of Food Processing Industries at World Food India 2025 to fast-track a Rs 5,000 crore expansion over 2-3 years: a new (10th) greenfield manufacturing facility in Odisha plus capacity expansion at existing sites, including new confectionery/prepared-dishes/cooking-aids capabilities at its Sanand, Gujarat plant. Nestle India Chairman Manish Tiwary confirmed the partnership will 'generate direct and indirect employment opportunities.'",
+     "source_url": "https://agronfoodprocessing.com/nestle-india-govt-ink-pact-to-fast-track-%E2%82%B95000-crore-food-sector-expansion/",
+     "date": "2025-10-03",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "United Breweries Ltd (Heineken N.V.)",
+     "country_of_headquarters": "Netherlands (Heineken is majority/controlling shareholder of UBL since 2021)",
+     "signal": "Registered the industrial-land lease in Unnao, Uttar Pradesh for a new INR 750 crore (~USD 90 million) greenfield brewery with planned capacity of 1.0-2.0 million hectoliters, to produce mainstream and premium brands including Heineken; operations targeted for Q2 FY27.",
+     "source_url": "https://www.inside.beer/news/detail/india-ubl-secures-land-for-major-new-brewery",
+     "date": "2025-11-22",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Barry Callebaut AG",
+     "country_of_headquarters": "Switzerland",
+     "signal": "Inaugurated its third India chocolate manufacturing facility, a 20,000 sq. m. greenfield plant in Neemrana (Ghiloth industrial area), Rajasthan, part of over INR 500 crore (CHF 50 million) invested in India over the preceding five years; the company states India is now Barry Callebaut's largest chocolate-producing market in the AMEA region. AMEA President Vamsi Mohan Thati and India MD Dhruva Jyoti Sanyal quoted at the inauguration.",
+     "source_url": "https://www.prnewswire.com/apac/news-releases/barry-callebaut-inaugurates-third-chocolate-factory-in-neemrana-india-302517233.html",
+     "date": "2025-07-30",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Danone (via Danone-Nutricia India)",
+     "country_of_headquarters": "France",
+     "signal": "Committed US$40.41 million (~Rs 356 crore) in Punjab: upgrading its specialist-nutrition production unit in Lalru, launching a new innovation hub for specialized nutrition products, and a three-year farmer-development program (with BAIF Development Research Foundation) to train over 5,000 smallholder dairy farmers in modern milk-production practices.",
+     "source_url": "https://dairybusinessmea.com/2025/10/18/danone-nutricia-commits-us40-41m-to-boost-dairy-innovation-in-india/",
+     "date": "2025-10-18",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "Suntory Holdings",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "Established a dedicated India subsidiary (Suntory India Pvt Ltd) in mid-2024, predating the sweep window, with a stated long-term target of $1bn India revenue by 2030. However, per CEO Takeshi Niinami's own comments, the company is still 'seeking a local manufacturing partner in India' -- no committed capex figure, plant location, or firm manufacturing investment has been announced. Excluded as too vague/not yet a concrete investment signal, not because the lead is false."
+    },
+    {
+     "company": "Kerry Group",
+     "country_of_headquarters": "Ireland",
+     "reason_excluded": "Search results for 'Kerry Group India facility investment 2025' resurfaced coverage of a EUR 20 million Tumkur, Karnataka facility -- but on reading the sources, that opening was from 2019, not 2025. This is exactly the kind of stale-news false positive the project has been burned by before; no genuine 2025-2026 India investment by Kerry Group was found."
+    },
+    {
+     "company": "Mondelez International",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "The widely-cited Rs 4,000 crore India investment (including a Rs 1,600 crore Sri City, Andhra Pradesh chocolate-plant expansion) was originally announced in 2023 with a 2026 completion horizon. Could not find or verify a genuinely new 2025-2026 announcement distinct from that pre-window commitment before the session's WebSearch quota was exhausted. Excluded rather than reported as 'new' activity."
+    },
+    {
+     "company": "Olam Food Ingredients (Olam Group)",
+     "country_of_headquarters": "Singapore",
+     "reason_excluded": "A secondary summary source stated Olam Food Ingredients signed an MoU at World Food India 2025 for 'diversified projects, from setting up food parks to modernizing supply chains,' but no primary article or press release giving India-specific investment figures or concrete project details could be located and read directly. Excluded per the no-fabrication rule rather than reported on an unverified secondary mention."
+    },
+    {
+     "company": "FrieslandCampina",
+     "country_of_headquarters": "Netherlands",
+     "reason_excluded": "No current direct dairy manufacturing presence in India was found, and no 2025-2026 India investment announcement surfaced in searches; older sources (2014) explicitly note the company had no direct India dairy operations at that time."
+    },
+    {
+     "company": "Ferrero Group",
+     "country_of_headquarters": "Luxembourg (Ferrero International); founding family Italian",
+     "reason_excluded": "Global capex figures (~EUR 1.1bn in FY2024/25) and general references to an 'active M&A pipeline focused on regional players in India and Southeast Asia' were found, but no specific new India factory, expansion, or investment announcement for 2025-2026 could be verified beyond the pre-existing Baramati, Maharashtra facility."
+    },
+    {
+     "company": "Coca-Cola bottlers in India (\"The Coca-Cola System in India\")",
+     "country_of_headquarters": "Mixed / unclear",
+     "reason_excluded": "Reported to have collectively pledged Rs 25,760 crore (~$2.96bn) at World Food India 2025 -- a large figure -- but the specific bottling entities (e.g. Hindustan Coca-Cola Beverages, Moon Beverages, SLMG Beverages) are India-domiciled joint operating companies, and within the research budget it could not be confirmed whether The Coca-Cola Company (Atlanta, US) itself, versus an India-headquartered bottler/franchisee, is the entity actually committing the capital. Excluded to avoid misattributing an Indian-headquartered bottler's investment as foreign."
+    }
+   ],
+   "method": "WebSearch for discovery across multiple query angles (foreign food-processing/FMCG India investment, dairy JVs, packaged-food expansion, brewery/beverage capex, company-specific follow-ups), followed by WebFetch to open and read each candidate article/press release directly before inclusion. Every finding below was verified by reading at least one substantive source (not a search snippet); several were cross-checked against a second source. Non-Indian-HQ companies only; companies already long-established in India with no new signal in the window were excluded. Session's WebSearch quota was exhausted after ~19 queries (a session-wide cap, not sector-specific), which cut off planned follow-ups on General Mills, Cargill, Bel Group, and a fresh Mondelez check -- these were left as open leads rather than fabricated."
+  },
+  "Green Energy & Fuels (solar manufacturing, green hydrogen, EV batteries/ACC, biofuels/ethanol, wind)": {
+   "source_file": "green_energy_fuels.json",
+   "total_findings": 4,
+   "new_to_twin": 3,
+   "findings": [
+    {
+     "company": "Envision Energy (Envision Energy India)",
+     "country_of_headquarters": "China",
+     "signal": "Broke ground on a new Rs 500 crore (~US$60 million) wind turbine blade manufacturing facility at Kalyangadh, Ahmedabad district, Gujarat -- Envision's third manufacturing site in India -- with 2 GW/year capacity (up to 1,500 blades annually) for its 3.3 MW and 5 MW turbine platforms, bringing Envision's cumulative India capital commitment to Rs 1,000 crore since entering the country in 2016.",
+     "source_url": "https://www.indiainfoline.com/news/companies/envision-energy-expands-in-india-with-500-crore-blade-manufacturing-plant-in-gujarat",
+     "date": "2025-09-26",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "TPG Inc. (TPG-led investor consortium, with MAVCO Investments and Prashant Jain)",
+     "country_of_headquarters": "United States",
+     "signal": "Agreed to acquire a 90% majority stake in Siemens Gamesa's onshore wind business in India and Sri Lanka -- including two Indian manufacturing plants and roughly 1,000 employees -- forming a new TPG-controlled company that will keep making and servicing wind turbines under a long-term Siemens Gamesa technology-licensing agreement; Siemens Gamesa retains 10%. This is a foreign private-equity firm becoming the new majority owner/capital backer of an existing India wind-manufacturing platform. Exact transaction value not disclosed.",
+     "source_url": "https://www.siemens-energy.com/global/en/home/press-releases/siemens-gamesa-to-divest-a-majority-stake-of-its-indian-wind-bus.html",
+     "date": "2025-03-26",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "LG Energy Solution",
+     "country_of_headquarters": "South Korea",
+     "signal": "In discussions with JSW Energy for a 50:50 joint venture to build a 10 GWh battery gigafactory in India (batteries for EVs and energy storage), with LGES contributing cell technology/equipment and JSW financing/hosting the plant; investment pegged at over US$1.5 billion. A non-binding agreement was signed, the deal was expected to close around March/April 2025 with production targeted by end-2026, and by January 2025 LGES was reportedly scouting a ~100-acre site near Chennai (Manallur) alongside Tamil Nadu/Telangana/Andhra Pradesh options. As of the most recent reporting found in this sweep, the venture was still described as non-binding/in the pipeline rather than a signed, finalized JV -- flagged accordingly.",
+     "source_url": "https://theprint.in/india/exclusive-lg-energy-solution-indias-jsw-discuss-1-5-billion-battery-venture-sources-say/2407117/",
+     "date": "2024-12-17",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Aemetis, Inc. (via India subsidiary Universal Biofuels)",
+     "country_of_headquarters": "United States (Cupertino, California)",
+     "signal": "Expanded production capacity at its Kakinada (Andhra Pradesh) biodiesel plant to approximately 80 million gallons per year using a proprietary enzymatic process (also yielding refined glycerin as a co-product); is exploring diversification into dairy biogas, ethanol, and sustainable aviation fuel at additional India locations; and is preparing a potential minority-stake IPO of Universal Biofuels on an Indian stock exchange, subject to market conditions. Reported alongside a $17 million biodiesel delivery allocation to India's state-owned Oil Marketing Companies.",
+     "source_url": "https://www.stocktitan.net/news/AMTX/aemetis-india-subsidiary-begins-biodiesel-deliveries-under-17-3aucu31un6z6.html",
+     "date": "2026-08-04",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "TotalEnergies SE (via 25% stake in Adani New Industries Ltd / ANIL)",
+     "country_of_headquarters": "France",
+     "reason_excluded": "The headline $50 billion green hydrogen ecosystem partnership and $5 billion electrolyzer/urea first phase are real, but the deal was announced in June 2022, well outside this sweep's ~18-month window, and is already a widely known existing commitment rather than new activity. Checked for a fresher 2025-2026 milestone instead: the only recent-window development found was TotalEnergies reducing (not increasing) its Adani Green Energy shareholding via a block deal (~Rs 2,778 crore raised, reported ~February 2026) -- a partial divestment signal, the opposite of a fresh investment -- so no qualifying new finding was recorded for this company."
+    },
+    {
+     "company": "AEPPL (Automotive Electronics Power Pvt Ltd -- JV of Suzuki Motor, Toshiba, and Denso)",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "The Rs 3,715 crore (~US$520 million) second-phase lithium-ion battery investment at Hansalpur, Gujarat is real but the MoU and investment plan date to January 2020, targeting completion by 2025 -- outside this sweep's ~18-month discovery window and not a fresh announcement. A related August 2025 event (PM Modi flagging off Suzuki's e-Vitara electric vehicle for export from the Gujarat complex) concerns vehicle production/export, not a new AEPPL battery-plant investment specifically, so it does not substitute as a qualifying fresh finding. No independent 2025/2026 press confirming a new or expanded AEPPL commitment was found."
+    },
+    {
+     "company": "Panasonic Energy Co., Ltd. (proposed JV with IndianOil Corporation)",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "As of the most detailed dated reporting found (January 20, 2025), Panasonic Energy was still 'evaluating' four candidate states (Telangana, Tamil Nadu, Maharashtra, Karnataka) for a cylindrical lithium-ion battery plant, with LGES's own public statement noting 'no specific plans for India at present' at a similar stage for a separate JV -- exploratory/site-evaluation language, not a committed investment or signed JV. A more recent headline ('Panasonic Energy prepares for high-capacity EV battery production', WION, dated approx. August 2026) surfaced in search snippets, but the source page returned HTTP 403 on repeated WebFetch attempts and no alternate outlet carrying the full story could be opened -- per this sweep's rule against including anything not actually read, it was left out rather than reported from a snippet."
+    },
+    {
+     "company": "First Solar, Inc.",
+     "country_of_headquarters": "United States",
+     "reason_excluded": "First Solar's 3.3 GW fully-vertically-integrated Tamil Nadu facility is a genuine, large foreign investment, but its inauguration was in January 2024 -- outside the ~18-month window. A subsequent 'awarded PLI financial incentives' development was referenced in search summaries, but the two candidate primary sources (a TipRanks/Fly wire item and a BusinessWire release) returned HTTP 403 / timed out on every WebFetch attempt, and no substitute source with a confirmed, readable date could be located -- excluded for lack of a verifiable, readable, dated source, not for lack of underlying substance."
+    },
+    {
+     "company": "Hanwha Q CELLS",
+     "country_of_headquarters": "South Korea",
+     "reason_excluded": "Search results surfaced a module-supply-and-JV-project agreement with ReNew Power, but the underlying press-release URL pattern is consistent with a much older (pre-2020) release, and no distinct 2025-2026 India investment announcement was found for Hanwha Q CELLS in this sweep -- excluded as unverifiable within the recency window."
+    },
+    {
+     "company": "Vestas Wind Systems A/S",
+     "country_of_headquarters": "Denmark",
+     "reason_excluded": "A Chennai nacelle-and-hub assembly factory surfaced repeatedly in search results framed as recent India expansion. WebFetch of the primary windfair.net article confirmed a publication date of July 12, 2019 -- well outside the sweep window -- despite the page's display date showing the current date (a caching/template artifact). Excluded on verified-recency grounds."
+    },
+    {
+     "company": "Sembcorp Industries / Sembcorp Green Infra (Temasek-backed)",
+     "country_of_headquarters": "Singapore",
+     "reason_excluded": "Reported (~August 2026) to be preparing to file for a ~US$500 million IPO of its existing India renewable-energy arm. This is a capital-markets listing of an already-established India business (Sembcorp has operated in Indian renewables for years), not a new investment, plant, or JV commitment -- doesn't fit the brief's investment-signal criteria, so excluded."
+    },
+    {
+     "company": "Actis LLP (via BluPine Energy)",
+     "country_of_headquarters": "United Kingdom",
+     "reason_excluded": "Reported (~July 2026) to be running a sale process for its Indian renewable-energy platform BluPine Energy (seeking valuations above $2 billion). This is Actis exiting/divesting an India platform it built starting in 2022, the opposite of a fresh investment signal -- excluded."
+    },
+    {
+     "company": "Uniper SE",
+     "country_of_headquarters": "Germany",
+     "reason_excluded": "Reported (~January 2026) agreement with India's AM Green for supply of up to 500,000 tonnes/year of green ammonia by 2028. In this deal Uniper is the offtaker/buyer of ammonia produced in India for export to Europe, not a company committing capital or operations into India -- direction is reversed from the sector brief's criteria, so excluded."
+    },
+    {
+     "company": "ACWA Power (via MoU with Larsen & Toubro)",
+     "country_of_headquarters": "Saudi Arabia",
+     "reason_excluded": "The ACWA Power news found in this sweep concerns L&T's renewables division providing EPC/engineering scope for ACWA's own green hydrogen hub at Yanbu, Saudi Arabia -- an Indian company doing outbound work abroad, not ACWA investing in India. No India-specific ACWA Power investment was found -- excluded."
+    },
+    {
+     "company": "Fortescue (Fortescue Future Industries / FFI, via framework agreement with JSW Future Energy Limited)",
+     "country_of_headquarters": "Australia",
+     "reason_excluded": "The India framework agreement to explore green hydrogen/green steel/green ammonia opportunities dates to July 2021 and uses scoping/exploration language rather than a committed investment. Fortescue has also been retreating from hydrogen commitments globally through 2025 (cancelling Arizona and Gladstone projects), and no fresh 2025-2026 India-specific investment, MoU update, or project sanction was found in this sweep -- excluded as stale and, if anything, a company pulling back from hydrogen rather than committing further."
+    },
+    {
+     "company": "Masdar (Abu Dhabi Future Energy Company), via Masdar-TotalEnergies US$2.2 billion Asia renewables JV",
+     "country_of_headquarters": "United Arab Emirates",
+     "reason_excluded": "The Masdar-TotalEnergies joint venture (reported ~April 2026) is framed as a pan-Asia renewables platform that names India only as one of several possible future markets (alongside Southeast Asia and others), with no India-specific project, site, capacity, or capital figure identified in coverage found -- excluded pending a country-specific announcement rather than a regional mandate."
+    }
+   ],
+   "method": "WebSearch for discovery across multiple query angles (green hydrogen India investment, foreign solar manufacturer India plant, EV battery/ACC India JV foreign investor, biofuels India expansion, wind turbine manufacturer India investment), followed by named-company follow-up WebSearches, followed by WebFetch to open and read each candidate article/press release directly before inclusion. This session's shared WebSearch quota (200 calls) was exhausted partway through the sweep; remaining discovery for the back half of the sweep was done via WebFetch against Bing News/Search result pages (read as regular web pages, not via a search API) plus direct company/press-release/aggregator fetches. Every finding below was verified by opening and reading at least one substantive source -- nothing was included on a search snippet alone. Non-Indian-HQ companies only."
+  },
+  "Medical Devices": {
+   "source_file": "medical_devices.json",
+   "total_findings": 6,
+   "new_to_twin": 3,
+   "findings": [
+    {
+     "company": "Sysmex Corporation",
+     "country": "Japan",
+     "signal": "New integrated manufacturing base at Sanand II Industrial Estate, Gujarat began full-scale operations in April 2025, producing both diagnostic reagents and the XQ-320 Automated Hematology Analyzer instrument for the Indian market under 'Make in India' -- Sysmex's second-largest overseas instrument production base after China. Investment stated as approx. JPY 3 billion; facility is 18,100 sqm site / 10,600 sqm floor space.",
+     "source_url": "https://www.sysmex-ap.com/sysmex-groups-new-manufacturing-base-in-india-begins-full-scale-operations-and-launches-make-in-india-products/",
+     "date": "2025-04-17",
+     "confidence": "HIGH",
+     "confidence_reason": "Company's own press release (Sysmex Asia Pacific), read directly via WebFetch; specific investment figure, location, product, and capacity detail given.",
+     "new_to_twin": false
+    },
+    {
+     "company": "Align Technology, Inc.",
+     "country": "USA",
+     "signal": "Plans a Rs. 1,800 crore manufacturing facility in Hyderabad, Telangana -- explicitly described as the company's first manufacturing site in India (fourth globally), to produce Invisalign clear-aligner parts (~10 lakh unique parts/day) via 3D printing; operations targeted for 2027, 300+ direct jobs projected. Announcement includes a quote from Telangana IT/Industries Minister Duddilla Sridhar Babu.",
+     "source_url": "https://www.pharmabiz.com/NewsDetails.aspx?aid=186060&sid=2",
+     "date": "2026-05-21",
+     "confidence": "MEDIUM",
+     "confidence_reason": "Solid trade press (Pharmabiz) with specific investment figure, location, and a named-official quote, read directly via WebFetch; corroborated by a matching Hindu Business Line headline (article page itself was blocked to WebFetch, so not counted as a separate read).",
+     "new_to_twin": false
+    },
+    {
+     "company": "Lubrizol Corporation",
+     "country": "USA",
+     "signal": "Inaugurated (with Indian partner Polyhose) an ISO 13485-certified medical tubing facility in Chennai, Tamil Nadu -- a Rs. 200 crore project producing precision-extruded medical tubing (polyamides, nylon, Pebax, TPU, etc.) for neurovascular and cardiovascular devices, aimed at India and export markets; reported as increasing Lubrizol's local medical-tubing volume five-fold and operational by 2026.",
+     "source_url": "https://www.pharmabiz.com/NewsDetails.aspx?aid=186653&sid=2",
+     "date": "2026-06-20",
+     "confidence": "MEDIUM",
+     "confidence_reason": "Trade press (Pharmabiz) article read directly via WebFetch describing an actual inaugurated facility with product/investment specifics; corroborated by independent Business Line/Times of India/Economic Times headlines found via Google News RSS and Bing News (not separately opened, used only as corroboration, not as the basis for inclusion).",
+     "new_to_twin": false
+    },
+    {
+     "company": "OIC International (The Orthopaedic Implant Company)",
+     "country": "USA",
+     "signal": "Entered a trilateral partnership with India's Medi-Mold and France's AddUp (Fives Group) to launch India's first advanced metal-3D-printing hub for patient-specific orthopaedic implants (trauma, spine, hip) at the Andhra Pradesh MedTech Zone (AMTZ), Visakhapatnam. Medi-Mold committed INR 100 crore toward the facility, including OIC International's India-entry/setup costs -- i.e. this is OIC's mechanism for entering Indian operations.",
+     "source_url": "https://www.einpresswire.com/article/837458478/oic-intl-medi-mold-and-fives-addup-forge-alliance-for-india-s-first-advanced-3d-printing-hub-for-orthopedic-implants",
+     "date": "2025-08-07",
+     "confidence": "MEDIUM",
+     "confidence_reason": "Official press release distributed via EIN Presswire on behalf of 'The Orthopaedic Implant Company' with named company contact, read directly via WebFetch; deal described as 'expected to be concluded in the next few weeks' at time of release (i.e. still finalizing), and no independent confirmation of closing was found.",
+     "new_to_twin": true
+    },
+    {
+     "company": "AddUp (Fives Group subsidiary)",
+     "country": "France",
+     "signal": "Technology partner in the same OIC International / Medi-Mold orthopaedic-implant JV above -- supplying its metal Laser Beam Powder Bed Fusion (PBF-LB) additive-manufacturing machine (FormUp range) to the new AMTZ Visakhapatnam facility that will mass-produce 3D-printed orthopaedic implants for India and export.",
+     "source_url": "https://www.einpresswire.com/article/837458478/oic-intl-medi-mold-and-fives-addup-forge-alliance-for-india-s-first-advanced-3d-printing-hub-for-orthopedic-implants",
+     "date": "2025-08-07",
+     "confidence": "MEDIUM",
+     "confidence_reason": "Same official press release as above, read directly via WebFetch; AddUp's role is technology/equipment supply rather than direct capital commitment, so confidence is capped at MEDIUM pending independent confirmation of the deal closing.",
+     "new_to_twin": true
+    },
+    {
+     "company": "Create Medic Co., Ltd.",
+     "country": "Japan",
+     "signal": "50-year-old, Tokyo Stock Exchange-listed silicone-catheter manufacturer established its first India office in Chennai, with an explicitly stated (though undated/unfunded-in-the-article) plan to build a manufacturing facility in Chennai to serve India, neighbouring countries, and Africa; also plans expansion to Delhi and Mumbai.",
+     "source_url": "https://www.thehindu.com/news/cities/chennai/japans-create-medic-enters-india-via-chennai-plans-manufacturing-unit/article70865422.ece",
+     "date": "2026-04-15",
+     "confidence": "MEDIUM",
+     "confidence_reason": "The Hindu article read in full via an r.jina.ai reader proxy (direct WebFetch to thehindu.com was blocked) -- confirmed real, substantive coverage, not a snippet. Corroborated by 4 additional independent outlets (DT Next, Business Line, New Indian Express, Times of India) via Google News RSS headlines. Confidence held at MEDIUM rather than HIGH because the manufacturing facility itself is a stated future plan with no timeline or investment figure yet -- the confirmed action to date is the Chennai office.",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "candidate": "GE HealthCare (USA) and Philips (Netherlands) -- Noida Medical Devices Park",
+     "why_excluded": "Times of India (19 Nov 2025) reports both companies merely 'expressed interest' / 'evinced interest' in the 350-acre Sector 28 park and are 'likely to send teams for on-ground assessments soon' -- no plot allocated, no investment figure, no signed agreement. This is exploratory interest, not a committed investment, so it does not meet the bar for inclusion.",
+     "source_checked": "https://timesofindia.indiatimes.com/city/noida/ge-healthcare-philips-panacea-keen-to-set-up-units-at-noida-medical-devices-park/articleshow/125418931.cms"
+    },
+    {
+     "candidate": "Medical Excellence Japan (MEJ) MoU with YEIDA",
+     "why_excluded": "This is a memorandum between YEIDA and MEJ, a Japanese government-linked medical-industry trade-promotion organization -- not an investing company. Follow-up coverage (Swarajya, 22 Oct 2025) confirms no specific Japanese medical device manufacturer was named or committed at the time of the MoU; a delegation of 'top Japanese medical device makers' was only planned to tour the park afterward. Exactly the kind of organization-level/associational mention this sweep is meant to exclude rather than mistake for a company commitment.",
+     "source_checked": "https://swarajyamag.com/infrastructure/noida-to-get-japanese-medical-device-manufacturing-cluster-near-airport"
+    },
+    {
+     "candidate": "Omron -- Tamil Nadu medical device factory",
+     "why_excluded": "Announcement dated 31 May 2023, well before the ~18-month (since early 2025) window for this sweep; represents an existing/older commitment, not new activity.",
+     "source_checked": "India Briefing, via Google News RSS headline"
+    },
+    {
+     "candidate": "Siemens Healthineers -- Bengaluru MRI facility inauguration and EUR 160M innovation-hub campus",
+     "why_excluded": "MRI facility inauguration press release dated 18 April 2023; the EUR 160M innovation-hub investment was originally announced October 2020. Both predate the sweep's ~18-month window and represent already-established operations, not new 2025/2026 activity.",
+     "source_checked": "https://www.siemens-healthineers.com/en-in/press-room/press-releases/inauguration-of-mri-facility-bengaluru (read directly via WebFetch)"
+    },
+    {
+     "candidate": "Wipro GE Healthcare -- $959M India investment",
+     "why_excluded": "Reported by Medical Device Network on 27 March 2024, before the sweep's since-early-2025 window; also Wipro GE is an existing long-standing India JV rather than a new entrant.",
+     "source_checked": "Medical Device Network headline via Google News RSS"
+    },
+    {
+     "candidate": "Merck Group -- Peenya (Bengaluru) facility expansion",
+     "why_excluded": "9 April 2026 headline describes expanded filtration manufacturing for life-sciences/biopharma processing equipment, not a medical device, diagnostics, or imaging product -- out of this sector's scope.",
+     "source_checked": "BioPharma APAC headline via Google News RSS"
+    },
+    {
+     "candidate": "Haleon -- ~INR 2,000 crore first India manufacturing facility",
+     "why_excluded": "9 June 2026 announcement is for consumer healthcare/OTC products (e.g. Sensodyne, Panadol, Centrum-type portfolio), not medical devices -- out of this sector's scope despite superficially resembling a strong 'India investment' hit.",
+     "source_checked": "The Malaysian Reserve / IndiaMedToday / BioSpectrum India headlines via Google News RSS"
+    },
+    {
+     "candidate": "Krish Biomedicals -- first unit at YEIDA Medical Device Park (deep-freezer manufacturer)",
+     "why_excluded": "18-23 Sept 2025 coverage describes a deep-freezer maker opening India's first operational unit at the park; company name and product description give no indication of foreign headquarters, and nothing in the available headlines suggests it is anything other than an Indian-headquartered manufacturer -- excluded per the India-HQ exclusion rule pending any contrary evidence.",
+     "source_checked": "Digital Health News / tennews.in / Times of India headlines via Google News RSS"
+    },
+    {
+     "candidate": "Terumo India -- Terufusion Advanced Infusion Systems launch",
+     "why_excluded": "26 Aug 2025 item is a product launch/distribution announcement for an existing Terumo India entity, not a new capital investment, plant, or expansion commitment -- doesn't meet the bar for an 'investment signal.'",
+     "source_checked": "eHealth Magazine headline via Google News RSS"
+    },
+    {
+     "candidate": "Eli Lilly -- $1B+ India investment",
+     "why_excluded": "6 Oct 2025 Reuters item is a pharmaceutical (drug) manufacturing expansion, not medical devices -- out of this sector's scope.",
+     "source_checked": "Reuters headline via Google News RSS"
+    }
+   ],
+   "method": "Manual, article-by-article sweep -- NOT a bulk keyword NewsAPI sweep (a prior pass using that method produced false positives, e.g. matching an unrelated Micron press release and a macro India-GDP article that happened to co-mention a small-cap name, and was discarded entirely rather than merged into the twin). This pass used WebSearch and Google News RSS (news.google.com/rss/search) for discovery across ~15 query angles (medical devices, diagnostics, imaging, implants, JV, YEIDA/AMTZ medical device parks, named-company checks), then WebFetch (direct, or via Bing News/r.jina.ai reader proxy when a publisher blocked WebFetch directly, e.g. thehindu.com, thehindubusinessline.com, hindustantimes.com, health.economictimes.indiatimes.com, newindianexpress.com) to open and read the actual article text for every candidate before deciding to include or exclude it. Every finding below reflects a genuinely opened and read source, not a search-result snippet. Session WebSearch quota was exhausted partway through (200/200 calls used across the session); remaining discovery after that point relied on Google News RSS + Bing News fetched via WebFetch, which worked as an effective substitute."
+  },
+  "Pharma & Bulk Drugs (pharmaceuticals, APIs/bulk drugs, biologics manufacturing)": {
+   "source_file": "pharma_bulk_drugs.json",
+   "total_findings": 3,
+   "new_to_twin": 1,
+   "findings": [
+    {
+     "company": "Eli Lilly and Company",
+     "country_of_headquarters": "United States",
+     "signal": "Announced a $1 billion+ multi-year investment to build a new contract-manufacturing oversight and quality hub in Hyderabad, expanding capacity for diabetes, obesity, Alzheimer's, cancer, and autoimmune medicines; follows Lilly's August 2025 opening of a Global Capability Centre in the same city. Stated by Patrik Jonsson, President of Lilly International, in a company statement.",
+     "source_url": "https://www.europeanpharmaceuticalreview.com/news/lilly-outlines-1bn-india-manufacturing-expansion/266972.article",
+     "date": "2025-10-08",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Krka, d.d., Novo mesto",
+     "country_of_headquarters": "Slovenia",
+     "signal": "Foreign JV partner (51% stake, Laurus Labs 49%) in Krka Pharma Pvt. Ltd., Hyderabad; approved fresh capital tranches during the sweep window to fund a new finished-dosage/biopharmaceutical manufacturing facility in Genome Valley -- Rs 833 crore (Laurus) + Rs 867 crore (Krka) approved by Laurus Labs' board on 6 March 2025 for land/facility setup, followed by a further EUR 9.8m (Laurus) + EUR 10.2m (Krka) tranche approved 30 April 2026 for the manufacturing facility capex, maintaining the 51:49 ratio.",
+     "source_url": "https://www.business-standard.com/markets/capital-market-news/board-of-laurus-labs-approves-investment-of-rs-83-30-cr-in-krka-pharma-125030601108_1.html",
+     "date": "2025-03-06",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Recipharm AB",
+     "country_of_headquarters": "Sweden",
+     "signal": "Inaugurated new parenteral development and sterility laboratories at its Bengaluru Center of Excellence, expanding sterile/injectable (solutions, suspensions, lyophilized powder) formulation-development and testing capabilities as part of a broader strategic investment in its India site.",
+     "source_url": "https://www.genengnews.com/topics/bioprocessing/recipharm-opens-parenteral-development-and-sterility-labs-in-india/",
+     "date": "2025-10-15",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "Sanofi",
+     "country_of_headquarters": "France",
+     "reason_excluded": "The widely-reported $437m/EUR400m Hyderabad investment (announced 17 Jul 2024, so also outside the ~18-month window) is explicitly for a Global Capacity Centre -- a digital/business-operations and workforce hub (target headcount 1,000 -> 2,600) -- not a manufacturing, API/bulk-drug, or biologics plant. Confirmed via Fierce Pharma coverage: the GCC will 'grow the site's digital team and utilize artificial intelligence tools' for 'value accretive activities', with no manufacturing scope described. Excluded as sector-mismatch (not a manufacturing/bulk-drug investment) and as stale (pre-dates the sweep window)."
+    },
+    {
+     "company": "Novonesis",
+     "country_of_headquarters": "Denmark",
+     "reason_excluded": "Real, recent (2025-26) INR 2,500-3,000 crore Maharashtra (Patalganga) investment commitment, but Novonesis is an industrial-biotech/enzymes company (formed from the Novozymes/Chr. Hansen merger) supplying enzymes, yeast and biological inputs for biofuels, food, agriculture, and household-care industries -- not a pharmaceutical, API/bulk-drug, or biologics manufacturer. Excluded as sector-mismatch, not a data-quality problem with the finding itself."
+    },
+    {
+     "company": "Novartis India (stake sale to ChrysCapital-led consortium)",
+     "country_of_headquarters": "Switzerland (Novartis); acquiring consortium is India-based (ChrysCapital)",
+     "reason_excluded": "This is Novartis divesting a controlling (70.68%) stake in its existing Indian listed subsidiary to a domestic private-equity-led consortium (completed 29 Jul 2026) -- an ownership change of a decades-old India entity, not new foreign capital or capacity entering India. Does not represent a fresh investment signal for the twin."
+    },
+    {
+     "company": "Samsung Biologics (via proposed PolyPeptide Group acquisition)",
+     "country_of_headquarters": "South Korea (Samsung Biologics); PolyPeptide is Swiss-headquartered",
+     "reason_excluded": "Coverage of Samsung Biologics' ~$1.8bn acquisition offer for PolyPeptide Group mentions PolyPeptide already operates a cGMP facility in India among five countries, but no source found describes this as a new India-specific investment, expansion, or commitment -- it is a global corporate acquisition where the India facility is incidental, pre-existing infrastructure. Left out for lack of a substantive India-specific investment signal, not ruled out as false."
+    },
+    {
+     "company": "Toyoda Gosei",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "Surfaced in a broad search for 'pharma company India investment plant 2026' but is an automotive components manufacturer building a plant in Karnataka -- entirely outside the pharma/bulk-drugs sector. Sector-mismatch false positive from the search, excluded per the project's known keyword-search-noise problem."
+    },
+    {
+     "company": "Macsen Labs (Udaipur API facility expansion)",
+     "country_of_headquarters": "India",
+     "reason_excluded": "Genuine new API facility construction (RIICO Industrial Area, Gudli, Udaipur, ~5x current capacity, started early 2025) but Macsen Labs is an Indian-headquartered company, which the task explicitly excludes (companies already headquartered in India)."
+    }
+   ],
+   "method": "WebSearch for discovery across multiple query angles (foreign pharma India investment, API/bulk drug manufacturer plant announcements, biologics manufacturing expansion, pharma JVs), followed by WebFetch to open and read each candidate source directly before inclusion. Every finding below was verified by opening at least one substantive article/press release (not a search snippet). Non-Indian-HQ companies only. Session's WebSearch quota was exhausted partway through (after ~15 queries), which capped further discovery angles (Otsuka/Takeda/Teva/Viatris, GSK vaccines, Merck/Pfizer/Roche, Bulk Drug Park foreign tenants were queued but not run) rather than any change in method or standards."
+  },
+  "Shipbuilding & Marine": {
+   "source_file": "shipbuilding_marine.json",
+   "total_findings": 5,
+   "new_to_twin": 5,
+   "findings": [
+    {
+     "company": "HD Korea Shipbuilding & Offshore Engineering (HD Hyundai / HD KSOE)",
+     "country": "South Korea",
+     "signal": "In final-stage talks with state-run Cochin Shipyard Limited for a 50:50, ~$500 million joint-venture Block Fabrication Facility (steel hull sections) on 80 acres near CSL's Kochi yard, with ~120,000 MT/year capacity (vs CSL's current 20,000 MT) and ~2,000 direct jobs; a CSL team was to visit South Korea in late Feb 2026 to finalize terms, with signing expected H2 2026. Would reportedly be the first direct investment by a global shipbuilding major into an Indian state-run yard.",
+     "source_url": "https://www.theweek.in/news/maritime/2026/02/25/cochin-shipyard-hd-hyundai-group-advance-talks-for-dollar500-million-shipbuilding-joint-venture-in-kochi-why-it-matters.html",
+     "date": "2026-02-25",
+     "confidence": "MEDIUM",
+     "notes": "Deal is at advanced-talks stage, not yet signed as of the article date — explicit stated intent with concrete figures (amount, structure, capacity, jobs) from solid trade press, but not yet a completed transaction.",
+     "new_to_twin": true
+    },
+    {
+     "company": "Drydocks World (DP World)",
+     "country": "United Arab Emirates (Dubai)",
+     "signal": "Signed a formal Agreement of Heads of Terms with Cochin Shipyard Limited to jointly develop India's first dedicated ship-repair cluster at the International Ship Repair Facility (ISRF) in Kochi, Kerala, combining Drydocks World's international vessel-repair/conversion/offshore-EPC expertise with CSL's local capability, exchanged in the presence of India's Shipping Minister and DP World's Group Chairman.",
+     "source_url": "https://www.dpworld.com/en/news/india/drydocks-world-cochin-shipyard-enter-agreement-to-enhance-india-first-ship-repair-cluster-in-kerala",
+     "date": "2025-10-29",
+     "confidence": "HIGH",
+     "notes": "Confirmed directly on DP World's own corporate press release page. No specific financial figure disclosed in the release itself.",
+     "new_to_twin": true
+    },
+    {
+     "company": "Damen Shipyards Group",
+     "country": "Netherlands",
+     "signal": "Signed an MoU with India's Square Port Shipyard (250 km south of Mumbai) for Damen Technical Cooperation to help develop the yard so it can build a range of Damen-designed vessels for the Indian/regional market — Damen's stated third such tie-up in the Indian subcontinent (alongside a prior MoU with Yeoman Marine Services to build Damen ASD tugs at Yeoman's Ratnagiri yard, where Damen supplies design/engineering/supply-chain know-how and Yeoman builds).",
+     "source_url": "https://www.offshore-energy.biz/damen-strengthens-india-ties-amid-countrys-maritime-revamp/",
+     "date": "2025-04-08",
+     "confidence": "HIGH",
+     "notes": "Corroborated by seatrade-maritime.com and maritimegateway.com coverage of the same Square Port and Yeoman Marine MoUs. These are technology/design-transfer partnerships (Damen is not itself building a wholly-owned plant), but constitute genuine, dated, substantive investment-adjacent commitments by a foreign shipbuilder into Indian yards.",
+     "new_to_twin": true
+    },
+    {
+     "company": "Samsung Heavy Industries",
+     "country": "South Korea",
+     "signal": "Signed a shipbuilding and marine business cooperation agreement with Swan Defense and Heavy Industries (SDHI, Gujarat — India's largest shipyard by capacity) covering new ship design, procurement and production management, explicitly framed by Samsung Heavy as securing a 'production bridgehead in India.'",
+     "source_url": "https://maritime-executive.com/article/samsung-heavy-industries-partners-with-india-s-swan-as-it-builds-network",
+     "date": "2025-09-29",
+     "confidence": "MEDIUM",
+     "notes": "Corroborated by The Korea Herald and The Investor (Korean trade press). Article does not specify a dollar figure or whether the arrangement is a binding investment/equity JV versus a cooperation MoU.",
+     "new_to_twin": true
+    },
+    {
+     "company": "TKMS (Thyssenkrupp Marine Systems)",
+     "country": "Germany",
+     "signal": "An Inter-Governmental Agreement was signed during German Chancellor Friedrich Merz's visit to India (12–13 Jan 2026) covering the ~€8 billion Project-75(I) program: six AIP-equipped submarines (customized Type 214 derivative) to be built at Mazagon Dock Shipbuilders in Mumbai, with TKMS committing to full technology transfer, local manufacturing know-how, personnel training and long-term technical support, indigenous content rising to 60%. Commercial contract signature (pending Cabinet Committee on Security approval) was, as of the article date, expected around mid-2026.",
+     "source_url": "https://defencestandard.com/p75i-submarine-deal-germany-india-aip-technology-transfer-leverage/",
+     "date": "2026-04-28",
+     "confidence": "MEDIUM",
+     "notes": "The government-to-government IGA itself is a real, dated, signed commitment; the underlying commercial/industrial contract with Mazagon Dock was still pending finalization as of the source date. Corroborated by idrw.org and marineforum.online coverage of the same IGA.",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "Fincantieri",
+     "country": "Italy",
+     "why_excluded": "Its cooperation MoU with Cochin Shipyard dates to October 2020 — well outside the ~18-month window — and 2025-26 coverage is either aspirational CEO commentary about India as a 'long-term partner' with no new concrete commitment, or a December 2025 contract by its WASS Submarine Systems subsidiary to supply Black Shark Advanced heavyweight torpedoes to the Indian Navy (>€200m). The torpedo deal is a straightforward export/supply contract, not evidence of Fincantieri investing in or operating facilities in India, so it was left out of findings."
+    },
+    {
+     "company": "Naval Group",
+     "country": "France",
+     "why_excluded": "Continues long-standing 'Make in India' technology-transfer work tied to the Scorpene submarine program at Mazagon Dock, but this is an established, years-old relationship with no new 2025-26 investment/expansion announcement found in this sweep — does not meet the 'new or recently announced' bar."
+    },
+    {
+     "company": "Damen – Goa Shipyard Ltd electric-tug agreement",
+     "country": "Netherlands",
+     "why_excluded": "One source referenced Damen entering an agreement to build electric tugs at Goa Shipyard Ltd 'in April last year' relative to a 2025 article, i.e. April 2024 — outside the ~18-month (since early 2025) window, so excluded even though Damen itself (via the Square Port and Yeoman Marine deals) is included above for its 2025 activity."
+    },
+    {
+     "company": "Kongsberg, ST Engineering, Keppel and other Nordic/Singaporean marine-tech and shipyard players",
+     "country": "Norway / Singapore",
+     "why_excluded": "Flagged as plausible candidates worth checking (Nordic/Scandinavian and Singaporean firms are repeatedly cited in Indian maritime-cluster coverage as likely future partners) but the session's web-search quota was exhausted before these queries could return results. Not ruled out — simply unresearched in this pass; a follow-up sweep should prioritize these."
+    }
+   ],
+   "method": "WebSearch for discovery across angles (foreign shipbuilder India investment, marine equipment manufacturer India plant, shipyard JV foreign investor, maritime cluster foreign company, plus company-specific follow-ups on named foreign shipbuilders/marine-tech firms). Every finding below was independently opened and read via WebFetch (or corroborated by direct WebFetch of the company's or a primary trade-press/press-release page) before inclusion — no finding is based on a search-snippet alone. Web search quota was exhausted partway through the sweep (Kongsberg and ST Engineering/Keppel queries returned no results because of this), so this is a thorough single pass rather than an exhaustive one; see negative_notes."
+  },
+  "Specialty Steel & Metals": {
+   "source_file": "specialty_steel_metals.json",
+   "total_findings": 6,
+   "new_to_twin": 3,
+   "findings": [
+    {
+     "company": "POSCO",
+     "country_hq": "South Korea",
+     "signal": "Signed a joint venture agreement (50:50) with JSW Steel to build a greenfield 6 MTPA blast-furnace-based integrated steel plant (ironmaking through cold rolling/galvanizing) in Odisha; targeting completion by 2031 after a 48-month construction period. Builds on an October 2024 MoU and July 2025 Heads of Agreement.",
+     "source_url": "https://newsroom.posco.com/en/posco-to-build-integrated-steel-mill-in-india-via-joint-venture-securing-a-strategic-bold-move-for-future-competitiveness/",
+     "date": "2026-04-23",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "JFE Steel Corporation",
+     "country_hq": "Japan",
+     "signal": "Agreed to invest INR 157.5 billion (~JPY 270 billion) for a 50% stake in a new 50:50 joint venture with JSW Steel that will take over the Bhushan Power & Steel integrated steelworks in Sambalpur, Odisha (currently 4.5 MTPA of coils/sheets/bars/wire rods), with plans to expand capacity to 10 MTPA by 2030 and eventually 15 MTPA.",
+     "source_url": "https://www.jfe-steel.co.jp/en/release/2025/12/251203.html",
+     "date": "2025-12-03",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "JFE Steel Corporation",
+     "country_hq": "Japan",
+     "signal": "Committed (with 50:50 JV partner JSW Steel) approximately JPY 120 billion (JPY 99bn capex + JPY 21bn working capital; ~JPY 290bn total commitment including prior investment) to expand electrical/CRGO steel capacity at JSW JFE Electrical Steel Private Limited (Vijayanagar, Karnataka, doubling to 100,000 tpy by 2027) and JSW JFE Electrical Steel Nashik Private Limited (Nashik, Maharashtra, fivefold increase to 250,000 tpy by 2028-2030), explicitly to become the No.1 electrical steel supplier in India. The Nashik facility was formed via JFE/JSW's January 2025 acquisition of thyssenkrupp Electrical Steel India's plant there.",
+     "source_url": "https://www.jfe-steel.co.jp/en/release/2025/08/250804.html",
+     "date": "2025-08-04",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    },
+    {
+     "company": "Nippon Steel Corporation (with joint-venture partner ArcelorMittal)",
+     "country_hq": "Japan (JV partner ArcelorMittal is HQ'd in Luxembourg)",
+     "signal": "Through their 60:40 (ArcelorMittal:Nippon Steel) joint venture AM/NS India, acquired ~890 hectares in Rajayyapeta, Anakapalli district, Andhra Pradesh for a new greenfield integrated steel mill (initially sized ~7 MTPA); broke ground on March 24, 2026 for a first phase costing Rs 70,000 crore / 8.2 MTPA (total project Rs 1,35,000 crore scaling to 18 MTPA), with commissioning targeted by December 2028. ArcelorMittal Chairman Lakshmi Mittal and CEO Aditya Mittal attended in person; PM Modi participated virtually.",
+     "source_url": "https://www.nipponsteel.com/en/news/20250328_100.html",
+     "date": "2025-03-28",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "ArcelorMittal",
+     "country_hq": "Luxembourg",
+     "signal": "Announced three new renewable-energy projects in India (solar/wind/battery storage at Amaravati, Bikaner and Bachau) totalling ~US$900 million (Rs 8,145 crore) to supply captive power to its AM/NS India joint-venture operations, aiming to meet 35% of Hazira's electricity needs by 2028 and cut ~4 million tonnes of CO2 annually.",
+     "source_url": "https://www.ibef.org/news/arcelormittal-unveils-three-green-energy-projects-in-india-with-us-900-million-investment",
+     "date": "2025-12-23",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "POSCO and Hyundai Steel",
+     "country_hq": "South Korea",
+     "signal": "Both companies have publicly expressed willingness to jointly build a special/alloy steel plant (3-5 MTPA, automotive-grade special steel) with India's state-owned RINL on ~3,000 hectares near NMDC's Chhattisgarh raw-material sources. As of the source article this was early-stage discussion only -- no investment figure, financing structure, or start date has been disclosed, and the article notes similar past proposals stalled over weather and raw-material supply-chain issues.",
+     "source_url": "https://www.yieh.com/en/News/posco-hyundai-steel-seek-to-build-special-steel-plants-in-india-jointly/106170",
+     "date": "2025",
+     "confidence": "LOW",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    "voestalpine (Austria) -- CEO/company statements (Feb 2026) describe India as a priority growth market for railway infrastructure, storage systems, and aviation, and mention interest in a pipes/profiles production site, but no location, capacity, investment figure, or timeline has been announced. Purely exploratory language, not a commitment -- excluded from findings.",
+    "thyssenkrupp -- the opposite of an inbound-investment signal: thyssenkrupp DIVESTED its Electrical Steel India business (Nashik facility) to a JSW/JFE joint venture for Rs 4,051 crore, completed January 2025. Correctly attributed to JFE Steel (Japan) as the acquirer/investor in the findings above, not to thyssenkrupp.",
+    "BlueScope (Australia) -- also the opposite direction: BlueScope EXITED India on 31 December 2025 by selling its 50% stake in the Tata BlueScope Steel JV to Tata Steel (now renamed Tata Steel Colors), booking a $57M gain. Not an investment signal.",
+    "Sandvik (Sweden) -- expanding a Pune 'innovation hub' (software/R&D for CAD/CAM brands Cimatron, Mastercam, SigmaNEST; operational early 2026), but this is a digital-manufacturing R&D/software site, not a specialty-steel or metals manufacturing/processing investment -- judged off-sector and excluded.",
+    "Kennametal (US) -- Bengaluru metal-cutting inserts manufacturing facility inauguration found in coverage, but all located sourcing points to 2022-2024, outside the ~18-month window (since early 2025) -- excluded as stale.",
+    "Vallourec (France) and Tenaris (Luxembourg/Argentina) -- both are named as global players in seamless/stainless steel pipe market reports referencing India, but no concrete India investment, plant, or JV announcement from either company could be found in this sweep -- checked and ruled out for lack of evidence, not proof of absence.",
+    "Vedanta Copper's ~$2 billion MoU with Saudi Arabia for overseas copper projects is Vedanta (an Indian company) investing abroad, i.e. the reverse of this sector sweep's mandate (foreign-into-India) -- not included.",
+    "Kobe Steel (Japan) -- confirmed real ~JPY 3 billion investment (press release 2025-06-27) to expand Kobelco Industrial Machinery India (KIMI) for tire/rubber machinery and non-standard compressors, plus a new Chennai capability center (Jan 2025). Excluded from findings because KIMI's output is industrial machinery, not specialty steel or non-ferrous metal product/processing -- judged outside this sector's scope despite Kobe Steel's broader identity as a steelmaker."
+   ],
+   "method": "WebSearch for discovery across ~20 queries (specialty/alloy steel, non-ferrous metals, PLI specialty steel scheme, CRGO/electrical steel, superalloys/titanium, metal processing/machinery, and company-specific follow-ups on POSCO, JFE, Nippon Steel, ArcelorMittal, Kobe Steel, Sandvik, voestalpine, Outokumpu, Vallourec, Tenaris, Kennametal, BlueScope, Norsk Hydro, Constellium, Mitsubishi Materials). Every finding below was opened and read via WebFetch (company/official press releases where available, otherwise established trade press) before being recorded. Candidates that only appeared in search snippets, were exploratory/non-binding statements, or turned out to be the reverse direction (foreign company exiting/divesting India operations) were excluded from findings and logged in negative_notes instead."
+  },
+  "Textiles & Apparel (technical textiles, apparel manufacturing, textile machinery)": {
+   "source_file": "textiles_apparel.json",
+   "total_findings": 1,
+   "new_to_twin": 1,
+   "findings": [
+    {
+     "company": "Epic Group",
+     "country_of_headquarters": "Hong Kong SAR, China",
+     "signal": "Formed a 50:50 joint venture, SPECTRA, with India's Creative Group (MoU signed 9 Jan 2025, formalized via shareholder agreement and announced 5 Jun 2025) to build what is described as India's largest sustainable denim-and-bottoms manufacturing facility -- initial investment of $15 million, targeting Rs 500 crore (~$60M) turnover, 700,000 units/month capacity, powered by renewable energy, creating 3,000 jobs initially (scaling toward 10,000+). Epic Group -- a Hong Kong-headquartered apparel manufacturer with existing facilities in Bangladesh, Vietnam and Sri Lanka but none previously in India -- is the foreign co-founder; Creative Group is the pre-existing Indian (Mumbai-headquartered) partner. Facts (investment figure, dates, capacity, job numbers) are consistent and specific across every independent trade-press source checked.",
+     "source_url": "https://www.indiantextilemagazine.in/epic-group-and-creative-group-join-forces-to-launch-spectra-a-game-changing-apparel-venture-in-india/",
+     "date": "2025-06-05",
+     "confidence": "HIGH",
+     "new_to_twin": true
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "RE&UP (Recycling Technologies)",
+     "country_of_headquarters": "Netherlands (Eindhoven), built on Turkey-based SANKO Holding's textile heritage",
+     "reason_excluded": "About eight Indian news-aggregator sites (bizzbuzz, newkerala, prokerala, thehansindia, etvbharat, punjabkesari, ommcomnews, tennews) repeat a single one-line claim that RE&UP 'announced an investment of Rs 4,800 crore in India' at Bharat Tex 2026 (14-17 Jul 2026), but every one of them is a near-identical rewrite of the same wire item with zero added detail -- no location, no facility description, no executive quote. RE&UP's own official newsroom (reandup.com/the-latest/), checked through its most recent post (Jul 2026), lists six items in that window (B Corp certification, Fiber Club launch, Global Fashion Summit, Techtextil 2026, a Madewell partnership, EU waste regulation) and contains no mention of India, an India investment, or Bharat Tex at all. This is exactly the single-secondary-source/uncorroborated pattern this project's prior sweeps were burned by; excluded pending a primary source (RE&UP press release, SEC/company filing, or a substantive named-location article)."
+    },
+    {
+     "company": "Indorama Ventures PCL (via Indo Rama Synthetics India / Nagpur plant)",
+     "country_of_headquarters": "Thailand",
+     "reason_excluded": "Genuine, well-documented ~$82M (INR 6bn) Nagpur PET-resin and specialty-yarn capacity expansion, with a direct quote from Indorama's CEO of Combined PET/IOD/Fibers calling India 'a strategic high-growth market.' Excluded purely on timing: the underlying press release and every outlet covering it (knittingindustry, plasticsnews, petnology, fibre2fashion, indiantextilemagazine) date the announcement to 25 May 2021 -- well outside the ~18-month (since early 2025) freshness window -- even though it continued to surface in 2025/2026-dated search snippets. No separate, newer (2025/2026) Indorama India capex announcement was found in this pass."
+    },
+    {
+     "company": "Teijin Limited",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "Only India-relevant 2025/2026 news item found on Teijin's own newsroom is a 13 Nov 2025 'strategic alliance' with BioVaram on regenerative medicine products and implantable medical devices in Japan and India -- a healthcare/medtech signal, not textiles/technical-textiles. Excluded as out of sector scope; no separate Teijin technical-textiles (aramid/carbon fiber) India investment found."
+    },
+    {
+     "company": "Kordsa (Sabanci Holding)",
+     "country_of_headquarters": "Turkey",
+     "reason_excluded": "Checked Kordsa's own media/news page directly (technical textiles / tire-cord reinforcement is squarely in this sector). Kordsa's own site lists its operating countries as Turkey, Brazil, Indonesia, Thailand, Italy and the USA -- India is not among them, and no India-specific announcement was found."
+    },
+    {
+     "company": "Toray Industries",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "Checked Toray's global newsroom directly; the visible recent items (pickleball tech, fashion partnerships, aviation materials, water treatment, sponsorships) contain no 2025/2026 India-specific investment, plant, or JV announcement."
+    },
+    {
+     "company": "Groz-Beckert KG / Freudenberg Group / MAS Holdings",
+     "country_of_headquarters": "Germany / Germany / Sri Lanka",
+     "reason_excluded": "Attempted direct WebFetch against each company's newsroom (relevant given Groz-Beckert = textile machinery/needles, Freudenberg = nonwovens/technical textiles, MAS Holdings = major Sri Lankan apparel manufacturer with a track record of India expansion interest). Groz-Beckert's news hub returned only navigation chrome with no article content reachable; Freudenberg's and MAS Holdings' newsroom URLs 404'd. No findings either way -- this is an access gap, not a checked-and-ruled-out lead, and is flagged for a future pass with working URLs or search-budget headroom."
+    },
+    {
+     "company": "General trade-press sweep (fibre2fashion, just-style, indiantextilemagazine, apparelresources India manufacturing-news sections)",
+     "country_of_headquarters": "n/a -- publication-level check",
+     "reason_excluded": "Fetched each outlet's manufacturing/India news listing page directly looking for any additional foreign-company India investment headline beyond the Spectra JV. None found in the visible listings (mostly domestic-Indian-company coverage: Laxmipati Apparels, Krishna Lamicoat, Filatex India, regional Tirupur/Odisha/Maharashtra growth stories) or, for just-style, non-India stories (Sri Lanka, Bangladesh-Netherlands, UK-Pakistan, UAE items)."
+    }
+   ],
+   "method": "WebSearch for discovery across multiple query angles (foreign textile/apparel manufacturer India plant announcements, technical textiles JVs, textile machinery expansions, and company-specific follow-ups), followed by WebFetch to open and read each candidate article/press release directly before inclusion. This sweep deliberately excludes ASICS Corporation, Ralph Lauren, and Steven Madden -- all already assessed in the prior layer-38 deep-dive (scripts/build_textile_sector_targets.py) -- and looked only for genuinely new companies/signals. The session's WebSearch quota was exhausted after ~15 queries (a shared session-wide cap, not specific to this sector), which capped further discovery angles (Sri Lankan/Chinese/Korean/Taiwanese apparel majors such as Shenzhou International, MAS Holdings, Brandix, Youngone, Eclat Textile, TAL Apparel were queued as follow-ups but the searches for them could not be run). Remaining verification relied on WebFetch against company newsrooms and trade-press URLs already known or surfaced (Toray, Freudenberg, Groz-Beckert, Teijin, Kordsa, MAS Holdings, fibre2fashion, just-style, indiantextilemagazine, apparelresources), which yielded no further India-specific findings beyond what discovery search had already surfaced."
+  },
+  "White Goods & Electricals (air conditioners, LED lighting, home appliances, electrical equipment — PLI for White Goods: ACs and LEDs)": {
+   "source_file": "white_goods_electricals.json",
+   "total_findings": 6,
+   "new_to_twin": 1,
+   "findings": [
+    {
+     "company": "LG Electronics",
+     "country_of_headquarters": "South Korea",
+     "signal": "Broke ground on a $600 million third home-appliance manufacturing plant at Sri City, Andhra Pradesh (LG's third India plant after Noida and Pune); AC production to start late 2026, with washing machines, refrigerators and compressors following by 2029, reaching annual capacity of 1.5 million ACs, 800,000 refrigerators, 850,000 washing machines and 2 million compressors.",
+     "source_url": "https://www.kedglobal.com/corporate-investment/newsView/ked202505080004",
+     "date": "2025-05-08",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Mitsubishi Electric",
+     "country_of_headquarters": "Japan",
+     "signal": "Inaugurated a new ₹2,100 crore (~$250M) air conditioner and compressor manufacturing facility in Chennai, Tamil Nadu (52 acres, Origins by Mahindra industrial cluster), with annual capacity of 300,000 room ACs and 650,000 compressors — the company's second India plant in two years after its Pune factory-automation facility (2023).",
+     "source_url": "https://mitsubishielectric.in/news/mitsubishi-electric-india-expands-manufacturing-footprint-with-2100-crore-investment-facility-inaugurated-by-tamil-nadus-honble-cm-thiru-mk-stalin",
+     "date": "2026-02-06",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Carrier Global",
+     "country_of_headquarters": "United States",
+     "signal": "Announced plans to invest approximately ₹1,000 crore (~$120 million) to build a new air conditioner manufacturing facility at Sri City, Andhra Pradesh, expected to create around 3,000 direct and indirect jobs.",
+     "source_url": "https://www.whalesbook.com/news/English/industrial-goodsservices/Carrier-Global-Invests-dollar120M-in-India-for-New-AC-Hub/69fafe00d27867b982d31387",
+     "date": "2026-05-06",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
+    },
+    {
+     "company": "Hisense",
+     "country_of_headquarters": "China",
+     "signal": "Inaugurated its first India manufacturing facility, a joint venture with Epack Manufacturing Technologies (a subsidiary of Epack Durable) at Sri City, Andhra Pradesh — a 10-acre facility built with an investment exceeding $30 million, initially producing 100% of Hisense India's room air conditioners at 0.75 million units/year capacity (Phase 1); commercial production began February 2026.",
+     "source_url": "https://mtdcnc.com/news/mtdcnc/hisense-launches-first-india-manufacturing-facility-at-sri-city-andhra-pradesh/",
+     "date": "2026-02-12",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    },
+    {
+     "company": "Signify",
+     "country_of_headquarters": "Netherlands",
+     "signal": "Announced a proposed 50-50 joint venture with Dixon Technologies (India) to manufacture LED lighting products (bulbs, downlights, spots, battens, ropes, strips and accessories) for the Indian market, aligned with India's Make in India initiative and positioned to secure PLI eligibility.",
+     "source_url": "https://www.signify.com/global/our-company/news/press-releases/2025/20250327-signify-and-dixon-technologies-propose-joint-venture-to-advance-lighting-manufacturing-excellence-in-india",
+     "date": "2025-03-27",
+     "confidence": "HIGH",
+     "new_to_twin": false
+    },
+    {
+     "company": "Haier",
+     "country_of_headquarters": "China",
+     "signal": "Haier Appliances India announced a ₹3,500 crore investment plan (funded through internal accruals, deployed in phases over 3-4 years) to set up a third India manufacturing facility, with the southern or western regions of the country under consideration for the site; final location expected to be decided the following year.",
+     "source_url": "https://www.newsonprojects.com/news/haier-india-plans-3500-crore-investment-eyes-third-manufacturing-facility",
+     "date": "2025-12-13",
+     "confidence": "MEDIUM",
+     "new_to_twin": false
+    }
+   ],
+   "negative_notes": [
+    {
+     "company": "Daikin Industries",
+     "country_of_headquarters": "Japan",
+     "reason_excluded": "The '33-acre expansion / third Sri City plant' coverage that surfaces in searches is from the original 2023 announcement and groundbreaking (grand opening ceremony reported November-December 2023, Business Standard/Japan Times coverage dated September 2024). This predates the ~18-month (since early 2025) window for this sweep and does not represent new activity; no fresh 2025-2026 Daikin India investment announcement was found on this pass."
+    },
+    {
+     "company": "Whirlpool of India",
+     "reason_excluded": "Whirlpool of India Limited invested ₹245+ crore in a new refrigerator production line at its Pune (Rajnangaon) plant (announced 2026-07-23, per Technuter/Mobility India coverage), which is a real capex event. However Whirlpool of India Limited is itself India-headquartered (Gurugram) and its US parent (Whirlpool Corp) has been actively reducing its stake — down from 51% to 39.76% in late 2025, with mutual funds now the second-largest holder (31.76%) and reports (Nov 2025) of Advent International in talks to buy a further stake. Given the parent is diluting rather than deepening its India commitment, and the operating entity is domestically headquartered, this was judged not to be a genuine 'foreign company investing in India' signal for this sector sweep and was excluded rather than reported as a finding."
+    },
+    {
+     "company": "Panasonic / Panasonic Life Solutions India",
+     "reason_excluded": "Multiple trade-press pickups (search snippets only, traced to a Business Standard piece dated 2025-09-19) report Panasonic Life Solutions India is evaluating a new manufacturing unit and may apply for the reopened white goods PLI window. A direct WebFetch read of the Business Standard article returned HTTP 403 (paywalled/blocked), and two alternate sources I could open (investmentmonitor.ai and an August 2026 UP-Japan Investment Meet piece from The Wire) were either stale (referencing fiscal-2024-era spend plans) or too vague (general 'long-term commitment' language about UP distribution/services expansion, no capex figure or plant specifics). Excluded because no substantive, directly-read, dated 2025-2026 article with concrete investment detail could be confirmed."
+    },
+    {
+     "company": "BSH Home Appliances (Bosch / Siemens brands)",
+     "reason_excluded": "Coverage found (Businessworld, Entrepreneur India, Indian Retailer) describes general 2025-2026 India growth strategy — portfolio expansion, 'Make-in-India-for-India' cooling strategy, premiumisation trends, category-level growth percentages — but no concrete new plant, capex figure, or specific manufacturing investment announcement that I could verify via direct WebFetch. Treated as marketing/strategy commentary rather than a substantiated investment signal; excluded."
+    },
+    {
+     "company": "Samsung Electronics",
+     "reason_excluded": "April 2025 coverage found only concerns a new Bespoke AI product line launch (ACs and refrigerators) tailored to Indian power conditions — a product/marketing announcement, not a capex, plant, or JV investment signal. Excluded as out of scope for this sweep."
+    },
+    {
+     "company": "TCL (via TCL CSOT's Prima acquisition)",
+     "reason_excluded": "December 2025 reporting on TCL CSOT acquiring an 80% stake in LED chip maker Prima (~CNY 490 million) appears to be a China-domestic supply-chain move (vertically integrating LED chip production), with no indication in the search results of an India nexus. Not pursued further / not included, since it does not show a specific India investment commitment."
+    },
+    {
+     "company": "Electrolux / Arçelik-Beko / Voltbek",
+     "reason_excluded": "No specific 2025-2026 India investment, plant, or expansion announcement was found for Electrolux or Arçelik/Beko. The existing Arçelik-Tata joint venture (Voltbek Home Appliances, formed 2017) is a known long-standing entity, not new activity; a follow-up search for recent Voltbek/Arçelik India investment news could not be completed because the session's WebSearch budget was exhausted before results returned. Logged as unconfirmed rather than included."
+    },
+    {
+     "company": "Midea",
+     "reason_excluded": "No specific India investment, plant, or JV announcement for Midea was found in this pass; searches returned only the company's generic investor-relations page. A planned follow-up search (Amber Enterprises' foreign JV ties, which include Midea) could not be completed because the session's WebSearch budget was exhausted. Logged as unconfirmed rather than included."
+    }
+   ],
+   "method": "WebSearch used for discovery across multiple angles (AC manufacturers, LED lighting, home appliances, foreign PLI participants, company-specific follow-ups). Every company listed under 'findings' was verified by opening and reading the actual source article/press release via WebFetch (not from search snippets alone). Candidates that could not be confirmed via a direct WebFetch read of a substantive, on-topic article, or that turned out to be too vague / outside the ~18-month window / not genuinely about a new India investment, were excluded and logged under negative_notes instead of being reported as findings."
+  }
+ }
+}

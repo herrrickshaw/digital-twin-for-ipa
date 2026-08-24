@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-08-17",
+ "built": "2026-08-24",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -29,9 +29,9 @@
   }
  },
  "counts": {
-  "prs_bills_total": 972,
+  "prs_bills_total": 973,
   "investment_relevant": 170,
-  "recent_2024plus": 73,
+  "recent_2024plus": 74,
   "active_watchlist": 35,
   "drishti_editorials": 24
  },
@@ -2007,6 +2007,14 @@
    "investment_lane": null,
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/earlier-lok-pal-bills"
+  },
+  {
+   "slug": "foreign-contribution-regulation-amendment-rules-2026",
+   "title": "Foreign Contribution Regulation Amendment Rules 2026",
+   "year": 2026,
+   "investment_lane": null,
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/foreign-contribution-regulation-amendment-rules-2026"
   },
   {
    "slug": "industrial-relations-central-rules-2026",
@@ -9464,14 +9472,24 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/16th-finance-commission-and-the-future-of-indian-federalism"
   },
   {
+   "slug": "achieving-self-reliance-in-edible-oils",
+   "topic": "Achieving Self Reliance in Edible Oils",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/achieving-self-reliance-in-edible-oils"
+  },
+  {
+   "slug": "addressing-indias-education-and-job-crisis",
+   "topic": "Addressing Indias Education and Job Crisis",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/addressing-indias-education-and-job-crisis"
+  },
+  {
    "slug": "balancing-food-fuel-and-nutrition-security-in-india",
    "topic": "Balancing Food Fuel and Nutrition Security in India",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/balancing-food-fuel-and-nutrition-security-in-india"
   },
   {
-   "slug": "blueprint-for-indias-climate-adaptation",
-   "topic": "Blueprint for Indias Climate Adaptation",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/blueprint-for-indias-climate-adaptation"
+   "slug": "building-a-resilient-care-economy-in-india",
+   "topic": "Building A Resilient Care Economy in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-a-resilient-care-economy-in-india"
   },
   {
    "slug": "commonwealth-games-2026-and-future-of-sports-in-india",
@@ -9494,11 +9512,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/fcra-evolution-and-national-security"
   },
   {
-   "slug": "forging-indias-sovereign-ai-path",
-   "topic": "Forging Indias Sovereign Ai Path",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/forging-indias-sovereign-ai-path"
-  },
-  {
    "slug": "future-roadmap-for-indias-iron-steel-industry",
    "topic": "Future Roadmap for Indias Iron Steel Industry",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/future-roadmap-for-indias-iron-steel-industry"
@@ -9509,14 +9522,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/gen-z-and-the-new-features-of-indian-politics"
   },
   {
+   "slug": "indias-100-gw-nuclear-power-ambition",
+   "topic": "Indias 100 Gw Nuclear Power Ambition",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-100-gw-nuclear-power-ambition"
+  },
+  {
    "slug": "indias-counter-to-global-shocks",
    "topic": "Indias Counter to Global Shocks",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-counter-to-global-shocks"
-  },
-  {
-   "slug": "indias-strategy-against-drug-abuse",
-   "topic": "Indias Strategy Against Drug Abuse",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-strategy-against-drug-abuse"
   },
   {
    "slug": "j-k-integration-from-article-370-to-statehood-debate",
@@ -9544,11 +9557,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/natural-farming-indias-path-to-resilient-agriculture"
   },
   {
-   "slug": "pressure-groups-in-india",
-   "topic": "Pressure Groups in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/pressure-groups-in-india"
-  },
-  {
    "slug": "reforming-indias-police-system",
    "topic": "Reforming Indias Police System",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-police-system"
@@ -9564,19 +9572,19 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-cooperative-federalism-for-inclusive-national-development"
   },
   {
+   "slug": "rethinking-indias-food-safety-framework",
+   "topic": "Rethinking Indias Food Safety Framework",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/rethinking-indias-food-safety-framework"
+  },
+  {
+   "slug": "strategy-for-tea-sector-reforms",
+   "topic": "Strategy for Tea Sector Reforms",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strategy-for-tea-sector-reforms"
+  },
+  {
    "slug": "sustainability-of-data-centres",
    "topic": "Sustainability of Data Centres",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/sustainability-of-data-centres"
-  },
-  {
-   "slug": "sustainable-urban-development-roadmap",
-   "topic": "Sustainable Urban Development Roadmap",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/sustainable-urban-development-roadmap"
-  },
-  {
-   "slug": "unlocking-indias-space-economy-through-private-sector",
-   "topic": "Unlocking Indias Space Economy Through Private Sector",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/unlocking-indias-space-economy-through-private-sector"
   }
  ],
  "linkage": {

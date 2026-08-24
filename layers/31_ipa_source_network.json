@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-08-17",
+ "built": "2026-08-24",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -237,7 +237,7 @@
     "country": "Brazil",
     "organization": "Brazilian Trade and Investment Promotion Agency (Apex-Brasil)",
     "website": "https://portal.apexbrasil.com.br/",
-    "website_status": 200
+    "website_status": 302
    },
    {
     "country": "Brazil",
@@ -375,7 +375,7 @@
     "country": "Egypt, Arab Rep.",
     "organization": "General Authority for Investment & Free Zones (GAFI)",
     "website": "https://gafi.gov.eg/English/Pages/default.aspx",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Egypt, Arab Rep.",
@@ -453,7 +453,7 @@
     "country": "Guinea",
     "organization": "Agence de Promotion des Investissements Privés (APIP-Guinée)",
     "website": "http://www.apip.gov.gn/\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-    "website_status": 200
+    "website_status": "ERR:timeout"
    },
    {
     "country": "Honduras",
@@ -507,7 +507,7 @@
     "country": "Italy",
     "organization": "Invest in Tuscany\r\n",
     "website": "https://www.investintuscany.com/",
-    "website_status": 200
+    "website_status": "ERR:timeout"
    },
    {
     "country": "Japan",
@@ -567,7 +567,7 @@
     "country": "Lesotho",
     "organization": "Lesotho National Development Corporation (LNDC)\r\n\r\n\r\n\r\n",
     "website": "http://www.lndc.org.ls/",
-    "website_status": 523
+    "website_status": 200
    },
    {
     "country": "Liberia",
@@ -765,7 +765,7 @@
     "country": "Russian Federation",
     "organization": "Fund RC-Investments",
     "website": "https://roscongress-invest.com/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Russian Federation",
@@ -795,7 +795,7 @@
     "country": "Senegal",
     "organization": "Invest in Senegal (APIX)",
     "website": "http://investinsenegal.com/",
-    "website_status": 403
+    "website_status": 200
    },
    {
     "country": "Sierra Leone",
@@ -927,7 +927,7 @@
     "country": "Uganda",
     "organization": "Uganda Investment Authority (UIA)",
     "website": "https://www.ugandainvest.go.ug/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "United Arab Emirates",
@@ -1523,7 +1523,7 @@
  "url_liveness": {
   "https://waipa.org/wp-content/uploads/memberstable-16.html": 200,
   "https://waipa.org/members/": 200,
-  "https://investmentpolicy.unctad.org": 403,
+  "https://investmentpolicy.unctad.org": 200,
   "https://www.investindia.gov.in/sitemap.xml": 200,
   "https://static.investindia.gov.in/s3fs-public/2025-01/fdi_policy_consolidated.pdf": 200,
   "https://www.jetro.go.jp/en/": 200,
@@ -1536,7 +1536,7 @@
   "https://www.enterprisesg.gov.sg": 403,
   "https://www.edb.gov.sg": 200,
   "https://www.investhk.gov.hk": 200,
-  "https://investtaiwan.nat.gov.tw": 200,
+  "https://investtaiwan.nat.gov.tw": 404,
   "https://www.business-sweden.com": 200,
   "https://www.investcanada.ca": 403,
   "https://www.globalaustralia.gov.au": "ERR:URLError",

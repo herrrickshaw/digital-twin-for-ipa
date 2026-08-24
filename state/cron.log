@@ -819,3 +819,180 @@ reportage html: 4091 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa
 reportage ministry html: 4091 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
 reportage latest html: 129 central rows, 565 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
 reportage states html: 14823 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+  2026-08-23   19 releases
+indexed 19 release rows 2026-08-23 → 2026-08-23
+TS: FETCH FAILED (<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>)
+MP (Madhya Pradesh): fetched 496, 19 new (0 machine-translated) -> 63872 total in register
+AP (Andhra Pradesh): fetched 105, 0 new (0 machine-translated) -> 105 total in register
+UP (Uttar Pradesh): fetched 60, 0 new (0 machine-translated) -> 253 total in register
+GJ (Gujarat): fetched 29, 0 new (0 machine-translated) -> 176 total in register
+MH (Maharashtra): fetched 200, 62 new (0 machine-translated) -> 26332 total in register
+KA (Karnataka): fetched 99, 0 new (0 machine-translated) -> 99 total in register
+GA (Goa): fetched 200, 0 new (0 machine-translated) -> 330 total in register
+RJ (Rajasthan): fetched 100, 20 new (0 machine-translated) -> 74343 total in register
+PB (Punjab): fetched 17, 0 new (0 machine-translated) -> 34 total in register
+MZ (Mizoram): fetched 50, 0 new (0 machine-translated) -> 94 total in register
+NL (Nagaland): fetched 23, 0 new (0 machine-translated) -> 114 total in register
+SK (Sikkim): fetched 30, 0 new (0 machine-translated) -> 80 total in register
+CH (Chandigarh): fetched 21, 0 new (0 machine-translated) -> 21 total in register
+DD (DNH & Daman-Diu): fetched 24, 0 new (0 machine-translated) -> 46 total in register
+KL (Kerala): fetched 27, 27 new (0 machine-translated) -> 232 total in register
+TS (Telangana): fetched 0, 0 new (0 machine-translated) -> 10 total in register
+AS (Assam): fetched 14, 0 new (0 machine-translated) -> 13 total in register
+backfill: 0/122 rows gained title_en
+translation breaker tripped -- rerun later to resume
+signal pass: 0 translated, 5 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4091 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4091 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4091 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 126 central rows, 549 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 14823 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+  2026-08-24   14 releases
+indexed 14 release rows 2026-08-24 → 2026-08-24
+TS: FETCH FAILED (<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1129)>)
+MP (Madhya Pradesh): fetched 475, 18 new (0 machine-translated) -> 63890 total in register
+AP (Andhra Pradesh): fetched 105, 0 new (0 machine-translated) -> 105 total in register
+UP (Uttar Pradesh): fetched 60, 0 new (0 machine-translated) -> 253 total in register
+GJ (Gujarat): fetched 29, 0 new (0 machine-translated) -> 176 total in register
+MH (Maharashtra): fetched 200, 9 new (0 machine-translated) -> 26341 total in register
+KA (Karnataka): fetched 99, 0 new (0 machine-translated) -> 99 total in register
+GA (Goa): fetched 200, 0 new (0 machine-translated) -> 330 total in register
+RJ (Rajasthan): fetched 100, 12 new (0 machine-translated) -> 74355 total in register
+PB (Punjab): fetched 17, 0 new (0 machine-translated) -> 34 total in register
+MZ (Mizoram): fetched 50, 0 new (0 machine-translated) -> 94 total in register
+NL (Nagaland): fetched 23, 0 new (0 machine-translated) -> 114 total in register
+SK (Sikkim): fetched 30, 0 new (0 machine-translated) -> 80 total in register
+CH (Chandigarh): fetched 21, 0 new (0 machine-translated) -> 21 total in register
+DD (DNH & Daman-Diu): fetched 24, 0 new (0 machine-translated) -> 46 total in register
+KL (Kerala): fetched 27, 4 new (0 machine-translated) -> 236 total in register
+TS (Telangana): fetched 0, 0 new (0 machine-translated) -> 10 total in register
+AS (Assam): fetched 14, 0 new (0 machine-translated) -> 13 total in register
+backfill: 0/157 rows gained title_en
+translation breaker tripped -- rerun later to resume
+signal pass: 0 translated, 5 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4091 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4091 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4091 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 126 central rows, 531 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 14824 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+layer 25 written: 15 land states, 11 open/closing incentive windows -> /Users/umashankar/digital-twin-for-ipa/layers/25_land_incentive_linkages.json
+layer 26: 42 sectors / 12,385 NIP opportunities, 9 flagship projects -> /Users/umashankar/digital-twin-for-ipa/layers/26_project_pipeline.json
+layer 27: 31 bodies across 21 countries, 30 live, 11 with events pages -> /Users/umashankar/digital-twin-for-ipa/layers/27_entry_facilitators.json
+  NOT live (check): Business France (India) (0)
+layer 28: 973 PRS bills; 35 active watchlist (investment-relevant & 2024+); 170 relevant all-time; 24 Drishti editorials -> /Users/umashankar/digital-twin-for-ipa/layers/28_policy_watchlist.json
+layer 29: 25 MoSPI data sources (6 core / 6 sector / 13 context) -> /Users/umashankar/digital-twin-for-ipa/layers/29_mospi_data_sources.json
+layer 30: 12 import chapters, 7 substitutable policy gaps, top deficit country China ($-112.2bn) -> /Users/umashankar/digital-twin-for-ipa/layers/30_trade_deficit_map.json
+members scraped: 138 | urls checked: 21
+wrote /Users/umashankar/digital-twin-for-ipa/layers/31_ipa_source_network.json
+/Users/umashankar/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  window 2026-02-05..2026-08-24: 32 filings across 11 phrases
+  wrote layers/16_enrichment/edgar_india_sweep.json (89 cumulative)
+  NEW-LEAD [foreign_operator] 2026-08-18 20-F   BHP Group Ltd  (BHP, BHPLF)  (CIK 0000811809) — expand in India
+  NEW-LEAD [foreign_operator] 2026-08-18 20-F   DIAGEO PLC  (DEO, DGEAF)  (CIK 0000835403) — investment in India
+  NEW-LEAD [foreign_operator] 2026-07-06 20-F   MITSUBISHI UFJ FINANCIAL GROUP INC  (MUFG, MBFJF)  (CIK 0000067088) — investment in India
+  NEW-LEAD [foreign_operator] 2026-06-15 10-K   Alternus Clean Energy, Inc.  (CIK 0001883984) — manufacturing in India
+  NEW-LEAD [foreign_operator] 2026-06-08 10-K   GRAHAM CORP  (GHM)  (CIK 0000716314) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-05-27 10-K   Loop Industries, Inc.  (LOOP)  (CIK 0001504678) — manufacturing facility in India
+  NEW-LEAD [foreign_operator] 2026-04-30 20-F   TRINITY BIOTECH PLC  (TRIB)  (CIK 0000888721) — manufacturing facility in India
+  NEW-LEAD [foreign_operator] 2026-03-31 10-K   Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415) — manufacturing in India
+  NEW-LEAD [pe_fund] 2026-03-30 10-K   Carlyle Private Equity Partners Fund, L.P.  (CIK 0002065337) — invest in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-30 10-K   REVIVA PHARMACEUTICALS HOLDINGS, INC.  (RVPH)  (CIK 0001742927) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-27 10-K   Brookfield Private Equity Fund LP  (CIK 0002074065) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-20 10-K   VistaOne, L.P.  (CIK 0002044820) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-13 10-K   Blackstone Private Equity Strategies Fund L.P.  (CIK 0001930054) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-12 10-K   Health Catalyst, Inc.  (HCAT)  (CIK 0001636422) — investments in India
+  NEW-LEAD [foreign_operator] 2026-03-11 10-K   ALPHA PRO TECH LTD  (APT)  (CIK 0000884269) — manufacturing facility in India
+  NEW-LEAD [pe_fund] 2026-03-06 10-K   Blackstone Infrastructure Strategies L.P.  (CIK 0002030772) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-04 20-F   Caesarstone Ltd.  (CSTE)  (CIK 0001504379) — manufacturing facility in India
+  NEW-LEAD [foreign_operator] 2026-02-24 10-K   FIRST SOLAR, INC.  (FSLR)  (CIK 0001274494) — manufacturing facility in India, manufacturing in India
+  NEW-LEAD [foreign_operator] 2026-02-18 10-K   BLACKBAUD INC  (BLKB)  (CIK 0001280058) — expansion in India
+  NEW-LEAD [foreign_operator] 2026-02-06 10-K   Philip Morris International Inc.  (PM)  (CIK 0001413329) — investments in India
+{
+ "companies": 1785,
+ "in_more_than_one_layer": 1508,
+ "by_role": {
+  "alias_check": 18,
+  "clearance_lead": 98,
+  "foreign_lead": 321,
+  "pairing_prospective": 7,
+  "pairing_verified": 12,
+  "pool_policy": 1371,
+  "pool_visibility": 1331,
+  "shortlist_target": 136
+ },
+ "india_entities": 1429,
+ "credit_rated": 82,
+ "by_country_top10": {
+  "India": 1500,
+  "United States": 75,
+  "?": 36,
+  "United Kingdom": 12,
+  "South Korea": 12,
+  "Japan": 12,
+  "China": 12,
+  "Australia": 11,
+  "Taiwan": 9,
+  "Turkey": 7
+ }
+}
+wrote /Users/umashankar/digital-twin-for-ipa/data/companies.db and /Users/umashankar/digital-twin-for-ipa/layers/32_company_db.json
+41 sector pages
+announcements: 439 | companies matched: 41 | match rows: 80 | exception verdicts challenged: 1
+  CHALLENGED [PARTIALLY_VISIBLE] Nayara Energy Limited <- oil-and-gas: Nayara Energy, India's largest private fuel retailer, plans to add 400 petrol pumps this y
+{
+ "ran": "2026-08-24",
+ "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
+ "api_calls_used": 39,
+ "calls_by_source": {
+  "newsapi": 26,
+  "newsdata": 2,
+  "marketaux": 10,
+  "alphavantage": 1
+ },
+ "articles_total": 103,
+ "new_articles": 103,
+ "match_rows_added": 21,
+ "sources_skipped_or_errors": [],
+ "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 \u2014 weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
+}
+exception hits: 0
+{
+ "ran": "2026-08-24",
+ "since": "2025-01-01",
+ "pages_fetched": 16,
+ "filings_in_window": 387,
+ "new_rows": 392,
+ "match_rows": 15,
+ "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB \u2014 the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
+}
+  [strong] Encube Ethicals Private Limited  <- 2026-08-06: Encube Ethicals Limited - DRHP
+  [strong] Sky Alloys And Power Limited  <- 2026-06-25: Sky Alloys and Power Limited- DRHP
+  [strong] Renny Strips Limited  <- 2025-12-19: Renny Strips Limited
+  [strong] Sky Alloys And Power Limited  <- 2025-10-09: SKY ALLOYS AND POWER LIMITED
+  [strong] Virupaksha Organics Limited  <- 2025-10-08: Virupaksha Organics Limited - DRHP
+  [strong] Supreet Chemicals Limited  <- 2025-09-05: Supreet Chemicals Limited - DRHP
+  [strong] German Green Steel And Power Limited  <- 2025-07-08: German Green Steel and Power Limited - DRHP
+  [strong] A-One Steels India Limited  <- 2025-04-24: A-One Steels India Limited - Addendum to DRHP
+  [strong] Jajoo Rashmi Refractories Limited  <- 2025-04-22: Jajoo Rashmi Refractories Limited - Addendum to DRHP
+  [strong] Advance Agrolife Private Limited  <- 2025-04-02: Advance Agrolife Limited
+  [strong] SHREEJI SHIPPING GLOBAL L  <- 2025-01-30: SHREEJI SHIPPING GLOBAL LIMITED
+  [strong] Dorf-Ketal Chemicals India Limited  <- 2025-01-27: Dorf-Ketal Chemicals India Limited
+  [strong] SHANTI GOLD INTERNATION L  <- 2025-01-22: Shanti Gold International Limited
+  [strong] A-One Steels India Limited  <- 2025-01-10: A One Steels India Limited
+  [strong] Anthem Biosciences Limited  <- 2025-01-06: ANTHEM BIOSCIENCES LIMITED
+extracted 0, errors 0
+loc links scraped: 3 | urls checked: 9
+wrote /Users/umashankar/digital-twin-for-ipa/layers/33_policy_finance_extensions.json
+company distress flags: 11 -> {'downgrade': 1, 'litigation_or_regrade': 1, 'rating_darkness': 4, 'sub_investment_grade': 3, 'watch_negative': 2}
+land pools: 5, named assets: 7
+wrote /Users/umashankar/digital-twin-for-ipa/layers/34_stressed_assets.json + stressed_assets view
+routes: 64 checked, 2 down -> /Users/umashankar/digital-twin-for-ipa/state/routes_2026-08-24.json
+  DOWN DSIR CMS (000) https://cms-dsir.digifootprint.gov.in/wp-json/wp/v2/
+  DOWN Kerala invest (000) https://invest.kerala.gov.in
+  CHANGE route Bihar Udyami: ok=False -> True (200)
+unnati: http=200, registration_stopped=True -> /Users/umashankar/digital-twin-for-ipa/state/unnati_2026-08-24.json
+nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-08-24.json
+CHANGE rbi WSS: Aug 15, 2026 -> Aug 22, 2026
+rbi: latest WSS issue = Aug 22, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-08-24.json
+send_twin_alert: no credentials available (env or plist) -- not sent

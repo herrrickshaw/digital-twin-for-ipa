@@ -1,6 +1,6 @@
 # Quarterly Reportage — key announcements × scheme × ministry
 
-*Generated 2026-08-22 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
+*Generated 2026-08-24 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
 
 ## 2026Q3 — 182 scheme-mapped announcements
 

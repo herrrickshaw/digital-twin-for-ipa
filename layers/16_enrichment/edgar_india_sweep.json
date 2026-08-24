@@ -1,8 +1,30 @@
 {
  "layer": "edgar_india_sweep",
- "built": "2026-08-17",
+ "built": "2026-08-24",
  "method": "EDGAR FTS exact-phrase sweep, forms 10-K,20-F; cumulative, deduped on accession; consumed by shortlist rebuild",
  "filings": [
+  {
+   "adsh": "0001193125-26-354647",
+   "company": "BHP Group Ltd  (BHP, BHPLF)  (CIK 0000811809)",
+   "form": "20-F",
+   "file_date": "2026-08-18",
+   "phrases": [
+    "expand in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
+  {
+   "adsh": "0001628280-26-057529",
+   "company": "DIAGEO PLC  (DEO, DGEAF)  (CIK 0000835403)",
+   "form": "20-F",
+   "file_date": "2026-08-18",
+   "phrases": [
+    "investment in India"
+   ],
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=&type=&dateb=&owner=include&count=40&search_text=",
+   "segment": "foreign_operator"
+  },
   {
    "adsh": "0001493152-26-035684",
    "company": "Yatra Online, Inc.  (YTRA)  (CIK 0001516899)",

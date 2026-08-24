@@ -1,7 +1,7 @@
 {
  "layer": 32,
  "name": "company_db",
- "built": "2026-08-17",
+ "built": "2026-08-24",
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
@@ -52,7 +52,7 @@
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
  "ii_ticker_validation": {
-  "ran": "2026-08-17",
+  "ran": "2026-08-24",
   "what": "Invest India sector-page LATEST-UPDATES tickers scraped as an announcement channel and matched (conservatively, fragments kept for review) against the company DB; QUIET/PARTIALLY_VISIBLE clearance leads that the national IPA itself announces are flagged as challenged verdicts",
   "sector_pages_scraped": 41,
   "fetch_errors": [],
@@ -159,7 +159,7 @@
   "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
  },
  "news_collection": {
-  "ran": "2026-08-17",
+  "ran": "2026-08-24",
   "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
   "api_calls_used": 39,
   "calls_by_source": {
@@ -168,19 +168,19 @@
    "marketaux": 10,
    "alphavantage": 1
   },
-  "articles_total": 105,
-  "new_articles": 105,
-  "match_rows_added": 10,
+  "articles_total": 103,
+  "new_articles": 103,
+  "match_rows_added": 21,
   "exception_news_hits": [],
   "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  },
  "sebi_public_issues": {
-  "ran": "2026-08-17",
+  "ran": "2026-08-24",
   "since": "2025-01-01",
   "pages_fetched": 16,
-  "filings_in_window": 390,
-  "new_rows": 398,
+  "filings_in_window": 387,
+  "new_rows": 392,
   "match_rows": 15,
   "companies_moving_to_market": [
    {
@@ -236,8 +236,8 @@
     "visibility": "DARK",
     "quality": "strong",
     "filed": "2025-07-08",
-    "filing": "GERMAN GREEN STEEL AND POWER LIMITED",
-    "url": "https://www.sebi.gov.in/filings/public-issues/jul-2025/german-green-steel-and-power-limited_95113.html"
+    "filing": "German Green Steel and Power Limited - DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/jul-2025/german-green-steel-and-power-limited-drhp_95113.html"
    },
    {
     "company": "A-One Steels India Limited",
@@ -307,18 +307,9 @@
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  },
  "cin_extraction": {
-  "ran": "2026-08-17",
+  "ran": "2026-08-24",
   "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
-  "records": [
-   {
-    "company": "Encube Ethicals Private Limited",
-    "cin": "U24230MH1995PLC092485",
-    "fresh_issue": null,
-    "offer_for_sale": "30,000 million",
-    "objects_excerpt": "The objects of the Offer are to (i) carry out the Offer for Sale of up to [●] Equity Shares of face value of ₹1 each by the Selling Shareholders aggregating up to ₹30,000 million; and (ii) achieve the benefits of listing the Equity Shares on the Stoc",
-    "pdf": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1785994501228.pdf"
-   }
-  ],
+  "records": [],
   "errors": [],
   "mca_status": "mca.gov.in 403 (re-tested 2026-07-23); zaubacorp 403; thecompanycheck/falconebiz reachable but unofficial"
  }

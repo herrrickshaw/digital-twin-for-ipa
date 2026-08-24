@@ -1,0 +1,13 @@
+{
+ "checked": "2026-08-24",
+ "pages": {
+  "unnati_guidelines": {
+   "http": "ERR",
+   "bytes": 71
+  },
+  "nsws_home": {
+   "http": "200",
+   "bytes": 585497
+  }
+ }
+}

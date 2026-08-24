@@ -75,8 +75,12 @@ def main():
     total_findings = total_new = 0
     conf_counts = {"HIGH": 0, "MEDIUM": 0, "LOW": 0}
 
+    # rescrape_*.json files are a re-verification methodology record (results
+    # already merged into the relevant sector files' findings/negative_notes
+    # above), not a sector sweep of their own -- skip to avoid a spurious
+    # zero-finding "sector" entry.
     for fname in sorted(os.listdir(SWEEP_DIR)):
-        if not fname.endswith(".json"):
+        if not fname.endswith(".json") or fname.startswith("rescrape_"):
             continue
         d = json.load(open(os.path.join(SWEEP_DIR, fname)))
         sector = d.get("sector", fname)

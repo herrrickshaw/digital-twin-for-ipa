@@ -1,21 +1,21 @@
 {
  "layer": 42,
  "name": "sector_investment_news_sweep",
- "built": "2026-08-23",
+ "built": "2026-08-24",
  "what": "12-sector India-investment news sweep (one subagent per the twin's core PLI-derived sectors), replacing the earlier NewsAPI-based sweeps that were proven unreliable at scale. Every finding here was verified by opening and reading the actual source article/press release, not a search snippet. new_to_twin flags companies not already in layer 16 leads or the company DB, via the same word-boundary fragment matcher used in layers 37/41.",
  "known_company_count": 1769,
- "total_findings": 74,
- "total_new_to_twin": 43,
+ "total_findings": 76,
+ "total_new_to_twin": 45,
  "confidence_breakdown": {
-  "HIGH": 33,
-  "MEDIUM": 39,
+  "HIGH": 34,
+  "MEDIUM": 40,
   "LOW": 2
  },
  "sectors": {
   "Aerospace & Defence (aircraft/components, defence manufacturing, MRO)": {
    "source_file": "aerospace_defence.json",
-   "total_findings": 13,
-   "new_to_twin": 8,
+   "total_findings": 14,
+   "new_to_twin": 9,
    "findings": [
     {
      "company": "Safran Electronics & Defense",
@@ -133,6 +133,15 @@
      "date": "2026-05",
      "confidence": "MEDIUM",
      "new_to_twin": true
+    },
+    {
+     "company": "Diehl Defence",
+     "country_of_headquarters": "Germany",
+     "signal": "Reliance Defence (R-Defence) tied up with Germany-based Diehl Defence to produce next-generation terminally guided munitions (TGM) for the Indian armed forces, driving local production of the Vulcano 155mm precision-guided munition system, at a greenfield integrated ammunition and explosives facility in the Watad Industrial Area, Ratnagiri, Maharashtra (shared with a related Rheinmetall AG tie-up already in this file). Total investment across both partnerships at the Ratnagiri site is Rs 5,000 crore over five years (30% equity / 70% debt), manufacturing targeted within 18 months of the June 2025 announcement.",
+     "source_url": "https://www.business-standard.com/companies/news/reliance-defence-diehl-partnership-india-ammunition-manufacturing-125061001129_1.html",
+     "date": "2025-06-10",
+     "confidence": "HIGH",
+     "new_to_twin": true
     }
    ],
    "negative_notes": [
@@ -140,11 +149,6 @@
      "company": "AxisCades Aerospace & Technologies",
      "country_of_headquarters": "India",
      "reason_excluded": "Real and large (Rs 6,000 crore, Devanahalli, Karnataka) announced integrated aerospace/defence/semiconductor hub, but AxisCades is headquartered in Bengaluru, India -- excluded per the task's instruction to cover only non-India-headquartered companies."
-    },
-    {
-     "company": "Diehl Defence",
-     "country_of_headquarters": "Germany",
-     "reason_excluded": "A WebSearch snippet (Business Standard) described Diehl partnering with Reliance Defence to produce terminally guided munitions at the same Watad/Ratnagiri site as the verified Rheinmetall deal (~Rs 5,000 crore over five years). The Business Standard article returned HTTP 403 on WebFetch and no alternate primary source could be located and opened before the session's search quota ran out, so this lead could not be independently read and verified. Left out per this sweep's rule that every finding must be backed by an article actually opened via WebFetch -- worth re-checking in a future pass."
     },
     {
      "company": "Kalyani Rafael Advanced Systems (Rafael Advanced Defense Systems, Israel)",
@@ -165,6 +169,10 @@
      "company": "Boeing",
      "country_of_headquarters": "United States",
      "reason_excluded": "Boeing's India coverage in the window is broad relationship/vision language (largest foreign OEM sourcing from India at $1.25bn/year, ~$100m historical pilot-training investment, a Liquid Robotics-Sagar Defence Engineering MoU on autonomous surface vessels) rather than one specific, dated, dollar-figured NEW capital commitment that could be independently opened and verified via WebFetch within the research budget available. Excluded from findings for lack of a single crisp, verified investment signal -- not because Boeing lacks India activity, but because nothing surfaced met this sweep's bar for a substantive, individually-verified announcement."
+    },
+    {
+     "company": "Diehl Defence",
+     "reason": "RESOLVED 2026-08-24: originally excluded because the Business Standard source 403'd WebFetch. Re-fetched successfully via Scrapling (curl_cffi TLS-fingerprint client) — confirmed and moved to findings above. Kept here as a record of the original access gap and how it was closed."
     }
    ],
    "method": "WebSearch for discovery across multiple query angles (foreign aerospace/defence India investment, plant announcements, JVs, MRO expansions, company-specific follow-ups), followed by WebFetch to open and read each candidate source directly before inclusion. Every finding below was verified by opening at least one substantive article/press release via WebFetch (not a search snippet alone); where the primary company press release could not be fetched (blocked/403), a trade-press article quoting the company directly was used instead and is noted. Non-Indian-HQ companies only. Session's WebSearch quota was exhausted after ~19 queries, which capped a few further discovery angles (Elbit Systems recency check, additional confirmation attempt for a Diehl Defence lead) rather than any change in method or standards -- those items are recorded honestly in negative_notes rather than included on an unverified basis."
@@ -1129,8 +1137,8 @@
   },
   "White Goods & Electricals (air conditioners, LED lighting, home appliances, electrical equipment — PLI for White Goods: ACs and LEDs)": {
    "source_file": "white_goods_electricals.json",
-   "total_findings": 6,
-   "new_to_twin": 1,
+   "total_findings": 7,
+   "new_to_twin": 2,
    "findings": [
     {
      "company": "LG Electronics",
@@ -1185,6 +1193,15 @@
      "date": "2025-12-13",
      "confidence": "MEDIUM",
      "new_to_twin": false
+    },
+    {
+     "company": "Panasonic Life Solutions India (Panasonic Corporation, Japan)",
+     "country_of_headquarters": "Japan",
+     "signal": "Planning a new manufacturing unit in India and preparing to apply under the reopened window (14 Sep 2025) of the government's PLI scheme for white goods (ACs and LED lights; Rs 6,238cr outlay). MD & CEO Tadashi Chiba told the Economic Times the expansion is part of a strategic shift from Japan-led to India-led operations, focused on one or more of: AI platforms/services, electric vehicles, living space solutions. Specific PLI category and investment figure not yet disclosed.",
+     "source_url": "https://www.business-standard.com/companies/news/panasonic-life-solutions-manufacturing-unit-pli-scheme-white-goods-125091900308_1.html",
+     "date": "2025-09-19",
+     "confidence": "MEDIUM",
+     "new_to_twin": true
     }
    ],
    "negative_notes": [
@@ -1196,10 +1213,6 @@
     {
      "company": "Whirlpool of India",
      "reason_excluded": "Whirlpool of India Limited invested ₹245+ crore in a new refrigerator production line at its Pune (Rajnangaon) plant (announced 2026-07-23, per Technuter/Mobility India coverage), which is a real capex event. However Whirlpool of India Limited is itself India-headquartered (Gurugram) and its US parent (Whirlpool Corp) has been actively reducing its stake — down from 51% to 39.76% in late 2025, with mutual funds now the second-largest holder (31.76%) and reports (Nov 2025) of Advent International in talks to buy a further stake. Given the parent is diluting rather than deepening its India commitment, and the operating entity is domestically headquartered, this was judged not to be a genuine 'foreign company investing in India' signal for this sector sweep and was excluded rather than reported as a finding."
-    },
-    {
-     "company": "Panasonic / Panasonic Life Solutions India",
-     "reason_excluded": "Multiple trade-press pickups (search snippets only, traced to a Business Standard piece dated 2025-09-19) report Panasonic Life Solutions India is evaluating a new manufacturing unit and may apply for the reopened white goods PLI window. A direct WebFetch read of the Business Standard article returned HTTP 403 (paywalled/blocked), and two alternate sources I could open (investmentmonitor.ai and an August 2026 UP-Japan Investment Meet piece from The Wire) were either stale (referencing fiscal-2024-era spend plans) or too vague (general 'long-term commitment' language about UP distribution/services expansion, no capex figure or plant specifics). Excluded because no substantive, directly-read, dated 2025-2026 article with concrete investment detail could be confirmed."
     },
     {
      "company": "BSH Home Appliances (Bosch / Siemens brands)",
@@ -1220,6 +1233,10 @@
     {
      "company": "Midea",
      "reason_excluded": "No specific India investment, plant, or JV announcement for Midea was found in this pass; searches returned only the company's generic investor-relations page. A planned follow-up search (Amber Enterprises' foreign JV ties, which include Midea) could not be completed because the session's WebSearch budget was exhausted. Logged as unconfirmed rather than included."
+    },
+    {
+     "company": "Panasonic / Panasonic Life Solutions India",
+     "reason": "RESOLVED 2026-08-24: originally excluded because the Business Standard source 403'd WebFetch. Re-fetched successfully via Scrapling — confirmed (planning-stage, MEDIUM confidence) and moved to findings above."
     }
    ],
    "method": "WebSearch used for discovery across multiple angles (AC manufacturers, LED lighting, home appliances, foreign PLI participants, company-specific follow-ups). Every company listed under 'findings' was verified by opening and reading the actual source article/press release via WebFetch (not from search snippets alone). Candidates that could not be confirmed via a direct WebFetch read of a substantive, on-topic article, or that turned out to be too vague / outside the ~18-month window / not genuinely about a new India investment, were excluded and logged under negative_notes instead of being reported as findings."

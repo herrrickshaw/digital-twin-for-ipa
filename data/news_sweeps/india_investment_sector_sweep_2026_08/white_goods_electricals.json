@@ -1,109 +1,117 @@
 {
-  "sector": "White Goods & Electricals (air conditioners, LED lighting, home appliances, electrical equipment — PLI for White Goods: ACs and LEDs)",
-  "swept_date": "2026-08-23",
-  "method": "WebSearch used for discovery across multiple angles (AC manufacturers, LED lighting, home appliances, foreign PLI participants, company-specific follow-ups). Every company listed under 'findings' was verified by opening and reading the actual source article/press release via WebFetch (not from search snippets alone). Candidates that could not be confirmed via a direct WebFetch read of a substantive, on-topic article, or that turned out to be too vague / outside the ~18-month window / not genuinely about a new India investment, were excluded and logged under negative_notes instead of being reported as findings.",
-  "findings": [
-    {
-      "company": "LG Electronics",
-      "country_of_headquarters": "South Korea",
-      "signal": "Broke ground on a $600 million third home-appliance manufacturing plant at Sri City, Andhra Pradesh (LG's third India plant after Noida and Pune); AC production to start late 2026, with washing machines, refrigerators and compressors following by 2029, reaching annual capacity of 1.5 million ACs, 800,000 refrigerators, 850,000 washing machines and 2 million compressors.",
-      "source_url": "https://www.kedglobal.com/corporate-investment/newsView/ked202505080004",
-      "date": "2025-05-08",
-      "confidence": "MEDIUM"
-    },
-    {
-      "company": "Mitsubishi Electric",
-      "country_of_headquarters": "Japan",
-      "signal": "Inaugurated a new ₹2,100 crore (~$250M) air conditioner and compressor manufacturing facility in Chennai, Tamil Nadu (52 acres, Origins by Mahindra industrial cluster), with annual capacity of 300,000 room ACs and 650,000 compressors — the company's second India plant in two years after its Pune factory-automation facility (2023).",
-      "source_url": "https://mitsubishielectric.in/news/mitsubishi-electric-india-expands-manufacturing-footprint-with-2100-crore-investment-facility-inaugurated-by-tamil-nadus-honble-cm-thiru-mk-stalin",
-      "date": "2026-02-06",
-      "confidence": "HIGH"
-    },
-    {
-      "company": "Carrier Global",
-      "country_of_headquarters": "United States",
-      "signal": "Announced plans to invest approximately ₹1,000 crore (~$120 million) to build a new air conditioner manufacturing facility at Sri City, Andhra Pradesh, expected to create around 3,000 direct and indirect jobs.",
-      "source_url": "https://www.whalesbook.com/news/English/industrial-goodsservices/Carrier-Global-Invests-dollar120M-in-India-for-New-AC-Hub/69fafe00d27867b982d31387",
-      "date": "2026-05-06",
-      "confidence": "MEDIUM"
-    },
-    {
-      "company": "Hisense",
-      "country_of_headquarters": "China",
-      "signal": "Inaugurated its first India manufacturing facility, a joint venture with Epack Manufacturing Technologies (a subsidiary of Epack Durable) at Sri City, Andhra Pradesh — a 10-acre facility built with an investment exceeding $30 million, initially producing 100% of Hisense India's room air conditioners at 0.75 million units/year capacity (Phase 1); commercial production began February 2026.",
-      "source_url": "https://mtdcnc.com/news/mtdcnc/hisense-launches-first-india-manufacturing-facility-at-sri-city-andhra-pradesh/",
-      "date": "2026-02-12",
-      "confidence": "MEDIUM"
-    },
-    {
-      "company": "Signify",
-      "country_of_headquarters": "Netherlands",
-      "signal": "Announced a proposed 50-50 joint venture with Dixon Technologies (India) to manufacture LED lighting products (bulbs, downlights, spots, battens, ropes, strips and accessories) for the Indian market, aligned with India's Make in India initiative and positioned to secure PLI eligibility.",
-      "source_url": "https://www.signify.com/global/our-company/news/press-releases/2025/20250327-signify-and-dixon-technologies-propose-joint-venture-to-advance-lighting-manufacturing-excellence-in-india",
-      "date": "2025-03-27",
-      "confidence": "HIGH"
-    },
-    {
-      "company": "Haier",
-      "country_of_headquarters": "China",
-      "signal": "Haier Appliances India announced a ₹3,500 crore investment plan (funded through internal accruals, deployed in phases over 3-4 years) to set up a third India manufacturing facility, with the southern or western regions of the country under consideration for the site; final location expected to be decided the following year.",
-      "source_url": "https://www.newsonprojects.com/news/haier-india-plans-3500-crore-investment-eyes-third-manufacturing-facility",
-      "date": "2025-12-13",
-      "confidence": "MEDIUM"
-    }
-  ],
-  "search_queries_tried": [
-    "air conditioner manufacturer India new plant investment 2025 2026 announcement",
-    "LED lighting company India investment plant 2025 2026",
-    "foreign home appliances company India expansion 2025 2026 investment",
-    "white goods PLI India foreign company plant 2025",
-    "Whirlpool India investment plant expansion 2025 2026",
-    "Bosch BSH Siemens home appliances India investment plant 2025",
-    "Panasonic India investment appliances plant 2025 2026",
-    "Hisense OR Midea India investment plant 2025 2026",
-    "Signify India LED investment plant 2025 2026",
-    "Electrolux Arcelik Beko India investment plant 2025 2026",
-    "Mitsubishi Electric Chennai plant inaugurated Stalin Rs 2100 crore",
-    "Daikin India expand capacity 33 acres MoU new plant 2025",
-    "Daikin India third plant Sri City 2025 investment announcement",
-    "Haier India third manufacturing facility Rs 3500 crore January 2025",
-    "Panasonic Life Solutions India white goods PLI new plant investment September 2025",
-    "Voltbek Arcelik Tata India investment 2025 2026 new plant (search budget exhausted before results returned)",
-    "Amber Enterprises foreign JV Midea Daikin component India 2025 2026 investment (search budget exhausted before results returned)"
-  ],
-  "negative_notes": [
-    {
-      "company": "Daikin Industries",
-      "country_of_headquarters": "Japan",
-      "reason_excluded": "The '33-acre expansion / third Sri City plant' coverage that surfaces in searches is from the original 2023 announcement and groundbreaking (grand opening ceremony reported November-December 2023, Business Standard/Japan Times coverage dated September 2024). This predates the ~18-month (since early 2025) window for this sweep and does not represent new activity; no fresh 2025-2026 Daikin India investment announcement was found on this pass."
-    },
-    {
-      "company": "Whirlpool of India",
-      "reason_excluded": "Whirlpool of India Limited invested ₹245+ crore in a new refrigerator production line at its Pune (Rajnangaon) plant (announced 2026-07-23, per Technuter/Mobility India coverage), which is a real capex event. However Whirlpool of India Limited is itself India-headquartered (Gurugram) and its US parent (Whirlpool Corp) has been actively reducing its stake — down from 51% to 39.76% in late 2025, with mutual funds now the second-largest holder (31.76%) and reports (Nov 2025) of Advent International in talks to buy a further stake. Given the parent is diluting rather than deepening its India commitment, and the operating entity is domestically headquartered, this was judged not to be a genuine 'foreign company investing in India' signal for this sector sweep and was excluded rather than reported as a finding."
-    },
-    {
-      "company": "Panasonic / Panasonic Life Solutions India",
-      "reason_excluded": "Multiple trade-press pickups (search snippets only, traced to a Business Standard piece dated 2025-09-19) report Panasonic Life Solutions India is evaluating a new manufacturing unit and may apply for the reopened white goods PLI window. A direct WebFetch read of the Business Standard article returned HTTP 403 (paywalled/blocked), and two alternate sources I could open (investmentmonitor.ai and an August 2026 UP-Japan Investment Meet piece from The Wire) were either stale (referencing fiscal-2024-era spend plans) or too vague (general 'long-term commitment' language about UP distribution/services expansion, no capex figure or plant specifics). Excluded because no substantive, directly-read, dated 2025-2026 article with concrete investment detail could be confirmed."
-    },
-    {
-      "company": "BSH Home Appliances (Bosch / Siemens brands)",
-      "reason_excluded": "Coverage found (Businessworld, Entrepreneur India, Indian Retailer) describes general 2025-2026 India growth strategy — portfolio expansion, 'Make-in-India-for-India' cooling strategy, premiumisation trends, category-level growth percentages — but no concrete new plant, capex figure, or specific manufacturing investment announcement that I could verify via direct WebFetch. Treated as marketing/strategy commentary rather than a substantiated investment signal; excluded."
-    },
-    {
-      "company": "Samsung Electronics",
-      "reason_excluded": "April 2025 coverage found only concerns a new Bespoke AI product line launch (ACs and refrigerators) tailored to Indian power conditions — a product/marketing announcement, not a capex, plant, or JV investment signal. Excluded as out of scope for this sweep."
-    },
-    {
-      "company": "TCL (via TCL CSOT's Prima acquisition)",
-      "reason_excluded": "December 2025 reporting on TCL CSOT acquiring an 80% stake in LED chip maker Prima (~CNY 490 million) appears to be a China-domestic supply-chain move (vertically integrating LED chip production), with no indication in the search results of an India nexus. Not pursued further / not included, since it does not show a specific India investment commitment."
-    },
-    {
-      "company": "Electrolux / Arçelik-Beko / Voltbek",
-      "reason_excluded": "No specific 2025-2026 India investment, plant, or expansion announcement was found for Electrolux or Arçelik/Beko. The existing Arçelik-Tata joint venture (Voltbek Home Appliances, formed 2017) is a known long-standing entity, not new activity; a follow-up search for recent Voltbek/Arçelik India investment news could not be completed because the session's WebSearch budget was exhausted before results returned. Logged as unconfirmed rather than included."
-    },
-    {
-      "company": "Midea",
-      "reason_excluded": "No specific India investment, plant, or JV announcement for Midea was found in this pass; searches returned only the company's generic investor-relations page. A planned follow-up search (Amber Enterprises' foreign JV ties, which include Midea) could not be completed because the session's WebSearch budget was exhausted. Logged as unconfirmed rather than included."
-    }
-  ]
+ "sector": "White Goods & Electricals (air conditioners, LED lighting, home appliances, electrical equipment — PLI for White Goods: ACs and LEDs)",
+ "swept_date": "2026-08-23",
+ "method": "WebSearch used for discovery across multiple angles (AC manufacturers, LED lighting, home appliances, foreign PLI participants, company-specific follow-ups). Every company listed under 'findings' was verified by opening and reading the actual source article/press release via WebFetch (not from search snippets alone). Candidates that could not be confirmed via a direct WebFetch read of a substantive, on-topic article, or that turned out to be too vague / outside the ~18-month window / not genuinely about a new India investment, were excluded and logged under negative_notes instead of being reported as findings.",
+ "findings": [
+  {
+   "company": "LG Electronics",
+   "country_of_headquarters": "South Korea",
+   "signal": "Broke ground on a $600 million third home-appliance manufacturing plant at Sri City, Andhra Pradesh (LG's third India plant after Noida and Pune); AC production to start late 2026, with washing machines, refrigerators and compressors following by 2029, reaching annual capacity of 1.5 million ACs, 800,000 refrigerators, 850,000 washing machines and 2 million compressors.",
+   "source_url": "https://www.kedglobal.com/corporate-investment/newsView/ked202505080004",
+   "date": "2025-05-08",
+   "confidence": "MEDIUM"
+  },
+  {
+   "company": "Mitsubishi Electric",
+   "country_of_headquarters": "Japan",
+   "signal": "Inaugurated a new ₹2,100 crore (~$250M) air conditioner and compressor manufacturing facility in Chennai, Tamil Nadu (52 acres, Origins by Mahindra industrial cluster), with annual capacity of 300,000 room ACs and 650,000 compressors — the company's second India plant in two years after its Pune factory-automation facility (2023).",
+   "source_url": "https://mitsubishielectric.in/news/mitsubishi-electric-india-expands-manufacturing-footprint-with-2100-crore-investment-facility-inaugurated-by-tamil-nadus-honble-cm-thiru-mk-stalin",
+   "date": "2026-02-06",
+   "confidence": "HIGH"
+  },
+  {
+   "company": "Carrier Global",
+   "country_of_headquarters": "United States",
+   "signal": "Announced plans to invest approximately ₹1,000 crore (~$120 million) to build a new air conditioner manufacturing facility at Sri City, Andhra Pradesh, expected to create around 3,000 direct and indirect jobs.",
+   "source_url": "https://www.whalesbook.com/news/English/industrial-goodsservices/Carrier-Global-Invests-dollar120M-in-India-for-New-AC-Hub/69fafe00d27867b982d31387",
+   "date": "2026-05-06",
+   "confidence": "MEDIUM"
+  },
+  {
+   "company": "Hisense",
+   "country_of_headquarters": "China",
+   "signal": "Inaugurated its first India manufacturing facility, a joint venture with Epack Manufacturing Technologies (a subsidiary of Epack Durable) at Sri City, Andhra Pradesh — a 10-acre facility built with an investment exceeding $30 million, initially producing 100% of Hisense India's room air conditioners at 0.75 million units/year capacity (Phase 1); commercial production began February 2026.",
+   "source_url": "https://mtdcnc.com/news/mtdcnc/hisense-launches-first-india-manufacturing-facility-at-sri-city-andhra-pradesh/",
+   "date": "2026-02-12",
+   "confidence": "MEDIUM"
+  },
+  {
+   "company": "Signify",
+   "country_of_headquarters": "Netherlands",
+   "signal": "Announced a proposed 50-50 joint venture with Dixon Technologies (India) to manufacture LED lighting products (bulbs, downlights, spots, battens, ropes, strips and accessories) for the Indian market, aligned with India's Make in India initiative and positioned to secure PLI eligibility.",
+   "source_url": "https://www.signify.com/global/our-company/news/press-releases/2025/20250327-signify-and-dixon-technologies-propose-joint-venture-to-advance-lighting-manufacturing-excellence-in-india",
+   "date": "2025-03-27",
+   "confidence": "HIGH"
+  },
+  {
+   "company": "Haier",
+   "country_of_headquarters": "China",
+   "signal": "Haier Appliances India announced a ₹3,500 crore investment plan (funded through internal accruals, deployed in phases over 3-4 years) to set up a third India manufacturing facility, with the southern or western regions of the country under consideration for the site; final location expected to be decided the following year.",
+   "source_url": "https://www.newsonprojects.com/news/haier-india-plans-3500-crore-investment-eyes-third-manufacturing-facility",
+   "date": "2025-12-13",
+   "confidence": "MEDIUM"
+  },
+  {
+   "company": "Panasonic Life Solutions India (Panasonic Corporation, Japan)",
+   "country_of_headquarters": "Japan",
+   "signal": "Planning a new manufacturing unit in India and preparing to apply under the reopened window (14 Sep 2025) of the government's PLI scheme for white goods (ACs and LED lights; Rs 6,238cr outlay). MD & CEO Tadashi Chiba told the Economic Times the expansion is part of a strategic shift from Japan-led to India-led operations, focused on one or more of: AI platforms/services, electric vehicles, living space solutions. Specific PLI category and investment figure not yet disclosed.",
+   "source_url": "https://www.business-standard.com/companies/news/panasonic-life-solutions-manufacturing-unit-pli-scheme-white-goods-125091900308_1.html",
+   "date": "2025-09-19",
+   "confidence": "MEDIUM"
+  }
+ ],
+ "search_queries_tried": [
+  "air conditioner manufacturer India new plant investment 2025 2026 announcement",
+  "LED lighting company India investment plant 2025 2026",
+  "foreign home appliances company India expansion 2025 2026 investment",
+  "white goods PLI India foreign company plant 2025",
+  "Whirlpool India investment plant expansion 2025 2026",
+  "Bosch BSH Siemens home appliances India investment plant 2025",
+  "Panasonic India investment appliances plant 2025 2026",
+  "Hisense OR Midea India investment plant 2025 2026",
+  "Signify India LED investment plant 2025 2026",
+  "Electrolux Arcelik Beko India investment plant 2025 2026",
+  "Mitsubishi Electric Chennai plant inaugurated Stalin Rs 2100 crore",
+  "Daikin India expand capacity 33 acres MoU new plant 2025",
+  "Daikin India third plant Sri City 2025 investment announcement",
+  "Haier India third manufacturing facility Rs 3500 crore January 2025",
+  "Panasonic Life Solutions India white goods PLI new plant investment September 2025",
+  "Voltbek Arcelik Tata India investment 2025 2026 new plant (search budget exhausted before results returned)",
+  "Amber Enterprises foreign JV Midea Daikin component India 2025 2026 investment (search budget exhausted before results returned)"
+ ],
+ "negative_notes": [
+  {
+   "company": "Daikin Industries",
+   "country_of_headquarters": "Japan",
+   "reason_excluded": "The '33-acre expansion / third Sri City plant' coverage that surfaces in searches is from the original 2023 announcement and groundbreaking (grand opening ceremony reported November-December 2023, Business Standard/Japan Times coverage dated September 2024). This predates the ~18-month (since early 2025) window for this sweep and does not represent new activity; no fresh 2025-2026 Daikin India investment announcement was found on this pass."
+  },
+  {
+   "company": "Whirlpool of India",
+   "reason_excluded": "Whirlpool of India Limited invested ₹245+ crore in a new refrigerator production line at its Pune (Rajnangaon) plant (announced 2026-07-23, per Technuter/Mobility India coverage), which is a real capex event. However Whirlpool of India Limited is itself India-headquartered (Gurugram) and its US parent (Whirlpool Corp) has been actively reducing its stake — down from 51% to 39.76% in late 2025, with mutual funds now the second-largest holder (31.76%) and reports (Nov 2025) of Advent International in talks to buy a further stake. Given the parent is diluting rather than deepening its India commitment, and the operating entity is domestically headquartered, this was judged not to be a genuine 'foreign company investing in India' signal for this sector sweep and was excluded rather than reported as a finding."
+  },
+  {
+   "company": "BSH Home Appliances (Bosch / Siemens brands)",
+   "reason_excluded": "Coverage found (Businessworld, Entrepreneur India, Indian Retailer) describes general 2025-2026 India growth strategy — portfolio expansion, 'Make-in-India-for-India' cooling strategy, premiumisation trends, category-level growth percentages — but no concrete new plant, capex figure, or specific manufacturing investment announcement that I could verify via direct WebFetch. Treated as marketing/strategy commentary rather than a substantiated investment signal; excluded."
+  },
+  {
+   "company": "Samsung Electronics",
+   "reason_excluded": "April 2025 coverage found only concerns a new Bespoke AI product line launch (ACs and refrigerators) tailored to Indian power conditions — a product/marketing announcement, not a capex, plant, or JV investment signal. Excluded as out of scope for this sweep."
+  },
+  {
+   "company": "TCL (via TCL CSOT's Prima acquisition)",
+   "reason_excluded": "December 2025 reporting on TCL CSOT acquiring an 80% stake in LED chip maker Prima (~CNY 490 million) appears to be a China-domestic supply-chain move (vertically integrating LED chip production), with no indication in the search results of an India nexus. Not pursued further / not included, since it does not show a specific India investment commitment."
+  },
+  {
+   "company": "Electrolux / Arçelik-Beko / Voltbek",
+   "reason_excluded": "No specific 2025-2026 India investment, plant, or expansion announcement was found for Electrolux or Arçelik/Beko. The existing Arçelik-Tata joint venture (Voltbek Home Appliances, formed 2017) is a known long-standing entity, not new activity; a follow-up search for recent Voltbek/Arçelik India investment news could not be completed because the session's WebSearch budget was exhausted before results returned. Logged as unconfirmed rather than included."
+  },
+  {
+   "company": "Midea",
+   "reason_excluded": "No specific India investment, plant, or JV announcement for Midea was found in this pass; searches returned only the company's generic investor-relations page. A planned follow-up search (Amber Enterprises' foreign JV ties, which include Midea) could not be completed because the session's WebSearch budget was exhausted. Logged as unconfirmed rather than included."
+  },
+  {
+   "company": "Panasonic / Panasonic Life Solutions India",
+   "reason": "RESOLVED 2026-08-24: originally excluded because the Business Standard source 403'd WebFetch. Re-fetched successfully via Scrapling — confirmed (planning-stage, MEDIUM confidence) and moved to findings above."
+  }
+ ]
 }

@@ -996,3 +996,4 @@ nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-08-24.js
 CHANGE rbi WSS: Aug 15, 2026 -> Aug 22, 2026
 rbi: latest WSS issue = Aug 22, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-08-24.json
 send_twin_alert: no credentials available (env or plist) -- not sent
+fatal: could not read Username for 'https://github.com': Device not configured

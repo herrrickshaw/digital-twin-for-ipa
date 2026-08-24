@@ -1,0 +1,60 @@
+{
+  "rescrape_date": "2026-08-24",
+  "method_summary": "Retried 5 leads originally excluded from layer-42 sector sweep due to HTTP 403 / connection errors on WebFetch. Used scrapling.fetchers.Fetcher (curl_cffi TLS-fingerprint client, .venv at /Users/umashankar/digital-twin-for-ipa/.venv) as primary retry method, with plain WebFetch tried first and WebSearch used to locate exact/alternate source URLs. StealthyFetcher (real browser via Playwright) was not needed -- plain Fetcher.get() with stealthy_headers=True returned HTTP 200 on every target site (Business Standard, WION, TipRanks, ANI, BusinessWire India), so no browser install was attempted.",
+  "results": [
+    {
+      "company": "Diehl Defence",
+      "original_sector_file": "data/news_sweeps/india_investment_sector_sweep_2026_08/aerospace_defence.json",
+      "method_tried": "scrapling Fetcher",
+      "result": "CONFIRMED",
+      "finding": {
+        "company": "Diehl Defence",
+        "country_of_headquarters": "Germany",
+        "signal": "Reliance Defence (R-Defence, part of Anil Ambani's Reliance Group) tied up with Germany-based Diehl Defence to produce next-generation terminally guided munitions (TGM) for the Indian armed forces, driving local production of the Vulcano 155mm precision-guided munition system. R-Defence will build a greenfield integrated ammunition and explosives manufacturing facility in the Watad Industrial Area, Ratnagiri, Maharashtra (shared with a related Rheinmetall AG explosives/propellants tie-up announced in May 2025). Total investment across both partnerships at the Ratnagiri site is Rs 5,000 crore over five years (30% equity / 70% debt), with manufacturing targeted to start within 18 months of the June 2025 announcement given land and principal approvals are already in place. This is Diehl's specific technology/system-level contribution (guided munition tech and system-level expertise) to that facility, as prime contractor R-Defence leads execution.",
+        "source_url": "https://www.business-standard.com/companies/news/reliance-defence-diehl-partnership-india-ammunition-manufacturing-125061001129_1.html",
+        "date": "2025-06-10",
+        "confidence": "HIGH"
+      },
+      "notes": "The Business Standard article that 403'd plain WebFetch returned HTTP 200 immediately via scrapling.fetchers.Fetcher.get(url, stealthy_headers=True) -- full 6,178-character article body was read directly, including on-record quotes from Anil Ambani and specific rupee/timeline figures. This corroborates and adds detail beyond the original WebSearch snippet (e.g., the 30/70 equity-debt funding split, R-Defence's prior Rheinmetall and Dassault/Thales partnerships, ~Rs 10,000 crore targeted ammunition revenue). Genuine new finding -- recommend adding to aerospace_defence.json findings."
+    },
+    {
+      "company": "Applied Materials",
+      "original_sector_file": "data/news_sweeps/india_investment_sector_sweep_2026_08/electronics_semiconductors.json",
+      "method_tried": "scrapling Fetcher",
+      "result": "CHECKED_NOT_SUBSTANTIVE",
+      "finding": null,
+      "notes": "Both blocked source types were retried: the BusinessWire India press-release URL returned HTTP 200 via Scrapling but the page body is JS-rendered and only the site chrome (nav/footer) was retrievable -- no article text, even with the bot-bypass. However, a mirror of the same press release on aninews.in (also HTTP 403 area for some fetchers, but 200 via Scrapling) WAS fully readable: Applied Materials India Pvt Ltd signed an MOU with the Tamil Nadu government on 31 Aug 2024 (signed in San Francisco, CM M.K. Stalin and Applied Materials' Dr. Prabu Raja present) to establish an AI-enabled Center of Excellence in Chennai, with a workforce target of 500+ technical jobs 'over the next few years.' This confirms the original sweep's characterization exactly: it is a Memorandum of Understanding / intent, not a firm plant or capex commitment, and it is dated 31 Aug 2024 -- before this sweep's ~18-month (since early 2025) discovery window. No dollar/rupee capex figure is given anywhere in the readable text. Verdict unchanged from original exclusion, but now independently verified rather than left as an unread snippet."
+    },
+    {
+      "company": "Panasonic Energy Co., Ltd.",
+      "original_sector_file": "data/news_sweeps/india_investment_sector_sweep_2026_08/green_energy_fuels.json",
+      "method_tried": "scrapling Fetcher",
+      "result": "CHECKED_NOT_SUBSTANTIVE",
+      "finding": null,
+      "notes": "Found and fully read (HTTP 200 via Scrapling, no 403) the WION article at the exact headline cited in the negative_notes: 'Panasonic Energy prepares for high-capacity EV battery production' (https://www.wionews.com/autonews/panasonic-energy-prepares-for-high-capacity-ev-battery-production-757507). Its actual byline date is 10 Sep 2024, not 'approx Aug 2026' as the original sweep's search snippet suggested (WION's own site clock shows a live 'today' date on the page, which likely caused the snippet-based date confusion). Critically, the article's content is entirely about Panasonic's Wakayama, Japan plant producing new 4680-format EV cells for Tesla and other automakers, plus its US Kansas/Nevada footprint -- India, IndianOil, and any Indian JV are not mentioned anywhere in the piece. Ran additional WebSearches for a genuinely India-specific, in-window Panasonic Energy / IndianOil update and found nothing confirming a plant-site decision; the most recent related, readable, in-window India story is actually negative for Panasonic Energy in India -- a Business Standard piece dated 24 Jun 2026 ('Panasonic Energy may be forced to shut sole India battery plant: CMD Fujita') describing risk of shutting its existing Pithampur, MP dry-cell plant over Battery Waste Management Rules compliance costs -- unrelated to the proposed IndianOil cylindrical-cell JV and not a positive investment signal. No confirmation of the IndianOil JV moving from 'evaluating sites' to a committed plant was found. Original exclusion stands, now on stronger evidence: the specific article once blocked has been read and does not substantiate an India investment."
+    },
+    {
+      "company": "First Solar, Inc.",
+      "original_sector_file": "data/news_sweeps/india_investment_sector_sweep_2026_08/green_energy_fuels.json",
+      "method_tried": "scrapling Fetcher",
+      "result": "CHECKED_NOT_SUBSTANTIVE",
+      "finding": null,
+      "notes": "The TipRanks/Fly article (https://www.tipranks.com/news/the-fly/first-solar-announces-facility-in-india-awarded-financial-incentives) returned HTTP 200 via Scrapling and was fully read: First Solar's Tamil Nadu facility (3.4 GW nameplate) was awarded Production Linked Incentives, subject to quarterly efficiency/domestic-value-creation evaluations from Q2 2026 through 2031, with the facility 'expected to be commissioned in the second half of this year.' A follow-up WebSearch pinned the article's actual publish date to 29 March 2023 (corroborated by matching Printed Electronics Now, Semiconductor Today, Seeking Alpha, and the First Solar investor-relations press release itself, all dated March 2023) -- this is the original PLI Tranche II award, ~10 months before the plant's January 2024 inauguration already excluded in the sector file as outside-window. The BusinessWire release referenced in the negative_notes was not separately located, but the TipRanks/Fly item covering the same underlying event is now confirmed stale. Original exclusion stands, now on read evidence rather than an inaccessible source."
+    },
+    {
+      "company": "Panasonic / Panasonic Life Solutions India",
+      "original_sector_file": "data/news_sweeps/india_investment_sector_sweep_2026_08/white_goods_electricals.json",
+      "method_tried": "scrapling Fetcher",
+      "result": "CONFIRMED",
+      "finding": {
+        "company": "Panasonic Life Solutions India (Panasonic Corporation, Japan)",
+        "country_of_headquarters": "Japan",
+        "signal": "Panasonic Life Solutions India is planning a new manufacturing unit in India and preparing to apply under the reopened window (reopened 14 Sep 2025) of the government's Production Linked Incentive (PLI) scheme for white goods (air conditioners and LED lights; Rs 6,238 crore outlay, FY21-22 to FY28-29). MD & CEO Tadashi Chiba told the Economic Times the expansion is part of a strategic shift from Japan-led to India-led operations, with a plant focused on one or more of three high-growth areas: AI platforms and services, electric vehicles, and living space solutions. The company did not disclose the specific PLI category or an investment figure. Panasonic previously applied for the third PLI round for white goods (ACs/LED lights) as well.",
+        "source_url": "https://www.business-standard.com/companies/news/panasonic-life-solutions-manufacturing-unit-pli-scheme-white-goods-125091900308_1.html",
+        "date": "2025-09-19",
+        "confidence": "MEDIUM"
+      },
+      "notes": "The exact Business Standard article the original sweep could not open (403) returned HTTP 200 via scrapling.fetchers.Fetcher.get(url, stealthy_headers=True) and was fully read (6,261 characters, on-record CEO quotes, specific PLI scheme details and dates). This directly matches and supersedes the original negative_notes description. Confidence is set to MEDIUM (rather than HIGH) because the CEO's language is still planning/exploratory ('planning a new manufacturing unit', category not yet disclosed, no capex figure given) -- a real, dated, on-record, primary-sourced commitment of intent, but not yet a signed/committed plant the way the Diehl finding is. Genuine new finding -- recommend adding to white_goods_electricals.json findings with confidence noted as planning-stage."
+    }
+  ]
+}

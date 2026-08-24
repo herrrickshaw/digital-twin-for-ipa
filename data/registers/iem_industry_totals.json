@@ -1,0 +1,251 @@
+{
+ "source_url": "https://www.data.gov.in/resource/industry-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+ "catalog_page": "https://www.data.gov.in/resource/industry-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+ "as_of": "2026-08-15",
+ "title": "Industry-wise IEM part-A data on Investment and Employment from August 1991 to till last month",
+ "total_records_available": 40,
+ "rows_retrieved": 40,
+ "rows": [
+  {
+   "industry": "BOILERS&STEAM GENERATING PLANTS",
+   "number": 62,
+   "investment": 6915,
+   "employment": 14626
+  },
+  {
+   "industry": "ELECTRICALS EQUIPMENT",
+   "number": 8814,
+   "investment": 4762276,
+   "employment": 2196623
+  },
+  {
+   "industry": "SCIENTIFIC INSTRUMENTS",
+   "number": 396,
+   "investment": 7152,
+   "employment": 87898
+  },
+  {
+   "industry": "SOAPS,COSMETICS & TOILET  PREPARATIONS",
+   "number": 823,
+   "investment": 30777,
+   "employment": 159455
+  },
+  {
+   "industry": "CHEMICALS (OTHER THAN FERTILIZERS)",
+   "number": 11822,
+   "investment": 1204844,
+   "employment": 1642602
+  },
+  {
+   "industry": "MACHINE TOOLS",
+   "number": 309,
+   "investment": 8829,
+   "employment": 53114
+  },
+  {
+   "industry": "MEDICAL  AND  SURGICAL   APPLIANCES",
+   "number": 200,
+   "investment": 6863,
+   "employment": 40365
+  },
+  {
+   "industry": "MISCELLANEOUS INDUSTRIES",
+   "number": 2126,
+   "investment": 99668,
+   "employment": 281926
+  },
+  {
+   "industry": "RUBBER GOODS",
+   "number": 1146,
+   "investment": 79239,
+   "employment": 384461
+  },
+  {
+   "industry": "SUGAR",
+   "number": 3550,
+   "investment": 242730,
+   "employment": 1186423
+  },
+  {
+   "industry": "GRAND TOTAL",
+   "number": 112521,
+   "investment": 15696491,
+   "employment": 65850319
+  },
+  {
+   "industry": "CERAMICS",
+   "number": 1174,
+   "investment": 40424,
+   "employment": 230454
+  },
+  {
+   "industry": "DEFENCE INDUSTRIES",
+   "number": 8,
+   "investment": 319,
+   "employment": 1873
+  },
+  {
+   "industry": "EARTH-MOVING MACHINERY",
+   "number": 130,
+   "investment": 8482,
+   "employment": 37140
+  },
+  {
+   "industry": "FOOD PROCESSING INDUSTRY",
+   "number": 6277,
+   "investment": 248032,
+   "employment": 1517788
+  },
+  {
+   "industry": "GLASS",
+   "number": 574,
+   "investment": 43678,
+   "employment": 123992
+  },
+  {
+   "industry": "LEATHER, LEATHER GOODS  AND PICKERS",
+   "number": 424,
+   "investment": 4723,
+   "employment": 119296
+  },
+  {
+   "industry": "MISCELLANEOUS MECHANICAL & ENGINEERING INDUSTRIES",
+   "number": 4540,
+   "investment": 202248,
+   "employment": 2616661
+  },
+  {
+   "industry": "PRIME MOVERS OTHER THAN  ELECTRICAL GENERATORS",
+   "number": 2085,
+   "investment": 88557,
+   "employment": 420499
+  },
+  {
+   "industry": "TEXTILES",
+   "number": 14166,
+   "investment": 514782,
+   "employment": 5835158
+  },
+  {
+   "industry": "TIMBER PRODUCTS",
+   "number": 236,
+   "investment": 13839,
+   "employment": 79200
+  },
+  {
+   "industry": "AGRICULTURAL MACHINERY",
+   "number": 238,
+   "investment": 12516,
+   "employment": 66208
+  },
+  {
+   "industry": "COMMERCIAL , OFFICE  AND HOUSEHOLD EQUIPMENT",
+   "number": 755,
+   "investment": 179845,
+   "employment": 439221
+  },
+  {
+   "industry": "DRUGS AND PHARMACEUTICALS",
+   "number": 3583,
+   "investment": 152466,
+   "employment": 547675
+  },
+  {
+   "industry": "FERMENTATION INDUSTRIES",
+   "number": 2634,
+   "investment": 196305,
+   "employment": 335753
+  },
+  {
+   "industry": "GLUE AND GELATIN",
+   "number": 121,
+   "investment": 3723,
+   "employment": 12985
+  },
+  {
+   "industry": "INDUSTRIAL INSTRUMENTS",
+   "number": 93,
+   "investment": 2300,
+   "employment": 16812
+  },
+  {
+   "industry": "MATHEMATICAL,  SURVEYING  AND DRAWING INSTRUMENTS",
+   "number": 13,
+   "investment": 519,
+   "employment": 4148
+  },
+  {
+   "industry": "TRANSPORTATION INDUSTRY",
+   "number": 2436,
+   "investment": 330108,
+   "employment": 900507
+  },
+  {
+   "industry": "VEGETABLE OIL & VANASPATI",
+   "number": 3443,
+   "investment": 55873,
+   "employment": 352667
+  },
+  {
+   "industry": "CEMENT & GYPSUM PRODUCTS",
+   "number": 2979,
+   "investment": 758704,
+   "employment": 873039
+  },
+  {
+   "industry": "DYE-STUFFS",
+   "number": 139,
+   "investment": 6217,
+   "employment": 18954
+  },
+  {
+   "industry": "FERTILIZERS",
+   "number": 1131,
+   "investment": 295725,
+   "employment": 162448
+  },
+  {
+   "industry": "FUELS",
+   "number": 744,
+   "investment": 584167,
+   "employment": 198025
+  },
+  {
+   "industry": "INDUSTRIAL MACHINERY",
+   "number": 2350,
+   "investment": 74953,
+   "employment": 335722
+  },
+  {
+   "industry": "METALLURGICAL INDUSTRIES",
+   "number": 16192,
+   "investment": 2936295,
+   "employment": 3951144
+  },
+  {
+   "industry": "OTHERS",
+   "number": 12029,
+   "investment": 2246990,
+   "employment": 39467457
+  },
+  {
+   "industry": "PAPER AND PULP INCLUDING PAPER PRODUCTS",
+   "number": 3055,
+   "investment": 164525,
+   "employment": 613421
+  },
+  {
+   "industry": "PHOTOGRAPHIC RAW FILM AND PAPER",
+   "number": 127,
+   "investment": 1242,
+   "employment": 10535
+  },
+  {
+   "industry": "TELECOMMUNICATIONS",
+   "number": 1597,
+   "investment": 79641,
+   "employment": 514044
+  }
+ ],
+ "api_pattern": "https://api.data.gov.in/resource/424d78ab-e958-4b8a-9208-ef084c07e096?api-key=<public-demo-key-from-data.gov.in-resource-page>&offset=0&limit=all&format=json"
+}

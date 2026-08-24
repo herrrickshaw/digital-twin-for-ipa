@@ -1,0 +1,875 @@
+{
+ "source_url": "https://www.data.gov.in/resource/state-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+ "catalog_page": "https://www.data.gov.in/resource/state-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+ "as_of": "2026-08-15",
+ "title": "State-wise IEM part-A data on Investment and Employment from August 1991 to till last month",
+ "total_records_available": 144,
+ "rows_retrieved": 144,
+ "rows": [
+  {
+   "state": "ANDAMAN & NICOBAR",
+   "number": 15,
+   "investment": 971,
+   "employment": 3641
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "number": 4886,
+   "investment": 964790,
+   "employment": 1250558
+  },
+  {
+   "state": "GUJARAT",
+   "number": 14679,
+   "investment": 2303528,
+   "employment": 3024538
+  },
+  {
+   "state": "KERALA",
+   "number": 706,
+   "investment": 39138,
+   "employment": 8081513
+  },
+  {
+   "state": "LAKSHADWEEP",
+   "number": 1,
+   "investment": 4,
+   "employment": 278
+  },
+  {
+   "state": "MAHARASHTRA",
+   "number": 20670,
+   "investment": 1988187,
+   "employment": 20514473
+  },
+  {
+   "state": "MEGHALAYA",
+   "number": 326,
+   "investment": 18012,
+   "employment": 41083
+  },
+  {
+   "state": "PUNJAB",
+   "number": 3763,
+   "investment": 172029,
+   "employment": 867589
+  },
+  {
+   "state": "UTTARAKHAND",
+   "number": 2585,
+   "investment": 93809,
+   "employment": 498504
+  },
+  {
+   "state": "GUJARAT",
+   "number": 14691,
+   "investment": 2306137,
+   "employment": 3028676
+  },
+  {
+   "state": "JAMMU AND KASHMIR (UT)",
+   "number": 847,
+   "investment": 35921,
+   "employment": 158843
+  },
+  {
+   "state": "PUNJAB",
+   "number": 3765,
+   "investment": 172297,
+   "employment": 867615
+  },
+  {
+   "state": "RAJASTHAN",
+   "number": 4677,
+   "investment": 404314,
+   "employment": 1127378
+  },
+  {
+   "state": "GRAND TOTAL",
+   "number": 112695,
+   "investment": 15871972,
+   "employment": 65999675
+  },
+  {
+   "state": "ASSAM",
+   "number": 943,
+   "investment": 71738,
+   "employment": 151379
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "number": 2523,
+   "investment": 72751,
+   "employment": 383863
+  },
+  {
+   "state": "RAJASTHAN",
+   "number": 4674,
+   "investment": 402003,
+   "employment": 1126718
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "number": 4890,
+   "investment": 967294,
+   "employment": 1251562
+  },
+  {
+   "state": "CHATTISGARH",
+   "number": 3688,
+   "investment": 1625559,
+   "employment": 1328137
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "number": 2527,
+   "investment": 73013,
+   "employment": 384992
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "number": 4934,
+   "investment": 992111,
+   "employment": 1431401
+  },
+  {
+   "state": "RAJASTHAN",
+   "number": 4682,
+   "investment": 406031,
+   "employment": 1128649
+  },
+  {
+   "state": "ASSAM",
+   "number": 946,
+   "investment": 72486,
+   "employment": 151858
+  },
+  {
+   "state": "DELHI",
+   "number": 773,
+   "investment": 46040,
+   "employment": 98200
+  },
+  {
+   "state": "GOA",
+   "number": 903,
+   "investment": 38319,
+   "employment": 102154
+  },
+  {
+   "state": "MIZORAM",
+   "number": 5,
+   "investment": 301,
+   "employment": 580
+  },
+  {
+   "state": "PUDUCHERRY",
+   "number": 811,
+   "investment": 15377,
+   "employment": 104851
+  },
+  {
+   "state": "RAJASTHAN",
+   "number": 4683,
+   "investment": 406039,
+   "employment": 1128949
+  },
+  {
+   "state": "WEST BENGAL",
+   "number": 5589,
+   "investment": 760578,
+   "employment": 1443269
+  },
+  {
+   "state": "CHATTISGARH",
+   "number": 3680,
+   "investment": 1622503,
+   "employment": 1325608
+  },
+  {
+   "state": "DAMAN & DIU",
+   "number": 1229,
+   "investment": 15354,
+   "employment": 153377
+  },
+  {
+   "state": "JAMMU AND KASHMIR (UT)",
+   "number": 845,
+   "investment": 35815,
+   "employment": 158843
+  },
+  {
+   "state": "MIZORAM",
+   "number": 4,
+   "investment": 295,
+   "employment": 580
+  },
+  {
+   "state": "TRIPURA",
+   "number": 55,
+   "investment": 2967,
+   "employment": 6942
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "number": 8423,
+   "investment": 468037,
+   "employment": 16281977
+  },
+  {
+   "state": "GRAND TOTAL",
+   "number": 112590,
+   "investment": 15809392,
+   "employment": 65915278
+  },
+  {
+   "state": "ASSAM",
+   "number": 944,
+   "investment": 72387,
+   "employment": 151832
+  },
+  {
+   "state": "HARYANA",
+   "number": 5125,
+   "investment": 187119,
+   "employment": 914440
+  },
+  {
+   "state": "TAMIL NADU",
+   "number": 8687,
+   "investment": 580034,
+   "employment": 2720971
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "number": 8430,
+   "investment": 473464,
+   "employment": 16283744
+  },
+  {
+   "state": "UTTARAKHAND",
+   "number": 2587,
+   "investment": 93979,
+   "employment": 500831
+  },
+  {
+   "state": "CHATTISGARH",
+   "number": 3676,
+   "investment": 1605683,
+   "employment": 1323627
+  },
+  {
+   "state": "KARNATAKA",
+   "number": 5623,
+   "investment": 1624211,
+   "employment": 2203772
+  },
+  {
+   "state": "ODISHA",
+   "number": 2341,
+   "investment": 2240237,
+   "employment": 1110973
+  },
+  {
+   "state": "ASSAM",
+   "number": 945,
+   "investment": 72479,
+   "employment": 151832
+  },
+  {
+   "state": "GUJARAT",
+   "number": 14700,
+   "investment": 2308086,
+   "employment": 3033032
+  },
+  {
+   "state": "KARNATAKA",
+   "number": 5638,
+   "investment": 1633584,
+   "employment": 2226045
+  },
+  {
+   "state": "ODISHA",
+   "number": 2350,
+   "investment": 2245626,
+   "employment": 1118396
+  },
+  {
+   "state": "TAMIL NADU",
+   "number": 8689,
+   "investment": 580080,
+   "employment": 2723072
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "number": 8436,
+   "investment": 476546,
+   "employment": 16287963
+  },
+  {
+   "state": "WEST BENGAL",
+   "number": 5587,
+   "investment": 760477,
+   "employment": 1442769
+  },
+  {
+   "state": "ODISHA",
+   "number": 2353,
+   "investment": 2248194,
+   "employment": 1120587
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "number": 69,
+   "investment": 4450,
+   "employment": 10864
+  },
+  {
+   "state": "BIHAR",
+   "number": 590,
+   "investment": 188367,
+   "employment": 125134
+  },
+  {
+   "state": "CHANDIGARH",
+   "number": 56,
+   "investment": 1104,
+   "employment": 9240
+  },
+  {
+   "state": "GUJARAT",
+   "number": 14709,
+   "investment": 2310357,
+   "employment": 3053318
+  },
+  {
+   "state": "JHARKHAND",
+   "number": 1242,
+   "investment": 484889,
+   "employment": 439913
+  },
+  {
+   "state": "KARNATAKA",
+   "number": 5644,
+   "investment": 1635266,
+   "employment": 2228609
+  },
+  {
+   "state": "NAGALAND",
+   "number": 19,
+   "investment": 16448,
+   "employment": 302849
+  },
+  {
+   "state": "TAMIL NADU",
+   "number": 8700,
+   "investment": 582256,
+   "employment": 2727154
+  },
+  {
+   "state": "GRAND TOTAL",
+   "number": 112843,
+   "investment": 16030853,
+   "employment": 66176686
+  },
+  {
+   "state": "CHANDIGARH",
+   "number": 55,
+   "investment": 1102,
+   "employment": 9240
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "number": 2524,
+   "investment": 72967,
+   "employment": 384654
+  },
+  {
+   "state": "DELHI",
+   "number": 766,
+   "investment": 43905,
+   "employment": 93657
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "number": 1182,
+   "investment": 44095,
+   "employment": 210894
+  },
+  {
+   "state": "JHARKHAND",
+   "number": 1241,
+   "investment": 484810,
+   "employment": 439913
+  },
+  {
+   "state": "KARNATAKA",
+   "number": 5629,
+   "investment": 1632528,
+   "employment": 2220475
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "number": 4926,
+   "investment": 990784,
+   "employment": 1430544
+  },
+  {
+   "state": "ODISHA",
+   "number": 2346,
+   "investment": 2242594,
+   "employment": 1116513
+  },
+  {
+   "state": "RAJASTHAN",
+   "number": 4675,
+   "investment": 402023,
+   "employment": 1126778
+  },
+  {
+   "state": "TAMIL NADU",
+   "number": 8681,
+   "investment": 579695,
+   "employment": 2720767
+  },
+  {
+   "state": "TELANGANA",
+   "number": 4462,
+   "investment": 300419,
+   "employment": 764880
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "number": 4894,
+   "investment": 968475,
+   "employment": 1254173
+  },
+  {
+   "state": "KARNATAKA",
+   "number": 5642,
+   "investment": 1634016,
+   "employment": 2226697
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "number": 4935,
+   "investment": 992611,
+   "employment": 1441401
+  },
+  {
+   "state": "WEST BENGAL",
+   "number": 5588,
+   "investment": 760477,
+   "employment": 1442769
+  },
+  {
+   "state": "GRAND TOTAL",
+   "number": 112817,
+   "investment": 15940969,
+   "employment": 66107562
+  },
+  {
+   "state": "GUJARAT",
+   "number": 14669,
+   "investment": 2299555,
+   "employment": 3015034
+  },
+  {
+   "state": "HARYANA",
+   "number": 5117,
+   "investment": 185362,
+   "employment": 910826
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "number": 4922,
+   "investment": 990244,
+   "employment": 1429350
+  },
+  {
+   "state": "PUNJAB",
+   "number": 3762,
+   "investment": 171848,
+   "employment": 867072
+  },
+  {
+   "state": "TELANGANA",
+   "number": 4459,
+   "investment": 251019,
+   "employment": 761931
+  },
+  {
+   "state": "UTTARAKHAND",
+   "number": 2584,
+   "investment": 93684,
+   "employment": 498404
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "number": 4887,
+   "investment": 964979,
+   "employment": 1250558
+  },
+  {
+   "state": "CHATTISGARH",
+   "number": 3684,
+   "investment": 1623359,
+   "employment": 1326158
+  },
+  {
+   "state": "DELHI",
+   "number": 768,
+   "investment": 44113,
+   "employment": 93677
+  },
+  {
+   "state": "ODISHA",
+   "number": 2348,
+   "investment": 2244526,
+   "employment": 1117673
+  },
+  {
+   "state": "WEST BENGAL",
+   "number": 5586,
+   "investment": 760277,
+   "employment": 1441209
+  },
+  {
+   "state": "RAJASTHAN",
+   "number": 4679,
+   "investment": 405829,
+   "employment": 1128284
+  },
+  {
+   "state": "GRAND TOTAL",
+   "number": 112756,
+   "investment": 15898350,
+   "employment": 66045379
+  },
+  {
+   "state": "MAHARASHTRA",
+   "number": 20719,
+   "investment": 2069181,
+   "employment": 20612245
+  },
+  {
+   "state": "GRAND TOTAL",
+   "number": 112841,
+   "investment": 16030479,
+   "employment": 66173836
+  },
+  {
+   "state": "ANDAMAN & NICOBAR",
+   "number": 16,
+   "investment": 971,
+   "employment": 3641
+  },
+  {
+   "state": "CHATTISGARH",
+   "number": 3690,
+   "investment": 1627684,
+   "employment": 1328457
+  },
+  {
+   "state": "DAMAN & DIU",
+   "number": 1230,
+   "investment": 15354,
+   "employment": 153377
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "number": 1184,
+   "investment": 44143,
+   "employment": 210894
+  },
+  {
+   "state": "JAMMU AND KASHMIR (UT)",
+   "number": 848,
+   "investment": 35936,
+   "employment": 159053
+  },
+  {
+   "state": "SIKKIM",
+   "number": 192,
+   "investment": 8482,
+   "employment": 34854
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "number": 68,
+   "investment": 4439,
+   "employment": 10864
+  },
+  {
+   "state": "BIHAR",
+   "number": 589,
+   "investment": 188192,
+   "employment": 125134
+  },
+  {
+   "state": "HARYANA",
+   "number": 5119,
+   "investment": 185393,
+   "employment": 911678
+  },
+  {
+   "state": "SIKKIM",
+   "number": 191,
+   "investment": 8482,
+   "employment": 34854
+  },
+  {
+   "state": "WEST BENGAL",
+   "number": 5583,
+   "investment": 759874,
+   "employment": 1440958
+  },
+  {
+   "state": "DELHI",
+   "number": 764,
+   "investment": 43454,
+   "employment": 93217
+  },
+  {
+   "state": "MAHARASHTRA",
+   "number": 20657,
+   "investment": 1963035,
+   "employment": 20496926
+  },
+  {
+   "state": "PUDUCHERRY",
+   "number": 808,
+   "investment": 15222,
+   "employment": 104627
+  },
+  {
+   "state": "TAMIL NADU",
+   "number": 8675,
+   "investment": 579050,
+   "employment": 2717006
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "number": 8418,
+   "investment": 466221,
+   "employment": 16280693
+  },
+  {
+   "state": "WEST BENGAL",
+   "number": 5582,
+   "investment": 759808,
+   "employment": 1440938
+  },
+  {
+   "state": "MAHARASHTRA",
+   "number": 20684,
+   "investment": 2029567,
+   "employment": 20576724
+  },
+  {
+   "state": "MAHARASHTRA",
+   "number": 20701,
+   "investment": 2041973,
+   "employment": 20592475
+  },
+  {
+   "state": "TELANGANA",
+   "number": 4466,
+   "investment": 300775,
+   "employment": 766284
+  },
+  {
+   "state": "MAHARASHTRA",
+   "number": 20714,
+   "investment": 2068725,
+   "employment": 20611470
+  },
+  {
+   "state": "TAMIL NADU",
+   "number": 8695,
+   "investment": 582129,
+   "employment": 2724769
+  },
+  {
+   "state": "KERALA",
+   "number": 708,
+   "investment": 40770,
+   "employment": 8085013
+  },
+  {
+   "state": "LAKSHADWEEP",
+   "number": 2,
+   "investment": 4,
+   "employment": 278
+  },
+  {
+   "state": "MEGHALAYA",
+   "number": 327,
+   "investment": 18023,
+   "employment": 41083
+  },
+  {
+   "state": "ODISHA",
+   "number": 2354,
+   "investment": 2248216,
+   "employment": 1120737
+  },
+  {
+   "state": "PUNJAB",
+   "number": 3768,
+   "investment": 172532,
+   "employment": 870265
+  },
+  {
+   "state": "TELANGANA",
+   "number": 4469,
+   "investment": 300901,
+   "employment": 766299
+  },
+  {
+   "state": "TRIPURA",
+   "number": 56,
+   "investment": 2979,
+   "employment": 6942
+  },
+  {
+   "state": "UTTARAKHAND",
+   "number": 2589,
+   "investment": 94195,
+   "employment": 503139
+  },
+  {
+   "state": "GOA",
+   "number": 902,
+   "investment": 38315,
+   "employment": 102154
+  },
+  {
+   "state": "MANIPUR",
+   "number": 13,
+   "investment": 288,
+   "employment": 2435
+  },
+  {
+   "state": "NAGALAND",
+   "number": 18,
+   "investment": 16437,
+   "employment": 302849
+  },
+  {
+   "state": "PUDUCHERRY",
+   "number": 809,
+   "investment": 15224,
+   "employment": 104701
+  },
+  {
+   "state": "KARNATAKA",
+   "number": 5636,
+   "investment": 1633556,
+   "employment": 2222842
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "number": 4931,
+   "investment": 991784,
+   "employment": 1431126
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "number": 4885,
+   "investment": 962870,
+   "employment": 1249863
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "number": 1181,
+   "investment": 43875,
+   "employment": 210400
+  },
+  {
+   "state": "DELHI",
+   "number": 770,
+   "investment": 44690,
+   "employment": 96700
+  },
+  {
+   "state": "HARYANA",
+   "number": 5128,
+   "investment": 187286,
+   "employment": 915876
+  },
+  {
+   "state": "PUNJAB",
+   "number": 3767,
+   "investment": 172532,
+   "employment": 870265
+  },
+  {
+   "state": "GUJARAT",
+   "number": 14707,
+   "investment": 2309305,
+   "employment": 3053165
+  },
+  {
+   "state": "HARYANA",
+   "number": 5132,
+   "investment": 187662,
+   "employment": 916592
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "number": 8440,
+   "investment": 480278,
+   "employment": 16290925
+  },
+  {
+   "state": "TAMIL NADU",
+   "number": 8699,
+   "investment": 582130,
+   "employment": 2724854
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "number": 4896,
+   "investment": 1053475,
+   "employment": 1315173
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "number": 2528,
+   "investment": 73013,
+   "employment": 384992
+  },
+  {
+   "state": "HARYANA",
+   "number": 5135,
+   "investment": 187687,
+   "employment": 917522
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "number": 4936,
+   "investment": 992945,
+   "employment": 1441751
+  },
+  {
+   "state": "MAHARASHTRA",
+   "number": 20720,
+   "investment": 2069429,
+   "employment": 20612795
+  },
+  {
+   "state": "MANIPUR",
+   "number": 14,
+   "investment": 298,
+   "employment": 2435
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "number": 8442,
+   "investment": 481539,
+   "employment": 16291044
+  }
+ ],
+ "api_pattern": "https://api.data.gov.in/resource/651edf6f-1dbc-4528-8023-0e72911072ce?api-key=<public-demo-key-from-data.gov.in-resource-page>&offset=0&limit=all&format=json"
+}

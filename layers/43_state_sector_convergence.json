@@ -1,0 +1,1373 @@
+{
+ "layer": 43,
+ "name": "state_sector_convergence",
+ "built": "2026-08-24",
+ "what": "State x sector convergence reportage. DPIIT's public IEM data (checked 2026-08-24) publishes only separate state-totals and industry-totals marginals -- never a joint matrix -- so the joint state x sector signal here is built from the twin's own data: REVEALED (layer 42, 76 real dated company investment events, state/city extracted from the signal text) and POLICY-ELIGIBLE (layer 16 leads' state_landings, 321 companies x sector, policy scheme stacks). IEM's state and industry totals are cited as independent reference context, not blended into the computation.",
+ "methodology_note": "revealed_sector_count/policy_sector_count are DIFFERENT signals measuring different things -- revealed is real company decisions (small N, high confidence), policy is scheme-design eligibility (larger N, doesn't mean any company actually chose that state yet). Never sum them; read side by side.",
+ "iem_reference": {
+  "state_totals": {
+   "source_url": "https://www.data.gov.in/resource/state-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+   "catalog_page": "https://www.data.gov.in/resource/state-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+   "as_of": "2026-08-15",
+   "title": "State-wise IEM part-A data on Investment and Employment from August 1991 to till last month",
+   "total_records_available": 144,
+   "rows_retrieved": 144,
+   "rows": [
+    {
+     "state": "GUJARAT",
+     "number": 14709,
+     "investment": 2310357,
+     "employment": 3053318
+    },
+    {
+     "state": "ODISHA",
+     "number": 2354,
+     "investment": 2248216,
+     "employment": 1120737
+    },
+    {
+     "state": "MAHARASHTRA",
+     "number": 20720,
+     "investment": 2069429,
+     "employment": 20612795
+    },
+    {
+     "state": "KARNATAKA",
+     "number": 5644,
+     "investment": 1635266,
+     "employment": 2228609
+    },
+    {
+     "state": "CHATTISGARH",
+     "number": 3690,
+     "investment": 1627684,
+     "employment": 1328457
+    },
+    {
+     "state": "ANDHRA PRADESH",
+     "number": 4896,
+     "investment": 1053475,
+     "employment": 1315173
+    },
+    {
+     "state": "MADHYA PRADESH",
+     "number": 4936,
+     "investment": 992945,
+     "employment": 1441751
+    },
+    {
+     "state": "WEST BENGAL",
+     "number": 5589,
+     "investment": 760578,
+     "employment": 1443269
+    },
+    {
+     "state": "TAMIL NADU",
+     "number": 8700,
+     "investment": 582256,
+     "employment": 2727154
+    },
+    {
+     "state": "JHARKHAND",
+     "number": 1242,
+     "investment": 484889,
+     "employment": 439913
+    },
+    {
+     "state": "UTTAR PRADESH",
+     "number": 8442,
+     "investment": 481539,
+     "employment": 16291044
+    },
+    {
+     "state": "RAJASTHAN",
+     "number": 4683,
+     "investment": 406039,
+     "employment": 1128949
+    },
+    {
+     "state": "TELANGANA",
+     "number": 4469,
+     "investment": 300901,
+     "employment": 766299
+    },
+    {
+     "state": "BIHAR",
+     "number": 590,
+     "investment": 188367,
+     "employment": 125134
+    },
+    {
+     "state": "HARYANA",
+     "number": 5135,
+     "investment": 187687,
+     "employment": 917522
+    },
+    {
+     "state": "PUNJAB",
+     "number": 3768,
+     "investment": 172532,
+     "employment": 870265
+    },
+    {
+     "state": "UTTARAKHAND",
+     "number": 2589,
+     "investment": 94195,
+     "employment": 503139
+    },
+    {
+     "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+     "number": 2527,
+     "investment": 73013,
+     "employment": 384992
+    },
+    {
+     "state": "ASSAM",
+     "number": 946,
+     "investment": 72486,
+     "employment": 151858
+    },
+    {
+     "state": "DELHI",
+     "number": 773,
+     "investment": 46040,
+     "employment": 98200
+    },
+    {
+     "state": "HIMACHAL PRADESH",
+     "number": 1184,
+     "investment": 44143,
+     "employment": 210894
+    },
+    {
+     "state": "KERALA",
+     "number": 708,
+     "investment": 40770,
+     "employment": 8085013
+    },
+    {
+     "state": "GOA",
+     "number": 903,
+     "investment": 38319,
+     "employment": 102154
+    },
+    {
+     "state": "JAMMU AND KASHMIR (UT)",
+     "number": 848,
+     "investment": 35936,
+     "employment": 159053
+    },
+    {
+     "state": "MEGHALAYA",
+     "number": 327,
+     "investment": 18023,
+     "employment": 41083
+    },
+    {
+     "state": "NAGALAND",
+     "number": 19,
+     "investment": 16448,
+     "employment": 302849
+    },
+    {
+     "state": "PUDUCHERRY",
+     "number": 811,
+     "investment": 15377,
+     "employment": 104851
+    },
+    {
+     "state": "DAMAN & DIU",
+     "number": 1229,
+     "investment": 15354,
+     "employment": 153377
+    },
+    {
+     "state": "SIKKIM",
+     "number": 192,
+     "investment": 8482,
+     "employment": 34854
+    },
+    {
+     "state": "ARUNACHAL PRADESH",
+     "number": 69,
+     "investment": 4450,
+     "employment": 10864
+    },
+    {
+     "state": "TRIPURA",
+     "number": 56,
+     "investment": 2979,
+     "employment": 6942
+    },
+    {
+     "state": "CHANDIGARH",
+     "number": 56,
+     "investment": 1104,
+     "employment": 9240
+    },
+    {
+     "state": "ANDAMAN & NICOBAR",
+     "number": 15,
+     "investment": 971,
+     "employment": 3641
+    },
+    {
+     "state": "MIZORAM",
+     "number": 5,
+     "investment": 301,
+     "employment": 580
+    },
+    {
+     "state": "MANIPUR",
+     "number": 14,
+     "investment": 298,
+     "employment": 2435
+    },
+    {
+     "state": "LAKSHADWEEP",
+     "number": 1,
+     "investment": 4,
+     "employment": 278
+    }
+   ],
+   "api_pattern": "https://api.data.gov.in/resource/651edf6f-1dbc-4528-8023-0e72911072ce?api-key=<public-demo-key-from-data.gov.in-resource-page>&offset=0&limit=all&format=json",
+   "dedup_note": "Source resource is a monthly time series with no month field retained; deduped 144 raw rows to 36 states by keeping each state's highest (= latest) cumulative investment figure."
+  },
+  "industry_totals": {
+   "source_url": "https://www.data.gov.in/resource/industry-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+   "catalog_page": "https://www.data.gov.in/resource/industry-wise-iem-part-data-investment-and-employment-august-1991-till-last-month",
+   "as_of": "2026-08-15",
+   "title": "Industry-wise IEM part-A data on Investment and Employment from August 1991 to till last month",
+   "total_records_available": 40,
+   "rows_retrieved": 40,
+   "rows": [
+    {
+     "industry": "BOILERS&STEAM GENERATING PLANTS",
+     "number": 62,
+     "investment": 6915,
+     "employment": 14626
+    },
+    {
+     "industry": "ELECTRICALS EQUIPMENT",
+     "number": 8814,
+     "investment": 4762276,
+     "employment": 2196623
+    },
+    {
+     "industry": "SCIENTIFIC INSTRUMENTS",
+     "number": 396,
+     "investment": 7152,
+     "employment": 87898
+    },
+    {
+     "industry": "SOAPS,COSMETICS & TOILET  PREPARATIONS",
+     "number": 823,
+     "investment": 30777,
+     "employment": 159455
+    },
+    {
+     "industry": "CHEMICALS (OTHER THAN FERTILIZERS)",
+     "number": 11822,
+     "investment": 1204844,
+     "employment": 1642602
+    },
+    {
+     "industry": "MACHINE TOOLS",
+     "number": 309,
+     "investment": 8829,
+     "employment": 53114
+    },
+    {
+     "industry": "MEDICAL  AND  SURGICAL   APPLIANCES",
+     "number": 200,
+     "investment": 6863,
+     "employment": 40365
+    },
+    {
+     "industry": "MISCELLANEOUS INDUSTRIES",
+     "number": 2126,
+     "investment": 99668,
+     "employment": 281926
+    },
+    {
+     "industry": "RUBBER GOODS",
+     "number": 1146,
+     "investment": 79239,
+     "employment": 384461
+    },
+    {
+     "industry": "SUGAR",
+     "number": 3550,
+     "investment": 242730,
+     "employment": 1186423
+    },
+    {
+     "industry": "GRAND TOTAL",
+     "number": 112521,
+     "investment": 15696491,
+     "employment": 65850319
+    },
+    {
+     "industry": "CERAMICS",
+     "number": 1174,
+     "investment": 40424,
+     "employment": 230454
+    },
+    {
+     "industry": "DEFENCE INDUSTRIES",
+     "number": 8,
+     "investment": 319,
+     "employment": 1873
+    },
+    {
+     "industry": "EARTH-MOVING MACHINERY",
+     "number": 130,
+     "investment": 8482,
+     "employment": 37140
+    },
+    {
+     "industry": "FOOD PROCESSING INDUSTRY",
+     "number": 6277,
+     "investment": 248032,
+     "employment": 1517788
+    },
+    {
+     "industry": "GLASS",
+     "number": 574,
+     "investment": 43678,
+     "employment": 123992
+    },
+    {
+     "industry": "LEATHER, LEATHER GOODS  AND PICKERS",
+     "number": 424,
+     "investment": 4723,
+     "employment": 119296
+    },
+    {
+     "industry": "MISCELLANEOUS MECHANICAL & ENGINEERING INDUSTRIES",
+     "number": 4540,
+     "investment": 202248,
+     "employment": 2616661
+    },
+    {
+     "industry": "PRIME MOVERS OTHER THAN  ELECTRICAL GENERATORS",
+     "number": 2085,
+     "investment": 88557,
+     "employment": 420499
+    },
+    {
+     "industry": "TEXTILES",
+     "number": 14166,
+     "investment": 514782,
+     "employment": 5835158
+    },
+    {
+     "industry": "TIMBER PRODUCTS",
+     "number": 236,
+     "investment": 13839,
+     "employment": 79200
+    },
+    {
+     "industry": "AGRICULTURAL MACHINERY",
+     "number": 238,
+     "investment": 12516,
+     "employment": 66208
+    },
+    {
+     "industry": "COMMERCIAL , OFFICE  AND HOUSEHOLD EQUIPMENT",
+     "number": 755,
+     "investment": 179845,
+     "employment": 439221
+    },
+    {
+     "industry": "DRUGS AND PHARMACEUTICALS",
+     "number": 3583,
+     "investment": 152466,
+     "employment": 547675
+    },
+    {
+     "industry": "FERMENTATION INDUSTRIES",
+     "number": 2634,
+     "investment": 196305,
+     "employment": 335753
+    },
+    {
+     "industry": "GLUE AND GELATIN",
+     "number": 121,
+     "investment": 3723,
+     "employment": 12985
+    },
+    {
+     "industry": "INDUSTRIAL INSTRUMENTS",
+     "number": 93,
+     "investment": 2300,
+     "employment": 16812
+    },
+    {
+     "industry": "MATHEMATICAL,  SURVEYING  AND DRAWING INSTRUMENTS",
+     "number": 13,
+     "investment": 519,
+     "employment": 4148
+    },
+    {
+     "industry": "TRANSPORTATION INDUSTRY",
+     "number": 2436,
+     "investment": 330108,
+     "employment": 900507
+    },
+    {
+     "industry": "VEGETABLE OIL & VANASPATI",
+     "number": 3443,
+     "investment": 55873,
+     "employment": 352667
+    },
+    {
+     "industry": "CEMENT & GYPSUM PRODUCTS",
+     "number": 2979,
+     "investment": 758704,
+     "employment": 873039
+    },
+    {
+     "industry": "DYE-STUFFS",
+     "number": 139,
+     "investment": 6217,
+     "employment": 18954
+    },
+    {
+     "industry": "FERTILIZERS",
+     "number": 1131,
+     "investment": 295725,
+     "employment": 162448
+    },
+    {
+     "industry": "FUELS",
+     "number": 744,
+     "investment": 584167,
+     "employment": 198025
+    },
+    {
+     "industry": "INDUSTRIAL MACHINERY",
+     "number": 2350,
+     "investment": 74953,
+     "employment": 335722
+    },
+    {
+     "industry": "METALLURGICAL INDUSTRIES",
+     "number": 16192,
+     "investment": 2936295,
+     "employment": 3951144
+    },
+    {
+     "industry": "OTHERS",
+     "number": 12029,
+     "investment": 2246990,
+     "employment": 39467457
+    },
+    {
+     "industry": "PAPER AND PULP INCLUDING PAPER PRODUCTS",
+     "number": 3055,
+     "investment": 164525,
+     "employment": 613421
+    },
+    {
+     "industry": "PHOTOGRAPHIC RAW FILM AND PAPER",
+     "number": 127,
+     "investment": 1242,
+     "employment": 10535
+    },
+    {
+     "industry": "TELECOMMUNICATIONS",
+     "number": 1597,
+     "investment": 79641,
+     "employment": 514044
+    }
+   ],
+   "api_pattern": "https://api.data.gov.in/resource/424d78ab-e958-4b8a-9208-ef084c07e096?api-key=<public-demo-key-from-data.gov.in-resource-page>&offset=0&limit=all&format=json"
+  }
+ },
+ "state_convergence": [
+  {
+   "state": "Maharashtra",
+   "revealed_sector_count": 10,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Auto, EV & Components",
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Medical Devices",
+    "Shipbuilding & Marine",
+    "Specialty Steel & Metals",
+    "Textiles & Apparel",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 14,
+   "policy_sector_count": 1,
+   "policy_sectors": [
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 16
+  },
+  {
+   "state": "Gujarat",
+   "revealed_sector_count": 7,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "Shipbuilding & Marine"
+   ],
+   "revealed_event_count": 12,
+   "policy_sector_count": 5,
+   "policy_sectors": [
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Green Energy & Fuels",
+    "Shipbuilding & Marine",
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 131
+  },
+  {
+   "state": "Tamil Nadu",
+   "revealed_sector_count": 6,
+   "revealed_sectors": [
+    "Auto, EV & Components",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 9,
+   "policy_sector_count": 6,
+   "policy_sectors": [
+    "Aerospace & Defence",
+    "Auto, EV & Components",
+    "Electronics & Semiconductors",
+    "Medical Devices",
+    "Shipbuilding & Marine",
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 136
+  },
+  {
+   "state": "Karnataka",
+   "revealed_sector_count": 6,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Pharma & Bulk Drugs",
+    "Specialty Steel & Metals"
+   ],
+   "revealed_event_count": 7,
+   "policy_sector_count": 1,
+   "policy_sectors": [
+    "Aerospace & Defence"
+   ],
+   "policy_company_count": 26
+  },
+  {
+   "state": "Andhra Pradesh",
+   "revealed_sector_count": 5,
+   "revealed_sectors": [
+    "Auto, EV & Components",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "Specialty Steel & Metals",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 9,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Food Processing",
+    "Shipbuilding & Marine"
+   ],
+   "policy_company_count": 39
+  },
+  {
+   "state": "Telangana",
+   "revealed_sector_count": 4,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "Pharma & Bulk Drugs"
+   ],
+   "revealed_event_count": 7,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Medical Devices",
+    "Pharma & Bulk Drugs"
+   ],
+   "policy_company_count": 40
+  },
+  {
+   "state": "Uttar Pradesh",
+   "revealed_sector_count": 3,
+   "revealed_sectors": [
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 5,
+   "policy_sector_count": 4,
+   "policy_sectors": [
+    "Aerospace & Defence",
+    "Auto, EV & Components",
+    "Electronics & Semiconductors",
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 111
+  },
+  {
+   "state": "Odisha",
+   "revealed_sector_count": 2,
+   "revealed_sectors": [
+    "Food Processing",
+    "Specialty Steel & Metals"
+   ],
+   "revealed_event_count": 3,
+   "policy_sector_count": 3,
+   "policy_sectors": [
+    "Chemicals & Plastics",
+    "Green Energy & Fuels",
+    "Specialty Steel & Metals"
+   ],
+   "policy_company_count": 104
+  },
+  {
+   "state": "Delhi",
+   "revealed_sector_count": 2,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Medical Devices"
+   ],
+   "revealed_event_count": 2,
+   "policy_sector_count": 0,
+   "policy_sectors": [],
+   "policy_company_count": 0
+  },
+  {
+   "state": "Haryana",
+   "revealed_sector_count": 2,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Auto, EV & Components"
+   ],
+   "revealed_event_count": 3,
+   "policy_sector_count": 0,
+   "policy_sectors": [],
+   "policy_company_count": 0
+  },
+  {
+   "state": "Kerala",
+   "revealed_sector_count": 2,
+   "revealed_sectors": [
+    "Chemicals & Plastics",
+    "Shipbuilding & Marine"
+   ],
+   "revealed_event_count": 3,
+   "policy_sector_count": 0,
+   "policy_sectors": [],
+   "policy_company_count": 0
+  },
+  {
+   "state": "West Bengal",
+   "revealed_sector_count": 2,
+   "revealed_sectors": [
+    "Chemicals & Plastics",
+    "Food Processing"
+   ],
+   "revealed_event_count": 2,
+   "policy_sector_count": 0,
+   "policy_sectors": [],
+   "policy_company_count": 0
+  },
+  {
+   "state": "Madhya Pradesh",
+   "revealed_sector_count": 1,
+   "revealed_sectors": [
+    "Food Processing"
+   ],
+   "revealed_event_count": 1,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Auto, EV & Components",
+    "Food Processing"
+   ],
+   "policy_company_count": 58
+  },
+  {
+   "state": "Rajasthan",
+   "revealed_sector_count": 1,
+   "revealed_sectors": [
+    "Food Processing"
+   ],
+   "revealed_event_count": 1,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Chemicals & Plastics",
+    "Green Energy & Fuels"
+   ],
+   "policy_company_count": 65
+  },
+  {
+   "state": "Assam",
+   "revealed_sector_count": 1,
+   "revealed_sectors": [
+    "Food Processing"
+   ],
+   "revealed_event_count": 1,
+   "policy_sector_count": 1,
+   "policy_sectors": [
+    "Electronics & Semiconductors"
+   ],
+   "policy_company_count": 41
+  },
+  {
+   "state": "Chhattisgarh",
+   "revealed_sector_count": 1,
+   "revealed_sectors": [
+    "Specialty Steel & Metals"
+   ],
+   "revealed_event_count": 1,
+   "policy_sector_count": 1,
+   "policy_sectors": [
+    "Specialty Steel & Metals"
+   ],
+   "policy_company_count": 39
+  },
+  {
+   "state": "Punjab",
+   "revealed_sector_count": 1,
+   "revealed_sectors": [
+    "Food Processing"
+   ],
+   "revealed_event_count": 1,
+   "policy_sector_count": 0,
+   "policy_sectors": [],
+   "policy_company_count": 0
+  },
+  {
+   "state": "Jharkhand",
+   "revealed_sector_count": 0,
+   "revealed_sectors": [],
+   "revealed_event_count": 0,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Food Processing",
+    "Specialty Steel & Metals"
+   ],
+   "policy_company_count": 69
+  },
+  {
+   "state": "Himachal Pradesh",
+   "revealed_sector_count": 0,
+   "revealed_sectors": [],
+   "revealed_event_count": 0,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Medical Devices",
+    "Pharma & Bulk Drugs"
+   ],
+   "policy_company_count": 40
+  },
+  {
+   "state": "Sikkim",
+   "revealed_sector_count": 0,
+   "revealed_sectors": [],
+   "revealed_event_count": 0,
+   "policy_sector_count": 1,
+   "policy_sectors": [
+    "Pharma & Bulk Drugs"
+   ],
+   "policy_company_count": 24
+  }
+ ],
+ "multi_sector_hubs": [
+  {
+   "state": "Maharashtra",
+   "revealed_sector_count": 10,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Auto, EV & Components",
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Medical Devices",
+    "Shipbuilding & Marine",
+    "Specialty Steel & Metals",
+    "Textiles & Apparel",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 14,
+   "policy_sector_count": 1,
+   "policy_sectors": [
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 16
+  },
+  {
+   "state": "Gujarat",
+   "revealed_sector_count": 7,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "Shipbuilding & Marine"
+   ],
+   "revealed_event_count": 12,
+   "policy_sector_count": 5,
+   "policy_sectors": [
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Green Energy & Fuels",
+    "Shipbuilding & Marine",
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 131
+  },
+  {
+   "state": "Tamil Nadu",
+   "revealed_sector_count": 6,
+   "revealed_sectors": [
+    "Auto, EV & Components",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 9,
+   "policy_sector_count": 6,
+   "policy_sectors": [
+    "Aerospace & Defence",
+    "Auto, EV & Components",
+    "Electronics & Semiconductors",
+    "Medical Devices",
+    "Shipbuilding & Marine",
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 136
+  },
+  {
+   "state": "Karnataka",
+   "revealed_sector_count": 6,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Chemicals & Plastics",
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "Pharma & Bulk Drugs",
+    "Specialty Steel & Metals"
+   ],
+   "revealed_event_count": 7,
+   "policy_sector_count": 1,
+   "policy_sectors": [
+    "Aerospace & Defence"
+   ],
+   "policy_company_count": 26
+  },
+  {
+   "state": "Andhra Pradesh",
+   "revealed_sector_count": 5,
+   "revealed_sectors": [
+    "Auto, EV & Components",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "Specialty Steel & Metals",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 9,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Food Processing",
+    "Shipbuilding & Marine"
+   ],
+   "policy_company_count": 39
+  },
+  {
+   "state": "Telangana",
+   "revealed_sector_count": 4,
+   "revealed_sectors": [
+    "Aerospace & Defence",
+    "Green Energy & Fuels",
+    "Medical Devices",
+    "Pharma & Bulk Drugs"
+   ],
+   "revealed_event_count": 7,
+   "policy_sector_count": 2,
+   "policy_sectors": [
+    "Medical Devices",
+    "Pharma & Bulk Drugs"
+   ],
+   "policy_company_count": 40
+  },
+  {
+   "state": "Uttar Pradesh",
+   "revealed_sector_count": 3,
+   "revealed_sectors": [
+    "Electronics & Semiconductors",
+    "Food Processing",
+    "White Goods & Electricals"
+   ],
+   "revealed_event_count": 5,
+   "policy_sector_count": 4,
+   "policy_sectors": [
+    "Aerospace & Defence",
+    "Auto, EV & Components",
+    "Electronics & Semiconductors",
+    "Textiles & Apparel"
+   ],
+   "policy_company_count": 111
+  }
+ ],
+ "sector_state_rankings": {
+  "Aerospace & Defence": {
+   "revealed_ranking": [
+    {
+     "state": "Telangana",
+     "event_count": 3
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 3
+    },
+    {
+     "state": "Haryana",
+     "event_count": 2
+    },
+    {
+     "state": "Karnataka",
+     "event_count": 2
+    },
+    {
+     "state": "Delhi",
+     "event_count": 1
+    },
+    {
+     "state": "Gujarat",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Karnataka",
+     "company_count": 26
+    },
+    {
+     "state": "Uttar Pradesh",
+     "company_count": 26
+    },
+    {
+     "state": "Tamil Nadu",
+     "company_count": 26
+    }
+   ]
+  },
+  "Auto, EV & Components": {
+   "revealed_ranking": [
+    {
+     "state": "Tamil Nadu",
+     "event_count": 3
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 1
+    },
+    {
+     "state": "Haryana",
+     "event_count": 1
+    },
+    {
+     "state": "Andhra Pradesh",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Tamil Nadu",
+     "company_count": 28
+    },
+    {
+     "state": "Madhya Pradesh",
+     "company_count": 28
+    },
+    {
+     "state": "Uttar Pradesh",
+     "company_count": 28
+    }
+   ]
+  },
+  "Chemicals & Plastics": {
+   "revealed_ranking": [
+    {
+     "state": "Gujarat",
+     "event_count": 3
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 1
+    },
+    {
+     "state": "West Bengal",
+     "event_count": 1
+    },
+    {
+     "state": "Karnataka",
+     "event_count": 1
+    },
+    {
+     "state": "Kerala",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Gujarat",
+     "company_count": 35
+    },
+    {
+     "state": "Odisha",
+     "company_count": 35
+    },
+    {
+     "state": "Rajasthan",
+     "company_count": 35
+    }
+   ]
+  },
+  "Electronics & Semiconductors": {
+   "revealed_ranking": [
+    {
+     "state": "Gujarat",
+     "event_count": 4
+    },
+    {
+     "state": "Uttar Pradesh",
+     "event_count": 2
+    },
+    {
+     "state": "Karnataka",
+     "event_count": 1
+    },
+    {
+     "state": "Tamil Nadu",
+     "event_count": 1
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Uttar Pradesh",
+     "company_count": 41
+    },
+    {
+     "state": "Assam",
+     "company_count": 41
+    },
+    {
+     "state": "Tamil Nadu",
+     "company_count": 41
+    },
+    {
+     "state": "Gujarat",
+     "company_count": 41
+    }
+   ]
+  },
+  "Food Processing": {
+   "revealed_ranking": [
+    {
+     "state": "Uttar Pradesh",
+     "event_count": 2
+    },
+    {
+     "state": "Karnataka",
+     "event_count": 1
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 1
+    },
+    {
+     "state": "West Bengal",
+     "event_count": 1
+    },
+    {
+     "state": "Assam",
+     "event_count": 1
+    },
+    {
+     "state": "Madhya Pradesh",
+     "event_count": 1
+    },
+    {
+     "state": "Tamil Nadu",
+     "event_count": 1
+    },
+    {
+     "state": "Gujarat",
+     "event_count": 1
+    },
+    {
+     "state": "Odisha",
+     "event_count": 1
+    },
+    {
+     "state": "Rajasthan",
+     "event_count": 1
+    },
+    {
+     "state": "Punjab",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Andhra Pradesh",
+     "company_count": 30
+    },
+    {
+     "state": "Madhya Pradesh",
+     "company_count": 30
+    },
+    {
+     "state": "Jharkhand",
+     "company_count": 30
+    }
+   ]
+  },
+  "Green Energy & Fuels": {
+   "revealed_ranking": [
+    {
+     "state": "Andhra Pradesh",
+     "event_count": 2
+    },
+    {
+     "state": "Gujarat",
+     "event_count": 1
+    },
+    {
+     "state": "Tamil Nadu",
+     "event_count": 1
+    },
+    {
+     "state": "Telangana",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Odisha",
+     "company_count": 30
+    },
+    {
+     "state": "Gujarat",
+     "company_count": 30
+    },
+    {
+     "state": "Rajasthan",
+     "company_count": 30
+    }
+   ]
+  },
+  "Medical Devices": {
+   "revealed_ranking": [
+    {
+     "state": "Tamil Nadu",
+     "event_count": 2
+    },
+    {
+     "state": "Andhra Pradesh",
+     "event_count": 2
+    },
+    {
+     "state": "Gujarat",
+     "event_count": 1
+    },
+    {
+     "state": "Telangana",
+     "event_count": 1
+    },
+    {
+     "state": "Delhi",
+     "event_count": 1
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Telangana",
+     "company_count": 16
+    },
+    {
+     "state": "Tamil Nadu",
+     "company_count": 16
+    },
+    {
+     "state": "Himachal Pradesh",
+     "company_count": 16
+    }
+   ]
+  },
+  "Pharma & Bulk Drugs": {
+   "revealed_ranking": [
+    {
+     "state": "Telangana",
+     "event_count": 2
+    },
+    {
+     "state": "Karnataka",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Telangana",
+     "company_count": 24
+    },
+    {
+     "state": "Himachal Pradesh",
+     "company_count": 24
+    },
+    {
+     "state": "Sikkim",
+     "company_count": 24
+    }
+   ]
+  },
+  "Shipbuilding & Marine": {
+   "revealed_ranking": [
+    {
+     "state": "Kerala",
+     "event_count": 2
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 2
+    },
+    {
+     "state": "Gujarat",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Gujarat",
+     "company_count": 9
+    },
+    {
+     "state": "Andhra Pradesh",
+     "company_count": 9
+    },
+    {
+     "state": "Tamil Nadu",
+     "company_count": 9
+    }
+   ]
+  },
+  "Specialty Steel & Metals": {
+   "revealed_ranking": [
+    {
+     "state": "Odisha",
+     "event_count": 2
+    },
+    {
+     "state": "Karnataka",
+     "event_count": 1
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 1
+    },
+    {
+     "state": "Andhra Pradesh",
+     "event_count": 1
+    },
+    {
+     "state": "Chhattisgarh",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Odisha",
+     "company_count": 39
+    },
+    {
+     "state": "Chhattisgarh",
+     "company_count": 39
+    },
+    {
+     "state": "Jharkhand",
+     "company_count": 39
+    }
+   ]
+  },
+  "Textiles & Apparel": {
+   "revealed_ranking": [
+    {
+     "state": "Maharashtra",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": [
+    {
+     "state": "Tamil Nadu",
+     "company_count": 16
+    },
+    {
+     "state": "Gujarat",
+     "company_count": 16
+    },
+    {
+     "state": "Maharashtra",
+     "company_count": 16
+    },
+    {
+     "state": "Uttar Pradesh",
+     "company_count": 16
+    }
+   ]
+  },
+  "White Goods & Electricals": {
+   "revealed_ranking": [
+    {
+     "state": "Andhra Pradesh",
+     "event_count": 3
+    },
+    {
+     "state": "Maharashtra",
+     "event_count": 2
+    },
+    {
+     "state": "Uttar Pradesh",
+     "event_count": 1
+    },
+    {
+     "state": "Tamil Nadu",
+     "event_count": 1
+    }
+   ],
+   "policy_ranking": []
+  }
+ },
+ "revealed_event_count": 81,
+ "policy_landing_count": 939
+}

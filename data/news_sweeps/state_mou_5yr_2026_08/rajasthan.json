@@ -1,0 +1,117 @@
+{
+  "state": "Rajasthan",
+  "summits_covered": [
+    {
+      "name": "Rising Rajasthan Global Investment Summit 2024 (flagship edition)",
+      "date": "2024-12-09 to 2024-12-11"
+    },
+    {
+      "name": "Rising Rajasthan pre-summit international roadshows (Dubai, Doha/Qatar, Seoul, London, Munich, Singapore, etc.)",
+      "date": "2024-07 to 2024-12"
+    },
+    {
+      "name": "Invest Rajasthan Summit 2022",
+      "date": "2022-10-07 to 2022-10-08"
+    },
+    {
+      "name": "Japanese Investors MoU Signing Ceremony, Daikin Japanese Institute of Manufacturing Excellence (DJIME), Neemrana (part of pre-Invest-Rajasthan-2022 outreach)",
+      "date": "2022-07-07"
+    }
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch + WebFetch/browser-fetch of individual news articles, government press pages, and company corporate-news pages (2021-08 to 2026-08 window). Cross-checked every candidate company against a second source where possible (parent-company ownership, plant-completion announcements) before inclusion. Deliberately excluded the widely-repeated Rs 30-35 lakh crore aggregate MoU total and the large India-headquartered conglomerates (Adani, Vedanta, JSW, Tata, Aditya Birla/UltraTech, Waaree, Dalmia, Mahindra Susten, Jindal, Essar, NTPC/NGEL, RenewPower/ReNew, etc.) that dominate summit press coverage, since this twin tracks FOREIGN investment specifically. Also excluded government-to-government MoUs (e.g. Rajasthan-UAE) and companies described only as having 'expressed interest' or being 'explored' rather than having signed a specific dated MoU. Web search quota was exhausted partway through the sweep; remaining research used Google-via-browser and direct WebFetch, which yielded a high 403-block rate on several major Indian business dailies (Business Standard, ANI, The Hindu, Inc42 in places) - some candidate leads (e.g. specific line items inside the Rs 35 lakh crore total, further Korea/Netherlands/France/Israel session outcomes) could not be independently confirmed and are recorded only in negative_notes.",
+  "mous": [
+    {
+      "company": "Nidec India Pvt Ltd (subsidiary of Nidec Corporation)",
+      "country_of_headquarters": "Japan",
+      "sector": "Auto components / electric motors",
+      "proposed_investment": "INR 300 crore",
+      "summit_or_event": "Japanese Investors MoU Signing Ceremony, DJIME, Neemrana",
+      "mou_date": "2022-07-07",
+      "source_url": "https://www.thestatesman.com/india/11-japanese-companies-1503088161.html",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Hitachi Astemo Rajasthan Brake System Pvt Ltd (subsidiary of Hitachi Astemo Ltd)",
+      "country_of_headquarters": "Japan",
+      "sector": "Auto components (brake systems)",
+      "proposed_investment": "INR 140 crore",
+      "summit_or_event": "Japanese Investors MoU Signing Ceremony, DJIME, Neemrana",
+      "mou_date": "2022-07-07",
+      "source_url": "https://www.thestatesman.com/india/11-japanese-companies-1503088161.html",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "CKD India Pvt Ltd (subsidiary of CKD Corporation)",
+      "country_of_headquarters": "Japan",
+      "sector": "Industrial automation / pneumatic and fluid-control components",
+      "proposed_investment": "INR 100 crore",
+      "summit_or_event": "Japanese Investors MoU Signing Ceremony, DJIME, Neemrana",
+      "mou_date": "2022-07-07",
+      "source_url": "https://www.thestatesman.com/india/11-japanese-companies-1503088161.html",
+      "follow_through_status": "operational",
+      "confidence": "HIGH",
+      "notes": "Corroborated by CKD Corporation's own investor-relations news release, 'Completion of India Production Plant,' dated 2024-05-22, confirming the Neemrana Industrial Estate (Rajasthan) manufacturing plant was actually built and completed (https://www.ckd.co.jp/en/latestnews/ , 2024-05-22 entry; corporate HQ confirmed as Komaki City, Aichi, Japan). This is one of the very few MoUs in this sweep with independently confirmed real-world completion."
+    },
+    {
+      "company": "Tokai Rika Minda India Pvt Ltd (joint venture: Tokai Rika Co Ltd + Uno Minda Ltd)",
+      "country_of_headquarters": "Japan (JV with India-headquartered Uno Minda)",
+      "sector": "Auto components (switches, seatbelts, safety systems)",
+      "proposed_investment": "INR 335 crore",
+      "summit_or_event": "Japanese Investors MoU Signing Ceremony, DJIME, Neemrana",
+      "mou_date": "2022-07-07",
+      "source_url": "https://www.thestatesman.com/india/11-japanese-companies-1503088161.html",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Joint venture entity; Japanese partner (Tokai Rika) is genuinely foreign-headquartered but the JV structure and majority-ownership share were not independently confirmed."
+    },
+    {
+      "company": "Fuji Silvertech India Pvt Ltd (joint venture: Fuji Concrete Industry + Silvertech Concrete LLP)",
+      "country_of_headquarters": "Japan (JV with India-headquartered Silvertech Concrete)",
+      "sector": "Precast concrete manufacturing",
+      "proposed_investment": "INR 110 crore",
+      "summit_or_event": "Japanese Investors MoU Signing Ceremony, DJIME, Neemrana",
+      "mou_date": "2022-07-07",
+      "source_url": "https://www.thestatesman.com/india/11-japanese-companies-1503088161.html",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Corporate website (fujisilvertech.com) confirms the JV is a real, currently operating business ('India's leading manufacturing & concrete precast solutions provider'), but this specific Rs 110 crore MoU tranche's completion could not be independently confirmed."
+    },
+    {
+      "company": "Beltechno India Pvt Ltd (subsidiary/JV of Beltechno Co Ltd)",
+      "country_of_headquarters": "Japan",
+      "sector": "Rubber components / conveyor belts",
+      "proposed_investment": "INR 30 crore",
+      "summit_or_event": "Japanese Investors MoU Signing Ceremony, DJIME, Neemrana",
+      "mou_date": "2022-07-07",
+      "source_url": "https://www.thestatesman.com/india/11-japanese-companies-1503088161.html",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Indo-UK Institute of Health (IUIH)",
+      "country_of_headquarters": "United Kingdom",
+      "sector": "Healthcare / biomedical waste treatment infrastructure",
+      "proposed_investment": "Not stated in Rajasthan-specific coverage",
+      "summit_or_event": "Rising Rajasthan Investors' Roadshow, London",
+      "mou_date": "2024-10-19 (approximate, per roadshow coverage)",
+      "source_url": "https://ambitiousbaba.com/rajasthan-investment-promotion-scheme-rips-2024/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "IUIH is a genuine UK-registered entity (iuih.co.uk; documented at a 2018 UK Government India-UK Createch Summit). However it has a well-documented history of signing large healthcare MoUs with multiple Indian states that stalled or were withdrawn -- e.g. a 1,000-bed hospital MoU with Andhra Pradesh was withdrawn per The News Minute (2019-12-17), and independent commentary describes 'the stalled Indo-UK Institute of Health projects' as a pattern. No Rajasthan-specific investment figure, groundbreaking, or stall report was found either way -- flagged as a real signed MoU but with above-average graveyard risk given IUIH's track record elsewhere."
+    }
+  ],
+  "negative_notes": [
+    "The widely-repeated headline figures for Rising Rajasthan 2024 (Rs 30-35 lakh crore / roughly $350-420bn in aggregate MoUs) are dominated by India-headquartered conglomerates -- Adani Group (~Rs 7.5 lakh crore, ports/cement/energy), Aditya Birla Group/UltraTech (~Rs 50,000 crore, cement/renewables), Vedanta Group (~Rs 1 lakh crore, zinc/oil), JSW Group, Tata Power (~Rs 1.2 lakh crore), Waaree Group (~Rs 1 lakh crore), Dalmia Group, Mahindra Susten, Jindal Renewable Power, Essar Renewables, NTPC Green Energy/NGEL, and ReNew Power. None of these were counted as 'foreign' for this sweep even though a few (e.g. ReNew Energy Global plc) use a UK/overseas holding-company incorporation for stock-listing purposes -- their operations, founders, and management are substantively India-based, so they were excluded as a judgment call.",
+    "Rajasthan signed a large-scale MoU with the UAE government (via UAE's Investment Ministry, Minister Mohamed Hassan Alsuwaidi) on/around 2024-10-22 for a 60 GW solar/wind/hybrid renewable programme worth INR 3 lakh crore. This is a state-to-state (government-to-government) MoU, not tied to a specific named UAE company at signing -- press coverage explicitly notes 'the UAE will appoint a developer to implement the project' at a later stage. Excluded from the mous list for that reason; flagged here as the single largest foreign-linked commitment in the whole 5-year window and worth re-checking in a future sweep once/if a specific UAE developer is named.",
+    "A September 2024 Rajasthan CM delegation to Seoul reported that several major South Korean firms -- Samsung Healthcare, LX International, Orion Corporation (which already operates an existing plant in Bhiwadi, Rajasthan), Hyosung Corporation, POSCO International, Daikin (Korea entity), Hanwha Solution -- 'expressed interest' or were approached 'to explore the possibility of investment.' No article found confirms any of these actually signed a dated, investment-figure-bearing MoU with Rajasthan; all excluded as unverified/exploratory. Separately, the Rajasthan government did sign an MoU with the Korean Stone Association (a trade body, not a company) around September 2024 to promote stone exports -- excluded as not being a company investment MoU.",
+    "A 2013-vintage RIICO-KOTRA MoU to build a dedicated Korean industrial zone at Ghilot, Neemrana, was later abandoned after no Korean company actually took up space there (reported by DNA India) -- a textbook 'MoU graveyard' example, but it falls outside the 2021-2026 window and is noted here only as useful background pattern-context, not included in the mous list.",
+    "During a UK roadshow ahead of the December 2024 summit, Rajasthan signed an MoU with Royal Multisport Pvt Ltd (owner of the Rajasthan Royals IPL franchise) and Lord's Cricket Ground concerning sports infrastructure. Royal Multisport is an Indian-registered private company (despite its UK-based co-owner Manoj Badale/Emerging Media) and Lord's/MCC is a UK sporting institution rather than an investing company -- excluded as not a clear-cut foreign company investment MoU.",
+    "A Munich-based Rajasthani-origin investor reportedly promised (per Tribune India, ahead of the German-partnership outreach for Rising Rajasthan) to sign an MoU to skill 5,000 Rajasthan residents with a job guarantee in Munich, planned for January 2025 -- no specific company name was ever given in coverage found, so this was excluded as unverifiable.",
+    "The Neemrana Japanese Zone (RIICO) is described in current Rising Rajasthan promotional material as hosting '50+ operational Japanese manufacturing units' with cumulative investment exceeding Rs 6,000-7,000 crore, including known operating units such as Nissin Brakes India, ACI Mitsui Advanced Composites, and TPR Auto Part Manufacturing. These are real, longstanding Japanese-linked operations in Rajasthan, but no dated MoU-signing event for most of them was found within the 2021-2026 window specifically (many predate it), so they were not added as individual line items to avoid conflating pre-existing operations with new summit-era MoUs.",
+    "Several other named companies appeared alongside the 11 verified Japanese firms in the July 2022 DJIME Neemrana MoU list (Taiyo India Pvt Ltd, Rs 100 crore; Allied JB Friction Pvt Ltd, Rs 78 crore; H2 Milk Farm Pvt Ltd, Rs 65 crore; HNV Casting Pvt Ltd, Rs 40 crore; MIESP India Pvt Ltd, Rs 40 crore) but their foreign (Japanese) parent-company ownership could not be independently confirmed within this sweep's research budget -- excluded from the verified list rather than guessed at. H2 Milk Farm in particular does not read as a plausible Japanese-linked entity name and may have been miscategorized in the original press list.",
+    "WebSearch tool quota was exhausted partway through this sweep (200/200 calls used across the session); remaining research relied on Google-via-browser and direct page fetches, several of which were blocked (HTTP 403) on major outlets including Business Standard, ANI, The Hindu, and some Inc42/ET Government pages. This constrains confidence that all available foreign-company MoUs for Rajasthan 2021-2026 were surfaced -- a follow-up sweep with fresh search quota focused specifically on the December 2024 in-summit country sessions (Netherlands, France, Israel, Singapore, Spain, Switzerland, Thailand) and on the 2022 Invest Rajasthan Summit's foreign delegation list would likely surface additional verifiable entries."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "states": ["Punjab", "Haryana"],
+  "summits_covered": [
+    {"state": "Punjab", "name": "Progressive Punjab Investors' Summit (5th edition)", "date": "2023-02-23/24"},
+    {"state": "Punjab", "name": "Progressive Punjab Investors' Summit 2026 (6th edition)", "date": "2026-03-13/16"},
+    {"state": "Punjab", "name": "CM Bhagwant Mann's foreign investment roadshows (Japan/South Korea)", "date": "2025-12 (roadshow ahead of 2026 summit)"},
+    {"state": "Haryana", "name": "Happening Haryana - Global Investors Summit", "date": "2023-09 (Gurugram; ~357 MoUs / Rs 5.84 lakh crore claimed, but no verifiable foreign-company breakdown found)"},
+    {"state": "Haryana", "name": "CM Nayab Singh Saini's Japan investment roadshow (Osaka/Tokyo)", "date": "2025-10-05/09"},
+    {"state": "Haryana", "name": "Happening Haryana 2.0 international outreach, Mumbai leg", "date": "2026-08-23/25 (ahead of planned Happening Haryana Global Investors Summit 2027)"},
+    {"state": "Haryana", "name": "Direct Haryana government-Suzuki/Maruti Suzuki agreement (not a named summit)", "date": "2021-11 announced / 2022-05 MoU / 2022-08 foundation stone"}
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch for initial discovery (session WebSearch quota was exhausted after ~11 queries, unusually early), after which discovery continued via WebFetch against Google News RSS feeds (news.google.com/rss/search) to surface candidate headlines/dates/sources, followed by direct WebFetch reads of the underlying publisher articles (Tribune India, TrueScoop, Babushahi, Swarajya, Wikipedia, etc.) to confirm company identity, figures, sectors and dates before inclusion. Several publisher URLs could not be reached directly (404s on guessed slugs, Google News redirect pages that render as JS shells rather than article text, DuckDuckGo/Bing CAPTCHA blocks) — where a finding rests on strong multi-outlet snippet corroboration rather than a single deep-read article, this is noted in the entry's follow_through_status or in negative_notes. Only individually-named, non-India-headquartered companies with a dated, sourced signing/announcement were included in the main list; aggregate summit press-release totals and unnamed 'X companies signed Y crore' claims were excluded and logged in negative_notes instead.",
+  "mous": [
+    {
+      "company": "Aichi Steel Corporation (Toyota Group)",
+      "country_of_headquarters": "Japan",
+      "state": "Punjab",
+      "sector": "Special/alloy steel manufacturing",
+      "proposed_investment": "Rs 500 crore (initial; explicitly framed as funding a feasibility study for a future factory, expanding an existing partnership — Aichi Steel already holds ~24.9% of Vardhman Special Steels)",
+      "summit_or_event": "CM Bhagwant Mann's Japan investment roadshow (ahead of Progressive Punjab Investors' Summit 2026); CM personally invited Aichi Steel leadership to the March 2026 summit",
+      "mou_date": "2025-12-04",
+      "source_url": "https://www.truescoopnews.com/punjab/cm-secures-500-crore-investment-as-punjab-signs-mou-with-toyotas-aichi-steel",
+      "follow_through_status": "no follow-up news found (MoU covers a feasibility study, not committed construction; no subsequent groundbreaking or operational news found as of sweep date)",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "3 Associates",
+      "country_of_headquarters": "United Kingdom",
+      "state": "Punjab",
+      "sector": "Knowledge/digital-economy real estate and innovation campus development",
+      "proposed_investment": "Rs 1,407 crore (Rs 4,700 crore gross development value cited)",
+      "summit_or_event": "Progressive Punjab Investors' Summit 2026, session 'Unlocking Opportunities under CETA: Strengthening UK-Punjab Trade and Investment Partnerships', Plaksha University, Mohali",
+      "mou_date": "2026-03-13",
+      "source_url": "https://www.babushahi.com/view-news.php?id=218369",
+      "follow_through_status": "no follow-up news found (announcement is ~5 months old as of sweep date; too recent for construction/operational news)",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Verbio India (Verbio AG)",
+      "country_of_headquarters": "Germany",
+      "state": "Punjab",
+      "sector": "Compressed biogas / biofuels",
+      "proposed_investment": "Rs 4,000 crore (new MoU at the 2026 summit) plus a separately announced Rs 3,000 crore for 10 additional industrial-scale plants",
+      "summit_or_event": "Progressive Punjab Investors' Summit 2026, Mohali",
+      "mou_date": "2026-03-13 (summit week)",
+      "source_url": "https://www.tribuneindia.com/news/punjab/punjab-on-new-growth-path-cm-mann-as-investors-commit-12000-cr/",
+      "follow_through_status": "operational — Verbio already operates India's largest biofuel/CBG plant at Lehragaga, Sangrur; the 2026 MoU covers an expansion, not a first-time entry, so the base project has genuine follow-through even though the expansion itself is unconfirmed as built",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Suzuki Motor Corporation (via Maruti Suzuki India Limited)",
+      "country_of_headquarters": "Japan",
+      "state": "Haryana",
+      "sector": "Automobile manufacturing (passenger vehicles), Kharkhoda, Sonipat district",
+      "proposed_investment": "Reported variously as Rs 18,000 crore (initial Nov 2021 announcement), Rs 20,000 crore (widely cited at MoU/groundbreaking stage), and up to Rs 35,000 crore in later reports as the project scaled across phases",
+      "summit_or_event": "Direct Haryana government-Maruti Suzuki agreement, not tied to a named investor summit; PM Modi laid the (virtual) foundation stone in August 2022",
+      "mou_date": "2021-11 (announced) / formalized around 2022-05, foundation stone 2022-08",
+      "source_url": "https://en.wikipedia.org/wiki/Maruti_Suzuki",
+      "follow_through_status": "operational — first-phase production began in 2025, second-phase production started May 2026, and the plant was formally inaugurated by PM Modi in July 2026. This is a rare confirmed 'MoU actually converted to a running factory' case, corroborated independently across CarDekho, ThePrint, Hindustan Times, ABP Live, Tribune India and Zee News (headline-level corroboration; deep-read verification was via Wikipedia rather than a single primary news article, since Google News redirect pages blocked direct article fetches for this story)",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Daikin Industries Limited",
+      "country_of_headquarters": "Japan",
+      "state": "Haryana",
+      "sector": "Air conditioning / R&D centre",
+      "proposed_investment": "Rs 1,000 crore",
+      "summit_or_event": "CM Nayab Singh Saini's Japan roadshow, Osaka; MoU signed by Amit Kumar Agrawal (Secretary, Haryana Industries & Commerce) and Shogo Endo (Deputy MD, Daikin Industries)",
+      "mou_date": "2025-10-08",
+      "source_url": "https://www.tribuneindia.com/news/haryana/cms-3-day-japan-visit-to-bring-rs-4-4k-cr-investment",
+      "follow_through_status": "under construction — by April-June 2026 multiple outlets (Times of India, Swarajya, BigInfo.in) reported the Manesar R&D centre setup was proceeding, indicating the MoU is being acted on rather than shelved",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Kubota Corporation",
+      "country_of_headquarters": "Japan",
+      "state": "Haryana",
+      "sector": "Tractor / farm equipment manufacturing",
+      "proposed_investment": "Over Rs 2,000 crore",
+      "summit_or_event": "CM Nayab Singh Saini's Japan roadshow, Osaka (CM toured Kubota's Osaka plant)",
+      "mou_date": "2025-10-08/09",
+      "source_url": "https://www.tribuneindia.com/news/haryana/cms-3-day-japan-visit-to-bring-rs-4-4k-cr-investment",
+      "follow_through_status": "no follow-up news found (note: this is a distinct commitment from the separately-existing India-incorporated JV 'Escorts Kubota Limited', which already operates a large Faridabad-area tractor plant — the roadshow figure appears to be an additional/expansion commitment, but no dedicated follow-up confirming what it specifically funds was found)",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "TDK Corporation (via subsidiary ATL / Amperex Technology Limited)",
+      "country_of_headquarters": "Japan (TDK Corporation); the operating plant entity ATL/Amperex Technology is a China-based TDK subsidiary",
+      "state": "Haryana",
+      "sector": "Lithium-ion battery manufacturing (mobile phone, laptop, wearable batteries; supplies Apple's iPhone battery supply chain)",
+      "proposed_investment": "Rs 550 crore for the Sohna plant (180 acres purchased August 2025); an earlier, larger figure of Rs 7,000 crore had been floated for a separate 2020 land deal in Haryana, relationship between the two unclear",
+      "summit_or_event": "Direct investment/land deal, not tied to a named investor summit; plant inaugurated by Union IT Minister Ashwini Vaishnaw",
+      "mou_date": "2025-08 (land purchase) / plant inaugurated 2025-09-04",
+      "source_url": "https://swarajyamag.com/economy/iphone-battery-supplier-tdks-sohna-plant-inaugurated-by-ashwini-vaishnaw-to-make-200-million-packs-annually",
+      "follow_through_status": "operational — plant inaugurated and running as of September 2025, rated capacity 200 million battery packs/year, ~5,000 direct jobs cited",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Seiren Company Limited",
+      "country_of_headquarters": "Japan",
+      "state": "Haryana",
+      "sector": "Textile solutions and advanced materials (automotive interiors, environmental protection, electronic components, sensors, magnetic materials)",
+      "proposed_investment": "Rs 220 crore",
+      "summit_or_event": "CM Nayab Singh Saini's Japan roadshow (Osaka/Tokyo)",
+      "mou_date": "2025-10 (exact signing date not specified in coverage; reported in a November 4, 2025 article)",
+      "source_url": "https://www.tribuneindia.com/news/haryana/rising-sun-shines-on-rohtak-japan-firm-to-invest-rs-220-crore",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH"
+    }
+  ],
+  "negative_notes": [
+    "Punjab is thinly covered for individually-verifiable foreign MoUs relative to Haryana. Several leads were investigated and could not be confirmed to the bar required for inclusion: (a) 'CM Mann's foreign trip yields brilliant results - 9 major companies choose Punjab' (TrueScoop, 2025-12-20) — headline claims nine companies but no article text with individual names could be retrieved; excluded. (b) Several UAE-based companies were reported as 'expected to scale up investment in Punjab' around the 2019 Progressive Punjab summit (Gulf News) but no specific company names or dated MoUs were found for the 2021-2026 window. (c) The February 2023 (5th) Progressive Punjab Investors' Summit produced almost no individually-named foreign-company coverage in the sources checked; notably, CM Mann himself downplayed formal MoUs at that summit, telling press 'We're signing Memorandum of Dil Se, not MoU' (Indian Express, 2023-02-25), suggesting that edition deliberately avoided big splashy foreign MoU announcements in favour of informal, sector-specific engagement.",
+    "HPCL-Mittal Energy Limited (HMEL) announced a Rs 2,600 crore speciality/fine chemicals investment at the Progressive Punjab Investors' Summit 2026, attributed in press to 'LN Mittal'. HMEL is excluded from the main list: it is an India-incorporated joint venture (50% HPCL, a state-owned Indian company; 50% Mittal Energy Investments, part of the Mittal family's investment vehicle) rather than a foreign-headquartered company, and coverage did not support treating it as an ArcelorMittal-branded investment.",
+    "Escorts Kubota Limited (Faridabad-area tractor manufacturing) is excluded from the Haryana list on the same basis: it is an India-incorporated company, majority-owned by Kubota Corporation (Japan) since 2022, not a foreign-HQ'd entity in its own right. A separate, less ambiguous Kubota Corporation roadshow commitment (Oct 2025, Rs 2,000+ crore) is included above with MEDIUM confidence because its relationship to the existing Escorts Kubota entity is unclear.",
+    "Haryana's 'Happening Haryana - Global Investors Summit' (Gurugram, reported September 2023) is frequently cited as having produced '357 MoUs worth Rs 5.84 lakh crore', but no source found broke this aggregate down into individually named foreign companies; excluded as an unverifiable aggregate claim, though the event itself is logged under summits_covered.",
+    "Six MoUs worth a combined Rs 1,185 crore were reported signed during CM Saini's October 6, 2025 Japan visit, with the delegation meeting nine named companies (AISIN, Air Water, TASI, Nambu, Denso, Sojitz, Nissin, Kawakin, Toppan) — but no source clearly stated which six of the nine were actual signatories versus which were meeting/discussion partners only. Excluded from the main list pending clearer attribution, despite all nine being plausible real Japanese companies.",
+    "'Nine Japanese companies to invest Rs 5,000 crore in Haryana, Gurugram Global City Project underway' (New Indian Express, 2025-10-17) — could not retrieve the underlying article text to identify the nine companies; excluded as an unverifiable aggregate claim.",
+    "IKEA (brand Swedish; corporate structure via Ingka Group, headquartered in the Netherlands) has an existing operational Gurugram store and was reported in July-August 2026 press as in discussion with the Haryana CM about further expansion (~Rs 3,500-4,000 crore, conflicting figures across sources). No clear dated MoU signing event was found — this reads as ongoing relationship-building rather than a discrete new MoU — so it was excluded from the main list as a monitoring lead rather than a verified finding.",
+    "Godrej Industries Group (Rs 20,000 crore MoU, Happening Haryana 2.0, Mumbai, August 24 2026), Reliance Industries (Rs 8,646 crore, Jhajjar township, June 2026), and Anant Raj (Rs 20,000-25,000 crore data centres, June 2026) are all India-headquartered companies and were excluded per the task's foreign-only scope, despite being the largest individual MoU figures found in the Haryana search.",
+    "Honda signed an MoU with the Haryana government (reported September 29, 2025) to set up a construction-and-demolition (C&D) waste processing plant. This is a genuine, dated, named MoU, but no investment figure could be found and the project is a waste-management facility rather than a manufacturing/industrial investment in the spirit of the task; omitted from the main list as low-significance, noted here for completeness.",
+    "HS Hyosung's Rs 1,740 crore investment (reported February 2025) is for a plant in Nagpur, Maharashtra, not Haryana or Punjab — a false-positive surfaced during search and explicitly excluded.",
+    "Emaar Properties' (Dubai) shopping mall project is in Srinagar, Jammu & Kashmir, not Punjab — a false-positive surfaced during search (name collision with 'Punjab' region searches) and explicitly excluded.",
+    "This session's WebSearch tool quota was exhausted unusually early (after roughly 11 queries), well short of the normal per-session allowance, forcing a pivot to WebFetch-against-Google-News-RSS as the primary discovery mechanism for the remainder of the sweep. This is a less precise discovery method than direct WebSearch and likely missed some findable MoUs, particularly for Punjab; a follow-up sweep with a fresh WebSearch quota would likely surface additional verifiable entries, especially for Punjab's 2021-2024 period which is under-covered here."
+  ]
+}

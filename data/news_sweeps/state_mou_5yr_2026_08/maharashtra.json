@@ -1,0 +1,170 @@
+{
+  "state": "Maharashtra",
+  "summits_covered": [
+    {
+      "name": "World Economic Forum Annual Meeting, Davos (Maharashtra government delegation)",
+      "date": "2023-01-16 to 2023-01-20"
+    },
+    {
+      "name": "World Economic Forum Annual Meeting, Davos (Maharashtra government delegation)",
+      "date": "2024-01-15 to 2024-01-19"
+    },
+    {
+      "name": "World Economic Forum Annual Meeting, Davos (Maharashtra government delegation)",
+      "date": "2025-01-20 to 2025-01-24"
+    },
+    {
+      "name": "World Economic Forum Annual Meeting, Davos (Maharashtra government delegation)",
+      "date": "2026-01-19 to 2026-01-23"
+    },
+    {
+      "name": "Toyota Kirloskar Motor MoU signing (Maharashtra Industries Dept, Mumbai) — standalone bilateral signing, not a multi-company summit",
+      "date": "2024-07-31"
+    },
+    {
+      "name": "Maharashtra-Singapore bilateral investment MoU signing (CapitaLand Investment), coinciding with Singapore Deputy PM Gan Kim Yong's visit",
+      "date": "2025-08-12"
+    },
+    {
+      "name": "ST Telemedia Global Data Centres (India) MoU signing, Mumbai — standalone bilateral signing",
+      "date": "2025-10-28"
+    }
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch (~20 queries before the session's WebSearch budget was exhausted) to identify candidate MoUs across Maharashtra's Davos/WEF delegations (2023-2026) and other standalone state-government investment MoU signings, followed by WebFetch of primary sources (company press releases via businesswire.com, aboutamazon.in, capitaland.com, toyotabharat.com, sttelemediagdc.com) and secondary business press (Business Standard, Tribune India, Deccan Herald, Zee Business, NewKerala, Devgatha, The Week) to confirm each MoU was individually company-named with a stated investment figure, rather than only appearing in an aggregate headline total. Corporate-registry lookups (Zaubacorp/IndiaFilings) and Wikipedia were used to check whether a named 'foreign-sounding' company was actually India-headquartered (this excluded Vardhaan Lithium and 'SBG Group', both of which turned out to be India-registered despite media confusion in the SBG case with SoftBank). Business Standard's Davos-2023 article and one Deccan Herald Davos-2025 article returned HTTP errors and could not be directly read; those specific claims are marked accordingly or omitted. No numbered 'Magnetic Maharashtra' summit edition (the state's flagship branded investor-summit franchise, held in 2018 and launched again in June 2020) fell inside the 2021-2026 window, so verified foreign MoUs in this file are concentrated in the annual Davos delegations plus a handful of standalone bilateral signings (Toyota, CapitaLand, ST Telemedia) that the state government itself treated as major investment-MoU events outside the summit calendar.",
+  "mous": [
+    {
+      "company": "Toyota Kirloskar Motor Pvt Ltd (majority-owned/controlled by Toyota Motor Corporation; JV with India's Kirloskar Group)",
+      "country_of_headquarters": "Japan (Toyota Motor Corporation is the controlling foreign parent; the JV entity itself is India-incorporated)",
+      "sector": "Automotive manufacturing — electric and hybrid passenger vehicles",
+      "proposed_investment": "Rs 20,000 crore (~$2.4 billion), targeting 400,000 EVs/hybrids per year, 8,000 direct + 8,000 indirect jobs",
+      "summit_or_event": "MoU signed with Maharashtra Industries Department, Mumbai",
+      "mou_date": "2024-07-31",
+      "source_url": "https://www.toyotabharat.com/news/2024/tkm-signs-mou-with-maharashtra-for-proposed-new-investment.html; https://www.businesstoday.in/industry/story/toyota-kirloskar-to-set-up-rs-20000-crore-plant-in-maharashtra-will-create-8000-direct-jobs-says-fadnavis-439611-2024-07-31",
+      "follow_through_status": "under construction",
+      "status_detail": "827 acres of land formally allotted in the Bidkin node (Chhatrapati Sambhajinagar/Delhi-Mumbai Industrial Corridor) and construction reported underway through 2025, with production originally targeted to start January 2026. Could not independently confirm whether commercial production has actually begun as of this sweep (Aug 2026); treat as 'under construction' rather than 'operational' pending direct confirmation.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Amazon.com, Inc. (Amazon Web Services)",
+      "country_of_headquarters": "United States",
+      "sector": "Cloud computing / hyperscale data centres",
+      "proposed_investment": "$8.3 billion cloud-infrastructure commitment for the 'AWS Asia-Pacific (Mumbai) Region' (some Indian press reported this as Rs 71,795 crore), part of AWS's wider $12.7 billion India plan through 2030",
+      "summit_or_event": "World Economic Forum, Davos 2025",
+      "mou_date": "2025-01-22",
+      "source_url": "https://www.aboutamazon.in/news/aws/aws-invests-8-billion-in-maharashtra",
+      "follow_through_status": "under construction",
+      "status_detail": "Real, dated follow-through confirmed independent of the MoU announcement: Amazon Data Services India has since acquired/leased land and sought environmental clearance for multiple Maharashtra data-centre campuses — Ambernath/Thane (~Rs 3,500 crore, construction 2026-2029), Taloja/Navi Mumbai (~Rs 4,000 crore, clearance sought), and a Palava (Thane) land purchase (Rs 125 crore, 2026) plus a Powai pre-lease.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Blackstone Inc.",
+      "country_of_headquarters": "United States",
+      "sector": "Data centres, urban infrastructure, real estate (Mumbai Metropolitan Region)",
+      "proposed_investment": "~$11 billion total across three MoUs: $3bn with MIDC + $3bn with CIDCO (~$6bn combined for data centres/infrastructure in MMR) plus ~$5bn for the 'Mumbai 3.0' Karnala-Sai-Chirner (KSC) New Town 'sister city' project",
+      "summit_or_event": "World Economic Forum, Davos 2025",
+      "mou_date": "2025-01-24",
+      "source_url": "https://www.business-standard.com/industry/news/blackstone-maharashtra-11-billion-investment-mumbai-3-data-centers-125012400503_1.html",
+      "follow_through_status": "under construction",
+      "status_detail": "Concrete follow-through identified: a Blackstone-Panchshil joint venture is building a 500 MW hyperscale data centre (~Rs 20,000 crore / $2.4bn) in Ghansoli, Navi Mumbai, reported across 2025-2026 industry press. This appears to be part of, or closely related to, the Davos MoU commitment rather than a fully separate deal, but the two could not be perfectly reconciled from available sources.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Aria Holding (Aria Glass)",
+      "country_of_headquarters": "Qatar",
+      "sector": "Float glass manufacturing",
+      "proposed_investment": "Rs 2,000 crore (~$240.5 million)",
+      "summit_or_event": "World Economic Forum, Davos 2024",
+      "mou_date": "2024-01-28",
+      "source_url": "https://www.businesswire.com/news/home/20240128985934/en/Aria-Holding-and-the-Government-of-Maharashtra-Sign-MoU-for-INR-2000-Crore-at-the-World-Economic-Forum-2024-in-Davos; https://www.glassonweb.com/news/qatars-aria-holding-build-240mn-float-glass-plant-india",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "No independent reporting found on land allotment, groundbreaking, or construction progress since the January 2024 signing. Aria's own materials as of 2025-2026 still describe this as a committed investment rather than a completed or under-construction facility.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "CapitaLand Investment Limited (CLI)",
+      "country_of_headquarters": "Singapore",
+      "sector": "Business parks, data centres, logistics and industrial parks (Mumbai Metropolitan Region and Pune)",
+      "proposed_investment": "Over Rs 19,200 crore (~S$2.83 billion / ~$2.2 billion) by 2030",
+      "summit_or_event": "Maharashtra-Singapore bilateral investment MoU signing (coincided with Singapore Deputy PM Gan Kim Yong's visit), not a Davos MoU",
+      "mou_date": "2025-08-12",
+      "source_url": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2025/august/CLI_signs_MoU_with_Maharashtra_Government_for_plans_to_invest_over_INR19,200_crores_by_2030_to_expand_in_Mumbai_and_Pune.html",
+      "follow_through_status": "operational",
+      "status_detail": "The MoU signing coincided with the official launch of CLI's first India data centre, in Navi Mumbai, per CapitaLand's own press release — i.e. part of this commitment is already a live, operating asset, while the remainder of the Rs 19,200 crore is a multi-year pipeline through 2030, not yet built out.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ST Telemedia Global Data Centres (India) Pvt Ltd (STT GDC), a subsidiary of ST Telemedia",
+      "country_of_headquarters": "Singapore (Singapore Technologies Telemedia)",
+      "sector": "Data centres",
+      "proposed_investment": "Up to Rs 5,000 crore, for expansion of existing Mumbai/Pune campuses plus a new 27-acre AI/high-density campus at Palava",
+      "summit_or_event": "MoU signing with Maharashtra government, Mumbai (standalone, not Davos)",
+      "mou_date": "2025-10-28",
+      "source_url": "https://www.sttelemediagdc.com/in-en/newsroom/st-telemedia-global-data-centres-india-signs-memorandum-understanding-maharashtra; https://theprint.in/ani-press-releases/st-telemedia-global-data-centres-india-signs-memorandum-of-understanding-with-maharashtra-government-for-investment-of-up-to-inr-5000-crore/2772714/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Only the company's own MoU-signing press release and its syndicated copies were found; no independent construction-progress reporting located as of this sweep, but the MoU is recent (~10 months old) and STT GDC already operates existing Mumbai/Pune campuses, so this is an expansion of a going concern rather than a greenfield speculative pledge.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ArcelorMittal Nippon Steel India (AM/NS India) — joint venture of ArcelorMittal and Nippon Steel Corporation",
+      "country_of_headquarters": "Luxembourg (ArcelorMittal) / Japan (Nippon Steel Corporation) — joint venture",
+      "sector": "Green steel manufacturing",
+      "proposed_investment": "Rs 1.1 lakh crore (~$13 billion), Gadchiroli district",
+      "summit_or_event": "World Economic Forum, Davos 2026",
+      "mou_date": "2026-01-20",
+      "source_url": "https://www.zeebiz.com/india/news-maharashtra-makes-big-splash-at-davos-2026-173-billion-mous-388218; https://www.newkerala.com/news/a/83-davos-deals-direct-foreign-investments-devendra-fadnavis-158.htm",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Signed roughly 7 months before this sweep; no independent construction or land-allotment reporting found yet. Too recent for a meaningful follow-through verdict.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Skoda Auto Volkswagen India Pvt Ltd (Volkswagen Group)",
+      "country_of_headquarters": "Germany (Volkswagen Group; Skoda Auto is a Czech marque within the group)",
+      "sector": "Automotive manufacturing",
+      "proposed_investment": "Rs 12,000 crore",
+      "summit_or_event": "World Economic Forum, Davos 2026",
+      "mou_date": "2026-01-20",
+      "source_url": "https://www.newkerala.com/news/a/83-davos-deals-direct-foreign-investments-devendra-fadnavis-158.htm",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Only found in one aggregator-level article listing companies and a headline figure; could not independently corroborate the exact amount in a second outlet within the available search budget. Too recent for follow-through reporting.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Sumitomo Realty & Development Co., Ltd.",
+      "country_of_headquarters": "Japan",
+      "sector": "Real estate development",
+      "proposed_investment": "~$8 billion (reported elsewhere as Rs 72,800 crore), ~80,000 jobs projected",
+      "summit_or_event": "World Economic Forum, Davos 2026",
+      "mou_date": "2026-01-20",
+      "source_url": "https://www.tribuneindia.com/news/business/maharashtra-govt-signs-multi-billion-dollar-mous-at-wef-2026/; https://thebombaydurpun.com/?p=4566",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Two independent outlets corroborate the company name and a broadly consistent investment figure ($8bn vs Rs 72,800cr, which converts to roughly the same amount). Signed ~7 months before this sweep; no independent construction reporting found yet.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Carlsberg A/S",
+      "country_of_headquarters": "Denmark",
+      "sector": "Beverages / brewing",
+      "proposed_investment": "Rs 500 crore",
+      "summit_or_event": "World Economic Forum, Davos (year not explicitly stated in the source; contextually appears to be the 2026 edition, alongside the Sumitomo Realty figure in the same article)",
+      "mou_date": "2026-01-20 (inferred; not explicitly dated in the source article)",
+      "source_url": "https://thebombaydurpun.com/?p=4566",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Found in only one source, which did not give an explicit signing date; the year is inferred from article context rather than directly stated. Flagged as lower-certainty on the date specifically, though the company name and figure appear to be a real, distinct MoU line item rather than part of an aggregate total.",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "negative_notes": [
+    "The Vedanta-Foxconn ~$20 billion semiconductor project was over 90% negotiated with Maharashtra — including allotment of 1,100 acres of land near Pune — before the companies signed instead with Gujarat in September 2022. This never became a signed Maharashtra MoU, so it is not listed above, but it is a well-documented case of a near-miss that illustrates the same 'promises vs. delivery' dynamic this dataset is trying to capture, just in the negative direction (a deal Maharashtra almost landed and then lost).",
+    "'SBG Group', which signed a widely-reported $20 billion Davos-2026 MoU with MMRDA for logistics infrastructure (Chairman: Saurabh Bora), was initially conflated by some social-media commentary with SoftBank Group. Corporate-registry lookup found an entity 'SBG Logistics and Warehousing Private Limited' registered in Maharashtra, India, and no evidence this is affiliated with Japan's SoftBank. Excluded from the mous list as it appears to be an India-headquartered company, not a foreign one; flagged here because the scale of the claimed commitment and the public confusion about its identity make it a plausible 'MoU graveyard' watch item.",
+    "Vardhaan Lithium (~Rs 42,535 crore Davos-2025 MoU, lithium refining/battery sector) was excluded after corporate-registry lookup (Zaubacorp) showed it is an India-incorporated, Mumbai-headquartered private company, not a foreign investor, despite being reported alongside genuinely foreign names in aggregate Davos-2025 lists.",
+    "Congress leader Nana Patole publicly claimed that of the 61 (some reports say 54) MoUs signed at Davos 2025, only 10 were with genuinely foreign companies, with 51 signed with Indian companies (43 of them already Maharashtra-based) — implying the international trip added little that couldn't have been signed domestically. This is a partisan claim I could not independently verify company-by-company, but it is directionally consistent with how few of the aggregate-total companies in Davos press coverage turned out, on individual verification, to be foreign-headquartered.",
+    "Per Nana Patole's criticism (reported alongside the Davos-2025 coverage), a company called 'PRYM Aerospace' signed an MoU to manufacture 6,000 drones, which the opposition alleged claimed a 10,000 sq ft factory that does not actually exist. I could not verify PRYM Aerospace's country of headquarters or confirm/refute the 'nonexistent factory' allegation from independent sources, so it is omitted from the verified list; flagged here as a specific, serious 'MoU graveyard'-style red flag worth follow-up.",
+    "Press coverage around Davos 2023 referenced MoUs involving Heineken (Netherlands) and AB InBev (Belgium) in the alcohol/brewing sector, cited by opposition politicians objecting to Maharashtra 'becoming a liquor state.' I could not independently confirm company names, investment figures, or exact dates for these from a primary or clearly reliable secondary source within the available search budget (the main Business Standard Davos-2023 article returned an HTTP 403 and could not be read). Omitted from the verified list pending confirmation; noted here because if genuine, they would meet this dataset's criteria.",
+    "'Temasek Capital Management' (Singapore) is named in multiple Davos-2025 company lists but no source found gave a specific investment figure for it individually (only the aggregate MoU-total context). Omitted from the mous list for lack of a verifiable figure/detail, though its foreign status (Singapore) is not in doubt.",
+    "A Tribune India retrospective piece (accessed during this sweep) reported that, based on state-government's own tracking, of the Rs 15.70 lakh crore in MoUs signed at Davos 2025, only 34 of 62 agreements showed any on-the-ground action, with 14 showing no progress whatsoever, as of the time of that later assessment. State officials were separately quoted saying investment 'realisation typically takes seven to eight years.' This is the single most concrete, sourced data point found on Maharashtra's actual Davos MoU conversion rate, and is offered as important context for interpreting the many 'no follow-up news found' statuses above — most of those reflect genuine immaturity (MoUs signed within the last 0-2 years) rather than confirmed abandonment.",
+    "No numbered edition of the flagship 'Magnetic Maharashtra' investor summit (held in Feb 2018, and relaunched as 'Magnetic Maharashtra 2.0' in June 2020) took place within the 2021-2026 window specified for this sweep, so it does not appear as a covered summit with individually verified 2021-2026 foreign MoUs; all verified entries above instead come from the annual Davos/WEF delegations (2024-2026 — the 2023 edition's primary press source could not be read) plus three standalone bilateral MoU signings (Toyota, CapitaLand, ST Telemedia).",
+    "Large aggregate/headline totals reported by the state government and press for each Davos trip (e.g., 'Rs 30 lakh crore signed at Davos 2026', 'Rs 15.70 lakh crore at Davos 2025', 'Rs 1.37 lakh crore at Davos 2023', 'US$184 billion at Magnetic Maharashtra') are self-reported at the moment of signing and were deliberately NOT used as data points in the mous[] list above — only individually named companies with a specific, sourced investment figure were included, consistent with this dataset's goal of avoiding uncritical repetition of summit press-release totals.",
+    "This sweep's WebSearch budget (200 queries, shared across the session) was exhausted partway through research on Davos 2026 (Bosch, CapitaLand-vs-Davos overlap, Coca-Cola, Iron Mountain, Fineman Global, JBL, Essar Renewables were identified by name in aggregate lists but could not be individually verified for country-of-headquarters/investment figure/date via a second corroborating source before the budget ran out). These are omitted rather than guessed at. Essar in particular is very likely India-headquartered (Essar Group, Mumbai) and would have been excluded even if verified."
+  ]
+}

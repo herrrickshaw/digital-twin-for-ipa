@@ -1,0 +1,278 @@
+{
+  "state": "Uttar Pradesh",
+  "summits_covered": [
+    {
+      "name": "UP Global Investors Summit 2023 (UPGIS-2023)",
+      "date": "2023-02-10 to 2023-02-12, Lucknow"
+    },
+    {
+      "name": "UPGIS-2023 pre-summit roadshow / UAE MoU signing ceremony, Dubai",
+      "date": "2023-01-03"
+    },
+    {
+      "name": "UPGIS-2023 pre-summit roadshow / Japan & South Korea B2G MoU signing (part of Team Yogi's Jan 2023 mission)",
+      "date": "2023-01-12 (reported)"
+    },
+    {
+      "name": "Ground Breaking Ceremony @3.0 (first GBC for UPGIS-2023 MoUs)",
+      "date": "2023 (exact date not independently pinned down in this sweep; secondary sources place it mid-2023; 1,406 projects, ~Rs 80,000 crore)"
+    },
+    {
+      "name": "Ground Breaking Ceremony @4.0 (second/main GBC for UPGIS-2023 MoUs)",
+      "date": "2024-02-19 to 2024-02-21, Indira Gandhi Pratishthan, Lucknow"
+    },
+    {
+      "name": "CM Yogi Adityanath's Japan visit (bilateral investment MoUs)",
+      "date": "2026-02-25"
+    },
+    {
+      "name": "UP-Japan Investment Meet 2026",
+      "date": "2026-08-18 to 2026-08-23 (Delhi CEO roundtable + Lucknow state-level meet, then Greater Noida/Agra/Varanasi legs)"
+    }
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch to identify candidate MoUs/events, then WebFetch on the actual press release, wire story, or business-press article to verify company name, HQ, sector, figure and any follow-up status before recording. Primary sources used: Invest UP / invest.up.gov.in press releases (several blocked by TLS/403 on direct fetch, so relied on wire coverage that quoted them), Business Standard, ThePrint, Khaleej Times, Zawya, Gulf News, Swarajya, FreePressJournal, BusinessWorld, IndiaBriefing, TelecomTalk, IndianMasterminds, BusinessToday, ANI (mostly blocked, used syndicated republishes instead), and corporate-registry listings (ClearTax/Panjiva) used only to confirm a signatory company actually exists as a going concern in India. This session's WebSearch quota (200 calls) was exhausted partway through; a handful of promising leads (Star Consortium Pvt Ltd, Fuji Silvertech/Fujisilvertech, BAE Systems, individual UK/Singapore signatories beyond SLG Capital, the Jan 2026 WEF Davos UP delegation, and a separately-reported 'Rs 90,000 crore with various Japanese companies' headline) could not be individually verified and are listed as open leads in negative_notes rather than included as verified MoUs.",
+  "mous": [
+    {
+      "company": "IKEA (Ingka/Inter IKEA)",
+      "country_of_headquarters": "Sweden",
+      "sector": "Retail / furniture",
+      "proposed_investment": "INR 43 billion (~Rs 4,300 crore)",
+      "summit_or_event": "UP Global Investors Summit 2023",
+      "mou_date": "2023-02 (UPGIS-2023)",
+      "source_url": "https://www.india-briefing.com/news/uttar-pradesh-builds-up-its-foreign-investment-appeal-successfully-concludes-2023-global-investors-summit-27225.html/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Only one detailed secondary source found describing this as a Noida investment; could not independently confirm store/facility opening status in this sweep."
+    },
+    {
+      "company": "Lulu Group International",
+      "country_of_headquarters": "UAE (Abu Dhabi)",
+      "sector": "Retail (shopping malls) and hospitality (hotel)",
+      "proposed_investment": "Rs 4,500 crore (reported as Rs45 billion for retail/hotels in one source, Rs 2,500 crore for the mall specifically in another)",
+      "summit_or_event": "UAE roadshow MoU signing ahead of UPGIS-2023",
+      "mou_date": "2023-01-03",
+      "source_url": "https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH",
+      "notes": "Plan was six malls + one hotel across Noida, Varanasi, Gorakhpur, Ayodhya, Kanpur, Prayagraj; ~10,000 jobs projected. Corroborated by Khaleej Times, Zawya, Business Standard, Gulf News."
+    },
+    {
+      "company": "Sharaf Group",
+      "country_of_headquarters": "UAE (Dubai)",
+      "sector": "Logistics parks",
+      "proposed_investment": "Rs 1,300 crore (Dh's equivalent of Rs13 billion reported)",
+      "summit_or_event": "UAE roadshow MoU signing ahead of UPGIS-2023",
+      "mou_date": "2023-01-03",
+      "source_url": "https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH",
+      "notes": "~1,500 jobs projected."
+    },
+    {
+      "company": "Hindustan Ports",
+      "country_of_headquarters": "UAE (per source grouping; company name is India-sounding, so treat HQ classification with some caution)",
+      "sector": "Logistics parks",
+      "proposed_investment": "Rs 210 crore (Rs2.1 billion reported)",
+      "summit_or_event": "UAE roadshow MoU signing ahead of UPGIS-2023",
+      "mou_date": "2023-01-03",
+      "source_url": "https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Grouped by Khaleej Times/Business Standard/Gulf News among 'six UAE firms'; ~1,000 jobs projected. Flagged MEDIUM because the entity's actual corporate domicile could not be independently confirmed beyond this grouping."
+    },
+    {
+      "company": "Astha Green Energy Venture",
+      "country_of_headquarters": "UAE (per source grouping; not independently corroborated beyond the same set of wire stories)",
+      "sector": "Renewable energy",
+      "proposed_investment": "Rs 4,480 crore (Rs44.8 billion reported)",
+      "summit_or_event": "UAE roadshow MoU signing ahead of UPGIS-2023",
+      "mou_date": "2023-01-03",
+      "source_url": "https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "~2,560 jobs projected."
+    },
+    {
+      "company": "Shree Siddharth Infratech and Services",
+      "country_of_headquarters": "UAE (per source grouping; not independently corroborated beyond the same set of wire stories)",
+      "sector": "Renewable energy",
+      "proposed_investment": "Rs 8,000 crore (Rs80 billion reported)",
+      "summit_or_event": "UAE roadshow MoU signing ahead of UPGIS-2023",
+      "mou_date": "2023-01-03",
+      "source_url": "https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Single largest of the UAE-roadshow figures; ~4,800 jobs projected."
+    },
+    {
+      "company": "Sobha Realty",
+      "country_of_headquarters": "UAE (Dubai)",
+      "sector": "Education / CSR",
+      "proposed_investment": "Rs 100 crore",
+      "summit_or_event": "UAE roadshow MoU signing ahead of UPGIS-2023",
+      "mou_date": "2023-01-03",
+      "source_url": "https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH",
+      "notes": "~250 jobs projected. Sobha Realty is genuinely Dubai-HQ'd (founder is Indian-origin but the corporate entity is UAE-domiciled)."
+    },
+    {
+      "company": "Hotel Management International Co. Ltd (HMI Group)",
+      "country_of_headquarters": "Japan",
+      "sector": "Hospitality (30 hotels planned)",
+      "proposed_investment": "Rs 7,200 crore",
+      "summit_or_event": "UP Global Investors Summit 2023",
+      "mou_date": "2023-02-11",
+      "source_url": "https://theprint.in/india/gis-2023-japanese-company-inks-mou-with-up-to-develop-30-hotels-in-major-cities/1366760/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH",
+      "notes": "Planned across Agra, Varanasi, Ayodhya and other cities; ~10,000 jobs projected. Corroborated by ThePrint, Zee5, BusinessWorld, FreePressJournal, ChiniMandi, Daily Pioneer, The Week. No 2024/2025 hotel-opening or groundbreaking coverage found for this specific MoU."
+    },
+    {
+      "company": "SLG Capital",
+      "country_of_headquarters": "Singapore",
+      "sector": "Data centre",
+      "proposed_investment": "USD 1 billion (~Rs 8,300 crore)",
+      "summit_or_event": "Pre-UPGIS-2023 Singapore delegation MoU (UPSIDA)",
+      "mou_date": "2022-12 (reported ahead of Feb 2023 summit)",
+      "source_url": "https://swarajyamag.com/business/up-govt-signs-mou-worth-1-billion-with-singapore-company-to-set-up-data-centre-in-state",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Specifically checked for 2024/2025 project-status coverage and found none; only the original 2022-23 MoU announcement is indexed."
+    },
+    {
+      "company": "Korea Overseas Infrastructure and Urban Development Corporation (KIND)",
+      "country_of_headquarters": "South Korea (state-backed infrastructure investment corporation, not a private company)",
+      "sector": "Infrastructure / PPP",
+      "proposed_investment": "Part of a combined Rs 18,350 crore across 4 Japan/South Korea proposals; no individual figure found",
+      "summit_or_event": "Team Yogi Japan/South Korea B2G mission ahead of UPGIS-2023",
+      "mou_date": "2023-01-12 (reported)",
+      "source_url": "https://www.gihub.org/news/mou-with-korea-overseas-infrastructure-and-urban-development-corporation/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "KIND is a Korean government entity, included because it is a genuinely foreign, individually-named signatory even though not a private corporation."
+    },
+    {
+      "company": "Samsung Electronics",
+      "country_of_headquarters": "South Korea",
+      "sector": "Manufacturing/electronics (unspecified in coverage — Samsung already operates a large Noida plant independent of this MoU)",
+      "proposed_investment": "Part of the combined Rs 18,350 crore / 4-proposal figure; no individual amount found for this MoU",
+      "summit_or_event": "Team Yogi Japan/South Korea B2G mission ahead of UPGIS-2023",
+      "mou_date": "2023-01-12 (reported)",
+      "source_url": "https://www.aninews.in/news/national/general-news/up-govt-signs-mous-worth-rs-18350-crore-with-japan-south-korea20230112223953/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Distinct from Samsung's separately-announced, well-documented Noida compressor/mobile investments — this entry is specifically the Jan 2023 B2G MoU, whose scope/amount is not broken out in available coverage."
+    },
+    {
+      "company": "Coupang",
+      "country_of_headquarters": "South Korea",
+      "sector": "Not specified in coverage (Coupang is an e-commerce/logistics company)",
+      "proposed_investment": "Part of the combined Rs 18,350 crore / 4-proposal figure; no individual amount or sector confirmed",
+      "summit_or_event": "Team Yogi Japan/South Korea B2G mission ahead of UPGIS-2023",
+      "mou_date": "2023-01-12 (reported)",
+      "source_url": "https://www.aninews.in/news/national/general-news/up-govt-signs-mous-worth-rs-18350-crore-with-japan-south-korea20230112223953/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "LOW",
+      "notes": "Only appears in the B2G-meetings list; could not corroborate with an independent source or confirm this converted into a signed MoU rather than just a meeting."
+    },
+    {
+      "company": "Seiko Advance Ltd. / Seiko Advance (India) Pvt Ltd",
+      "country_of_headquarters": "Japan",
+      "sector": "Printing inks / industrial coatings",
+      "proposed_investment": "Part of the Jan-2023 Rs 18,350 crore B2G figure, and again part of the Feb-2026 Rs 11,000 crore Japan-visit figure; no standalone amount found for either",
+      "summit_or_event": "Team Yogi Japan B2G mission (Jan 2023) and CM Yogi Adityanath's Japan visit (Feb 2026)",
+      "mou_date": "2023-01-12 (reported) and 2026-02-25",
+      "source_url": "https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit",
+      "follow_through_status": "operational",
+      "confidence": "HIGH",
+      "notes": "Unlike most entries here, this company already has an existing, registered operating unit in Greater Noida (Seiko Advance India Pvt Ltd, per Panjiva/ClearTax corporate-registry listings), so 'operational' reflects the existing India unit, not confirmation that the new 2023/2026 expansion pledges have themselves broken ground."
+    },
+    {
+      "company": "Kubota Corporation",
+      "country_of_headquarters": "Japan (Osaka)",
+      "sector": "Agricultural and industrial machinery",
+      "proposed_investment": "Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found for this general MoU",
+      "summit_or_event": "CM Yogi Adityanath's Japan visit",
+      "mou_date": "2026-02-25",
+      "source_url": "https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH",
+      "notes": "Distinct from the separately-tracked, concrete Escorts Kubota YEIDA project below (same parent company, different specific announcement)."
+    },
+    {
+      "company": "Escorts Kubota Limited",
+      "country_of_headquarters": "India-domiciled JV, majority-owned by Japan's Kubota Corporation since 2022 (treated here as genuinely foreign-controlled investment, not a purely India-HQ'd company)",
+      "sector": "Tractor and construction-equipment manufacturing",
+      "proposed_investment": "Rs 2,025 crore",
+      "summit_or_event": "UP-Japan Investment Meet 2026",
+      "mou_date": "2026-08-21",
+      "source_url": "https://theprint.in/economy/windfall-on-day-1-of-up-japan-investment-meet-rs-3191-cr-projects-for-gr-noida-500-acre-japanese-city/3019566/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH",
+      "notes": "Concrete project: Sector 10, YEIDA (Greater Noida), 3,800+ jobs projected. Announced only 4 days before this sweep's date, so no ground-breaking status is possible yet; flagged here as the most current, highest-confidence entry in the dataset."
+    },
+    {
+      "company": "Japan Aviation Electronics Industry (JAE)",
+      "country_of_headquarters": "Japan",
+      "sector": "Connectors / automotive & aerospace electronics",
+      "proposed_investment": "Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found",
+      "summit_or_event": "CM Yogi Adityanath's Japan visit",
+      "mou_date": "2026-02-25",
+      "source_url": "https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Corroborated across multiple republished versions of the same announcement, but no independent, differently-sourced confirmation found."
+    },
+    {
+      "company": "Nagase & Co., Ltd.",
+      "country_of_headquarters": "Japan (Osaka)",
+      "sector": "Chemicals, advanced materials, mobility solutions, electronics (diversified trading/technology company)",
+      "proposed_investment": "Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found",
+      "summit_or_event": "CM Yogi Adityanath's Japan visit",
+      "mou_date": "2026-02-25",
+      "source_url": "https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "Corroborated across multiple republished versions of the same announcement, but no independent, differently-sourced confirmation found."
+    },
+    {
+      "company": "O&O Group",
+      "country_of_headquarters": "Reported in context of the Japan-visit delegation, but this sweep could not independently verify O&O Group's actual corporate HQ or confirm it is Japan-based",
+      "sector": "Hospitality and real estate",
+      "proposed_investment": "Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found",
+      "summit_or_event": "CM Yogi Adityanath's Japan visit",
+      "mou_date": "2026-02-25",
+      "source_url": "https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "LOW",
+      "notes": "Included because the MoU itself is corroborated by several outlets, but the company's identity/HQ could not be independently pinned down in this sweep — treat with caution."
+    },
+    {
+      "company": "Monash University",
+      "country_of_headquarters": "Australia",
+      "sector": "Higher education",
+      "proposed_investment": "Not stated (education-standards cooperation agreement, not a capital-investment figure)",
+      "summit_or_event": "UP Global Investors Summit 2023",
+      "mou_date": "2023-02 (UPGIS-2023)",
+      "source_url": "https://news.careers360.com/up-government-monash-university-cm-yogi-adityanath-signs-agreement-australias-elevate-states-education-standards/amp",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM",
+      "notes": "A university rather than a for-profit company; included because it is a genuine, individually-named foreign institutional signatory. Only one source found for this sweep."
+    }
+  ],
+  "negative_notes": [
+    "Minda Corporation (Spark Minda / Uno Minda group) appears prominently in both the Feb-2026 Japan-visit coverage and the Aug-2026 UP-Japan Investment Meet (Rs 1,166 crore, YEIDA Sectors 10 & 24) but is headquartered in India (New Delhi/Noida) and was excluded per this sweep's foreign-only scope, despite being marketed alongside genuinely Japanese signatories.",
+    "Fuji Silvertech / Fujisilvertech Concrete Pvt Ltd was named in one secondary source (an X/Twitter post attributed to 'The Uttar Pradesh Index') as part of the Feb-2026 Japan-visit MoU batch, but could not be corroborated in any article this sweep fetched, and its sector/HQ could not be independently verified. Left out rather than guessed.",
+    "BAE Systems (UK) was reported as having met UP delegation officials ('preparing for big investment') around UPGIS-2023, but no source found describes an actual signed MoU — this looks like an exploratory meeting, not a verified MoU, so it was excluded.",
+    "UK partner-country session at UPGIS-2023 reportedly produced '6 MoUs in security, technology and defence sectors,' and the UK announced defence/aerospace/medical investment intent generally, but no individually-named UK company signatory could be found in accessible coverage.",
+    "Singapore's partner-country session reportedly produced 6 new MoUs (urban infrastructure, waste management, IT parks, data centres, education) plus a separate ~Rs 29,000 crore 'spiritual and eco-tourism' investment pledge from unnamed 'investors from Singapore.' Only SLG Capital could be individually verified; the rest are unnamed in the press coverage this sweep found.",
+    "Star Consortium Private Limited was named alongside SLG Capital as signing a ~Rs 2,000 crore data-centre/logistics MoU with UPSIDA, but this sweep could not confirm whether it is foreign- or India-headquartered, so it was left out rather than assumed foreign.",
+    "Denmark-UP 'Smart Laboratory on Clean Rivers' (SLCR), signed as a ~Rs 1,000 crore MoU at UPGIS-2023 and formally launched in 2024 by NMCG/IIT-BHU/Government of Denmark, is a genuine, well-documented, and (unusually for this dataset) confirmed-active bilateral partnership — but it is a government-to-government MoU, not an individually-named foreign company, so it was excluded from the mous array per this state's task scope.",
+    "A May-2023 MoU between the UP government and Gyeongsangbuk-do province (South Korea) was found (invest.up.gov.in press release), but this is again a sub-national government partner, not a company, and was excluded on the same basis.",
+    "This sweep's central hypothesis going in — that UP's Ground Breaking Ceremony 3.0/4.0 events would give unusually good, checkable individual-company conversion data for UPGIS-2023 MoUs — did NOT pan out from publicly accessible coverage. GBC coverage found (organiser.org, thestatesman, businesstoday-style recaps) reports only aggregate figures (e.g., '1,406 projects worth Rs 80,000 crore' for GBC 3.0; '14,000 projects worth ~Rs 10 lakh crore' for GBC 4.0) and, where individual companies are named at all, they are overwhelmingly domestic real-estate/industrial names (Godrej Properties, Mahagun Infratech, Theme County, Roseberry Estate) rather than the internationally-branded UPGIS-2023 MoU signatories tracked in this file. No source found cross-references a specific foreign UPGIS-2023 signatory (e.g. IKEA, Lulu Group, HMI Group, SLG Capital) against a specific GBC groundbreaking event, so none of the 'no follow-up news found' verdicts above should be read as 'confirmed stalled' — they reflect a genuine absence of public foreign-company-level conversion tracking, not a documented failure to convert.",
+    "A January-2026 WEF Davos delegation reportedly secured UP investment-proposal MoUs worth 'nearly Rs 3 lakh crore,' and a separately-headlined figure of 'Rs 90,000 crore with various Japanese companies' also surfaced in search results — neither was chased down to individually-named foreign companies in this sweep due to running out of WebSearch budget partway through; both are flagged here as open leads for a follow-up sweep.",
+    "The exact calendar date of Ground Breaking Ceremony @3.0 could not be pinned down independently in this sweep (multiple candidate source pages returned HTTP 403); it is placed provisionally in the Aug/mid-2023 window based on its being reported as the ceremony preceding GBC @4.0 (Feb 2024)."
+  ]
+}

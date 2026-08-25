@@ -1,0 +1,91 @@
+{
+  "state": "West Bengal",
+  "summits_covered": [
+    {"name": "Bengal Global Business Summit (BGBS) 2022 - 6th edition", "date": "2022-04-20/21"},
+    {"name": "Bengal Global Business Summit (BGBS) 2023 - 7th edition", "date": "2023-11-21/22"},
+    {"name": "Bengal Global Business Summit (BGBS) 2025 - 8th edition", "date": "2025-02-05/06"},
+    {"name": "CM Mamata Banerjee overseas investment roadshows (UK, Singapore, Spain, Italy, Germany, UAE) - various", "date": "2023-2025 (exact dates not independently confirmed per-leg)"}
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch + WebFetch across official BGBS site (bengalglobalsummit.com), WBIDC, Indian and international business press (Business Standard, Deccan Herald, Economic Times-linked wires, PTI/Wire syndications, sector trade press e.g. DataCenterDynamics/w.media for data centres, se.com/company press releases), Wikipedia (Bengal Silicon Valley Tech Hub, List of data centres in West Bengal, Economy of West Bengal) as a company-name index to then verify independently, and direct fetch of individual company press releases where reachable. IMPORTANT FINDING: coverage of BGBS 2022/2023/2025 is overwhelmingly aggregate (total MoU counts: 86 in 2019, 137 in 2022, 188 in 2023, 212 in 2025; total proposed investment in lakh-crore figures) and dominated by named INDIAN conglomerates (Reliance, ITC, JSW, Adani, RP-Sanjiv Goenka, Ambuja Neotia, Birla, TCG/Chatterjee Group, Emami). Individually-named FOREIGN company MoUs are rarely disclosed in press coverage of the summits themselves - most verified foreign-company entries below were found instead via sector/trade press (data centres, semiconductors, industrial capex press releases) covering real government-facilitated land/investment agreements in the same 2021-2026 window, rather than from a BGBS ceremony MoU list, and this distinction is flagged per-entry below. No official BGBS MoU signatory list or PDF naming individual companies was found publicly.",
+  "mous": [
+    {
+      "company": "NTT Global Data Centers (NTT Ltd.)",
+      "country_of_headquarters": "Japan",
+      "sector": "Data centres / IT infrastructure",
+      "proposed_investment": "Rs 2,000 crore (~US$241.5m) planned for the Kolkata campus per Feb 2023 reporting, part of NTT's broader ~US$2.5bn India investment plan; Phase 1 outlay reported as ~Rs 500 crore",
+      "summit_or_event": "Not confirmed as a Bengal Global Business Summit ceremony MoU - this is a land purchase (7.5 acres, Feb 2023) and Bhumi Pujan groundbreaking in the state government's Bengal Silicon Valley Tech Hub (New Town, WBHIDCO-controlled IT park)",
+      "mou_date": "2023-02-13 (land purchase/groundbreaking reported); land allocation within Bengal Silicon Valley Tech Hub occurred 2022 per secondary sourcing",
+      "source_url": "https://theprint.in/economy/ntt-plans-rs-2000cr-investment-in-kolkata-data-centre/1369156/",
+      "follow_through_status": "operational",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ST Telemedia Global Data Centres India (STT GDC India)",
+      "country_of_headquarters": "Singapore (ST Telemedia Global Data Centres is majority-owned by Singapore Technologies Telemedia; not explicitly restated in the fetched India-specific source, so flagged MEDIUM-HIGH rather than HIGH)",
+      "sector": "Data centres / AI infrastructure",
+      "proposed_investment": "INR 450 crore for the New Town, Kolkata (STT Kolkata 2) campus",
+      "summit_or_event": "Not confirmed as a BGBS ceremony MoU - facility launch/inauguration in New Town, Kolkata (Bengal Silicon Valley Tech Hub)",
+      "mou_date": "2025-03 (campus launch reported March 2025)",
+      "source_url": "https://m.thewire.in/article/ptiprnews/st-telemedia-global-data-centres-india-unveils-ai-ready-data-centre-campus-in-kolkata-with-inr-450-crore-investment",
+      "follow_through_status": "operational",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "GlobalFoundries",
+      "country_of_headquarters": "United States (Malta, New York)",
+      "sector": "Semiconductors - fabless design, test, and power-electronics R&D centre",
+      "proposed_investment": "Not disclosed (facility: cleanroom + chip packaging line + design-test labs at STPI Salt Lake Sector V, ~13,000 sq ft acquired with an additional ~19,000 sq ft requested)",
+      "summit_or_event": "Announced via meetings between GlobalFoundries, West Bengal CM Mamata Banerjee, and US Consul General Kathy Giles-Diaz; space allocated by West Bengal Government/STPI - not confirmed as a BGBS ceremony MoU",
+      "mou_date": "2025-06-04/05",
+      "source_url": "https://www.investmentmonitor.ai/news/globalfoundries-to-establish-design-centre-in-kolkata-india/",
+      "follow_through_status": "under construction",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Schneider Electric",
+      "country_of_headquarters": "France (Rueil-Malmaison)",
+      "sector": "Electrical equipment manufacturing - Vacuum Interrupters (power systems)",
+      "proposed_investment": "INR 140 crore",
+      "summit_or_event": "Independent groundbreaking/foundation-laying ceremony at Prospace Industrial Park, Kolkata - not confirmed as tied to a Bengal Global Business Summit MoU",
+      "mou_date": "2023-04-20 (foundation-laying ceremony)",
+      "source_url": "https://www.business-standard.com/companies/news/schneider-electric-to-set-up-new-factory-in-bengal-at-rs-140-cr-investment-123042000931_1.html",
+      "follow_through_status": "no follow-up news found (planned completion was reported as Feb 2024 with production targeted Q2 FY24-25; no independent confirmation found that the plant is now operational)",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Wilmar International (via Adani Wilmar 50:50 JV)",
+      "country_of_headquarters": "Singapore",
+      "sector": "Edible oil refining",
+      "proposed_investment": "~Rs 100 crore (reported capacity-expansion figure for the Haldia port-based refinery; this is incremental capex on an existing JV plant, not a new-entrant MoU)",
+      "summit_or_event": "Not tied to a specific named summit in sourcing found; general West Bengal industrial investment reporting",
+      "mou_date": "Exact date not independently confirmed (reporting reviewed clustered around 2022)",
+      "source_url": "https://www.projectstoday.com/News/Adani-Wilmar-to-ramp-up-capacity-at-Haldia",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "LOW"
+    },
+    {
+      "company": "Bata India (Bata Shoe Organisation / Bata Brands SA parent)",
+      "country_of_headquarters": "Switzerland (Bata Shoe Organisation, Lausanne) - Bata India Ltd is majority-owned by the Swiss-headquartered Bata group",
+      "sector": "Footwear manufacturing - factory modernization",
+      "proposed_investment": "Rs 30 crore (Rs 300 million) - manufacturing-technology upgrade, not a new plant",
+      "summit_or_event": "Independent company capex announcement at its existing Batanagar, West Bengal factory - not a state-government MoU or summit-linked commitment",
+      "mou_date": "2025-08 (per company announcement)",
+      "source_url": "https://mediabrief.com/bata-india-batanagar-manufacturing-investment/",
+      "follow_through_status": "operational (technology upgrade to an existing running factory, not a greenfield commitment)",
+      "confidence": "LOW"
+    }
+  ],
+  "negative_notes": [
+    "Aggregate BGBS totals by year (context only, not attributable to named foreign companies): 2019 - 86 MoUs, ~Rs 2.84 lakh crore proposed (outside the 2021-2026 window, included for trend context only); 2022 - 137 MoUs/LoIs/EoIs, ~Rs 3.42-3.76 lakh crore depending on source; 2023 - 188 MoUs, Rs 3,76,288 crore; 2025 - 212 MoUs/LoIs, Rs 4.40 lakh crore (some wire coverage cites Rs 91,000 crore as a narrower 'firm commitments' figure). None of the sources reviewed published a full itemised MoU signatory list.",
+    "BGBS 2022 partner-country delegations (Japan, Italy, Netherlands, UK, South Korea, US, Australia, New Zealand, Vietnam, Finland, Morocco, Bangladesh, Bhutan, Kenya) were reported as making country-level statements of interest (e.g. 'Japan and Italy want to invest in MSME sector') with NO individual company named or investment figure attached - excluded per task rules against uncritically repeating unverified summit rhetoric.",
+    "BGBS 2023 partner countries included Australia, Bangladesh, Bhutan, Fiji, France, Germany, Japan, Kenya, Luxembourg, Malaysia, Nepal, Netherlands, Poland, Rwanda, Slovak Republic, South Korea, and UK (17 countries, ~400 international delegates) - no company-level MoU breakdown by nationality was found in press coverage reviewed.",
+    "Mitsubishi Chemical Group - held exploratory talks with West Bengal government (Durgapur/Panagarh sites) re: a possible semiconductor supply-chain investment; as of the most recent reporting found (mid-2026), this remains preliminary discussion with NO MoU signed, no investment figure, and no timeline disclosed. Excluded from the verified list per instructions not to include unconfirmed proposals.",
+    "The Bengal government signed an MoU with Spain's La Liga (football league) to set up a football academy during one of CM Mamata Banerjee's overseas trips - this is a sports/cultural partnership, not a commercial investment/JV, so excluded as out of scope.",
+    "CM Mamata Banerjee's overseas roadshows (UK, Singapore in 2023; Italy/Germany in 2023 - visited Munich among other German cities with a business delegation, hosted by BVMW and the German Chambers of Commerce (IHK); Spain, Dubai/UAE legs also reported) were described in press as securing unspecified 'major MoUs' - no individually named foreign companies or investment figures were found for these legs despite targeted searching, so none are included.",
+    "Haldia Petrochemicals Ltd (HPL) - The Chatterjee Group (TCG), HPL's largest private shareholder, is US-based (Purnendu Chatterjee), but TCG/HPL's relationship with West Bengal dates to the 1980s-90s (pre-window) and its 'foreign' character is ambiguous (Indian-origin founder, long-standing joint promoter with the West Bengal government itself). A ~Rs 8,500 crore polycarbonate plant was reported as being 'explored' by HPL in March 2025, but no signed MoU or firm date was found. Excluded as ambiguous/unconfirmed.",
+    "Ricoh India (Japan-origin) appears in a West Bengal data-centre list (SALTLEC facility, marked operational) but this facility appears to predate the 2021-2026 window and no new MoU or investment event within the window was found for it - excluded.",
+    "Extensive searches for other plausible foreign investors in West Bengal in this window (Siemens, Bosch, ABB, DP World, Maersk/APM Terminals, PepsiCo, Coca-Cola, Cargill, Kansai Nerolac, Asian Paints/Jotun, Suzuki, Toyota, Samsung, LG, DBS/HSBC/Standard Chartered/Citibank, Capgemini/Cognizant/Tech Mahindra land parcels in Bengal Silicon Valley) turned up either no West Bengal-specific investment news in this window, or land/office allocations without a confirmed investment figure or signing date precise enough to verify individually - none met the bar for inclusion.",
+    "No official, itemised, government-published MoU signatory list for any BGBS edition (2022, 2023, or 2025) could be located publicly - WBIDC's own summit page and the bengalglobalsummit.com overview pages describe the event format but do not name signatories. This opacity is itself consistent with the 'MoU graveyard' phenomenon the task describes: verifiable, individually-named foreign-company commitments are the exception in public reporting, not the rule."
+  ]
+}

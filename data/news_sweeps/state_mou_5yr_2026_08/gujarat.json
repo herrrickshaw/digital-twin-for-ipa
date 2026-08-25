@@ -1,0 +1,92 @@
+{
+  "state": "Gujarat",
+  "summits_covered": [
+    {
+      "name": "Vibrant Gujarat Global Investors Summit 2024 (10th edition), 'Gateway to the Future'",
+      "date": "2024-01-10 to 2024-01-12 (Gandhinagar, Mahatma Mandir)"
+    },
+    {
+      "name": "Vibrant Gujarat Regional Conference — North Gujarat (Mehsana)",
+      "date": "2025-10-09 to 2025-10-10"
+    },
+    {
+      "name": "Vibrant Gujarat Regional Conference — Kutch & Saurashtra (Rajkot)",
+      "date": "2026-01-11 to 2026-01-12 (some press dated it 2026-01-08/09; PM's office and PIB confirm PM inaugurated it Jan 11, 2026)"
+    }
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch (~20 queries, then session WebSearch budget was exhausted) to identify candidate MoUs, followed by WebFetch of primary sources (Gujarat CMO site, DP World and Suzuki/Global Suzuki official press releases, Micron/Renesas press materials) and secondary business press (BusinessToday, Autocar Professional/India, Deshgujarat, Digitimes, Forbes India, Gulf News, Business World, Maritime Executive, Construction World) to confirm each MoU was individually company-named rather than a generic photo-op mention. Business Standard and IndBiz.gov.in were unreachable (403 / DNS failure) so those specific pages could not be directly verified and were corroborated via other outlets instead. For each verified MoU, a second round of searches/fetches was run in August 2026 to check real-world follow-through (construction starts, plant openings, land-acquisition delays, or absence of news). No standalone full 'Vibrant Gujarat Global Summit' edition was held in 2021 (COVID-19 disrupted the normal ~2-year cycle; the prior full edition was Jan 2019, the next was Jan 2024) — the state instead ran two new-format 'Regional Conferences' (Mehsana 2025, Rajkot/Kutch-Saurashtra 2026) which were also checked for named foreign MoUs but yielded none that could be individually verified from available press coverage.",
+  "mous": [
+    {
+      "company": "Suzuki Motor Corporation (via Maruti Suzuki India / Suzuki Motor Gujarat)",
+      "country_of_headquarters": "Japan",
+      "sector": "Automotive manufacturing (passenger vehicles, incl. planned EV line)",
+      "proposed_investment": "Rs 35,000 crore (~$4.2 billion) for a second greenfield plant at Khoraj, Gujarat (1 million units/year), plus a separate Rs 3,200 crore for a new production line at the existing Suzuki Motor Gujarat plant (2.5 lakh units/year)",
+      "summit_or_event": "Vibrant Gujarat Global Summit 2024",
+      "mou_date": "2024-01-10",
+      "source_url": "https://www.businesstoday.in/auto/story/vibrant-gujarat-summit-suzuki-motors-to-invest-rs-3200-cr-in-new-production-line-to-set-up-2nd-plant-in-gujarat-412589-2024-01-10; https://www.globalsuzuki.com/globalnews/2024/0110a.html",
+      "follow_through_status": "under construction",
+      "status_detail": "Delayed relative to the original announcement: as of reporting through January 2026, Maruti Suzuki had only just finalized/acquired land for the second plant (two years after the MoU), with first-phase capex now stated as Rs 10,189 crore (~$1.09bn) for a 250,000-unit/year line and commercial operation targeted for 2029, not the earlier-implied faster timeline. Treat as a scaled-back, delayed but still-alive commitment, not a full buildout yet.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ArcelorMittal Nippon Steel India (AM/NS India) — JV of ArcelorMittal (Luxembourg) and Nippon Steel Corporation (Japan)",
+      "country_of_headquarters": "Luxembourg / Japan (joint venture)",
+      "sector": "Integrated steel manufacturing",
+      "proposed_investment": "MoU covers a Phase-2 expansion of the Hazira plant from 15 to 24 million tonnes per annum (MTPA) by 2029-2030; company separately describes a $5.1bn phase-1 program to reach 15 MTPA",
+      "summit_or_event": "Vibrant Gujarat Global Summit 2024",
+      "mou_date": "2024-01-10",
+      "source_url": "https://www.businesstoday.in/latest/corporate/story/arcelormittal-to-build-worlds-single-largest-steel-manufacturing-site-at-hazira-by-2029-says-lakshmi-mittal-412601-2024-01-10; https://deshgujarat.com/2024/01/10/arcelormittal-nippon-steels-hazira-steel-plant-to-have-capacity-of-24-million-tonnes-by-2029-lakshmi-mittal/",
+      "follow_through_status": "under construction",
+      "status_detail": "AM/NS India officially broke ground on the Phase-2 expansion at Hazira on 2026-01-01, per industry trade press; new Continuous Galvanizing Line (CGL) and Continuous Galvanizing and Annealing Line (CGAL) reported as targeted for 2025 operational status. Genuine, dated construction activity confirmed, distinct from a mere MoU restatement.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "DP World",
+      "country_of_headquarters": "United Arab Emirates (Dubai)",
+      "sector": "Ports, container terminals, logistics and SEZ infrastructure",
+      "proposed_investment": "Rs 25,000 crore (~$3 billion) across multiple projects: deep-draft ports in South Gujarat and along the Kutch coast, SEZs at Jamnagar and Kutch, and Gati Shakti cargo terminals/private freight stations at Dahej, Vadodara, Rajkot, Bedi and Morbi",
+      "summit_or_event": "Vibrant Gujarat Global Summit 2024",
+      "mou_date": "2024-01-10",
+      "source_url": "https://www.dpworld.com/en/news/gujarat-and-dp-world-sign-agreements-to-strengthen-logistics-in-the-indian-state; https://www.businessworld.in/article/DP-World-Inks-MoUs-Worth-Rs-25-000-Cr-With-Gujarat-For-Port-Economic-Zone-Development-/11-01-2024-505656/",
+      "follow_through_status": "under construction",
+      "status_detail": "Confirmed construction underway on at least one component: a $510 million, 1.1km-berth, 2.19-million-TEU container terminal at Tuna Tekra, Kutch. Status of the remaining SEZ and freight-terminal components under the same MoU package is not separately confirmed in available reporting — treat the overall package as partially, not fully, realized.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Simmtech Co., Ltd.",
+      "country_of_headquarters": "South Korea",
+      "sector": "Semiconductor substrate / PCB (printed circuit board) manufacturing, co-located to support Micron's Sanand plant",
+      "proposed_investment": "Rs 1,250 crore, ~1,000+ jobs, 30-acre plant near Micron's Sanand facility",
+      "summit_or_event": "Vibrant Gujarat Global Summit 2024",
+      "mou_date": "2024-01-11",
+      "source_url": "https://www.digitimes.com/news/a20240112VL201/ic-substrate-india-memory-chips-micron-simmtech.html; https://deshgujarat.com/2024/01/11/simmtech-to-set-up-semiconductor-plant-at-sanand-in-gujarat/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "At announcement, construction was slated to start within 2-3 months with first-phase completion targeted for 2025 (partnering with Tata for construction). No subsequent 2025/2026 press coverage confirming groundbreaking, opening, or delay was found in this sweep.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Micron Technology, Inc. (MoU signed with NAMTECH, an ArcelorMittal Nippon Steel-backed education initiative, for semiconductor workforce training — NOT the same instrument as Micron's main $2.75bn Sanand ATMP plant investment, which was separately announced in June 2023 outside any Gujarat summit)",
+      "country_of_headquarters": "United States",
+      "sector": "Semiconductor workforce training / talent development",
+      "proposed_investment": "Not stated in this MoU (a training/education partnership, not a capex figure); Micron's separate, pre-existing Sanand plant investment is ~$2.75 billion total (Micron + government incentives combined)",
+      "summit_or_event": "Vibrant Gujarat Global Summit 2024",
+      "mou_date": "2024-01-11",
+      "source_url": "https://digitalterminal.in/tech-companies/micron-and-namtech-signed-mou-at-vibrant-gujarat-summit-to-shape-indias-semiconductor-future",
+      "follow_through_status": "operational",
+      "status_detail": "The broader Micron Sanand semiconductor assembly-and-test facility that this training MoU supports formally opened on 2026-02-28 and has begun commercial production, shipping its first made-in-India memory modules to Dell. The training-specific MoU itself has no separately reported completion metric, but the ecosystem it was built to serve is now live.",
+      "confidence": "HIGH"
+    }
+  ],
+  "negative_notes": [
+    "The Vibrant Gujarat 2024 headline figure (Rs 26.33 lakh crore MoUs for 41,299 projects, later cited even higher at Rs 45 lakh crore across 98,540 projects when counting the full pre-summit run-up) is overwhelmingly an aggregate total with almost no individual-company transparency in public reporting. This is a textbook case of the 'MoU graveyard' pattern the task description warns about: the number is impossible to audit at the company level from open sources.",
+    "The large majority of individually named 'big name' investors publicized by Indian media for Vibrant Gujarat 2024 were domestic Indian conglomerates, not foreign companies: Reliance Industries (~Rs 10 lakh crore, renewable power), Adani Group (~Rs 2 lakh crore, green energy park in Kutch), Tata Group (semiconductor fab plans in Dholera), Torrent Power/Torrent Group (Rs 57,000-64,000 crore renewable/green ammonia, reaffirmed later in 2024), Welspun Group (~Rs 40,000 crore, green hydrogen/ammonia), and NTPC/NTPC Renewable Energy (an Indian state-owned enterprise, ~$10.8bn + $8.4bn). All of these were EXCLUDED from the mous list above as India-headquartered, per task instructions, despite dominating the summit's press coverage.",
+    "KP Group (also styled KPI Green Energy / KP Energy) was mentioned in some summit coverage with a Rs 17,690 crore renewable-energy MoU, but is confirmed to be headquartered in Surat, Gujarat, India (founded 1994) — excluded as an India-headquartered company, not foreign, despite superficially sounding like it could be international.",
+    "A widely reported 'three semiconductor MoUs' framing for Vibrant Gujarat 2024 day 2 could only be independently corroborated for two of the three: Micron-NAMTECH and Simmtech (both included above). The likely third (Tata Group's Dholera semiconductor fab plans) is an India-headquartered company and was excluded; IndBiz.gov.in's own writeup of the '3 MoUs' story could not be reached (DNS failure) to confirm further detail.",
+    "The CG Power + Renesas Electronics (Japan) + Stars Microelectronics (Thailand) joint-venture agreement to build an OSAT semiconductor facility at Sanand — now operational as of 2025-2026 under CG Semi — is a genuine, verifiable foreign-linked investment, but it was NOT signed at the Vibrant Gujarat summit itself (the JV agreement dates to ~2024-02-29/03-01, roughly seven weeks after the Jan 10-12, 2024 summit, per Business Standard and Renesas/CG Power press materials) and Renesas/Stars Microelectronics are minority partners in an India-majority-owned (CG Power/Murugappa Group) JV. Excluded from the summit MoU list on that basis, but flagged here since it is directly adjacent to the Micron/Simmtech Sanand semiconductor cluster and a reader auditing that cluster should be aware of it.",
+    "The two post-2024 'Vibrant Gujarat Regional Conference' events (Mehsana, Oct 2025: ~1,200 MoUs / Rs 3.24 lakh crore; Rajkot/Kutch-Saurashtra, Jan 2026: 5,492 MoUs / Rs 5.78 lakh crore) both advertised international 'partner countries' (Japan, South Korea, Vietnam, Netherlands for Mehsana; Japan, South Korea, Rwanda, Ukraine for Rajkot) and hundreds of 'international delegates', but no individually named foreign company MoU from either event could be found and verified in available press coverage during this sweep — these appear to be overwhelmingly domestic MSME- and mid-market-focused conferences (dairy, agro-processing, auto components, ceramics, engineering, tourism) rather than large foreign direct investment events. Not included in the mous list for lack of any verifiable individual foreign-company MoU.",
+    "No standalone full-scale 'Vibrant Gujarat Global Investors Summit' took place in 2021 or 2022 — the prior full edition was January 2019 (9th) and the next was January 2024 (10th), a 5-year gap attributable at least partly to COVID-19 disruption. This sweep therefore has no 2021-2023 full-summit data to report for Gujarat; the two new-format Regional Conferences (2025, 2026) are the only other qualifying events found in the window.",
+    "Search coverage for this sweep was constrained partway through by the session's WebSearch call budget being exhausted (~20 WebSearch queries used); remaining research relied on WebFetch against already-identified candidate URLs. It is likely some additional individually-verifiable foreign MoUs from Vibrant Gujarat 2024 (particularly from Germany, UK, Netherlands, Singapore, Israel, and additional Japanese/Korean companies known to have had pavilions/delegations at the summit) exist in press coverage but were not captured in this pass. This list should be treated as a verified floor, not an exhaustive count.",
+    "Business Standard (business-standard.com) returned HTTP 403 for multiple attempted fetches and could not be used as a direct primary source in this sweep, despite being cited secondhand by other outlets; IndBiz.gov.in (Ministry of External Affairs economic diplomacy portal) could not be resolved (DNS failure) from this environment."
+  ]
+}

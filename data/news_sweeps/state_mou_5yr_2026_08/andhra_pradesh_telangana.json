@@ -1,0 +1,277 @@
+{
+  "states": ["Andhra Pradesh", "Telangana"],
+  "summits_covered": [
+    {
+      "state": "Andhra Pradesh",
+      "name": "Andhra Pradesh Global Investors Summit (GIS) 2023, 'Abundance to Prosperity'",
+      "date": "2023-03-03 to 2023-03-04 (Andhra University, Visakhapatnam)"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "name": "Investopia Global AP-2025 Summit (with UAE's Investopia and APEDB)",
+      "date": "2025-07-24 (Vijayawada)"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "name": "Google AI Hub announcement / partnership with AdaniConneX-Airtel (standalone corporate announcement, not a summit, but a major dated MoU-adjacent event)",
+      "date": "2025-10-14 (Visakhapatnam / global announcement)"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "name": "30th CII Partnership Summit 2025",
+      "date": "2025-11-14 to 2025-11-15 (Visakhapatnam)"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "name": "AM/NS India (ArcelorMittal Nippon Steel) greenfield steel plant groundbreaking / MoU signing",
+      "date": "2026-03-23 (Rajayyapeta, Anakapalli district)"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "name": "AI & Quantum ecosystem MoU signing (state government)",
+      "date": "2026-02-20 (Amaravati)"
+    },
+    {
+      "state": "Telangana",
+      "name": "Foxconn (FIT) MoU signing for Kongara Kalan plant",
+      "date": "2023-03-02 (bilateral signing, Chairman Young Liu)"
+    },
+    {
+      "state": "Telangana",
+      "name": "World Economic Forum, Davos 2024 (TelanganaRising delegation)",
+      "date": "2024-01 (Davos, Switzerland)"
+    },
+    {
+      "state": "Telangana",
+      "name": "Miltenyi Biotec / BIRAC-DBT Cell & Gene Therapy MoU (national-level, Genome Valley Hyderabad site)",
+      "date": "2024-02"
+    },
+    {
+      "state": "Telangana",
+      "name": "World Economic Forum, Davos 2025 (TelanganaRising delegation)",
+      "date": "2025-01-21 to 2025-01-24 (Davos, Switzerland)"
+    },
+    {
+      "state": "Telangana",
+      "name": "Telangana Rising Global Summit 2025",
+      "date": "2025-12-08 to 2025-12-09 (Bharat Future City, Hyderabad)"
+    }
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch (~20 queries before the session's WebSearch budget was exhausted) to identify candidate MoUs from government press (newsonair.gov.in, telangana.gov.in), state-summit coverage, and business press, followed by WebFetch of individual articles (Business Standard, Deccan Herald/Chronicle, Deccan Chronicle, ETV Bharat, The Print, Tribune India, Google/DCD/corporate press, Miltenyi Biotec/Wikipedia, digitimes) to confirm each MoU was individually company-named (not just an aggregate summit total) and to establish headquarters/country of the named company. A second pass checked each verified company for real-world follow-through (construction starts, plant openings, production status, or absence of news) as of the August 2026 sweep date. Business Standard and corporate.arcelormittal.com returned HTTP 403 / blocked-domain errors for several direct fetches and could not be used as primary sources for those specific pages; findings were corroborated via other outlets (The Print, Deccan Herald) instead. Because AP had a change of government in 2024 (Chandrababu Naidu/TDP-led NDA replacing Jagan Mohan Reddy/YSRCP), each pre-2024 AP MoU found was checked for whether it was reconfirmed post-2024; in practice, almost no individually-named foreign company from the pre-2024 GIS-2023 summit could be independently verified as reconfirmed (or lapsed) under the new government from open-source press alone — see negative_notes.",
+  "mous": [
+    {
+      "company": "Google LLC",
+      "country_of_headquarters": "United States",
+      "state": "Andhra Pradesh",
+      "sector": "AI data centre / cloud infrastructure",
+      "proposed_investment": "$15 billion over 2026-2030 (Google's own figure for its first India AI hub); one secondary source (Deccan Chronicle) separately cited a narrower ~₹50,000 crore ($6bn) figure for the Vizag data-centre-and-renewables component specifically — treat $15bn as the headline company-stated total, the narrower figure as a possible subset",
+      "summit_or_event": "Announced 2025-10-14 as Google's 'First AI Hub in India' (built with local partners AdaniConneX and Airtel); reaffirmed around the 30th CII Partnership Summit, Visakhapatnam, 2025-11-14/15",
+      "mou_date": "2025-10-14",
+      "source_url": "https://blog.google/intl/en-in/company-news/our-first-ai-hub-in-india-powered-by-a-15-billion-investment/; https://www.datacenterdynamics.com/en/news/google-confirms-15bn-data-center-project-in-andhra-pradesh-india/; https://www.adani.com/newsroom/media-releases/adani-and-google-partner-to-build-indias-largest-data-centre-campus-in-visakhapatnam",
+      "follow_through_status": "under construction",
+      "status_detail": "Three hyperscale campuses planned near Visakhapatnam (Adavivaram, Tarluvada, Rambilli), built jointly with AdaniConneX and Airtel. Construction reported as beginning 2026-04-28, roughly six months after the announcement — i.e. genuinely moving, not a pure paper MoU.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Brookfield Asset Management",
+      "country_of_headquarters": "Canada",
+      "state": "Andhra Pradesh",
+      "sector": "Data centre / renewable energy",
+      "proposed_investment": "Up to $12 billion (a clean-energy-powered 3 GW data centre plus other renewable projects); one government wire report separately cited ₹1.06 lakh crore for the data-centre component signed at the summit",
+      "summit_or_event": "30th CII Partnership Summit 2025",
+      "mou_date": "2025-11-14",
+      "source_url": "https://www.newsonair.gov.in/andhra-pradesh-attracts-over-rs-11-lakh-crore-investments-at-cii-partnership-summit-2025-visakhapatnam",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "MoU is recent (Nov 2025); no independent construction/groundbreaking news found as of this sweep.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ArcelorMittal (Luxembourg) and Nippon Steel Corporation (Japan) joint venture — AM/NS India",
+      "country_of_headquarters": "Luxembourg / Japan (joint venture)",
+      "state": "Andhra Pradesh",
+      "sector": "Integrated greenfield steel manufacturing",
+      "proposed_investment": "Total project ₹1,35,000 crore; Phase 1 alone ₹70,000 crore (an earlier press figure cited ₹61,780 crore for an initial component)",
+      "summit_or_event": "MoU signed at the groundbreaking/foundation-stone ceremony for the plant at Rajayyapeta, Anakapalli district, in the presence of CM N. Chandrababu Naidu and ArcelorMittal Executive Chairman Lakshmi Mittal",
+      "mou_date": "2026-03-23",
+      "source_url": "https://theprint.in/india/governance/arcelormittal-nippon-steel-gets-started-on-building-indias-largest-greenfield-steel-plant-in-andhra/2887056/; https://www.amns.in/press-releases/arcelormittal-nippon-steel-india-lays-foundation-for-greenfield-steel-plant-in-andhra-pradesh",
+      "follow_through_status": "under construction",
+      "status_detail": "Foundation stone laid same day as the MoU/agreement; environmental clearance obtained ~13 months prior; manufacturing targeted to begin by December 2028. Genuine construction-stage project, not just a pledge — this is a case of a real post-2024-government deal (CM Naidu said his 'first conversation' with Mittal was in 2024) moving unusually fast to groundbreaking.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Yitoa Micro Technology Ltd. (YMTL) — Japanese venture partner in the Indichip Semiconductors JV",
+      "country_of_headquarters": "Japan",
+      "state": "Andhra Pradesh",
+      "sector": "Semiconductor (Silicon Carbide/SiC chip) manufacturing",
+      "proposed_investment": "₹14,000 crore for a SiC fab at the Orvakal Mega Industrial Hub, Kurnool (10,000 wafers/month scaling to 50,000/month within 2-3 years)",
+      "summit_or_event": "Indichip Semiconductors-Andhra Pradesh government MoU signing",
+      "mou_date": "2025-01 (approximate; reported as a January 2025 signing)",
+      "source_url": "https://inc42.com/buzz/indichip-semiconductors-inks-pact-with-andhra-govt-to-build-semiconductor-manufacturing-facility/; https://evertiq.com/news/57057",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "The MoU signatory of record with the AP government is Indichip Semiconductors (the JV vehicle); Yitoa is the named Japanese technology/venture partner behind it, not a direct independent signatory — flagged as a JV-partner case rather than a clean single-foreign-company MoU. No construction news found since the announcement.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Microsoft Corporation",
+      "country_of_headquarters": "United States",
+      "state": "Andhra Pradesh",
+      "sector": "AI / technology skilling and innovation ('Experience Zone' + global hackathon)",
+      "proposed_investment": "Not stated (a programmatic/skilling partnership, not a disclosed capex figure)",
+      "summit_or_event": "Around the 30th CII Partnership Summit 2025 / AP's 12-month investment push",
+      "mou_date": "2025 (exact date not specified in sources found)",
+      "source_url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-races-ahead-with-rs934-lakh-cr-investments-in-12-months-1895452",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Planned hackathon is dated 2026; low materiality relative to the capex-heavy MoUs on this list — included because it is a specific, individually-named, dated engagement, but should be read as a soft/ecosystem MoU rather than an investment commitment.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "NVIDIA Corporation",
+      "country_of_headquarters": "United States",
+      "state": "Andhra Pradesh",
+      "sector": "AI education ('AI University' concept)",
+      "proposed_investment": "Not stated",
+      "summit_or_event": "Around AP's 2025 investment push (same article cluster as Microsoft/Schneider Electric entries above)",
+      "mou_date": "2025 (exact date not specified in sources found)",
+      "source_url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-races-ahead-with-rs934-lakh-cr-investments-in-12-months-1895452",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Concept-stage 'AI University' in Amaravati; no independent confirmation of construction or enrolment found. Soft/capacity-building MoU, not a hard investment figure.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Schneider Electric",
+      "country_of_headquarters": "France",
+      "state": "Andhra Pradesh",
+      "sector": "Advanced manufacturing / automation skilling (20 technology labs across AP educational institutions)",
+      "proposed_investment": "Not stated",
+      "summit_or_event": "Around AP's 2025 investment push",
+      "mou_date": "2025 (exact date not specified in sources found)",
+      "source_url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-races-ahead-with-rs934-lakh-cr-investments-in-12-months-1895452",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Skilling-lab MoU rather than a capex commitment; included for completeness as a specific, individually-named foreign company.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Investopia (UAE government-linked investment platform)",
+      "country_of_headquarters": "United Arab Emirates",
+      "state": "Andhra Pradesh",
+      "sector": "Cross-border trade and investment facilitation (institutional, not a single-project investment)",
+      "proposed_investment": "Not a project-specific figure; CM Naidu set a broader ₹10 lakh crore target for the year at this event, not attributable to Investopia itself",
+      "summit_or_event": "Investopia Global AP-2025 Summit",
+      "mou_date": "2025-07-24",
+      "source_url": "https://www.etvbharat.com/en/!state/investopia-global-summit-chandrababu-targets-10-lakh-crore-investments-for-andhra-enn25072402123",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "This is an institutional/facilitation MoU (APEDB-Investopia) intended to channel future UAE investment into AP, not itself a company's investment commitment — included with an explicit flag rather than folded into the AP investment totals.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Foxconn Interconnect Technology (FIT), part of Hon Hai Precision Industry Co. Ltd.",
+      "country_of_headquarters": "Taiwan",
+      "state": "Telangana",
+      "sector": "Electronics manufacturing (Apple AirPods and other accessories)",
+      "proposed_investment": "Initially reported ~$200 million; expanded to a $500-550 million overall project for the Kongara Kalan facility, projected 24,000 jobs",
+      "summit_or_event": "Bilateral MoU signing with the Telangana government (Foxconn Chairman Young Liu), 200-acre site at Kongara Kalan near Hyderabad",
+      "mou_date": "2023-03-02",
+      "source_url": "https://www.digitimes.com/news/a20240604VL205/foxconn-hyderabad-apple-airpods-production-telangana-india.html; https://www.business-standard.com/companies/news/foxconn-hyderabad-airpods-production-expansion-india-jobs-apple-125102500392_1.html",
+      "follow_through_status": "operational",
+      "status_detail": "The Kongara Kalan plant began commercial AirPods production in April 2025 and was ramping toward 200,000 units/month as of October 2025 reporting — a genuine, verified, operating example of MoU-to-reality follow-through.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Amazon.com, Inc. (Amazon Web Services)",
+      "country_of_headquarters": "United States",
+      "state": "Telangana",
+      "sector": "Cloud / AI data centre infrastructure",
+      "proposed_investment": "₹60,000 crore for data centre expansion at Bharat Future City (202 acres) and Chandanvelly (98 acres); part of Amazon's broader $48bn India commitment ($21bn of which is cloud/AI infrastructure, 2026-2030)",
+      "summit_or_event": "In-principle commitment at WEF Davos, January 2025; formal framework agreement signed at the Telangana Rising Global Summit, December 2025",
+      "mou_date": "2025-01-22 (in-principle); 2025-12-08 (framework MoU)",
+      "source_url": "https://www.telangana.gov.in/news/news-and-press-releases/2025/01/amazon-to-invest-a-massive-%E2%82%B960000-cr-on-building-data-centers-in-telangana/; https://www.thenewsminute.com/telangana/foundation-laid-for-new-amazon-data-centre-in-telanganas-future-city",
+      "follow_through_status": "under construction",
+      "status_detail": "Groundbreaking held 2026-07-15 with CM Revanth Reddy attending; 24-month construction timeline stated. One of the strongest confirmed follow-through cases in this sweep.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Tillman Global Holdings",
+      "country_of_headquarters": "United States",
+      "state": "Telangana",
+      "sector": "Data centre / digital infrastructure",
+      "proposed_investment": "₹15,000 crore, 300 MW hyperscale data centre in Hyderabad",
+      "summit_or_event": "World Economic Forum, Davos 2025",
+      "mou_date": "2025-01-24",
+      "source_url": "https://www.deccanchronicle.com/southern-states/telangana/telangana-signs-mou-with-tillman-global-holdings-for-data-center-in-hyderabad-1856155; https://theprint.in/economy/blackstone-ursa-clusters-tillman-global-holdings-to-separately-develop-global-data-centres-in-telangana/2459908/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "MoU signed by Tillman Global Holdings President Sachit Ahuja; no independent construction/groundbreaking news found as of this sweep.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Blackstone Inc. (via Lumina Data Centre and JCK Infra)",
+      "country_of_headquarters": "United States",
+      "state": "Telangana",
+      "sector": "Data centre",
+      "proposed_investment": "₹4,500 crore, 150 MW",
+      "summit_or_event": "World Economic Forum, Davos 2025",
+      "mou_date": "2025-01-24",
+      "source_url": "https://theprint.in/economy/blackstone-ursa-clusters-tillman-global-holdings-to-separately-develop-global-data-centres-in-telangana/2459908/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Structured through domestic vehicles (Lumina Data Centre, JCK Infra) with Blackstone as the global investor behind the MoU; no independent construction news found as of this sweep.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Ursa Clusters",
+      "country_of_headquarters": "United States (per press reporting; not independently corroborated beyond one secondary source)",
+      "state": "Telangana",
+      "sector": "Data centre",
+      "proposed_investment": "₹5,000 crore, 100 MW",
+      "summit_or_event": "World Economic Forum, Davos 2025",
+      "mou_date": "2025-01-24",
+      "source_url": "https://theprint.in/economy/blackstone-ursa-clusters-tillman-global-holdings-to-separately-develop-global-data-centres-in-telangana/2459908/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Headquarters/origin attribution rests on a single secondary source describing it as 'US-based' — could not be cross-verified against a second independent source in this sweep.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Vingroup / Vin Group (understood to be Vietnam's Vingroup, parent of VinFast)",
+      "country_of_headquarters": "Vietnam",
+      "state": "Telangana",
+      "sector": "Renewable energy, EV infrastructure, smart urban planning",
+      "proposed_investment": "₹27,000 crore across integrated next-generation renewable energy generation, advanced EV infrastructure, and smart urban planning projects",
+      "summit_or_event": "Telangana Rising Global Summit 2025",
+      "mou_date": "2025-12-08",
+      "source_url": "https://www.newsonair.gov.in/telangana-signs-35-mous-worth-%e2%82%b92-43-lakh-crore-on-first-day-of-telangana-rising-global-summit",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "The source article names the entity only as 'Vin Group,' which this sweep interprets as Vietnam's Vingroup (VinFast's parent, active in EVs and renewables) based on sector fit and name match — but this identification was not independently confirmed against a second, more explicit source. Treat the country-of-origin attribution as moderately, not fully, confirmed.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Miltenyi Biotec GmbH",
+      "country_of_headquarters": "Germany",
+      "state": "Telangana",
+      "sector": "Biotechnology (cell and gene therapy)",
+      "proposed_investment": "Not stated as a discrete capex figure (a technology/manufacturing partnership establishing a Cell & Gene Therapy Center of Excellence)",
+      "summit_or_event": "National-level MoU with BIRAC (Biotechnology Industry Research Assistance Council) and the Department of Biotechnology, with the resulting facility sited in Hyderabad's Genome Valley",
+      "mou_date": "2024-02",
+      "source_url": "https://trial.medpath.com/news/81b715bf9b847e0a/miltenyi-biotec-launches-india-s-first-cell-gene-therapy-center-of-excellence-in-hyderabad; https://en.wikipedia.org/wiki/Miltenyi_Biotec",
+      "follow_through_status": "operational",
+      "status_detail": "The 1,800 sq. m. Miltenyi Innovation and Technology Center (MITC) in Genome Valley, Hyderabad, is confirmed established and running, bringing the CliniMACS Prodigy platform to India. Note this MoU was signed at the national (BIRAC/DBT) level rather than directly with the Telangana state government, though the resulting investment is specifically sited in Telangana — flagged accordingly.",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "negative_notes": [
+    "AM Green Group (₹4,000 crore Green Aluminium Complex MoU at Kakinada/Uppada, signed at the CII Partnership Summit 2025) was investigated but EXCLUDED: it is founded and run by Indian promoters (former Greenko co-founders Anil Chalamalasetti and Mahesh Kolli) and, while incorporated offshore (Singapore/UAE holding structures are commonly reported), functions as an Indian-promoted business group rather than a genuinely foreign company. Treated the same way as the Hinduja Group and ReNew Power/ReNew Energy Global cases below.",
+    "Hinduja Group and ReNew Power (ReNew Energy Global) both appeared in AP investment coverage (Hinduja Group in general AP investment lists; ReNew Power/RenewPower with an ₹82,000 crore renewable/industrial figure at the CII Partnership Summit 2025) but were EXCLUDED: both are Indian-founded and Indian-promoted groups (Hinduja brothers of Indian origin; ReNew founded by Sumant Sinha) that use offshore holding/listing vehicles (London for Hinduja Group's global holding; a UK-incorporated Nasdaq-listed plc for ReNew) for corporate-structure/listing reasons, not because they are foreign direct investors into India. This sweep treats country-of-headquarters as substance-over-form (where the business and promoters actually originate) rather than the nameplate jurisdiction of a listing vehicle.",
+    "Jindal Steel (₹7,500 billion MoU reported at GIS 2023, most likely a reporting units error for ₹7,500 crore), Reliance Industries (1 GW AI data centre at CII Partnership Summit 2025), Adani Group / AdaniConneX (data-centre partner alongside Google), Megha Engineering & Infrastructure (MEIL, ₹13,000-15,000 crore at Davos WEF 2025), Sun Petrochemicals (₹45,500 crore pumped-storage MoU at Davos WEF 2025, promoted by Dilip Shanghvi, Mumbai-headquartered), Skyroot Aerospace (₹500 crore, Hyderabad-based), Gravton Motors (Telangana Rising Global Summit 2025, Bengaluru-based), Infosys, HCL, Wipro, and CtrlS were all identified in the same source articles as the verified foreign MoUs above but EXCLUDED as India-headquartered companies, per task instructions, despite frequently dominating summit headline totals.",
+    "The 'Brookfield/Axis Ventures Pvt Ltd consortium' (₹75,000 crore, deep tech/digital infrastructure for Bharat Future City) and 'Evren/Axis Energy' (₹31,500 crore clean-energy MoU) at the Telangana Rising Global Summit 2025 were investigated but NOT included as separate foreign entries: Brookfield's own participation is already captured in spirit via the Andhra Pradesh Brookfield MoU above, but this specific Telangana consortium is structured jointly with 'Axis Ventures Pvt Ltd' and 'Axis Energy,' and this sweep could not independently confirm within budget whether Brookfield (Canada) or an Indian promoter group is the controlling/majority party in these specific joint vehicles. Flagged rather than asserted as a clean foreign MoU.",
+    "Sixteen South Korean auto-parts suppliers signing MoUs to support Kia Motors' Andhra Pradesh plant (a real, well-documented cluster of foreign MoUs, ~$737 million combined) were found but EXCLUDED as OUT OF WINDOW: the signing date was 2015, well before the 2021-2026 sweep period, tied to Kia's original AP plant decision.",
+    "Yokohama Rubber's ATC Tires unit at the AP SEZ, Anakapalle (Japan-headquartered, Phase 1 already operational at ₹1,250 crore, Phase 2 expected ~August 2023) was found but EXCLUDED: the original MoU/investment decision appears to predate the 2021-2026 window (Phase 1 was already running before this sweep's period), and no distinct, dated Phase 2 MoU signing (as opposed to a general 'expected to commence' phrase) could be confirmed within window.",
+    "Mitsui & Co. / MTC Group (Japan, 25% equity holder in MTC Group) was reported as having HELD DISCUSSIONS with Telangana's Industries Minister about expansion, but no source found confirms an actual signed MoU — EXCLUDED as unverified/discussion-stage only.",
+    "Foxconn's other Taiwanese peers — Pegatron, Wistron, and Viewsonic — were visited by a Telangana government delegation to Taiwan in 2024 for 'potential manufacturing investments,' but no MoU signing with any of the three could be confirmed in available coverage — EXCLUDED as discussion/prospecting-stage only, distinct from the confirmed, signed Foxconn MoU.",
+    "GlobalFoundries, NXP, ASMPT, One System Technologies, TechSend Photomask, and Aquatech were named as attendees/participants at a 'Semicon Ecosystem Roundtable' hosted by CM Naidu in Singapore inviting semiconductor investment into AP, but no MoU or investment commitment from any of these companies was found — EXCLUDED as an investor-outreach event, not a confirmed MoU.",
+    "Novartis, Roche, Sanofi, and Bristol Myers Squibb (BMS) all have large, genuine, foreign-headquartered operations/innovation or capability centers in Hyderabad (Novartis alone: ~9,000+ employees, its second-largest global center) — these are real foreign investments physically located in Telangana, but this sweep could not identify a specific, dated MoU-signing event for any of them within the 2021-2026 window (they read as organic multi-year expansions rather than summit-linked MoUs), so none were included in the mous list. Flagged here so the digital twin doesn't lose sight of them entirely.",
+    "The AP Global Investors Summit 2023 (pre-2024-government, under CM Jagan Mohan Reddy) reported a huge aggregate — 354 proposals worth ₹13 lakh crore across 353 MoUs, with delegations from 25 countries including a formal EU Chambers of Commerce MoU (mobilizing a business delegation from the UK, Poland, Finland, France and Denmark across sectors from electronics to shipping/logistics) — but despite specific searching, this sweep could NOT independently verify any individually-named foreign COMPANY investment MoU from GIS 2023 (as opposed to institutional/chamber-level MoUs or broad country-delegation mentions) at a level of detail that would meet this task's verification bar. This is exactly the 'MoU graveyard' pattern the task description warns about, and it also means the requested check of 'was this pre-2024 MoU reconfirmed post-2024' could not be performed for GIS 2023's foreign-company MoUs specifically, because no individually-named ones could be confirmed to check in the first place. The one exception (Jindal Steel, ₹7,500 crore) is India-headquartered and excluded per the foreign-only scope. This is a genuine gap in this sweep and should not be read as 'GIS 2023 had no real foreign MoUs' — only that open-source verification within this sweep's budget could not individually confirm any.",
+    "The AP-Singapore MoUs at the CII Partnership Summit 2025 (a direct Vijayawada-Singapore flight route, and an institutional-capacity MoU) were EXCLUDED from the mous list: these are government-to-government / institutional agreements, not a named company's investment commitment.",
+    "'Skill Academi' (AP, Korea-linked skill academy MoU, PPP model) and 'Champions Group' (AP, ₹891 crore tourism/smart-cities/data-centre/crystal-lagoon/yacht-club investment mentioned at the CII Partnership Summit 2025) were both flagged as possible foreign candidates but EXCLUDED: this sweep could not determine either entity's headquarters/country of origin from available sources within the search budget, so neither could be verified as foreign rather than domestic.",
+    "UNICC (United Nations International Computing Centre) signed an MoU with Andhra Pradesh on 2026-02-20 to establish an AI/Quantum Centre of Excellence in Amaravati. This is a real, dated, specifically-named, foreign-headquartered (UN system) signatory, but it is an international public-sector body, not a private company, so it was left out of the mous list (which the task frames around 'companies') rather than force-fit into that schema. BharatGen and Calibo AI, signed the same day, were also excluded: BharatGen is an India-led AI consortium (IIT Bombay-anchored), and Calibo AI's headquarters could not be confirmed within this sweep's budget.",
+    "This session's WebSearch tool budget (~200 calls, shared across the broader working session, not solely this task) was exhausted partway through the Telangana research pass; remaining research relied on WebFetch against already-identified candidate URLs from prior searches. Several promising leads (a fuller CII Partnership Summit 2025 company-by-company list; further India-Japan investment-corridor detail; a full Telangana Rising Global Summit 2025 company list beyond the ~35-of-50+ MoUs covered by available press) could not be pursued further as a result. This list should be treated as a verified floor, not an exhaustive count, for both states.",
+    "Business Standard (business-standard.com) and corporate.arcelormittal.com returned HTTP 403 / were blocked for direct WebFetch access during this sweep and could not be used as primary sources for those specific pages; findings were corroborated via other outlets (The Print, Deccan Chronicle, Deccan Herald, ETV Bharat) instead."
+  ]
+}

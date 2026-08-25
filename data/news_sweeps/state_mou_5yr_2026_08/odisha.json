@@ -1,0 +1,131 @@
+{
+  "state": "Odisha",
+  "summits_covered": [
+    {
+      "name": "Make in Odisha Conclave 2022 (3rd edition)",
+      "date": "2022-11-30 to 2022-12-04 (Bhubaneswar)"
+    },
+    {
+      "name": "Utkarsh Odisha – Make in Odisha Conclave 2025",
+      "date": "2025-01-28 to 2025-01-29 (industrial/start-up expo extended to 2025-01-31), Bhubaneswar"
+    },
+    {
+      "name": "Singapore President's State Visit to Odisha (bilateral MoU signings, ahead of Utkarsh Odisha 2025)",
+      "date": "2025-01-17, Bhubaneswar"
+    },
+    {
+      "name": "Standalone Government-of-Odisha MoU/MoC signings outside a formal conclave (POSCO-JSW cooperation agreement; Adani-IHC aluminium JV signing; IHI Corporation/Mitsubishi Gas Chemical green-ammonia MoC)",
+      "date": "2024-10-29; 2026-07-02; 2026-07-05 respectively, Bhubaneswar"
+    }
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch (~15 queries before the session's shared WebSearch budget was exhausted mid-sweep) to identify candidate summits and MoUs, followed by WebFetch of official/company sources (Adani Newsroom, Sembcorp corporate news, POSCO Newsroom) and secondary business/trade press (Gulf News, KED Global, Global Energy Monitor / gem.wiki, Maritime Gateway, India Briefing, The Statesman, Deccan Chronicle/Herald, Textile World, Just-Style, Renewable Watch) to confirm each MoU named a specific foreign company rather than being an aggregate press-release total. Once WebSearch was exhausted, remaining verification relied entirely on WebFetch against already-surfaced or logically-guessed URLs, which limited the ability to discover brand-new candidate companies for the back half of this sweep. Official Odisha government/IPICOL/Invest Odisha sources (mio.investodisha.gov.in, investodisha.gov.in) do not appear to publish a granular, company-by-company public list of the 145 (2025) or 21 (2022) MoUs signed — most of what is publicly auditable comes from press coverage of individual company announcements, not a government-issued signatory list.",
+  "mous": [
+    {
+      "company": "Sembcorp Industries Ltd (via wholly-owned subsidiaries Sembcorp Green Hydrogen India Pvt Ltd and Sembcorp Development Ltd)",
+      "country_of_headquarters": "Singapore",
+      "sector": "Green hydrogen production and industrial park development",
+      "proposed_investment": "Not disclosed — both MoUs are explicitly described by Sembcorp as non-binding feasibility/exploratory agreements. Scope: a 720,000-tonne-capacity green hydrogen facility, plus assessment of a new industrial park.",
+      "summit_or_event": "Singapore President's State Visit to Odisha (ahead of Utkarsh Odisha 2025)",
+      "mou_date": "2025-01-17",
+      "source_url": "https://www.sembcorp.com/in/news-and-insights/news/2025/sembcorp-inks-mous-with-government-of-odisha-during-singapore-presidents-visit/; https://newsonair.gov.in/odisha-govt-signs-8-mous-with-singapore-organisations-for-skill-development-green-energy-industrial-growth",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Both instruments were explicitly non-binding at signing. No subsequent 2025/2026 press coverage of a final investment decision, land allocation, or groundbreaking for either the green hydrogen plant or the industrial park was found in this sweep.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "International Resources Holding (IRH), a subsidiary of International Holding Company (IHC) PJSC",
+      "country_of_headquarters": "United Arab Emirates (Abu Dhabi)",
+      "sector": "Integrated aluminium manufacturing (alumina refinery, aluminium smelter, captive power, downstream manufacturing park)",
+      "proposed_investment": "USD 11.5 billion (~Rs 1.08 lakh crore / Rs 1,08,000 crore) for a 50:50 joint venture with Adani Enterprises Ltd (India) — 4 MMTPA alumina refinery, 2 MMTPA aluminium smelter, 1 MMTPA downstream park, in two phases (Rs 66,000 crore + Rs 44,000 crore)",
+      "summit_or_event": "Standalone Government-of-Odisha MoU signing (not tied to a conclave), witnessed by CM Mohan Charan Majhi and Industries Minister Sampad Chandra Swain",
+      "mou_date": "2026-07-02",
+      "source_url": "https://www.adani.com/newsroom/media-releases/adani-enterprises-and-ihc-group-company-irh-to-form-a-50-50-joint-venture; https://gulfnews.com/business/adani-enterprises-ihc-group-company-irh-to-form-5050-joint-venture-for-115-billion-aluminium-project-in-odisha-1.500595090",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Signed only ~7 weeks before this sweep (2026-08-25); reported as Odisha's largest-ever FDI proposal and India's largest FDI in metallurgy. Too recent for construction or land-acquisition news to have surfaced yet.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "POSCO Holdings Inc.",
+      "country_of_headquarters": "South Korea",
+      "sector": "Integrated steel manufacturing (hot-rolled, cold-rolled, galvanized steel via BOF/blast furnace)",
+      "proposed_investment": "Reported inconsistently across outlets as Rs 35,000 crore / Rs 40,000 crore (~$7.7bn) for a 50:50 joint venture with JSW Steel Ltd (India) — 5-6 MTPA integrated mill at Keonjhar/Patna tehsil",
+      "summit_or_event": "POSCO-JSW cooperation agreement (standalone signing, not tied to a conclave)",
+      "mou_date": "2024-10-29",
+      "source_url": "https://www.kedglobal.com/steel/newsView/ked202410290016; https://www.gem.wiki/JSW_POSCO_Keonjhar_steel_plant; https://newsroom.posco.com/en/posco-to-build-integrated-steel-mill-in-india-via-joint-venture-securing-a-strategic-bold-move-for-future-competitiveness/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "As of September 2025, the Odisha government had begun acquiring land (2,466 acres earmarked across eight villages in Patna tehsil) for the plant; POSCO's ~Rs 509 crore ($61m) equity-stake transaction was still expected to close by end-2026 at last report. Land acquisition is underway but no physical construction start was found. Operational target reported as 2028. This is POSCO's fourth attempt at an Odisha foothold in 15 years, after its original standalone ~$12bn project (announced 2005) was scrapped in 2017 following a 12-year land dispute — a directly relevant MoU-graveyard precedent for this same company/state.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ArcelorMittal Nippon Steel India (AM/NS India) — JV of ArcelorMittal (Luxembourg) and Nippon Steel Corporation (Japan)",
+      "country_of_headquarters": "Luxembourg / Japan (joint venture; India's Mittal family are ArcelorMittal's controlling shareholders but the group entity is Luxembourg-headquartered)",
+      "sector": "Integrated steel manufacturing",
+      "proposed_investment": "Rs 50,000 crore for an initial 12 MTPA plant (March 2021 MoU); subsequently reported at up to 24 MTPA / Rs 1.02 lakh crore following High-Level Clearance Authority approval",
+      "summit_or_event": "Bilateral MoU with Government of Odisha (Kendrapara district; not tied to a specific conclave)",
+      "mou_date": "2021-03 (month reported, exact day not found); capacity/investment subsequently revised upward per HLCA approval reported December 2021",
+      "source_url": "https://theprint.in/india/odisha-cm-begins-japan-tour-arcelormittal-nippon-steel-jv-to-set-up-30-mt-facility/1497611/; https://www.thestatesman.com/india/odisha-land-acquisition-notification-issued-for-big-ticket-arcelormittal-nippon-steel-project-1503325354.html; https://www.maritimegateway.com/odisha-investment-steel-ports/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "A land-acquisition notification for Badatubi/Kharnasi villages (Mahakalapada tehsil) was issued in late 2024, and verification/acquisition of ~383-712 acres was reported progressing as of May 2025. AM/NS India already operates an existing iron-ore mine, slurry pipeline, and pellet plant in Odisha (Paradip/Keonjhar), giving this project more on-the-ground credibility than a pure paper MoU, but no construction start for the new integrated plant itself was found in this sweep.",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "ArcelorMittal Nippon Steel India (AM/NS India) — same JV as above, second/distinct project",
+      "country_of_headquarters": "Luxembourg / Japan (joint venture)",
+      "sector": "Integrated steel manufacturing",
+      "proposed_investment": "Rs 38,000 crore for a 7 MTPA plant at Jagatsinghpur",
+      "summit_or_event": "Make in Odisha Conclave 2022 (approval followed the conclave)",
+      "mou_date": "2022-12 (approved by Odisha government following the Nov 30-Dec 4, 2022 conclave; exact MoU-signing day not found)",
+      "source_url": "https://www.maritimegateway.com/odisha-investment-steel-ports/; https://theprint.in/india/odisha-cm-begins-japan-tour-arcelormittal-nippon-steel-jv-to-set-up-30-mt-facility/1497611/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "No 2023-2026 press coverage of land acquisition, construction, or cancellation for the Jagatsinghpur 7 MTPA component specifically was found separate from the higher-profile Kendrapara project — treated as a distinct, less-tracked commitment. Recorded separately from the Kendrapara MoU above because location, capacity, and investment figure are all different, even though the corporate JV is the same.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "IHI Corporation and Mitsubishi Gas Chemical Company, Inc. (jointly, in partnership with India's ACME Group)",
+      "country_of_headquarters": "Japan",
+      "sector": "Green ammonia and green methanol production",
+      "proposed_investment": "Rs 67,000 crore total across three projects: Gopalpur 0.4 MTPA green ammonia + floating terminal (Rs 21,000 crore, 3,400 jobs); Paradip 0.8 MTPA green ammonia (Rs 34,000 crore, 3,600 jobs); Paradip 0.1 MTPA green methanol (Rs 12,000 crore, 600 jobs) — 7,600 jobs total",
+      "summit_or_event": "Memorandum of Cooperation (MoC) signing, Lok Seva Bhawan Convention Centre, Bhubaneswar (standalone event, not tied to a conclave)",
+      "mou_date": "2026-07-05",
+      "source_url": "https://odishaconnect.com/odisha-signs-landmark-green-energy-pact-with-japanese-firms-%e2%82%b967000-crore-investment-to-create-7600-jobs/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Signed only ~7 weeks before this sweep; a related figure — a $7 billion Odisha green hydrogen/ammonia JV of 'ACMW and IHI Corporation' — surfaced in a separate secondary search result and may describe the same or an overlapping project under a different framing; not independently reconciled in this pass.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "JFE Steel Corporation (via joint venture JSW JFE Steel Limited, with JSW Steel of India)",
+      "country_of_headquarters": "Japan",
+      "sector": "Integrated steel manufacturing",
+      "proposed_investment": "Not disclosed in available reporting",
+      "summit_or_event": "JV unveiling at Rengali, Sambalpur district (standalone event, not tied to a conclave)",
+      "mou_date": "2026-04 (month only; exact day not found)",
+      "source_url": "https://www.maritimegateway.com/odisha-investment-steel-ports/",
+      "follow_through_status": "no follow-up news found",
+      "status_detail": "Found in a single secondary source (Maritime Gateway) with a direct quote naming JFE Steel Corporation and the JV entity, but not independently corroborated by a second outlet or an official JFE/JSW press release in this sweep. No investment figure, plant capacity, or construction status reported.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "MAS Holdings",
+      "country_of_headquarters": "Sri Lanka",
+      "sector": "Apparel manufacturing (value-added apparel for Indian and international markets)",
+      "proposed_investment": "Not disclosed; 60-acre site at Bhuinpur, Odisha, planned as a 10-year build-out into a full apparel hub",
+      "summit_or_event": "Initial investment-intent meeting between MAS Holdings chairman Mahesh Amalean and the Odisha CM (no confirmed formal MoU-signing date found); groundbreaking ceremony held separately",
+      "mou_date": "Intent expressed 2023-11 (per secondary reporting, exact MoU date not independently confirmed); groundbreaking held 2025-03-05",
+      "source_url": "https://www.textileworld.com/textile-world/knitting-apparel/2025/03/mas-holdings-breaks-ground-in-bhuinpur-exploring-new-market-opportunities-in-india/; https://www.just-style.com/news/mas-india-odisha-facility/; https://business.outlookindia.com/news/global-apparel-conglomerate-mas-holdings-keen-to-invest-in-odisha",
+      "follow_through_status": "under construction",
+      "status_detail": "Groundbreaking ceremony independently confirmed by two trade-press outlets (Textile World, Just-Style) as having taken place 2025-03-05 at the Bhuinpur site; MAS India's CEO issued an on-record statement. Production start targeted for 2026. This is the strongest real-world follow-through signal found among all Odisha foreign MoUs in this sweep, despite lacking a disclosed investment figure or a clearly dated formal MoU (as distinct from the groundbreaking itself).",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "negative_notes": [
+    "The Odisha conclave headline totals (Rs 10.5 lakh crore of investment intent at Make in Odisha 2022; Rs 16.73 lakh crore in investment proposals / Rs 12.89 lakh crore across 145 MoUs at Utkarsh Odisha 2025) are, like other states, overwhelmingly composed of India-headquartered conglomerates and are not independently auditable at the company level from public sources. Adani Group (~Rs 2.2-2.3 lakh crore), Vedanta Ltd (Rs 1 lakh crore, alumina/aluminium), JSW Group (Rs 35,000-75,000 crore depending on the specific project cited), Tata Steel (Rs 26,175 crore), Aditya Birla Group (Rs 70,000 crore), and Reliance were all EXCLUDED from the mous list above as India-headquartered, per task scope, despite dominating press coverage of both conclaves.",
+    "Of the '8 MoUs with Singapore-based organisations' reported signed 2025-01-17 (covering industrial parks, a green hydrogen corridor, a petrochemical/petroleum investment region, a new city, new-energy cooperation, FinTech, skill development, and semiconductor-sector skilling), only 2 could be tied to a specific, independently verifiable company name: the two Sembcorp Industries subsidiary MoUs recorded above. The other ~6 were reported only as unnamed 'Singapore organisations' in every source found and could not be verified to a specific company — excluded rather than guessed at.",
+    "PSA Singapore (the ports operator) is reported by Maritime Gateway as being 'in talks' with the Odisha government for technical assistance developing the Inchuri and Bahuda ports. This is explicitly exploratory dialogue, not a signed MoU or capital commitment — excluded from the mous list, flagged here as a watch item for a future sweep.",
+    "Odisha's official government/summit-organizer sources (mio.investodisha.gov.in, investodisha.gov.in, IPICOL) do not appear to publish a public, itemized, company-by-company MoU signatory list for either the 2022 (21 MoUs reported) or 2025 (145 MoUs reported) conclave; the investodisha.gov.in main site also returned a certificate-expired error on WebFetch during this sweep, further limiting direct access to any official list that might exist. All company-level detail in this file was reconstructed from individual press/company announcements, not a government-issued register.",
+    "A widely reported April 2025 Odisha investors' meet (~Rs 1.03 lakh crore in MoUs, ~96,000 jobs targeted) was identified in search results but not independently researched for named foreign companies in this sweep due to the WebSearch budget being exhausted before it could be pursued — flagged as an event worth covering in a follow-up sweep.",
+    "Search coverage for this sweep was constrained partway through by the session's shared WebSearch call budget being exhausted; the back half of the sweep relied entirely on WebFetch against already-known or logically-inferred URLs, which limited the ability to discover brand-new candidate foreign companies (particularly likely additional Japanese, German, Gulf-sovereign-wealth, and Australian delegates reported as attending Utkarsh Odisha 2025 but not identified by company name in any source reachable in this pass). This list should be treated as a verified floor, not an exhaustive count — a re-run with fresh search budget would likely surface more.",
+    "Investment figures for both POSCO-JSW (Rs 35,000 crore vs Rs 40,000 crore vs $7.7bn/$650bn-won-equivalent framings) and the evolving ArcelorMittal Nippon Steel Kendrapara project (12 MTPA/Rs 50,000cr initially vs up to 24 MTPA/Rs 1.02 lakh crore after later approval) are reported inconsistently across otherwise-credible outlets. Both are recorded above with the range/discrepancy noted rather than silently picking one number.",
+    "millenniumpost.in (Adani-IHC aluminium article) and indiagazette.com (MAS Holdings meeting article) both returned HTTP errors (523 and 403 respectively) on WebFetch and could not be used as direct primary sources in this sweep, despite being cited secondhand by other outlets that were reachable."
+  ]
+}

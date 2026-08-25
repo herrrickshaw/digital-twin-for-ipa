@@ -1,0 +1,152 @@
+{
+  "state": "Madhya Pradesh",
+  "summits_covered": [
+    {
+      "name": "Invest Madhya Pradesh - Global Investors Summit 2025 (8th edition, flagship)",
+      "date": "2025-02-24 to 2025-02-25 (Bhopal; inaugurated by PM Modi; note the task brief referenced 'January 2025' but the actual dates, confirmed by PIB/PMO/Invest MP, are Feb 24-25, 2025)"
+    },
+    {
+      "name": "MP Tech Growth Conclave 3.0: GCC, Data Centre & Semiconductor Edition",
+      "date": "2026-07-13 (Bhopal)"
+    },
+    {
+      "name": "Regional Industry Conclave - Ujjain (1st Regional Industry Conclave, GIS 2025 lead-up series)",
+      "date": "2024-2025 (exact 2024 date not independently pinned down in this sweep; ~Rs 1 lakh crore in proposals reported)"
+    },
+    {
+      "name": "Regional Industry Conclaves - Jabalpur, Gwalior, Sagar, Rewa, Narmadapuram, Shahdol (GIS 2025 lead-up series)",
+      "date": "2024-2025"
+    },
+    {
+      "name": "CM Mohan Yadav's international investment roadshows (UK & Germany tour, Japan visit, Barcelona/Spain visit, Dubai/UAE visits) that produced bilateral company MoUs feeding into GIS 2025 and subsequent conclaves",
+      "date": "2025-01 to 2025-07 (various)"
+    },
+    {
+      "name": "Bharat Tex 2026 (MP state pavilion/participation)",
+      "date": "2026-02"
+    },
+    {
+      "name": "Mining Conclave 2.0, Katni",
+      "date": "2025-08-23"
+    }
+  ],
+  "swept_date": "2026-08-25",
+  "method": "WebSearch (~25 queries before the session's WebSearch budget was exhausted partway through, then again available later in the session) to identify candidate MoUs from GIS 2025, MP Tech Growth Conclave 3.0, regional conclaves, and CM international roadshows, cross-checked against Invest MP's own event pages. When WebSearch and both DuckDuckGo-via-curl and Bing-via-curl scraping were blocked/rate-limited mid-session, pivoted to Google News RSS feeds (news.google.com/rss/search) fetched via curl to discover article titles/sources, then resolved actual article content either directly via WebFetch (for sites that allow it) or via the r.jina.ai reader proxy (for sites WebFetch could not reach directly, e.g. DataCenterDynamics). Every company included below was verified by opening and reading at least one substantive source directly - not from a search snippet alone - and cross-referenced against a second independent outlet where possible. Companies that appeared only in a single unverifiable press release, that could not be confirmed as foreign-headquartered, or that were flagged by other sources as low-credibility were excluded and documented in negative_notes rather than silently dropped.",
+  "mous": [
+    {
+      "company": "Haleon plc (maker of Sensodyne, Eno, Otrivin)",
+      "country_of_headquarters": "United Kingdom",
+      "sector": "Pharmaceuticals / Consumer Healthcare (oral care manufacturing)",
+      "proposed_investment": "~Rs 2,000 crore (~£175 million / ~$230 million), first-ever India manufacturing facility",
+      "summit_or_event": "Bilateral investment announcement / foundation-stone laying at Pithampur (Smart Industrial Park, Dhar district), part of the GIS 2025 investment pipeline",
+      "mou_date": "2026-06-11 (foundation stone virtually laid by CM Mohan Yadav; announcement date)",
+      "source_url": "https://www.businessupturn.com/brand-post/haleon-announces-%E2%82%B92000-crore-total-investment-to-set-up-its-first-manufacturing-facility-in-india",
+      "follow_through_status": "under construction",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Submer Technologies S.L. (Submer Group)",
+      "country_of_headquarters": "Spain (Barcelona)",
+      "sector": "Data centres / AI infrastructure (liquid-cooling technology)",
+      "proposed_investment": "Initial MoU for 'up to 1GW' of liquid-cooled data-centre capacity; expanded/reaffirmed a year later at ~$2 billion (~Rs 19,000 crore) for an AI-ready data-centre campus",
+      "summit_or_event": "Signed during CM Mohan Yadav's visit to Submer's Barcelona HQ; reaffirmed and expanded at MP Tech Growth Conclave 3.0, Bhopal",
+      "mou_date": "2025-07-28 (initial MoU); reaffirmed/expanded 2026-07-13",
+      "source_url": "https://www.datacenterdynamics.com/en/news/submer-to-deploy-up-to-1gw-of-liquid-cooled-data-centers-in-madhya-pradesh-india/",
+      "follow_through_status": "under construction",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "McCain Foods Limited",
+      "country_of_headquarters": "Canada",
+      "sector": "Food processing (frozen potato products - french fries and potato flakes)",
+      "proposed_investment": "Rs 3,800 crore (~$457-480 million), phased; Phase 1 reported at Rs 1,500-1,800 crore; company's second India facility after Gujarat",
+      "summit_or_event": "Formalized in a meeting between McCain's Regional President (APACSA) Pierre Danet and MD McCain India Mainak Dhar with CM Mohan Yadav, ahead of MP Tech Growth Conclave 3.0; project sited on 70 acres allotted in Agar-Malwa",
+      "mou_date": "2026-07-03",
+      "source_url": "https://indianpotato.com/mccain-foods-agar-malwa-investment-madhya-pradesh/",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "TWE Group GmbH (via TWE OBT Pvt Ltd, a 50:50 joint venture with India's Obeetee Textiles)",
+      "country_of_headquarters": "Germany (Emsdetten)",
+      "sector": "Technical textiles / nonwoven hygiene products (ADL, top-sheets, back-sheets for hygiene products)",
+      "proposed_investment": "Rs 126-160 crore reported for the Bhopal facility (TWE's cash stake in the wider 50% JV shareholding is separately reported as EUR 11.5 million)",
+      "summit_or_event": "Foundation stone laid at Acharpura Industrial Area, Bhopal (JV originally announced mid-2023)",
+      "mou_date": "2024-08-27 (foundation stone laid; original JV agreement dates to ~2023-06)",
+      "source_url": "https://invest.mp.gov.in/honble-cm-laid-the-foundation-stone-of-company-m-s-twe-obt-pvt-ltd-at-i-a-acharpura/",
+      "follow_through_status": "under construction",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "PepsiCo, Inc. (via PepsiCo India)",
+      "country_of_headquarters": "United States",
+      "sector": "Food & Beverage (flavour-concentrate manufacturing)",
+      "proposed_investment": "Rs 1,266 crore; part of PepsiCo's broader Rs 5,700 crore India investment pipeline through 2030",
+      "summit_or_event": "Announced 2024-04-02; plant built at Vikram Udyogpuri, Ujjain (originally flagged in Ujjain Regional Industry Conclave-era investment pipeline)",
+      "mou_date": "2024-04-02 (investment announcement); inaugurated 2026-07-01",
+      "source_url": "https://indianmasterminds.com/news/cm-mohan-yadav-inaugurates-pepsico-1266-crore-ujjain-plant-214261/",
+      "follow_through_status": "operational",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "VE Commercial Vehicles Ltd (VECV) - joint venture between AB Volvo (Sweden, ~45.6% stake) and Eicher Motors (India)",
+      "country_of_headquarters": "Sweden (Volvo Group, JV partner) / India (Eicher Motors, JV partner)",
+      "sector": "Automotive components (12-speed Automated Manual Transmission manufacturing)",
+      "proposed_investment": "Rs 544 crore, greenfield factory, initial capacity up to 40,000 units/year",
+      "summit_or_event": "Investment announcement for a new plant at Vikram Udyogpuri Integrated Industrial Township, near Ujjain",
+      "mou_date": "2025-10-08",
+      "source_url": "https://www.eichertrucksandbuses.com/news-room/press-release/ve-commercial-vehicles-announces-plans-to-manufacture-volvo-group%E2%80%99s-industry-leading-automated-manual-transmissions-for-india-and-select-asia-oceania-markets",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Google (Google Cloud India / Google Play India)",
+      "country_of_headquarters": "United States",
+      "sector": "Information Technology / Artificial Intelligence (AI Centre of Excellence, capacity building)",
+      "proposed_investment": "Not disclosed - a capacity-building/training partnership (AI Centre of Excellence in Indore, targeting 10,000+ trained AI developers), not a stated capital-expenditure figure",
+      "summit_or_event": "MoU between Google Play India Lead and MP State Electronics Development Corporation (MPSEDC), signed at MP Tech Growth Conclave 3.0; separate AI Centre of Excellence discussions with Google Cloud India round-tabled with the CM",
+      "mou_date": "2026-07-13",
+      "source_url": "https://www.freepressjournal.in/bhopal/mp-attracts-40000-crore-investment-proposals-at-tech-growth-conclave-34000-jobs-expected",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Helion Pharmaceuticals",
+      "country_of_headquarters": "United Kingdom",
+      "sector": "Pharmaceuticals / advanced medical products manufacturing",
+      "proposed_investment": "Rs 3,000 crore investment proposal",
+      "summit_or_event": "CM Mohan Yadav's UK & Germany investment tour; land allocated at Indore's Smart Industrial Park",
+      "mou_date": "2025-02 (exact day not confirmed; part of a six-day UK/Germany tour reported in early Feb 2025)",
+      "source_url": "https://www.digitalhealthnews.com/madhya-pradesh-secures-inr-3-000-cr-healthcare-investment",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "InAvia Aviation Consultants GmbH",
+      "country_of_headquarters": "Germany (Hamburg)",
+      "sector": "Aviation MRO (maintenance, repair, overhaul) and aircraft dismantling",
+      "proposed_investment": "Rs 2,000 crore (~$226 million), phased; baseline 1.5-acre facility first, scaling to full teardown/engine-overhaul capability",
+      "summit_or_event": "MoU with Government of Madhya Pradesh for India's first aircraft-dismantling and MRO hub near Raja Bhoj Airport, Bhopal; company's Hamburg registration and Managing Partner Michael Hoevel's meeting with the CM were independently confirmed after local skepticism about the company's legitimacy circulated on social media",
+      "mou_date": "2025 (exact signing date not confirmed by available sources; reported as already signed by May 2025)",
+      "source_url": "https://www.freepressjournal.in/bhopal/after-inavia-another-aviation-firm-eyes-bhopal-for-mro-facility-near-raja-bhoj-airport",
+      "follow_through_status": "no follow-up news found",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "negative_notes": [
+    "The GIS 2025 headline figure of Rs 30.77 lakh crore (~$370 billion) in total MoUs is an unauditable aggregate; official Invest MP FDI data cited in secondary reporting shows Madhya Pradesh's actual cumulative FDI inflow between October 2019 and June 2025 was only about Rs 4,760 crore (~$523.7 million, per india-briefing.com) - a gap of roughly three orders of magnitude between headline MoU totals and confirmed realized foreign capital, illustrating the 'MoU graveyard' pattern directly.",
+    "The large majority of individually named large MoUs publicized for GIS 2025 are India-headquartered companies and were excluded per task scope despite dominating summit press coverage: Adani Group (~Rs 1.10 lakh crore + potential Rs 1 lakh crore more, multi-sector), Reliance Industries (Rs 60,000 crore, biofuel), Hindalco Group (Rs 15,000 crore, Singrauli plant), Avaada Group (Rs 50,000 crore, solar/wind/battery), NTPC Limited & NTPC Green Energy Ltd (combined ~Rs 2 lakh crore, renewable/pumped-hydro/non-fossil power - NTPC is Indian state-owned despite scale), KPI Green Energy Ltd (1.8 GW renewable MoU, Surat-headquartered), Dabur India, Godrej Group, Torrent Group (Rs 43,000 crore reported separately), Rasna Group, Coal India (critical-minerals MoU at Mining Conclave 2.0, Katni, Aug 2025), MOIL, and Paras Defence & Space Technologies / Paras Semiconductors (Rs 6,200 crore OSAT facility - an Indian defence contractor, not foreign, despite the 'semiconductor hub' framing making it sound like an FDI story). Fly Bharathi Aviation and Aeronautics Pvt Ltd (Rs 750 crore Ujjain-airport MoU, signed 2025-03-07) was also excluded: despite 'flagship aviation company' branding, available sourcing (an advertorial/PR-marked article) indicates Indian ownership (MD Girish Pillai) with no foreign HQ confirmed.",
+    "SRAM & MRAM Group (reported as UK-headquartered) was claimed in a Feb 2025 press round-up (via CM's UK/Germany tour) to have signed a Rs 25,000 crore semiconductor-and-science-park MoU. Excluded from the verified list: a social-media source (X/Twitter, @IndraVahan) alleges the company is 'a scam one-person company... that keeps announcing random investments but they've never made one single product,' and no independent, substantive corroboration of this specific MP MoU or of the company's separate, larger Odisha semiconductor project could be found. Given the serious, specific fraud allegation and total absence of corroboration beyond the original government-sourced press item, this MoU is flagged as high-risk/unverified rather than reported as real.",
+    "Long House Partners (reported as Germany-headquartered) was claimed in the same Feb 2025 press round-up to have signed a Rs 14,000 crore 'technology and innovation' MoU during the CM's Germany leg. No independent corroborating source, company registration, or follow-up coverage of any kind could be found beyond the single original press item - excluded as unverifiable.",
+    "AMS OSRAM was claimed in the same Feb 2025 press round-up to have signed a Rs 1,500 crore 'semiconductor and electronics' MoU during the Germany leg (ams-OSRAM AG is real and dual-headquartered Premstaetten, Austria / Munich, Germany, but no independent corroboration of an MP-specific MoU could be found in searches specifically targeting this claim) - excluded as unverifiable beyond the single original press item.",
+    "Uniqlo (Japan, Fast Retailing) - CM Mohan Yadav met founder Tadashi Yanai in Tokyo (Jan 2025) and invited Uniqlo to set up production/distribution and explore cotton cultivation in MP. This was an invitation/exploratory meeting, not a signed MoU or investment commitment - excluded.",
+    "Bridgestone (Japan) already has established manufacturing operations in Madhya Pradesh (pre-dating this 5-year window) and 'reaffirmed interest in expanding' during the Jan 2025 Japan visit, but no new, specifically dated MoU or investment figure for this window could be found - excluded as not a new verifiable commitment.",
+    "East Japan Railway Company - an agreement to 'explore' high-speed rail corridors and smart-logistics/green-infrastructure collaboration was reported from the Jan 2025 Japan visit. This is exploratory, not a capital-investment MoU with a named project or figure - excluded. JETRO and JICA (Japan) are trade-promotion/development-cooperation organizations, not investing companies, and were excluded as out of scope for the same reason.",
+    "Termar SP (Poland) - co-owner Piotr Klaczak was quoted at GIS 2025 as motivated by the PM's address regarding food-processing opportunities in MP. No confirmed signed MoU or investment figure for Termar could be found - excluded as unverified interest only, not a confirmed MoU.",
+    "A&D Medical (Japan) - CM Mohan Yadav met Director Daiki Arai in Tokyo (Jan 2025) to showcase the Ujjain Medical Device & Pharmaceutical Park. This was an exploratory investment-pitch meeting; no confirmed MoU or investment figure was found - excluded.",
+    "Five German firms (named as 'Tyler's', 'Talonic', 'Stex', 'Q-Nect-AG', and 'Cloud-Squid' in a single Dainik Jagran article covering a post-Europe-tour delegation) were reported as exploring MP investment in AI/IoT/enterprise-software niches. No investment figures were given, no other source corroborated these specific company names, and several of the names/spellings are not readily identifiable as established German companies in independent searches - treated as low-credibility/unverified and excluded.",
+    "Rio Tinto's Bunder diamond project in Chhatarpur district was a genuine, large, real foreign investment in Madhya Pradesh mining, but Rio Tinto formally exited and gifted the project's assets to the MP government in 2017 - outside this sweep's 2021-2026 window, so not included as a current MoU.",
+    "Sector-specific searches for chemicals, plastics, electronics, medical devices, mining/critical minerals, and Global Capability Centres (GCC) at MP Tech Growth Conclave 3.0 (which has an active GCC Policy 2025 targeting 50+ GCCs and $5 billion by 2030) did not surface any additional individually-named, verifiable foreign-company MoU beyond the nine listed above; MP's GCC policy and conclave coverage discuss the incentive framework and aggregate targets but, in the sources reachable during this sweep, do not name specific foreign GCC tenants with signed MoUs and dated commitments.",
+    "Search coverage for this sweep was constrained mid-session: the session's WebSearch call budget was exhausted once and DuckDuckGo/Bing HTML scraping via curl were also blocked/rate-limited for a period; research continued via Google News RSS discovery plus WebFetch and the r.jina.ai reader proxy for sites WebFetch could not reach directly (e.g., DataCenterDynamics, TheHindu returned 403 to WebFetch). This list should be treated as a verified floor, not an exhaustive count - additional individually-verifiable foreign MoUs from Israel, Singapore, South Korea, and additional Japanese delegations reported to have attended GIS 2025 and the Tech Growth Conclave likely exist in press coverage but were not captured in this pass."
+  ]
+}

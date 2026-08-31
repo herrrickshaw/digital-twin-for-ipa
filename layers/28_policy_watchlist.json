@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-08-24",
+ "built": "2026-08-31",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9497,19 +9497,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/commonwealth-games-2026-and-future-of-sports-in-india"
   },
   {
+   "slug": "cryospheric-risks-and-transboundary-resilience",
+   "topic": "Cryospheric Risks and Transboundary Resilience",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/cryospheric-risks-and-transboundary-resilience"
+  },
+  {
    "slug": "enhancing-effectiveness-of-fast-track-courts",
    "topic": "Enhancing Effectiveness of Fast Track Courts",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/enhancing-effectiveness-of-fast-track-courts"
-  },
-  {
-   "slug": "evaluating-indias-employment-scenario",
-   "topic": "Evaluating Indias Employment Scenario",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/evaluating-indias-employment-scenario"
-  },
-  {
-   "slug": "fcra-evolution-and-national-security",
-   "topic": "Fcra Evolution and National Security",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/fcra-evolution-and-national-security"
   },
   {
    "slug": "future-roadmap-for-indias-iron-steel-industry",
@@ -9527,9 +9522,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-100-gw-nuclear-power-ambition"
   },
   {
-   "slug": "indias-counter-to-global-shocks",
-   "topic": "Indias Counter to Global Shocks",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-counter-to-global-shocks"
+   "slug": "indias-new-tribunal-framework",
+   "topic": "Indias New Tribunal Framework",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-new-tribunal-framework"
+  },
+  {
+   "slug": "indias-sugar-price-crisis",
+   "topic": "Indias Sugar Price Crisis",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-sugar-price-crisis"
   },
   {
    "slug": "j-k-integration-from-article-370-to-statehood-debate",
@@ -9540,6 +9540,11 @@
    "slug": "jain-philosophy-for-modern-problems",
    "topic": "Jain Philosophy for Modern Problems",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/jain-philosophy-for-modern-problems"
+  },
+  {
+   "slug": "making-indian-cities-resilient-to-floods",
+   "topic": "Making Indian Cities Resilient to Floods",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-indian-cities-resilient-to-floods"
   },
   {
    "slug": "mecca-joint-defence-agreement-and-its-implications-for-india",
@@ -9557,19 +9562,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/natural-farming-indias-path-to-resilient-agriculture"
   },
   {
-   "slug": "reforming-indias-police-system",
-   "topic": "Reforming Indias Police System",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-police-system"
+   "slug": "parliamentary-disruptions-and-democratic-accountability",
+   "topic": "Parliamentary Disruptions and Democratic Accountability",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/parliamentary-disruptions-and-democratic-accountability"
   },
   {
-   "slug": "regulation-of-temples-in-india",
-   "topic": "Regulation of Temples in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/regulation-of-temples-in-india"
-  },
-  {
-   "slug": "reimagining-cooperative-federalism-for-inclusive-national-development",
-   "topic": "Reimagining Cooperative Federalism for Inclusive National Development",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-cooperative-federalism-for-inclusive-national-development"
+   "slug": "recalibrating-indias-central-asia-strategy",
+   "topic": "Recalibrating Indias Central Asia Strategy",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/recalibrating-indias-central-asia-strategy"
   },
   {
    "slug": "rethinking-indias-food-safety-framework",

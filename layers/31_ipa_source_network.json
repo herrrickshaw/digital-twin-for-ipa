@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-08-24",
+ "built": "2026-08-31",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -177,7 +177,7 @@
     "country": "Angola",
     "organization": "Agency for Private Investment and Export Promotion (AIPEX)",
     "website": "https://www.aipex.gov.ao/PortalAIPEX/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Armenia",
@@ -285,7 +285,7 @@
     "country": "China, People Republic of",
     "organization": "Investment Promotion Agency of the Ministry of Commerce of P. R. China (CIPA)",
     "website": "http://english.mofcom.gov.cn/",
-    "website_status": 200
+    "website_status": "ERR:ConnectionResetError"
    },
    {
     "country": "China, People Republic of",
@@ -309,7 +309,7 @@
     "country": "Congo, Dem. Rep.",
     "organization": "ANAPI",
     "website": "https://investindrc.cd/fr/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Congo, Rep.",
@@ -423,7 +423,7 @@
     "country": "Gabon",
     "organization": "Agence Nationale de Promotion des Investissements du Gabon (ANPI-GABON)",
     "website": "https://www.investingabon.ga/",
-    "website_status": 200
+    "website_status": 500
    },
    {
     "country": "Gambia, The",
@@ -453,7 +453,7 @@
     "country": "Guinea",
     "organization": "Agence de Promotion des Investissements Privés (APIP-Guinée)",
     "website": "http://www.apip.gov.gn/\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-    "website_status": "ERR:timeout"
+    "website_status": 200
    },
    {
     "country": "Honduras",
@@ -507,7 +507,7 @@
     "country": "Italy",
     "organization": "Invest in Tuscany\r\n",
     "website": "https://www.investintuscany.com/",
-    "website_status": "ERR:timeout"
+    "website_status": 200
    },
    {
     "country": "Japan",
@@ -531,7 +531,7 @@
     "country": "Kenya",
     "organization": "KenInvest",
     "website": "http://www.invest.go.ke/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Kiribati",
@@ -717,7 +717,7 @@
     "country": "Panama",
     "organization": "ProPanama\r\n\r\n\r\n\r\n",
     "website": "http://www.propanama.gob.pa/",
-    "website_status": 200
+    "website_status": "ERR:ConnectionResetError"
    },
    {
     "country": "Peru",
@@ -927,7 +927,7 @@
     "country": "Uganda",
     "organization": "Uganda Investment Authority (UIA)",
     "website": "https://www.ugandainvest.go.ug/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "United Arab Emirates",
@@ -1536,7 +1536,7 @@
   "https://www.enterprisesg.gov.sg": 403,
   "https://www.edb.gov.sg": 200,
   "https://www.investhk.gov.hk": 200,
-  "https://investtaiwan.nat.gov.tw": 404,
+  "https://investtaiwan.nat.gov.tw": 200,
   "https://www.business-sweden.com": 200,
   "https://www.investcanada.ca": 403,
   "https://www.globalaustralia.gov.au": "ERR:URLError",

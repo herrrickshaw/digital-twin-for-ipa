@@ -1,7 +1,7 @@
 {
  "layer": 32,
  "name": "company_db",
- "built": "2026-08-24",
+ "built": "2026-08-31",
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
@@ -52,11 +52,11 @@
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
  "ii_ticker_validation": {
-  "ran": "2026-08-24",
+  "ran": "2026-08-31",
   "what": "Invest India sector-page LATEST-UPDATES tickers scraped as an announcement channel and matched (conservatively, fragments kept for review) against the company DB; QUIET/PARTIALLY_VISIBLE clearance leads that the national IPA itself announces are flagged as challenged verdicts",
   "sector_pages_scraped": 41,
   "fetch_errors": [],
-  "announcements": 439,
+  "announcements": 440,
   "companies_matched": 41,
   "match_rows": 80,
   "exception_verdicts_challenged": [
@@ -159,7 +159,7 @@
   "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
  },
  "news_collection": {
-  "ran": "2026-08-24",
+  "ran": "2026-08-31",
   "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
   "api_calls_used": 39,
   "calls_by_source": {
@@ -170,19 +170,27 @@
   },
   "articles_total": 103,
   "new_articles": 103,
-  "match_rows_added": 21,
+  "match_rows_added": 16,
   "exception_news_hits": [],
   "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  },
  "sebi_public_issues": {
-  "ran": "2026-08-24",
+  "ran": "2026-08-31",
   "since": "2025-01-01",
-  "pages_fetched": 16,
-  "filings_in_window": 387,
-  "new_rows": 392,
-  "match_rows": 15,
+  "pages_fetched": 17,
+  "filings_in_window": 399,
+  "new_rows": 417,
+  "match_rows": 16,
   "companies_moving_to_market": [
+   {
+    "company": "German Green Steel And Power Limited",
+    "visibility": "DARK",
+    "quality": "strong",
+    "filed": "2026-08-15",
+    "filing": "German Green Steel and Power Ltd. - Addendum to DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/aug-2026/german-green-steel-and-power-ltd-addendum-to-drhp_103895.html"
+   },
    {
     "company": "Encube Ethicals Private Limited",
     "visibility": "NOTABLE",
@@ -307,7 +315,7 @@
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  },
  "cin_extraction": {
-  "ran": "2026-08-24",
+  "ran": "2026-08-31",
   "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
   "records": [],
   "errors": [],

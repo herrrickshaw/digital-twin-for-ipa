@@ -1,6 +1,6 @@
 {
  "layer": "edgar_india_sweep",
- "built": "2026-08-24",
+ "built": "2026-08-31",
  "method": "EDGAR FTS exact-phrase sweep, forms 10-K,20-F; cumulative, deduped on accession; consumed by shortlist rebuild",
  "filings": [
   {

@@ -1,0 +1,1407 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>National Dashboard — Digital Twin for IPA (2026-08-25)</title>
+<style>
+:root { --bg:#fff; --fg:#1a1a1a; --mut:#666; --card:#f6f6f4; --acc:#0b5cad; --bd:#e2e2de; --hi:#1a8f4c; --hisoft:#e6f5ec; --mou:#8a2a8a; --mousoft:#f7e9f7; --warn:#a3480e; --warnsoft:#fbeade; }
+@media (prefers-color-scheme: dark) { :root { --bg:#14151a; --fg:#e8e8e8; --mut:#9a9a9a; --card:#1e2027; --acc:#6ab0f3; --bd:#2c2e36; --hi:#5fd08c; --hisoft:#132a1e; --mou:#d68ad6; --mousoft:#2a1c2a; --warn:#e0a15a; --warnsoft:#2a1f14; } }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--fg); }
+.wrap { max-width:1080px; margin:0 auto; padding:32px 20px 60px; }
+h1 { font-size:1.6em; margin:0 0 4px; }
+h2 { font-size:1.2em; margin:38px 0 6px; display:flex; align-items:center; gap:10px; }
+h2 .tag { font-size:.5em; background:var(--mousoft); color:var(--mou); border-radius:20px; padding:3px 12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+h3 { font-size:.95em; margin:22px 0 8px; color:var(--mut); text-transform:uppercase; letter-spacing:.03em; }
+.sub { color:var(--mut); font-size:.92em; margin-bottom:20px; max-width:820px; }
+.stats { display:flex; gap:12px; flex-wrap:wrap; margin:18px 0 26px; }
+.stat { background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:10px 18px; min-width:100px; }
+.stat b { font-size:1.5em; display:block; font-variant-numeric:tabular-nums; }
+.stat span { color:var(--mut); font-size:.8em; }
+.search { width:100%; box-sizing:border-box; padding:10px 14px; border-radius:8px; border:1px solid var(--bd); background:var(--card); color:var(--fg); font-size:.92em; margin:10px 0 16px; }
+.filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px; }
+.chip { cursor:pointer; padding:5px 13px; border-radius:16px; border:1px solid var(--bd); background:var(--card); font-size:.78em; font-weight:600; color:var(--mut); }
+.chip.active { background:var(--mousoft); color:var(--mou); border-color:var(--mou); }
+.card { background:var(--card); border:1px solid var(--bd); border-radius:12px; padding:16px 18px; margin:10px 0; }
+.card-head { display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
+.card-head a { font-weight:700; font-size:1.03em; color:var(--acc); text-decoration:none; }
+.card-head a:hover { text-decoration:underline; }
+.card-meta { color:var(--mut); font-size:.82em; margin:4px 0 8px; }
+.card-body { font-size:.9em; color:var(--fg); }
+.badge { font-size:.72em; border-radius:6px; padding:2px 8px; font-weight:700; white-space:nowrap; }
+.badge.HIGH { background:var(--hisoft); color:var(--hi); }
+.badge.MEDIUM { background:var(--warnsoft); color:var(--warn); }
+.badge.LOW { background:var(--card); color:var(--mut); border:1px solid var(--bd); }
+.status { font-size:.75em; border-radius:6px; padding:2px 9px; font-weight:700; background:var(--bg); border:1px solid var(--bd); color:var(--mut); }
+.status.op { background:var(--hisoft); color:var(--hi); border-color:transparent; }
+.state-tag { font-size:.75em; font-weight:700; color:var(--mou); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; margin:10px 0 6px; }
+.tile { background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:14px 16px; }
+.tile b { display:block; font-size:.95em; margin-bottom:3px; }
+.tile span { color:var(--mut); font-size:.85em; }
+.tile a { color:var(--acc); text-decoration:none; font-size:.8em; }
+.tile a:hover { text-decoration:underline; }
+a.link-list { color:var(--acc); text-decoration:none; }
+a.link-list:hover { text-decoration:underline; }
+table.idx { width:100%; border-collapse:collapse; font-size:.85em; margin:10px 0; }
+table.idx th, table.idx td { text-align:left; padding:5px 10px; border-bottom:1px solid var(--bd); }
+table.idx th { color:var(--mut); font-weight:600; font-size:.85em; }
+.note { color:var(--mut); font-size:.82em; margin-top:40px; border-top:1px solid var(--bd); padding-top:14px; }
+.hidden { display:none !important; }
+</style></head><body><div class="wrap">
+<h1>Digital Twin for IPA — National Dashboard</h1>
+<p class="sub">One page combining every layer the twin tracks — from central scheme rules to state-government press wires to live investment-news sweeps. The featured section below is the state-MoU news wire (layer 44): every individually-verified foreign-company MoU signed at a state investor summit since 2021, presented as real news articles with sources, not just aggregate counts.</p>
+<div class="stats">
+<div class="stat"><b>1785</b><span>companies tracked</span></div>
+<div class="stat"><b>321</b><span>foreign leads</span></div>
+<div class="stat"><b>126</b><span>state MoUs (5yr)</span></div>
+<div class="stat"><b>73%</b><span>MoUs with no follow-up</span></div>
+<div class="stat"><b>76</b><span>investment-news findings</span></div>
+<div class="stat"><b>20</b><span>states w/ any signal</span></div>
+<div class="stat"><b>64</b><span>trade-fair events tracked</span></div>
+<div class="stat"><b>49</b><span>layers</span></div>
+</div>
+<h2>MoU News Wire <span class="tag">Featured</span></h2>
+<p class="sub">Every verified state-investor-summit MoU, 2021–2026 — read as news, not a spreadsheet. Each card links to its real source article. Status is tracked separately from the signing: most MoUs in India never get an independent follow-up story, and that's shown honestly, not hidden.</p>
+<input class="search" id="mouSearch" placeholder="Search company, state, sector, or country…" oninput="filterMou()">
+<div class="filters" id="statusFilters">
+<div class="chip active" data-status="all" onclick="setStatusFilter(this)">All statuses</div>
+<div class="chip " data-status="operational" onclick="setStatusFilter(this)">operational</div>
+<div class="chip " data-status="under construction" onclick="setStatusFilter(this)">under construction</div>
+<div class="chip " data-status="no follow-up news found" onclick="setStatusFilter(this)">no follow-up news found</div>
+<div class="chip " data-status="publicly stalled/withdrawn" onclick="setStatusFilter(this)">publicly stalled/withdrawn</div>
+</div>
+<div id="mouCards">
+<div class="card" data-status="under construction" data-txt="mas holdings odisha apparel manufacturing (value-added apparel for indian and international markets) sri lanka under construction">
+<div class="card-head">
+<a href="https://www.textileworld.com/textile-world/knitting-apparel/2025/03/mas-holdings-breaks-ground-in-bhuinpur-exploring-new-market-opportunities-in-india/" target="_blank" rel="noopener">MAS Holdings</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">Sri Lanka · Apparel manufacturing (value-added apparel for Indian and international markets) · Initial investment-intent meeting between MAS Holdings chairman Mahesh Amalean and the Odisha CM (no confirmed formal MoU-signing date found); groundbreaking ceremony held separately · Intent expressed 2023-11 (per secondary reporting, exact MoU date not independently confirmed); groundbreaking held 2025-03-05</div>
+<div class="card-body"><b>Not disclosed; 60-acre site at Bhuinpur, Odisha, planned as a 10-year build-out into a full apparel hub</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Groundbreaking ceremony independently confirmed by two trade-press outlets (Textile World, Just-Style) as having taken place 2025-03-05 at the Bhuinpur site; MAS India's CEO issued an on-record statement. Production start targeted for 2026. This is the strongest real-world follow-through signal found among all Odisha f</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="wilmar international (via adani wilmar 50:50 jv) west bengal edible oil refining singapore no follow-up news found">
+<div class="card-head">
+<a href="https://www.projectstoday.com/News/Adani-Wilmar-to-ramp-up-capacity-at-Haldia" target="_blank" rel="noopener">Wilmar International (via Adani Wilmar 50:50 JV)</a>
+<span class="state-tag">West Bengal</span>
+</div>
+<div class="card-meta">Singapore · Edible oil refining · Not tied to a specific named summit in sourcing found; general West Bengal industrial investment reporting · Exact date not independently confirmed (reporting reviewed clustered around 2022)</div>
+<div class="card-body"><b>~Rs 100 crore (reported capacity-expansion figure for the Haldia port-based refinery; this is incremental capex on an existing JV plant, not a new-entrant MoU)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="escorts kubota limited uttar pradesh tractor and construction-equipment manufacturing india-domiciled jv, majority-owned by japan's kubota corporation since 2022 (treated here as genuinely foreign-controlled investment, not a purely india-hq'd company) no follow-up news found">
+<div class="card-head">
+<a href="https://theprint.in/economy/windfall-on-day-1-of-up-japan-investment-meet-rs-3191-cr-projects-for-gr-noida-500-acre-japanese-city/3019566/" target="_blank" rel="noopener">Escorts Kubota Limited</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">India-domiciled JV, majority-owned by Japan's Kubota Corporation since 2022 (treated here as genuinely foreign-controlled investment, not a purely India-HQ'd company) · Tractor and construction-equipment manufacturing · UP-Japan Investment Meet 2026 · 2026-08-21</div>
+<div class="card-body"><b>Rs 2,025 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="bosch global software technologies (indian arm of robert bosch gmbh) tamil nadu cybersecurity / ai centre of excellence (with tidco) germany (parent robert bosch gmbh; signatory is its india-registered software subsidiary) no follow-up news found">
+<div class="card-head">
+<a href="https://www.etvbharat.com/en/state/vettri-tamil-nadu-investors-conclave-2026-mou-cm-joseph-vijay-august-13-enn26081302026" target="_blank" rel="noopener">Bosch Global Software Technologies (Indian arm of Robert Bosch GmbH)</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Germany (parent Robert Bosch GmbH; signatory is its India-registered software subsidiary) · Cybersecurity / AI Centre of Excellence (with TIDCO) · Vettri Tamil Nadu Investors' Conclave · 2026-08-13</div>
+<div class="card-body"><b>Amount not disclosed in source</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="google (google cloud india / google play india) madhya pradesh information technology / artificial intelligence (ai centre of excellence, capacity building) united states no follow-up news found">
+<div class="card-head">
+<a href="https://www.freepressjournal.in/bhopal/mp-attracts-40000-crore-investment-proposals-at-tech-growth-conclave-34000-jobs-expected" target="_blank" rel="noopener">Google (Google Cloud India / Google Play India)</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">United States · Information Technology / Artificial Intelligence (AI Centre of Excellence, capacity building) · MoU between Google Play India Lead and MP State Electronics Development Corporation (MPSEDC), signed at MP Tech Growth Conclave 3.0; separate AI Centre of Excellence discussions with Google Cloud India round-tabled with the CM · 2026-07-13</div>
+<div class="card-body"><b>Not disclosed - a capacity-building/training partnership (AI Centre of Excellence in Indore, targeting 10,000+ trained AI developers), not a stated capital-expenditure figure</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="ihi corporation and mitsubishi gas chemical company, inc. (jointly, in partnership with india's acme group) odisha green ammonia and green methanol production japan no follow-up news found">
+<div class="card-head">
+<a href="https://odishaconnect.com/odisha-signs-landmark-green-energy-pact-with-japanese-firms-%e2%82%b967000-crore-investment-to-create-7600-jobs/" target="_blank" rel="noopener">IHI Corporation and Mitsubishi Gas Chemical Company, Inc. (jointly, in partnership with India's ACME Group)</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">Japan · Green ammonia and green methanol production · Memorandum of Cooperation (MoC) signing, Lok Seva Bhawan Convention Centre, Bhubaneswar (standalone event, not tied to a conclave) · 2026-07-05</div>
+<div class="card-body"><b>Rs 67,000 crore total across three projects: Gopalpur 0.4 MTPA green ammonia + floating terminal (Rs 21,000 crore, 3,400 jobs); Paradip 0.8 MTPA green ammonia (Rs 34,000 crore, 3,600 jobs); Paradip 0.1 MTPA green methano</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Signed only ~7 weeks before this sweep; a related figure — a $7 billion Odisha green hydrogen/ammonia JV of 'ACMW and IHI Corporation' — surfaced in a separate secondary search result and may describe the same or an overlapping project under a different framing; not independently reconciled in this pass.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="mccain foods limited madhya pradesh food processing (frozen potato products - french fries and potato flakes) canada no follow-up news found">
+<div class="card-head">
+<a href="https://indianpotato.com/mccain-foods-agar-malwa-investment-madhya-pradesh/" target="_blank" rel="noopener">McCain Foods Limited</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">Canada · Food processing (frozen potato products - french fries and potato flakes) · Formalized in a meeting between McCain's Regional President (APACSA) Pierre Danet and MD McCain India Mainak Dhar with CM Mohan Yadav, ahead of MP Tech Growth Conclave 3.0; project sited on 70 acres allotted in Agar-Malwa · 2026-07-03</div>
+<div class="card-body"><b>Rs 3,800 crore (~$457-480 million), phased; Phase 1 reported at Rs 1,500-1,800 crore; company's second India facility after Gujarat</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="international resources holding (irh), a subsidiary of international holding company (ihc) pjsc odisha integrated aluminium manufacturing (alumina refinery, aluminium smelter, captive power, downstream manufacturing park) united arab emirates (abu dhabi) no follow-up news found">
+<div class="card-head">
+<a href="https://www.adani.com/newsroom/media-releases/adani-enterprises-and-ihc-group-company-irh-to-form-a-50-50-joint-venture" target="_blank" rel="noopener">International Resources Holding (IRH), a subsidiary of International Holding Company (IHC) PJSC</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">United Arab Emirates (Abu Dhabi) · Integrated aluminium manufacturing (alumina refinery, aluminium smelter, captive power, downstream manufacturing park) · Standalone Government-of-Odisha MoU signing (not tied to a conclave), witnessed by CM Mohan Charan Majhi and Industries Minister Sampad Chandra Swain · 2026-07-02</div>
+<div class="card-body"><b>USD 11.5 billion (~Rs 1.08 lakh crore / Rs 1,08,000 crore) for a 50:50 joint venture with Adani Enterprises Ltd (India) — 4 MMTPA alumina refinery, 2 MMTPA aluminium smelter, 1 MMTPA downstream park, in two phases (Rs 66</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Signed only ~7 weeks before this sweep (2026-08-25); reported as Odisha's largest-ever FDI proposal and India's largest FDI in metallurgy. Too recent for construction or land-acquisition news to have surfaced yet.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="haleon plc (maker of sensodyne, eno, otrivin) madhya pradesh pharmaceuticals / consumer healthcare (oral care manufacturing) united kingdom under construction">
+<div class="card-head">
+<a href="https://www.businessupturn.com/brand-post/haleon-announces-%E2%82%B92000-crore-total-investment-to-set-up-its-first-manufacturing-facility-in-india" target="_blank" rel="noopener">Haleon plc (maker of Sensodyne, Eno, Otrivin)</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">United Kingdom · Pharmaceuticals / Consumer Healthcare (oral care manufacturing) · Bilateral investment announcement / foundation-stone laying at Pithampur (Smart Industrial Park, Dhar district), part of the GIS 2025 investment pipeline · 2026-06-11 (foundation stone virtually laid by CM Mohan Yadav; announcement date)</div>
+<div class="card-body"><b>~Rs 2,000 crore (~£175 million / ~$230 million), first-ever India manufacturing facility</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="jfe steel corporation (via joint venture jsw jfe steel limited, with jsw steel of india) odisha integrated steel manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.maritimegateway.com/odisha-investment-steel-ports/" target="_blank" rel="noopener">JFE Steel Corporation (via joint venture JSW JFE Steel Limited, with JSW Steel of India)</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">Japan · Integrated steel manufacturing · JV unveiling at Rengali, Sambalpur district (standalone event, not tied to a conclave) · 2026-04 (month only; exact day not found)</div>
+<div class="card-body"><b>Not disclosed in available reporting</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Found in a single secondary source (Maritime Gateway) with a direct quote naming JFE Steel Corporation and the JV entity, but not independently corroborated by a second outlet or an official JFE/JSW press release in this sweep. No investment figure, plant capacity, or construction status reported.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="arcelormittal (luxembourg) and nippon steel corporation (japan) joint venture — am/ns india andhra pradesh integrated greenfield steel manufacturing luxembourg / japan (joint venture) under construction">
+<div class="card-head">
+<a href="https://theprint.in/india/governance/arcelormittal-nippon-steel-gets-started-on-building-indias-largest-greenfield-steel-plant-in-andhra/2887056/" target="_blank" rel="noopener">ArcelorMittal (Luxembourg) and Nippon Steel Corporation (Japan) joint venture — AM/NS India</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">Luxembourg / Japan (joint venture) · Integrated greenfield steel manufacturing · MoU signed at the groundbreaking/foundation-stone ceremony for the plant at Rajayyapeta, Anakapalli district, in the presence of CM N. Chandrababu Naidu and ArcelorMittal Executive Chairman Lakshmi Mittal · 2026-03-23</div>
+<div class="card-body"><b>Total project ₹1,35,000 crore; Phase 1 alone ₹70,000 crore (an earlier press figure cited ₹61,780 crore for an initial component)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Foundation stone laid same day as the MoU/agreement; environmental clearance obtained ~13 months prior; manufacturing targeted to begin by December 2028. Genuine construction-stage project, not just a pledge — this is a case of a real post-2024-government deal (CM Naidu said his 'first conversation' with Mittal was in </div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational — verbio already operates india's largest biofuel/cbg plant at lehragaga, sangrur; the 2026 mou covers an expansion, not a first-time entry, so the base project has genuine follow-through even though the expansion itself is unconfirmed as built" data-txt="verbio india (verbio ag) punjab compressed biogas / biofuels germany operational — verbio already operates india's largest biofuel/cbg plant at lehragaga, sangrur; the 2026 mou covers an expansion, not a first-time entry, so the base project has genuine follow-through even though the expansion itself is unconfirmed as built">
+<div class="card-head">
+<a href="https://www.tribuneindia.com/news/punjab/punjab-on-new-growth-path-cm-mann-as-investors-commit-12000-cr/" target="_blank" rel="noopener">Verbio India (Verbio AG)</a>
+<span class="state-tag">Punjab</span>
+</div>
+<div class="card-meta">Germany · Compressed biogas / biofuels · Progressive Punjab Investors' Summit 2026, Mohali · 2026-03-13 (summit week)</div>
+<div class="card-body"><b>Rs 4,000 crore (new MoU at the 2026 summit) plus a separately announced Rs 3,000 crore for 10 additional industrial-scale plants</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">operational — Verbio already operates India's largest biofuel/CBG plant at Lehragaga, Sangrur; the 2026 MoU covers an expansion, not a first-time entry, so the base project has genuine follow-through even though the expansion itself is unconfirmed as built</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="3 associates punjab knowledge/digital-economy real estate and innovation campus development united kingdom no follow-up news found">
+<div class="card-head">
+<a href="https://www.babushahi.com/view-news.php?id=218369" target="_blank" rel="noopener">3 Associates</a>
+<span class="state-tag">Punjab</span>
+</div>
+<div class="card-meta">United Kingdom · Knowledge/digital-economy real estate and innovation campus development · Progressive Punjab Investors' Summit 2026, session 'Unlocking Opportunities under CETA: Strengthening UK-Punjab Trade and Investment Partnerships', Plaksha University, Mohali · 2026-03-13</div>
+<div class="card-body"><b>Rs 1,407 crore (Rs 4,700 crore gross development value cited)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">no follow-up news found (announcement is ~5 months old as of sweep date; too recent for construction/operational news)</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="kubota corporation uttar pradesh agricultural and industrial machinery japan (osaka) no follow-up news found">
+<div class="card-head">
+<a href="https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit" target="_blank" rel="noopener">Kubota Corporation</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Japan (Osaka) · Agricultural and industrial machinery · CM Yogi Adityanath's Japan visit · 2026-02-25</div>
+<div class="card-body"><b>Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found for this general MoU</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="japan aviation electronics industry (jae) uttar pradesh connectors / automotive &amp; aerospace electronics japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit" target="_blank" rel="noopener">Japan Aviation Electronics Industry (JAE)</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Japan · Connectors / automotive &amp; aerospace electronics · CM Yogi Adityanath's Japan visit · 2026-02-25</div>
+<div class="card-body"><b>Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="nagase &amp; co., ltd. uttar pradesh chemicals, advanced materials, mobility solutions, electronics (diversified trading/technology company) japan (osaka) no follow-up news found">
+<div class="card-head">
+<a href="https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit" target="_blank" rel="noopener">Nagase &amp; Co., Ltd.</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Japan (Osaka) · Chemicals, advanced materials, mobility solutions, electronics (diversified trading/technology company) · CM Yogi Adityanath's Japan visit · 2026-02-25</div>
+<div class="card-body"><b>Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="o&amp;o group uttar pradesh hospitality and real estate reported in context of the japan-visit delegation, but this sweep could not independently verify o&amp;o group's actual corporate hq or confirm it is japan-based no follow-up news found">
+<div class="card-head">
+<a href="https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit" target="_blank" rel="noopener">O&amp;O Group</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Reported in context of the Japan-visit delegation, but this sweep could not independently verify O&amp;O Group's actual corporate HQ or confirm it is Japan-based · Hospitality and real estate · CM Yogi Adityanath's Japan visit · 2026-02-25</div>
+<div class="card-body"><b>Part of the combined ~Rs 11,000 crore Feb-2026 Japan-visit figure; no standalone amount found</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="carlsberg a/s maharashtra beverages / brewing denmark no follow-up news found">
+<div class="card-head">
+<a href="https://thebombaydurpun.com/?p=4566" target="_blank" rel="noopener">Carlsberg A/S</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Denmark · Beverages / brewing · World Economic Forum, Davos (year not explicitly stated in the source; contextually appears to be the 2026 edition, alongside the Sumitomo Realty figure in the same article) · 2026-01-20 (inferred; not explicitly dated in the source article)</div>
+<div class="card-body"><b>Rs 500 crore</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Found in only one source, which did not give an explicit signing date; the year is inferred from article context rather than directly stated. Flagged as lower-certainty on the date specifically, though the company name and figure appear to be a real, distinct MoU line item rather than part of an aggregate total.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="arcelormittal nippon steel india (am/ns india) — joint venture of arcelormittal and nippon steel corporation maharashtra green steel manufacturing luxembourg (arcelormittal) / japan (nippon steel corporation) — joint venture no follow-up news found">
+<div class="card-head">
+<a href="https://www.zeebiz.com/india/news-maharashtra-makes-big-splash-at-davos-2026-173-billion-mous-388218" target="_blank" rel="noopener">ArcelorMittal Nippon Steel India (AM/NS India) — joint venture of ArcelorMittal and Nippon Steel Corporation</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Luxembourg (ArcelorMittal) / Japan (Nippon Steel Corporation) — joint venture · Green steel manufacturing · World Economic Forum, Davos 2026 · 2026-01-20</div>
+<div class="card-body"><b>Rs 1.1 lakh crore (~$13 billion), Gadchiroli district</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Signed roughly 7 months before this sweep; no independent construction or land-allotment reporting found yet. Too recent for a meaningful follow-through verdict.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="skoda auto volkswagen india pvt ltd (volkswagen group) maharashtra automotive manufacturing germany (volkswagen group; skoda auto is a czech marque within the group) no follow-up news found">
+<div class="card-head">
+<a href="https://www.newkerala.com/news/a/83-davos-deals-direct-foreign-investments-devendra-fadnavis-158.htm" target="_blank" rel="noopener">Skoda Auto Volkswagen India Pvt Ltd (Volkswagen Group)</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Germany (Volkswagen Group; Skoda Auto is a Czech marque within the group) · Automotive manufacturing · World Economic Forum, Davos 2026 · 2026-01-20</div>
+<div class="card-body"><b>Rs 12,000 crore</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Only found in one aggregator-level article listing companies and a headline figure; could not independently corroborate the exact amount in a second outlet within the available search budget. Too recent for follow-through reporting.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="sumitomo realty &amp; development co., ltd. maharashtra real estate development japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.tribuneindia.com/news/business/maharashtra-govt-signs-multi-billion-dollar-mous-at-wef-2026/" target="_blank" rel="noopener">Sumitomo Realty &amp; Development Co., Ltd.</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Japan · Real estate development · World Economic Forum, Davos 2026 · 2026-01-20</div>
+<div class="card-body"><b>~$8 billion (reported elsewhere as Rs 72,800 crore), ~80,000 jobs projected</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Two independent outlets corroborate the company name and a broadly consistent investment figure ($8bn vs Rs 72,800cr, which converts to roughly the same amount). Signed ~7 months before this sweep; no independent construction reporting found yet.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="vingroup / vin group (understood to be vietnam's vingroup, parent of vinfast) telangana renewable energy, ev infrastructure, smart urban planning vietnam no follow-up news found">
+<div class="card-head">
+<a href="https://www.newsonair.gov.in/telangana-signs-35-mous-worth-%e2%82%b92-43-lakh-crore-on-first-day-of-telangana-rising-global-summit" target="_blank" rel="noopener">Vingroup / Vin Group (understood to be Vietnam's Vingroup, parent of VinFast)</a>
+<span class="state-tag">Telangana</span>
+</div>
+<div class="card-meta">Vietnam · Renewable energy, EV infrastructure, smart urban planning · Telangana Rising Global Summit 2025 · 2025-12-08</div>
+<div class="card-body"><b>₹27,000 crore across integrated next-generation renewable energy generation, advanced EV infrastructure, and smart urban planning projects</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">The source article names the entity only as 'Vin Group,' which this sweep interprets as Vietnam's Vingroup (VinFast's parent, active in EVs and renewables) based on sector fit and name match — but this identification was not independently confirmed against a second, more explicit source. Treat the country-of-origin att</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="aichi steel corporation (toyota group) punjab special/alloy steel manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.truescoopnews.com/punjab/cm-secures-500-crore-investment-as-punjab-signs-mou-with-toyotas-aichi-steel" target="_blank" rel="noopener">Aichi Steel Corporation (Toyota Group)</a>
+<span class="state-tag">Punjab</span>
+</div>
+<div class="card-meta">Japan · Special/alloy steel manufacturing · CM Bhagwant Mann's Japan investment roadshow (ahead of Progressive Punjab Investors' Summit 2026); CM personally invited Aichi Steel leadership to the March 2026 summit · 2025-12-04</div>
+<div class="card-body"><b>Rs 500 crore (initial; explicitly framed as funding a feasibility study for a future factory, expanding an existing partnership — Aichi Steel already holds ~24.9% of Vardhman Special Steels)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">no follow-up news found (MoU covers a feasibility study, not committed construction; no subsequent groundbreaking or operational news found as of sweep date)</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="brookfield asset management andhra pradesh data centre / renewable energy canada no follow-up news found">
+<div class="card-head">
+<a href="https://www.newsonair.gov.in/andhra-pradesh-attracts-over-rs-11-lakh-crore-investments-at-cii-partnership-summit-2025-visakhapatnam" target="_blank" rel="noopener">Brookfield Asset Management</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">Canada · Data centre / renewable energy · 30th CII Partnership Summit 2025 · 2025-11-14</div>
+<div class="card-body"><b>Up to $12 billion (a clean-energy-powered 3 GW data centre plus other renewable projects); one government wire report separately cited ₹1.06 lakh crore for the data-centre component signed at the summit</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">MoU is recent (Nov 2025); no independent construction/groundbreaking news found as of this sweep.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="st telemedia global data centres (india) pvt ltd (stt gdc), a subsidiary of st telemedia maharashtra data centres singapore (singapore technologies telemedia) no follow-up news found">
+<div class="card-head">
+<a href="https://www.sttelemediagdc.com/in-en/newsroom/st-telemedia-global-data-centres-india-signs-memorandum-understanding-maharashtra" target="_blank" rel="noopener">ST Telemedia Global Data Centres (India) Pvt Ltd (STT GDC), a subsidiary of ST Telemedia</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Singapore (Singapore Technologies Telemedia) · Data centres · MoU signing with Maharashtra government, Mumbai (standalone, not Davos) · 2025-10-28</div>
+<div class="card-body"><b>Up to Rs 5,000 crore, for expansion of existing Mumbai/Pune campuses plus a new 27-acre AI/high-density campus at Palava</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Only the company's own MoU-signing press release and its syndicated copies were found; no independent construction-progress reporting located as of this sweep, but the MoU is recent (~10 months old) and STT GDC already operates existing Mumbai/Pune campuses, so this is an expansion of a going concern rather than a gree</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="google llc andhra pradesh ai data centre / cloud infrastructure united states under construction">
+<div class="card-head">
+<a href="https://blog.google/intl/en-in/company-news/our-first-ai-hub-in-india-powered-by-a-15-billion-investment/" target="_blank" rel="noopener">Google LLC</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">United States · AI data centre / cloud infrastructure · Announced 2025-10-14 as Google's 'First AI Hub in India' (built with local partners AdaniConneX and Airtel); reaffirmed around the 30th CII Partnership Summit, Visakhapatnam, 2025-11-14/15 · 2025-10-14</div>
+<div class="card-body"><b>$15 billion over 2026-2030 (Google's own figure for its first India AI hub); one secondary source (Deccan Chronicle) separately cited a narrower ~₹50,000 crore ($6bn) figure for the Vizag data-centre-and-renewables compo</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Three hyperscale campuses planned near Visakhapatnam (Adavivaram, Tarluvada, Rambilli), built jointly with AdaniConneX and Airtel. Construction reported as beginning 2026-04-28, roughly six months after the announcement — i.e. genuinely moving, not a pure paper MoU.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="kubota corporation haryana tractor / farm equipment manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.tribuneindia.com/news/haryana/cms-3-day-japan-visit-to-bring-rs-4-4k-cr-investment" target="_blank" rel="noopener">Kubota Corporation</a>
+<span class="state-tag">Haryana</span>
+</div>
+<div class="card-meta">Japan · Tractor / farm equipment manufacturing · CM Nayab Singh Saini's Japan roadshow, Osaka (CM toured Kubota's Osaka plant) · 2025-10-08/09</div>
+<div class="card-body"><b>Over Rs 2,000 crore</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">no follow-up news found (note: this is a distinct commitment from the separately-existing India-incorporated JV 'Escorts Kubota Limited', which already operates a large Faridabad-area tractor plant — the roadshow figure appears to be an additional/expansion commitment, but no dedicated follow-up confirming what it spec</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="ve commercial vehicles ltd (vecv) - joint venture between ab volvo (sweden, ~45.6% stake) and eicher motors (india) madhya pradesh automotive components (12-speed automated manual transmission manufacturing) sweden (volvo group, jv partner) / india (eicher motors, jv partner) no follow-up news found">
+<div class="card-head">
+<a href="https://www.eichertrucksandbuses.com/news-room/press-release/ve-commercial-vehicles-announces-plans-to-manufacture-volvo-group%E2%80%99s-industry-leading-automated-manual-transmissions-for-india-and-select-asia-oceania-markets" target="_blank" rel="noopener">VE Commercial Vehicles Ltd (VECV) - joint venture between AB Volvo (Sweden, ~45.6% stake) and Eicher Motors (India)</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">Sweden (Volvo Group, JV partner) / India (Eicher Motors, JV partner) · Automotive components (12-speed Automated Manual Transmission manufacturing) · Investment announcement for a new plant at Vikram Udyogpuri Integrated Industrial Township, near Ujjain · 2025-10-08</div>
+<div class="card-body"><b>Rs 544 crore, greenfield factory, initial capacity up to 40,000 units/year</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction — by april-june 2026 multiple outlets" data-txt="daikin industries limited haryana air conditioning / r&amp;d centre japan under construction — by april-june 2026 multiple outlets">
+<div class="card-head">
+<a href="https://www.tribuneindia.com/news/haryana/cms-3-day-japan-visit-to-bring-rs-4-4k-cr-investment" target="_blank" rel="noopener">Daikin Industries Limited</a>
+<span class="state-tag">Haryana</span>
+</div>
+<div class="card-meta">Japan · Air conditioning / R&amp;D centre · CM Nayab Singh Saini's Japan roadshow, Osaka; MoU signed by Amit Kumar Agrawal (Secretary, Haryana Industries &amp; Commerce) and Shogo Endo (Deputy MD, Daikin Industries) · 2025-10-08</div>
+<div class="card-body"><b>Rs 1,000 crore</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">under construction — by April-June 2026 multiple outlets (Times of India, Swarajya, BigInfo.in) reported the Manesar R&amp;D centre setup was proceeding, indicating the MoU is being acted on rather than shelved</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">under construction — by April-June 2026 multiple outlets</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="seiren company limited haryana textile solutions and advanced materials (automotive interiors, environmental protection, electronic components, sensors, magnetic materials) japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.tribuneindia.com/news/haryana/rising-sun-shines-on-rohtak-japan-firm-to-invest-rs-220-crore" target="_blank" rel="noopener">Seiren Company Limited</a>
+<span class="state-tag">Haryana</span>
+</div>
+<div class="card-meta">Japan · Textile solutions and advanced materials (automotive interiors, environmental protection, electronic components, sensors, magnetic materials) · CM Nayab Singh Saini's Japan roadshow (Osaka/Tokyo) · 2025-10 (exact signing date not specified in coverage; reported in a November 4, 2025 article)</div>
+<div class="card-body"><b>Rs 220 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="capitaland investment limited (cli) maharashtra business parks, data centres, logistics and industrial parks (mumbai metropolitan region and pune) singapore operational">
+<div class="card-head">
+<a href="https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2025/august/CLI_signs_MoU_with_Maharashtra_Government_for_plans_to_invest_over_INR19,200_crores_by_2030_to_expand_in_Mumbai_and_Pune.html" target="_blank" rel="noopener">CapitaLand Investment Limited (CLI)</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Singapore · Business parks, data centres, logistics and industrial parks (Mumbai Metropolitan Region and Pune) · Maharashtra-Singapore bilateral investment MoU signing (coincided with Singapore Deputy PM Gan Kim Yong's visit), not a Davos MoU · 2025-08-12</div>
+<div class="card-body"><b>Over Rs 19,200 crore (~S$2.83 billion / ~$2.2 billion) by 2030</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">The MoU signing coincided with the official launch of CLI's first India data centre, in Navi Mumbai, per CapitaLand's own press release — i.e. part of this commitment is already a live, operating asset, while the remainder of the Rs 19,200 crore is a multi-year pipeline through 2030, not yet built out.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="bata india (bata shoe organisation / bata brands sa parent) west bengal footwear manufacturing - factory modernization switzerland (bata shoe organisation, lausanne) - bata india ltd is majority-owned by the swiss-headquartered bata group operational">
+<div class="card-head">
+<a href="https://mediabrief.com/bata-india-batanagar-manufacturing-investment/" target="_blank" rel="noopener">Bata India (Bata Shoe Organisation / Bata Brands SA parent)</a>
+<span class="state-tag">West Bengal</span>
+</div>
+<div class="card-meta">Switzerland (Bata Shoe Organisation, Lausanne) - Bata India Ltd is majority-owned by the Swiss-headquartered Bata group · Footwear manufacturing - factory modernization · Independent company capex announcement at its existing Batanagar, West Bengal factory - not a state-government MoU or summit-linked commitment · 2025-08 (per company announcement)</div>
+<div class="card-body"><b>Rs 30 crore (Rs 300 million) - manufacturing-technology upgrade, not a new plant</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">operational (technology upgrade to an existing running factory, not a greenfield commitment)</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="operational — plant inaugurated and running as of september 2025, rated capacity 200 million battery packs/year, ~5,000 direct jobs cited" data-txt="tdk corporation (via subsidiary atl / amperex technology limited) haryana lithium-ion battery manufacturing (mobile phone, laptop, wearable batteries; supplies apple's iphone battery supply chain) japan (tdk corporation); the operating plant entity atl/amperex technology is a china-based tdk subsidiary operational — plant inaugurated and running as of september 2025, rated capacity 200 million battery packs/year, ~5,000 direct jobs cited">
+<div class="card-head">
+<a href="https://swarajyamag.com/economy/iphone-battery-supplier-tdks-sohna-plant-inaugurated-by-ashwini-vaishnaw-to-make-200-million-packs-annually" target="_blank" rel="noopener">TDK Corporation (via subsidiary ATL / Amperex Technology Limited)</a>
+<span class="state-tag">Haryana</span>
+</div>
+<div class="card-meta">Japan (TDK Corporation); the operating plant entity ATL/Amperex Technology is a China-based TDK subsidiary · Lithium-ion battery manufacturing (mobile phone, laptop, wearable batteries; supplies Apple's iPhone battery supply chain) · Direct investment/land deal, not tied to a named investor summit; plant inaugurated by Union IT Minister Ashwini Vaishnaw · 2025-08 (land purchase) / plant inaugurated 2025-09-04</div>
+<div class="card-body"><b>Rs 550 crore for the Sohna plant (180 acres purchased August 2025); an earlier, larger figure of Rs 7,000 crore had been floated for a separate 2020 land deal in Haryana, relationship between the two unclear</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">operational — plant inaugurated and running as of September 2025, rated capacity 200 million battery packs/year, ~5,000 direct jobs cited</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="submer technologies s.l. (submer group) madhya pradesh data centres / ai infrastructure (liquid-cooling technology) spain (barcelona) under construction">
+<div class="card-head">
+<a href="https://www.datacenterdynamics.com/en/news/submer-to-deploy-up-to-1gw-of-liquid-cooled-data-centers-in-madhya-pradesh-india/" target="_blank" rel="noopener">Submer Technologies S.L. (Submer Group)</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">Spain (Barcelona) · Data centres / AI infrastructure (liquid-cooling technology) · Signed during CM Mohan Yadav's visit to Submer's Barcelona HQ; reaffirmed and expanded at MP Tech Growth Conclave 3.0, Bhopal · 2025-07-28 (initial MoU); reaffirmed/expanded 2026-07-13</div>
+<div class="card-body"><b>Initial MoU for 'up to 1GW' of liquid-cooled data-centre capacity; expanded/reaffirmed a year later at ~$2 billion (~Rs 19,000 crore) for an AI-ready data-centre campus</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="investopia (uae government-linked investment platform) andhra pradesh cross-border trade and investment facilitation (institutional, not a single-project investment) united arab emirates no follow-up news found">
+<div class="card-head">
+<a href="https://www.etvbharat.com/en/!state/investopia-global-summit-chandrababu-targets-10-lakh-crore-investments-for-andhra-enn25072402123" target="_blank" rel="noopener">Investopia (UAE government-linked investment platform)</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">United Arab Emirates · Cross-border trade and investment facilitation (institutional, not a single-project investment) · Investopia Global AP-2025 Summit · 2025-07-24</div>
+<div class="card-body"><b>Not a project-specific figure; CM Naidu set a broader ₹10 lakh crore target for the year at this event, not attributable to Investopia itself</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">This is an institutional/facilitation MoU (APEDB-Investopia) intended to channel future UAE investment into AP, not itself a company's investment commitment — included with an explicit flag rather than folded into the AP investment totals.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="globalfoundries west bengal semiconductors - fabless design, test, and power-electronics r&amp;d centre united states (malta, new york) under construction">
+<div class="card-head">
+<a href="https://www.investmentmonitor.ai/news/globalfoundries-to-establish-design-centre-in-kolkata-india/" target="_blank" rel="noopener">GlobalFoundries</a>
+<span class="state-tag">West Bengal</span>
+</div>
+<div class="card-meta">United States (Malta, New York) · Semiconductors - fabless design, test, and power-electronics R&amp;D centre · Announced via meetings between GlobalFoundries, West Bengal CM Mamata Banerjee, and US Consul General Kathy Giles-Diaz; space allocated by West Bengal Government/STPI - not confirmed as a BGBS ceremony MoU · 2025-06-04/05</div>
+<div class="card-body"><b>Not disclosed (facility: cleanroom + chip packaging line + design-test labs at STPI Salt Lake Sector V, ~13,000 sq ft acquired with an additional ~19,000 sq ft requested)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="st telemedia global data centres india (stt gdc india) west bengal data centres / ai infrastructure singapore (st telemedia global data centres is majority-owned by singapore technologies telemedia; not explicitly restated in the fetched india-specific source, so flagged medium-high rather than high) operational">
+<div class="card-head">
+<a href="https://m.thewire.in/article/ptiprnews/st-telemedia-global-data-centres-india-unveils-ai-ready-data-centre-campus-in-kolkata-with-inr-450-crore-investment" target="_blank" rel="noopener">ST Telemedia Global Data Centres India (STT GDC India)</a>
+<span class="state-tag">West Bengal</span>
+</div>
+<div class="card-meta">Singapore (ST Telemedia Global Data Centres is majority-owned by Singapore Technologies Telemedia; not explicitly restated in the fetched India-specific source, so flagged MEDIUM-HIGH rather than HIGH) · Data centres / AI infrastructure · Not confirmed as a BGBS ceremony MoU - facility launch/inauguration in New Town, Kolkata (Bengal Silicon Valley Tech Hub) · 2025-03 (campus launch reported March 2025)</div>
+<div class="card-body"><b>INR 450 crore for the New Town, Kolkata (STT Kolkata 2) campus</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="volvo group karnataka automotive (bus/truck manufacturing, ev) sweden no follow-up news found">
+<div class="card-head">
+<a href="https://www.business-standard.com/companies/news/volvo-to-set-up-4th-global-manufacturing-hub-in-hosakote-with-rs-1-400-cr-125021301019_1.html" target="_blank" rel="noopener">Volvo Group</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Sweden · Automotive (bus/truck manufacturing, EV) · Invest Karnataka 2025 · 2025-02-13</div>
+<div class="card-body"><b>INR 1,400 crore (media also reported as INR 14 billion / same figure)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="lam research corporation karnataka semiconductor capital equipment manufacturing &amp; r&amp;d united states under construction">
+<div class="card-head">
+<a href="https://investkarnataka.co.in/wp-content/uploads/2025/03/Invest-Karnataka-2025-Wraps-Up-with-%E2%82%B910.27-Lakh-Cr.pdf" target="_blank" rel="noopener">Lam Research Corporation</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">United States · Semiconductor capital equipment manufacturing &amp; R&amp;D · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 10,000 crore (~USD 1.15-1.2 billion)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="honda motor co., ltd. (via honda motorcycle &amp; scooter india pvt ltd) karnataka automotive (electric two-wheeler manufacturing) japan no follow-up news found">
+<div class="card-head">
+<a href="https://investkarnataka.co.in/wp-content/uploads/2025/03/Invest-Karnataka-2025-Wraps-Up-with-%E2%82%B910.27-Lakh-Cr.pdf" target="_blank" rel="noopener">Honda Motor Co., Ltd. (via Honda Motorcycle &amp; Scooter India Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Automotive (electric two-wheeler manufacturing) · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 600 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="nidec corporation (via nidec industrial automation india pvt ltd) karnataka industrial automation / motor manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://investkarnataka.co.in/wp-content/uploads/2025/03/Invest-Karnataka-2025-Wraps-Up-with-%E2%82%B910.27-Lakh-Cr.pdf" target="_blank" rel="noopener">Nidec Corporation (via NIDEC Industrial Automation India Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Industrial automation / motor manufacturing · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 600 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="toyota motor corporation (via toyota kirloskar motor pvt ltd) karnataka automobile manufacturing japan (toyota kirloskar motor is an india-incorporated jv between toyota motor corp, japan, and the kirloskar group, india; toyota is the controlling/majority technology and equity partner) operational">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Toyota Motor Corporation (via Toyota Kirloskar Motor Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan (Toyota Kirloskar Motor is an India-incorporated JV between Toyota Motor Corp, Japan, and the Kirloskar Group, India; Toyota is the controlling/majority technology and equity partner) · Automobile manufacturing · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 3,748 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="toyota motor corporation (via toyota kirloskar auto parts pvt ltd) karnataka automotive parts manufacturing japan (india-incorporated jv, toyota motor corp majority) no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Toyota Motor Corporation (via Toyota Kirloskar Auto Parts Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan (India-incorporated JV, Toyota Motor Corp majority) · Automotive parts manufacturing · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 450 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="toyotetsu corporation (via toyotetsu india auto parts pvt ltd) karnataka automotive parts manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Toyotetsu Corporation (via Toyotetsu India Auto Parts Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Automotive parts manufacturing · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 450 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="sango co., ltd. (via sango india automotive parts pvt ltd) karnataka automotive parts manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Sango Co., Ltd. (via Sango India Automotive Parts Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Automotive parts manufacturing · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 279 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="aoyama seisakusho co., ltd. (via aoyama automotive fasteners (india) pvt ltd) karnataka automotive fasteners manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Aoyama Seisakusho Co., Ltd. (via Aoyama Automotive Fasteners (India) Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Automotive fasteners manufacturing · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 210 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="mitsubishi heavy industries, ltd. karnataka industrial equipment japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Mitsubishi Heavy Industries, Ltd.</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Industrial equipment · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 107 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="jfe shoji corporation karnataka trading/materials (steel-related) japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">JFE Shoji Corporation</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Trading/materials (steel-related) · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 400 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="shindengen electric manufacturing co., ltd. (via shindengen india pvt ltd) karnataka electronics/automotive components japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Shindengen Electric Manufacturing Co., Ltd. (via Shindengen India Pvt Ltd)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Electronics/automotive components · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 254 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="shimadzu corporation karnataka precision instruments/analytical equipment japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Shimadzu Corporation</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Precision instruments/analytical equipment · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>INR 139 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="hitachi construction machinery co., ltd. karnataka construction machinery (global competency center) japan no follow-up news found">
+<div class="card-head">
+<a href="https://egov.eletsonline.com/2025/02/japanese-companies-commit-inr-7500-cr-to-karnataka-at-invest-karnataka-2025/" target="_blank" rel="noopener">Hitachi Construction Machinery Co., Ltd.</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Construction machinery (Global Competency Center) · Invest Karnataka 2025 · 2025-02-12</div>
+<div class="card-body"><b>Not stated (non-monetary MoU for a Global Competency Center)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="safran s.a. karnataka aerospace (avionics manufacturing) france no follow-up news found">
+<div class="card-head">
+<a href="https://investkarnataka.co.in/wp-content/uploads/2025/03/Invest-Karnataka-2025-Wraps-Up-with-%E2%82%B910.27-Lakh-Cr.pdf" target="_blank" rel="noopener">Safran S.A.</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">France · Aerospace (avionics manufacturing) · Invest Karnataka 2025 · 2025-02-11/2025-02-14</div>
+<div class="card-body"><b>INR 225 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="krones ag karnataka manufacturing (bottling machinery) germany no follow-up news found">
+<div class="card-head">
+<a href="https://investkarnataka.co.in/wp-content/uploads/2025/03/Invest-Karnataka-2025-Wraps-Up-with-%E2%82%B910.27-Lakh-Cr.pdf" target="_blank" rel="noopener">Krones AG</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Germany · Manufacturing (bottling machinery) · Invest Karnataka 2025 · 2025-02-11/2025-02-14</div>
+<div class="card-body"><b>INR 315 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="schneider electric se karnataka electrical products manufacturing &amp; r&amp;d france no follow-up news found">
+<div class="card-head">
+<a href="https://investkarnataka.co.in/wp-content/uploads/2025/03/Invest-Karnataka-2025-Wraps-Up-with-%E2%82%B910.27-Lakh-Cr.pdf" target="_blank" rel="noopener">Schneider Electric SE</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">France · Electrical products manufacturing &amp; R&amp;D · Invest Karnataka 2025 · 2025-02-11/2025-02-14</div>
+<div class="card-body"><b>INR 2,247 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="hitachi energy ltd karnataka power/energy equipment manufacturing &amp; r&amp;d switzerland (hq of hitachi energy ltd; majority-owned by hitachi ltd, japan) no follow-up news found">
+<div class="card-head">
+<a href="https://investkarnataka.co.in/wp-content/uploads/2025/03/Invest-Karnataka-2025-Wraps-Up-with-%E2%82%B910.27-Lakh-Cr.pdf" target="_blank" rel="noopener">Hitachi Energy Ltd</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Switzerland (HQ of Hitachi Energy Ltd; majority-owned by Hitachi Ltd, Japan) · Power/energy equipment manufacturing &amp; R&amp;D · Invest Karnataka 2025 · 2025-02-11/2025-02-14</div>
+<div class="card-body"><b>INR 1,000 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="robert bosch gmbh karnataka manufacturing &amp; r&amp;d (mobility/ev-related) germany no follow-up news found">
+<div class="card-head">
+<a href="https://www.outlookbusiness.com/news/invest-karnataka-2025-major-firms-bet-big-on-karnatakas-future-2" target="_blank" rel="noopener">Robert Bosch GmbH</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Germany · Manufacturing &amp; R&amp;D (mobility/EV-related) · Invest Karnataka 2025 · 2025-02-11/2025-02-14</div>
+<div class="card-body"><b>INR 450 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="helion pharmaceuticals madhya pradesh pharmaceuticals / advanced medical products manufacturing united kingdom no follow-up news found">
+<div class="card-head">
+<a href="https://www.digitalhealthnews.com/madhya-pradesh-secures-inr-3-000-cr-healthcare-investment" target="_blank" rel="noopener">Helion Pharmaceuticals</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">United Kingdom · Pharmaceuticals / advanced medical products manufacturing · CM Mohan Yadav's UK &amp; Germany investment tour; land allocated at Indore's Smart Industrial Park · 2025-02 (exact day not confirmed; part of a six-day UK/Germany tour reported in early Feb 2025)</div>
+<div class="card-body"><b>Rs 3,000 crore investment proposal</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="blackstone inc. maharashtra data centres, urban infrastructure, real estate (mumbai metropolitan region) united states under construction">
+<div class="card-head">
+<a href="https://www.business-standard.com/industry/news/blackstone-maharashtra-11-billion-investment-mumbai-3-data-centers-125012400503_1.html" target="_blank" rel="noopener">Blackstone Inc.</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">United States · Data centres, urban infrastructure, real estate (Mumbai Metropolitan Region) · World Economic Forum, Davos 2025 · 2025-01-24</div>
+<div class="card-body"><b>~$11 billion total across three MoUs: $3bn with MIDC + $3bn with CIDCO (~$6bn combined for data centres/infrastructure in MMR) plus ~$5bn for the 'Mumbai 3.0' Karnala-Sai-Chirner (KSC) New Town 'sister city' project</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Concrete follow-through identified: a Blackstone-Panchshil joint venture is building a 500 MW hyperscale data centre (~Rs 20,000 crore / $2.4bn) in Ghansoli, Navi Mumbai, reported across 2025-2026 industry press. This appears to be part of, or closely related to, the Davos MoU commitment rather than a fully separate de</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="tillman global holdings telangana data centre / digital infrastructure united states no follow-up news found">
+<div class="card-head">
+<a href="https://www.deccanchronicle.com/southern-states/telangana/telangana-signs-mou-with-tillman-global-holdings-for-data-center-in-hyderabad-1856155" target="_blank" rel="noopener">Tillman Global Holdings</a>
+<span class="state-tag">Telangana</span>
+</div>
+<div class="card-meta">United States · Data centre / digital infrastructure · World Economic Forum, Davos 2025 · 2025-01-24</div>
+<div class="card-body"><b>₹15,000 crore, 300 MW hyperscale data centre in Hyderabad</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">MoU signed by Tillman Global Holdings President Sachit Ahuja; no independent construction/groundbreaking news found as of this sweep.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="blackstone inc. (via lumina data centre and jck infra) telangana data centre united states no follow-up news found">
+<div class="card-head">
+<a href="https://theprint.in/economy/blackstone-ursa-clusters-tillman-global-holdings-to-separately-develop-global-data-centres-in-telangana/2459908/" target="_blank" rel="noopener">Blackstone Inc. (via Lumina Data Centre and JCK Infra)</a>
+<span class="state-tag">Telangana</span>
+</div>
+<div class="card-meta">United States · Data centre · World Economic Forum, Davos 2025 · 2025-01-24</div>
+<div class="card-body"><b>₹4,500 crore, 150 MW</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Structured through domestic vehicles (Lumina Data Centre, JCK Infra) with Blackstone as the global investor behind the MoU; no independent construction news found as of this sweep.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="ursa clusters telangana data centre united states (per press reporting; not independently corroborated beyond one secondary source) no follow-up news found">
+<div class="card-head">
+<a href="https://theprint.in/economy/blackstone-ursa-clusters-tillman-global-holdings-to-separately-develop-global-data-centres-in-telangana/2459908/" target="_blank" rel="noopener">Ursa Clusters</a>
+<span class="state-tag">Telangana</span>
+</div>
+<div class="card-meta">United States (per press reporting; not independently corroborated beyond one secondary source) · Data centre · World Economic Forum, Davos 2025 · 2025-01-24</div>
+<div class="card-body"><b>₹5,000 crore, 100 MW</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Headquarters/origin attribution rests on a single secondary source describing it as 'US-based' — could not be cross-verified against a second independent source in this sweep.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="amazon.com, inc. (amazon web services) telangana cloud / ai data centre infrastructure united states under construction">
+<div class="card-head">
+<a href="https://www.telangana.gov.in/news/news-and-press-releases/2025/01/amazon-to-invest-a-massive-%E2%82%B960000-cr-on-building-data-centers-in-telangana/" target="_blank" rel="noopener">Amazon.com, Inc. (Amazon Web Services)</a>
+<span class="state-tag">Telangana</span>
+</div>
+<div class="card-meta">United States · Cloud / AI data centre infrastructure · In-principle commitment at WEF Davos, January 2025; formal framework agreement signed at the Telangana Rising Global Summit, December 2025 · 2025-01-22 (in-principle); 2025-12-08 (framework MoU)</div>
+<div class="card-body"><b>₹60,000 crore for data centre expansion at Bharat Future City (202 acres) and Chandanvelly (98 acres); part of Amazon's broader $48bn India commitment ($21bn of which is cloud/AI infrastructure, 2026-2030)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Groundbreaking held 2026-07-15 with CM Revanth Reddy attending; 24-month construction timeline stated. One of the strongest confirmed follow-through cases in this sweep.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="amazon.com, inc. (amazon web services) maharashtra cloud computing / hyperscale data centres united states under construction">
+<div class="card-head">
+<a href="https://www.aboutamazon.in/news/aws/aws-invests-8-billion-in-maharashtra" target="_blank" rel="noopener">Amazon.com, Inc. (Amazon Web Services)</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">United States · Cloud computing / hyperscale data centres · World Economic Forum, Davos 2025 · 2025-01-22</div>
+<div class="card-body"><b>$8.3 billion cloud-infrastructure commitment for the 'AWS Asia-Pacific (Mumbai) Region' (some Indian press reported this as Rs 71,795 crore), part of AWS's wider $12.7 billion India plan through 2030</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Real, dated follow-through confirmed independent of the MoU announcement: Amazon Data Services India has since acquired/leased land and sought environmental clearance for multiple Maharashtra data-centre campuses — Ambernath/Thane (~Rs 3,500 crore, construction 2026-2029), Taloja/Navi Mumbai (~Rs 4,000 crore, clearance</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="sembcorp industries ltd (via wholly-owned subsidiaries sembcorp green hydrogen india pvt ltd and sembcorp development ltd) odisha green hydrogen production and industrial park development singapore no follow-up news found">
+<div class="card-head">
+<a href="https://www.sembcorp.com/in/news-and-insights/news/2025/sembcorp-inks-mous-with-government-of-odisha-during-singapore-presidents-visit/" target="_blank" rel="noopener">Sembcorp Industries Ltd (via wholly-owned subsidiaries Sembcorp Green Hydrogen India Pvt Ltd and Sembcorp Development Ltd)</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">Singapore · Green hydrogen production and industrial park development · Singapore President's State Visit to Odisha (ahead of Utkarsh Odisha 2025) · 2025-01-17</div>
+<div class="card-body"><b>Not disclosed — both MoUs are explicitly described by Sembcorp as non-binding feasibility/exploratory agreements. Scope: a 720,000-tonne-capacity green hydrogen facility, plus assessment of a new industrial park.</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Both instruments were explicitly non-binding at signing. No subsequent 2025/2026 press coverage of a final investment decision, land allocation, or groundbreaking for either the green hydrogen plant or the industrial park was found in this sweep.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="yitoa micro technology ltd. (ymtl) — japanese venture partner in the indichip semiconductors jv andhra pradesh semiconductor (silicon carbide/sic chip) manufacturing japan no follow-up news found">
+<div class="card-head">
+<a href="https://inc42.com/buzz/indichip-semiconductors-inks-pact-with-andhra-govt-to-build-semiconductor-manufacturing-facility/" target="_blank" rel="noopener">Yitoa Micro Technology Ltd. (YMTL) — Japanese venture partner in the Indichip Semiconductors JV</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">Japan · Semiconductor (Silicon Carbide/SiC chip) manufacturing · Indichip Semiconductors-Andhra Pradesh government MoU signing · 2025-01 (approximate; reported as a January 2025 signing)</div>
+<div class="card-body"><b>₹14,000 crore for a SiC fab at the Orvakal Mega Industrial Hub, Kurnool (10,000 wafers/month scaling to 50,000/month within 2-3 years)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">The MoU signatory of record with the AP government is Indichip Semiconductors (the JV vehicle); Yitoa is the named Japanese technology/venture partner behind it, not a direct independent signatory — flagged as a JV-partner case rather than a clean single-foreign-company MoU. No construction news found since the announc</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="inavia aviation consultants gmbh madhya pradesh aviation mro (maintenance, repair, overhaul) and aircraft dismantling germany (hamburg) no follow-up news found">
+<div class="card-head">
+<a href="https://www.freepressjournal.in/bhopal/after-inavia-another-aviation-firm-eyes-bhopal-for-mro-facility-near-raja-bhoj-airport" target="_blank" rel="noopener">InAvia Aviation Consultants GmbH</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">Germany (Hamburg) · Aviation MRO (maintenance, repair, overhaul) and aircraft dismantling · MoU with Government of Madhya Pradesh for India's first aircraft-dismantling and MRO hub near Raja Bhoj Airport, Bhopal; company's Hamburg registration and Managing Partner Michael Hoevel's meeting with the CM were independently confirmed after local skepticism about the company's legitimacy circulated on social media · 2025 (exact signing date not confirmed by available sources; reported as already signed by May 2025)</div>
+<div class="card-body"><b>Rs 2,000 crore (~$226 million), phased; baseline 1.5-acre facility first, scaling to full teardown/engine-overhaul capability</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="microsoft corporation andhra pradesh ai / technology skilling and innovation ('experience zone' + global hackathon) united states no follow-up news found">
+<div class="card-head">
+<a href="https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-races-ahead-with-rs934-lakh-cr-investments-in-12-months-1895452" target="_blank" rel="noopener">Microsoft Corporation</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">United States · AI / technology skilling and innovation ('Experience Zone' + global hackathon) · Around the 30th CII Partnership Summit 2025 / AP's 12-month investment push · 2025 (exact date not specified in sources found)</div>
+<div class="card-body"><b>Not stated (a programmatic/skilling partnership, not a disclosed capex figure)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Planned hackathon is dated 2026; low materiality relative to the capex-heavy MoUs on this list — included because it is a specific, individually-named, dated engagement, but should be read as a soft/ecosystem MoU rather than an investment commitment.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="nvidia corporation andhra pradesh ai education ('ai university' concept) united states no follow-up news found">
+<div class="card-head">
+<a href="https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-races-ahead-with-rs934-lakh-cr-investments-in-12-months-1895452" target="_blank" rel="noopener">NVIDIA Corporation</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">United States · AI education ('AI University' concept) · Around AP's 2025 investment push (same article cluster as Microsoft/Schneider Electric entries above) · 2025 (exact date not specified in sources found)</div>
+<div class="card-body"><b>Not stated</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Concept-stage 'AI University' in Amaravati; no independent confirmation of construction or enrolment found. Soft/capacity-building MoU, not a hard investment figure.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="schneider electric andhra pradesh advanced manufacturing / automation skilling (20 technology labs across ap educational institutions) france no follow-up news found">
+<div class="card-head">
+<a href="https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-races-ahead-with-rs934-lakh-cr-investments-in-12-months-1895452" target="_blank" rel="noopener">Schneider Electric</a>
+<span class="state-tag">Andhra Pradesh</span>
+</div>
+<div class="card-meta">France · Advanced manufacturing / automation skilling (20 technology labs across AP educational institutions) · Around AP's 2025 investment push · 2025 (exact date not specified in sources found)</div>
+<div class="card-body"><b>Not stated</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Skilling-lab MoU rather than a capex commitment; included for completeness as a specific, individually-named foreign company.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="posco holdings inc. odisha integrated steel manufacturing (hot-rolled, cold-rolled, galvanized steel via bof/blast furnace) south korea no follow-up news found">
+<div class="card-head">
+<a href="https://www.kedglobal.com/steel/newsView/ked202410290016" target="_blank" rel="noopener">POSCO Holdings Inc.</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">South Korea · Integrated steel manufacturing (hot-rolled, cold-rolled, galvanized steel via BOF/blast furnace) · POSCO-JSW cooperation agreement (standalone signing, not tied to a conclave) · 2024-10-29</div>
+<div class="card-body"><b>Reported inconsistently across outlets as Rs 35,000 crore / Rs 40,000 crore (~$7.7bn) for a 50:50 joint venture with JSW Steel Ltd (India) — 5-6 MTPA integrated mill at Keonjhar/Patna tehsil</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">As of September 2025, the Odisha government had begun acquiring land (2,466 acres earmarked across eight villages in Patna tehsil) for the plant; POSCO's ~Rs 509 crore ($61m) equity-stake transaction was still expected to close by end-2026 at last report. Land acquisition is underway but no physical construction start </div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="indo-uk institute of health (iuih) rajasthan healthcare / biomedical waste treatment infrastructure united kingdom no follow-up news found">
+<div class="card-head">
+<a href="https://ambitiousbaba.com/rajasthan-investment-promotion-scheme-rips-2024/" target="_blank" rel="noopener">Indo-UK Institute of Health (IUIH)</a>
+<span class="state-tag">Rajasthan</span>
+</div>
+<div class="card-meta">United Kingdom · Healthcare / biomedical waste treatment infrastructure · Rising Rajasthan Investors' Roadshow, London · 2024-10-19 (approximate, per roadshow coverage)</div>
+<div class="card-body"><b>Not stated in Rajasthan-specific coverage</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="twe group gmbh (via twe obt pvt ltd, a 50:50 joint venture with india's obeetee textiles) madhya pradesh technical textiles / nonwoven hygiene products (adl, top-sheets, back-sheets for hygiene products) germany (emsdetten) under construction">
+<div class="card-head">
+<a href="https://invest.mp.gov.in/honble-cm-laid-the-foundation-stone-of-company-m-s-twe-obt-pvt-ltd-at-i-a-acharpura/" target="_blank" rel="noopener">TWE Group GmbH (via TWE OBT Pvt Ltd, a 50:50 joint venture with India's Obeetee Textiles)</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">Germany (Emsdetten) · Technical textiles / nonwoven hygiene products (ADL, top-sheets, back-sheets for hygiene products) · Foundation stone laid at Acharpura Industrial Area, Bhopal (JV originally announced mid-2023) · 2024-08-27 (foundation stone laid; original JV agreement dates to ~2023-06)</div>
+<div class="card-body"><b>Rs 126-160 crore reported for the Bhopal facility (TWE's cash stake in the wider 50% JV shareholding is separately reported as EUR 11.5 million)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="toyota kirloskar motor pvt ltd (majority-owned/controlled by toyota motor corporation; jv with india's kirloskar group) maharashtra automotive manufacturing — electric and hybrid passenger vehicles japan (toyota motor corporation is the controlling foreign parent; the jv entity itself is india-incorporated) under construction">
+<div class="card-head">
+<a href="https://www.toyotabharat.com/news/2024/tkm-signs-mou-with-maharashtra-for-proposed-new-investment.html" target="_blank" rel="noopener">Toyota Kirloskar Motor Pvt Ltd (majority-owned/controlled by Toyota Motor Corporation; JV with India's Kirloskar Group)</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Japan (Toyota Motor Corporation is the controlling foreign parent; the JV entity itself is India-incorporated) · Automotive manufacturing — electric and hybrid passenger vehicles · MoU signed with Maharashtra Industries Department, Mumbai · 2024-07-31</div>
+<div class="card-body"><b>Rs 20,000 crore (~$2.4 billion), targeting 400,000 EVs/hybrids per year, 8,000 direct + 8,000 indirect jobs</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">827 acres of land formally allotted in the Bidkin node (Chhatrapati Sambhajinagar/Delhi-Mumbai Industrial Corridor) and construction reported underway through 2025, with production originally targeted to start January 2026. Could not independently confirm whether commercial production has actually begun as of this swee</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="pepsico, inc. (via pepsico india) madhya pradesh food &amp; beverage (flavour-concentrate manufacturing) united states operational">
+<div class="card-head">
+<a href="https://indianmasterminds.com/news/cm-mohan-yadav-inaugurates-pepsico-1266-crore-ujjain-plant-214261/" target="_blank" rel="noopener">PepsiCo, Inc. (via PepsiCo India)</a>
+<span class="state-tag">Madhya Pradesh</span>
+</div>
+<div class="card-meta">United States · Food &amp; Beverage (flavour-concentrate manufacturing) · Announced 2024-04-02; plant built at Vikram Udyogpuri, Ujjain (originally flagged in Ujjain Regional Industry Conclave-era investment pipeline) · 2024-04-02 (investment announcement); inaugurated 2026-07-01</div>
+<div class="card-body"><b>Rs 1,266 crore; part of PepsiCo's broader Rs 5,700 crore India investment pipeline through 2030</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="miltenyi biotec gmbh telangana biotechnology (cell and gene therapy) germany operational">
+<div class="card-head">
+<a href="https://trial.medpath.com/news/81b715bf9b847e0a/miltenyi-biotec-launches-india-s-first-cell-gene-therapy-center-of-excellence-in-hyderabad" target="_blank" rel="noopener">Miltenyi Biotec GmbH</a>
+<span class="state-tag">Telangana</span>
+</div>
+<div class="card-meta">Germany · Biotechnology (cell and gene therapy) · National-level MoU with BIRAC (Biotechnology Industry Research Assistance Council) and the Department of Biotechnology, with the resulting facility sited in Hyderabad's Genome Valley · 2024-02</div>
+<div class="card-body"><b>Not stated as a discrete capex figure (a technology/manufacturing partnership establishing a Cell &amp; Gene Therapy Center of Excellence)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">The 1,800 sq. m. Miltenyi Innovation and Technology Center (MITC) in Genome Valley, Hyderabad, is confirmed established and running, bringing the CliniMACS Prodigy platform to India. Note this MoU was signed at the national (BIRAC/DBT) level rather than directly with the Telangana state government, though the resulting</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="aria holding (aria glass) maharashtra float glass manufacturing qatar no follow-up news found">
+<div class="card-head">
+<a href="https://www.businesswire.com/news/home/20240128985934/en/Aria-Holding-and-the-Government-of-Maharashtra-Sign-MoU-for-INR-2000-Crore-at-the-World-Economic-Forum-2024-in-Davos" target="_blank" rel="noopener">Aria Holding (Aria Glass)</a>
+<span class="state-tag">Maharashtra</span>
+</div>
+<div class="card-meta">Qatar · Float glass manufacturing · World Economic Forum, Davos 2024 · 2024-01-28</div>
+<div class="card-body"><b>Rs 2,000 crore (~$240.5 million)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">No independent reporting found on land allotment, groundbreaking, or construction progress since the January 2024 signing. Aria's own materials as of 2025-2026 still describe this as a committed investment rather than a completed or under-construction facility.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="takeda pharmaceutical company limited karnataka pharmaceuticals (global innovation centre / digital roles) japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.deccanherald.com/india/karnataka/karnataka-govt-signs-mous-worth-rs-22000-cr-with-7-companies-at-world-economic-forum-meet-at-davos-2852471" target="_blank" rel="noopener">Takeda Pharmaceutical Company Limited</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Japan · Pharmaceuticals (Global Innovation Centre / digital roles) · WEF Davos 2024 (Karnataka delegation) · 2024-01-15/2024-01-19</div>
+<div class="card-body"><b>Not stated (target of ~1,000 digital roles in first phase)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="simmtech co., ltd. gujarat semiconductor substrate / pcb (printed circuit board) manufacturing, co-located to support micron's sanand plant south korea no follow-up news found">
+<div class="card-head">
+<a href="https://www.digitimes.com/news/a20240112VL201/ic-substrate-india-memory-chips-micron-simmtech.html" target="_blank" rel="noopener">Simmtech Co., Ltd.</a>
+<span class="state-tag">Gujarat</span>
+</div>
+<div class="card-meta">South Korea · Semiconductor substrate / PCB (printed circuit board) manufacturing, co-located to support Micron's Sanand plant · Vibrant Gujarat Global Summit 2024 · 2024-01-11</div>
+<div class="card-body"><b>Rs 1,250 crore, ~1,000+ jobs, 30-acre plant near Micron's Sanand facility</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">At announcement, construction was slated to start within 2-3 months with first-phase completion targeted for 2025 (partnering with Tata for construction). No subsequent 2025/2026 press coverage confirming groundbreaking, opening, or delay was found in this sweep.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="micron technology, inc. (mou signed with namtech, an arcelormittal nippon steel-backed education initiative, for semiconductor workforce training — not the same instrument as micron's main $2.75bn sanand atmp plant investment, which was separately announced in june 2023 outside any gujarat summit) gujarat semiconductor workforce training / talent development united states operational">
+<div class="card-head">
+<a href="https://digitalterminal.in/tech-companies/micron-and-namtech-signed-mou-at-vibrant-gujarat-summit-to-shape-indias-semiconductor-future" target="_blank" rel="noopener">Micron Technology, Inc. (MoU signed with NAMTECH, an ArcelorMittal Nippon Steel-backed education initiative, for semiconductor workforce training — NOT the same instrument as Micron's main $2.75bn Sanand ATMP plant investment, which was separately announced in June 2023 outside any Gujarat summit)</a>
+<span class="state-tag">Gujarat</span>
+</div>
+<div class="card-meta">United States · Semiconductor workforce training / talent development · Vibrant Gujarat Global Summit 2024 · 2024-01-11</div>
+<div class="card-body"><b>Not stated in this MoU (a training/education partnership, not a capex figure); Micron's separate, pre-existing Sanand plant investment is ~$2.75 billion total (Micron + government incentives combined)</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">The broader Micron Sanand semiconductor assembly-and-test facility that this training MoU supports formally opened on 2026-02-28 and has begun commercial production, shipping its first made-in-India memory modules to Dell. The training-specific MoU itself has no separately reported completion metric, but the ecosystem </div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="suzuki motor corporation (via maruti suzuki india / suzuki motor gujarat) gujarat automotive manufacturing (passenger vehicles, incl. planned ev line) japan under construction">
+<div class="card-head">
+<a href="https://www.businesstoday.in/auto/story/vibrant-gujarat-summit-suzuki-motors-to-invest-rs-3200-cr-in-new-production-line-to-set-up-2nd-plant-in-gujarat-412589-2024-01-10" target="_blank" rel="noopener">Suzuki Motor Corporation (via Maruti Suzuki India / Suzuki Motor Gujarat)</a>
+<span class="state-tag">Gujarat</span>
+</div>
+<div class="card-meta">Japan · Automotive manufacturing (passenger vehicles, incl. planned EV line) · Vibrant Gujarat Global Summit 2024 · 2024-01-10</div>
+<div class="card-body"><b>Rs 35,000 crore (~$4.2 billion) for a second greenfield plant at Khoraj, Gujarat (1 million units/year), plus a separate Rs 3,200 crore for a new production line at the existing Suzuki Motor Gujarat plant (2.5 lakh units</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Delayed relative to the original announcement: as of reporting through January 2026, Maruti Suzuki had only just finalized/acquired land for the second plant (two years after the MoU), with first-phase capex now stated as Rs 10,189 crore (~$1.09bn) for a 250,000-unit/year line and commercial operation targeted for 2029</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="arcelormittal nippon steel india (am/ns india) — jv of arcelormittal (luxembourg) and nippon steel corporation (japan) gujarat integrated steel manufacturing luxembourg / japan (joint venture) under construction">
+<div class="card-head">
+<a href="https://www.businesstoday.in/latest/corporate/story/arcelormittal-to-build-worlds-single-largest-steel-manufacturing-site-at-hazira-by-2029-says-lakshmi-mittal-412601-2024-01-10" target="_blank" rel="noopener">ArcelorMittal Nippon Steel India (AM/NS India) — JV of ArcelorMittal (Luxembourg) and Nippon Steel Corporation (Japan)</a>
+<span class="state-tag">Gujarat</span>
+</div>
+<div class="card-meta">Luxembourg / Japan (joint venture) · Integrated steel manufacturing · Vibrant Gujarat Global Summit 2024 · 2024-01-10</div>
+<div class="card-body"><b>MoU covers a Phase-2 expansion of the Hazira plant from 15 to 24 million tonnes per annum (MTPA) by 2029-2030; company separately describes a $5.1bn phase-1 program to reach 15 MTPA</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">AM/NS India officially broke ground on the Phase-2 expansion at Hazira on 2026-01-01, per industry trade press; new Continuous Galvanizing Line (CGL) and Continuous Galvanizing and Annealing Line (CGAL) reported as targeted for 2025 operational status. Genuine, dated construction activity confirmed, distinct from a mer</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="under construction" data-txt="dp world gujarat ports, container terminals, logistics and sez infrastructure united arab emirates (dubai) under construction">
+<div class="card-head">
+<a href="https://www.dpworld.com/en/news/gujarat-and-dp-world-sign-agreements-to-strengthen-logistics-in-the-indian-state" target="_blank" rel="noopener">DP World</a>
+<span class="state-tag">Gujarat</span>
+</div>
+<div class="card-meta">United Arab Emirates (Dubai) · Ports, container terminals, logistics and SEZ infrastructure · Vibrant Gujarat Global Summit 2024 · 2024-01-10</div>
+<div class="card-body"><b>Rs 25,000 crore (~$3 billion) across multiple projects: deep-draft ports in South Gujarat and along the Kutch coast, SEZs at Jamnagar and Kutch, and Gati Shakti cargo terminals/private freight stations at Dahej, Vadodara</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">Confirmed construction underway on at least one component: a $510 million, 1.1km-berth, 2.19-million-TEU container terminal at Tuna Tekra, Kutch. Status of the remaining SEZ and freight-terminal components under the same MoU package is not separately confirmed in available reporting — treat the overall package as parti</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">under construction</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="hyundai motor company tamil nadu electric vehicles / smart mobility / hydrogen research (with iit-madras) south korea no follow-up news found">
+<div class="card-head">
+<a href="https://www.businesstoday.in/latest/economy/story/global-investors-meet-tamil-nadu-signs-deals-over-439-bn-with-hyundai-tata-jsw-pegatron-412193-2024-01-08" target="_blank" rel="noopener">Hyundai Motor Company</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">South Korea · Electric vehicles / smart mobility / hydrogen research (with IIT-Madras) · Tamil Nadu Global Investors Meet 2024 · 2024-01-08</div>
+<div class="card-body"><b>Rs 6,180 crore (reported elsewhere as Rs 6,200 crore); additional Rs 20,000 crore over 10 years cited in some coverage</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="pegatron corporation tamil nadu electronics contract manufacturing (apple supplier) taiwan operational">
+<div class="card-head">
+<a href="https://www.businesstoday.in/latest/economy/story/global-investors-meet-tamil-nadu-signs-deals-over-439-bn-with-hyundai-tata-jsw-pegatron-412193-2024-01-08" target="_blank" rel="noopener">Pegatron Corporation</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Taiwan · Electronics contract manufacturing (Apple supplier) · Tamil Nadu Global Investors Meet 2024 · 2024-01-08</div>
+<div class="card-body"><b>Rs 1,000 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="qualcomm incorporated tamil nadu semiconductor design / wireless technology (design centre) united states no follow-up news found">
+<div class="card-head">
+<a href="https://india.entrepreneur.com/news-and-trends/tamil-nadu-gim-8-major-investments-to-watch/468002" target="_blank" rel="noopener">Qualcomm Incorporated</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">United States · Semiconductor design / wireless technology (design centre) · Tamil Nadu Global Investors Meet 2024 · 2024-01-08</div>
+<div class="card-body"><b>Rs 177.27 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="first solar, inc. tamil nadu solar photovoltaic module manufacturing united states operational">
+<div class="card-head">
+<a href="https://en.wikipedia.org/wiki/First_Solar" target="_blank" rel="noopener">First Solar, Inc.</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">United States · Solar photovoltaic module manufacturing · Tamil Nadu Global Investors Meet 2024 · 2024-01-08</div>
+<div class="card-body"><b>Rs 5,600 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="mitsubishi tamil nadu electric and electronic equipment japan no follow-up news found">
+<div class="card-head">
+<a href="https://india.entrepreneur.com/news-and-trends/tamil-nadu-gim-8-major-investments-to-watch/468002" target="_blank" rel="noopener">Mitsubishi</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Japan · Electric and electronic equipment · Tamil Nadu Global Investors Meet 2024 · 2024-01-08</div>
+<div class="card-body"><b>Rs 200 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="a.p. moller - maersk tamil nadu transport and logistics denmark no follow-up news found">
+<div class="card-head">
+<a href="https://evreporter.com/highlights-from-the-global-investors-meet-2024-in-tamil-nadu/" target="_blank" rel="noopener">A.P. Moller - Maersk</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Denmark · Transport and logistics · Tamil Nadu Global Investors Meet 2024 · 2024-01-08</div>
+<div class="card-body"><b>Amount not specified in available sources</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="sembcorp industries tamil nadu energy / infrastructure (exact sub-sector not specified in sources found) singapore no follow-up news found">
+<div class="card-head">
+<a href="https://en.wikipedia.org/wiki/Tamil_Nadu_Global_Investors_Meet" target="_blank" rel="noopener">Sembcorp Industries</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Singapore · Energy / infrastructure (exact sub-sector not specified in sources found) · Tamil Nadu Global Investors Meet 2024 · 2024-01-08</div>
+<div class="card-body"><b>Rs 36,238 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="vinfast auto (vingroup) tamil nadu electric vehicle manufacturing vietnam operational">
+<div class="card-head">
+<a href="https://vinfastauto.us/investor-relations/news/vinfast-to-build-integrated-electric-vehicle-facility-in-tamil-nadu-india" target="_blank" rel="noopener">VinFast Auto (Vingroup)</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Vietnam · Electric vehicle manufacturing · Tamil Nadu Global Investors Meet 2024 · 2024-01-06</div>
+<div class="card-body"><b>Up to USD 2 billion total planned (Rs ~16,000 crore); USD 500 million committed for Phase 1 over 5 years</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="hi-p international pte ltd tamil nadu electromechanical components manufacturing singapore no follow-up news found">
+<div class="card-head">
+<a href="https://swarajyamag.com/news-brief/6-mous-signed-between-tamil-nadu-and-singapore-hi-p-international-to-set-up-electronics-parts-manufacturing-unit" target="_blank" rel="noopener">Hi-P International Pte Ltd</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Singapore · Electromechanical components manufacturing · Tamil Nadu Investment Conclave, Singapore · 2023-05-25</div>
+<div class="card-body"><b>Rs 312 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="schneider electric west bengal electrical equipment manufacturing - vacuum interrupters (power systems) france (rueil-malmaison) no follow-up news found">
+<div class="card-head">
+<a href="https://www.business-standard.com/companies/news/schneider-electric-to-set-up-new-factory-in-bengal-at-rs-140-cr-investment-123042000931_1.html" target="_blank" rel="noopener">Schneider Electric</a>
+<span class="state-tag">West Bengal</span>
+</div>
+<div class="card-meta">France (Rueil-Malmaison) · Electrical equipment manufacturing - Vacuum Interrupters (power systems) · Independent groundbreaking/foundation-laying ceremony at Prospace Industrial Park, Kolkata - not confirmed as tied to a Bengal Global Business Summit MoU · 2023-04-20 (foundation-laying ceremony)</div>
+<div class="card-body"><b>INR 140 crore</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">no follow-up news found (planned completion was reported as Feb 2024 with production targeted Q2 FY24-25; no independent confirmation found that the plant is now operational)</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="pou chen corporation (via india subsidiary high glory footwear india) tamil nadu non-leather footwear manufacturing (contract manufacturer for nike, adidas) taiwan no follow-up news found">
+<div class="card-head">
+<a href="https://swarajyamag.com/business/footwear-giant-pou-chen-steps-into-tamil-nadu-with-rs-2302-billion-investment-set-to-create-20000-jobs" target="_blank" rel="noopener">Pou Chen Corporation (via India subsidiary High Glory Footwear India)</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">Taiwan · Non-leather footwear manufacturing (contract manufacturer for Nike, Adidas) · Bilateral MoU signing with Government of Tamil Nadu · 2023-04-17</div>
+<div class="card-body"><b>Rs 2,302 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="foxconn interconnect technology (fit), part of hon hai precision industry co. ltd. telangana electronics manufacturing (apple airpods and other accessories) taiwan operational">
+<div class="card-head">
+<a href="https://www.digitimes.com/news/a20240604VL205/foxconn-hyderabad-apple-airpods-production-telangana-india.html" target="_blank" rel="noopener">Foxconn Interconnect Technology (FIT), part of Hon Hai Precision Industry Co. Ltd.</a>
+<span class="state-tag">Telangana</span>
+</div>
+<div class="card-meta">Taiwan · Electronics manufacturing (Apple AirPods and other accessories) · Bilateral MoU signing with the Telangana government (Foxconn Chairman Young Liu), 200-acre site at Kongara Kalan near Hyderabad · 2023-03-02</div>
+<div class="card-body"><b>Initially reported ~$200 million; expanded to a $500-550 million overall project for the Kongara Kalan facility, projected 24,000 jobs</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">The Kongara Kalan plant began commercial AirPods production in April 2025 and was ramping toward 200,000 units/month as of October 2025 reporting — a genuine, verified, operating example of MoU-to-reality follow-through.</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="ntt global data centers (ntt ltd.) west bengal data centres / it infrastructure japan operational">
+<div class="card-head">
+<a href="https://theprint.in/economy/ntt-plans-rs-2000cr-investment-in-kolkata-data-centre/1369156/" target="_blank" rel="noopener">NTT Global Data Centers (NTT Ltd.)</a>
+<span class="state-tag">West Bengal</span>
+</div>
+<div class="card-meta">Japan · Data centres / IT infrastructure · Not confirmed as a Bengal Global Business Summit ceremony MoU - this is a land purchase (7.5 acres, Feb 2023) and Bhumi Pujan groundbreaking in the state government's Bengal Silicon Valley Tech Hub (New Town, WBHIDCO-controlled IT park) · 2023-02-13 (land purchase/groundbreaking reported); land allocation within Bengal Silicon Valley Tech Hub occurred 2022 per secondary sourcing</div>
+<div class="card-body"><b>Rs 2,000 crore (~US$241.5m) planned for the Kolkata campus per Feb 2023 reporting, part of NTT's broader ~US$2.5bn India investment plan; Phase 1 outlay reported as ~Rs 500 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="hotel management international co. ltd (hmi group) uttar pradesh hospitality (30 hotels planned) japan no follow-up news found">
+<div class="card-head">
+<a href="https://theprint.in/india/gis-2023-japanese-company-inks-mou-with-up-to-develop-30-hotels-in-major-cities/1366760/" target="_blank" rel="noopener">Hotel Management International Co. Ltd (HMI Group)</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Japan · Hospitality (30 hotels planned) · UP Global Investors Summit 2023 · 2023-02-11</div>
+<div class="card-body"><b>Rs 7,200 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="ikea (ingka/inter ikea) uttar pradesh retail / furniture sweden no follow-up news found">
+<div class="card-head">
+<a href="https://www.india-briefing.com/news/uttar-pradesh-builds-up-its-foreign-investment-appeal-successfully-concludes-2023-global-investors-summit-27225.html/" target="_blank" rel="noopener">IKEA (Ingka/Inter IKEA)</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Sweden · Retail / furniture · UP Global Investors Summit 2023 · 2023-02 (UPGIS-2023)</div>
+<div class="card-body"><b>INR 43 billion (~Rs 4,300 crore)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="monash university uttar pradesh higher education australia no follow-up news found">
+<div class="card-head">
+<a href="https://news.careers360.com/up-government-monash-university-cm-yogi-adityanath-signs-agreement-australias-elevate-states-education-standards/amp" target="_blank" rel="noopener">Monash University</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Australia · Higher education · UP Global Investors Summit 2023 · 2023-02 (UPGIS-2023)</div>
+<div class="card-body"><b>Not stated (education-standards cooperation agreement, not a capital-investment figure)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="seiko advance ltd. / seiko advance (india) pvt ltd uttar pradesh printing inks / industrial coatings japan operational">
+<div class="card-head">
+<a href="https://www.freepressjournal.in/business/uttar-pradesh-signs-11000-crore-mous-with-japanese-firms-during-cm-yogi-adityanaths-japan-visit" target="_blank" rel="noopener">Seiko Advance Ltd. / Seiko Advance (India) Pvt Ltd</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Japan · Printing inks / industrial coatings · Team Yogi Japan B2G mission (Jan 2023) and CM Yogi Adityanath's Japan visit (Feb 2026) · 2023-01-12 (reported) and 2026-02-25</div>
+<div class="card-body"><b>Part of the Jan-2023 Rs 18,350 crore B2G figure, and again part of the Feb-2026 Rs 11,000 crore Japan-visit figure; no standalone amount found for either</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="korea overseas infrastructure and urban development corporation (kind) uttar pradesh infrastructure / ppp south korea (state-backed infrastructure investment corporation, not a private company) no follow-up news found">
+<div class="card-head">
+<a href="https://www.gihub.org/news/mou-with-korea-overseas-infrastructure-and-urban-development-corporation/" target="_blank" rel="noopener">Korea Overseas Infrastructure and Urban Development Corporation (KIND)</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">South Korea (state-backed infrastructure investment corporation, not a private company) · Infrastructure / PPP · Team Yogi Japan/South Korea B2G mission ahead of UPGIS-2023 · 2023-01-12 (reported)</div>
+<div class="card-body"><b>Part of a combined Rs 18,350 crore across 4 Japan/South Korea proposals; no individual figure found</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="samsung electronics uttar pradesh manufacturing/electronics (unspecified in coverage — samsung already operates a large noida plant independent of this mou) south korea no follow-up news found">
+<div class="card-head">
+<a href="https://www.aninews.in/news/national/general-news/up-govt-signs-mous-worth-rs-18350-crore-with-japan-south-korea20230112223953/" target="_blank" rel="noopener">Samsung Electronics</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">South Korea · Manufacturing/electronics (unspecified in coverage — Samsung already operates a large Noida plant independent of this MoU) · Team Yogi Japan/South Korea B2G mission ahead of UPGIS-2023 · 2023-01-12 (reported)</div>
+<div class="card-body"><b>Part of the combined Rs 18,350 crore / 4-proposal figure; no individual amount found for this MoU</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="coupang uttar pradesh not specified in coverage (coupang is an e-commerce/logistics company) south korea no follow-up news found">
+<div class="card-head">
+<a href="https://www.aninews.in/news/national/general-news/up-govt-signs-mous-worth-rs-18350-crore-with-japan-south-korea20230112223953/" target="_blank" rel="noopener">Coupang</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">South Korea · Not specified in coverage (Coupang is an e-commerce/logistics company) · Team Yogi Japan/South Korea B2G mission ahead of UPGIS-2023 · 2023-01-12 (reported)</div>
+<div class="card-body"><b>Part of the combined Rs 18,350 crore / 4-proposal figure; no individual amount or sector confirmed</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge LOW">LOW</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="lulu group international uttar pradesh retail (shopping malls) and hospitality (hotel) uae (abu dhabi) no follow-up news found">
+<div class="card-head">
+<a href="https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state" target="_blank" rel="noopener">Lulu Group International</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">UAE (Abu Dhabi) · Retail (shopping malls) and hospitality (hotel) · UAE roadshow MoU signing ahead of UPGIS-2023 · 2023-01-03</div>
+<div class="card-body"><b>Rs 4,500 crore (reported as Rs45 billion for retail/hotels in one source, Rs 2,500 crore for the mall specifically in another)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="sharaf group uttar pradesh logistics parks uae (dubai) no follow-up news found">
+<div class="card-head">
+<a href="https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state" target="_blank" rel="noopener">Sharaf Group</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">UAE (Dubai) · Logistics parks · UAE roadshow MoU signing ahead of UPGIS-2023 · 2023-01-03</div>
+<div class="card-body"><b>Rs 1,300 crore (Dh's equivalent of Rs13 billion reported)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="hindustan ports uttar pradesh logistics parks uae (per source grouping; company name is india-sounding, so treat hq classification with some caution) no follow-up news found">
+<div class="card-head">
+<a href="https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state" target="_blank" rel="noopener">Hindustan Ports</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">UAE (per source grouping; company name is India-sounding, so treat HQ classification with some caution) · Logistics parks · UAE roadshow MoU signing ahead of UPGIS-2023 · 2023-01-03</div>
+<div class="card-body"><b>Rs 210 crore (Rs2.1 billion reported)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="astha green energy venture uttar pradesh renewable energy uae (per source grouping; not independently corroborated beyond the same set of wire stories) no follow-up news found">
+<div class="card-head">
+<a href="https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state" target="_blank" rel="noopener">Astha Green Energy Venture</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">UAE (per source grouping; not independently corroborated beyond the same set of wire stories) · Renewable energy · UAE roadshow MoU signing ahead of UPGIS-2023 · 2023-01-03</div>
+<div class="card-body"><b>Rs 4,480 crore (Rs44.8 billion reported)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="shree siddharth infratech and services uttar pradesh renewable energy uae (per source grouping; not independently corroborated beyond the same set of wire stories) no follow-up news found">
+<div class="card-head">
+<a href="https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state" target="_blank" rel="noopener">Shree Siddharth Infratech and Services</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">UAE (per source grouping; not independently corroborated beyond the same set of wire stories) · Renewable energy · UAE roadshow MoU signing ahead of UPGIS-2023 · 2023-01-03</div>
+<div class="card-body"><b>Rs 8,000 crore (Rs80 billion reported)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="sobha realty uttar pradesh education / csr uae (dubai) no follow-up news found">
+<div class="card-head">
+<a href="https://www.khaleejtimes.com/business/six-uae-firms-to-invest-dh8-2b-in-indias-up-state" target="_blank" rel="noopener">Sobha Realty</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">UAE (Dubai) · Education / CSR · UAE roadshow MoU signing ahead of UPGIS-2023 · 2023-01-03</div>
+<div class="card-body"><b>Rs 100 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="slg capital uttar pradesh data centre singapore no follow-up news found">
+<div class="card-head">
+<a href="https://swarajyamag.com/business/up-govt-signs-mou-worth-1-billion-with-singapore-company-to-set-up-data-centre-in-state" target="_blank" rel="noopener">SLG Capital</a>
+<span class="state-tag">Uttar Pradesh</span>
+</div>
+<div class="card-meta">Singapore · Data centre · Pre-UPGIS-2023 Singapore delegation MoU (UPSIDA) · 2022-12 (reported ahead of Feb 2023 summit)</div>
+<div class="card-body"><b>USD 1 billion (~Rs 8,300 crore)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="arcelormittal nippon steel india (am/ns india) — same jv as above, second/distinct project odisha integrated steel manufacturing luxembourg / japan (joint venture) no follow-up news found">
+<div class="card-head">
+<a href="https://www.maritimegateway.com/odisha-investment-steel-ports/" target="_blank" rel="noopener">ArcelorMittal Nippon Steel India (AM/NS India) — same JV as above, second/distinct project</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">Luxembourg / Japan (joint venture) · Integrated steel manufacturing · Make in Odisha Conclave 2022 (approval followed the conclave) · 2022-12 (approved by Odisha government following the Nov 30-Dec 4, 2022 conclave; exact MoU-signing day not found)</div>
+<div class="card-body"><b>Rs 38,000 crore for a 7 MTPA plant at Jagatsinghpur</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">No 2023-2026 press coverage of land acquisition, construction, or cancellation for the Jagatsinghpur 7 MTPA component specifically was found separate from the higher-profile Kendrapara project — treated as a distinct, less-tracked commitment. Recorded separately from the Kendrapara MoU above because location, capacity,</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="esr group limited (via esr india / esr advisers) karnataka industrial &amp; logistics parks, urban distribution centres, data centres hong kong no follow-up news found">
+<div class="card-head">
+<a href="https://in.esr.com/newsroom/news/esr-india-inks-mou-with-the-government-of-karnataka-to-invest-2500-crores" target="_blank" rel="noopener">ESR Group Limited (via ESR India / ESR Advisers)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Hong Kong · Industrial &amp; logistics parks, urban distribution centres, data centres · Invest Karnataka 2022 (originally signed); reconfirmed/recognised in Invest Karnataka 2025 GIM tally · 2022-11-07</div>
+<div class="card-body"><b>INR 2,500 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="nidec india pvt ltd (subsidiary of nidec corporation) rajasthan auto components / electric motors japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.thestatesman.com/india/11-japanese-companies-1503088161.html" target="_blank" rel="noopener">Nidec India Pvt Ltd (subsidiary of Nidec Corporation)</a>
+<span class="state-tag">Rajasthan</span>
+</div>
+<div class="card-meta">Japan · Auto components / electric motors · Japanese Investors MoU Signing Ceremony, DJIME, Neemrana · 2022-07-07</div>
+<div class="card-body"><b>INR 300 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="hitachi astemo rajasthan brake system pvt ltd (subsidiary of hitachi astemo ltd) rajasthan auto components (brake systems) japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.thestatesman.com/india/11-japanese-companies-1503088161.html" target="_blank" rel="noopener">Hitachi Astemo Rajasthan Brake System Pvt Ltd (subsidiary of Hitachi Astemo Ltd)</a>
+<span class="state-tag">Rajasthan</span>
+</div>
+<div class="card-meta">Japan · Auto components (brake systems) · Japanese Investors MoU Signing Ceremony, DJIME, Neemrana · 2022-07-07</div>
+<div class="card-body"><b>INR 140 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="ckd india pvt ltd (subsidiary of ckd corporation) rajasthan industrial automation / pneumatic and fluid-control components japan operational">
+<div class="card-head">
+<a href="https://www.thestatesman.com/india/11-japanese-companies-1503088161.html" target="_blank" rel="noopener">CKD India Pvt Ltd (subsidiary of CKD Corporation)</a>
+<span class="state-tag">Rajasthan</span>
+</div>
+<div class="card-meta">Japan · Industrial automation / pneumatic and fluid-control components · Japanese Investors MoU Signing Ceremony, DJIME, Neemrana · 2022-07-07</div>
+<div class="card-body"><b>INR 100 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="tokai rika minda india pvt ltd (joint venture: tokai rika co ltd + uno minda ltd) rajasthan auto components (switches, seatbelts, safety systems) japan (jv with india-headquartered uno minda) no follow-up news found">
+<div class="card-head">
+<a href="https://www.thestatesman.com/india/11-japanese-companies-1503088161.html" target="_blank" rel="noopener">Tokai Rika Minda India Pvt Ltd (joint venture: Tokai Rika Co Ltd + Uno Minda Ltd)</a>
+<span class="state-tag">Rajasthan</span>
+</div>
+<div class="card-meta">Japan (JV with India-headquartered Uno Minda) · Auto components (switches, seatbelts, safety systems) · Japanese Investors MoU Signing Ceremony, DJIME, Neemrana · 2022-07-07</div>
+<div class="card-body"><b>INR 335 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="fuji silvertech india pvt ltd (joint venture: fuji concrete industry + silvertech concrete llp) rajasthan precast concrete manufacturing japan (jv with india-headquartered silvertech concrete) no follow-up news found">
+<div class="card-head">
+<a href="https://www.thestatesman.com/india/11-japanese-companies-1503088161.html" target="_blank" rel="noopener">Fuji Silvertech India Pvt Ltd (joint venture: Fuji Concrete Industry + Silvertech Concrete LLP)</a>
+<span class="state-tag">Rajasthan</span>
+</div>
+<div class="card-meta">Japan (JV with India-headquartered Silvertech Concrete) · Precast concrete manufacturing · Japanese Investors MoU Signing Ceremony, DJIME, Neemrana · 2022-07-07</div>
+<div class="card-body"><b>INR 110 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="beltechno india pvt ltd (subsidiary/jv of beltechno co ltd) rajasthan rubber components / conveyor belts japan no follow-up news found">
+<div class="card-head">
+<a href="https://www.thestatesman.com/india/11-japanese-companies-1503088161.html" target="_blank" rel="noopener">Beltechno India Pvt Ltd (subsidiary/JV of Beltechno Co Ltd)</a>
+<span class="state-tag">Rajasthan</span>
+</div>
+<div class="card-meta">Japan · Rubber components / conveyor belts · Japanese Investors MoU Signing Ceremony, DJIME, Neemrana · 2022-07-07</div>
+<div class="card-body"><b>INR 30 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="nestle s.a. karnataka food &amp; beverage (instant coffee unit expansion/modernisation) switzerland no follow-up news found">
+<div class="card-head">
+<a href="https://deccanherald.com/state/top-karnataka-stories/karnataka-secured-rs-60-65k-cr-investment-at-davos-cm-1113083.html" target="_blank" rel="noopener">Nestle S.A.</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Switzerland · Food &amp; beverage (Instant Coffee unit expansion/modernisation) · WEF Davos 2022 (Karnataka delegation, CM Bommai) · 2022-05-23/2022-05-27</div>
+<div class="card-body"><b>INR 700 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="dassault systemes se karnataka digital manufacturing / ev production systems collaboration (with cmti) france no follow-up news found">
+<div class="card-head">
+<a href="https://deccanherald.com/state/top-karnataka-stories/karnataka-secured-rs-60-65k-cr-investment-at-davos-cm-1113083.html" target="_blank" rel="noopener">Dassault Systemes SE</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">France · Digital manufacturing / EV production systems collaboration (with CMTI) · WEF Davos 2022 (Karnataka delegation, CM Bommai) · 2022-05-23/2022-05-27</div>
+<div class="card-body"><b>INR 300 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="schneider electric se (2022 mou) karnataka manufacturing (attibele facilities consolidation into jigani; data centre ups) france no follow-up news found">
+<div class="card-head">
+<a href="https://deccanherald.com/state/top-karnataka-stories/karnataka-secured-rs-60-65k-cr-investment-at-davos-cm-1113083.html" target="_blank" rel="noopener">Schneider Electric SE (2022 MoU)</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">France · Manufacturing (Attibele facilities consolidation into Jigani; Data Centre UPS) · WEF Davos 2022 (Karnataka delegation, CM Bommai) · 2022-05-23/2022-05-27</div>
+<div class="card-body"><b>INR 300 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="arcelormittal s.a. karnataka renewable energy (wind-solar hybrid captive power) luxembourg no follow-up news found">
+<div class="card-head">
+<a href="https://deccanherald.com/state/top-karnataka-stories/karnataka-secured-rs-60-65k-cr-investment-at-davos-cm-1113083.html" target="_blank" rel="noopener">ArcelorMittal S.A.</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">Luxembourg · Renewable energy (wind-solar hybrid captive power) · WEF Davos 2022 (Karnataka delegation, CM Bommai) · 2022-05-23/2022-05-27</div>
+<div class="card-body"><b>INR 6,000 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="lulu group international karnataka food processing (export-oriented plant) united arab emirates no follow-up news found">
+<div class="card-head">
+<a href="https://www.business-standard.com/article/current-affairs/wef-meet-karnataka-inks-mou-with-lulu-group-for-rs-2-000-cr-investment-122052301714_1.html" target="_blank" rel="noopener">Lulu Group International</a>
+<span class="state-tag">Karnataka</span>
+</div>
+<div class="card-meta">United Arab Emirates · Food processing (export-oriented plant) · WEF Davos 2022 (Karnataka delegation, CM Bommai) · 2022-05-23</div>
+<div class="card-body"><b>INR 2,000 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="lulu group international tamil nadu retail (shopping malls) and food processing / export united arab emirates no follow-up news found">
+<div class="card-head">
+<a href="https://www.deccanherald.com/india/uae-based-lulu-group-to-invest-rs-3500-crore-in-tamil-nadu-1095535.html" target="_blank" rel="noopener">Lulu Group International</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">United Arab Emirates · Retail (shopping malls) and food processing / export · CM Stalin UAE investment roadshow · 2022-03-28</div>
+<div class="card-body"><b>Rs 3,500 crore (Rs 2,500 crore for two malls, Rs 1,000 crore for a food-processing unit)</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational" data-txt="samsung electronics tamil nadu compressor manufacturing (for refrigerators) south korea operational">
+<div class="card-head">
+<a href="https://www.businesstoday.in/technology/news/story/samsung-to-invest-rs-1588-cr-to-set-up-new-compressor-plant-in-tamil-nadu-326098-2022-03-15" target="_blank" rel="noopener">Samsung Electronics</a>
+<span class="state-tag">Tamil Nadu</span>
+</div>
+<div class="card-meta">South Korea · Compressor manufacturing (for refrigerators) · Bilateral MoU signing with Government of Tamil Nadu · 2022-03-15</div>
+<div class="card-body"><b>Rs 1,588 crore</b></div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status op">operational</span><span class="badge MEDIUM">MEDIUM</span></div>
+</div>
+<div class="card" data-status="operational — first-phase production began in 2025, second-phase production started may 2026, and the plant was formally inaugurated by pm modi in july 2026. this is a rare confirmed 'mou actually converted to a running factory' case, corroborated independently across cardekho, theprint, hindustan times, abp live, tribune india and zee news" data-txt="suzuki motor corporation (via maruti suzuki india limited) haryana automobile manufacturing (passenger vehicles), kharkhoda, sonipat district japan operational — first-phase production began in 2025, second-phase production started may 2026, and the plant was formally inaugurated by pm modi in july 2026. this is a rare confirmed 'mou actually converted to a running factory' case, corroborated independently across cardekho, theprint, hindustan times, abp live, tribune india and zee news">
+<div class="card-head">
+<a href="https://en.wikipedia.org/wiki/Maruti_Suzuki" target="_blank" rel="noopener">Suzuki Motor Corporation (via Maruti Suzuki India Limited)</a>
+<span class="state-tag">Haryana</span>
+</div>
+<div class="card-meta">Japan · Automobile manufacturing (passenger vehicles), Kharkhoda, Sonipat district · Direct Haryana government-Maruti Suzuki agreement, not tied to a named investor summit; PM Modi laid the (virtual) foundation stone in August 2022 · 2021-11 (announced) / formalized around 2022-05, foundation stone 2022-08</div>
+<div class="card-body"><b>Reported variously as Rs 18,000 crore (initial Nov 2021 announcement), Rs 20,000 crore (widely cited at MoU/groundbreaking stage), and up to Rs 35,000 crore in later reports as the project scaled across phases</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">operational — first-phase production began in 2025, second-phase production started May 2026, and the plant was formally inaugurated by PM Modi in July 2026. This is a rare confirmed 'MoU actually converted to a running factory' case, corroborated independently across CarDekho, ThePrint, Hindustan Times, ABP Live, Trib</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">operational — first-phase production began in 2025, second-phase production started May 2026, and the plant was formally inaugurated by PM Modi in July 2026. This is a rare confirmed 'MoU actually converted to a running factory' case, corroborated independently across CarDekho, ThePrint, Hindustan Times, ABP Live, Tribune India and Zee News</span><span class="badge HIGH">HIGH</span></div>
+</div>
+<div class="card" data-status="no follow-up news found" data-txt="arcelormittal nippon steel india (am/ns india) — jv of arcelormittal (luxembourg) and nippon steel corporation (japan) odisha integrated steel manufacturing luxembourg / japan (joint venture; india's mittal family are arcelormittal's controlling shareholders but the group entity is luxembourg-headquartered) no follow-up news found">
+<div class="card-head">
+<a href="https://theprint.in/india/odisha-cm-begins-japan-tour-arcelormittal-nippon-steel-jv-to-set-up-30-mt-facility/1497611/" target="_blank" rel="noopener">ArcelorMittal Nippon Steel India (AM/NS India) — JV of ArcelorMittal (Luxembourg) and Nippon Steel Corporation (Japan)</a>
+<span class="state-tag">Odisha</span>
+</div>
+<div class="card-meta">Luxembourg / Japan (joint venture; India's Mittal family are ArcelorMittal's controlling shareholders but the group entity is Luxembourg-headquartered) · Integrated steel manufacturing · Bilateral MoU with Government of Odisha (Kendrapara district; not tied to a specific conclave) · 2021-03 (month reported, exact day not found); capacity/investment subsequently revised upward per HLCA approval reported December 2021</div>
+<div class="card-body"><b>Rs 50,000 crore for an initial 12 MTPA plant (March 2021 MoU); subsequently reported at up to 24 MTPA / Rs 1.02 lakh crore following High-Level Clearance Authority approval</b></div>
+<div class="card-body" style="margin-top:6px;color:var(--mut)">A land-acquisition notification for Badatubi/Kharnasi villages (Mahakalapada tehsil) was issued in late 2024, and verification/acquisition of ~383-712 acres was reported progressing as of May 2025. AM/NS India already operates an existing iron-ore mine, slurry pipeline, and pellet plant in Odisha (Paradip/Keonjhar), gi</div>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="status ">no follow-up news found</span><span class="badge HIGH">HIGH</span></div>
+</div>
+</div>
+<p class="sub" id="mouEmpty" class="hidden">No MoUs match this filter.</p>
+<h2>All layers, by workstream</h2>
+<h3>Company Database &amp; Leads</h3><div class="grid">
+<div class="tile">
+<b>Layer 16</b><span>Foreign-company leads, expansion-signal scored</span><br>
+<span style="font-variant-numeric:tabular-nums">count: 321</span>
+</div>
+<div class="tile">
+<b>Layer 24</b><span>Clearance-committee-visible leads (FIPB/CCI successors)</span><br>
+<span style="font-variant-numeric:tabular-nums">leads: 98 items</span>
+</div>
+<div class="tile">
+<b>Layer 32</b><span>Unified company DB — every company the twin has touched, deduped</span><br>
+<span style="font-variant-numeric:tabular-nums">companies: 1785 (deduped, all layers)</span>
+</div>
+<div class="tile">
+<b>Layer 37</b><span>Filing-sweep consolidation (DART/cninfo/Oslo/EDINET/ESEF)</span><br>
+<span style="font-variant-numeric:tabular-nums">tier1_controlling_establishment.all: 110 items</span>
+</div>
+</div>
+<h3>Land, Policy &amp; Incentives</h3><div class="grid">
+<div class="tile">
+<b>Layer 02</b><span>Central incentive scheme catalog by ministry</span><br>
+<span style="font-variant-numeric:tabular-nums">ministries: 18 items</span>
+</div>
+<div class="tile">
+<b>Layer 25</b><span>Vacant developed land × open incentive windows, joined</span><br>
+<span style="font-variant-numeric:tabular-nums">land_availability.top_states_by_vacant_developed_land: 15 items</span>
+</div>
+<div class="tile">
+<b>Layer 28</b><span>Forward-looking: new policy before it's in force (973 PRS bills)</span><br>
+<span style="font-variant-numeric:tabular-nums">all_prs_bills: 973 items</span>
+</div>
+<div class="tile">
+<b>Layer 33</b><span>Policy/finance extensions (CBG-GOBARdhan, bulk-sale notices)</span><br>
+<span style="font-variant-numeric:tabular-nums">cbg_gobardhan_fertiliser.bulk_sale_notifications: 7 items</span>
+</div>
+<div class="tile">
+<b>Layer 35</b><span>Policy-rate arbitrage: cheaper capital abroad vs. India</span><br>
+<span style="font-variant-numeric:tabular-nums">rate_table: 28 items</span>
+</div>
+</div>
+<h3>Trade &amp; Macro</h3><div class="grid">
+<div class="tile">
+<b>Layer 29</b><span>25 MoSPI datasets, tagged for investment relevance</span><br>
+<span style="font-variant-numeric:tabular-nums">data_sources: 25 items</span>
+</div>
+<div class="tile">
+<b>Layer 30</b><span>Which import chapters an incentive actually addresses</span><br>
+<span style="font-variant-numeric:tabular-nums">import_dependency_matrix: 12 items</span>
+</div>
+</div>
+<h3>Associations, Events &amp; Trade Fairs</h3><div class="grid">
+<div class="tile">
+<b>Layer 39</b><span>Global textile trade association membership map</span><br>
+<span style="font-variant-numeric:tabular-nums">pdf_archive_search.confirmed_pdfs: 4 items</span>
+ — <a href="ASSOCIATION_EVENT_REGISTRY.md">view</a>
+</div>
+<div class="tile">
+<b>Layer 40</b><span>33 associations, 64 events — durable monitoring registry</span><br>
+<span style="font-variant-numeric:tabular-nums">events: 64 items</span>
+ — <a href="ASSOCIATION_EVENT_REGISTRY.md">view</a>
+</div>
+<div class="tile">
+<b>Layer 41</b><span>Exhibitor/member rosters cross-checked against known leads</span><br>
+<span style="font-variant-numeric:tabular-nums">total new flagged: 26191</span>
+ — <a href="ASSOCIATION_LEADS_CROSSREF.md">view</a>
+</div>
+</div>
+<h3>Investment News &amp; State Convergence</h3><div class="grid">
+<div class="tile">
+<b>Layer 42</b><span>12-sector India-investment news sweep, verified findings</span><br>
+<span style="font-variant-numeric:tabular-nums">total findings: 76</span>
+ — <a href="SECTOR_INVESTMENT_NEWS_SWEEP.md">view</a>
+</div>
+<div class="tile">
+<b>Layer 43</b><span>Which states are becoming multi-sector investment hubs</span><br>
+<span style="font-variant-numeric:tabular-nums">state_convergence: 20 items</span>
+ — <a href="reportage_state_sector.html">view</a>
+</div>
+<div class="tile">
+<b>Layer 44</b><span>5-year state-MoU sweep — see the featured wire above</span><br>
+<span style="font-variant-numeric:tabular-nums">total new to twin: 90</span>
+ — <a href="STATE_MOU_5YR_SWEEP.md">view</a>
+</div>
+</div>
+<h3>Sector Deep-Dives</h3><div class="grid">
+<div class="tile">
+<b>Layer 38</b><span>Textiles &amp; Apparel sector filter + live re-sweep</span><br>
+<span style="font-variant-numeric:tabular-nums">static_leads_by_confidence.india_domestic: 8 items</span>
+</div>
+</div>
+<h3>Central &amp; state government wire</h3><div class="grid">
+<div class="tile"><b><a href="reportage.html" style="color:var(--acc)">reportage.html</a></b><span>PIB scheme-mapped announcements, all quarters</span></div>
+<div class="tile"><b><a href="reportage_latest.html" style="color:var(--acc)">reportage_latest.html</a></b><span>Central + state wire, rolling 30-day window</span></div>
+<div class="tile"><b><a href="reportage_ministry.html" style="color:var(--acc)">reportage_ministry.html</a></b><span>Announcements grouped by ministry</span></div>
+<div class="tile"><b><a href="reportage_states.html" style="color:var(--acc)">reportage_states.html</a></b><span>State-government wire, classified</span></div>
+<div class="tile"><b><a href="company_directory_state_sector.html" style="color:var(--acc)">company_directory_state_sector.html</a></b><span>Every company, by sector &amp; state — 3 tiers</span></div>
+</div>
+<h2>Full layer index</h2>
+<p class="sub">Every layer file, auto-summarized (best-effort headline stat), for the ones not called out above — mostly foundational/infrastructure layers (data model, ministry master, scheme registry, workflow scaffolding).</p>
+<table class="idx"><thead><tr><th>Layer</th><th>Headline stat</th></tr></thead><tbody>
+<tr><td>00_data_model</td><td>identity_rules: 3 items</td></tr>
+<tr><td>01_ministries_master</td><td>ministries: 86 items</td></tr>
+<tr><td>03_scheme_registry</td><td>pli_family_registry: 17 items</td></tr>
+<tr><td>04_investor_workflow</td><td>ministry_connects: 9 items</td></tr>
+<tr><td>05_decade_report_card</td><td>open_for_investment_now: 14 items</td></tr>
+<tr><td>06_investor_map</td><td>sector_map: 12 items</td></tr>
+<tr><td>07_investor_pairings</td><td>verified_pairs: 12 items</td></tr>
+<tr><td>08_refresh_blueprint</td><td>data_architecture.change_data_capture_per_gate: 7 items</td></tr>
+<tr><td>10_interlinkages</td><td>interlinkages: 23 items</td></tr>
+<tr><td>11_prs_budget_layer</td><td>bill_track: 22 items</td></tr>
+<tr><td>13_flat_instrument_index</td><td>count: 312</td></tr>
+<tr><td>14_update_engine</td><td>sources: 10 items</td></tr>
+<tr><td>15_directory</td><td>—</td></tr>
+<tr><td>16_target_shortlist</td><td>count: 136</td></tr>
+<tr><td>17_scheme_monitor</td><td>entries: 15 items</td></tr>
+<tr><td>18_state_monitor</td><td>states: 15 items</td></tr>
+<tr><td>19_pib_visibility</td><td>all: 321 items</td></tr>
+<tr><td>20_visibility_verified</td><td>companies: 41 items</td></tr>
+<tr><td>21_indian_entity_alias_check</td><td>companies: 18 items</td></tr>
+<tr><td>22_visibility_ministry_checked</td><td>companies: 41 items</td></tr>
+<tr><td>23_parliament_disclosure</td><td>ministries_that_name_foreign_companies: 3 items</td></tr>
+<tr><td>24b_pool_policy_triage</td><td>companies: 1384 items</td></tr>
+<tr><td>24c_cross_verification</td><td>companies: 41 items</td></tr>
+<tr><td>24d_up_ethanol</td><td>register_detail: 86 items</td></tr>
+<tr><td>24e_pool_visibility_sweep</td><td>companies: 1343 items</td></tr>
+<tr><td>26_iig_sector_seed</td><td>list, 42 items</td></tr>
+<tr><td>26_project_pipeline</td><td>sectors: 42 items</td></tr>
+<tr><td>27_entry_facilitators</td><td>facilitators: 31 items</td></tr>
+<tr><td>31_ipa_source_network</td><td>waipa_member_directory.members: 138 items</td></tr>
+<tr><td>34_stressed_assets</td><td>register.twin_company_matches: 49 items</td></tr>
+<tr><td>36_investment_snapshots</td><td>upgis_2023.companies: 11 items</td></tr>
+</tbody></table>
+<p class="note">Generated by <code>scripts/build_national_dashboard.py</code>. MoU data: <code>layers/44_state_mou_5yr_sweep.json</code>. Company DB: <code>layers/32_company_db.json</code> (SQLite at <code>data/companies.db</code>). See <a href="../README.md">README.md</a> for full per-layer methodology.</p>
+<script>
+let statusFilter = "all";
+function setStatusFilter(el){
+  statusFilter = el.dataset.status;
+  document.querySelectorAll("#statusFilters .chip").forEach(c => c.classList.toggle("active", c===el));
+  filterMou();
+}
+function filterMou(){
+  const q = document.getElementById("mouSearch").value.trim().toLowerCase();
+  let visible = 0;
+  document.querySelectorAll("#mouCards .card").forEach(c => {
+    const statusOk = statusFilter === "all" || c.dataset.status === statusFilter;
+    const textOk = !q || c.dataset.txt.includes(q);
+    const show = statusOk && textOk;
+    c.classList.toggle("hidden", !show);
+    if (show) visible++;
+  });
+  document.getElementById("mouEmpty").classList.toggle("hidden", visible > 0);
+}
+</script>
+</div></body></html>

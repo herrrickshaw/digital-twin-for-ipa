@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-08-31",
+ "built": "2026-09-07",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -195,7 +195,7 @@
     "country": "Bangladesh",
     "organization": "Bangladesh Investment Development Authority (BIDA)",
     "website": "http://bida.gov.bd/",
-    "website_status": 200
+    "website_status": 409
    },
    {
     "country": "Barbados",
@@ -339,7 +339,7 @@
     "country": "Cuba",
     "organization": "ProCuba\r\n\r\n\r\n\r\n",
     "website": "http://www.procuba.cu/en",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Curaçao",
@@ -531,7 +531,7 @@
     "country": "Kenya",
     "organization": "KenInvest",
     "website": "http://www.invest.go.ke/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Kiribati",
@@ -717,7 +717,7 @@
     "country": "Panama",
     "organization": "ProPanama\r\n\r\n\r\n\r\n",
     "website": "http://www.propanama.gob.pa/",
-    "website_status": "ERR:ConnectionResetError"
+    "website_status": 200
    },
    {
     "country": "Peru",
@@ -807,7 +807,7 @@
     "country": "Somalia",
     "organization": "Somalia Investment Promotion Office (SomInvest)",
     "website": "https://sominvest.gov.so/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "South Africa",
@@ -837,7 +837,7 @@
     "country": "South Africa",
     "organization": "Trade and Investment KwaZulu-Natal (TIKZN)",
     "website": "http://www.tikzn.co.za/",
-    "website_status": 200
+    "website_status": 404
    },
    {
     "country": "Spain",
@@ -861,7 +861,7 @@
     "country": "St. Kitts and Nevis",
     "organization": "Nevis Investment Promotion Agency (NIPA)\r\n\r\n\r\n\r\n",
     "website": "https://nevisipa.org/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "St. Lucia",

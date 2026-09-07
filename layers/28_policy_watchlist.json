@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-08-31",
+ "built": "2026-09-07",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9467,9 +9467,9 @@
  ],
  "policy_debate_editorials": [
   {
-   "slug": "16th-finance-commission-and-the-future-of-indian-federalism",
-   "topic": "16th Finance Commission and Future of Indian Federalism",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/16th-finance-commission-and-the-future-of-indian-federalism"
+   "slug": "26th-sco-summit-2026",
+   "topic": "26th Sco Summit 2026",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/26th-sco-summit-2026"
   },
   {
    "slug": "achieving-self-reliance-in-edible-oils",
@@ -9487,6 +9487,11 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/balancing-food-fuel-and-nutrition-security-in-india"
   },
   {
+   "slug": "breaking-the-ai-hegemony-indias-path-to-ai-sovereignty",
+   "topic": "Breaking Ai Hegemony Indias Path to Ai Sovereignty",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/breaking-the-ai-hegemony-indias-path-to-ai-sovereignty"
+  },
+  {
    "slug": "building-a-resilient-care-economy-in-india",
    "topic": "Building A Resilient Care Economy in India",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-a-resilient-care-economy-in-india"
@@ -9500,11 +9505,6 @@
    "slug": "cryospheric-risks-and-transboundary-resilience",
    "topic": "Cryospheric Risks and Transboundary Resilience",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/cryospheric-risks-and-transboundary-resilience"
-  },
-  {
-   "slug": "enhancing-effectiveness-of-fast-track-courts",
-   "topic": "Enhancing Effectiveness of Fast Track Courts",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/enhancing-effectiveness-of-fast-track-courts"
   },
   {
    "slug": "future-roadmap-for-indias-iron-steel-industry",
@@ -9522,24 +9522,24 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-100-gw-nuclear-power-ambition"
   },
   {
+   "slug": "indias-e-waste-challenge",
+   "topic": "Indias E Waste Challenge",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-e-waste-challenge"
+  },
+  {
    "slug": "indias-new-tribunal-framework",
    "topic": "Indias New Tribunal Framework",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-new-tribunal-framework"
   },
   {
+   "slug": "indias-strategic-autonomy",
+   "topic": "Indias Strategic Autonomy",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-strategic-autonomy"
+  },
+  {
    "slug": "indias-sugar-price-crisis",
    "topic": "Indias Sugar Price Crisis",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-sugar-price-crisis"
-  },
-  {
-   "slug": "j-k-integration-from-article-370-to-statehood-debate",
-   "topic": "J K Integration From Article 370 to Statehood Debate",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/j-k-integration-from-article-370-to-statehood-debate"
-  },
-  {
-   "slug": "jain-philosophy-for-modern-problems",
-   "topic": "Jain Philosophy for Modern Problems",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/jain-philosophy-for-modern-problems"
   },
   {
    "slug": "making-indian-cities-resilient-to-floods",
@@ -9552,11 +9552,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/mecca-joint-defence-agreement-and-its-implications-for-india"
   },
   {
-   "slug": "modernising-indias-handloom-sector",
-   "topic": "Modernising Indias Handloom Sector",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/modernising-indias-handloom-sector"
-  },
-  {
    "slug": "natural-farming-indias-path-to-resilient-agriculture",
    "topic": "Natural Farming Indias Path to Resilient Agriculture",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/natural-farming-indias-path-to-resilient-agriculture"
@@ -9565,6 +9560,11 @@
    "slug": "parliamentary-disruptions-and-democratic-accountability",
    "topic": "Parliamentary Disruptions and Democratic Accountability",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/parliamentary-disruptions-and-democratic-accountability"
+  },
+  {
+   "slug": "powering-indias-solar-future",
+   "topic": "Powering Indias Solar Future",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/powering-indias-solar-future"
   },
   {
    "slug": "recalibrating-indias-central-asia-strategy",
@@ -9582,9 +9582,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strategy-for-tea-sector-reforms"
   },
   {
-   "slug": "sustainability-of-data-centres",
-   "topic": "Sustainability of Data Centres",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/sustainability-of-data-centres"
+   "slug": "strengthening-indias-gig-economy",
+   "topic": "Strengthening Indias Gig Economy",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-indias-gig-economy"
   }
  ],
  "linkage": {

@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-09-07",
+ "built": "2026-09-14",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9482,14 +9482,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/addressing-indias-education-and-job-crisis"
   },
   {
-   "slug": "balancing-food-fuel-and-nutrition-security-in-india",
-   "topic": "Balancing Food Fuel and Nutrition Security in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/balancing-food-fuel-and-nutrition-security-in-india"
-  },
-  {
    "slug": "breaking-the-ai-hegemony-indias-path-to-ai-sovereignty",
    "topic": "Breaking Ai Hegemony Indias Path to Ai Sovereignty",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/breaking-the-ai-hegemony-indias-path-to-ai-sovereignty"
+  },
+  {
+   "slug": "brics-and-indias-strategic-opportunity",
+   "topic": "Brics and Indias Strategic Opportunity",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/brics-and-indias-strategic-opportunity"
   },
   {
    "slug": "building-a-resilient-care-economy-in-india",
@@ -9497,24 +9497,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-a-resilient-care-economy-in-india"
   },
   {
-   "slug": "commonwealth-games-2026-and-future-of-sports-in-india",
-   "topic": "Commonwealth Games 2026 and Future of Sports in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/commonwealth-games-2026-and-future-of-sports-in-india"
-  },
-  {
    "slug": "cryospheric-risks-and-transboundary-resilience",
    "topic": "Cryospheric Risks and Transboundary Resilience",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/cryospheric-risks-and-transboundary-resilience"
   },
   {
-   "slug": "future-roadmap-for-indias-iron-steel-industry",
-   "topic": "Future Roadmap for Indias Iron Steel Industry",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/future-roadmap-for-indias-iron-steel-industry"
-  },
-  {
-   "slug": "gen-z-and-the-new-features-of-indian-politics",
-   "topic": "Gen Z and New Features of Indian Politics",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/gen-z-and-the-new-features-of-indian-politics"
+   "slug": "democratic-decentralisation-in-india-from-devolution-to-self-governance",
+   "topic": "Democratic Decentralisation in India From Devolution to Self Governance",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/democratic-decentralisation-in-india-from-devolution-to-self-governance"
   },
   {
    "slug": "indias-100-gw-nuclear-power-ambition",
@@ -9532,6 +9522,11 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-new-tribunal-framework"
   },
   {
+   "slug": "indias-space-sector-the-next-leap",
+   "topic": "Indias Space Sector Next Leap",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-space-sector-the-next-leap"
+  },
+  {
    "slug": "indias-strategic-autonomy",
    "topic": "Indias Strategic Autonomy",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-strategic-autonomy"
@@ -9542,19 +9537,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-sugar-price-crisis"
   },
   {
+   "slug": "making-india-resilient-to-extreme-weather-events",
+   "topic": "Making India Resilient to Extreme Weather Events",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-india-resilient-to-extreme-weather-events"
+  },
+  {
    "slug": "making-indian-cities-resilient-to-floods",
    "topic": "Making Indian Cities Resilient to Floods",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-indian-cities-resilient-to-floods"
-  },
-  {
-   "slug": "mecca-joint-defence-agreement-and-its-implications-for-india",
-   "topic": "Mecca Joint Defence Agreement and Its Implications for India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/mecca-joint-defence-agreement-and-its-implications-for-india"
-  },
-  {
-   "slug": "natural-farming-indias-path-to-resilient-agriculture",
-   "topic": "Natural Farming Indias Path to Resilient Agriculture",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/natural-farming-indias-path-to-resilient-agriculture"
   },
   {
    "slug": "parliamentary-disruptions-and-democratic-accountability",
@@ -9577,9 +9567,19 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/rethinking-indias-food-safety-framework"
   },
   {
+   "slug": "revitalising-indias-pharma-sector",
+   "topic": "Revitalising Indias Pharma Sector",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/revitalising-indias-pharma-sector"
+  },
+  {
    "slug": "strategy-for-tea-sector-reforms",
    "topic": "Strategy for Tea Sector Reforms",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strategy-for-tea-sector-reforms"
+  },
+  {
+   "slug": "strengthening-india-japan-strategic-ties",
+   "topic": "Strengthening India Japan Strategic Ties",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-india-japan-strategic-ties"
   },
   {
    "slug": "strengthening-indias-gig-economy",

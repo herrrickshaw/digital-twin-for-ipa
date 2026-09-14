@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-09-07",
+ "built": "2026-09-14",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -339,7 +339,7 @@
     "country": "Cuba",
     "organization": "ProCuba\r\n\r\n\r\n\r\n",
     "website": "http://www.procuba.cu/en",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Curaçao",
@@ -381,7 +381,7 @@
     "country": "Egypt, Arab Rep.",
     "organization": "Regional Investment Agency COMESA",
     "website": "http://www.comesaria.org/",
-    "website_status": 200
+    "website_status": 202
    },
    {
     "country": "El Salvador",
@@ -423,7 +423,7 @@
     "country": "Gabon",
     "organization": "Agence Nationale de Promotion des Investissements du Gabon (ANPI-GABON)",
     "website": "https://www.investingabon.ga/",
-    "website_status": 500
+    "website_status": 200
    },
    {
     "country": "Gambia, The",
@@ -537,7 +537,7 @@
     "country": "Kiribati",
     "organization": "Ministry of Commerce, Industry and Cooperatives (MCIC)",
     "website": "http://mcic.gov.ki/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Korea, Rep.",
@@ -603,7 +603,7 @@
     "country": "Mali",
     "organization": "Investment Promotion Agency of Mali (API -MALI)",
     "website": "https://apimali.gov.ml/",
-    "website_status": 200
+    "website_status": 503
    },
    {
     "country": "Malta",
@@ -621,7 +621,7 @@
     "country": "Mauritania",
     "organization": "The Investment Promotion Agency of Mauritania (APIM)",
     "website": "https://apim.gov.mr/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Mauritius",
@@ -675,7 +675,7 @@
     "country": "Nigeria",
     "organization": "Nigerian Investment Promotion Commission (NIPC)",
     "website": "https://nipc.gov.ng/",
-    "website_status": 200
+    "website_status": 202
    },
    {
     "country": "Nigeria",
@@ -789,13 +789,13 @@
     "country": "Saudi Arabia",
     "organization": "Saudi Investment Promotion Authority (SIPA)",
     "website": "https://www.investsaudi.sa/en",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Senegal",
     "organization": "Invest in Senegal (APIX)",
     "website": "http://investinsenegal.com/",
-    "website_status": 200
+    "website_status": 403
    },
    {
     "country": "Sierra Leone",
@@ -837,7 +837,7 @@
     "country": "South Africa",
     "organization": "Trade and Investment KwaZulu-Natal (TIKZN)",
     "website": "http://www.tikzn.co.za/",
-    "website_status": 404
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Spain",
@@ -867,7 +867,7 @@
     "country": "St. Lucia",
     "organization": "Invest Saint Lucia",
     "website": "https://www.investstlucia.com/",
-    "website_status": 200
+    "website_status": 202
    },
    {
     "country": "Switzerland",
@@ -921,7 +921,7 @@
     "country": "Turks and Caicos Islands",
     "organization": "Invest Turks and Caicos",
     "website": "https://www.investturksandcaicos.tc/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Uganda",

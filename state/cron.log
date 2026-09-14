@@ -2942,3 +2942,686 @@ nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-09-07.js
 CHANGE rbi WSS: Aug 29, 2026 -> Sep 05, 2026
 rbi: latest WSS issue = Sep 05, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-09-07.json
 send_twin_alert: no credentials available (env or plist) -- not sent
+fatal: could not read Username for 'https://github.com': Device not configured
+  2026-09-08   47 releases
+  2026-09-09    0 releases
+indexed 47 release rows 2026-09-08 → 2026-09-09
+warning: broken cert chain, retrying unverified: chandigarh.gov.in
+warning: urllib failed (<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1082)>), retrying via scrapling: icad.wb.gov.in
+[2026-09-09 07:51:02] INFO: Fetched (200) <GET https://icad.wb.gov.in/notice.php> (referer: https://www.google.com/)
+warning: urllib failed (<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1082)>), retrying via scrapling: icad.wb.gov.in
+[2026-09-09 07:51:03] INFO: Fetched (200) <GET https://icad.wb.gov.in/govt-order.php> (referer: https://www.google.com/)
+MP (Madhya Pradesh): fetched 402, 102 new (81 machine-translated) -> 64374 total in register
+AP (Andhra Pradesh): fetched 116, 3 new (0 machine-translated) -> 116 total in register
+UP (Uttar Pradesh): fetched 60, 23 new (23 machine-translated) -> 380 total in register
+GJ (Gujarat): fetched 28, 15 new (15 machine-translated) -> 270 total in register
+MH (Maharashtra): fetched 200, 67 new (67 machine-translated) -> 26674 total in register
+KA (Karnataka): fetched 115, 0 new (0 machine-translated) -> 115 total in register
+GA (Goa): fetched 199, 15 new (11 machine-translated) -> 380 total in register
+RJ (Rajasthan): fetched 100, 100 new (96 machine-translated) -> 74958 total in register
+PB (Punjab): fetched 0, 0 new (0 machine-translated) -> 39 total in register
+MZ (Mizoram): fetched 50, 13 new (1 machine-translated) -> 131 total in register
+NL (Nagaland): fetched 24, 16 new (0 machine-translated) -> 168 total in register
+SK (Sikkim): fetched 30, 9 new (2 machine-translated) -> 140 total in register
+CH (Chandigarh): fetched 20, 1 new (0 machine-translated) -> 24 total in register
+DD (DNH & Daman-Diu): fetched 24, 3 new (0 machine-translated) -> 64 total in register
+KL (Kerala): fetched 27, 25 new (25 machine-translated) -> 346 total in register
+TS (Telangana): fetched 10, 5 new (5 machine-translated) -> 34 total in register
+AS (Assam): fetched 0, 0 new (0 machine-translated) -> 18 total in register
+TN (Tamil Nadu): fetched 264, 6 new (0 machine-translated) -> 350 total in register
+BR (Bihar): fetched 30, 21 new (21 machine-translated) -> 101 total in register
+OD (Odisha): fetched 12, 0 new (0 machine-translated) -> 27 total in register
+HR (Haryana): fetched 100, 21 new (1 machine-translated) -> 235 total in register
+DL (Delhi (NCT)): fetched 8, 0 new (0 machine-translated) -> 8 total in register
+WB (West Bengal): fetched 28, 0 new (0 machine-translated) -> 28 total in register
+signal pass: 0 translated, 0 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4115 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4115 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4115 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 57 central rows, 486 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 15087 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+  2026-09-10   52 releases
+indexed 52 release rows 2026-09-10 → 2026-09-10
+  2026-09-11   52 releases
+indexed 52 release rows 2026-09-11 → 2026-09-11
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:40:26] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:40:39] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:40:52] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-11: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:41:17] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:41:30] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:41:43] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-10: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:42:08] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:42:21] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:42:35] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-09: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:42:59] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:43:13] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:43:26] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-08: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:43:51] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:44:04] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:44:17] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-07: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:44:42] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:44:55] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:45:08] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-06: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:45:33] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:45:46] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:46:00] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-05: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:46:24] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:46:38] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:46:51] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-04: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:47:16] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:47:29] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:47:42] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-03: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:48:07] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:48:20] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:48:34] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-02: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:48:58] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:49:11] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:49:25] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-01: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:49:50] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:50:03] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:50:16] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-08-31: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:50:41] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:50:54] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:51:07] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-08-30: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-11 07:51:32] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:51:45] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:51:58] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-08-29: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.ap.gov.in
+[2026-09-11 07:52:25] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:52:38] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:52:51] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+AP ApNewsLatestAnnouncements: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.ap.gov.in
+[2026-09-11 07:53:16] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:53:29] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:53:42] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+AP ApNewsAnnouncements: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: ipr.punjab.gov.in
+[2026-09-11 07:58:38] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:58:51] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 07:59:04] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+PB: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (HTTP Error 500: Internal Server Error), retrying via scrapling: ipr.sikkim.gov.in
+[2026-09-11 07:59:50] INFO: Fetched (200) <GET https://ipr.sikkim.gov.in/Home/PressReleasesList?page=2> (referer: https://www.google.com/)
+warning: urllib failed (HTTP Error 500: Internal Server Error), retrying via scrapling: ipr.sikkim.gov.in
+[2026-09-11 08:00:03] INFO: Fetched (500) <GET https://ipr.sikkim.gov.in/Home/PressReleasesList?page=3> (referer: https://www.google.com/)
+warning: broken cert chain, retrying unverified: chandigarh.gov.in
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: delhi.gov.in
+[2026-09-11 08:02:12] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 08:02:25] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-11 08:02:38] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+DL: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1082)>), retrying via scrapling: icad.wb.gov.in
+[2026-09-11 08:02:39] INFO: Fetched (200) <GET https://icad.wb.gov.in/notice.php> (referer: https://www.google.com/)
+warning: urllib failed (<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1082)>), retrying via scrapling: icad.wb.gov.in
+[2026-09-11 08:02:41] INFO: Fetched (200) <GET https://icad.wb.gov.in/govt-order.php> (referer: https://www.google.com/)
+MP (Madhya Pradesh): fetched 0, 0 new (0 machine-translated) -> 64374 total in register
+AP (Andhra Pradesh): fetched 0, 0 new (0 machine-translated) -> 116 total in register
+UP (Uttar Pradesh): fetched 60, 4 new (4 machine-translated) -> 384 total in register
+GJ (Gujarat): fetched 28, 15 new (13 machine-translated) -> 285 total in register
+MH (Maharashtra): fetched 200, 88 new (88 machine-translated) -> 26762 total in register
+KA (Karnataka): fetched 121, 6 new (0 machine-translated) -> 121 total in register
+GA (Goa): fetched 199, 0 new (0 machine-translated) -> 380 total in register
+RJ (Rajasthan): fetched 100, 100 new (95 machine-translated) -> 75058 total in register
+PB (Punjab): fetched 0, 0 new (0 machine-translated) -> 39 total in register
+MZ (Mizoram): fetched 50, 5 new (0 machine-translated) -> 136 total in register
+NL (Nagaland): fetched 24, 8 new (1 machine-translated) -> 176 total in register
+SK (Sikkim): fetched 20, 12 new (1 machine-translated) -> 152 total in register
+CH (Chandigarh): fetched 21, 1 new (0 machine-translated) -> 25 total in register
+DD (DNH & Daman-Diu): fetched 24, 1 new (0 machine-translated) -> 65 total in register
+KL (Kerala): fetched 27, 25 new (25 machine-translated) -> 371 total in register
+TS (Telangana): fetched 10, 1 new (1 machine-translated) -> 35 total in register
+AS (Assam): fetched 0, 0 new (0 machine-translated) -> 18 total in register
+TN (Tamil Nadu): fetched 275, 16 new (0 machine-translated) -> 366 total in register
+BR (Bihar): fetched 30, 0 new (0 machine-translated) -> 101 total in register
+OD (Odisha): fetched 11, 5 new (2 machine-translated) -> 32 total in register
+HR (Haryana): fetched 100, 48 new (8 machine-translated) -> 283 total in register
+DL (Delhi (NCT)): fetched 0, 0 new (0 machine-translated) -> 8 total in register
+WB (West Bengal): fetched 28, 0 new (0 machine-translated) -> 28 total in register
+signal pass: 0 translated, 0 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4117 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4117 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4117 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 50 central rows, 493 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 15113 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+  2026-09-12   22 releases
+  2026-09-13    0 releases
+indexed 22 release rows 2026-09-12 → 2026-09-13
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:40:25] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:40:39] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:40:52] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-13: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:41:17] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:41:30] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:41:43] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-12: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:42:08] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:42:21] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:42:35] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-11: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:42:59] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:43:13] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:43:26] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-10: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:43:51] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:44:04] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:44:18] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-09: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:44:43] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:44:56] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:45:09] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-08: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:45:34] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:45:48] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:46:01] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-07: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:46:26] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:46:40] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:46:53] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-06: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:47:18] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:47:31] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:47:45] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-05: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:48:09] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:48:23] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:48:36] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-04: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:49:01] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:49:14] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:49:28] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-03: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:49:53] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:50:06] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:50:19] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-02: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:50:44] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:50:58] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:51:11] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-01: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.mpinfo.org
+[2026-09-13 07:51:36] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:51:49] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:52:02] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-08-31: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.mpinfo.org:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.ap.gov.in
+[2026-09-13 07:52:28] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:52:42] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:52:55] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+AP ApNewsLatestAnnouncements: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: www.ap.gov.in
+[2026-09-13 07:53:19] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:53:33] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:53:46] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+AP ApNewsAnnouncements: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to www.ap.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: ipr.punjab.gov.in
+[2026-09-13 07:57:41] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:57:55] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 07:58:08] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+PB: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to ipr.punjab.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: broken cert chain, retrying unverified: chandigarh.gov.in
+warning: urllib failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>), retrying via scrapling: delhi.gov.in
+[2026-09-13 08:01:17] WARNING: Attempt 1 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 08:01:31] WARNING: Attempt 2 failed: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-13 08:01:44] ERROR: Failed after 3 attempts: Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+DL: FETCH FAILED (Failed to perform, curl: (35) BoringSSL SSL_connect: Connection closed abruptly (SSL_ERROR_SYSCALL; error queue empty) in connection to delhi.gov.in:443. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1082)>), retrying via scrapling: icad.wb.gov.in
+[2026-09-13 08:01:45] INFO: Fetched (200) <GET https://icad.wb.gov.in/notice.php> (referer: https://www.google.com/)
+warning: urllib failed (<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1082)>), retrying via scrapling: icad.wb.gov.in
+[2026-09-13 08:01:47] INFO: Fetched (200) <GET https://icad.wb.gov.in/govt-order.php> (referer: https://www.google.com/)
+MP (Madhya Pradesh): fetched 0, 0 new (0 machine-translated) -> 64374 total in register
+AP (Andhra Pradesh): fetched 0, 0 new (0 machine-translated) -> 116 total in register
+UP (Uttar Pradesh): fetched 60, 16 new (16 machine-translated) -> 400 total in register
+GJ (Gujarat): fetched 30, 14 new (14 machine-translated) -> 299 total in register
+MH (Maharashtra): fetched 200, 48 new (48 machine-translated) -> 26810 total in register
+KA (Karnataka): fetched 122, 1 new (0 machine-translated) -> 122 total in register
+GA (Goa): fetched 199, 7 new (3 machine-translated) -> 387 total in register
+RJ (Rajasthan): fetched 100, 49 new (45 machine-translated) -> 75107 total in register
+PB (Punjab): fetched 0, 0 new (0 machine-translated) -> 39 total in register
+MZ (Mizoram): fetched 50, 4 new (0 machine-translated) -> 140 total in register
+NL (Nagaland): fetched 24, 3 new (1 machine-translated) -> 179 total in register
+SK (Sikkim): fetched 30, 7 new (0 machine-translated) -> 159 total in register
+CH (Chandigarh): fetched 22, 2 new (0 machine-translated) -> 27 total in register
+DD (DNH & Daman-Diu): fetched 24, 1 new (0 machine-translated) -> 66 total in register
+KL (Kerala): fetched 27, 25 new (25 machine-translated) -> 396 total in register
+TS (Telangana): fetched 10, 0 new (0 machine-translated) -> 35 total in register
+AS (Assam): fetched 0, 0 new (0 machine-translated) -> 18 total in register
+TN (Tamil Nadu): fetched 277, 11 new (0 machine-translated) -> 377 total in register
+BR (Bihar): fetched 30, 6 new (6 machine-translated) -> 107 total in register
+OD (Odisha): fetched 12, 4 new (4 machine-translated) -> 36 total in register
+HR (Haryana): fetched 100, 54 new (12 machine-translated) -> 337 total in register
+DL (Delhi (NCT)): fetched 0, 0 new (0 machine-translated) -> 8 total in register
+WB (West Bengal): fetched 28, 0 new (0 machine-translated) -> 28 total in register
+signal pass: 0 translated, 0 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4117 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4117 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4117 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 36 central rows, 478 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 15137 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1257, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1303, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1012, in _send_output
+    self.send(msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 952, in send
+    self.connect()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1419, in connect
+    super().connect()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 923, in connect
+    self.sock = self._create_connection(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 822, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/umashankar/india-trade-sector-policy-recommendations/scripts/pib_index.py", line 283, in <module>
+    main()
+  File "/Users/umashankar/india-trade-sector-policy-recommendations/scripts/pib_index.py", line 268, in main
+    index_days(start, dt.date.today())
+  File "/Users/umashankar/india-trade-sector-policy-recommendations/scripts/pib_index.py", line 101, in index_days
+    page = fetch(op, BASE)  # prime session + tokens
+  File "/Users/umashankar/india-trade-sector-policy-recommendations/scripts/pib_index.py", line 79, in fetch
+    return op.open(req, timeout=45).read().decode("utf-8", "ignore")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:01] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:03] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:04] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-14: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:04] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:05] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:06] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-13: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:07] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:08] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:09] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-12: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:09] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:10] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:11] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-11: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:12] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:13] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:14] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-10: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:14] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:15] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:17] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-09: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:17] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:18] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:19] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-08: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:20] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:21] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:22] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-07: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:22] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:23] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:24] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-06: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:25] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:26] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:27] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-05: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:27] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:28] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:29] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-04: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:30] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:31] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:32] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-03: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:33] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:34] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:35] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-02: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.mpinfo.org
+[2026-09-14 07:40:35] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:36] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:37] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MP 2026-09-01: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.mpinfo.org. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.ap.gov.in
+[2026-09-14 07:40:38] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:39] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:40] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+AP ApNewsLatestAnnouncements: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.ap.gov.in
+[2026-09-14 07:40:40] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:41] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:42] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+AP ApNewsAnnouncements: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.ap.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: information.up.gov.in
+[2026-09-14 07:40:42] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:43] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:44] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+UP cm_press_release_details.aspx: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: information.up.gov.in
+[2026-09-14 07:40:44] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:45] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:46] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+UP other_press_release_details.aspx: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: information.up.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+GJ: FETCH FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: mahasamvad.in
+[2026-09-14 07:40:46] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: mahasamvad.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:47] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: mahasamvad.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:48] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: mahasamvad.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MH page 1: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: mahasamvad.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: cm.karnataka.gov.in
+[2026-09-14 07:40:48] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: cm.karnataka.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:49] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: cm.karnataka.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:50] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: cm.karnataka.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+KA: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: cm.karnataka.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: dip.goa.gov.in
+[2026-09-14 07:40:50] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: dip.goa.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:51] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: dip.goa.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:52] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: dip.goa.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+GA page 1: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: dip.goa.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+RJ: FETCH FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: ipr.punjab.gov.in
+[2026-09-14 07:40:52] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: ipr.punjab.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:53] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: ipr.punjab.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:55] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: ipr.punjab.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+PB: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: ipr.punjab.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: dipr.mizoram.gov.in
+[2026-09-14 07:40:55] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: dipr.mizoram.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:56] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: dipr.mizoram.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:57] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: dipr.mizoram.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+MZ: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: dipr.mizoram.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: ipr.nagaland.gov.in
+[2026-09-14 07:40:57] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: ipr.nagaland.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:58] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: ipr.nagaland.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:40:59] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: ipr.nagaland.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+NL: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: ipr.nagaland.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: ipr.sikkim.gov.in
+[2026-09-14 07:40:59] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: ipr.sikkim.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:00] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: ipr.sikkim.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:01] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: ipr.sikkim.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+SK: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: ipr.sikkim.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: chandigarh.gov.in
+[2026-09-14 07:41:01] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: chandigarh.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:02] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: chandigarh.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:03] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: chandigarh.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+CH: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: chandigarh.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: ddd.gov.in
+[2026-09-14 07:41:03] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: ddd.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:04] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: ddd.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:05] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: ddd.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+DD: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: ddd.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: prd.kerala.gov.in
+[2026-09-14 07:41:05] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: prd.kerala.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:06] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: prd.kerala.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:07] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: prd.kerala.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+KL: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: prd.kerala.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: www.telangana.gov.in
+[2026-09-14 07:41:07] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: www.telangana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:08] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: www.telangana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:10] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: www.telangana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+TS: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: www.telangana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: dipr.assam.gov.in
+[2026-09-14 07:41:10] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: dipr.assam.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:11] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: dipr.assam.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:12] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: dipr.assam.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+AS: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: dipr.assam.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: dipr.tn.gov.in
+[2026-09-14 07:41:12] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:13] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:14] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+TN press_release: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: dipr.tn.gov.in
+[2026-09-14 07:41:14] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:15] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:16] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+TN press_notes: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: dipr.tn.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+BR: FETCH FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: cm.odisha.gov.in
+[2026-09-14 07:41:16] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: cm.odisha.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:17] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: cm.odisha.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:18] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: cm.odisha.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+OD: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: cm.odisha.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: prms.prharyana.gov.in
+[2026-09-14 07:41:18] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: prms.prharyana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:19] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: prms.prharyana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:20] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: prms.prharyana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+HR: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: prms.prharyana.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: delhi.gov.in
+[2026-09-14 07:41:20] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: delhi.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:21] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: delhi.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:22] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: delhi.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+DL: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: delhi.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: icad.wb.gov.in
+[2026-09-14 07:41:22] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:23] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:24] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+WB notice.php: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+warning: urllib failed (<urlopen error [Errno 8] nodename nor servname provided, or not known>), retrying via scrapling: icad.wb.gov.in
+[2026-09-14 07:41:24] WARNING: Attempt 1 failed: Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:25] WARNING: Attempt 2 failed: Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Retrying in 1 seconds...
+[2026-09-14 07:41:27] ERROR: Failed after 3 attempts: Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+WB govt-order.php: FETCH FAILED (Failed to perform, curl: (6) Could not resolve host: icad.wb.gov.in. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.)
+MP (Madhya Pradesh): fetched 0, 0 new (0 machine-translated) -> 64374 total in register
+AP (Andhra Pradesh): fetched 0, 0 new (0 machine-translated) -> 116 total in register
+UP (Uttar Pradesh): fetched 0, 0 new (0 machine-translated) -> 400 total in register
+GJ (Gujarat): fetched 0, 0 new (0 machine-translated) -> 299 total in register
+MH (Maharashtra): fetched 0, 0 new (0 machine-translated) -> 26810 total in register
+KA (Karnataka): fetched 0, 0 new (0 machine-translated) -> 122 total in register
+GA (Goa): fetched 0, 0 new (0 machine-translated) -> 387 total in register
+RJ (Rajasthan): fetched 0, 0 new (0 machine-translated) -> 75107 total in register
+PB (Punjab): fetched 0, 0 new (0 machine-translated) -> 39 total in register
+MZ (Mizoram): fetched 0, 0 new (0 machine-translated) -> 140 total in register
+NL (Nagaland): fetched 0, 0 new (0 machine-translated) -> 179 total in register
+SK (Sikkim): fetched 0, 0 new (0 machine-translated) -> 159 total in register
+CH (Chandigarh): fetched 0, 0 new (0 machine-translated) -> 27 total in register
+DD (DNH & Daman-Diu): fetched 0, 0 new (0 machine-translated) -> 66 total in register
+KL (Kerala): fetched 0, 0 new (0 machine-translated) -> 396 total in register
+TS (Telangana): fetched 0, 0 new (0 machine-translated) -> 35 total in register
+AS (Assam): fetched 0, 0 new (0 machine-translated) -> 18 total in register
+TN (Tamil Nadu): fetched 0, 0 new (0 machine-translated) -> 377 total in register
+BR (Bihar): fetched 0, 0 new (0 machine-translated) -> 107 total in register
+OD (Odisha): fetched 0, 0 new (0 machine-translated) -> 36 total in register
+HR (Haryana): fetched 0, 0 new (0 machine-translated) -> 337 total in register
+DL (Delhi (NCT)): fetched 0, 0 new (0 machine-translated) -> 8 total in register
+WB (West Bengal): fetched 0, 0 new (0 machine-translated) -> 28 total in register
+signal pass: 0 translated, 0 failures this run (rerun resumes automatically; untranslated non-signal rows stay native)
+reportage: 4117 scheme-mapped announcements across 39 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/REPORTAGE.md
+reportage html: 4117 rows pre-rendered -> /Users/umashankar/digital-twin-for-ipa/docs/reportage.html
+reportage ministry html: 4117 central rows + 25 state rows across 49 ministries -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_ministry.html
+reportage latest html: 36 central rows, 444 state-wire rows (30d window) -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_latest.html
+reportage states html: 15137 classified rows across 29 quarters -> /Users/umashankar/digital-twin-for-ipa/docs/reportage_states.html
+layer 25 written: 15 land states, 11 open/closing incentive windows -> /Users/umashankar/digital-twin-for-ipa/layers/25_land_incentive_linkages.json
+layer 26: 42 sectors / 12,385 NIP opportunities, 9 flagship projects -> /Users/umashankar/digital-twin-for-ipa/layers/26_project_pipeline.json
+layer 27: 31 bodies across 21 countries, 30 live, 11 with events pages -> /Users/umashankar/digital-twin-for-ipa/layers/27_entry_facilitators.json
+  NOT live (check): Business France (India) (0)
+layer 28: 973 PRS bills; 35 active watchlist (investment-relevant & 2024+); 170 relevant all-time; 24 Drishti editorials -> /Users/umashankar/digital-twin-for-ipa/layers/28_policy_watchlist.json
+layer 29: 25 MoSPI data sources (6 core / 6 sector / 13 context) -> /Users/umashankar/digital-twin-for-ipa/layers/29_mospi_data_sources.json
+layer 30: 12 import chapters, 7 substitutable policy gaps, top deficit country China ($-112.2bn) -> /Users/umashankar/digital-twin-for-ipa/layers/30_trade_deficit_map.json
+members scraped: 138 | urls checked: 21
+wrote /Users/umashankar/digital-twin-for-ipa/layers/31_ipa_source_network.json
+/Users/umashankar/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  window 2026-02-26..2026-09-14: 29 filings across 11 phrases
+  wrote layers/16_enrichment/edgar_india_sweep.json (89 cumulative)
+  NEW-LEAD [foreign_operator] 2026-08-18 20-F   BHP Group Ltd  (BHP, BHPLF)  (CIK 0000811809) — expand in India
+  NEW-LEAD [foreign_operator] 2026-08-18 20-F   DIAGEO PLC  (DEO, DGEAF)  (CIK 0000835403) — investment in India
+  NEW-LEAD [foreign_operator] 2026-07-06 20-F   MITSUBISHI UFJ FINANCIAL GROUP INC  (MUFG, MBFJF)  (CIK 0000067088) — investment in India
+  NEW-LEAD [foreign_operator] 2026-06-15 10-K   Alternus Clean Energy, Inc.  (CIK 0001883984) — manufacturing in India
+  NEW-LEAD [foreign_operator] 2026-06-08 10-K   GRAHAM CORP  (GHM)  (CIK 0000716314) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-05-27 10-K   Loop Industries, Inc.  (LOOP)  (CIK 0001504678) — manufacturing facility in India
+  NEW-LEAD [foreign_operator] 2026-04-30 20-F   TRINITY BIOTECH PLC  (TRIB)  (CIK 0000888721) — manufacturing facility in India
+  NEW-LEAD [foreign_operator] 2026-03-31 10-K   Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415) — manufacturing in India
+  NEW-LEAD [pe_fund] 2026-03-30 10-K   Carlyle Private Equity Partners Fund, L.P.  (CIK 0002065337) — invest in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-30 10-K   REVIVA PHARMACEUTICALS HOLDINGS, INC.  (RVPH)  (CIK 0001742927) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-27 10-K   Brookfield Private Equity Fund LP  (CIK 0002074065) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-20 10-K   VistaOne, L.P.  (CIK 0002044820) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-13 10-K   Blackstone Private Equity Strategies Fund L.P.  (CIK 0001930054) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-12 10-K   Health Catalyst, Inc.  (HCAT)  (CIK 0001636422) — investments in India
+  NEW-LEAD [foreign_operator] 2026-03-11 10-K   ALPHA PRO TECH LTD  (APT)  (CIK 0000884269) — manufacturing facility in India
+  NEW-LEAD [pe_fund] 2026-03-06 10-K   Blackstone Infrastructure Strategies L.P.  (CIK 0002030772) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-04 20-F   Caesarstone Ltd.  (CSTE)  (CIK 0001504379) — manufacturing facility in India
+{
+ "companies": 1785,
+ "in_more_than_one_layer": 1508,
+ "by_role": {
+  "alias_check": 18,
+  "clearance_lead": 98,
+  "foreign_lead": 321,
+  "pairing_prospective": 7,
+  "pairing_verified": 12,
+  "pool_policy": 1371,
+  "pool_visibility": 1331,
+  "shortlist_target": 136
+ },
+ "india_entities": 1429,
+ "credit_rated": 82,
+ "by_country_top10": {
+  "India": 1500,
+  "United States": 75,
+  "?": 36,
+  "United Kingdom": 12,
+  "South Korea": 12,
+  "Japan": 12,
+  "China": 12,
+  "Australia": 11,
+  "Taiwan": 9,
+  "Turkey": 7
+ }
+}
+wrote /Users/umashankar/digital-twin-for-ipa/data/companies.db and /Users/umashankar/digital-twin-for-ipa/layers/32_company_db.json
+41 sector pages
+announcements: 440 | companies matched: 41 | match rows: 80 | exception verdicts challenged: 1
+  CHALLENGED [PARTIALLY_VISIBLE] Nayara Energy Limited <- oil-and-gas: Nayara Energy, India's largest private fuel retailer, plans to add 400 petrol pumps this y
+{
+ "ran": "2026-09-14",
+ "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
+ "api_calls_used": 39,
+ "calls_by_source": {
+  "newsapi": 26,
+  "newsdata": 2,
+  "marketaux": 10,
+  "alphavantage": 1
+ },
+ "articles_total": 107,
+ "new_articles": 107,
+ "match_rows_added": 29,
+ "sources_skipped_or_errors": [],
+ "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 \u2014 weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
+}
+exception hits: 0
+{
+ "ran": "2026-09-14",
+ "since": "2025-01-01",
+ "pages_fetched": 17,
+ "filings_in_window": 414,
+ "new_rows": 417,
+ "match_rows": 16,
+ "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB \u2014 the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
+}
+  [strong] German Green Steel And Power Limited  <- 2026-08-15: German Green Steel and Power Ltd. - Addendum to DRHP
+  [strong] Encube Ethicals Private Limited  <- 2026-08-06: Encube Ethicals Limited - DRHP
+  [strong] Sky Alloys And Power Limited  <- 2026-06-25: Sky Alloys and Power Limited- DRHP
+  [strong] Renny Strips Limited  <- 2025-12-19: Renny Strips Limited
+  [strong] Sky Alloys And Power Limited  <- 2025-10-09: SKY ALLOYS AND POWER LIMITED
+  [strong] Virupaksha Organics Limited  <- 2025-10-08: Virupaksha Organics Limited - DRHP
+  [strong] Supreet Chemicals Limited  <- 2025-09-05: Supreet Chemicals Limited - DRHP
+  [strong] German Green Steel And Power Limited  <- 2025-07-08: German Green Steel and Power Limited - DRHP
+  [strong] A-One Steels India Limited  <- 2025-04-24: A-One Steels India Limited - Addendum to DRHP
+  [strong] Jajoo Rashmi Refractories Limited  <- 2025-04-22: Jajoo Rashmi Refractories Limited - Addendum to DRHP
+  [strong] Advance Agrolife Private Limited  <- 2025-04-02: Advance Agrolife Limited
+  [strong] SHREEJI SHIPPING GLOBAL L  <- 2025-01-30: SHREEJI SHIPPING GLOBAL LIMITED
+  [strong] Dorf-Ketal Chemicals India Limited  <- 2025-01-27: Dorf-Ketal Chemicals India Limited
+  [strong] SHANTI GOLD INTERNATION L  <- 2025-01-22: Shanti Gold International Limited
+  [strong] A-One Steels India Limited  <- 2025-01-10: A One Steels India Limited
+  [strong] Anthem Biosciences Limited  <- 2025-01-06: ANTHEM BIOSCIENCES LIMITED
+extracted 0, errors 0
+loc links scraped: 3 | urls checked: 9
+wrote /Users/umashankar/digital-twin-for-ipa/layers/33_policy_finance_extensions.json
+company distress flags: 11 -> {'downgrade': 1, 'litigation_or_regrade': 1, 'rating_darkness': 4, 'sub_investment_grade': 3, 'watch_negative': 2}
+land pools: 5, named assets: 7
+wrote /Users/umashankar/digital-twin-for-ipa/layers/34_stressed_assets.json + stressed_assets view
+routes: 64 checked, 5 down -> /Users/umashankar/digital-twin-for-ipa/state/routes_2026-09-14.json
+  DOWN DSIR CMS (000) https://cms-dsir.digifootprint.gov.in/wp-json/wp/v2/
+  DOWN Telangana Life Sciences (000) https://lifesciences.telangana.gov.in
+  DOWN Kerala invest (000) https://invest.kerala.gov.in
+  DOWN WB Silpasathi (503) https://silpasathi.wb.gov.in/msme_Incentives
+  DOWN Nagaland industry (000) https://industry.nagaland.gov.in/unnati/
+  CHANGE route Vehicle scrapping single window: ok=False -> True (200)
+  CHANGE route WB Silpasathi: ok=True -> False (503)
+  CHANGE route Nagaland industry: ok=True -> False (000)
+unnati: http=200, registration_stopped=True -> /Users/umashankar/digital-twin-for-ipa/state/unnati_2026-09-14.json
+nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-09-14.json
+CHANGE rbi WSS: Sep 05, 2026 -> Sep 12, 2026
+rbi: latest WSS issue = Sep 12, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-09-14.json
+send_twin_alert: no credentials available (env or plist) -- not sent

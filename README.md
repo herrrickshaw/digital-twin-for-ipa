@@ -236,6 +236,9 @@ Suggested crontab (not auto-installed):
 17 7 * * *   cd ~/digital-twin-for-ipa && python3 scripts/refresh_twin.py pib
 23 8 * * 1   cd ~/digital-twin-for-ipa && python3 scripts/refresh_twin.py weekly
 ```
+If these run out of a virtualenv, point cron at that venv's `python3` by full path rather
+than a bare `python3` — a bare system interpreter that's missing a dependency can fail
+silently in a way that's easy to miss until the state diffs go quiet.
 
 **Try it in 2 minutes**: the [quickstart notebook](notebooks/twin_quickstart.ipynb) clones the repo, explores the 312-instrument index, checks the interlinkage verification tally, and probes live portals — one click via the Colab badge at the top.
 

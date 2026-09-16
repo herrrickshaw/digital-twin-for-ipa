@@ -6,13 +6,14 @@
  "db_path": "data/companies.db",
  "counts": {
   "companies": 1817,
-  "in_more_than_one_layer": 1508,
+  "in_more_than_one_layer": 1540,
   "by_role": {
    "alias_check": 18,
    "clearance_lead": 98,
    "foreign_lead": 321,
    "pairing_prospective": 7,
    "pairing_verified": 12,
+   "plant_location_check": 35,
    "pli_bulk_drugs_beneficiary": 35,
    "pool_policy": 1371,
    "pool_visibility": 1331,
@@ -50,7 +51,8 @@
   "24e_pool_visibility_sweep",
   "21_indian_entity_alias_check",
   "07_investor_pairings",
-  "46_pli_bulk_drugs_commercial"
+  "46_pli_bulk_drugs_commercial",
+  "47_telangana_pharma_cluster"
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id"
 }

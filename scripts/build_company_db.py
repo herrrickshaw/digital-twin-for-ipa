@@ -14,6 +14,7 @@ Sources merged (all local, no network):
   21_indian_entity_alias_check.json 18 foreign-parent alias probes
   07_investor_pairings.json     19 verified/prospective initiative pairings
   46_pli_bulk_drugs_commercial.json 51 PLI Bulk Drugs company-level projects (capacity, commercial status)
+  47_telangana_pharma_cluster.json 35 plant-location resolutions for layer 46 (Telangana cross-ref)
 
 Identity: companies are deduped on a normalized name (legal suffixes stripped)
 + country. Every source row is kept verbatim in company_sources (payload JSON),
@@ -254,6 +255,12 @@ def main():
         cid = upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
         src(cid, "46_pli_bulk_drugs_commercial", "pli_bulk_drugs_beneficiary", d.get("built"), r)
 
+    # ---- 47 Telangana pharma cluster: plant-location cross-reference ---------
+    d = load("47_telangana_pharma_cluster.json")
+    for r in d["company_locations"]:
+        cid = upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
+        src(cid, "47_telangana_pharma_cluster", "plant_location_check", d.get("built"), r)
+
     con.commit()
 
     # ---- summary layer -------------------------------------------------------
@@ -296,7 +303,7 @@ def main():
         "sources": ["16_leads", "16_target_shortlist", "24_clearance_leads",
                     "24b_pool_policy_triage", "24e_pool_visibility_sweep",
                     "21_indian_entity_alias_check", "07_investor_pairings",
-                    "46_pli_bulk_drugs_commercial"],
+                    "46_pli_bulk_drugs_commercial", "47_telangana_pharma_cluster"],
         "enrichment_next": ("layer 31 catalogs the external IPA/NDAP sources whose "
                             "company-level material (Invest India sector pages, IIG "
                             "project sponsors, state-IPA investor lists) can be joined "

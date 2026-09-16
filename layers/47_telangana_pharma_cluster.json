@@ -1,0 +1,422 @@
+{
+ "layer": 47,
+ "name": "telangana_pharma_cluster",
+ "built": "2026-09-16",
+ "what": "Cross-references layer 46's 35 PLI Bulk Drugs companies against actual plant geography, to answer specifically: how much of this national scheme sits in Telangana, and is any of it in the publicized Hyderabad Pharma City (Mucherla) mega-project. Static hand-verified dataset (34 of 35 companies resolved), same pattern as layers 44/46 -- not a live scrape.",
+ "input_layer": "46_pli_bulk_drugs_commercial",
+ "companies_resolved": 34,
+ "companies_not_found": [
+  "Lifetech Sciences"
+ ],
+ "companies_by_state": {
+  "Telangana": [
+   "Emmennar Pharma Pvt. Ltd.",
+   "Hindys Lab Pvt. Ltd.",
+   "Alkimia Pharma-Chem Pvt Ltd",
+   "Anasia Lab Private Limited",
+   "Honour Lab Limited",
+   "Dasami Lab Pvt. Ltd.",
+   "Hetero Drugs Limited",
+   "Hazelo Lab Pvt. Ltd.",
+   "MSN Life Sciences Pvt. Ltd",
+   "Sreepathi Pharmaceuticals Limited"
+  ],
+  "Andhra Pradesh": [
+   "Granules India Limited",
+   "Kreative Actives Private Limited",
+   "Aurobindo Pharma Limited (through Lyfius Pharma Pvt. Ltd.)",
+   "Andhra Organics Limited"
+  ],
+  "Gujarat": [
+   "Macleods Pharmaceutical Limited",
+   "Meghmani LLP",
+   "Aviran Pharmachem Private Limited",
+   "Globela Industries Pvt. Ltd",
+   "Vital Laboratories Private Limited",
+   "Amoli Organics Private Limited",
+   "Vapi Care Pharma Private Limited"
+  ],
+  "Maharashtra": [
+   "Sadhana Nitro Chem Ltd.",
+   "RMC Performance Chemicals Private Limited",
+   "Alta Laboratories Limited",
+   "Sudarshan Pharma Industries Ltd."
+  ],
+  "Madhya Pradesh": [
+   "Karnataka Antibiotics and Pharmaceuticals Limited",
+   "Symbiotec Pharmalab Private Limited"
+  ],
+  "Karnataka": [
+   "Natural Biogenex Private Limited"
+  ],
+  "Tamil Nadu": [
+   "K P Manish Global Ingredients Pvt. Ltd.",
+   "Global Pharma Healthcare Private Limited"
+  ],
+  "Punjab": [
+   "Centrient Pharmaceuticals India Private Limited"
+  ],
+  "Rajasthan": [
+   "Rajasthan Antibiotics Limited"
+  ],
+  "Himachal Pradesh": [
+   "Kinvan Private Limited"
+  ],
+  "Jammu & Kashmir": [
+   "Orchid Bio-Pharma Limited"
+  ]
+ },
+ "telangana_companies": [
+  "Emmennar Pharma Pvt. Ltd.",
+  "Hindys Lab Pvt. Ltd.",
+  "Alkimia Pharma-Chem Pvt Ltd",
+  "Anasia Lab Private Limited",
+  "Honour Lab Limited",
+  "Dasami Lab Pvt. Ltd.",
+  "Hetero Drugs Limited",
+  "Hazelo Lab Pvt. Ltd.",
+  "MSN Life Sciences Pvt. Ltd",
+  "Sreepathi Pharmaceuticals Limited"
+ ],
+ "telangana_company_count": 10,
+ "finding_hyderabad_pharma_city": {
+  "companies_confirmed_at_mucherla_hpc": 0,
+  "hpc_anchor_tenants_reported_in_press": [
+   "Dr. Reddy's Laboratories",
+   "Aurobindo Pharma",
+   "Hetero Drugs",
+   "Laurus Labs",
+   "MSN Pharmaceuticals",
+   "Biocon",
+   "Novartis"
+  ],
+  "note": "Press repeatedly names Dr. Reddy's, Aurobindo Pharma, Hetero Drugs, Laurus Labs, MSN Pharmaceuticals (~50-acre plots each), plus Biocon and Novartis, as 'committed' to Hyderabad Pharma City (TSIIC, ~19,000 acres, Mucherla, Rangareddy district; 150 of 350+ interested firms secured Phase-1 land). But ZERO of this layer's 35 resolved PLI Bulk Drugs companies has their actual plant there. Aurobindo's PLI project (via Lyfius Pharma) is in Kakinada SEZ, Andhra Pradesh; Hetero's and MSN's PLI plants are in Telangana's OLDER established clusters (Bonthapally/Jinnaram, Jeedimetla, Kamareddy), not Mucherla. 'Committed to Pharma City' and 'this specific product's actual current plant' are two different facts, same trap as the twin's 'MoU graveyard' pattern (layer 44).",
+  "context_political_dispute": "As of 2026, the state government has been repurposing part of the Mucherla land into a 'Future City' (AI/skills/health hub) -- the opposition BRS publicly calls this 'a real estate venture.' Pharma City's actual build-out status is politically contested, not a settled industrial park with tenants moving in.",
+  "no_official_machine_readable_tenant_list": true
+ },
+ "flagged_hq_vs_plant_mismatches": [
+  {
+   "company": "Granules India Limited",
+   "hq_state": "Telangana",
+   "plant_state": "Andhra Pradesh",
+   "note": "Telangana-HEADQUARTERED (Hyderabad) but this PLI product (DCDA) is sited at the Kakinada, AP facility, not in Telangana."
+  }
+ ],
+ "company_locations": [
+  {
+   "company": "Emmennar Pharma Pvt. Ltd.",
+   "state": "Telangana",
+   "plant_location": "Sanath Nagar Industrial Estate, Hyderabad",
+   "telangana_cluster": "Sanath Nagar (established)",
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Hindys Lab Pvt. Ltd.",
+   "state": "Telangana",
+   "plant_location": "Veliminedu, Chityal, Nalgonda district",
+   "telangana_cluster": "Nalgonda cluster",
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Alkimia Pharma-Chem Pvt Ltd",
+   "state": "Telangana",
+   "plant_location": "Chiragpally, Zaheerabad, Sangareddy district",
+   "telangana_cluster": "Sangareddy corridor, near Pashamylaram",
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Anasia Lab Private Limited",
+   "state": "Telangana",
+   "plant_location": "Dothi Gudem, B. Pochampally mandal, Nalgonda",
+   "telangana_cluster": "Nalgonda cluster",
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Honour Lab Limited",
+   "state": "Telangana",
+   "plant_location": "Bonthapally, Jinnaram Mandal, Sangareddy district",
+   "telangana_cluster": "Bollaram/Jinnaram belt (established)",
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Dasami Lab Pvt. Ltd.",
+   "state": "Telangana",
+   "plant_location": "Veliminedu, Chityal, Nalgonda",
+   "telangana_cluster": "Nalgonda cluster",
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Hetero Drugs Limited",
+   "state": "Telangana",
+   "plant_location": "Bonthapally / Jeedimetla / Polepally-Jadcherla units (exact unit per-product not confirmed)",
+   "telangana_cluster": "Multiple established clusters",
+   "confidence": "MEDIUM",
+   "note": "Publicly 'committed' to Hyderabad Pharma City per press, but PLI-scheme plant sites are all in older established clusters, not Mucherla.",
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Hazelo Lab Pvt. Ltd.",
+   "state": "Telangana",
+   "plant_location": "Dothi Gudem, B. Pochampally, Yadadri Bhuvanagiri district",
+   "telangana_cluster": "Nalgonda/Yadadri cluster",
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "MSN Life Sciences Pvt. Ltd",
+   "state": "Telangana",
+   "plant_location": "Chegunta / Kamareddy (reg. office Sanath Nagar)",
+   "telangana_cluster": "Kamareddy belt",
+   "confidence": "HIGH",
+   "note": "MSN group publicly 'committed' to Hyderabad Pharma City per press, but this PLI entity's plant is in the Kamareddy belt, not Mucherla.",
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Sreepathi Pharmaceuticals Limited",
+   "state": "Telangana",
+   "plant_location": "Hyderabad (reg. office Jubilee Hills; a Chintal, Hyderabad facility also cited)",
+   "telangana_cluster": "Hyderabad city / Chintal (Jeedimetla-adjacent)",
+   "confidence": "MEDIUM",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Granules India Limited",
+   "state": "Andhra Pradesh",
+   "plant_location": "Kakinada, Andhra Pradesh",
+   "telangana_cluster": null,
+   "confidence": "MEDIUM",
+   "note": "Telangana-HEADQUARTERED (Hyderabad) but this PLI product (DCDA) is sited at the Kakinada, AP facility, not in Telangana.",
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Kreative Actives Private Limited",
+   "state": "Andhra Pradesh",
+   "plant_location": "Rambilli, Visakhapatnam district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": "Registered office Hyderabad, but manufacturing plant for Diclofenac Sodium is in Rambilli, AP, not Telangana.",
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Aurobindo Pharma Limited (through Lyfius Pharma Pvt. Ltd.)",
+   "state": "Andhra Pradesh",
+   "plant_location": "Kakinada SEZ, Thondangi Mandal, Kakinada district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": "Aurobindo is publicly 'committed' to Hyderabad Pharma City per press, but this PLI project (Penicillin G) is in Kakinada SEZ, AP.",
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Andhra Organics Limited",
+   "state": "Andhra Pradesh",
+   "plant_location": "Pydibhimavaram, Ranasthalam, Srikakulam district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Macleods Pharmaceutical Limited",
+   "state": "Gujarat",
+   "plant_location": "Daman (UT)/Sarigam border belt (exact PLI unit not pinned down)",
+   "telangana_cluster": null,
+   "confidence": "MEDIUM",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Meghmani LLP",
+   "state": "Gujarat",
+   "plant_location": "Dahej, Bharuch district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Aviran Pharmachem Private Limited",
+   "state": "Gujarat",
+   "plant_location": "Saduthala, Kanoda, Mehsana district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Globela Industries Pvt. Ltd",
+   "state": "Gujarat",
+   "plant_location": "Saykha, Vagra, Bharuch district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Vital Laboratories Private Limited",
+   "state": "Gujarat",
+   "plant_location": "Phase III GIDC, Vapi",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Amoli Organics Private Limited",
+   "state": "Gujarat",
+   "plant_location": "GIDC, Vapi",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Vapi Care Pharma Private Limited",
+   "state": "Gujarat",
+   "plant_location": "Vapi (Unit 1); a Unit 2 exists in Baddi, HP -- which unit makes Diclofenac Sodium not confirmed",
+   "telangana_cluster": null,
+   "confidence": "MEDIUM",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Sadhana Nitro Chem Ltd.",
+   "state": "Maharashtra",
+   "plant_location": "Roha MIDC, Raigad district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "RMC Performance Chemicals Private Limited",
+   "state": "Maharashtra",
+   "plant_location": "MIDC, Jalgaon",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Alta Laboratories Limited",
+   "state": "Maharashtra",
+   "plant_location": "Khopoli, Raigad district",
+   "telangana_cluster": null,
+   "confidence": "MEDIUM",
+   "note": "Long-standing site; not confirmed as the specific PLI unit.",
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Sudarshan Pharma Industries Ltd.",
+   "state": "Maharashtra",
+   "plant_location": "Mahad, Raigad district",
+   "telangana_cluster": null,
+   "confidence": "MEDIUM-HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Karnataka Antibiotics and Pharmaceuticals Limited",
+   "state": "Madhya Pradesh",
+   "plant_location": "DMIC Vikram Udyogpuri, Ujjain (HQ remains Peenya, Bengaluru)",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Symbiotec Pharmalab Private Limited",
+   "state": "Madhya Pradesh",
+   "plant_location": "Rau, Indore",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Natural Biogenex Private Limited",
+   "state": "Karnataka",
+   "plant_location": "KIADB Industrial Area, Vasanthanarsapura, Tumkur",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "K P Manish Global Ingredients Pvt. Ltd.",
+   "state": "Tamil Nadu",
+   "plant_location": "Kawman Pharma plant, Cuddalore (HQ Chennai)",
+   "telangana_cluster": null,
+   "confidence": "MEDIUM",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Global Pharma Healthcare Private Limited",
+   "state": "Tamil Nadu",
+   "plant_location": "Alathur pharma industrial estate, near Chennai",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Centrient Pharmaceuticals India Private Limited",
+   "state": "Punjab",
+   "plant_location": "Toansa",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Rajasthan Antibiotics Limited",
+   "state": "Rajasthan",
+   "plant_location": "Bhiwadi",
+   "telangana_cluster": null,
+   "confidence": "MEDIUM",
+   "note": "Plant confirmed; PLI-specific tie-in for Meropenem not separately verified.",
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Kinvan Private Limited",
+   "state": "Himachal Pradesh",
+   "plant_location": "Plassara Industrial Area, Nalagarh",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Orchid Bio-Pharma Limited",
+   "state": "Jammu & Kashmir",
+   "plant_location": "Village Gadadhar, Kathua district",
+   "telangana_cluster": null,
+   "confidence": "HIGH",
+   "note": null,
+   "in_hyderabad_pharma_city_mucherla": false
+  },
+  {
+   "company": "Lifetech Sciences",
+   "state": null,
+   "plant_location": null,
+   "telangana_cluster": null,
+   "confidence": null,
+   "note": "NOT FOUND -- no plant address or reliable company profile located after reasonable search; multiple unrelated 'Lifetech' entities surfaced instead.",
+   "in_hyderabad_pharma_city_mucherla": false
+  }
+ ]
+}

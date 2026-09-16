@@ -125,7 +125,7 @@ BDMAI_PROJECTS = [
     (41, "Vital Laboratories Private Limited", "Ofloxacin", 100),
     (42, "Global Pharma Healthcare Private Limited", "Ofloxacin", 200),
     (43, "Globela Industries Pvt. Ltd", "Ofloxacin", 100),
-    (44, "Globela Industries Pvt. Limited", "Norfloxacin", 60),
+    (44, "Globela Industries Pvt. Ltd", "Norfloxacin", 60),
     (45, "Andhra Organics Limited", "Telmisartan", 360),
     (46, "Kreative Actives Private Limited", "Diclofenac Sodium", 350),
     (47, "Amoli Organics Private Limited", "Diclofenac Sodium", 175),

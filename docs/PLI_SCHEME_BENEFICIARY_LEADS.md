@@ -236,6 +236,8 @@ The scheme referenced in passing at 5B (₹87.70cr disbursed/₹6,940cr outlay, 
 
 🚩 **Count discrepancy, not reconciled**: BDMAI's 2022 roster has 51 line items; PIB's 2025/2026 releases say 48 projects. Treat 51 as the fuller (slightly older) company list and 48 as the current official count — don't average or silently pick one.
 
+**Telangana cross-reference (layer 47)**: 10 of the 35 resolved companies actually manufacture in Telangana — all in **older established clusters** (Bonthapally/Jinnaram-Sangareddy, Nalgonda/Yadadri, Sanath Nagar, Kamareddy). 🚩 **Zero are in Hyderabad Pharma City (TSIIC, ~19,000 acres near Mucherla)** — despite press repeatedly naming Dr. Reddy's, Aurobindo Pharma, Hetero Drugs, Laurus Labs and MSN Pharmaceuticals as "committed" ~50-acre anchor tenants there. Aurobindo's own PLI project (via Lyfius Pharma) is actually in Kakinada SEZ, **Andhra Pradesh**; Hetero's and MSN's PLI plants are in Telangana's older belts, not Mucherla. Same "announced ≠ built" trap as the twin's MoU-graveyard pattern (layer 44) — worth remembering before pitching "Pharma City" as a live site to a prospect. Context: the state government has been repurposing part of the Mucherla land into a "Future City" (AI/skills/health hub) as of 2026, disputed by the opposition as "a real estate venture" — Pharma City's build-out is politically contested, not a settled park with tenants moving in. Full company-by-company table in `docs/TELANGANA_PHARMA_CLUSTER_CROSSREF.md`.
+
 ---
 
 # PART 6 — RENEWABLES & GREEN

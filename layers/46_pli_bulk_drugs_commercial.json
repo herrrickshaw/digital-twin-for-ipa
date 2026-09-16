@@ -1,0 +1,878 @@
+{
+ "layer": 46,
+ "name": "pli_bulk_drugs_commercial",
+ "built": "2026-09-16",
+ "what": "PLI Scheme for Bulk Drugs: company-level approved-project roster with committed capacity, cross-referenced against the original 53 critical China-import-dependent APIs identified in 2020 -- which of them ever got a PLI project (41 of 53), and which have actually reached commercial production (18 of those 41, named explicitly for the first time in this layer's primary source). Static hand-verified dataset, same pattern as layer 44 -- not a live scrape; re-run only when a fresher PIB annexure is sourced.",
+ "sources": [
+  {
+   "doc": "BDMAI circular (Dept. of Pharmaceuticals letter No.30013/16/2022-Scheme)",
+   "date": "2022-10-18",
+   "url": "https://bdmai.org/wp-content/uploads/2025/02/LIST-OF-APPROVED-BULK-DRUG-MANUFACTURERS-ALONG-WITH-MANUFACTUREING-CAPACITY-UNDER-THE-PLI-SCHEME.pdf",
+   "provides": "company-level committed capacity (MT) per approved project — 51 line items; image-only PDF, transcribed visually"
+  },
+  {
+   "doc": "PIB Release ID 2146914 (Rajya Sabha written reply, Anupriya Patel)",
+   "date": "2025-07-22",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2146914",
+   "provides": "applicant/product annexure confirming 48 approved projects"
+  },
+  {
+   "doc": "PIB Release ID 2295928 (Lok Sabha written reply, Anupriya Patel)",
+   "date": "2026-08-07",
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295928",
+   "provides": "MOST CURRENT — state-wise investment/capacity/production (Annexure-A), full 41-product approved list (Annexure-B), and the exact 18 APIs now in commercial production"
+  },
+  {
+   "doc": "BusinessToday, \"Atma Nirbhar Bharat: Here are 53 drugs on which India will test self reliance\"",
+   "date": "2020-06-03",
+   "url": "https://www.businesstoday.in/industry/pharma/story/atma-nirbhar-bharat-here-are-53-drugs-on-which-india-will-test-self-reliance-260146-2020-06-03",
+   "provides": "the original 53 critical China-import-dependent APIs identified pre-scheme"
+  }
+ ],
+ "critical_apis_53_2020_baseline": [
+  "Amoxicillin",
+  "Azithromycin",
+  "Erythromycin Stearate",
+  "Ceftriaxone",
+  "Cefoperazone",
+  "Cefixime",
+  "Cephalexin",
+  "Piperacillin",
+  "Tazobactam",
+  "Sulbactam",
+  "Prednisolone",
+  "Metformin",
+  "Gabapentin",
+  "Rifampicin",
+  "Vitamin B1",
+  "Vitamin B6",
+  "Clindamycin Phosphate",
+  "Clindamycin HCL",
+  "Streptomycin",
+  "Neomycin",
+  "Gentamycin",
+  "Doxycycline",
+  "Potassium Clavulanate",
+  "Oxytetracycline",
+  "Tetracycline",
+  "Clarithromycin",
+  "Betamethasone",
+  "Ciprofloxacin",
+  "Losartan",
+  "Telmisartan",
+  "Artesunate",
+  "Norfloxacin",
+  "Ofloxacin",
+  "Metronidazole",
+  "Sulfadiazine",
+  "Levofloxacin",
+  "Meropenem",
+  "Paracetamol",
+  "Tinidazole",
+  "Ornidazole",
+  "Ritonavir",
+  "Diclofenac Sodium",
+  "Aspirin",
+  "Levetiracetam",
+  "Carbidopa",
+  "Levodopa",
+  "Carbamazepine",
+  "Oxcarbazepine",
+  "Valsartan",
+  "Olmesartan",
+  "Atorvastatin",
+  "Acyclovir",
+  "Lopinavir"
+ ],
+ "pli_approved_products_41": [
+  "Penicillin G",
+  "7-ACA",
+  "Erythromycin Thiocynate (TIOC)",
+  "Clavulanic Acid",
+  "Neomycin",
+  "Gentamycin",
+  "Betamethasone",
+  "Dexamethasone",
+  "Prednisolone",
+  "Rifampicin",
+  "Vitamin B1",
+  "Clindamycin Base",
+  "Streptomycin",
+  "Tetracycline",
+  "1,1 Cyclohexane Diacetic Acid (CDA)",
+  "2-Methyl-5Nitro-Imidazole (2-MNI)",
+  "Dicyandiamide (DCDA)",
+  "Para amino phenol",
+  "Meropenem",
+  "Atorvastatin",
+  "Olmesartan",
+  "Valsartan",
+  "Losartan",
+  "Levofloxacin",
+  "Sulfadiazine",
+  "Ciprofloxacin",
+  "Ofloxacin",
+  "Norfloxacin",
+  "Artesunate",
+  "Telmisartan",
+  "Aspirin",
+  "Diclofenac Sodium",
+  "Levetiracetam",
+  "Carbidopa",
+  "Ritonavir",
+  "Lopinavir",
+  "Acyclovir",
+  "Carbamazepine",
+  "Oxcarbazepine",
+  "Vitamin B6",
+  "Levodopa"
+ ],
+ "commercial_production_18": [
+  "Penicillin G",
+  "Clavulanic Acid",
+  "Dexamethasone",
+  "Prednisolone",
+  "Para Amino Phenol",
+  "1,1 Cyclohexane Diacetic Acid (CDA)",
+  "Dicyandiamide (DCDA)",
+  "Atorvastatin",
+  "Levofloxacin",
+  "Sulfadiazine",
+  "Ofloxacin",
+  "Norfloxacin",
+  "Artesunate",
+  "Telmisartan",
+  "Lopinavir",
+  "Carbamazepine",
+  "Oxcarbazepine",
+  "Diclofenac Sodium"
+ ],
+ "critical_api_status": {
+  "Amoxicillin": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Azithromycin": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Erythromycin Stearate": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Ceftriaxone": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Cefoperazone": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Cefixime": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Cephalexin": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Piperacillin": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Tazobactam": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Sulbactam": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Prednisolone": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Metformin": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Gabapentin": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Rifampicin": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Vitamin B1": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Vitamin B6": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Clindamycin Phosphate": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Clindamycin HCL": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Streptomycin": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Neomycin": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Gentamycin": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Doxycycline": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Potassium Clavulanate": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Oxytetracycline": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Tetracycline": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Clarithromycin": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Betamethasone": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Ciprofloxacin": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Losartan": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Telmisartan": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Artesunate": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Norfloxacin": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Ofloxacin": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Metronidazole": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Sulfadiazine": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Levofloxacin": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Meropenem": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Paracetamol": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Tinidazole": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Ornidazole": {
+   "pli_project_approved": false,
+   "commercial_production": false
+  },
+  "Ritonavir": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Diclofenac Sodium": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Aspirin": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Levetiracetam": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Carbidopa": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Levodopa": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Carbamazepine": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Oxcarbazepine": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Valsartan": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Olmesartan": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Atorvastatin": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  },
+  "Acyclovir": {
+   "pli_project_approved": true,
+   "commercial_production": false
+  },
+  "Lopinavir": {
+   "pli_project_approved": true,
+   "commercial_production": true
+  }
+ },
+ "finding_gap_apis_no_pli_project": {
+  "count": 22,
+  "apis": [
+   "Amoxicillin",
+   "Azithromycin",
+   "Erythromycin Stearate",
+   "Ceftriaxone",
+   "Cefoperazone",
+   "Cefixime",
+   "Cephalexin",
+   "Piperacillin",
+   "Tazobactam",
+   "Sulbactam",
+   "Metformin",
+   "Gabapentin",
+   "Clindamycin Phosphate",
+   "Clindamycin HCL",
+   "Doxycycline",
+   "Potassium Clavulanate",
+   "Oxytetracycline",
+   "Clarithromycin",
+   "Metronidazole",
+   "Paracetamol",
+   "Tinidazole",
+   "Ornidazole"
+  ],
+  "note": "22 of the 53 originally-identified critical APIs have NO PLI project approved at all, including Paracetamol and Metformin -- two of the highest-volume generic APIs in India's own Jan Aushadhi (PMBJP) formulary. These remain exposed to import dependence with zero government-incentivised domestic capacity underway despite being flagged as critical five years earlier."
+ },
+ "pli_approved_not_yet_commercial": [
+  "Rifampicin",
+  "Vitamin B1",
+  "Vitamin B6",
+  "Streptomycin",
+  "Neomycin",
+  "Gentamycin",
+  "Tetracycline",
+  "Betamethasone",
+  "Ciprofloxacin",
+  "Losartan",
+  "Meropenem",
+  "Ritonavir",
+  "Aspirin",
+  "Levetiracetam",
+  "Carbidopa",
+  "Levodopa",
+  "Valsartan",
+  "Olmesartan",
+  "Acyclovir"
+ ],
+ "commercial_critical_apis": [
+  "Prednisolone",
+  "Telmisartan",
+  "Artesunate",
+  "Norfloxacin",
+  "Ofloxacin",
+  "Sulfadiazine",
+  "Levofloxacin",
+  "Diclofenac Sodium",
+  "Carbamazepine",
+  "Oxcarbazepine",
+  "Atorvastatin",
+  "Lopinavir"
+ ],
+ "company_projects": [
+  {
+   "sno": 1,
+   "company": "Aurobindo Pharma Limited (through Lyfius Pharma Pvt. Ltd.)",
+   "product": "Penicillin G",
+   "committed_capacity_mt": 15000,
+   "commercial_production": true
+  },
+  {
+   "sno": 2,
+   "company": "Karnataka Antibiotics and Pharmaceuticals Limited",
+   "product": "7-ACA",
+   "committed_capacity_mt": 1000,
+   "commercial_production": false
+  },
+  {
+   "sno": 3,
+   "company": "Orchid Bio-Pharma Limited",
+   "product": "7-ACA",
+   "committed_capacity_mt": 1000,
+   "commercial_production": false
+  },
+  {
+   "sno": 4,
+   "company": "Kinvan Private Limited",
+   "product": "Clavulanic Acid",
+   "committed_capacity_mt": 300,
+   "commercial_production": true
+  },
+  {
+   "sno": 5,
+   "company": "Natural Biogenex Private Limited",
+   "product": "Betamethasone",
+   "committed_capacity_mt": 12,
+   "commercial_production": false
+  },
+  {
+   "sno": 6,
+   "company": "Natural Biogenex Private Limited",
+   "product": "Dexamethasone",
+   "committed_capacity_mt": 10,
+   "commercial_production": true
+  },
+  {
+   "sno": 7,
+   "company": "Natural Biogenex Private Limited",
+   "product": "Prednisolone",
+   "committed_capacity_mt": 15,
+   "commercial_production": true
+  },
+  {
+   "sno": 8,
+   "company": "Symbiotec Pharmalab Private Limited",
+   "product": "Prednisolone",
+   "committed_capacity_mt": 15,
+   "commercial_production": true
+  },
+  {
+   "sno": 9,
+   "company": "Macleods Pharmaceutical Limited",
+   "product": "Rifampicin",
+   "committed_capacity_mt": 200,
+   "commercial_production": false
+  },
+  {
+   "sno": 10,
+   "company": "Karnataka Antibiotics and Pharmaceuticals Limited",
+   "product": "Clindamycin Base",
+   "committed_capacity_mt": 60,
+   "commercial_production": false
+  },
+  {
+   "sno": 11,
+   "company": "Emmennar Pharma Pvt. Ltd.",
+   "product": "1,1 Cyclohexane Diacetic Acid (CDA)",
+   "committed_capacity_mt": 1500,
+   "commercial_production": true
+  },
+  {
+   "sno": 12,
+   "company": "Hindys Lab Pvt. Ltd.",
+   "product": "1,1 Cyclohexane Diacetic Acid (CDA)",
+   "committed_capacity_mt": 3000,
+   "commercial_production": true
+  },
+  {
+   "sno": 13,
+   "company": "Alkimia Pharma-Chem Pvt Ltd",
+   "product": "1,1 Cyclohexane Diacetic Acid (CDA)",
+   "committed_capacity_mt": 1500,
+   "commercial_production": true
+  },
+  {
+   "sno": 14,
+   "company": "Meghmani LLP",
+   "product": "Para Amino Phenol",
+   "committed_capacity_mt": 13500,
+   "commercial_production": true
+  },
+  {
+   "sno": 15,
+   "company": "Sadhana Nitro Chem Ltd.",
+   "product": "Para Amino Phenol",
+   "committed_capacity_mt": 36000,
+   "commercial_production": true
+  },
+  {
+   "sno": 16,
+   "company": "Granules India Limited",
+   "product": "Dicyandiamide (DCDA)",
+   "committed_capacity_mt": 8000,
+   "commercial_production": true
+  },
+  {
+   "sno": 17,
+   "company": "Rajasthan Antibiotics Limited",
+   "product": "Meropenem",
+   "committed_capacity_mt": 48,
+   "commercial_production": false
+  },
+  {
+   "sno": 18,
+   "company": "Centrient Pharmaceuticals India Private Limited",
+   "product": "Atorvastatin",
+   "committed_capacity_mt": 180,
+   "commercial_production": true
+  },
+  {
+   "sno": 19,
+   "company": "Anasia Lab Private Limited",
+   "product": "Olmesartan",
+   "committed_capacity_mt": 75,
+   "commercial_production": false
+  },
+  {
+   "sno": 20,
+   "company": "Andhra Organics Limited",
+   "product": "Olmesartan",
+   "committed_capacity_mt": 75,
+   "commercial_production": false
+  },
+  {
+   "sno": 21,
+   "company": "Aviran Pharmachem Private Limited",
+   "product": "Artesunate",
+   "committed_capacity_mt": 20,
+   "commercial_production": true
+  },
+  {
+   "sno": 22,
+   "company": "K P Manish Global Ingredients Pvt. Ltd.",
+   "product": "Artesunate",
+   "committed_capacity_mt": 80,
+   "commercial_production": true
+  },
+  {
+   "sno": 23,
+   "company": "RMC Performance Chemicals Private Limited",
+   "product": "Aspirin",
+   "committed_capacity_mt": 1500,
+   "commercial_production": false
+  },
+  {
+   "sno": 24,
+   "company": "Alta Laboratories Limited",
+   "product": "Aspirin",
+   "committed_capacity_mt": 2250,
+   "commercial_production": false
+  },
+  {
+   "sno": 25,
+   "company": "Lifetech Sciences",
+   "product": "Ritonavir",
+   "committed_capacity_mt": 20,
+   "commercial_production": false
+  },
+  {
+   "sno": 26,
+   "company": "Honour Lab Limited",
+   "product": "Lopinavir",
+   "committed_capacity_mt": 49,
+   "commercial_production": true
+  },
+  {
+   "sno": 27,
+   "company": "Hindys Lab Pvt. Ltd.",
+   "product": "Acyclovir",
+   "committed_capacity_mt": 525,
+   "commercial_production": false
+  },
+  {
+   "sno": 28,
+   "company": "Dasami Lab Pvt. Ltd.",
+   "product": "Carbamazepine",
+   "committed_capacity_mt": 260,
+   "commercial_production": true
+  },
+  {
+   "sno": 29,
+   "company": "Dasami Lab Pvt. Ltd.",
+   "product": "Oxcarbazepine",
+   "committed_capacity_mt": 195,
+   "commercial_production": true
+  },
+  {
+   "sno": 30,
+   "company": "Hetero Drugs Limited",
+   "product": "Oxcarbazepine",
+   "committed_capacity_mt": 195,
+   "commercial_production": true
+  },
+  {
+   "sno": 31,
+   "company": "Hazelo Lab Pvt. Ltd.",
+   "product": "Vitamin B6",
+   "committed_capacity_mt": 70,
+   "commercial_production": false
+  },
+  {
+   "sno": 32,
+   "company": "Sudarshan Pharma Industries Ltd.",
+   "product": "Vitamin B6",
+   "committed_capacity_mt": 35,
+   "commercial_production": false
+  },
+  {
+   "sno": 33,
+   "company": "Honour Lab Limited",
+   "product": "Vitamin B6",
+   "committed_capacity_mt": 140,
+   "commercial_production": false
+  },
+  {
+   "sno": 34,
+   "company": "Honour Lab Limited",
+   "product": "Valsartan",
+   "committed_capacity_mt": 300,
+   "commercial_production": false
+  },
+  {
+   "sno": 35,
+   "company": "Anasia Lab Private Limited",
+   "product": "Losartan",
+   "committed_capacity_mt": 400,
+   "commercial_production": false
+  },
+  {
+   "sno": 36,
+   "company": "Hetero Drugs Limited",
+   "product": "Levofloxacin",
+   "committed_capacity_mt": 230,
+   "commercial_production": true
+  },
+  {
+   "sno": 37,
+   "company": "MSN Life Sciences Pvt. Ltd",
+   "product": "Levofloxacin",
+   "committed_capacity_mt": 230,
+   "commercial_production": true
+  },
+  {
+   "sno": 38,
+   "company": "Vital Laboratories Private Limited",
+   "product": "Levofloxacin",
+   "committed_capacity_mt": 115,
+   "commercial_production": true
+  },
+  {
+   "sno": 39,
+   "company": "Andhra Organics Limited",
+   "product": "Sulfadiazine",
+   "committed_capacity_mt": 360,
+   "commercial_production": true
+  },
+  {
+   "sno": 40,
+   "company": "Sreepathi Pharmaceuticals Limited",
+   "product": "Ciprofloxacin",
+   "committed_capacity_mt": 900,
+   "commercial_production": false
+  },
+  {
+   "sno": 41,
+   "company": "Vital Laboratories Private Limited",
+   "product": "Ofloxacin",
+   "committed_capacity_mt": 100,
+   "commercial_production": true
+  },
+  {
+   "sno": 42,
+   "company": "Global Pharma Healthcare Private Limited",
+   "product": "Ofloxacin",
+   "committed_capacity_mt": 200,
+   "commercial_production": true
+  },
+  {
+   "sno": 43,
+   "company": "Globela Industries Pvt. Ltd",
+   "product": "Ofloxacin",
+   "committed_capacity_mt": 100,
+   "commercial_production": true
+  },
+  {
+   "sno": 44,
+   "company": "Globela Industries Pvt. Limited",
+   "product": "Norfloxacin",
+   "committed_capacity_mt": 60,
+   "commercial_production": true
+  },
+  {
+   "sno": 45,
+   "company": "Andhra Organics Limited",
+   "product": "Telmisartan",
+   "committed_capacity_mt": 360,
+   "commercial_production": true
+  },
+  {
+   "sno": 46,
+   "company": "Kreative Actives Private Limited",
+   "product": "Diclofenac Sodium",
+   "committed_capacity_mt": 350,
+   "commercial_production": true
+  },
+  {
+   "sno": 47,
+   "company": "Amoli Organics Private Limited",
+   "product": "Diclofenac Sodium",
+   "committed_capacity_mt": 175,
+   "commercial_production": true
+  },
+  {
+   "sno": 48,
+   "company": "Vapi Care Pharma Private Limited",
+   "product": "Diclofenac Sodium",
+   "committed_capacity_mt": 525,
+   "commercial_production": true
+  },
+  {
+   "sno": 49,
+   "company": "Honour Lab Limited",
+   "product": "Levetiracetam",
+   "committed_capacity_mt": 840,
+   "commercial_production": false
+  },
+  {
+   "sno": 50,
+   "company": "Hetero Drugs Limited",
+   "product": "Carbidopa",
+   "committed_capacity_mt": 16,
+   "commercial_production": false
+  },
+  {
+   "sno": 51,
+   "company": "Hetero Drugs Limited",
+   "product": "Levodopa",
+   "committed_capacity_mt": 40,
+   "commercial_production": false
+  }
+ ],
+ "total_committed_capacity_mt": 92130,
+ "state_wise_2026_03": [
+  {
+   "state": "Andhra Pradesh",
+   "projects_approved": 10,
+   "committed_investment_cr": 1745.7,
+   "actual_investment_cr": 2676,
+   "committed_capacity_mt": 24390,
+   "installed_capacity_mt": 16468
+  },
+  {
+   "state": "Gujarat",
+   "projects_approved": 8,
+   "committed_investment_cr": 330.9,
+   "actual_investment_cr": 407.3,
+   "committed_capacity_mt": 14270,
+   "installed_capacity_mt": 13959
+  },
+  {
+   "state": "Haryana",
+   "projects_approved": 1,
+   "committed_investment_cr": 81,
+   "actual_investment_cr": 37,
+   "committed_capacity_mt": 800,
+   "installed_capacity_mt": 0
+  },
+  {
+   "state": "Himachal Pradesh",
+   "projects_approved": 2,
+   "committed_investment_cr": 806.8,
+   "actual_investment_cr": 502.6,
+   "committed_capacity_mt": 1100,
+   "installed_capacity_mt": 400
+  },
+  {
+   "state": "Jammu & Kashmir",
+   "projects_approved": 1,
+   "committed_investment_cr": 185,
+   "actual_investment_cr": 338.65,
+   "committed_capacity_mt": 1000,
+   "installed_capacity_mt": 0
+  },
+  {
+   "state": "Karnataka",
+   "projects_approved": 3,
+   "committed_investment_cr": 96.9,
+   "actual_investment_cr": 201.4,
+   "committed_capacity_mt": 37,
+   "installed_capacity_mt": 16.7
+  },
+  {
+   "state": "Madhya Pradesh",
+   "projects_approved": 2,
+   "committed_investment_cr": 280,
+   "actual_investment_cr": 101.8,
+   "committed_capacity_mt": 1015,
+   "installed_capacity_mt": 15
+  },
+  {
+   "state": "Maharashtra",
+   "projects_approved": 5,
+   "committed_investment_cr": 308.4,
+   "actual_investment_cr": 168.8,
+   "committed_capacity_mt": 40185,
+   "installed_capacity_mt": 19180
+  },
+  {
+   "state": "Punjab",
+   "projects_approved": 1,
+   "committed_investment_cr": 137.7,
+   "actual_investment_cr": 161.1,
+   "committed_capacity_mt": 180,
+   "installed_capacity_mt": 206
+  },
+  {
+   "state": "Tamil Nadu",
+   "projects_approved": 2,
+   "committed_investment_cr": 31.5,
+   "actual_investment_cr": 45.6,
+   "committed_capacity_mt": 280,
+   "installed_capacity_mt": 280
+  },
+  {
+   "state": "Telangana",
+   "projects_approved": 13,
+   "committed_investment_cr": 326.02,
+   "actual_investment_cr": 430.2,
+   "committed_capacity_mt": 7820,
+   "installed_capacity_mt": 7820
+  }
+ ],
+ "note_count_discrepancy": "BDMAI's Oct-2022 roster has 51 company-project line items; PIB's 2025/2026 releases say 48 projects approved -- the gap is not reconciled here (could be projects merged, withdrawn, or added between the two dates); treat 51 as the fuller, slightly older company-level list and 48 as the current official count."
+}

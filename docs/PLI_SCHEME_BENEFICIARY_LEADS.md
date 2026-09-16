@@ -225,6 +225,17 @@ Source: **LS USQ 1445, 09.12.2025**, Annexure-I (Ministry of Heavy Industries). 
 ## 5F. PRIP + BioE3 — low priority for foreign outreach
 Almost entirely Indian public institutions — **no foreign ownership disclosed anywhere.** PRIP Component B (the only foreign-relevant part): 710 applications received, **zero approved/named** as of the latest answer. BioE3: 19 named facilities, all India-domiciled, facility counts contradict across 5 government sources.
 
+## 5G. PLI Bulk Drugs — the company/API/capacity roster (layer 46)
+The scheme referenced in passing at 5B (₹87.70cr disbursed/₹6,940cr outlay, 48 projects) finally has a real company-level roster — pieced together from **three separate government documents, no single one of which has the full picture**. Full sourcing, the state-wise table, and the machine-readable data live in `layers/46_pli_bulk_drugs_commercial.json` / `docs/PLI_BULK_DRUGS_COMMERCIAL_PRODUCTION.md`; the 51 beneficiary companies are also now in `data/companies.db` (role `pli_bulk_drugs_beneficiary`).
+
+**51 company-level approved projects, 92,130 MT total committed capacity** — source: Dept. of Pharmaceuticals/BDMAI circular, 18.10.2022 (🚩 the source PDF is **image-only**, zero extractable text — transcribed by reading it visually). Largest: Aurobindo Pharma (via Lyfius Pharma) — Penicillin G, 15,000 MT. All 51 are India-domiciled — **this is a domestic-manufacturing-capacity dataset, not a foreign-investor lead list**; its value here is cross-referencing against the 53 critical-API import-dependence picture, and as a join target against layer 24's EC-filing pool (3 of the 51 already independently surface there under `pool_policy`/`pool_visibility`, e.g. Rajasthan Antibiotics, Amoli Organics, Hindys Lab).
+
+**Of the original 53 critical China-import-dependent APIs (DoP, 2020), only 41 ever got a PLI project — 22 got none, including Paracetamol and Metformin**, the #1 and #2 highest-volume APIs in India's own Jan Aushadhi formulary. 🚩 **These two staples remain fully import-exposed with zero incentivised domestic capacity underway**, five years after being flagged critical.
+
+**Of the 41 approved, only 18 have reached commercial production** (source: PIB PRID 2295928, 07.08.2026 — LS written reply, the only document that names all 18; every earlier source only gave the count): Penicillin G, Clavulanic Acid, Dexamethasone, Prednisolone, Para Amino Phenol, 1,1 Cyclohexane Diacetic Acid (CDA), Dicyandiamide (DCDA), Atorvastatin, Levofloxacin, Sulfadiazine, Ofloxacin, Norfloxacin, Artesunate, Telmisartan, Lopinavir, Carbamazepine, Oxcarbazepine, Diclofenac Sodium.
+
+🚩 **Count discrepancy, not reconciled**: BDMAI's 2022 roster has 51 line items; PIB's 2025/2026 releases say 48 projects. Treat 51 as the fuller (slightly older) company list and 48 as the current official count — don't average or silently pick one.
+
 ---
 
 # PART 6 — RENEWABLES & GREEN

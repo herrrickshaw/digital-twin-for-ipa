@@ -13,6 +13,7 @@ Sources merged (all local, no network):
   24e_pool_visibility_sweep.json 1343 pool visibility verdicts
   21_indian_entity_alias_check.json 18 foreign-parent alias probes
   07_investor_pairings.json     19 verified/prospective initiative pairings
+  46_pli_bulk_drugs_commercial.json 51 PLI Bulk Drugs company-level projects (capacity, commercial status)
 
 Identity: companies are deduped on a normalized name (legal suffixes stripped)
 + country. Every source row is kept verbatim in company_sources (payload JSON),
@@ -247,6 +248,12 @@ def main():
             cid = upsert(r["company"], sector=r.get("sector"), ticker=r.get("ticker"))
             src(cid, "07_investor_pairings", role, d.get("retrieved"), r)
 
+    # ---- 46 PLI Bulk Drugs: company-level approved projects -------------------
+    d = load("46_pli_bulk_drugs_commercial.json")
+    for r in d["company_projects"]:
+        cid = upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
+        src(cid, "46_pli_bulk_drugs_commercial", "pli_bulk_drugs_beneficiary", d.get("built"), r)
+
     con.commit()
 
     # ---- summary layer -------------------------------------------------------
@@ -288,7 +295,8 @@ def main():
                           "merge, same-name different-country stay separate"),
         "sources": ["16_leads", "16_target_shortlist", "24_clearance_leads",
                     "24b_pool_policy_triage", "24e_pool_visibility_sweep",
-                    "21_indian_entity_alias_check", "07_investor_pairings"],
+                    "21_indian_entity_alias_check", "07_investor_pairings",
+                    "46_pli_bulk_drugs_commercial"],
         "enrichment_next": ("layer 31 catalogs the external IPA/NDAP sources whose "
                             "company-level material (Invest India sector pages, IIG "
                             "project sponsors, state-IPA investor lists) can be joined "

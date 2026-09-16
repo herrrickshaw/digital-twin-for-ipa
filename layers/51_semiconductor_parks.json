@@ -1,0 +1,131 @@
+{
+ "layer": 51,
+ "name": "semiconductor_parks",
+ "built": "2026-09-16",
+ "what": "Cross-references all 12 nationally ISM-approved semiconductor units against every state-designated 'Semiconductor Park' found, and separately resolves (partially) the twin's open item on Telangana's 3 unnamed semiconductor proposals. Static hand-verified dataset, same pattern as layers 44/46/47/49/50.",
+ "ism_units_vs_parks": [
+  {
+   "unit": "Tata Electronics — fab",
+   "state": "Gujarat",
+   "actual_site": "Dholera Special Investment Region",
+   "in_named_semiconductor_park": false,
+   "note": null
+  },
+  {
+   "unit": "Micron",
+   "state": "Gujarat",
+   "actual_site": "Sanand GIDC-II industrial estate (Plot SM12 51/3)",
+   "in_named_semiconductor_park": false,
+   "note": "Generic GIDC estate, not semiconductor-branded"
+  },
+  {
+   "unit": "Kaynes Semicon",
+   "state": "Gujarat",
+   "actual_site": "Sanand GIDC cluster (same area as Micron)",
+   "in_named_semiconductor_park": false,
+   "note": "Kaynes ALSO holds an unrelated land allocation at Kochanahalli, Karnataka -- a different, non-ISM project, not to be confused with this one"
+  },
+  {
+   "unit": "CG Power — OSAT",
+   "state": "Gujarat",
+   "actual_site": "Sanand, Gujarat",
+   "in_named_semiconductor_park": false,
+   "note": null
+  },
+  {
+   "unit": "Vama Sundari / Foxconn",
+   "state": "Uttar Pradesh",
+   "actual_site": "YEIDA Sector 28",
+   "in_named_semiconductor_park": false,
+   "note": "UP's actual 'Semiconductor Park' branding applies to Sector 6, a DIFFERENT sector of the same YEIDA industrial area"
+  },
+  {
+   "unit": "SiCSem",
+   "state": "Odisha",
+   "actual_site": "Info Valley, Bhubaneswar",
+   "in_named_semiconductor_park": false,
+   "note": "Info Valley is an IT park, not semiconductor-branded"
+  },
+  {
+   "unit": "3D Glass Solutions",
+   "state": "Odisha",
+   "actual_site": "Info Valley, Bhubaneswar",
+   "in_named_semiconductor_park": false,
+   "note": null
+  },
+  {
+   "unit": "ASIP Technologies",
+   "state": "Andhra Pradesh",
+   "actual_site": "Tharluvada, Visakhapatnam",
+   "in_named_semiconductor_park": false,
+   "note": "Relocated here from an earlier Telangana candidacy -- see Telangana finding below"
+  },
+  {
+   "unit": "CDIL",
+   "state": "Punjab",
+   "actual_site": "not resolved this pass",
+   "in_named_semiconductor_park": false,
+   "note": null
+  },
+  {
+   "unit": "Crystal Matrix",
+   "state": "Gujarat",
+   "actual_site": "Dholera (Cabinet-approved 05.05.2026)",
+   "in_named_semiconductor_park": false,
+   "note": null
+  },
+  {
+   "unit": "Suchi Semicon",
+   "state": "Gujarat",
+   "actual_site": "Surat (Cabinet-approved 05.05.2026)",
+   "in_named_semiconductor_park": false,
+   "note": null
+  }
+ ],
+ "overlap_count": 0,
+ "finding_1_zero_overlap": {
+  "note": "ZERO of the 12 ISM-approved units sit inside any state-designated 'Semiconductor Park.' ISM approvals land wherever a company's own site (GIDC estate, IT park, bespoke land) ends up; state Semiconductor Parks are either aspirational with no ISM tenant, or hold entirely different companies the state recruited independently. Kaynes is the clearest illustration: it has TWO separate India semiconductor-adjacent projects (ISM-approved Sanand, Gujarat; unrelated Kochanahalli, Karnataka land) -- don't conflate them."
+ },
+ "state_semiconductor_parks": [
+  {
+   "park": "YEIDA Semiconductor Park",
+   "state": "Uttar Pradesh",
+   "location": "Sector 6, Yamuna City",
+   "size": "500 acres (separate 600-acre EV park adjacent)",
+   "tier": "PARK_PARTIAL",
+   "named_tenants": [
+    "NXP Semiconductors -- in talks for YEIDA land, but for Sector 10 (R&D/system-innovation/lab, not the Sector 6 park itself, and not a fab)"
+   ],
+   "note": "The ISM-approved UP project (Vama Sundari/Foxconn) is in Sector 28 -- a third, distinct sector of the same broader YEIDA industrial area. Three different YEIDA sectors (6, 10, 28) host three different things -- don't conflate them."
+  },
+  {
+   "park": "Kochanahalli Semiconductor Park",
+   "state": "Karnataka",
+   "location": "near Kadakola, Mysuru",
+   "size": "234 acres total, 140 acres reserved for the park",
+   "tier": "PARK_PARTIAL",
+   "named_tenants": [
+    "Kaynes Technology (land secured -- NOT the same as its ISM-approved Sanand, Gujarat unit)",
+    "Wurth Technology (land secured)",
+    "Silectric Semiconductor Manufacturing (Zoho-backed, ~Rs 3,425cr/$400M, called 'Karnataka's first' such project)"
+   ],
+   "note": "None of these three are among the 12 nationally ISM-approved units."
+  },
+  {
+   "park": "Tamil Nadu Semiconductor Mission 2030 parks",
+   "state": "Tamil Nadu",
+   "location": "Sulur and near Palladam (~100 acres each)",
+   "size": "~Rs 500cr mission outlay",
+   "tier": "PARK_EMPTY",
+   "named_tenants": [],
+   "note": "🔴 Tamil Nadu's own government confirmed via a July-2026 Lok Sabha starred question (Dr. T. Sumathy, DMK) that NO ISM-approved fab or display project has ever been sited in the state, and a widely-reported ~Rs 80,000cr Taiwanese proposal for Tirunelveli/Thoothukudi has 'not been received' by MeitY -- a sourced REFUTATION, not just an absence of confirmation."
+  }
+ ],
+ "telangana_open_item_resolution": {
+  "open_item_source": "MeitY LS USQ 6046, 01.04.2026 -- 'Telangana has three pending proposals, one fab, two OSAT, applicants unnamed'",
+  "resolution_status": "PARTIALLY RESOLVED -- applicants still not named, but their absence is now explained",
+  "finding": "Both of Telangana's previously press-visible semiconductor candidates have since LEFT the state. (1) ASIP Technologies + APACT (South Korea) -- the only Telangana OSAT candidate ever named in press (Mar 2025, ~Rs 890cr) -- relocated to Tharluvada, Visakhapatnam, Andhra Pradesh, inaugurated 2026 as 'Andhra Pradesh's first ISM-approved facility.' (2) Kaynes' OSAT/compound-semiconductor project, originally planned for Kongara Kalan, Telangana (Rs 2,800cr, signed Oct 2023), relocated to Sanand, Gujarat -- the actual ISM-approved Kaynes Semicon unit; Kaynes keeps Kongara Kalan only for non-semiconductor electronics manufacturing. Telangana's own home-grown fab ambition (T-CHIP roadmap) targets a 28-65nm fab only in Phase III, 2029-2030 -- no private-sector fab applicant found named anywhere in current press. The closest live lead as of Sep-2026 is an unnamed Singapore delegation (MTI Singapore's Augustine Lee) meeting CM Revanth Reddy about the sector, with no company/product/commitment given.",
+  "sk_hynix_connection": "NOT FOUND -- no source connects SK Hynix's early-stage, multi-state ATMP evaluation (Odisha reported as front-runner) to either of Telangana's two unnamed OSAT proposals.",
+  "interpretation": "The trail suggests Telangana's list of 'named' semiconductor suitors from 2023-2025 has emptied out -- both moved to other states -- which may be WHY the April-2026 reply describes three proposals as still fully unnamed: they could be genuinely new/different projects not yet surfaced in any public reporting, not simply Parliament sitting on already-known names."
+ }
+}

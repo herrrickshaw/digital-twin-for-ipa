@@ -1,6 +1,8 @@
-# State pharma/medtech cluster registry — layer 48
+# State manufacturing cluster registry — layer 48
 
-*Generated 2026-09-16 by `scripts/build_layer48_state_pharma_clusters.py`. 15 clusters — 8 established, 4 park (partially named), 3 park (empty). Static hand-verified dataset, not a live scrape.*
+*(pharma/medtech + textiles + defence + semiconductors)*
+
+*Generated 2026-09-16 by `scripts/build_layer48_state_pharma_clusters.py`. 23 clusters — 8 established, 9 park (partially named), 6 park (empty). Static hand-verified dataset, not a live scrape.*
 
 ## Why this exists
 
@@ -82,6 +84,36 @@ Answers a question the twin previously had to re-derive per-company: is this pha
 
 **Notable companies**: Majik Medical Solutions Pvt Ltd (Plot M-46, catheter tubing -- the one confirmed case of a PLI Medical Devices company actually sited inside a purpose-built park)
 
+### PM MITRA Textile Park, Warangal (Kakatiya Mega Textile Park) (Telangana)
+
+**Scale**: 1,350 acres, brownfield; the ONE PM MITRA park with a confirmed, operating, dated tenant of the 7 nationally
+
+**Notable companies**: Evertop Textile & Apparel Complex (Youngone Corporation, Korea) -- groundbreaking 2023, commercial production since Oct 2025, also a PLI Textiles beneficiary
+
+### PM MITRA Textile Park, Dhar (Madhya Pradesh)
+
+**Scale**: 2,158 acres, greenfield; ~91 companies collectively allotted ~1,300 acres per a Sep-2025 state-sourced report
+
+**Notable companies**: Vardhman Textiles (190 acres, ~₹2,000cr -- moderately confirmed, not independently verified against a primary allotment order), AB Cotspin India (45 acres), Trident Company (180 acres)
+
+### Tamil Nadu Defence Industrial Corridor (Tamil Nadu)
+
+**Scale**: 5 nodes (Chennai/Coimbatore/Hosur/Salem/Tiruchirappalli); 2 confirmed operating foreign-JV facilities
+
+**Notable companies**: LTMMSL (L&T 51% / MBDA France 49%, missile subsystem assembly), Merlinhawk Composites (JV w/ Vega Composites, Italy, aerostructures, Shoolagiri)
+
+### YEIDA Semiconductor Park (Sector 6) (Uttar Pradesh)
+
+**Scale**: 500 acres; distinct from Sector 28 (Vama Sundari/Foxconn, the actual ISM-approved unit) and Sector 10 (NXP in talks, R&D not fab)
+
+**Notable companies**: NXP Semiconductors (in talks, Sector 10 — not the Sector 6 park itself)
+
+### Kochanahalli Semiconductor Park, Mysuru (Karnataka)
+
+**Scale**: 234 acres total, 140 reserved for the park; none of its tenants are among the 12 nationally ISM-approved units
+
+**Notable companies**: Kaynes Technology (land secured -- a DIFFERENT project from its ISM-approved Sanand, Gujarat unit), Wurth Technology, Silectric Semiconductor Manufacturing (Zoho-backed, ~₹3,425cr)
+
 ## Parks — zero confirmed tenants by any source
 
 ### Hyderabad Pharma City (Mucherla) (Telangana)
@@ -99,6 +131,24 @@ Answers a question the twin previously had to re-derive per-company: is this pha
 ### Bulk Drug Parks (HP-Haroli, Gujarat-Jambusar, AP-Nakkapalli) (multi-state)
 
 **Scale**: 3 parks approved; AP's own live portal states 'Allotted plots = 0' across 1,793.3 acres -- zero companies allotted land at any of the 3, per the twin's existing section 5E
+
+**Notable companies**: (none confirmed)
+
+### PM MITRA Textile Parks — 5 remaining (Virudhunagar-TN, Navsari-Gujarat, Kalaburagi-Karnataka, Lucknow-Hardoi-UP, Amravati-Maharashtra) (multi-state)
+
+**Scale**: No named tenant confirmed at any of these 5 sites as of this research pass
+
+**Notable companies**: (none confirmed)
+
+### Uttar Pradesh Defence Industrial Corridor (Uttar Pradesh)
+
+**Scale**: 6 nodes (Agra/Aligarh/Chitrakoot/Jhansi/Kanpur/Lucknow); only aggregate MoU figures found (108 MoUs, ~₹12,191cr potential), no foreign-parented tenant confirmed
+
+**Notable companies**: (none confirmed)
+
+### Tamil Nadu Semiconductor Mission 2030 parks (Sulur, Palladam) (Tamil Nadu)
+
+**Scale**: ~100 acres each, ~₹500cr mission outlay; 🚩 TN's own government confirmed via a Jul-2026 LS starred question that NO ISM-approved fab/display project has ever been sited in the state, and a widely-reported ~₹80,000cr Taiwanese proposal 'has not been received' by MeitY
 
 **Notable companies**: (none confirmed)
 

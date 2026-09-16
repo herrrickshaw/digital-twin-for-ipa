@@ -1,0 +1,168 @@
+{
+ "layer": 50,
+ "name": "textile_defence_parks",
+ "built": "2026-09-16",
+ "what": "Cross-references PLI Textiles' foreign-parented beneficiaries against the 7 PM MITRA mega textile parks, and separately researches foreign-JV tenancy in India's 2 Defence Industrial Corridors -- both flagged as unresolved in docs/PLI_SCHEME_BENEFICIARY_LEADS.md sections 7B and 7E. Static hand-verified dataset, same pattern as layers 44/46/47/49.",
+ "pm_mitra_parks": [
+  {
+   "state": "Tamil Nadu",
+   "site": "Virudhunagar (E. Kumaralingapuram)",
+   "type": "Greenfield",
+   "size": "1,052 acres",
+   "named_tenants": [],
+   "tier": "PARK_EMPTY"
+  },
+  {
+   "state": "Telangana",
+   "site": "Warangal (Kakatiya Mega Textile Park)",
+   "type": "Brownfield",
+   "size": "1,350 acres",
+   "tier": "PARK_PARTIAL",
+   "named_tenants": [
+    "Evertop Textile & Apparel Complex Pvt Ltd (Youngone Corporation, Korea) -- groundbreaking 17.06.2023, ~Rs 900cr+, 290 acres, 11 factories; commercial production confirmed Oct 2025, exporting T-shirts, ~90% local women workforce. ALSO a named PLI Textiles beneficiary -- the one clean dual-scheme case found."
+   ]
+  },
+  {
+   "state": "Gujarat",
+   "site": "Navsari (Vansi-Borsi village)",
+   "type": "Greenfield",
+   "size": "462 hectares",
+   "named_tenants": [],
+   "tier": "PARK_EMPTY"
+  },
+  {
+   "state": "Karnataka",
+   "site": "Kalaburagi",
+   "type": "Greenfield",
+   "size": "DPR cleared, no size found",
+   "named_tenants": [],
+   "tier": "PARK_EMPTY"
+  },
+  {
+   "state": "Madhya Pradesh",
+   "site": "Dhar (Bhainsola village)",
+   "type": "Greenfield",
+   "size": "2,158 acres",
+   "tier": "PARK_PARTIAL",
+   "named_tenants": [
+    "Vardhman Textiles (190 acres, ~Rs 2,000cr -- named in a Sep-2025 state-government-sourced report; NOT independently verified against a primary PIB/Ministry of Textiles allotment order)",
+    "AB Cotspin India (45 acres, ~Rs 1,300cr)",
+    "Trident Company (180 acres, ~Rs 4,881cr)",
+    "(part of a reported '91 prominent companies' collectively allotted ~1,300 acres)"
+   ]
+  },
+  {
+   "state": "Uttar Pradesh",
+   "site": "Lucknow-Hardoi (730 ac Lucknow + 270 ac Hardoi)",
+   "type": "Greenfield",
+   "size": "1,000 acres",
+   "named_tenants": [],
+   "tier": "PARK_EMPTY"
+  },
+  {
+   "state": "Maharashtra",
+   "site": "Amravati",
+   "type": "Brownfield",
+   "size": "1,020 acres",
+   "named_tenants": [],
+   "tier": "PARK_EMPTY"
+  }
+ ],
+ "pm_mitra_parks_with_named_tenants": 2,
+ "pm_mitra_parks_total": 7,
+ "pli_textiles_foreign_corrected_roster": [
+  {
+   "company": "Evertop Textile & Apparel Complex Pvt Ltd (Youngone Corporation)",
+   "country": "South Korea",
+   "plant_location": "Kakatiya Mega Textile Park, Warangal, Telangana",
+   "in_pm_mitra_park": true,
+   "note": "The one confirmed dual PLI-textiles + PM-MITRA-tenant case"
+  },
+  {
+   "company": "Kimberly Clark India",
+   "country": "United States",
+   "plant_location": "Sanaswadi/Pune (Maharashtra), Sricity (Andhra Pradesh)",
+   "in_pm_mitra_park": false,
+   "note": null
+  },
+  {
+   "company": "Autoliv India",
+   "country": "Sweden",
+   "plant_location": "Bengaluru, Mysuru, Badli, Cheyyar, Pune",
+   "in_pm_mitra_park": false,
+   "note": null
+  },
+  {
+   "company": "Toray International India",
+   "country": "Japan",
+   "plant_location": "Chennai, Chittoor (AP), Mumbai (HQ)",
+   "in_pm_mitra_park": false,
+   "note": null
+  },
+  {
+   "company": "Rane TRW Steering Systems (JV, now Rane/ZF)",
+   "country": "Germany/United States",
+   "plant_location": "Trichy, Guduvanchery, Pudukkottai, Chengalpattu (TN, not Virudhunagar), Rudrapur (Uttarakhand)",
+   "in_pm_mitra_park": false,
+   "note": null
+  },
+  {
+   "company": "HS Hyosung India / HS Hyosung Advanced Materials",
+   "country": "South Korea",
+   "plant_location": "Aurangabad (AURIC complex), Nagpur/Butibori, Pune -- all Maharashtra, not Amravati",
+   "in_pm_mitra_park": false,
+   "note": null
+  },
+  {
+   "company": "Avgol India",
+   "country": "Israel (Indorama Ventures-owned)",
+   "plant_location": "not resolved this pass",
+   "in_pm_mitra_park": false,
+   "note": "Newly identified in this pass; location not yet researched"
+  },
+  {
+   "company": "Teejay India",
+   "country": "Sri Lanka",
+   "plant_location": "not resolved this pass",
+   "in_pm_mitra_park": false,
+   "note": "Newly identified in this pass; location not yet researched"
+  }
+ ],
+ "pli_textiles_foreign_correction_note": "docs/PLI_SCHEME_BENEFICIARY_LEADS.md 7B previously named 5 foreign-parented PLI Textiles companies; the real count is 7 -- Evertop/Youngone and Avgol/Teejay were missing.",
+ "finding_youngone_dual_beneficiary": {
+  "note": "Evertop Textile & Apparel Complex (Youngone Corporation, Korea) is SIMULTANEOUSLY a named PLI Textiles beneficiary AND the confirmed, operating anchor tenant of the Warangal PM MITRA park -- groundbreaking 2023, commercial production confirmed Oct 2025. The cleanest dual-scheme case found across this entire line of cross-reference work (layers 47/49/50)."
+ },
+ "welspun_not_confirmed": true,
+ "defence_industrial_corridors": [
+  {
+   "corridor": "Tamil Nadu Defence Industrial Corridor",
+   "nodes": [
+    "Chennai",
+    "Coimbatore",
+    "Hosur",
+    "Salem",
+    "Tiruchirappalli"
+   ],
+   "tier": "PARK_PARTIAL",
+   "named_tenants": [
+    "LTMMSL (L&T 51% / MBDA, France, 49%) -- operating missile-subsystem assembly, integration and testing facility, not MoU-stage",
+    "Merlinhawk Composites (JV, Merlinhawk Aerospace India + Vega Composites, Italy) -- advanced-composites aerostructures facility at Shoolagiri"
+   ],
+   "note": "Two real, hardware-on-the-ground foreign JVs -- past the MoU stage, unlike most of the defence sector's disclosure pattern."
+  },
+  {
+   "corridor": "Uttar Pradesh Defence Industrial Corridor",
+   "nodes": [
+    "Agra",
+    "Aligarh",
+    "Chitrakoot",
+    "Jhansi",
+    "Kanpur",
+    "Lucknow"
+   ],
+   "tier": "PARK_EMPTY",
+   "named_tenants": [],
+   "note": "Not found -- search surfaced only aggregate MoU figures (108 MoUs, ~Rs 12,191cr potential investment; ~Rs 50,000cr in MoUs at a 2020 Defence Expo), no specific foreign-parented company confirmed as actually operating. Consistent with the twin's existing note on defence-sector opacity (section 7E)."
+  }
+ ]
+}

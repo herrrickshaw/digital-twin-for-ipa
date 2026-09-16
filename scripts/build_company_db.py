@@ -16,6 +16,7 @@ Sources merged (all local, no network):
   46_pli_bulk_drugs_commercial.json 51 PLI Bulk Drugs company-level projects (capacity, commercial status)
   47_telangana_pharma_cluster.json 35 plant-location resolutions for layer 46 (Telangana cross-ref)
   49_medical_devices_parks.json 22 PLI Medical Devices approved projects + park occupancy cross-ref
+  50_textile_defence_parks.json 8 PLI Textiles foreign companies + PM MITRA/defence corridor tenants
 
 Identity: companies are deduped on a normalized name (legal suffixes stripped)
 + country. Every source row is kept verbatim in company_sources (payload JSON),
@@ -268,6 +269,18 @@ def main():
         cid = upsert(r["company"], "India", sector="Medical Devices", india=1)
         src(cid, "49_medical_devices_parks", "pli_medical_devices_beneficiary", d.get("built"), r)
 
+    # ---- 50 PM MITRA + Defence Corridors cross-reference ----------------------
+    d = load("50_textile_defence_parks.json")
+    for r in d["pli_textiles_foreign_corrected_roster"]:
+        cid = upsert(r["company"], r.get("country"), sector="Textiles & Apparel")
+        src(cid, "50_textile_defence_parks", "pli_textiles_foreign_beneficiary", d.get("built"), r)
+    for corridor in d["defence_industrial_corridors"]:
+        for tenant in corridor["named_tenants"]:
+            name = tenant.split(" (")[0].split(" --")[0].strip()
+            cid = upsert(name, "India", sector="Defence")
+            src(cid, "50_textile_defence_parks", "defence_corridor_tenant", d.get("built"),
+                {"corridor": corridor["corridor"], "raw": tenant})
+
     con.commit()
 
     # ---- summary layer -------------------------------------------------------
@@ -311,7 +324,7 @@ def main():
                     "24b_pool_policy_triage", "24e_pool_visibility_sweep",
                     "21_indian_entity_alias_check", "07_investor_pairings",
                     "46_pli_bulk_drugs_commercial", "47_telangana_pharma_cluster",
-                    "49_medical_devices_parks"],
+                    "49_medical_devices_parks", "50_textile_defence_parks"],
         "enrichment_next": ("layer 31 catalogs the external IPA/NDAP sources whose "
                             "company-level material (Invest India sector pages, IIG "
                             "project sponsors, state-IPA investor lists) can be joined "

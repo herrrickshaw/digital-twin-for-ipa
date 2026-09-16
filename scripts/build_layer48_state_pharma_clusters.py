@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Layer 48 -- State pharma/medtech cluster registry.
+"""Layer 48 -- State pharma/medtech/textile/semiconductor cluster registry.
 
 A reference layer answering one recurring question the twin keeps having
 to re-derive per-company (layer 47 did it once, by hand, for Telangana):
@@ -147,6 +147,62 @@ CLUSTERS = [
                               "Innvolution Healthcare (stents/PTCA catheters)"],
         "sources": ["layers/49_medical_devices_parks.json"],
     },
+    {
+        "name": "PM MITRA Textile Park, Warangal (Kakatiya Mega Textile Park)", "state": "Telangana",
+        "tier": "PARK_PARTIAL",
+        "scale": "1,350 acres, brownfield; the ONE PM MITRA park with a confirmed, operating, dated tenant of the 7 nationally",
+        "notable_companies": ["Evertop Textile & Apparel Complex (Youngone Corporation, Korea) -- "
+                              "groundbreaking 2023, commercial production since Oct 2025, also a "
+                              "PLI Textiles beneficiary"],
+        "sources": ["layers/50_textile_defence_parks.json"],
+    },
+    {
+        "name": "PM MITRA Textile Park, Dhar", "state": "Madhya Pradesh", "tier": "PARK_PARTIAL",
+        "scale": "2,158 acres, greenfield; ~91 companies collectively allotted ~1,300 acres per a Sep-2025 state-sourced report",
+        "notable_companies": ["Vardhman Textiles (190 acres, ~₹2,000cr -- moderately confirmed, not independently verified against a primary allotment order)",
+                              "AB Cotspin India (45 acres)", "Trident Company (180 acres)"],
+        "sources": ["layers/50_textile_defence_parks.json"],
+    },
+    {
+        "name": "PM MITRA Textile Parks — 5 remaining (Virudhunagar-TN, Navsari-Gujarat, Kalaburagi-Karnataka, Lucknow-Hardoi-UP, Amravati-Maharashtra)",
+        "state": "multi-state", "tier": "PARK_EMPTY",
+        "scale": "No named tenant confirmed at any of these 5 sites as of this research pass",
+        "notable_companies": [],
+        "sources": ["layers/50_textile_defence_parks.json"],
+    },
+    {
+        "name": "Tamil Nadu Defence Industrial Corridor", "state": "Tamil Nadu", "tier": "PARK_PARTIAL",
+        "scale": "5 nodes (Chennai/Coimbatore/Hosur/Salem/Tiruchirappalli); 2 confirmed operating foreign-JV facilities",
+        "notable_companies": ["LTMMSL (L&T 51% / MBDA France 49%, missile subsystem assembly)",
+                              "Merlinhawk Composites (JV w/ Vega Composites, Italy, aerostructures, Shoolagiri)"],
+        "sources": ["layers/50_textile_defence_parks.json"],
+    },
+    {
+        "name": "Uttar Pradesh Defence Industrial Corridor", "state": "Uttar Pradesh", "tier": "PARK_EMPTY",
+        "scale": "6 nodes (Agra/Aligarh/Chitrakoot/Jhansi/Kanpur/Lucknow); only aggregate MoU figures found (108 MoUs, ~₹12,191cr potential), no foreign-parented tenant confirmed",
+        "notable_companies": [],
+        "sources": ["layers/50_textile_defence_parks.json"],
+    },
+    {
+        "name": "YEIDA Semiconductor Park (Sector 6)", "state": "Uttar Pradesh", "tier": "PARK_PARTIAL",
+        "scale": "500 acres; distinct from Sector 28 (Vama Sundari/Foxconn, the actual ISM-approved unit) and Sector 10 (NXP in talks, R&D not fab)",
+        "notable_companies": ["NXP Semiconductors (in talks, Sector 10 — not the Sector 6 park itself)"],
+        "sources": ["layers/51_semiconductor_parks.json"],
+    },
+    {
+        "name": "Kochanahalli Semiconductor Park, Mysuru", "state": "Karnataka", "tier": "PARK_PARTIAL",
+        "scale": "234 acres total, 140 reserved for the park; none of its tenants are among the 12 nationally ISM-approved units",
+        "notable_companies": ["Kaynes Technology (land secured -- a DIFFERENT project from its ISM-approved Sanand, Gujarat unit)",
+                              "Wurth Technology", "Silectric Semiconductor Manufacturing (Zoho-backed, ~₹3,425cr)"],
+        "sources": ["layers/51_semiconductor_parks.json"],
+    },
+    {
+        "name": "Tamil Nadu Semiconductor Mission 2030 parks (Sulur, Palladam)", "state": "Tamil Nadu",
+        "tier": "PARK_EMPTY",
+        "scale": "~100 acres each, ~₹500cr mission outlay; 🚩 TN's own government confirmed via a Jul-2026 LS starred question that NO ISM-approved fab/display project has ever been sited in the state, and a widely-reported ~₹80,000cr Taiwanese proposal 'has not been received' by MeitY",
+        "notable_companies": [],
+        "sources": ["layers/51_semiconductor_parks.json"],
+    },
 ]
 
 
@@ -158,12 +214,15 @@ def main():
 
     out = {
         "layer": 48, "name": "state_pharma_clusters", "built": today,
-        "what": ("Reference registry of India's major state-level pharma/medtech manufacturing "
-                 "clusters and government-allocated industrial parks, tiered ESTABLISHED (real, "
-                 "large, operating) / PARK_PARTIAL (parks with officially-unnamed but "
-                 "press-confirmed tenants) / PARK_EMPTY (announced, zero confirmed tenants by any "
-                 "source). Built so future sessions check this registry before re-researching "
-                 "cluster-by-cluster the way layer 47 had to for Telangana."),
+        "what": ("Reference registry of India's major state-level manufacturing clusters and "
+                 "government-allocated industrial parks -- pharma/medtech (original scope), extended "
+                 "2026-09-17 to textiles (PM MITRA), defence (Defence Industrial Corridors), and "
+                 "semiconductors (state Semiconductor Parks) as the same cross-reference methodology "
+                 "was applied to more schemes. Tiered ESTABLISHED (real, large, operating) / "
+                 "PARK_PARTIAL (parks with officially-unnamed but press-confirmed tenants) / "
+                 "PARK_EMPTY (announced, zero confirmed tenants by any source). Built so future "
+                 "sessions check this registry before re-researching cluster-by-cluster the way "
+                 "layer 47 had to for Telangana."),
         "counts_by_tier": {k: len(v) for k, v in by_tier.items()},
         "clusters": CLUSTERS,
     }
@@ -171,7 +230,8 @@ def main():
     with open(OUT_JSON, "w") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)
 
-    L = ["# State pharma/medtech cluster registry — layer 48", "",
+    L = ["# State manufacturing cluster registry — layer 48", "",
+         "*(pharma/medtech + textiles + defence + semiconductors)*", "",
          f"*Generated {today} by `scripts/build_layer48_state_pharma_clusters.py`. "
          f"{len(CLUSTERS)} clusters — {out['counts_by_tier'].get('ESTABLISHED',0)} established, "
          f"{out['counts_by_tier'].get('PARK_PARTIAL',0)} park (partially named), "

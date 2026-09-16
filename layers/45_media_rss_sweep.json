@@ -2,13 +2,13 @@
  "layer": 45,
  "name": "media_rss_sweep",
  "built": "2026-09-16",
- "what": "Live RSS sweep of Economic Times / Hindu / Hindu Business Line section feeds, filtered for investment-intent language, matched against real 23-country foreign stock-market rosters (same files layer 42 uses). Full article text pulled only for roster-confirmed hits. Workaround for the fact that all three domains block Anthropic's hosted crawler/search infra outright -- this runs via subprocess curl from the local machine, which is never blocked (see feedback_economic_times_blocked memory). CAVEAT: 'strong' fragment matches on generic industry-descriptive company names (e.g. 'Semiconductor Manufacturing International Corp' vs. any article about semiconductor manufacturing in general) still slip through even after the SPAC/share-class filter -- treat every match here as a candidate for human review via its full_text field, not a confirmed lead, same as layer 44's un-reviewed MoU rows.",
+ "what": "Live RSS sweep of 8 popular Indian newspapers' section feeds -- Economic Times, Hindu, Hindu Business Line, Times of India, Livemint, Moneycontrol, Business Standard (English) + Amar Ujala (Hindi) -- filtered for investment-intent language (English + Devanagari keywords), matched against real 23-country foreign stock-market rosters (same files layer 42 uses). Full article text pulled only for roster-confirmed hits. Originally a workaround for ET/Hindu/HBL blocking Anthropic's hosted crawler/search infra outright -- runs via subprocess curl from the local machine, which is never blocked (see feedback_economic_times_blocked memory) -- kept as the standard fetch method when extended to more sources for consistency. CAVEAT on the Hindi source: company-name matching only catches names Indian financial press conventionally leaves in Latin script (Apple, Tesla, Toyota); transliterated names (e.g. एप्पल for Apple) are invisible to the shared Latin-script matcher -- partial, not full, non-English coverage. Separate CAVEAT: 'strong' fragment matches on generic industry-descriptive company names (e.g. 'Semiconductor Manufacturing International Corp' vs. any article about semiconductor manufacturing in general) still slip through even after the SPAC/share-class filter -- treat every match here as a candidate for human review via its full_text field, not a confirmed lead, same as layer 44's un-reviewed MoU rows.",
  "roster_companies_loaded": 29828,
  "known_twin_names": 1769,
- "total_items_scanned": 330,
- "total_investment_intent_hits": 89,
- "total_company_matches": 7,
- "total_new_to_twin": 3,
+ "total_items_scanned": 514,
+ "total_investment_intent_hits": 146,
+ "total_company_matches": 5,
+ "total_new_to_twin": 2,
  "by_source": {
   "ET": {
    "auto": {
@@ -21,7 +21,7 @@
    "cons_products": {
     "feed_url": "https://economictimes.indiatimes.com/industry/cons-products/rssfeeds/13358759.cms",
     "items": 50,
-    "intent_hits": 15,
+    "intent_hits": 16,
     "matches": [
      {
       "company": "Semiconductor Manufacturing International Corp",
@@ -32,36 +32,6 @@
       "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/japans-hirata-bets-on-indias-semiconductor-boom-with-ats-india-tie-up/articleshow/134278072.cms",
       "published": "Wed, 16 Sep 2026 10:02:26 +0530",
       "full_text": "Hyderabad: Japanese semiconductor automation and equipment maker Hirata Corporation is entering the Indian market through a strategic partnership with industrial automation company ATS India, as the country seeks to build out its semiconductor manufacturing and advanced packaging ecosystem.Under the partnership, ATS India will be Hirata's exclusive distribution partner in India and will initially focus on bringing the Japanese company's standard semiconductor automation products to the market. ATS estimates that the total addressable market for semiconductor automation in India could reach about $100 million by 2030.Also Read: India's semiconductor sector draws USD 1.4 bn funding, half of it since 2025Hirata's entry comes as India is seeing investments across semiconductor fabs, outsourced semiconductor assembly and testing (OSAT) and advanced packaging, areas where automation and material handling are expected to become increasingly important.Hirata's semiconductor portfolio accounts for about half of its annual business globally, John Derzy, vice president at Hirata Corporation of America told ET. The company currently supplies automation solutions to semiconductor equipment makers and has been involved in processes including lithography, wafer cleaning and metrology.The company will initially bring standard products that can be sold without extensive customisation, including equipment front-end modules (EFEMs), load ports and FOUP openers, FOPLP load ports, panel handling robots and high-performance wafer handling robots.EFEMs and load ports are used to interface semiconductor manufacturing equipment with the material being processed, while wafer and panel handling robots automate the movement of semiconductor material between processes. Hirata also sees an opportunity for ground-based automation, including autonomous mobile robots (AMRs) and collaborative robots (cobots), particularly in facilities that do not have overhead transport infrastructure.Also Read: Indiaâs semiconductor push to drive $300 billion market by 2035: ReportFor ATS, the partnership provides an entry into the semiconductor sector by leveraging capabilities it has developed as a special-purpose machine builder and systems integrator, particularly in automotive.âThere might be opportunities while we continue to market and sell standard Hirata semiconductor products, the customers might actually need some integration. So we step in, and we'll be able to do that,â ATS India CEO Kishen Kavikondala said.The partnership builds on more than a decade of work between the two companies in sectors including automotive. ATS said the same engineering and integration capabilities can be extended to semiconductor manufacturing.Hirata sees OSATs and semiconductor equipment companies as key initial customer segments in India."
-     },
-     {
-      "company": "Coca-Cola Consolidated, Inc. - Common Stock",
-      "ticker": "COKE",
-      "country": "US",
-      "new_to_twin": false,
-      "title": "Hindustan Coca-Cola Beverages lines up Rs 1,127 crore for new unit, expansion in Andhra Pradesh",
-      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/hindustan-coca-cola-beverages-lines-up-1127-crore-for-new-unit-expansion-in-andhra-pradesh/articleshow/134272247.cms",
-      "published": "Wed, 16 Sep 2026 00:31:56 +0530",
-      "full_text": "New Delhi: Hindustan Coca-Cola Beverages (HCCBL) will invest â¹1,127 crore in Andhra Pradesh to set up a new manufacturing unit at Vizianagaram and expand an existing unit in Chittoor, sources in the state government said.With the manufacturing facilities-one in north Andhra (Vizianagaram) and the other in the south (Chittoor)-the largest bottling partner of Coca-Cola in India expects to cover the increasing demand for beverages in southern India across Andhra Pradesh, Telangana, Tamil Nadu, Karnataka and adjoining markets.Andhra Pradesh's State Investment Promotion Committee approved the investment plan at its meeting on Tuesday, the sources said.The HCCBL investment was at the heart of a political slugfest between the YSR Congress Party and the ruling Telugu Desam Party, with the opposition claiming that â¹1,199 crore worth investment by Coca-Cola was withdrawn from Andhra Pradesh.A senior official, who did not wish to be named, told ET:  The expansion plan of Coca-Cola had been postponed due to leadership change within the company. Hindustan Coca-Cola Beverages Ltd, in fact, is now expanding and also investing in a new project in the state. The company will invest â¹842 crore for the new unit in Vizianagaram and â¹285 crore for expansion at Srikalahasti in Chittoor, the sources said.The manufacturing unit in Vizianagaram will have three bottling lines with a capacity of 18 million cases per year: for carbonated soft drinks in big and small pack sizes, a juice line and another for tetra packs. In the second phase, the company will set up two bottling lines with a capacity of 12 million cases per year.At Chittoor, it will add one packaged drinking water bottling line and two carbonated soft drink bottling lines.The expanded facility will manufacture products under six brands: Coca-Cola, Thums Up, Sprite, Fanta, Limca and Kinley water. The proposed expansion will be undertaken entirely within the existing plant premises, and no additional land acquisition is envisaged."
-     },
-     {
-      "company": "Coca-Cola Company (The) Common Stock",
-      "ticker": "KO",
-      "country": "US",
-      "new_to_twin": false,
-      "title": "Hindustan Coca-Cola Beverages lines up Rs 1,127 crore for new unit, expansion in Andhra Pradesh",
-      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/hindustan-coca-cola-beverages-lines-up-1127-crore-for-new-unit-expansion-in-andhra-pradesh/articleshow/134272247.cms",
-      "published": "Wed, 16 Sep 2026 00:31:56 +0530",
-      "full_text": "New Delhi: Hindustan Coca-Cola Beverages (HCCBL) will invest â¹1,127 crore in Andhra Pradesh to set up a new manufacturing unit at Vizianagaram and expand an existing unit in Chittoor, sources in the state government said.With the manufacturing facilities-one in north Andhra (Vizianagaram) and the other in the south (Chittoor)-the largest bottling partner of Coca-Cola in India expects to cover the increasing demand for beverages in southern India across Andhra Pradesh, Telangana, Tamil Nadu, Karnataka and adjoining markets.Andhra Pradesh's State Investment Promotion Committee approved the investment plan at its meeting on Tuesday, the sources said.The HCCBL investment was at the heart of a political slugfest between the YSR Congress Party and the ruling Telugu Desam Party, with the opposition claiming that â¹1,199 crore worth investment by Coca-Cola was withdrawn from Andhra Pradesh.A senior official, who did not wish to be named, told ET:  The expansion plan of Coca-Cola had been postponed due to leadership change within the company. Hindustan Coca-Cola Beverages Ltd, in fact, is now expanding and also investing in a new project in the state. The company will invest â¹842 crore for the new unit in Vizianagaram and â¹285 crore for expansion at Srikalahasti in Chittoor, the sources said.The manufacturing unit in Vizianagaram will have three bottling lines with a capacity of 18 million cases per year: for carbonated soft drinks in big and small pack sizes, a juice line and another for tetra packs. In the second phase, the company will set up two bottling lines with a capacity of 12 million cases per year.At Chittoor, it will add one packaged drinking water bottling line and two carbonated soft drink bottling lines.The expanded facility will manufacture products under six brands: Coca-Cola, Thums Up, Sprite, Fanta, Limca and Kinley water. The proposed expansion will be undertaken entirely within the existing plant premises, and no additional land acquisition is envisaged."
-     },
-     {
-      "company": "Coca Cola Femsa S.A.B. de C.V.  American Depositary Shares, each representing 10 Units (each Unit consists of 3 Series B Shares and 5 Series L Shares)",
-      "ticker": "KOF",
-      "country": "US",
-      "new_to_twin": false,
-      "title": "Hindustan Coca-Cola Beverages lines up Rs 1,127 crore for new unit, expansion in Andhra Pradesh",
-      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/hindustan-coca-cola-beverages-lines-up-1127-crore-for-new-unit-expansion-in-andhra-pradesh/articleshow/134272247.cms",
-      "published": "Wed, 16 Sep 2026 00:31:56 +0530",
-      "full_text": "New Delhi: Hindustan Coca-Cola Beverages (HCCBL) will invest â¹1,127 crore in Andhra Pradesh to set up a new manufacturing unit at Vizianagaram and expand an existing unit in Chittoor, sources in the state government said.With the manufacturing facilities-one in north Andhra (Vizianagaram) and the other in the south (Chittoor)-the largest bottling partner of Coca-Cola in India expects to cover the increasing demand for beverages in southern India across Andhra Pradesh, Telangana, Tamil Nadu, Karnataka and adjoining markets.Andhra Pradesh's State Investment Promotion Committee approved the investment plan at its meeting on Tuesday, the sources said.The HCCBL investment was at the heart of a political slugfest between the YSR Congress Party and the ruling Telugu Desam Party, with the opposition claiming that â¹1,199 crore worth investment by Coca-Cola was withdrawn from Andhra Pradesh.A senior official, who did not wish to be named, told ET:  The expansion plan of Coca-Cola had been postponed due to leadership change within the company. Hindustan Coca-Cola Beverages Ltd, in fact, is now expanding and also investing in a new project in the state. The company will invest â¹842 crore for the new unit in Vizianagaram and â¹285 crore for expansion at Srikalahasti in Chittoor, the sources said.The manufacturing unit in Vizianagaram will have three bottling lines with a capacity of 18 million cases per year: for carbonated soft drinks in big and small pack sizes, a juice line and another for tetra packs. In the second phase, the company will set up two bottling lines with a capacity of 12 million cases per year.At Chittoor, it will add one packaged drinking water bottling line and two carbonated soft drink bottling lines.The expanded facility will manufacture products under six brands: Coca-Cola, Thums Up, Sprite, Fanta, Limca and Kinley water. The proposed expansion will be undertaken entirely within the existing plant premises, and no additional land acquisition is envisaged."
      }
     ],
     "error": null
@@ -69,27 +39,17 @@
    "industry": {
     "feed_url": "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
     "items": 50,
-    "intent_hits": 14,
+    "intent_hits": 12,
     "matches": [
      {
-      "company": "Clean Energy Technologies, Inc. - Common Stock",
-      "ticker": "CETY",
-      "country": "US",
+      "company": "MINERAL RESOURCES LIMITED",
+      "ticker": "MIN.AX",
+      "country": "AU",
       "new_to_twin": true,
-      "title": "Saatvik Green Energy bags order worth Rs 1042 crore from SECI",
-      "url": "https://economictimes.indiatimes.com/industry/renewables/saatvik-green-energy-bags-order-worth-rs-1042-crore-from-seci/articleshow/134267699.cms",
-      "published": "Tue, 15 Sep 2026 20:44:03 +0530",
-      "full_text": "New Delhi: Saatvik Green Energy on Tuesday said it has secured a Rs 1,041.63 crore order from Solar Energy Corporation of India (SECI) for supply of solar PV modules.The order will be executed by December 2027, the company stated in an exchange filing. Saatvik Green Energy has been awarded and has accepted an order from SECI for the supply of solar PV modules, with an aggregate order value of Rs 1,041.63 crore,  it said. "
-     },
-     {
-      "company": "Clean Energy Fuels Corp. - Common Stock",
-      "ticker": "CLNE",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "Saatvik Green Energy bags order worth Rs 1042 crore from SECI",
-      "url": "https://economictimes.indiatimes.com/industry/renewables/saatvik-green-energy-bags-order-worth-rs-1042-crore-from-seci/articleshow/134267699.cms",
-      "published": "Tue, 15 Sep 2026 20:44:03 +0530",
-      "full_text": "New Delhi: Saatvik Green Energy on Tuesday said it has secured a Rs 1,041.63 crore order from Solar Energy Corporation of India (SECI) for supply of solar PV modules.The order will be executed by December 2027, the company stated in an exchange filing. Saatvik Green Energy has been awarded and has accepted an order from SECI for the supply of solar PV modules, with an aggregate order value of Rs 1,041.63 crore,  it said. "
+      "title": "Indian steel industry creating new opportunities for ferro-alloy sector: IFAPA",
+      "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/steel/indian-steel-industry-creating-new-opportunities-for-ferro-alloy-sector-ifapa/articleshow/134289342.cms",
+      "published": "Wed, 16 Sep 2026 19:02:46 +0530",
+      "full_text": "Panaji: Sept 16 India's expanding steel industry is creating new opportunities for the domestic ferro-alloys sector and could help the country strengthen its position in global markets, the Indian Ferro Alloy Producers' Association (IFAPA) said on Wednesday.Speaking at the opening of the sixth International Ferro Alloys Conference (IFAC 2026) in Goa, IFAPA called for greater security of raw materials, competitive input costs and supportive import policies to enable the industry to meet the requirements of India's growing steel sector.The three-day conference, being held from September 16 to 18 under the theme  Fueling India's Steel Surge: The Rising Importance of Ferro Alloys , has brought together industry leaders, producers, traders and policymakers to discuss issues including manganese security, steel and alloy demand, global trade, energy efficiency and critical minerals.More than 700 participants and over 35 speakers are taking part in the conference, according to IFAPA.The discussions are also focusing on ferro-chrome, ferro-silicon, technological developments and ways to improve the competitiveness of the sector. IFAPA Chairman Manish Sarda said securing indigenous sources of critical raw materials should be a priority for Indian ferro-alloy producers seeking to become globally competitive. Securing indigenous sources of critical raw materials must be a priority for Indian ferro-alloy producers to become globally competitive and support the vision of Aatmanirbhar Bharat,  Sarda said.He called for faster exploration and development of domestic manganese, chrome and other critical minerals, saying several manganese ore mines auctioned at high premiums remained non-operational because their economics were often unviable. Auction frameworks should therefore encourage actual mine development and production, not simply the highest bid. A producing mine creates value for the industry and the economy; an unviable mine does not,  he said.Sarda said commercially viable access to domestic mineral resources would be critical to reducing import dependence and building a stronger ferro-alloys industry.IFAPA also sought measures to improve the competitiveness of input costs as India expands its steelmaking capacity. It called for zero import duties on manganese ore and raw materials required for noble alloys where suitable domestic grades are not available.The association also sought competitive power costs for energy-intensive ferro-alloy producers and rationalisation of electricity-related charges and levies. India's crude steel production rose to around 168.4 million tonnes in 2025-26, up more than 10 per cent year-on-year, while finished steel consumption reached around 164 million tonnes, growing by about 7-8 per cent, according to government data.Ferro alloys, which combine iron with elements such as manganese, chromium and silicon, are used to improve the strength, hardness and other properties of steel. They are therefore critical inputs for stee"
      }
     ],
     "error": null
@@ -119,14 +79,95 @@
    "companies": {
     "feed_url": "https://www.thehindubusinessline.com/companies/feeder/default.rss",
     "items": 60,
-    "intent_hits": 23,
-    "matches": [],
+    "intent_hits": 22,
+    "matches": [
+     {
+      "company": "Lam Research Corporation - Common Stock",
+      "ticker": "LRCX",
+      "country": "US",
+      "new_to_twin": false,
+      "title": "Lam Research to invest ₹10,000 cr in first silicon component manufacturing facility in India",
+      "url": "https://www.thehindubusinessline.com/companies/lam-research-to-invest-10000-cr-in-first-silicon-component-manufacturing-facility-in-india/article71472662.ece",
+      "published": "Wed, 16 Sep 2026 18:49:35 +0530",
+      "full_text": "Lam Research Corp., global supplier of semiconductor manufacturing equipment and services, announced it intends to invest approximately  ₹10,000 crore to add its first silicon component manufacturing facility in India and augment its advanced research and development operations. The planned investment reflects Lam’s long-term approach to invest across key aspects of the semiconductor ecosystem in India. Lam operates a large engineering hub and a chip research and development (R&D) laboratories. The company also incorporated India into its global supply chain and trained thousands of individuals for the semiconductor industry through workforce development programs. The  investment represents the next phase of development to support customers worldwide as semiconductor complexity accelerates in the AI era. The new manufacturing facility will support a vertically integrated process spanning silicon ingot production and processing for advanced semiconductor technologies and leading-edge nodes. The planned augmentation to R&D builds on Lam’s India Center for Engineering, which already supports Lam’s work for customers globally in key areas such as design, testing, validation and next-generation technology development. “India represents an important part of Lam’s global innovation and growth strategy,” said Rangesh Raghavan, Corporate Vice President and Managing Director, Lam Research India. “Our continuing expansion in India reflects our confidence in the country’s talent, growing semiconductor ecosystem, and supportive policy environment. We remain committed to collaborating with the government, academia, suppliers, start-ups and other stakeholders to help accelerate semiconductor innovation that benefits the industry globally,” he added. Lam intends to make the new investment over the next several years. The new manufacturing facility and augmented R&D operations are expected to create new opportunities for partnerships with local suppliers in India. Lam actively engages with local companies for specialised materials, precision components, gases, chemicals, metrology and manufacturing services that are critical to the semiconductor industry. Lam’s expansion plans are expected to bring specialised manufacturing expertise and capabilities to India, helping build skills that are critical to the future of the semiconductor industry. In addition to creating advanced engineering and high-technology manufacturing jobs, the investment aims to strengthen the country’s talent base and contribute to developing a globally competitive semiconductor workforce. Lam’s investment plans build on its ongoing workforce development efforts, including a partnership with the Indian Institute of Science (IISc) and the India Semiconductor Mission (ISM) to increase access to semiconductor manufacturing education, with a goal of training up to 60,000 students over the next several years using Lam’s Semiverse Solutions virtual platform. Lam has also launched the Lam Research S"
+     }
+    ],
     "error": null
    },
    "economy": {
     "feed_url": "https://www.thehindubusinessline.com/economy/feeder/default.rss",
     "items": 60,
     "intent_hits": 9,
+    "matches": [],
+    "error": null
+   }
+  },
+  "TimesOfIndia": {
+   "business": {
+    "feed_url": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
+    "items": 20,
+    "intent_hits": 1,
+    "matches": [],
+    "error": null
+   }
+  },
+  "Livemint": {
+   "companies": {
+    "feed_url": "https://www.livemint.com/rss/companies",
+    "items": 35,
+    "intent_hits": 15,
+    "matches": [],
+    "error": null
+   },
+   "industry": {
+    "feed_url": "https://www.livemint.com/rss/industry",
+    "items": 35,
+    "intent_hits": 8,
+    "matches": [],
+    "error": null
+   }
+  },
+  "Moneycontrol": {
+   "business": {
+    "feed_url": "https://www.moneycontrol.com/rss/business.xml",
+    "items": 15,
+    "intent_hits": 6,
+    "matches": [],
+    "error": null
+   },
+   "economy": {
+    "feed_url": "https://www.moneycontrol.com/rss/economy.xml",
+    "items": 4,
+    "intent_hits": 1,
+    "matches": [
+     {
+      "company": "Semiconductor Manufacturing International Corp",
+      "ticker": "0981.HK",
+      "country": "HK",
+      "new_to_twin": false,
+      "title": "India’s Composite Flash PMI for April signals very strong economy",
+      "url": "https://www.moneycontrol.com/news/economy/india’s-composite-flash-pmi-for-april-signals-very-strong-economy_17531301.html",
+      "published": "Tue, 23 Apr 2024 11:07:37 +0530",
+      "full_text": ""
+     }
+    ],
+    "error": null
+   }
+  },
+  "BusinessStandard": {
+   "companies": {
+    "feed_url": "https://www.business-standard.com/rss/companies-101.rss",
+    "items": 35,
+    "intent_hits": 21,
+    "matches": [],
+    "error": null
+   }
+  },
+  "AmarUjala": {
+   "business": {
+    "feed_url": "https://www.amarujala.com/rss/business.xml",
+    "items": 40,
+    "intent_hits": 7,
     "matches": [],
     "error": null
    }

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Layer 45 -- live media RSS sweep (Economic Times / Hindu / Hindu Business Line).
+"""Layer 45 -- live media RSS sweep (8 popular Indian newspapers: Economic
+Times, Hindu, Hindu Business Line, Times of India, Livemint, Moneycontrol,
+Business Standard [English] + Amar Ujala [Hindi]).
 
 Origin: these three domains block Anthropic's hosted crawler/search infra
 outright (WebFetch fails, browser navigate refused, even domain-scoped
@@ -63,6 +65,27 @@ FEEDS = {
         "companies": "https://www.thehindubusinessline.com/companies/feeder/default.rss",
         "economy": "https://www.thehindubusinessline.com/economy/feeder/default.rss",
     },
+    "TimesOfIndia": {
+        "business": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
+    },
+    "Livemint": {
+        "companies": "https://www.livemint.com/rss/companies",
+        "industry": "https://www.livemint.com/rss/industry",
+    },
+    "Moneycontrol": {
+        "business": "https://www.moneycontrol.com/rss/business.xml",
+        "economy": "https://www.moneycontrol.com/rss/economy.xml",
+    },
+    "BusinessStandard": {
+        "companies": "https://www.business-standard.com/rss/companies-101.rss",
+    },
+    # Hindi -- verified 2026-09-16 as a genuine business/markets section (not
+    # a mistranslated general-news category, which several other Hindi-daily
+    # guesses turned out to be). See the LANG_KEYWORDS note below on why
+    # company-name matching is weaker here than on the English sources.
+    "AmarUjala": {
+        "business": "https://www.amarujala.com/rss/business.xml",
+    },
 }
 
 ROSTER_COUNTRIES = ["AU", "BR", "CA", "CH", "CN", "DE", "DK", "FI", "HK", "ID",
@@ -83,22 +106,60 @@ SPAC_NOISE = re.compile(
 
 INTENT_KEYWORDS = re.compile(
     r"\binvest\w*|crore|billion|\bcapex\b|expan\w*|joint venture|\bJV\b|\bMoU\b|"
-    r"\bfab\b|semiconductor|greenfield|acqui\w*|new (plant|facility|factory)\b", re.I)
+    r"\bfab\b|semiconductor|greenfield|acqui\w*|new (plant|facility|factory)\b|"
+    # Hindi investment-intent terms (Devanagari) for AmarUjala/future Hindi
+    # sources: nivesh=invest, crore, vistaar=expansion, arab=billion,
+    # adhigrahan=acquisition, samyukt udyam=joint venture, samjhauta=MoU/pact.
+    r"निवेश|करोड़|विस्तार|अरब|अधिग्रहण|संयुक्त उद्यम|समझौता", re.I)
+
+# 🔴 KNOWN LIMITATION, not fully solvable without a translation step: the
+# shared match_fragments() matcher works on Latin-script normalized text, so
+# it only catches a foreign company's mention in a non-English source when
+# that source keeps the name in Latin script (common Indian financial-press
+# practice for global tech/auto/pharma brands -- "Apple", "Tesla", "Toyota"
+# usually stay untransliterated even in Hindi copy) but MISSES it when the
+# name is transliterated into the local script (e.g. "एप्पल" for Apple).
+# Coverage on non-English sources is therefore real but partial, biased
+# toward brand names Indian journalism conventionally leaves in English.
+# Fixing this properly means machine-translating each intent-hit headline
+# before matching -- not done here to avoid a translation-API dependency
+# for what is still a useful signal without it.
 
 
-def strong_fragment_ok(frag):
+def strong_fragment_ok(frag, share_count):
     """match_fragments' first-two-tokens shortcut is tuned for curated
     per-record company fields (a state-MoU record, a 10-K's own company
-    name) -- against raw free-text prose it collides on generic sector
-    prefixes shared by dozens of roster rows: 'Bank of Queensland', 'Bank
-    of Montreal', 'Bank of the James Financial Group' etc. all reduce to
-    the two-token fragment 'bank of', which then matches ANY headline
-    mentioning 'Reserve Bank of India' or 'Bank of Baroda'. Extra local
-    floor (this script only, not the shared matcher): a fragment needs
-    every token >=3 chars, which kills 'bank of' (second token 'of')
-    while leaving real two-word company prefixes ('toyota motor', 'tata
-    motors', 'lg energy') untouched."""
-    return all(len(tok) >= 3 for tok in frag.split())
+    name) -- against raw free-text prose it collides on generic prefixes
+    shared by dozens of roster rows. Two distinct flavors found running
+    this against real headlines: (1) short generic connectors -- 'Bank of
+    Queensland/Montreal/China' all reduce to 'bank of', matching any
+    'Reserve Bank of India' mention; killed by requiring every token in
+    the fragment to be >=3 chars (kicks out 'of'). (2) legitimately long,
+    real words that are STILL too generic because dozens of roster rows
+    happen to start with the same place name -- 'Hong Kong Exchanges',
+    'Hong Kong Ferry', 'Hong Kong Robotics' etc. all reduce to 'hong
+    kong', matching any article that merely mentions the city. Case 2
+    isn't fixable by a length floor (both tokens are real words), so
+    it's fixed generically instead: if `share_count` distinct roster
+    companies produce the exact same two-token fragment, the fragment
+    identifies a place/sector, not a company, and is rejected regardless
+    of length. A hand-maintained word stoplist ('bank', 'hong kong', ...)
+    would need updating every time a new collision surfaces; this
+    threshold catches the pattern itself."""
+    return all(len(tok) >= 3 for tok in frag.split()) and share_count <= 2
+
+
+def two_token_fragment_counts(roster_index):
+    """-> {two-token fragment: distinct company count}, used to detect
+    fragments that are really a shared prefix (place name, industry term,
+    generic connector) rather than anything company-identifying."""
+    from collections import Counter
+    counts = Counter()
+    for rn, _ in roster_index:
+        for f, q in match_fragments(rn):
+            if q == "strong" and f != rn:  # the two-token shortcut, not the full name
+                counts[f] += 1
+    return counts
 
 
 def sh_curl(url, timeout=20):
@@ -203,6 +264,7 @@ def main():
     rosters = load_all_rosters()
     roster_index = [(norm(r["name"]), r) for rows in rosters.values() for r in rows
                      if not SPAC_NOISE.search(r["name"])]
+    frag_counts = two_token_fragment_counts(roster_index)
     known = known_names()
     print(f"loaded {len(roster_index)} foreign-roster companies, {len(known)} known twin names")
 
@@ -244,7 +306,7 @@ def main():
                 hit_companies = []
                 for rn, r in roster_index:
                     frags = match_fragments(rn)
-                    if any(q == "strong" and strong_fragment_ok(f)
+                    if any(q == "strong" and strong_fragment_ok(f, frag_counts.get(f, 1))
                            and re.search(rf"\b{re.escape(f)}\b", ntext) for f, q in frags):
                         hit_companies.append(r)
                 if not hit_companies:
@@ -272,13 +334,19 @@ def main():
 
     out = {
         "layer": 45, "name": "media_rss_sweep", "built": today,
-        "what": ("Live RSS sweep of Economic Times / Hindu / Hindu Business Line section feeds, "
-                 "filtered for investment-intent language, matched against real 23-country foreign "
+        "what": ("Live RSS sweep of 8 popular Indian newspapers' section feeds -- Economic Times, "
+                 "Hindu, Hindu Business Line, Times of India, Livemint, Moneycontrol, Business "
+                 "Standard (English) + Amar Ujala (Hindi) -- filtered for investment-intent language "
+                 "(English + Devanagari keywords), matched against real 23-country foreign "
                  "stock-market rosters (same files layer 42 uses). Full article text pulled only for "
-                 "roster-confirmed hits. Workaround for the fact that all three domains block "
-                 "Anthropic's hosted crawler/search infra outright -- this runs via subprocess curl "
-                 "from the local machine, which is never blocked (see feedback_economic_times_blocked "
-                 "memory). CAVEAT: 'strong' fragment matches on generic industry-descriptive company "
+                 "roster-confirmed hits. Originally a workaround for ET/Hindu/HBL blocking Anthropic's "
+                 "hosted crawler/search infra outright -- runs via subprocess curl from the local "
+                 "machine, which is never blocked (see feedback_economic_times_blocked memory) -- kept "
+                 "as the standard fetch method when extended to more sources for consistency. CAVEAT "
+                 "on the Hindi source: company-name matching only catches names Indian financial press "
+                 "conventionally leaves in Latin script (Apple, Tesla, Toyota); transliterated names "
+                 "(e.g. एप्पल for Apple) are invisible to the shared Latin-script matcher -- partial, "
+                 "not full, non-English coverage. Separate CAVEAT: 'strong' fragment matches on generic industry-descriptive company "
                  "names (e.g. 'Semiconductor Manufacturing International Corp' vs. any article about "
                  "semiconductor manufacturing in general) still slip through even after the SPAC/"
                  "share-class filter -- treat every match here as a candidate for human review via "
@@ -296,7 +364,7 @@ def main():
 
     L = ["# Live media RSS sweep — layer 45", "",
          f"*Generated {today} by `scripts/build_layer45_media_rss_sweep.py`. "
-         f"{total_items} feed items scanned across ET/Hindu/HBL, {total_intent} carried "
+         f"{total_items} feed items scanned across {len(by_source)} newspapers, {total_intent} carried "
          f"investment-intent language, {total_matches} matched a real foreign-company roster name "
          f"({len(new_matches)} new to the twin). Run this often -- RSS feeds churn within hours, "
          "unlike layer 44's hand-curated 5-year sweep.*", "",
@@ -305,8 +373,12 @@ def main():
          "Anthropic's hosted crawler/search tooling outright (confirmed 2026-09-16 — WebFetch fails, "
          "browser navigate refused, domain-scoped WebSearch 400s). Plain `curl` from this machine's "
          "own network is not blocked, so this layer fetches section RSS feeds directly and extracts "
-         "full article text via each site's own article markup (ET: JSON-LD `articleBody`; "
-         "Hindu/HBL: shared `contentbody` div) — no third-party scraper needed.", ""]
+         "full article text via each site's own article markup — JSON-LD `articleBody` works "
+         "identically across all 8 sources tested (ET, Hindu, HBL, Times of India, Livemint, "
+         "Moneycontrol, Business Standard, Amar Ujala), no per-site parser or third-party scraper "
+         "needed. Extended 2026-09-16 to 5 more English dailies plus Amar Ujala (Hindi) — see the "
+         "layer JSON's `what` field for the Hindi-coverage caveat (Latin-script company mentions "
+         "only, not transliterated ones).", ""]
 
     if new_matches:
         L += ["## New-to-twin company matches", "",

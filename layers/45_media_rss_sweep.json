@@ -1,0 +1,135 @@
+{
+ "layer": 45,
+ "name": "media_rss_sweep",
+ "built": "2026-09-16",
+ "what": "Live RSS sweep of Economic Times / Hindu / Hindu Business Line section feeds, filtered for investment-intent language, matched against real 23-country foreign stock-market rosters (same files layer 42 uses). Full article text pulled only for roster-confirmed hits. Workaround for the fact that all three domains block Anthropic's hosted crawler/search infra outright -- this runs via subprocess curl from the local machine, which is never blocked (see feedback_economic_times_blocked memory). CAVEAT: 'strong' fragment matches on generic industry-descriptive company names (e.g. 'Semiconductor Manufacturing International Corp' vs. any article about semiconductor manufacturing in general) still slip through even after the SPAC/share-class filter -- treat every match here as a candidate for human review via its full_text field, not a confirmed lead, same as layer 44's un-reviewed MoU rows.",
+ "roster_companies_loaded": 29828,
+ "known_twin_names": 1769,
+ "total_items_scanned": 330,
+ "total_investment_intent_hits": 89,
+ "total_company_matches": 7,
+ "total_new_to_twin": 3,
+ "by_source": {
+  "ET": {
+   "auto": {
+    "feed_url": "https://economictimes.indiatimes.com/industry/auto/rssfeeds/13359412.cms",
+    "items": 50,
+    "intent_hits": 15,
+    "matches": [],
+    "error": null
+   },
+   "cons_products": {
+    "feed_url": "https://economictimes.indiatimes.com/industry/cons-products/rssfeeds/13358759.cms",
+    "items": 50,
+    "intent_hits": 15,
+    "matches": [
+     {
+      "company": "Semiconductor Manufacturing International Corp",
+      "ticker": "0981.HK",
+      "country": "HK",
+      "new_to_twin": false,
+      "title": "Japan’s Hirata bets on India’s semiconductor boom with ATS India tie-up",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/japans-hirata-bets-on-indias-semiconductor-boom-with-ats-india-tie-up/articleshow/134278072.cms",
+      "published": "Wed, 16 Sep 2026 10:02:26 +0530",
+      "full_text": "Hyderabad: Japanese semiconductor automation and equipment maker Hirata Corporation is entering the Indian market through a strategic partnership with industrial automation company ATS India, as the country seeks to build out its semiconductor manufacturing and advanced packaging ecosystem.Under the partnership, ATS India will be Hirata's exclusive distribution partner in India and will initially focus on bringing the Japanese company's standard semiconductor automation products to the market. ATS estimates that the total addressable market for semiconductor automation in India could reach about $100 million by 2030.Also Read: India's semiconductor sector draws USD 1.4 bn funding, half of it since 2025Hirata's entry comes as India is seeing investments across semiconductor fabs, outsourced semiconductor assembly and testing (OSAT) and advanced packaging, areas where automation and material handling are expected to become increasingly important.Hirata's semiconductor portfolio accounts for about half of its annual business globally, John Derzy, vice president at Hirata Corporation of America told ET. The company currently supplies automation solutions to semiconductor equipment makers and has been involved in processes including lithography, wafer cleaning and metrology.The company will initially bring standard products that can be sold without extensive customisation, including equipment front-end modules (EFEMs), load ports and FOUP openers, FOPLP load ports, panel handling robots and high-performance wafer handling robots.EFEMs and load ports are used to interface semiconductor manufacturing equipment with the material being processed, while wafer and panel handling robots automate the movement of semiconductor material between processes. Hirata also sees an opportunity for ground-based automation, including autonomous mobile robots (AMRs) and collaborative robots (cobots), particularly in facilities that do not have overhead transport infrastructure.Also Read: Indiaâs semiconductor push to drive $300 billion market by 2035: ReportFor ATS, the partnership provides an entry into the semiconductor sector by leveraging capabilities it has developed as a special-purpose machine builder and systems integrator, particularly in automotive.âThere might be opportunities while we continue to market and sell standard Hirata semiconductor products, the customers might actually need some integration. So we step in, and we'll be able to do that,â ATS India CEO Kishen Kavikondala said.The partnership builds on more than a decade of work between the two companies in sectors including automotive. ATS said the same engineering and integration capabilities can be extended to semiconductor manufacturing.Hirata sees OSATs and semiconductor equipment companies as key initial customer segments in India."
+     },
+     {
+      "company": "Coca-Cola Consolidated, Inc. - Common Stock",
+      "ticker": "COKE",
+      "country": "US",
+      "new_to_twin": false,
+      "title": "Hindustan Coca-Cola Beverages lines up Rs 1,127 crore for new unit, expansion in Andhra Pradesh",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/hindustan-coca-cola-beverages-lines-up-1127-crore-for-new-unit-expansion-in-andhra-pradesh/articleshow/134272247.cms",
+      "published": "Wed, 16 Sep 2026 00:31:56 +0530",
+      "full_text": "New Delhi: Hindustan Coca-Cola Beverages (HCCBL) will invest â¹1,127 crore in Andhra Pradesh to set up a new manufacturing unit at Vizianagaram and expand an existing unit in Chittoor, sources in the state government said.With the manufacturing facilities-one in north Andhra (Vizianagaram) and the other in the south (Chittoor)-the largest bottling partner of Coca-Cola in India expects to cover the increasing demand for beverages in southern India across Andhra Pradesh, Telangana, Tamil Nadu, Karnataka and adjoining markets.Andhra Pradesh's State Investment Promotion Committee approved the investment plan at its meeting on Tuesday, the sources said.The HCCBL investment was at the heart of a political slugfest between the YSR Congress Party and the ruling Telugu Desam Party, with the opposition claiming that â¹1,199 crore worth investment by Coca-Cola was withdrawn from Andhra Pradesh.A senior official, who did not wish to be named, told ET:  The expansion plan of Coca-Cola had been postponed due to leadership change within the company. Hindustan Coca-Cola Beverages Ltd, in fact, is now expanding and also investing in a new project in the state. The company will invest â¹842 crore for the new unit in Vizianagaram and â¹285 crore for expansion at Srikalahasti in Chittoor, the sources said.The manufacturing unit in Vizianagaram will have three bottling lines with a capacity of 18 million cases per year: for carbonated soft drinks in big and small pack sizes, a juice line and another for tetra packs. In the second phase, the company will set up two bottling lines with a capacity of 12 million cases per year.At Chittoor, it will add one packaged drinking water bottling line and two carbonated soft drink bottling lines.The expanded facility will manufacture products under six brands: Coca-Cola, Thums Up, Sprite, Fanta, Limca and Kinley water. The proposed expansion will be undertaken entirely within the existing plant premises, and no additional land acquisition is envisaged."
+     },
+     {
+      "company": "Coca-Cola Company (The) Common Stock",
+      "ticker": "KO",
+      "country": "US",
+      "new_to_twin": false,
+      "title": "Hindustan Coca-Cola Beverages lines up Rs 1,127 crore for new unit, expansion in Andhra Pradesh",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/hindustan-coca-cola-beverages-lines-up-1127-crore-for-new-unit-expansion-in-andhra-pradesh/articleshow/134272247.cms",
+      "published": "Wed, 16 Sep 2026 00:31:56 +0530",
+      "full_text": "New Delhi: Hindustan Coca-Cola Beverages (HCCBL) will invest â¹1,127 crore in Andhra Pradesh to set up a new manufacturing unit at Vizianagaram and expand an existing unit in Chittoor, sources in the state government said.With the manufacturing facilities-one in north Andhra (Vizianagaram) and the other in the south (Chittoor)-the largest bottling partner of Coca-Cola in India expects to cover the increasing demand for beverages in southern India across Andhra Pradesh, Telangana, Tamil Nadu, Karnataka and adjoining markets.Andhra Pradesh's State Investment Promotion Committee approved the investment plan at its meeting on Tuesday, the sources said.The HCCBL investment was at the heart of a political slugfest between the YSR Congress Party and the ruling Telugu Desam Party, with the opposition claiming that â¹1,199 crore worth investment by Coca-Cola was withdrawn from Andhra Pradesh.A senior official, who did not wish to be named, told ET:  The expansion plan of Coca-Cola had been postponed due to leadership change within the company. Hindustan Coca-Cola Beverages Ltd, in fact, is now expanding and also investing in a new project in the state. The company will invest â¹842 crore for the new unit in Vizianagaram and â¹285 crore for expansion at Srikalahasti in Chittoor, the sources said.The manufacturing unit in Vizianagaram will have three bottling lines with a capacity of 18 million cases per year: for carbonated soft drinks in big and small pack sizes, a juice line and another for tetra packs. In the second phase, the company will set up two bottling lines with a capacity of 12 million cases per year.At Chittoor, it will add one packaged drinking water bottling line and two carbonated soft drink bottling lines.The expanded facility will manufacture products under six brands: Coca-Cola, Thums Up, Sprite, Fanta, Limca and Kinley water. The proposed expansion will be undertaken entirely within the existing plant premises, and no additional land acquisition is envisaged."
+     },
+     {
+      "company": "Coca Cola Femsa S.A.B. de C.V.  American Depositary Shares, each representing 10 Units (each Unit consists of 3 Series B Shares and 5 Series L Shares)",
+      "ticker": "KOF",
+      "country": "US",
+      "new_to_twin": false,
+      "title": "Hindustan Coca-Cola Beverages lines up Rs 1,127 crore for new unit, expansion in Andhra Pradesh",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/hindustan-coca-cola-beverages-lines-up-1127-crore-for-new-unit-expansion-in-andhra-pradesh/articleshow/134272247.cms",
+      "published": "Wed, 16 Sep 2026 00:31:56 +0530",
+      "full_text": "New Delhi: Hindustan Coca-Cola Beverages (HCCBL) will invest â¹1,127 crore in Andhra Pradesh to set up a new manufacturing unit at Vizianagaram and expand an existing unit in Chittoor, sources in the state government said.With the manufacturing facilities-one in north Andhra (Vizianagaram) and the other in the south (Chittoor)-the largest bottling partner of Coca-Cola in India expects to cover the increasing demand for beverages in southern India across Andhra Pradesh, Telangana, Tamil Nadu, Karnataka and adjoining markets.Andhra Pradesh's State Investment Promotion Committee approved the investment plan at its meeting on Tuesday, the sources said.The HCCBL investment was at the heart of a political slugfest between the YSR Congress Party and the ruling Telugu Desam Party, with the opposition claiming that â¹1,199 crore worth investment by Coca-Cola was withdrawn from Andhra Pradesh.A senior official, who did not wish to be named, told ET:  The expansion plan of Coca-Cola had been postponed due to leadership change within the company. Hindustan Coca-Cola Beverages Ltd, in fact, is now expanding and also investing in a new project in the state. The company will invest â¹842 crore for the new unit in Vizianagaram and â¹285 crore for expansion at Srikalahasti in Chittoor, the sources said.The manufacturing unit in Vizianagaram will have three bottling lines with a capacity of 18 million cases per year: for carbonated soft drinks in big and small pack sizes, a juice line and another for tetra packs. In the second phase, the company will set up two bottling lines with a capacity of 12 million cases per year.At Chittoor, it will add one packaged drinking water bottling line and two carbonated soft drink bottling lines.The expanded facility will manufacture products under six brands: Coca-Cola, Thums Up, Sprite, Fanta, Limca and Kinley water. The proposed expansion will be undertaken entirely within the existing plant premises, and no additional land acquisition is envisaged."
+     }
+    ],
+    "error": null
+   },
+   "industry": {
+    "feed_url": "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
+    "items": 50,
+    "intent_hits": 14,
+    "matches": [
+     {
+      "company": "Clean Energy Technologies, Inc. - Common Stock",
+      "ticker": "CETY",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Saatvik Green Energy bags order worth Rs 1042 crore from SECI",
+      "url": "https://economictimes.indiatimes.com/industry/renewables/saatvik-green-energy-bags-order-worth-rs-1042-crore-from-seci/articleshow/134267699.cms",
+      "published": "Tue, 15 Sep 2026 20:44:03 +0530",
+      "full_text": "New Delhi: Saatvik Green Energy on Tuesday said it has secured a Rs 1,041.63 crore order from Solar Energy Corporation of India (SECI) for supply of solar PV modules.The order will be executed by December 2027, the company stated in an exchange filing. Saatvik Green Energy has been awarded and has accepted an order from SECI for the supply of solar PV modules, with an aggregate order value of Rs 1,041.63 crore,  it said. "
+     },
+     {
+      "company": "Clean Energy Fuels Corp. - Common Stock",
+      "ticker": "CLNE",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Saatvik Green Energy bags order worth Rs 1042 crore from SECI",
+      "url": "https://economictimes.indiatimes.com/industry/renewables/saatvik-green-energy-bags-order-worth-rs-1042-crore-from-seci/articleshow/134267699.cms",
+      "published": "Tue, 15 Sep 2026 20:44:03 +0530",
+      "full_text": "New Delhi: Saatvik Green Energy on Tuesday said it has secured a Rs 1,041.63 crore order from Solar Energy Corporation of India (SECI) for supply of solar PV modules.The order will be executed by December 2027, the company stated in an exchange filing. Saatvik Green Energy has been awarded and has accepted an order from SECI for the supply of solar PV modules, with an aggregate order value of Rs 1,041.63 crore,  it said. "
+     }
+    ],
+    "error": null
+   }
+  },
+  "Hindu": {
+   "business": {
+    "feed_url": "https://www.thehindu.com/business/feeder/default.rss",
+    "items": 60,
+    "intent_hits": 13,
+    "matches": [
+     {
+      "company": "ONE CLICK GROUP LIMITED",
+      "ticker": "1CG.AX",
+      "country": "AU",
+      "new_to_twin": true,
+      "title": "ETFs: A one-click route to diversified investing",
+      "url": "https://www.thehindu.com/business/etfs-a-one-click-route-to-diversified-investing/article71463244.ece",
+      "published": "Sun, 13 Sep 2026 17:31:02 +0530",
+      "full_text": ""
+     }
+    ],
+    "error": null
+   }
+  },
+  "HinduBusinessLine": {
+   "companies": {
+    "feed_url": "https://www.thehindubusinessline.com/companies/feeder/default.rss",
+    "items": 60,
+    "intent_hits": 23,
+    "matches": [],
+    "error": null
+   },
+   "economy": {
+    "feed_url": "https://www.thehindubusinessline.com/economy/feeder/default.rss",
+    "items": 60,
+    "intent_hits": 9,
+    "matches": [],
+    "error": null
+   }
+  }
+ }
+}

@@ -8,7 +8,8 @@ Subcommands map to the engine's cadences:
     rbi        -- record the latest RBI Weekly Statistical Supplement issue (weekly)
     pib        -- delegate to the policy repo's pib_index.py --update (daily)
     catalogue  -- rebuild the flat instrument index + docs/SCHEME_CATALOGUE.md (after any layer edit)
-    weekly     -- routes + unnati + nsws + rbi
+    watchlist  -- rebuild the live/dynamic cross-repo layers 25-32 + layer 45's media RSS sweep
+    weekly     -- routes + unnati + nsws + rbi + watchlist
 
 Snapshots land in state/ as dated JSON; a change vs the previous snapshot prints a
 CHANGE line (greppable by cron mail / launchd logs). Corrections rule: snapshots are
@@ -157,7 +158,7 @@ def cmd_catalogue():
 
 
 def cmd_watchlist():
-    """Rebuild the live/dynamic cross-repo & watchlist layers (25-32)."""
+    """Rebuild the live/dynamic cross-repo & watchlist layers (25-32) + layer 45."""
     for s in ("build_layer25_linkages.py", "build_layer26_projects.py",
               "build_layer27_entry_facilitators.py",
               "build_layer28_policy_watchlist.py", "mospi_connector.py",
@@ -170,7 +171,8 @@ def cmd_watchlist():
               "check_sebi_public_issues.py",     # SEBI DRHP/RHP listing-pipeline check
               "extract_cin_from_drhp.py",        # CIN + issue structure from prospectuses
               "build_layer33_policy_finance.py",   # fisheries/excise/duties/exim (LOC links re-scraped)
-              "build_layer34_stressed_assets.py"):  # stressed-asset view + land pools + Dunlop case
+              "build_layer34_stressed_assets.py",  # stressed-asset view + land pools + Dunlop case
+              "build_layer45_media_rss_sweep.py"):  # ET/Hindu/HBL RSS via curl (WebFetch/WebSearch blocked on all 3)
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, "scripts", s)],
                            check=True)

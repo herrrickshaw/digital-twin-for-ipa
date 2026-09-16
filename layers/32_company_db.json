@@ -5,7 +5,7 @@
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
-  "companies": 1817,
+  "companies": 1839,
   "in_more_than_one_layer": 1540,
   "by_role": {
    "alias_check": 18,
@@ -15,14 +15,15 @@
    "pairing_verified": 12,
    "plant_location_check": 35,
    "pli_bulk_drugs_beneficiary": 35,
+   "pli_medical_devices_beneficiary": 22,
    "pool_policy": 1371,
    "pool_visibility": 1331,
    "shortlist_target": 136
   },
-  "india_entities": 1461,
+  "india_entities": 1483,
   "credit_rated": 82,
   "by_country_top10": {
-   "India": 1532,
+   "India": 1554,
    "United States": 75,
    "?": 36,
    "United Kingdom": 12,
@@ -52,7 +53,8 @@
   "21_indian_entity_alias_check",
   "07_investor_pairings",
   "46_pli_bulk_drugs_commercial",
-  "47_telangana_pharma_cluster"
+  "47_telangana_pharma_cluster",
+  "49_medical_devices_parks"
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id"
 }

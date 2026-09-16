@@ -15,6 +15,7 @@ Sources merged (all local, no network):
   07_investor_pairings.json     19 verified/prospective initiative pairings
   46_pli_bulk_drugs_commercial.json 51 PLI Bulk Drugs company-level projects (capacity, commercial status)
   47_telangana_pharma_cluster.json 35 plant-location resolutions for layer 46 (Telangana cross-ref)
+  49_medical_devices_parks.json 22 PLI Medical Devices approved projects + park occupancy cross-ref
 
 Identity: companies are deduped on a normalized name (legal suffixes stripped)
 + country. Every source row is kept verbatim in company_sources (payload JSON),
@@ -261,6 +262,12 @@ def main():
         cid = upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
         src(cid, "47_telangana_pharma_cluster", "plant_location_check", d.get("built"), r)
 
+    # ---- 49 PLI Medical Devices + parks cross-reference -----------------------
+    d = load("49_medical_devices_parks.json")
+    for r in d["pli_medical_devices_approved"]:
+        cid = upsert(r["company"], "India", sector="Medical Devices", india=1)
+        src(cid, "49_medical_devices_parks", "pli_medical_devices_beneficiary", d.get("built"), r)
+
     con.commit()
 
     # ---- summary layer -------------------------------------------------------
@@ -303,7 +310,8 @@ def main():
         "sources": ["16_leads", "16_target_shortlist", "24_clearance_leads",
                     "24b_pool_policy_triage", "24e_pool_visibility_sweep",
                     "21_indian_entity_alias_check", "07_investor_pairings",
-                    "46_pli_bulk_drugs_commercial", "47_telangana_pharma_cluster"],
+                    "46_pli_bulk_drugs_commercial", "47_telangana_pharma_cluster",
+                    "49_medical_devices_parks"],
         "enrichment_next": ("layer 31 catalogs the external IPA/NDAP sources whose "
                             "company-level material (Invest India sector pages, IIG "
                             "project sponsors, state-IPA investor lists) can be joined "

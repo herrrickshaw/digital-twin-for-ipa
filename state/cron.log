@@ -3625,3 +3625,216 @@ nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-09-14.js
 CHANGE rbi WSS: Sep 05, 2026 -> Sep 12, 2026
 rbi: latest WSS issue = Sep 12, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-09-14.json
 send_twin_alert: no credentials available (env or plist) -- not sent
+fatal: could not read Username for 'https://github.com': Device not configured
+  2026-09-15   34 releases
+indexed 34 release rows 2026-09-15 → 2026-09-15
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+  2026-09-16   73 releases
+  2026-09-17    0 releases
+indexed 73 release rows 2026-09-16 → 2026-09-17
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+  2026-09-18   56 releases
+  2026-09-19    0 releases
+indexed 56 release rows 2026-09-18 → 2026-09-19
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+  2026-09-20   23 releases
+  2026-09-21    0 releases
+indexed 23 release rows 2026-09-20 → 2026-09-21
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+layer 25 written: 15 land states, 11 open/closing incentive windows -> /Users/umashankar/digital-twin-for-ipa/layers/25_land_incentive_linkages.json
+Traceback (most recent call last):
+  File "/Users/umashankar/digital-twin-for-ipa/scripts/build_layer26_projects.py", line 161, in <module>
+    build()
+  File "/Users/umashankar/digital-twin-for-ipa/scripts/build_layer26_projects.py", line 105, in build
+    flagship = fetch_flagship_projects()
+  File "/Users/umashankar/digital-twin-for-ipa/scripts/build_layer26_projects.py", line 67, in fetch_flagship_projects
+    with urllib.request.urlopen(req, timeout=30) as r:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1270, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1128, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+layer 27: 31 bodies across 21 countries, 30 live, 11 with events pages -> /Users/umashankar/digital-twin-for-ipa/layers/27_entry_facilitators.json
+  NOT live (check): Business France (India) (0)
+layer 28: 973 PRS bills; 35 active watchlist (investment-relevant & 2024+); 170 relevant all-time; 24 Drishti editorials -> /Users/umashankar/digital-twin-for-ipa/layers/28_policy_watchlist.json
+layer 29: 25 MoSPI data sources (6 core / 6 sector / 13 context) -> /Users/umashankar/digital-twin-for-ipa/layers/29_mospi_data_sources.json
+layer 30: 12 import chapters, 7 substitutable policy gaps, top deficit country China ($-112.2bn) -> /Users/umashankar/digital-twin-for-ipa/layers/30_trade_deficit_map.json
+members scraped: 138 | urls checked: 21
+wrote /Users/umashankar/digital-twin-for-ipa/layers/31_ipa_source_network.json
+/Users/umashankar/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  window 2026-03-05..2026-09-21: 28 filings across 11 phrases
+  wrote layers/16_enrichment/edgar_india_sweep.json (89 cumulative)
+  NEW-LEAD [foreign_operator] 2026-08-18 20-F   BHP Group Ltd  (BHP, BHPLF)  (CIK 0000811809) — expand in India
+  NEW-LEAD [foreign_operator] 2026-08-18 20-F   DIAGEO PLC  (DEO, DGEAF)  (CIK 0000835403) — investment in India
+  NEW-LEAD [foreign_operator] 2026-07-06 20-F   MITSUBISHI UFJ FINANCIAL GROUP INC  (MUFG, MBFJF)  (CIK 0000067088) — investment in India
+  NEW-LEAD [foreign_operator] 2026-06-15 10-K   Alternus Clean Energy, Inc.  (CIK 0001883984) — manufacturing in India
+  NEW-LEAD [foreign_operator] 2026-06-08 10-K   GRAHAM CORP  (GHM)  (CIK 0000716314) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-05-27 10-K   Loop Industries, Inc.  (LOOP)  (CIK 0001504678) — manufacturing facility in India
+  NEW-LEAD [foreign_operator] 2026-04-30 20-F   TRINITY BIOTECH PLC  (TRIB)  (CIK 0000888721) — manufacturing facility in India
+  NEW-LEAD [foreign_operator] 2026-03-31 10-K   Co-Diagnostics, Inc.  (CODX)  (CIK 0001692415) — manufacturing in India
+  NEW-LEAD [pe_fund] 2026-03-30 10-K   Carlyle Private Equity Partners Fund, L.P.  (CIK 0002065337) — invest in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-30 10-K   REVIVA PHARMACEUTICALS HOLDINGS, INC.  (RVPH)  (CIK 0001742927) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-27 10-K   Brookfield Private Equity Fund LP  (CIK 0002074065) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-20 10-K   VistaOne, L.P.  (CIK 0002044820) — investments in India
+  NEW-LEAD [pe_fund] 2026-03-13 10-K   Blackstone Private Equity Strategies Fund L.P.  (CIK 0001930054) — investment in India, investments in India
+  NEW-LEAD [foreign_operator] 2026-03-12 10-K   Health Catalyst, Inc.  (HCAT)  (CIK 0001636422) — investments in India
+  NEW-LEAD [foreign_operator] 2026-03-11 10-K   ALPHA PRO TECH LTD  (APT)  (CIK 0000884269) — manufacturing facility in India
+  NEW-LEAD [pe_fund] 2026-03-06 10-K   Blackstone Infrastructure Strategies L.P.  (CIK 0002030772) — investment in India, investments in India
+{
+ "companies": 1849,
+ "in_more_than_one_layer": 1540,
+ "by_role": {
+  "alias_check": 18,
+  "clearance_lead": 98,
+  "defence_corridor_tenant": 2,
+  "foreign_lead": 321,
+  "pairing_prospective": 7,
+  "pairing_verified": 12,
+  "plant_location_check": 35,
+  "pli_bulk_drugs_beneficiary": 35,
+  "pli_medical_devices_beneficiary": 22,
+  "pli_textiles_foreign_beneficiary": 8,
+  "pool_policy": 1371,
+  "pool_visibility": 1331,
+  "shortlist_target": 136
+ },
+ "india_entities": 1483,
+ "credit_rated": 82,
+ "by_country_top10": {
+  "India": 1556,
+  "United States": 76,
+  "?": 36,
+  "South Korea": 14,
+  "Japan": 13,
+  "United Kingdom": 12,
+  "China": 12,
+  "Australia": 11,
+  "Taiwan": 9,
+  "Turkey": 7
+ }
+}
+wrote /Users/umashankar/digital-twin-for-ipa/data/companies.db and /Users/umashankar/digital-twin-for-ipa/layers/32_company_db.json
+41 sector pages
+announcements: 440 | companies matched: 41 | match rows: 80 | exception verdicts challenged: 1
+  CHALLENGED [PARTIALLY_VISIBLE] Nayara Energy Limited <- oil-and-gas: Nayara Energy, India's largest private fuel retailer, plans to add 400 petrol pumps this y
+{
+ "ran": "2026-09-21",
+ "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
+ "api_calls_used": 39,
+ "calls_by_source": {
+  "newsapi": 25,
+  "newsdata": 2,
+  "marketaux": 10,
+  "alphavantage": 1
+ },
+ "articles_total": 104,
+ "new_articles": 104,
+ "match_rows_added": 23,
+ "sources_skipped_or_errors": [
+  "newsapi quiet Vantage Chemical Industries Private Limited: timeout"
+ ],
+ "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 \u2014 weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
+}
+exception hits: 0
+{
+ "ran": "2026-09-21",
+ "since": "2025-01-01",
+ "pages_fetched": 18,
+ "filings_in_window": 418,
+ "new_rows": 442,
+ "match_rows": 18,
+ "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB \u2014 the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
+}
+  [strong] German Green Steel And Power Limited  <- 2026-09-12: German Green Steel and Power Limited - Addendum II to DRHP
+  [strong] German Green Steel And Power Limited  <- 2026-08-15: German Green Steel and Power Ltd. - Addendum to DRHP
+  [strong] Encube Ethicals Private Limited  <- 2026-08-06: Encube Ethicals Limited - DRHP
+  [strong] Sky Alloys And Power Limited  <- 2026-06-25: Sky Alloys and Power Limited- DRHP
+  [strong] Symbiotec Pharmalab Private Limited  <- 2025-12-24: Symbiotec Pharmalab Limited - DRHP
+  [strong] Renny Strips Limited  <- 2025-12-19: Renny Strips Limited
+  [strong] Sky Alloys And Power Limited  <- 2025-10-09: SKY ALLOYS AND POWER LIMITED
+  [strong] Virupaksha Organics Limited  <- 2025-10-08: Virupaksha Organics Limited - DRHP
+  [strong] Supreet Chemicals Limited  <- 2025-09-05: Supreet Chemicals Limited - DRHP
+  [strong] German Green Steel And Power Limited  <- 2025-07-08: German Green Steel and Power Limited - DRHP
+  [strong] A-One Steels India Limited  <- 2025-04-24: A-One Steels India Limited - Addendum to DRHP
+  [strong] Jajoo Rashmi Refractories Limited  <- 2025-04-22: Jajoo Rashmi Refractories Limited - Addendum to DRHP
+  [strong] Advance Agrolife Private Limited  <- 2025-04-02: Advance Agrolife Limited
+  [strong] SHREEJI SHIPPING GLOBAL L  <- 2025-01-30: SHREEJI SHIPPING GLOBAL LIMITED
+  [strong] Dorf-Ketal Chemicals India Limited  <- 2025-01-27: Dorf-Ketal Chemicals India Limited
+  [strong] SHANTI GOLD INTERNATION L  <- 2025-01-22: Shanti Gold International Limited
+  [strong] A-One Steels India Limited  <- 2025-01-10: A One Steels India Limited
+  [strong] Anthem Biosciences Limited  <- 2025-01-06: ANTHEM BIOSCIENCES LIMITED
+  Symbiotec Pharmalab Private Limited: CIN=U24232MP2002PLC015293 fresh=1,500.00 million ofs=20,300.00 million
+extracted 1, errors 0
+loc links scraped: 3 | urls checked: 9
+wrote /Users/umashankar/digital-twin-for-ipa/layers/33_policy_finance_extensions.json
+company distress flags: 11 -> {'downgrade': 1, 'litigation_or_regrade': 1, 'rating_darkness': 4, 'sub_investment_grade': 3, 'watch_negative': 2}
+land pools: 5, named assets: 7
+wrote /Users/umashankar/digital-twin-for-ipa/layers/34_stressed_assets.json + stressed_assets view
+loaded 29828 foreign-roster companies, 1833 known twin names
+  [ET/auto] Commercial Vehicle Group, Inc. - Common Stock (US) NEW -- Domestic CV wholesale volumes to grow 4-6 pc in FY27: ICRA
+  [ET/cons_products] Semiconductor Manufacturing International Corp (HK) -- India’s semiconductor journey ‘pretty strong’, Semicon 2.0 offers policy continu
+  [ET/cons_products] Applied Materials Inc (HK) -- Applied Materials announces $5 billion India investment under Vision 2035 for se
+  [ET/cons_products] Applied Materials, Inc. - Common Stock (US) -- Applied Materials announces $5 billion India investment under Vision 2035 for se
+  [ET/industry] CRITICAL MINERALS GROUP LIMITED (AU) NEW -- Coal India Limited announces ambitious Business Development portfolio for divers
+  [Livemint/companies] Warner Bros. Discovery, Inc. - Series A Common Stock (US) NEW -- Paramount Settlement Talks Include Promise to Stay in California
+  [Livemint/companies] Trip.com Group Ltd (HK) NEW -- Alibaba, Meituan units in trouble? China antitrust probe follows Trip.com’s $776
+  [Livemint/companies] Trip.com Group Limited - American Depositary Shares (US) NEW -- Alibaba, Meituan units in trouble? China antitrust probe follows Trip.com’s $776
+  [Livemint/companies] Wells Fargo & Company Common Stock (US) NEW -- Netflix stock tumbles: Wells Fargo cuts target, says streamer giant needs ‘break
+  [Livemint/industry] Applied Materials Inc (HK) -- Applied Materials’ $5 billion India plan to build chip R&amp;D lab, supply chain
+  [Livemint/industry] Applied Materials, Inc. - Common Stock (US) -- Applied Materials’ $5 billion India plan to build chip R&amp;D lab, supply chain
+  [Livemint/industry] Applied Materials Inc (HK) -- Tata Electronics, Applied Materials bolster India’s chip push
+  [Livemint/industry] Applied Materials, Inc. - Common Stock (US) -- Tata Electronics, Applied Materials bolster India’s chip push
+  [Moneycontrol/economy] Semiconductor Manufacturing International Corp (HK) -- India’s Composite Flash PMI for April signals very strong economy
+  [BusinessStandard/companies] CRITICAL MINERALS GROUP LIMITED (AU) NEW -- Coal India plans to raise annual R&D spending to ₹500 crore by FY30
+
+514 items, 183 intent hits, 15 company matches (7 new) -> /Users/umashankar/digital-twin-for-ipa/layers/45_media_rss_sweep.json + /Users/umashankar/digital-twin-for-ipa/docs/MEDIA_RSS_SWEEP.md
+routes: 64 checked, 7 down -> /Users/umashankar/digital-twin-for-ipa/state/routes_2026-09-21.json
+  DOWN DSIR CMS (000) https://cms-dsir.digifootprint.gov.in/wp-json/wp/v2/
+  DOWN CPCB EPR portals (000) https://cpcb.gov.in/all-epr-portals-of-cpcb/
+  DOWN Telangana Life Sciences (000) https://lifesciences.telangana.gov.in
+  DOWN Kerala invest (000) https://invest.kerala.gov.in
+  DOWN MP invest (WP paths) (000) https://invest.mp.gov.in/policy-acts-rules/
+  DOWN WB Silpasathi (404) https://silpasathi.wb.gov.in/msme_Incentives
+  DOWN Sikkim industries (000) https://industries.sikkim.gov.in/visitors/schemes
+  CHANGE route CPCB EPR portals: ok=True -> False (000)
+  CHANGE route MP invest (WP paths): ok=True -> False (000)
+  CHANGE route Nagaland industry: ok=False -> True (200)
+  CHANGE route Sikkim industries: ok=True -> False (000)
+unnati: http=200, registration_stopped=True -> /Users/umashankar/digital-twin-for-ipa/state/unnati_2026-09-21.json
+nsws: 2 pages -> /Users/umashankar/digital-twin-for-ipa/state/nsws_2026-09-21.json
+CHANGE rbi WSS: Sep 12, 2026 -> Sep 19, 2026
+rbi: latest WSS issue = Sep 19, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-09-21.json
+ERROR build_layer26_projects.py: Command '['/Library/Developer/CommandLineTools/usr/bin/python3', '/Users/umashankar/digital-twin-for-ipa/scripts/build_layer26_projects.py']' returned non-zero exit status 1.
+send_twin_alert: no credentials available (env or plist) -- not sent

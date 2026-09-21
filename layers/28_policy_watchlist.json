@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-09-14",
+ "built": "2026-09-21",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9472,14 +9472,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/26th-sco-summit-2026"
   },
   {
-   "slug": "achieving-self-reliance-in-edible-oils",
-   "topic": "Achieving Self Reliance in Edible Oils",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/achieving-self-reliance-in-edible-oils"
-  },
-  {
-   "slug": "addressing-indias-education-and-job-crisis",
-   "topic": "Addressing Indias Education and Job Crisis",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/addressing-indias-education-and-job-crisis"
+   "slug": "ai-and-the-future-of-indias-workforce",
+   "topic": "Ai and Future of Indias Workforce",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ai-and-the-future-of-indias-workforce"
   },
   {
    "slug": "breaking-the-ai-hegemony-indias-path-to-ai-sovereignty",
@@ -9492,11 +9487,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/brics-and-indias-strategic-opportunity"
   },
   {
-   "slug": "building-a-resilient-care-economy-in-india",
-   "topic": "Building A Resilient Care Economy in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-a-resilient-care-economy-in-india"
-  },
-  {
    "slug": "cryospheric-risks-and-transboundary-resilience",
    "topic": "Cryospheric Risks and Transboundary Resilience",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/cryospheric-risks-and-transboundary-resilience"
@@ -9505,11 +9495,6 @@
    "slug": "democratic-decentralisation-in-india-from-devolution-to-self-governance",
    "topic": "Democratic Decentralisation in India From Devolution to Self Governance",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/democratic-decentralisation-in-india-from-devolution-to-self-governance"
-  },
-  {
-   "slug": "indias-100-gw-nuclear-power-ambition",
-   "topic": "Indias 100 Gw Nuclear Power Ambition",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-100-gw-nuclear-power-ambition"
   },
   {
    "slug": "indias-e-waste-challenge",
@@ -9552,6 +9537,11 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/parliamentary-disruptions-and-democratic-accountability"
   },
   {
+   "slug": "powering-indias-manufacturing-sector",
+   "topic": "Powering Indias Manufacturing Sector",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/powering-indias-manufacturing-sector"
+  },
+  {
    "slug": "powering-indias-solar-future",
    "topic": "Powering Indias Solar Future",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/powering-indias-solar-future"
@@ -9562,9 +9552,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/recalibrating-indias-central-asia-strategy"
   },
   {
-   "slug": "rethinking-indias-food-safety-framework",
-   "topic": "Rethinking Indias Food Safety Framework",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/rethinking-indias-food-safety-framework"
+   "slug": "reforming-plastic-waste-management-in-india",
+   "topic": "Reforming Plastic Waste Management in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-plastic-waste-management-in-india"
   },
   {
    "slug": "revitalising-indias-pharma-sector",
@@ -9572,9 +9562,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/revitalising-indias-pharma-sector"
   },
   {
-   "slug": "strategy-for-tea-sector-reforms",
-   "topic": "Strategy for Tea Sector Reforms",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strategy-for-tea-sector-reforms"
+   "slug": "shaping-indias-semiconductor-ecosystem",
+   "topic": "Shaping Indias Semiconductor Ecosystem",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/shaping-indias-semiconductor-ecosystem"
   },
   {
    "slug": "strengthening-india-japan-strategic-ties",
@@ -9585,6 +9575,16 @@
    "slug": "strengthening-indias-gig-economy",
    "topic": "Strengthening Indias Gig Economy",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-indias-gig-economy"
+  },
+  {
+   "slug": "strengthening-the-indo-german-strategic-partnership",
+   "topic": "Strengthening Indo German Strategic Partnership",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-the-indo-german-strategic-partnership"
+  },
+  {
+   "slug": "towards-a-sustainable-blue-economy-for-viksit-bharat",
+   "topic": "Towards A Sustainable Blue Economy for Viksit Bharat",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-a-sustainable-blue-economy-for-viksit-bharat"
   }
  ],
  "linkage": {

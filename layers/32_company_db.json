@@ -1,7 +1,7 @@
 {
  "layer": 32,
  "name": "company_db",
- "built": "2026-09-21",
+ "built": "2026-10-05",
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
@@ -61,11 +61,11 @@
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
  "ii_ticker_validation": {
-  "ran": "2026-09-21",
+  "ran": "2026-10-05",
   "what": "Invest India sector-page LATEST-UPDATES tickers scraped as an announcement channel and matched (conservatively, fragments kept for review) against the company DB; QUIET/PARTIALLY_VISIBLE clearance leads that the national IPA itself announces are flagged as challenged verdicts",
   "sector_pages_scraped": 41,
   "fetch_errors": [],
-  "announcements": 440,
+  "announcements": 442,
   "companies_matched": 41,
   "match_rows": 80,
   "exception_verdicts_challenged": [
@@ -168,31 +168,29 @@
   "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
  },
  "news_collection": {
-  "ran": "2026-09-21",
+  "ran": "2026-10-05",
   "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
   "api_calls_used": 39,
   "calls_by_source": {
-   "newsapi": 25,
+   "newsapi": 26,
    "newsdata": 2,
    "marketaux": 10,
    "alphavantage": 1
   },
-  "articles_total": 104,
-  "new_articles": 104,
-  "match_rows_added": 23,
+  "articles_total": 100,
+  "new_articles": 100,
+  "match_rows_added": 28,
   "exception_news_hits": [],
-  "sources_skipped_or_errors": [
-   "newsapi quiet Vantage Chemical Industries Private Limited: timeout"
-  ],
+  "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  },
  "sebi_public_issues": {
-  "ran": "2026-09-21",
+  "ran": "2026-10-05",
   "since": "2025-01-01",
   "pages_fetched": 18,
-  "filings_in_window": 418,
-  "new_rows": 442,
-  "match_rows": 18,
+  "filings_in_window": 441,
+  "new_rows": 447,
+  "match_rows": 16,
   "companies_moving_to_market": [
    {
     "company": "German Green Steel And Power Limited",
@@ -201,14 +199,6 @@
     "filed": "2026-09-12",
     "filing": "German Green Steel and Power Limited - Addendum II to DRHP",
     "url": "https://www.sebi.gov.in/filings/public-issues/sep-2026/german-green-steel-and-power-limited-addendum-ii-to-drhp_104480.html"
-   },
-   {
-    "company": "German Green Steel And Power Limited",
-    "visibility": "DARK",
-    "quality": "strong",
-    "filed": "2026-08-15",
-    "filing": "German Green Steel and Power Ltd. - Addendum to DRHP",
-    "url": "https://www.sebi.gov.in/filings/public-issues/aug-2026/german-green-steel-and-power-ltd-addendum-to-drhp_103895.html"
    },
    {
     "company": "Encube Ethicals Private Limited",
@@ -257,14 +247,6 @@
     "filed": "2025-10-08",
     "filing": "Virupaksha Organics Limited - DRHP",
     "url": "https://www.sebi.gov.in/filings/public-issues/oct-2025/virupaksha-organics-limited-drhp_97120.html"
-   },
-   {
-    "company": "Supreet Chemicals Limited",
-    "visibility": "VISIBLE",
-    "quality": "strong",
-    "filed": "2025-09-05",
-    "filing": "Supreet Chemicals Limited - DRHP",
-    "url": "https://www.sebi.gov.in/filings/public-issues/sep-2025/supreet-chemicals-limited-drhp_96737.html"
    },
    {
     "company": "German Green Steel And Power Limited",
@@ -342,18 +324,9 @@
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  },
  "cin_extraction": {
-  "ran": "2026-09-21",
+  "ran": "2026-10-05",
   "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
-  "records": [
-   {
-    "company": "Symbiotec Pharmalab Private Limited",
-    "cin": "U24232MP2002PLC015293",
-    "fresh_issue": "1,500.00 million",
-    "offer_for_sale": "20,300.00 million",
-    "objects_excerpt": "The Offer comprises of a Fresh Issue of up to [●] Equity Shares of face value of ₹2 each, aggregating up to ₹1,500.00 million by our Company and an Offer for Sale of up to [●] Equity Shares of face value of ₹2 each, aggregating up to ₹20,300.00 milli",
-    "pdf": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2025/1766556401413.pdf"
-   }
-  ],
+  "records": [],
   "errors": [],
   "mca_status": "mca.gov.in 403 (re-tested 2026-07-23); zaubacorp 403; thecompanycheck/falconebiz reachable but unofficial"
  }

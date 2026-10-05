@@ -1,12 +1,12 @@
 {
  "layer": 27,
  "title": "Foreign market-entry facilitators in India (trade-promotion agencies & bilateral chambers)",
- "built": "2026-09-21",
+ "built": "2026-10-05",
  "purpose": "The demand-side counterpart to the incentive catalogue: the country-wise bodies that host events and B2B matchmaking to bring foreign companies into India. Where a firm eyeing an Indian incentive (layers 02/17), project (layer 26) or site (layer 25) goes for introductions and delegations.",
  "coverage": {
   "bodies": 31,
   "countries": 21,
-  "live_on_build": 30,
+  "live_on_build": 29,
   "with_events_page": 11
  },
  "types": {
@@ -282,8 +282,8 @@
    "type": "chamber",
    "url": "https://canada-indiabusiness.ca/",
    "events_url": null,
-   "last_status": 200,
-   "live": true
+   "last_status": 0,
+   "live": false
   },
   {
    "country": "Singapore",

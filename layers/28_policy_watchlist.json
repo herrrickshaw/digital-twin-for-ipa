@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-09-21",
+ "built": "2026-10-05",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9467,19 +9467,9 @@
  ],
  "policy_debate_editorials": [
   {
-   "slug": "26th-sco-summit-2026",
-   "topic": "26th Sco Summit 2026",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/26th-sco-summit-2026"
-  },
-  {
    "slug": "ai-and-the-future-of-indias-workforce",
    "topic": "Ai and Future of Indias Workforce",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ai-and-the-future-of-indias-workforce"
-  },
-  {
-   "slug": "breaking-the-ai-hegemony-indias-path-to-ai-sovereignty",
-   "topic": "Breaking Ai Hegemony Indias Path to Ai Sovereignty",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/breaking-the-ai-hegemony-indias-path-to-ai-sovereignty"
   },
   {
    "slug": "brics-and-indias-strategic-opportunity",
@@ -9487,24 +9477,19 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/brics-and-indias-strategic-opportunity"
   },
   {
-   "slug": "cryospheric-risks-and-transboundary-resilience",
-   "topic": "Cryospheric Risks and Transboundary Resilience",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/cryospheric-risks-and-transboundary-resilience"
-  },
-  {
    "slug": "democratic-decentralisation-in-india-from-devolution-to-self-governance",
    "topic": "Democratic Decentralisation in India From Devolution to Self Governance",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/democratic-decentralisation-in-india-from-devolution-to-self-governance"
   },
   {
-   "slug": "indias-e-waste-challenge",
-   "topic": "Indias E Waste Challenge",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-e-waste-challenge"
+   "slug": "ethanol-for-sustainable-future",
+   "topic": "Ethanol for Sustainable Future",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ethanol-for-sustainable-future"
   },
   {
-   "slug": "indias-new-tribunal-framework",
-   "topic": "Indias New Tribunal Framework",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-new-tribunal-framework"
+   "slug": "formalisation-of-indias-informal-economy",
+   "topic": "Formalisation of Indias Informal Economy",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/formalisation-of-indias-informal-economy"
   },
   {
    "slug": "indias-space-sector-the-next-leap",
@@ -9512,29 +9497,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-space-sector-the-next-leap"
   },
   {
-   "slug": "indias-strategic-autonomy",
-   "topic": "Indias Strategic Autonomy",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-strategic-autonomy"
-  },
-  {
-   "slug": "indias-sugar-price-crisis",
-   "topic": "Indias Sugar Price Crisis",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-sugar-price-crisis"
+   "slug": "indias-transition-to-a-clean-energy-future",
+   "topic": "Indias Transition to A Clean Energy Future",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-transition-to-a-clean-energy-future"
   },
   {
    "slug": "making-india-resilient-to-extreme-weather-events",
    "topic": "Making India Resilient to Extreme Weather Events",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-india-resilient-to-extreme-weather-events"
-  },
-  {
-   "slug": "making-indian-cities-resilient-to-floods",
-   "topic": "Making Indian Cities Resilient to Floods",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-indian-cities-resilient-to-floods"
-  },
-  {
-   "slug": "parliamentary-disruptions-and-democratic-accountability",
-   "topic": "Parliamentary Disruptions and Democratic Accountability",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/parliamentary-disruptions-and-democratic-accountability"
   },
   {
    "slug": "powering-indias-manufacturing-sector",
@@ -9547,14 +9517,14 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/powering-indias-solar-future"
   },
   {
-   "slug": "recalibrating-indias-central-asia-strategy",
-   "topic": "Recalibrating Indias Central Asia Strategy",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/recalibrating-indias-central-asia-strategy"
-  },
-  {
    "slug": "reforming-plastic-waste-management-in-india",
    "topic": "Reforming Plastic Waste Management in India",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-plastic-waste-management-in-india"
+  },
+  {
+   "slug": "reimagining-the-united-nations-security-council",
+   "topic": "Reimagining United Nations Security Council",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-the-united-nations-security-council"
   },
   {
    "slug": "revitalising-indias-pharma-sector",
@@ -9572,9 +9542,19 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-india-japan-strategic-ties"
   },
   {
-   "slug": "strengthening-indias-gig-economy",
-   "topic": "Strengthening Indias Gig Economy",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-indias-gig-economy"
+   "slug": "strengthening-indias-r-d-ecosystem",
+   "topic": "Strengthening Indias R D Ecosystem",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-indias-r-d-ecosystem"
+  },
+  {
+   "slug": "strengthening-intellectual-property-rights-ecosystem-in-india",
+   "topic": "Strengthening Intellectual Property Rights Ecosystem in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-intellectual-property-rights-ecosystem-in-india"
+  },
+  {
+   "slug": "strengthening-ngos-in-india",
+   "topic": "Strengthening Ngos in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-ngos-in-india"
   },
   {
    "slug": "strengthening-the-indo-german-strategic-partnership",
@@ -9585,6 +9565,26 @@
    "slug": "towards-a-sustainable-blue-economy-for-viksit-bharat",
    "topic": "Towards A Sustainable Blue Economy for Viksit Bharat",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-a-sustainable-blue-economy-for-viksit-bharat"
+  },
+  {
+   "slug": "towards-a-uniform-civil-code",
+   "topic": "Towards A Uniform Civil Code",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-a-uniform-civil-code"
+  },
+  {
+   "slug": "towards-holistic-farmer-welfare-in-india",
+   "topic": "Towards Holistic Farmer Welfare in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-holistic-farmer-welfare-in-india"
+  },
+  {
+   "slug": "towards-sustainable-groundwater-management",
+   "topic": "Towards Sustainable Groundwater Management",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-sustainable-groundwater-management"
+  },
+  {
+   "slug": "transforming-indias-higher-education-system",
+   "topic": "Transforming Indias Higher Education System",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-indias-higher-education-system"
   }
  ],
  "linkage": {

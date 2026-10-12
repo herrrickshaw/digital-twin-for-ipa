@@ -1,107 +1,56 @@
 {
  "layer": 45,
  "name": "media_rss_sweep",
- "built": "2026-10-05",
+ "built": "2026-10-12",
  "what": "Live RSS sweep of 8 popular Indian newspapers' section feeds -- Economic Times, Hindu, Hindu Business Line, Times of India, Livemint, Moneycontrol, Business Standard (English) + Amar Ujala (Hindi) -- filtered for investment-intent language (English + Devanagari keywords), matched against real 23-country foreign stock-market rosters (same files layer 42 uses). Full article text pulled only for roster-confirmed hits. Originally a workaround for ET/Hindu/HBL blocking Anthropic's hosted crawler/search infra outright -- runs via subprocess curl from the local machine, which is never blocked (see feedback_economic_times_blocked memory) -- kept as the standard fetch method when extended to more sources for consistency. CAVEAT on the Hindi source: company-name matching only catches names Indian financial press conventionally leaves in Latin script (Apple, Tesla, Toyota); transliterated names (e.g. एप्पल for Apple) are invisible to the shared Latin-script matcher -- partial, not full, non-English coverage. Separate CAVEAT: 'strong' fragment matches on generic industry-descriptive company names (e.g. 'Semiconductor Manufacturing International Corp' vs. any article about semiconductor manufacturing in general) still slip through even after the SPAC/share-class filter -- treat every match here as a candidate for human review via its full_text field, not a confirmed lead, same as layer 44's un-reviewed MoU rows.",
  "roster_companies_loaded": 29828,
  "known_twin_names": 1833,
- "total_items_scanned": 454,
- "total_investment_intent_hits": 153,
- "total_company_matches": 18,
- "total_new_to_twin": 15,
+ "total_items_scanned": 510,
+ "total_investment_intent_hits": 168,
+ "total_company_matches": 6,
+ "total_new_to_twin": 6,
  "by_source": {
   "ET": {
    "auto": {
     "feed_url": "https://economictimes.indiatimes.com/industry/auto/rssfeeds/13359412.cms",
     "items": 50,
-    "intent_hits": 14,
+    "intent_hits": 16,
     "matches": [],
     "error": null
    },
    "cons_products": {
     "feed_url": "https://economictimes.indiatimes.com/industry/cons-products/rssfeeds/13358759.cms",
     "items": 50,
-    "intent_hits": 21,
-    "matches": [
-     {
-      "company": "Monster Beverage Corporation - Common Stock",
-      "ticker": "MNST",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "PepsiCo, Monster challenge India 'energy drink' label ban citing business impact",
-      "url": "https://economictimes.indiatimes.com/industry/cons-products/food/pepsico-monster-challenge-india-energy-drink-label-ban-citing-business-impact/articleshow/134622448.cms",
-      "published": "Thu, 01 Oct 2026 20:39:43 +0530",
-      "full_text": "New Delhi: PepsiCo and Monster Beverage have sued India's food regulator for banning their use of the  energy drink  label, non-public court filings show, escalating a regulatory fight that has jolted a sector expected to be worth $1.6 billion by 2028.The food safety regulator ordered makers of high-caffeine beverages sold âas  energy drinks  to stop using the description on June 30 amid growing concerns about the health risk of such products - part of an unprecedented food safety crackdown.Also Read: SC reserves verdict on FSSAIâs front-of-pack food labelling rules, seeks final submissionsIn a court filing in New Delhi, PepsiCo India said the prohibition will have  grave commercial consequences  and hurt  substantial investments , given that it had 492 million bottles and 26 million cans with those labels in circulation on July 31.PepsiCo was not given an opportunity to explain its position before the directive, and so the decision should be set aside, said the 358-page September 29 filing, which is not public and has not appeared in media but was seen by Reuters.The regulator privately gave the companies 90 days to drop  energy drink , or any similar description, from high-caffeine beverages, saying that using that term breached regulations, Reuters has reported. The company filings say several Indian states began seizing the stock straight away.MORE CHALLENGES, RELIEF FOR SOME FIRMSThe energy drink market in India boomed after PepsiCo launched Sting in 2017, with its 20-rupee ($0.21) plastic bottles proving popular among 15- to 19-year-olds and in rural areas, Euromonitor says. PepsiCo also sells its energy drink Adrenaline Rush in the market.Also Read: Delhi HC sets aside FSSAI order directing Red Bull India to drop âenergyâ from drinksIn the non-public court filing of Monster Beverage unit, Monster Energy India, the company said it was given no prior notice before the decision was taken.The company  is suffering grave financial loss and reputational harm,  said Monster's September 30 filing in the Delhi court, which Reuters has reviewed.Monster did not respond to Reuters queries, and neither did the Food Safety and Standards Authority of India.The cases are likely to be taken up by a judge next week.India's energy drink retail â sales are growing 12.6% annually, faster than in the United States and China.Energy drinks have sparked health concerns among regulators in several countries around the â world who worry they contain significant amounts of caffeine, sugar and taurine, an amino acid, which research suggests can contribute to health problems including high blood pressure and heart problems.They will be banned for under-16s in England from April â next year.Beverage companies, including Mukesh Ambani's Reliance , lobbied hard against the move in August, but the regulator didn't agree to their requests.However, the Delhi court this week quashed the food regulator's order to Austria's Red Bull, after the company flagged worries"
-     },
-     {
-      "company": "BLUE STAR HELIUM LIMITED",
-      "ticker": "BNL.AX",
-      "country": "AU",
-      "new_to_twin": true,
-      "title": "Haier, Godrej, Blue Star failed to detect fake e-waste recycling claims, India notice shows",
-      "url": "https://economictimes.indiatimes.com/industry/cons-products/durables/haier-godrej-blue-star-failed-to-detect-fake-e-waste-recycling-claims-india-notice-shows/articleshow/134590175.cms",
-      "published": "Wed, 30 Sep 2026 15:23:25 +0530",
-      "full_text": "Indian tax authorities have faulted appliance makers Haier, Godrej & Boyce and Blue Star for not detecting documents fabricated by a spurious recycler who did no e-waste work, while relying on them to meet green goals, a government notice showed.The third-biggest generator of e-waste after China and the United States, India has been concerned that 78% of the waste from discarded electronic goods is processed by informal scrap dealers who use methods that harm the environment.Reuters reviewed an August 27 notice sent to the three home appliance majors that detailed the lapses. Indian officials also accused them of wrongly claiming tax credits of $714,000 for recycling services that were never actually rendered. The foundational activity of procurement, receipt and processing of e-waste itself is not established,  the tax officials said in their 550-page notice.Godrej & Boyce and Blue Star said they would respond to the notice and were committed to legal compliance, adding that the recycler concerned had been authorised by the government.Godrej said it followed all government guidelines for recycling, while Blue Star said it had no reason to believe any irregularity but had stopped dealings with the vendor.Haier India said it would continue to cooperate with the authorities and was committed to legal compliance.India's finance ministry did not respond to queries.ALARM AMONG CONSUMER ELECTRONICS COMPANIESThe findings have set off alarm in India's $95-billion consumer electronics market as many big companies aware of the case have launched internal reviews of recycling supply chains, three industry executives said on condition of anonymity.Haier and Godrej sell appliances such as refrigerators and washing machines in India, while Mumbai-listed Blue Star specialises in air-conditioning. They compete with market leaders such as Samsung and LG.India allows companies to claim credits for tax paid on services such as recycling, reducing the amount of tax owed on their sales. Penalties for false claims can run up to 100%.The incident follows a January warning by the government against  fraudulent certification  issued by spurious recyclers.Since 2022, Prime Minister Narendra Modi's government has asked companies to recycle a share of the products they sell each year, but most meet those obligations by buying compliance certificates from recyclers who do the actual work.NO VERIFICATION, TAX CREDITSThe notice cited a little-known Indian recycler, WEEE-PRO Resource Recovery Solutions, as the issuer of the compliance certificates.It accused the three companies of not having verified the vendor was doing actual work, but relying instead on fabricated documents to prove compliance.WEEE-PRO did not respond to Reuters queries. But the notice said its officials denied wrongdoing and disputed the evidence presented during the investigation.The three companies  admitted that they had not independently verified the actual collection, transportation, receipt, dismantli"
-     },
-     {
-      "company": "Rare Earth Magnesium Technology Group Holdings Ltd",
-      "ticker": "0601.HK",
-      "country": "HK",
-      "new_to_twin": true,
-      "title": "Midwest Energy to set up Rs 250-crore rare earth magnet plant in Hyderabad",
-      "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/midwest-energy-to-set-up-rs-250-crore-rare-earth-magnet-plant-in-hyderabad/articleshow/134536537.cms",
-      "published": "Mon, 28 Sep 2026 13:52:33 +0530",
-      "full_text": "Hyderabad-based Midwest Energy is setting up Indiaâs first sintered NdFeB magnet plant in Hyderabad at an initial investment of Rs 250 crore to build domestic capacity for a product India currently imports almost entirely. The plant is undergoing trial production with commercial production expected to begin by mid-October with an initial 500 MT/year capacity, sources said.The plant will manufacture magnets -- using manufacturing tech developed in-house -- for electric vehicle motors, wind turbines, smartphones, defence applications and MRI equipment, with sample testing underway with several EV and wind-energy companies.India currently imports almost 100% of its sintered rare earth permanent magnet requirements. Midwest Energyâs plant could eventually help replace around 15-20% of Indiaâs import dependence over the next three to five years, sources added.At the initial 500-tonne scale, the companyâs magnets are expected to be around 20-25% more expensive than Chinese imports. The company is also in the process of expanding its capacity to 5,000 tonnes by December 2027 at an investment of up to Rs 2,000 crore to help bring costs closer to Chinese levels.Alongside the rare-earth magnet business, the technology and clean energy arm of Midwest Business House also has a 1.2 GW battery energy storage system plant in Bengaluru that began commercial production in July this year."
-     }
-    ],
+    "intent_hits": 17,
+    "matches": [],
     "error": null
    },
    "industry": {
     "feed_url": "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
     "items": 50,
-    "intent_hits": 11,
-    "matches": [
-     {
-      "company": "Convenience Retail Asia Ltd",
-      "ticker": "0831.HK",
-      "country": "HK",
-      "new_to_twin": true,
-      "title": "Reliance Retail, 7-Eleven end a five-year India franchise deal as convenience stores struggle",
-      "url": "https://economictimes.indiatimes.com/industry/services/retail/reliance-retail-7-eleven-end-a-five-year-india-franchise-deal-as-convenience-stores-struggle/articleshow/134679568.cms",
-      "published": "Mon, 05 Oct 2026 00:16:12 +0530",
-      "full_text": "Mumbai: Reliance Retail and 7-Eleven are ending their five-year franchisee deal in India, closing most of the nearly 60 convenience stores they operated under the partnership, after struggling to make the format profitable, people familiar with the matter said.A handful of outlets are clearing the inventory before shutting, they said. 7-Eleven may look for another Indian partner to keep a foothold in the market, although no decision has been made, the people said.The exit highlights an unusual squeeze that convenience stores are facing in India, with millions of small kirana stores that have long served consumers' immediate needs on one side and quick-commerce companies that are bringing the same snacks, groceries and daily essentials to doorsteps within minutes on the other.134679627Reliance and 7-Eleven did not respond to ET's queries.The partnership, struck in 2021, was intended to bring the world's largest convenience-store chain to India through Reliance's retail network. But the business struggled to achieve the scale needed to offset the relatively high costs of running branded stores.The 7-India Convenience Retail venture reported revenue of about â¹92 crore ($10.6 million) and a net loss of nearly â¹90 crore in the year ended March 2026, according to its financial statements. Reliance wants to reach consumers across every channel, but sustainability ultimately matters. Convenience stores have faced increasing pressure from quick commerce since the pandemic, with both formats offering similar assortments and serving the same immediate-needs occasions,  said Devangshu Dutta, founder and CEO of Third Eyesight, a consumer-sector consultancy. Kiranas operate with far lower overheads and different margin expectations than corporate-run convenience stores. Reliance's exit could therefore signal a broader rethink of the format, particularly in markets where quick commerce has become a strong alternative. Globally convenience stores have become powerful retail businesses in several markets despite the expansion of supermarkets and hypermarkets. 7-Eleven in Japan, Taiwan, Thailand and Singapore; Lawson in Japan and Oxxo in Mexico are among the largest retailers in their respective markets.7-Eleven's Japanese parent, Seven & i Holdings, operates more than 85,000 stores globally, making it one of the world's largest retail networks. Yet the company has been restructuring its overseas operations and closing stores in North America as consumer behaviour and store economics change.In India, however, organised convenience retail has struggled to replicate the success seen in other Asian and emerging markets. EasyDay, More and Spencer's have either shut stores or shrank their smaller-format networks over the years, underscoring the difficulty of building profitable neighbourhood stores at scale.Packaged consumer goods companies continue to derive roughly three-fourths of their sales from small neighbourhood stores, underlining the strength of the tradi"
-     },
-     {
-      "company": "Natural Gas Distribution Company",
-      "ticker": "9516.SR",
-      "country": "SA",
-      "new_to_twin": true,
-      "title": "GAIL’s Sanjay Kumar named next Petronet LNG CEO",
-      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/gails-sanjay-kumar-named-next-petronet-lng-ceo/articleshow/134660552.cms",
-      "published": "Sat, 03 Oct 2026 18:47:49 +0530",
-      "full_text": "Sanjay Kumar, Director (Marketing) at state-owned GAIL (India) Ltd, has been named the next Managing Director and Chief Executive Officer of Petronet LNG Ltd. His term will begin on May 13, 2027, following the conclusion of current CEO A K Singh's extended tenure.Petronet's board finalized the decision during a 15-minute meeting on October 2, as disclosed in a regulatory filing. Kumar, 59, has been appointed for a five-year tenure.Also read: India's crude imports hit 2026 high in September as Gulf supplies surge despite Hormuz risksAs India's largest liquefied natural gas importer, Petronet is majority-owned by state-run energy companies, with Indian Oil Corporation (IOC), GAIL (India) Ltd, Oil and Natural Gas Corp (ONGC), and Bharat Petroleum Corporation Ltd (BPCL) each holding a 12.5% stake. Although chaired by the Union Petroleum Secretary, Petronet is registered as a private limited entity. Consequently, it operates outside the jurisdiction of government watchdogs such as the CAG, CVC, and RTI. Board executives are subject to a retirement age of 65, compared to 60 at public sector units, and receive higher compensation than PSU counterparts.Kumar, who has served as GAIL's Marketing Director since mid-June 2023, holds a mechanical engineering degree from IIT Kharagpur and an MBA. He brings more than 35 years of industry experience across the natural gas and LNG value chain.Petronet LNG manages India's premier LNG import facility at Dahej in Gujarat alongside a second terminal at Kochi in Kerala. Together, these facilities offer a combined regasification capacity of 27.5 million tonnes per annum (MMTPA) - 22.5 MMTPA at Dahej and 5 MMTPA at Kochi. The company manages roughly 74% of the nation's LNG imports and fulfills about 34% of overall gas consumption.Also read: G7 nations agree to release 100 million barrels of oil, including diesel, a boost for TrumpThis leadership change coincides with national efforts to boost natural gas within the energy mix and expand gas infrastructure. To support these goals, Petronet is advancing plans to increase Dahej's regasification capacity, build a greenfield LNG facility on the east coast, and construct a petrochemical project at Dahej."
-     },
-     {
-      "company": "Natural Gas Services Group, Inc. Common Stock",
-      "ticker": "NGS",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "GAIL’s Sanjay Kumar named next Petronet LNG CEO",
-      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/gails-sanjay-kumar-named-next-petronet-lng-ceo/articleshow/134660552.cms",
-      "published": "Sat, 03 Oct 2026 18:47:49 +0530",
-      "full_text": "Sanjay Kumar, Director (Marketing) at state-owned GAIL (India) Ltd, has been named the next Managing Director and Chief Executive Officer of Petronet LNG Ltd. His term will begin on May 13, 2027, following the conclusion of current CEO A K Singh's extended tenure.Petronet's board finalized the decision during a 15-minute meeting on October 2, as disclosed in a regulatory filing. Kumar, 59, has been appointed for a five-year tenure.Also read: India's crude imports hit 2026 high in September as Gulf supplies surge despite Hormuz risksAs India's largest liquefied natural gas importer, Petronet is majority-owned by state-run energy companies, with Indian Oil Corporation (IOC), GAIL (India) Ltd, Oil and Natural Gas Corp (ONGC), and Bharat Petroleum Corporation Ltd (BPCL) each holding a 12.5% stake. Although chaired by the Union Petroleum Secretary, Petronet is registered as a private limited entity. Consequently, it operates outside the jurisdiction of government watchdogs such as the CAG, CVC, and RTI. Board executives are subject to a retirement age of 65, compared to 60 at public sector units, and receive higher compensation than PSU counterparts.Kumar, who has served as GAIL's Marketing Director since mid-June 2023, holds a mechanical engineering degree from IIT Kharagpur and an MBA. He brings more than 35 years of industry experience across the natural gas and LNG value chain.Petronet LNG manages India's premier LNG import facility at Dahej in Gujarat alongside a second terminal at Kochi in Kerala. Together, these facilities offer a combined regasification capacity of 27.5 million tonnes per annum (MMTPA) - 22.5 MMTPA at Dahej and 5 MMTPA at Kochi. The company manages roughly 74% of the nation's LNG imports and fulfills about 34% of overall gas consumption.Also read: G7 nations agree to release 100 million barrels of oil, including diesel, a boost for TrumpThis leadership change coincides with national efforts to boost natural gas within the energy mix and expand gas infrastructure. To support these goals, Petronet is advancing plans to increase Dahej's regasification capacity, build a greenfield LNG facility on the east coast, and construct a petrochemical project at Dahej."
-     }
-    ],
+    "intent_hits": 20,
+    "matches": [],
     "error": null
    }
   },
   "Hindu": {
    "business": {
     "feed_url": "https://www.thehindu.com/business/feeder/default.rss",
-    "items": 0,
-    "intent_hits": 0,
-    "matches": [],
-    "error": "HTTP 403"
+    "items": 60,
+    "intent_hits": 12,
+    "matches": [
+     {
+      "company": "Warner Bros. Discovery, Inc. - Series A Common Stock",
+      "ticker": "WBD",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Paramount and Warner Bros merge to become one Hollywood giant, Skydance",
+      "url": "https://www.thehindu.com/business/paramount-and-warner-bros-merge-to-become-one-hollywood-giant-skydance/article71552210.ece",
+      "published": "Thu, 08 Oct 2026 17:27:28 +0530",
+      "full_text": ""
+     }
+    ],
+    "error": null
    }
   },
   "HinduBusinessLine": {
@@ -111,14 +60,14 @@
     "intent_hits": 21,
     "matches": [
      {
-      "company": "Semiconductor Manufacturing International Corp",
-      "ticker": "0981.HK",
-      "country": "HK",
-      "new_to_twin": false,
-      "title": "Canon eyes chip projects, plans local service centres in India",
-      "url": "https://www.thehindubusinessline.com/companies/canon-eyes-chip-projects-plans-local-service-centres-in-india/article71543011.ece",
-      "published": "Sun, 04 Oct 2026 11:21:52 +0530",
-      "full_text": "Japanese imaging and optical major Canon had discussions with all those engaged in key semiconductor manufacturing projects in India and plans to bring its technology and service centres to the country, said its India President and CEO Toshiaki Nomura. Canon, a global supplier of lithography systems used in semiconductor manufacturing, said it is looking to support the development of India's semiconductor ecosystem as the government steps up efforts to establish domestic chip fabrication capabilities. The Japanese technology major is sensing a \"great opportunity\" in the upcoming semiconductor manufacturing ecosystem promoted by the government, and the company will bring its technologies (lithographic machines) to help assist chip manufacturers to produce chips in India, he said. \"Now everybody knows semiconductor manufacturing is the buzzword in India. We have a lithographic machine to produce those chips... We bring our technologies to help assist the chip manufacturer to produce chips in India. So that's a great opportunity for us,\" Nomura told PTI. He said Canon has already engaged with major semiconductor projects that are currently under development in the country. Asked whether the company has held discussions with semiconductor ventures being established in India, he said, \"Yes, we have discussed with all those key manufacturers. The projects are ongoing and, as and when some development is confirmed, we will share it.\""
+      "company": "HDFC Bank Limited Common Stock",
+      "ticker": "HDB",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "HDFC Bank shares bounce back after rate hike blow; YTD loss tops 29%",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/hdfc-bank-shares-bounce-back-after-rate-hike-blow-ytd-loss-tops-29/article71562937.ece",
+      "published": "Fri, 09 Oct 2026 12:31:34 +0530",
+      "full_text": "HDFC Bank shares recovered on Friday, rising 1.69 per cent to ₹703.95 on the NSE as of 12:15 IST, a day after the stock shed 1 per cent to ₹684.25 following the Reserve Bank of India’s 25-basis-point repo rate hike to 5.50 per cent. The stock opened at ₹696.60 and touched an intraday high of ₹706.40, though selling pressure remained dominant at 61.31 per cent of total traded volume. Traded volume stood at 99.47 lakh units, with traded value at ₹698.47 crore. The company’s market capitalisation was ₹10,85,392.16 crore. The adjusted price-to-earnings ratio stood at 13.32."
      }
     ],
     "error": null
@@ -126,7 +75,7 @@
    "economy": {
     "feed_url": "https://www.thehindubusinessline.com/economy/feeder/default.rss",
     "items": 60,
-    "intent_hits": 15,
+    "intent_hits": 8,
     "matches": [],
     "error": null
    }
@@ -138,14 +87,14 @@
     "intent_hits": 6,
     "matches": [
      {
-      "company": "Mercantile Bank Corporation - Common Stock",
-      "ticker": "MBWM",
+      "company": "ASA  Gold and Precious Metals Limited",
+      "ticker": "ASA",
       "country": "US",
       "new_to_twin": true,
-      "title": "Credit offtake stays ahead of banks' deposit growth",
-      "url": "https://timesofindia.indiatimes.com/business/india-business/credit-offtake-stays-ahead-of-banks-deposit-growth/articleshow/134683228.cms",
-      "published": "2026-10-05T05:31:32+05:30",
-      "full_text": "MUMBAI: Advance growth continued to outstrip deposit growth at several banks in the second quarter of FY27, with loan books expanding at a double-digit pace across public sector and mid-sized private lenders despite efforts to accelerate deposit mobilisation.Provisional business updates for Q2FY27 show advances growing between 13% and 29% year-on-year across the banks, with smaller and regional lenders generally recording faster expansion than their larger peers. Tamilnad Mercantile Bank led the pack with 29.4% growth in advances, followed by Karnataka Bank at 24.9%, UCO Bank at 24.8% and J&K Bank at 23.7%.Among larger public sector banks, Bank of India reported the fastest credit growth at 20.4%, followed by Canara Bank at 19.3%, Punjab & Sind Bank at 19.4%, Union Bank of India at 18.5% and Bank of Baroda at 18.3%. Punjab National Bank's advances grew 14.8%, while Indian Bank reported 16.6% growth.Deposit growth, however, was more uneven. Bank of India's deposits rose 21.6%, ahead of its 20.4% credit growth, while Bank of Baroda's deposits grew 16.7%, broadly keeping pace with its 18.3% advance growth. Canara Bank's deposits rose 13.1% against 19.3% credit growth, while Union Bank's deposits grew 6.9% against 18.5% loan growth. At PNB, deposits grew 9.9%, compared with 14.8% growth in advances.The divergence was more pronounced among some mid-sized lenders. UCO Bank's advances grew 24.8%, compared with 14.2% deposit growth, while J&K Bank reported 23.7% credit growth against 16.3% deposit growth. Karnataka Bank's advances rose 24.9%, more than twice the 12% growth in deposits.Some lenders, however, managed to expand deposits faster than advances. Tamilnad Mercantile Bank's deposits grew 25.5%, compared with 29.4% growth in advances, while Dhanlaxmi Bank reported deposit growth of 20.2% against 22.3% credit growth. At South Indian Bank, both advances and deposits grew 18.7%.The numbers point to continued pressure on banks to mobilise deposits even as credit demand remains firm.You use AI every day. Now get your AI Quotient. Take the AIQ test."
+      "title": "Gold, silver prices next week: What investors should watch amid global uncertainty",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/gold-silver-prices-next-week-what-investors-should-watch-amid-global-uncertainty/articleshow/134872993.cms",
+      "published": "2026-10-11T21:19:20+05:30",
+      "full_text": "Gold and silver prices are likely to remain range-bound with a mildly positive bias next week, as weakness in the rupee supports domestic bullion prices amid global fluctuations, analysts said.Investors will also track inflation data from India, China and the US for cues on the outlook for precious metals.Trade data from Beijing and speeches by Federal Reserve officials will be closely watched for indications of whether the US central bank will deliver another rate hike in October or defer it to December, analysts said, as cited by news agency PTI.\"The outlook remains range-bound with a mildly positive undertone, as rupee weakness provides a cushion against global price fluctuations,\" Jateen Trivedi, VP research analyst - commodity and currency at LKP Securities, said.Gold gains nearly 1% on MCX; silver ends lowerOn the Multi Commodity Exchange (MCX), gold futures for December delivery rose by Rs 1,109, or nearly 1 per cent, last week to settle at Rs 1.51 lakh per 10 grams. Silver futures, however, ended the week marginally lower by Rs 122 at Rs 2.25 lakh per kilogram.Trivedi said gold's recovery on the MCX was supported by a softer US dollar, easing bond yields and improved geopolitical sentiment. A fall in crude oil prices on Friday also eased immediate inflation concerns, while the rupee's weakness provided additional support to domestic bullion.\"A weaker rupee increases the landed cost of imported bullion, helping MCX gold remain supported even when international prices face pressure. This currency impact could continue to cushion domestic prices against any moderate correction in Comex gold,\" he added.In overseas markets, December gold futures on Comex rose by $54, or 1.3 per cent, last week to close at $4,216.3 per ounce.Silver futures also gained more than 1 per cent to settle at $61.05 per ounce.Bargain buying supports international gold pricesGold futures recorded weekly gains of more than 1 per cent, supported by bargain buying at lower levels, Pranav Mer, senior vice president, EBG - commodity and currency research at JM Financial Services Ltd, said.\"Gold futures ended with a weekly gain of more than 1 per cent, on bargain buying at lower levels recovering from around $4,066 to above $4,200 per ounce,\" Mer said.He added that most of the gains came in the final two trading sessions of the week, as the dollar consolidated around the 102 level and US Treasury yields pared some of their recent gains.Silver also recovered over the last two sessions, drawing support from gold and positive momentum in industrial metals such as copper and zinc.However, the upside was limited by concerns that elevated prices could weaken demand as buyers turn to alternatives. Expectations of a market supply surplus in 2027 also weighed on the outlook for silver, Mer said.Inflation data, Fed signals and geopolitical tensions in focusGeopolitical uncertainty remains another factor influencing bullion prices. The US-Iran conflict remains unresolved, with tensions "
      }
     ],
     "error": null
@@ -158,34 +107,34 @@
     "intent_hits": 14,
     "matches": [
      {
-      "company": "Lockheed Martin Corporation Common Stock",
-      "ticker": "LMT",
-      "country": "US",
+      "company": "CLOSE THE LOOP LTD.",
+      "ticker": "CLG.AX",
+      "country": "AU",
       "new_to_twin": true,
-      "title": "Lockheed Martin’s India expansion plan hinges on $10.5bn military aircraft bid: Which firms are competing for project?",
-      "url": "https://www.livemint.com/companies/news/lockheed-martin-s-india-expansion-plan-hinges-on-10-5bn-military-aircraft-bid-which-firms-are-competing-for-project-11791107461403.html",
-      "published": "Sun, 04 Oct 2026 16:24:57 +0530",
-      "full_text": "Lockheed Martin is considering a further expansion of its manufacturing footprint in India if it secures the contract to supply medium transport aircraft to the Indian armed forces, a senior company executive said, according to PTI.India floated a tender in August to acquire 60 medium transport aircraft under a deal estimated at $10.5 billion.Five Indian firms â Tata Advanced Systems Limited (TASL), Mahindra Group, Adani Defence & Aerospace, Hindustan Aeronautics Limited (HAL) and Reliance Defence, are competing for the project. The selected Indian partner is expected to collaborate with a global aircraft manufacturer as part of the programme.\"We have a long partnership with Tata that produces components and empennages of the C-130J aircraft. It is a very robust capability that will be expanded in our current bid,\" said Dan Tenney, Senior Vice President, global business development and strategy, Lockheed Martin, according to PTI.\"We are looking to expand that capability with production and other things that occur within India,\" he said.Tata Advanced Systems Limited (TASL) has teamed up with Lockheed Martin for the bid, while Mahindra Group has partnered with Brazilian aerospace firm Embraer.\"So we're very excited by that. India has been a great partner in helping to enable advanced capabilities for that aircraft and beyond,\" Tenney stated.Tenney said a successful bid by Lockheed Martin and TASL would lead to an expansion of the companyâs existing network in India.\"So we are looking to do that,\" Tenney added.Under Lockheed Martinâs proposal, 12 aircraft would be supplied in flyaway condition, while the remaining 48 would be built in India.Lockheed Martin has additionally offered to modernise the Indian Air Forceâs (IAF) 12 existing C-130J aircraft to the proposed upgraded configuration. If implemented, the move could create a standardised fleet of 72 aircraft for the IAF.The C-130J fleet has logged more than 58,000 flight hours and has been deployed for a range of missions, including operations at high altitudes in Ladakh, humanitarian assistance during floods in Nepal and the evacuation of Indian citizens from Sudan in 2023.\nTaiwan receives first US-made F-16Vs\nMeanwhile, Taiwan on Friday took delivery of its first US-built F-16V fighter jets as the island moves to strengthen its defence capabilities amid the threat of a potential military assault by China, as per AFP.\nThe two aircraft are part of an $8 billion agreement for 66 F-16Vs, approved during US President Donald Trump's first term, with deliveries scheduled to take place this year.\nThe delivery comes as Taiwan waits for Washington to approve a separate $14 billion arms package. Trump has put that deal on hold following objections from China.\nBeijing considers Taiwan part of its territory and has not ruled out using force to bring the island under its control.\nThe two F-16Vs, manufactured by US defence giant Lockheed Martin, landed at an air force base in Taitung on Taiwan's south"
+      "title": "Tata Motors sweetens Iveco offer as key investors hold out",
+      "url": "https://www.livemint.com/companies/tata-motors-iveco-acquisition-deal-status-11791713827262.html",
+      "published": "Mon, 12 Oct 2026 06:05:40 +0530",
+      "full_text": "New Delhi: Tata Motors Ltd has raised its offer price for Iveco Group NV, but three major institutional shareholders have yet to tender their shares, putting the acquisition at risk as the 26 October deadline approaches. The tender offer had attracted acceptances for just 28.4% of the shares by the latest available count, with less than two weeks remaining.\n The company raised its offer price by 2% to â¬14.40 per share on 9 October, after activist investor Petrus Advisers publicly rejected the original offer on 29 September, arguing that it undervalued the Italian commercial vehicle maker. The revised offer is Tata Motorsâ âbest and finalâ price, the company said."
      },
      {
       "company": "Warner Bros. Discovery, Inc. - Series A Common Stock",
       "ticker": "WBD",
       "country": "US",
       "new_to_twin": true,
-      "title": "Paramount-Warner Bros merger: Who is staying, who is exiting as Skydance takes shape?",
-      "url": "https://www.livemint.com/entertainment/paramountwarner-bros-merger-who-is-staying-who-is-exiting-as-skydance-takes-shape-11791038008329.html",
-      "published": "Sat, 03 Oct 2026 20:27:20 +0530",
-      "full_text": "As Paramount Skydance prepares to complete its $110 billion-plus acquisition of Warner Bros. Discovery, the leadership structure of the combined entertainment company is becoming clearer. The new parent company will be called Skydance, with the transaction expected to close on October 6. David Ellison will remain chairman and CEO, while former Mattel chief Ynon Kreiz will join as co-CEO.Several senior Paramount executives are set to take on expanded responsibilities, while some of Warner Bros. Discovery's top leadership will depart. Here is a look at the executives staying, those leaving and their key achievements.Who is staying?David Ellison â Chairman and CEODavid Ellison will remain at the helm of the combined company as chairman and CEO. Paramount said Ellison will oversee strategy, creative and technology, while Kreiz will handle day-to-day operations and integration.Ellison founded Skydance Media and built it into a major film and television production company. Its film credits include franchises such as Mission: Impossible, Top Gun and Transformers. His role in the Paramount-Warner Bros deal makes him the central figure in the new company's strategy and creative direction.Ellison has also chosen the name Skydance for the merged company, saying the name is intended to give the combined business its own identity while preserving the Paramount and Warner Bros brands.Ynon Kreiz â Co-CEOYnon Kreiz will join Ellison as co-CEO on October 5, one day before the planned closing. He will oversee daily operations and the integration of Paramount and Warner Bros. Discovery.Dana Goldberg â Expanded film roleParamount Pictures co-chair Dana Goldberg is staying and is expected to take on an expanded role overseeing the combined film business.Deadline reported that Goldberg and fellow Paramount Pictures co-chair Josh Greenstein are poised to run the merged Paramount-Warner Bros film operation.Goldberg previously served as chief creative officer at Skydance Media and helped establish Skydance Television, giving her experience on both the Paramount and Skydance sides of the new company.Josh Greenstein â Expanded film roleJosh Greenstein, Paramount Pictures co-chair and vice chair of Paramount platforms, is also staying.Greenstein and Goldberg are expected to assume oversight of Warner Bros. Pictures following the transaction, according to Bloomberg reporting cited in the material provided. Deadline likewise reported that the pair are set to run the combined film unit.Their expanded responsibilities mean Paramount's existing studio leadership will oversee film operations spanning both Paramount Pictures and Warner Bros.James Gunn and Peter Safran â DC StudiosJames Gunn and Peter Safran are staying and will continue to lead DC Studios.Deadline reported that the duo will continue running Warner Bros.' DC film, television and comic-book production operation after Paramount closes the acquisition.Gunn's filmmaking credits include Marvel's Guardians of t"
+      "title": "$606 million payday! Check outgoing CEO David Zaslav's big windfall from Paramount's Warner Bros takeover",
+      "url": "https://www.livemint.com/companies/news/606-million-payday-check-outgoing-ceo-david-zaslavs-big-windfall-from-paramounts-warner-bros-takeover-11791625464356.html",
+      "published": "Sat, 10 Oct 2026 17:40:38 +0530",
+      "full_text": "David Zaslav, the former president and chief executive officer of Warner Bros. Discovery (WBD), will receive approximately $606.1 million from his equity holdings following the completion of Paramountâs acquisition of the entertainment company, according to a regulatory filing.The payout became effective on October 6, when Paramount completed its takeover of WBD. The amount includes shares and restricted stock units that were converted into cash entitlements as part of the transaction.According to a filing with the US Securities and Exchange Commission (SEC), Zaslavâs proceeds include $381.7 million from stock options, which are subject to withholding taxes. His overall proceeds will also be subject to applicable capital gains taxes. However, 14.98 million of his stock options became worthless following themerger because their exercise prices exceeded Paramountâs acquisition price of $31.0167 per share.Zaslav sold nearly $200 million in shares after deal announcementIn addition to the proceeds from the merger, Zaslav has sold nearly $200 million worth of Warner Bros. Discovery stock since the company reached its acquisition agreement with Paramount in February.Paramount formally completed the takeover on October 6, bringing an end to Zaslavâs tenure at the company he helped create by merging WarnerMedia and Discovery.Following the transaction, the iconic Warner Bros. water tower in Burbank, California, was repainted with the words âA Skydance Corporationâ, reflecting the companyâs new corporate identity.Several senior executives leave Warner Bros. DiscoveryZaslav is among several senior executives departing Warner Bros. Discovery following the takeover.Other executives leaving their positions include Chief Financial Officer Gunnar Wiedenfels; Bruce Campbell, chief revenue and strategy officer; Pamela Abdy and Michael De Luca, co-chairs of Warner Bros. Motion Picture Group; and Scott Miller, president of networks and streaming distribution.Other senior executives also received substantial payouts associated with the transaction. They include Wiedenfels, Campbell, Gerhard Zeiler, WBDâs former head of international operations, and JB Perrette, the companyâs former head of streaming and games.Perrette has joined David Ellisonâs Skydance as co-chair and chief business officer of its television and direct-to-consumer streaming divisions. Zeiler, meanwhile, is pursuing a possible political career in Austria.Shareholders opposed executive compensation packagesAt Warner Bros. Discoveryâs annual shareholder meeting in June, a majority of shareholders voted against the proposed golden-parachute packages for Zaslav and other named executives, as well as their 2025 compensation plans.The votes came after years of restructuring and cost-cutting under Zaslavâs leadership. The company reduced its workforce as part of efforts to improve operating efficiency and manage expenses.At the same time, Zaslav more than doubled the number of employ"
      },
      {
-      "company": "Warner Bros. Discovery, Inc. - Series A Common Stock",
-      "ticker": "WBD",
+      "company": "HDFC Bank Limited Common Stock",
+      "ticker": "HDB",
       "country": "US",
       "new_to_twin": true,
-      "title": "Paramount-Warner Bros merger: David Ellison names combined company Skydance",
-      "url": "https://www.livemint.com/companies/people/paramountwarner-bros-merger-david-ellison-names-combined-company-skydance-11790994449359.html",
-      "published": "Sat, 03 Oct 2026 08:28:15 +0530",
-      "full_text": "Paramount Skydance CEO David Ellison has confirmed that the combined company created by the merger with Warner Bros Discovery will be called Skydance, with the new corporate identity set to take effect as the $110 billion deal moves towards completion.The decision is intended to give the merged entity its own corporate identity while keeping Paramount and Warner Bros as distinct entertainment brands, Ellison said.The combination will create a major entertainment business spanning film, television, news and streaming, bringing together studios behind franchises such as Mission: Impossible and Harry Potter, along with networks and platforms including CBS, CNN, Paramount and HBO Max, Reuters reported. Why David Ellison chose the Skydance nameEllison said the name was chosen to ensure that the corporate identity of the combined business does not overshadow the established brands being brought together.âWe never wanted a new corporate identity to diminish, alter or overshadow either one,â Ellison wrote in a social media post. âInstead, we wanted a name that would give the combined company an identity of its own while allowing Paramount and Warner Bros â and all our extraordinary brands â to remain in the spotlight.âThe name comes from Skydance Media, the film production company founded by Ellison.However, the decision has also drawn criticism. Ross Benes, senior analyst at eMarketer, described the choice as an attempt to reinforce Ellison's position within the newly combined business.âThe name is ego-driven. It reminds everyone that the most iconic Hollywood brands answer to Ellison and it is his company who won out,â Benes said.Skydance Corporation to debut on NYSEThe company's legal name is scheduled to change to Skydance Corporation on October 6, according to a regulatory filing.On the same day, its Class B shares are expected to move from Nasdaq to the New York Stock Exchange. The stock will trade under the ticker âSKYDâ, replacing âPSKY.âThe change comes as the companies prepare to complete the merger after a US judge cleared the way for the transaction.$110 billion deal clears legal hurdleA US judge on Wednesday entered an order allowing Paramount Skydance to close its $110 billion acquisition of Warner Bros Discovery. The order approved a September 21 settlement with a California-led group of 12 states that had sued to block the transaction, arguing that the merger would create a media giant capable of driving up film and television prices.With the legal hurdle cleared, the companies are moving towards closing the transaction, Reuters reported. $6 billion savings target, $80 billion debtThe combined company will be led by David Ellison as CEO, with Ynon Kreiz, the Mattel CEO, serving as co-CEO. Ellison named Kreiz earlier this week, tasking him with running day-to-day operations and leading the integration of the two businesses.The leadership team will also face significant financial targets. The merged company is aiming"
+      "title": "₹3 cr per month salary? Meet India's 'highest-paid' bank CEO - ICICI veteran and HDFC's Anup Bagchi",
+      "url": "https://www.livemint.com/companies/people/rs-3-cr-per-month-salary-meet-indias-highest-paid-bank-ceo-icici-veteran-and-hdfcs-anup-bagchi-11791545564481.html",
+      "published": "Fri, 09 Oct 2026 18:04:12 +0530",
+      "full_text": "Anup Bagchi, who is set to take charge of HDFC Bank, could become India's âhighest-paidâ bank CEO, with the country's largest private sector lender proposing an annual pay package of up to  â¹35.90 crore for him, according to an Economic Times report.\nThe proposed remuneration translates to approximately  â¹3 crore per month. The bank has reportedly cleared a one-time joining bonus worth  â¹7.35 crore in stock-linked incentives. This could bring Bagchi's total compensation to  â¹43.24 crore, subject to applicable performance benchmarks and vesting schedules.\nThe bank has initiated the process of obtaining shareholder consent for Bagchi's appointment and pay package. The Reserve Bank of India (RBI) has already approved the proposal, which shareholders can vote on electronically through a postal ballot between October 8 and November 6, the report noted.\nWho is Anup Bagchi?\nBagchi is an experienced financial services professional whose career spans more than three decades across banking, capital markets, investment services and insurance.He began his association with the ICICI Group in 1992 and went on to occupy several senior leadership roles across the organisation. These included heading ICICI Securities as managing director and CEO, serving as an executive director at ICICI Bank and leading ICICI Life Insurance, previously known as ICICI Prudential Life Insurance, as its managing director and CEO.\nHe is scheduled to assume the top position at HDFC Bank on October 27, 2026, for a tenure of three years.\nFrom ICICI Bank to the top job at HDFC Bank\nBagchi was an executive director at ICICI Bank between 2017 and 2023. He initially supervised retail, business and rural banking operations before taking charge of wholesale banking.\nHe also held responsibilities outside the bank's core operations. Bagchi chaired ICICI Prudential Asset Management Company until May 2023 and served on the boards of ICICI Prudential Pension Fund Management and ICICI Home Finance.In June 2023, he moved to the top leadership role at ICICI Life Insurance. During his tenure, the company pursued growth in protection-oriented insurance products and new business, while focusing on profitable and sustainable expansion.His professional experience extends across treasury management, retail and wholesale banking, investment banking and digital financial services, giving him exposure to several major segments of the financial sector.Where did Anup Bagchi study?Bagchi has an engineering degree from the Indian Institute of Technology (IIT), Kanpur, and a management qualification from the Indian Institute of Management (IIM), Bangalore.His appointment places an executive with extensive experience in both banking and insurance at the helm of HDFC Bank, as the lender prepares for its next phase of leadership."
      }
     ],
     "error": null
@@ -193,29 +142,8 @@
    "industry": {
     "feed_url": "https://www.livemint.com/rss/industry",
     "items": 35,
-    "intent_hits": 11,
-    "matches": [
-     {
-      "company": "GLOBAL HEALTH LIMITED",
-      "ticker": "GLH.AX",
-      "country": "AU",
-      "new_to_twin": true,
-      "title": "Global Health expands Delhi-NCR footprint with upcoming Medanta hospital in Ghaziabad- details inside",
-      "url": "https://www.livemint.com/industry/infrastructure/global-health-expands-delhi-ncr-footprint-with-upcoming-medanta-hospital-in-ghaziabad-details-inside-11790948239738.html",
-      "published": "Fri, 02 Oct 2026 20:08:08 +0530",
-      "full_text": "On Tuesday, Global Health Limited, which operates multi-specialty hospitals under the brand of Medanta, announced that it has acquired a 10,560-square-metre land parcel in Ghaziabad, Uttar Pradesh. The newly-purchased plot, bought at  â¹165.82 crore, is to be used to set up a 350-plus-bed hospital.However, the proposed hospital project is said to be subject to customary and statutory approvals as well as the approval of the company's Board of Directors.Demand in GhaziabadAccording to Global Health, the upcoming facility is aimed at strengthening its presence across the Delhi-NCR healthcare ecosystem. It is to cater to the healthcare demand in Ghaziabad along with neighbouring areas such as eastern Delhi, Meerut, Saharanpur, Hapur, Bulandshahr, and western Uttar Pradesh.Talking about the proposed plan, Group CEO said that the company sees Ghaziabad as a âcompelling long-term healthcare opportunity within the broader Delhi-NCR market.â He talked about the urban and economic development of the region, leading to the rise of demand for healthcare services.\"We see Ghaziabad as a compelling long-term healthcare opportunity within the broader Delhi-NCR market. The region has undergone significant urban and economic development and continues to see increasing demand for advanced, specialised healthcare services,\" Global Health Group CEO and Director Pankaj Sahni said in a statement, as quoted by PTI.Other hospitalsCurrently, Global Health operates a network of six hospitals. These hospitals are located in Gurgaon, Indore, Ranchi, Lucknow, Patna, and Noida, with a total capacity of 3,737 beds as of June 30, 2026.Besides the Ghaziabad plan, the company also has upcoming hospitals as part of its expansion. It includes facilities across Mumbai, Delhi (Pitampura and South Delhi), Guwahati, and Varanasi.(With inputs from agency)"
-     },
-     {
-      "company": "Public Service Enterprise Group Incorporated Common Stock",
-      "ticker": "PEG",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "Mint Explainer | Why state-owned BSNL is wary of Trai's proposed service quality rules",
-      "url": "https://www.livemint.com/industry/telecom/bsnl-trai-quality-of-service-rules-objections-explained-11790925221858.html",
-      "published": "Fri, 02 Oct 2026 14:01:34 +0530",
-      "full_text": "After the telecom regulator proposed changes to quality of service rules, state-owned Bharat Sanchar Nigam Ltd (BSNL) said tighter compliance requirements and higher financial disincentives could add to pressures it already faces, making it harder to meet its public-service obligations, expand connectivity in rural and difficult-to-reach areas and continue its 4G network rollout. Mint explains the issues at hand."
-     }
-    ],
+    "intent_hits": 14,
+    "matches": [],
     "error": null
    }
   },
@@ -229,70 +157,18 @@
    },
    "economy": {
     "feed_url": "https://www.moneycontrol.com/rss/economy.xml",
-    "items": 4,
-    "intent_hits": 1,
-    "matches": [
-     {
-      "company": "Semiconductor Manufacturing International Corp",
-      "ticker": "0981.HK",
-      "country": "HK",
-      "new_to_twin": false,
-      "title": "India’s Composite Flash PMI for April signals very strong economy",
-      "url": "https://www.moneycontrol.com/news/economy/india’s-composite-flash-pmi-for-april-signals-very-strong-economy_17531301.html",
-      "published": "Tue, 23 Apr 2024 11:07:37 +0530",
-      "full_text": ""
-     }
-    ],
-    "error": null
+    "items": 0,
+    "intent_hits": 0,
+    "matches": [],
+    "error": "HTTP 502"
    }
   },
   "BusinessStandard": {
    "companies": {
     "feed_url": "https://www.business-standard.com/rss/companies-101.rss",
     "items": 35,
-    "intent_hits": 20,
-    "matches": [
-     {
-      "company": "CLOSE THE LOOP LTD.",
-      "ticker": "CLG.AX",
-      "country": "AU",
-      "new_to_twin": true,
-      "title": "Pointo bets on e-auto, BESS, second-life battery segments to drive growth",
-      "url": "https://www.business-standard.com/companies/news/pointo-bets-on-e-auto-bess-second-life-battery-segments-to-drive-growth-126100400269_1.html",
-      "published": "Sun, 04 Oct 2026 16:02:00 +0530",
-      "full_text": "Lithium-ion battery distribution and service network startup Pointo is betting big on the expanding e-auto segment, battery storage systems (BESS) and second-life products to bolster its revenue, while actively engaging with investors to raise Rs 70-100 crore for its next expansion phase, a top company official said.The city-based startup, which previously raised Rs 6.2 crore in a seed funding round led by Equirus InnovateX Fund, plans to deploy the fresh capital to build an automated, large-scale refurbishment unit and expand its ground distribution network across the country.The company has seen its revenue run rate jump to Rs 80 crore in FY26 from about Rs 3 crore in FY24, and expects to close the current financial year at a revenue of Rs 150 crore, Founder & CEO of Pointo Riki Biswas told PTI.Founded in 2023 by Biswas, a chemical engineer from IIT Guwahati, along with three co-founders, Pointo aims to build a closed-loop supply chain across battery deployment, buyback, refurbishment and second-life applications.By eliminating high upfront costs and enabling instant access through financing tie-ups with non-banking financial companies (NBFCs), the company aims to redefine how India powers its electric vehicles (EVs).Biswas said the company has tied up with lithium-ion battery original equipment manufacturers (OEMs) for co-branding and marketing, alongside multiple NBFC partnerships to provide finance-ready lithium-ion batteries to e-rickshaw drivers and fleets.The startup currently serves 25,000 customers through more than 22 physical hubs spread across six states: West Bengal, Bihar, Uttar Pradesh, Madhya Pradesh, Rajasthan and Punjab. It is now looking to strengthen its micro-distribution network to reach Tier II and Tier III towns.\"We are building a strong distribution network through a hub and spoke model, building a closed-loop supply chain across battery deployment, buyback, refurbishment and second-life applications. We are currently working in the e-rickshaw segment, which itself is a large market estimated at around 50 lakh vehicles. We will ramp up our presence in this segment,\" Biswas told PTI.\"We also see a huge opportunity in the L5 E-auto, BESS and second-life products. We already have an existing distribution network, and we are looking to expand our network in the existing markets. This will enable us to tap into this growing demand efficiently,\" he added.Highlighting the market potential in the e-auto and four-wheeler segment, Biswas noted that starting next year, close to 8,000 to 10,000 electric autos are expected to come up for battery replacement, generating substantial demand for new lithium-ion batteries.The batteries retrieved during replacement will also serve as a key raw material source for second-life applications and new battery minerals. Pointo plans to convert end-of-life batteries into lower-use products such as home inverters for resale, helping shore up revenues while playing a crucial role in the circular sup"
-     },
-     {
-      "company": "Semiconductor Manufacturing International Corp",
-      "ticker": "0981.HK",
-      "country": "HK",
-      "new_to_twin": false,
-      "title": "Canon in talks with key chip project players, plans India service centres",
-      "url": "https://www.business-standard.com/companies/news/canon-in-talks-with-key-chip-project-players-plans-india-service-centres-126100400128_1.html",
-      "published": "Sun, 04 Oct 2026 15:51:40 +0530",
-      "full_text": "Japanese imaging and optical major Canon had discussions with all those engaged in key semiconductor manufacturing projects in India and plans to bring its technology and service centres to the country, said its India President and CEO Toshiaki Nomura.Canon, a global supplier of lithography systems used in semiconductor manufacturing, said it is looking to support the development of India's semiconductor ecosystem as the government steps up efforts to establish domestic chip fabrication capabilities.The Japanese technology major is sensing a \"great opportunity\" in the upcoming semiconductor manufacturing ecosystem promoted by the government, and the company will bring its technologies (lithographic machines) to help assist chip manufacturers to produce chips in India, he said.\"Now everybody knows semiconductor manufacturing is the buzzword in India. We have a lithographic machine to produce those chips... We bring our technologies to help assist the chip manufacturer to produce chips in India. So that's a great opportunity for us,\" Nomura told PTI.He said Canon has already engaged with major semiconductor projects that are currently under development in the country.Asked whether the company has held discussions with semiconductor ventures being established in India, he said, \"Yes, we have discussed with all those key manufacturers. The projects are ongoing and, as and when some development is confirmed, we will share it.\" India has been actively promoting semiconductor manufacturing through incentive schemes and has approved multiple projects across semiconductor fabrication, assembly, testing, marking and packaging segments as part of its broader strategy to strengthen the electronics manufacturing ecosystem.Nomura said the progress of semiconductor projects in India could also pave the way for Canon to establish dedicated support infrastructure for chip manufacturing customers in the country.\"Once the project is confirmed, of course we need 24x7 support to the chip manufacturer. In that sense, we will bring our technologies and service centres in India. That's our plan,\" he said.On whether India's ambitious timelines for developing a semiconductor ecosystem are achievable, Nomura expressed confidence in the country's capabilities.\"I believe in the power of India. We cannot control the timeline itself, as it is the chip manufacturer's responsibility. But this will come in the near future. That's our expectation,\" he said.The executive also acknowledged the efforts being made by policymakers and industry stakeholders to develop the ecosystem required for semiconductor manufacturing.\"Governments and related parties are working very hard to build up this ecosystem. In the near future, this ecosystem will be available,\" Nomura said, adding that Canon is keen to support chipmakers as India advances its ambitions to become a semiconductor manufacturing hub.Nearly 12 semiconductor projects are approved under the India Semiconductor Mission to build a d"
-     },
-     {
-      "company": "Clean Energy Technologies, Inc. - Common Stock",
-      "ticker": "CETY",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "Sebi keeps Inox Clean Energy's IPO papers to raise ₹10K cr in abeyance",
-      "url": "https://www.business-standard.com/companies/news/sebi-keeps-inox-clean-energy-s-ipo-papers-to-raise-10k-cr-in-abeyance-126100101123_1.html",
-      "published": "Thu, 01 Oct 2026 19:29:21 +0530",
-      "full_text": "Markets regulator Sebi has kept in 'abeyance' the draft offer documents of Inox Clean Energy Ltd, which is looking to raise up to Rs 10,000 crore through an initial public offering (IPO).The proposed IPO comprises a fresh issue of equity shares worth up to Rs 8,000 crore and an offer-for-sale (OFS) of shares, amounting to Rs 2,000 crore by promoter Devansh Jain, according to the draft red herring prospectus (DRHP).The status of the issue was updated by the Securities and Exchange Board of India (Sebi) on Thursday under the list of IPOs whose observations have been kept in abeyance.The company had filed its draft papers with the regulator on September 29.Without specifying reasons, the regulator stated that the \"issuance of observations (has been) kept in abeyance\", according to an update on its website.The proposed issue could rank among the largest IPOs in India's private-sector renewable energy space.Inox Clean Energy, part of the INOXGFL Group, proposes to use the proceeds from the fresh issue primarily for repayment or prepayment, in full or in part, of certain outstanding borrowings of the company and its subsidiaries, besides general corporate purposes.The company operates an integrated renewable energy platform with two principal businesses renewable power generation and solar manufacturing.As of August 31, 2026, its renewable independent power producer (IPP) portfolio stood at 9.29 GW across India and Africa. This included 2.37 GW of operational capacity, with around 0.80 GW under construction, 2.99 GW of pipeline capacity and 3.13 GW of future capacity, according to the DRHP.Its solar manufacturing business has an operational solar module manufacturing capacity of 6 GW across India and the US, while solar cell manufacturing capacity is under construction in India and the US.After the IPO, Inox Clean Energy will compete with a growing number of listed renewable energy companies, including Adani Green Energy, NTPC Green Energy, ACME Solar Holdings, Waaree Energies, Premier Energies, Clean Max Enviro Energy Solutions and JSW Energy.The company is part of the broader INOXGFL Group, which has interests in chemicals and renewable energy. The group has three listed entities - Gujarat Fluorochemicals Ltd, Inox Wind Ltd and Inox Green Energy Services Ltd.The group has integrated capabilities spanning solar module manufacturing, wind power generation, engineering, procurement and construction (EPC) and renewable energy operations and maintenance.Nuvama Wealth Management, CLSA India, Emirates NBD Capital India, HSBC Securities and Capital Markets (India), ICICI Securities, IIFL Capital Services, JM Financial, Motilal Oswal Investment Advisors and UBS Securities India are the book-running lead managers to the issue."
-     },
-     {
-      "company": "Clean Energy Fuels Corp. - Common Stock",
-      "ticker": "CLNE",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "Sebi keeps Inox Clean Energy's IPO papers to raise ₹10K cr in abeyance",
-      "url": "https://www.business-standard.com/companies/news/sebi-keeps-inox-clean-energy-s-ipo-papers-to-raise-10k-cr-in-abeyance-126100101123_1.html",
-      "published": "Thu, 01 Oct 2026 19:29:21 +0530",
-      "full_text": "Markets regulator Sebi has kept in 'abeyance' the draft offer documents of Inox Clean Energy Ltd, which is looking to raise up to Rs 10,000 crore through an initial public offering (IPO).The proposed IPO comprises a fresh issue of equity shares worth up to Rs 8,000 crore and an offer-for-sale (OFS) of shares, amounting to Rs 2,000 crore by promoter Devansh Jain, according to the draft red herring prospectus (DRHP).The status of the issue was updated by the Securities and Exchange Board of India (Sebi) on Thursday under the list of IPOs whose observations have been kept in abeyance.The company had filed its draft papers with the regulator on September 29.Without specifying reasons, the regulator stated that the \"issuance of observations (has been) kept in abeyance\", according to an update on its website.The proposed issue could rank among the largest IPOs in India's private-sector renewable energy space.Inox Clean Energy, part of the INOXGFL Group, proposes to use the proceeds from the fresh issue primarily for repayment or prepayment, in full or in part, of certain outstanding borrowings of the company and its subsidiaries, besides general corporate purposes.The company operates an integrated renewable energy platform with two principal businesses renewable power generation and solar manufacturing.As of August 31, 2026, its renewable independent power producer (IPP) portfolio stood at 9.29 GW across India and Africa. This included 2.37 GW of operational capacity, with around 0.80 GW under construction, 2.99 GW of pipeline capacity and 3.13 GW of future capacity, according to the DRHP.Its solar manufacturing business has an operational solar module manufacturing capacity of 6 GW across India and the US, while solar cell manufacturing capacity is under construction in India and the US.After the IPO, Inox Clean Energy will compete with a growing number of listed renewable energy companies, including Adani Green Energy, NTPC Green Energy, ACME Solar Holdings, Waaree Energies, Premier Energies, Clean Max Enviro Energy Solutions and JSW Energy.The company is part of the broader INOXGFL Group, which has interests in chemicals and renewable energy. The group has three listed entities - Gujarat Fluorochemicals Ltd, Inox Wind Ltd and Inox Green Energy Services Ltd.The group has integrated capabilities spanning solar module manufacturing, wind power generation, engineering, procurement and construction (EPC) and renewable energy operations and maintenance.Nuvama Wealth Management, CLSA India, Emirates NBD Capital India, HSBC Securities and Capital Markets (India), ICICI Securities, IIFL Capital Services, JM Financial, Motilal Oswal Investment Advisors and UBS Securities India are the book-running lead managers to the issue."
-     }
-    ],
+    "intent_hits": 19,
+    "matches": [],
     "error": null
    }
   },
@@ -300,7 +176,7 @@
    "business": {
     "feed_url": "https://www.amarujala.com/rss/business.xml",
     "items": 40,
-    "intent_hits": 13,
+    "intent_hits": 15,
     "matches": [],
     "error": null
    }

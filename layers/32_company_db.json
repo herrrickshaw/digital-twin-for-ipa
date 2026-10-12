@@ -1,7 +1,7 @@
 {
  "layer": 32,
  "name": "company_db",
- "built": "2026-10-05",
+ "built": "2026-10-12",
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
@@ -61,7 +61,7 @@
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
  "ii_ticker_validation": {
-  "ran": "2026-10-05",
+  "ran": "2026-10-12",
   "what": "Invest India sector-page LATEST-UPDATES tickers scraped as an announcement channel and matched (conservatively, fragments kept for review) against the company DB; QUIET/PARTIALLY_VISIBLE clearance leads that the national IPA itself announces are flagged as challenged verdicts",
   "sector_pages_scraped": 41,
   "fetch_errors": [],
@@ -168,7 +168,7 @@
   "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
  },
  "news_collection": {
-  "ran": "2026-10-05",
+  "ran": "2026-10-12",
   "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
   "api_calls_used": 39,
   "calls_by_source": {
@@ -177,21 +177,37 @@
    "marketaux": 10,
    "alphavantage": 1
   },
-  "articles_total": 100,
-  "new_articles": 100,
-  "match_rows_added": 28,
+  "articles_total": 97,
+  "new_articles": 97,
+  "match_rows_added": 22,
   "exception_news_hits": [],
   "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  },
  "sebi_public_issues": {
-  "ran": "2026-10-05",
+  "ran": "2026-10-12",
   "since": "2025-01-01",
-  "pages_fetched": 18,
-  "filings_in_window": 441,
-  "new_rows": 447,
-  "match_rows": 16,
+  "pages_fetched": 20,
+  "filings_in_window": 481,
+  "new_rows": 497,
+  "match_rows": 20,
   "companies_moving_to_market": [
+   {
+    "company": "Air Products & Chemicals, Inc.",
+    "visibility": null,
+    "quality": "strong",
+    "filed": "2026-10-05",
+    "filing": "Inox Air Products Limited- DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/oct-2026/inox-air-products-limited-drhp_105024.html"
+   },
+   {
+    "company": "B.S.Sponge Private Ltd",
+    "visibility": "DARK",
+    "quality": "strong",
+    "filed": "2026-10-05",
+    "filing": "B S Sponge Limited- DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/oct-2026/b-s-sponge-limited-drhp_105023.html"
+   },
    {
     "company": "German Green Steel And Power Limited",
     "visibility": "DARK",
@@ -199,6 +215,14 @@
     "filed": "2026-09-12",
     "filing": "German Green Steel and Power Limited - Addendum II to DRHP",
     "url": "https://www.sebi.gov.in/filings/public-issues/sep-2026/german-green-steel-and-power-limited-addendum-ii-to-drhp_104480.html"
+   },
+   {
+    "company": "German Green Steel And Power Limited",
+    "visibility": "DARK",
+    "quality": "strong",
+    "filed": "2026-08-15",
+    "filing": "German Green Steel and Power Ltd. - Addendum to DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/aug-2026/german-green-steel-and-power-ltd-addendum-to-drhp_103895.html"
    },
    {
     "company": "Encube Ethicals Private Limited",
@@ -247,6 +271,14 @@
     "filed": "2025-10-08",
     "filing": "Virupaksha Organics Limited - DRHP",
     "url": "https://www.sebi.gov.in/filings/public-issues/oct-2025/virupaksha-organics-limited-drhp_97120.html"
+   },
+   {
+    "company": "Supreet Chemicals Limited",
+    "visibility": "VISIBLE",
+    "quality": "strong",
+    "filed": "2025-09-05",
+    "filing": "Supreet Chemicals Limited - DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/sep-2025/supreet-chemicals-limited-drhp_96737.html"
    },
    {
     "company": "German Green Steel And Power Limited",
@@ -324,10 +356,19 @@
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  },
  "cin_extraction": {
-  "ran": "2026-10-05",
+  "ran": "2026-10-12",
   "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
   "records": [],
-  "errors": [],
+  "errors": [
+   {
+    "company": "Air Products & Chemicals, Inc.",
+    "error": "IncompleteRead: IncompleteRead(4676287 bytes read, 8686880 more expected)"
+   },
+   {
+    "company": "B.S.Sponge Private Ltd",
+    "error": "IncompleteRead: IncompleteRead(3517272 bytes read, 6003590 more expected)"
+   }
+  ],
   "mca_status": "mca.gov.in 403 (re-tested 2026-07-23); zaubacorp 403; thecompanycheck/falconebiz reachable but unofficial"
  }
 }

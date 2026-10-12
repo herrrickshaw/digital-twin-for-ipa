@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-10-05",
+ "built": "2026-10-12",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -225,7 +225,7 @@
     "country": "Bosnia and Herzegovina",
     "organization": "Foreign Investment Promotion Agency of Bosnia-Herzegovina (FIPA)",
     "website": "http://www.fipa.gov.ba/Default.aspx?langTag=en-US&template_id=123&pageIndex=1",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Botswana",
@@ -237,7 +237,7 @@
     "country": "Brazil",
     "organization": "Brazilian Trade and Investment Promotion Agency (Apex-Brasil)",
     "website": "https://portal.apexbrasil.com.br/",
-    "website_status": 200
+    "website_status": 302
    },
    {
     "country": "Brazil",
@@ -285,7 +285,7 @@
     "country": "China, People Republic of",
     "organization": "Investment Promotion Agency of the Ministry of Commerce of P. R. China (CIPA)",
     "website": "http://english.mofcom.gov.cn/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:ConnectionResetError"
    },
    {
     "country": "China, People Republic of",
@@ -339,7 +339,7 @@
     "country": "Cuba",
     "organization": "ProCuba\r\n\r\n\r\n\r\n",
     "website": "http://www.procuba.cu/en",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": 200
    },
    {
     "country": "Curaçao",
@@ -387,7 +387,7 @@
     "country": "El Salvador",
     "organization": "Export and Investment Promotion Agency of El Salvador (PROESA)\r\n\r\n\r\n\r\n",
     "website": "http://www.proesa.gob.sv/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Eswatini",
@@ -531,7 +531,7 @@
     "country": "Kenya",
     "organization": "KenInvest",
     "website": "http://www.invest.go.ke/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": 200
    },
    {
     "country": "Kiribati",
@@ -603,7 +603,7 @@
     "country": "Mali",
     "organization": "Investment Promotion Agency of Mali (API -MALI)",
     "website": "https://apimali.gov.ml/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Malta",
@@ -699,7 +699,7 @@
     "country": "Pakistan",
     "organization": "Board of Investment (BOI)",
     "website": "https://invest.gov.pk/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Pakistan",
@@ -747,7 +747,7 @@
     "country": "Portugal",
     "organization": "Invest Porto (Porto City Council)",
     "website": "https://investporto.pt/en/",
-    "website_status": 500
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Qatar",
@@ -771,7 +771,7 @@
     "country": "Russian Federation",
     "organization": "Tatarstan Investment Development Agency (TIDA)",
     "website": "http://tida.tatarstan.ru/eng/index.htm",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Samoa",
@@ -795,7 +795,7 @@
     "country": "Senegal",
     "organization": "Invest in Senegal (APIX)",
     "website": "http://investinsenegal.com/",
-    "website_status": 403
+    "website_status": 200
    },
    {
     "country": "Sierra Leone",
@@ -843,7 +843,7 @@
     "country": "Spain",
     "organization": "Agency for Economic Transformation and Development (TRADE)",
     "website": "http://www.andaluciatrade.es",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Spain",
@@ -855,7 +855,7 @@
     "country": "Spain",
     "organization": "Invest in Biscay",
     "website": "http://www.investinbiscay.com/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": 200
    },
    {
     "country": "St. Kitts and Nevis",
@@ -879,13 +879,13 @@
     "country": "Tanzania, United Republic of",
     "organization": "Tanzania Investment Centre (TIC)",
     "website": "http://www.tic.go.tz/",
-    "website_status": "ERR:RemoteDisconnected"
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Tanzania, United Republic of",
     "organization": "Zanzibar Investment Promotion Authority",
     "website": "https://www.zanzibarinvest.org/index.php/en/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Togo",

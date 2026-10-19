@@ -1,7 +1,7 @@
 {
  "layer": 32,
  "name": "company_db",
- "built": "2026-10-12",
+ "built": "2026-10-19",
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
@@ -61,7 +61,7 @@
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
  "ii_ticker_validation": {
-  "ran": "2026-10-12",
+  "ran": "2026-10-19",
   "what": "Invest India sector-page LATEST-UPDATES tickers scraped as an announcement channel and matched (conservatively, fragments kept for review) against the company DB; QUIET/PARTIALLY_VISIBLE clearance leads that the national IPA itself announces are flagged as challenged verdicts",
   "sector_pages_scraped": 41,
   "fetch_errors": [],
@@ -168,7 +168,7 @@
   "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
  },
  "news_collection": {
-  "ran": "2026-10-12",
+  "ran": "2026-10-19",
   "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
   "api_calls_used": 39,
   "calls_by_source": {
@@ -177,20 +177,20 @@
    "marketaux": 10,
    "alphavantage": 1
   },
-  "articles_total": 97,
-  "new_articles": 97,
-  "match_rows_added": 22,
+  "articles_total": 96,
+  "new_articles": 96,
+  "match_rows_added": 16,
   "exception_news_hits": [],
   "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  },
  "sebi_public_issues": {
-  "ran": "2026-10-12",
+  "ran": "2026-10-19",
   "since": "2025-01-01",
   "pages_fetched": 20,
-  "filings_in_window": 481,
-  "new_rows": 497,
-  "match_rows": 20,
+  "filings_in_window": 483,
+  "new_rows": 495,
+  "match_rows": 19,
   "companies_moving_to_market": [
    {
     "company": "Air Products & Chemicals, Inc.",
@@ -337,14 +337,6 @@
     "url": "https://www.sebi.gov.in/filings/public-issues/jan-2025/shanti-gold-international-limited_91075.html"
    },
    {
-    "company": "A-One Steels India Limited",
-    "visibility": "ANNOUNCED",
-    "quality": "strong",
-    "filed": "2025-01-10",
-    "filing": "A One Steels India Limited",
-    "url": "https://www.sebi.gov.in/filings/public-issues/jan-2025/a-one-steels-india-limited_90677.html"
-   },
-   {
     "company": "Anthem Biosciences Limited",
     "visibility": "ANNOUNCED",
     "quality": "strong",
@@ -356,17 +348,17 @@
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  },
  "cin_extraction": {
-  "ran": "2026-10-12",
+  "ran": "2026-10-19",
   "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
   "records": [],
   "errors": [
    {
     "company": "Air Products & Chemicals, Inc.",
-    "error": "IncompleteRead: IncompleteRead(4676287 bytes read, 8686880 more expected)"
+    "error": "IncompleteRead: IncompleteRead(8307711 bytes read, 5055456 more expected)"
    },
    {
     "company": "B.S.Sponge Private Ltd",
-    "error": "IncompleteRead: IncompleteRead(3517272 bytes read, 6003590 more expected)"
+    "error": "IncompleteRead: IncompleteRead(346840 bytes read, 9174022 more expected)"
    }
   ],
   "mca_status": "mca.gov.in 403 (re-tested 2026-07-23); zaubacorp 403; thecompanycheck/falconebiz reachable but unofficial"

@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-10-12",
+ "built": "2026-10-19",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9477,6 +9477,11 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-an-inclusive-india-for-persons-with-disabilities"
   },
   {
+   "slug": "building-an-inclusive-india-for-transgender-community",
+   "topic": "Building An Inclusive India for Transgender Community",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-an-inclusive-india-for-transgender-community"
+  },
+  {
    "slug": "ethanol-for-sustainable-future",
    "topic": "Ethanol for Sustainable Future",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ethanol-for-sustainable-future"
@@ -9487,9 +9492,19 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/formalisation-of-indias-informal-economy"
   },
   {
+   "slug": "gm-crops-and-indias-agricultural-future",
+   "topic": "Gm Crops and Indias Agricultural Future",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/gm-crops-and-indias-agricultural-future"
+  },
+  {
    "slug": "gst-2-0-fixing-the-structural-gaps",
    "topic": "GST 2 0 Fixing Structural Gaps",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/gst-2-0-fixing-the-structural-gaps"
+  },
+  {
+   "slug": "india-us-relations-resolving-friction-building-trust",
+   "topic": "India Us Relations Resolving Friction Building Trust",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/india-us-relations-resolving-friction-building-trust"
   },
   {
    "slug": "indias-transition-to-a-clean-energy-future",
@@ -9502,21 +9517,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-urban-transformation"
   },
   {
-   "slug": "making-india-resilient-to-extreme-weather-events",
-   "topic": "Making India Resilient to Extreme Weather Events",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-india-resilient-to-extreme-weather-events"
-  },
-  {
-   "slug": "powering-indias-manufacturing-sector",
-   "topic": "Powering Indias Manufacturing Sector",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/powering-indias-manufacturing-sector"
-  },
-  {
-   "slug": "reforming-plastic-waste-management-in-india",
-   "topic": "Reforming Plastic Waste Management in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-plastic-waste-management-in-india"
-  },
-  {
    "slug": "reimagining-the-united-nations-security-council",
    "topic": "Reimagining United Nations Security Council",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-the-united-nations-security-council"
@@ -9527,9 +9527,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-wildlife-conservation-in-india"
   },
   {
-   "slug": "shaping-indias-semiconductor-ecosystem",
-   "topic": "Shaping Indias Semiconductor Ecosystem",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/shaping-indias-semiconductor-ecosystem"
+   "slug": "reshaping-indias-nuclear-energy-sector",
+   "topic": "Reshaping Indias Nuclear Energy Sector",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reshaping-indias-nuclear-energy-sector"
   },
   {
    "slug": "strengthening-indias-r-d-ecosystem",
@@ -9547,19 +9547,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-ngos-in-india"
   },
   {
-   "slug": "strengthening-the-indo-german-strategic-partnership",
-   "topic": "Strengthening Indo German Strategic Partnership",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-the-indo-german-strategic-partnership"
-  },
-  {
    "slug": "the-new-india-canada-dynamic",
    "topic": "New India Canada Dynamic",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/the-new-india-canada-dynamic"
-  },
-  {
-   "slug": "towards-a-sustainable-blue-economy-for-viksit-bharat",
-   "topic": "Towards A Sustainable Blue Economy for Viksit Bharat",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-a-sustainable-blue-economy-for-viksit-bharat"
   },
   {
    "slug": "towards-a-uniform-civil-code",
@@ -9577,6 +9567,11 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-sustainable-groundwater-management"
   },
   {
+   "slug": "transforming-india-uk-partnership",
+   "topic": "Transforming India Uk Partnership",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-india-uk-partnership"
+  },
+  {
    "slug": "transforming-indias-higher-education-system",
    "topic": "Transforming Indias Higher Education System",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-indias-higher-education-system"
@@ -9585,6 +9580,11 @@
    "slug": "west-asian-crisis-and-securing-indias-strategic-interests",
    "topic": "West Asian Crisis and Securing Indias Strategic Interests",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/west-asian-crisis-and-securing-indias-strategic-interests"
+  },
+  {
+   "slug": "who-pandemic-treaty-and-indias-stakes",
+   "topic": "Who Pandemic Treaty and Indias Stakes",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/who-pandemic-treaty-and-indias-stakes"
   }
  ],
  "linkage": {

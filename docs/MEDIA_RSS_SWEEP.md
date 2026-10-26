@@ -1,6 +1,6 @@
 # Live media RSS sweep — layer 45
 
-*Generated 2026-10-19 by `scripts/build_layer45_media_rss_sweep.py`. 510 feed items scanned across 8 newspapers, 200 carried investment-intent language, 16 matched a real foreign-company roster name (15 new to the twin). Run this often -- RSS feeds churn within hours, unlike layer 44's hand-curated 5-year sweep.*
+*Generated 2026-10-26 by `scripts/build_layer45_media_rss_sweep.py`. 454 feed items scanned across 8 newspapers, 178 carried investment-intent language, 9 matched a real foreign-company roster name (8 new to the twin). Run this often -- RSS feeds churn within hours, unlike layer 44's hand-curated 5-year sweep.*
 
 ## Why this layer exists
 
@@ -10,58 +10,44 @@ economictimes.indiatimes.com, thehindu.com and thehindubusinessline.com all bloc
 
 | Company | Country | Source | Headline | Published |
 |---|---|---|---|---|
-| Philip Morris International Inc Common Stock | US | economictimes.indiatimes.com | [We have invested $16 billion in R&amp;D of less harmful alternatives for smokers](https://economictimes.indiatimes.com/industry/cons-products/tobacco/we-have-invested-16-billion-in-rd-of-less-harmful-alternatives-for-smokers-philip-morris-internationals-tomoko-iida/articleshow/134912230.cms) | Tue, 13 Oct 2026 13:44:07 +0530 |
-| Innovative Solutions and Support, Inc. - Common Stock | US | economictimes.indiatimes.com | [Engie plans €3 billion investment in India by 2030](https://economictimes.indiatimes.com/industry/renewables/engie-plans-3-billion-investment-in-india-by-2030/articleshow/135033696.cms) | Sun, 18 Oct 2026 23:54:22 +0530 |
-| HDFC Bank Limited Common Stock | US | www.thehindu.com | [HDFC Bank Q2 net profit grows 5.55% to ₹20,700 crore](https://www.thehindu.com/business/Industry/hdfc-bank-q2-net-profit-grows-555-to-20700-crore/article71596506.ece) | Sun, 18 Oct 2026 22:29:22 +0530 |
-| Greater China Financial Holdings Ltd | HK | www.livemint.com | [Accenture weighs $1.5 billion sale of China business as AI push reshapes growth ](https://www.livemint.com/companies/news/accenture-weighs-1-5-billion-sale-of-china-business-as-ai-push-reshapes-growth-strategy-report-11792323492872.html) | Sun, 18 Oct 2026 17:18:17 +0530 |
-| Sumitomo Mitsui Financial Group Inc Unsponsored American Depositary Shares (Japan) | US | www.livemint.com | [Japanese Sumitomo Mitsui Banking Corporation leases 50,000 sq ft office space in](https://www.livemint.com/industry/real-estate/japanese-sumitomo-mitsui-banking-corporation-leases-50-000-sq-ft-office-space-in-mumbais-bkc-for-189-crore-11792298803609.html) | Sun, 18 Oct 2026 11:18:51 +0530 |
-| RESOURCE BASE LIMITED. | AU | www.thehindu.com | [Essar Oil & Gas bags five CBM blocks with 6.6 TCF resources](https://www.thehindu.com/business/Industry/essar-oil-gas-bags-five-cbm-blocks-with-66-tcf-resources/article71588078.ece) | Sun, 18 Oct 2026 02:00:13 +0530 |
-| ICICI Bank Limited Common Stock | US | www.business-standard.com | [ICICI Bank Q2 net rises 20% to ₹14,843 crore as provisions fall](https://www.business-standard.com/companies/quarterly-results/icici-bank-q2-fy27-result-net-profit-rises-22-3-to-16-333-crore-126101700550_1.html) | Sat, 17 Oct 2026 15:40:48 +0530 |
-| HDFC Bank Limited Common Stock | US | www.business-standard.com | [HDFC Bank Q2 net profit rises 4.7% to ₹19,510 crore as NII grows](https://www.business-standard.com/companies/quarterly-results/hdfc-bank-q2fy27-result-net-profit-rises-4-7-to-19-510-cr-nii-up-9-7-126101700465_1.html) | Sat, 17 Oct 2026 14:18:38 +0530 |
-| Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share | US | www.thehindubusinessline.com | [GMR Aero Technic, Logic Air ink MoU to team up in aircraft modification, enginee](https://www.thehindubusinessline.com/news/gmr-aero-technic-logic-air-ink-mou-to-team-up-in-aircraft-modification-engineering-capabilities/article71592514.ece) | Sat, 17 Oct 2026 04:51:35 +0530 |
-| Greater China Financial Holdings Ltd | HK | www.livemint.com | [Accenture weighs $1.5 billion sale of Greater China operations amid AI shift, hi](https://www.livemint.com/companies/news/accenture-weighs-1-5-billion-sale-of-greater-china-operations-amid-ai-shift-hires-jpmorgan-for-review-report-11792375064725.html) | Mon, 19 Oct 2026 08:00:11 +0530 |
-| HDFC Bank Limited Common Stock | US | economictimes.indiatimes.com | [Banks also count cost of insurance payout curbs](https://economictimes.indiatimes.com/industry/banking/finance/banking/banks-also-count-cost-of-insurance-payout-curbs/articleshow/135034779.cms) | Mon, 19 Oct 2026 00:51:37 +0530 |
-| ICICI Bank Limited Common Stock | US | www.thehindu.com | [ICICI Bank Q2 PAT rises 20.1% to ₹14,843 crore, NIM down to 4.18%](https://www.thehindu.com/business/icici-bank-q2-pat-rises-201-to-14843-crore-nim-down-to-418/article71596780.ece) | Mon, 19 Oct 2026 00:28:28 +0530 |
-| HDFC Bank Limited Common Stock | US | www.thehindu.com | [HDFC Bank Q2 net profit grows 4.7% to ₹19,510 crore](https://www.thehindu.com/business/hdfc-bank-q2-net-profit-grows-47-to-19510-crore/article71597377.ece) | Mon, 19 Oct 2026 00:22:04 +0530 |
-| HDFC Bank Limited Common Stock | US | timesofindia.indiatimes.com | [Stock market outlook: Geopolitical cues, earnings, FIIs to keep Dalal Street bus](https://timesofindia.indiatimes.com/business/india-business/stock-market-outlook-geopolitical-cues-earnings-foreign-inflows-more-to-keep-dalal-street-busy/articleshow/135025850.cms) | 2026-10-18T14:06:15+05:30 |
-| ICICI Bank Limited Common Stock | US | timesofindia.indiatimes.com | [Stock market outlook: Geopolitical cues, earnings, FIIs to keep Dalal Street bus](https://timesofindia.indiatimes.com/business/india-business/stock-market-outlook-geopolitical-cues-earnings-foreign-inflows-more-to-keep-dalal-street-busy/articleshow/135025850.cms) | 2026-10-18T14:06:15+05:30 |
+| Commercial Vehicle Group, Inc. - Common Stock | US | www.thehindubusinessline.com | [Tata Motors’ €3.91-billion Iveco bid faces make-or-break October 26 test of glob](https://www.thehindubusinessline.com/companies/tata-motors-391-billion-iveco-bid-faces-make-or-break-october-26-test-of-global-ambitions/article71622938.ece) | Sun, 25 Oct 2026 19:52:35 +0530 |
+| Clean Energy Technologies, Inc. - Common Stock | US | www.livemint.com | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
+| Clean Energy Fuels Corp. - Common Stock | US | www.livemint.com | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
+| Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share | US | www.business-standard.com | [L'Oreal sees India biz gaining momentum; expands skincare, online presence](https://www.business-standard.com/companies/news/l-oreal-sees-india-biz-gaining-momentum-expands-skincare-online-presence-126102500132_1.html) | Sun, 25 Oct 2026 12:50:47 +0530 |
+| CRITICAL MINERALS GROUP LIMITED | AU | economictimes.indiatimes.com | [Diversification plan: NMDC scouts for mining assets across four continents](https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/diversification-plan-nmdc-scouts-for-mining-assets-across-four-continents/articleshow/135184622.cms) | Sun, 25 Oct 2026 11:27:51 +0530 |
+| Southeast Asia Properties & Finance Ltd | HK | www.thehindubusinessline.com | [Cordelia Cruises launches Cordelia Sky, expands fleet to two ships](https://www.thehindubusinessline.com/economy/logistics/cordelia-cruises-launches-cordelia-sky-expands-fleet-to-two-ships/article71619024.ece) | Sat, 24 Oct 2026 17:12:06 +0530 |
+| HDFC Bank Limited Common Stock | US | www.livemint.com | [Sonu Sood’s Mumbai property portfolio: How  ₹3.52 crore Bokka Coffee rent is str](https://www.livemint.com/industry/real-estate/sonu-sood-s-mumbai-property-portfolio-how-3-52-crore-bokka-coffee-rent-is-structured-how-much-he-earns-from-hdfc-bank-11792733291054.html) | Fri, 23 Oct 2026 11:36:57 +0530 |
+| HDFC Bank Limited Common Stock | US | timesofindia.indiatimes.com | [Market recap: Eight of top 10 firms lose Rs 1.55 lakh crore](https://timesofindia.indiatimes.com/business/india-business/market-recap-eight-of-top-10-firms-lose-rs-1-55-lakh-crore-hdfc-bank-bajaj-finance-take-biggest-hit/articleshow/135187845.cms) | 2026-10-25T15:06:39+05:30 |
 
 ## All company matches (incl. already-known)
 
 | Company | Country | New? | Headline | Published |
 |---|---|---|---|---|
-| Philip Morris International Inc Common Stock | US | 🆕 | [We have invested $16 billion in R&amp;D of less harmful alternatives for smokers](https://economictimes.indiatimes.com/industry/cons-products/tobacco/we-have-invested-16-billion-in-rd-of-less-harmful-alternatives-for-smokers-philip-morris-internationals-tomoko-iida/articleshow/134912230.cms) | Tue, 13 Oct 2026 13:44:07 +0530 |
-| Innovative Solutions and Support, Inc. - Common Stock | US | 🆕 | [Engie plans €3 billion investment in India by 2030](https://economictimes.indiatimes.com/industry/renewables/engie-plans-3-billion-investment-in-india-by-2030/articleshow/135033696.cms) | Sun, 18 Oct 2026 23:54:22 +0530 |
-| HDFC Bank Limited Common Stock | US | 🆕 | [HDFC Bank Q2 net profit grows 5.55% to ₹20,700 crore](https://www.thehindu.com/business/Industry/hdfc-bank-q2-net-profit-grows-555-to-20700-crore/article71596506.ece) | Sun, 18 Oct 2026 22:29:22 +0530 |
-| Greater China Financial Holdings Ltd | HK | 🆕 | [Accenture weighs $1.5 billion sale of China business as AI push reshapes growth ](https://www.livemint.com/companies/news/accenture-weighs-1-5-billion-sale-of-china-business-as-ai-push-reshapes-growth-strategy-report-11792323492872.html) | Sun, 18 Oct 2026 17:18:17 +0530 |
-| Sumitomo Mitsui Financial Group Inc Unsponsored American Depositary Shares (Japan) | US | 🆕 | [Japanese Sumitomo Mitsui Banking Corporation leases 50,000 sq ft office space in](https://www.livemint.com/industry/real-estate/japanese-sumitomo-mitsui-banking-corporation-leases-50-000-sq-ft-office-space-in-mumbais-bkc-for-189-crore-11792298803609.html) | Sun, 18 Oct 2026 11:18:51 +0530 |
-| RESOURCE BASE LIMITED. | AU | 🆕 | [Essar Oil & Gas bags five CBM blocks with 6.6 TCF resources](https://www.thehindu.com/business/Industry/essar-oil-gas-bags-five-cbm-blocks-with-66-tcf-resources/article71588078.ece) | Sun, 18 Oct 2026 02:00:13 +0530 |
-| ICICI Bank Limited Common Stock | US | 🆕 | [ICICI Bank Q2 net rises 20% to ₹14,843 crore as provisions fall](https://www.business-standard.com/companies/quarterly-results/icici-bank-q2-fy27-result-net-profit-rises-22-3-to-16-333-crore-126101700550_1.html) | Sat, 17 Oct 2026 15:40:48 +0530 |
-| HDFC Bank Limited Common Stock | US | 🆕 | [HDFC Bank Q2 net profit rises 4.7% to ₹19,510 crore as NII grows](https://www.business-standard.com/companies/quarterly-results/hdfc-bank-q2fy27-result-net-profit-rises-4-7-to-19-510-cr-nii-up-9-7-126101700465_1.html) | Sat, 17 Oct 2026 14:18:38 +0530 |
-| Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share | US | 🆕 | [GMR Aero Technic, Logic Air ink MoU to team up in aircraft modification, enginee](https://www.thehindubusinessline.com/news/gmr-aero-technic-logic-air-ink-mou-to-team-up-in-aircraft-modification-engineering-capabilities/article71592514.ece) | Sat, 17 Oct 2026 04:51:35 +0530 |
-| Greater China Financial Holdings Ltd | HK | 🆕 | [Accenture weighs $1.5 billion sale of Greater China operations amid AI shift, hi](https://www.livemint.com/companies/news/accenture-weighs-1-5-billion-sale-of-greater-china-operations-amid-ai-shift-hires-jpmorgan-for-review-report-11792375064725.html) | Mon, 19 Oct 2026 08:00:11 +0530 |
-| Semiconductor Manufacturing International Corp | HK |  | [Public sector banks' Rs 7.8 lakh core corporate loan pipeline signals capex revi](https://economictimes.indiatimes.com/industry/banking/finance/banking/public-sector-banks-rs-7-8-lakh-core-corporate-loan-pipeline-signals-capex-revival/articleshow/135034438.cms) | Mon, 19 Oct 2026 05:30:00 +0530 |
-| HDFC Bank Limited Common Stock | US | 🆕 | [Banks also count cost of insurance payout curbs](https://economictimes.indiatimes.com/industry/banking/finance/banking/banks-also-count-cost-of-insurance-payout-curbs/articleshow/135034779.cms) | Mon, 19 Oct 2026 00:51:37 +0530 |
-| ICICI Bank Limited Common Stock | US | 🆕 | [ICICI Bank Q2 PAT rises 20.1% to ₹14,843 crore, NIM down to 4.18%](https://www.thehindu.com/business/icici-bank-q2-pat-rises-201-to-14843-crore-nim-down-to-418/article71596780.ece) | Mon, 19 Oct 2026 00:28:28 +0530 |
-| HDFC Bank Limited Common Stock | US | 🆕 | [HDFC Bank Q2 net profit grows 4.7% to ₹19,510 crore](https://www.thehindu.com/business/hdfc-bank-q2-net-profit-grows-47-to-19510-crore/article71597377.ece) | Mon, 19 Oct 2026 00:22:04 +0530 |
-| HDFC Bank Limited Common Stock | US | 🆕 | [Stock market outlook: Geopolitical cues, earnings, FIIs to keep Dalal Street bus](https://timesofindia.indiatimes.com/business/india-business/stock-market-outlook-geopolitical-cues-earnings-foreign-inflows-more-to-keep-dalal-street-busy/articleshow/135025850.cms) | 2026-10-18T14:06:15+05:30 |
-| ICICI Bank Limited Common Stock | US | 🆕 | [Stock market outlook: Geopolitical cues, earnings, FIIs to keep Dalal Street bus](https://timesofindia.indiatimes.com/business/india-business/stock-market-outlook-geopolitical-cues-earnings-foreign-inflows-more-to-keep-dalal-street-busy/articleshow/135025850.cms) | 2026-10-18T14:06:15+05:30 |
+| Semiconductor Manufacturing International Corp | HK |  | [India’s Composite Flash PMI for April signals very strong economy](https://www.moneycontrol.com/news/economy/india’s-composite-flash-pmi-for-april-signals-very-strong-economy_17531301.html) | Tue, 23 Apr 2024 11:07:37 +0530 |
+| Commercial Vehicle Group, Inc. - Common Stock | US | 🆕 | [Tata Motors’ €3.91-billion Iveco bid faces make-or-break October 26 test of glob](https://www.thehindubusinessline.com/companies/tata-motors-391-billion-iveco-bid-faces-make-or-break-october-26-test-of-global-ambitions/article71622938.ece) | Sun, 25 Oct 2026 19:52:35 +0530 |
+| Clean Energy Technologies, Inc. - Common Stock | US | 🆕 | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
+| Clean Energy Fuels Corp. - Common Stock | US | 🆕 | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
+| Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share | US | 🆕 | [L'Oreal sees India biz gaining momentum; expands skincare, online presence](https://www.business-standard.com/companies/news/l-oreal-sees-india-biz-gaining-momentum-expands-skincare-online-presence-126102500132_1.html) | Sun, 25 Oct 2026 12:50:47 +0530 |
+| CRITICAL MINERALS GROUP LIMITED | AU | 🆕 | [Diversification plan: NMDC scouts for mining assets across four continents](https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/diversification-plan-nmdc-scouts-for-mining-assets-across-four-continents/articleshow/135184622.cms) | Sun, 25 Oct 2026 11:27:51 +0530 |
+| Southeast Asia Properties & Finance Ltd | HK | 🆕 | [Cordelia Cruises launches Cordelia Sky, expands fleet to two ships](https://www.thehindubusinessline.com/economy/logistics/cordelia-cruises-launches-cordelia-sky-expands-fleet-to-two-ships/article71619024.ece) | Sat, 24 Oct 2026 17:12:06 +0530 |
+| HDFC Bank Limited Common Stock | US | 🆕 | [Sonu Sood’s Mumbai property portfolio: How  ₹3.52 crore Bokka Coffee rent is str](https://www.livemint.com/industry/real-estate/sonu-sood-s-mumbai-property-portfolio-how-3-52-crore-bokka-coffee-rent-is-structured-how-much-he-earns-from-hdfc-bank-11792733291054.html) | Fri, 23 Oct 2026 11:36:57 +0530 |
+| HDFC Bank Limited Common Stock | US | 🆕 | [Market recap: Eight of top 10 firms lose Rs 1.55 lakh crore](https://timesofindia.indiatimes.com/business/india-business/market-recap-eight-of-top-10-firms-lose-rs-1-55-lakh-crore-hdfc-bank-bajaj-finance-take-biggest-hit/articleshow/135187845.cms) | 2026-10-25T15:06:39+05:30 |
 
 ## Feed health
 
 | Source | Section | Items | Intent hits | Matches | Error |
 |---|---|---|---|---|---|
 | ET | auto | 50 | 18 | 0 |  |
-| ET | cons_products | 50 | 19 | 1 |  |
-| ET | industry | 50 | 20 | 3 |  |
-| Hindu | business | 60 | 22 | 4 |  |
-| HinduBusinessLine | companies | 60 | 27 | 0 |  |
-| HinduBusinessLine | economy | 60 | 9 | 1 |  |
-| TimesOfIndia | business | 20 | 4 | 2 |  |
-| Livemint | companies | 35 | 16 | 2 |  |
-| Livemint | industry | 35 | 14 | 1 |  |
+| ET | cons_products | 50 | 20 | 0 |  |
+| ET | industry | 50 | 17 | 1 |  |
+| Hindu | business | 0 | 0 | 0 | HTTP 403 |
+| HinduBusinessLine | companies | 60 | 35 | 2 |  |
+| HinduBusinessLine | economy | 60 | 14 | 0 |  |
+| TimesOfIndia | business | 20 | 5 | 1 |  |
+| Livemint | companies | 35 | 17 | 0 |  |
+| Livemint | industry | 35 | 11 | 3 |  |
 | Moneycontrol | business | 15 | 6 | 0 |  |
-| Moneycontrol | economy | 0 | 0 | 0 | HTTP 502 |
-| BusinessStandard | companies | 35 | 30 | 2 |  |
-| AmarUjala | business | 40 | 15 | 0 |  |
+| Moneycontrol | economy | 4 | 1 | 1 |  |
+| BusinessStandard | companies | 35 | 24 | 1 |  |
+| AmarUjala | business | 40 | 10 | 0 |  |
 

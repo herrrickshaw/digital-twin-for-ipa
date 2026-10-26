@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-10-19",
+ "built": "2026-10-26",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -165,13 +165,13 @@
     "country": "Afghanistan",
     "organization": "Ministry of Commerce and Industry Afghanistan (MoCI)",
     "website": "https://moci.gov.af/en",
-    "website_status": 200
+    "website_status": 502
    },
    {
     "country": "Algeria",
     "organization": "Algerian Investment Promotion Agency\r\n\r\n",
     "website": "http://www.aapi.dz/",
-    "website_status": 503
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "Angola",
@@ -189,7 +189,7 @@
     "country": "Azerbaijan",
     "organization": "Export and Investment Promotion Agency of the Republic of Azerbaijan – AZPROMO",
     "website": "http://www.azpromo.az/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Bangladesh",
@@ -207,7 +207,7 @@
     "country": "Belarus",
     "organization": "National Agency of Investment and Privatization\r\n\r\n\r\n\r\n",
     "website": "https://investinbelarus.by/",
-    "website_status": 200
+    "website_status": "ERR:timeout"
    },
    {
     "country": "Bermuda",
@@ -225,7 +225,7 @@
     "country": "Bosnia and Herzegovina",
     "organization": "Foreign Investment Promotion Agency of Bosnia-Herzegovina (FIPA)",
     "website": "http://www.fipa.gov.ba/Default.aspx?langTag=en-US&template_id=123&pageIndex=1",
-    "website_status": "ERR:URLError"
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "Botswana",
@@ -285,7 +285,7 @@
     "country": "China, People Republic of",
     "organization": "Investment Promotion Agency of the Ministry of Commerce of P. R. China (CIPA)",
     "website": "http://english.mofcom.gov.cn/",
-    "website_status": "ERR:ConnectionResetError"
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "China, People Republic of",
@@ -387,7 +387,7 @@
     "country": "El Salvador",
     "organization": "Export and Investment Promotion Agency of El Salvador (PROESA)\r\n\r\n\r\n\r\n",
     "website": "http://www.proesa.gob.sv/",
-    "website_status": "ERR:URLError"
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "Eswatini",
@@ -465,7 +465,7 @@
     "country": "India",
     "organization": "Invest India",
     "website": "http://investindia.gov.in/",
-    "website_status": 200
+    "website_status": 403
    },
    {
     "country": "India",
@@ -513,7 +513,7 @@
     "country": "Japan",
     "organization": "Japan External Trade Organization (JETRO)\r\n\r\n\r\n\r\n",
     "website": "https://www.jetro.go.jp/en/invest/",
-    "website_status": 403
+    "website_status": 200
    },
    {
     "country": "Jordan",
@@ -531,7 +531,7 @@
     "country": "Kenya",
     "organization": "KenInvest",
     "website": "http://www.invest.go.ke/",
-    "website_status": 200
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "Kiribati",
@@ -603,7 +603,7 @@
     "country": "Mali",
     "organization": "Investment Promotion Agency of Mali (API -MALI)",
     "website": "https://apimali.gov.ml/",
-    "website_status": 200
+    "website_status": 503
    },
    {
     "country": "Malta",
@@ -621,7 +621,7 @@
     "country": "Mauritania",
     "organization": "The Investment Promotion Agency of Mauritania (APIM)",
     "website": "https://apim.gov.mr/",
-    "website_status": 200
+    "website_status": "ERR:URLError"
    },
    {
     "country": "Mauritius",
@@ -699,7 +699,7 @@
     "country": "Pakistan",
     "organization": "Board of Investment (BOI)",
     "website": "https://invest.gov.pk/",
-    "website_status": "ERR:URLError"
+    "website_status": 200
    },
    {
     "country": "Pakistan",
@@ -747,7 +747,7 @@
     "country": "Portugal",
     "organization": "Invest Porto (Porto City Council)",
     "website": "https://investporto.pt/en/",
-    "website_status": "ERR:URLError"
+    "website_status": 500
    },
    {
     "country": "Qatar",
@@ -771,7 +771,7 @@
     "country": "Russian Federation",
     "organization": "Tatarstan Investment Development Agency (TIDA)",
     "website": "http://tida.tatarstan.ru/eng/index.htm",
-    "website_status": "ERR:URLError"
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "Samoa",
@@ -795,7 +795,7 @@
     "country": "Senegal",
     "organization": "Invest in Senegal (APIX)",
     "website": "http://investinsenegal.com/",
-    "website_status": 200
+    "website_status": 403
    },
    {
     "country": "Sierra Leone",
@@ -843,7 +843,7 @@
     "country": "Spain",
     "organization": "Agency for Economic Transformation and Development (TRADE)",
     "website": "http://www.andaluciatrade.es",
-    "website_status": "ERR:URLError"
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "Spain",
@@ -855,7 +855,7 @@
     "country": "Spain",
     "organization": "Invest in Biscay",
     "website": "http://www.investinbiscay.com/",
-    "website_status": 200
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "St. Kitts and Nevis",
@@ -879,7 +879,7 @@
     "country": "Tanzania, United Republic of",
     "organization": "Tanzania Investment Centre (TIC)",
     "website": "http://www.tic.go.tz/",
-    "website_status": "ERR:URLError"
+    "website_status": "ERR:RemoteDisconnected"
    },
    {
     "country": "Tanzania, United Republic of",
@@ -1524,9 +1524,9 @@
   "https://waipa.org/wp-content/uploads/memberstable-16.html": 200,
   "https://waipa.org/members/": 200,
   "https://investmentpolicy.unctad.org": 403,
-  "https://www.investindia.gov.in/sitemap.xml": 200,
+  "https://www.investindia.gov.in/sitemap.xml": 403,
   "https://static.investindia.gov.in/s3fs-public/2025-01/fdi_policy_consolidated.pdf": 200,
-  "https://www.jetro.go.jp/en/": 403,
+  "https://www.jetro.go.jp/en/": 200,
   "https://www.kotra.or.kr/english/index.do": 200,
   "https://www.investkorea.org/ik-en/main.do": 200,
   "https://www.gtai.de/en": 200,
@@ -1534,9 +1534,9 @@
   "https://www.trade.gov/selectusa": 200,
   "https://investinholland.com": 403,
   "https://www.enterprisesg.gov.sg": 403,
-  "https://www.edb.gov.sg": 200,
+  "https://www.edb.gov.sg": 202,
   "https://www.investhk.gov.hk": 200,
-  "https://investtaiwan.nat.gov.tw": 200,
+  "https://investtaiwan.nat.gov.tw": "ERR:URLError",
   "https://www.business-sweden.com": 200,
   "https://www.investcanada.ca": 403,
   "https://www.globalaustralia.gov.au": "ERR:URLError",

@@ -1,6 +1,6 @@
 # Live media RSS sweep — layer 45
 
-*Generated 2026-10-26 by `scripts/build_layer45_media_rss_sweep.py`. 454 feed items scanned across 8 newspapers, 178 carried investment-intent language, 9 matched a real foreign-company roster name (8 new to the twin). Run this often -- RSS feeds churn within hours, unlike layer 44's hand-curated 5-year sweep.*
+*Generated 2026-11-02 by `scripts/build_layer45_media_rss_sweep.py`. 514 feed items scanned across 8 newspapers, 203 carried investment-intent language, 13 matched a real foreign-company roster name (12 new to the twin). Run this often -- RSS feeds churn within hours, unlike layer 44's hand-curated 5-year sweep.*
 
 ## Why this layer exists
 
@@ -10,44 +10,52 @@ economictimes.indiatimes.com, thehindu.com and thehindubusinessline.com all bloc
 
 | Company | Country | Source | Headline | Published |
 |---|---|---|---|---|
-| Commercial Vehicle Group, Inc. - Common Stock | US | www.thehindubusinessline.com | [Tata Motors’ €3.91-billion Iveco bid faces make-or-break October 26 test of glob](https://www.thehindubusinessline.com/companies/tata-motors-391-billion-iveco-bid-faces-make-or-break-october-26-test-of-global-ambitions/article71622938.ece) | Sun, 25 Oct 2026 19:52:35 +0530 |
-| Clean Energy Technologies, Inc. - Common Stock | US | www.livemint.com | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
-| Clean Energy Fuels Corp. - Common Stock | US | www.livemint.com | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
-| Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share | US | www.business-standard.com | [L'Oreal sees India biz gaining momentum; expands skincare, online presence](https://www.business-standard.com/companies/news/l-oreal-sees-india-biz-gaining-momentum-expands-skincare-online-presence-126102500132_1.html) | Sun, 25 Oct 2026 12:50:47 +0530 |
-| CRITICAL MINERALS GROUP LIMITED | AU | economictimes.indiatimes.com | [Diversification plan: NMDC scouts for mining assets across four continents](https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/diversification-plan-nmdc-scouts-for-mining-assets-across-four-continents/articleshow/135184622.cms) | Sun, 25 Oct 2026 11:27:51 +0530 |
-| Southeast Asia Properties & Finance Ltd | HK | www.thehindubusinessline.com | [Cordelia Cruises launches Cordelia Sky, expands fleet to two ships](https://www.thehindubusinessline.com/economy/logistics/cordelia-cruises-launches-cordelia-sky-expands-fleet-to-two-ships/article71619024.ece) | Sat, 24 Oct 2026 17:12:06 +0530 |
-| HDFC Bank Limited Common Stock | US | www.livemint.com | [Sonu Sood’s Mumbai property portfolio: How  ₹3.52 crore Bokka Coffee rent is str](https://www.livemint.com/industry/real-estate/sonu-sood-s-mumbai-property-portfolio-how-3-52-crore-bokka-coffee-rent-is-structured-how-much-he-earns-from-hdfc-bank-11792733291054.html) | Fri, 23 Oct 2026 11:36:57 +0530 |
-| HDFC Bank Limited Common Stock | US | timesofindia.indiatimes.com | [Market recap: Eight of top 10 firms lose Rs 1.55 lakh crore](https://timesofindia.indiatimes.com/business/india-business/market-recap-eight-of-top-10-firms-lose-rs-1-55-lakh-crore-hdfc-bank-bajaj-finance-take-biggest-hit/articleshow/135187845.cms) | 2026-10-25T15:06:39+05:30 |
+| Philip Morris International Inc Common Stock | US | economictimes.indiatimes.com | [Philip Morris Q3 net revenues rise 5.5% to $11.4 billion on smoke-free, combusti](https://economictimes.indiatimes.com/industry/cons-products/tobacco/philip-morris-q3-net-revenues-rise-5-5-to-11-4-billion-on-smoke-free-combustible-growth/articleshow/135294554.cms) | Thu, 29 Oct 2026 12:29:37 +0530 |
+| Financial Institutions, Inc. - Common Stock | US | economictimes.indiatimes.com | [Cyberattacks on banks, including AU Small Finance Bank, worry insurers as claim ](https://economictimes.indiatimes.com/industry/banking/finance/insure/cyberattacks-on-banks-including-au-small-finance-bank-worry-insurers-as-claim-risks-rise/articleshow/135434670.cms) | Sun, 01 Nov 2026 23:29:56 +0530 |
+| Clean Energy Technologies, Inc. - Common Stock | US | www.business-standard.com | [Solex Energy eyeing US market for international debut, says chairman](https://www.business-standard.com/companies/news/solex-energy-eyeing-us-market-for-international-debut-says-chairman-126110100351_1.html) | Sun, 01 Nov 2026 14:46:50 +0530 |
+| Clean Energy Fuels Corp. - Common Stock | US | www.business-standard.com | [Solex Energy eyeing US market for international debut, says chairman](https://www.business-standard.com/companies/news/solex-energy-eyeing-us-market-for-international-debut-says-chairman-126110100351_1.html) | Sun, 01 Nov 2026 14:46:50 +0530 |
+| American Eagle Outfitters, Inc. Common Stock | US | www.business-standard.com | [Aditya Birla Fashion and Retail Q2 profit more than doubles to ₹53 crore](https://www.business-standard.com/companies/quarterly-results/aditya-birla-fashion-and-retail-q2-profit-more-than-doubles-to-53-crore-126103100919_1.html) | Sat, 31 Oct 2026 17:42:37 +0530 |
+| Natural Gas Distribution Company | SA | www.business-standard.com | [IGL Q2 result: Net profit plunges 93.5% to ₹24 crore on higher gas costs](https://www.business-standard.com/companies/quarterly-results/igl-q2-result-net-profit-plunges-93-5-to-24-crore-on-higher-gas-costs-126103100481_1.html) | Sat, 31 Oct 2026 12:38:51 +0530 |
+| Natural Gas Services Group, Inc. Common Stock | US | www.business-standard.com | [IGL Q2 result: Net profit plunges 93.5% to ₹24 crore on higher gas costs](https://www.business-standard.com/companies/quarterly-results/igl-q2-result-net-profit-plunges-93-5-to-24-crore-on-higher-gas-costs-126103100481_1.html) | Sat, 31 Oct 2026 12:38:51 +0530 |
+| Clean Energy Technologies, Inc. - Common Stock | US | www.business-standard.com | [Two Point O Capital raises $10 million to expand clean energy platform](https://www.business-standard.com/companies/start-ups/two-point-o-capital-raises-10-million-to-expand-clean-energy-platform-126110100446_1.html) | Mon, 02 Nov 2026 06:05:11 +0530 |
+| Clean Energy Fuels Corp. - Common Stock | US | www.business-standard.com | [Two Point O Capital raises $10 million to expand clean energy platform](https://www.business-standard.com/companies/start-ups/two-point-o-capital-raises-10-million-to-expand-clean-energy-platform-126110100446_1.html) | Mon, 02 Nov 2026 06:05:11 +0530 |
+| Southeast Asia Properties & Finance Ltd | HK | economictimes.indiatimes.com | [Hinduja's Gulf Oil scouts acquisitions in Asia, South America ahead of global li](https://economictimes.indiatimes.com/industry/energy/oil-gas/hindujas-gulf-oil-scouts-acquisitions-in-asia-south-america-ahead-of-global-listing/articleshow/135436239.cms) | Mon, 02 Nov 2026 00:41:24 +0530 |
+| Commercial Vehicle Group, Inc. - Common Stock | US | www.thehindubusinessline.com | [Tata Motors takes control of Iveco in €3.43-billion deal; focus shifts to debt, ](https://www.thehindubusinessline.com/companies/tata-motors-takes-control-of-iveco-in-343-billion-deal-focus-shifts-to-debt-integration/article71646387.ece) | Fri, 30 Oct 2026 21:59:52 +0530 |
+| Mercantile Bank Corporation - Common Stock | US | www.livemint.com | [Tamilnad Mercantile Bank seeks RBI nod for share transfers, gets board backing f](https://www.livemint.com/industry/banking/tamilnad-mercantile-bank-rbi-approval-share-transfers-expansion-11793333344595.html) | Fri, 30 Oct 2026 12:35:54 +0530 |
 
 ## All company matches (incl. already-known)
 
 | Company | Country | New? | Headline | Published |
 |---|---|---|---|---|
 | Semiconductor Manufacturing International Corp | HK |  | [India’s Composite Flash PMI for April signals very strong economy](https://www.moneycontrol.com/news/economy/india’s-composite-flash-pmi-for-april-signals-very-strong-economy_17531301.html) | Tue, 23 Apr 2024 11:07:37 +0530 |
-| Commercial Vehicle Group, Inc. - Common Stock | US | 🆕 | [Tata Motors’ €3.91-billion Iveco bid faces make-or-break October 26 test of glob](https://www.thehindubusinessline.com/companies/tata-motors-391-billion-iveco-bid-faces-make-or-break-october-26-test-of-global-ambitions/article71622938.ece) | Sun, 25 Oct 2026 19:52:35 +0530 |
-| Clean Energy Technologies, Inc. - Common Stock | US | 🆕 | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
-| Clean Energy Fuels Corp. - Common Stock | US | 🆕 | [Mint Explainer | How new land compensation rules could speed up India’s clean en](https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html) | Sun, 25 Oct 2026 16:57:24 +0530 |
-| Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share | US | 🆕 | [L'Oreal sees India biz gaining momentum; expands skincare, online presence](https://www.business-standard.com/companies/news/l-oreal-sees-india-biz-gaining-momentum-expands-skincare-online-presence-126102500132_1.html) | Sun, 25 Oct 2026 12:50:47 +0530 |
-| CRITICAL MINERALS GROUP LIMITED | AU | 🆕 | [Diversification plan: NMDC scouts for mining assets across four continents](https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/diversification-plan-nmdc-scouts-for-mining-assets-across-four-continents/articleshow/135184622.cms) | Sun, 25 Oct 2026 11:27:51 +0530 |
-| Southeast Asia Properties & Finance Ltd | HK | 🆕 | [Cordelia Cruises launches Cordelia Sky, expands fleet to two ships](https://www.thehindubusinessline.com/economy/logistics/cordelia-cruises-launches-cordelia-sky-expands-fleet-to-two-ships/article71619024.ece) | Sat, 24 Oct 2026 17:12:06 +0530 |
-| HDFC Bank Limited Common Stock | US | 🆕 | [Sonu Sood’s Mumbai property portfolio: How  ₹3.52 crore Bokka Coffee rent is str](https://www.livemint.com/industry/real-estate/sonu-sood-s-mumbai-property-portfolio-how-3-52-crore-bokka-coffee-rent-is-structured-how-much-he-earns-from-hdfc-bank-11792733291054.html) | Fri, 23 Oct 2026 11:36:57 +0530 |
-| HDFC Bank Limited Common Stock | US | 🆕 | [Market recap: Eight of top 10 firms lose Rs 1.55 lakh crore](https://timesofindia.indiatimes.com/business/india-business/market-recap-eight-of-top-10-firms-lose-rs-1-55-lakh-crore-hdfc-bank-bajaj-finance-take-biggest-hit/articleshow/135187845.cms) | 2026-10-25T15:06:39+05:30 |
+| Philip Morris International Inc Common Stock | US | 🆕 | [Philip Morris Q3 net revenues rise 5.5% to $11.4 billion on smoke-free, combusti](https://economictimes.indiatimes.com/industry/cons-products/tobacco/philip-morris-q3-net-revenues-rise-5-5-to-11-4-billion-on-smoke-free-combustible-growth/articleshow/135294554.cms) | Thu, 29 Oct 2026 12:29:37 +0530 |
+| Financial Institutions, Inc. - Common Stock | US | 🆕 | [Cyberattacks on banks, including AU Small Finance Bank, worry insurers as claim ](https://economictimes.indiatimes.com/industry/banking/finance/insure/cyberattacks-on-banks-including-au-small-finance-bank-worry-insurers-as-claim-risks-rise/articleshow/135434670.cms) | Sun, 01 Nov 2026 23:29:56 +0530 |
+| Clean Energy Technologies, Inc. - Common Stock | US | 🆕 | [Solex Energy eyeing US market for international debut, says chairman](https://www.business-standard.com/companies/news/solex-energy-eyeing-us-market-for-international-debut-says-chairman-126110100351_1.html) | Sun, 01 Nov 2026 14:46:50 +0530 |
+| Clean Energy Fuels Corp. - Common Stock | US | 🆕 | [Solex Energy eyeing US market for international debut, says chairman](https://www.business-standard.com/companies/news/solex-energy-eyeing-us-market-for-international-debut-says-chairman-126110100351_1.html) | Sun, 01 Nov 2026 14:46:50 +0530 |
+| American Eagle Outfitters, Inc. Common Stock | US | 🆕 | [Aditya Birla Fashion and Retail Q2 profit more than doubles to ₹53 crore](https://www.business-standard.com/companies/quarterly-results/aditya-birla-fashion-and-retail-q2-profit-more-than-doubles-to-53-crore-126103100919_1.html) | Sat, 31 Oct 2026 17:42:37 +0530 |
+| Natural Gas Distribution Company | SA | 🆕 | [IGL Q2 result: Net profit plunges 93.5% to ₹24 crore on higher gas costs](https://www.business-standard.com/companies/quarterly-results/igl-q2-result-net-profit-plunges-93-5-to-24-crore-on-higher-gas-costs-126103100481_1.html) | Sat, 31 Oct 2026 12:38:51 +0530 |
+| Natural Gas Services Group, Inc. Common Stock | US | 🆕 | [IGL Q2 result: Net profit plunges 93.5% to ₹24 crore on higher gas costs](https://www.business-standard.com/companies/quarterly-results/igl-q2-result-net-profit-plunges-93-5-to-24-crore-on-higher-gas-costs-126103100481_1.html) | Sat, 31 Oct 2026 12:38:51 +0530 |
+| Clean Energy Technologies, Inc. - Common Stock | US | 🆕 | [Two Point O Capital raises $10 million to expand clean energy platform](https://www.business-standard.com/companies/start-ups/two-point-o-capital-raises-10-million-to-expand-clean-energy-platform-126110100446_1.html) | Mon, 02 Nov 2026 06:05:11 +0530 |
+| Clean Energy Fuels Corp. - Common Stock | US | 🆕 | [Two Point O Capital raises $10 million to expand clean energy platform](https://www.business-standard.com/companies/start-ups/two-point-o-capital-raises-10-million-to-expand-clean-energy-platform-126110100446_1.html) | Mon, 02 Nov 2026 06:05:11 +0530 |
+| Southeast Asia Properties & Finance Ltd | HK | 🆕 | [Hinduja's Gulf Oil scouts acquisitions in Asia, South America ahead of global li](https://economictimes.indiatimes.com/industry/energy/oil-gas/hindujas-gulf-oil-scouts-acquisitions-in-asia-south-america-ahead-of-global-listing/articleshow/135436239.cms) | Mon, 02 Nov 2026 00:41:24 +0530 |
+| Commercial Vehicle Group, Inc. - Common Stock | US | 🆕 | [Tata Motors takes control of Iveco in €3.43-billion deal; focus shifts to debt, ](https://www.thehindubusinessline.com/companies/tata-motors-takes-control-of-iveco-in-343-billion-deal-focus-shifts-to-debt-integration/article71646387.ece) | Fri, 30 Oct 2026 21:59:52 +0530 |
+| Mercantile Bank Corporation - Common Stock | US | 🆕 | [Tamilnad Mercantile Bank seeks RBI nod for share transfers, gets board backing f](https://www.livemint.com/industry/banking/tamilnad-mercantile-bank-rbi-approval-share-transfers-expansion-11793333344595.html) | Fri, 30 Oct 2026 12:35:54 +0530 |
 
 ## Feed health
 
 | Source | Section | Items | Intent hits | Matches | Error |
 |---|---|---|---|---|---|
-| ET | auto | 50 | 18 | 0 |  |
-| ET | cons_products | 50 | 20 | 0 |  |
-| ET | industry | 50 | 17 | 1 |  |
-| Hindu | business | 0 | 0 | 0 | HTTP 403 |
-| HinduBusinessLine | companies | 60 | 35 | 2 |  |
+| ET | auto | 50 | 14 | 0 |  |
+| ET | cons_products | 50 | 23 | 1 |  |
+| ET | industry | 50 | 12 | 2 |  |
+| Hindu | business | 60 | 17 | 0 |  |
+| HinduBusinessLine | companies | 60 | 29 | 1 |  |
 | HinduBusinessLine | economy | 60 | 14 | 0 |  |
-| TimesOfIndia | business | 20 | 5 | 1 |  |
-| Livemint | companies | 35 | 17 | 0 |  |
-| Livemint | industry | 35 | 11 | 3 |  |
+| TimesOfIndia | business | 20 | 7 | 0 |  |
+| Livemint | companies | 35 | 22 | 0 |  |
+| Livemint | industry | 35 | 14 | 1 |  |
 | Moneycontrol | business | 15 | 6 | 0 |  |
 | Moneycontrol | economy | 4 | 1 | 1 |  |
-| BusinessStandard | companies | 35 | 24 | 1 |  |
-| AmarUjala | business | 40 | 10 | 0 |  |
+| BusinessStandard | companies | 35 | 25 | 7 |  |
+| AmarUjala | business | 40 | 19 | 0 |  |
 

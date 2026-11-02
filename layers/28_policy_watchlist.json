@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-10-26",
+ "built": "2026-11-02",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -29,10 +29,10 @@
   }
  },
  "counts": {
-  "prs_bills_total": 973,
-  "investment_relevant": 170,
-  "recent_2024plus": 74,
-  "active_watchlist": 35,
+  "prs_bills_total": 975,
+  "investment_relevant": 172,
+  "recent_2024plus": 76,
+  "active_watchlist": 37,
   "drishti_editorials": 24
  },
  "active_watchlist": [
@@ -75,6 +75,22 @@
    "investment_lane": "Labour codes",
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/the-industrial-relations-code-amendment-bill-2026"
+  },
+  {
+   "slug": "the-occupational-safety-health-and-working-conditions-central-rules-2026",
+   "title": "Occupational Safety Health and Working Conditions Central Rules 2026",
+   "year": 2026,
+   "investment_lane": "Labour codes",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-occupational-safety-health-and-working-conditions-central-rules-2026"
+  },
+  {
+   "slug": "the-social-security-central-rules-2026",
+   "title": "Social Security Central Rules 2026",
+   "year": 2026,
+   "investment_lane": "Labour codes",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-social-security-central-rules-2026"
   },
   {
    "slug": "the-mines-and-minerals-development-and-regulation-amendment-bill-2026",
@@ -373,6 +389,22 @@
    "investment_lane": "Metals & Mining",
    "is_draft": false,
    "url": "https://prsindia.org/billtrack/the-mines-and-minerals-development-and-regulation-amendment-bill-2026"
+  },
+  {
+   "slug": "the-occupational-safety-health-and-working-conditions-central-rules-2026",
+   "title": "Occupational Safety Health and Working Conditions Central Rules 2026",
+   "year": 2026,
+   "investment_lane": "Labour codes",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-occupational-safety-health-and-working-conditions-central-rules-2026"
+  },
+  {
+   "slug": "the-social-security-central-rules-2026",
+   "title": "Social Security Central Rules 2026",
+   "year": 2026,
+   "investment_lane": "Labour codes",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-social-security-central-rules-2026"
   },
   {
    "slug": "the-taxation-and-other-laws-amendment-bill-2026",
@@ -7465,6 +7497,14 @@
    "url": "https://prsindia.org/billtrack/the-nuclear-safety-regulatory-authority-bill-2011"
   },
   {
+   "slug": "the-occupational-safety-health-and-working-conditions-central-rules-2026",
+   "title": "Occupational Safety Health and Working Conditions Central Rules 2026",
+   "year": 2026,
+   "investment_lane": "Labour codes",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-occupational-safety-health-and-working-conditions-central-rules-2026"
+  },
+  {
    "slug": "the-occupational-safety-health-and-working-conditions-code-2019",
    "title": "Occupational Safety Health and Working Conditions Code 2019",
    "year": 2019,
@@ -8777,6 +8817,14 @@
    "url": "https://prsindia.org/billtrack/the-small-industries-development-bank-of-india-amendment-bill-2012"
   },
   {
+   "slug": "the-social-security-central-rules-2026",
+   "title": "Social Security Central Rules 2026",
+   "year": 2026,
+   "investment_lane": "Labour codes",
+   "is_draft": false,
+   "url": "https://prsindia.org/billtrack/the-social-security-central-rules-2026"
+  },
+  {
    "slug": "the-south-asian-university-bill-2008",
    "title": "South Asian University Bill 2008",
    "year": 2008,
@@ -9467,6 +9515,16 @@
  ],
  "policy_debate_editorials": [
   {
+   "slug": "air-pollution-control-in-india-1",
+   "topic": "Air Pollution Control in India 1",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/air-pollution-control-in-india-1"
+  },
+  {
+   "slug": "building-a-resilient-startup-ecosystem",
+   "topic": "Building A Resilient Startup Ecosystem",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-a-resilient-startup-ecosystem"
+  },
+  {
    "slug": "building-an-inclusive-india-for-persons-with-disabilities",
    "topic": "Building An Inclusive India for Persons With Disabilities",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-an-inclusive-india-for-persons-with-disabilities"
@@ -9475,6 +9533,11 @@
    "slug": "building-an-inclusive-india-for-transgender-community",
    "topic": "Building An Inclusive India for Transgender Community",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-an-inclusive-india-for-transgender-community"
+  },
+  {
+   "slug": "deepening-india-nepal-ties",
+   "topic": "Deepening India Nepal Ties",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/deepening-india-nepal-ties"
   },
   {
    "slug": "ensuring-sustainable-food-security",
@@ -9497,11 +9560,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/india-us-relations-resolving-friction-building-trust"
   },
   {
-   "slug": "indias-transition-to-a-clean-energy-future",
-   "topic": "Indias Transition to A Clean Energy Future",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-transition-to-a-clean-energy-future"
-  },
-  {
    "slug": "indias-urban-transformation",
    "topic": "Indias Urban Transformation",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-urban-transformation"
@@ -9510,6 +9568,11 @@
    "slug": "internet-access-as-a-fundamental-right",
    "topic": "Internet Access As A Fundamental Right",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/internet-access-as-a-fundamental-right"
+  },
+  {
+   "slug": "making-indias-ethanol-blending-sustainable",
+   "topic": "Making Indias Ethanol Blending Sustainable",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-indias-ethanol-blending-sustainable"
   },
   {
    "slug": "recalibrating-india-china-ties",
@@ -9522,11 +9585,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-cybersecurity-architecture"
   },
   {
-   "slug": "reimagining-the-united-nations-security-council",
-   "topic": "Reimagining United Nations Security Council",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-the-united-nations-security-council"
-  },
-  {
    "slug": "reimagining-wildlife-conservation-in-india",
    "topic": "Reimagining Wildlife Conservation in India",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-wildlife-conservation-in-india"
@@ -9535,6 +9593,11 @@
    "slug": "reshaping-indias-nuclear-energy-sector",
    "topic": "Reshaping Indias Nuclear Energy Sector",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reshaping-indias-nuclear-energy-sector"
+  },
+  {
+   "slug": "revitalizing-indias-sezs",
+   "topic": "Revitalizing Indias Sezs",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/revitalizing-indias-sezs"
   },
   {
    "slug": "sco-opportunities-and-challenges-for-india",
@@ -9547,9 +9610,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-indias-global-export-competitiveness"
   },
   {
-   "slug": "strengthening-intellectual-property-rights-ecosystem-in-india",
-   "topic": "Strengthening Intellectual Property Rights Ecosystem in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-intellectual-property-rights-ecosystem-in-india"
+   "slug": "strengthening-womens-workforce-participation-in-india",
+   "topic": "Strengthening Womens Workforce Participation in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-womens-workforce-participation-in-india"
   },
   {
    "slug": "the-new-india-canada-dynamic",
@@ -9557,24 +9620,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/the-new-india-canada-dynamic"
   },
   {
-   "slug": "towards-a-uniform-civil-code",
-   "topic": "Towards A Uniform Civil Code",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-a-uniform-civil-code"
-  },
-  {
-   "slug": "towards-holistic-farmer-welfare-in-india",
-   "topic": "Towards Holistic Farmer Welfare in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/towards-holistic-farmer-welfare-in-india"
-  },
-  {
    "slug": "transforming-india-uk-partnership",
    "topic": "Transforming India Uk Partnership",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-india-uk-partnership"
-  },
-  {
-   "slug": "transforming-indias-higher-education-system",
-   "topic": "Transforming Indias Higher Education System",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-indias-higher-education-system"
   },
   {
    "slug": "west-asian-crisis-and-securing-indias-strategic-interests",

@@ -1,44 +1,65 @@
 {
  "layer": 45,
  "name": "media_rss_sweep",
- "built": "2026-10-26",
+ "built": "2026-11-02",
  "what": "Live RSS sweep of 8 popular Indian newspapers' section feeds -- Economic Times, Hindu, Hindu Business Line, Times of India, Livemint, Moneycontrol, Business Standard (English) + Amar Ujala (Hindi) -- filtered for investment-intent language (English + Devanagari keywords), matched against real 23-country foreign stock-market rosters (same files layer 42 uses). Full article text pulled only for roster-confirmed hits. Originally a workaround for ET/Hindu/HBL blocking Anthropic's hosted crawler/search infra outright -- runs via subprocess curl from the local machine, which is never blocked (see feedback_economic_times_blocked memory) -- kept as the standard fetch method when extended to more sources for consistency. CAVEAT on the Hindi source: company-name matching only catches names Indian financial press conventionally leaves in Latin script (Apple, Tesla, Toyota); transliterated names (e.g. एप्पल for Apple) are invisible to the shared Latin-script matcher -- partial, not full, non-English coverage. Separate CAVEAT: 'strong' fragment matches on generic industry-descriptive company names (e.g. 'Semiconductor Manufacturing International Corp' vs. any article about semiconductor manufacturing in general) still slip through even after the SPAC/share-class filter -- treat every match here as a candidate for human review via its full_text field, not a confirmed lead, same as layer 44's un-reviewed MoU rows.",
  "roster_companies_loaded": 29828,
  "known_twin_names": 1833,
- "total_items_scanned": 454,
- "total_investment_intent_hits": 178,
- "total_company_matches": 9,
- "total_new_to_twin": 8,
+ "total_items_scanned": 514,
+ "total_investment_intent_hits": 203,
+ "total_company_matches": 13,
+ "total_new_to_twin": 12,
  "by_source": {
   "ET": {
    "auto": {
     "feed_url": "https://economictimes.indiatimes.com/industry/auto/rssfeeds/13359412.cms",
     "items": 50,
-    "intent_hits": 18,
+    "intent_hits": 14,
     "matches": [],
     "error": null
    },
    "cons_products": {
     "feed_url": "https://economictimes.indiatimes.com/industry/cons-products/rssfeeds/13358759.cms",
     "items": 50,
-    "intent_hits": 20,
-    "matches": [],
+    "intent_hits": 23,
+    "matches": [
+     {
+      "company": "Philip Morris International Inc Common Stock",
+      "ticker": "PM",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Philip Morris Q3 net revenues rise 5.5% to $11.4 billion on smoke-free, combustible growth",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/tobacco/philip-morris-q3-net-revenues-rise-5-5-to-11-4-billion-on-smoke-free-combustible-growth/articleshow/135294554.cms",
+      "published": "Thu, 29 Oct 2026 12:29:37 +0530",
+      "full_text": "New Delhi: Tobacco major Philip Morris International (PMI) reported a 5.5 per cent YoY rise in net revenues to $11.4 billion in Q3, driven by growth in both smoke-free and combustible products, as per a company statement. As per the release, PMI's total shipments rose 0.6 per cent during the quarter, supported by a 2.7 per cent increase in smoke-free product (SFP) shipments across all categories.This was backed by high single-digit growth in adjusted in-market sales of smoke-free products. The combustible products segment also remained resilient, particularly in markets where smoke-free products are banned or have limited availability. We delivered another excellent quarter, with growing total volumes, double-digit organic operating income growth and robust margin expansion,  said Jacek Olczak, Group CEO PMI.Revenues from smoke-free products increased 4.1 per cent, while the combustible products segment recorded 6.4 per cent growth. Smoke-free products, which are now available in 110 markets, contributed over approximately 42 per cent in the year-to-date period.On the other hand, the company's gross profit increased 6.7 per cent, supported by higher combustible product pricing and benefits from scale and product mix. Operating income rose 14.1 per cent during the quarter.Meanwhile, reported diluted EPS of USD 2.12 declined by 4.9 per cent, mainly due to the non-cash fair value adjustment for equity security investments.Adjusted diluted EPS grew by 5.4 per cent, or by 5.8 per cent excluding a one cent unfavorable currency impact to reach USD 2.36, marking  another quarterly all-time high,  the company said in the release.In the international smoke-free segment, net revenues increased 0.7 per cent, with organic growth of 3.4 per cent, driven by a 2.7 per cent rise in volumes.Adjusted in-market sales growth accelerated to 8 per cent, despite a challenging comparison for heated tobacco units (HTUs) due to differences in shipment timing, particularly in Japan. In this segment, gross profit rose 0.8 per cent, reflecting organic growth of 3.3 per cent.The company also raised its regular quarterly dividend by 8.8 per cent to USD 1.60 per share, equivalent to an annualised dividend of USD 6.40 per share. (ANI)"
+     }
+    ],
     "error": null
    },
    "industry": {
     "feed_url": "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
     "items": 50,
-    "intent_hits": 17,
+    "intent_hits": 12,
     "matches": [
      {
-      "company": "CRITICAL MINERALS GROUP LIMITED",
-      "ticker": "CMG.AX",
-      "country": "AU",
+      "company": "Southeast Asia Properties & Finance Ltd",
+      "ticker": "0252.HK",
+      "country": "HK",
       "new_to_twin": true,
-      "title": "Diversification plan: NMDC scouts for mining assets across four continents",
-      "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/diversification-plan-nmdc-scouts-for-mining-assets-across-four-continents/articleshow/135184622.cms",
-      "published": "Sun, 25 Oct 2026 11:27:51 +0530",
-      "full_text": "From South America in the west to Australia in the east, state-owned iron ore giant NMDC is scouting mining assets, including critical minerals, in four continents to meet the future needs of industries such as automotive, renewable energy, electronics, and steel, according to industry sources.NMDC, which caters to India's one-fourth iron ore demand, has set a goal to earn at least 20 per cent of revenues from sale of minerals other than the key steel making raw material.Industry sources stated that the PSU is exploring lithium, copper, cobalt and rare earth blocks in Chile (South America), Australia, Africa, Brazil and parts of Asia.The company is also scouting for limestone mines, dolomite, coking coal and tungsten blocks in the UAE, Oman, Bhutan, and Australia, they said.Acquiring these minerals will allow NMDC to cater to major industries in India on a growth trajectory, such as steel, auto, electronics, renewable energy, aerospace and defence, railway and metros, etc., sources said.When asked for a comment, NMDC said,  Right now, we are a 99.9 per cent iron ore company. We aim to help the growing industries in the country with the maximum of their mineral needs .In an earlier interview with PTI, NMDC Chairman Amitava Mukherjee confirmed the company is working on strategies to diversify into selling other minerals as well. NMDC aims to be India's largest mineral mining company and earn at least 20 per cent of revenue from minerals other than iron ore, he had said.NMDC's expansion aligns directly with government initiatives aimed at securing long-term raw material supplies and reducing import dependency across economic sectors.For the steel sector alone, raw materials account for around 65-70 per cent of steelmaking costs, as per the Ministry of Steel's draft Steel Policy Vision 2047, which aims to reduce import dependence through domestic mining, washery expansion, asset acquisition, long-term supply arrangements, and AI-based optimisation of coal blends.The draft policy said India's objective of increasing the share of manufacturing in the economy, supported by initiatives such as Make in India, the Production Linked Incentive (PLI) Scheme, semiconductor manufacturing, defence indigenisation and the development of industrial corridors, is expected to significantly expand steel consumption in sectors such as automotive, engineering goods, capital goods, machinery, shipbuilding, renewable energy equipment and defence production."
+      "title": "Hinduja's Gulf Oil scouts acquisitions in Asia, South America ahead of global listing",
+      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/hindujas-gulf-oil-scouts-acquisitions-in-asia-south-america-ahead-of-global-listing/articleshow/135436239.cms",
+      "published": "Mon, 02 Nov 2026 00:41:24 +0530",
+      "full_text": "Mumbai: Gulf Oil Lubricants plans to return to Mexico in 2027, the market where the Gulf brand's journey began, as the Hinduja Group-owned company accelerates its international expansion, scouts acquisitions in new markets and prepares for a possible global listing in the next three to five years.The company also plans to re-enter the US market in 2027 through a master-licensing arrangement covering 11 states, with discussions under way to expand into other parts of the country, Sanjay Hinduja, non-executive chairman of Gulf Oil Lubricants India, told ET.The US was excluded when the Hinduja family acquired Gulf from Chevron Corp in 1984. The planned entry will mark the company's return to a market it had not been permitted to operate in under the original acquisition arrangement.The group also intends to list Gulf Oil International in the next three to five years, although the listing venue and timing have not been decided. We are still busy expanding, acquiring and growing,  said Hinduja, adding that the company was still a few years away from going public. Gulf Oil International remains privately held and does not disclose its revenue figures.Its Indian entity is listed and has a market capitalisation of â¹5, 113 crore. Last week, Gulf Oil Lubricants India reported a 34.48% year-on-year increase in net profit to â¹117 crore in the second quarter of FY27, from â¹87 crore in the corresponding period last year. Profitability was supported by volume growth across consumer, commercial and industrial segments. Revenue from operations rose 44% to â¹1,379 crore from â¹ 957 crore. Earnings before interest, tax, depreciation and amortisation increased 37.29% to â¹163 crore from â¹118 crore, while the EBITDA margin contracted 58 basis points to 11.8% from 12.4% a year earlier.Hinduja said the company was also scouting for acquisitions to strengthen its international presence. It has appointed banks to identify potential targets in South America and Southeast Asia, although investment commitments have not been finalised.Gulf Oil International has established facilities in Argentina and Brazil and is developing operations in markets including Chile, Paraguay and Bolivia. Its marine lubricants business has emerged as a key international growth driver, servicing more than 1,000 ports globally. Hinduja said the business was now the world's second-largest marine lubricants player.The group is also exploring acquisitions in Vietnam and other Southeast Asian markets.In India, Gulf Oil Lubricants plans to invest â¹55 crore to expand manufacturing capacity at its Silvassa and Chennai plants by 70%, as it seeks to accelerate growth and strengthen its domestic market position, Ravi Chawla, MD and CEO of Gulf Oil Lubricants India, said."
+     },
+     {
+      "company": "Financial Institutions, Inc. - Common Stock",
+      "ticker": "FISI",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Cyberattacks on banks, including AU Small Finance Bank, worry insurers as claim risks rise",
+      "url": "https://economictimes.indiatimes.com/industry/banking/finance/insure/cyberattacks-on-banks-including-au-small-finance-bank-worry-insurers-as-claim-risks-rise/articleshow/135434670.cms",
+      "published": "Sun, 01 Nov 2026 23:29:56 +0530",
+      "full_text": "Mumbai: The spate of cyberattacks targeting financial institutions, including the one involving AU Small Finance Bank, is raising concerns about the growing vulnerability of banks and the potential scale of losses, with insurers reporting an increase in cyber incidents over the past three to four months.AU Small Finance Bank said it's investigating a potential data breach involving a third-party software-as-a-service platform hosted by Salesforce that holds information related to auto loan customers. The bank has a â¹100 crore cyber insurance cover from New India Assurance, which could help cushion the financial impact. However, the lender has not yet intimated the insurer, according to people familiar with the matter. The extent of the potential data exposure and the number of customers affected are yet to be established.Also read: PB Fintech's UAE insurance business grows 19-fold as it looks beyond motor coverThis follows cyberattacks involving Bank of Baroda and State Bank of India, pointing to growing risks across the banking sector.Insurers said they had witnessed a spate of attacks on financial institutions and manufacturing companies in recent months. Forensic investigations into several hacks are still underway, making it too early to determine the extent of the breaches and the potential claims. The spate of attacks we are witnessing is worrying because hackers are increasingly using artificial intelligence to breach even sophisticated security systems,  an insurance industry executive said.  Our concern is that the depth of penetration could be much higher, which could translate into significantly larger losses. 135434697While ransomware and business interruption remain major risks, financial institutions face potentially significant liabilities from the exposure of customer information, including know-your-customer documents and financial records. The costs could extend to forensic investigations, legal advice, customer notifications, public relations and credit monitoring for affected customers. The scale of the liability will depend on the nature of the information compromised, the number of customers affected and the findings of forensic investigations,  said an executive at a state-owned insurer.Cyber insurance policies typically cover expenses related to forensic investigations, business interruption, legal costs and certain data-related liabilities, subject to policy terms and exclusions. The adequacy of an institution's cover will depend on the scale of the breach and the liabilities arising from it.The recent raids could also put pressure on cyber insurance premiums, which have remained relatively subdued at 0.75-1.5% of the sum assured in recent years amid low claims, as the threat landscape becomes more complex."
      }
     ],
     "error": null
@@ -47,37 +68,27 @@
   "Hindu": {
    "business": {
     "feed_url": "https://www.thehindu.com/business/feeder/default.rss",
-    "items": 0,
-    "intent_hits": 0,
+    "items": 60,
+    "intent_hits": 17,
     "matches": [],
-    "error": "HTTP 403"
+    "error": null
    }
   },
   "HinduBusinessLine": {
    "companies": {
     "feed_url": "https://www.thehindubusinessline.com/companies/feeder/default.rss",
     "items": 60,
-    "intent_hits": 35,
+    "intent_hits": 29,
     "matches": [
      {
       "company": "Commercial Vehicle Group, Inc. - Common Stock",
       "ticker": "CVGI",
       "country": "US",
       "new_to_twin": true,
-      "title": "Tata Motors’ €3.91-billion Iveco bid faces make-or-break October 26 test of global ambitions",
-      "url": "https://www.thehindubusinessline.com/companies/tata-motors-391-billion-iveco-bid-faces-make-or-break-october-26-test-of-global-ambitions/article71622938.ece",
-      "published": "Sun, 25 Oct 2026 19:52:35 +0530",
-      "full_text": "From Italy’s industrial heartland to Mumbai’s financial markets, Tata Motors’ €3.91-billion pursuit of truckmaker Iveco faces its make-or-break test today, the scheduled final day for shareholders to tender their shares. Managing Director Girish Wagh is confident of crossing the required 80 per cent acceptance threshold, but activist investor Petrus Advisers is challenging the valuation, Italian Industry Minister Adolfo Urso is demanding industrial safeguards, and Indian brokerages remain divided over financial returns. At stake is whether Tata can overcome these pressures and replicate its landmark Jaguar Land Rover success globally. Only about 35 per cent of Iveco shares had been tendered as of October 22, leaving Tata dependent on a substantial last-minute surge. “As is typically seen in tender offer processes, a significant proportion of shares tend to be tendered towards the very end of the acceptance period, particularly in the final 24 to 48 hours,” Wagh told analysts. “We therefore remain confident of a successful completion of the acquisition.” The combination would create a commercial-vehicle powerhouse spanning India, Europe and the Americas, with approximately €21 billion in annual revenue and sales exceeding 590,000 vehicles. “Tata Motors has demonstrated through Jaguar Land Rover that it can acquire and turn around a global automotive business. Iveco presents a similar opportunity, but weak European demand, acquisition debt and integration costs pose significant risks. The challenge is whether Tata can replicate the JLR success without putting pressure on profitability and its balance sheet,” said Kranti Bathini, Director–Equity Strategy at WealthMills Securities. Urso has pressed Tata to translate its commitments into a concrete industrial revival. Iveco has outlined investments exceeding €76 million across four Italian plants, while unions seek employment safeguards beyond two years and development plans for individual factories. European truckmakers also face sluggish demand, electrification expenditure, emissions-compliance costs and intensifying competition. Davidson Kempner, Syquant Capital, and Petrus Advisers collectively hold about 20.4 per cent of Iveco. If none tender, their combined holdings could prevent Tata from reaching 80 per cent. Petrus argues the offer undervalues Iveco, estimating fair value at approximately €18 per share, around 25% above Tata’s bid. Iveco shareholders approved reducing the acceptance threshold from 95% to 80%. October 26 is the tender deadline, not another vote. Settlement is expected on October 30, subject to conditions, with a possible extension and a scheduled November 2–6 reopening window. Tata secured the regulatory clearances required to launch the offer and increased its bid from €14.10 to €14.40 per share, a 2.1 per cent rise, declaring the price final. Indian brokerages remain divided over the acquisition’s financial implications. Motilal Oswal has adopted a cautious stance amid uncer"
-     },
-     {
-      "company": "Southeast Asia Properties & Finance Ltd",
-      "ticker": "0252.HK",
-      "country": "HK",
-      "new_to_twin": true,
-      "title": "Cordelia Cruises launches Cordelia Sky, expands fleet to two ships",
-      "url": "https://www.thehindubusinessline.com/economy/logistics/cordelia-cruises-launches-cordelia-sky-expands-fleet-to-two-ships/article71619024.ece",
-      "published": "Sat, 24 Oct 2026 17:12:06 +0530",
-      "full_text": "Mumbai-headquartered Cordelia Cruises has launched Cordelia Sky, its largest cruise vessel, and commenced commercial sailings on Friday, October 23, 2026. The launch event was attended by representatives from the media and tourism industry. The launch marks the company’s transition from a single-ship operator to a two-ship fleet operator. Its next vessel, Cordelia Sun, is scheduled to be launched in 2027. Addressing the media at the launch, Cordelia Cruises President and CEO Jurgen Bailom said the company had carried more than eight lakh passengers since commencing operations. He said the company was founded with a vision of making cruising a preferred travel option for Indians. “Our goal is, by 2032, to be the top five largest cruise market in the world,” Bailom said. The company, a subsidiary of Waterways Leisure Tourism Ltd, also plans to create 20,000 additional jobs over the next three years. As part of its workforce development initiatives, Cordelia Cruises has started a cadet programme and is moving closer to having its first female captain. Bailom also mentioned about the launch of The Chairman’s Club, a loyalty programme rewarding members. Looking ahead, the company has planned a 34-day cruise from Mumbai to Sydney during the 2028 monsoon season. The itinerary is expected to cover seven countries and 16 ports. Commenting on the impact of geopolitical developments on the cruise business, Bailom highlighted the rising costs of food and fuel. “However, we are still able to manage. But it can’t get worse than it is right now, so we all hope that everything is going to get better soon,” he said. Measuring approximately 260 metres in length (848 feet approximately), Cordelia Sky spans 12 decks and has a gross tonnage of 77,104. The vessel has 1,002 cabins (with double occupancy) across multiple categories, ranging from interior staterooms and ocean-view cabins to balcony mini-suites and suites. The accommodation options include the Chairman’s Suite, described as the largest stateroom onboard. Cordelia Sky offers a range of dining, entertainment and recreational facilities, including a fitness centre, spa and salon, entertainment shows, casinos, a gaming arcade and the 930-seat Marquee Theatre. Casino, poker and more Video arcade, fun gaming for kids and teens The ship houses approximately 10 restaurants, 11 bars and lounges, a pool deck with two swimming pools and five hot tubs, a sports court, meeting rooms and a library. Spaces such as Palace Restaurant, The Crossings and The Great Outdoor Cafe offer complimentary dining. Meanwhile, speciality dining venues include La Cucina, The Great Sushi Bar, The Local Bar & Grill, Topsiders Bar & Grill, Garden Cafe and Spice Route. The Chairman’s Club, Connexions and The Dome lounges. The Sky Bar, Atrium Bar and Just Beans offer additional spaces for relaxation. The ship also features gift shops selling souvenirs, branded merchandise and travel essentials. Library - the reading lounge The pool deck and "
+      "title": "Tata Motors takes control of Iveco in €3.43-billion deal; focus shifts to debt, integration",
+      "url": "https://www.thehindubusinessline.com/companies/tata-motors-takes-control-of-iveco-in-343-billion-deal-focus-shifts-to-debt-integration/article71646387.ece",
+      "published": "Fri, 30 Oct 2026 21:59:52 +0530",
+      "full_text": "Tata Motors took control of Italian commercial-vehicle maker Iveco on Friday, acquiring an 89.42 per cent stake for approximately €3.43 billion (₹36,387 crore) after settling its cash tender offer. The acquisition gives India’s largest commercial-vehicle manufacturer control of a European business with annual revenue of ₹1.42 lakh crore, but shifts the focus to integrating operations, generating cash-flow benefits and repaying acquisition debt. TML CV Holdings B.V., Tata Motors’ indirect wholly owned subsidiary, acquired 238.16 million common shares at €14.40 apiece. The holding represents 89.42 per cent of Iveco’s common share capital, excluding treasury shares. Iveco has consequently become an indirect subsidiary of Tata Motors, the company said in an exchange filing. N. Chandrasekaran, Chairman of Tata Sons, has become Iveco’s non-executive chairperson and senior non-executive director, while Olof Persson continues as chief executive. Tata Motors executives P. B. Balaji and Girish Wagh have joined the board alongside independent directors Guenter Butschek and Charles Nichols. The acquisition also brings changes to Iveco’s board committees and voting structure, with all outstanding special voting shares repurchased for no consideration. “On Iveco, consolidation will begin next quarter, with immediate priority being to ensure a seamless transition,” Wagh, Tata Motors’ Managing Director and CEO, told investors at the October 23 earnings call, referring to the October–December quarter. Global scale, execution test Iveco reported calendar-year 2025 revenue of €13.43 billion, down approximately 6.9 per cent from €14.42 billion in 2024. The company employs 33,000 people across 16 industrial sites and 22 research and development centres. The acquisition brings Iveco’s trucks, buses, FPT powertrain technologies and vehicle-financing operations into Tata Motors’ commercial-vehicle business. Iveco’s defence operations, sold separately to Leonardo, are excluded from the transaction. In their September offer announcement, the companies estimated combined annual revenue of approximately €21 billion and vehicle sales exceeding 590,000 units. Europe accounted for about 46 per cent of the combined revenue base, India 32 per cent and South America 8 per cent. The industrial rationale rests on complementary product portfolios and geographical markets. Tata gains an established European and Latin American presence, alongside capabilities in engines, alternative fuels and electrification, while the companies seek to share technology investments, distribution networks and procurement benefits. However, converting that scale into shareholder returns will depend on the financial commitments outlined when the acquisition was announced. In its July 2025 investor presentation, Tata targeted annual free-cash-flow synergies of up to 0.5 per cent of combined revenue from FY28, earnings-per-share breakeven within two years and repayment of acquisition debt within four years"
      }
     ],
     "error": null
@@ -94,19 +105,8 @@
    "business": {
     "feed_url": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
     "items": 20,
-    "intent_hits": 5,
-    "matches": [
-     {
-      "company": "HDFC Bank Limited Common Stock",
-      "ticker": "HDB",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "Market recap: Eight of top 10 firms lose Rs 1.55 lakh crore",
-      "url": "https://timesofindia.indiatimes.com/business/india-business/market-recap-eight-of-top-10-firms-lose-rs-1-55-lakh-crore-hdfc-bank-bajaj-finance-take-biggest-hit/articleshow/135187845.cms",
-      "published": "2026-10-25T15:06:39+05:30",
-      "full_text": "NEW DELHI: The combined market valuation of eight of Indiaâs top 10 most valuable companies declined by Rs 1.55 lakh crore last week, with HDFC Bank and Bajaj Finance emerging as the biggest losers. Tata Consultancy Services (TCS) and Larsen & Toubro (L&T) were the only two firms in the top 10 to record gains in their market capitalisation.The decline came as benchmark equity indices registered sharp losses during a holiday-truncated week. The 30-share BSE Sensex fell 1,605.44 points, or 2.15 per cent, while the 50-share NSE Nifty dropped 546.15 points, or 2.36 per cent.Reflecting the weak performance of equities, the total market capitalisation of BSE-listed companies declined by Rs 20,78,774.28 crore over four trading sessions to Rs 4,51,83,393.14 crore. The figure stood at Rs 4,72,62,167.42 crore on October 16.Among the eight companies that reported a decline in valuation, HDFC Bank recorded the steepest fall. Its market capitalisation dropped by Rs 55,506.95 crore to Rs 10,67,121.12 crore, while its stock lost 5 per cent over the week.Bajaj Finance followed, with its valuation falling by Rs 34,180.51 crore to Rs 5,77,146.21 crore. Reliance Industries saw its market capitalisation decline by Rs 27,065.08 crore to Rs 16,10,372.11 crore.Life Insurance Corporation of India (LIC) also registered a substantial fall, with its valuation shrinking by Rs 21,062.24 crore to Rs 4,81,142.58 crore.Bharti Airtel's market capitalisation declined by Rs 9,360.75 crore to Rs 11,79,454.70 crore, while State Bank of India's valuation fell by Rs 4,338.46 crore to Rs 8,83,384.38 crore.Infosys recorded a decline of Rs 2,881.38 crore in its market capitalisation, which stood at Rs 4,68,528.03 crore. ICICI Bank's valuation decreased by Rs 1,276.53 crore to Rs 10,01,594.91 crore.In contrast, TCS and L&T ended the week with gains. TCS added Rs 23,517.56 crore to its market capitalisation, taking it to Rs 9,14,652.52 crore. L&T's valuation rose by Rs 1,788.66 crore to Rs 5,01,513.72 crore.Despite the weekly decline, Reliance Industries remained India's most valuable company, followed by Bharti Airtel and HDFC Bank. ICICI Bank ranked fourth, ahead of TCS and State Bank of India. Bajaj Finance occupied the seventh position, followed by L&T, LIC and Infosys.You use AI every day. Now get your AI Quotient. Take the AIQ test."
-     }
-    ],
+    "intent_hits": 7,
+    "matches": [],
     "error": null
    }
   },
@@ -114,44 +114,24 @@
    "companies": {
     "feed_url": "https://www.livemint.com/rss/companies",
     "items": 35,
-    "intent_hits": 17,
+    "intent_hits": 22,
     "matches": [],
     "error": null
    },
    "industry": {
     "feed_url": "https://www.livemint.com/rss/industry",
     "items": 35,
-    "intent_hits": 11,
+    "intent_hits": 14,
     "matches": [
      {
-      "company": "Clean Energy Technologies, Inc. - Common Stock",
-      "ticker": "CETY",
+      "company": "Mercantile Bank Corporation - Common Stock",
+      "ticker": "MBWM",
       "country": "US",
       "new_to_twin": true,
-      "title": "Mint Explainer | How new land compensation rules could speed up India’s clean energy transition",
-      "url": "https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html",
-      "published": "Sun, 25 Oct 2026 16:57:24 +0530",
-      "full_text": "Delays in securing land and right of way for transmission lines are threatening Indiaâs renewable energy expansion. The Union ministry of power on 6 October issued revised guidelines for compensating landowners, setting out a framework to determine market value where circle rates fall short."
-     },
-     {
-      "company": "Clean Energy Fuels Corp. - Common Stock",
-      "ticker": "CLNE",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "Mint Explainer | How new land compensation rules could speed up India’s clean energy transition",
-      "url": "https://www.livemint.com/industry/energy/mint-explainer-how-new-land-compensation-rules-could-speed-up-india-s-clean-energy-transition-11792913800449.html",
-      "published": "Sun, 25 Oct 2026 16:57:24 +0530",
-      "full_text": "Delays in securing land and right of way for transmission lines are threatening Indiaâs renewable energy expansion. The Union ministry of power on 6 October issued revised guidelines for compensating landowners, setting out a framework to determine market value where circle rates fall short."
-     },
-     {
-      "company": "HDFC Bank Limited Common Stock",
-      "ticker": "HDB",
-      "country": "US",
-      "new_to_twin": true,
-      "title": "Sonu Sood’s Mumbai property portfolio: How  ₹3.52 crore Bokka Coffee rent is structured, how much he earns from HDFC Bank",
-      "url": "https://www.livemint.com/industry/real-estate/sonu-sood-s-mumbai-property-portfolio-how-3-52-crore-bokka-coffee-rent-is-structured-how-much-he-earns-from-hdfc-bank-11792733291054.html",
-      "published": "Fri, 23 Oct 2026 11:36:57 +0530",
-      "full_text": "Bollywood actor Sonu Sood is set to earn rental income from two commercial properties in Mumbai, having leased out a unit to Bokka Coffee in Versova, Andheri West, and another to HDFC Bank in Bandra Kurla Complex (BKC).Soodâs latest rental deal with Bokka Coffee is expected to generate  â¹3.52 crore over the lease period, according to property registration documents reviewed by Square Yards. The transaction was registered in October 2026 and involved a security deposit of  â¹32 lakh.The monthly rent for the Versova property has been fixed at  â¹5 lakh for the first year, with an annual escalation of approximately 8%. The rent will rise to  â¹5.4 lakh in the second year,  â¹5.83 lakh in the third year,  â¹6.29 lakh in the fourth year and  â¹6.8 lakh in the fifth year.This is about 36% increase in monthly rent between the first and fifth years.The transaction also involved stamp duty of  â¹93,000 and registration charges of  â¹1,000, according to the property documents. How much rent will Sonu Sood earn from HDFC Bank?Earlier this year, Sood leased a commercial unit at Trade Centre in BKC, Bandra East, Mumbai, to HDFC Bank.The actor had purchased the 2,700 sq. ft. property for  â¹24.25 crore, with the purchase registered in October 2012.According to the lease documents, the starting monthly rent was fixed at  â¹11.75 lakh, with a tenure of nine years. The rent will remain unchanged for the first three years, after which it will increase by 15% at the end of every successive three-year period.The agreement also involved a security deposit of  â¹70.5 lakh.The two leases have different rental structures. While the Bokka Coffee agreement provides for annual rent increases of approximately 8%, the HDFC Bank lease provides for a 15% increase every three years.What makes Versova a sought-after property location?Soodâs Bokka Coffee property is located in Versovaâs Aram Nagar area in Andheri West, a locality known for its connectivity to commercial districts, entertainment hubs and lifestyle destinations. The area is connected through Link Road, SV Road and the Western Express Highway. It also has access to Versova Metro Station and the nearby Andheri railway station. The VersovaâBandra Sea Link is expected to further improve connectivity once completed.Versova is also known for its premium apartments, coastal surroundings and cultural and entertainment scene."
+      "title": "Tamilnad Mercantile Bank seeks RBI nod for share transfers, gets board backing for expansion",
+      "url": "https://www.livemint.com/industry/banking/tamilnad-mercantile-bank-rbi-approval-share-transfers-expansion-11793333344595.html",
+      "published": "Fri, 30 Oct 2026 12:35:54 +0530",
+      "full_text": "NEW DELHI: Tamilnad Mercantile Bank (TMB) has sought the Reserve Bank of Indiaâs approval to regularize certain share transfers, while adjudication of a separate matter involving the issuance of bonus shares remains pending, managing director and chief executive officer Salee S. Nair said in an interview with Mint."
      }
     ],
     "error": null
@@ -188,17 +168,77 @@
    "companies": {
     "feed_url": "https://www.business-standard.com/rss/companies-101.rss",
     "items": 35,
-    "intent_hits": 24,
+    "intent_hits": 25,
     "matches": [
      {
-      "company": "Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share",
-      "ticker": "APWC",
+      "company": "Clean Energy Technologies, Inc. - Common Stock",
+      "ticker": "CETY",
       "country": "US",
       "new_to_twin": true,
-      "title": "L'Oreal sees India biz gaining momentum; expands skincare, online presence",
-      "url": "https://www.business-standard.com/companies/news/l-oreal-sees-india-biz-gaining-momentum-expands-skincare-online-presence-126102500132_1.html",
-      "published": "Sun, 25 Oct 2026 12:50:47 +0530",
-      "full_text": "French cosmetics major L'Oreal sees its India business \"doing a great turnaround\", driven by improving team capabilities, increasing localisation, accelerating online commerce and rising demand for haircare and skincare products, said its global Chief Executive Officer Nicolas Hieronimus.India recorded a \"double-digit growth\" in the group's consumer products division business in the September quarter. Besides, its \"emerging markets delivered spectacular growth, particularly in Brazil and India\" in the professional products, according to the company's latest earnings update.L'Oreal's SAPMENA-SSA region posted adjusted like-for-like growth of 19.2 per cent in the third quarter of 2026, with India and Indonesia \"further accelerated\", driven by haircare and skincare, the cosmetics major said.The region comprises South Asia Pacific, the Middle East, North Africa and Sub-Saharan Africa, and is one of L'Oreal's key operational and financial reporting regions.In the earnings call, Hieronimus, who visited India a few weeks ago, said the country was witnessing a strong turnaround, supported by improvements in team capabilities and a greater focus on developing products tailored to local consumers.\"India, where I was just a couple of weeks ago, is doing a great turnaround there, both in terms of teams' quality. We create for India much more than we did before,\" said Hieronimus.The company is also accelerating its online commerce strategy, particularly quick commerce, while expanding its skincare brands CeraVe and La Roche-Posay into new cities to tap the growing demand for specialised skincare products.\"We are accelerating in commerce, with a focus on quick commerce, which is an important part of the e-commerce market there,\" he said.L'Oreal is also expanding its presence in the dermatological beauty segment, with its skincare brand CeraVe gaining traction and entering new cities in India.\"India is one of the countries where CeraVe is still a baby brand, but growing fast and expanding to new cities,\" Hieronimus said.The company has also launched La Roche-Posay, another brand in its dermatological beauty portfolio, in India. The brand is positioned at a relatively higher price point, and L'Oreal expects the two brands to complement each other in the market.The expansion comes as the French beauty major looks to tap growing consumer interest in skincare and specialised beauty products in India.In another move to strengthen its local presence, L'Oreal has completed the acquisition of a majority stake in Innovist, a digital-first Indian personal care company that owns a portfolio of beauty and personal care brands.The acquisition is expected to support the acceleration of L'Oreal's business in India by strengthening its access to the country's rapidly evolving digital-first beauty market.L'Oreal's corporate venture fund BOLD has also partnered with Nykaa, India's largest beauty retailer, to take minority stakes in high-growth Indian beauty, personal care and we"
+      "title": "Two Point O Capital raises $10 million to expand clean energy platform",
+      "url": "https://www.business-standard.com/companies/start-ups/two-point-o-capital-raises-10-million-to-expand-clean-energy-platform-126110100446_1.html",
+      "published": "Mon, 02 Nov 2026 06:05:11 +0530",
+      "full_text": "Two Point O Capital (TW.O), an artificial intelligence (AI)-powered, full-stack clean energy deployment platform for commercial and industrial (C&I) businesses, has raised $10 million in a funding round led by Transition Venture Capital. Existing investor Omnivore and angel investors Chiranjeev Singh Saluja and Sudhir M Reddy also participated in the round. The funding will help TW.O expand into battery energy storage (BESS) and deepen its presence in solar, energy efficiency and wastewater treatment. It also plans to grow in energy and water-intensive sectors such as data centres, automotive, pharma, manufacturing and healthcare. The company works with leading original equipment manufacturers (OEMs) and engineering, procurement, and construction (EPC) firms across India. Its clients include Premier Energies, Godrej, JK Tyre, Morepen Pharma, Wipro and Phoenix Mills. C&I customers need customised capital and asset solutions to meet their clean energy and utility needs. These solutions can help lower operating costs, provide access to new markets such as the European Union, and improve operational resilience. The opportunity is estimated at $100 billion to $150 billion annually, which TW.O aims to address through its capital solutions. “India’s tremendous growth in C&I segments will continue to increase demand for energy and water, placing greater pressure on businesses to manage and optimise energy costs and resources,” said Karan Bhutani, chief executive officer and co-founder of TW.O. “The recent West Asia crisis has further underscored the importance of energy independence and resilience, making the transition to clean energy and efficient water utilisation an imperative rather than a choice,” he said. Bhutani said TW.O is uniquely positioned to deliver this by combining innovative capital, turnkey execution, and technology expertise to help customers reduce costs, improve resilience and become competitive. “This funding will accelerate our vision to become India’s first and largest multi-asset and multi-solution platform enabling adoption of clean energy by C&I customers,” he said  TW.O was founded in 2024 by Archit Mehrotra, Karan Bhutani, Manya Ranjan and Shashidhar Reddy, whose combined experience exceeds 75 years across firms including KKR, McKinsey, Shell, BP, Honeywell, ReNew, Sterlite Power and GIC. The company helps businesses adopt sustainable infrastructure through flexible financing, project ownership, transparent measurement and guaranteed results. The firm said that its assets under management have grown 1.5 times each quarter over the past three quarters. The company uses a proprietary AI and machine learning platform for solutioning, underwriting and asset monitoring. This enables predictive maintenance, risk mitigation and performance optimisation while keeping operating costs low. Yashodhara Bakliwal, vice president, investment at TVC said TW.O removes the capex barrier, accelerating the adoption of clean energy solutions.  Sh"
+     },
+     {
+      "company": "Clean Energy Fuels Corp. - Common Stock",
+      "ticker": "CLNE",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Two Point O Capital raises $10 million to expand clean energy platform",
+      "url": "https://www.business-standard.com/companies/start-ups/two-point-o-capital-raises-10-million-to-expand-clean-energy-platform-126110100446_1.html",
+      "published": "Mon, 02 Nov 2026 06:05:11 +0530",
+      "full_text": "Two Point O Capital (TW.O), an artificial intelligence (AI)-powered, full-stack clean energy deployment platform for commercial and industrial (C&I) businesses, has raised $10 million in a funding round led by Transition Venture Capital. Existing investor Omnivore and angel investors Chiranjeev Singh Saluja and Sudhir M Reddy also participated in the round. The funding will help TW.O expand into battery energy storage (BESS) and deepen its presence in solar, energy efficiency and wastewater treatment. It also plans to grow in energy and water-intensive sectors such as data centres, automotive, pharma, manufacturing and healthcare. The company works with leading original equipment manufacturers (OEMs) and engineering, procurement, and construction (EPC) firms across India. Its clients include Premier Energies, Godrej, JK Tyre, Morepen Pharma, Wipro and Phoenix Mills. C&I customers need customised capital and asset solutions to meet their clean energy and utility needs. These solutions can help lower operating costs, provide access to new markets such as the European Union, and improve operational resilience. The opportunity is estimated at $100 billion to $150 billion annually, which TW.O aims to address through its capital solutions. “India’s tremendous growth in C&I segments will continue to increase demand for energy and water, placing greater pressure on businesses to manage and optimise energy costs and resources,” said Karan Bhutani, chief executive officer and co-founder of TW.O. “The recent West Asia crisis has further underscored the importance of energy independence and resilience, making the transition to clean energy and efficient water utilisation an imperative rather than a choice,” he said. Bhutani said TW.O is uniquely positioned to deliver this by combining innovative capital, turnkey execution, and technology expertise to help customers reduce costs, improve resilience and become competitive. “This funding will accelerate our vision to become India’s first and largest multi-asset and multi-solution platform enabling adoption of clean energy by C&I customers,” he said  TW.O was founded in 2024 by Archit Mehrotra, Karan Bhutani, Manya Ranjan and Shashidhar Reddy, whose combined experience exceeds 75 years across firms including KKR, McKinsey, Shell, BP, Honeywell, ReNew, Sterlite Power and GIC. The company helps businesses adopt sustainable infrastructure through flexible financing, project ownership, transparent measurement and guaranteed results. The firm said that its assets under management have grown 1.5 times each quarter over the past three quarters. The company uses a proprietary AI and machine learning platform for solutioning, underwriting and asset monitoring. This enables predictive maintenance, risk mitigation and performance optimisation while keeping operating costs low. Yashodhara Bakliwal, vice president, investment at TVC said TW.O removes the capex barrier, accelerating the adoption of clean energy solutions.  Sh"
+     },
+     {
+      "company": "Clean Energy Technologies, Inc. - Common Stock",
+      "ticker": "CETY",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Solex Energy eyeing US market for international debut, says chairman",
+      "url": "https://www.business-standard.com/companies/news/solex-energy-eyeing-us-market-for-international-debut-says-chairman-126110100351_1.html",
+      "published": "Sun, 01 Nov 2026 14:46:50 +0530",
+      "full_text": "Eyeing a footprint in the global renewable energy market, homegrown Solex Energy plans to establish solar module and cell manufacturing capacities in the US as part of its $1.5 billion investment roadmap through 2030.In an interaction, the company's Chairman Chetan Shah said that while the US remains the largest global solar market, steep anti-dumping duties on Chinese imports leave India as the sole viable supplier of low-cost alternatives.When asked whether Solex Energy is exploring expansion in the US, he replied in the affirmative.Sharing the rationale behind the move, he said Solex Energy is targeting the US market for expansion primarily to capitalise on the massive global demand for clean energy components while positioning itself as a reliable, cost-effective alternative to Chinese suppliers.\"The US is a high-potential market. While many Indian corporates are already present there, a healthy number of business houses, including us, are also looking to invest there,\" Shah, who is also the Managing Director (MD) of Solex Energy, told PTI.In India, the company operates a 4 gigawatt (GW) module manufacturing facility in Gujarat, and aims to increase its capacity to 10 GW. It is also in the process of establishing 10 GW of cell manufacturing and 2 GW of ingot and wafer production.Shah did not share details of the US projects due to regulatory compliance, but said the investments will be part of the company's $1.5 billion investment plan up to 2030.A team has been formed to study various parameters, including required investments, locations in the US, among others, he said.On the ALMM-II framework, Shah said the industry is aligned with objectives of the government initiative and has made investments worth thousands of crore to set up module capacities in India to support the country's net zero goals.However, under the present market circumstances, the industry needs an extension of ALMM-II by at least 12 months on account of cell availability, he added.ALMM-II framework mandates sourcing of made-in-India cells from an approved list of module manufacturers (ALMM).As of October 2026, India had about 262 GW of module manufacturing capacity and only about 37 GW of cell capacity, he noted.\"Amid this huge gap between module and cell capacity in India, out of the installed capacities, most of them are of old MONO PERC technology and several capacities are also non-operational,\" Shah said, adding that the module capacities have been set up for use of the latest TOPcon technology."
+     },
+     {
+      "company": "Clean Energy Fuels Corp. - Common Stock",
+      "ticker": "CLNE",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Solex Energy eyeing US market for international debut, says chairman",
+      "url": "https://www.business-standard.com/companies/news/solex-energy-eyeing-us-market-for-international-debut-says-chairman-126110100351_1.html",
+      "published": "Sun, 01 Nov 2026 14:46:50 +0530",
+      "full_text": "Eyeing a footprint in the global renewable energy market, homegrown Solex Energy plans to establish solar module and cell manufacturing capacities in the US as part of its $1.5 billion investment roadmap through 2030.In an interaction, the company's Chairman Chetan Shah said that while the US remains the largest global solar market, steep anti-dumping duties on Chinese imports leave India as the sole viable supplier of low-cost alternatives.When asked whether Solex Energy is exploring expansion in the US, he replied in the affirmative.Sharing the rationale behind the move, he said Solex Energy is targeting the US market for expansion primarily to capitalise on the massive global demand for clean energy components while positioning itself as a reliable, cost-effective alternative to Chinese suppliers.\"The US is a high-potential market. While many Indian corporates are already present there, a healthy number of business houses, including us, are also looking to invest there,\" Shah, who is also the Managing Director (MD) of Solex Energy, told PTI.In India, the company operates a 4 gigawatt (GW) module manufacturing facility in Gujarat, and aims to increase its capacity to 10 GW. It is also in the process of establishing 10 GW of cell manufacturing and 2 GW of ingot and wafer production.Shah did not share details of the US projects due to regulatory compliance, but said the investments will be part of the company's $1.5 billion investment plan up to 2030.A team has been formed to study various parameters, including required investments, locations in the US, among others, he said.On the ALMM-II framework, Shah said the industry is aligned with objectives of the government initiative and has made investments worth thousands of crore to set up module capacities in India to support the country's net zero goals.However, under the present market circumstances, the industry needs an extension of ALMM-II by at least 12 months on account of cell availability, he added.ALMM-II framework mandates sourcing of made-in-India cells from an approved list of module manufacturers (ALMM).As of October 2026, India had about 262 GW of module manufacturing capacity and only about 37 GW of cell capacity, he noted.\"Amid this huge gap between module and cell capacity in India, out of the installed capacities, most of them are of old MONO PERC technology and several capacities are also non-operational,\" Shah said, adding that the module capacities have been set up for use of the latest TOPcon technology."
+     },
+     {
+      "company": "American Eagle Outfitters, Inc. Common Stock",
+      "ticker": "AEO",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "Aditya Birla Fashion and Retail Q2 profit more than doubles to ₹53 crore",
+      "url": "https://www.business-standard.com/companies/quarterly-results/aditya-birla-fashion-and-retail-q2-profit-more-than-doubles-to-53-crore-126103100919_1.html",
+      "published": "Sat, 31 Oct 2026 17:42:37 +0530",
+      "full_text": "Aditya Birla Fashion and Retail Ltd (ABFRL) on Saturday reported a twofold increase in consolidated net profit at â¹53.05 crore for September quarter FY27.The company had posted a net profit of â¹23.44 crore during July-September FY26, according to a regulatory filing from ABFRL.Revenue from operations rose to â¹2,265.61 crore from â¹2,037.90 crore earlier.Total expenses of ABFRL, which handles Pantaloons and Style Up, along with a host of ethnic brands, were at â¹2,224.99 crore, up 9.71 per cent in the second quarter of FY27.Total income, including other income, was up 11.48 per cent to â¹2,295.42 crore in Q2 FY27.Last year, the Aditya Birla Group demerged its Madura business into a separately listed entity, Aditya Birla Lifestyle Brands Limited (ABLBL), effective from May 1, 2025.ABLBL has its lifestyle brands business as Louis Philippe, Van Heusen, Allen Solly, Peter England, Simon Carter and youth western wear brands such as American Eagle. It also has a sportswear brand, Reebok, for which it has a long-term licensing agreement for the Indian market.ABFRL has its retail business under Pantaloons and Style Up, along with a host of ethnic brands, which it owns, such as Designer-led brands of Sabyasachi, Shantnu & Nikhil, House of Masaba and Tarun Tahiliani. It has premium ethnic wear brands, including Jaypore, Tasva & TCNS."
+     },
+     {
+      "company": "Natural Gas Distribution Company",
+      "ticker": "9516.SR",
+      "country": "SA",
+      "new_to_twin": true,
+      "title": "IGL Q2 result: Net profit plunges 93.5% to ₹24 crore on higher gas costs",
+      "url": "https://www.business-standard.com/companies/quarterly-results/igl-q2-result-net-profit-plunges-93-5-to-24-crore-on-higher-gas-costs-126103100481_1.html",
+      "published": "Sat, 31 Oct 2026 12:38:51 +0530",
+      "full_text": "Indraprastha Gas Ltd (IGL), the country's largest city gas distributor, reported a sharp 93.5 per cent decline in standalone net profit for the September quarter as a substantial increase in input gas costs eroded margins, offsetting higher sales volumes and revenue.Net profit fell to â¹24.38 crore in the second quarter of 2026-27 from â¹372.51 crore a year earlier, despite an 8 per cent increase in sales volumes and a 26 per cent jump in gross turnover.The company said its average daily gas sales crossed the 10 million standard cubic metres per day (mmscmd) mark for the first time, rising to 10.06 mmscmd in the July-September period from 9.31 mmscmd in the corresponding period last year.Gross sales turnover increased to â¹5,999.13 crore from â¹4,431.63 crore, reflecting higher sales as well as the impact of increased gas prices.CNG volumes grew 9 per cent year-on-year during the quarter, while piped natural gas (PNG) sales rose 8 per cent, indicating continued expansion in demand across the transport and household segments.However, the steep fall in profitability despite higher volumes and turnover highlights the pressure that rising procurement costs can exert on city gas distributors, particularly when increase in input prices cannot be fully passed on to consumers.IGL operates city gas distribution networks across 34 districts in 11 geographical areas spanning Delhi, Uttar Pradesh, Haryana and Rajasthan.Its infrastructure includes more than 30,000 km of pipelines and over 1,000 CNG stations, catering to more than 2.5 million CNG vehicles. It has also connected over 3.5 million households to piped natural gas."
+     },
+     {
+      "company": "Natural Gas Services Group, Inc. Common Stock",
+      "ticker": "NGS",
+      "country": "US",
+      "new_to_twin": true,
+      "title": "IGL Q2 result: Net profit plunges 93.5% to ₹24 crore on higher gas costs",
+      "url": "https://www.business-standard.com/companies/quarterly-results/igl-q2-result-net-profit-plunges-93-5-to-24-crore-on-higher-gas-costs-126103100481_1.html",
+      "published": "Sat, 31 Oct 2026 12:38:51 +0530",
+      "full_text": "Indraprastha Gas Ltd (IGL), the country's largest city gas distributor, reported a sharp 93.5 per cent decline in standalone net profit for the September quarter as a substantial increase in input gas costs eroded margins, offsetting higher sales volumes and revenue.Net profit fell to â¹24.38 crore in the second quarter of 2026-27 from â¹372.51 crore a year earlier, despite an 8 per cent increase in sales volumes and a 26 per cent jump in gross turnover.The company said its average daily gas sales crossed the 10 million standard cubic metres per day (mmscmd) mark for the first time, rising to 10.06 mmscmd in the July-September period from 9.31 mmscmd in the corresponding period last year.Gross sales turnover increased to â¹5,999.13 crore from â¹4,431.63 crore, reflecting higher sales as well as the impact of increased gas prices.CNG volumes grew 9 per cent year-on-year during the quarter, while piped natural gas (PNG) sales rose 8 per cent, indicating continued expansion in demand across the transport and household segments.However, the steep fall in profitability despite higher volumes and turnover highlights the pressure that rising procurement costs can exert on city gas distributors, particularly when increase in input prices cannot be fully passed on to consumers.IGL operates city gas distribution networks across 34 districts in 11 geographical areas spanning Delhi, Uttar Pradesh, Haryana and Rajasthan.Its infrastructure includes more than 30,000 km of pipelines and over 1,000 CNG stations, catering to more than 2.5 million CNG vehicles. It has also connected over 3.5 million households to piped natural gas."
      }
     ],
     "error": null
@@ -208,7 +248,7 @@
    "business": {
     "feed_url": "https://www.amarujala.com/rss/business.xml",
     "items": 40,
-    "intent_hits": 10,
+    "intent_hits": 19,
     "matches": [],
     "error": null
    }

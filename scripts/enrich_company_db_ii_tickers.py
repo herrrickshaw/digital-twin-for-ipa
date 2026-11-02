@@ -32,6 +32,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date
 
+from twin_common import norm_company
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data", "companies.db")
 LAYER = os.path.join(ROOT, "layers", "32_company_db.json")
@@ -63,19 +65,7 @@ STOP_TOKENS = {"india", "indian", "national", "the", "new", "bharat", "shree",
 REVIEWED_WEAK_OK = {"airbus", "pegatron", "astrazeneca", "panasonic", "vertiv",
                     "sandisk"}
 
-SUFFIXES = re.compile(
-    r"\b(private|pvt|limited|ltd|llp|llc|inc|incorporated|corp|corporation|plc|"
-    r"co|company|gmbh|ag|sa|nv|bv|ab|as|asa|oyj|spa|kk|pte|sdn bhd|holdings?)\b\.?",
-    re.I,
-)
-
-
-def norm(s):
-    s = (s or "").lower()
-    s = re.sub(r"^m\s*/\s*s\.?\s+", "", s)
-    s = re.sub(r"[^a-z0-9 ]", " ", s)
-    s = SUFFIXES.sub(" ", s)
-    return re.sub(r"\s+", " ", s).strip()
+norm = norm_company  # shared with build_company_db.py (identical normaliser)
 
 
 def get(url, timeout=30):

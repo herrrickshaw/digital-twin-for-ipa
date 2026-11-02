@@ -36,6 +36,8 @@ import re
 import subprocess
 import sys
 
+from twin_common import known_company_names
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UNIV_DIR = os.path.expanduser("~/repos/global-stock-screener/data/global_universe")
 OUT_JSON = os.path.join(ROOT, "layers", "45_media_rss_sweep.json")
@@ -232,22 +234,8 @@ def load_all_rosters():
 
 
 def known_names():
-    """Same twin-membership check layer 44 uses: layer 16 leads + every
-    company already in companies.db."""
-    import sqlite3
-    names = set()
-    leads_path = os.path.join(ROOT, "layers", "16_leads.json")
-    if os.path.exists(leads_path):
-        for l in json.load(open(leads_path))["leads"]:
-            names.add(l["company"].strip().lower())
-    db = os.path.join(ROOT, "data", "companies.db")
-    if os.path.exists(db):
-        con = sqlite3.connect(db)
-        for (n,) in con.execute("SELECT name FROM companies"):
-            if n:
-                names.add(n.strip().lower())
-        con.close()
-    return names
+    """Lower-cased names already in the twin (layer 16 leads + companies.db)."""
+    return known_company_names(ROOT)
 
 
 def is_new(company_name, known):

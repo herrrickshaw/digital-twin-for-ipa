@@ -22,7 +22,8 @@ import importlib.util
 import json
 import os
 import re
-import sqlite3
+
+from twin_common import known_company_names
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SWEEP_DIR = os.path.join(ROOT, "data", "news_sweeps", "india_investment_sector_sweep_2026_08")
@@ -38,18 +39,8 @@ norm, match_fragments = _ii.norm, _ii.match_fragments
 
 
 def known_names():
-    names = set()
-    leads_path = os.path.join(ROOT, "layers", "16_leads.json")
-    if os.path.exists(leads_path):
-        for l in json.load(open(leads_path))["leads"]:
-            names.add(l["company"].strip().lower())
-    if os.path.exists(DB):
-        con = sqlite3.connect(DB)
-        for (n,) in con.execute("SELECT name FROM companies"):
-            if n:
-                names.add(n.strip().lower())
-        con.close()
-    return names
+    """Lower-cased names already in the twin (layer 16 leads + companies.db)."""
+    return known_company_names(ROOT)
 
 
 def is_new(name, known):

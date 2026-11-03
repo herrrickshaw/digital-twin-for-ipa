@@ -1,6 +1,5 @@
 """Characterisation of build_switzerland_india_sweep.main with stubbed SIX endpoints (no network)."""
 import datetime
-import json
 
 import pytest
 

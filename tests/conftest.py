@@ -78,3 +78,9 @@ def frozen_today(monkeypatch):
 
     monkeypatch.setattr(datetime, "date", FrozenDate)
     return FrozenDate
+
+
+def sha(data):
+    """sha256 hex of bytes or str, used by the golden characterisation tests."""
+    import hashlib
+    return hashlib.sha256(data if isinstance(data, bytes) else data.encode()).hexdigest()

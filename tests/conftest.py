@@ -64,3 +64,17 @@ def mini_root(tmp_path):
     """A temp repo root with miniature layers/ (and data/ to be filled by the builders)."""
     write_mini_layers(str(tmp_path / "layers"))
     return tmp_path
+
+
+@pytest.fixture
+def frozen_today(monkeypatch):
+    """Pin datetime.date.today() to 2026-01-01 for modules that call it through the datetime module."""
+    import datetime
+
+    class FrozenDate(datetime.date):
+        @classmethod
+        def today(cls):
+            return cls(2026, 1, 1)
+
+    monkeypatch.setattr(datetime, "date", FrozenDate)
+    return FrozenDate

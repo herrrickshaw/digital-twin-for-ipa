@@ -12,7 +12,7 @@ scheme-mapped announcements first, then unmapped Cabinet approvals, with an hone
 
 Rerun after every PIB refresh worth reporting:  python3 scripts/build_reportage.py
 """
-import datetime, os, re, sqlite3
+import datetime, html as _h, os, re, sqlite3
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -285,15 +285,8 @@ def classify_state_row(title):
     return None
 
 
-def write_html_states():
-    """Emit docs/reportage_states.html -- quarterly state-wire view matching the
-    PIB reportage cadence: investment/MoUs, new projects, key state regulations.
-    Reads the whole state_news register (backfilled by backfill_state_news.py);
-    rows classify on the machine-translated English title."""
-    import html as _h
-    if not os.path.exists(STATE_DB):
-        print("state register missing -- skipping states html")
-        return
+def _states_by_quarter():
+    """Classify the state_news register into quarter -> bucket -> rows."""
     scon = sqlite3.connect(STATE_DB)
     cols = [r[1] for r in scon.execute("pragma table_info(state_news)")]
     tcol = "coalesce(title_en, title)" if "title_en" in cols else "title"
@@ -310,6 +303,11 @@ def write_html_states():
         by_q[quarter_of(date)][bucket or "investment"].append(
             (date, STATE_NAMES.get(state, state), title, url, hits[:2]))
     scon.close()
+    return n_total, by_q, counted
+
+
+def _states_quarter_sections(by_q):
+    """HTML sections, one per quarter, with a details block per bucket."""
     parts = []
     for q in sorted(by_q, reverse=True):
         buckets = by_q[q]
@@ -330,11 +328,21 @@ def write_html_states():
                          f'<summary><b>{label}</b> <span class="cnt">{len(items)}</span></summary>'
                          f'<ul>{"".join(body)}</ul></details>')
         parts.append("</section>")
+    return parts
+
+
+def _states_filter_bar():
+    """State filter buttons."""
     all_states = sorted({STATE_NAMES.get(s, s) for (s,) in
                          sqlite3.connect(STATE_DB).execute("select distinct state from state_news")})
     filter_bar = ('<div class="fbar"><button class="fbtn active" data-f="">All states</button>'
                   + "".join(f'<button class="fbtn" data-f="{_h.escape(s, quote=True)}">{_h.escape(s)}</button>'
                             for s in all_states) + "</div>")
+    return filter_bar
+
+
+def _states_filter_js():
+    """Client-side state filter script."""
     filter_js = """<script>
 document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('.fbtn').forEach(function(x){x.classList.remove('active')});
@@ -350,6 +358,11 @@ document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click
     s.style.display=Array.prototype.some.call(ds,function(d){return d.style.display!=='none'})?'':'none';});
 });});
 </script>"""
+    return filter_js
+
+
+def _states_page(n_total, filter_bar, parts, filter_js):
+    """The full state reportage HTML page."""
     today = datetime.date.today().isoformat()
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -387,17 +400,29 @@ Built {today} by scripts/build_reportage.py.</div>
 backfill_state_news.py archives). Classification and scheme chips are keyword-based on machine
 translations — an index into the wire, not a substitute for reading the release.</div>
 </div>{filter_js}</body></html>"""
+    return page
+
+
+def write_html_states():
+    """Emit docs/reportage_states.html -- quarterly state-wire view matching the
+    PIB reportage cadence: investment/MoUs, new projects, key state regulations.
+    Reads the whole state_news register (backfilled by backfill_state_news.py);
+    rows classify on the machine-translated English title."""
+    if not os.path.exists(STATE_DB):
+        print("state register missing -- skipping states html")
+        return
+    n_total, by_q, counted = _states_by_quarter()
+    parts = _states_quarter_sections(by_q)
+    filter_bar = _states_filter_bar()
+    filter_js = _states_filter_js()
+    page = _states_page(n_total, filter_bar, parts, filter_js)
     path = os.path.join(ROOT, "docs/reportage_states.html")
     open(path, "w").write(page)
     print(f"reportage states html: {counted} classified rows across {len(by_q)} quarters -> {path}")
 
 
-def write_html_latest(rows, register_total=0, days=30):
-    """Emit docs/reportage_latest.html -- self-contained latest-updates page:
-    central PIB scheme-mapped + Cabinet items from the last `days` days, grouped
-    by scheme, plus the state wire (collect_state_news.py register)."""
-    import html as _h
-    from collections import Counter
+def _latest_rows(rows, days):
+    """Recent central rows (scheme-mapped / unmapped Cabinet), grouped by scheme, plus the state wire."""
     cutoff = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
     recent, cab_only = [], []
     for prid, date, ministry, title in rows:
@@ -416,7 +441,11 @@ def write_html_latest(rows, register_total=0, days=30):
         for s in r[4]:
             by_scheme[s].append(r)
     states = state_wire(days)
+    return cutoff, recent, cab_only, by_scheme, states
 
+
+def _latest_central_html(by_scheme, cab_only):
+    """HTML for the per-scheme sections and the unmapped Cabinet list."""
     def li(date, ministry, title, url, label):
         return (f'<li><span class="d">{date}</span> <span class="m">{_h.escape(ministry)}</span><br>'
                 f'<a href="{url}" target="_blank" rel="noopener">{_h.escape((title or "")[:160])}</a></li>')
@@ -433,6 +462,11 @@ def write_html_latest(rows, register_total=0, days=30):
                         f'<span class="cnt">{len(uniq)}</span></summary><ul>{body}</ul></details>')
     cab_html = "".join(li(d, m, t, f"https://www.pib.gov.in/PressReleasePage.aspx?PRID={p}", "")
                        for d, p, m, t in cab_only)
+    return sections, cab_html
+
+
+def _latest_state_items(states):
+    """HTML list items for the state wire."""
     st_parts = []
     for r in states:
         chip = "".join(f'<span class="chip">{_h.escape(s)}</span>' for s in r["schemes"])
@@ -441,6 +475,11 @@ def write_html_latest(rows, register_total=0, days=30):
         st_parts.append(f'<li data-st="{_h.escape(r["state"], quote=True)}"><span class="d">{r["date"]}</span> '
                         f'<span class="m">{_h.escape(r["state"])}'
                         f'{" · " + _h.escape(r["category"]) if r["category"] else ""}</span> {chip}<br>{link}</li>')
+    return st_parts
+
+
+def _latest_page(register_total, cutoff, recent, cab_only, by_scheme, states, sections, cab_html, st_parts):
+    """The full latest-updates HTML page."""
     n_states = len({r["state"] for r in states})
     dmin = min((r[0] for r in recent), default=cutoff)
     dmax = max((r[0] for r in recent), default=cutoff)
@@ -504,6 +543,18 @@ document.querySelectorAll('.fbtn').forEach(function(b){{b.addEventListener('clic
     li.style.display=(!f||li.getAttribute('data-st')===f)?'':'none';}});
 }});}});
 </script></body></html>"""
+    return page
+
+
+def write_html_latest(rows, register_total=0, days=30):
+    """Emit docs/reportage_latest.html -- self-contained latest-updates page:
+    central PIB scheme-mapped + Cabinet items from the last `days` days, grouped
+    by scheme, plus the state wire (collect_state_news.py register)."""
+    cutoff, recent, cab_only, by_scheme, states = _latest_rows(rows, days)
+
+    sections, cab_html = _latest_central_html(by_scheme, cab_only)
+    st_parts = _latest_state_items(states)
+    page = _latest_page(register_total, cutoff, recent, cab_only, by_scheme, states, sections, cab_html, st_parts)
     path = os.path.join(ROOT, "docs/reportage_latest.html")
     open(path, "w").write(page)
     print(f"reportage latest html: {len(recent)} central rows, {len(states)} state-wire rows ({days}d window) -> {path}")
@@ -602,7 +653,6 @@ def render_states():
 
 def write_html(by_q, total):
     """Emit docs/reportage.html -- house-style page; list pre-rendered (works without JS), filters via JS."""
-    import html as _h
     st_by_q = {}
     for r in state_announcements():
         st_by_q.setdefault(quarter_of(r["date"]), []).append(r)
@@ -648,7 +698,6 @@ def write_html_ministry(by_q, total):
     time-stamped with the release date, newest first. Pre-rendered (works without JS),
     filters (quarter/scheme/ministry/state/search) via JS. Does NOT replace the
     quarter-wise docs/reportage.html -- both are built every run."""
-    import html as _h
     # flatten central rows, keyed by the scheme's owning ministry from the twin map
     by_min = defaultdict(list)
     for q, d in by_q.items():
@@ -705,7 +754,6 @@ def render_policy_annex():
     The point of the matrix: no committed company name rests on a single source.
     EC/FC counts are ground-truthed direct from the raw PARIVESH registers and
     are deliberately BROADER (all years/statuses) than the 2025-26 lead subset."""
-    import html as _h
     import json, os
     p = os.path.join(ROOT, "layers/24c_cross_verification.json")
     if not os.path.exists(p):
@@ -796,7 +844,6 @@ def render_up_ethanol():
     """Case study injected under the policy annex: UP ethanol, register x news
     (layer 24d). UP is the EBP's #1 state -- the table shows every significant
     live 5(g) filer with its news-verified project detail."""
-    import html as _h
     import json, os
     p = os.path.join(ROOT, "layers/24d_up_ethanol.json")
     if not os.path.exists(p):

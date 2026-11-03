@@ -108,25 +108,19 @@ def scrape(pages):
     return out
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--pages", type=int, default=25,
-                    help="recent pages to scrape (20 rows each)")
-    ap.add_argument("--all", action="store_true", help="scrape all ~481 pages")
-    args = ap.parse_args()
-    today = date.today().isoformat()
-    os.makedirs(OUTDIR, exist_ok=True)
-
-    pages = range(1, (482 if args.all else args.pages + 1))
-    print(f"scraping {'ALL' if args.all else args.pages} pages...")
-    records = scrape(pages)
+def _dedupe_notices(records):
+    """Drop duplicate notices (the PDF link is the stable id)."""
     # dedupe by notice_pdf (stable id)
     seen, uniq = set(), []
     for r in records:
         if r["notice_pdf"] not in seen:
             seen.add(r["notice_pdf"]); uniq.append(r)
     print(f"parsed {len(uniq)} unique notices")
+    return uniq
 
+
+def _merge_parquet(uniq):
+    """Union the new notices into the durable parquet; returns the duckdb connection and the parquet row count."""
     # ---- merge into durable parquet (union with prior, dedupe) --------------
     import duckdb
     dcon = duckdb.connect()
@@ -149,8 +143,11 @@ def main():
     elif uniq:
         dcon.execute(f"COPY new_notices TO '{PARQUET}' (FORMAT PARQUET)")
     total = dcon.execute(f"SELECT COUNT(*) FROM read_parquet('{PARQUET}')").fetchone()[0]
+    return dcon, total
 
-    # ---- rebuild DB table from the parquet ----------------------------------
+
+def _rebuild_db_table(dcon):
+    """Rebuild ibbi_auction_notices in companies.db from the parquet."""
     con = sqlite3.connect(DB)
     cur = con.cursor()
     cur.executescript("""
@@ -172,7 +169,11 @@ def main():
     cur.executemany("INSERT OR IGNORE INTO ibbi_auction_notices VALUES (?,?,?,?,?,?,?,?,?)",
                     allrows)
     con.commit()
+    return con, cur, allrows
 
+
+def _cross_match(con, cur, allrows):
+    """Cross-match corporate debtors against the twin's companies with the shared tiered matcher."""
     # ---- cross-match corporate debtors vs the twin's companies --------------
     cur.execute("SELECT company_id, name FROM companies")
     companies = [(cid, name, norm(name)) for cid, name in cur.fetchall()]
@@ -189,6 +190,9 @@ def main():
                 break
     con.commit()
 
+
+def _summaries(cur, dcon):
+    """Strong twin matches, top notices by reserve price and the asset-type mix."""
     matches = cur.execute("""
         SELECT DISTINCT c.name, n.corporate_debtor, n.reserve_price_inr,
                n.nature_of_assets, n.auction_date, m.match_quality
@@ -204,7 +208,11 @@ def main():
         ORDER BY reserve_price_inr DESC LIMIT 15""").fetchall()
     asset_mix = dcon.execute(f"""SELECT nature_of_assets, COUNT(*) n
         FROM read_parquet('{PARQUET}') GROUP BY 1 ORDER BY 2 DESC LIMIT 12""").fetchall()
+    return matches, top, asset_mix
 
+
+def _register_layer(today, total, uniq, top, asset_mix, matches):
+    """Layer-34 JSON with the new `register` block."""
     layer = json.load(open(LAYER))
     layer["register"] = {
         "ran": today,
@@ -227,6 +235,33 @@ def main():
             for m in matches],
         "tables": ["ibbi_auction_notices", "ibbi_company_matches"],
     }
+    return layer
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--pages", type=int, default=25,
+                    help="recent pages to scrape (20 rows each)")
+    ap.add_argument("--all", action="store_true", help="scrape all ~481 pages")
+    args = ap.parse_args()
+    today = date.today().isoformat()
+    os.makedirs(OUTDIR, exist_ok=True)
+
+    pages = range(1, (482 if args.all else args.pages + 1))
+    print(f"scraping {'ALL' if args.all else args.pages} pages...")
+    records = scrape(pages)
+    uniq = _dedupe_notices(records)
+
+    dcon, total = _merge_parquet(uniq)
+
+    # ---- rebuild DB table from the parquet ----------------------------------
+    con, cur, allrows = _rebuild_db_table(dcon)
+
+    _cross_match(con, cur, allrows)
+
+    matches, top, asset_mix = _summaries(cur, dcon)
+
+    layer = _register_layer(today, total, uniq, top, asset_mix, matches)
     with open(LAYER, "w") as f:
         json.dump(layer, f, indent=1, ensure_ascii=False)
     con.close()

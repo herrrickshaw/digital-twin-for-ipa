@@ -44,11 +44,11 @@ def run_script(script, tmp_path, args=(), prepare=None, timeout=120):
     with open(os.path.join(stubs, "curl"), "w") as f:
         f.write("#!/bin/sh\nexit 7\n")
     os.chmod(os.path.join(stubs, "curl"), 0o755)
-    env = dict(os.environ, HOME=home, PYTHONPATH=FREEZE, PATH=stubs + os.pathsep + os.environ.get("PATH", ""))
+    env = dict(os.environ, PYTHONHASHSEED="0", HOME=home, PYTHONPATH=FREEZE, PATH=stubs + os.pathsep + os.environ.get("PATH", ""))
     proc = subprocess.run([sys.executable, os.path.join(work, "scripts", script + ".py"), *args], cwd=work, env=env,
                           capture_output=True, timeout=timeout, stdin=subprocess.DEVNULL)
     after = _hash_tree(work)
     result = {k: v for k, v in after.items() if before.get(k) != v}
-    result["<stdout>"] = hashlib.sha256(proc.stdout).hexdigest()
+    result["<stdout>"] = hashlib.sha256(proc.stdout.replace(work.encode(), b"<ROOT>")).hexdigest()
     result["<exit>"] = proc.returncode
     return result

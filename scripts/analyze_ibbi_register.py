@@ -133,7 +133,7 @@ def _build_records(rows):
     return recs
 
 
-def _enrich_state_from_pdfs(recs, args.pdf_top):
+def _enrich_state_from_pdfs(recs, pdf_top):
     """Fill the state of the top-N reserve-price notices from their PDF address."""
     # PDF-enrich state for the top-N by reserve price that lack an in-text state
     top = sorted([r for r in recs if r["reserve"] and not r["state"]],

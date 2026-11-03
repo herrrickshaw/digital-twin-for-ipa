@@ -3,3 +3,7 @@ data/registers/state_news.sqlite
 .DS_Store
 graphify-out/
 .venv/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/

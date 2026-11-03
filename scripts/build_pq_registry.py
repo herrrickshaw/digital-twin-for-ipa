@@ -145,14 +145,9 @@ def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def write_html(rows):
-    by_q = defaultdict(list)
-    for r in rows:
-        by_q[r["q"]].append(r)
-    gen = time.strftime("%Y-%m-%d")
-    schemes = sorted({s for r in rows for s in r["schemes"]})
-    mins = sorted({r["ministry"] for r in rows})
-    parts = [f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+def _page_head(n_rows, gen):
+    """Doctype, inline CSS, title block and the filter controls."""
+    return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lok Sabha Question Registry — schemes &amp; incentives</title>
 <style>
@@ -190,7 +185,7 @@ input[type=search]{{flex:1;min-width:170px}}
  border-top:1px dashed var(--line);margin-top:40px;padding-top:14px;max-width:82ch}}
 </style></head><body>
 <header><h1>Lok Sabha Question Registry</h1>
-<div class="sub">{len(rows):,} Lok Sabha questions on investment policies, schemes and
+<div class="sub">{n_rows:,} Lok Sabha questions on investment policies, schemes and
 incentives — 17th &amp; 18th Lok Sabha, classified by the same scheme map as the
 <a href="reportage.html" style="color:var(--acc)">Quarterly Reportage</a>. Each row links
 to the official answer PDF on sansad.in. Generated {gen} by
@@ -203,26 +198,12 @@ to the official answer PDF on sansad.in. Generated {gen} by
 <option>STARRED</option><option>UNSTARRED</option></select>
 <input type="search" id="ft" placeholder="Search subjects…">
 <span class="count" id="cnt"></span></div></div>
-<main id="list">"""]
-    for q in sorted(by_q, reverse=True):
-        qs = by_q[q]
-        parts.append(f'<section class="q" data-q="{q}"><h2>{q} '
-                     f'<span class="n">&middot; {len(qs)} questions</span></h2>')
-        for r in qs:
-            chips = "".join(f'<span class="chip">{esc(s)}</span>' for s in r["schemes"])
-            mem = esc(", ".join(r["members"][:3])) + (" &amp; ors." if len(r["members"]) > 3 else "")
-            parts.append(
-                f'<div class="row" data-q="{q}" data-s="{esc("; ".join(r["schemes"]))}" '
-                f'data-m="{esc(r["ministry"])}" data-t="{esc(r["qtype"] or "")}">'
-                f'<div class="top"><span class="date">{r["iso"]}</span>{chips}'
-                f'<span class="min">{esc(r["ministry"])}</span>'
-                f'<span class="qn">LS{r["lok"]} &middot; {esc(r["qtype"] or "?")} '
-                f'Q.{r["qno"]}</span></div>'
-                f'<div class="title"><a href="{esc(r["pdf"])}" target="_blank" '
-                f'rel="noopener">{esc(r["subject"])}</a></div>'
-                f'<div class="mem">Asked by {mem}</div></div>')
-        parts.append("</section>")
-    parts.append(f"""</main>
+<main id="list">"""
+
+
+def _page_tail():
+    """Method note and the client-side filter script."""
+    return f"""</main>
 <div class="note" style="max-width:1080px;margin:0 auto;padding:0 22px 40px">
 Method: harvested from the sansad.in Lok Sabha Q&amp;A index by subject keyword, then
 classified against the reportage scheme-regex map with its acronym-veto list. The
@@ -249,7 +230,40 @@ function render(){{
  cnt.textContent=n.toLocaleString()+' of '+rows.length.toLocaleString();}}
 [fq,fs,fm,ft2].forEach(e=>e.addEventListener('change',render));
 ft.addEventListener('input',render);render();
-</script></body></html>""")
+</script></body></html>"""
+
+
+def _render_quarter(q, qs):
+    """HTML parts for one quarter section."""
+    parts = []
+    parts.append(f'<section class="q" data-q="{q}"><h2>{q} '
+                 f'<span class="n">&middot; {len(qs)} questions</span></h2>')
+    for r in qs:
+        chips = "".join(f'<span class="chip">{esc(s)}</span>' for s in r["schemes"])
+        mem = esc(", ".join(r["members"][:3])) + (" &amp; ors." if len(r["members"]) > 3 else "")
+        parts.append(
+            f'<div class="row" data-q="{q}" data-s="{esc("; ".join(r["schemes"]))}" '
+            f'data-m="{esc(r["ministry"])}" data-t="{esc(r["qtype"] or "")}">'
+            f'<div class="top"><span class="date">{r["iso"]}</span>{chips}'
+            f'<span class="min">{esc(r["ministry"])}</span>'
+            f'<span class="qn">LS{r["lok"]} &middot; {esc(r["qtype"] or "?")} '
+            f'Q.{r["qno"]}</span></div>'
+            f'<div class="title"><a href="{esc(r["pdf"])}" target="_blank" '
+            f'rel="noopener">{esc(r["subject"])}</a></div>'
+            f'<div class="mem">Asked by {mem}</div></div>')
+    parts.append("</section>")
+    return parts
+
+
+def write_html(rows):
+    by_q = defaultdict(list)
+    for r in rows:
+        by_q[r["q"]].append(r)
+    gen = time.strftime("%Y-%m-%d")
+    parts = [_page_head(len(rows), gen)]
+    for q in sorted(by_q, reverse=True):
+        parts += _render_quarter(q, by_q[q])
+    parts.append(_page_tail())
     open(OUT_HTML, "w", encoding="utf-8").write("".join(parts))
 
 

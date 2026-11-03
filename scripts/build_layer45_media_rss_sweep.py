@@ -36,6 +36,8 @@ import re
 import subprocess
 import sys
 
+from twin_common import known_company_names
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UNIV_DIR = os.path.expanduser("~/repos/global-stock-screener/data/global_universe")
 OUT_JSON = os.path.join(ROOT, "layers", "45_media_rss_sweep.json")
@@ -232,22 +234,8 @@ def load_all_rosters():
 
 
 def known_names():
-    """Same twin-membership check layer 44 uses: layer 16 leads + every
-    company already in companies.db."""
-    import sqlite3
-    names = set()
-    leads_path = os.path.join(ROOT, "layers", "16_leads.json")
-    if os.path.exists(leads_path):
-        for l in json.load(open(leads_path))["leads"]:
-            names.add(l["company"].strip().lower())
-    db = os.path.join(ROOT, "data", "companies.db")
-    if os.path.exists(db):
-        con = sqlite3.connect(db)
-        for (n,) in con.execute("SELECT name FROM companies"):
-            if n:
-                names.add(n.strip().lower())
-        con.close()
-    return names
+    """Lower-cased names already in the twin (layer 16 leads + companies.db)."""
+    return known_company_names(ROOT)
 
 
 def is_new(company_name, known):
@@ -259,16 +247,8 @@ def is_new(company_name, known):
                    for kn in known for f in strong)
 
 
-def main():
-    today = dt.date.today().isoformat()
-    rosters = load_all_rosters()
-    roster_index = [(norm(r["name"]), r) for rows in rosters.values() for r in rows
-                     if not SPAC_NOISE.search(r["name"])]
-    frag_counts = two_token_fragment_counts(roster_index)
-    known = known_names()
-    print(f"loaded {len(roster_index)} foreign-roster companies, {len(known)} known twin names")
-
-    archive_f = open(ARCHIVE, "a") if os.path.exists(os.path.dirname(ARCHIVE)) else None
+def _scan_feeds(roster_index, frag_counts, known, archive_f, today):
+    """Fetch every feed, keep intent-language items, archive them and match roster names; returns per-source rows and counts."""
     by_source = {}
     total_items = total_intent = total_matches = 0
     seen_urls = set()  # ET's section feeds overlap (e.g. "industry" is a
@@ -325,13 +305,11 @@ def main():
                     print(f"  [{source}/{section}] {r['name']} ({r['country']})"
                           f"{' NEW' if match['new_to_twin'] else ''} -- {it['title'][:80]}")
             by_source[source][section] = row
+    return by_source, total_items, total_intent, total_matches
 
-    if archive_f:
-        archive_f.close()
 
-    all_matches = [m for src in by_source.values() for sec in src.values() for m in sec["matches"]]
-    new_matches = [m for m in all_matches if m["new_to_twin"]]
-
+def _build_layer(today, roster_index, known, total_items, total_intent, total_matches, new_matches, by_source):
+    """Assemble the layer-45 JSON document."""
     out = {
         "layer": 45, "name": "media_rss_sweep", "built": today,
         "what": ("Live RSS sweep of 8 popular Indian newspapers' section feeds -- Economic Times, "
@@ -359,9 +337,11 @@ def main():
         "total_new_to_twin": len(new_matches),
         "by_source": by_source,
     }
-    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-    json.dump(out, open(OUT_JSON, "w"), indent=1, ensure_ascii=False)
+    return out
 
+
+def _doc_intro(today, total_items, total_intent, total_matches, new_matches, by_source):
+    """Markdown title and rationale."""
     L = ["# Live media RSS sweep — layer 45", "",
          f"*Generated {today} by `scripts/build_layer45_media_rss_sweep.py`. "
          f"{total_items} feed items scanned across {len(by_source)} newspapers, {total_intent} carried "
@@ -379,7 +359,11 @@ def main():
          "needed. Extended 2026-09-16 to 5 more English dailies plus Amar Ujala (Hindi) — see the "
          "layer JSON's `what` field for the Hindi-coverage caveat (Latin-script company mentions "
          "only, not transliterated ones).", ""]
+    return L
 
+
+def _doc_new_matches(L, new_matches):
+    """New-to-twin match table."""
     if new_matches:
         L += ["## New-to-twin company matches", "",
               "| Company | Country | Source | Headline | Published |",
@@ -389,6 +373,9 @@ def main():
                      f"[{m['title'][:80]}]({m['url']}) | {m['published']} |")
         L.append("")
 
+
+def _doc_all_matches(L, all_matches):
+    """All-matches table."""
     L += ["## All company matches (incl. already-known)", "",
           "| Company | Country | New? | Headline | Published |",
           "|---|---|---|---|---|"]
@@ -397,6 +384,9 @@ def main():
                  f"[{m['title'][:80]}]({m['url']}) | {m['published']} |")
     L.append("")
 
+
+def _doc_feed_health(L, by_source):
+    """Per-feed health table."""
     L += ["## Feed health", "", "| Source | Section | Items | Intent hits | Matches | Error |",
           "|---|---|---|---|---|---|"]
     for source, sections in by_source.items():
@@ -404,6 +394,37 @@ def main():
             L.append(f"| {source} | {section} | {row['items']} | {row['intent_hits']} | "
                      f"{len(row['matches'])} | {row['error'] or ''} |")
     L.append("")
+
+
+def main():
+    today = dt.date.today().isoformat()
+    rosters = load_all_rosters()
+    roster_index = [(norm(r["name"]), r) for rows in rosters.values() for r in rows
+                     if not SPAC_NOISE.search(r["name"])]
+    frag_counts = two_token_fragment_counts(roster_index)
+    known = known_names()
+    print(f"loaded {len(roster_index)} foreign-roster companies, {len(known)} known twin names")
+
+    archive_f = open(ARCHIVE, "a") if os.path.exists(os.path.dirname(ARCHIVE)) else None
+    by_source, total_items, total_intent, total_matches = _scan_feeds(roster_index, frag_counts, known, archive_f, today)
+
+    if archive_f:
+        archive_f.close()
+
+    all_matches = [m for src in by_source.values() for sec in src.values() for m in sec["matches"]]
+    new_matches = [m for m in all_matches if m["new_to_twin"]]
+
+    out = _build_layer(today, roster_index, known, total_items, total_intent, total_matches, new_matches, by_source)
+    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
+    json.dump(out, open(OUT_JSON, "w"), indent=1, ensure_ascii=False)
+
+    L = _doc_intro(today, total_items, total_intent, total_matches, new_matches, by_source)
+
+    _doc_new_matches(L, new_matches)
+
+    _doc_all_matches(L, all_matches)
+
+    _doc_feed_health(L, by_source)
 
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")

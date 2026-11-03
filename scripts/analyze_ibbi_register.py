@@ -99,17 +99,17 @@ def pdf_state(url, timeout=45):
         return None
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--pdf-top", type=int, default=60,
-                    help="PDF-parse state for the top-N by reserve price")
-    args = ap.parse_args()
-
+def _load_rows():
+    """All notices from the IBBI liquidation parquet."""
     d = duckdb.connect()
     rows = d.execute(f"""SELECT notice_pdf, corporate_debtor, reserve_price_inr,
         nature_of_assets, auction_date, notice_date FROM read_parquet('{PARQUET}')
         """).fetchall()
+    return rows
 
+
+def _build_records(rows):
+    """Per-notice records: state from asset text, liquidity, stuck signal and friction."""
     # notice-count + falling-reserve per corporate debtor (stuck signal)
     by_cd = defaultdict(list)
     for pdf, cd, res, na, auc, nd in rows:
@@ -130,10 +130,14 @@ def main():
                      "state": st, "liquidity": liq,
                      "friction": friction(liq, nc, res, falling),
                      "notice_count": nc, "reserve_falling": falling})
+    return recs
 
+
+def _enrich_state_from_pdfs(recs, pdf_top):
+    """Fill the state of the top-N reserve-price notices from their PDF address."""
     # PDF-enrich state for the top-N by reserve price that lack an in-text state
     top = sorted([r for r in recs if r["reserve"] and not r["state"]],
-                 key=lambda r: -r["reserve"])[:args.pdf_top]
+                 key=lambda r: -r["reserve"])[:pdf_top]
     pdf_hits = 0
     for r in top:
         full = r["notice_pdf"]
@@ -142,7 +146,11 @@ def main():
         st = pdf_state(full)
         if st:
             r["state"] = st; pdf_hits += 1
+    return top, pdf_hits
 
+
+def _friction_stats(recs):
+    """State-resolved subset and friction counters."""
     resolved = [r for r in recs if r["state"]]
     state_counts = Counter(r["state"] for r in resolved)
     friction_by_state = defaultdict(lambda: Counter())
@@ -150,7 +158,11 @@ def main():
         friction_by_state[r["state"]][r["friction"]] += 1
 
     overall_friction = Counter(r["friction"] for r in recs)
+    return resolved, state_counts, friction_by_state, overall_friction
 
+
+def _state_table(resolved, state_counts, friction_by_state):
+    """Per state: notice count, friction split, low-friction pct and median reserve."""
     # state table: count + friction split + median reserve
     state_table = []
     for st, n in state_counts.most_common():
@@ -164,7 +176,11 @@ def main():
             "friction_high": fr["high"],
             "low_friction_pct": round(100 * fr["low"] / n) if n else 0,
             "median_reserve_inr": med})
+    return state_table
 
+
+def _state_layer(rows, recs, top, resolved, pdf_hits, state_table, overall_friction, pdf_top):
+    """Layer-34 JSON with the new state_resolution block."""
     layer = json.load(open(LAYER))
     layer["state_resolution"] = {
         "ran": __import__("datetime").date.today().isoformat(),
@@ -176,7 +192,7 @@ def main():
             "unknown": len(rows) - len(resolved),
             "note": (f"state is NOT a register field — parsed from the property "
                      f"address in nature_of_assets (~10 pct of rows) + PDF-address "
-                     f"for the top-{args.pdf_top} by reserve price. "
+                     f"for the top-{pdf_top} by reserve price. "
                      f"~{round(100 * (len(rows) - len(resolved)) / len(rows))} pct "
                      f"remain state_unknown; full coverage needs parsing all "
                      f"{len(rows)} notice PDFs.")},
@@ -193,6 +209,26 @@ def main():
                              f"composite, re-auctioned or >Rs100cr: expect multi-forum "
                              f"drag (the Dunlop pattern)."),
     }
+    return layer
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--pdf-top", type=int, default=60,
+                    help="PDF-parse state for the top-N by reserve price")
+    args = ap.parse_args()
+
+    rows = _load_rows()
+
+    recs = _build_records(rows)
+
+    top, pdf_hits = _enrich_state_from_pdfs(recs, args.pdf_top)
+
+    resolved, state_counts, friction_by_state, overall_friction = _friction_stats(recs)
+
+    state_table = _state_table(resolved, state_counts, friction_by_state)
+
+    layer = _state_layer(rows, recs, top, resolved, pdf_hits, state_table, overall_friction, args.pdf_top)
     with open(LAYER, "w") as f:
         json.dump(layer, f, indent=1, ensure_ascii=False)
 

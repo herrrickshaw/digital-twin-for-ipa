@@ -64,14 +64,8 @@ BLURB = {
 }
 
 
-def main():
-    vis = json.load(open(os.path.join(ROOT, "layers/19_pib_visibility.json")))
-    vpath = os.path.join(ROOT, "layers/22_visibility_ministry_checked.json")
-    if not os.path.exists(vpath):
-        vpath = os.path.join(ROOT, "layers/20_visibility_verified.json")
-    ver = json.load(open(vpath))
-    today = datetime.date.today().isoformat()
-
+def _intro_section(vis, today):
+    """Title and the method caveat."""
     L = [f"# Visibility map — who the government announces, and who invests quietly", "",
          f"*Generated {today} by `scripts/build_visibility_report.py` from "
          f"`layers/19_pib_visibility.json` + `layers/20_visibility_verified.json` — do not hand-edit.*", "",
@@ -85,7 +79,11 @@ def main():
          "(Cameco, Ma'aden) were proven publicised once the news check ran, and their corrections are shown "
          "rather than quietly patched. The asymmetry is still the point: PIB headlines name firms when the "
          "government wants credit for the investment.", ""]
+    return L
 
+
+def _split_section(L, vis):
+    """Bucket counts table and the headline-vs-silent summary."""
     L += ["## The split", "", "| Bucket | Count | Meaning |", "|---|---|---|"]
     meaning = {"ANNOUNCED": "named in an investment-related PIB headline",
                "MENTIONED_ONLY": "named only incidentally (condolences, unrelated merger clearances)",
@@ -99,6 +97,9 @@ def main():
               f"**{len(vis['announced'])} appear in an investment-related PIB headline** and "
               f"**{len(vis['below_radar'])} never do**.", ""]
 
+
+def _headlined_section(L, vis):
+    """Companies the government headlines."""
     L += ["## Who the government does headline", "",
           "| PIB investment headlines (3y) | Company | Country | Most recent release |", "|---|---|---|---|"]
     for r in vis["announced"][:14]:
@@ -110,6 +111,9 @@ def main():
         L.append(f"| {r['pib_investment_hits_3y']} | {r['company'][:34]} | {r['country']} | {link} |")
     L += ["", "The pattern is narrow: semiconductors, defence, and marquee PM-attended ribbon-cuttings.", ""]
 
+
+def _verified_section(L, ver):
+    """Trade-press verification, grouped by verdict."""
     order = ["QUIET_INVESTOR", "SUBSUMED_IN_PARTNER", "STATE_PUBLICISED", "HEADLINED",
              "BLOCKED_PN3", "DIRECTION_INBOUND", "NO_ACTIVITY"]
     L += ["## Verified against the trade press", "",
@@ -138,6 +142,9 @@ def main():
                 L.append(f"- *{r['summary'][:260]}*")
             L.append("")
 
+
+def _ministry_section(L, ver):
+    """Ministry-publication cross-check (only when present)."""
     mc = ver.get("ministry_check")
     if mc:
         L += ["## Then we checked ministry publications — and a third of the list was wrong", "",
@@ -156,6 +163,9 @@ def main():
             L.append(f"- **{s}** — {row.get('ministry_check','')[:240]}")
         L += [""]
 
+
+def _parliament_section(L):
+    """Parliament disclosure section (only when layer 23 exists)."""
     pl_path = os.path.join(ROOT, "layers/23_parliament_disclosure.json")
     if os.path.exists(pl_path):
         pl = json.load(open(pl_path))
@@ -173,6 +183,9 @@ def main():
             L.append(line)
         L += ["", f"*Corpus: {pl['corpus']}*", ""]
 
+
+def _how_to_use_section(L):
+    """Usage guidance."""
     L += ["## How to use this", "",
           "The **quiet investors** are the actionable list: they are spending money in India now, and no arm "
           "of government is visibly engaging them. The **state-publicised** names show which states are "
@@ -181,6 +194,29 @@ def main():
           "capex, worth re-checking next cycle.", "",
           "Companion views: `docs/TARGET_LEADS.md` (scored targets), `docs/LEADS.md` (full layer), "
           "`docs/reportage_ministry.html` (what the government announced, by ministry).", ""]
+
+
+def main():
+    vis = json.load(open(os.path.join(ROOT, "layers/19_pib_visibility.json")))
+    vpath = os.path.join(ROOT, "layers/22_visibility_ministry_checked.json")
+    if not os.path.exists(vpath):
+        vpath = os.path.join(ROOT, "layers/20_visibility_verified.json")
+    ver = json.load(open(vpath))
+    today = datetime.date.today().isoformat()
+
+    L = _intro_section(vis, today)
+
+    _split_section(L, vis)
+
+    _headlined_section(L, vis)
+
+    _verified_section(L, ver)
+
+    _ministry_section(L, ver)
+
+    _parliament_section(L)
+
+    _how_to_use_section(L)
 
     out = os.path.join(ROOT, "docs/VISIBILITY.md")
     open(out, "w").write("\n".join(L))

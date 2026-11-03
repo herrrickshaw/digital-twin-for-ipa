@@ -297,28 +297,19 @@ def fetch_all_news(since="20150101"):
             return items, total
 
 
-def main():
-    print("Step 0: verifying Switzerland CH.csv roster against SIX's live equity-issuer list...")
-    issuers_resp = get_json(ISSUERS_URL)
-    issuers = issuers_resp.get("itemList", [])
-    roster_report = verify_roster(issuers)
-    print(f"  {roster_report['status']}")
-    isin_to_ticker = {x["isin"]: x["valorSymbol"] for x in issuers if x.get("country") == "CH"}
-
-    esef_check = check_esef_ch()
-    print(f"  ESEF/UKSEF check: {esef_check.get('verdict', esef_check.get('error'))}")
-
-    print("\nStep 1: fetching SIX Equity Issuer News (full corpus, keyless)...")
-    news_items, total = fetch_all_news()
-    print(f"  fetched {len(news_items)} of {total} equity issuer news items")
+def _corpus_stats(news_items):
+    """Ad-hoc-flagged item count and the actual [min, max] news date range."""
     ad_hoc_count = sum(1 for x in news_items if x.get("ad_hoc"))
     dates = [x["news_date"] for x in news_items if x.get("news_date")]
     date_range = None
     if dates:
         date_range = [dt.date.fromtimestamp(min(dates) / 1000).isoformat(),
                        dt.date.fromtimestamp(max(dates) / 1000).isoformat()]
+    return ad_hoc_count, date_range
 
-    print("\nStep 2: sweeping for India mentions + local classification...")
+
+def _raw_hits(news_items, isin_to_ticker):
+    """One row per news item mentioning India (first matching language in priority order)."""
     raw_hits = []
     for item in news_items:
         contents = {c["language"]: c for c in item.get("content", [])}
@@ -343,9 +334,11 @@ def main():
                 "fingerprint": fingerprint(company, sents),
             })
             break  # one row per news item, first matched language in priority order
+    return raw_hits
 
-    print(f"  raw India-mentioning news items: {len(raw_hits)}")
 
+def _dedupe_hits(raw_hits):
+    """Hazard 1: collapse boilerplate -- keep the first occurrence per (company, fingerprint)."""
     # Hazard #1: collapse boilerplate -- keep first occurrence per (company, fingerprint)
     deduped, seen = [], set()
     boilerplate_collapsed = 0
@@ -356,9 +349,11 @@ def main():
             continue
         seen.add(key)
         deduped.append(h)
-    print(f"  after boilerplate dedup: {len(deduped)} ({boilerplate_collapsed} duplicate "
-          "boilerplate repeats collapsed)")
+    return deduped, boilerplate_collapsed
 
+
+def _bucket_hits(deduped):
+    """Hazards 2 and 3: exclude context-only and reverse-direction hits, then tier the rest."""
     # Hazards #2 and #3: exclude context-only and reverse-direction hits
     context_only, reverse_direction, actionable = [], [], []
     for h in deduped:
@@ -376,7 +371,11 @@ def main():
     entry = [h for h in actionable if h["tier"] == "market_entry_or_investment"]
     business = [h for h in actionable if h["tier"] == "business_activity"]
     exits = [h for h in actionable if h["tier"] == "exit_or_divestment"]
+    return context_only, reverse_direction, entry, business, exits
 
+
+def _build_layer(esef_check, roster_report, total, news_items, date_range, ad_hoc_count, raw_hits, boilerplate_collapsed, deduped, context_only, reverse_direction, entry, business, exits):
+    """Assemble the sweep JSON document."""
     out = {
         "layer": "16_enrichment/switzerland_india_sweep",
         "built": dt.date.today().isoformat(),
@@ -412,6 +411,37 @@ def main():
         "business_activity": business,
         "exit_or_divestment": exits,
     }
+    return out
+
+
+def main():
+    print("Step 0: verifying Switzerland CH.csv roster against SIX's live equity-issuer list...")
+    issuers_resp = get_json(ISSUERS_URL)
+    issuers = issuers_resp.get("itemList", [])
+    roster_report = verify_roster(issuers)
+    print(f"  {roster_report['status']}")
+    isin_to_ticker = {x["isin"]: x["valorSymbol"] for x in issuers if x.get("country") == "CH"}
+
+    esef_check = check_esef_ch()
+    print(f"  ESEF/UKSEF check: {esef_check.get('verdict', esef_check.get('error'))}")
+
+    print("\nStep 1: fetching SIX Equity Issuer News (full corpus, keyless)...")
+    news_items, total = fetch_all_news()
+    print(f"  fetched {len(news_items)} of {total} equity issuer news items")
+    ad_hoc_count, date_range = _corpus_stats(news_items)
+
+    print("\nStep 2: sweeping for India mentions + local classification...")
+    raw_hits = _raw_hits(news_items, isin_to_ticker)
+
+    print(f"  raw India-mentioning news items: {len(raw_hits)}")
+
+    deduped, boilerplate_collapsed = _dedupe_hits(raw_hits)
+    print(f"  after boilerplate dedup: {len(deduped)} ({boilerplate_collapsed} duplicate "
+          "boilerplate repeats collapsed)")
+
+    context_only, reverse_direction, entry, business, exits = _bucket_hits(deduped)
+
+    out = _build_layer(esef_check, roster_report, total, news_items, date_range, ad_hoc_count, raw_hits, boilerplate_collapsed, deduped, context_only, reverse_direction, entry, business, exits)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(out, open(OUT, "w"), indent=1, ensure_ascii=False)
 

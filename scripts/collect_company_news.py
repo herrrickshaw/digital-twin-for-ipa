@@ -88,19 +88,7 @@ def get_json(url):
         return json.loads(r.read())
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--max-calls", type=int, default=40)
-    ap.add_argument("--dry-run", action="store_true")
-    args = ap.parse_args()
-    env = load_keys()
-    budget = Budget(args.max_calls)
-    today = date.today().isoformat()
-
-    con = sqlite3.connect(DB)
-    cur = con.cursor()
-    cur.executescript(
-        """
+SCHEMA = """
         CREATE TABLE IF NOT EXISTS news_articles (
             art_id    INTEGER PRIMARY KEY,
             source    TEXT,          -- marketaux | alphavantage | newsapi | newsdata
@@ -117,27 +105,40 @@ def main():
             UNIQUE(art_id, company_id)
         );
         """
-    )
 
-    skipped, called = [], {}
+ARTICLE_COLUMNS = ("source", "query", "title", "description", "url", "published", "sentiment", "fetched")
 
-    def store(source, query, arts):
+
+class ArticleStore:
+    """Inserts collected articles (url-deduped) and counts HTTP calls per source."""
+
+    def __init__(self, cur, today):
+        self.cur, self.today, self.called = cur, today, {}
+
+    def store(self, source, query, arts):
         n = 0
         for a in arts:
             try:
-                cur.execute(
+                self.cur.execute(
                     "INSERT OR IGNORE INTO news_articles"
                     "(source,query,title,description,url,published,sentiment,fetched)"
                     " VALUES (?,?,?,?,?,?,?,?)",
                     (source, query, a.get("title"), a.get("description"),
-                     a.get("url"), a.get("published"), a.get("sentiment"), today))
-                n += cur.rowcount
+                     a.get("url"), a.get("published"), a.get("sentiment"), self.today))
+                n += self.cur.rowcount
             except sqlite3.Error:
                 pass
-        called[source] = called.get(source, 0) + 1
+        self.called[source] = self.called.get(source, 0) + 1
         return n
 
-    # ---- 1) FDI keyword sweep (NewsAPI + Newsdata) ---------------------------
+
+def _newsapi_articles(d):
+    return [{"title": a.get("title"), "description": a.get("description"),
+             "url": a.get("url"), "published": a.get("publishedAt")} for a in d.get("articles", [])]
+
+
+def _fdi_sweep(env, budget, store, skipped):
+    """1) FDI keyword sweep (NewsAPI + Newsdata); returns the number of new articles."""
     new_arts = 0
     if env.get("NEWSAPI_KEY"):
         for q in FDI_QUERIES:
@@ -148,10 +149,7 @@ def main():
                              + urllib.parse.urlencode(
                                  {"q": q, "language": "en", "sortBy": "publishedAt",
                                   "pageSize": 50, "apiKey": env["NEWSAPI_KEY"]}))
-                new_arts += store("newsapi", q, [
-                    {"title": a.get("title"), "description": a.get("description"),
-                     "url": a.get("url"), "published": a.get("publishedAt")}
-                    for a in d.get("articles", [])])
+                new_arts += store.store("newsapi", q, _newsapi_articles(d))
             except Exception as e:
                 skipped.append(f"newsapi {q}: {type(e).__name__}")
     else:
@@ -167,7 +165,7 @@ def main():
                                  {"apikey": env["NEWSDATA_KEY"], "q": q,
                                   "country": "in", "category": "business",
                                   "language": "en"}))
-                new_arts += store("newsdata", q, [
+                new_arts += store.store("newsdata", q, [
                     {"title": a.get("title"), "description": a.get("description"),
                      "url": a.get("link"), "published": a.get("pubDate")}
                     for a in d.get("results", [])])
@@ -175,16 +173,23 @@ def main():
                 skipped.append(f"newsdata {q}: {type(e).__name__}")
     else:
         skipped.append("newsdata: no key")
+    return new_arts
 
-    # ---- 2) ticker-tagged news for listed leads (Marketaux + AlphaVantage) ---
+
+def _listed_leads(cur):
+    """Top-60 listed companies by lead score as (company_id, name, ticker) rows."""
     cur.execute("""SELECT company_id, name, ticker FROM companies
                     WHERE ticker IS NOT NULL AND ticker != ''
                       AND company_id IN (SELECT company_id FROM lead_scores)
                     ORDER BY (SELECT MAX(score) FROM lead_scores l
                               WHERE l.company_id=companies.company_id) DESC
                     LIMIT 60""")
-    listed = cur.fetchall()
-    tickers = [t for _, _, t in listed]
+    return cur.fetchall()
+
+
+def _ticker_news(env, budget, store, skipped, tickers):
+    """2) Ticker-tagged news for listed leads (Marketaux + AlphaVantage); returns new-article count."""
+    new_arts = 0
     if env.get("MARKETAUX_KEY") and tickers:
         for i in range(0, min(len(tickers), 30), 3):   # 3 symbols/call on free tier
             if not budget.take():
@@ -195,7 +200,7 @@ def main():
                              + urllib.parse.urlencode(
                                  {"symbols": syms, "limit": 3, "language": "en",
                                   "api_token": env["MARKETAUX_KEY"]}))
-                new_arts += store("marketaux", syms, [
+                new_arts += store.store("marketaux", syms, [
                     {"title": a.get("title"), "description": a.get("description"),
                      "url": a.get("url"), "published": a.get("published_at")}
                     for a in d.get("data", [])])
@@ -212,15 +217,19 @@ def main():
                                  {"function": "NEWS_SENTIMENT",
                                   "tickers": ",".join(us), "limit": 50,
                                   "apikey": env["ALPHAVANTAGE_KEY"]}))
-                new_arts += store("alphavantage", ",".join(us), [
+                new_arts += store.store("alphavantage", ",".join(us), [
                     {"title": a.get("title"), "description": a.get("summary"),
                      "url": a.get("url"), "published": a.get("time_published"),
                      "sentiment": a.get("overall_sentiment_label")}
                     for a in d.get("feed", [])])
             except Exception as e:
                 skipped.append(f"alphavantage: {type(e).__name__}")
+    return new_arts
 
-    # ---- 3) QUIET-company probes (NewsAPI, exact-phrase) ---------------------
+
+def _quiet_probes(cur, env, budget, store, skipped):
+    """3) QUIET-company probes (NewsAPI, exact-phrase); returns new-article count."""
+    new_arts = 0
     cur.execute("""SELECT c.company_id, c.name FROM companies c
                     JOIN clearance_activity a USING (company_id)
                    WHERE a.visibility_verdict='QUIET'""")
@@ -235,18 +244,18 @@ def main():
                              + urllib.parse.urlencode(
                                  {"q": q, "pageSize": 5,
                                   "apiKey": env["NEWSAPI_KEY"]}))
-                new_arts += store("newsapi", q, [
-                    {"title": a.get("title"), "description": a.get("description"),
-                     "url": a.get("url"), "published": a.get("publishedAt")}
-                    for a in d.get("articles", [])])
+                new_arts += store.store("newsapi", q, _newsapi_articles(d))
             except Exception as e:
                 skipped.append(f"newsapi quiet {name}: {type(e).__name__}")
-    con.commit()
+    return new_arts
 
-    # ---- durable archive: companies.db is DELETED+rebuilt weekly by
-    # build_company_db.py, so articles are also appended (url-deduped) to the
-    # repo's append-only state/ snapshot dir, which the cron auto-commits.
-    arch = os.path.join(ROOT, "state", "news_articles.jsonl")
+
+def _archive_articles(cur, today, arch):
+    """Append today's new articles (url-deduped) to the append-only state/ jsonl snapshot.
+
+    companies.db is DELETED+rebuilt weekly by build_company_db.py, so articles are also
+    archived in the repo's state/ dir, which the cron auto-commits.
+    """
     os.makedirs(os.path.dirname(arch), exist_ok=True)
     seen_urls = set()
     if os.path.exists(arch):
@@ -260,13 +269,14 @@ def main():
         for row in cur.execute("SELECT source,query,title,description,url,"
                                "published,sentiment,fetched FROM news_articles"
                                " WHERE fetched=?", (today,)):
-            rec = dict(zip(("source", "query", "title", "description", "url",
-                            "published", "sentiment", "fetched"), row))
+            rec = dict(zip(ARTICLE_COLUMNS, row))
             if rec["url"] and rec["url"] not in seen_urls:
                 f.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 seen_urls.add(rec["url"])
 
-    # ---- 4) tiered matching over collected articles --------------------------
+
+def _match_articles(cur):
+    """4) Tiered matching of every company name over the collected articles; returns rows added."""
     cur.execute("""SELECT c.company_id, c.name,
                           (SELECT visibility_verdict FROM clearance_activity a
                             WHERE a.company_id=c.company_id
@@ -286,9 +296,11 @@ def main():
                                 " VALUES (?,?,?,?,?)", (aid, cid, frag, quality, vis))
                     n_match += cur.rowcount
                 break
-    con.commit()
+    return n_match
 
-    # exception hits: QUIET/PARTIALLY_VISIBLE with strong-tier news
+
+def _exception_hits(cur, today):
+    """QUIET/PARTIALLY_VISIBLE companies with strong-tier news fetched today."""
     rows = cur.execute("""
         SELECT DISTINCT c.name, m.company_visibility, n.source, n.title, n.url
           FROM news_company_matches m
@@ -297,17 +309,19 @@ def main():
          WHERE m.company_visibility IN ('QUIET','PARTIALLY_VISIBLE')
            AND m.match_quality IN ('strong','reviewed-promoted')
            AND n.fetched = ?""", (today,)).fetchall()
-    exceptions = [{"company": r[0], "verdict": r[1], "source": r[2],
-                   "title": r[3], "url": r[4]} for r in rows]
+    return [{"company": r[0], "verdict": r[1], "source": r[2],
+             "title": r[3], "url": r[4]} for r in rows]
 
-    n_arts = cur.execute("SELECT COUNT(*) FROM news_articles").fetchone()[0]
-    summary = {
+
+def _build_summary(today, budget, store, n_arts, new_arts, n_match, exceptions, skipped):
+    """The `news_collection` block appended to layers/32_company_db.json."""
+    return {
         "ran": today,
         "what": ("External news collection (Marketaux ticker-tagged, AlphaVantage "
                  "sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company "
                  "probes) matched onto the company DB with the shared tiered "
                  "matcher; keys read from ~/.config/market-secrets/credentials.env"),
-        "api_calls_used": budget.used, "calls_by_source": called,
+        "api_calls_used": budget.used, "calls_by_source": store.called,
         "articles_total": n_arts, "new_articles": new_arts,
         "match_rows_added": n_match,
         "exception_news_hits": exceptions[:25],
@@ -316,16 +330,50 @@ def main():
                        "— weekly cadence keeps usage well inside quotas; EODHD news "
                        "endpoint not in plan (404), not called"),
     }
-    layer = json.load(open(LAYER))
-    layer["news_collection"] = summary
-    if not args.dry_run:
-        with open(LAYER, "w") as f:
-            json.dump(layer, f, indent=1, ensure_ascii=False)
+
+
+def _print_report(summary, exceptions):
     print(json.dumps({k: v for k, v in summary.items()
                       if k not in ("exception_news_hits",)}, indent=1)[:1200])
     print("exception hits:", len(exceptions))
     for e in exceptions[:8]:
         print(f"  [{e['verdict']}] {e['company']} <- {e['source']}: {e['title'][:70]}")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--max-calls", type=int, default=40)
+    ap.add_argument("--dry-run", action="store_true")
+    args = ap.parse_args()
+    env = load_keys()
+    budget = Budget(args.max_calls)
+    today = date.today().isoformat()
+
+    con = sqlite3.connect(DB)
+    cur = con.cursor()
+    cur.executescript(SCHEMA)
+
+    skipped = []
+    store = ArticleStore(cur, today)
+    new_arts = _fdi_sweep(env, budget, store, skipped)
+    tickers = [t for _, _, t in _listed_leads(cur)]
+    new_arts += _ticker_news(env, budget, store, skipped, tickers)
+    new_arts += _quiet_probes(cur, env, budget, store, skipped)
+    con.commit()
+
+    _archive_articles(cur, today, os.path.join(ROOT, "state", "news_articles.jsonl"))
+    n_match = _match_articles(cur)
+    con.commit()
+
+    exceptions = _exception_hits(cur, today)
+    n_arts = cur.execute("SELECT COUNT(*) FROM news_articles").fetchone()[0]
+    summary = _build_summary(today, budget, store, n_arts, new_arts, n_match, exceptions, skipped)
+    layer = json.load(open(LAYER))
+    layer["news_collection"] = summary
+    if not args.dry_run:
+        with open(LAYER, "w") as f:
+            json.dump(layer, f, indent=1, ensure_ascii=False)
+    _print_report(summary, exceptions)
     con.close()
 
 

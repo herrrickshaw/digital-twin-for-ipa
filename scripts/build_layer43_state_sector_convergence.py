@@ -179,16 +179,8 @@ def load_iem_reference():
     return out
 
 
-def main():
-    revealed = load_revealed()
-    policy = load_policy_eligible()
-    iem = load_iem_reference()
-
-    print(f"revealed (layer 42) state mentions: {len(revealed)}")
-    print(f"policy-eligible (layer 16) state landings: {len(policy)}")
-    print(f"IEM state-totals reference: {'loaded' if iem['state_totals'] else 'NOT FOUND'}")
-    print(f"IEM industry-totals reference: {'loaded' if iem['industry_totals'] else 'NOT FOUND'}")
-
+def _state_convergence(revealed, policy):
+    """Distinct sectors touching each state under both signals; returns (all states sorted, multi-sector hubs)."""
     # -- state convergence: distinct sectors touching each state ------------
     state_sectors_revealed = defaultdict(set)
     state_events_revealed = defaultdict(list)
@@ -216,7 +208,11 @@ def main():
         })
     convergence.sort(key=lambda x: (x["revealed_sector_count"], x["policy_sector_count"]), reverse=True)
     hubs = [c for c in convergence if c["revealed_sector_count"] >= 3 or c["policy_sector_count"] >= 5]
+    return convergence, hubs
 
+
+def _sector_rankings(revealed, policy):
+    """Per-sector state ranking under both signals."""
     # -- per-sector state ranking --------------------------------------------
     sectors = sorted({r["sector"] for r in revealed} | {r["sector"] for r in policy})
     sector_rankings = {}
@@ -237,7 +233,11 @@ def main():
                 [{"state": s, "company_count": len(c)} for s, c in pol_states.items()],
                 key=lambda x: -x["company_count"]),
         }
+    return sectors, sector_rankings
 
+
+def _build_layer(iem, convergence, hubs, sector_rankings, revealed, policy):
+    """Assemble the layer-43 JSON document."""
     out = {
         "layer": 43, "name": "state_sector_convergence",
         "built": dt.date.today().isoformat(),
@@ -261,10 +261,11 @@ def main():
         "revealed_event_count": len(revealed),
         "policy_landing_count": len(policy),
     }
-    with open(OUT_JSON, "w") as f:
-        json.dump(out, f, indent=1, ensure_ascii=False)
+    return out
 
-    # -- doc ------------------------------------------------------------------
+
+def _doc_intro(out, revealed, policy):
+    """Markdown title, methodology and caveats."""
     L = ["# State x sector convergence — layer 43", "",
          f"*Generated {out['built']} by `scripts/build_layer43_state_sector_convergence.py`. "
          f"{len(revealed)} revealed investment-event state mentions (layer 42), "
@@ -288,7 +289,11 @@ def main():
          "below as independent reference — but DPIIT publishes only separate state-total and "
          "industry-total marginals, never a joint state×sector cross-tabulation, so it cannot itself "
          "answer \"which states are converging on which sectors\"; it corroborates scale/rank only.", ""]
+    return L
 
+
+def _doc_iem_tables(L, iem):
+    """Markdown tables of the DPIIT IEM state and industry totals."""
     if iem["state_totals"]:
         rows = iem["state_totals"].get("rows", [])
         L += ["## DPIIT IEM — state totals (reference, national, cumulative)", "",
@@ -311,6 +316,9 @@ def main():
             L.append(f"| {r.get('industry', '—')} | {r.get('number', '—')} | {r.get('investment', '—')} | {r.get('employment', '—')} |")
         L.append("")
 
+
+def _doc_convergence_tables(L, hubs, convergence):
+    """Markdown tables of hub states and the full convergence list."""
     L += ["## Multi-sector hub states", "",
          "States where either signal shows real breadth — ≥3 distinct sectors (revealed) or "
          "≥5 distinct sectors (policy-eligible).", "",
@@ -329,6 +337,9 @@ def main():
                  f"{c['policy_sector_count']} | {c['policy_company_count']} |")
     L.append("")
 
+
+def _doc_sector_rankings(L, sectors, sector_rankings):
+    """Markdown per-sector state rankings."""
     L += ["## Per-sector state rankings", ""]
     for sec in sectors:
         r = sector_rankings[sec]
@@ -343,6 +354,34 @@ def main():
                 f"{x['state']} ({x['company_count']})" for x in r["policy_ranking"][:10])]
         L.append("")
 
+
+def main():
+    revealed = load_revealed()
+    policy = load_policy_eligible()
+    iem = load_iem_reference()
+
+    print(f"revealed (layer 42) state mentions: {len(revealed)}")
+    print(f"policy-eligible (layer 16) state landings: {len(policy)}")
+    print(f"IEM state-totals reference: {'loaded' if iem['state_totals'] else 'NOT FOUND'}")
+    print(f"IEM industry-totals reference: {'loaded' if iem['industry_totals'] else 'NOT FOUND'}")
+
+    convergence, hubs = _state_convergence(revealed, policy)
+
+    sectors, sector_rankings = _sector_rankings(revealed, policy)
+
+    out = _build_layer(iem, convergence, hubs, sector_rankings, revealed, policy)
+    with open(OUT_JSON, "w") as f:
+        json.dump(out, f, indent=1, ensure_ascii=False)
+
+    # -- doc ------------------------------------------------------------------
+    L = _doc_intro(out, revealed, policy)
+
+    _doc_iem_tables(L, iem)
+
+    _doc_convergence_tables(L, hubs, convergence)
+
+    _doc_sector_rankings(L, sectors, sector_rankings)
+
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")
 
@@ -355,12 +394,8 @@ def _esc(s):
     return (str(s) if s is not None else "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, policy_n):
-    out_html = os.path.join(ROOT, "docs", "reportage_state_sector.html")
-    today = dt.date.today().isoformat()
-    max_rev = max((c["revealed_sector_count"] for c in convergence), default=1) or 1
-    max_pol = max((c["policy_sector_count"] for c in convergence), default=1) or 1
-
+def _html_head(today):
+    """Doctype, head and inline CSS; returns the output line list."""
     L = []
     L.append(f'<!doctype html><html lang="en"><head><meta charset="utf-8">')
     L.append('<meta name="viewport" content="width=device-width,initial-scale=1">')
@@ -392,7 +427,11 @@ def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, pol
     L.append('.note { color:var(--mut); font-size:.82em; margin-top:34px; border-top:1px solid var(--bd); padding-top:12px; }')
     L.append('.pill { display:inline-block; background:var(--hisoft); color:var(--hi); border-radius:8px; padding:0 8px; font-size:.75em; margin-left:6px; }')
     L.append('</style></head><body><div class="wrap">')
+    return L
 
+
+def _html_intro_stats(L, convergence, hubs, revealed_n, policy_n, sectors):
+    """Title, subtitle and stat tiles."""
     L.append('<h1>State × Sector Convergence</h1>')
     L.append('<p class="sub">Which Indian states are becoming multi-sector investment hubs, and within each '
              'sector, which states do companies actually prefer? Two signals shown side by side, never summed: '
@@ -409,6 +448,9 @@ def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, pol
     L.append(f'<div class="stat"><b>{len(sectors)}</b><span>sectors covered</span></div>')
     L.append('</div>')
 
+
+def _html_hub_table(L, hubs):
+    """Multi-sector hub states table."""
     L.append('<h2>Multi-sector hub states</h2>')
     L.append('<p class="sub">≥3 distinct sectors (revealed) or ≥5 distinct sectors (policy-eligible).</p>')
     L.append('<table><thead><tr><th>State</th><th>Revealed sectors</th><th class="n">Events</th>'
@@ -422,6 +464,9 @@ def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, pol
                  f'<td class="n">{c["policy_company_count"]}</td></tr>')
     L.append('</tbody></table>')
 
+
+def _html_convergence_table(L, convergence, max_rev, max_pol):
+    """Full state convergence table with bars."""
     L.append('<h2>Full state convergence</h2>')
     L.append('<table><thead><tr><th>State</th><th>Revealed sectors</th><th class="n">Events</th>'
              '<th>Policy sectors</th><th class="n">Companies</th></tr></thead><tbody>')
@@ -436,6 +481,9 @@ def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, pol
                  f'<td class="n">{c["policy_company_count"]}</td></tr>')
     L.append('</tbody></table>')
 
+
+def _html_iem_tables(L, iem):
+    """DPIIT IEM reference tables."""
     if iem["state_totals"]:
         rows = sorted(iem["state_totals"]["rows"], key=lambda r: -_num(r.get("investment")))[:15]
         L.append('<h2>DPIIT IEM — state totals <span class="pill">reference</span></h2>')
@@ -461,6 +509,9 @@ def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, pol
                      f'<td class="n">{_esc(r.get("investment"))}</td><td class="n">{_esc(r.get("employment"))}</td></tr>')
         L.append('</tbody></table>')
 
+
+def _html_sector_rankings(L, sectors, sector_rankings):
+    """Per-sector state ranking panels."""
     L.append('<h2>Per-sector state rankings</h2>')
     for sec in sectors:
         r = sector_rankings[sec]
@@ -480,11 +531,35 @@ def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, pol
             L.append('</tbody></table>')
         L.append('</details>')
 
+
+def _html_note(L):
+    """Provenance footnote."""
     L.append('<p class="note">Generated by <code>scripts/build_layer43_state_sector_convergence.py</code>. '
              'Revealed data: <code>layers/42_sector_investment_news_sweep.json</code>. Policy-eligible data: '
              '<code>layers/16_leads.json</code> (<code>state_landings</code> field). '
              'Full record: <code>layers/43_state_sector_convergence.json</code>, '
              '<a href="STATE_SECTOR_CONVERGENCE.md">STATE_SECTOR_CONVERGENCE.md</a>.</p>')
+
+
+def write_html(convergence, hubs, sector_rankings, sectors, iem, revealed_n, policy_n):
+    out_html = os.path.join(ROOT, "docs", "reportage_state_sector.html")
+    today = dt.date.today().isoformat()
+    max_rev = max((c["revealed_sector_count"] for c in convergence), default=1) or 1
+    max_pol = max((c["policy_sector_count"] for c in convergence), default=1) or 1
+
+    L = _html_head(today)
+
+    _html_intro_stats(L, convergence, hubs, revealed_n, policy_n, sectors)
+
+    _html_hub_table(L, hubs)
+
+    _html_convergence_table(L, convergence, max_rev, max_pol)
+
+    _html_iem_tables(L, iem)
+
+    _html_sector_rankings(L, sectors, sector_rankings)
+
+    _html_note(L)
 
     L.append('</div></body></html>')
     with open(out_html, "w") as f:

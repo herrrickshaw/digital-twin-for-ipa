@@ -73,16 +73,8 @@ def gleif(name):
     return None, None
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--gleif-limit", type=int, default=400)
-    args = ap.parse_args()
-    keys = env()
-    today = date.today().isoformat()
-    os.makedirs(OUTDIR, exist_ok=True)
-
-    con = sqlite3.connect(DB)
-    cur = con.cursor()
+def _reset_table(cur):
+    """Drop and recreate the registry_ids table."""
     cur.executescript("""
         DROP TABLE IF EXISTS registry_ids;
         CREATE TABLE registry_ids (
@@ -93,14 +85,18 @@ def main():
             status TEXT,             -- resolved | lei_only | pending_key | unresolved
             resolved TEXT);
     """)
+
+
+def _foreign_companies(cur):
+    """(company_id, name, country, ticker) for every non-Indian company."""
     cur.execute("""SELECT company_id, name, country, ticker FROM companies
                     WHERE country IS NOT NULL AND country NOT IN ('India','')
                     ORDER BY country, name""")
-    companies = cur.fetchall()
-    print(f"{len(companies)} foreign companies")
+    return cur.fetchall()
 
-    # ---- national maps fetched once -----------------------------------------
-    # US: ticker -> CIK
+
+def _edgar_map():
+    """US: ticker -> zero-padded CIK from SEC company_tickers.json ({} on failure)."""
     cik_map = {}
     try:
         d = get_json("https://www.sec.gov/files/company_tickers.json", ua=EDGAR_UA)
@@ -108,7 +104,11 @@ def main():
         print("EDGAR ticker map:", len(cik_map))
     except Exception as e:
         print("EDGAR map failed:", type(e).__name__)
-    # KR: stock_code -> corp_code
+    return cik_map
+
+
+def _dart_map(keys):
+    """KR: stock_code -> corp_code from DART corpCode.xml (needs DART_KEY; {} otherwise or on failure)."""
     dart_map = {}
     if keys.get("DART_KEY"):
         try:
@@ -123,13 +123,94 @@ def main():
             print("DART stock->corp map:", len(dart_map))
         except Exception as e:
             print("DART map failed:", type(e).__name__)
+    return dart_map
 
+
+# ---- per-country national-registry resolvers --------------------------------
+# Each takes (name, ticker, lei, ctx) and returns None (nothing found, state unchanged) or
+# (national_id, id_type, registry, status); status None keeps the current status.
+# Add a country by adding one function and one NATIONAL_RESOLVERS entry.
+
+def _national_us(name, ticker, lei, ctx):
+    cik = ctx["cik_map"].get(ticker.upper().split(".")[0]) if ticker else None
+    return (cik, "CIK", "SEC EDGAR", "resolved") if cik else None
+
+
+def _national_kr(name, ticker, lei, ctx):
+    # DB format is 'A066570 (KOSE 066570)' — take the 6-digit code
+    m6 = re.search(r"\b(\d{6})\b", ticker) if ticker else None
+    code = ctx["dart_map"].get(m6.group(1)) if m6 else None
+    return (code, "DART corp_code", "DART", "resolved") if code else None
+
+
+def _national_ch(name, ticker, lei, ctx):
+    d = post_json("https://www.zefix.ch/ZefixREST/api/v1/firm/search.json",
+                  {"name": name.split()[0], "activeOnly": True})
+    hits = d.get("list") or []
+    return (hits[0].get("uidFormatted"), "UID", "Zefix", "resolved") if hits else None
+
+
+def _national_fr(name, ticker, lei, ctx):
+    q = urllib.parse.quote(name)
+    d = get_json(f"https://recherche-entreprises.api.gouv.fr/search?q={q}&page=1&per_page=1")
+    res = d.get("results") or []
+    return (res[0].get("siren"), "SIREN", "recherche-entreprises", "resolved") if res else None
+
+
+def _national_uk(name, ticker, lei, ctx):
+    keys = ctx["keys"]
+    if not keys.get("COMPANIES_HOUSE_KEY"):
+        return (None, None, "Companies House (COMPANIES_HOUSE_KEY not in credentials.env)",
+                "pending_key" if not lei else "lei_only")
+    import base64
+    q = urllib.parse.quote(name)
+    req = urllib.request.Request(
+        f"https://api.company-information.service.gov.uk/search/companies?q={q}&items_per_page=1",
+        headers={"User-Agent": UA, "Authorization": "Basic " + base64.b64encode(
+            (keys["COMPANIES_HOUSE_KEY"] + ":").encode()).decode()})
+    d = json.loads(urllib.request.urlopen(req, timeout=25).read())
+    items = d.get("items") or []
+    return (items[0].get("company_number"), "CRN", "Companies House", "resolved") if items else None
+
+
+def _national_jp(name, ticker, lei, ctx):
+    keys = ctx["keys"]
+    if not keys.get("GBIZINFO_TOKEN"):
+        return (None, None, "gBizINFO (GBIZINFO_TOKEN not in credentials.env)",
+                "pending_key" if not lei else "lei_only")
+    q = urllib.parse.quote(name)
+    req = urllib.request.Request(
+        f"https://info.gbiz.go.jp/hojin/v1/hojin?name={q}&limit=1",
+        headers={"User-Agent": UA, "X-hojinInfo-api-token": keys["GBIZINFO_TOKEN"]})
+    d = json.loads(urllib.request.urlopen(req, timeout=25).read())
+    items = d.get("hojin-infos") or []
+    return (items[0].get("corporate_number"), "法人番号", "gBizINFO", "resolved") if items else None
+
+
+NATIONAL_RESOLVERS = {
+    "United States": _national_us, "South Korea": _national_kr, "Switzerland": _national_ch,
+    "France": _national_fr, "United Kingdom": _national_uk, "Japan": _national_jp,
+}
+
+
+def _resolve_company(name, country, ticker, lei, ctx):
+    """National-registry lookup; any failure leaves the company unresolved at national level."""
+    resolver = NATIONAL_RESOLVERS.get(country)
+    if not resolver:
+        return None
+    try:
+        return resolver(name, ticker, lei, ctx)
+    except Exception:
+        return None
+
+
+def _resolve_all(cur, companies, ctx, gleif_limit, today):
+    """GLEIF (budgeted) + national lookup per company, inserted into registry_ids; returns GLEIF calls used."""
     gleif_used = 0
     for cid, name, country, ticker in companies:
         lei = lei_name = nat_id = nat_type = nat_reg = None
         status = "unresolved"
-        # GLEIF for everyone (budgeted)
-        if gleif_used < args.gleif_limit:
+        if gleif_used < gleif_limit:
             try:
                 lei, lei_name = gleif(name)
                 gleif_used += 1
@@ -138,75 +219,18 @@ def main():
                 pass
         if lei:
             status = "lei_only"
-        # national registries
-        try:
-            if country == "United States" and ticker:
-                cik = cik_map.get(ticker.upper().split(".")[0])
-                if cik:
-                    nat_id, nat_type, nat_reg, status = cik, "CIK", "SEC EDGAR", "resolved"
-            elif country == "South Korea" and ticker:
-                # DB format is 'A066570 (KOSE 066570)' — take the 6-digit code
-                m6 = re.search(r"\b(\d{6})\b", ticker)
-                code = dart_map.get(m6.group(1)) if m6 else None
-                if code:
-                    nat_id, nat_type, nat_reg, status = code, "DART corp_code", "DART", "resolved"
-            elif country == "Switzerland":
-                d = post_json("https://www.zefix.ch/ZefixREST/api/v1/firm/search.json",
-                              {"name": name.split()[0], "activeOnly": True})
-                hits = d.get("list") or []
-                if hits:
-                    nat_id, nat_type, nat_reg, status = (hits[0].get("uidFormatted"),
-                                                         "UID", "Zefix", "resolved")
-            elif country == "France":
-                q = urllib.parse.quote(name)
-                d = get_json(f"https://recherche-entreprises.api.gouv.fr/search?q={q}&page=1&per_page=1")
-                res = d.get("results") or []
-                if res:
-                    nat_id, nat_type, nat_reg, status = (res[0].get("siren"),
-                                                         "SIREN", "recherche-entreprises", "resolved")
-            elif country == "United Kingdom":
-                if keys.get("COMPANIES_HOUSE_KEY"):
-                    import base64
-                    q = urllib.parse.quote(name)
-                    req = urllib.request.Request(
-                        f"https://api.company-information.service.gov.uk/search/companies?q={q}&items_per_page=1",
-                        headers={"User-Agent": UA, "Authorization": "Basic " + base64.b64encode(
-                            (keys["COMPANIES_HOUSE_KEY"] + ":").encode()).decode()})
-                    d = json.loads(urllib.request.urlopen(req, timeout=25).read())
-                    items = d.get("items") or []
-                    if items:
-                        nat_id, nat_type, nat_reg, status = (items[0].get("company_number"),
-                                                             "CRN", "Companies House", "resolved")
-                else:
-                    status = "pending_key" if not lei else "lei_only"
-                    nat_reg = "Companies House (COMPANIES_HOUSE_KEY not in credentials.env)"
-            elif country == "Japan":
-                if keys.get("GBIZINFO_TOKEN"):
-                    q = urllib.parse.quote(name)
-                    req = urllib.request.Request(
-                        f"https://info.gbiz.go.jp/hojin/v1/hojin?name={q}&limit=1",
-                        headers={"User-Agent": UA, "X-hojinInfo-api-token": keys["GBIZINFO_TOKEN"]})
-                    d = json.loads(urllib.request.urlopen(req, timeout=25).read())
-                    items = d.get("hojin-infos") or []
-                    if items:
-                        nat_id, nat_type, nat_reg, status = (items[0].get("corporate_number"),
-                                                             "法人番号", "gBizINFO", "resolved")
-                else:
-                    status = "pending_key" if not lei else "lei_only"
-                    nat_reg = "gBizINFO (GBIZINFO_TOKEN not in credentials.env)"
-        except Exception:
-            pass
+        res = _resolve_company(name, country, ticker, lei, ctx)
+        if res:
+            nat_id, nat_type, nat_reg, new_status = res
+            status = new_status or status
         cur.execute("INSERT INTO registry_ids VALUES (?,?,?,?,?,?,?,?,?,?,?)",
                     (cid, name, country, ticker, lei, lei_name,
                      nat_id, nat_type, nat_reg, status, today))
-    con.commit()
+    return gleif_used
 
-    counts = dict(cur.execute(
-        "SELECT status, COUNT(*) FROM registry_ids GROUP BY 1").fetchall())
-    print("statuses:", counts, "| gleif calls:", gleif_used)
-    con.close()
 
-    # ---- country-wise parquets via duckdb -----------------------------------
+def _write_parquets():
+    """One parquet per country via duckdb (system python only)."""
     import duckdb
     dcon = duckdb.connect()
     dcon.execute(f"ATTACH '{DB}' AS c (TYPE sqlite)")
@@ -218,6 +242,32 @@ def main():
                           ORDER BY name)
                          TO '{OUTDIR}/{safe}.parquet' (FORMAT PARQUET)""", [ctry])
     print(f"wrote {len(countries)} parquets -> {OUTDIR}/")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--gleif-limit", type=int, default=400)
+    args = ap.parse_args()
+    keys = env()
+    today = date.today().isoformat()
+    os.makedirs(OUTDIR, exist_ok=True)
+
+    con = sqlite3.connect(DB)
+    cur = con.cursor()
+    _reset_table(cur)
+    companies = _foreign_companies(cur)
+    print(f"{len(companies)} foreign companies")
+
+    ctx = {"keys": keys, "cik_map": _edgar_map(), "dart_map": _dart_map(keys)}
+    gleif_used = _resolve_all(cur, companies, ctx, args.gleif_limit, today)
+    con.commit()
+
+    counts = dict(cur.execute(
+        "SELECT status, COUNT(*) FROM registry_ids GROUP BY 1").fetchall())
+    print("statuses:", counts, "| gleif calls:", gleif_used)
+    con.close()
+
+    _write_parquets()
 
 
 if __name__ == "__main__":

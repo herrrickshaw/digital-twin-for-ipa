@@ -26,11 +26,14 @@ replacement for the layer evidence.
 Usage:  python3 scripts/build_company_db.py
 Output: data/companies.db + layers/32_company_db.json
 """
+from __future__ import annotations
+
 import json
 import os
-import re
 import sqlite3
 from datetime import date
+
+from twin_common import norm_company
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LAYERS = os.path.join(ROOT, "layers")
@@ -38,34 +41,7 @@ DATA = os.path.join(ROOT, "data")
 DB_PATH = os.path.join(DATA, "companies.db")
 OUT_LAYER = os.path.join(LAYERS, "32_company_db.json")
 
-SUFFIXES = re.compile(
-    r"\b(private|pvt|limited|ltd|llp|llc|inc|incorporated|corp|corporation|plc|"
-    r"co|company|gmbh|ag|sa|nv|bv|ab|as|asa|oyj|spa|kk|pte|sdn bhd|holdings?)\b\.?",
-    re.I,
-)
-
-
-def norm(name: str) -> str:
-    s = (name or "").lower()
-    s = re.sub(r"^m\s*/\s*s\.?\s+", "", s)  # strip "M/s " register prefix
-    s = re.sub(r"[^a-z0-9 ]", " ", s)
-    s = SUFFIXES.sub(" ", s)
-    return re.sub(r"\s+", " ", s).strip()
-
-
-def load(fname):
-    with open(os.path.join(LAYERS, fname)) as f:
-        return json.load(f)
-
-
-def main():
-    os.makedirs(DATA, exist_ok=True)
-    if os.path.exists(DB_PATH):
-        os.remove(DB_PATH)
-    con = sqlite3.connect(DB_PATH)
-    cur = con.cursor()
-    cur.executescript(
-        """
+SCHEMA_SQL = """
         CREATE TABLE companies (
             company_id   INTEGER PRIMARY KEY,
             name         TEXT NOT NULL,      -- best display name seen
@@ -129,9 +105,25 @@ def main():
               LEFT JOIN company_sources s USING (company_id)
              GROUP BY c.company_id;
         """
-    )
 
-    def upsert(name, country=None, sector=None, ticker=None, market=None, india=0):
+norm = norm_company  # kept under its historical name for importers of this module
+
+
+def load(fname):
+    """Parse ``layers/<fname>`` (JSON)."""
+    with open(os.path.join(LAYERS, fname)) as f:
+        return json.load(f)
+
+
+class CompanyStore:
+    """Thin wrapper over the SQLite cursor: identity upsert + provenance rows."""
+
+    def __init__(self, cur):
+        self.cur = cur
+
+    def upsert(self, name, country=None, sector=None, ticker=None, market=None, india=0):
+        """Return the company_id for (normalised name, country), creating/filling the row."""
+        cur = self.cur
         key = (norm(name), country or "")
         cur.execute(
             "SELECT company_id, name FROM companies WHERE name_norm=? AND COALESCE(country,'')=?",
@@ -161,42 +153,51 @@ def main():
         )
         return cur.lastrowid
 
-    def src(cid, layer, role, as_of, rec):
-        cur.execute(
+    def source(self, cid, layer, role, as_of, rec):
+        """Record the verbatim source record ``rec`` as provenance for company ``cid``."""
+        self.cur.execute(
             "INSERT INTO company_sources VALUES (?,?,?,?,?)",
             (cid, layer, role, as_of, json.dumps(rec, ensure_ascii=False)),
         )
 
-    # ---- 16_leads: foreign/listed scored leads -------------------------------
+
+# ---- one ingester per source layer (run in this order; order fixes company_id) ----
+
+def ingest_leads(st):
+    """16_leads: foreign/listed scored leads."""
     d = load("16_leads.json")
     for r in d["leads"]:
-        cid = upsert(r["company"], r.get("country"), r.get("sector"),
-                     r.get("ticker"), r.get("market"))
-        src(cid, "16_leads", "foreign_lead", d.get("built"), r)
+        cid = st.upsert(r["company"], r.get("country"), r.get("sector"),
+                        r.get("ticker"), r.get("market"))
+        st.source(cid, "16_leads", "foreign_lead", d.get("built"), r)
         if r.get("lead_score") is not None:
-            cur.execute("INSERT INTO lead_scores VALUES (?,?,?,?)",
-                        (cid, "16_leads", r["lead_score"], None))
+            st.cur.execute("INSERT INTO lead_scores VALUES (?,?,?,?)",
+                           (cid, "16_leads", r["lead_score"], None))
 
-    # ---- 16_target_shortlist -------------------------------------------------
+
+def ingest_shortlist(st):
+    """16_target_shortlist."""
     d = load("16_target_shortlist.json")
     for r in d["targets"]:
-        cid = upsert(r["company"], r.get("country"), r.get("sector"), r.get("ticker"))
-        src(cid, "16_target_shortlist", "shortlist_target", d.get("built"), r)
-        cur.execute("INSERT INTO lead_scores VALUES (?,?,?,?)",
-                    (cid, "16_target_shortlist", r.get("target_score"), r.get("tier")))
+        cid = st.upsert(r["company"], r.get("country"), r.get("sector"), r.get("ticker"))
+        st.source(cid, "16_target_shortlist", "shortlist_target", d.get("built"), r)
+        st.cur.execute("INSERT INTO lead_scores VALUES (?,?,?,?)",
+                       (cid, "16_target_shortlist", r.get("target_score"), r.get("tier")))
 
-    # ---- 24_clearance_leads: India filers + credit ratings -------------------
+
+def ingest_clearance_leads(st):
+    """24_clearance_leads: India filers + credit ratings."""
     d = load("24_clearance_leads.json")
     for r in d["leads"]:
-        cid = upsert(r["company"], "India", india=1)
-        src(cid, "24_clearance_leads", "clearance_lead", d.get("built"), r)
+        cid = st.upsert(r["company"], "India", india=1)
+        st.source(cid, "24_clearance_leads", "clearance_lead", d.get("built"), r)
         cr = r.get("credit_rating")
         if cr:
             rating = cr.get("rating") or cr.get("care_rating")
             agency = ("CARE" if cr.get("rated_by_care")
                       else (rating or "").split()[0] if rating else
                       ("UNRATED" if cr.get("unrated") else None))
-            cur.execute(
+            st.cur.execute(
                 "INSERT INTO credit_ratings VALUES (?,?,?,?,?,?,?,?,?)",
                 (cid, agency, rating, cr.get("rating_date"),
                  1 if cr.get("rated_by_care") else 0,
@@ -205,18 +206,20 @@ def main():
                  json.dumps(cr.get("care_check"), ensure_ascii=False)
                  if cr.get("care_check") else None),
             )
-        cur.execute(
+        st.cur.execute(
             "INSERT INTO clearance_activity(company_id,visibility_verdict,policy_program)"
             " VALUES (?,?,?)",
             (cid, r.get("news_verdict"), r.get("policy_program")),
         )
 
-    # ---- 24b pool: policy triage --------------------------------------------
+
+def ingest_pool_policy(st):
+    """24b pool: policy triage."""
     d = load("24b_pool_policy_triage.json")
     for r in d["companies"]:
-        cid = upsert(r["company"], "India", india=1)
-        src(cid, "24b_pool_policy_triage", "pool_policy", d.get("built"), r)
-        cur.execute(
+        cid = st.upsert(r["company"], "India", india=1)
+        st.source(cid, "24b_pool_policy_triage", "pool_policy", d.get("built"), r)
+        st.cur.execute(
             "INSERT INTO clearance_activity"
             "(company_id,filings,states,activity,policy_program,latest,pool_score)"
             " VALUES (?,?,?,?,?,?,?)",
@@ -226,72 +229,114 @@ def main():
              r.get("score")),
         )
 
-    # ---- 24e pool: visibility sweep -----------------------------------------
+
+def ingest_pool_visibility(st):
+    """24e pool: visibility sweep."""
     d = load("24e_pool_visibility_sweep.json")
     for r in d["companies"]:
-        cid = upsert(r["company"], "India", india=1)
-        src(cid, "24e_pool_visibility_sweep", "pool_visibility", d.get("built"), r)
-        cur.execute(
+        cid = st.upsert(r["company"], "India", india=1)
+        st.source(cid, "24e_pool_visibility_sweep", "pool_visibility", d.get("built"), r)
+        st.cur.execute(
             "UPDATE clearance_activity SET visibility_verdict=COALESCE(visibility_verdict,?)"
             " WHERE company_id=?",
             (r.get("verdict"), cid),
         )
 
-    # ---- 21 alias check ------------------------------------------------------
+
+def ingest_alias_check(st):
+    """21 alias check."""
     d = load("21_indian_entity_alias_check.json")
     for r in d["companies"]:
-        cid = upsert(r["parent"])
-        src(cid, "21_indian_entity_alias_check", "alias_check", d.get("built"), r)
+        cid = st.upsert(r["parent"])
+        st.source(cid, "21_indian_entity_alias_check", "alias_check", d.get("built"), r)
 
-    # ---- 07 pairings ---------------------------------------------------------
+
+def ingest_pairings(st):
+    """07 pairings."""
     d = load("07_investor_pairings.json")
     for role, key in (("pairing_verified", "verified_pairs"),
                       ("pairing_prospective", "prospective_pairs")):
         for r in d.get(key, []):
-            cid = upsert(r["company"], sector=r.get("sector"), ticker=r.get("ticker"))
-            src(cid, "07_investor_pairings", role, d.get("retrieved"), r)
+            cid = st.upsert(r["company"], sector=r.get("sector"), ticker=r.get("ticker"))
+            st.source(cid, "07_investor_pairings", role, d.get("retrieved"), r)
 
-    # ---- 46 PLI Bulk Drugs: company-level approved projects -------------------
+
+def ingest_pli_bulk_drugs(st):
+    """46 PLI Bulk Drugs: company-level approved projects."""
     d = load("46_pli_bulk_drugs_commercial.json")
     for r in d["company_projects"]:
-        cid = upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
-        src(cid, "46_pli_bulk_drugs_commercial", "pli_bulk_drugs_beneficiary", d.get("built"), r)
+        cid = st.upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
+        st.source(cid, "46_pli_bulk_drugs_commercial", "pli_bulk_drugs_beneficiary", d.get("built"), r)
 
-    # ---- 47 Telangana pharma cluster: plant-location cross-reference ---------
+
+def ingest_telangana_pharma(st):
+    """47 Telangana pharma cluster: plant-location cross-reference."""
     d = load("47_telangana_pharma_cluster.json")
     for r in d["company_locations"]:
-        cid = upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
-        src(cid, "47_telangana_pharma_cluster", "plant_location_check", d.get("built"), r)
+        cid = st.upsert(r["company"], "India", sector="Pharma & Bulk Drugs", india=1)
+        st.source(cid, "47_telangana_pharma_cluster", "plant_location_check", d.get("built"), r)
 
-    # ---- 49 PLI Medical Devices + parks cross-reference -----------------------
+
+def ingest_medical_devices(st):
+    """49 PLI Medical Devices + parks cross-reference."""
     d = load("49_medical_devices_parks.json")
     for r in d["pli_medical_devices_approved"]:
-        cid = upsert(r["company"], "India", sector="Medical Devices", india=1)
-        src(cid, "49_medical_devices_parks", "pli_medical_devices_beneficiary", d.get("built"), r)
+        cid = st.upsert(r["company"], "India", sector="Medical Devices", india=1)
+        st.source(cid, "49_medical_devices_parks", "pli_medical_devices_beneficiary", d.get("built"), r)
 
-    # ---- 50 PM MITRA + Defence Corridors cross-reference ----------------------
+
+def ingest_textile_defence(st):
+    """50 PM MITRA + Defence Corridors cross-reference."""
     d = load("50_textile_defence_parks.json")
     for r in d["pli_textiles_foreign_corrected_roster"]:
-        cid = upsert(r["company"], r.get("country"), sector="Textiles & Apparel")
-        src(cid, "50_textile_defence_parks", "pli_textiles_foreign_beneficiary", d.get("built"), r)
+        cid = st.upsert(r["company"], r.get("country"), sector="Textiles & Apparel")
+        st.source(cid, "50_textile_defence_parks", "pli_textiles_foreign_beneficiary", d.get("built"), r)
     for corridor in d["defence_industrial_corridors"]:
         for tenant in corridor["named_tenants"]:
             name = tenant.split(" (")[0].split(" --")[0].strip()
-            cid = upsert(name, "India", sector="Defence")
-            src(cid, "50_textile_defence_parks", "defence_corridor_tenant", d.get("built"),
-                {"corridor": corridor["corridor"], "raw": tenant})
+            cid = st.upsert(name, "India", sector="Defence")
+            st.source(cid, "50_textile_defence_parks", "defence_corridor_tenant", d.get("built"),
+                      {"corridor": corridor["corridor"], "raw": tenant})
 
+
+INGESTERS = (
+    ingest_leads, ingest_shortlist, ingest_clearance_leads, ingest_pool_policy,
+    ingest_pool_visibility, ingest_alias_check, ingest_pairings, ingest_pli_bulk_drugs,
+    ingest_telangana_pharma, ingest_medical_devices, ingest_textile_defence,
+)
+
+SOURCE_LAYERS = ["16_leads", "16_target_shortlist", "24_clearance_leads",
+                 "24b_pool_policy_triage", "24e_pool_visibility_sweep",
+                 "21_indian_entity_alias_check", "07_investor_pairings",
+                 "46_pli_bulk_drugs_commercial", "47_telangana_pharma_cluster",
+                 "49_medical_devices_parks", "50_textile_defence_parks"]
+
+
+def build_database(db_path=None):
+    """(Re)create the SQLite database from the source layers; returns the open connection."""
+    db_path = db_path or DB_PATH
+    os.makedirs(os.path.dirname(db_path), exist_ok=True)
+    if os.path.exists(db_path):
+        os.remove(db_path)
+    con = sqlite3.connect(db_path)
+    con.cursor().executescript(SCHEMA_SQL)
+    store = CompanyStore(con.cursor())
+    for ingest in INGESTERS:
+        ingest(store)
     con.commit()
+    return con
 
-    # ---- summary layer -------------------------------------------------------
-    q = lambda sql: cur.execute(sql).fetchall()
+
+def build_summary(cur, built):
+    """Layer-32 summary dict (counts, schema notes, sources) computed from the database."""
+    q = lambda sql: cur.execute(sql).fetchall()  # noqa: E731
     n_companies = q("SELECT COUNT(*) FROM companies")[0][0]
     multi = q("SELECT COUNT(*) FROM (SELECT company_id FROM company_sources"
               " GROUP BY company_id HAVING COUNT(DISTINCT layer)>1)")[0][0]
-    summary = {
+    return {
         "layer": 32,
         "name": "company_db",
-        "built": date.today().isoformat(),
+        "built": built,
         "what": ("Unified company database: every company the twin has touched, "
                  "deduped on normalized-name+country, with per-record provenance "
                  "(company_sources keeps each source layer's record verbatim). "
@@ -320,16 +365,17 @@ def main():
         "identity_rule": ("dedup key = lowercased name with legal suffixes stripped "
                           "(Ltd/Pvt/GmbH/Inc/...) + country; overlaps across layers "
                           "merge, same-name different-country stay separate"),
-        "sources": ["16_leads", "16_target_shortlist", "24_clearance_leads",
-                    "24b_pool_policy_triage", "24e_pool_visibility_sweep",
-                    "21_indian_entity_alias_check", "07_investor_pairings",
-                    "46_pli_bulk_drugs_commercial", "47_telangana_pharma_cluster",
-                    "49_medical_devices_parks", "50_textile_defence_parks"],
+        "sources": list(SOURCE_LAYERS),
         "enrichment_next": ("layer 31 catalogs the external IPA/NDAP sources whose "
                             "company-level material (Invest India sector pages, IIG "
                             "project sponsors, state-IPA investor lists) can be joined "
                             "onto company_id"),
     }
+
+
+def main():
+    con = build_database()
+    summary = build_summary(con.cursor(), date.today().isoformat())
     with open(OUT_LAYER, "w") as f:
         json.dump(summary, f, indent=1, ensure_ascii=False)
     con.close()

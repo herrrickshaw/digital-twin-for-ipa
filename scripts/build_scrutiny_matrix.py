@@ -30,10 +30,8 @@ ACTIVE_MIN_Q = 10
 RECENT_DAYS = 365
 
 
-def main():
-    today = datetime.date.today()
-    recent = (today - datetime.timedelta(days=RECENT_DAYS)).isoformat()
-
+def _pib_by_scheme():
+    """Per scheme: PIB announcement count and first/last dates."""
     pib = {}
     for date, title in sqlite3.connect(DB).execute("SELECT date,title FROM pib_items"):
         if not date:
@@ -43,22 +41,25 @@ def main():
             d["n"] += 1
             d["first"] = min(d["first"], date)
             d["last"] = max(d["last"], date)
+    return pib
 
-    def load_house(path):
-        rows = json.load(open(path))
-        agg = {}
-        for r in rows:
-            for s in set(r["schemes"]):
-                d = agg.setdefault(s, {"n": 0, "star": 0, "first": r["iso"], "last": r["iso"]})
-                d["n"] += 1
-                d["star"] += (r["qtype"] or "").strip() == "STARRED"
-                d["first"] = min(d["first"], r["iso"])
-                d["last"] = max(d["last"], r["iso"])
-        return rows, agg
 
-    ls_rows, ls = load_house(PQ_LS)
-    rs_rows, rs = load_house(PQ_RS)
+def _load_house(path):
+    """Question registry rows plus per-scheme aggregates (count, starred, first/last date)."""
+    rows = json.load(open(path))
+    agg = {}
+    for r in rows:
+        for s in set(r["schemes"]):
+            d = agg.setdefault(s, {"n": 0, "star": 0, "first": r["iso"], "last": r["iso"]})
+            d["n"] += 1
+            d["star"] += (r["qtype"] or "").strip() == "STARRED"
+            d["first"] = min(d["first"], r["iso"])
+            d["last"] = max(d["last"], r["iso"])
+    return rows, agg
 
+
+def _bucket_rows(pib, ls, rs, recent):
+    """One row per scheme with its A/B/C scrutiny bucket."""
     rows = []
     for s in sorted(set(pib) | set(ls) | set(rs)):
         a = pib.get(s, {"n": 0, "first": "", "last": ""})
@@ -77,23 +78,27 @@ def main():
                      **{"pib_" + k: v for k, v in a.items()},
                      **{"ls_" + k: v for k, v in l.items()},
                      **{"rs_" + k: v for k, v in rr.items()}})
+    return rows
 
+
+def table(rws, cols):
+    """Markdown table of scheme rows."""
+    out = ["| Scheme | First ann. | PIB anns | Last ann. | LS Qs | RS Qs | ★ | First Q | Last Q |",
+           "|---|---|---:|---|---:|---:|---:|---|---|"]
+    for r in rws:
+        star = (r["ls_star"] + r["rs_star"]) or ""
+        out.append(f"| {r['s']} | {r['pib_first']} | {r['pib_n']} | {r['pib_last']} | "
+                   f"{r['ls_n'] or ''} | {r['rs_n'] or ''} | {star} | "
+                   f"{r['first_q'] if r['first_q']!='9999' else ''} | {r['last_q']} |")
+    return "\n".join(out)
+
+
+def _render_markdown(today, rows, tq_ls, tq_rs):
+    """The matrix document; returns (markdown, nA, nB, nC)."""
     nA = sum(r["bucket"] == "A" for r in rows)
     nB = sum(r["bucket"] == "B" for r in rows)
     nC = sum(r["bucket"] == "C" for r in rows)
-    tq_ls = len(ls_rows)
-    tq_rs = len(rs_rows)
     ta = sum(r["pib_n"] for r in rows)
-
-    def table(rws, cols):
-        out = ["| Scheme | First ann. | PIB anns | Last ann. | LS Qs | RS Qs | ★ | First Q | Last Q |",
-               "|---|---|---:|---|---:|---:|---:|---|---|"]
-        for r in rws:
-            star = (r["ls_star"] + r["rs_star"]) or ""
-            out.append(f"| {r['s']} | {r['pib_first']} | {r['pib_n']} | {r['pib_last']} | "
-                       f"{r['ls_n'] or ''} | {r['rs_n'] or ''} | {star} | "
-                       f"{r['first_q'] if r['first_q']!='9999' else ''} | {r['last_q']} |")
-        return "\n".join(out)
 
     A = sorted([r for r in rows if r["bucket"] == "A"], key=lambda x: -x["tot_n"])
     B = sorted([r for r in rows if r["bucket"] == "B"], key=lambda x: -x["tot_n"])
@@ -152,6 +157,18 @@ so pre-2017 schemes show their first register mention, not their launch.
 Thresholds (>= {ACTIVE_MIN_Q} questions, {RECENT_DAYS}-day recency) are stated, tunable
 constants, not findings.
 """
+    return md, nA, nB, nC
+
+
+def main():
+    today = datetime.date.today()
+    recent = (today - datetime.timedelta(days=RECENT_DAYS)).isoformat()
+
+    pib = _pib_by_scheme()
+    ls_rows, ls = _load_house(PQ_LS)
+    rs_rows, rs = _load_house(PQ_RS)
+    rows = _bucket_rows(pib, ls, rs, recent)
+    md, nA, nB, nC = _render_markdown(today, rows, len(ls_rows), len(rs_rows))
     open(OUT, "w", encoding="utf-8").write(md)
     print(f"scrutiny matrix: {len(rows)} schemes -> A {nA} / B {nB} / C {nC} -> {OUT}")
 

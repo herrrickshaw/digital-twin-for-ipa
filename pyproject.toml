@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 140
+target-version = "py39"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E9", "F", "B006", "E722"]
+# Legacy sweep scripts predate this config; Phase 2 widens the ruleset.
+exclude = ["scripts/scratch_messe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -65,98 +65,119 @@ def is_new(name, known):
 DART_INTENT_MARKERS = ("법인 설립", "진출", "현지법인")
 
 
-def main():
-    known = known_names()
+ESEF_COUNTRY_NAMES = {"GB": "United Kingdom", "FR": "France", "IT": "Italy", "NL": "Netherlands"}
+
+
+def _ingest_dart(doc, known):
+    """DART (Korea): intent filings -> tier 1, business-activity filings -> tier 2; one row per company."""
+    tier1, tier2, seen_dart = [], [], set()
+    for r in doc["results"]:
+        h = r.get("hits", {})
+        hits = h.get("intent") or h.get("business")
+        if not hits or r["corp_name"] in seen_dart:
+            continue
+        seen_dart.add(r["corp_name"])
+        row = {"company": r["corp_name"], "country": "South Korea", "ticker": r["stock_code"],
+               "source": "DART (Korea)", "signal": hits[0]["snippet"].strip()[:150],
+               "new_to_twin": is_new(r["corp_name"], known)}
+        (tier1 if h.get("intent") else tier2).append(row)
+    return tier1, tier2
+
+
+def _ingest_oslo(doc, known):
+    """Oslo Bors NewsWeb: market-entry/investment announcements -> tier 1 (business_activity is mostly noise, not used)."""
+    return [{"company": r["issuer"], "country": "Norway", "ticker": r["issuer_sign"],
+             "source": "Oslo Bors NewsWeb", "signal": r["title"],
+             "new_to_twin": is_new(r["issuer"], known)} for r in doc["market_entry_or_investment"]], []
+
+
+def _ingest_edinet(doc, known):
+    """EDINET (Japan): filings with India hits -> tier 2."""
+    return [], [{"company": r["filer"], "country": "Japan", "ticker": r["sec_code"],
+                 "source": "EDINET", "signal": r["hits"][0]["snippet"].strip()[:150],
+                 "new_to_twin": is_new(r["filer"], known)} for r in doc["results"] if r.get("hits")]
+
+
+# 🔴 2026-08-21: discovered via `git log` that a SEPARATE Claude Code session
+# (2026-08-12, outside this conversation's awareness) already built a
+# Switzerland sweep (SIX Equity Issuer News, richer than Oslo's title-only
+# feed) and an Electronics & Semiconductors sector-wide expansion, and
+# wrote docs/INTEGRATED_TARGET_DECISION.md synthesizing them against the
+# PLI beneficiary roster. That session explicitly left layers 35-37 and
+# this session's sweep scripts untouched ("committed in isolation from
+# unrelated in-progress work") -- folding its real results in here now.
+def _ingest_switzerland(doc, known):
+    """SIX Equity Issuer News (Switzerland): market-entry/investment items -> tier 1."""
+    return [{"company": r["company"], "country": "Switzerland", "ticker": r.get("ticker"),
+             "source": "SIX Equity Issuer News (2026-08-12 session)",
+             "signal": r.get("title", "")[:150], "new_to_twin": is_new(r["company"], known)}
+            for r in doc["market_entry_or_investment"]], []
+
+
+def _ingest_electronics(doc, known):
+    """Electronics & Semiconductors sector expansion (SEC 10-K mining) -> tier 1."""
+    return [{"company": r["company"], "country": r.get("country") or "United States",
+             "ticker": None, "source": "Sector expansion: Electronics & Semiconductors "
+             "(2026-08-12 session, SEC 10-K mining)",
+             "signal": "confirmed India market-entry/investment disclosure",
+             "new_to_twin": is_new(r["company"], known)} for r in doc["market_entry_or_investment"]], []
+
+
+def _ingest_edgar_8k(doc, known):
+    """EDGAR 8-K filers (non-India-domiciled) -> tier 1."""
+    return [{"company": e["company"], "country": "United States (8-K filer)",
+             "ticker": None, "source": "EDGAR 8-K",
+             "signal": f"{e['file_date']} -- {', '.join(e['phrases'][:2])}",
+             "new_to_twin": is_new(e["company"], known)}
+            for e in doc["filings"] if e.get("segment") != "india_domiciled"], []
+
+
+def _ingest_esef(doc, known):
+    """ESEF xbrl.org (UK/FR/IT/NL): named entities with India hits -> tier 2."""
+    return [], [{"company": r["entity"]["name"], "country": ESEF_COUNTRY_NAMES.get(r["country"], r["country"]),
+                 "ticker": r["entity"].get("lei"), "source": "ESEF (xbrl.org)",
+                 "signal": r["hits"][0]["snippet"].strip()[:150],
+                 "new_to_twin": is_new(r["entity"]["name"], known)}
+                for r in doc["results"] if r.get("hits") and r.get("entity", {}).get("name")]
+
+
+# (enrichment file, ingester) in output order; a new sweep needs one entry here, no edit to main().
+TIERED_SOURCES = [
+    ("layers/16_enrichment/dart_india_sweep.json", _ingest_dart),
+    ("layers/16_enrichment/oslo_newsweb_india_sweep.json", _ingest_oslo),
+    ("layers/16_enrichment/edinet_india_sweep.json", _ingest_edinet),
+    ("layers/16_enrichment/switzerland_india_sweep.json", _ingest_switzerland),
+    ("layers/16_enrichment/electronics_semiconductors_sector_expansion.json", _ingest_electronics),
+    ("layers/16_enrichment/edgar_8k_sweep.json", _ingest_edgar_8k),
+    ("layers/16_enrichment/esef_xbrl_india_sweep.json", _ingest_esef),
+]
+
+
+def _collect_tiers(known):
+    """Run every available tiered-source ingester; returns (tier1, tier2)."""
     tier1, tier2 = [], []
+    for rel, ingest in TIERED_SOURCES:
+        doc = load(rel)
+        if doc:
+            t1, t2 = ingest(doc, known)
+            tier1 += t1
+            tier2 += t2
+    return tier1, tier2
 
-    dart = load("layers/16_enrichment/dart_india_sweep.json")
-    if dart:
-        seen_dart = set()
-        for r in dart["results"]:
-            h = r.get("hits", {})
-            hits = h.get("intent") or h.get("business")
-            if not hits or r["corp_name"] in seen_dart:
-                continue
-            seen_dart.add(r["corp_name"])
-            row = {"company": r["corp_name"], "country": "South Korea", "ticker": r["stock_code"],
-                   "source": "DART (Korea)", "signal": hits[0]["snippet"].strip()[:150],
-                   "new_to_twin": is_new(r["corp_name"], known)}
-            (tier1 if h.get("intent") else tier2).append(row)
 
-    oslo = load("layers/16_enrichment/oslo_newsweb_india_sweep.json")
-    if oslo:
-        for r in oslo["market_entry_or_investment"]:
-            tier1.append({"company": r["issuer"], "country": "Norway", "ticker": r["issuer_sign"],
-                          "source": "Oslo Bors NewsWeb", "signal": r["title"],
-                          "new_to_twin": is_new(r["issuer"], known)})
-        for r in oslo["business_activity"][:0]:  # business_activity is 143 rows, mostly noise -- not included in v1
-            pass
-
-    edinet = load("layers/16_enrichment/edinet_india_sweep.json")
-    if edinet:
-        for r in edinet["results"]:
-            if r.get("hits"):
-                tier2.append({"company": r["filer"], "country": "Japan", "ticker": r["sec_code"],
-                              "source": "EDINET", "signal": r["hits"][0]["snippet"].strip()[:150],
-                              "new_to_twin": is_new(r["filer"], known)})
-
-    # 🔴 2026-08-21: discovered via `git log` that a SEPARATE Claude Code session
-    # (2026-08-12, outside this conversation's awareness) already built a
-    # Switzerland sweep (SIX Equity Issuer News, richer than Oslo's title-only
-    # feed) and an Electronics & Semiconductors sector-wide expansion, and
-    # wrote docs/INTEGRATED_TARGET_DECISION.md synthesizing them against the
-    # PLI beneficiary roster. That session explicitly left layers 35-37 and
-    # this session's sweep scripts untouched ("committed in isolation from
-    # unrelated in-progress work") -- folding its real results in here now.
-    switzerland = load("layers/16_enrichment/switzerland_india_sweep.json")
-    if switzerland:
-        for r in switzerland["market_entry_or_investment"]:
-            tier1.append({"company": r["company"], "country": "Switzerland", "ticker": r.get("ticker"),
-                          "source": "SIX Equity Issuer News (2026-08-12 session)",
-                          "signal": r.get("title", "")[:150], "new_to_twin": is_new(r["company"], known)})
-
-    electronics = load("layers/16_enrichment/electronics_semiconductors_sector_expansion.json")
-    if electronics:
-        for r in electronics["market_entry_or_investment"]:
-            tier1.append({"company": r["company"], "country": r.get("country") or "United States",
-                          "ticker": None, "source": "Sector expansion: Electronics & Semiconductors "
-                          "(2026-08-12 session, SEC 10-K mining)",
-                          "signal": "confirmed India market-entry/investment disclosure",
-                          "new_to_twin": is_new(r["company"], known)})
-
-    edgar_8k = load("layers/16_enrichment/edgar_8k_sweep.json")
-    if edgar_8k:
-        for e in edgar_8k["filings"]:
-            if e.get("segment") == "india_domiciled":
-                continue
-            tier1.append({"company": e["company"], "country": "United States (8-K filer)",
-                          "ticker": None, "source": "EDGAR 8-K",
-                          "signal": f"{e['file_date']} -- {', '.join(e['phrases'][:2])}",
-                          "new_to_twin": is_new(e["company"], known)})
-
-    esef = load("layers/16_enrichment/esef_xbrl_india_sweep.json")
-    ESEF_COUNTRY_NAMES = {"GB": "United Kingdom", "FR": "France", "IT": "Italy", "NL": "Netherlands"}
-    if esef:
-        for r in esef["results"]:
-            if r.get("hits") and r.get("entity", {}).get("name"):
-                tier2.append({"company": r["entity"]["name"], "country": ESEF_COUNTRY_NAMES.get(r["country"], r["country"]),
-                              "ticker": r["entity"].get("lei"), "source": "ESEF (xbrl.org)",
-                              "signal": r["hits"][0]["snippet"].strip()[:150],
-                              "new_to_twin": is_new(r["entity"]["name"], known)})
-
+def _china_watchlist(known):
+    """cninfo (China) Press Note 3 watch-list; not an outreach list."""
     cninfo = load("layers/16_enrichment/cninfo_india_sweep.json")
-    china_watchlist = []
-    if cninfo:
-        for r in cninfo["china_pn3_watchlist"]:
-            china_watchlist.append({"company": r["company"], "country": "China", "ticker": r["sec_code"],
-                                    "source": "cninfo", "signal": r["title"],
-                                    "new_to_twin": is_new(r["company"], known)})
+    if not cninfo:
+        return []
+    return [{"company": r["company"], "country": "China", "ticker": r["sec_code"],
+             "source": "cninfo", "signal": r["title"],
+             "new_to_twin": is_new(r["company"], known)} for r in cninfo["china_pn3_watchlist"]]
 
-    tier1_new = [r for r in tier1 if r["new_to_twin"]]
-    tier2_new = [r for r in tier2 if r["new_to_twin"]]
-    china_new = [r for r in china_watchlist if r["new_to_twin"]]
 
-    out = {"layer": 37, "name": "global_sweep_targets", "built": dt.date.today().isoformat(),
+def _build_layer(tier1, tier2, china_watchlist, tier1_new, tier2_new, china_new):
+    """Assemble the layer-37 JSON document."""
+    return {"layer": 37, "name": "global_sweep_targets", "built": dt.date.today().isoformat(),
            "what": ("Consolidated target list from the 2026-08 filing-sweep expansion (DART/"
                     "cninfo/Oslo NewsWeb/EDINET/ESEF) -- companies with offices or announced "
                     "India interest, cross-checked against the twin's existing leads/company DB."),
@@ -174,9 +195,10 @@ def main():
            "tier1_controlling_establishment": {"count": len(tier1), "new_to_twin": len(tier1_new), "all": tier1},
            "tier2_market_presence": {"count": len(tier2), "new_to_twin": len(tier2_new), "all": tier2},
            "china_pn3_watchlist": {"count": len(china_watchlist), "new_to_twin": len(china_new), "all": china_watchlist}}
-    with open(OUT_JSON, "w") as f:
-        json.dump(out, f, indent=1, ensure_ascii=False)
 
+
+def _render_doc(out, tier1, tier2, china_watchlist, tier1_new, tier2_new, china_new):
+    """Markdown rendering of the three target tables."""
     L = ["# Global sweep targets — companies with offices or announced India interest", "",
          f"*Generated {out['built']} by `scripts/build_global_sweep_targets.py` from the 2026-08 "
          "filing-sweep expansion. Snapshot, not final — DART full sweep still running, EDINET/ESEF "
@@ -197,11 +219,30 @@ def main():
           "| Company | Ticker | Signal |", "|---|---|---|"]
     for r in china_watchlist[:15]:
         L.append(f"| {r['company']} | {r['ticker'] or '—'} | {r['signal'][:100]} |")
+    return L
+
+
+def main():
+    known = known_names()
+    tier1, tier2 = _collect_tiers(known)
+    china_watchlist = _china_watchlist(known)
+
+    tier1_new = [r for r in tier1 if r["new_to_twin"]]
+    tier2_new = [r for r in tier2 if r["new_to_twin"]]
+    china_new = [r for r in china_watchlist if r["new_to_twin"]]
+
+    out = _build_layer(tier1, tier2, china_watchlist, tier1_new, tier2_new, china_new)
+    with open(OUT_JSON, "w") as f:
+        json.dump(out, f, indent=1, ensure_ascii=False)
+
+    L = _render_doc(out, tier1, tier2, china_watchlist, tier1_new, tier2_new, china_new)
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")
 
     print(f"Tier 1: {len(tier1)} ({len(tier1_new)} new) | Tier 2: {len(tier2)} ({len(tier2_new)} new) | "
           f"China watch-list: {len(china_watchlist)} ({len(china_new)} new) -> {OUT_JSON} + {OUT_DOC}")
+
+
 
 
 if __name__ == "__main__":

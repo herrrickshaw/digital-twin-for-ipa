@@ -175,24 +175,30 @@ def norm(s):
     return s.lower().replace("-", " ").replace("(", "").replace(")", "").strip()
 
 
-def main():
-    pli_norm = {norm(p) for p in PLI_APPROVED_41}
-    commercial_norm = {norm(p) for p in COMMERCIAL_18}
+COMMERCIAL_NORM = {norm(p) for p in COMMERCIAL_18}
+PLI_NORM = {norm(p) for p in PLI_APPROVED_41}
+
+
+def _api_status():
+    """Per critical API: PLI-approved? commercial production? plus the three derived lists."""
 
     api_status = {}
     for api in CRITICAL_53:
         n = norm(api)
         api_status[api] = {
-            "pli_project_approved": n in pli_norm,
-            "commercial_production": n in commercial_norm,
+            "pli_project_approved": n in PLI_NORM,
+            "commercial_production": n in COMMERCIAL_NORM,
         }
 
     gap_apis = [a for a, s in api_status.items() if not s["pli_project_approved"]]
     pli_not_commercial = [a for a, s in api_status.items()
                           if s["pli_project_approved"] and not s["commercial_production"]]
     commercial = [a for a, s in api_status.items() if s["commercial_production"]]
+    return api_status, gap_apis, pli_not_commercial, commercial
 
-    today = dt.date.today().isoformat()
+
+def _build_layer(today, api_status, gap_apis, pli_not_commercial, commercial):
+    """Assemble the layer-46 JSON document."""
     out = {
         "layer": 46, "name": "pli_bulk_drugs_commercial", "built": today,
         "what": ("PLI Scheme for Bulk Drugs: company-level approved-project roster with "
@@ -222,7 +228,7 @@ def main():
         "commercial_critical_apis": commercial,
         "company_projects": [
             {"sno": sno, "company": company, "product": product, "committed_capacity_mt": cap,
-             "commercial_production": norm(product) in commercial_norm}
+             "commercial_production": norm(product) in COMMERCIAL_NORM}
             for sno, company, product, cap in BDMAI_PROJECTS
         ],
         "total_committed_capacity_mt": sum(p[3] for p in BDMAI_PROJECTS),
@@ -238,10 +244,11 @@ def main():
                                    "slightly older company-level list and 48 as the current "
                                    "official count."),
     }
-    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-    with open(OUT_JSON, "w") as f:
-        json.dump(out, f, indent=1, ensure_ascii=False)
+    return out
 
+
+def _doc_intro(today):
+    """Markdown title and the three-source problem."""
     L = ["# PLI Bulk Drugs — commercial-production sourcing — layer 46", "",
          f"*Generated {today} by `scripts/build_layer46_pli_bulk_drugs.py`. Static, hand-verified "
          "dataset built from 4 government primary sources (see below) — not a live scrape.*", "",
@@ -251,12 +258,19 @@ def main():
          "annexure but no capacity; the 2026 PIB release has the current state-wise numbers and — "
          "critically — is the ONLY source that names all 18 APIs now in commercial production "
          "(every other source just gives the count). This layer merges all three.", ""]
+    return L
 
+
+def _doc_sources(L):
+    """Source list."""
     L += ["## Sources", ""]
     for s in SOURCES:
         L.append(f"- **{s['doc']}** ({s['date']}) — {s['provides']}. [{s['url']}]({s['url']})")
     L.append("")
 
+
+def _doc_gap(L, gap_apis):
+    """The Paracetamol/Metformin gap finding."""
     L += ["## Key finding: the Paracetamol/Metformin gap", "",
          f"**{len(gap_apis)} of the 53 originally-identified critical APIs have NO PLI project "
          "approved at all**, including **Paracetamol** and **Metformin** — two of the highest-"
@@ -268,21 +282,30 @@ def main():
         L.append(f"| {a} |")
     L.append("")
 
+
+def _doc_commercial(L, commercial):
+    """APIs in commercial production."""
     L += ["## The 18 APIs in commercial production (named for the first time here)", "",
          "| API |", "|---|"]
     for a in commercial:
         L.append(f"| {a} |")
     L.append("")
 
+
+def _doc_projects(L, out):
+    """Company-level approved projects table."""
     L += [f"## Company-level approved projects (n={len(BDMAI_PROJECTS)}, "
          f"total committed capacity {out['total_committed_capacity_mt']:,} MT)", "",
          "| S.No. | Company | Product | Committed Capacity (MT) | Commercial? |",
          "|---|---|---|---|---|"]
     for sno, company, product, cap in BDMAI_PROJECTS:
-        commercial_flag = "✅" if norm(product) in commercial_norm else ""
+        commercial_flag = "✅" if norm(product) in COMMERCIAL_NORM else ""
         L.append(f"| {sno} | {company} | {product} | {cap:,} | {commercial_flag} |")
     L.append("")
 
+
+def _doc_state_wise(L, out):
+    """State-wise table and the count-discrepancy note."""
     L += ["## State-wise (as of March 2026)", "",
          "| State | Projects | Committed Inv. (₹cr) | Actual Inv. (₹cr) | Committed Cap. (MT) | Installed Cap. (MT) |",
          "|---|---|---|---|---|---|"]
@@ -291,6 +314,28 @@ def main():
     L.append("")
     L.append(out["note_count_discrepancy"])
     L.append("")
+
+
+def main():
+    api_status, gap_apis, pli_not_commercial, commercial = _api_status()
+
+    today = dt.date.today().isoformat()
+    out = _build_layer(today, api_status, gap_apis, pli_not_commercial, commercial)
+    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
+    with open(OUT_JSON, "w") as f:
+        json.dump(out, f, indent=1, ensure_ascii=False)
+
+    L = _doc_intro(today)
+
+    _doc_sources(L)
+
+    _doc_gap(L, gap_apis)
+
+    _doc_commercial(L, commercial)
+
+    _doc_projects(L, out)
+
+    _doc_state_wise(L, out)
 
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")

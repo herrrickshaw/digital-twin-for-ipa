@@ -1,0 +1,30 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install tooling
+        run: pip install pytest ruff
+      - name: Syntax check every script
+        run: python -m compileall -q scripts
+      - name: Lint refactored modules (Phase 2 widens this list)
+        run: >-
+          ruff check tests scripts/twin_common.py scripts/build_company_db.py
+          scripts/build_national_dashboard.py scripts/refresh_twin.py
+          scripts/enrich_company_db_ii_tickers.py scripts/build_layer41_association_leads_crossref.py
+          scripts/build_layer42_sector_investment_news_sweep.py
+          scripts/build_layer44_state_mou_5yr_sweep.py scripts/build_layer45_media_rss_sweep.py
+      - name: Offline tests (no network, no credentials)
+        run: pytest -q

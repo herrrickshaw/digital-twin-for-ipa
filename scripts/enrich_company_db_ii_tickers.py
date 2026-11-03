@@ -32,6 +32,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date
 
+from twin_common import norm_company
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data", "companies.db")
 LAYER = os.path.join(ROOT, "layers", "32_company_db.json")
@@ -63,19 +65,7 @@ STOP_TOKENS = {"india", "indian", "national", "the", "new", "bharat", "shree",
 REVIEWED_WEAK_OK = {"airbus", "pegatron", "astrazeneca", "panasonic", "vertiv",
                     "sandisk"}
 
-SUFFIXES = re.compile(
-    r"\b(private|pvt|limited|ltd|llp|llc|inc|incorporated|corp|corporation|plc|"
-    r"co|company|gmbh|ag|sa|nv|bv|ab|as|asa|oyj|spa|kk|pte|sdn bhd|holdings?)\b\.?",
-    re.I,
-)
-
-
-def norm(s):
-    s = (s or "").lower()
-    s = re.sub(r"^m\s*/\s*s\.?\s+", "", s)
-    s = re.sub(r"[^a-z0-9 ]", " ", s)
-    s = SUFFIXES.sub(" ", s)
-    return re.sub(r"\s+", " ", s).strip()
+norm = norm_company  # shared with build_company_db.py (identical normaliser)
 
 
 def get(url, timeout=30):
@@ -130,9 +120,8 @@ def match_fragments(name_norm):
     return frags
 
 
-def main():
-    con = sqlite3.connect(DB)
-    cur = con.cursor()
+def _reset_tables(cur):
+    """Drop and recreate the ii_announcements / ii_company_matches tables."""
     cur.executescript(
         """
         DROP TABLE IF EXISTS ii_announcements;
@@ -153,38 +142,29 @@ def main():
         """
     )
 
-    # Invest India (www.investindia.gov.in) began IP-blocking with a hard 403
-    # "Access Restricted" page ~2026-07-27. Degrade gracefully (access failure
-    # as data, twin convention) rather than crash the weekly cron — preserve
-    # the last good ii_ticker_validation block and exit clean.
-    try:
-        urls = sector_urls()
-    except Exception as e:
-        urls = []
-        print(f"sector_urls FAILED: {type(e).__name__}: {str(e)[:80]}")
-    if not urls:
-        layer = json.load(open(LAYER))
-        prev = layer.get("ii_ticker_validation", {})
-        prev["last_refresh_attempt"] = date.today().isoformat()
-        prev["refresh_status"] = ("SKIPPED — www.investindia.gov.in returned 403 "
-                                  "(IP block since ~2026-07-27). No fresh ticker "
-                                  "matches this run; build_company_db had already "
-                                  "reset the layer so this block carries status "
-                                  "only. Will repopulate when access restores "
-                                  "(static.investindia.gov.in still 200s; retry "
-                                  "from an unblocked network or the browser pane)")
-        layer["ii_ticker_validation"] = prev
-        with open(LAYER, "w") as f:
-            json.dump(layer, f, indent=1, ensure_ascii=False)
-        con.commit()
-        con.close()
-        print("Invest India blocked (403) — kept prior ticker matches, exiting clean")
-        return
-    print(f"{len(urls)} sector pages")
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        pages = dict(zip(urls, ex.map(scrape_ticker, urls)))
 
-    today = date.today().isoformat()
+def _record_blocked(con):
+    """Invest India is blocking us: keep the prior ticker block, stamp the attempt, close the DB."""
+    layer = json.load(open(LAYER))
+    prev = layer.get("ii_ticker_validation", {})
+    prev["last_refresh_attempt"] = date.today().isoformat()
+    prev["refresh_status"] = ("SKIPPED — www.investindia.gov.in returned 403 "
+                              "(IP block since ~2026-07-27). No fresh ticker "
+                              "matches this run; build_company_db had already "
+                              "reset the layer so this block carries status "
+                              "only. Will repopulate when access restores "
+                              "(static.investindia.gov.in still 200s; retry "
+                              "from an unblocked network or the browser pane)")
+    layer["ii_ticker_validation"] = prev
+    with open(LAYER, "w") as f:
+        json.dump(layer, f, indent=1, ensure_ascii=False)
+    con.commit()
+    con.close()
+    print("Invest India blocked (403) — kept prior ticker matches, exiting clean")
+
+
+def _store_announcements(cur, pages, today):
+    """Insert scraped ticker items; returns the per-page fetch errors."""
     fetch_errors = []
     for url, items in sorted(pages.items()):
         sector = url.rstrip("/").split("/")[-1]
@@ -195,7 +175,11 @@ def main():
             cur.execute(
                 "INSERT INTO ii_announcements(sector_url,sector,text,source_url,fetched)"
                 " VALUES (?,?,?,?,?)", (url, sector, text, src, today))
+    return fetch_errors
 
+
+def _match_companies(cur):
+    """Conservative tiered matching of company names against announcement text; returns rows added."""
     # ---- conservative matching ----------------------------------------------
     cur.execute("""SELECT c.company_id, c.name,
                           (SELECT visibility_verdict FROM clearance_activity a
@@ -217,8 +201,12 @@ def main():
                     n_matches += 1
                 break   # strongest fragment wins; don't re-match weaker ones
 
-    con.commit()
+    cur.connection.commit()
+    return n_matches
 
+
+def _exception_validation(cur):
+    """QUIET/PARTIALLY_VISIBLE verdicts challenged by strong matches, plus weak matches for review."""
     # ---- exception validation -----------------------------------------------
     rows = cur.execute("""
         SELECT DISTINCT c.name, m.company_visibility, m.matched_fragment,
@@ -246,12 +234,11 @@ def main():
     """).fetchall()
     weak_for_review = [{"company": r[0], "fragment": r[1], "announcement": r[2]}
                        for r in weak_rows]
+    return challenged, weak_for_review
 
-    n_ann = cur.execute("SELECT COUNT(*) FROM ii_announcements").fetchone()[0]
-    n_matched_companies = cur.execute(
-        "SELECT COUNT(DISTINCT company_id) FROM ii_company_matches").fetchone()[0]
 
-    # ---- append validation block to layer 32 JSON ---------------------------
+def _validation_layer(today, urls, fetch_errors, n_ann, n_matched_companies, n_matches, challenged, weak_for_review):
+    """Layer-32 JSON with the new ii_ticker_validation block."""
     layer = json.load(open(LAYER))
     layer["ii_ticker_validation"] = {
         "ran": today,
@@ -285,6 +272,43 @@ def main():
                    "match as 'announced at some point recently', not a dated "
                    "event; source_url usually carries the date"),
     }
+    return layer
+
+
+def main():
+    con = sqlite3.connect(DB)
+    cur = con.cursor()
+    _reset_tables(cur)
+
+    # Invest India (www.investindia.gov.in) began IP-blocking with a hard 403
+    # "Access Restricted" page ~2026-07-27. Degrade gracefully (access failure
+    # as data, twin convention) rather than crash the weekly cron — preserve
+    # the last good ii_ticker_validation block and exit clean.
+    try:
+        urls = sector_urls()
+    except Exception as e:
+        urls = []
+        print(f"sector_urls FAILED: {type(e).__name__}: {str(e)[:80]}")
+    if not urls:
+        _record_blocked(con)
+        return
+    print(f"{len(urls)} sector pages")
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        pages = dict(zip(urls, ex.map(scrape_ticker, urls)))
+
+    today = date.today().isoformat()
+    fetch_errors = _store_announcements(cur, pages, today)
+
+    n_matches = _match_companies(cur)
+
+    challenged, weak_for_review = _exception_validation(cur)
+
+    n_ann = cur.execute("SELECT COUNT(*) FROM ii_announcements").fetchone()[0]
+    n_matched_companies = cur.execute(
+        "SELECT COUNT(DISTINCT company_id) FROM ii_company_matches").fetchone()[0]
+
+    # ---- append validation block to layer 32 JSON ---------------------------
+    layer = _validation_layer(today, urls, fetch_errors, n_ann, n_matched_companies, n_matches, challenged, weak_for_review)
     with open(LAYER, "w") as f:
         json.dump(layer, f, indent=1, ensure_ascii=False)
 

@@ -33,7 +33,8 @@ def norm(name):
     return re.sub(r"[^a-z0-9]", "", n)[:24]
 
 
-def main():
+def _tier1_leads():
+    """Tier 1: shortlist joined to the news sweep and CARE ratings; returns (leads, unmatched company names)."""
     short = json.load(open(os.path.join(SCRATCH, "clearance_lead_shortlist.json")))
     news = {}
     for f in ("news_batch1.json", "news_batch2.json", "news_batch3.json"):
@@ -98,7 +99,11 @@ def main():
 
     for r in leads:
         r["tier"] = 1
+    return leads, unmatched
 
+
+def _add_tier2_leads(leads, unmatched):
+    """Tier 2: next slice of the pool, news and rating verified in one agent pass; appends to leads."""
     # ---- tier 2: next slice of the pool (2-3 filings, July-2026 recency,
     # sector-diversity capped). Agents did news + rating in ONE pass.
     t2p = os.path.join(SCRATCH, "tier2_shortlist.json")
@@ -137,6 +142,9 @@ def main():
                 unmatched.append(s["company"])
             leads.append(rec)
 
+
+def _add_tier3_leads(leads, unmatched):
+    """Tier 3: policy-aligned slice of the remaining pool; appends to leads."""
     # ---- tier 3: POLICY-ALIGNED slice of the remaining ~1,384 pool. The whole
     # remainder was triaged locally against live policy programs (see
     # layers/24b_pool_policy_triage.json); agents verified the top-40 slice.
@@ -179,6 +187,9 @@ def main():
                 unmatched.append(s["company"])
             leads.append(rec)
 
+
+def _apply_care_tier3(leads):
+    """CARE-specific pass on tier-3 policy targets; records whether CARE rates each name."""
     # ---- CARE-specific pass on the tier-3 policy targets that lacked confirmed
     # CARE coverage. "CARE does not rate" is recorded -- it tells us which
     # verification channel is authoritative per name.
@@ -198,6 +209,127 @@ def main():
                     if c.get(f):
                         cc[f] = c[f]
                 r.setdefault("credit_rating", {})["care_check"] = cc
+
+
+RECOMMENDATIONS = {
+    "A_immediate_outreach_quiet_verified": {
+        "why": ("QUIET = paid-up clearance filings with zero press. Nobody else's lead list has "
+                "these names; first-mover advantage for state investment-promotion agencies is "
+                "total. Rank within the bucket by capital-in-evidence."),
+        "ranked": [
+            "Swarup Steel Industries (UP) -- Rs 35 cr paid-up, near-zero revenue: an equity-funded "
+            "greenfield metallurgy build; UP should be at their door before ground-breaking",
+            "Minakshi Agro Industries LLP (Latur, MH) -- 3 filings, multi-unit ethanol in the sugar "
+            "belt, Rs 150-250 cr class, zero press",
+            "Rexxon Speciality Chemical LLP (Rajkot, GJ) -- Jan-2025 LLP already 4 filings; the "
+            "filings are its ONLY public record",
+            "Amur Spirits + Rajdheer Wine (Deola/Bhilwad, Nashik) -- same-village promoter cluster "
+            "moving from wine into distillation; treat as ONE lead",
+            "SRK Organics (TG-registered, filing in Karnataka) -- pre-public greenfield; both states "
+            "have a claim, Karnataka holds the site",
+            "Hemanjali Polymers, Krishmah Lifesciences (Rs 19 cr MPCB-disclosed), Valeshvar Bio Tech, "
+            "Sandhya Organic (expanding with NO live rating), Bagul Exim, Siddharth Speciality, "
+            "Vantage Chemical, Paras Croplife, Galaxy Dyestuff -- the small-cap chemicals tail; "
+            "cluster outreach via GIDC/MIDC estates beats company-by-company",
+        ]},
+    "B_state_mismatch_unannounced_legs": {
+        "why": ("The filings reveal a next plant in a state the company has NOT announced -- the "
+                "state that moves first shapes siting, incentives and timing."),
+        "ranked": [
+            "JK Lakshmi Cement -> WEST BENGAL (11 filings; CARE rationale's Rs 2,500 cr program has "
+            "four unnamed grinding units 'awaiting clearances' -- WB is the likely home)",
+            "Ambuja Concrete North (Adani) -> MAHARASHTRA (13 filings; all press is Bihar)",
+            "Bharat Rasayan -> GUJARAT expansion NOT in its rating case; 0.08x gearing funds it "
+            "quietly",
+            "Matrix Pharmacorp -> TELANGANA (news is all Vizag/AP)",
+            "Deepak Nitrite -> TELANGANA (Jeedimetla; outside the headline Rs 11,000 cr program)",
+        ]},
+    "C_foreign_linked_fdi_relevant": {
+        "why": "Direct FDI-promotion targets with verified land/clearance activity.",
+        "ranked": [
+            "Kansai Nerolac (Kansai Paint, JAPAN) -- Sayakha/Bawal expansions, self-funded from "
+            "Rs 2,000+ cr cash; anchor tenant for Gujarat's Japan corridor",
+            "TruAlt Bioenergy x Sumitomo (JAPAN) -- 16 CBG plants planned from 2026; the clearance "
+            "trail will show siting before announcements",
+            "ArcelorMittal Nippon Steel (LUX/JAPAN) -- Hazira Rs 60,000 cr underway",
+            "Reliance BP Mobility (BP, UK) -- 58 land filings; HMEL (Mittal) Bathinda Rs 2,600 cr",
+            "Viyash (Carlyle, US) + Anjan Drug (PE-held) -- sponsor-funded pharma capacity",
+            "CAUTION: Nayara (Rosneft) is on CARE Rating Watch Negative post-sanctions -- engage "
+            "only with sanctions-compliance review",
+        ]},
+    "D_early_signals_read_throughs": [
+        "Alok Ferro Alloys filings = Godawari Power & Ispat (GPIL) capex before announcement -- "
+        "listed-market read-through",
+        "Shakambhari Ispat: Mar-2025 rationale says capex DONE, Jul-2026 filings say NEW phase -- "
+        "ahead of agency coverage",
+        "Bhor Chemicals (Nashik, est. 1943): pivot into carbon-fiber prepregs/laminates for "
+        "aerospace/UAV -- defence-supply-chain relevance beyond its size",
+        "IMFA: ferro-alloys major building a Rs 160 cr grain-ethanol plant on surplus land -- "
+        "heavy industry monetising land banks via ethanol is a pattern to watch",
+        "Shree Cement Meghalaya: board approval and EC filings in the SAME month -- clearance "
+        "registers track board decisions in near-real-time",
+    ],
+    "F_policy_aligned_targets_tier3": {
+        "why": ("Tier 3 = the policy-weighted top-40 of the remaining pool (full triage in layer "
+                "24b). Targets grouped by the policy instrument they validate."),
+        "api_ksm_pli_china_substitution": [
+            "Orchid Pharma -- the ONLY confirmed KSM/API-PLI beneficiary found (Rs 600 cr 7-ACA, "
+            "J&K): but land delays + Apr-2026 downgrade = the scheme's flagship is its biggest "
+            "execution risk; needs hand-holding, not celebration",
+            "IOL Chemicals (Rs 1,220 cr Barnala) + Farmson (PAP at Jhagadia) -- paracetamol chain "
+            "localisation happening WITHOUT PLI participation surfacing: the market is doing the "
+            "scheme's job",
+            "Anthem Biosciences (~Rs 1,700 cr, explicitly pitched as China alternative), Aarti "
+            "Pharmalabs (Rs 450 cr CDMO), Piramal (Rs 890 cr/yr), Virupaksha (Rs 740 cr IPO), "
+            "Aarti Drugs -- the China+1 CDMO/API buildout is broad and self-funded",
+            "Sharika Life Science (QUIET; semi-synthetic penicillin -- the most China-dependent "
+            "fermentation chain) -- exactly the profile KSM-PLI was built for, invisible to it"],
+        "import_substitution_chemicals": [
+            "Lanxess (GERMANY, Rs 750 cr cumulative Jhagadia, more signalled) and SRF (Odisha "
+            "Rs 2,300 cr of a Rs 10,000 cr pledge -- the pesticide filings are the agrochem leg's "
+            "leading indicator)",
+            "Indo Amines -- expansion explicitly framed by the company as import-reduction",
+            "Jayshree Aromatics -- ~19x capacity jump visible ONLY in EC documents; largest "
+            "disclosure gap found",
+            "WBCIL -- Kolkata API maker expanding in Dahej (the WB-named-Gujarat-filing mystery)"],
+        "ethanol_blending_programme": [
+            "Keyaan (Rs 1,200 cr Gorakhpur, 300->500 KLPD path), Kamakhya (Assam Rs 371 cr, NE's "
+            "rare EBP asset), RSLD (Chhattisgarh Rs 200 cr, paddy-surplus play), Bannari Amman "
+            "(AA-, self-funded E20 expansion), Bapuna (IG group building through unrated SPV)",
+            "CAUTION on activity tags: Mowa + Mahunza are Maharashtra MAHUA heritage-liquor "
+            "ventures, NOT fuel ethanol -- 'distillery' filings need feedstock disambiguation"],
+        "textiles_mmf_pli": [
+            "HS Hyosung (KOREA -- world #1 spandex + tyre cord; ~Rs 3,000 cr cumulative, two "
+            "Maharashtra sites) and Grasim (Gujarat filings = the quiet Vilayat leg, distinct from "
+            "the announced Rs 3,094 cr Karnataka lyocell)"],
+        "risk_flags": [
+            "Sigachi: two-notch post-accident downgrade; AP filing is diversification, not recovery",
+            "Matangi: went ISSUER-NOT-COOPERATING the same quarter it filed pesticide ECs",
+            "Atharv Intertrade: B+ credit attempting a 7.5x distillery scale-up",
+            "Shiva Pharmachem: accident + Negative outlook + OFS-only IPO (no fresh capex money)"],
+        "policy_reading": ("Two systemic findings: (1) the paracetamol/API localisation wave is "
+                           "largely happening OUTSIDE the PLI frame -- self-funded balance sheets, "
+                           "not scheme money, are driving China-substitution; (2) the one confirmed "
+                           "PLI flagship (Orchid 7-ACA) carries the worst execution profile in the "
+                           "cohort -- scheme administrators should treat land assembly, not "
+                           "incentive size, as the binding constraint.")},
+    "E_process": [
+        "Wire refresh_ec.py + this pipeline into the quarterly reportage cycle -- July-2026 "
+        "filings were visible here months before any press",
+        "Join the 1,445-company pool against DPIIT IEM proponents to measure who files both",
+        "Monitor certificateUrl on tracked proposals: grant events = trigger for outreach",
+        "~1,387 pool companies remain untriaged below tier 2",
+    ],
+}
+
+def main():
+    leads, unmatched = _tier1_leads()
+
+    _add_tier2_leads(leads, unmatched)
+
+    _add_tier3_leads(leads, unmatched)
+
+    _apply_care_tier3(leads)
 
     counts = {}
     for r in leads:
@@ -222,116 +354,7 @@ def main():
                               "the same below-radar category the PIB-visibility work found most "
                               "valuable for investment-promotion targeting."),
         "verdict_counts": counts,
-        "recommendations": {
-            "A_immediate_outreach_quiet_verified": {
-                "why": ("QUIET = paid-up clearance filings with zero press. Nobody else's lead list has "
-                        "these names; first-mover advantage for state investment-promotion agencies is "
-                        "total. Rank within the bucket by capital-in-evidence."),
-                "ranked": [
-                    "Swarup Steel Industries (UP) -- Rs 35 cr paid-up, near-zero revenue: an equity-funded "
-                    "greenfield metallurgy build; UP should be at their door before ground-breaking",
-                    "Minakshi Agro Industries LLP (Latur, MH) -- 3 filings, multi-unit ethanol in the sugar "
-                    "belt, Rs 150-250 cr class, zero press",
-                    "Rexxon Speciality Chemical LLP (Rajkot, GJ) -- Jan-2025 LLP already 4 filings; the "
-                    "filings are its ONLY public record",
-                    "Amur Spirits + Rajdheer Wine (Deola/Bhilwad, Nashik) -- same-village promoter cluster "
-                    "moving from wine into distillation; treat as ONE lead",
-                    "SRK Organics (TG-registered, filing in Karnataka) -- pre-public greenfield; both states "
-                    "have a claim, Karnataka holds the site",
-                    "Hemanjali Polymers, Krishmah Lifesciences (Rs 19 cr MPCB-disclosed), Valeshvar Bio Tech, "
-                    "Sandhya Organic (expanding with NO live rating), Bagul Exim, Siddharth Speciality, "
-                    "Vantage Chemical, Paras Croplife, Galaxy Dyestuff -- the small-cap chemicals tail; "
-                    "cluster outreach via GIDC/MIDC estates beats company-by-company",
-                ]},
-            "B_state_mismatch_unannounced_legs": {
-                "why": ("The filings reveal a next plant in a state the company has NOT announced -- the "
-                        "state that moves first shapes siting, incentives and timing."),
-                "ranked": [
-                    "JK Lakshmi Cement -> WEST BENGAL (11 filings; CARE rationale's Rs 2,500 cr program has "
-                    "four unnamed grinding units 'awaiting clearances' -- WB is the likely home)",
-                    "Ambuja Concrete North (Adani) -> MAHARASHTRA (13 filings; all press is Bihar)",
-                    "Bharat Rasayan -> GUJARAT expansion NOT in its rating case; 0.08x gearing funds it "
-                    "quietly",
-                    "Matrix Pharmacorp -> TELANGANA (news is all Vizag/AP)",
-                    "Deepak Nitrite -> TELANGANA (Jeedimetla; outside the headline Rs 11,000 cr program)",
-                ]},
-            "C_foreign_linked_fdi_relevant": {
-                "why": "Direct FDI-promotion targets with verified land/clearance activity.",
-                "ranked": [
-                    "Kansai Nerolac (Kansai Paint, JAPAN) -- Sayakha/Bawal expansions, self-funded from "
-                    "Rs 2,000+ cr cash; anchor tenant for Gujarat's Japan corridor",
-                    "TruAlt Bioenergy x Sumitomo (JAPAN) -- 16 CBG plants planned from 2026; the clearance "
-                    "trail will show siting before announcements",
-                    "ArcelorMittal Nippon Steel (LUX/JAPAN) -- Hazira Rs 60,000 cr underway",
-                    "Reliance BP Mobility (BP, UK) -- 58 land filings; HMEL (Mittal) Bathinda Rs 2,600 cr",
-                    "Viyash (Carlyle, US) + Anjan Drug (PE-held) -- sponsor-funded pharma capacity",
-                    "CAUTION: Nayara (Rosneft) is on CARE Rating Watch Negative post-sanctions -- engage "
-                    "only with sanctions-compliance review",
-                ]},
-            "D_early_signals_read_throughs": [
-                "Alok Ferro Alloys filings = Godawari Power & Ispat (GPIL) capex before announcement -- "
-                "listed-market read-through",
-                "Shakambhari Ispat: Mar-2025 rationale says capex DONE, Jul-2026 filings say NEW phase -- "
-                "ahead of agency coverage",
-                "Bhor Chemicals (Nashik, est. 1943): pivot into carbon-fiber prepregs/laminates for "
-                "aerospace/UAV -- defence-supply-chain relevance beyond its size",
-                "IMFA: ferro-alloys major building a Rs 160 cr grain-ethanol plant on surplus land -- "
-                "heavy industry monetising land banks via ethanol is a pattern to watch",
-                "Shree Cement Meghalaya: board approval and EC filings in the SAME month -- clearance "
-                "registers track board decisions in near-real-time",
-            ],
-            "F_policy_aligned_targets_tier3": {
-                "why": ("Tier 3 = the policy-weighted top-40 of the remaining pool (full triage in layer "
-                        "24b). Targets grouped by the policy instrument they validate."),
-                "api_ksm_pli_china_substitution": [
-                    "Orchid Pharma -- the ONLY confirmed KSM/API-PLI beneficiary found (Rs 600 cr 7-ACA, "
-                    "J&K): but land delays + Apr-2026 downgrade = the scheme's flagship is its biggest "
-                    "execution risk; needs hand-holding, not celebration",
-                    "IOL Chemicals (Rs 1,220 cr Barnala) + Farmson (PAP at Jhagadia) -- paracetamol chain "
-                    "localisation happening WITHOUT PLI participation surfacing: the market is doing the "
-                    "scheme's job",
-                    "Anthem Biosciences (~Rs 1,700 cr, explicitly pitched as China alternative), Aarti "
-                    "Pharmalabs (Rs 450 cr CDMO), Piramal (Rs 890 cr/yr), Virupaksha (Rs 740 cr IPO), "
-                    "Aarti Drugs -- the China+1 CDMO/API buildout is broad and self-funded",
-                    "Sharika Life Science (QUIET; semi-synthetic penicillin -- the most China-dependent "
-                    "fermentation chain) -- exactly the profile KSM-PLI was built for, invisible to it"],
-                "import_substitution_chemicals": [
-                    "Lanxess (GERMANY, Rs 750 cr cumulative Jhagadia, more signalled) and SRF (Odisha "
-                    "Rs 2,300 cr of a Rs 10,000 cr pledge -- the pesticide filings are the agrochem leg's "
-                    "leading indicator)",
-                    "Indo Amines -- expansion explicitly framed by the company as import-reduction",
-                    "Jayshree Aromatics -- ~19x capacity jump visible ONLY in EC documents; largest "
-                    "disclosure gap found",
-                    "WBCIL -- Kolkata API maker expanding in Dahej (the WB-named-Gujarat-filing mystery)"],
-                "ethanol_blending_programme": [
-                    "Keyaan (Rs 1,200 cr Gorakhpur, 300->500 KLPD path), Kamakhya (Assam Rs 371 cr, NE's "
-                    "rare EBP asset), RSLD (Chhattisgarh Rs 200 cr, paddy-surplus play), Bannari Amman "
-                    "(AA-, self-funded E20 expansion), Bapuna (IG group building through unrated SPV)",
-                    "CAUTION on activity tags: Mowa + Mahunza are Maharashtra MAHUA heritage-liquor "
-                    "ventures, NOT fuel ethanol -- 'distillery' filings need feedstock disambiguation"],
-                "textiles_mmf_pli": [
-                    "HS Hyosung (KOREA -- world #1 spandex + tyre cord; ~Rs 3,000 cr cumulative, two "
-                    "Maharashtra sites) and Grasim (Gujarat filings = the quiet Vilayat leg, distinct from "
-                    "the announced Rs 3,094 cr Karnataka lyocell)"],
-                "risk_flags": [
-                    "Sigachi: two-notch post-accident downgrade; AP filing is diversification, not recovery",
-                    "Matangi: went ISSUER-NOT-COOPERATING the same quarter it filed pesticide ECs",
-                    "Atharv Intertrade: B+ credit attempting a 7.5x distillery scale-up",
-                    "Shiva Pharmachem: accident + Negative outlook + OFS-only IPO (no fresh capex money)"],
-                "policy_reading": ("Two systemic findings: (1) the paracetamol/API localisation wave is "
-                                   "largely happening OUTSIDE the PLI frame -- self-funded balance sheets, "
-                                   "not scheme money, are driving China-substitution; (2) the one confirmed "
-                                   "PLI flagship (Orchid 7-ACA) carries the worst execution profile in the "
-                                   "cohort -- scheme administrators should treat land assembly, not "
-                                   "incentive size, as the binding constraint.")},
-            "E_process": [
-                "Wire refresh_ec.py + this pipeline into the quarterly reportage cycle -- July-2026 "
-                "filings were visible here months before any press",
-                "Join the 1,445-company pool against DPIIT IEM proponents to measure who files both",
-                "Monitor certificateUrl on tracked proposals: grant events = trigger for outreach",
-                "~1,387 pool companies remain untriaged below tier 2",
-            ],
-        },
+        "recommendations": RECOMMENDATIONS,
         "leads": leads,
         "unmatched_in_news_sweep": unmatched,
         "candidate_pool": {"ec_corporate_filers_2025_26": 1445,

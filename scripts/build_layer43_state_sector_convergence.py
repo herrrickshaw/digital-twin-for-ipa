@@ -179,16 +179,8 @@ def load_iem_reference():
     return out
 
 
-def main():
-    revealed = load_revealed()
-    policy = load_policy_eligible()
-    iem = load_iem_reference()
-
-    print(f"revealed (layer 42) state mentions: {len(revealed)}")
-    print(f"policy-eligible (layer 16) state landings: {len(policy)}")
-    print(f"IEM state-totals reference: {'loaded' if iem['state_totals'] else 'NOT FOUND'}")
-    print(f"IEM industry-totals reference: {'loaded' if iem['industry_totals'] else 'NOT FOUND'}")
-
+def _state_convergence(revealed, policy):
+    """Distinct sectors touching each state under both signals; returns (all states sorted, multi-sector hubs)."""
     # -- state convergence: distinct sectors touching each state ------------
     state_sectors_revealed = defaultdict(set)
     state_events_revealed = defaultdict(list)
@@ -216,7 +208,11 @@ def main():
         })
     convergence.sort(key=lambda x: (x["revealed_sector_count"], x["policy_sector_count"]), reverse=True)
     hubs = [c for c in convergence if c["revealed_sector_count"] >= 3 or c["policy_sector_count"] >= 5]
+    return convergence, hubs
 
+
+def _sector_rankings(revealed, policy):
+    """Per-sector state ranking under both signals."""
     # -- per-sector state ranking --------------------------------------------
     sectors = sorted({r["sector"] for r in revealed} | {r["sector"] for r in policy})
     sector_rankings = {}
@@ -237,7 +233,11 @@ def main():
                 [{"state": s, "company_count": len(c)} for s, c in pol_states.items()],
                 key=lambda x: -x["company_count"]),
         }
+    return sectors, sector_rankings
 
+
+def _build_layer(iem, convergence, hubs, sector_rankings, revealed, policy):
+    """Assemble the layer-43 JSON document."""
     out = {
         "layer": 43, "name": "state_sector_convergence",
         "built": dt.date.today().isoformat(),
@@ -261,10 +261,11 @@ def main():
         "revealed_event_count": len(revealed),
         "policy_landing_count": len(policy),
     }
-    with open(OUT_JSON, "w") as f:
-        json.dump(out, f, indent=1, ensure_ascii=False)
+    return out
 
-    # -- doc ------------------------------------------------------------------
+
+def _doc_intro(out, revealed, policy):
+    """Markdown title, methodology and caveats."""
     L = ["# State x sector convergence — layer 43", "",
          f"*Generated {out['built']} by `scripts/build_layer43_state_sector_convergence.py`. "
          f"{len(revealed)} revealed investment-event state mentions (layer 42), "
@@ -288,7 +289,11 @@ def main():
          "below as independent reference — but DPIIT publishes only separate state-total and "
          "industry-total marginals, never a joint state×sector cross-tabulation, so it cannot itself "
          "answer \"which states are converging on which sectors\"; it corroborates scale/rank only.", ""]
+    return L
 
+
+def _doc_iem_tables(L, iem):
+    """Markdown tables of the DPIIT IEM state and industry totals."""
     if iem["state_totals"]:
         rows = iem["state_totals"].get("rows", [])
         L += ["## DPIIT IEM — state totals (reference, national, cumulative)", "",
@@ -311,6 +316,9 @@ def main():
             L.append(f"| {r.get('industry', '—')} | {r.get('number', '—')} | {r.get('investment', '—')} | {r.get('employment', '—')} |")
         L.append("")
 
+
+def _doc_convergence_tables(L, hubs, convergence):
+    """Markdown tables of hub states and the full convergence list."""
     L += ["## Multi-sector hub states", "",
          "States where either signal shows real breadth — ≥3 distinct sectors (revealed) or "
          "≥5 distinct sectors (policy-eligible).", "",
@@ -329,6 +337,9 @@ def main():
                  f"{c['policy_sector_count']} | {c['policy_company_count']} |")
     L.append("")
 
+
+def _doc_sector_rankings(L, sectors, sector_rankings):
+    """Markdown per-sector state rankings."""
     L += ["## Per-sector state rankings", ""]
     for sec in sectors:
         r = sector_rankings[sec]
@@ -342,6 +353,34 @@ def main():
             L += ["", "**Policy-eligible (companies):** " + ", ".join(
                 f"{x['state']} ({x['company_count']})" for x in r["policy_ranking"][:10])]
         L.append("")
+
+
+def main():
+    revealed = load_revealed()
+    policy = load_policy_eligible()
+    iem = load_iem_reference()
+
+    print(f"revealed (layer 42) state mentions: {len(revealed)}")
+    print(f"policy-eligible (layer 16) state landings: {len(policy)}")
+    print(f"IEM state-totals reference: {'loaded' if iem['state_totals'] else 'NOT FOUND'}")
+    print(f"IEM industry-totals reference: {'loaded' if iem['industry_totals'] else 'NOT FOUND'}")
+
+    convergence, hubs = _state_convergence(revealed, policy)
+
+    sectors, sector_rankings = _sector_rankings(revealed, policy)
+
+    out = _build_layer(iem, convergence, hubs, sector_rankings, revealed, policy)
+    with open(OUT_JSON, "w") as f:
+        json.dump(out, f, indent=1, ensure_ascii=False)
+
+    # -- doc ------------------------------------------------------------------
+    L = _doc_intro(out, revealed, policy)
+
+    _doc_iem_tables(L, iem)
+
+    _doc_convergence_tables(L, hubs, convergence)
+
+    _doc_sector_rankings(L, sectors, sector_rankings)
 
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")

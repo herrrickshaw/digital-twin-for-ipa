@@ -170,12 +170,8 @@ PLI_COMPANY_PARK_CHECK = [
 ]
 
 
-def main():
-    today = dt.date.today().isoformat()
-    approved = [c for c in PLI_MED_DEVICES if c[4] == "approved"]
-    dropped = [c for c in PLI_MED_DEVICES if c[4] == "dropped"]
-    status_unclear = [c for c in PLI_MED_DEVICES if c[4] == "status_unclear"]
-
+def _build_layer(today, approved, dropped, status_unclear):
+    """Assemble the layer-49 JSON document."""
     out = {
         "layer": 49, "name": "medical_devices_parks", "built": today,
         "what": ("PLI Medical Devices approved-company roster cross-referenced against actual "
@@ -238,10 +234,11 @@ def main():
                      "not a perfect zero this time."),
         },
     }
-    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-    with open(OUT_JSON, "w") as f:
-        json.dump(out, f, indent=1, ensure_ascii=False)
+    return out
 
+
+def _doc_roster(today, out, approved, dropped, status_unclear):
+    """Markdown title, findings and the approved-roster table."""
     L = ["# PLI Medical Devices roster + parks cross-reference — layer 49", "",
          f"*Generated {today} by `scripts/build_layer49_medical_devices_parks.py`. "
          f"{len(approved)} approved PLI Medical Devices projects resolved with plant location "
@@ -265,7 +262,11 @@ def main():
     L.append("")
     L.append(out["total_approved_official_count_note"])
     L.append("")
+    return L
 
+
+def _doc_parks(L):
+    """Per-park tenant occupancy."""
     L += ["## Medical Device Parks — actual tenant occupancy", ""]
     for p in MEDICAL_DEVICE_PARKS:
         units = p['units_allotted_official'] if p['units_allotted_official'] is not None else "not applicable (state-run, not one of the 4 nationally-tracked parks)"
@@ -275,11 +276,32 @@ def main():
              f"{'; '.join(p['named_tenants_press']) if p['named_tenants_press'] else '(none found)'}", "",
              p["note"], ""]
 
+
+def _doc_park_checks(L):
+    """PLI company vs park location checks."""
     L += ["## PLI company vs park location checks performed", "",
          "| Company | Finding |", "|---|---|"]
     for c in PLI_COMPANY_PARK_CHECK:
         L.append(f"| {c['company']} | {c['finding']} |")
     L.append("")
+
+
+def main():
+    today = dt.date.today().isoformat()
+    approved = [c for c in PLI_MED_DEVICES if c[4] == "approved"]
+    dropped = [c for c in PLI_MED_DEVICES if c[4] == "dropped"]
+    status_unclear = [c for c in PLI_MED_DEVICES if c[4] == "status_unclear"]
+
+    out = _build_layer(today, approved, dropped, status_unclear)
+    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
+    with open(OUT_JSON, "w") as f:
+        json.dump(out, f, indent=1, ensure_ascii=False)
+
+    L = _doc_roster(today, out, approved, dropped, status_unclear)
+
+    _doc_parks(L)
+
+    _doc_park_checks(L)
 
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")

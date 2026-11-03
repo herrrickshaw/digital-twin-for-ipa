@@ -52,10 +52,24 @@
   "<stdout>": "4e1fd030f78c933826040bb8e091ebdee5b81a011d7bb556ec35ef2f2fcdf685",
   "docs/pq_registry.html": "cee311069cc164e65922fc96140ff7f10237d06a98478b1b1c98bd0179f77ae8"
  },
+ "build_reportage": {
+  "<exit>": 0,
+  "<stdout>": "da3d1771b96e68777b8d80df853241ae026596b43ace915c6eb4563456b95b3e",
+  "docs/REPORTAGE.md": "9e5f9c20b718e8d27ffd14c2c23315eb8921698b4a7288efa679e43b8868df30",
+  "docs/reportage.html": "306dfc274f72146a4df8174f9a6502f3a5bad54614fac8bdd112d15ab82f5a01",
+  "docs/reportage_latest.html": "32a9a90386ab05c9ece6db95a3e787db095c013ddebe396f3e8e38488f21e34f",
+  "docs/reportage_ministry.html": "2e73faf91591ad3e990d9c78f369cb2a99213e752ddc6aab274aa1ed8f549976",
+  "docs/reportage_states.html": "71cd35256b37cbce231bf57c1d527ba16f4ee535e2d1d2d777354b62c545db5e"
+ },
  "build_rs_pq_registry": {
   "<exit>": 0,
   "<stdout>": "c4db3e205dc1ed7f5fb195fb81e58877cba0a2368d394f57761966fdd0546283",
   "docs/rs_pq_registry.html": "167a935531c58dd2e6a3d9d174d31aeb4face4a8126964bda94b28918809db96"
+ },
+ "build_scrutiny_matrix": {
+  "<exit>": 0,
+  "<stdout>": "cf1cd01f8b42af411bb916ed0b9c181a73957409ff570bbd9be54568c31df1a2",
+  "docs/SCHEME_SCRUTINY_MATRIX.md": "6419c527fbce875db661ef411814826937b15df12d3075835bf0e486d40424b2"
  },
  "build_visibility_report": {
   "<exit>": 0,

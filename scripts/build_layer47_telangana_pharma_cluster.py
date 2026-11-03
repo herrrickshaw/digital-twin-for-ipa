@@ -113,12 +113,10 @@ HPC_ANCHOR_TENANTS_REPORTED = [
 ]
 
 
-def main():
+def _resolve_locations():
+    """Join layer-46 companies to the hand-verified plant locations; group by state."""
     layer46 = json.load(open(LAYER46))
     known_companies = {p["company"] for p in layer46["company_projects"]}
-
-    loc_by_company = {l[0]: l for l in LOCATIONS}
-    unresolved = known_companies - set(loc_by_company)
 
     rows = []
     for company, state, plant, cluster, confidence, note in LOCATIONS:
@@ -129,14 +127,15 @@ def main():
         })
 
     telangana_rows = [r for r in rows if r["state"] == "Telangana"]
-    hq_telangana_plant_elsewhere = [r for r in rows if r["note"] and "HEADQUARTERED" in (r["note"] or "").upper()
-                                     or (r["note"] and "Telangana" in r["note"] and r["state"] != "Telangana")]
     by_state = {}
     for r in rows:
         if r["state"]:
             by_state.setdefault(r["state"], []).append(r["company"])
+    return known_companies, rows, telangana_rows, by_state
 
-    today = dt.date.today().isoformat()
+
+def _build_layer(today, rows, telangana_rows, by_state):
+    """Assemble the layer-47 JSON document."""
     out = {
         "layer": 47, "name": "telangana_pharma_cluster", "built": today,
         "what": ("Cross-references layer 46's 35 PLI Bulk Drugs companies against actual plant "
@@ -177,10 +176,11 @@ def main():
         ],
         "company_locations": rows,
     }
-    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-    with open(OUT_JSON, "w") as f:
-        json.dump(out, f, indent=1, ensure_ascii=False)
+    return out
 
+
+def _doc_intro(today, out, known_companies, telangana_rows):
+    """Markdown title and the Pharma City headline finding."""
     L = ["# Telangana/Hyderabad pharma cluster cross-reference — layer 47", "",
          f"*Generated {today} by `scripts/build_layer47_telangana_pharma_cluster.py`. "
          f"{out['companies_resolved']} of {len(known_companies)} layer-46 companies resolved to a plant location "
@@ -198,7 +198,11 @@ def main():
          "land into a \"Future City\" (AI/skills/health hub) — the opposition calls this \"a real "
          "estate venture.\" Pharma City's build-out remains politically contested, not a settled "
          "industrial park with tenants moving in. No official machine-readable tenant list exists.", ""]
+    return L
 
+
+def _doc_telangana(L, telangana_rows):
+    """Telangana companies table."""
     L += ["## Telangana companies (established clusters — not Pharma City)", "",
          "| Company | Plant Location | Cluster | Confidence | Note |",
          "|---|---|---|---|---|"]
@@ -207,6 +211,9 @@ def main():
                  f"{r['confidence']} | {r['note'] or ''} |")
     L.append("")
 
+
+def _doc_hq_exceptions(L, rows):
+    """HQ-Telangana but plant elsewhere."""
     L += ["## HQ-Telangana but plant elsewhere (flagged exceptions)", "",
          "| Company | Actual Plant State | Location | Note |", "|---|---|---|---|"]
     for r in rows:
@@ -214,6 +221,9 @@ def main():
             L.append(f"| {r['company']} | {r['state']} | {r['plant_location']} | {r['note']} |")
     L.append("")
 
+
+def _doc_other_states(L, by_state):
+    """Other companies by state, plus the not-found note."""
     L += ["## All other companies by state", "", "| State | Companies |", "|---|---|"]
     for state, companies in sorted(by_state.items(), key=lambda kv: -len(kv[1])):
         if state == "Telangana":
@@ -222,6 +232,24 @@ def main():
     L.append("")
     L.append("**Not found**: Lifetech Sciences (Ritonavir) — no plant address or reliable company profile located.")
     L.append("")
+
+
+def main():
+    known_companies, rows, telangana_rows, by_state = _resolve_locations()
+
+    today = dt.date.today().isoformat()
+    out = _build_layer(today, rows, telangana_rows, by_state)
+    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
+    with open(OUT_JSON, "w") as f:
+        json.dump(out, f, indent=1, ensure_ascii=False)
+
+    L = _doc_intro(today, out, known_companies, telangana_rows)
+
+    _doc_telangana(L, telangana_rows)
+
+    _doc_hq_exceptions(L, rows)
+
+    _doc_other_states(L, by_state)
 
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")

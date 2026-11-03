@@ -99,7 +99,8 @@ def load_json(rel):
     return json.load(open(path)) if os.path.exists(path) else None
 
 
-def main():
+def _coverage_inputs():
+    """Lead counts per country (layer 16) and countries with a catalogued IPA source (layer 31)."""
     leads = load_json("layers/16_leads.json")
     ipa_net = load_json("layers/31_ipa_source_network.json")
 
@@ -115,7 +116,11 @@ def main():
         for i in ipa_net["non_waipa_ipas"]:
             if i.get("url"):
                 ipa_covered_countries.add(i["country"])
+    return lead_country_counts, ipa_covered_countries
 
+
+def _rate_rows(lead_country_counts, ipa_covered_countries):
+    """One row per economy: rate gap vs India, lead coverage, IPA-source flag."""
     rows = []
     for r in RATE_TABLE:
         econ = r["economy"]
@@ -133,7 +138,11 @@ def main():
             "ipa_source_catalogued": econ in ipa_covered_countries,
         }
         rows.append(row)
+    return rows
 
+
+def _sweep_priority(rows):
+    """Deep capital markets that are thinly covered or lack a catalogued IPA source."""
     # Sweep-priority: real economy (deep_capital_market) AND (thin lead
     # coverage OR no catalogued IPA source yet) -- these are the markets where
     # a new source would plausibly surface names the static catalog missed,
@@ -146,7 +155,11 @@ def main():
     priority.sort(key=lambda r: (-r["gap_vs_india_pts"], r["twin_lead_coverage"]))
 
     excluded_shallow = [r["economy"] for r in rows if not r["deep_capital_market"]]
+    return priority, excluded_shallow
 
+
+def _build_layer(rows, priority, excluded_shallow):
+    """Assemble the layer-35 JSON document."""
     layer = {
         "layer": 35,
         "name": "capital_cost_arbitrage_lens",
@@ -182,9 +195,11 @@ def main():
                 r["economy"] for r in priority if not r["ipa_source_catalogued"]],
         },
     }
-    with open(OUT_JSON, "w") as f:
-        json.dump(layer, f, indent=1, ensure_ascii=False)
+    return layer
 
+
+def _render_doc(layer, rows, priority, excluded_shallow):
+    """Markdown rendering of the priority and full rate tables."""
     L = ["# Capital-cost arbitrage lens — which foreign markets to sweep next", "",
          f"*Generated {layer['built']} by `scripts/build_layer35_capital_cost_lens.py` from "
          f"[{SOURCE_POST['title']}]({SOURCE_POST['url']}), {SOURCE_POST['section']}. "
@@ -208,6 +223,21 @@ def main():
                  f"{'yes' if r['ipa_source_catalogued'] else 'no'} |")
     L += ["", f"**Excluded as shallow markets** (low rate but insufficient capital-market depth, "
           f"per the source post): {', '.join(excluded_shallow)}.", ""]
+    return L
+
+
+def main():
+    lead_country_counts, ipa_covered_countries = _coverage_inputs()
+
+    rows = _rate_rows(lead_country_counts, ipa_covered_countries)
+
+    priority, excluded_shallow = _sweep_priority(rows)
+
+    layer = _build_layer(rows, priority, excluded_shallow)
+    with open(OUT_JSON, "w") as f:
+        json.dump(layer, f, indent=1, ensure_ascii=False)
+
+    L = _render_doc(layer, rows, priority, excluded_shallow)
     with open(OUT_DOC, "w") as f:
         f.write("\n".join(L) + "\n")
 

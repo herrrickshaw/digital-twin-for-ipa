@@ -1,8 +1,59 @@
 # Quarterly Reportage — key announcements × scheme × ministry
 
-*Generated 2026-09-14 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
+*Generated 2026-11-09 by `scripts/build_reportage.py` from the PIB register (122k+ releases, refreshed daily). Every row links its PRID. Scheme mapping is keyword-based — treat as an index into the register, not a substitute for reading the release.*
 
-## 2026Q3 — 208 scheme-mapped announcements
+## 2026Q4 — 68 scheme-mapped announcements
+
+| Date | Scheme | Ministry (register) | Announcement | PRID |
+|---|---|---|---|---|
+| 2026-10-01 | **BharatNet; NIDHI (DST startups)** | Ministry of Communications | Agreement Signed between DBN (Digital Bharat Nidhi) - Department of Telecommunications; Government of Maharashtra; MDIL; | [2317906](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2317906) |
+| 2026-10-01 | **National Critical Mineral Mission** | Ministry of Mines | Union Minister Shri G. Kishan Reddy Inaugurates E-Waste Collection Stall under Special Campaign 6 to Promote Critical Mi | [2317670](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2317670) |
+| 2026-10-01 | **SATAT / CBG** | Ministry of Petroleum & Natural Gas | Union Minister of Petroleum and Natural Gas Shri Hardeep Singh Puri launches GOBARdhan Scheme to accelerate development  | [2317937](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2317937) |
+| 2026-10-01 | **RDI Scheme** | Ministry of Science & Technology | Clarification regarding closure of Call for Proposal under Research Development & Innovation (RDI) Scheme by Technology  | [2317509](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2317509) |
+| 2026-10-01 | **FAME / PM E-DRIVE** | PIB Backgrounder | PM E-DRIVE Scheme | [2317890](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2317890) |
+| 2026-10-02 | **RoDTEP** | Ministry of Commerce & Industry | Government Extends Remission of Duties and Taxes on Exported Products ( RoDTEP) Scheme upto 31st December 2026 | [2318052](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2318052) |
+| 2026-10-02 | **Shipbuilding package** | Ministry of Ports, Shipping and Waterways | Sarbananda Sonowal Hails SCI as Anchor of India's Maritime & Shipbuilding Ambitions | [2318497](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2318497) |
+| 2026-10-03 | **Jal Jeevan Mission** | Ministry of Jal Shakti | As part of Special Gram Sabha on Gandhi Jayanti, Jal Arpan Observed in more than 1850 Gram Panchayats Across Rural India | [2318669](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2318669) |
+| 2026-10-03 | **PM-SETU** | PIB Backgrounder | PM-SETU: One Year of Transforming India’s ITIs | [2318631](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2318631) |
+| 2026-10-04 | **iDEX / ADITI** | Prime Minister's Office | Prime Minister congratulates Aditi Ashok, Pranavi Sharath Urs and Diksha Dagar on winning Silver in Women’s Team Golf at | [2318818](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2318818) |
+| 2026-10-05 | **India Semiconductor Mission / Semicon** | Ministry of Science & Technology | TDB-DST signs agreement with BigEndian Semiconductors for ₹130 crore RDI support to develop indigenous AI Vision SoC | [2319038](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2319038) |
+| 2026-10-06 | **IndiaAI Mission (subsidized compute)** | Ministry of Electronics & IT | IndiaAI Mission Organised AIKosh University Engagement Programme at National Institute of Technology, Andhra Pradesh to  | [2319821](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2319821) |
+| 2026-10-07 | **Jal Jeevan Mission** | Ministry of Jal Shakti | DDWS Organised Regional Review Meeting of States/UTs under Jal Jeevan Mission 2.0 at IIM Bangalore | [2320327](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2320327) |
+| 2026-10-08 | **Space reforms / IN-SPACe** | Prime Minister's Office | Prime Minister shares an article on India’s growing capabilities in the space sector | [2320914](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2320914) |
+| 2026-10-08 | **Space reforms / IN-SPACe** | Department of Space | Opening of Space Sector to Private Players Has Helped Reduce Brain Drain, Created New Opportunities for Young Talent: Dr | [2320831](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2320831) |
+| 2026-10-08 | **PM-SETU** | Ministry of Skill Development and Entrepreneurship | Additional Secretary, MSDE, inaugurates Skills4Future EV & Green Skills Lab at NSTI Chennai; reviews progress of PM-SETU | [2322197](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322197) |
+| 2026-10-10 | **PM Dhan-Dhaanya Krishi Yojana** | PIB Backgrounder | Prime Minister Dhan-Dhaanya Krishi Yojana (PMDDKY) | [2321731](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2321731) |
+| 2026-10-11 | **Mission for Aatmanirbharta in Pulses** | PIB Backgrounder | India’s Mission for Aatmanirbharta in Pulses | [2321892](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2321892) |
+| 2026-10-12 | **PM Dhan-Dhaanya Krishi Yojana** | Ministry of Agriculture & Farmers Welfare | Shri Shivraj Singh Chouhan Felicitates Top-Performing Districts at PM Dhan-Dhaanya Krishi Yojana’s National Conference | [2322443](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322443) |
+| 2026-10-12 | **PM Dhan-Dhaanya Krishi Yojana** | Ministry of Agriculture & Farmers Welfare | Prime Minister Dhan-Dhaanya Krishi Yojana Completes One Year | [2322267](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322267) |
+| 2026-10-12 | **Nuclear opening / BSR / SHANTI** | Ministry of Science & Technology | India–UK Bilateral Talks Explore Expanded Cooperation in Space, Civil Nuclear Energy and Emerging Technologies: Dr. Jite | [2322301](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322301) |
+| 2026-10-12 | **PM-SETU** | Ministry of Skill Development and Entrepreneurship | PM-SETU Achieves Another Milestone with Signing of Shareholders' Agreements for Surat and Visakhapatnam Clusters; ₹440 C | [2322170](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322170) |
+| 2026-10-13 | **India Semiconductor Mission / Semicon** | Ministry of Defence | DRDO to lead thematic session on ‘Semiconductors & Next-Gen Chips’ at ESTIC-2026 | [2322945](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322945) |
+| 2026-10-13 | **Namami Gange (HAM)** | Ministry of Jal Shakti | Industrial Pollution Abatement: Sustainability through Regulations under Namami Gange | [2322666](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322666) |
+| 2026-10-14 | **Jal Jeevan Mission** | Ministry of Jal Shakti | As A Follow-Up to The Departmental Summit on Water 2026, Department Of Drinking Water and Sanitation Organised Virtual C | [2323274](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323274) |
+| 2026-10-14 | **BHAVYA industrial parks** | PIB Backgrounder | BHAVYA: Creating Investment-Ready Manufacturing Ecosystems | [2323107](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323107) |
+| 2026-10-14 | **UPI incentive scheme** | Competition Commission of India | CCI approves acquisition of majority stake in Tribhovandas Bhimji Zaveri Limited by GRT Jewellers (India) Private Limite | [2323400](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323400) |
+| 2026-10-14 | **RDI Scheme** | Ministry of Chemicals and Fertilizers - Department of Chemicals and Petrochemicals | Advanced Chemicals, Petrochemicals and Material Technologies Included under Research, Development and Innovation (RDI) S | [2323590](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323590) |
+| 2026-10-15 | **Jal Jeevan Mission** | Ministry of Jal Shakti | DDWS Organised 13th District Collectors’ Peyjal Samvad to Strengthen Community Ownership, Source Sustainability and Serv | [2323811](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323811) |
+| 2026-10-16 | **PMAY (U/G)** | Ministry of Housing & Urban Affairs | Secretary, Department of Urban Development, MoHUA chairs 10th meeting of CSMC under PMAY-U 2.0 | [2324593](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2324593) |
+| … | | | *38 further scheme-mapped rows not shown (cap 30) — query the register* | |
+
+<details><summary>Other Cabinet/CCEA approvals this quarter (10)</summary>
+
+- 2026-10-06 · Cabinet approves Commitment of Rs.10,000 Crore towards establishment of the SME Growth Fund for direct equity investments in Small · [2319532](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2319532)
+- 2026-10-06 · Cabinet approves setting up of Integrated Transport & Logistics Authority · [2319529](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2319529)
+- 2026-10-14 · Cabinet approves continuation of the National Social Assistance Programme for five years from 2026-27 to 2030-31 · [2323264](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323264)
+- 2026-10-14 · Cabinet approves Productivity Linked Bonus (PLB) for 78 days to Railway Employees · [2323256](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323256)
+- 2026-10-28 · Cabinet approves Dearness Allowance to Central Government employees and Dearness Relief to Pensioners · [2329484](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2329484)
+- 2026-10-28 · Cabinet approves Pradhan Mantri Viksit Gram Swaraj Yojana as a Centrally Sponsored Scheme for 2026-27 to 2030-31 · [2329483](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2329483)
+- 2026-10-28 · Cabinet approves Khelo India Sports Goods Manufacturing Scheme for Building a Globally Competitive Sports Manufacturing Ecosystem · [2329481](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2329481)
+- 2026-10-28 · Cabinet approves Container Manufacturing Promotion Scheme · [2329476](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2329476)
+- 2026-11-04 · Cabinet approves continuation of the Centrally Sponsored Scheme for Fast Track Special Courts (FTSCs) for expeditious trial of cas · [2332483](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332483)
+- 2026-11-04 · Cabinet approves ‘Viksit Bharat Initiative for Statistical Transformation, Analytics & Research (VISTAR)’, a central sector scheme · [2332480](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332480)
+
+</details>
+
+## 2026Q3 — 253 scheme-mapped announcements
 
 | Date | Scheme | Ministry (register) | Announcement | PRID |
 |---|---|---|---|---|
@@ -36,9 +87,9 @@
 | 2026-07-15 | **MPMS (LSEM successor)** | Ministry of Electronics & IT | Cabinet approves Mobile Phone Manufacturing Scheme (MPMS) | [2284792](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284792) |
 | 2026-07-15 | **PLI-ACC** | Ministry of Heavy Industries | The Ministry of Heavy Industries invites bids through Global Tender for the selection of beneficiaries to set up giga-sc | [2284916](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284916) |
 | 2026-07-15 | **SATAT / CBG** | Ministry of Home Affairs | In the presence of Union Home Minister and Minister of Cooperation Shri Amit Shah, MCD and NDDB signs MoU for establishm | [2284949](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284949) |
-| … | | | *178 further scheme-mapped rows not shown (cap 30) — query the register* | |
+| … | | | *223 further scheme-mapped rows not shown (cap 30) — query the register* | |
 
-<details><summary>Other Cabinet/CCEA approvals this quarter (12)</summary>
+<details><summary>Other Cabinet/CCEA approvals this quarter (15)</summary>
 
 - 2026-07-01 · Cabinet approves the construction of 4/6 lane Access-Controlled Kanpur-Kabrai section of NH-34 in Uttar Pradesh on BOT (Toll) Mode · [2279819](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279819)
 - 2026-07-01 · Cabinet approves Construction of 6 Lane Road Tunnel For NH-148AE connecting Dwarka Expressway (NH 248 BB) with Nelson Mandela Marg · [2279818](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279818)
@@ -50,8 +101,11 @@
 - 2026-08-01 · Cabinet approves revamped Khelo India Scheme and enhanced Assistance to National Sports Federations (ANSFs) · [2292439](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292439)
 - 2026-08-01 · Cabinet approves continuation of the PM-KISAN Scheme from 2026-27 to 2030-31 with a Financial Outlay of Rs.3.15 lakh crore · [2292437](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292437)
 - 2026-08-01 · Cabinet approves 'Pradhan Mantri Surya Sarovar Yojana (PM-SSY)' for Development of Floating Solar Photovoltaic Projects with Energ · [2292433](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292433)
-- 2026-09-10 · Cabinet approves five multitracking projects covering 17 Districts across the states of Tamil Nadu, Andhra Pradesh, Karnataka and  · [2308262](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2308262)
-- 2026-09-10 · Cabinet approves three multitracking projects covering 14 Districts across the states of West Bengal, Jharkhand, Odisha, Madhya Pr · [2308255](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2308255)
+- 2026-09-09 · Cabinet approves five multitracking projects covering 17 Districts across the states of Tamil Nadu, Andhra Pradesh, Karnataka and  · [2308262](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2308262)
+- 2026-09-09 · Cabinet approves three multitracking projects covering 14 Districts across the states of West Bengal, Jharkhand, Odisha, Madhya Pr · [2308255](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2308255)
+- 2026-09-16 · Cabinet approves enhancement of EPFO wage ceiling from Rs.15,000 to Rs.25,000 per month · [2310811](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310811)
+- 2026-09-30 · Cabinet approves One Network, Smarter Traffic: Delhi Moves to Real-Time Traffic Management · [2316953](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316953)
+- 2026-09-30 · Cabinet approves Minimum Support Prices (MSP) for Rabi Crops for Marketing Season 2027-28 · [2316941](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316941)
 
 </details>
 

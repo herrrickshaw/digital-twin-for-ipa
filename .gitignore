@@ -3,3 +3,4 @@ data/registers/state_news.sqlite
 .DS_Store
 graphify-out/
 .venv/
+private_kpmg/

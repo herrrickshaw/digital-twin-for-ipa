@@ -4955,3 +4955,40 @@ CHANGE rbi WSS: Oct 25, 2026 -> Oct 31, 2026
 rbi: latest WSS issue = Oct 31, 2026 -> /Users/umashankar/digital-twin-for-ipa/state/rbi_2026-11-02.json
 ERROR build_layer26_projects.py: Command '['/Library/Developer/CommandLineTools/usr/bin/python3', '/Users/umashankar/digital-twin-for-ipa/scripts/build_layer26_projects.py']' returned non-zero exit status 1.
 send_twin_alert: no credentials available (env or plist) -- not sent
+
+    ○
+    │╲
+    │ ○
+    ○ ░
+    ░    gitleaks
+
+[90m8:33AM[0m [32mINF[0m [1m0 commits scanned.[0m
+[90m8:33AM[0m [32mINF[0m [1mscanned ~193210 bytes (193.21 KB) in 669ms[0m
+[90m8:33AM[0m [32mINF[0m [1mno leaks found[0m
+fatal: could not read Username for 'https://github.com': Device not configured
+  2026-11-03   56 releases
+indexed 56 release rows 2026-11-03 → 2026-11-03
+  2026-11-04   57 releases
+  2026-11-05    0 releases
+indexed 57 release rows 2026-11-04 → 2026-11-05
+  2026-11-06   56 releases
+indexed 56 release rows 2026-11-06 → 2026-11-06
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+  2026-11-07   17 releases
+  2026-11-08    0 releases
+indexed 17 release rows 2026-11-07 → 2026-11-08
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+  2026-11-10   25 releases
+indexed 25 release rows 2026-11-10 → 2026-11-10
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+  2026-11-11   40 releases
+indexed 40 release rows 2026-11-11 → 2026-11-11
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+nice: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory
+/bin/sh: /Users/umashankar/digital-twin-for-ipa/.venv/bin/python3: No such file or directory

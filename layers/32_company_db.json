@@ -1,7 +1,7 @@
 {
  "layer": 32,
  "name": "company_db",
- "built": "2026-11-02",
+ "built": "2026-11-16",
  "what": "Unified company database: every company the twin has touched, deduped on normalized-name+country, with per-record provenance (company_sources keeps each source layer's record verbatim). SQLite at data/companies.db; company_card view = one row per company.",
  "db_path": "data/companies.db",
  "counts": {
@@ -61,7 +61,7 @@
  ],
  "enrichment_next": "layer 31 catalogs the external IPA/NDAP sources whose company-level material (Invest India sector pages, IIG project sponsors, state-IPA investor lists) can be joined onto company_id",
  "ii_ticker_validation": {
-  "ran": "2026-11-02",
+  "ran": "2026-11-16",
   "what": "Invest India sector-page LATEST-UPDATES tickers scraped as an announcement channel and matched (conservatively, fragments kept for review) against the company DB; QUIET/PARTIALLY_VISIBLE clearance leads that the national IPA itself announces are flagged as challenged verdicts",
   "sector_pages_scraped": 41,
   "fetch_errors": [],
@@ -168,7 +168,7 @@
   "caveat": "ticker items are undated in the DOM and rotate — treat a match as 'announced at some point recently', not a dated event; source_url usually carries the date"
  },
  "news_collection": {
-  "ran": "2026-11-02",
+  "ran": "2026-11-16",
   "what": "External news collection (Marketaux ticker-tagged, AlphaVantage sentiment, NewsAPI/Newsdata keyword FDI sweep + QUIET-company probes) matched onto the company DB with the shared tiered matcher; keys read from ~/.config/market-secrets/credentials.env",
   "api_calls_used": 39,
   "calls_by_source": {
@@ -177,21 +177,29 @@
    "marketaux": 10,
    "alphavantage": 1
   },
-  "articles_total": 91,
-  "new_articles": 91,
-  "match_rows_added": 16,
+  "articles_total": 93,
+  "new_articles": 93,
+  "match_rows_added": 10,
   "exception_news_hits": [],
   "sources_skipped_or_errors": [],
   "quota_note": "free tiers: NewsAPI/Marketaux ~100 req/day, AlphaVantage 25 — weekly cadence keeps usage well inside quotas; EODHD news endpoint not in plan (404), not called"
  },
  "sebi_public_issues": {
-  "ran": "2026-11-02",
+  "ran": "2026-11-16",
   "since": "2025-01-01",
-  "pages_fetched": 20,
-  "filings_in_window": 493,
-  "new_rows": 496,
-  "match_rows": 20,
+  "pages_fetched": 21,
+  "filings_in_window": 499,
+  "new_rows": 522,
+  "match_rows": 21,
   "companies_moving_to_market": [
+   {
+    "company": "Coca-Cola FEMSA",
+    "visibility": null,
+    "quality": "strong",
+    "filed": "2026-11-12",
+    "filing": "Hindustan Coca-Cola Holdings Limited - DRHP",
+    "url": "https://www.sebi.gov.in/filings/public-issues/nov-2026/hindustan-coca-cola-holdings-limited-drhp_105729.html"
+   },
    {
     "company": "Air Products & Chemicals, Inc.",
     "visibility": null,
@@ -356,13 +364,22 @@
   "what": "SEBI public-issues (DRHP/UDRHP/RHP) filers matched onto the company DB — the listing pipeline as a funding signal; shared tiered matcher (strong/reviewed-promoted actionable, weak review-only)"
  },
  "cin_extraction": {
-  "ran": "2026-11-02",
+  "ran": "2026-11-16",
   "what": "CIN + issue structure + objects-of-issue extracted from SEBI prospectus PDFs (MCA registry 403-blocked; the prospectus IS the authoritative CIN source for listing-pipeline companies)",
-  "records": [],
+  "records": [
+   {
+    "company": "Coca-Cola FEMSA",
+    "cin": "U64200DL1997FLC085304",
+    "fresh_issue": null,
+    "offer_for_sale": null,
+    "objects_excerpt": "The objects of the Offer are to (i) carry out the Offer for Sale of up to 997,461,456 Equity Shares of face value of ₹10 each by the Promoter Selling Shareholder aggregating up to ₹[●] million; and (ii) achieve the benefits of listing the Equity Shar",
+    "pdf": "https://www.sebi.gov.in/sebi_data/attachdocs/nov-2026/1794477903359.pdf"
+   }
+  ],
   "errors": [
    {
     "company": "Air Products & Chemicals, Inc.",
-    "error": "IncompleteRead: IncompleteRead(5628823 bytes read, 7734344 more expected)"
+    "error": "IncompleteRead: IncompleteRead(7678831 bytes read, 5684336 more expected)"
    }
   ],
   "mca_status": "mca.gov.in 403 (re-tested 2026-07-23); zaubacorp 403; thecompanycheck/falconebiz reachable but unofficial"

@@ -1,7 +1,7 @@
 {
  "layer": 28,
  "title": "Policy watchlist — policies in discussion / in the pipeline",
- "built": "2026-11-02",
+ "built": "2026-11-16",
  "purpose": "Forward-looking counterpart to the scheme monitor: NEW policy drafted, tabled or under public debate that will change the regulatory landscape for investors, before it is in force.",
  "sources": {
   "prs_billtrack": {
@@ -9525,14 +9525,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-a-resilient-startup-ecosystem"
   },
   {
-   "slug": "building-an-inclusive-india-for-persons-with-disabilities",
-   "topic": "Building An Inclusive India for Persons With Disabilities",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-an-inclusive-india-for-persons-with-disabilities"
-  },
-  {
-   "slug": "building-an-inclusive-india-for-transgender-community",
-   "topic": "Building An Inclusive India for Transgender Community",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/building-an-inclusive-india-for-transgender-community"
+   "slug": "carbon-markets-and-indias-green-transition",
+   "topic": "Carbon Markets and Indias Green Transition",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/carbon-markets-and-indias-green-transition"
   },
   {
    "slug": "deepening-india-nepal-ties",
@@ -9545,24 +9540,19 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ensuring-sustainable-food-security"
   },
   {
-   "slug": "gm-crops-and-indias-agricultural-future",
-   "topic": "Gm Crops and Indias Agricultural Future",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/gm-crops-and-indias-agricultural-future"
+   "slug": "forest-management-in-india",
+   "topic": "Forest Management in India",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/forest-management-in-india"
   },
   {
-   "slug": "gst-2-0-fixing-the-structural-gaps",
-   "topic": "GST 2 0 Fixing Structural Gaps",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/gst-2-0-fixing-the-structural-gaps"
+   "slug": "india-s-renewable-energy-transition-1",
+   "topic": "India S Renewable Energy Transition 1",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/india-s-renewable-energy-transition-1"
   },
   {
-   "slug": "india-us-relations-resolving-friction-building-trust",
-   "topic": "India Us Relations Resolving Friction Building Trust",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/india-us-relations-resolving-friction-building-trust"
-  },
-  {
-   "slug": "indias-urban-transformation",
-   "topic": "Indias Urban Transformation",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indias-urban-transformation"
+   "slug": "indian-diaspora-and-indias-global-influence",
+   "topic": "Indian Diaspora and Indias Global Influence",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/indian-diaspora-and-indias-global-influence"
   },
   {
    "slug": "internet-access-as-a-fundamental-right",
@@ -9570,9 +9560,29 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/internet-access-as-a-fundamental-right"
   },
   {
+   "slug": "ldakh-balancing-security-and-local-aspirations",
+   "topic": "Ldakh Balancing Security and Local Aspirations",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/ldakh-balancing-security-and-local-aspirations"
+  },
+  {
    "slug": "making-indias-ethanol-blending-sustainable",
    "topic": "Making Indias Ethanol Blending Sustainable",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/making-indias-ethanol-blending-sustainable"
+  },
+  {
+   "slug": "northeast-india-gateway-to-viksit-bharat-2047",
+   "topic": "Northeast India Gateway to Viksit Bharat 2047",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/northeast-india-gateway-to-viksit-bharat-2047"
+  },
+  {
+   "slug": "p4m-and-the-future-of-global-multilateralism",
+   "topic": "P4m and Future of Global Multilateralism",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/p4m-and-the-future-of-global-multilateralism"
+  },
+  {
+   "slug": "poverty-alleviation-in-india-1",
+   "topic": "Poverty Alleviation in India 1",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/poverty-alleviation-in-india-1"
   },
   {
    "slug": "recalibrating-india-china-ties",
@@ -9585,16 +9595,6 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reforming-indias-cybersecurity-architecture"
   },
   {
-   "slug": "reimagining-wildlife-conservation-in-india",
-   "topic": "Reimagining Wildlife Conservation in India",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reimagining-wildlife-conservation-in-india"
-  },
-  {
-   "slug": "reshaping-indias-nuclear-energy-sector",
-   "topic": "Reshaping Indias Nuclear Energy Sector",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/reshaping-indias-nuclear-energy-sector"
-  },
-  {
    "slug": "revitalizing-indias-sezs",
    "topic": "Revitalizing Indias Sezs",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/revitalizing-indias-sezs"
@@ -9603,6 +9603,11 @@
    "slug": "sco-opportunities-and-challenges-for-india",
    "topic": "Sco Opportunities and Challenges for India",
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/sco-opportunities-and-challenges-for-india"
+  },
+  {
+   "slug": "strengthening-indias-gig-economy-1",
+   "topic": "Strengthening Indias Gig Economy 1",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-indias-gig-economy-1"
   },
   {
    "slug": "strengthening-indias-global-export-competitiveness",
@@ -9615,9 +9620,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/strengthening-womens-workforce-participation-in-india"
   },
   {
-   "slug": "the-new-india-canada-dynamic",
-   "topic": "New India Canada Dynamic",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/the-new-india-canada-dynamic"
+   "slug": "stubble-burning-challenges-and-policy-reforms",
+   "topic": "Stubble Burning Challenges and Policy Reforms",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/stubble-burning-challenges-and-policy-reforms"
   },
   {
    "slug": "transforming-india-uk-partnership",
@@ -9625,14 +9630,9 @@
    "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-india-uk-partnership"
   },
   {
-   "slug": "west-asian-crisis-and-securing-indias-strategic-interests",
-   "topic": "West Asian Crisis and Securing Indias Strategic Interests",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/west-asian-crisis-and-securing-indias-strategic-interests"
-  },
-  {
-   "slug": "who-pandemic-treaty-and-indias-stakes",
-   "topic": "Who Pandemic Treaty and Indias Stakes",
-   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/who-pandemic-treaty-and-indias-stakes"
+   "slug": "transforming-indias-urban-landscape",
+   "topic": "Transforming Indias Urban Landscape",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/transforming-indias-urban-landscape"
   }
  ],
  "linkage": {

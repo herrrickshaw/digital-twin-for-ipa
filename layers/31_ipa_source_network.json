@@ -1,7 +1,7 @@
 {
  "layer": 31,
  "name": "ipa_source_network",
- "built": "2026-11-02",
+ "built": "2026-11-16",
  "what": "Data-source network of the investment-promotion world itself: WAIPA + its live-scraped member directory, peer country IPAs with India-relevant data, Invest India's scrapeable surfaces, and NITI Aayog / NDAP official statistics. Access failures are recorded as data (unctad.org 403, oecd.org 403, Invest India JSON:API disabled)",
  "global": {
   "waipa": {
@@ -171,7 +171,7 @@
     "country": "Algeria",
     "organization": "Algerian Investment Promotion Agency\r\n\r\n",
     "website": "http://www.aapi.dz/",
-    "website_status": "ERR:URLError"
+    "website_status": 503
    },
    {
     "country": "Angola",
@@ -237,7 +237,7 @@
     "country": "Brazil",
     "organization": "Brazilian Trade and Investment Promotion Agency (Apex-Brasil)",
     "website": "https://portal.apexbrasil.com.br/",
-    "website_status": 302
+    "website_status": 200
    },
    {
     "country": "Brazil",
@@ -507,7 +507,7 @@
     "country": "Italy",
     "organization": "Invest in Tuscany\r\n",
     "website": "https://www.investintuscany.com/",
-    "website_status": 200
+    "website_status": "ERR:timeout"
    },
    {
     "country": "Japan",

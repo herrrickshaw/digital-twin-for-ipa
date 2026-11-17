@@ -12,7 +12,7 @@ lxml==6.1.2
 msgspec==0.21.1
 orjson==3.12.0
 patchright==1.62.1
-playwright==1.62.0
+playwright==1.65.2
 Protego==0.6.2
 pycparser==3.12
 pyee==13.0.1

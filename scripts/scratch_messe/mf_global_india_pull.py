@@ -11,12 +11,13 @@ Messe Frankfurt global show portfolio (confirmed hitsTotal=3114), not just
 the 4 fairs deep-dived individually this pass. This is the "broader Messe
 Frankfurt directory" the task asked to check for.
 """
+import os
 import json
 import time
 import urllib.parse
 import urllib.request
 
-APIKEY = "LXnMWcYQhipLAS7rImEzmZ3CkrU033FMha9cwVSngG4vbufTsAOCQQ=="
+APIKEY = os.environ["MESSE_API_KEY"]
 BASE = "https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 PAGE_SIZE = 200

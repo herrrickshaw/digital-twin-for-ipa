@@ -102,7 +102,9 @@ for _i, _g in enumerate(["D", "C", "CC", "CCC", "B-", "B", "B+", "BB-", "BB",
                          "AA", "AA+", "AAA"]):
     _GRADE_RANK[_g] = _i
 SUB_IG_MAX_RANK = _GRADE_RANK["BB+"]   # 9
-_GRADE_RE = re.compile(r"\b(AAA|AA[+-]?|A[+-]?|BBB[+-]?|BB[+-]?|B[+-]?|CCC|CC|C|D)\b")
+# trailing (?![\w+-]) not \b: a \b after "+"/"-" needs a word char next, so
+# "AA+ " backtracked to "AA" and every notch was lost.
+_GRADE_RE = re.compile(r"\b(AAA|AA[+-]?|A[+-]?|BBB[+-]?|BB[+-]?|B[+-]?|CCC|CC|C|D)(?![\w+-])")
 
 
 def current_grade(rating):

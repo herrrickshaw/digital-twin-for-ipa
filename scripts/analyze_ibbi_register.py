@@ -24,6 +24,7 @@ Writes a `state_resolution` block into layers/34_stressed_assets.json.
 Run with /usr/bin/python3 (duckdb). Usage: [--pdf-top N] (default 60)
 """
 import argparse
+import datetime
 import json
 import os
 import re
@@ -111,11 +112,19 @@ def main():
         """).fetchall()
 
     # notice-count + falling-reserve per corporate debtor (stuck signal)
+    # The register is listed newest-first, so order each debtor's notices
+    # chronologically (notice_date is DD-MM-YYYY) before comparing first vs last.
+    def _nd_key(nd):
+        try:
+            return datetime.datetime.strptime(nd or "", "%d-%m-%Y")
+        except ValueError:
+            return datetime.datetime.min
     by_cd = defaultdict(list)
     for pdf, cd, res, na, auc, nd in rows:
-        by_cd[cd].append(res or 0)
+        by_cd[cd].append((_nd_key(nd), res or 0))
     stuck = {}
-    for cd, prices in by_cd.items():
+    for cd, dated in by_cd.items():
+        prices = [p for _, p in sorted(dated, key=lambda x: x[0])]
         nonzero = [p for p in prices if p]
         falling = len(nonzero) >= 2 and nonzero[0] > nonzero[-1]
         stuck[cd] = (len(prices), falling)

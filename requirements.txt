@@ -12,8 +12,11 @@
 # Optional Python packages -- only needed for the analysis/reporting extras:
 pypdf>=4.0          # text extraction from scanned-layout PDFs the WebFetch converter rejects (e.g. MIB guidelines)
 pandas>=2.0         # ad-hoc analysis over layers/13_flat_instrument_index.json and state/ snapshots
+requests>=2.31      # foreign-filing sweeps: build_{edgar,edgar_8k,dart,edinet,esef_xbrl,cninfo,oslo_newsweb,switzerland}_india_sweep.py, build_sector_news_sweep.py
+duckdb>=1.0         # IBBI auction register parquet: analyze_ibbi_register.py, register_ibbi_liquidation.py, resolve_foreign_registry_ids.py
+yfinance>=0.2       # scripts/build_target_financials.py (target-company CFO financials)
 #
 # NOT required here (live in companion repos):
 #   india-trade-sector-policy-recommendations: weasyprint (PDF bulletins; must run under
 #     /opt/homebrew/bin/python3 -- SIP blocks system Python's pango), python-docx (report synthesizer)
-#   focus-sector-investor-map: yfinance, pyarrow (company-layer enrichment)
+#   focus-sector-investor-map: pyarrow (company-layer enrichment)

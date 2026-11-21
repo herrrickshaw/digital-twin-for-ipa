@@ -13,13 +13,14 @@ attribute of that fair's own exhibitor-search.html page).
 
 Usage: python3 mf_exhibitor_pull.py <FAIR_KEY>
 """
+import os
 import json
 import sys
 import time
 import urllib.parse
 import urllib.request
 
-APIKEY = "LXnMWcYQhipLAS7rImEzmZ3CkrU033FMha9cwVSngG4vbufTsAOCQQ=="
+APIKEY = os.environ["MESSE_API_KEY"]
 BASE = "https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/public/exhibitor/search"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 

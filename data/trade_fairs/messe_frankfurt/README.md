@@ -22,7 +22,7 @@ GET https://api.messefrankfurt.com/service/esb_api/exhibitor-service/api/2.1/pub
     &orSearchFallback=false&showJumpLabels=true
     &findEventVariable=<EVENT_ID>          (optional -- see below)
     &country=<ISO3>                        (optional filter)
-Header: apikey: LXnMWcYQhipLAS7rImEzmZ3CkrU033FMha9cwVSngG4vbufTsAOCQQ==
+Header: apikey: $MESSE_API_KEY
 ```
 
 The `apikey` is a **public** key baked into the SPA's own `main.js` bundle (client-side,

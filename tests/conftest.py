@@ -86,3 +86,10 @@ def load_script(name, root, argv=None, run_name=None, globals_override=None):
         else:
             sys.modules[mod.__name__] = old_mod
     return mod
+
+
+def copy_script(root, *names):
+    """Place real sibling scripts into a fake repo (for importlib-by-path users)."""
+    for n in names:
+        shutil.copy(os.path.join(REAL_ROOT, "scripts", n + ".py"),
+                    os.path.join(str(root), "scripts", n + ".py"))

@@ -60,10 +60,17 @@ def load_script(name, root, argv=None, run_name=None, globals_override=None):
     """
     real = os.path.join(REAL_ROOT, "scripts", name + ".py")
     src = open(real, encoding="utf-8").read()
+    # Keep line numbers identical. ``__file__`` stays the REAL path (coverage
+    # keys on it); ROOT derivation uses ``__FAKE_FILE__`` instead. sys.path
+    # bootstrap lines keep the real scripts dir so sibling imports resolve.
+    src = "\n".join(
+        ln if "sys.path" in ln else ln.replace("__file__", "__FAKE_FILE__")
+        for ln in src.split("\n"))
     fake_file = os.path.join(str(root), "scripts", name + ".py")
     mod = types.ModuleType(run_name or name)
-    mod.__file__ = fake_file
+    mod.__file__ = real
     ns = mod.__dict__
+    ns["__FAKE_FILE__"] = fake_file
     if globals_override:
         ns.update(globals_override)
     old_argv = sys.argv

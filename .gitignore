@@ -4,3 +4,4 @@ data/registers/state_news.sqlite
 graphify-out/
 .venv/
 private_kpmg/
+.coverage

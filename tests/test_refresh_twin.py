@@ -201,15 +201,18 @@ def test_cmd_catalogue_runs_both_builders_checked(rt, monkeypatch):
 
 def test_cmd_watchlist_isolates_failures(rt, monkeypatch, capsys):
     calls = []
+    checks = []
 
     def run(cmd, **kw):
         name = cmd[1].split("/")[-1]
         calls.append(name)
+        checks.append(kw["check"])
         if name == "build_layer28_policy_watchlist.py":
             raise subprocess.CalledProcessError(1, cmd)
 
     monkeypatch.setattr(subprocess, "run", run)
     rt.cmd_watchlist()
+    assert checks == [True] * 16
     assert len(calls) == 16 and calls[0] == "build_layer25_linkages.py"
     assert calls[-1] == "build_layer45_media_rss_sweep.py"
     assert "ERROR build_layer28_policy_watchlist.py" in capsys.readouterr().out

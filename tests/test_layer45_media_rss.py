@@ -129,8 +129,10 @@ def test_sh_curl(l45, monkeypatch):
     class P:
         stdout = "body\n200"
 
-    monkeypatch.setattr(subprocess, "run", lambda cmd, **k: P())
-    assert l45.sh_curl("u") == ("200", "body")
+    seen = {}
+    monkeypatch.setattr(subprocess, "run", lambda cmd, **k: seen.update(k=k, cmd=cmd) or P())
+    assert l45.sh_curl("u", timeout=7) == ("200", "body")
+    assert seen["k"]["timeout"] == 17 and "7" in seen["cmd"]
     monkeypatch.setattr(subprocess, "run", lambda cmd, **k: (_ for _ in ()).throw(OSError("x")))
     assert l45.sh_curl("u") == ("ERR", "x")
 

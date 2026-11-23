@@ -78,7 +78,7 @@ def test_creds_fall_back_to_plist_without_overriding_env(alert, monkeypatch, tmp
     alert.PLIST = str(p)
     assert alert.creds() == ("pu", "pp", "pt")
     monkeypatch.setenv("GMAIL_USER", "eu")
-    assert alert.creds()[0] == "eu"
+    assert alert.creds() == ("eu", "pp", "pt")
 
 
 def test_creds_none_when_nothing(alert):
@@ -86,6 +86,15 @@ def test_creds_none_when_nothing(alert):
 
 
 def test_send_without_creds_returns_1(alert, capsys):
+    assert alert.send("s", "b") == 1
+    assert "no credentials" in capsys.readouterr().err
+
+
+def test_send_with_partial_creds_returns_1(alert, monkeypatch, capsys):
+    monkeypatch.setenv("GMAIL_USER", "u@x")
+    assert alert.send("s", "b") == 1
+    monkeypatch.delenv("GMAIL_USER")
+    monkeypatch.setenv("GMAIL_APP_PASSWORD", "pw")
     assert alert.send("s", "b") == 1
     assert "no credentials" in capsys.readouterr().err
 

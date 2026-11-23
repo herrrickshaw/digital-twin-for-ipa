@@ -117,6 +117,6 @@ def test_main_empty_layers(fake_repo, capsys):
     mod.main()
     html = open(mod.OUT_HTML, encoding="utf-8").read()
     assert '<div class="stat"><b>—</b><span>companies tracked</span></div>' in html
-    assert '<div class="stat"><b>—</b><span>MoUs with no follow-up</span></div>' in html
+    assert '<div class="stat"><b>—%</b><span>MoUs with no follow-up</span></div>' in html
     assert '<div class="stat"><b>0</b><span>state MoUs (5yr)</span></div>' in html
     assert "0 MoU cards, 0 layers indexed" in capsys.readouterr().out

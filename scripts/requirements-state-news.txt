@@ -1,5 +1,5 @@
 anyio==4.14.2
-apify_fingerprint_datapoints==0.15.0
+apify_fingerprint_datapoints==0.16.0
 browserforge==1.2.4
 certifi==2026.7.22
 cffi==2.1.1

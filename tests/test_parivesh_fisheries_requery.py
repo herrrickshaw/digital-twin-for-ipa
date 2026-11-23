@@ -65,7 +65,7 @@ def test_main(mod, monkeypatch, capsys):
             {"proposal_no": "P1", "project_name": "Shrimp Farm Expansion", "activity_name": "Aquaculture",
              "state_name": "AP", "investment_cost": 5},
             {"proposal_no": "P1", "project_name": "Shrimp Farm Expansion", "activity_name": "dup"},     # duplicate key
-            {"proposal_no": "P2", "project_name": "Fishing Harbour Phase II", "activity_name": "Ports and Harbours",
+            {"proposal_no": "P2", "project_name": "Harbour Works Phase II", "activity_name": "Ports and Harbours",
              "state_name": "TN"},
             {"proposal_no": "P3", "project_name": "Harbour Road", "activity_name": "Roads"},               # harbour but not ports
             {"proposal_no": "P4", "project_name": None, "activity_name": None}],
@@ -99,7 +99,7 @@ def test_main(mod, monkeypatch, capsys):
     assert "fetch error Granted/false: RuntimeError" in out
     assert "Received/central: 5 rows, 4 unique" in out and "Received/state: 1 rows, 1 unique" in out
     assert "scanned 6 | term hits 3 | harbour hits 1" in out
-    assert "HARBOUR: Fishing Harbour Phase II" in out and "[Received/central] Shrimp Farm Expansion" in out
+    assert "HARBOUR: Harbour Works Phase II" in out and "[Received/central] Shrimp Farm Expansion" in out
 
 
 def test_main_defaults(mod, monkeypatch):

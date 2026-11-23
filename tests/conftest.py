@@ -93,3 +93,16 @@ def copy_script(root, *names):
     for n in names:
         shutil.copy(os.path.join(REAL_ROOT, "scripts", n + ".py"),
                     os.path.join(str(root), "scripts", n + ".py"))
+
+
+@pytest.fixture(autouse=True)
+def _no_network(monkeypatch):
+    """Hard guarantee that no test reaches the network (requests/urllib/curl)."""
+    import socket
+
+    def deny(*a, **k):
+        raise Blocked("socket use is forbidden in tests")
+
+    monkeypatch.setattr(socket.socket, "connect", deny)
+    monkeypatch.setattr(socket, "create_connection", deny)
+    monkeypatch.setattr(socket, "getaddrinfo", deny)

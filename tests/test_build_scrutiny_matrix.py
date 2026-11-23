@@ -107,7 +107,7 @@ def test_reading_c_list_branches(run):
     md = open(mod.OUT, encoding="utf-8").read()
     assert "STILL in C" in md and "Telecom PLI**: in C" in md
     # now both are questioned -> moved out
-    ls = [q(iso(3), ["PLI — White Goods"]), q(iso(3), ["Telecom PLI"])]
+    ls = [q(iso(3), ["PLI — White Goods"]), q(iso(3), ["PLI — Telecom", "Telecom PLI"])]
     _prepare(mod, root, tmp, pib, ls, [])
     mod.main()
     md = open(mod.OUT, encoding="utf-8").read()

@@ -106,3 +106,45 @@ def _no_network(monkeypatch):
     monkeypatch.setattr(socket.socket, "connect", deny)
     monkeypatch.setattr(socket, "create_connection", deny)
     monkeypatch.setattr(socket, "getaddrinfo", deny)
+
+
+def _snapshot(root):
+    out = {}
+    for d in _COPY_DIRS:
+        for dp, _, fs in os.walk(os.path.join(str(root), d)):
+            for f in fs:
+                p = os.path.join(dp, f)
+                st = os.stat(p)
+                out[p] = (st.st_size, st.st_mtime_ns)
+    return out
+
+
+@pytest.fixture(scope="session")
+def _repo_copy(tmp_path_factory):
+    """ONE throw-away copy of layers/data/state/docs per test session."""
+    root = tmp_path_factory.mktemp("repo_copy") / "repo"
+    root.mkdir()
+    for d in _COPY_DIRS:
+        src = os.path.join(REAL_ROOT, d)
+        if os.path.isdir(src):
+            shutil.copytree(src, root / d, ignore=shutil.ignore_patterns("__pycache__"))
+    return root
+
+
+@pytest.fixture
+def work_repo(_repo_copy, tmp_path, monkeypatch):
+    """Shared session copy of the data dirs. After each test, anything a builder
+    changed, added or removed is restored from the real repo, so tests stay isolated."""
+    before = _snapshot(_repo_copy)
+    monkeypatch.setenv("HOME", str(tmp_path / "home"))
+    monkeypatch.setattr(sys, "dont_write_bytecode", True)
+    yield _repo_copy
+    after = _snapshot(_repo_copy)
+    rr = str(_repo_copy)
+    for p in set(after) - set(before):
+        os.remove(p)
+    for p, sig in before.items():
+        if after.get(p) != sig:
+            src = os.path.join(REAL_ROOT, os.path.relpath(p, rr))
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            shutil.copy2(src, p)
